@@ -10,7 +10,7 @@ ch10wm1
 .word $033B ;augustus
 .word $0219 ;y then x
 .byte NewLine
-.text "and the remnants of Leonstes nobility,"
+.text "and the remnants of Leonster's nobility,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $003C ;dorius
