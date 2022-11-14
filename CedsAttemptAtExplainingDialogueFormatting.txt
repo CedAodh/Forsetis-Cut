@@ -1,0 +1,133 @@
+
+These commands have a .byte in front of them when used:
+
+NewLine: Use this command when you want to start text on a new line.
+The game has no idea when it has reached the right end of the speech bubble,
+so it's up to you to know when to add a "line break," as we like to call it.
+When you want to do a line break can be a matter of preference/style.
+I have a habit of doing line breaks right after the end of a sentence.
+
+ScrollText: Pushes ALL text currently in the speech bubble past the top
+so that it can no longer be seen.
+
+EndText: You use this command when the conversation event is officially done,
+and nowhere else. It clears out all portraits, text, and speech bubbles, so
+you don't have to worry about doing those manually when the conversation is over.
+
+Left_slot: Using this tells the game that every command you will be typing after
+it will happen on the left side of the conversation. It also automatically makes
+the speech bubble pop up for that side if it wasn't already opened.
+
+Right_Slot: Same except it happens on the right side.
+
+WaitForA: Pauses the conversation where it is, and it will not continue
+until the game gets an A button input.
+
+--------------------------------------------------------------------------------------
+
+These commands have a .word in front of them when used:
+
+LoadPortrait: Makes a portrait pop up. After this command, you will have to add
+another command right under itthat tells the game which portrait you want to pull up.
+This command also requires a .word in front of it. Most portraits are defined as
+(name)_portrait. For example, leif_portrait, linoan_portrait, raydrik_portrait
+Leif's angry portrait definition is leif_portrait2
+
+ClearPortrait: Does exactly what it says. No follow-up command is required here.
+
+RetractBox: Makes a speech bubble disappear in the middle of the conversation.
+Typically used after ClearPortrait 
+
+PlayMusic: Does exactly what it says. Followed by a .byte command and the value ($XX)
+of the specific track that you want to play. I do not have that list of values on hand.
+It's not always necessary, since if the conversation isn't all that dramatic and like
+something to really focus in on, the map music currently playing will carry into the conversation.
+
+--------------------------------------------------------------------------------------
+
+Most importantly, text:
+
+Has a .text command in front of it and two of these quotation mark pairs at the front and end
+of EACH indivual line of text. "
+
+--------------------------------------------------------------------------------------
+
+If you mix up the first part of the command and do something like
+.word NewLine or .byte LoadPortrait, you'll screw it up.
+
+--------------------------------------------------------------------------------------
+
+Now I'll try doing a simple example that incorportates all of the commands.
+
+test
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word kempf_portrait
+.text "Hello, Prince Leif!"
+.byte WaitForA
+
+.byte right_slot
+.text "Hm?"
+.byte NewLine
+.text "Who are you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Do you not remember me?"
+.byte NewLine
+.text "I am the face of your conqueror!"
+.byte NewLine
+.text "Hahaha...!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What is that supposed to mean?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, you don't know!"
+.byte NewLine
+.text "This is fantastic..."
+.byte WaitForA
+.byte ScrollText
+.text "Well, I shouldn't ruin the surprise."
+.byte NewLine
+.text "Farewell...for now."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "...Huh, what a weirdo."
+.byte NewLine
+.text "I guess New York is full of them."
+.byte WaitForA
+
+.byte left_slot
+.byte LoadPortrait
+.byte finn_portrait
+
+.byte right_slot
+.byte ScrollText
+.text "Finn, I'm pretty hungry."
+.byte NewLine
+.text "How about we go find Nanna, Mareeta, and Eyvel,"
+.byte NewLine
+.text "and then go get some McDonald's?"
+.byte WaitForA
+
+.byte left_slot
+.text "A wise suggestion, milord."
+.byte WaitForA
+
+.byte EndText
