@@ -823,7 +823,7 @@ _AccostManual_name
 	.word $0000
 
 _BargainManual_name
-	.text "Bargain (Manual "
+	.text "Tathlu[m"
 	.word $0000
 
 _VantageManual_name
