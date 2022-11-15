@@ -1259,25 +1259,28 @@ ch25finale
 .byte EndText
 
 
-leifVSveld
+LeifVsVeld
+
+.word PlayMusic
+.byte $3E
 
 .byte right_slot
 .word LoadPortrait
-.word leif_portrait
+.word leif_portrait2
 
 .byte left_slot
 .word LoadPortrait
 .word veld_portrait
-.text "So you’ve finally made it here…"
+.text "So you've finally made it here..."
 .byte NewLine
 .text "Heheheh."
 .byte WaitForA
 
 .byte right_slot
-.text "...You’re Veld."
+.text "...You're Veld."
 .byte WaitForA
 .byte NewLine
-.text "You’re the one who’s responsible"
+.text "You're the one who's responsible"
 .byte NewLine
 .text "for the endless nightmare enveloping"
 .byte NewLine
@@ -1297,7 +1300,10 @@ leifVSveld
 .byte EndText
 
 
-eyvelVSveld
+EyvelVsVeld
+
+.word PlayMusic
+.byte $3E
 
 .byte right_slot
 .word LoadPortrait
@@ -1311,9 +1317,9 @@ eyvelVSveld
 .text "How is this possible?!"
 .byte WaitForA
 .byte ScrollText
-.text "Bishop Manfroy, you did not–"
+.text "Bishop Manfroy, you did not—"
 .byte NewLine
-.text "No…"
+.text "No..."
 .byte WaitForA
 
 .byte right_slot
@@ -1322,42 +1328,45 @@ eyvelVSveld
 .text "when you had the chance."
 .byte WaitForA
 .byte ScrollText
-.text "And now you’re going to live to regret"
+.text "It looks like this stupid blunder of yours"
 .byte NewLine
-.text "having made such a stupid blunder!"
+.text "is about to catch up with you!"
 .byte WaitForA
 
 .byte EndText
 
 
-saraVSveld
+SaraVsVeld
+
+.word PlayMusic
+.byte $3E
 
 .byte right_slot
 .word LoadPortrait
-.word sara_portrait
+.word sarah_portrait
 
 .byte left_slot
 .word LoadPortrait
 .word veld_portrait
-.text "L-Lady Sara?!”
+.text "L-Lady Sara?!"
 .byte NewLine
-.text "So this is where you disappeared to…"
+.text "So this is where you disappeared to..."
 .byte WaitForA
 .byte ScrollText
-.text "I’ll have to beg Bishop Manfroy’s"
+.text "I'll have to beg Bishop Manfroy's"
 .byte NewLine
 .text "forgiveness for what I must do now."
 .byte WaitForA
 
 .byte right_slot
-.text "What…?"
+.text "What...?"
 .byte WaitForA
 .byte ScrollText
 .text "Why do you care so much about Grandfather?"
 .byte NewLine
-.text "Just when I thought you couldn’t be"
+.text "Just when I thought you couldn't be"
 .byte NewLine
-.text "any more boring…"
+.text "any more boring..."
 .byte WaitForA
 
 .byte EndText
