@@ -1257,3 +1257,108 @@ ch25finale
 .byte WaitForA
 
 .byte EndText
+
+
+leifVSveld
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word veld_portrait
+.text "So you’ve finally made it here…"
+.byte NewLine
+.text "Heheheh."
+.byte WaitForA
+
+.byte right_slot
+.text "...You’re Veld."
+.byte WaitForA
+.byte NewLine
+.text "You’re the one who’s responsible"
+.byte NewLine
+.text "for the endless nightmare enveloping"
+.byte NewLine
+.text "Munster and my own kingdom."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That is correct."
+.byte WaitForA
+.byte ScrollText
+.text "Now, be still,"
+.byte NewLine
+.text "and return to your nightmare!"
+.byte WaitForA
+
+.byte EndText
+
+
+eyvelVSveld
+
+.byte right_slot
+.word LoadPortrait
+.word eyvel_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word veld_portrait
+.text "What?!"
+.byte NewLine
+.text "How is this possible?!"
+.byte WaitForA
+.byte ScrollText
+.text "Bishop Manfroy, you did not–"
+.byte NewLine
+.text "No…"
+.byte WaitForA
+
+.byte right_slot
+.text "You should have killed me"
+.byte NewLine
+.text "when you had the chance."
+.byte WaitForA
+.byte ScrollText
+.text "And now you’re going to live to regret"
+.byte NewLine
+.text "having made such a stupid blunder!"
+.byte WaitForA
+
+.byte EndText
+
+
+saraVSveld
+
+.byte right_slot
+.word LoadPortrait
+.word sara_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word veld_portrait
+.text "L-Lady Sara?!”
+.byte NewLine
+.text "So this is where you disappeared to…"
+.byte WaitForA
+.byte ScrollText
+.text "I’ll have to beg Bishop Manfroy’s"
+.byte NewLine
+.text "forgiveness for what I must do now."
+.byte WaitForA
+
+.byte right_slot
+.text "What…?"
+.byte WaitForA
+.byte ScrollText
+.text "Why do you care so much about Grandfather?"
+.byte NewLine
+.text "Just when I thought you couldn’t be"
+.byte NewLine
+.text "any more boring…"
+.byte WaitForA
+
+.byte EndText
+
