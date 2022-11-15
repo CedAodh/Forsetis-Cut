@@ -1036,7 +1036,7 @@ leifvsraydrik
 	
 	.byte right_slot
 	.word $3A00
-	.word raydrik_portrait
+	.word Raydrik2Portrait
 	
 	.byte left_slot
 	.word $3A00
@@ -1140,7 +1140,7 @@ mareetavsraydrik
 
 .byte left_slot
 .word LoadPortrait
-.word raydrik_portrait
+.word Raydrik2Portrait
 .text "You managed to find"
 .byte NewLine
 .text "your way back, little lass."
@@ -1202,3 +1202,141 @@ mareetavsraydrik
 .byte WaitForA
 
 .byte EndText
+
+saiasvsraydrik
+
+.byte right_slot
+.word LoadPortrait
+.word saias_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word Raydrik2Portrait
+.text "Well, well!"
+.byte NewLine
+.text "I see before me the"
+.byte NewLine
+.text "famed tactician of House Velthomer."
+.byte WaitForA
+.byte ScrollText
+.text "You whisked away vital tools that"
+.byte NewLine
+.text "the Welkenrosen worked hard to get."
+.byte WaitForA
+.byte ScrollText
+.text "Why the change of heart, hm?"
+.byte NewLine
+.text "Do you really think you stand"
+.byte NewLine
+.text "to make a difference?"
+.byte WaitForA
+
+.byte right_slot
+.text "I have seen the error of my ways,"
+.byte NewLine
+.text "and now I work toward a new purpose:"
+.byte NewLine
+.text "cleansing this place of you and your ilk."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "The only cleansing you have to worry about"
+.byte NewLine
+.text "is getting my spit out of your hair"
+.byte NewLine
+.text "after I run you through, traitor!"
+.byte WaitForA
+
+.byte EndText
+
+nannavsraydrik
+
+.byte right_slot
+.word LoadPortrait
+.word nanna_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word Raydrik2Portrait
+.text "What's with the face, my princess?"
+.byte NewLine
+.text "You look at me as though"
+.byte NewLine
+.text "I'm some sort of ghoul!"
+.byte WaitForA
+
+.byte right_slot
+.text "Raydrik!"
+.byte NewLine
+.text "You will earn no forgiveness from me!"
+.byte WaitForA
+.byte ScrollText
+.text "I have never felt my blood boil"
+.byte NewLine
+.text "like it does right now."
+.byte WaitForA
+.byte NewLine
+.text "It's going to be to your own detriment that you"
+.byte NewLine
+.text "can't see me as anything besides a princess!"
+.byte NewLine
+.byte WaitForA
+
+.byte EndText
+
+brightonvsraydrik
+
+.byte right_slot
+.word LoadPortrait
+.word Raydrik2Portrait
+
+.byte left_slot
+.word LoadPortrait
+.word brighton_portrait
+.text "Baron Raydrik!"
+.byte NewLine
+.text "It's been quite some time."
+.byte WaitForA
+
+.byte right_slot
+.text "...Brighton, was it?"
+.byte NewLine
+.text "I remember your face;"
+.byte NewLine
+.text "you're the son of Conand."
+.byte WaitForA
+.byte ScrollText
+.text "Your father was always so loyal."
+.byte NewLine
+.text "How he could have been the parent to"
+.byte NewLine
+.text "such traitorous filth is beyond me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I have only contempt for my father,"
+.byte NewLine
+.text "so I do share some of your concern."
+.byte WaitForA
+.byte ScrollText
+.text "Nevertheless,"
+.byte NewLine
+.text "I fight to restore my family's honor"
+.byte NewLine
+.text "and to liberate Munster."
+.byte WaitForA
+.byte NewLine
+.text "Now here comes the glorious part of that:"
+.byte NewLine
+.text "kicking you out of the throne room!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Bold words!"
+.byte NewLine
+.text "But words won't save you from inevitable defeat."
+.byte NewLine
+.text "Time to get this over with."
