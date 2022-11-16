@@ -1560,3 +1560,748 @@ ch23fall
 .byte WaitForA
 
 .byte EndText
+
+
+ch23asbelced
+
+.byte left_slot
+.word LoadPortrait
+.word asbel_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word ced_portrait 
+
+.byte left_slot
+.text “Lord Ced!"
+.byte WaitForA
+.byte NewLine
+.text "Over here!"
+.byte WaitForA 
+
+.byte right_slot
+.text “Asbel?"
+.byte WaitForA
+.byte NewLine
+.text "Why, I could hardly recognize you.”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+Asbel: “Huh?"
+.byte WaitForA
+.byte NewLine
+.text "Have I…really changed that much?"
+.byte NewLine
+.text "Well, perhaps I’ve grown a bit taller, but-”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “You know that’s not what I meant."
+.byte WaitForA
+.byte ScrollText
+.text "I can see that you’ve matured into a most"
+.byte NewLine
+.text "magnificent mage. I’ve no doubt you’ve"
+.byte NewLine
+.text "upheld your oath to Prince Leif, as well.”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+Asbel: “Lord Ced…”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “It’s only been a single year,"
+.byte NewLine
+.text "but I can see that you’ve gone far"
+.byte NewLine
+.text "and beyond what I could ever teach you."
+.byte NewLine
+.text "You should be proud, Asbel."
+.byte WaitForA
+.byte ScrollText
+.text "Know that your skill was an"
+.byte NewLine
+.text "invaluable asset in helping Prince Leif"
+.byte NewLine
+.text "make it all the way here.”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “P-please stop, Lord Ced…"
+.byte NewLine
+.text "My eyes can only water so much before I…”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Heh, all right."
+.byte NewLine
+.text "Let's catch up once things"
+.byte NewLine
+.text "have calmed down a bit."
+.byte WaitForA
+.byte ScrollText
+.text "I just ask that you prepare yourself, Asbel."
+.byte NewLine
+.text "You will now fight alongside me– not as"
+.byte NewLine
+.text "my apprentice, but as an equal, and a friend."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "Understood, Lord Ced!"
+.byte WaitForA
+.byte NewLine
+.text "Er, I mean…Ced?"
+.byte WaitForA
+.byte NewLine
+.text "That’s what I should call you now, right?"
+.byte WaitForA 
+
+.byte right_slot
+Ced: "It would be my pleasure."
+.byte WaitForA
+.byte EndText
+
+
+ch23mishaced
+
+.byte left_slot
+.word LoadPortrait
+.word misha_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word ced_portrait 
+
+.byte left_slot
+.text “Prince Ced…?”
+.byte WaitForA 
+
+.byte right_slot
+.text “Misha?! What in the–"
+.byte WaitForA
+.byte ScrollText
+.text "Karin had already made"
+.byte NewLine
+.text "her way down here, now it’s you?"
+.byte NewLine
+.text "What’s the explanation behind this?”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “I thought I knew that, myself.”
+.byte NewLine
+.text "But now…I’m frankly lost.”
+.byte WaitForA
+.byte ScrollText
+.text “I suffered defeat at the hands of the”
+.byte NewLine
+.text “Liberation Army…and now they’re”
+.byte NewLine
+.text “having me atone for my sins.”
+.byte WaitForA
+
+.byte right_slot
+.text “..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text “I begged them for death, and I could not”
+.byte NewLine
+.text “understand how they could give mercy”
+.byte NewLine
+.text “to a monster such as myself.”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “Misha… Please, raise your head.”
+.byte NewLine
+.text “And never denigrate yourself with”
+.byte NewLine
+.text “such harsh words ever again.”
+.byte WaitForA
+.byte ScrollText
+.text “Now please, tell me exactly what happened:”
+.byte NewLine
+.text “Why were you pitted against the”
+.byte NewLine
+.text “Liberation Army in the first place?”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “Milord, I…”
+.byte WaitForA
+.byte ScrollText
+.text “I voluntarily lent a hand in sacrificing countless”
+.byte NewLine
+.text “Thracian children, all for the sake of saving”
+.byte NewLine
+.text “our own children back home–”
+.byte WaitForA
+.byte ScrollText
+.text “I never once considered that”
+.byte NewLine
+.text “my actions could be wrong.”
+.byte WaitForA
+.byte ScrollText
+.text “My stubbornness has cost me”
+.byte NewLine
+.text “my battalion… My honor…”
+.byte WaitForA
+.byte ScrollText
+.text “I guess I’m no different than my mother.”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+Ced: “Misha!”
+.byte WaitForA
+.byte NewLine
+.text “Will you wake up already?!”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “Ah…!”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “What your mother did has no bearing on”
+.byte NewLine
+.text “who you are–remember that!”
+.byte WaitForA
+.byte ScrollText
+.text “You are a capable Silessian knight, who got”
+.byte NewLine
+.text  “accepted into the Corps despite my mother”
+.byte NewLine
+.text “knowing full well who you really were.”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “Y-You knew…?”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “I did, and we never bore you any ill will.”
+.byte WaitForA
+.byte ScrollText
+.text “Misha, you had nothing to do with the death”
+.byte NewLine
+.text “of my aunt Annand. We couldn’t possibly”
+.byte NewLine
+.text “judge you for your mother’s mistakes.”
+.byte WaitForA
+.byte ScrollText
+.text “Besides, it’s not like I’m any better, myself.”
+.byte WaitForA
+.byte NewLine
+.text “I abandoned our kingdom just like my father,”
+.byte NewLine
+.text “leaving Silesse in the hands of poor Fee…”
+.byte WaitForA
+.byte ScrollText
+.text “I let myself think that I was doing this for the”
+.byte NewLine
+.text “best for everyone I love. That was a mistake.”
+.byte NewLine
+.text “And yet, in doing so, I found a new purpose.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text “...?”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “Just as you’ve kept the children of Silesse”
+.byte NewLine
+.text “happy and healthy, I’ve done the same for”
+.byte NewLine
+.text “as many Thracian children as I could.”
+.byte WaitForA
+.byte ScrollText
+.text “It seems like we have both been working”
+.byte NewLine
+.text “tirelessly to alleviate the consequences of”
+.byte NewLine
+.text “the other’s grave mistake.”
+.byte WaitForA
+.byte ScrollText
+.text “I believe I must thank you, Misha.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text “I… Do you speak truly, milord?”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “I do.”
+.byte WaitForA 
+.byte ScrollText
+.text “I’m glad that I could find this new calling,”
+.byte NewLine
+.text “and I’m confident that you’ll be able to find”
+.byte NewLine
+.text “one for yourself.”
+.byte WaitForA 
+.byte ScrollText
+.text “Forget about petty mercenary work, Misha.”
+.byte NewLine
+.text “This has gone far beyond that scope:”
+.byte NewLine
+.text “a new Holy War is upon us.”
+.byte WaitForA 
+.byte ScrollText
+.text “This is the only chance we have to reclaim our”
+.byte NewLine
+.text “freedom, to stop our children’s suffering, and”
+.byte NewLine
+.text “to usher in an age of prosperity for Silesse!”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “Milord, I… *sniff*”
+.byte WaitForA 
+.byte NewLine
+.text “Oh, how shameful of me…”
+.byte NewLine
+.text “Shedding tears while on the battlefield…””
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “There shall better times”
+.byte NewLine
+.text “for us to shed our tears, Misha”
+.byte WaitForA 
+.byte ScrollText
+.text “For now I ask you to raise your head,”
+.byte NewLine
+.text “and to heed my words as your Prince.”
+.byte NewLine
+.text “Will you walk this path with me?”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “My lance is yours, milord.”
+.byte WaitForA 
+.byte NewLine
+.text “And it shall be yours until the”
+.byte NewLine
+.text “cold embrace of death takes me!”
+.byte WaitForA
+.byte EndText
+
+
+ch23hicksdalsin
+
+.byte left_slot
+.word LoadPortrait
+.word hicks_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word dalsin_portrait 
+
+.byte left_slot
+.text “Well, I’ll be!”
+.byte WaitForA 
+.byte NewLine
+.text “I can see good ol’ Munster Castle”
+.byte NewLine
+.text “like it’s a stone’s throw away!”
+.byte WaitForA 
+
+.byte right_slot
+.text “You’re right.”
+.byte NewLine
+.text “I still can’t believe it’s been a whole year”
+.byte NewLine
+.text “since we fled our homeland to aid Lord Leif”
+.text “and his cause.”
+.byte WaitForA 
+.byte ScrollText
+.text “I can only hope both my siblings are alright…”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “Whoa, there! Quit the glum face, will ya?”
+.byte NewLine
+.text “I’m sure they’ll be fine, just like my Murphy!”
+.byte WaitForA 
+.byte ScrollText
+.text “Don’t you go forgettin’ that Prince Ced’s”
+.byte NewLine
+.text “been watching over Munster’s people”
+.byte NewLine
+.text “ever since we left!”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “I suppose that’s true…”
+.byte WaitForA
+.byte NewLine
+.text “But that only makes me sadder, somehow.”
+
+.byte left_slot
+.byte ScrollText
+.text “And why’s that?”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “I really file like us adults have failed our”
+.byte NewLine
+.text “youth, and I live in shame to how we let”
+.byte WaitForA
+.text “our world be consumed by madness.”
+.byte WaitForA 
+.byte ScrollText
+.text “Having to rely in the likes of Prince Leif,”
+.byte NewLine
+.text “Prince Seliph and Prince Ced…”
+.byte WaitForA 
+.byte ScrollText
+.text “They are all still children in my eyes,”
+.byte NewLine
+.text “and yet their feats and their endurance”
+.byte NewLine
+.text “are unlike any man I’ve known.”.
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text “Hmmm.”
+.byte WaitForA
+.byte NewLine
+.text “Yeah, I get what you’re saying, bud.”
+.byte WaitForA 
+.byte ScrollText
+.text “But look at it this way: There are still”
+.byte NewLine
+.text “good folks out there in the world.”
+.byte WaitForA 
+.byte ScrollText
+.text “Folks like you and I- Who will stand up”
+.byte NewLine
+.text “to fight for what is right, to leave a better”
+.byte NewLine
+.text “world behind us, for those we care about.”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “I suppose you’re right…”
+.byte WaitForA
+.byte NewLine
+.text “Sorry to bring such a heavy notion”
+.byte NewLine
+.text “right as we are homeward bound.”
+.byte WaitForA 
+.byte ScrollText
+.text “It feels good to get that off my chest.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text “No problem, pal!”
+.byte WaitForA
+.byte NewLine
+.text “What do you say we ride forth towards”
+.byte NewLine
+.text “the city to teach that Raydrik what-for?”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text “Heh. No need to tell me twice!”
+.byte WaitForA
+.byte EndText
+
+
+ch23schroffsaias
+
+.byte left_slot
+.word LoadPortrait
+.word schroff_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word saias_portrait 
+
+.byte left_slot
+.text “Bishop Saias!"
+.byte NewLine
+.text "Is that you?”
+.byte WaitForA 
+
+.byte right_slot
+.text “Father Schroff!"
+.byte NewLine
+.text "What an unexpected coincidence."
+.byte NewLine
+.text "Have you joined the Liberation Army?”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “I have, and I'm certain you know why."
+.byte WaitForA
+.byte ScrollText
+.text "We were among the few who were"
+.byte NewLine
+.text "granted the privilege of hearing"
+.byte NewLine
+.text "Father Claud’s last prophecy.”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “Indeed..."
+.byte NewLine
+.text "and I take it that you saw this"
+.byte NewLine
+.text "as a sign of The Twofold Light."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “That, I have."
+.text "In fact, I couldn't be more confident that"
+.byte NewLine
+.text "this is what Father Claud anticipated."
+.byte WaitForA
+.byte ScrollText
+.text "So tell me, Bishop Saias."
+.byte NewLine
+.text "Will you lend your strategic prowess"
+.byte NewLine
+.text "and expertise to Lord Leif?”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "I am not sure at the moment."
+.byte NewLine
+.text "I was only tasked with delivering"
+.byte NewLine
+.text "Bragi’s Blade to his hand."
+.byte WaitForA
+.byte ScrollText
+.text "I have many things to consider before"
+.byte NewLine
+.text "making such a decision, but you have"
+.byte NewLine
+.text "you have my support until the fighting"
+.byte NewLine
+.text "has calmed down in the city streets.”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “I understand, and I'm thankful regardless."
+.byte WaitForA
+.byte ScrollText
+.text "Even if it’s for a short time, I’m most certain."
+.byte NewLine
+.text "that your presence will play a great part in"
+.byte NewLine
+.text "turning the tides in our favor.”
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text “If that's to be my role, I shall gladly play it."
+.byte WaitForA
+.byte ScrollText
+.text "After all, a thousand pegasi led by dragon"
+.byte NewLine
+.text "can defeat a thousand dragons led by
+.textone pegasus.”
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text “I never thought I'd have any involvement"
+.byte NewLine
+.text "in a living example of that aphorism…"
+.byte NewLine
+.text "Well said, Father Saias!”
+.byte WaitForA
+.byte EndText
+
+
+ch23mareetasaias
+
+.byte left_slot
+.word LoadPortrait
+.word mareeta_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word saias_portrait 
+
+.byte left_slot
+.text "Bishop Saias!’
+.byte WaitForA
+.byte NewLine
+.text “Is that you?!”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It warms my heart to see you well, child.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I could say the same!”
+.byte NewLine
+.text "But wait just a moment,”
+.byte NewLine
+.text "what are you doing here?”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Let’s say that I’ve joined this army”
+.byte NewLine
+.text "from the shadows. I pray you’ve kept”
+.byte NewLine
+.text "your promise and protected my identity.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Don’t you worry, Bishop!”
+.byte NewLine
+.text "I haven’t said a word,”
+.byte NewLine
+.text "not even to Lord Leif!”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That is a relief.”
+.byte NewLine
+.text "You have my utmost gratitude.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I’ve done my best to keep it, but…”
+.byte NewLine
+.text "I still don't understand.”
+.byte WaitForA
+.byte NewLine
+.text "Why…?”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Cheer up, my child.”
+.byte WaitForA
+.byte NewLine
+.text "My own hurdles should not bother you so.”
+.byte NewLine
+.text "Who I am or what I’ll do is something I,”
+.byte NewLine
+.text "and I alone, should bear and face upfront.”
+.byte NewLine
+.text "I suppose that makes us alike, in a way.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But you don’t have to face this alone!”
+.byte WaitForA
+.byte NewLine
+.text "You have done so much for me, for all of us,”
+.byte NewLine
+.text "I’m sure Lord Leif would support you”
+.byte NewLine
+.text "if you were to be honest with him!”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Let us save that for when the time is right.”
+.byte NewLine
+.text "Our priority now is to slay that fiend Raydrik.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But…”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "However, after that deed is done…”
+.byte WaitForA
+.byte NewLine
+.text "Let me know if your offer still stands.”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, believe me. it will.”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Are you really so determined?”
+.byte WaitForA
+.byte NewLine
+.text "Heh… It seems the fates of the branded”
+.byte NewLine
+.text "are always bound to be intertwined…”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Branded?”
+.byte NewLine
+.text “Whatever do you mean, Bishop?”
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I think I’ve said too much.”
+.byte NewLine
+.text "Let us focus on this battle for now.”
+.byte WaitForA
+.byte NewLine
+.text "Show me how much you’ve improved”
+.byte NewLine
+.text "in your path to be a true swordmaster!”
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes, Bishop!”
+.byte WaitForA
+.byte EndText
