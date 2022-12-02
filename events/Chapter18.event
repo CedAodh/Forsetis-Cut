@@ -153,6 +153,14 @@ eventChapter18Events ; E7/8000
 	END_DEFINITION_ARRAY
 
 	_AfterActionEventDefinitions ; E7/8222
+		EVENT $0A, _LeifVsGustav
+			CMP_WORD aSelectedCharacterBuffer.Character, Leif
+			macroEventConditionCheckCoordRanges [18, 3], [24, 8]
+		END_DEFINITION
+		EVENT $0B, _XavierVsGustav
+			CMP_WORD aSelectedCharacterBuffer.Character, Xavier
+			macroEventConditionCheckCoordRanges [18, 3], [24, 8]
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; E7/8224
@@ -296,6 +304,20 @@ eventChapter18Events ; E7/8000
 		YIELD_UNK
 		YIELD_UNK
 	END1
+	
+	_LeifVsGustav
+		SET_MUSIC $31
+		YIELD
+		
+		macroDialogueHouse leifvsgustav
+	END2
+	
+	_XavierVsGustav
+		SET_MUSIC $31
+		YIELD
+		
+		macroDialogueHouse xaviervsgustav
+	END2
 
 	_XavierLeifTalk ; E7/83FA
 		PLAY_SOUND_WORD $00E0

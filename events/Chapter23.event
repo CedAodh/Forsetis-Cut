@@ -114,6 +114,20 @@ eventChapter23Events ; FD/F056
 		EVENT $0D, _LeifSaiasTalk
 			CHECK_CHARS2 Leif, Saias
 		END_DEFINITION
+		EVENT $10, _HicksDalsinTalk
+			CHECK_CHARS2 Hicks, Dalsin
+		END_DEFINITION
+		EVENT $11, _AsbelCedTalk
+			TEST_FLAG_SET $0C
+			CHECK_CHARS2 Asbel, CedChp23
+		END_DEFINITION
+		EVENT $12, _MishaCedTalk
+			TEST_FLAG_SET $0C
+			CHECK_CHARS2 Misha, CedChp23
+		END_DEFINITION
+		EVENT $13, _SchroffSaiasTalk
+			CHECK_CHARS2 Schroff, Saias
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/F1F6
@@ -791,7 +805,23 @@ eventChapter23Events ; FD/F056
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
-
+	
+	_HicksDalsinTalk
+		macroDialogueHouse ch23hicksdalsin
+	END2
+	
+	_AsbelCedTalk
+		macroDialogueHouse ch23asbelced
+	END2
+	
+	_MishaCedTalk
+		macroDialogueHouse ch23mishaced
+	END2
+	
+	_SchroffSaiasTalk
+		macroDialogueHouse ch23schroffsaias
+	END2
+	
 	_PrepGroups ; FD/F90E
 		.long eventChapter23Data._PrepGroup
 	.word $0000

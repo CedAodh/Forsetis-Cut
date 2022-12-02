@@ -485,6 +485,13 @@ nintendo_logo
 
 .here
 
+* = $23E1FE
+.logical lorom($23E1FE, 1)
+
+.binary "white lord.4bpp.fe4"
+
+.here
+
 
 
 

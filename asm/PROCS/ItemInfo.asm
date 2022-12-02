@@ -256,6 +256,7 @@ rlProcItemInfoDrawItemInfo ; 81/F6B8
 ;	sta wUnknown000DE7,b
 ;
 ;	lda aProcBody1,b,x
+	dec a
 ;	sta wR16
 ;	tax
 ;	lda #>`$B08000

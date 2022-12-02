@@ -4,7 +4,7 @@ eventChapter20Data ; B1/9194
 	_PrepGroup1 ; B1/9194
 		.byte 14, 25
 
-		UNIT Bharat, Enemy, [13, 30], [13, 30], Bharat, [MasterAxe, Fortify, Vulnerary, ThrudsScroll], 15, True, [$01, $03, $00, $80]
+		UNIT Bharat, Enemy, [13, 30], [13, 30], Bharat, [MasterAxe, Fortify, Vulnerary], 15, True, [$01, $03, $00, $80]
 		UNIT FriegeGeneral1, Enemy, [13, 29], [13, 29], Bharat, [MasterLance, Vulnerary], 18, False, [$01, $03, $00, $00]
 		UNIT FriegeGeneral1, Enemy, [12, 30], [12, 30], Bharat, [MasterLance, Vulnerary], 18, False, [$01, $03, $00, $00]
 		UNIT FriegeGeneral1, Enemy, [14, 30], [14, 30], Bharat, [MasterLance, Vulnerary], 18, False, [$01, $03, $00, $00]
