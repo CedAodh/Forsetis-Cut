@@ -615,6 +615,11 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 
         aChapter23TalkTargetTable
           ZQOL_TALK_ENTRY Leif, [CedChp23, Saias]
+          ZQOL_TALK_ENTRY Mareeta, [Saias]
+          ZQOL_TALK_ENTRY Schroff, [Saias]
+          ZQOL_TALK_ENTRY Asbel, [CedChp23]
+          ZQOL_TALK_ENTRY Misha, [CedChp23]
+          ZQOL_TALK_ENTRY Hicks, [Dalsin]
         ZQOL_END_TALK_CHAPTER
 
         aChapter24TalkTargetTable

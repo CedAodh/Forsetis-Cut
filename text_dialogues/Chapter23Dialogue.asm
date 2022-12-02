@@ -2148,154 +2148,148 @@ ch23schroffsaias
 .byte EndText
 
 
-; ch23mareetasaias
+ch23mareetasaias
 
-; .byte left_slot
-; .word LoadPortrait
-; .word mareeta_portrait 
+.byte right_slot
+.word LoadPortrait
+.word saias_portrait 
 
-; .byte right_slot
-; .word LoadPortrait
-; .word saias_portrait 
+.byte left_slot
+.word LoadPortrait
+.word mareeta_portrait 
+.text "Bishop Saias!"
+.byte NewLine
+.text "I'm so glad to see you again!"
+.byte WaitForA
 
-; .byte left_slot
-; .text "Bishop Saias!’
-; .byte WaitForA
-; .byte NewLine
-; .text “Is that you?!”
-; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "Mareeta!"
+.byte NewLine
+.text "You look well, child."
+.byte NewLine
+.text "How are you?"
+.byte WaitForA
 
-; .byte right_slot
-; .byte ScrollText
-; .text "It warms my heart to see you well, child.”
-; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "I...I've been getting by."
+.byte NewLine
+.text "I still can't help but harbor doubt at times..."
+.byte NewLine
+.text "but I know that I've gotten stronger."
+.byte WaitForA
+.byte ScrollText
+.text "Your words have done much for me."
+.byte NewLine
+.text "They've granted the conviction my heart needed."
+.byte NewLine
+.text "I don't know how to repay you, Bishop Saias."
+.byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "I could say the same!”
-; .byte NewLine
-; .text "But wait just a moment,”
-; .byte NewLine
-; .text "what are you doing here?”
-; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "I did not help you so that you would do"
+.byte NewLine
+.text "something for me if I were in need, child."
+.byte WaitForA
+.byte ScrollText
+.text "Your talent for the sword is like no other."
+.byte NewLine
+.text "All I expect from you is to not let"
+.byte NewLine
+.text "this talent go to waste because of the past."
+.byte WaitForA
 
-; .byte right_slot
-; .byte ScrollText
-; .text "Let’s say that I’ve joined this army”
-; .byte NewLine
-; .text "from the shadows. I pray you’ve kept”
-; .byte NewLine
-; .text "your promise and protected my identity.”
-; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "...I understand, Bishop."
+.byte NewLine
+.text "Once again, it all becomes so clear just"
+.byte NewLine
+.text "after speaking with you for a short time."
+.byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "Don’t you worry, Bishop!”
-; .byte NewLine
-; .text "I haven’t said a word,”
-; .byte NewLine
-; .text "not even to Lord Leif!”
-; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "I do what I can."
+.byte WaitForA
+.byte ScrollText
+.text "I'll remain at least until this battle is over,"
+.byte NewLine
+.text "so if anything else is weighing on your mind,"
+.byte NewLine
+.text "please do not hesitate to consult with me."
+.byte WaitForA
 
-; .byte right_slot
-; .byte ScrollText
-; .text "That is a relief.”
-; .byte NewLine
-; .text "You have my utmost gratitude.”
-; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "“At least”?"
+.byte NewLine
+.text "You mean...you may be leaving again?"
+.byte NewLine
+.text "Why is that?"
+.byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "I’ve done my best to keep it, but…”
-; .byte NewLine
-; .text "I still don't understand.”
-; .byte WaitForA
-; .byte NewLine
-; .text "Why…?”
-; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
 
-; .byte right_slot
-; .byte ScrollText
-; .text "Cheer up, my child.”
-; .byte WaitForA
-; .byte NewLine
-; .text "My own hurdles should not bother you so.”
-; .byte NewLine
-; .text "Who I am or what I’ll do is something I,”
-; .byte NewLine
-; .text "and I alone, should bear and face upfront.”
-; .byte NewLine
-; .text "I suppose that makes us alike, in a way.”
-; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Please, won't you tell me?"
+.byte WaitForA
+.byte NewLine
+.text "I know you said how I could repay this debt,"
+.byte NewLine
+.text "but it's just..."
+.byte NewLine
+.text "I want to be able to do something for YOU."
+.byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "But you don’t have to face this alone!”
-; .byte WaitForA
-; .byte NewLine
-; .text "You have done so much for me, for all of us,”
-; .byte NewLine
-; .text "I’m sure Lord Leif would support you”
-; .byte NewLine
-; .text "if you were to be honest with him!”
-; .byte WaitForA
+.byte right_slot
+.byte NewLine
+.text "I'm sorry, child,"
+.byte NewLine
+.text "but there is nothing to speak of."
+.byte WaitForA
 
-; .byte right_slot
-; .byte ScrollText
-; .text "Let us save that for when the time is right.”
-; .byte NewLine
-; .text "Our priority now is to slay that fiend Raydrik.”
-; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte NewLine
+.text "I believe you."
+.byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "But…”
-; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "Though...the continent is quickly changing..."
+.byte WaitForA
 
-; .byte right_slot
-; .byte ScrollText
-; .text "However, after that deed is done…”
-; .byte WaitForA
-; .byte NewLine
-; .text "Let me know if your offer still stands.”
-; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "What do you mean?"
+.byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "Oh, believe me. it will.”
-; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "It will become clearer with time."
+.byte NewLine
+.text "For now, I want to see that your gifts"
+.byte NewLine
+.text "bear fruit for you and your companions."
+.byte WaitForA
 
-; .byte right_slot
-; .byte ScrollText
-; .text "Are you really so determined?”
-; .byte WaitForA
-; .byte NewLine
-; .text "Heh… It seems the fates of the branded”
-; .byte NewLine
-; .text "are always bound to be intertwined…”
-; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "You won't have to ask me again!"
+.byte NewLine
+.text "I know what my mission is:"
+.byte NewLine
+.text "to defeat Raydrik and rescue my mother!"
+.byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "Branded?”
-; .byte NewLine
-; .text “Whatever do you mean, Bishop?”
-; .byte WaitForA
+.byte EndText
 
-; .byte right_slot
-; .byte ScrollText
-; .text "I think I’ve said too much.”
-; .byte NewLine
-; .text "Let us focus on this battle for now.”
-; .byte WaitForA
-; .byte NewLine
-; .text "Show me how much you’ve improved”
-; .byte NewLine
-; .text "in your path to be a true swordmaster!”
-; .byte WaitForA
 
-; .byte left_slot
-; .byte ScrollText
-; .text "Yes, Bishop!”
-; .byte WaitForA
-; .byte EndText

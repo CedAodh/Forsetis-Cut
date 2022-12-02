@@ -128,6 +128,9 @@ eventChapter23Events ; FD/F056
 		EVENT $13, _SchroffSaiasTalk
 			CHECK_CHARS2 Schroff, Saias
 		END_DEFINITION
+		EVENT $14, _MareetaSaiasTalk
+			CHECK_CHARS2 Mareeta, Saias
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/F1F6
@@ -820,6 +823,10 @@ eventChapter23Events ; FD/F056
 	
 	_SchroffSaiasTalk
 		macroDialogueHouse ch23schroffsaias
+	END2
+	
+	_MareetaSaiasTalk
+		macroDialogueHouse ch23mareetasaias
 	END2
 	
 	_PrepGroups ; FD/F90E
