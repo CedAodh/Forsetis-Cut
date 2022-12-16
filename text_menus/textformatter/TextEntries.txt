@@ -272,6 +272,8 @@ Pegasus Corps
 Colho's Boys
 Dandelion
 Sells]words
+Fiana Freeblades
+Leif's Entourage
 
 
 //TERRAIN--------------------------------------------------
@@ -998,8 +1000,8 @@ Leif, Casts light
 Increases Lck
 Use to heal all
 
-Knights of
-Leonster
+Lanzenritter
+A gift fro[m an 
 Increases Lck
 
 Osian

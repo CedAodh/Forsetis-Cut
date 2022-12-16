@@ -350,6 +350,20 @@ eventChapter11xEvents ; 99/D51C
 
 		DIALOGUE ch11xopening2
 		YIELD
+		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $31
+		YIELD
+
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE ch11xopening3
+		YIELD
 	END2
 
 	_EndingEvent ; 99/DB42

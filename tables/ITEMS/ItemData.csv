@@ -77,19 +77,19 @@ IronBallista,TypeBow,None,20,65,20,10,0,3,15,WeaponLocks.aIronBallistaWeaponLock
 KillerBallista,TypeBow,None,12,90,20,10,30,3,10,WeaponLocks.aBallistaWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,3200,<>item_descs._KillerBallistaDesc,None,None,None,None,TraitBallista | TraitWeapon,$4A
 VeninBallista,TypeBow,None,12,75,20,10,0,3,10,WeaponLocks.aVeninBallistaWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._VeninBallistaDesc,None,$2,None,None,TraitBallista | TraitWeapon,$4B
 BrokenBow,TypeBow,None,0,0,12,-1,0,2,2,RankE,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenBowDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$4C
-Fire,TypeFire,None,7,75,2,20,0,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._FireDesc,None,None,None,None,TraitWeapon | TraitTome,$4D
+Fire,TypeFire,None,7,75,2,25,0,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._FireDesc,None,None,None,None,TraitWeapon | TraitTome,$4D
 Elfire,TypeFire,None,16,90,3,50,10,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._ElfireDesc,None,None,None,None,TraitWeapon | TraitTome,$4E
-Bolganone,TypeFire,None,19,85,5,15,0,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._BolganoneDesc,None,None,None,None,TraitWeapon | TraitTome,$4F
+Bolganone,TypeFire,None,19,85,5,18,0,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._BolganoneDesc,None,None,None,None,TraitWeapon | TraitTome,$4F
 Valflame,TypeFire,None,20,90,15,50,20,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._ValflameDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$50
-Thunder,TypeThunder,None,6,70,1,20,5,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._ThunderDesc,None,None,None,None,TraitWeapon | TraitTome,$51
+Thunder,TypeThunder,None,6,70,1,30,5,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._ThunderDesc,None,None,None,None,TraitWeapon | TraitTome,$51
 DireThunder,TypeThunder,None,15,80,5,60,10,1,2,WeaponLocks.aOlwenReinhardtWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,6200,<>item_descs._DireThunderDesc,None,None,None,Skill3Brave,TraitWeapon | TraitTome | TraitUnsellable,$52
-Thoron,TypeThunder,None,18,80,4,15,20,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._ThoronDesc,None,None,None,None,TraitWeapon | TraitTome,$53
-Mjolnir,TypeThunder,None,20,100,7,50,30,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._MjolnirDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$54
-Wind,TypeWind,None,5,80,0,20,10,1,2,RankD,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._WindDesc,None,None,None,None,TraitWeapon | TraitTome,$55
+Thoron,TypeThunder,None,18,80,4,21,20,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._ThoronDesc,None,None,None,None,TraitWeapon | TraitTome,$53
+Mjolnir,TypeThunder,None,20,100,7,50,30,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aMjolnirItemBonuses,0,<>item_descs._MjolnirDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$54
+Wind,TypeWind,None,5,80,0,23,10,1,2,RankD,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._WindDesc,None,None,None,None,TraitWeapon | TraitTome,$55
 Grafcalibur,TypeWind,None,13,100,2,40,40,1,2,WeaponLocks.aGrafcaliburWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,0,<>item_descs._GrafcaliburDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$56
 Tornado,TypeWind,None,17,90,3,15,0,1,2,RankC,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._TornadoDesc,None,None,None,None,TraitWeapon | TraitTome,$57
 Forseti,TypeWind,None,20,90,5,50,30,1,2,WeaponLocks.aForsetiWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aForsetiItemBonuses,0,<>item_descs._ForsetiDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$58
-Light,TypeLight,None,9,80,3,20,25,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._LightDesc,None,None,None,None,TraitWeapon | TraitTome,$59
+Light,TypeLight,None,9,80,3,24,25,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._LightDesc,None,None,None,None,TraitWeapon | TraitTome,$59
 Nosferatu,TypeLight,None,12,65,12,60,0,1,2,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,6200,<>item_descs._NosferatuDesc,None,$6,None,None,TraitWeapon | TraitTome,$5A
 Aura,TypeLight,None,20,100,12,80,0,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._AuraDesc,None,None,None,None,TraitWeapon | TraitTome,$5B
 Jormungand,TypeDark,None,14,70,5,20,10,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._JormungandDesc,None,$2,None,None,TraitWeapon | TraitTome,$5C

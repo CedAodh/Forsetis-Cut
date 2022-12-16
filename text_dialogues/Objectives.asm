@@ -1,193 +1,229 @@
 objectivech1
-	.text "Seize the manor's gate."
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech2
-	.text "Seize the manor's gate."
+	.text "Seize the gate (Protect the 3 remaining"
+.byte EndTextNoPortraitFade
+
+objectivech2_2
+	.text "villages and seize within 15 turns)"
 .byte EndTextNoPortraitFade
 
 
 objectivech2x
-	.text "Seize the pirate hideout's gate."
+	.text "Seize the gate."
 .byte EndTextNoPortraitFade
 
 
 objectivech3
-	.text "Seize Kerberos' throne."
+	.text "Seize the throne."
 .byte EndTextNoPortraitFade
 
 
 objectivech4
-	.text "Escape the dungeon."
+	.text "Have Leif escape"
+.byte EndTextNoPortraitFade
+
+objectivech4_2
+	.text "(Have all 6 civilians escape)"
 .byte EndTextNoPortraitFade
 
 
 objectivech4x
-	.text "Escape the dungeon."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech5
-	.text "Escape the castle."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech6
-	.text "Escape the city."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech7
-	.text "Escape into Castle Meath."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech8
-	.text "Seize the manor's gate."
+	.text "Seize the gate (Have Lemay captured"
+.byte EndTextNoPortraitFade
+
+objectivech8_2
+	.text "at the time of seizing)"
 .byte EndTextNoPortraitFade
 
 
 objectivech8x
-	.text "Seize the manor's throne."
+	.text "Seize the throne"
 .byte EndTextNoPortraitFade
 
 
 objectivech9
-	.text "Escape into the villa AND"
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 objectivech9_2
-	.text "prevent foes from reaching it."
+	.text "AND defend the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech10
-	.text "Seize Fort Nowell's gate."
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech11
-	.text "Seize Fort Dundrum's throne."
+	.text "Seize the throne (Trigger Kempf's trap;"
+.byte EndTextNoPortraitFade
+
+objectivech11_2
+	.text "keep Fred alive; seize within 30 turns)"
 .byte EndTextNoPortraitFade
 
 
 objectivech11x
-	.text "Seize Fort Dundrum's throne."
+	.text "Seize the throne"
 .byte EndTextNoPortraitFade
 
 
 objectivech12
-	.text "Seize the manor's gate."
+	.text "Seize the gate"
+.byte EndTextNoPortraitFade
+
+objectivech12_2
+	.text "(Seize within 20 turns)"
 .byte EndTextNoPortraitFade
 
 
 objectivech12x
-	.text "Seize the manor's throne."
+	.text "Seize the throne"
 .byte EndTextNoPortraitFade
 
 
 objectivech13
-	.text "Escape into Tahra AND"
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 objectivech13_2
-	.text "prevent foes from reaching the city."
+	.text "AND defend the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech14
-	.text "Defend Castle Tahra's gate for 10 turns."
+	.text "Defend the gate for 10 turns"
+.byte EndTextNoPortraitFade
+
+objectivech14_2
+	.text "(Visit 3 gated NPC houses)"
 .byte EndTextNoPortraitFade
 
 
 objectivech14x
-	.text "Escape the valley."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech15
-	.text "Leif arrives at either exit point OR"
+	.text "Have Leif arrive at either exit point"
 .byte EndTextNoPortraitFade
 
 objectivech15_2
-	.text "Leif arrives at the church."
+	.text "OR have Leif visit the church"
 .byte EndTextNoPortraitFade
 
 
 objectivech16A
-	.text "Seize Fort Nordrhein's gate."
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech17A
-	.text "Seize Castle Leonster's gate."
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech16B
-	.text "Escape the forest."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech17B
-	.text "Seize Castle Leonster's gate."
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech18
-	.text "Seize Castle Leonster's throne."
+	.text "Seize the throne"
 .byte EndTextNoPortraitFade
 
 
 objectivech19
-	.text "Escape into Castle Leonster."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech20
-	.text "Defend Leonster's throne for 15 turns"
+	.text "Defend the throne for 15 turns"
 .byte EndTextNoPortraitFade
 
 objectivech20_2
-	.text "AND defeat Bharat."
+	.text "AND defeat Bharat"
 .byte EndTextNoPortraitFade
 
 
 objectivech21
-	.text "Seize Fort Danzig's gate."
+	.text "Seize the gate (Have at least one allied"
+.byte EndTextNoPortraitFade
+
+objectivech21_2
+	.text "unit captured and removed from the party)"
 .byte EndTextNoPortraitFade
 
 
 objectivech21x
-	.text "Escape the prison camp."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech22
-	.text "Seize the fortress' gate."
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech23
-	.text "Seize Castle Munster's gate AND"
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 objectivech23_2
-	.text "prevent the Magi from being wiped out."
+	.text "AND keep the Magi alive"
 .byte EndTextNoPortraitFade
 
 
 objectivech24
-	.text "Seize Castle Munster's throne."
+	.text "Seize the throne (Have both Sara and"
+.byte EndTextNoPortraitFade
+
+objectivech24_2
+	.text "the Kia Staff in the party when seizing)"
 .byte EndTextNoPortraitFade
 
 
 objectivech24x
-	.text "Escape through the magic seal."
+	.text "Have Leif escape"
 .byte EndTextNoPortraitFade
 
 
 objectivech25
-	.text "Seize the temple's throne."
+	.text "Have 6 allied units simultaneously stand"
+.byte EndTextNoPortraitFade
+
+objectivech25_2
+	.text "on the 6 seals THEN seize the throne"
 .byte EndTextNoPortraitFade

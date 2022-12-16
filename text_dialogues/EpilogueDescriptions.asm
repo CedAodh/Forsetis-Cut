@@ -2826,3 +2826,20 @@ xavierepi
 .byte $0F
 .byte $40
 .byte EndText
+
+;asaelloepi
+;.byte $09
+;.word $1200
+;.byte $04
+;.text "Asaello joined Seliph's"
+;.byte NewLine
+;.text "Liberation Army 
+;.word PauseDialogue
+;.byte $5A
+;.byte $0F
+;.byte $40
+;.byte ScrollText
+;.byte $0F
+;.byte $10
+
+;08 1D 18 14 30 20 5B 70

@@ -86,3 +86,14 @@
 .byte $0A
 
 .here
+
+; Double staff weapon experience (Except for Prfs)
+
+; Removes the 25% crit cap from first attacks
+
+* := $01F429
+  .logical $83F429
+
+.byte $00, $00, $02, $00, $04, $00, $06, $00, $08, $00, $00, $00, $A9, $05
+
+.here

@@ -16523,5 +16523,3 @@ rlGetMapSpriteIndex ; 8C/D10D
 	plb
 	rtl
 
-
-

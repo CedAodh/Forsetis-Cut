@@ -13,15 +13,19 @@ eventChapter19Events ; FD/CBB9
 		END_DEFINITION
 		EVENT $00, _BrigandReinforcements
 			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 1, 10
+			CMP_WORD_RANGE wCurrentTurn, 1, 2
+		END_DEFINITION
+		EVENT $00, _IshtarArrival
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
 			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 2, 25
+			CMP_WORD_RANGE wCurrentTurn, 6, 25
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
 			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 5, 25
+			CMP_WORD_RANGE wCurrentTurn, 8, 25
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -209,6 +213,45 @@ eventChapter19Events ; FD/CBB9
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
+	END2
+	
+	_IshtarArrival
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_ADDRESS eventChapter19Data._IshtarCameraCoordinates
+		YIELD
+
+		LOAD1 eventChapter19Data._IshtarGroup
+		WAIT_MOVE
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Wolfe
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+
+		STORE_WORD wEventEngineCharacterTarget, Wolfe
+		CALL_ASM_LOOP rlASMCIsUnitRescued, $0000
+		JUMP_TRUE +
+
+		SET_MUSIC $39
+		YIELD
+
+		DIALOGUE ch19ending3
+		YIELD
+		
+		JUMP ++
+
+		+
+		
+		SET_MUSIC $39
+		YIELD
+
+		DIALOGUE ch19ishtararrival
+		YIELD
+		
+		+
 	END2
 
 	_MirandaConomorTalk ; FD/CE61

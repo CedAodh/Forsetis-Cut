@@ -24,8 +24,6 @@
 .include "Chapter2xDialogue.asm"
 .include "Chapter3Dialogue.asm"
 .include "Chapter4Dialogue.asm"
-.include "RetreatQuotes.asm"
-;.include "ReleaseQuotes.asm"
 .here
 * = $418030
 .logical lorom($418030, 1)
@@ -82,7 +80,6 @@
 * = $460020
 .logical lorom($460020, 1)
 .include "Chapter23Dialogue.asm"
-.include "Chapter24Dialogue.asm"
 .here
 * = $468030
 .logical lorom($468030, 1)
@@ -98,10 +95,17 @@
 .include "Ranking.asm"
 .here
 
-* = $4A0C80
-.logical lorom($4A0C80, 1)
+* = $4A8000
+.logical lorom($4A8000, 1)
 .include "Chapter9Dialogue.asm"
+.include "Chapter24Dialogue.asm"
+.here
+
+* = $4B0000
+.logical lorom($4B0000, 1)
+.include "RetreatQuotes.asm"
 .include "ReleaseQuotes.asm"
+.include "Chapter19FCDialogue.asm"
 .here
 
 ; Actual font setup

@@ -2,11 +2,11 @@ structAnimationRangedWeaponUnknown 0,Item,Unknown1,Unknown2
 RangedWeaponUnknown00,$FF,$04,$04
 RangedWeaponUnknown01,$FF,$04,$04
 RangedWeaponUnknown02,$FF,$04,$04
-RangedWeaponUnknown03,FlameSword,$04,$04
-RangedWeaponUnknown04,EarthSword,$04,$04
-RangedWeaponUnknown05,LightningSword,$04,$04
-RangedWeaponUnknown06,WindSword,$04,$04
-RangedWeaponUnknown07,LightBrand,$04,$04
+RangedWeaponUnknown03,$FF,$04,$04
+RangedWeaponUnknown04,$FF,$04,$04
+RangedWeaponUnknown05,$FF,$04,$04
+RangedWeaponUnknown06,$FF,$04,$04
+RangedWeaponUnknown07,$FF,$04,$04
 RangedWeaponUnknown08,Ballista,$00,$00
 RangedWeaponUnknown09,IronBallista,$00,$00
 RangedWeaponUnknown0A,KillerBallista,$00,$00

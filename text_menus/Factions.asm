@@ -47,8 +47,8 @@ leader_sets				.block
 .word $005D
 .word <>leader_text._ThraciaLeader
 
-.word $0072
-.word <>leader_text._ThraciaLeader
+.word $0005
+.word <>leader_text._FianaFreeblades
 
 .word $008B
 .word <>leader_text._ThraciaLeader
@@ -104,8 +104,8 @@ leader_sets				.block
 .word $0084
 .word <>leader_text._Friege16thLeader
 
-.word $00A3
-.word <>leader_text._Friege17thLeader
+.word $0002
+.word <>leader_text._LeifsRetinue
 
 .word $006C
 .word <>leader_text._Friege20thLeader
@@ -348,5 +348,12 @@ _MercenaryLeader
 	.text "Sells]words "
 .word $0000
 
+_FianaFreeblades
+	.text "Fiana Freeblades"
+.word $0000
+
+_LeifsRetinue
+	.text "Leif's Entourage"
+.word $0000
 .bend
 .here

@@ -689,7 +689,7 @@ _WeissmannName
 	.word $0000
 
 _MunsterName
-	.text "(Munster"
+	.text "(Munster Ar[my"
 	.word $0000
 
 _BucksName

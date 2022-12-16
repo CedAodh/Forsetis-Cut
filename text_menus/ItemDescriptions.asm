@@ -537,7 +537,7 @@ _BerserkEdgeDesc
 
 
 _SleepDesc
-.text "    Range   {INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Puts a target ]with "
 .word $0000
@@ -550,7 +550,7 @@ _SleepDesc
 .word $0000
 
 _BerserkDesc
-.text "    Range   {INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Berserks a target "
 .word $0000
@@ -563,7 +563,7 @@ _BerserkDesc
 .word $0000
 
 _SilenceDesc
-.text "    Range   {INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Silences a target "
 .word $0000
@@ -609,7 +609,7 @@ _RecoverDesc
 .word $0000
 
 _PhysicDesc
-.text "    Range   {INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Restore {1}{0}  {H}{P}"
 .word $0000
@@ -620,7 +620,7 @@ _PhysicDesc
 .word $0000
 
 _FortifyDesc
-.text "    Range   {INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Restore {1}{0}  {H}{P}"
 .word $0000
@@ -643,7 +643,7 @@ _RestoreDesc
 
 
 _RescueDesc
-.text "    Range   {INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Transports an ally"
 .word $0000
@@ -667,7 +667,7 @@ _WarpDesc
 .word $0000
 
 _RewarpDesc
-.text "    Range   {INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Transports the user "
 .word $0000
@@ -849,9 +849,9 @@ _LoptrianFangDesc
 
 
 _BraveLanceDesc
-.text "{Lock}Knights of"
+.text "{Lock}Lanzenritter"
 .word $0000
-.text "Leonster"
+.text "A gift fro[m an "
 .word $0000
 .text "{BRA1}{BRA2}"
 .word $0000

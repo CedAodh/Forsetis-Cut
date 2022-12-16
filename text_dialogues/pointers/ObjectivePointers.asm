@@ -45,23 +45,23 @@
 
 .long $000000	;ch1
 .long $000000	;ch2
-.long $000000	;ch2x
+.long objectivech2_2	;ch2x
 .long $000000	;ch3
-.long $000000	;ch4
+.long objectivech4_2	;ch4
 .long $000000	;ch4x
 .long $000000	;ch5
 .long $000000	;ch6
 .long $000000	;ch7
-.long $000000	;ch8
+.long objectivech8_2	;ch8
 .long $000000	;ch8x
 .long objectivech9_2	; ch9
 .long $000000	;ch10
-.long $000000	;ch11
+.long objectivech11_2	;ch11
 .long $000000	;ch11x
-.long $000000	;ch12
+.long objectivech12_2	;ch12
 .long $000000	;ch12x
 .long objectivech13_2	; ch13
-.long $000000	;ch14
+.long objectivech14_2	;ch14
 .long $000000	;ch14x
 .long objectivech15_2	; ch15
 .long $000000	;ch16A
@@ -71,12 +71,12 @@
 .long $000000	;ch18
 .long $000000	;ch19
 .long objectivech20_2	; ch20
-.long $000000 	; ch21
+.long objectivech21_2	; ch21
 .long $000000 	; ch21x
 .long $000000 	; ch22
 .long objectivech23_2	; ch23
-.long $000000 	; ch24
+.long objectivech24_2	; ch24
 .long $000000 	; ch24x
-.long $000000 	; endgame
+.long objectivech25_2; endgame
 
 .here

@@ -417,5 +417,3 @@ eventChapter1Events ; FD/8000
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1
 
-
-

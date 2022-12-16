@@ -10,14 +10,14 @@ eventChapter17AData ; B1/A909
 		UNIT FriegeBallista1, Enemy, [25, 7], [25, 7], Nicolov, [Ballista], 10, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [29, 6], [29, 6], Nicolov, [KillerAxe, Vulnerary], 15, False, [$00, $03, $00, $00]
 		UNIT Nicolov, Enemy, [28, 1], [28, 1], Nicolov, [MasterAxe, KillerAxe, Vulnerary], 20, True, [$01, $03, $00, $80]
-		UNIT SilessePegasusRider3, NPC, [1, 2], [1, 2], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider3, NPC, [2, 3], [2, 3], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider3, NPC, [3, 4], [3, 4], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider3, NPC, [4, 5], [4, 5], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider3, NPC, [5, 4], [5, 4], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider3, NPC, [6, 3], [6, 3], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider3, NPC, [7, 2], [7, 2], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
-		UNIT Misha, NPC, [4, 3], [28, 2], Misha, [Ridersbane, WindSword, Vulnerary], 4, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider3, Enemy, [1, 2], [1, 2], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider3, Enemy, [2, 3], [2, 3], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider3, Enemy, [3, 4], [3, 4], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider3, Enemy, [4, 5], [4, 5], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider3, Enemy, [5, 4], [5, 4], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider3, Enemy, [6, 3], [6, 3], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider3, Enemy, [7, 2], [7, 2], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
+		UNIT Misha, Enemy, [4, 3], [28, 2], Misha, [Ridersbane, WindSword, Vulnerary], 4, False, [$00, $0C, $00, $40]
 		UNIT FriegeBishop2, Enemy, [30, 2], [30, 2], Nicolov, [Physic, Elfire, Meteor], 6, False, [$01, $03, $00, $00]
 		UNIT FriegeBishop2, Enemy, [26, 2], [26, 2], Nicolov, [Physic, Thoron, Bolting], 6, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredSword1, Enemy, [26, 17], [26, 17], Nicolov, [Longsword, Vulnerary], 16, False, [$00, $03, $00, $00]
@@ -79,7 +79,7 @@ eventChapter17AData ; B1/A909
 		.byte 8, 8
 
 	_PirateReinforcementsGroup ; B1/AD8B
-		UNIT PirateEnemy, NPC, [1, 0], [1, 1], Seil, [IronAxe], 4, False, [$02, $09, $00, $00]
+		UNIT PirateEnemy, Enemy, [1, 0], [1, 1], Seil, [IronAxe], 4, False, [$02, $09, $00, $00]
 	UNIT
 
 	_SorcererReinforcementsCameraCoordinates ; B1/ADA1

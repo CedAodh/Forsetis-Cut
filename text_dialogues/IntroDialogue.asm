@@ -2,48 +2,44 @@ cinch1
 
 .byte Right_slot
 .word LoadPortrait
-.word dagdar_portrait
+.word daisy_portrait
+.text "Asaellooo!"
+.byte NewLine
+.text "I'm gonna be going now!"
+.word PauseDialogue
+.byte $5A
 
 .byte Left_slot
 .word LoadPortrait
-.word tanya_portrait
-.text "Papa, the fighting's started already!"
+.word asaello_portrait
+.text "Daisy, you sure I can't talk you out of this?"
+.byte NewLine
+.text "It's practically a suicide mission..."
 .word PauseDialogue
 .byte $5A
 
 .byte Right_slot
-.text "Ain't no good way to go about this"
-.byte NewLine
-.text "damned battle..."
-.word PauseDialogue
-.byte $5A
 .byte ScrollText
-.text "Don't matter how good Eyvel is, there's only"
+.text "Relax!"
 .byte NewLine
-.text "one of her an' over a dozen of them."
+.text "We both know this has to get done!"
 .byte NewLine
-.text "We need to hurry."
+.text "I'll be back before you know it!"
 .word PauseDialogue
 .byte $5A
 
+.byte Left_Slot
 .byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte Left_slot
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.word PauseDialogue
-.byte $3C
 
 .byte Right_slot
-.word LoadPortrait
-.word marty_portrait
-.text "Oh, fer cryin' out loud!"
-.byte NewLine
-.text "Not again..."
+.byte ScrollText
+.word ClearPortrait
+.word PauseDialogue
+.byte $5A
+
+.byte Left_Slot
+.byte ScrollText
+.text "......"
 .word PauseDialogue
 .byte $5A
 
@@ -123,7 +119,7 @@ cinraydrik
 cinorsin
 .word $1400
 .byte $00
-.text "You're on, Halvan!"
+.text "Whenever you're ready, Leif!"
 .word PauseDialogue
 .byte $5A
 
@@ -132,11 +128,11 @@ cinorsin
 
 cinhalvan
 
-.text "Not bad!"
+.text "I'm having a hard time keeping up,"
 .byte NewLine
-.text "But you've got a long way to go"
+.text "Mareeta..."
 .byte NewLine
-.text "before you can beat me!"
+.text "You're very nimble!"
 .word PauseDialogue
 .byte $5A
 

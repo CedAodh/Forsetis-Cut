@@ -9,24 +9,29 @@ eventChapter17AEvents ; FD/BAAF
 
 	_TurnEventDefinitions ; FD/BABC
 		EVENT $00, _SaiasSpawn
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 10
 		END_DEFINITION
 		EVENT $00, _MullerSpawn
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 12
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 11, 20
 		END_DEFINITION
 		EVENT $00, _PirateReinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 3, 8
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 3, 4
 		END_DEFINITION
 		EVENT $00, _SaiasLeave
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 15
+		END_DEFINITION
+		EVENT $0B, _MishaSleep
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 11, 15
+			TEST_FLAG_SET $0A
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -716,6 +721,51 @@ eventChapter17AEvents ; FD/BAAF
 		YIELD_UNK
 		YIELD_UNK
 	END1
+	
+	_MishaSleep
+
+		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $39
+		YIELD
+
+		SCROLL_CAMERA_CHAR Saias
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE mishasleep
+		YIELD
+		
+		macroCountAllUncapturedAliveUnits Saias
+		JUMP_FALSE +
+
+		macroCountAllUncapturedAliveUnits Misha
+		JUMP_FALSE +
+
+		STORE_WORD wEventEngineParameter1, Sleep
+		STORE_WORD wEventEngineParameter2, $0000
+		STORE_WORD wEventEngineCharacterStructParameter, Saias
+		STORE_WORD wEventEngineCharacterTarget, Misha
+		CALL_ASM_SKIPPABLE $9A8D4A, $0000
+
+		STORE_LONG lUnknown7EA4EC, rlEventSleepCastingEffect
+		CALL_ASM_SKIPPABLE $84B719, $0000
+
+		HALT_UNTIL_WORD_SKIPPABLE $7FAA14, $0000
+
+		CALL_ASM_SKIPPABLE rlUpdateUnitMaps, $0000
+		CALL_ASM_SKIPPABLE rlUpdateVisibilityMap, $0000
+
+		PAUSE_SKIPPABLE 2
+		YIELD
+		
+		macroDismountUnit Misha
+
+		+
+	END2
 
 	_PrepGroups ; FD/C2FE
 		.long eventChapter17AData._PrepGroup
@@ -907,7 +957,41 @@ eventChapter17AEvents ; FD/BAAF
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1
 
+	rlEventSleepCastingEffect ; 8CBD8E
 
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		phb
+		php
+
+		sep #$20
+		lda #`aActionStructUnit2
+		pha
+		rep #$20
+		plb
+
+		.databank `aActionStructUnit2
+
+		sep #$20
+		lda #StatusSleep
+		sta @l aActionStructUnit2.Status
+		rep #$20
+
+		lda #<>aActionStructUnit2
+		sta wR1
+
+		jsl $848E5A
+
+		lda #<>aActionStructUnit2
+		sta wR1
+		jsl $839041
+
+		plp
+		plb
+		rtl
 
 
 

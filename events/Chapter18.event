@@ -331,8 +331,10 @@ eventChapter18Events ; E7/8000
 		YIELD
 
 		STORE_BYTE aSelectedCharacterBuffer.LeadershipStars, 1
-
+		STORE_BYTE aSelectedCharacterBuffer.Leader, Leif
 		CALL_ASM_SKIPPABLE $83A3BF, $0000
+		
+		SET_FLAG $06	
 	END2
 
 	_LeifXavierTalk ; E7/8415

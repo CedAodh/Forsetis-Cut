@@ -999,7 +999,7 @@ ch24wm1
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0178 ;raydrik
-.word $020E ;y then x
+.word $010D ;y then x
 .text "Better known today as “the Fiend's Lair,”"
 .byte NewLine
 .text "the castle towered above the city,"

@@ -13,7 +13,7 @@ FadenBattleBanner,Faden,$03
 RaydrikChp24BattleBanner,RaydrikChp24,$03
 HannibalBattleBanner,Hannibal,$05
 MerlochBattleBanner,Merloch,$05
-ArionBattleBanner,Arion,$05
+ArionBattleBanner,Eyvel,$08
 SeimetzBattleBanner,Seimetz,$05
 CoulterBattleBanner,Coulter,$05
 DvorakBattleBanner,Dvorak,$05
@@ -32,7 +32,7 @@ KempfBattleBanner,Kempf,$06
 OltophBattleBanner,Oltoph,$06
 IliosBattleBanner,Ilios,$06
 PalmanBattleBanner,Palman,$06
-RilkeKempfPortraitBattleBanner,RilkeKempfPortrait,$06
+RilkeKempfPortraitBattleBanner,Leif,$00
 LisztBattleBanner,Liszt,$06
 LargoBattleBanner,Largo,$06
 CohenBattleBanner,Cohen,$06

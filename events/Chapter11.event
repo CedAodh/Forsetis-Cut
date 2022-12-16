@@ -472,6 +472,19 @@ eventChapter11Events ; 99/CB04
 
 		macroSingleTileChangeByCoordinates [9, 0], $0389
 		macroSingleTileChangeByCoordinates [9, 1], $03A9
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $32
+		YIELD
+
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE ch11opening4
+		YIELD
 	END2
 
 	_OlwenPickupMovestring ; 99/D43B

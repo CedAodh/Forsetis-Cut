@@ -156,4 +156,5 @@
 	.logical lorom($500000, 1)
 	.include "Chapter4.event"
 	.include "Chapter14.event"
+	.include "ChapterFinalWorldMap.event"
 .here

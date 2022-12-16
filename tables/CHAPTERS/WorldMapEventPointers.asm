@@ -34,5 +34,5 @@ aWorldMapEventPointers ; 8C/D99B
 	.long eventChapter23WorldMapEvents
 	.long eventChapter24WorldMapEvents
 	.long None ; Chapter24x
-	.long None ; ChapterFinal
+	.long eventChapter25WorldMapEvents; ChapterFinal
 	.long None ; ChapterUnknown

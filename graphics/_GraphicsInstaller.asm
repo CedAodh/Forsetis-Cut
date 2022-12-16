@@ -492,6 +492,13 @@ nintendo_logo
 
 .here
 
+* = $274081
+.logical lorom($274081, 1)
+
+.binary "female_sniper_dynamicFC2.4bpp.fe4"
+
+.here
+
 
 
 
