@@ -1,5 +1,6 @@
 *.sfc
 *.pyc
+*.bak
 
 TO_DO.txt
 fe5trans.ups
