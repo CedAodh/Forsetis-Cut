@@ -1026,12 +1026,12 @@ ch8leifhalvan
 .byte ScrollText 
 .text "I apologize."
 .byte NewLine
-.text "That was not my intention.”
+.text "That was not my intention."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "No, it's…perfectly fine."
+.text "No, it's...perfectly fine."
 .byte NewLine
 .text "I guess I'm just not used to it yet."
 .byte WaitForA
@@ -1045,16 +1045,16 @@ ch8leifhalvan
 
 .byte right_slot
 .byte ScrollText
-.text "I wouldn't say “changed.”"
+.text "I wouldn't say 'changed.'"
 .byte NewLine
-.text "It's more like…"
+.text "It's more like..."
 .byte NewLine
 .text "you've taken up a new role."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "A new role…"
+.text "A new role..."
 .byte WaitForA
 
 .byte right_slot
@@ -1063,17 +1063,17 @@ ch8leifhalvan
 .byte NewLine
 .text "everything you've been doing lately"
 .byte NewLine
-.text "is behavior I associate with…Eyvel."
+.text "is behavior I associate with...Eyvel."
 .byte WaitForA
 .byte ScrollText
-.text "…You miss her, Halvan. A lot."
+.text "...You miss her, Halvan. A lot."
 .byte NewLine
-.text "I know I definitely do…"
+.text "I know I definitely do..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "It's…"
+.text "It's..."
 .byte NewLine
 .text "It's taken some getting used to."
 .byte WaitForA
@@ -1087,19 +1087,19 @@ ch8leifhalvan
 
 .byte right_slot
 .byte ScrollText
-.text "You and your sister…"
+.text "You and your sister..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Right."
 .byte NewLine
-.text "I…I didn't just lose a comrade in all this."
+.text "I...I didn't just lose a comrade in all this."
 .byte NewLine
 .text "I lost family."
 .byte WaitForA
 .byte ScrollText
-.text "So…I'm in this as much as you are."
+.text "So...I'm in this as much as you are."
 .byte NewLine
 .text "I just wanted to make sure"
 .byte NewLine
@@ -1110,7 +1110,7 @@ ch8leifhalvan
 .byte ScrollText
 .text "I never doubt your commitment, Halvan."
 .byte NewLine
-.text "Though…it does feel nice to"
+.text "Though...it does feel nice to"
 .byte NewLine
 .text "hear you speak on it."
 .byte WaitForA
