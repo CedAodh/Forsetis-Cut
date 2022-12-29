@@ -72,6 +72,9 @@ eventChapter20Events ; FD/D942
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/DA3E
+		EVENT $07, _ConomorXavierTalk
+			CHECK_CHARS2 Conomor, Xavier
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/DA40
@@ -700,6 +703,14 @@ eventChapter20Events ; FD/D942
 		YIELD
 
 		YIELD_UNK
+	END2
+	
+	_ConomorXavierTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
 	END2
 
 	_BharatCharge ; FD/E13C

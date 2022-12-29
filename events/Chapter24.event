@@ -41,6 +41,14 @@ eventChapter24Events ; B9/B000
 		EVENT $0A, _MareetaGalzusTalk
 			CHECK_CHARS2 Mareeta, Galzus
 		END_DEFINITION
+		EVENT $0E, _SaiasGalzusTalk
+			CHECK_CHARS2 Saias, Galzus
+			TEST_FLAG_SET $0A
+		END_DEFINITION
+		EVENT $0F, _LeifGalzusTalk
+			CHECK_CHARS2 Leif, Galzus
+			TEST_FLAG_SET $0A
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; B9/B088
@@ -530,6 +538,22 @@ eventChapter24Events ; B9/B000
 		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 
 		SET_FLAG $06
+	END2
+	
+	_SaiasGalzusTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_LeifGalzusTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
 	END2
 	
 	_LeifVsRaydrik

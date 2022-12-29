@@ -49,6 +49,12 @@ eventChapter8Events ; 99/BE7D
 		EVENT $08, _HalvanMartyTalk
 			CHECK_CHARS2 Halvan, Marty
 		END_DEFINITION
+		EVENT $09, _LeifOsianTalk
+			CHECK_CHARS2 Osian, Leif
+		END_DEFINITION
+		EVENT $0B, _LeifHalvanTalk
+			CHECK_CHARS2 Halvan, Leif
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/BF23
@@ -182,7 +188,15 @@ eventChapter8Events ; 99/BE7D
 
 		SET_FLAG $0A
 	END2
-
+	
+	_LeifOsianTalk
+		macroDialogueHouse placeholder
+	END2
+	
+	_LeifHalvanTalk
+		macroDialogueHouse placeholder
+	END2
+	
 	_MartyCaptured ; 99/C0F0
 		PLAY_SOUND_WORD $00F7
 

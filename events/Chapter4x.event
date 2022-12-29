@@ -58,8 +58,14 @@ eventChapter4xEvents ; FD/85C5
 		EVENT $0A, _FergusKarinTalk
 			CHECK_CHARS2 Fergus, Karin
 		END_DEFINITION
-		EVENT $0A, _FergusKarinTalk
-			CHECK_CHARS2 Karin, Fergus
+		EVENT $0B, _LaraAsbelTalk
+			CHECK_CHARS2 Lara, Asbel
+		END_DEFINITION
+		EVENT $0C, _DaisyCedTalk
+			CHECK_CHARS2 Daisy, CedChp4x
+		END_DEFINITION
+		EVENT $0D, _MachaCedTalk
+			CHECK_CHARS2 Macha, CedChp4x
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -377,6 +383,18 @@ eventChapter4xEvents ; FD/85C5
 	
 	_FergusKarinTalk
 		macroDialogueHouse ferguskarin1
+	END2
+	
+	_LaraAsbelTalk
+		macroDialogueHouse placeholder
+	END2
+	
+	_DaisyCedTalk
+		macroDialogueHouse placeholder
+	END2
+	
+	_MachaCedTalk
+		macroDialogueHouse placeholder
 	END2
 
 	_OpeningEvent ; FD/8E69

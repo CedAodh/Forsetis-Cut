@@ -101,11 +101,34 @@
 .include "Chapter24Dialogue.asm"
 .here
 
-* = $4B0000
-.logical lorom($4B0000, 1)
+* = $560000
+.logical lorom($560000, 1)
+.include "Chapter1FCDialogue.asm"
+.include "Chapter2FCDialogue.asm"
+.include "Chapter3FCDialogue.asm"
+.include "Chapter4FCDialogue.asm"
+.include "Chapter4xFCDialogue.asm"
+.include "Chapter7FCDialogue.asm"
+.include "Chapter8FCDialogue.asm"
+.include "Chapter9FCDialogue.asm"
+.include "Chapter11FCDialogue.asm"
+.include "Chapter11xFCDialogue.asm"
+.include "Chapter12FCDialogue.asm"
+.include "Chapter14FCDialogue.asm"
+.include "Chapter15FCDialogue.asm"
+.include "Chapter16AFCDialogue.asm"
+.include "Chapter17AFCDialogue.asm"
+.include "Chapter16BFCDialogue.asm"
+.include "Chapter17BFCDialogue.asm"
+.include "Chapter18FCDialogue.asm"
+.include "Chapter19FCDialogue.asm"
+.include "Chapter23FCDialogue.asm"
+.include "Chapter24FCDialogue.asm"
+.include "Chapter25FCDialogue.asm"
 .include "RetreatQuotes.asm"
 .include "ReleaseQuotes.asm"
-.include "Chapter19FCDialogue.asm"
+.include "FCEpilogueDescriptions.asm"
+.include "FCEpilogueTitles.asm"
 .here
 
 ; Actual font setup

@@ -36,6 +36,14 @@ eventChapter19Events ; FD/CBB9
 		EVENT $0D, _SchroffAmaldaTalk
 			CHECK_CHARS2 Schroff, Amalda
 		END_DEFINITION
+		EVENT $12, _LeifAmaldaTalk
+			CHECK_CHARS2 Amalda, Leif
+			TEST_FLAG_SET $0D
+		END_DEFINITION
+		EVENT $13, _LeifConomorTalk
+			CHECK_CHARS2 Conomor, Leif
+			TEST_FLAG_SET $0C
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/CC1E
@@ -238,7 +246,7 @@ eventChapter19Events ; FD/CBB9
 		SET_MUSIC $39
 		YIELD
 
-		DIALOGUE ch19ending3
+		DIALOGUE ch19ishtararrival
 		YIELD
 		
 		JUMP ++
@@ -466,6 +474,22 @@ eventChapter19Events ; FD/CBB9
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+	END2
+	
+	_LeifAmaldaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_LeifConomorTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
 	END2
 
 	_PureWaterNorthHouseVisit ; FD/D1F3

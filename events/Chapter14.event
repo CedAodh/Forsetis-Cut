@@ -50,6 +50,9 @@ eventChapter14Events ; FD/9790
 		EVENT $0A, _DeanEdaTalk
 			CHECK_CHARS2 Eda, Dean
 		END_DEFINITION
+		EVENT $0B, _GunnarSafyTalk
+			CHECK_CHARS2 GunterDialogue, Safy
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/982C
@@ -683,6 +686,10 @@ eventChapter14Events ; FD/9790
 	
 	_DeanEdaTalk
 		macroDialogueHouse deaneda
+	END2
+	
+	_GunnarSafyTalk
+		macroDialogueHouse placeholder
 	END2
 
 	_WyvernReinforcements ; FD/9F3B

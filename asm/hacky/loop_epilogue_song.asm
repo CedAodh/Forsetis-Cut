@@ -3,4 +3,8 @@
 ;	Otherwise it doesn't last until the end of the max number of Epilogues.
 
 * = $2E6780
-.byte $04
+.logical lorom($2E6780, 1)
+
+.byte	$03
+
+.here

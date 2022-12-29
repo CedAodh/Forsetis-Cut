@@ -83,6 +83,16 @@ eventChapter12xEvents ; FD/8F98
 		EVENT $08, _SafyTinaTalk
 			CHECK_CHARS2 Safy, Tina
 		END_DEFINITION
+		EVENT $08, _SalemTinaTalk
+			CHECK_CHARS2 Salem, Tina
+		END_DEFINITION
+		EVENT $0C, _SalemTrudeTalk
+			CHECK_CHARS2 Salem, Trude
+		END_DEFINITION
+		EVENT $0F, _LeifTinaTalk
+			CHECK_CHARS2 Leif, Tina
+			TEST_FLAG_SET $08
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/90B1
@@ -365,7 +375,49 @@ eventChapter12xEvents ; FD/8F98
 
 		+
 	END2
+	
+	_SalemTinaTalk ; FD/9563
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
 
+		SET_MUSIC $4C
+		YIELD
+
+		DIALOGUE placeholder
+		YIELD
+
+		macroCountEnemyUncapturedAliveUnits Tina
+		JUMP_FALSE +
+
+		macroConvertToPlayerAllegiance Tina
+		macroSetCharacterWord Tina, structCharacterDataRAM.Leader, Leif
+
+		SET_FLAG $09
+
+		+
+	END2
+	
+	_SalemTrudeTalk
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE placeholder
+		YIELD
+
+		macroConvertToNPCAllegiance Trude
+
+		SET_FLAG $0A
+	END2
+
+	_LeifTinaTalk
+		macroDialogueHouse placeholder
+	END2
+	
 	_PrepGroups ; FD/95A8
 		.long eventChapter12xData._PrepEnemies
 	.word $0000

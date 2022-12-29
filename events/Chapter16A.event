@@ -72,6 +72,17 @@ eventChapter16AEvents ; FD/B120
 			CHECK_CHARS2 Karin, Ilios
 			RUN_ASM rlCheckOlwenDeadOrUnrecruited
 		END_DEFINITION
+		EVENT $13, _LeifIliosTalk
+			CHECK_CHARS2 Ilios, Leif
+			TEST_FLAG_SET $0A
+		END_DEFINITION
+		EVENT $14, _FredIliosTalk
+			CHECK_CHARS2 Ilios, Fred
+			TEST_FLAG_SET $0A
+		END_DEFINITION
+		EVENT $11, _DeanLinoanTalk
+			CHECK_CHARS2 Dean, Linoan
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/B208
@@ -280,6 +291,30 @@ eventChapter16AEvents ; FD/B120
 		YIELD
 
 		DIALOGUE ch16Akempfolwen
+		YIELD
+	END2
+	
+	_LeifIliosTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_FredIliosTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_DeanLinoanTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
 		YIELD
 	END2
 

@@ -5,14 +5,14 @@
 
 * = $066435
 .logical $8CE435 
-	.include "Chapter3.event"
+	; .include "Chapter3.event"
 	.include "Chapter22.event"
 .here
 
 * = $0B805A
 .logical $97805A
-	.include "Chapter2x.event"
-	.include "Chapter8x.event"
+	; .include "Chapter2x.event"
+	; .include "Chapter8x.event"
 	.include "Chapter24x.event"
 .here
 
@@ -23,16 +23,16 @@
 
 * = $0C81B4
 .logical $9981B4
-	.include "Chapter5.event"
-	.include "Chapter6.event"
-	.include "Chapter7.event"
-	.include "Chapter8.event"
-	.include "Chapter10.event"
-	.include "Chapter11.event"
-	.include "Chapter11x.event"
+	; .include "Chapter5.event"
+	; .include "Chapter6.event"
+	; .include "Chapter7.event"
+	; .include "Chapter8.event"
+	; .include "Chapter10.event"
+	; .include "Chapter11.event"
+	; .include "Chapter11x.event"
 	.include "Chapter12.event"
 	.include "Chapter13.event"
-	.include "Chapter16B.event"
+	; .include "Chapter16B.event"
 	.include "Chapter24Data.event"
 	.include "Chapter24xData.event"
 	.include "ChapterFinalData.event"
@@ -90,7 +90,7 @@
 	.include "Chapter1Data.event"
 .here
 	
-* = $1CB000
+ * = $1CB000
 .logical $B9B000	
 	.include "Chapter24.event"
 	.include "ChapterFinal.event"
@@ -143,13 +143,43 @@
 	.include "Chapter20.event"
 	.include "Chapter21.event"
 	.include "Chapter21x.event"
-	.include "Chapter23.event"
+	; .include "Chapter23.event"
 .here	
 
-* = $4A0040
-.logical lorom($4A0040, 1)
+* = $510000
+.logical lorom($510000, 1)
+;	.include "Chapter1.event"
 	.include "Chapter2.event"
+	.include "Chapter2x.event"
+	.include "Chapter3.event"
+;	.include "Chapter4x.event"
+	.include "Chapter5.event"
+	.include "Chapter6.event"
+	.include "Chapter7.event"
+	.include "Chapter8.event"
+	.include "Chapter8x.event"
 	.include "Chapter9.event"
+	.include "Chapter10.event"
+	.include "Chapter11.event"
+	.include "Chapter11x.event"
+;	.include "Chapter12.event"
+;	.include "Chapter12x.event"
+;	.include "Chapter13.event"
+;	.include "Chapter14x.event"
+;	.include "Chapter15.event"
+;	.include "Chapter16A.event"
+;	.include "Chapter17A.event"
+	.include "Chapter16B.event"
+;	.include "Chapter17B.event"
+;	.include "Chapter18.event"
+;	.include "Chapter19.event"
+;	.include "Chapter20.event"
+;	.include "Chapter21.event"
+;	.include "Chapter21x.event"
+;	.include "Chapter22.event"
+	.include "Chapter23.event"
+;	.include "Chapter24.event"
+;	.include "Chapter24x.event"
 .here
 
 * = $500000

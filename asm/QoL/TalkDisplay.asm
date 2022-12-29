@@ -464,13 +464,13 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           .long aChapter8TalkTargetTable
           .long aChapter8xTalkTargetTable
           .long aChapter9TalkTargetTable
-          .long None
+          .long aChapter10TalkTargetTable
           .long None
           .long aChapter11xTalkTargetTable
-          .long None
+          .long aChapter12TalkTargetTable
           .long aChapter12xTalkTargetTable
           .long aChapter13TalkTargetTable
-          .long None
+          .long aChapter14TalkTargetTable
           .long None
           .long aChapter15TalkTargetTable
           .long aChapter16ATalkTargetTable
@@ -479,8 +479,8 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           .long aChapter17BTalkTargetTable
           .long aChapter18TalkTargetTable
           .long aChapter19TalkTargetTable
-          .long None
-          .long None
+          .long aChapter20TalkTargetTable
+          .long aChapter21TalkTargetTable
           .long None
           .long aChapter22TalkTargetTable
           .long aChapter23TalkTargetTable
@@ -497,6 +497,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
         aChapter1TalkTargetTable
           ZQOL_TALK_ENTRY Eyvel, [Dagdar]
           ZQOL_TALK_ENTRY Osian, [Tanya]
+		  ZQOL_TALK_ENTRY Dagdar, [Leif]
         ZQOL_END_TALK_CHAPTER
 
         aChapter2TalkTargetTable
@@ -516,41 +517,64 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Leif, [Dalsin]
           ZQOL_TALK_ENTRY Lifis, [Dalsin]
 		  ZQOL_TALK_ENTRY Brighton, [Macha]
+		  ZQOL_TALK_ENTRY Leif, [Brighton]
+		  ZQOL_TALK_ENTRY Leif, [Lifis]
+		  ZQOL_TALK_ENTRY Daisy, [Leif]
         ZQOL_END_TALK_CHAPTER
 
         aChapter4xTalkTargetTable
           ZQOL_TALK_ENTRY Asbel, [Leif]
           ZQOL_TALK_ENTRY Leif, [Asbel]
           ZQOL_TALK_ENTRY Karin, [CedChp4x]
+		  ZQOL_TALK_ENTRY Fergus, [Karin]
+		  ZQOL_TALK_ENTRY Lara, [Asbel]
+		  ZQOL_TALK_ENTRY Daisy, [CedChp4x]
+		  ZQOL_TALK_ENTRY Macha, [CedChp4x]
         ZQOL_END_TALK_CHAPTER
 
         aChapter7TalkTargetTable
           ZQOL_TALK_ENTRY Safy, [Shiva]
           ZQOL_TALK_ENTRY Leif, [Finn]
           ZQOL_TALK_ENTRY Nanna, [Finn]
+		  ZQOL_TALK_ENTRY Shiva, [Leif]
+		  ZQOL_TALK_ENTRY Finn, [Karin]
+		  ZQOL_TALK_ENTRY Daisy, [Shiva]
         ZQOL_END_TALK_CHAPTER
 
         aChapter8TalkTargetTable
           ZQOL_TALK_ENTRY Osian, [Marty]
           ZQOL_TALK_ENTRY Halvan, [Marty]
+		  ZQOL_TALK_ENTRY Osian, [Leif]
+		  ZQOL_TALK_ENTRY Halvan, [Leif]
         ZQOL_END_TALK_CHAPTER
 
         aChapter8xTalkTargetTable
           ZQOL_TALK_ENTRY Osian, [Tanya]
           ZQOL_TALK_ENTRY Leif, [Dagdar]
+		  ZQOL_TALK_ENTRY Ronan, [Tanya]
         ZQOL_END_TALK_CHAPTER
 
         aChapter9TalkTargetTable
           ZQOL_TALK_ENTRY Leif, [Selphina]
           ZQOL_TALK_ENTRY Selphina, [Finn]
           ZQOL_TALK_ENTRY Callion, [Selphina]
-	  ZQOL_TALK_ENTRY Kane, [Alba]
-	  ZQOL_TALK_ENTRY Alba, [Kane]
+		  ZQOL_TALK_ENTRY Kane, [Alba]
+		  ZQOL_TALK_ENTRY Leif, [Marty]
+		  ZQOL_TALK_ENTRY Robert, [Selphina]
         ZQOL_END_TALK_CHAPTER
 
+		aChapter10TalkTargetTable
+          ZQOL_TALK_ENTRY Leif, [Ronan]
+        ZQOL_END_TALK_CHAPTER
+		
         aChapter11xTalkTargetTable
           ZQOL_TALK_ENTRY Leif, [Olwen]
           ZQOL_TALK_ENTRY Fred, [Olwen]
+        ZQOL_END_TALK_CHAPTER
+		
+		aChapter12TalkTargetTable
+          ZQOL_TALK_ENTRY Dagdar, [Tanya]
+          ZQOL_TALK_ENTRY Nanna, [Mareeta]
         ZQOL_END_TALK_CHAPTER
 
         aChapter12xTalkTargetTable
@@ -558,7 +582,10 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Lifis, [Perne]
           ZQOL_TALK_ENTRY Lara, [Perne]
           ZQOL_TALK_ENTRY Perne, [Trude]
+		  ZQOL_TALK_ENTRY Salem, [Trude]
           ZQOL_TALK_ENTRY Safy, [Tina]
+		  ZQOL_TALK_ENTRY Salem, [Tina]
+		  ZQOL_TALK_ENTRY Leif, [Tina]
         ZQOL_END_TALK_CHAPTER
 
         aChapter13TalkTargetTable
@@ -566,34 +593,58 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Selphina, [Glade]
           ZQOL_TALK_ENTRY Leif, [Glade]
         ZQOL_END_TALK_CHAPTER
+		
+		aChapter14TalkTargetTable
+          ZQOL_TALK_ENTRY Dean, [Eda]
+          ZQOL_TALK_ENTRY GunterDialogue, [Safy]
+        ZQOL_END_TALK_CHAPTER
 
         aChapter15TalkTargetTable
           ZQOL_TALK_ENTRY Leif, [Ralph]
           ZQOL_TALK_ENTRY Mareeta, [Shannam]
+		  ZQOL_TALK_ENTRY Homer, [Nanna]
+		  ZQOL_TALK_ENTRY Daisy, [Asaello]
+		  ZQOL_TALK_ENTRY Glade, [Perne]
+		  ZQOL_TALK_ENTRY Linoan, [Safy]
+		  ZQOL_TALK_ENTRY Alba, [Eda]
+		  ZQOL_TALK_ENTRY Asaello, [Trude]
+		  ZQOL_TALK_ENTRY Leif, [Asaello]
         ZQOL_END_TALK_CHAPTER
 
         aChapter16ATalkTargetTable
           ZQOL_TALK_ENTRY Olwen, [Kempf]
           ZQOL_TALK_ENTRY Karin, [Ilios]
+		  ZQOL_TALK_ENTRY Ilios, [Leif]
+		  ZQOL_TALK_ENTRY Ilios, [Fred]
+		  ZQOL_TALK_ENTRY Dean, [Linoan]
         ZQOL_END_TALK_CHAPTER
 
         aChapter17ATalkTargetTable
           ZQOL_TALK_ENTRY Karin, [Misha]
+		  ZQOL_TALK_ENTRY Glade, [Robert]
+		  ZQOL_TALK_ENTRY Safy, [Salem]
         ZQOL_END_TALK_CHAPTER
 
         aChapter16BTalkTargetTable
           ZQOL_TALK_ENTRY Homer, [Shannam]
           ZQOL_TALK_ENTRY Salem, [Sara]
           ZQOL_TALK_ENTRY Leif, [Sara]
+		  ZQOL_TALK_ENTRY Shannam, [Leif]
+		  ZQOL_TALK_ENTRY Tina, [Asbel]
+		  ZQOL_TALK_ENTRY Dean, [Linoan]
         ZQOL_END_TALK_CHAPTER
 
 	aChapter17BTalkTargetTable
-		  ZQOL_TALK_ENTRY Lara, [Shannam]
+		  ZQOL_TALK_ENTRY Shannam, [Daisy]
+		  ZQOL_TALK_ENTRY Glade, [Robert]
+		  ZQOL_TALK_ENTRY Safy, [Salem]
+		  ZQOL_TALK_ENTRY Callion, [Miranda]
 		ZQOL_END_TALK_CHAPTER
 
         aChapter18TalkTargetTable
           ZQOL_TALK_ENTRY Xavier, [Leif]
           ZQOL_TALK_ENTRY Leif, [Xavier]
+		  ZQOL_TALK_ENTRY GunterDialogue, [Asbel]
           ZQOL_TALK_ENTRY Civilian9, [XavierArmor1]
           ZQOL_TALK_ENTRY Civilian10, [XavierArmor2]
           ZQOL_TALK_ENTRY Civilian11, [XavierArmor3]
@@ -607,9 +658,30 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
         aChapter19TalkTargetTable
           ZQOL_TALK_ENTRY Miranda, [Conomor]
           ZQOL_TALK_ENTRY Schroff, [Amalda]
+		  ZQOL_TALK_ENTRY Amalda, [Leif]
+		  ZQOL_TALK_ENTRY Conomor, [Leif]
         ZQOL_END_TALK_CHAPTER
+		
+		aChapter20TalkTargetTable
+		  ZQOL_TALK_ENTRY Conomor, [Xavier]
+		ZQOL_END_TALK_CHAPTER
 
+		aChapter21TalkTargetTable
+		  ZQOL_TALK_ENTRY Sara, [Marty]
+		  ZQOL_TALK_ENTRY Eda, [Linoan]
+		  ZQOL_TALK_ENTRY Miranda, [Leif]
+		  ZQOL_TALK_ENTRY Homer, [Nanna]
+		  ZQOL_TALK_ENTRY Dagdar, [Ralph]
+		  ZQOL_TALK_ENTRY Conomor, [Miranda]
+		ZQOL_END_TALK_CHAPTER
+		
         aChapter22TalkTargetTable
+		  ZQOL_TALK_ENTRY Asbel, [Tina]
+		  ZQOL_TALK_ENTRY Karin, [Fergus]
+		  ZQOL_TALK_ENTRY Shiva, [Asaello]
+		  ZQOL_TALK_ENTRY Ilios, [Reinhardt]
+		  ZQOL_TALK_ENTRY Diarmuid, [Shannam]
+		  ZQOL_TALK_ENTRY Amalda, [Olwen]
           ZQOL_TALK_ENTRY Olwen, [Reinhardt]
         ZQOL_END_TALK_CHAPTER
 
@@ -624,11 +696,14 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 
         aChapter24TalkTargetTable
           ZQOL_TALK_ENTRY Mareeta, [Galzus]
+		  ZQOL_TALK_ENTRY Galzus, [Saias]
+		  ZQOL_TALK_ENTRY Galzus, [Leif]
         ZQOL_END_TALK_CHAPTER
 
         aChapter24xTalkTargetTable
           ZQOL_TALK_ENTRY Leif, [Eyvel]
           ZQOL_TALK_ENTRY Mareeta, [Eyvel]
+		  ZQOL_TALK_ENTRY Galzus, [Sara]
         ZQOL_END_TALK_CHAPTER
 
     .endsection VanillaChapterTalkTableSection

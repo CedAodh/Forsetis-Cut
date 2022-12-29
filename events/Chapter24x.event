@@ -32,6 +32,9 @@ eventChapter24xEvents ; 97/8895
 		EVENT $07, _MareetaEyvelTalk
 			CHECK_CHARS2 Mareeta, Eyvel
 		END_DEFINITION
+		EVENT $08, _GalzusSaraTalk
+			CHECK_CHARS2 Galzus, Sara
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 97/88F8
@@ -284,6 +287,14 @@ eventChapter24xEvents ; 97/8895
 		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 	END2
 
+	_GalzusSaraTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
 	_PrepGroups ; 97/8BA4
 		.long eventChapter24xData._PrepGroup
 	.word $0000

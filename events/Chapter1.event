@@ -25,7 +25,8 @@ eventChapter1Events ; FD/8000
 			CHECK_CHARS2 Osian, Tanya
 		END_DEFINITION
 		EVENT $07, _LeifDagdarTalk
-			CHECK_CHARS2 Leif, Dagdar
+			CHECK_CHARS2 Dagdar, Leif
+			TEST_FLAG_SET $05
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -124,7 +125,7 @@ eventChapter1Events ; FD/8000
 	END2
 
 	_LeifDagdarTalk ; FD/8324
-		macroDialogueHouse leifdagdar
+		macroDialogueHouse placeholder
 	END2
 
 	_DagdarAndCo ; FD/832D

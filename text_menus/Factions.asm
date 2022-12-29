@@ -207,7 +207,7 @@ _LeifLeader
 _NoneLeader
 	.text "{-}{-}{-}{-}{-}{-}"
 .word $0000
-
+	.text "Leonster's Ar[my"
 _LeonsterLeader
 	.text "Leonster34Ar[my "
 .word $0000

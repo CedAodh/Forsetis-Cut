@@ -35,14 +35,8 @@ eventChapter9Events ; 8C/F011
 		EVENT $07, _KaneAlbaTalk
 			CHECK_CHARS2 Kane, Alba
 		END_DEFINITION
-		EVENT $07, _KaneAlbaTalk
-			CHECK_CHARS2 Alba, Kane
-		END_DEFINITION
 		EVENT $08, _CallionSelphinaTalk
 			CHECK_CHARS2 Callion, Selphina
-		END_DEFINITION
-		EVENT $0A, _RobertSelphinaTalk
-			CHECK_CHARS2 Robert, Selphina
 		END_DEFINITION
 		EVENT $0A, _RobertSelphinaTalk
 			CHECK_CHARS2 Selphina, Robert
@@ -50,10 +44,6 @@ eventChapter9Events ; 8C/F011
 		EVENT $0B, _LeifMartyTalk
 			CHECK_CHARS2 Leif, Marty
 		END_DEFINITION
-		EVENT $0B, _LeifMartyTalk
-			CHECK_CHARS2 Marty, Leif
-		END_DEFINITION
-		
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 8C/F077
@@ -148,7 +138,6 @@ eventChapter9Events ; 8C/F011
 	_LeifMartyTalk
 		macroDialogueHouse leifmarty
 	END2
-	
 	
 	_CallionSelphinaTalk ; 8C/F171
 		PLAY_SOUND_WORD $00E0

@@ -66,6 +66,9 @@ eventChapter7Events ; 99/B023
 		EVENT $0F, _SafyShivaTalk
 			CHECK_CHARS2 Safy, Shiva
 		END_DEFINITION
+		EVENT $0F, _DaisyShivaTalk
+			CHECK_CHARS2 Daisy, Shiva
+		END_DEFINITION
 		EVENT $10, _LeifFinnTalk
 			CHECK_CHARS2 Leif, Finn
 		END_DEFINITION
@@ -74,6 +77,10 @@ eventChapter7Events ; 99/B023
 		END_DEFINITION
 		EVENT $13, _FinnKarinTalk
 			CHECK_CHARS2 Finn, Karin
+		END_DEFINITION
+		EVENT $16, _LeifShivaTalk
+			CHECK_CHARS2 Shiva, Leif
+			TEST_FLAG_SET $0F
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -313,6 +320,24 @@ eventChapter7Events ; 99/B023
 
 		SET_FLAG $0C
 	END2
+	
+	_DaisyShivaTalk ; 99/B3E6
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE placeholder
+		YIELD
+
+		macroConvertToPlayerAllegiance Shiva
+
+		macroSetCharacterWord Shiva, structCharacterDataRAM.Leader, Leif
+
+		SET_FLAG $0C
+	END2
 
 	_LeifFinnTalk ; 99/B41C
 		PLAY_SOUND_WORD $00E0
@@ -348,6 +373,10 @@ eventChapter7Events ; 99/B023
 		
 		DIALOGUE finnkarin
 		YIELD
+	END2
+	
+	_LeifShivaTalk
+		macroDialogueHouse placeholder
 	END2
 
 	_HannibalAppearCheck ; 99/B43C

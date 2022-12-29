@@ -45,6 +45,16 @@ eventChapter16BEvents ; 99/EC9A
 		EVENT $0B, _LeifSaraTalk
 			CHECK_CHARS2 Leif, Sara
 		END_DEFINITION
+		EVENT $0C, _LeifShannamTalk
+			CHECK_CHARS2 Shannam, Leif
+			TEST_FLAG_SET $09
+		END_DEFINITION
+		EVENT $0D, _TinaAsbelTalk
+			CHECK_CHARS2 Tina, Asbel
+		END_DEFINITION
+		EVENT $10, _DeanLinoanTalk
+			CHECK_CHARS2 Dean, Linoan
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/ED2B
@@ -212,6 +222,30 @@ eventChapter16BEvents ; 99/EC9A
 		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 
 		SET_FLAG $06
+	END2
+	
+	_LeifShannamTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_TinaAsbelTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_DeanLinoanTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
 	END2
 
 	_House ; 99/EEA7

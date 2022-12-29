@@ -45,6 +45,24 @@ eventChapter22Events ; 8C/F611
 		EVENT $0B, _OlwenReinhardtTalk
 			CHECK_CHARS2 Olwen, Reinhardt
 		END_DEFINITION
+		EVENT $0C, _IliosReinhardtTalk
+			CHECK_CHARS2 Ilios, Reinhardt
+		END_DEFINITION
+		EVENT $0D, _AsbelTinaTalk
+			CHECK_CHARS2 Asbel, Tina
+		END_DEFINITION
+		EVENT $0E, _KarinFergusTalk
+			CHECK_CHARS2 Karin, Fergus
+		END_DEFINITION
+		EVENT $0F, _ShivaAsaelloTalk
+			CHECK_CHARS2 Shiva, Asaello
+		END_DEFINITION
+		EVENT $10, _DiarmuidShannamTalk
+			CHECK_CHARS2 Diarmuid, Shannam
+		END_DEFINITION
+		EVENT $11, _AmaldaOlwenTalk
+			CHECK_CHARS2 Amalda, Olwen
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 8C/F68D
@@ -707,7 +725,55 @@ eventChapter22Events ; 8C/F611
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
+	
+	_AsbelTinaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_IliosReinhardtTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_ShivaAsaelloTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_AmaldaOlwenTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_DiarmuidShannamTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
 
+	_KarinFergusTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
 	_PrepGroups ; 8C/FE50
 		.long eventChapter22Data._PrepGroup
 	.word $0000

@@ -57,6 +57,23 @@ eventChapter15Events ; FD/A812
 		EVENT $0C, _AlbaEdaTalk
 			CHECK_CHARS2 Alba, Eda
 		END_DEFINITION
+		EVENT $0D, _HomerNannaTalk
+			CHECK_CHARS2 Homer, Nanna
+		END_DEFINITION
+		EVENT $0E, _GladePerneTalk
+			CHECK_CHARS2 Glade, Perne
+		END_DEFINITION
+		EVENT $0F, _LinoanSafyTalk
+			CHECK_CHARS2 Linoan, Safy
+		END_DEFINITION
+		EVENT $10, _AsaelloTrudeTalk
+			CHECK_CHARS2 Asaello, Trude
+			TEST_FLAG_SET $0B
+		END_DEFINITION
+		EVENT $11, _LeifAsaelloTalk
+			CHECK_CHARS2 Leif, Asaello
+			TEST_FLAG_SET $0B
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/A8CB
@@ -232,8 +249,8 @@ eventChapter15Events ; FD/A812
 		YIELD_UNK
 		YIELD_UNK
 		
-		EVENT_TEST_FLAG_SET FlagDaisyRecruited
-		JUMP_FALSE +
+		;EVENT_TEST_FLAG_SET FlagDaisyRecruited
+		;JUMP_FALSE +
 		
 		STORE_LONG lEventEngineLongParameter, ch15asaellospawn
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
@@ -423,6 +440,46 @@ eventChapter15Events ; FD/A812
 		YIELD
 		
 		DIALOGUE albaeda
+		YIELD
+	END2
+	
+	_HomerNannaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_GladePerneTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_LinoanSafyTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_AsaelloTrudeTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_LeifAsaelloTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
 		YIELD
 	END2
 

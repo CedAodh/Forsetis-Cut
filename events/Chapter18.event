@@ -50,6 +50,9 @@ eventChapter18Events ; E7/8000
 			CHECK_CHARS2 Leif, Xavier
 			CMP_BYTE $7E4976, 8
 		END_DEFINITION
+		EVENT $0C, _GunnarAsbelTalk
+			CHECK_CHARS2 GunterDialogue, Asbel
+		END_DEFINITION
 		EVENT $00, _XavierArmorDialogue1
 			CHECK_CHARS2 Civilian9, XavierArmor1
 		END_DEFINITION
@@ -362,6 +365,14 @@ eventChapter18Events ; E7/8000
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
 		SET_FLAG $06
+	END2
+	
+	_GunnarAsbelTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
 	END2
 
 	_XavierArmorDialogue1 ; E7/8463

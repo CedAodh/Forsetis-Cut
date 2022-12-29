@@ -183,12 +183,12 @@ ch21opening1
 
 .byte Left_slot
 .word LoadPortrait
-.word julia_portrait
-.text "Lord Seliph, we should be on our way soon..."
+.word lewyn_portrait
+.text "Seliph, we should be on our way soon."
 .byte WaitForA
 
 .byte Right_slot
-.text "Ah, Julia, are we out of time already?"
+.text "Ah, Lewyn, are we out of time already?"
 .byte WaitForA
 .byte ScrollText
 

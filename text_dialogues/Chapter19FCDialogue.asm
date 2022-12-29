@@ -22,7 +22,7 @@ Ch19ishtararrival
 .byte NewLine
 .text "There are countless lives at stake as we speak."
 .byte NewLine
-.text "Suppressing this uprising is paramount."
+.text "Quelling this uprising is paramount."
 .byte WaitForA
 
 .byte right_slot
@@ -52,26 +52,6 @@ Ch19ishtararrival
 .byte WaitForA
 .byte ScrollText
 .text "Now, allow me to join the frontlines."
-.byte WaitForA
-
-.byte EndText
-
-ch19ending3
-
-.byte right_slot
-.word LoadPortrait
-.word julius_portrait
-
-.byte left_slot
-.word LoadPortrait
-.word ishtar_portrait
-.text "Too much Taco Bell?"
-.byte WaitForA
-
-.byte right_slot
-.text "Yep, I did it to myself again."
-.byte NewLine
-.text "...I think it's passed, though."
 .byte WaitForA
 
 .byte EndText

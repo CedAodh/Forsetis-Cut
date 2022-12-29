@@ -61,8 +61,17 @@ eventChapter17BEvents ; FD/C4D0
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/C5A2
-		EVENT $03, _DaisyShannamTalk
-			CHECK_CHARS2 Lara, Shannam
+		EVENT $04, _ShannamDaisyTalk
+			CHECK_CHARS2 Shannam, Daisy
+		END_DEFINITION
+		EVENT $0D, _CallionMirandaTalk
+			CHECK_CHARS2 Callion, Miranda
+		END_DEFINITION
+		EVENT $0E, _GladeRobertTalk
+			CHECK_CHARS2 Glade, Robert
+		END_DEFINITION
+		EVENT $0F, _SafySalemTalk
+			CHECK_CHARS2 Safy, Salem
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -296,7 +305,7 @@ eventChapter17BEvents ; FD/C4D0
 		CALL_ASM_LOOP rlASMCSetCharacterDataByteIfWord, $0000
 	JUMP _MiddleGateOpen
 
-	_DaisyShannamTalk
+	_ShannamDaisyTalk
 		macroDialogueHouse daisyshannam
 		
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
@@ -307,6 +316,31 @@ eventChapter17BEvents ; FD/C4D0
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
+	
+	_CallionMirandaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_GladeRobertTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_SafySalemTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
 	_GateHouse ; FD/C85B
 		EVENT_CMP_BYTE_AT_EQ wUnknown001730, $0000
 		JUMP_FALSE +

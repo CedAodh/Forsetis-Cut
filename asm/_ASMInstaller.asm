@@ -235,12 +235,12 @@
 
 
 ; Hacky LM fixes
+.include "hacky/convoystuff.asm"
 .include "hacky/hostagec.asm"
 .include "hacky/ending_prolong.asm"
 .include "hacky/epiloguedeathfix.asm"
 .include "hacky/fixshop.asm"
 .include "hacky/loop_epilogue_song.asm"
-.include "hacky/convoystuff.asm"
 .include "hacky/fcfixes.asm"
 .include "hacky/HolyWeaponCheck.asm"
 

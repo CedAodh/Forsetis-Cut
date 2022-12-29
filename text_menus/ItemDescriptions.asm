@@ -13,37 +13,45 @@ _NoneDesc
 ; Common weapons
 
 _IronSwordDesc
-.text "A co{mm}non s]word, "
+.text "A co{mm}non s]word"
 .word $0000
-.text "but durable and "
+.text "that's durable and"
 .word $0000
 .text "easy to ]wield"
 .word $0000
 .word $0000
 
 _SteelSwordDesc
-.text "Strong, quality "
+.text "A ]weighty s]word "
 .word $0000
-.text "s]word"
+.text "that hits harder"
 .word $0000
 .word $0000
 
 _SilverSwordDesc
-.text "Rare, quality s]word"
+.text "A [mighty s]word"
+.word $0000
+.text "]whose blo]ws offset"
+.word $0000
+.text "its steep price "
 .word $0000
 .word $0000
 
 _ShortswordDesc
-.text "Co{mm}non, s{im}ple "
+.text "A standard s]word "
 .word $0000
-.text "s]word"
+.text "suited ]well for"
+.word $0000
+.text "beginners "
 .word $0000
 .word $0000
 
 _LongswordDesc
-.text "Strong, si[mple "
+.text "A conveniently"
 .word $0000
-.text "s]word"
+.text "strong s]word "
+.word $0000
+.text "for its plain design"
 .word $0000
 .word $0000
 
@@ -55,9 +63,13 @@ _GreatswordDesc
 .word $0000
 
 _IronBladeDesc
-.text "Deadly s]word, but"
+.text "A deadly broads]word"
 .word $0000
-.text "difficult to ]wield "
+.text "]with tre[mendous "
+.word $0000
+.text "po]wer, but tough to"
+.word $0000
+.text "handle"
 .word $0000
 .word $0000
 
@@ -72,21 +84,27 @@ _SlimLanceDesc
 
 
 _IronLanceDesc
-.text "Co{mm}non, quality"
+.text "A co{mm}non lance "
 .word $0000
-.text "lance "
+.text "that's durable and"
+.word $0000
+.text "easy to ]wield"
 .word $0000
 .word $0000
 
 _SteelLanceDesc
-.text "Strong, quality "
+.text "A ]weighty lance"
 .word $0000
-.text "lance "
+.text "that hits harder"
 .word $0000
 .word $0000
 
 _SilverLanceDesc
-.text "Rare, quality lance "
+.text "A [mighty lance "
+.word $0000
+.text "]whose blo]ws offset"
+.word $0000
+.text "its steep price "
 .word $0000
 .word $0000
 
@@ -98,9 +116,11 @@ _ShortLanceDesc
 .word $0000
 
 _LongLanceDesc
-.text "Strong, si[mple "
+.text "A conveniently"
 .word $0000
-.text "lance "
+.text "strong lance"
+.word $0000
+.text "for its plain design"
 .word $0000
 .word $0000
 
@@ -113,17 +133,27 @@ _GreatlanceDesc
 
 
 _IronAxeDesc
-.text "Co{mm}non, quality axe"
+.text "A co{mm}non axe "
+.word $0000
+.text "that's durable and"
+.word $0000
+.text "easy to ]wield"
 .word $0000
 .word $0000
 
 _SteelAxeDesc
-.text "Strong, quality axe "
+.text "A ]weighty axe"
+.word $0000
+.text "that hits harder"
 .word $0000
 .word $0000
 
 _SilverAxeDesc
-.text "Rare, quality axe "
+.text "A [mighty axe "
+.word $0000
+.text "]whose blo]ws offset"
+.word $0000
+.text "its steep price "
 .word $0000
 .word $0000
 
@@ -136,31 +166,33 @@ _BattleAxeDesc
 
 
 _IronBowDesc
-.text "Co{mm}non, quality"
+.text "A co{mm}non bo12"
 .word $0000
-.text "bo12"
+.text "that's durable and"
 .word $0000
-.text "Effective against "
+.text "easy to ]wield"
 .word $0000
-.text "{FLY1}{FLY2} units"
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 
 _SteelBowDesc
-.text "Strong, quality bo12"
+.text "A ]weighty bo12 "
 .word $0000
-.text "Effective against "
+.text "that hits harder"
 .word $0000
-.text "{FLY1}{FLY2} units"
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 
 _SilverBowDesc
-.text "Rare, quality bo12"
+.text "A [mighty bo12"
 .word $0000
-.text "Effective against "
+.text "]whose blo]ws offset"
 .word $0000
-.text "{FLY1}{FLY2} units"
+.text "its steep price "
+.word $0000
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 
@@ -174,11 +206,13 @@ _ShortbowDesc
 .word $0000
 
 _LongbowDesc
-.text "Strong, si[mple bo12"
+.text "A conveniently"
 .word $0000
-.text "Effective against "
+.text "strong bo12 "
 .word $0000
-.text "{FLY1}{FLY2} units"
+.text "for its plain design"
+.word $0000
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 

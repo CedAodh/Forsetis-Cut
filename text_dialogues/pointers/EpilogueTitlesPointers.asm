@@ -45,7 +45,7 @@ aEpilogueTitleTable ; 8F/DFB9
 	.long schrofftitle ; Schroff
 	.long mareetatitle ; Mareeta
 	.long tinatitle ; Tina
-	.long $000000 ; GunterDialogue
+	.long gunnartitle ; GunterDialogue
 	.long amaldatitle ; Amalda
 	.long conomortitle ; Conomore
 	.long homertitle ; Homer
@@ -126,7 +126,7 @@ aEpilogueTitleTable ; 8F/DFB9
 	.long $000000 ; PriestEnemy
 	.long $000000 ; MercenaryMyrmidon2
 	.long $000000 ; Friege21stBallista
-	.long $000000 ; Schuper
+	.long asaellotitle ; Schuper
 	.long $000000 ; Brooks
 	.long $000000 ; SilessiaPegasusRider1
 	.long $000000 ; Nicolov
@@ -144,7 +144,7 @@ aEpilogueTitleTable ; 8F/DFB9
 	.long $000000 ; Zaumm
 	.long $000000 ; Cohen
 	.long $000000 ; Alphan
-	.long $000000 ; Orbis
+	.long daisytitle ; Orbis
 	.long $000000 ; Farden
 	.long $000000 ; Coulter
 	.long $000000 ; Reinhardt

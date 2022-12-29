@@ -58,6 +58,12 @@ eventChapter12Events ; 99/DBD6
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/DC94
+		EVENT $08, _DagdarTanyaTalk
+			CHECK_CHARS2 Dagdar, Tanya
+		END_DEFINITION
+		EVENT $09, _NannaMareetaTalk
+			CHECK_CHARS2 Nanna, Mareeta
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/DC96
@@ -259,6 +265,14 @@ eventChapter12Events ; 99/DBD6
 		YIELD
 	END2
 
+	_DagdarTanyaTalk
+		macroDialogueHouse placeholder
+	END2
+	
+	_NannaMareetaTalk
+		macroDialogueHouse placeholder
+	END2
+	
 	_GaidenFail ; 99/E0F1
 		SET_FLAG $01
 

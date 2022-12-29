@@ -1,12 +1,9 @@
+
 .weak
 
   rlASMCGiveUnitItemsToConvoy :?= address($8CA809)
 
 .endweak
-
-lda $0F38 ; Active unit (reserve 2) unit management ID
-bit #$00C0 ; Enemy or NPC
-bne #$0041 ; Do not process anything other than ally
 
 * := $019D02
 .logical $839D02

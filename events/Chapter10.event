@@ -28,6 +28,9 @@ eventChapter10Events ; 99/C559
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/C5A3
+		EVENT $0A, _LeifRonanTalk
+			CHECK_CHARS2 Leif, Ronan
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/C5A5
@@ -195,6 +198,10 @@ eventChapter10Events ; 99/C559
 		.long eventChapter10Data._PrepGroup1
 		.long eventChapter10Data._PrepGroup2
 	.word $0000
+	
+	_LeifRonanTalk
+		macroDialogueHouse placeholder
+	END2
 
 	_OpeningEvent ; 99/CA1F
 		SET_CAMERA [8, 12]

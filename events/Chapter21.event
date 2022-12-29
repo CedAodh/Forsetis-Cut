@@ -34,6 +34,24 @@ eventChapter21Events ; FD/E42D
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/E499
+		EVENT $08, _MirandaLeifTalk
+			CHECK_CHARS2 Miranda, Leif
+		END_DEFINITION
+		EVENT $0B, _HomerNannaTalk
+			CHECK_CHARS2 Homer, Nanna
+		END_DEFINITION
+		EVENT $0D, _DagdarRalphTalk
+			CHECK_CHARS2 Dagdar, Ralph
+		END_DEFINITION
+		EVENT $0E, _EdaLinoanTalk
+			CHECK_CHARS2 Eda, Linoan
+		END_DEFINITION
+		EVENT $0F, _SaraMartyTalk
+			CHECK_CHARS2 Sara, Marty
+		END_DEFINITION
+		EVENT $10, _ConomorMirandaTalk
+			CHECK_CHARS2 Conomor, Miranda
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/E49B
@@ -343,6 +361,54 @@ eventChapter21Events ; FD/E42D
 		PAUSE_SKIPPABLE 10
 		YIELD
 	END1
+	
+	_MirandaLeifTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_HomerNannaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_DagdarRalphTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_EdaLinoanTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_SaraMartyTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_ConomorMirandaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+	END2
 
 	_PrepGroups ; FD/E82C
 		.long eventChapter21Data._PrepGroup1

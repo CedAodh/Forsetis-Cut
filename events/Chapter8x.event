@@ -28,6 +28,9 @@ eventChapter8xEvents ; 97/844D
 		EVENT $06, _LeifDagdarTalk
 			CHECK_CHARS2 Leif, Dagdar
 		END_DEFINITION
+		EVENT $08, _RonanTanyaTalk
+			CHECK_CHARS2 Ronan, Tanya
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 97/8498
@@ -114,6 +117,26 @@ eventChapter8xEvents ; 97/844D
 
 		DIALOGUE leifdagdarreunite
 		YIELD
+	END2
+	
+	_RonanTanyaTalk ; 8C/F171
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4B
+		YIELD
+
+		DIALOGUE placeholder
+		YIELD
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		macroGiveItemToActiveUnit SilverBow
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
 
 	_PrepGroups ; 97/86F6

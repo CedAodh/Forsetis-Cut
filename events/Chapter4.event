@@ -72,12 +72,15 @@ eventChapter4Events ; 99/8778
 		EVENT $0A, _BrightonMachaTalk
 			CHECK_CHARS2 Brighton, Macha
 		END_DEFINITION
-		; EVENT $0B, _LeifLifisTalk
-		;	CHECK_CHARS2 Leif, Lifis
-		;END_DEFINITION
-		;EVENT $0C, _LeifBrightonTalk
-		;	CHECK_CHARS2 Leif, Brighton
-		;END_DEFINITION
+		EVENT $0B, _LeifLifisTalk
+			CHECK_CHARS2 Leif, Lifis
+		END_DEFINITION
+		EVENT $0B, _LeifDaisyTalk
+			CHECK_CHARS2 Daisy, Leif
+		END_DEFINITION
+		EVENT $0C, _LeifBrightonTalk
+			CHECK_CHARS2 Leif, Brighton
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/8862
@@ -347,6 +350,18 @@ eventChapter4Events ; 99/8778
 	
 	_BrightonMachaTalk
 		macroDialogueHouse brightonmacha
+	END2
+	
+	_LeifLifisTalk
+		macroDialogueHouse placeholder
+	END2
+	
+	_LeifDaisyTalk
+		macroDialogueHouse placeholder
+	END2
+	
+	_LeifBrightonTalk
+		macroDialogueHouse placeholder
 	END2
 	
 	_LifisDialogue ; 99/8F07

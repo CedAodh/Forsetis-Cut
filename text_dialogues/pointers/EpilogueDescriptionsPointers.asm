@@ -45,7 +45,7 @@ aEpilogueEndingTable ; 8F/E28C
 	.long schroffepi ; Schroff
 	.long mareetaepi ; Mareeta
 	.long tinaepi ; Tina
-	.long $000000 ; GunterDialogue
+	.long gunnarepi ; GunterDialogue
 	.long amaldaepi ; Amalda
 	.long conomorepi ; Conomore
 	.long homerepi ; Homer
@@ -126,7 +126,7 @@ aEpilogueEndingTable ; 8F/E28C
 	.long $000000 ; PriestEnemy
 	.long $000000 ; MercenaryMyrmidon2
 	.long $000000 ; Friege21stBallista
-	.long $000000 ; Schuper
+	.long asaelloepi ; Schuper
 	.long $000000 ; Brooks
 	.long $000000 ; SilessiaPegasusRider1
 	.long $000000 ; Nicolov
@@ -144,7 +144,7 @@ aEpilogueEndingTable ; 8F/E28C
 	.long $000000 ; Zaumm
 	.long $000000 ; Cohen
 	.long $000000 ; Alphan
-	.long $000000 ; Orbis
+	.long daisyepi ; Orbis
 	.long $000000 ; Farden
 	.long $000000 ; Coulter
 	.long $000000 ; Reinhardt
