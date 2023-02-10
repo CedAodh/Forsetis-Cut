@@ -441,3 +441,5 @@
 	segmentEnd
 
 .here
+
+.include "CustomPortraitAddons.asm"
