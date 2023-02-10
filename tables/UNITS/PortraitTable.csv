@@ -48,11 +48,11 @@ AmaldaPortrait,g4bppcPortraitECE173,$33
 ConomorPortrait,g4bppcPortraitEEBA8A,$6B
 HomerPortrait,g4bppcPortraitED9D9B,$3F
 DiarmuidPortrait,g4bppcPortraitEB9717,$0B
-SaraPortrait,g4bppcPortraitECBE8D,$2C
+SaraPortrait,g4bppcPortraitSara,$2C
 SaiasPortrait,g4bppcPortraitECDC66,$32
 Ced2Portrait,g4bppcPortraitED930E,$3D
 AltenaPortrait,g4bppcPortraitED9854,$3E
-TravantPortrait,g4bppcPortraitEB8318,$07
+TravantPortrait,g4bppcPortraitTravant,$07
 ArionPortrait,g4bppcPortraitEAFE34,$06
 JuliusPortrait,g4bppcPortraitEAF322,$04
 IshtarPortrait,g4bppcPortraitEAF8A6,$05
@@ -67,8 +67,8 @@ DaisyPortrait,g4bppcPortraitEB9BD9,$0C
 AsaelloPortrait,g4bppcPortraitEBA119,$0D
 LewynPortrait,g4bppcPortraitEBA613,$0E
 JuliaPortrait,g4bppcPortraitEBAB36,$0F
-ArthurPortrait,g4bppcPortraitEDA2CB,$40
-JeannePortrait,g4bppcPortraitEDA84E,$41
+ArthurPortrait,g4bppcPortraitCoulter,$40
+JeannePortrait,g4bppcPortraitFilat,$41
 Leonster1Portrait,g4bppcPortraitEDAD56,$42
 IliosPortrait,g4bppcPortraitEDB266,$43
 Raydrik2Portrait,g4bppcPortraitEEA236,$66
@@ -200,7 +200,7 @@ Brigand3Portrait,g4bppcPortraitEFCFD4,$9A
 Fighter1Portrait,g4bppcPortraitEFC7D1,$9B
 Archer3Portrait,g4bppcPortraitEFB75D,$A3
 Brigand4Portrait,g4bppcPortraitEFCFD4,$A5
-HighPriest1Portrait,g4bppcPortraitEFEBDE,$B7
+HighPriest1Portrait,g4bppcPortraitCohen,$B7
 Dancer1Portrait,g4bppcPortraitEFEF61,$B9
 Priest1Portrait,g4bppcPortraitEFD772,$AB
 Mage1Portrait,g4bppcPortraitEFDC2E,$A9
@@ -215,7 +215,7 @@ Mage7Portrait,g4bppcPortraitEFDC2E,$AD
 Priest3Portrait,g4bppcPortraitEFD772,$AD
 Thief1Portrait,g4bppcPortraitEFE801,$A6
 Myrmidon4Portrait,g4bppcPortraitEFBB1D,$9E
-Priestess1Portrait,g4bppcPortraitEFE053,$AE
+Priestess1Portrait,g4bppcPortraitBeatrice,$AE
 Ballistician1Portrait,g4bppcPortraitEFE47D,$A2
 Ballistician2Portrait,g4bppcPortraitEFE47D,$A0
 Ballistician3Portrait,g4bppcPortraitEFE47D,$B8
