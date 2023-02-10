@@ -243,9 +243,9 @@
 .include "hacky/loop_epilogue_song.asm"
 .include "hacky/fcfixes.asm"
 .include "hacky/HolyWeaponCheck.asm"
-
-
-
+.include "hacky/adeptactivationchange.asm"
+.include "hacky/virtual.h"
+.include "hacky/warpcancelfix.asm"
 
 
 

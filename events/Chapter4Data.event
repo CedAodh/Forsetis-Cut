@@ -59,7 +59,7 @@ eventChapter4Data ; B1/EF95
 		UNIT MunsterArmoredBow, Enemy, [7, 4], [7, 4], Bandole, [Shortbow], 3, False, [$02, $03, $00, $00]
 		UNIT MunsterPriest1, Enemy, [6, 4], [6, 4], Bandole, [Heal], 4, False, [$02, $03, $00, $00]
 		UNIT MunsterArmoredAxe, Enemy, [7, 3], [7, 3], Bandole, [HandAxe, Vulnerary], 4, False, [$02, $03, $00, $00]
-		UNIT Dalsin, Enemy, [8, 4], [8, 4], Bandole, [BattleAxe, Torch], 5, False, [$02, $03, $00, $00]
+		UNIT Dalsin, Enemy, [8, 4], [8, 4], Bandole, [BattleAxe, Torch], 9, False, [$02, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/F151

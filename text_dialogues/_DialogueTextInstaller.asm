@@ -15,8 +15,6 @@
 .include "ArenaDialogue.asm"
 .include "ChapterNames.asm"
 .include "Objectives.asm"
-.include "BattleQuotes.asm"
-.include "DeathQuotes.asm"
 .include "LeifDeathReactions.asm"
 .here
 * = $410020
@@ -101,8 +99,8 @@
 .include "Chapter24Dialogue.asm"
 .here
 
-* = $560000
-.logical lorom($560000, 1)
+* = $4B0000
+.logical lorom($4B0000, 1)
 .include "Chapter1FCDialogue.asm"
 .include "Chapter2FCDialogue.asm"
 .include "Chapter2xFCDialogue.asm"
@@ -124,6 +122,10 @@
 .include "Chapter14FCDialogue.asm"
 .include "Chapter14xFCDialogue.asm"
 .include "Chapter15FCDialogue.asm"
+.here
+
+* = $4D0000
+.logical lorom($4D0000, 1)
 .include "Chapter16AFCDialogue.asm"
 .include "Chapter17AFCDialogue.asm"
 .include "Chapter16BFCDialogue.asm"
@@ -138,12 +140,17 @@
 .include "Chapter24FCDialogue.asm"
 .include "Chapter24xFCDialogue.asm"
 .include "Chapter25FCDialogue.asm"
-.include "RetreatQuotes.asm"
+.here
+
+* = $5FA000
+.logical lorom($5FA000, 1)
+.include "BattleQuotes.asm"
+.include "DeathQuotes.asm"
 .include "ReleaseQuotes.asm"
+.include "RetreatQuotes.asm"
 .include "FCEpilogueDescriptions.asm"
 .include "FCEpilogueTitles.asm"
 .here
-
 ; Actual font setup
 
 * = $0A9A50

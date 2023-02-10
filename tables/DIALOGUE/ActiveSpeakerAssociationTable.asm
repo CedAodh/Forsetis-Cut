@@ -171,7 +171,7 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word Hannibal
 
 	.word ReinhardtPortrait
-	.word ReinhardtDialogue
+	.word Reinhardt
 
 	.word CairprePortrait
 	.word Cairpre

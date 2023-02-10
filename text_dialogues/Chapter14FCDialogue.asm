@@ -121,7 +121,7 @@ deaneda
 	
 	.byte EndText
 	
-		ch14opening3
+	ch14opening3
 	
 	.byte right_slot
 	.word LoadPortrait

@@ -35,6 +35,9 @@ eventChapter24Events ; B9/B000
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD wCurrentTurn, 20
 		END_DEFINITION
+		EVENT $10, _RaydrikSkillIssue
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; B9/B07C
@@ -568,6 +571,34 @@ eventChapter24Events ; B9/B000
 		macroDialogueHouse mareetavsraydrik
 	END2
 	
+	_RaydrikSkillIssue
+		STORE_WORD wEventEngineParameter1, LoptrianFang
+
+		CALL_ASM_LOOP rlASMCCheckPartyAndConvoyForItem, $0000
+		JUMP_FALSE +
+		
+		SCROLL_CAMERA_SPEED [10, 12], 4
+		YIELD
+		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE getgudraydrik
+		YIELD
+		
+		JUMP ++
+		
+		+
+		
+		UNSET_FLAG $10
+		
+		+
+	END2
+	
 	_Counter ; B9/B669
 		ADD_BYTE $7E4976, 1
 		YIELD_UNK
@@ -909,6 +940,10 @@ eventChapter24Events ; B9/B000
 		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
 
 		STORE_BYTE bBuf_INIDISP, $00
+		
+		STORE_WORD wEventEngineCharacterTarget, Dean
+		CALL_ASM_LOOP rlASMCGiveUnitItemsToConvoy, $0000
+		
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 

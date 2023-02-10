@@ -69,7 +69,15 @@ eventChapter22Data ; B1/8425
 
 	_UnusedCoordinates2 ; B1/8805
 		.byte 8, 7
-
+		
+	_ReinhardtGroup
+		UNIT Reinhardt, Enemy, [18, 16], [18, 16], Cohen, [DireThunder, MasterSword, Vulnerary, ThrudsScroll], 20, False, [$18, $03, $00, $00]
+	UNIT
+	
+	_JuliusGroup
+		UNIT JuliusJuliaPortrait, Enemy, [27, 22], [18, 18], Raydrik, [], 1, False, [$00, $00, $00, $00]
+	UNIT
+	
 	_CohenGroup ; B1/8807
 		UNIT Cohen, Enemy, [28, 3], [28, 3], Cohen, [Blizzard, Berserk, Restore, MasterLance], 20, True, [$01, $03, $00, $80]
 	UNIT

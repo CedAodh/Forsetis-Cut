@@ -283,7 +283,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._GelbenritterName
 
-	.word	<>char_names._PaladinName	; Unused
+	.word	<>char_names._FriegeName	; Unused
 	.word	<>char_names._FriegeName
 	.word	<>char_names._BowKnightName	; Unused
 
@@ -689,7 +689,7 @@ _WeissmannName
 	.word $0000
 
 _MunsterName
-	.text "(Munster Ar[my"
+	.text "(Munster"
 	.word $0000
 
 _BucksName
@@ -757,7 +757,7 @@ _LeenaName
 	.word $0000
 
 _HiredSwordName
-	.text "Sells]word"
+	.text "(Mercenary"
 	.word $0000
 
 _GalzusName
@@ -773,7 +773,7 @@ _HannibalName
 	.word $0000
 
 _BrigandName
-	.text "Brigand "
+	.text "Bandit"
 	.word $0000
 	
 _WarriorName

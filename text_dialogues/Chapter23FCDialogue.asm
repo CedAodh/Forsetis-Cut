@@ -727,3 +727,41 @@ ch23mareetasaias
 .byte WaitForA
 
 .byte EndText
+
+; hickshouse
+
+; Dad! You came back!
+
+; Murphy! 'Course I did. How's my little man been?
+
+; It was getting dangerous in the streets, so Bella's sister told me to come with her.
+
+; Is that so? That's awfully kind of her. Did you tell her "Thank you"?
+
+; Yes, sir!
+
+; That's what I like to hear! Now gimme a hug!
+
+; You have to be tired, Dad. Do you want something to drink?
+
+; I'm sorry, Murphy, but I can't stay for long. Right now, they're countin' on me to go beat up the bad guys. Tell you what, though: I'll take it to go.
+
+; machahouse
+
+; My darling Macha, is it really you?
+
+; Mother! You're alive!
+
+; Yes, yes, I've made a full recovery. It took a few months, but I can finally start carrying firewood back to the house again. And what about you? Did you get things rolling with Mr. Handsome yet?
+
+; A-are you talking about Brighton?
+
+; Now, who else could it be? I've seen the way you look at him. AND he's a knight! A good-hearted knight—isn't snobby or anything—who truly works for the good of people like us! I'm tellin' you, my dear, you better hop on that before it's too late.
+
+; I...I believe you've made your point, Mother. ......
+
+; Bah, don't listen to me babble on and on. It's your business after all.
+
+; ...That's right. Right now, all I want is to pick up a sword and use it to help those in need.
+
+; Speakin' of swords, your father came across this one in the woods a couple weeks ago. I'm gonna go get it for you.

@@ -616,6 +616,10 @@ eventChapter21xEvents ; FD/E9EE
 		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
 
 		STORE_BYTE bBuf_INIDISP, $00
+		
+		STORE_WORD wEventEngineCharacterTarget, Dean
+		CALL_ASM_LOOP rlASMCGiveUnitItemsToConvoy, $0000
+		
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 

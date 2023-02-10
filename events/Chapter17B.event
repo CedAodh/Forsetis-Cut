@@ -62,7 +62,7 @@ eventChapter17BEvents ; FD/C4D0
 
 	_TalkEventDefinitions ; FD/C5A2
 		EVENT $04, _ShannamDaisyTalk
-			CHECK_CHARS2 Shannam, Daisy
+			CHECK_CHARS2 Leif, Nanna
 		END_DEFINITION
 		EVENT $0D, _CallionMirandaTalk
 			CHECK_CHARS2 Callion, Miranda
@@ -675,6 +675,9 @@ eventChapter17BEvents ; FD/C4D0
 
 		STORE_BYTE bBuf_INIDISP, $00
 
+		STORE_WORD wEventEngineCharacterTarget, Dean
+		CALL_ASM_LOOP rlASMCGiveUnitItemsToConvoy, $0000
+		
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 

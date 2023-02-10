@@ -470,6 +470,25 @@ eventChapter4xEvents ; FD/85C5
 
 		DIALOGUE ch4xop2
 		YIELD
+		
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED $04
+		YIELD
+		
+		macroCountAllUncapturedAliveUnits Brighton
+		JUMP_FALSE +
+
+		DIALOGUE ch4xop3
+		YIELD
+
+		JUMP ++
+
+		+
+		
+		DIALOGUE ch4xop4
+		YIELD
+
+		+
 	END2
 
 	_CapturedUnitTable ; FD/8F37

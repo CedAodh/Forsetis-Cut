@@ -183,9 +183,9 @@ _AnchorDesc
 .word $0000
 
 _AdeptDesc
-	.text "{A}{S}{%} chance "
+	.text "{(}{A}{S} x{2}{)}{%}"
 	.word $0000
-	.text "to perfor[m a "
+	.text "chance to do a"
 	.word $0000
 	.text "consecutive attack"
 	.word $0000
@@ -299,9 +299,11 @@ _SolDesc
 .word $0000
 
 _RenewalDesc
-	.text "Recover {5}{~}{1}{0}{%}"
+	.text "Recover {2}{0}{%}"
 	.word $0000
 	.text "of [maxi[mu[m {H}{P}"
+	.word $0000
+	.text "at the start of "
 	.word $0000
 	.text "every turn"
 	.word $0000

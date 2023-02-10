@@ -549,6 +549,9 @@ eventChapter16BEvents ; 99/EC9A
 		YIELD_UNK
 		YIELD_UNK
 		YIELD
+		
+		;STORE_LONG lEventEngineLongParameter, ch16Bending2
+		;CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
 		FADE_OUT $01
@@ -592,6 +595,10 @@ eventChapter16BEvents ; 99/EC9A
 		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
 
 		STORE_BYTE bBuf_INIDISP, $00
+		
+		STORE_WORD wEventEngineCharacterTarget, Dean
+		CALL_ASM_LOOP rlASMCGiveUnitItemsToConvoy, $0000
+		
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 

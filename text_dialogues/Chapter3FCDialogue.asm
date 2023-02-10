@@ -235,3 +235,43 @@ ronanlifis
 	.byte WaitForA
 	
 	.byte EndText
+	
+lifiscaptured
+
+.byte right_slot
+.word LoadPortrait
+.word lifis_portrait
+.text "What?!"
+.byte NewLine
+.text "More guards?!"
+.byte NewLine
+.text "I better keep a sharp eye out..."
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word guard_portrait
+.text "There he is!"
+.byte NewLine
+.text "Get him!!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "H-huh?"
+.byte NewLine
+.text "What's goin— Hey, hey!"
+.byte NewLine
+.text "I-it's not what you think! I was just..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yeah, yeah."
+.byte NewLine
+.text "Now shut it!"
+.byte NewLine
+.text "You're coming with us!"
+.byte WaitForA
+
+.byte EndText

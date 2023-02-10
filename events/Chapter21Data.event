@@ -24,7 +24,7 @@ eventChapter21Data ; B1/8D4F
 		UNIT FriegeBallista1, Enemy, [15, 10], [15, 10], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [23, 21], [23, 21], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [23, 9], [23, 9], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
-		UNIT FriegeVeninBallista, Enemy, [20, 2], [20, 2], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
+		UNIT MercenarySwordKnight, Enemy, [20, 2], [20, 2], Fraus, [SilverSword], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeVeninBallista, Enemy, [18, 5], [18, 5], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
 		UNIT FriegeVeninBallista, Enemy, [20, 20], [20, 20], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
 		UNIT FriegeVeninBallista, Enemy, [20, 23], [20, 23], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
@@ -82,7 +82,7 @@ eventChapter21Data ; B1/8D4F
 		.byte 9, 8
 
 	_DiarmuidGroup ; B1/9139
-		UNIT Diarmuid, Player, [1, 4], [1, 4], Leif, [BeoBlade], 3, False, [$00, $00, $00, $00]
+		UNIT Diarmuid, Player, [1, 4], [1, 4], Leif, [BeoBlade], 7, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/914F

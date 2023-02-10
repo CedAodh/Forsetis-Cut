@@ -1,7 +1,7 @@
 
 	Skill1Dance      	= %00000001 ; $01
 	Skill1Steal      	= %00000010 ; $02
-	Skill1FakeImmortal  = %00000100 ; $04
+	Skill1FakeImmortal  	= %00000100 ; $04
 	Skill1Bargain    	= %00001000 ; $08
 	Skill1Renewal    	= %00010000 ; $10
 	Skill1Mount      	= %00100000 ; $20

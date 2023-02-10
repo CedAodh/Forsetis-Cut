@@ -72,7 +72,7 @@ eventChapter6Data ; B1/E22A
 		.byte 8, 7
 
 	_HicksGroup ; B1/E4B0
-		UNIT Hicks, Player, [14, 15], [14, 15], Leif, [Poleax, Vulnerary], 6, False, [$00, $00, $00, $00]
+		UNIT Hicks, Player, [14, 15], [14, 15], Leif, [Poleax, IronSword, Vulnerary], 8, False, [$00, $00, $00, $00]
 	UNIT
 
 	_KnightReinforcementsCameraCoordinates2 ; B1/E4C6

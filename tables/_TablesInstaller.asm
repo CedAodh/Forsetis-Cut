@@ -147,6 +147,13 @@
 
 * = $065A07
 .logical $8CDA07
+	aBattleBannerTable	.include "BATTLE/BattleBannerTable.casm"
+		.word $0000
+		.word $0000
+.here
+
+* = $4C0000
+.logical lorom($4C0000, 1)
 	aBattleQuoteTable	.include "DIALOGUE/BattleQuoteTable.casm" 
 		.word $0000
 	aDeathQuoteTable	.include "DIALOGUE/DeathQuoteTable.casm" 
@@ -156,9 +163,6 @@
 	aRetreatQuoteTable	.include "DIALOGUE/RetreatQuoteTable.casm" 
 		.word $0000
 	aBattleMusicTable	.include "BATTLE/BattleMusicTable.casm" 
-		.word $0000
-		.word $0000
-	aBattleBannerTable	.include "BATTLE/BattleBannerTable.casm"
 		.word $0000
 		.word $0000
 .here

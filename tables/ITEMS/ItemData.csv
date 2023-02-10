@@ -89,7 +89,7 @@ Wind,TypeWind,None,5,80,0,23,10,1,2,RankD,ItemEffectivenesses.aFlyingEffectivene
 Grafcalibur,TypeWind,None,13,100,2,40,40,1,2,WeaponLocks.aGrafcaliburWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,0,<>item_descs._GrafcaliburDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$56
 Tornado,TypeWind,None,17,90,3,15,0,1,2,RankC,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._TornadoDesc,None,None,None,None,TraitWeapon | TraitTome,$57
 Forseti,TypeWind,None,20,90,5,50,30,1,2,WeaponLocks.aForsetiWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aForsetiItemBonuses,0,<>item_descs._ForsetiDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$58
-Light,TypeLight,None,9,80,3,24,25,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._LightDesc,None,None,None,None,TraitWeapon | TraitTome,$59
+Light,TypeLight,None,9,80,3,24,20,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._LightDesc,None,None,None,None,TraitWeapon | TraitTome,$59
 Nosferatu,TypeLight,None,12,65,12,60,0,1,2,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,6200,<>item_descs._NosferatuDesc,None,$6,None,None,TraitWeapon | TraitTome,$5A
 Aura,TypeLight,None,20,100,12,80,0,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._AuraDesc,None,None,None,None,TraitWeapon | TraitTome,$5B
 Jormungand,TypeDark,None,14,70,5,20,10,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._JormungandDesc,None,$2,None,None,TraitWeapon | TraitTome,$5C

@@ -37,7 +37,7 @@ eventChapter12Data ; B1/C788
 		.byte 8, 7
 
 	_MareetaGroup ; B1/C9AA
-		UNIT Mareeta, Player, [8, 16], [8, 16], Leif, [MareetasSword, Vulnerary], 2, False, [$00, $00, $00, $00]
+		UNIT Mareeta, Player, [8, 16], [8, 16], Leif, [MareetasSword, Vulnerary], 7, False, [$00, $00, $00, $00]
 	UNIT
 
 	_UnusedCoordinates1 ; B1/C9C0

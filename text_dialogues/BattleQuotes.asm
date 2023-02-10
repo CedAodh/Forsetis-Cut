@@ -456,12 +456,134 @@ veldboss
 
 ; Unused
 
-ishtarboss
-.text "Behold the power of House Friege!"
+mannheimboss
+.text "For the glory of House Friege!"
 .byte WaitForA
 .byte EndText
 
-mannheimboss
-.text "No! We can't get stranded here!"
+; FC
+
+kantboss
+.text "You must be the rebels!"
+.byte NewLine
+.text "I won't let you escape"
+.byte NewLine
+.text "with the children!"
+.byte WaitForA
+.byte EndText
+
+bandoleboss
+.text "You have my apologies,"
+.byte NewLine
+.text "but orders are orders—I shall"
+.byte NewLine
+.text "stain the ground with your blood!"
+.byte WaitForA
+.byte EndText
+
+tolmanboss
+.text "No one escapes from Munster Castle"
+.byte NewLine
+.text "and lives to tell the tale!"
+.byte WaitForA
+.byte EndText
+
+jabalboss
+.text "Hold it right there!"
+.byte NewLine
+.text "Each head I chop off here"
+.byte NewLine
+.text "is another piece o' gold!"
+.byte WaitForA
+.byte EndText
+
+dvorakboss
+.text "So, you've made it up here"
+.byte NewLine
+.text "to the mountain pass."
+.byte WaitForA
+.byte ScrollText
+.text "I take it you're ready to"
+.byte NewLine
+.text "to tumbling back down?"
+.byte WaitForA
+.byte EndText
+
+mccloyboss
+.text "Fear the Dracoknights of Thracia!"
+.byte WaitForA
+.byte EndText
+
+eichnerboss
+.text "Believe me when I say"
+.byte NewLine
+.text "this is just a job."
+.byte NewLine
+.text "It's nothing personal."
+.byte WaitForA
+.byte EndText
+
+ishtarboss
+.text "It appears you've never been"
+.byte NewLine
+.text "taught to fear the name"
+.byte NewLine
+.text "“Goddess of Thunder.”"
+.byte WaitForA
+.byte ScrollText
+.text "Behold my power!"
+.byte WaitForA
+.byte EndText
+
+pierreboss
+.text "Oh, evil spirits!"
+.byte NewLine
+.text "Grant me your greatest power!"
+.byte WaitForA
+.byte EndText
+
+musboss
+.text "IT'S TOO LATE FOR YOU...KARL..."
+.byte NewLine
+.text "YOUR TIME AS KING HAS PASSED...!"
+.byte WaitForA
+.byte EndText
+
+dracoboss
+.text "PATTY... FEBAIL..."
+.byte NewLine
+.text "DON'T WORRY..."
+.byte NewLine
+.text "WE'LL BE BACK...SOON..."
+.byte WaitForA
+.byte EndText
+
+canisboss
+.text "NO..."
+.byte NewLine
+.text "GET AWAY FROM ME...!"
+.byte WaitForA
+.byte EndText
+
+porcusboss
+.text "NOT SO FUNNY NOW, AM I...?!"
+.byte WaitForA
+.byte EndText
+
+tigrisboss
+.text "HEY...! SHUT YER LIL' MOUTH"
+.byte NewLine
+.text "AND DO AS I SAY...!"
+.byte NewLine
+.text "GO...!"
+.byte WaitForA
+.byte EndText
+
+bovisboss
+.text "RUN..."
+.byte NewLine
+.text "AWAY FROM HERE..."
+.byte NewLine
+.text "I'LL CATCH UP..."
 .byte WaitForA
 .byte EndText

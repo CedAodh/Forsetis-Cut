@@ -640,6 +640,21 @@ eventChapter3Events ; 8C/E435
 		YIELD
 
 		+
+		
+		macroCheckIfRescuedByAllyOrNPC Lifis
+		JUMP_FALSE +
+
+		SCROLL_CAMERA_CHAR Lifis
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE lifiscaptured
+		YIELD
+		
+		macroSetCharacterTurnStatus Lifis, TurnStatusHidden
+
+		+ 
+		
 		PLAY_SOUND_WORD $00E7
 
 		FADE_OUT $01

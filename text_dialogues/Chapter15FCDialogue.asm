@@ -485,3 +485,210 @@ ch15daisyasaello
 	.byte WaitForA
 
 	.byte EndText
+	
+ch15tanyamareeta
+
+.byte right_slot
+.word LoadPortrait
+.word mareeta_portrait
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word tanya_portrait
+.text "Mareeta...?"
+.byte NewLine
+.text "You holding up OK?"
+.byte NewLine
+.text "You don't look so good..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Tanya?!"
+.byte NewLine
+.text "No, I'm just— I'm just getting ready"
+.byte NewLine
+.text "for our upcoming fight."
+.byte WaitForA
+.byte NewLine
+.text "I'm taking a moment to clear my mind."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, that sure sounds like you..."
+.byte NewLine
+.text "But it doesn't explain why you're so tensed up!"
+.byte NewLine
+.text "Y-your eye is twitchy—what's going on?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I assure you, it's nothing."
+.byte NewLine
+.text "Everyone has their off days, don't they?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Yeah."
+.byte NewLine
+.text "You know, I can stick around a bit in case"
+.byte NewLine
+.text "you decide you want to talk about it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Maybe..."
+.byte NewLine
+.text "I-I don't think it's for me though."
+.byte NewLine
+.text "I really just need time to be alone and focus."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hey, I'm not judgin'."
+.byte NewLine
+.text "I get it, we all need a little space sometimes."
+.byte WaitForA
+.byte ScrollText
+.text "But...I'm going to stick around anyway."
+.byte NewLine
+.text "I'll just be off to the side restringing my bow."
+.byte NewLine
+.text "You won't even notice me!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That's not quite what I—"
+.byte NewLine
+.text "Actually, on second thought, I would like that."
+.byte NewLine
+.text "Thanks, Tanya."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Don't mention it!"
+.byte WaitForA
+.byte NewLine
+.text "I gotta be quiet and concentrate, myself..."
+.byte NewLine
+.text "so we can have a little quiet time,"
+.byte NewLine
+.text "just the two of us!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Very good, then."
+.byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Eh..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What's up?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Tanya..."
+.byte NewLine
+.text "I appreciate you looking out for me,"
+.byte NewLine
+.text "but I don't think this is working."
+.byte WaitForA
+.byte ScrollText
+.text "I'm really just not feeling it."
+.byte NewLine
+.text "That, and it feels rude to have you sit down"
+.byte NewLine
+.text "next to me but also have you not talk."
+.byte WaitForA
+.byte ScrollText
+.text "I'm sorry, but I'd really like to"
+.byte NewLine
+.text "finish up here alone."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh..."
+.byte NewLine
+.text "Well, it's fine. No feelings hurt."
+.byte WaitForA
+.byte WaitForA
+.text "I think the others need some help too,"
+.byte NewLine
+.text "so I'll go give 'em a hand instead."
+.byte WaitForA
+.byte ScrollText
+.text "But...hey."
+.byte NewLine
+.text "I'm, uh..."
+.byte NewLine
+.text "I'm always here if you need someone, you know?"
+.byte WaitForA
+.byte ScrollText
+.text "You can talk to me about anything, so..."
+.byte NewLine
+.text "whatever you got, I'll listen to, I promise."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I know, Tanya...I know."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Good!"
+.byte NewLine
+.text "Then...I'll see ya around!"
+.byte WaitForA
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "I'm sorry, Tanya...but I can't"
+.byte NewLine
+.text "burden you with this."
+.byte NewLine
+.text "This is for me to triumph against."
+.byte WaitForA
+.byte ScrollText
+.text "Those despicable thugs..."
+.byte NewLine
+.text "They'll get no redemption or forgiveness"
+.byte NewLine
+.text "as long as I hold this sword."
+.byte WaitForA
+
+.byte EndText

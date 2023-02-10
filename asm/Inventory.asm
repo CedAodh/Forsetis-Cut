@@ -670,6 +670,10 @@ rsInventoryDrawItemNamesAndDurability ; 81/D2C7
 
 	; Slash
 
+	lda aItemDataBuffer.Traits,b
+	bit #(TraitUnbreakable)
+	bne +
+	
 	ldx wR15
 	lda aInventoryTextBaseTable,x
 	sta wUnknown000DE7,b
@@ -683,6 +687,8 @@ rsInventoryDrawItemNamesAndDurability ; 81/D2C7
 	tax
 	jsl $87E728
 
+	+
+	
 	_Next
 	dec wR16
 	dec wR16

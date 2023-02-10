@@ -74,6 +74,9 @@ eventChapter15Events ; FD/A812
 			CHECK_CHARS2 Leif, Asaello
 			TEST_FLAG_SET $0B
 		END_DEFINITION
+		EVENT $12, _TanyaMareetaTalk
+			CHECK_CHARS2 Tanya, Mareeta
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/A8CB
@@ -480,6 +483,14 @@ eventChapter15Events ; FD/A812
 		YIELD
 		
 		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_TanyaMareetaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE ch15tanyamareeta
 		YIELD
 	END2
 
@@ -945,6 +956,9 @@ eventChapter15Events ; FD/A812
 		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
 
 		STORE_BYTE bBuf_INIDISP, $00
+		
+		STORE_WORD wEventEngineCharacterTarget, Dean
+		CALL_ASM_LOOP rlASMCGiveUnitItemsToConvoy, $0000
 
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000

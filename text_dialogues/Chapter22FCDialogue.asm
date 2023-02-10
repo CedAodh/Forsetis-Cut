@@ -205,3 +205,183 @@
 ; .byte WaitForA
 
 ; .byte EndText
+
+juliusreinhardt1
+
+.byte right_slot
+.word LoadPortrait
+.word reinhardt_portrait
+.text "So the battle is over..."
+.byte WaitForA
+.byte ScrollText
+.text "How did this even happen?"
+.byte NewLine
+.text "I am the enemy; I was meant to"
+.byte NewLine
+.text "meet my end upon defeat."
+.byte WaitForA
+.byte ScrollText
+.text "...Regardless, Olwen, you—and the"
+.byte NewLine
+.text "honorable Prince Leif, I should add..."
+.byte NewLine
+.text "You have made quite the impression."
+.byte WaitForA
+.byte ScrollText
+.text "I cannot grasp the meaning behind this"
+.byte NewLine
+.text "childlike mindset you carry."
+.byte WaitForA
+.byte ScrollText
+.text "However..."
+.byte NewLine
+.text "I do believe it to be in my best interest"
+.byte NewLine
+.text "to lend you my support."
+.byte WaitForA
+.byte ScrollText
+.text "I would join you, but I must first"
+.byte NewLine
+.text "report of this to Lady Ishtar."
+.byte NewLine
+.text "Then I will be seen off properly..."
+.byte WaitForA
+
+.byte EndText
+
+juliusreinhardt2
+
+.byte right_slot
+.word LoadPortrait
+.word reinhardt_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word julius_portrait
+.text "Reinhardt..."
+.byte NewLine
+.text "You're still alive."
+.byte WaitForA
+
+.byte right_slot
+.text "Lord Julius...!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Shut up!"
+.byte NewLine
+.text "Do not speak my name!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Beg pardon, milord."
+.byte NewLine
+.text "I merely wished to—"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Enough of that."
+.byte WaitForA
+.byte ScrollText
+.text "Reinhardt, I have come across...an issue."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "How might I be of service?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You see, I gave Ishtar some very sad news."
+.byte NewLine
+.text "I told her there was a report that you"
+.byte NewLine
+.text "valiantly perished in battle on this day."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But inconceivably,"
+.byte NewLine
+.text "you stand before me now, alive."
+.byte NewLine
+.text "Do you see the problem?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "M-my lord, surely you're not—"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ah, but I am."
+.byte WaitForA
+.byte ScrollText
+.text "I'm most certain you understand, though—"
+.byte NewLine
+.text "I could never bear to make myself a liar"
+.byte NewLine
+.text "in the face of my beloved Ishtar."
+.byte WaitForA
+.byte ScrollText
+.text "It's time for you to die, Reinhardt."
+.byte NewLine
+.text "Your hope is gone."
+.byte WaitForA
+
+.byte EndText
+
+juliusreinhardt3
+
+.byte right_slot
+.word LoadPortrait
+.word julius_portrait
+.text "Couldn't leave well enough alone, huh?!"
+.byte NewLine
+.text "Had you remained still, I would have"
+.byte NewLine
+.text "wrapped things up nice and quickly here."
+.byte WaitForA
+.byte ScrollText
+.text "But instead you'll lie here in agony,"
+.byte NewLine
+.text "whilst knowing your life's work was for naught."
+.byte WaitForA
+.byte ScrollText
+.text "Hmph."
+.byte NewLine
+.text "What a fitting end for an obsequious wretch."
+.byte WaitForA
+
+.byte EndText
+
+juliusreinhardt4
+
+.byte right_slot
+.word LoadPortrait
+.word reinhardt_portrait
+.text "Nngh..."
+.byte NewLine
+.text "Lady...Ishtar, I..."
+.byte NewLine
+.text "...Perhaps it's...better this way..."
+.byte WaitForA
+.byte ScrollText
+.text "Olwen... My sister..."
+.byte NewLine
+.text "Keep steady...and focused..."
+.byte NewLine
+.text "Forgive me..."
+.byte WaitForA
+
+.byte EndText

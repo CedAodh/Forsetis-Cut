@@ -51,7 +51,7 @@ eventChapter18Events ; E7/8000
 			CMP_BYTE $7E4976, 8
 		END_DEFINITION
 		EVENT $0C, _GunnarAsbelTalk
-			CHECK_CHARS2 GunterDialogue, Asbel
+			CHECK_CHARS2 Leif, Asbel
 		END_DEFINITION
 		EVENT $00, _XavierArmorDialogue1
 			CHECK_CHARS2 Civilian9, XavierArmor1
@@ -371,7 +371,7 @@ eventChapter18Events ; E7/8000
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE gunnarasbel
 		YIELD
 	END2
 
@@ -977,6 +977,10 @@ eventChapter18Events ; E7/8000
 		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
 
 		STORE_BYTE bBuf_INIDISP, $00
+		
+		STORE_WORD wEventEngineCharacterTarget, Dean
+		CALL_ASM_LOOP rlASMCGiveUnitItemsToConvoy, $0000
+		
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 

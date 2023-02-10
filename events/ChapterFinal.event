@@ -70,26 +70,44 @@ eventChapterFinalEvents ; B9/BA0E
 			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_SET $06
 		END_DEFINITION
-		;EVENT $07, _LeifVsVeld
-		;	TEST_FLAG_SET $24
-		;	CMP_WORD aSelectedCharacterBuffer.Character, Leif
-		;	macroEventConditionCheckCoordRanges [14, 12], [18, 17]
-		;END_DEFINITION
-		;EVENT $08, _EyvelVsVeld
-		;	TEST_FLAG_SET $24
-		;	CMP_WORD aSelectedCharacterBuffer.Character, Eyvel
-		;	macroEventConditionCheckCoordRanges [14, 12], [18, 17]
-		;END_DEFINITION
-		;EVENT $09, _SaraVsVeld
-		;	TEST_FLAG_SET $24
-		;	CMP_WORD aSelectedCharacterBuffer.Character, Sara
-		;	macroEventConditionCheckCoordRanges [14, 12], [18, 17]
-		;END_DEFINITION
+		EVENT $07, _LeifVsVeld
+			TEST_FLAG_SET $24
+			CMP_WORD aSelectedCharacterBuffer.Character, Leif
+			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
+		END_DEFINITION
+		EVENT $08, _EyvelVsVeld
+			TEST_FLAG_SET $24
+			CMP_WORD aSelectedCharacterBuffer.Character, Eyvel
+			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
+		END_DEFINITION
+		EVENT $09, _SaraVsVeld
+			TEST_FLAG_SET $24
+			CMP_WORD aSelectedCharacterBuffer.Character, Sara
+			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; B9/BAE1
 		EVENT $05, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Veld
+		END_DEFINITION
+		EVENT $0A, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Mus
+		END_DEFINITION
+		EVENT $0B, eventBattleQuoteDummyEvent
+			CHECK_SINGLE DracoEyvel
+		END_DEFINITION
+		EVENT $0C, eventBattleQuoteDummyEvent
+			CHECK_SINGLE CanisSara
+		END_DEFINITION
+		EVENT $0D, eventBattleQuoteDummyEvent
+			CHECK_SINGLE PorcusLifis
+		END_DEFINITION
+		EVENT $0E, eventBattleQuoteDummyEvent
+			CHECK_SINGLE TigrisDagdar
+		END_DEFINITION
+		EVENT $0F, eventBattleQuoteDummyEvent
+			CHECK_SINGLE BovisGalzus
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -298,17 +316,17 @@ eventChapterFinalEvents ; B9/BA0E
 		YIELD_UNK
 	END1
 	
-	;_LeifVsVeld
-	;	macroDialogueHouse LeifVsVeld
-	;END2
+	_LeifVsVeld
+		macroDialogueHouse LeifVsVeld
+	END2
 	
-	;_EyvelVsVeld
-	;	macroDialogueHouse EyvelVsVeld
-	;END2
+	_EyvelVsVeld
+		macroDialogueHouse EyvelVsVeld
+	END2
 	
-	;_SaraVsVeld
-	;	macroDialogueHouse SaraVsVeld
-	;END2
+	_SaraVsVeld
+		macroDialogueHouse SaraVsVeld
+	END2
 
 	_PrepGroups ; B9/BC94
 		.long eventChapterFinalData._PrepGroup

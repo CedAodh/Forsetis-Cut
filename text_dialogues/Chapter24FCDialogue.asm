@@ -309,3 +309,27 @@ brightonvsraydrik
 .text "But words won't save you from inevitable defeat."
 .byte NewLine
 .text "Time to get this over with."
+
+getgudraydrik
+
+.byte right_slot
+.word LoadPortrait
+.word Raydrik2Portrait
+.text "Wh...wh..."
+.byte NewLine
+.text "What...?!"
+.byte WaitForA
+.byte ScrollText
+.text "M-my blade...the Loptrian Fang..."
+.byte NewLine
+.text "Wh-wh-where did it go?!"
+.byte WaitForA
+.byte ScrollText
+.text "Dammit...!"
+.byte NewLine
+.text "This can't... This can't be happening!"
+.byte NewLine
+.text "I'm going to lose everything I have now!"
+.byte WaitForA
+
+.byte EndText

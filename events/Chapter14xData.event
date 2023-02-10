@@ -149,7 +149,7 @@ eventChapter14xData ; B1/B6FE
 		.byte 8, 7
 
 	_LinoanGroup ; B1/B944
-		UNIT Linoan, Player, [8, 24], [8, 24], Leif, [TorchStaff, Heal, Ensorcel, Restore], 3, False, [$00, $00, $00, $00]
+		UNIT Linoan, Player, [8, 24], [8, 24], Leif, [TorchStaff, Heal, Ensorcel, Restore], 5, False, [$00, $00, $00, $00]
 	UNIT
 
 	_UnusedCoordinates20 ; B1/B95A

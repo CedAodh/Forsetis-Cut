@@ -394,3 +394,105 @@ zaaunrel
 .text "Ironic."
 .byte WaitForA
 .byte EndText
+
+kantrel
+.text "Th-thanks for letting me go..."
+.byte WaitForA
+.byte EndText
+
+bandolerel
+.text "I..."
+.byte NewLine
+.text "I'm never going to hear the end of this..."
+.byte WaitForA
+.byte EndText
+
+tolmanrel
+.text "You think showing mercy will save your spines?"
+.byte NewLine
+.text "This isn't over yet!"
+.byte WaitForA
+.byte EndText
+
+jabalrel
+.text "This...didn't work out."
+.byte WaitForA
+.byte EndText
+
+dvorakrel
+.text "Hey, do me a favor and DON'T drop me"
+.byte NewLine
+.text "into the stream of water?"
+.byte NewLine
+.text "I'm...not very good at swimming."
+.byte WaitForA
+.byte EndText
+
+mccloyrel
+.text "This was not the plan..."
+.byte WaitForA
+.byte EndText
+
+eichnerrel
+.text "Thanks for giving me this chance—"
+.byte NewLine
+.text "the chance to realize that this isn't"
+.byte NewLine
+.text "how I should make a living..."
+.byte WaitForA
+.byte ScrollText
+.text "I'm sure we'll meet again eventually!"
+.byte WaitForA
+.byte EndText
+
+ishtarrel
+.text "You do not take prisoners..."
+.byte NewLine
+.text "That may very well be your undoing one day."
+.byte WaitForA
+.byte EndText
+
+pierrerel
+.text "...Goodbye."
+.byte WaitForA
+.byte EndText
+
+musrel
+.text "ALL YOUR RICHES...WILL BE MINE..."
+.byte WaitForA
+.byte EndText
+
+dracorel
+.text "EDAIN..."
+.byte NewLine
+.text "WHERE DID YOU GO..."
+.byte WaitForA
+.byte EndText
+
+canisrel
+.text "MOTHER... FATHER..."
+.byte NewLine
+.text "DON'T LEAVE ME...WITH HIM..."
+.byte WaitForA
+.byte EndText
+
+porcusrel
+.text "STOP IT..."
+.byte NewLine
+.text "SHUT UP, JACKASS...!"
+.byte WaitForA
+.byte EndText
+
+tigrisrel
+.text "WHO DO YA THINK YA ARE..."
+.byte NewLine
+.text "BARGIN' IN HERE...?!"
+.byte WaitForA
+.byte EndText
+
+bovisrel
+.text "OUT OF THE WAY...!"
+.byte NewLine
+.text "I HAVE TO FIND HER..."
+.byte WaitForA
+.byte EndText

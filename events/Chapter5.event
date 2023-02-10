@@ -746,17 +746,33 @@ eventChapter5Events ; 99/9246
 		DIALOGUE ch5op2
 		YIELD
 
-		MOVE_UNIT Eyvel, [0, 0], [15, 15], 1, None
-		YIELD_UNK
+		;MOVE_UNIT Eyvel, [0, 0], [15, 15], 1, None
+		;YIELD_UNK
 
 		MOVE_UNIT Nanna, [0, 0], [14, 17], 1, None
 		YIELD_UNK
 
 		WAIT_MOVE
 		YIELD
-
-		SCROLL_CAMERA_SPEED [15, 26], 4
+		
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED $04
 		YIELD
+		
+		macroCountAllUncapturedAliveUnits Brighton
+		JUMP_FALSE +
+
+		DIALOGUE ch5op3
+		YIELD
+
+		JUMP ++
+
+		+
+		
+		DIALOGUE ch5op4
+		YIELD
+
+		+
 	END2
 
 	_EndingEvent ; 99/A2DB

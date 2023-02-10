@@ -758,8 +758,85 @@ gunterdeath
 mannheimdeath
 .text "Ugh...!"
 .byte NewLine
-.text "King Blume, I've failed you..."
+.text "King Bloom, I've failed you..."
 .byte NewLine
 .text "Please forgive me..."
+.byte WaitForA
+.byte EndText
+
+; FC
+
+kantdeath
+
+.text "Gah...!"
+.byte NewLine
+.text "You're not just...ordinary..."
+.byte NewLine
+.text "civilians..."
+.byte WaitForA
+.byte EndText
+
+bandoledeath
+.text "Bested by...a bunch of"
+.byte NewLine
+.text "pathetic worms..."
+.byte NewLine
+.text "Th-there's no..."
+.byte WaitForA
+.byte EndText
+
+tolmandeath
+.text "Urgh...!"
+.byte NewLine
+.text "Baron Raydrik..."
+.byte WaitForA
+.byte EndText
+
+jabaldeath
+.text "D-damn you!"
+.byte NewLine
+.text "How did you... Gah!"
+.byte WaitForA
+.byte EndText
+
+dvorakdeath
+.text "Guh..."
+.byte NewLine
+.text "Couldn't have...expected this..."
+.byte WaitForA
+.byte EndText
+
+mccloydeath
+.text "All Dracoknights...are destined..."
+.byte NewLine
+.text "for this..."
+.byte WaitForA
+.byte EndText
+
+eichnerdeath
+.text "Hah..."
+.byte NewLine
+.text "I should've known...it would"
+.byte NewLine
+.text "end like this..."
+.byte WaitForA
+.byte EndText
+
+ishtardeath
+.text "Lord Julius..."
+.byte NewLine
+.text "Reinhardt..."
+.byte WaitForA
+.byte EndText
+
+pierredeath
+.text "May Loptous' blessings..."
+.byte NewLine
+.text "be upon us..."
+.byte WaitForA
+.byte EndText
+
+deadlorddeath
+.text "............"
 .byte WaitForA
 .byte EndText
