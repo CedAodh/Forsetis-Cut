@@ -93,7 +93,7 @@ August2Portrait,g4bppcPortraitEDE4DA,$59
 WeissmannPortrait,g4bppcPortraitEDE988,$5A
 MerlochPortrait,g4bppcPortraitEDE988,$C9
 FrausPortrait,g4bppcPortraitEDE988,$CA
-BossUnknown2Portrait,g4bppcPortraitEDE988,$CB
+BandolePortrait,g4bppcPortraitEDE988,$CB
 RumaighPortrait,g4bppcPortraitEDED87,$5B
 MullerPortrait,g4bppcPortraitEDED87,$C4
 SeimetzPortrait,g4bppcPortraitEDED87,$C5
@@ -121,7 +121,7 @@ BucksPortrait,g4bppcPortraitEE9840,$64
 ShivaPortrait,g4bppcPortraitEE9D0E,$65
 RaydrikPortrait,g4bppcPortraitEEA236,$66
 LargoPortrait,g4bppcPortraitEEA74E,$67
-BaldachPortrait,g4bppcPortraitEEA74E,$D5
+BaldachPortrait,g4bppcPortraitEEA74E,$BA
 BrookPortrait,g4bppcPortraitEEA74E,$D6
 BlumePortrait,g4bppcPortraitEEAC11,$68
 ManfroyPortrait,g4bppcPortraitEEB0AB,$69
@@ -207,7 +207,7 @@ Mage1Portrait,g4bppcPortraitEFDC2E,$A9
 Mage2Portrait,g4bppcPortraitEFDC2E,$AA
 Mage3Portrait,g4bppcPortraitEFDC2E,$A8
 Mage4Portrait,g4bppcPortraitEFDC2E,$AB
-Mage5Portrait,g4bppcPortraitEFDC2E,$AC
+PierrePortrait,g4bppcPortraitEDF6BA,$BF
 Priest2Portrait,g4bppcPortraitEFD772,$AC
 MagicSword1Portrait,g4bppcPortraitEFD3A1,$A7
 Mage6Portrait,g4bppcPortraitEFDC2E,$A9
@@ -220,7 +220,7 @@ Ballistician1Portrait,g4bppcPortraitEFE47D,$A2
 Ballistician2Portrait,g4bppcPortraitEFE47D,$A0
 Ballistician3Portrait,g4bppcPortraitEFE47D,$B8
 Fighter2Portrait,g4bppcPortraitEFC7D1,$9B
-BowKnight3Portrait,g4bppcPortraitEFA1F5,$92
+TolmanPortrait,g4bppcPortraitEEA74E,$B5
 BowKnight4Portrait,g4bppcPortraitEFA1F5,$92
 Knight11Portrait,g4bppcPortraitEF9DCD,$92
 Dracoknight3Portrait,g4bppcPortraitEFB317,$98
@@ -234,14 +234,14 @@ Mage11Portrait,g4bppcPortraitEFDC2E,$AB
 MagicKnight5Portrait,g4bppcPortraitEFAA5D,$95
 MagicSword2Portrait,g4bppcPortraitEFD3A1,$A6
 Priest4Portrait,g4bppcPortraitEFD772,$AB
-Mage12Portrait,g4bppcPortraitEFDC2E,$AC
+Veld2Portrait,g4bppcPortraitEEC477,$F3
 Myrmidon5Portrait,g4bppcPortraitEFBB1D,$9A
 Myrmidon6Portrait,g4bppcPortraitEFBB1D,$9B
 Myrmidon7Portrait,g4bppcPortraitEFBB1D,$9B
 Archer4Portrait,g4bppcPortraitEFB75D,$9A
 Archer5Portrait,g4bppcPortraitEFB75D,$9B
 Thief2Portrait,g4bppcPortraitEFE801,$B6
-Myrmidon8Portrait,g4bppcPortraitEFBB1D,$9D
+NicolovPortrait,g4bppcPortraitEEA74E,$BB
 Myrmidon9Portrait,g4bppcPortraitEFBB1D,$9B
 Thief3Portrait,g4bppcPortraitEFE801,$B6
 PegasusKnight2Portrait,g4bppcPortraitEFAEBF,$B4
