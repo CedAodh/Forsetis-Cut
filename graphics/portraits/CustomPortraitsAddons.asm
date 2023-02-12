@@ -9,7 +9,7 @@
 	g4bppcPortraitCoulter .binary "sprites/Coulter.4bpp.comp"
 	g4bppcPortraitBeatrice .binary "sprites/Beatrice.4bpp.comp"
 	g4bppcPortraitFilat .binary "sprites/Filat.4bpp.comp"
-	g4bppcPortraitGunnar
+	;g4bppcPortraitGunnar
 	;Gunnar ain't done yet baby! .binary "sprites/Gunnar.4bpp.comp"
 	
 	

@@ -1,7 +1,7 @@
 structBattleAnimationCharacterPalettes 0,Character,Class,BA_Palette
 BattlePalette0,Finn,LanceKnightDismounted,BA_Finn_Dismounted_Palette
 BattlePalette1,Finn,DukeKnightDismounted,BA_Finn_Dismounted_Palette
-BattlePalette2,Finn,MasterKnight,BA_Finn_MasterKnight_Palette
+BattlePalette2,Ishtar,SageF,BA_UnknownPalette11
 BattlePalette3,Osian,Fighter,BA_Osian_Fighter_Palette
 BattlePalette4,Osian,Hero,BA_Osian_Hero_Palette
 BattlePalette5,Halvan,Fighter,BA_Halvan_Fighter_Palette

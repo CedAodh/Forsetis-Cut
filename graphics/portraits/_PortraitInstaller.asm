@@ -254,7 +254,6 @@
 	g4bppcPortraitEAEE23 .binary "sprites/PortraitEAEE23.4bpp.comp"
 	g4bppcPortraitEAF322 .binary "sprites/PortraitEAF322.4bpp.comp"
 	g4bppcPortraitEAF8A6 .binary "sprites/PortraitEAF8A6.4bpp.comp"
-	g4bppcPortraitEAFE34 .binary "sprites/PortraitEAFE34.4bpp.comp"
 
 	segmentEnd $EB0318
 
@@ -289,7 +288,6 @@
 	g4bppcPortraitEBEE1D .binary "sprites/PortraitEBEE1D.4bpp.comp"
 	g4bppcPortraitEBF2FF .binary "sprites/PortraitEBF2FF.4bpp.comp"
 	g4bppcPortraitEBF862 .binary "sprites/PortraitEBF862.4bpp.comp"
-	g4bppcPortraitEBFD2F .binary "sprites/PortraitEBFD2F.4bpp.comp"
 
 	segmentEnd $EC0209
 
@@ -299,7 +297,7 @@
 .logical $EC8209
 
 	segmentStart
-
+	
 	g4bppcPortraitEC8209 .binary "sprites/PortraitEC8209.4bpp.comp"
 	g4bppcPortraitEC8729 .binary "sprites/PortraitEC8729.4bpp.comp"
 	g4bppcPortraitEC8C0D .binary "sprites/PortraitEC8C0D.4bpp.comp"
@@ -325,8 +323,6 @@
 	g4bppcPortraitECF0A4 .binary "sprites/PortraitECF0A4.4bpp.comp"
 	g4bppcPortraitECF4EA .binary "sprites/PortraitECF4EA.4bpp.comp"
 	g4bppcPortraitECF9CB .binary "sprites/PortraitECF9CB.4bpp.comp"
-	g4bppcPortraitECFE67 .binary "sprites/PortraitECFE67.4bpp.comp"
-
 	segmentEnd $ED0356
 
 .here
@@ -442,4 +438,18 @@
 
 .here
 
-.include "CustomPortraitsAddons.asm"
+* = $4E0000
+.logical $1C8000
+	
+	g4bppcPortraitSara .binary "sprites/Sara.4bpp.comp"
+	g4bppcPortraitCohen .binary "sprites/Cohen.4bpp.comp"
+	g4bppcPortraitTravant .binary "sprites/Travant.4bpp.comp"
+	g4bppcPortraitCoulter .binary "sprites/Coulter.4bpp.comp"
+	g4bppcPortraitBeatrice .binary "sprites/Beatrice.4bpp.comp"
+	g4bppcPortraitFilat .binary "sprites/Filat.4bpp.comp"
+	;g4bppcPortraitGunnar
+	;Gunnar ain't done yet baby! .binary "sprites/Gunnar.4bpp.comp"
+	g4bppcPortraitEAFE34 .binary "sprites/PortraitEAFE34.4bpp.comp"
+	g4bppcPortraitEBFD2F .binary "sprites/PortraitEBFD2F.4bpp.comp"
+	g4bppcPortraitECFE67 .binary "sprites/PortraitECFE67.4bpp.comp"
+.here
