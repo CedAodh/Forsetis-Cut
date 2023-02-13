@@ -500,7 +500,12 @@ nintendo_logo
 .here
 
 
+* = $25E8C4
+.logical lorom($25E8C4, 1)
 
+.binary "brunter.4bpp.fe4"
+
+.here
 
 
 
