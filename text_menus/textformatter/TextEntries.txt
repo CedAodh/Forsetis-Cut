@@ -503,7 +503,7 @@ Fighter
 Pegasus Rider
 Soldier
 Loptrian (Mage
-
+Marauder
 
 //ITEMS-------------------------------------------
 
