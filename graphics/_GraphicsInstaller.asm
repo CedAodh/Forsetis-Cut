@@ -499,7 +499,12 @@ nintendo_logo
 
 .here
 
+* = $2CB31D
+.logical lorom($2CB31D, 1)
 
+.binary "FArchKnight.4bpp.fe4"
+
+.here
 
 
 
