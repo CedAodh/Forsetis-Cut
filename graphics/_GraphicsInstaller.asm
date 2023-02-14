@@ -508,7 +508,6 @@ nintendo_logo
 
 * = $25E8C4
 .logical lorom($25E8C4, 1)
->>>>>>> 8b026780d50329fa3060a2c7f4543be7f699cbce
 
 .binary "brunter.4bpp.fe4"
 
