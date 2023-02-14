@@ -505,11 +505,39 @@ nintendo_logo
 .binary "FArchKnight.4bpp.fe4"
 
 .here
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
+* = $25E8C4
+.logical lorom($25E8C4, 1)
+>>>>>>> 8b026780d50329fa3060a2c7f4543be7f699cbce
 
+.binary "brunter.4bpp.fe4"
 
+.here
 
+* = $554A4
+.logical lorom($554A4, 1)
+    aBattleAnimationDynamicTiles .binary "BattleAnimationDynamicTiles.bin"
+.here
+
+* = $59A000
+.logical lorom($59A000, 1)
+    aBattleAnimationStaticTiles .binary "BattleAnimationStaticTiles.bin"
+.here
+
+* = $0D8462
+.logical lorom($0D8462, 1)
+    .long aBattleAnimationStaticTiles
+.here
+
+* = $0D8500
+.logical lorom($0D8500, 1)
+    .long aBattleAnimationStaticTiles
+.here
+
+* = $49D000
+.logical lorom($49D000, 1)
+
+.binary "BarbarianNew.bin.fe4"
+
+.here
 

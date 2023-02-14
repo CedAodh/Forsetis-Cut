@@ -315,7 +315,6 @@ _Berserker_data
 	.word $0000
 	
 _Brigand_data
-_BrigandAlternate_data
 	.text "Brigand "
 	.word $0000
 	
@@ -433,6 +432,9 @@ _Soldier_data
 	.text "Soldier "
 	.word $0000
 
+_BrigandAlternate_data
+	.text "Marauder"
+	.word $0000
 	
 .bend
 .here
