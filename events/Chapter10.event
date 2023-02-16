@@ -74,6 +74,9 @@ eventChapter10Events ; 99/C559
 		macroBossQuoteDefinition $05, Largo
 		macroBossQuoteDefinition $08, Olwen
 		macroBossQuoteDefinition $09, Fred
+		EVENT $0B, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Dvorak
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; 99/C674

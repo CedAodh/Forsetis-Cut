@@ -98,6 +98,9 @@ eventChapter5Events ; 99/9246
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; 99/93F1
+		EVENT $14, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Bandole
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; 99/93F3

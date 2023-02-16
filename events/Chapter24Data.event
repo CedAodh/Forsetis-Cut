@@ -151,4 +151,4 @@ eventChapter24Data ; 99/F2A4
 	END2
 
 	_SecretShop ; 99/F7A1
-		SHOP [21, 2], [LifeRing, SpeedRing, SkillRing, StrengthRing, ShieldRing]
+		SHOP [21, 2], [LifeRing, StrengthRing, MagicRing, SkillRing, SpeedRing, LuckRing, ShieldRing]

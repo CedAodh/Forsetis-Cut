@@ -167,15 +167,29 @@
 		.word $0000
 .here
 
+* = $4C1000
+.logical lorom($4C1000, 1)
+
+.include "BATTLE/BattleAnimationsOnMusicTable.asm"
+
+.here
+
+* = $0B0445
+.logical lorom($0B0435, 1)
+
+.byte $00, $90, $18
+
+.here
+
 * = $080A66
 .logical lorom($080A66, 1)
 	.include "MAP/MapAnimationItemGraphicsInfo.casm"
 .here
 
-* = $0B046C
-.logical $96846C
-	.include "BATTLE/BattleAnimationsOnMusicTable.asm"
-.here
+;* = $0B046C
+;.logical $96846C
+;	.include "BATTLE/BattleAnimationsOnMusicTable.asm"
+;.here
 
 * = $0B372E
 .logical lorom($0B372E, 1)

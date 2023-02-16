@@ -246,6 +246,9 @@
 .include "hacky/adeptactivationchange.asm"
 .include "hacky/virtual.h"
 .include "hacky/warpcancelfix.asm"
+;.include "hacky/solfix.asm"
+;.include "hacky/halvestaffexp.asm"
+.include "hacky/maketalkdisplayevenbetter.asm"
 
 
 

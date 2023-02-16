@@ -416,17 +416,18 @@ rsPreps83BAD7
 
 rsPreps83BAEE
 
+	
 	.al 
 	.autsiz
 	.databank `aPlayerVisibleUnitMap
-
+	
 	ldx wCursorTileIndex,b
 	lda aPlayerVisibleUnitMap,X 
 	sta wR0 
 	lda #aSelectedCharacterBuffer
 	sta wR1 
 	jsl rlCopyCharacterDataToBufferByDeploymentNumber
-	rts 
+	rts
 
 rsPreps83BB00
 

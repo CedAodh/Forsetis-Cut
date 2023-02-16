@@ -420,11 +420,9 @@ jabalrel
 .byte EndText
 
 dvorakrel
-.text "Hey, do me a favor and DON'T drop me"
+.text "Not in the water, please...!"
 .byte NewLine
-.text "into the stream of water?"
-.byte NewLine
-.text "I'm...not very good at swimming."
+.text "I never learned how to swim!"
 .byte WaitForA
 .byte EndText
 

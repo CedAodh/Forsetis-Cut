@@ -100,6 +100,9 @@ eventChapter4xEvents ; FD/85C5
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; FD/87B0
+		EVENT $0E, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Kant
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; FD/87B2

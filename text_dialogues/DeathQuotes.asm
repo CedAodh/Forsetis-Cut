@@ -840,3 +840,17 @@ deadlorddeath
 .text "............"
 .byte WaitForA
 .byte EndText
+
+asaellodeath
+.text "C-crap, how did..."
+.byte NewLine
+.text "Guys... Daisy..."
+.byte NewLine
+.text "I'm sorry..."
+.byte WaitForA
+
+daisydeath
+.text "No...no way..."
+.byte NewLine
+.text "Help me...Asaello..."
+.byte WaitForA

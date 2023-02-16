@@ -216,6 +216,9 @@ eventChapter14xEvents ; FD/A1BC
 		EVENT $05, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Codha
 		END_DEFINITION
+		EVENT $0D, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Eichner
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; FD/A4DF

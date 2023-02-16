@@ -498,14 +498,11 @@ jabalboss
 .byte EndText
 
 dvorakboss
-.text "So, you've made it up here"
+.text "Such a trudge up here"
 .byte NewLine
-.text "to the mountain pass."
-.byte WaitForA
-.byte ScrollText
-.text "I take it you're ready to"
+.text "must have taken its toll."
 .byte NewLine
-.text "to tumbling back down?"
+.text "Allow me to help you back down!"
 .byte WaitForA
 .byte EndText
 

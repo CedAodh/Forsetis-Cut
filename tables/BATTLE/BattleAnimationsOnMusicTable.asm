@@ -2,7 +2,7 @@
 aBattleAnimationsOnMusicTable .block	; 96/846C
 .word	Marty
 .word	Dalsin
-.word	Wolfe	;used to be Callion
+.word	Ishtar	;used to be Callion
 .word	Shiva
 .word	Perne
 .word	Fred
@@ -42,6 +42,7 @@ aBattleAnimationsOnMusicTable .block	; 96/846C
 .word	Palman
 .word	Kant
 .word	Gustav
+.word	Wolfe
 .word	Mannheim
 .word	Fraus
 .word	Seimetz

@@ -171,7 +171,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
         ; Holdover from rsDrawMovementRangeOrBMenu
 
         jsl rlUnknown83CD2B
-
+		_Start
         lda aOptions.wTerrainWindowOption
         and #$0F00
         cmp #$0100

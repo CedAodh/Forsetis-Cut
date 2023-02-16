@@ -125,6 +125,9 @@ eventChapter7Events ; 99/B023
 		EVENT $0E, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Raydrik
 		END_DEFINITION
+		EVENT $07, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Jabal
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; 99/B1D1

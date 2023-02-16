@@ -188,6 +188,9 @@ eventChapter19Events ; FD/CBB9
 		EVENT $08, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Amalda
 		END_DEFINITION
+		EVENT $14, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Ishtar
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; FD/CE38

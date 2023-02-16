@@ -99,6 +99,9 @@ eventChapter6Events ; 99/A346
 
 	_BattleEventDefinitions ; 99/A4FF
 		macroBossQuoteDefinition $06, Galzus
+		EVENT $0C, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Tolman
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; 99/A509
