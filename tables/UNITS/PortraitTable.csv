@@ -43,7 +43,7 @@ SalemPortrait,g4bppcPortraitECAA94,$28
 SchroffPortrait,g4bppcPortraitECAFB9,$29
 MareetaPortrait,g4bppcPortraitEC8C0D,$22
 TinaPortrait,g4bppcPortraitECD24C,$30
-GunterPortrait,g4bppcPortraitECF0A4,$36
+GunterPortrait,g4bppcPortraitGunnar,$36
 AmaldaPortrait,g4bppcPortraitECE173,$33
 ConomorPortrait,g4bppcPortraitEEBA8A,$6B
 HomerPortrait,g4bppcPortraitED9D9B,$3F
@@ -200,7 +200,7 @@ Brigand3Portrait,g4bppcPortraitEFCFD4,$9A
 Fighter1Portrait,g4bppcPortraitEFC7D1,$9B
 Archer3Portrait,g4bppcPortraitEFB75D,$A3
 Brigand4Portrait,g4bppcPortraitEFCFD4,$A5
-HighPriest1Portrait,g4bppcPortraitCohen,$B7
+CohenPortrait,g4bppcPortraitCohen,$B7
 Dancer1Portrait,g4bppcPortraitEFEF61,$B9
 Priest1Portrait,g4bppcPortraitEFD772,$AB
 Mage1Portrait,g4bppcPortraitEFDC2E,$A9
