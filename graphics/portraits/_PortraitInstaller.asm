@@ -447,8 +447,7 @@
 	g4bppcPortraitCoulter .binary "sprites/Coulter.4bpp.comp"
 	g4bppcPortraitBeatrice .binary "sprites/Beatrice.4bpp.comp"
 	g4bppcPortraitFilat .binary "sprites/Filat.4bpp.comp"
-	;g4bppcPortraitGunnar
-	;Gunnar ain't done yet baby! .binary "sprites/Gunnar.4bpp.comp"
+	g4bppcPortraitGunnar .binary "sprites/Gunnar.4bpp.comp"
 	g4bppcPortraitEAFE34 .binary "sprites/PortraitEAFE34.4bpp.comp"
 	g4bppcPortraitEBFD2F .binary "sprites/PortraitEBFD2F.4bpp.comp"
 	g4bppcPortraitECFE67 .binary "sprites/PortraitECFE67.4bpp.comp"
