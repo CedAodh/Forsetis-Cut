@@ -95,7 +95,7 @@ ch23cedalphand
 .word alphand_portrait
 .text "*Pant... Pant...*"
 .byte NewLine
-.text "Wh-What manner of heathen are you?!"
+.text "Wh-what manner of heathen are you?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -658,7 +658,7 @@ ch23leifced
 .byte ScrollText
 .text "Ah...!"
 .byte NewLine
-.text "N-No, that's not what—"
+.text "N-no, that's not what—"
 .byte WaitForA
 
 .byte Right_slot

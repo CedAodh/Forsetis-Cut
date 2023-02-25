@@ -236,7 +236,7 @@ ch12salemtina
 
 .byte Left_slot
 .byte ScrollText
-.text "D-Do you mean it?!"
+.text "D-do you mean it?!"
 .byte NewLine
 .text "Oh, thank you, Salem!"
 .byte NewLine
@@ -669,7 +669,7 @@ ch12opening2
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-You want me to use that damned sword?!"
+.text "Y-you want me to use that damned sword?!"
 .byte NewLine
 .text "I'm not laying a finger on that foul thing"
 .byte NewLine

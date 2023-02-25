@@ -146,7 +146,7 @@ ch18villager1
 .byte WaitForA
 
 .byte Right_slot
-.text "Y-You're all right!"
+.text "Y-you're all right!"
 .byte NewLine
 .text "Take my hand, sweetie—"
 .byte NewLine
@@ -169,7 +169,7 @@ ch18villager2
 .byte WaitForA
 
 .byte Right_slot
-.text "Y-You're safe?!"
+.text "Y-you're safe?!"
 .byte WaitForA
 .byte ScrollText
 .text "Look, there's no reason for us"
@@ -197,7 +197,7 @@ ch18villager3
 .byte WaitForA
 
 .byte Right_slot
-.text "H-How..."
+.text "H-how..."
 .byte NewLine
 .text "How did you get here?!"
 .byte WaitForA

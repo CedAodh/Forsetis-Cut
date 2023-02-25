@@ -139,8 +139,8 @@ _0x1a	; Hel
 
 _0x1b	; Loptous					
 	.byte 96 ; Item Number
-	.byte 24 ; Close Range Animation
-	.byte 24 ; Long Range Animation
+	.byte 5 ; Close Range Animation
+	.byte 5 ; Long Range Animation
 
 _0x1c	; Meteor
 	.byte 97 ; Item Number

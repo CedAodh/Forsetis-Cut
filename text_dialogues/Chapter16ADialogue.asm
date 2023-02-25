@@ -80,7 +80,7 @@ ch16Ailioskarin
 .byte WaitForA
 
 .byte Right_slot
-.text "Wh-What?"
+.text "Wh-what?"
 .byte NewLine
 .text "Who are you supposed to be?"
 .byte WaitForA
@@ -101,7 +101,7 @@ ch16Ailioskarin
 
 .byte Right_slot
 .byte ScrollText
-.text "H-Hey! Is this some kind of joke?"
+.text "H-hey! Is this some kind of joke?"
 .byte NewLine
 .text "Why the sudden olive branch?"
 .byte NewLine
@@ -122,7 +122,7 @@ ch16Ailioskarin
 
 .byte Right_slot
 .byte ScrollText
-.text "H-Hey!"
+.text "H-hey!"
 .byte NewLine
 .text "Wait a minute!"
 .byte WaitForA
@@ -207,7 +207,7 @@ ch16Ailioskarin
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah... W-Well, I..."
+.text "Ah... W-well, I..."
 .byte NewLine
 .text "Look, I don't have to explain myself to you!"
 .byte WaitForA
@@ -309,7 +309,7 @@ ch16Ailioskarin
 
 .byte Right_slot
 .byte ScrollText
-.text "H-Hey!"
+.text "H-hey!"
 .byte NewLine
 .text "That's no fair!"
 .byte WaitForA
@@ -465,7 +465,7 @@ ch16Akempfcharge
 .byte WaitForA
 
 .byte Right_slot
-.text "H-Hold a moment, General!"
+.text "H-hold a moment, General!"
 .byte NewLine
 .text "That goes against Colonel Nicolov's orders!"
 .byte WaitForA
@@ -617,7 +617,7 @@ ch16Apurewaterhouse
 .byte Right_slot
 .word LoadPortrait
 .word younglady_portrait
-.text "A-Are you folks the heirs to House Leonster?"
+.text "A-are you folks the heirs to House Leonster?"
 .byte NewLine
 .text "Does this mean our kingdom is to be reborn?"
 .byte WaitForA
@@ -940,7 +940,7 @@ ch16Aopening3
 
 .byte Right_slot
 .byte ScrollText
-.text "J-Just what are you proposing, Olwen?!"
+.text "J-just what are you proposing, Olwen?!"
 .byte NewLine
 .text "I won't allow you to put yourself"
 .byte NewLine

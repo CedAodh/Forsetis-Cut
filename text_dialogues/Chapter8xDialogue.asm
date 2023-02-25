@@ -50,7 +50,7 @@ ch8xosiantanya
 
 .byte Left_slot
 .byte ScrollText
-.text "H-Hey! Wait, wait, don't cry, OK?"
+.text "H-hey! Wait, wait, don't cry, OK?"
 .byte NewLine
 .text "I... I just... I mean, I was really..."
 .byte WaitForA
@@ -284,7 +284,7 @@ ch8xclosing
 
 .byte Left_slot
 .byte ScrollText
-.text "Th-Then they should just import food"
+.text "Th-then they should just import food"
 .byte NewLine
 .text "from elsewhere! In North Thracia, cities had"
 .byte NewLine
@@ -305,7 +305,7 @@ ch8xclosing
 
 .byte Left_slot
 .byte ScrollText
-.text "...Wh-Why would the North do such a thing?!"
+.text "...Wh-why would the North do such a thing?!"
 .byte WaitForA
 
 .byte Right_slot

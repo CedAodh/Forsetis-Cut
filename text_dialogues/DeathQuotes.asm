@@ -10,7 +10,7 @@ ch11kemphdeath
 ch11freddeath
 .text "Olwen... I tried to save you..."
 .byte NewLine
-.text "F-Forgive me..."
+.text "F-forgive me..."
 .byte WaitForA
 .byte EndText
 
@@ -41,7 +41,7 @@ ch12Xtinadeath
 .byte EndText
 
 ch13baldackdeath		; Unused, but it's the same as his ch14 one
-.text "Wh-What tomfoolery..."
+.text "Wh-what tomfoolery..."
 .byte NewLine
 .text "How...could...this..."
 .byte WaitForA
@@ -97,14 +97,14 @@ leifdeath
 finndeath
 .text "Lord Leif..."
 .byte NewLine
-.text "Y-You must...fulfill"
+.text "Y-you must...fulfill"
 .byte NewLine
 .text "your lord father's dying wish..."
 .byte WaitForA
 .byte EndText
 
 osiandeath
-.text "D-Dammit...! There's no"
+.text "D-dammit...! There's no"
 .byte NewLine
 .text "patching over...this mistake..."
 .byte WaitForA
@@ -118,7 +118,7 @@ halvandeath
 .byte EndText
 
 eyveldeath
-.text "Everyone... S-Someday this will all"
+.text "Everyone... S-someday this will all"
 .byte NewLine
 .text "just be a bad memory... So don't"
 .byte NewLine
@@ -136,9 +136,11 @@ dagdardeath
 .byte EndText
 
 martydeath
-.text "Th-That's an awful lotta blood..."
+.text "Th-that's an awful lotta blood..."
 .byte NewLine
-.text "Wh-Why me...? What'd I do...?"
+.text "Wh-why me...?"
+.byte NewLine
+.text "What'd I do...?"
 .byte WaitForA
 .byte EndText
 
@@ -178,7 +180,7 @@ brightondeath
 .byte EndText
 
 fergusdeath
-.text "Ugh... L-Like hell am I dyin' here..."
+.text "Ugh... L-like hell am I dyin' here..."
 .byte NewLine
 .text "I still got so much...to..."
 .byte WaitForA
@@ -232,7 +234,7 @@ selphinadeath
 .byte EndText
 
 dalsindeath
-.text "D-Damn! Jubel..."
+.text "D-damn! Jubel..."
 .byte NewLine
 .text "Live a long and happy life"
 .byte NewLine
@@ -258,7 +260,11 @@ karindeath
 .byte EndText
 
 tanyadeath
-.text "Ugh...! O-Osian... Help...me..."
+.text "Ugh...!"
+.byte NewLine
+.text "D-Dad... I'm sorry..."
+.byte NewLine
+.text "I should've...listened...to..."
 .byte WaitForA
 .byte EndText
 
@@ -284,7 +290,7 @@ shivadeath
 .byte EndText
 
 kanedeath
-.text "N-Not yet..."
+.text "N-not yet..."
 .byte NewLine
 .text "My dream... I still...need to..."
 .byte WaitForA
@@ -307,7 +313,7 @@ robertdeath
 .byte EndText
 
 weismanndeath
-.text "D-Damn... You'll...live to regret"
+.text "D-damn... You'll...live to regret"
 .byte NewLine
 .text "this, all of you..."
 .byte WaitForA
@@ -351,7 +357,7 @@ gomezdeath
 .byte EndText
 
 merlochdeath
-.text "F-Forgive me, King Travant,"
+.text "F-forgive me, King Travant,"
 .byte NewLine
 .text "Your Majesty..."
 .byte WaitForA
@@ -363,7 +369,7 @@ largodeath
 .byte EndText
 
 oltophdeath
-.text "G-Glory to House Friege..."
+.text "G-glory to House Friege..."
 .byte WaitForA
 .byte EndText
 
@@ -377,12 +383,12 @@ colhodeath
 freddeath
 .text "L-Lady Olwen..."
 .byte NewLine
-.text "P-Please...forgive me..."
+.text "P-please...forgive me..."
 .byte WaitForA
 .byte EndText
 
 olwendeath
-.text "N-Not here...like this..."
+.text "N-not here...like this..."
 .byte NewLine
 .text "B-Brother..."
 .byte WaitForA
@@ -403,7 +409,7 @@ trudedeath
 .byte EndText
 
 salemdeath
-.text "Th-This is the hour of my defeat..."
+.text "Th-this is the hour of my defeat..."
 .byte NewLine
 .text "Still... I've no regrets..."
 .byte WaitForA
@@ -440,7 +446,7 @@ homerdeath
 .byte EndText
 
 deandeath
-.text "D-Damn!"
+.text "D-damn!"
 .byte NewLine
 .text "Linoan..."
 .byte NewLine
@@ -458,7 +464,7 @@ paulusdeath
 .byte EndText
 
 baldachdeath
-.text "Wh-What tomfoolery..."
+.text "Wh-what tomfoolery..."
 .byte NewLine
 .text "How...could...this..."
 .byte WaitForA
@@ -492,7 +498,7 @@ ralphdeath
 shannamdeath
 .text "Hrk..."
 .byte NewLine
-.text "F-Forgive me, Leif..."
+.text "F-forgive me, Leif..."
 .byte WaitForA
 .byte EndText
 
@@ -508,12 +514,12 @@ amaldadeath
 seildeath
 .text "Ugh!"
 .byte NewLine
-.text "D-Damned...fools..."
+.text "D-damned...fools..."
 .byte WaitForA
 .byte EndText
 
 kempfdeath
-.text "I-Is this...a joke?"
+.text "I-is this...a joke?"
 .byte NewLine
 .text "How could I...be bested...by them?"
 .byte WaitForA
@@ -603,7 +609,7 @@ palmandeath
 .byte EndText
 
 xavierdeath
-.text "F-Forgive me, Lord Leif..."
+.text "F-forgive me, Lord Leif..."
 .byte NewLine
 .text "Glory...to Leonster...!"
 .byte WaitForA
@@ -693,14 +699,9 @@ fadendeath
 .byte EndText
 
 saiasdeath
-.text "No..."
-.byte NewLine
-.text "I must not...fall here..."
-.byte WaitForA
-.byte ScrollText
-.text "Princess Julia..."
-.byte NewLine
 .text "Forgive me..."
+.byte NewLine
+.text "I can do...no more..."
 .byte WaitForA
 .byte EndText
 

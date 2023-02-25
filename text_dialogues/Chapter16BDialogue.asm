@@ -296,7 +296,7 @@ ch16Bhomershannam
 
 .byte Right_slot
 .byte ScrollText
-.text "H-Hey... I don't like doing this, you know!"
+.text "H-hey... I don't like doing this, you know!"
 .byte NewLine
 .text "Look, I'm out of coin... I don't have a choice!"
 .byte WaitForA
@@ -412,7 +412,7 @@ ch16Bsarahsalem
 .byte ScrollText
 .text "Uh..."
 .byte NewLine
-.text "I-Is that so...?"
+.text "I-is that so...?"
 .byte WaitForA
 .byte ScrollText
 .text "Wait. If you're Sara, granddaughter of"
@@ -608,7 +608,7 @@ ch16Bsaraharrive
 .word sarah_portrait
 .text "Huh...?"
 .byte NewLine
-.text "Wh-Who is..."
+.text "Wh-who is..."
 .byte WaitForA
 
 .byte Right_slot

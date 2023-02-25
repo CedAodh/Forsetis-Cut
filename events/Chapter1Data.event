@@ -6,7 +6,7 @@ eventChapter1Data ; B1/FB37
 
 	_LeifUnitGroup ; B1/FB39
 		UNIT Leif, Player, [1, 20], [3, 19], Leif, [LightBrand, IronSword], 1, False, [$00, $00, $00, $00]
-		UNIT Finn, Player, [1, 20], [2, 19], Leif, [BraveLance, IronSword, Gungnir], 7, False, [$00, $00, $00, $00]
+		UNIT Hicks, Player, [1, 20], [2, 19], Leif, [SilverAxe, IronSword], 1, False, [$00, $00, $00, $00]
 		UNIT Eyvel, Player, [1, 20], [3, 18], Leif, [ShadowSword, FlameSword, DoorKey], 13, False, [$00, $00, $00, $00]
 		UNIT Osian, Player, [1, 20], [4, 18], Leif, [IronAxe], 1, False, [$00, $00, $00, $00]
 		UNIT Halvan, Player, [1, 20], [2, 18], Leif, [IronAxe], 2, False, [$00, $00, $00, $00]
@@ -48,7 +48,7 @@ eventChapter1Data ; B1/FB37
 		UNIT MunsterSoldier2, Enemy, [8, 12], [10, 12], Lobos, [Javelin, Vulnerary], 5, False, [$02, $08, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [18, 10], [18, 10], Lobos, [ShortLance], 1, False, [$01, $03, $03, $00]
 		UNIT MunsterSoldier2, Enemy, [8, 5], [8, 5], Lobos, [ShortLance], 1, False, [$01, $03, $03, $00]
-		UNIT MunsterSoldier2, Enemy, [8, 14], [8, 14], Lobos, [ShortLance], 1, False, [$02, $08, $00, $00]
+		UNIT Dalsin, Enemy, [8, 14], [8, 14], Lobos, [ShortLance], 1, False, [$02, $08, $00, $00]
 		UNIT MunsterArcher, Enemy, [11, 12], [11, 12], Lobos, [Shortbow], 1, False, [$02, $08, $00, $05]
 		UNIT MunsterSoldier2, Enemy, [12, 6], [12, 6], Lobos, [ShortLance], 1, False, [$06, $03, $03, $00]
 	UNIT

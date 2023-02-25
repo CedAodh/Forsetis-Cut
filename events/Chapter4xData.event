@@ -1,8 +1,8 @@
 
 eventChapter4xData ; B1/EB48
 
-	_UnusedCoordinates1 ; B1/EB48
-		.byte 8, 7
+	;_UnusedCoordinates1 ; B1/EB48
+	;	.byte 8, 7
 
 	_ChildGroup ; B1/EB4A
 		UNIT Emily, NPC, [12, 11], [12, 11], Ishtar, [], 1, False, [$02, $0B, $00, $00]
@@ -21,8 +21,8 @@ eventChapter4xData ; B1/EB48
 		UNIT CedChp4x, NPC, [3, 8], [3, 8], CedChp4x, [ForsetiInfinite, Vulnerary], 7, False, [$00, $00, $00, $80]
 	UNIT
 
-	_UnusedCoordinates2 ; B1/EBF0
-		.byte 8, 7
+	;_UnusedCoordinates2 ; B1/EBF0
+	;	.byte 8, 7
 
 	_ArmorGroup ; B1/EBF2
 		UNIT MunsterArmoredSword, Enemy, [8, 12], [8, 12], Bandole, [Longsword], 8, False, [$00, $03, $00, $00]
@@ -31,8 +31,8 @@ eventChapter4xData ; B1/EB48
 		UNIT MunsterArmoredSword, Enemy, [9, 12], [9, 12], Bandole, [Longsword], 8, False, [$00, $03, $00, $00]
 	UNIT
 
-	_UnusedCoordinates3 ; B1/EC44
-		.byte 8, 7
+	;_UnusedCoordinates3 ; B1/EC44
+	;	.byte 8, 7
 
 	_EnemyGroup1 ; B1/EC46
 		UNIT MunsterThunderMage, Enemy, [6, 11], [6, 11], Bandole, [Fire, Vulnerary], 3, False, [$00, $03, $00, $00]
@@ -61,43 +61,43 @@ eventChapter4xData ; B1/EB48
 		UNIT MunsterSoldier2, Enemy, [12, 16], [12, 16], Bandole, [ShortLance], 1, False, [$00, $03, $00, $00]
 	UNIT
 
-	_UnusedCoordinates4 ; B1/EE28
-		.byte 8, 16
+	;_UnusedCoordinates4 ; B1/EE28
+	;	.byte 8, 16
 
 	_SoldierLeftGroup ; B1/EE2A
 		UNIT MunsterSoldier2, Enemy, [1, 15], [1, 15], Bandole, [ShortLance], 5, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCoordinates5 ; B1/EE40
-		.byte 8, 16
+	;_UnusedCoordinates5 ; B1/EE40
+	;	.byte 8, 16
 
 	_ArcherLeftGroup ; B1/EE42
 		UNIT MunsterArcher, Enemy, [1, 16], [1, 16], Bandole, [Shortbow, Vulnerary], 5, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCoordinates6 ; B1/EE58
-		.byte 8, 16
+	;_UnusedCoordinates6 ; B1/EE58
+	;	.byte 8, 16
 
 	_SoldierRightGroup ; B1/EE5A
 		UNIT MunsterSoldier2, Enemy, [14, 15], [14, 15], Bandole, [ShortLance], 5, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCoordinates7 ; B1/EE70
-		.byte 8, 16
+	;_UnusedCoordinates7 ; B1/EE70
+	;	.byte 8, 16
 
 	_ArcherRightGroup ; B1/EE72
 		UNIT MunsterArcher, Enemy, [14, 16], [14, 16], Bandole, [Shortbow, Vulnerary], 5, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCoordinates8 ; B1/EE88
-		.byte 8, 7
+	;_UnusedCoordinates8 ; B1/EE88
+	;	.byte 8, 7
 
 	_MyrmidonLeftGroup ; B1/EE8A
 		UNIT MercenaryMyrmidon1, Enemy, [7, 22], [7, 22], Bandole, [IronSword], 5, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCoordinates9 ; B1/EEA0
-		.byte 8, 7
+	;_UnusedCoordinates9 ; B1/EEA0
+	;	.byte 8, 7
 
 	_MyrmidonRightGroup ; B1/EEA2
 		UNIT MercenaryMyrmidon1, Enemy, [8, 22], [8, 22], Bandole, [IronSword], 5, False, [$00, $00, $00, $00]

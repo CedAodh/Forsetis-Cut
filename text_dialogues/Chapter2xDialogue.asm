@@ -16,7 +16,7 @@ ch2xop1
 	.byte WaitForA
 	
 	.byte Right_Slot
-	.text "Oh, uh... R-Right. Got it."
+	.text "Oh, uh... R-right. Got it."
 	.byte WaitForA
 	.byte ScrollText
 	
@@ -56,7 +56,7 @@ ch2xop1
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "T-Take up arms against the Empire?!"
+	.text "T-take up arms against the Empire?!"
 	.byte NewLine
 	.text "May as well stand on the shore"
 	.byte NewLine
@@ -270,7 +270,7 @@ ch2xeyvelLeif
 
 	.byte Left_slot
 	.byte ScrollText
-	.text "O-Of course, Commander."
+	.text "O-of course, Commander."
 	.byte NewLine
 	.text "Still, would you happen to know anything"
 	.byte NewLine

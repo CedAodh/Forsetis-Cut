@@ -578,14 +578,14 @@ ch19opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Th-The Imperial Army counterattacked..."
+.text "Th-the Imperial Army counterattacked..."
 .byte NewLine
 .text "We were...slaughtered..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Wh-What?!"
+.text "Wh-what?!"
 .byte NewLine
 .text "Where's Dorius?!"
 .byte WaitForA
@@ -623,7 +623,7 @@ ch19opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Th-That's absurd..."
+.text "Th-that's absurd..."
 .byte NewLine
 .text "This can't be..."
 .byte WaitForA

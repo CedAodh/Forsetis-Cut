@@ -76,8 +76,8 @@ eventChapter2Data ; B1/F91C
 		UNIT LifisCrewPirate, Enemy, [19, 4], [19, 4], Bucks, [IronAxe], 1, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCameraCoordinates1 ; B1/FAE4
-		.byte 8, 7
+	;_UnusedCameraCoordinates1 ; B1/FAE4
+	;	.byte 8, 7
 
 	_RonanGroup ; B1/FAE6
 		UNIT Ronan, Player, [9, 10], [9, 10], Leif, [IronBow], 1, False, [$00, $00, $00, $00]

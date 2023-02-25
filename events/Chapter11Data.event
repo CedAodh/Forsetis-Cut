@@ -41,8 +41,8 @@ eventChapter11Data ; B1/CEFC
 		UNIT Fred, Enemy, [8, 19], [8, 19], Olwen, [LightningSword, Vulnerary], 2, False, [$01, $03, $02, $80]
 	UNIT
 
-	_UnusedCoordinates1 ; B1/D148
-		.byte 8, 13
+	;_UnusedCoordinates1 ; B1/D148
+	;	.byte 8, 13
 
 	_BallistaGroup ; B1/D14A
 		UNIT FriegeBallista2, Enemy, [3, 12], [3, 12], Kempf, [Ballista], 10, False, [$00, $03, $00, $00]

@@ -36,7 +36,7 @@ leifdeathdorias
 .byte Right_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "N-No..."
+.text "N-no..."
 .byte NewLine
 .text "Our... Our dream of a reborn Leonster..."
 .byte WaitForA

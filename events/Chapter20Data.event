@@ -134,8 +134,8 @@ eventChapter20Data ; B1/9194
 		UNIT FriegeArmoredAxe1, Enemy, [28, 30], [28, 30], Bharat, [HandAxe, BattleAxe], 18, False, [$00, $22, $00, $00]
 	UNIT
 
-	_UnusedCoordinates1 ; B1/980C
-		.byte 8, 7
+	;_UnusedCoordinates1 ; B1/980C
+	;	.byte 8, 7
 
 	_ReinhardtGroup ; B1/980E
 		UNIT Reinhardt, Enemy, [1, 28], [14, 29], Reinhardt, [], 2, False, [$00, $00, $00, $00]

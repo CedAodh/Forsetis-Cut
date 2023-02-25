@@ -55,7 +55,7 @@ ch4xop1
 
 .byte Left_slot
 .byte ScrollText
-.text "C-Come again? Prince Leif?!"
+.text "C-come again? Prince Leif?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -154,7 +154,7 @@ ch4xop1
 
 .byte Left_slot
 .byte ScrollText
-.text "Munster...? R-Right! Munster it is!"
+.text "Munster...? R-right! Munster it is!"
 .byte NewLine
 .text "Don't you forget it, Sir Ced!"
 .byte WaitForA
@@ -177,7 +177,7 @@ ch4xop2
 
 .byte Right_slot
 .byte ScrollText
-.text "B-B-But...!"
+.text "B-b-but...!"
 .byte NewLine
 .text "*Sniffle*"
 .byte WaitForA
@@ -372,7 +372,7 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "W-Well, to tell the truth... Oh, gods..."
+.text "W-well, to tell the truth... Oh, gods..."
 .byte WaitForA
 .byte ScrollText
 .text "......"
@@ -389,7 +389,7 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "Y-You're right..."
+.text "Y-you're right..."
 .byte NewLine
 .text "I... I regret to inform you that"
 .byte NewLine
@@ -679,7 +679,7 @@ ch4xuppercell
 .byte ScrollText
 .text "*Sniffle, sniffle*"
 .byte NewLine
-.text "H-How do I get home?"
+.text "H-how do I get home?"
 .byte NewLine
 .text "Uh-huh... The way to the right...?"
 .byte WaitForA
@@ -701,7 +701,7 @@ ch4xlowercell
 .byte ScrollText
 .text "...Oh, I can escape if I go down that passage"
 .byte NewLine
-.text "to the right? Thank you! B-Bless you!"
+.text "to the right? Thank you! B-bless you!"
 .byte WaitForA
 
 .byte EndText

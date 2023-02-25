@@ -64,10 +64,10 @@
 
 ; Stops Physic from having animations forced off
 
-* := $01CE0B
-  .logical $83CE0B
+* := $01CE09
+  .logical $83CE09
 
-.byte $00
+.byte $00, $6B, $00
 
 .here
 

@@ -86,7 +86,7 @@ martyesc
 .word marty_portrait
 .text "*Pant, pant, wheeze*"
 .byte NewLine
-.text "G-Good grief..."
+.text "G-good grief..."
 .byte WaitForA
 .byte EndText
 
@@ -94,7 +94,7 @@ ronanesc
 .byte Right_slot
 .word LoadPortrait
 .word ronan_portrait
-.text "Wh-What a rush... Everybody all right?"
+.text "Wh-what a rush... Everybody all right?"
 .byte WaitForA
 .byte EndText
 

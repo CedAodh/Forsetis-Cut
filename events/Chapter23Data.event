@@ -112,15 +112,15 @@ eventChapter23Data ; B1/8000
 		UNIT LoptrianSorcerer1, Enemy, [13, 5], [13, 5], Alphand, [Jormungand], 13, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCameraCoordinates1 ; B1/82DC
-		.byte 8, 7
+	;_UnusedCameraCoordinates1 ; B1/82DC
+	;	.byte 8, 7
 
 	_SaiasGroup ; B1/82DE
 		UNIT Saias, Player, [15, 15], [15, 15], Leif, [Light, Warp, Silence, Heal, DoorKey], 12, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCameraCoordinates2 ; B1/82F4
-		.byte 8, 7
+	;_UnusedCameraCoordinates2 ; B1/82F4
+	;	.byte 8, 7
 
 	_CedGroup ; B1/82F6
 		UNIT CedChp23, NPC, [15, 15], [15, 15], CedChp23, [Forseti, DoorKey], 14, False, [$01, $03, $00, $00]
@@ -142,8 +142,8 @@ eventChapter23Data ; B1/8000
 		UNIT ThraciaDracoknight3, Enemy, [31, 21], [29, 21], Coulter, [SilverLance, Ridersbane], 12, False, [$01, $03, $00, $00]
 	UNIT
 
-	_UnusedCameraCoordinates3 ; B1/83D8
-		.byte 8, 7
+	;_UnusedCameraCoordinates3 ; B1/83D8
+	;	.byte 8, 7
 
 	_AlphandFadenGroup ; B1/83DA
 		UNIT Alphand, Enemy, [15, 15], [15, 15], Alphand, [Jormungand, Silence, Hel], 13, True, [$01, $03, $00, $80]

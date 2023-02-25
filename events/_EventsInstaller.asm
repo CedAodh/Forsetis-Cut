@@ -75,14 +75,14 @@
 	.include "Chapter9Data.event"
 	.include "Chapter8xData.event"
 	.include "Chapter8Data.event"
-	.include "Chapter7Data.event"
-	.include "Chapter6Data.event"
-	.include "Chapter5Data.event"
-	.include "Chapter4xData.event"
-	.include "Chapter4Data.event"
-	.include "Chapter3Data.event"
-	.include "Chapter2xData.event"
-	.include "Chapter2Data.event"
+	;.include "Chapter7Data.event"
+	;.include "Chapter6Data.event"
+	;.include "Chapter5Data.event"
+	;.include "Chapter4xData.event"
+	;.include "Chapter4Data.event"
+	;.include "Chapter3Data.event"
+	;.include "Chapter2xData.event"
+	;.include "Chapter2Data.event"
 .here
 
 * = $18FB37
@@ -177,7 +177,7 @@
 ;	.include "Chapter21.event"
 ;	.include "Chapter21x.event"
 ;	.include "Chapter22.event"
-	.include "Chapter23.event"
+;	.include "Chapter23.event"
 ;	.include "Chapter24.event"
 ;	.include "Chapter24x.event"
 .here
@@ -186,5 +186,14 @@
 	.logical lorom($500000, 1)
 	.include "Chapter4.event"
 	.include "Chapter14.event"
+	.include "Chapter23.event"
+	.include "Chapter7Data.event"
+	.include "Chapter6Data.event"
+	.include "Chapter5Data.event"
+	.include "Chapter4xData.event"
+	.include "Chapter4Data.event"
+	.include "Chapter3Data.event"
+	.include "Chapter2xData.event"
+	.include "Chapter2Data.event"
 	.include "ChapterFinalWorldMap.event"
 .here

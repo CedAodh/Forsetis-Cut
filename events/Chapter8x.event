@@ -185,7 +185,25 @@ eventChapter8xEvents ; 97/844D
 
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD
+		
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED $04
+		YIELD
+		
+		MOVE_UNIT Leif, [0, 0], [10, 18], 1, None
+		YIELD_UNK
 
+		WAIT_MOVE
+		YIELD
+		
+		macroDialogueHouse ch8xopening2
+		
+		MOVE_UNIT Leif, [0, 0], [10, 21], 1, None
+		YIELD_UNK
+
+		WAIT_MOVE
+		YIELD
+		
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
 	END2
 

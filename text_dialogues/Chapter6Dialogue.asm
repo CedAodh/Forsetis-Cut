@@ -70,7 +70,7 @@ ch6op1
 
 .byte Right_slot
 .byte ScrollText
-.text "Wh-What kind of talk is that?! Isn't there"
+.text "Wh-what kind of talk is that?! Isn't there"
 .byte NewLine
 .text "some way to undo what's happened to her?!"
 .byte WaitForA
@@ -727,7 +727,7 @@ ch6closing
 
 .byte Left_slot
 .byte ScrollText
-.text "B-But Prince Shannan is one of the most"
+.text "B-but Prince Shannan is one of the most"
 .byte NewLine
 .text "influential rebel leaders! Are we to open"
 .byte NewLine
@@ -805,7 +805,7 @@ ch6emilydead
 .byte Right_slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "Oh, Emily... Wh-Where have you gone off to...?"
+.text "Oh, Emily... Wh-where have you gone off to...?"
 .byte WaitForA
 
 .byte EndText
@@ -815,7 +815,7 @@ ch6emilysaved
 .byte Right_slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "Y-Yer the ones what saved me daughter, Emily!"
+.text "Y-yer the ones what saved me daughter, Emily!"
 .byte NewLine
 .text "Oh, I gotta find some way to thank ya proper..."
 .byte NewLine

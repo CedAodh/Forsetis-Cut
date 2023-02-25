@@ -536,7 +536,7 @@ ch13gladeleif
 .word leif_portrait
 .text "Glade...?"
 .byte NewLine
-.text "A-Are you the knight Glade, sir?"
+.text "A-are you the knight Glade, sir?"
 .byte WaitForA
 
 .byte Right_slot
@@ -857,7 +857,7 @@ ch13opening4
 .text "but may I present the city of Tahra—"
 .byte WaitForA
 .byte ScrollText
-.text "H-How?! How is this possible?"
+.text "H-how?! How is this possible?"
 .byte NewLine
 .text "The Empire has already begun their assault!"
 .byte WaitForA

@@ -210,7 +210,7 @@ ch15ralphamaldaspawn
 .byte WaitForA
 
 .byte Left_slot
-.text "H-How can that be?!"
+.text "H-how can that be?!"
 .byte NewLine
 .text "We have nothing of value!"
 .byte WaitForA
@@ -445,7 +445,7 @@ ch15ralphrecruitment
 .byte ScrollText
 .text "Leif...?"
 .byte NewLine
-.text "H-How...?!"
+.text "H-how...?!"
 .byte NewLine
 .text "Are you THE Leif, the prince?"
 .byte WaitForA
@@ -562,7 +562,7 @@ ch15mareetashannam1
 .byte ScrollText
 .text "Astra?"
 .byte NewLine
-.text "B-But that's the secret art"
+.text "B-but that's the secret art"
 .byte NewLine
 .text "of the Isaachian royal family...!"
 .byte WaitForA
@@ -595,7 +595,7 @@ ch15mareetashannam1
 .byte ScrollText
 .text "Hrk!"
 .byte NewLine
-.text "K-Keep your voice down, would you?"
+.text "K-keep your voice down, would you?"
 .byte NewLine
 .text "Let's avoid any surprises, shall we?"
 .byte WaitForA
@@ -630,7 +630,7 @@ ch15mareetashannam1
 
 .byte Right_slot
 .byte ScrollText
-.text "W-Well, I could take you through"
+.text "W-well, I could take you through"
 .byte NewLine
 .text "the motions, I suppose..."
 .byte WaitForA
@@ -704,7 +704,7 @@ ch15mareetashannam1
 .text "Uhhh..."
 .byte WaitForA
 .byte ScrollText
-.text "N-No, that would defeat the whole point."
+.text "N-no, that would defeat the whole point."
 .byte NewLine
 .text "Astra can only be mastered through"
 .byte NewLine
@@ -799,7 +799,7 @@ ch15mareetashannam2
 .byte Left_slot
 .word LoadPortrait
 .word mareeta_portrait
-.text "W-Was that...?"
+.text "W-was that...?"
 .byte NewLine
 .text "I can't believe it...!"
 .byte WaitForA
@@ -833,7 +833,7 @@ ch15mareetashannam2
 
 .byte Right_slot
 .byte ScrollText
-.text "A-At any rate, I promised to show you"
+.text "A-at any rate, I promised to show you"
 .byte NewLine
 .text "the motions, and I've made good on my word."
 .byte NewLine
@@ -1011,7 +1011,7 @@ ch15opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Th-That's uncalled for, August!"
+.text "Th-that's uncalled for, August!"
 .byte NewLine
 .text "Your very words come perilously close"
 .byte NewLine

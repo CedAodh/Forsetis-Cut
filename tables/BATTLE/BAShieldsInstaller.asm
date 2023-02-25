@@ -15,7 +15,7 @@
         _BAShield_GreatKnight           .structBattleAnimationShieldDefinitionEntry GreatKnight,        	(aBattleAnimationShieldClassTable._GreatKnightShields - aBattleAnimationShieldClassTable)
         _BAShield_General               .structBattleAnimationShieldDefinitionEntry General,            	(aBattleAnimationShieldClassTable._GeneralShields - aBattleAnimationShieldClassTable)
         _BAShield_Emperor               .structBattleAnimationShieldDefinitionEntry Emperor,           		(aBattleAnimationShieldClassTable._EmperorShields - aBattleAnimationShieldClassTable)
-        _BAShield_Baron                 .structBattleAnimationShieldDefinitionEntry Baron,         			(aBattleAnimationShieldClassTable._BaronShields - aBattleAnimationShieldClassTable)
+        _BAShield_Baron                 .structBattleAnimationShieldDefinitionEntry Baron,         		(aBattleAnimationShieldClassTable._BaronShields - aBattleAnimationShieldClassTable)
         _BAShield_ArmoredLance          .structBattleAnimationShieldDefinitionEntry ArmoredLance,        	(aBattleAnimationShieldClassTable._ArmoredLanceShields - aBattleAnimationShieldClassTable)
         _BAShield_ArmoredAxe            .structBattleAnimationShieldDefinitionEntry ArmoredAxe,         	(aBattleAnimationShieldClassTable._ArmoredAxeShields - aBattleAnimationShieldClassTable)
         _BAShield_ArmoredSword          .structBattleAnimationShieldDefinitionEntry ArmoredSword,      		(aBattleAnimationShieldClassTable._ArmoredSwordShields - aBattleAnimationShieldClassTable)
@@ -54,27 +54,27 @@
 
         _LanceKnightShields .block
           .structBattleAnimationShieldEntry	Finn,		Shield_LanceKnight,	BA_ShieldPalette_BaseFinn
-		  .structBattleAnimationShieldEntry	Kane,		Shield_LanceKnight,	BA_ShieldPalette_Kane
-		  .structBattleAnimationShieldEntry	Alba,		Shield_LanceKnight,	BA_ShieldPalette_BaseAlba
+		  .structBattleAnimationShieldEntry	Kane,		Shield_LanceKnight,	BA_ShieldPalette_BaseAlba
+		  .structBattleAnimationShieldEntry	Alba,		Shield_LanceKnight,	BA_ShieldPalette_Kane
 		  .structBattleAnimationShieldEntry	-1,			Shield_LanceKnight,	BA_ShieldPalette_LanceKnight
         .endblock
 
         _DukeKnightShields .block
-          .structBattleAnimationShieldEntry	Finn,		Shield_DukeKnight,	BA_ShieldPalette_PromotedFinn
-		  .structBattleAnimationShieldEntry	Glade,		Shield_DukeKnight,	BA_ShieldPalette_Glade
-		  .structBattleAnimationShieldEntry	Kane,		Shield_DukeKnight,	BA_ShieldPalette_Kane
-		  .structBattleAnimationShieldEntry	Alba,		Shield_DukeKnight,	BA_ShieldPalette_PromotedAlba
+          .structBattleAnimationShieldEntry	Finn,		Shield_DukeKnight,	BA_ShieldPalette_PromotedAlba
+		  .structBattleAnimationShieldEntry	Glade,		Shield_DukeKnight,	BA_ShieldPalette_PromotedFinn
+		  .structBattleAnimationShieldEntry	Kane,		Shield_DukeKnight,	BA_ShieldPalette_BaseAlba
+		  .structBattleAnimationShieldEntry	Alba,		Shield_DukeKnight,	BA_ShieldPalette_Kane
 		  .structBattleAnimationShieldEntry	-1,			Shield_DukeKnight,	BA_ShieldPalette_DukeKnight
         .endblock
 
         _AxeKnightShields .block
-          .structBattleAnimationShieldEntry	Brighton,	Shield_AxeKnight,	BA_ShieldPalette_Brighton
+          .structBattleAnimationShieldEntry	Hicks,	Shield_AxeKnight,	BA_ShieldPalette_Unknown1B
 		  .structBattleAnimationShieldEntry	-1,			Shield_AxeKnight,	BA_ShieldPalette_Cavalier_Troubadour_AxeKnight
         .endblock
 
         _GreatKnightShields .block
-          .structBattleAnimationShieldEntry	Brighton,	Shield_GreatKnight,	BA_ShieldPalette_Brighton
-		  .structBattleAnimationShieldEntry	Hicks,		Shield_GreatKnight,	BA_ShieldPalette_PromotedHicks
+          .structBattleAnimationShieldEntry	Brighton,	Shield_GreatKnight,	BA_ShieldPalette_PromotedHicks
+		  .structBattleAnimationShieldEntry	Hicks,		Shield_GreatKnight,	BA_ShieldPalette_Unknown1C
 		  .structBattleAnimationShieldEntry	-1,			Shield_GreatKnight,	BA_ShieldPalette_GreatKnight
         .endblock
 
@@ -84,13 +84,19 @@
         .endblock
 
         _RangerShields .block
-          .structBattleAnimationShieldEntry	Fergus,		Shield_SwordKnight_Ranger,	BA_ShieldPalette_PromotedFergus
-		  .structBattleAnimationShieldEntry	Diarmuid,	Shield_SwordKnight_Ranger,	BA_ShieldPalette_SwordKnight_Ranger
+          .structBattleAnimationShieldEntry	Fergus,		Shield_SwordKnight_Ranger,	BA_ShieldPalette_BaseFergus
+		  .structBattleAnimationShieldEntry	Diarmuid,	Shield_SwordKnight_Ranger,	BA_ShieldPalette_PromotedFergus
 		  .structBattleAnimationShieldEntry	-1,			Shield_SwordKnight_Ranger,	BA_ShieldPalette_SwordKnight_Ranger
+        .endblock
+
+	_BaronShields .block
+	  .structBattleAnimationShieldEntry	RaydrikChp24,	Shield_Baron,		BA_ShieldPalette_Unknown0F
+	  	  .structBattleAnimationShieldEntry	-1,		Shield_Baron,		BA_ShieldPalette_Baron_Emperor
         .endblock
 
         _MageKnightShields .block
           .structBattleAnimationShieldEntry	Olwen,		Shield_MageKnight,	BA_ShieldPalette_Olwen
+	  .structBattleAnimationShieldEntry	Miranda,	Shield_MageKnight,	BA_ShieldPalette_Unknown0A
 		  .structBattleAnimationShieldEntry	-1,			Shield_MageKnight,	BA_ShieldPalette_MageKnight
         .endblock
 
@@ -102,26 +108,23 @@
           .structBattleAnimationShieldEntry	-1,			Shield_MasterKnight, BA_ShieldPalette_MasterKnight
         .endblock
 
-        _ArmoredLanceShields .block
-		  .structBattleAnimationShieldEntry	Dalsin,		Shield_Armors,		BA_ShieldPalette_Dalsin		  
+        _ArmoredLanceShields .block	  
 		  .structBattleAnimationShieldEntry	-1,			Shield_Armors,		BA_ShieldPalette_Armors
         .endblock
 
         _GeneralShields .block
-          .structBattleAnimationShieldEntry	Dalsin,		Shield_General,		BA_ShieldPalette_Dalsin		  
+	.structBattleAnimationShieldEntry	Xavier,		Shield_General,		BA_ShieldPalette_Unknown1E
+	.structBattleAnimationShieldEntry	Dalsin,		Shield_General,		BA_ShieldPalette_Unknown21	  
 		  .structBattleAnimationShieldEntry	-1,			Shield_General,		BA_ShieldPalette_General
         .endblock
 
         _ArmoredAxeShields .block
+	  .structBattleAnimationShieldEntry	Dalsin,		Shield_General,		BA_ShieldPalette_Dalsin	
           .structBattleAnimationShieldEntry	-1, 		Shield_Armors,		BA_ShieldPalette_Armors
         .endblock
 
         _ArmoredSwordShields .block
           .structBattleAnimationShieldEntry	-1,			Shield_Armors,		BA_ShieldPalette_Armors
-        .endblock
-
-        _BaronShields .block
-          .structBattleAnimationShieldEntry	-1,			Shield_Baron,		BA_ShieldPalette_Baron_Emperor
         .endblock
 
         _SoldierShields .block

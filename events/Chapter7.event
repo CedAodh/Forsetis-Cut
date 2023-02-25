@@ -744,7 +744,7 @@ eventChapter7Events ; 99/B023
 		CALL_ASM_LOOP rlASMCSetRewardGivenItem, $0000
 
 		+
-		STORE_LONG lEventEngineLongParameter, ch7ending9
+		STORE_LONG lEventEngineLongParameter, ch7ending9FC
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		YIELD
 

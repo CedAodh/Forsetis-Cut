@@ -832,9 +832,9 @@ ch24closing
 
 .byte Right_slot
 .byte ScrollText
-.text "Wh-What?!"
+.text "Wh-what?!"
 .byte NewLine
-.text "That's... That's unforgivable!"
+.text "That's...that's unforgivable!"
 .byte WaitForA
 .byte ScrollText
 .text "This man, Veld..."

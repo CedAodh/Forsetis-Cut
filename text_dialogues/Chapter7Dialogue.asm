@@ -37,7 +37,7 @@ ch7op1
 
 .byte Right_slot
 .byte ScrollText
-.text "A-Ask Thracia for aid?! That's absurd!"
+.text "A-ask Thracia for aid?! That's absurd!"
 .byte WaitForA
 .byte ScrollText
 .text "Those damnable cowards took everything from"
@@ -495,25 +495,25 @@ ch7ending8cairpre
 
 .byte EndText
 
-ch7ending9
+; ch7ending9
 
-.byte Right_slot
-.word LoadPortrait
-.word hannibal_portrait
-.text "Sir Lugh, you'd best be setting out."
-.byte NewLine
-.text "It'll be dark before long."
-.byte WaitForA
+; .byte Right_slot
+; .word LoadPortrait
+; .word hannibal_portrait
+; .text "Sir Lugh, you'd best be setting out."
+; .byte NewLine
+; .text "It'll be dark before long."
+; .byte WaitForA
 
-.byte Left_slot
-.text "Of course."
-.byte NewLine
-.text "Many thanks for your help, General Hannibal."
-.byte NewLine
-.text "I won't forget the kindness you've done us!"
-.byte WaitForA
+; .byte Left_slot
+; .text "Of course."
+; .byte NewLine
+; .text "Many thanks for your help, General Hannibal."
+; .byte NewLine
+; .text "I won't forget the kindness you've done us!"
+; .byte WaitForA
 
-.byte EndText
+; .byte EndText
 
 ch7finnsafie1
 
@@ -903,7 +903,7 @@ ch7finnleif
 
 .byte Left_slot
 .byte ScrollText
-.text "Gods' breath! Th-That can't be...! Lord Leif..."
+.text "Gods' breath! Th-that can't be...! Lord Leif..."
 .byte NewLine
 .text "I'm sorry. I... I don't know what to say..."
 .byte WaitForA

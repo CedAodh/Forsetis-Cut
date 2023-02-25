@@ -100,7 +100,7 @@ ch12xpanlithis
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-Yeah, uh, I've been gone a while..."
+.text "Y-yeah, uh, I've been gone a while..."
 .byte NewLine
 .text "Er, Perne...sir..."
 .byte WaitForA
@@ -116,7 +116,7 @@ ch12xpanlithis
 
 .byte Right_slot
 .byte ScrollText
-.text "H-Hey, gimme some credit, wouldja?"
+.text "H-hey, gimme some credit, wouldja?"
 .byte NewLine
 .text "Let's not talk too much about ancient history!"
 .byte WaitForA
@@ -158,7 +158,7 @@ ch12xpanlithis
 
 .byte Right_slot
 .byte ScrollText
-.text "N-No, nothing. Nothing at all..."
+.text "N-no, nothing. Nothing at all..."
 .byte WaitForA
 
 .byte Left_slot
@@ -299,7 +299,7 @@ ch12xpanlara
 
 .byte Left_slot
 .byte ScrollText
-.text "H-Hey, what's got you so serious?"
+.text "H-hey, what's got you so serious?"
 .byte NewLine
 .text "Yer face is all scrunched up"
 .byte NewLine
@@ -337,7 +337,7 @@ ch12xpanlara
 
 .byte Left_slot
 .byte ScrollText
-.text "W-Well, yeah, but that was before I realized"
+.text "W-well, yeah, but that was before I realized"
 .byte NewLine
 .text "you were just a kid."
 .byte WaitForA
@@ -363,7 +363,7 @@ ch12xpanlara
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-Yeah..."
+.text "Y-yeah..."
 .byte NewLine
 .text "Well, I didn't hate dancing, I just hated"
 .byte NewLine
@@ -419,7 +419,7 @@ ch12xpanlara
 
 .byte Right_slot
 .byte ScrollText
-.text "R-Really, Perne?!"
+.text "R-really, Perne?!"
 .byte NewLine
 .text "All right, it's a deal!"
 .byte WaitForA
@@ -523,7 +523,7 @@ ch12xtinasafie
 .word safie_portrait
 .text "Tina?!"
 .byte NewLine
-.text "Wh-What in blazes are you doing here?"
+.text "Wh-what in blazes are you doing here?"
 .byte WaitForA
 
 .byte Left_slot
@@ -571,7 +571,7 @@ ch12xtinasafie
 .byte ScrollText
 .text "A slave?!"
 .byte NewLine
-.text "Th-That can't be!"
+.text "Th-that can't be!"
 .byte NewLine
 .text "Who would do such a thing?"
 .byte WaitForA
@@ -590,7 +590,7 @@ ch12xtinasafie
 
 .byte Right_slot
 .byte ScrollText
-.text "W-Well, couldn't you just refuse?"
+.text "W-well, couldn't you just refuse?"
 .byte NewLine
 .text "Surely he'd listen to the objections of a little"
 .byte NewLine
@@ -609,7 +609,7 @@ ch12xtinasafie
 
 .byte Right_slot
 .byte ScrollText
-.text "H-He would?!"
+.text "H-he would?!"
 .byte WaitForA
 
 .byte Left_slot
@@ -631,7 +631,7 @@ ch12xtinasafie
 .text "*Sniffle, whimper*"
 .byte WaitForA
 .byte ScrollText
-.text "H-He... He'd take a big, hairy caterpillar"
+.text "H-he... He'd take a big, hairy caterpillar"
 .byte NewLine
 .text "and wave it in front of my face!"
 .byte NewLine
@@ -777,7 +777,7 @@ ch12xopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Th-The Empire's here...?"
+.text "Th-the Empire's here...?"
 .byte WaitForA
 
 .byte Left_slot
@@ -796,11 +796,11 @@ ch12xopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "B-But why...?"
+.text "B-but why...?"
 .byte NewLine
 .text "Why you gotta be so cruel to me all the time?"
 .byte NewLine
-.text "L-Look, I wasn't thinkin' anything funny!"
+.text "L-look, I wasn't thinkin' anything funny!"
 .byte WaitForA
 
 .byte Left_slot

@@ -82,7 +82,7 @@ ch14homernanna
 .byte ScrollText
 .text "Well, first, it is past noon, second—"
 .byte NewLine
-.text "H-Hey, sweetheart, don't get that pretty face"
+.text "H-hey, sweetheart, don't get that pretty face"
 .byte NewLine
 .text "all wet with tears..."
 .byte WaitForA
@@ -109,7 +109,7 @@ ch14villager1
 .byte Right_slot ; HOUSE NORTH EAST
 .word LoadPortrait
 .word youngman_portrait
-.text "W-What's gonna happen to us...?"
+.text "Wh-what's gonna happen to us...?"
 .byte NewLine
 .text "If we packed up and moved to a different city,"
 .byte NewLine
@@ -278,7 +278,7 @@ ch14dragonpikehousedean
 
 .byte Right_slot
 .byte ScrollText
-.text "Th-This is no mere spear...!"
+.text "Th-this is no mere spear...!"
 .byte NewLine
 .text "This is His Highness Prince Arion's"
 .byte NewLine
@@ -517,7 +517,7 @@ ch14shannamleave
 
 .byte Right_slot
 .byte ScrollText
-.text "N-No, it's not like that! I'm the prince of"
+.text "N-no, it's not like that! I'm the prince of"
 .byte NewLine
 .text "a whole different country, and I can't just leave"
 .byte NewLine
@@ -1003,7 +1003,7 @@ ch14ending1
 
 .byte Right_slot
 .byte ScrollText
-.text "N-No..."
+.text "N-no..."
 .byte NewLine
 .text "You've the right of it, my lord father."
 .byte NewLine
@@ -1096,7 +1096,7 @@ ch14ending2
 .word linoan_portrait
 .text "Lord Arion!"
 .byte NewLine
-.text "Wh-What are you doing here?!"
+.text "Wh-what are you doing here?!"
 .byte WaitForA
 
 .byte Right_slot

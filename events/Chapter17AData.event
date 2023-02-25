@@ -103,8 +103,8 @@ eventChapter17AData ; B1/A909
 		UNIT Reinhardt, Enemy, [22, 0], [22, 0], Reinhardt, [], 2, False, [$00, $00, $00, $00]
 	UNIT
 
-	_UnusedCoordinates1 ; B1/ADE9
-		.byte 22, 8
+	;_UnusedCoordinates1 ; B1/ADE9
+	;	.byte 22, 8
 
 	_IshtarGroup ; B1/ADEB
 		UNIT Ishtar, Enemy, [22, 0], [22, 1], Ishtar, [], 2, False, [$00, $00, $00, $00]

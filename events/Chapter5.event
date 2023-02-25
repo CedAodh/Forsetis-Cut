@@ -749,8 +749,8 @@ eventChapter5Events ; 99/9246
 		DIALOGUE ch5op2
 		YIELD
 
-		;MOVE_UNIT Eyvel, [0, 0], [15, 15], 1, None
-		;YIELD_UNK
+		MOVE_UNIT Eyvel, [0, 0], [15, 15], 1, None
+		YIELD_UNK
 
 		MOVE_UNIT Nanna, [0, 0], [14, 17], 1, None
 		YIELD_UNK

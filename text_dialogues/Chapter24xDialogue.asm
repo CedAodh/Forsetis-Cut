@@ -651,7 +651,7 @@ ch24xeyveldagdar
 
 .byte Left_slot
 .byte ScrollText
-.text "D-Don't be stupid...!"
+.text "D-don't be stupid...!"
 .byte NewLine
 .text "I, uh, didn't really do much..."
 .byte WaitForA
@@ -838,7 +838,7 @@ ch24xeyvelgalzus
 .byte ScrollText
 .text "Huh...?!"
 .byte NewLine
-.text "Y-You're Mareeta's—"
+.text "Y-you're Mareeta's—"
 .byte WaitForA
 
 .byte Left_slot

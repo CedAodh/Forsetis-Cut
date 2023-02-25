@@ -51,7 +51,7 @@ ch25opening1
 .byte ScrollText
 .text "Archbishop Manfroy!"
 .byte NewLine
-.text "Wh-When did you get here, Your Eminence?"
+.text "Wh-when did you get here, Your Eminence?"
 .byte WaitForA
 
 .byte Left_slot
@@ -1008,7 +1008,7 @@ ch25ending7mareeta
 .byte WaitForA
 
 .byte Left_slot
-.text "B-But—"
+.text "B-but—"
 .byte WaitForA
 
 .byte Right_slot

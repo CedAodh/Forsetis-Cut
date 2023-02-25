@@ -192,7 +192,7 @@ ch9finnselphina2
 
 .byte Left_slot
 .byte ScrollText
-.text "Th-That's uncalled for! I meant nothing by it..."
+.text "Th-that's uncalled for! I meant nothing by it..."
 .byte WaitForA
 
 .byte Right_slot
@@ -306,7 +306,7 @@ ch9callionselphina
 .byte ScrollText
 .text "What is..."
 .byte NewLine
-.text "Th-This is a fine blade, milady, but where—"
+.text "Th-this is a fine blade, milady, but where—"
 .byte WaitForA
 
 .byte Left_slot
@@ -358,7 +358,7 @@ ch9callionselphina
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-Yes, I will!"
+.text "Y-yes, I will!"
 .byte NewLine
 .text "Thank you, Lady Selphina!"
 .byte WaitForA
@@ -626,7 +626,7 @@ ch9opening2
 .word selphina_portrait
 .text "My lord father! It's the Thracian army!"
 .byte NewLine
-.text "T-They're flooding in from the south!"
+.text "Th-they're flooding in from the south!"
 .byte WaitForA
 
 .byte Right_slot
@@ -736,7 +736,7 @@ ch9opening3
 
 .byte Right_slot
 .byte ScrollText
-.text "Wh-What?! Wasn't this villa supposed to be"
+.text "Wh-what?! Wasn't this villa supposed to be"
 .byte NewLine
 .text "under the protection of General Hannibal?"
 .byte WaitForA
@@ -822,7 +822,7 @@ ch9closing1
 .text "...Duke Dorius, I think you've earned—"
 .byte WaitForA
 .byte ScrollText
-.text "Ah! Y-Your arm! Don't tell me you..."
+.text "Ah! Y-your arm! Don't tell me you..."
 .byte WaitForA
 
 .byte Right_slot
@@ -994,7 +994,7 @@ ch9villafall
 .word augustus_portrait
 .text "Prince Leif, I've dire news!"
 .byte NewLine
-.text "I... I regret to report that the villa... has fallen."
+.text "I...I regret to report that the villa...has fallen."
 .byte WaitForA
 
 .byte Left_slot
@@ -1002,7 +1002,7 @@ ch9villafall
 .word leif_portrait2
 .text "Come again?!"
 .byte NewLine
-.text "Th-Then... Duke Dorius..."
+.text "Th-then... Duke Dorius..."
 .byte WaitForA
 
 .byte Right_slot

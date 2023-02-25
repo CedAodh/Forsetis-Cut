@@ -188,7 +188,7 @@ ch20opening2
 .word dvorak_portrait
 .text "Uh..."
 .byte NewLine
-.text "Y-Yes, sir?"
+.text "Y-yes, sir?"
 .byte WaitForA
 
 .byte Right_slot

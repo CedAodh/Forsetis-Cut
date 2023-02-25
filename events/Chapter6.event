@@ -76,6 +76,10 @@ eventChapter6Events ; 99/A346
 			macroEventConditionCheckCoords [2, 24]
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
+		EVENT $00, _MoneyHouse
+			macroEventConditionCheckCoords [21, 15]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BeforeActionEventDefinitions ; 99/A497
@@ -333,6 +337,10 @@ eventChapter6Events ; 99/A346
 
 		+
 		macroTileChangeByID 5
+	END1
+	
+	_MoneyHouse
+		macroDialogueHouse money
 	END1
 
 	_Door1 ; 99/AAB0

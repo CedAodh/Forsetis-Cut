@@ -180,7 +180,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._ReinhardtName
 
-	.word	<>char_names._NancyName		; Unused
+	.word	<>char_names._RaydrikName	; Unused
 
 	.word	<>char_names._TahraName
 	.word	<>char_names._TahraName
@@ -426,7 +426,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._MunsterName
 
-	.word	<>char_names._RaydrikName
+	.word	<>char_names._NancyName
 
 	.word	<>char_names._MunsterName
 	.word	<>char_names._MunsterName

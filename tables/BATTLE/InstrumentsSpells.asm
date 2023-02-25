@@ -131,7 +131,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsJormungandr 	; Jormungandr		STJormungandr
 .byte InstrumentsFenrirs     	; Fenrir			STFenrirs
 .byte InstrumentsHel         	; Hel				STJormungandr
-.byte InstrumentsForseti	   	; Loptous			STFire			vanilla:00
+.byte InstrumentsMeteor   	; Loptous			STFire			vanilla:00
 					    
 ; Siege magic           
 .byte InstrumentsMeteor      	; Meteor			STMeteor
@@ -331,7 +331,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsJormungandr+1 	; Jormungandr
 .byte InstrumentsFenrirs+1   	; Fenrir
 .byte InstrumentsHel+1       	; Hel
-.byte InstrumentsForseti+1  ; Loptous		vanilla:00
+.byte InstrumentsMeteor+1  ; Loptous		vanilla:00
 					    
 ; Siege magic           
 .byte InstrumentsMeteor+1    	; Meteor

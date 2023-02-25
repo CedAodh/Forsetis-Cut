@@ -238,7 +238,7 @@ ch2villageronan
 .byte Left_Slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "B-But you've never been in a real fight like this"
+.text "B-but you've never been in a real fight like this"
 .byte NewLine
 .text "before...! You that eager to leave yer mother"
 .byte NewLine

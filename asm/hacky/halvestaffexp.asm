@@ -10,19 +10,22 @@
 	
 .endlogical
 
-* := $4A5200
-.logical lorom ($4A5200, 1)
+* := $4A5400
+.logical lorom ($4A5400, 1)
 
 l_exp_calc_upper_class:
 	lda $5108; Class setting: Temporary storage, Lower class ID
 	and #$00ff ;
 	bne + ;
 	
-	lsr $0b ; Experience gain is halved
+	clc
+	adc #1 ; Experience gain is halved
 	
 + ; original processing
 	lda $001D,X ; Personal Skills loading
-	ora $0F4E ; Stacking Weapon Skills
+	;ora $0F4E ; Stacking Weapon Skills
 	rtl;
+	
+	.databank 0
 	
 .endlogical

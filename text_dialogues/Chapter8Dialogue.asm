@@ -87,7 +87,7 @@ ch8martyosian
 
 .byte Right_slot
 .byte ScrollText
-.text "F-F-Fight off the bandits? Even Gomez?!"
+.text "F-f-fight off the bandits? Even Gomez?!"
 .byte NewLine
 .text "Er... Well, y'see... I, uh..."
 .byte WaitForA
@@ -180,7 +180,7 @@ ch8martyhalvan
 
 .byte Right_slot
 .byte ScrollText
-.text "W-Well, when you put it like that..."
+.text "W-well, when you put it like that..."
 .byte NewLine
 .text "I...g-guess it was wrong of me"
 .byte NewLine
@@ -208,7 +208,7 @@ ch8martyhalvan
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-Yessir! 'Course I will, sir!"
+.text "Y-yessir! 'Course I will, sir!"
 .byte WaitForA
 
 .byte EndText
@@ -499,7 +499,7 @@ ch8opening
 
 .byte Right_slot
 .byte ScrollText
-.text "D-Did I hear you correctly? Dorius...?!"
+.text "D-did I hear you correctly? Dorius...?!"
 .byte NewLine
 .text "I can scarcely believe it..."
 .byte NewLine
@@ -767,7 +767,7 @@ leifdagdarreunite
 
 .byte Right_slot
 .byte ScrollText
-.text "Wh-What?! Dammit, Leif!"
+.text "Wh-what?! Dammit, Leif!"
 .byte NewLine
 .text "Are you a real prince or just a child?!"
 .byte NewLine
@@ -932,7 +932,7 @@ ch8leiftanya
 .byte NewLine
 .text "You bet your Light Brand I'll come with you!"
 .byte NewLine
-.text "Th-Thank you!"
+.text "Th-thank you!"
 .byte WaitForA
 
 .byte EndText

@@ -44,8 +44,8 @@
 .logical lorom($542F8, 1)
 
 .long $000000	;ch1
-.long $000000	;ch2
-.long objectivech2_2	;ch2x
+.long objectivech2_2	;ch2
+.long $000000	;ch2x
 .long $000000	;ch3
 .long objectivech4_2	;ch4
 .long $000000	;ch4x

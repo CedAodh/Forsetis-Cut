@@ -318,3 +318,150 @@ finnkarin
 	.byte WaitForA
 
 	.byte EndText
+	
+ch7ending9FC
+
+.byte Right_slot
+.word LoadPortrait
+.word hannibal_portrait
+.text "Sir Lugh, you'd best be setting out."
+.byte NewLine
+.text "It'll be dark before long."
+.byte WaitForA
+
+.byte Left_slot
+.text "Of course."
+.byte NewLine
+.text "Many thanks for your help, General Hannibal."
+.byte NewLine
+.text "I won't forget the kindness you've done us!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.word PlayMusic
+.byte $3D
+
+.byte right_slot
+.word LoadPortrait
+.word hannibal_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word wolfe_portrait
+.text "General Hannibal,"
+.byte NewLine
+.text "Baron Raydrik of Munster requests"
+.byte NewLine
+.text "an audience with you."
+.byte WaitForA
+
+.byte right_slot
+.text "...Let him pass."
+.byte NewLine
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word raydrik_portrait
+.text "It's been a long time, Hannibal."
+.byte NewLine
+.text "Have you lost weight?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Why do you come, traitor?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Pleasantries are spit upon, I see."
+.byte NewLine
+.text "I'll get right to it then."
+.byte WaitForA
+.byte ScrollText
+.text "Some loose ends of mine seem to have"
+.byte NewLine
+.text "spilled their way over to this castle."
+.byte NewLine
+.text "I have come to collect them."
+.byte WaitForA
+.byte NewLine
+.text "Most notably the pup prince of Leonster."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Prince Leif of Leonster...?"
+.byte NewLine
+.text "I regret to inform you that"
+.byte NewLine
+.text "there is no one here by that name."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Th-that's impossible."
+.byte NewLine
+.text "...Show me to your dungeon."
+.byte NewLine
+.text "I want to examine them myself."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I had prisoners in my custody moments ago,"
+.byte NewLine
+.text "but they turned out to be innocent."
+.byte WaitForA
+.byte ScrollText
+.text "As such, they were set free."
+.byte NewLine
+.text "I understand that this may be a"
+.byte NewLine
+.text "foreign practice to the Empire."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, I assure you,"
+.byte NewLine
+.text "they were more than just “innocent.”"
+.byte NewLine
+.text "Hannibal, you KNEW who that was!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I don't know what you're talking about, Raydrik."
+.byte WaitForA
+.byte ScrollText
+.text "It seems I'm going to have to falsify your claim"
+.byte NewLine
+.text "and demand that you turn around and head back"
+.byte NewLine
+.text "to your own territory."
+.byte WaitForA
+.byte NewLine
+.text "My men appear unsettled by your presence."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Rrgh..."
+.byte NewLine
+.text "As you wish, General."
+.byte WaitForA
+
+.byte EndText

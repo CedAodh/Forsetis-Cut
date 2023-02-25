@@ -191,7 +191,7 @@ ch4dalshinconvo
 .word LoadPortrait
 .word dalsin_portrait
 
-.text "W-What?!"
+.text "Wh-what?!"
 .byte NewLine
 .text "The Empire tried to take me own kin"
 .byte NewLine
@@ -304,7 +304,7 @@ ch4lithisturn1
 .byte ScrollText
 .text "...Really?"
 .byte NewLine
-.text "Th-Then you gotta take me with you, Boss!"
+.text "Th-then you gotta take me with you, Boss!"
 .byte WaitForA
 
 .byte Right_slot

@@ -283,7 +283,7 @@ ch11xolwenfred
 .byte ScrollText
 .text "Join Prince Leif?!"
 .byte NewLine
-.text "H-He's the enemy! He always has been!"
+.text "H-he's the enemy! He always has been!"
 .byte WaitForA
 
 .byte Left_slot
@@ -355,7 +355,7 @@ ch11xopening1
 .byte WaitForA
 
 .byte Right_slot
-.text "B-But General, the enemy has already"
+.text "B-but General, the enemy has already"
 .byte NewLine
 .text "breached the fort's interior! My men and I"
 .byte NewLine
@@ -378,7 +378,7 @@ ch11xopening1
 .text "and take potshots at the invaders?!"
 .byte WaitForA
 .byte ScrollText
-.text "Y-You're asking us to die...!"
+.text "Y-you're asking us to die...!"
 .byte NewLine
 .text "We'll be sitting ducks!"
 .byte WaitForA
@@ -461,7 +461,7 @@ ch11xopening2
 .byte Left_slot
 .word LoadPortrait
 .word boy_portrait
-.text "Y-Yer an Imperial soldier...!"
+.text "Y-yer an Imperial soldier...!"
 .byte WaitForA
 .byte NewLine
 .text "You witch! All you do is go around"
@@ -476,21 +476,21 @@ ch11xopening2
 .byte NewLine
 .text "I was arrested!"
 .byte NewLine
-.text "Wh-What are you kids doing here?!"
+.text "Wh-what are you kids doing here?!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word girl2_portrait
-.text "S-Soldiers were raidin' our village..."
+.text "S-soldiers were raidin' our village..."
 .byte NewLine
 .text "They took me an' brought me here,"
 .byte NewLine
 .text "even when I kicked an' screamed...!"
 .byte WaitForA
 .byte ScrollText
-.text "Wh-What's gonna happen to us...?"
+.text "Wh-what's gonna happen to us...?"
 .byte WaitForA
 
 .byte Right_slot
@@ -518,7 +518,7 @@ ch11xopening2
 .byte ScrollText
 .word LoadPortrait
 .word girl_portrait
-.text "No! P-Please don't take us away!"
+.text "No! P-please don't take us away!"
 .byte NewLine
 .text "I jus' wanna go back home..."
 .byte NewLine

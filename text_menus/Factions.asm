@@ -38,7 +38,7 @@ leader_sets				.block
 .word $0090
 .word <>leader_text._MansterLeader
 
-.word $0143
+.word $0093
 .word <>leader_text._MansterLeader
 
 .word $0056

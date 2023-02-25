@@ -96,7 +96,7 @@ largorel
 .byte EndText
 
 oltophrel
-.text "T-This is House Leonster's idea of waging war?"
+.text "Th-this is House Leonster's idea of waging war?"
 .byte NewLine
 .text "I... I may have been mistaken about you..."
 .byte WaitForA
@@ -127,7 +127,7 @@ truderel
 .byte EndText
 
 tinarel
-.text "Th-Thank you for saving me!"
+.text "Th-thank you for saving me!"
 .byte NewLine
 .text "I'm off to find my Big Sis, Safy, now."
 .byte WaitForA

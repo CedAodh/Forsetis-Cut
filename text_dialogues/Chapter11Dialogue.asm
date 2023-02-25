@@ -313,9 +313,9 @@ ch11opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Wh-What?!"
+.text "Wh-what?!"
 .byte NewLine
-.text "General Kempf, even now, you... You..."
+.text "General Kempf, even now, you...you..."
 .byte WaitForA
 
 .byte Right_slot
@@ -386,7 +386,7 @@ ch11opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Wh-What did you just say to me?!"
+.text "Wh-what did you just say to me?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -546,7 +546,7 @@ ch11opening3
 
 .byte Left_slot
 .byte ScrollText
-.text "Wh-What?!"
+.text "Wh-what?!"
 .byte NewLine
 .text "That's not possible!"
 .byte NewLine

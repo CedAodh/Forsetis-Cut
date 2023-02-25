@@ -76,8 +76,8 @@ eventChapter15Data ; B1/B3B3
 		UNIT BanditBrigand1, Enemy, [2, 5], [2, 5], Seil, [IronAxe], 6, False, [$02, $09, $00, $00]
 	UNIT
 
-	_UnusedCoordinates1 ; B1/B677
-		.byte 17, 10
+	;_UnusedCoordinates1 ; B1/B677
+	;	.byte 17, 10
 
 	_RalphAmaldaGroup ; B1/B679
 		UNIT Amalda, NPC, [19, 10], [19, 10], Amalda, [MasterSword, Heal, Vulnerary], 6, False, [$00, $03, $02, $80]
@@ -88,8 +88,8 @@ eventChapter15Data ; B1/B3B3
 		UNIT Asaello, Player, [18, 14], [18, 14], Ralph, [SilverBow, MasterBow], 4, False, [$00, $03, $02, $80]
 	UNIT
 
-	_UnusedCoordinates2 ; B1/B6A3
-		.byte 20, 12
+	;_UnusedCoordinates2 ; B1/B6A3
+	;	.byte 20, 12
 
 	_SchroffGroup ; B1/B6A5
 		UNIT Schroff, NPC, [18, 14], [20, 11], Schroff, [Mend, Rescue], 6, False, [$03, $07, $00, $80]

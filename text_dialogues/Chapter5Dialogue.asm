@@ -308,7 +308,7 @@ ch5mareetaloaded4
 .byte WaitForA
 
 .byte Left_slot
-.text "...K-Kill..."
+.text "...K-kill..."
 .byte WaitForA
 
 .byte Right_slot
@@ -520,7 +520,7 @@ ch5mareetacaptured
 
 .byte Left_slot
 .byte ScrollText
-.text "Th-The woman's a beast...!"
+.text "Th-the woman's a beast...!"
 .byte WaitForA
 .byte ScrollText
 
@@ -558,7 +558,7 @@ ch5mareetakilled
 
 .byte Left_slot
 .byte ScrollText
-.text "Th-The woman's a beast...!"
+.text "Th-the woman's a beast...!"
 .byte WaitForA
 .byte ScrollText
 
@@ -577,7 +577,7 @@ ch5raydrikpanicsA
 .byte Right_slot
 .word LoadPortrait
 .word raydrik_portrait
-.text "F-Fine, the girl wasn't enough for you?!"
+.text "F-fine, the girl wasn't enough for you?!"
 .byte NewLine
 .text "Let's see how you do"
 .byte NewLine
@@ -604,7 +604,7 @@ ch5raydrikpanicsA
 .byte ScrollText
 .word LoadPortrait
 .word eyvel_portrait
-.text "Wh-What...?!"
+.text "Wh-what...?!"
 .byte WaitForA
 
 .byte EndText
@@ -640,7 +640,7 @@ ch5eyvelcaptured
 .byte ScrollText
 .word LoadPortrait
 .word eyvel_portrait
-.text "Wh-What...?"
+.text "Wh-what...?"
 .byte WaitForA
 
 .byte EndText
@@ -656,7 +656,7 @@ ch5eyvelstone
 .word veld_portrait
 
 .byte Left_slot
-.text "G-Gods' breath... Your spellcraft is truly"
+.text "G-gods' breath... Your spellcraft is truly"
 .byte NewLine
 .text "a sight to behold, Your Eminence. Not even"
 .byte NewLine
@@ -669,7 +669,7 @@ ch5eyvelstone
 
 .byte Left_slot
 .byte ScrollText
-.text "A-And now I have a perfect statue of the proud"
+.text "A-and now I have a perfect statue of the proud"
 .byte NewLine
 .text "warrior of Fiana—an eternal monument"
 .byte NewLine
@@ -852,7 +852,7 @@ ch5arenaopennannadead
 
 .byte Right_slot
 .byte ScrollText
-.text "No... Gods, NO! Th-That's not possible!"
+.text "No... Gods, NO! Th-that's not possible!"
 .byte WaitForA
 .byte ScrollText
 .text "Oh, Nanna... After everything"
@@ -869,7 +869,7 @@ ch5raydrikpanicsB1
 .byte Right_slot
 .word LoadPortrait
 .word raydrik_portrait
-.text "H-How did you escape from the dungeon?!"
+.text "H-how did you escape from the dungeon?!"
 .byte NewLine
 .text "Men, seize them! No, wait, kill them!"
 .byte NewLine
@@ -903,7 +903,7 @@ ch5raydrikpanicsB2
 .byte ScrollText
 .word LoadPortrait
 .word eyvel_portrait
-.text "Wh-What...?!"
+.text "Wh-what...?!"
 .byte WaitForA
 
 .byte EndText
@@ -949,7 +949,7 @@ ch5arenaopennannaalone
 
 .byte Left_slot
 .byte ScrollText
-.text "Y-Yes... I've managed, somehow."
+.text "Y-yes... I've managed, somehow."
 .byte WaitForA
 
 .byte Right_slot
@@ -982,7 +982,7 @@ ch5arenaopenbothgone
 .text "Was our information incorrect?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah! Th-That's...!"
+.text "Ah! Th-that's...!"
 .byte WaitForA
 .byte ScrollText
 

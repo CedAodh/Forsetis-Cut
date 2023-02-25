@@ -76,7 +76,6 @@
 	aBAgraphics_Ballista_VeninBallista			.binary "weapons/Ballista_VeninBallista.4bpp.fe4"
 	aBAgraphics_IronBallista					.binary "weapons/IronBallista.4bpp.fe4"
 	aBAgraphics_KillerBallista					.binary "weapons/KillerBallista.4bpp.fe4"
-	aBAgraphics_Unused4D						.binary "weapons/Unused4D.4bpp.fe4"
 	aBAgraphics_Heal							.binary "weapons/Heal.4bpp.fe4"
 	aBAgraphics_Mend							.binary "weapons/Mend.4bpp.fe4"
 	aBAgraphics_Recover							.binary "weapons/Recover.4bpp.fe4"
@@ -87,6 +86,7 @@
 	aBAgraphics_Berserk							.binary "weapons/Berserk.4bpp.fe4"
 	aBAgraphics_Restore_Kia						.binary "weapons/Restore_Kia.4bpp.fe4"
 	aBAgraphics_Silence							.binary "weapons/Silence.4bpp.fe4"
+	aBAgraphics_Unused4D						.binary "weapons/Unused4D.4bpp.fe4"
 
 .here
 

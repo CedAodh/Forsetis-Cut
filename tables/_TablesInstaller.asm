@@ -80,9 +80,9 @@
 	aBattleAnimationClassGenders	.include "BATTLE/BattleAnimationClassGenders.casm"
 .here
 
-* = $048E58
-.logical $898E58
-					.include "BATTLE/BAShieldsInstaller.asm"
+* = $048F63
+.logical $898F63
+	;.include "BATTLE/BAShieldsInstaller.asm"
 	aBattleAnimationShieldPointers		.include "BATTLE/BattleAnimationShieldPointers.casm"
 	aBattleAnimationRangedWeaponUnknown	.include "BATTLE/BattleAnimationRangedWeaponUnknown.casm"
 		.sint -1
@@ -242,6 +242,39 @@
 	aBattleAnimationMovementDataTable			.include "BATTLE/BattleAnimationMovementData.casm"
 	.word 0
     aSupportsTable                              .include "UNITS/SupportsTable.casm"
+.here
+
+* = $550100
+.logical lorom($550100, 1)
+	.include "BATTLE/BAShieldsInstaller.asm"
+.here
+
+* = $0D887B
+.logical lorom($0D887B, 1)
+
+.byte $00, $81, $2A
+
+.here
+
+* = $0D8892
+.logical lorom($0D8892, 1)
+
+.byte $00, $81, $2A
+
+.here
+
+* = $0D889C
+.logical lorom($0D889C, 1)
+
+.byte $00, $81, $2A
+
+.here
+
+* = $0D88B1
+.logical lorom($0D88B1, 1)
+
+.byte $00, $81, $2A
+
 .here
 
 ; Repoints of the above three tables

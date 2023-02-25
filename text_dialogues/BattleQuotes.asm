@@ -80,7 +80,7 @@ shivaboss
 .byte EndText
 
 lithisboss
-.text "H-Hey, wait a minute!"
+.text "H-hey, wait a minute!"
 .byte NewLine
 .text "I ain't that bad, really!"
 .byte WaitForA
@@ -159,7 +159,7 @@ gomezboss
 .byte EndText
 
 merlochboss
-.text "Y-You're no common bandit!"
+.text "Y-you're no common bandit!"
 .byte NewLine
 .text "What's going on here?!"
 .byte WaitForA
@@ -231,7 +231,7 @@ tinaboss
 .byte EndText
 
 lisztboss
-.text "D-Damn! I can't believe this!"
+.text "D-damn! I can't believe this!"
 .byte WaitForA
 .byte EndText
 
@@ -316,7 +316,7 @@ mishaboss
 .byte EndText
 
 shannamboss
-.text "H-Hey, wait!"
+.text "H-hey, wait!"
 .byte NewLine
 .text "Let's talk about this..."
 .byte WaitForA
@@ -348,14 +348,16 @@ palmanboss
 .byte EndText
 
 xavierboss
-.text "...Let's get this over with, shall we?"
+.text "...Let's get this over with,"
+.byte NewLine
+.text "shall we?"
 .byte WaitForA
 .byte EndText
 
 gustavboss
-.text "Aaargh! You think I'll just"
+.text "Aaargh!"
 .byte NewLine
-.text "roll over for you?!"
+.text "Think I'll just roll over for you?!"
 .byte NewLine
 .text "I'm not going down without a fight!"
 .byte WaitForA
@@ -376,9 +378,7 @@ amaldaboss
 .byte EndText
 
 bharatboss
-.text "You nuisances will cost me"
-.byte NewLine
-.text "my rank!"
+.text "You nuisances will cost me my rank!"
 .byte WaitForA
 .byte EndText
 
@@ -540,7 +540,7 @@ pierreboss
 .byte EndText
 
 musboss
-.text "IT'S TOO LATE FOR YOU...KARL..."
+.text "IT'S TOO LATE FOR YOU...CARL..."
 .byte NewLine
 .text "YOUR TIME AS KING HAS PASSED...!"
 .byte WaitForA
