@@ -274,11 +274,11 @@ mareetadeath
 .byte EndText
 
 galzusdeath
-.text "Hah! So this is it..."
+.text "Hah...!"
 .byte NewLine
-.text "You're a...real fascinating sort..."
+.text "Finally...I come across..."
 .byte NewLine
-.text "I was even...able...to...see..."
+.text "someone...amusing..."
 .byte WaitForA
 .byte EndText
 

@@ -892,9 +892,9 @@ ch15opening1
 .byte Left_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "And it is on this matter that Duke Dorius and I"
+.text "And it is on this matter that Count Dorius"
 .byte NewLine
-.text "are of different minds."
+.text "and I are of different minds."
 .byte NewLine
 .text "I instead argue heading east at the pass."
 .byte WaitForA
@@ -994,7 +994,7 @@ ch15opening1
 .byte ScrollText
 .text "Don't presume to speak for all of us,"
 .byte NewLine
-.text "Duke Dorius. Only a small fraction of our"
+.text "Count Dorius. Only a small fraction of our"
 .byte NewLine
 .text "troops are knights—many more hold no title."
 .byte WaitForA

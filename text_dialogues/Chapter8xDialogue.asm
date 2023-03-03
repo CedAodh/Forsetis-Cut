@@ -80,7 +80,7 @@ ch8xopening
 .byte WaitForA
 
 .byte Right_slot
-.text "No way, Papa! I leave when you leave!"
+.text "No way, Dad! I leave when you leave!"
 .byte WaitForA
 
 .byte Left_slot

@@ -14,12 +14,12 @@ eventChapter12xEvents ; FD/8F98
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MasterSealDancer
 			CMP_WORD wCurrentTurn, 25
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $0E
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _WarpDancer
 			CMP_WORD wCurrentTurn, 30
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $0E
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _PerneCheck
@@ -32,37 +32,37 @@ eventChapter12xEvents ; FD/8F98
 		EVENT FlagAlwaysZero, _ArcherLeftReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 18
 			ROLL_RNG 40
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherMiddleReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 18
 			ROLL_RNG 40
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherRightReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 18
 			ROLL_RNG 40
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonMiddleReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 18
 			ROLL_RNG 50
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonBottomReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 18
 			ROLL_RNG 50
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ThiefReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 11, 19
 			ROLL_RNG 50
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY

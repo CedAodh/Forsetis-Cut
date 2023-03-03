@@ -25,22 +25,22 @@ eventChapter5Events ; 99/9246
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $0B, _MareetaAppears
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $08
 			TEST_FLAG_UNSET $06
 		END_DEFINITION
 		EVENT $10, _SwordmasterSpawn
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $06
 			TEST_FLAG_UNSET $08
 		END_DEFINITION
 		EVENT $11, _BerserkerSpawn
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $06
 			TEST_FLAG_UNSET $08
 		END_DEFINITION
 		EVENT $12, _GalzusSpawn
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $06
 			TEST_FLAG_UNSET $08
 			RUN_ASM _Chapter4xCheck

@@ -657,7 +657,7 @@ ch25ending3eyvel
 .text "kidnapping Little Nan and Mareeta, huh?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah, Little Lord... It breaks my heart"
+.text "Ah, Lord Leif... It breaks my heart"
 .byte NewLine
 .text "to do this, but me and some of the others"
 .byte NewLine
@@ -693,7 +693,7 @@ ch25ending3eyvel
 
 .byte Right_slot
 .byte ScrollText
-.text "Little Lord, I'll be looking forward to the day"
+.text "Lord Leif, I'll be looking forward to the day"
 .byte NewLine
 .text "when you beat the Empire for good"
 .byte NewLine

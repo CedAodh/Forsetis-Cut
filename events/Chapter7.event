@@ -16,8 +16,8 @@ eventChapter7Events ; 99/B023
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _EisenhauSpawn
-			CMP_WORD wCurrentTurn, 2
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentTurn, 3
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _HannibalGroupAIChange
 			CMP_WORD wCurrentPhase, NPC
@@ -32,33 +32,33 @@ eventChapter7Events ; 99/B023
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _CavalierReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 2, 5
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD_RANGE wCurrentTurn, 3, 5
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $0A
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MageBishopReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 6, 7
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $0A
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MageBishopReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 11, 12
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $0A
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _SoldierArmorReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 8, 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $0A
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RaydrikDialogue
 			TEST_FLAG_SET $06
 			TEST_FLAG_UNSET $0A
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

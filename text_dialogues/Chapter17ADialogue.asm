@@ -981,7 +981,7 @@ ch17Amishajoin
 .byte ScrollText
 .word LoadPortrait
 .word karin_portrait
-.text "Duke Dorius, don't say something so stupid!"
+.text "Count Dorius, don't say something so stupid!"
 .byte WaitForA
 .byte ScrollText
 

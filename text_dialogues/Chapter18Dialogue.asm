@@ -100,7 +100,7 @@ ch18xavierrecruitment
 
 .byte Right_slot
 .byte ScrollText
-.text "Duke Dorius..."
+.text "Count Dorius..."
 .byte NewLine
 .text "Your words are more than I deserve."
 .byte NewLine
@@ -820,7 +820,7 @@ ch18closing5
 .byte ScrollText
 .word LoadPortrait
 .word augustus_portrait
-.text "I agree with Duke Dorius' assessment."
+.text "I agree with Count Dorius' assessment."
 .byte WaitForA
 .byte ScrollText
 .text "A frontal assault against the Empire"

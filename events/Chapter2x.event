@@ -13,34 +13,34 @@ eventChapter2xEvents ; 97/805A
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ShivaAIChange
-			CMP_WORD wCurrentTurn, 25
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
-			CMP_WORD wCurrentTurn, 22
+			CMP_WORD wCurrentTurn, 20
 			CHECK_NUM_UNITS_GTE Shiva, 1
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonWarriorReinforcements
 			CMP_WORD wCurrentTurn, 2
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _TopIslandReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 5, 9
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			ROLL_RNG 30
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LowerRightIslandReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 14
 			ROLL_RNG 80
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LowerLeftIslandReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 15, 20
 			ROLL_RNG 20
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY

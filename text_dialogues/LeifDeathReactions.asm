@@ -26,7 +26,7 @@ leifdeatheyvel
 .word eyvel_portrait
 .text "No..."
 .byte NewLine
-.text "Little Lord...!"
+.text "Lord Leif...!"
 .byte NewLine
 .text "How could it end like this?!"
 .byte WaitForA

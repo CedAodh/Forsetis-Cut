@@ -17,30 +17,30 @@ eventChapter13Events ; 99/E392
 		END_DEFINITION
 		EVENT $00, _BowKnightReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 1, 13
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _ArmorReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 12, 32
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _MageReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 12, 32
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _ArmorReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 1, 11
 			TEST_FLAG_SET $02
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _MageReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 1, 11
 			TEST_FLAG_SET $02
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _LisztAIChange
 			CMP_WORD wCurrentTurn, 5
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

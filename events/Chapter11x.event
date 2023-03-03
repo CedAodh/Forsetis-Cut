@@ -26,22 +26,22 @@ eventChapter11xEvents ; 99/D51C
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _OltophLeave
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 30
 			CHECK_NUM_UNITS_GTE Oltoph, 1
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Left1Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 10
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RightReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 8
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Left2Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 15
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION

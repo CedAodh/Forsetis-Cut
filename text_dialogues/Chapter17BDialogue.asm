@@ -659,7 +659,7 @@ ch17Bclosing1
 .byte ScrollText
 .word LoadPortrait
 .word elder_portrait
-.text "It's not what you think, Duke Dorius!"
+.text "It's not what you think, Count Dorius!"
 .byte WaitForA
 
 .byte Right_slot

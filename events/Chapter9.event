@@ -17,11 +17,11 @@ eventChapter9Events ; 8C/F011
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _EnemyAIChange1
 			CMP_WORD wCurrentTurn, 20
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _EnemyAIChange2
 			CMP_WORD wCurrentTurn, 22
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

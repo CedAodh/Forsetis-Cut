@@ -108,11 +108,11 @@ dalsinboss
 .byte EndText
 
 galzusboss
-.text "Fate must really have it out"
+.text "I pity you."
 .byte NewLine
-.text "for you, makin' your path"
+.text "Curse your own fate for"
 .byte NewLine
-.text "cross mine..."
+.text "leading you here."
 .byte WaitForA
 .byte EndText
 

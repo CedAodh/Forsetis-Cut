@@ -207,13 +207,17 @@ ch2villageronan
 .word LoadPortrait
 .word oldlady_portrait
 .byte $09 ; font 9(always use font 9)	
-.text "Ronan, stop! Ronan!"
+.text "Ronan, stop!"
+.byte NewLine
+.text "Ronan!"
 .byte WaitForA
 
 .byte Right_Slot
-.text "Ma, I can't stay outta this any longer."
+.text "Mother, I'm sorry, but I've"
 .byte NewLine
-.text "I'll go and fight alongside—"
+.text "already made my decision."
+.byte NewLine
+.text "I'm going to join—"
 .byte WaitForA
 	
 .byte Left_slot
@@ -223,16 +227,18 @@ ch2villageronan
 	
 .byte Right_slot
 .byte ScrollText
-.text "Oh, you must be with the Freeblades!"
+.text "Oh, hello!"
 .byte NewLine
-.text "I want to join y'all!"
+.text "You're with the Fiana Freeblades, aren't you?"
+.byte NewLine
+.text "Please, let me fight alongside you!"
 .byte WaitForA
-.byte ScrollText	
-.text "I'm good enough with a bow"
+.byte ScrollText
+.text "I trust my skills with a bow,"
 .byte NewLine
 .text "and I can get around pretty fast."
 .byte NewLine
-.text "I won't hold you back none."
+.text "I promise I won't slow you down!"
 .byte WaitForA
 
 .byte Left_Slot
@@ -247,16 +253,14 @@ ch2villageronan
 
 .byte Right_Slot
 .byte ScrollText
-.text "That don't matter none!"
+.text "It makes no difference!"
 .byte NewLine
-.text "Every battle is somebody's first, right?"
-.byte NewLine
-.text "Guess this'll be mine."
+.text "We have to DO something for once!"
 .byte WaitForA
-.byte ScrollText
-.text "I mean, maybe you can stand holing up in here"
 .byte NewLine
-.text "an' waiting to die, but I sure can't!"
+.text "Otherwise, we're always going to live"
+.byte NewLine
+.text "in fear at the whims of these pirates!"
 .byte WaitForA
 
 .byte EndText

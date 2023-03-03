@@ -14,6 +14,13 @@ _intro_shop
 	.text "How can I help you?"
 .byte EndTextNoPortraitFade
 
+_intro_secret_shop
+	
+	.text "...Um, how did you find this place?"
+        .byte NewLine
+        .text "I mean, hello! What'll it be today?"
+.byte EndTextNoPortraitFade
+
 _buy_sell
 
 	.text "Buy        Sell"
@@ -21,27 +28,27 @@ _buy_sell
 
 _buy_intro
 
-	.text "Something caught your eye?"
+	.text "See something you like?"
 .byte EndTextNoPortraitFade
 
 _sell_intro
 
-	.text "What are you offering?"
+	.text "What do you have to offer?"
 .byte EndTextNoPortraitFade
 
 _continue
 
-	.text "Anything else I can do for you?"
+	.text "All right, will that be all for you?"
 .byte EndTextNoPortraitFade
 
 _too_expensive
 
-	.text "Seems you're short on coin, friend."
+	.text "No money, no sale."
 .byte EndTextNoPortraitFade
 
 _buy_sell_confirm
 
-	.text "That sound fair?"
+	.text "How about it?"
 .byte EndTextNoPortraitFade
 
 _yes_no
@@ -56,27 +63,31 @@ _leave
 
 _after_sale
 
-	.text "Got anything else to part with?"
+	.text "Did you have anything else for me?"
 .byte EndTextNoPortraitFade
 
 _after_buy
 
-	.text "Thank you kindly. Anything else?"
+	.text "Can I interest you in anything else?"
 .byte EndTextNoPortraitFade
 
 _no_items_to_sell
 
-	.text "You got nothin' I'm interested in."
+	.text "I can't help you if you don't"
+	.byte NewLine
+	.text "have anything to sell."
 .byte EndTextNoPortraitFade
 
 _inventory_full
 
 	.text "You can't carry anything else."
+	.byte NewLine
+	.text "That's not very good for business..."
 .byte EndTextNoPortraitFade
 
 _unsellable
 
-	.text "Not interested. Sorry."
+	.text "Sorry, not interested."
 .byte EndTextNoPortraitFade
 
 .bend

@@ -1,16 +1,16 @@
-* = $029B26
-.logical $859B26
+;* = $029B26
+;.logical $859B26
 
-lda #$0000
-.byte $8D, $36, $18
-lda # 2 | (0 << 8) ; X | Y coords
-sta wR0
-ldx #$0000
-lda #$0088 			; portrait
-jsl rlUnknown8CBF25 ; shopkeeper portrait proc
-rtl 
+;lda #$0000
+;.byte $8D, $36, $18
+;lda # 2 | (0 << 8) ; X | Y coords
+;sta wR0
+;ldx #$0000
+;lda #$0088 			; portrait
+;jsl rlUnknown8CBF25 ; shopkeeper portrait proc
+;rtl 
 
-.here
+;.here
 
 * = $0FF4D0
 .logical $9FF4D0

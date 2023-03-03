@@ -878,7 +878,7 @@ ch12ending2mareetaleif
 .word mareeta_portrait
 .text "L-Leif?!"
 .byte NewLine
-.text "Little Lord, is that you?"
+.text "Lord Leif, is that you?"
 .byte WaitForA
 
 .byte Right_slot
@@ -973,7 +973,7 @@ ch12ending2mareetaleif
 .byte ScrollText
 .text "Couldn't have said it better myself,"
 .byte NewLine
-.text "Little Lord!"
+.text "Lord Leif!"
 .byte WaitForA
 
 .byte EndText

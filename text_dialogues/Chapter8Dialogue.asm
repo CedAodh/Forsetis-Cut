@@ -492,7 +492,7 @@ ch8opening
 .byte ScrollText
 .text "There, under the protection"
 .byte NewLine
-.text "of General Hannibal, Duke Dorius trains us"
+.text "of General Hannibal, Count Dorius trains us"
 .byte NewLine
 .text "in the ways of knighthood."
 .byte WaitForA
@@ -503,7 +503,7 @@ ch8opening
 .byte NewLine
 .text "I can scarcely believe it..."
 .byte NewLine
-.text "Duke Dorius is alive...?"
+.text "Count Dorius is alive...?"
 .byte WaitForA
 
 .byte Left_slot
@@ -515,7 +515,7 @@ ch8opening
 .byte ScrollText
 .text "Of course, at once! Being able to see"
 .byte NewLine
-.text "Duke Dorius again... It's like a waking dream!"
+.text "Count Dorius again... It's like a waking dream!"
 .byte WaitForA
 
 .byte Left_slot
@@ -551,7 +551,7 @@ ch8opening
 .byte ScrollText
 .text "I apologize, Callion,"
 .byte NewLine
-.text "but it seems Duke Dorius will have to wait."
+.text "but it seems Count Dorius will have to wait."
 .byte NewLine
 .text "Will you aid me in defending the villagers?"
 .byte WaitForA
@@ -877,14 +877,14 @@ ch8leiftanya
 .byte NewLine
 .text "Gomez just let me go after he found out"
 .byte NewLine
-.text "that Papa was already dead."
+.text "that Dad was already dead."
 .byte WaitForA
 .byte ScrollText
 .text "He... He said he was sorry about the village."
 .byte NewLine
 .text "There was no point to this whole damn attack"
 .byte NewLine
-.text "with Papa long since buried..."
+.text "with Dad long since buried..."
 .byte WaitForA
 
 .byte Right_slot
@@ -898,7 +898,7 @@ ch8leiftanya
 
 .byte Left_slot
 .byte ScrollText
-.text "No, it's OK... Papa did what he thought"
+.text "No, it's OK... Dad did what he thought"
 .byte NewLine
 .text "was right. If he died for something,"
 .byte NewLine

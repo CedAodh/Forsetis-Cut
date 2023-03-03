@@ -26,11 +26,11 @@ eventChapter14Events ; FD/9790
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
 			CMP_BYTE $7E4976, 0
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
 			CMP_BYTE $7E4976, 0
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _WyvernReinforcements
 			CMP_BYTE $7E4976, 3
@@ -38,11 +38,11 @@ eventChapter14Events ; FD/9790
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
 			CMP_BYTE $7E4976, 4
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _EndingEvent
 			CMP_BYTE $7E4976, 5
-			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

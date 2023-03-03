@@ -233,7 +233,6 @@
 	.include "PROCS/DemoRain.asm"
 .here
 
-
 ; Hacky LM fixes
 .include "hacky/convoystuff.asm"
 .include "hacky/hostagec.asm"
@@ -250,8 +249,9 @@
 ;.include "hacky/halvestaffexp.asm"
 .include "hacky/maketalkdisplayevenbetter.asm"
 .include "hacky/stealvisionbonus.asm"
-
-
+.include "BossMusicWithAnimationsOn.asm"
+.include "hacky/NewSecretShopCode.asm"
+.include "hacky/RetreatTiles.asm"
 
 
 

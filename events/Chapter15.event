@@ -9,27 +9,27 @@ eventChapter15Events ; FD/A812
 
 	_TurnEventDefinitions ; FD/A81F
 		EVENT $00, _BrigandHunterReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 1, 10
 		END_DEFINITION
 		EVENT $00, _ShannamSpawn
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 11
 		END_DEFINITION
 		EVENT $00, _ThiefMyrmidonReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 2, 15
 		END_DEFINITION
 		EVENT $00, _WarriorReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 16, 18
 		END_DEFINITION
 		EVENT $00, _BrigandHunterThiefReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 19, 20
 		END_DEFINITION
 		EVENT $00, _BrigandReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 4, 6
 		END_DEFINITION
 		EVENT $00, _RalphAmaldaSpawn
@@ -39,7 +39,7 @@ eventChapter15Events ; FD/A812
 		EVENT $09, _AmaldaFlee
 			TEST_FLAG_UNSET $A2
 			TEST_FLAG_SET $07
-			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

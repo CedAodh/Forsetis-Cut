@@ -7,7 +7,7 @@ aChapter4xObjectiveMarkers ; 97/8008
 	.dstruct structObjectiveMarkerArray, ObjectiveMarkerRed, [[[14, 1], ObjectiveMarkerUp]]
 
 aChapter5ObjectiveMarkers ; 97/800D
-	.dstruct structObjectiveMarkerArray, ObjectiveMarkerRed, [[[1, 24], ObjectiveMarkerRight]]
+	.dstruct structObjectiveMarkerArray, ObjectiveMarkerRed, [[[1, 29], ObjectiveMarkerRight]]
 
 aChapter6ObjectiveMarkers ; 97/8012
 	.dstruct structObjectiveMarkerArray, ObjectiveMarkerRed, [[[19, 30], ObjectiveMarkerDown], [[7, 30], ObjectiveMarkerDown], [[8, 30], ObjectiveMarkerDown]]

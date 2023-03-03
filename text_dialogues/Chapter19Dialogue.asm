@@ -592,7 +592,7 @@ ch19opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Duke Dorius, he..."
+.text "Count Dorius, he..."
 .byte NewLine
 .text "To ensure some of us could escape, he..."
 .byte NewLine
@@ -655,7 +655,7 @@ ch19opening1
 .byte ScrollText
 .text "If we lose our troops now,"
 .byte NewLine
-.text "Duke Dorius will have died for nothing!"
+.text "Count Dorius will have died for nothing!"
 .byte WaitForA
 .byte ScrollText
 .text "We owe it to him to save"
@@ -754,7 +754,7 @@ ch19closing1
 .text "of wallowing in regret—not now."
 .byte WaitForA
 .byte ScrollText
-.text "There will be time to atone to Duke Dorius"
+.text "There will be time to atone to Count Dorius"
 .byte NewLine
 .text "after you've defended Leonster."
 .byte WaitForA
@@ -949,7 +949,7 @@ ch19closing1
 .text "Though I will say this..."
 .byte WaitForA
 .byte NewLine
-.text "Recall that Duke Dorius lost an arm"
+.text "Recall that Count Dorius lost an arm"
 .byte NewLine
 .text "protecting you—and now he's traded"
 .byte NewLine

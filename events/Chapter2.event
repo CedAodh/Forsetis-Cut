@@ -14,17 +14,17 @@ eventChapter2Events ; 99/81B4
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BottomPirateReinforcements
 			CMP_WORD wCurrentTurn, 3
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MiddlePirateReinforcements
 			CMP_WORD wCurrentTurn, 6
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _TopPirateReinforcements
 			CMP_WORD wCurrentTurn, 8
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY

@@ -487,7 +487,7 @@ ch1dagdararrive
 	.byte Left_slot
 	.word LoadPortrait
 	.word tanya_portrait
-	.text "Papa, the fighting's started already!"
+	.text "Dad, the fighting's started already!"
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -842,7 +842,7 @@ ch1ending
 	.byte ScrollText
 	.text "...I understand. We leave at dawn, then."
 	.byte NewLine
-	.text "I won't lie, Little Lord: this is gonna get rough."
+	.text "I won't lie, Lord Leif: this is gonna get rough."
 	.byte NewLine
 	.text "Get some rest while you can."
 	.byte WaitForA

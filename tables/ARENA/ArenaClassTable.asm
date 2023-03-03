@@ -4,7 +4,7 @@ ArenaBaseClasses 			:= [Cavalier, LanceKnight, AxeKnight, SwordKnight, Troubadou
 ArenaBaseRangedClasses    	:= [BowKnight, ArcherEnemy, Sniper, BowKnightF, BowKnight, ArcherEnemy, Sniper, BowKnightF, Mage, LoptrianMage, ThunderMage, WindMage]
 ArenaThiefClasses         	:= [Thief, ThiefF, Dancer, Soldier, Thief, ThiefF, Dancer, Soldier, Mage, LoptrianMage, ThunderMage, WindMage]
 ArenaPromotedClasses 		:= [DukeKnight, Paladin, PaladinF, Ranger, MageKnight, GreatKnight, PegasusKnight, Swordmaster, General, Baron, HighPriest, Bishop, Sage]
-ArenaPromotedRangedClasses  := [Sniper, ArchKnight, ArchKnightF, HighPriest, Bishop, Sage]
+ArenaPromotedRangedClasses  := [ArmoredBow, ArmoredBow, ArmoredBow, ArmoredBow, ArmoredBow, ArmoredBow] ;Sniper, ArchKnight, ArchKnightF, HighPriest, Bishop, Sage
 
 ArenaNormalAutolevelScheme :?= -7
 ArenaThiefAutolevelScheme  :?= -8

@@ -43,11 +43,11 @@ ch24mareetagalzus
 .byte WaitForA
 
 .byte Right_slot
-.text "What'd you come back here for?!"
+.text "Why did you come back?"
 .byte NewLine
-.text "You're still just a little girl..."
+.text "A sword isn't a little girl's toy,"
 .byte NewLine
-.text "Swords ain't toys, you know!"
+.text "you know!"
 .byte WaitForA
 
 .byte Left_slot
@@ -74,7 +74,7 @@ ch24mareetagalzus
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah...!"
+.text "......!"
 .byte WaitForA
 
 .byte Left_slot
@@ -90,7 +90,7 @@ ch24mareetagalzus
 .byte ScrollText
 .text "I..."
 .byte NewLine
-.text "You don't blame me...?"
+.text "You don't...resent me...?"
 .byte WaitForA
 
 .byte Left_slot
@@ -122,11 +122,8 @@ ch24mareetagalzus
 .text "Besides, with the man I am now..."
 .byte NewLine
 .text "With all the blood I've got on my hands..."
-.byte WaitForA
 .byte NewLine
-.text "I figured it was better if you didn't have"
-.byte NewLine
-.text "anything to do with me, wherever you were."
+.text "I thought it best that you forgot me."
 .byte WaitForA
 
 .byte Left_slot
@@ -135,7 +132,7 @@ ch24mareetagalzus
 .byte NewLine
 .text "It doesn't matter what's happened since then!"
 .byte NewLine
-.text "We'll always be family...!"
+.text "You'll always be my father...!"
 .byte WaitForA
 
 .byte Right_slot
@@ -143,16 +140,11 @@ ch24mareetagalzus
 .text "......"
 .byte WaitForA
 .byte ScrollText
-.text "That lady, the swordswoman"
+.text "The woman who rescued you, and has raised"
 .byte NewLine
-.text "who got turned to stone..."
-.byte WaitForA
-.byte ScrollText
-.text "She's the one who rescued you"
+.text "you all this time—is she the swordswoman"
 .byte NewLine
-.text "from those slavers, right?"
-.byte NewLine
-.text "The one who's raised you ever since?"
+.text "who was turned to stone?"
 .byte WaitForA
 
 .byte Left_slot
@@ -165,7 +157,7 @@ ch24mareetagalzus
 .text "......"
 .byte WaitForA
 .byte ScrollText
-.text "Then there's no way I'm leavin' her behind."
+.text "Then I will not leave her behind."
 .byte NewLine
 .text "A man of Isaach always repays his debts!"
 .byte WaitForA

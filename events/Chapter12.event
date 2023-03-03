@@ -25,7 +25,7 @@ eventChapter12Events ; 99/DBD6
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _SalemDialogue
-			CMP_WORD wCurrentTurn, 5
+			CMP_WORD wCurrentTurn, 3
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $05, _GaidenFail
@@ -38,19 +38,19 @@ eventChapter12Events ; 99/DBD6
 			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BrigandLeftReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 4, 12
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BrigandMiddleReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 4, 12
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BrigandRightReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			CMP_WORD_RANGE wCurrentTurn, 4, 12
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath

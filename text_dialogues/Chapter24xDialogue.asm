@@ -37,7 +37,7 @@ ch24xkaiaeyvelleif
 .text "L-Lord...Leif..."
 .byte WaitForA
 .byte ScrollText
-.text "Ah! Little Lord!"
+.text "Ah! Lord Leif!"
 .byte NewLine
 .text "What are you doing here?!"
 .byte NewLine
@@ -72,7 +72,7 @@ ch24xkaiaeyvelleif
 
 .byte Left_slot
 .byte ScrollText
-.text "Little Leif..."
+.text "Lord Leif..."
 .byte NewLine
 .text "Just what the hell happened to me?"
 .byte WaitForA
@@ -406,7 +406,7 @@ ch24xeyvelleif
 .text "since that day in the arena?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah, Little Lord..."
+.text "Ah, Lord Leif..."
 .byte NewLine
 .text "Well, I guess you're not so little anymore."
 .byte NewLine
@@ -524,7 +524,7 @@ ch24xeyvelleif
 .byte ScrollText
 .text "...I can't remember my own childhood,"
 .byte NewLine
-.text "Little Lord."
+.text "Lord Leif."
 .byte WaitForA
 .byte ScrollText
 .text "Ten years ago, the villagers of Iz found me"
@@ -597,7 +597,7 @@ ch24xeyvelnanna
 .byte WaitForA
 
 .byte Right_slot
-.text "Oh, Little Lady..."
+.text "Oh, Little Nan..."
 .byte NewLine
 .text "C'mon, you're the Princess of Nordion!"
 .byte NewLine
@@ -614,7 +614,7 @@ ch24xeyvelnanna
 .text "Stranger things have happened."
 .byte WaitForA
 .byte ScrollText
-.text "You just keep watching out for Little Leif."
+.text "You just keep watching out for Lord Leif."
 .byte NewLine
 .text "Never give up. You'll find her again someday..."
 .byte WaitForA
@@ -668,9 +668,63 @@ ch24xeyveltanya
 .byte ScrollText
 .word LoadPortrait
 .word tanya_portrait
-.text "Papa, your face is all red!"
+.text "Dad, your face is all red!"
 .byte NewLine
 .text "Cut it out! You're so embarrassing!"
+.byte WaitForA
+
+.byte right_slot
+.text "Nice to see you too, Tanya."
+.byte NewLine
+.text "Been keeping an eye out for your father?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, as always!"
+.byte WaitForA
+.byte ScrollText
+.text "But...it's because of him that we were"
+.byte NewLine
+.text "finally able to save you, Eyvel."
+.byte NewLine
+.text "And, well, you know...we had to."
+.byte WaitForA
+.byte ScrollText
+.text "You went out of your way for us"
+.byte NewLine
+.text "way back when and made us better people."
+.byte NewLine
+.text "For that, we'll always consider you family."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I'm relieved that you found the"
+.byte NewLine
+.text "whole experience worthwhile, Tanya."
+.byte WaitForA
+.byte ScrollText
+.text "You're a beautiful young woman with lots of"
+.byte NewLine
+.text "talent and kindness to boot. You should be able"
+.byte NewLine
+.text "to pick your own path as your life goes on."
+.byte WaitForA
+.byte ScrollText
+.text "Whether that means staying with your father,"
+.byte NewLine
+.text "moving to Fiana, or even traveling..."
+.byte NewLine
+.text "It's up to you."
+
+.byte left_slot
+.byte ScrollText
+.text "O-oh, that's... You're right, I guess."
+.byte NewLine
+.text "*sniff* Thank you...Eyvel."
+.byte NewLine
+.text "Dammit. Now I'm the one getting all mushy."
 .byte WaitForA
 
 .byte EndText
@@ -820,16 +874,14 @@ ch24xeyvelgalzus
 .byte WaitForA
 
 .byte Left_slot
-.text "I had half a mind to just leave,"
+.text "I was set to just leave, but..."
 .byte NewLine
-.text "but I had to spare you a few words."
-.byte NewLine
-.text "I'm not much for talk, so...I'll make it fast."
+.text "I figure I owe you some words."
 .byte WaitForA
 .byte ScrollText
 .text "My daughter..."
 .byte NewLine
-.text "How you've raised her,"
+.text "How you've raised her;"
 .byte NewLine
 .text "what you've made of her... Thank you."
 .byte WaitForA
@@ -846,18 +898,18 @@ ch24xeyvelgalzus
 .text "That'd be me, yeah."
 .byte WaitForA
 .byte ScrollText
-.text "Her mother... She died just after giving birth,"
+.text "Her mother..."
 .byte NewLine
-.text "and after that, the kid and I wandered"
+.text "She died just after giving birth; and after that,"
 .byte NewLine
-.text "the world together."
+.text "the child and I wandered the world together."
 .byte WaitForA
 .byte ScrollText
-.text "Not proud of it, but..."
+.text "Then...one day..."
 .byte NewLine
-.text "One day, when I took my eyes off her,"
+.text "When I took my eyes off her for a moment,"
 .byte NewLine
-.text "a slaver up an' took her from me."
+.text "a slaver snuck up and snatched her from me."
 .byte WaitForA
 
 .byte Right_slot
@@ -895,7 +947,7 @@ ch24xeyvelgalzus
 .byte ScrollText
 .text "No... You're not to blame for any of this."
 .byte NewLine
-.text "I never should've led a nomad's life"
+.text "I never should have led a nomad's life"
 .byte NewLine
 .text "with such a small child to begin with."
 .byte WaitForA
@@ -905,11 +957,11 @@ ch24xeyvelgalzus
 .text "to have found you..."
 .byte WaitForA
 .byte ScrollText
-.text "This is selfish of me, but..."
+.text "I know this is selfish of me, but..."
 .byte NewLine
-.text "I think it'd be best if you were the one"
+.text "I think it would be best if you were the"
 .byte NewLine
-.text "who watched over her after all this."
+.text "one who watched over her after all this."
 .byte WaitForA
 
 .byte Right_slot
@@ -923,11 +975,11 @@ ch24xeyvelgalzus
 
 .byte Left_slot
 .byte ScrollText
-.text "Good... After this is all over,"
+.text "Well then... After this is all over,"
 .byte NewLine
-.text "I'll go back to my life of wandering."
+.text "I'll be returning to my life of wandering."
 .byte NewLine
-.text "You'll never have to see me again."
+.text "I doubt we'll ever meet again."
 .byte WaitForA
 
 .byte Right_slot
@@ -939,9 +991,9 @@ ch24xeyvelgalzus
 
 .byte Left_slot
 .byte ScrollText
-.text "Name it."
+.text "Tell me."
 .byte NewLine
-.text "If it's within my power, it will be done."
+.text "If it's within my ability..."
 .byte WaitForA
 
 .byte Right_slot
@@ -956,7 +1008,9 @@ ch24xeyvelgalzus
 .text "......"
 .byte WaitForA
 .byte ScrollText
-.text "Very well... I will."
+.text "Very well..."
+.byte NewLine
+.text "It will be done."
 .byte WaitForA
 
 .byte EndText
@@ -1040,7 +1094,7 @@ ch24xeyvelfinn
 .byte ScrollText
 .text "Brigid...?"
 .byte NewLine
-.text "Finn, are you saying that woman... was me?"
+.text "Finn, are you saying that woman...was me?"
 .byte WaitForA
 
 .byte Left_slot

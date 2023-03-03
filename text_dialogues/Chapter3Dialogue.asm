@@ -362,7 +362,7 @@ ch3end2
 .byte NewLine
 .text "no doubt they'll arrest me too. I'll do what I can"
 .byte NewLine
-.text "to protect the Little Lord from the inside."
+.text "to protect Lord Leif from the inside."
 .byte WaitForA
 .byte ScrollText
 .text "The rest of you, hightail it outta here"

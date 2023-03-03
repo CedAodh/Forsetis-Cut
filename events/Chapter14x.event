@@ -13,122 +13,122 @@ eventChapter14xEvents ; FD/A1BC
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $00, _PegasusLeft1Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusRight1Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusLeft2Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusRight2Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusLeft3Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusRight3Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusLeft4Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusRight4Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusLeft5Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusRight5Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusLeft6Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusRight6Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusLeft7Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _PegasusRight7Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _SorcererLeft2Reinforcements
 			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _SorcererLeft3Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _SorcererRight1Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _SorcererRight2Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _SorcererLeft1Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD_RANGE wCurrentTurn, 2, 20
 			ROLL_RNG 10
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentTurn, 1
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 4
+			CMP_WORD wCurrentTurn, 3
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 6
+			CMP_WORD wCurrentTurn, 5
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 8
+			CMP_WORD wCurrentTurn, 7
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 10
+			CMP_WORD wCurrentTurn, 9
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 12
+			CMP_WORD wCurrentTurn, 11
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 	END_DEFINITION_ARRAY

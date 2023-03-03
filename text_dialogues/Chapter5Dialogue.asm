@@ -11,7 +11,7 @@ ch5op1
 .word nanna_portrait
 
 .byte Left_slot
-.text "Little Lady! You're a sight for sore eyes!"
+.text "Lady Nanna! You're a sight for sore eyes!"
 .byte WaitForA
 
 .byte Right_slot
@@ -141,7 +141,7 @@ ch5op2
 .byte WaitForA
 
 .byte Left_slot
-.text "...Little Lady, this is gonna get real dangerous,"
+.text "...Lady Nanna, this is gonna get real dangerous,"
 .byte NewLine
 .text "real quick. Stay clear and keep your head down."
 .byte WaitForA
@@ -761,7 +761,7 @@ ch5arenaopeneyvelnanna
 
 .byte Left_slot
 .byte ScrollText
-.text "Little Lord! Everyone!"
+.text "Lord Leif! Everyone!"
 .byte NewLine
 .text "Heh, good to see you all made it!"
 .byte WaitForA

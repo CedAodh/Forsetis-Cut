@@ -14,25 +14,25 @@ eventChapter3Events ; 8C/E435
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Brigand1Reinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 16
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			ROLL_RNG 60
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Brigand2Reinforcements
 			CMP_WORD_RANGE wCurrentTurn, 10, 16
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			ROLL_RNG 60
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _SoldierReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 14, 16
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			ROLL_RNG 75
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArmorReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 11, 17
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 			ROLL_RNG 50
 			TEST_FLAG_UNSET $02
 		END_DEFINITION

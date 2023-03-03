@@ -27,7 +27,7 @@ eventChapter6Events ; 99/A346
 		EVENT FlagAlwaysZero, _GalzusSpawn
 			CMP_WORD wCurrentTurn, 15
 			TEST_FLAG_UNSET FlagGalzusDead
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			CMP_WORD wCurrentTurn, 15
@@ -35,7 +35,7 @@ eventChapter6Events ; 99/A346
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _KnightReinforcements
 			CMP_WORD wCurrentTurn, 13
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $07, _TolmanGroupCharge
 			CMP_WORD_FALSE $7E4F9A, $0000

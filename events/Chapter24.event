@@ -84,6 +84,10 @@ eventChapter24Events ; B9/B000
 			CMP_BYTE wEventEngineUnknownXTarget, 10
 			CMP_BYTE wEventEngineUnknownYTarget, 37
 		END_DEFINITION
+		EVENT $29, _Door8
+			CMP_BYTE wEventEngineUnknownXTarget, 19
+			CMP_BYTE wEventEngineUnknownYTarget, 9
+		END_DEFINITION
 		EVENT $28, eventChapter24Data._Chest1Events
 			CMP_BYTE_AT wCursorXCoord, eventChapter24Data._Chest1Coordinates
 			CMP_BYTE_AT wCursorYCoord, eventChapter24Data._Chest1Coordinates+1
@@ -515,6 +519,21 @@ eventChapter24Events ; B9/B000
 		HALT_UNTIL_BYTE bDMAArrayFlag, $00
 
 		STORE_WORD wEventEngineParameter1, 8
+		CALL_ASM_LOOP rlASMCTileChangeByID, $0000
+		HALT_UNTIL_BYTE bDMAArrayFlag, $00
+		YIELD_UNK
+		YIELD_UNK
+	END1
+	
+	_Door8
+		PLAY_SOUND_BYTE $6B
+		HALT_UNTIL_BYTE bDecompListFlag, $00
+
+		CALL_ASM_LOOP rlASMCDecompressChapterMapChanges, $0000
+		HALT_UNTIL_BYTE bDecompListFlag, $00
+		HALT_UNTIL_BYTE bDMAArrayFlag, $00
+
+		STORE_WORD wEventEngineParameter1, 7
 		CALL_ASM_LOOP rlASMCTileChangeByID, $0000
 		HALT_UNTIL_BYTE bDMAArrayFlag, $00
 		YIELD_UNK

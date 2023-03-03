@@ -17,14 +17,14 @@ eventChapter8Events ; 99/BE7D
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 7, 24
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD_RANGE wCurrentTurn, 5, 24
+			CMP_WORD wCurrentPhase, Player
 			ROLL_RNG 30
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LeftReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 5, 30
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD_RANGE wCurrentTurn, 7, 30
+			CMP_WORD wCurrentPhase, Player
 			ROLL_RNG 80
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
@@ -32,13 +32,13 @@ eventChapter8Events ; 99/BE7D
 			CMP_WORD wCurrentTurn, 16
 			CHECK_NUM_UNITS_GTE Rumaigh, 1
 			CMP_STATUS_UNSET Rumaigh, TurnStatusRescued
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			CMP_WORD wCurrentTurn, 16
 			CHECK_NUM_UNITS_GTE Rumaigh, 1
 			CMP_STATUS_UNSET Rumaigh, TurnStatusRescued
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

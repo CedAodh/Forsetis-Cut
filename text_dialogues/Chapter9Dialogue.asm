@@ -32,7 +32,7 @@ ch9leifselphina
 .byte ScrollText
 .text "Oh, Selphina, it's enough to make me cry..."
 .byte NewLine
-.text "I had thought you and Duke Dorius"
+.text "I had thought you and Count Dorius"
 .byte NewLine
 .text "were killed trying to protect me."
 .byte WaitForA
@@ -122,7 +122,7 @@ ch9finnselphina1
 
 .byte Left_slot
 .byte ScrollText
-.text "Selphina? Duke Dorius' daughter?!"
+.text "Selphina? Count Dorius' daughter?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -722,7 +722,7 @@ ch9opening3
 .byte Right_slot
 .text "Is something amiss? Those soldiers"
 .byte NewLine
-.text "moving about, are they Duke Dorius' troops?"
+.text "moving about, are they Count Dorius' troops?"
 .byte WaitForA
 
 .byte Left_slot
@@ -819,7 +819,7 @@ ch9closing1
 
 .byte Left_slot
 .byte ScrollText
-.text "...Duke Dorius, I think you've earned—"
+.text "...Count Dorius, I think you've earned—"
 .byte WaitForA
 .byte ScrollText
 .text "Ah! Y-your arm! Don't tell me you..."
@@ -1002,7 +1002,7 @@ ch9villafall
 .word leif_portrait2
 .text "Come again?!"
 .byte NewLine
-.text "Th-then... Duke Dorius..."
+.text "Th-then... Count Dorius..."
 .byte WaitForA
 
 .byte Right_slot

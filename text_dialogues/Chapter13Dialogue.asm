@@ -117,7 +117,7 @@ ch13gladefinn
 .byte WaitForA
 .text "you have"
 .byte NewLine
-.text "helped Duke Dorius raise the next generation"
+.text "helped Count Dorius raise the next generation"
 .byte NewLine
 .text "of the Lanzenritter, and kept their name alive."
 .byte WaitForA
@@ -574,7 +574,7 @@ ch13gladeleif
 .byte NewLine
 .text "Army both... Our prayers have finally"
 .byte NewLine
-.text "been answered, Duke Dorius!"
+.text "been answered, Count Dorius!"
 .byte WaitForA
 
 .byte Left_slot
@@ -937,7 +937,7 @@ ch13closing
 .byte Right_slot
 .word LoadPortrait
 .word leif_portrait
-.text "Linoan!"
+.text "Duchess Linoan!"
 .byte NewLine
 .text "Good, I made it in time... Just barely..."
 .byte WaitForA
@@ -954,7 +954,7 @@ ch13closing
 
 .byte Right_slot
 .byte ScrollText
-.text "...Linoan, you have my apologies."
+.text "...Duchess Linoan, you have my apologies."
 .byte NewLine
 .text "I should have come here sooner."
 .byte WaitForA
@@ -1018,7 +1018,7 @@ ch13closing
 
 .byte Right_slot
 .byte ScrollText
-.text "Dry your eyes, Linoan. Fear not."
+.text "Dry your eyes, Duchess Linoan. Fear not."
 .byte NewLine
 .text "I swear upon my sword"
 .byte NewLine

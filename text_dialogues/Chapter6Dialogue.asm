@@ -455,9 +455,9 @@ ch6saiasgalzus2
 .word LoadPortrait
 .word galzus_portrait
 .byte ScrollText
-.text "I barely recognized you, lass..."
+.text "I didn't think I'd ever see you again..."
 .byte NewLine
-.text "Never expected to see that face of yours again."
+.text "I barely recognized you..."
 .byte WaitForA
 
 .byte EndText
@@ -535,7 +535,7 @@ ch6galzusarrive
 .byte WaitForA
 
 .byte Right_slot
-.text "...What you got for me?"
+.text "...Did you need me for something?"
 .byte WaitForA
 
 .byte Left_slot
@@ -552,9 +552,9 @@ ch6galzusarrive
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! Those whelps are hardly worth worryin'"
+.text "Hmph..."
 .byte NewLine
-.text "about. I'll show you just how weak they are..."
+.text "Trivial."
 .byte WaitForA
 
 .byte EndText
