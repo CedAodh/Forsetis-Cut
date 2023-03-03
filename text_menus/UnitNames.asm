@@ -475,6 +475,10 @@ _NoneName
 _LeifName
 	.text "Leif"
 	.word $0000
+	
+_MunsterName
+	.text "(Munster Troop"
+	.word $0000
 
 _FinnName
 	.text "Finn"
@@ -688,10 +692,6 @@ _WeissmannName
 	.text ")Weis[mann"
 	.word $0000
 
-_MunsterName
-	.text "(Munster"
-	.word $0000
-
 _BucksName
 	.text "Bucks "
 	.word $0000
@@ -793,9 +793,9 @@ _MerlochName
 	.word $0000
 
 _ThraciaName
-	.text "Thracia "
+	.text "Thracia Troop "
 	.word $0000
-
+	
 _AltenaName
 	.text "Altena"
 	.word $0000
@@ -845,7 +845,7 @@ _BaldachName
 	.word $0000
 
 _LeonsterName
-	.text "Leonster"
+	.text "Leonster Troop"
 	.word $0000
 
 ; Xavier's adjutants. Names are a Lil' Manster QoL addition, and act as mini-credits.
@@ -894,7 +894,7 @@ _CodhaName
 	.word $0000
 
 _LoptrianName
-	.text "Loptr Church"
+	.text "Loptr Disciple"
 	.word $0000
 
 _CivilianName
@@ -943,7 +943,7 @@ _PriestName
 	.word $0000
 
 _Frieges21stName
-	.text "Friege"
+	.text "Friege Troop"
 	.word $0000
 
 _AsaelloName
@@ -1035,7 +1035,7 @@ _TahraName
 	.word $0000
 
 _FriegeName
-	.text "Friege"
+	.text "Friege Troop"
 	.word $0000
 
 _RilkeName
@@ -1059,7 +1059,7 @@ _TolmanName
 	.word $0000
 
 _MagiName
-	.text "(Magi "
+	.text "(Magi Fighter "
 	.word $0000
 
 _BishopName
@@ -1111,7 +1111,7 @@ _XavierName
 	.word $0000
 
 _ResistanceName
-	.text "Resistance"
+	.text "Civilian"
 	.word $0000
 
 _BharatName
@@ -1119,7 +1119,7 @@ _BharatName
 	.word $0000
 
 _UlsterName
-	.text "Ulster"
+	.text "Ulster Troop"
 	.word $0000
 
 _GelbenritterName

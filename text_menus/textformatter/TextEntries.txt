@@ -201,20 +201,20 @@ Ed]ward
 Andre]w
 +Nicholas
 
-Ulster
+Ulster Troop
 Lifis Pirates
-Friege
+Friege Troop
 Gelbenritter
 Pitfighter
-Leonster
+Leonster Troop
 Loptrian
-(Magi
-(Munster
-Sells]word
+(Magi Fighter 
+(Munster Troop
+(Mercenary
 Resistance
 Silesse
 Tahra
-Thracia
+Thracia Troop 
 
 //-Archer
 //-Ballistician

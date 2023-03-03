@@ -185,7 +185,7 @@ MirandaLeifTalk
 .text "Are you really going to make me say it?!"
 .byte WaitForA
 .byte NewLine
-.text "You know just as well as I do– I... I..."
+.text "You know just as well as I do— I... I..."
 .byte NewLine
 .text "I bear the blame for Duke Dryas' death!"
 .byte WaitForA 
@@ -209,7 +209,7 @@ MirandaLeifTalk
 
 .byte right_slot
 .byte ScrollText
-.text "Miranda, I–"
+.text "Miranda, I—"
 .byte WaitForA 
 
 .byte left_slot
@@ -274,7 +274,7 @@ MirandaLeifTalk
 .text "but anger and resentment aren't the answer."
 .byte WaitForA
 .byte ScrollText
-.text "Listen, Miranda– the blame is not yours."
+.text "Listen, Miranda—the blame is not yours."
 .byte NewLine
 .text "If anything, it was a mistake from both of us,"
 .byte NewLine
@@ -295,7 +295,7 @@ MirandaLeifTalk
 .byte ScrollText
 .text "Just as I hope to be a just ruler,"
 .byte NewLine
-.text "I know for a fact that you will be a kind ruler–"
+.text "I know for a fact that you will be a kind ruler—"
 .byte NewLine
 .text "one that your father would be proud of. "
 .byte WaitForA 
