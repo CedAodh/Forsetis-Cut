@@ -309,6 +309,8 @@ brightonvsraydrik
 .text "But words won't save you from inevitable defeat."
 .byte NewLine
 .text "Time to get this over with."
+.byte WaitForA
+.byte EndText
 
 getgudraydrik
 
