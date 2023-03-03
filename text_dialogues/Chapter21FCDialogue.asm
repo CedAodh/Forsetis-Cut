@@ -13,7 +13,7 @@ ch21edalinoan
 .byte WaitForA 
 
 .byte right_slot
-.text "I believe I’m doing just fine, Eda."
+.text "I believe I'm doing just fine, Eda."
 .byte NewLine
 .text "Thanks for your concern."
 .byte WaitForA 
@@ -58,7 +58,7 @@ ch21edalinoan
 .text "I… I just… *sob*"
 .byte WaitForA 
 .byte NewLine
-.text "Knowing this doesn’t make it better!"
+.text "Knowing this doesn't make it better!"
 .byte NewLine
 .text "It only makes me feel worse!"
 .byte WaitForA 
@@ -70,21 +70,21 @@ ch21edalinoan
 
 .byte right_slot
 .byte ScrollText
-.text "I can’t break Arion’s trust,"
+.text "I can't break Arion's trust,"
 .byte NewLine
 .text "let alone his heart like that!"
 .byte WaitForA
 .byte NewLine
-.text "And for Dean, I… I don’t know what to do!"
+.text "And for Dean, I… I don't know what to do!"
 .byte WaitForA
 .byte ScrollText
 .text "I cherish them both so much that I…"
 .byte WaitForA
 .byte NewLine
-.text "I don’t want to hurt either of them!"
+.text "I don't want to hurt either of them!"
 .byte WaitForA
 .byte NewLine
-.text "I can’t!"
+.text "I can't!"
 .byte WaitForA 
 
 .byte left_slot
@@ -132,9 +132,9 @@ ch21edalinoan
 
 .byte left_slot
 .byte ScrollText
-.text "I’m glad I could help alleviate your burden."
+.text "I'm glad I could help alleviate your burden."
 .byte NewLine
-.text "But as I said, we’re in a war for the time being."
+.text "But as I said, we're in a war for the time being."
 .byte WaitForA
 .byte ScrollText
 .text "Remain ever vigilant, Lady Linoan."
@@ -165,17 +165,17 @@ ch21mirandaleif
 .byte right_slot
 .text "Princess Miranda?"
 .byte NewLine
-.text "What’s the matter?"
+.text "What's the matter?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I… I wanted to say that I’m sorry…"
+.text "I… I wanted to say that I'm sorry…"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "You’re sorry?"
+.text "You're sorry?"
 .byte NewLine
 .text "What for?"
 .byte WaitForA 
@@ -187,7 +187,7 @@ ch21mirandaleif
 .byte NewLine
 .text "You know just as well as I do– I… I…"
 .byte NewLine
-.text "I bear the blame for Duke Dryas’ death!"
+.text "I bear the blame for Duke Dryas' death!"
 .byte WaitForA 
 
 .byte right_slot
@@ -231,7 +231,7 @@ ch21mirandaleif
 .text "It was a total massacre…"
 .byte WaitForA
 .byte NewLine
-.text "Ever since I got out of that stupid cell, all I’ve"
+.text "Ever since I got out of that stupid cell, all I've"
 .byte NewLine
 .text "done is cause more meaningless bloodshed…"
 .byte WaitForA 
@@ -241,19 +241,19 @@ ch21mirandaleif
 .text "Miranda, please, calm down…"
 .byte WaitForA
 .byte NewLine
-.text "You needn’t be so hard on yourself."
+.text "You needn't be so hard on yourself."
 .byte WaitForA
 .byte ScrollText
-.text "What’s done, is done,"
+.text "What's done, is done,"
 .byte NewLine
-.text "and we’ve been able to push forward since."
+.text "and we've been able to push forward since."
 .byte WaitForA
 .byte ScrollText
 .text "Just look at what Lord Seliph accomplished"
 .byte NewLine
 .text "on our behalf! He liberated Ulster when we"
 .byte NewLine
-.text "failed to do so. Isn’t that a good thing?"
+.text "failed to do so. Isn't that a good thing?"
 .byte WaitForA 
 .byte left_slot
 .byte ScrollText
@@ -264,14 +264,14 @@ ch21mirandaleif
 
 .byte right_slot
 .byte ScrollText
-.text "I certainly know where you’re coming from."
+.text "I certainly know where you're coming from."
 .byte WaitForA 
 .byte NewLine
-.text "Often times I don’t feel as though I couldn’t"
+.text "Often times I don't feel as though I couldn't"
 .byte NewLine
 .text "be considered as an equal to Lord Seliph,"
 .byte NewLine
-.text "but anger and resentment aren’t the answer."
+.text "but anger and resentment aren't the answer."
 .byte WaitForA
 .byte ScrollText
 .text "Listen, Miranda– the blame is not yours."
@@ -290,7 +290,7 @@ ch21mirandaleif
 .byte ScrollText
 .text "The road ahead is a difficult one,"
 .byte NewLine
-.text "but I know we’ll make it through."
+.text "but I know we'll make it through."
 .byte WaitForA
 .byte ScrollText
 .text "Just as I hope to be a just ruler,"
@@ -317,7 +317,7 @@ ch21mirandaleif
 .text "and now they wait for you to lead them."
 .byte WaitForA
 .byte ScrollText
-.text "After all the hardship we’ve been through,"
+.text "After all the hardship we've been through,"
 .byte NewLine
 .text "victory is finally within our reach."
 .byte NewLine
@@ -358,12 +358,12 @@ ch21dagdarralph
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, don’t ye go say that!"
+.text "Oh, don't ye go say that!"
 .byte WaitForA 
 .byte NewLine
 .text "Someone with yer strength is mighty unusual"
 .byte NewLine
-.text "‘round these parts. I could’ve sworn you’d be"
+.text "‘round these parts. I could've sworn you'd be"
 .byte NewLine
 .text "a mighty warrior from afar, but nay!"
 .byte WaitForA 
@@ -381,7 +381,7 @@ ch21dagdarralph
 .text "All true."
 .byte WaitForA 
 .byte ScrollText
-.text "As if growing crops wasn’t hard enough,"
+.text "As if growing crops wasn't hard enough,"
 .byte NewLine
 
 
@@ -390,23 +390,23 @@ ch21dagdarralph
 .text "my only option was to leave that life behind."
 .byte WaitForA 
 .byte ScrollText
-.text "I’m technically a mercenary, but a good chunk"
+.text "I'm technically a mercenary, but a good chunk"
 .byte NewLine
-.text "of the work I do is free of charge. I just can’t"
+.text "of the work I do is free of charge. I just can't"
 .byte NewLine
 .text "stand taking advantage of villagers in need."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Mm. I get what you’re saying."
+.text "Mm. I get what you're saying."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
 .text "Do you, know?
 .byte NewLine
-.text "Well then, I feel like it’s time"
+.text "Well then, I feel like it's time"
 .byte NewLine
 .text "for us to backtrack a little."
 .byte WaitForA 
@@ -416,7 +416,7 @@ ch21dagdarralph
 
 .byte left_slot
 .byte ScrollText
-.text "Bahaha! That’s true! I almost forgot!"
+.text "Bahaha! That's true! I almost forgot!"
 .byte WaitForA 
 .byte NewLine
 .text "Please excuse this old man"
@@ -424,7 +424,7 @@ ch21dagdarralph
 .text "for getting too carried away."
 .byte WaitForA 
 .byte ScrollText
-.text "The name’s Dagdar!"
+.text "The name's Dagdar!"
 .byte NewLine
 .text "Leader of the Mount Violdrake Bandits."
 .byte NewLine
@@ -438,16 +438,16 @@ ch21dagdarralph
 .text "and ended up turning to banditry."
 .byte WaitForA
 .byte ScrollText
-.text "By a stroke of luck, someone who’s now"
+.text "By a stroke of luck, someone who's now"
 .byte NewLine
 .text "dear to me could smack some sense into my"
 .byte NewLine
-.text "skull and we’ve been working our backs to farm!"
+.text "skull and we've been working our backs to farm!"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Well, that’s not a story you hear every day."
+.text "Well, that's not a story you hear every day."
 .byte NewLine
 .text "Heh."
 .byte WaitForA 
@@ -459,10 +459,10 @@ ch21dagdarralph
 .byte ScrollText
 .text "Well, I had my doubts at the start,"
 .byte NewLine
-.text "but now I see that I’ve struck gold!"
+.text "but now I see that I've struck gold!"
 .byte WaitForA 
 .byte ScrollText
-.text "I know not what you’re plannin’ to do"
+.text "I know not what you're plannin' to do"
 .byte NewLine
 .text "once this whole mess is over with,"
 .byte NewLine
@@ -471,7 +471,7 @@ ch21dagdarralph
 
 .byte right_slot
 .byte ScrollText
-.text "Well, you’ve got my interest."
+.text "Well, you've got my interest."
 .byte WaitForA 
 
 .byte left_slot
@@ -480,12 +480,12 @@ ch21dagdarralph
 .byte NewLine
 .text "not too long ago, since this whole farming"
 .byte NewLine
-.text "thing hasn’t worked out very well."
+.text "thing hasn't worked out very well."
 .byte WaitForA 
 .byte ScrollText
-.text "They’re breaking their backs with close to"
+.text "They're breaking their backs with close to"
 .byte NewLine
-.text "no food in return, and there ain’t no one in"
+.text "no food in return, and there ain't no one in"
 .byte NewLine
 .text "the village with experience in that stuff."
 .byte WaitForA 
@@ -493,14 +493,14 @@ ch21dagdarralph
 .text "So…"
 .byte WaitForA
 .byte NewLine
-.text "How about going with me to our lil’ village?"
+.text "How about going with me to our lil' village?"
 .byte NewLine
-.text "You’ve got as big a heart as you have muscle."
+.text "You've got as big a heart as you have muscle."
 .byte NewLine
 .text "I could very well make you my right-hand man."
 .byte WaitForA
 .byte NewLine
-.text "I’m sure someone with yer knowledge of"
+.text "I'm sure someone with yer knowledge of"
 .byte NewLine
 .text "farming could work miracles in our barren land."
 .byte WaitForA 
@@ -512,7 +512,7 @@ ch21dagdarralph
 .byte ScrollText
 .text "Well, it sounds like a good offer, but…"
 .byte NewLine
-.text "I’ve always preferred being on my own."
+.text "I've always preferred being on my own."
 .byte WaitForA 
 
 .byte left_slot
@@ -525,12 +525,12 @@ ch21dagdarralph
 .text "But…"
 .byte WaitForA 
 .byte NewLine
-.text "I said I’m one who likes to help, did I not?"
+.text "I said I'm one who likes to help, did I not?"
 .byte NewLine
 .text "So, while I may not stay there forever…"
 .byte WaitForA 
 .byte NewLine
-.text "I’d love to give you all a visit"
+.text "I'd love to give you all a visit"
 .byte NewLine
 .text "to teach you everything I can."
 .byte WaitForA 
@@ -544,7 +544,7 @@ ch21dagdarralph
 .text "We got a deal then!"
 .byte WaitForA 
 .byte ScrollText
-.text "It’s been nice meetin’ ya, Ralph,"
+.text "It's been nice meetin' ya, Ralph,"
 .byte NewLine
 .text "There are no big enough words to thank ye!"
 .byte WaitForA 
@@ -656,12 +656,12 @@ ch21mirandaconomor
 .byte NewLine
 .text "most do so to this very day,"
 .byte NewLine
-.text "but I’d say he grew overly cautious."
+.text "but I'd say he grew overly cautious."
 .byte WaitForA 
 .byte ScrollText
 .text "He refused to send even a single knight to aid"
 .byte NewLine
-.text "Leonster for fear that Thracia would’ve sent"
+.text "Leonster for fear that Thracia would've sent"
 .byte NewLine
 .text "troops to assault our exposed backs."
 .byte WaitForA 
@@ -681,14 +681,14 @@ ch21mirandaconomor
 .text "Quite simple, really."
 .byte WaitForA
 .byte NewLine
-.text "He didn’t want to risk putting you and"
+.text "He didn't want to risk putting you and"
 .byte NewLine
 .text "your mother in danger. Not after the example"
 .byte NewLine
 .text "Travant set with the Aed Massacre."
 .byte WaitForA
 .byte ScrollText
-.text "Knowing full-well that Travant would’ve slain"
+.text "Knowing full-well that Travant would've slain"
 .byte NewLine
 .text "you both without hesitation…"
 .byte NewLine
@@ -709,7 +709,7 @@ ch21mirandaconomor
 .byte ScrollText
 .text "His lack of action cost King Kalf his life,"
 .byte NewLine
-.text "and with Leonster’s fall we could only"
+.text "and with Leonster's fall we could only"
 .byte NewLine
 .text "brace ourselves for the worst."
 .byte WaitForA 
@@ -723,7 +723,7 @@ ch21mirandaconomor
 .byte ScrollText
 .text "A thousand apologies, Princess."
 .byte NewLine
-.text "It wasn’t my intent to make your"
+.text "It wasn't my intent to make your"
 .byte NewLine
 .text "Tears flow on the battlefield."
 .byte WaitForA
@@ -770,12 +770,12 @@ ch21mirandaconomor
 
 .byte right_slot
 .byte ScrollText
-.text "Ah! That’s…!"
+.text "Ah! That's…!"
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "You know this sword, don’t you?"
+.text "You know this sword, don't you?"
 .byte WaitForA 
 
 .byte right_slot
@@ -792,7 +792,7 @@ ch21mirandaconomor
 .byte ScrollText
 .text "It was handed to me by Lord Seliph at"
 .byte NewLine
-.text "the war meeting earlier. Seems like it’s been"
+.text "the war meeting earlier. Seems like it's been"
 .byte NewLine
 .text "safely kept in the Ulster treasury for all this time."
 .byte WaitForA 
@@ -816,7 +816,7 @@ ch21mirandaconomor
 .byte ScrollText
 .text "By goodness, look at me!"
 .byte NewLine
-.text "now I am the one that’s moved to tears…"
+.text "now I am the one that's moved to tears…"
 .byte WaitForA 
 
 .byte left_slot
