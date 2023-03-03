@@ -79,6 +79,7 @@ cedvsraydrik
 .text "and you might just be of benefit"
 .byte NewLine
 .text "to the continent for once."
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
