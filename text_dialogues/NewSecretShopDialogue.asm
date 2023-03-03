@@ -2,7 +2,7 @@ annasshop_text .block
 		
 		NewSecretShopIntro
 
-        .enc "DialogueCharacters"
+       
 
         .text "...Um, how did you find this place?"
         .byte NewLine
