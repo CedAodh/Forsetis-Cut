@@ -20,7 +20,7 @@ EdaLinoanTalk
 
 .byte left_slot
 .byte ScrollText
-.text "…You say that,"
+.text "...You say that,"
 .byte NewLine
 .text "and yet the grief in your eyes"
 .byte NewLine
@@ -41,7 +41,7 @@ EdaLinoanTalk
 
 .byte right_slot
 .byte ScrollText
-.text "Ah…! H-how did you–"
+.text "Ah...! H—how did you—"
 .byte WaitForA 
 
 .byte left_slot
@@ -55,7 +55,7 @@ EdaLinoanTalk
 
 .byte right_slot
 .byte ScrollText
-.text "I… I just… *sob*"
+.text "I... I just... *sob*"
 .byte WaitForA 
 .byte NewLine
 .text "Knowing this doesn't make it better!"
@@ -65,7 +65,7 @@ EdaLinoanTalk
 
 .byte left_slot
 .byte ScrollText
-.text "Milady…?"
+.text "Milady...?"
 .byte WaitForA
 
 .byte right_slot
@@ -75,10 +75,10 @@ EdaLinoanTalk
 .text "let alone his heart like that!"
 .byte WaitForA
 .byte NewLine
-.text "And for Dean, I… I don't know what to do!"
+.text "And for Dean, I... I don't know what to do!"
 .byte WaitForA
 .byte ScrollText
-.text "I cherish them both so much that I…"
+.text "I cherish them both so much that I..."
 .byte WaitForA
 .byte NewLine
 .text "I don't want to hurt either of them!"
@@ -105,7 +105,7 @@ EdaLinoanTalk
 
 .byte right_slot
 .byte ScrollText
-.text "But I… I…"
+.text "But I... I..."
 .byte WaitForA 
 
 .byte left_slot
@@ -124,7 +124,7 @@ EdaLinoanTalk
 
 .byte right_slot
 .byte ScrollText
-.text "Oh, Eda…"
+.text "Oh, Eda..."
 .byte WaitForA
 .byte NewLine
 .text "Thank you."
@@ -144,7 +144,7 @@ EdaLinoanTalk
 
 .byte right_slot
 .byte ScrollText
-.text "R-Right!"
+.text "R—Right!"
 .byte WaitForA 
 .byte EndText
 
@@ -159,7 +159,7 @@ MirandaLeifTalk
 .word linoan_portrait
 
 .byte left_slot
-.text "Prince Leif…"
+.text "Prince Leif..."
 .byte WaitForA
 
 .byte right_slot
@@ -170,7 +170,7 @@ MirandaLeifTalk
 
 .byte left_slot
 .byte ScrollText
-.text "I… I wanted to say that I'm sorry…"
+.text "I... I wanted to say that I'm sorry..."
 .byte WaitForA 
 
 .byte right_slot
@@ -185,7 +185,7 @@ MirandaLeifTalk
 .text "Are you really going to make me say it?!"
 .byte WaitForA
 .byte NewLine
-.text "You know just as well as I do– I… I…"
+.text "You know just as well as I do– I... I..."
 .byte NewLine
 .text "I bear the blame for Duke Dryas' death!"
 .byte WaitForA 
@@ -223,22 +223,22 @@ MirandaLeifTalk
 .byte ScrollText
 .text "They told me that upon catching sight of our"
 .byte NewLine
-.text "attack… the Empire slaughtered even more"
+.text "attack... the Empire slaughtered even more"
 .byte NewLine
 .text "innocent people, as a warning."
 .byte WaitForA
 .byte ScrollText
-.text "It was a total massacre…"
+.text "It was a total massacre..."
 .byte WaitForA
 .byte NewLine
 .text "Ever since I got out of that stupid cell, all I've"
 .byte NewLine
-.text "done is cause more meaningless bloodshed…"
+.text "done is cause more meaningless bloodshed..."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Miranda, please, calm down…"
+.text "Miranda, please, calm down..."
 .byte WaitForA
 .byte NewLine
 .text "You needn't be so hard on yourself."
@@ -302,7 +302,7 @@ MirandaLeifTalk
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, Leif… *sniffs*"
+.text "Oh, Leif... *sniffs*"
 .byte WaitForA 
 
 .byte right_slot
@@ -325,7 +325,7 @@ MirandaLeifTalk
 
 .byte left_slot
 .byte ScrollText
-.text "R-right!"
+.text "R—right!"
 .byte WaitForA 
 .byte EndText
 
@@ -363,7 +363,7 @@ DagdarRalphTalk
 .byte NewLine
 .text "Someone with yer strength is mighty unusual"
 .byte NewLine
-.text "‘round these parts. I could've sworn you'd be"
+.text "'round these parts. I could've sworn you'd be"
 .byte NewLine
 .text "a mighty warrior from afar, but nay!"
 .byte WaitForA 
@@ -375,7 +375,6 @@ DagdarRalphTalk
 .text "selling your sword arm for coin."
 .byte WaitForA 
 
-
 .byte right_slot
 .byte ScrollText
 .text "All true."
@@ -383,7 +382,6 @@ DagdarRalphTalk
 .byte ScrollText
 .text "As if growing crops wasn't hard enough,"
 .byte NewLine
-
 
 .text "once those Friegans started stirring up chaos,"
 .byte NewLine
@@ -404,7 +402,7 @@ DagdarRalphTalk
 
 .byte right_slot
 .byte ScrollText
-.text "Do you, know?
+.text "Do you, know?"
 .byte NewLine
 .text "Well then, I feel like it's time"
 .byte NewLine
@@ -428,7 +426,7 @@ DagdarRalphTalk
 .byte NewLine
 .text "Leader of the Mount Violdrake Bandits."
 .byte NewLine
-.text "… Er, Ex-Bandits, I should say."
+.text "... Er, Ex—Bandits, I should say."
 .byte WaitForA 
 .byte ScrollText
 .text "Me and my men were in a rough spot too,"
@@ -490,14 +488,14 @@ DagdarRalphTalk
 .text "the village with experience in that stuff."
 .byte WaitForA 
 .byte ScrollText
-.text "So…"
+.text "So..."
 .byte WaitForA
 .byte NewLine
 .text "How about going with me to our lil' village?"
 .byte NewLine
 .text "You've got as big a heart as you have muscle."
 .byte NewLine
-.text "I could very well make you my right-hand man."
+.text "I could very well make you my right—hand man."
 .byte WaitForA
 .byte NewLine
 .text "I'm sure someone with yer knowledge of"
@@ -505,29 +503,29 @@ DagdarRalphTalk
 .text "farming could work miracles in our barren land."
 .byte WaitForA 
 .byte ScrollText
-.text "So, uh… Whaddya say?"
+.text "So, uh... Whaddya say?"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Well, it sounds like a good offer, but…"
+.text "Well, it sounds like a good offer, but..."
 .byte NewLine
 .text "I've always preferred being on my own."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Oh… I see…"
+.text "Oh... I see..."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "But…"
+.text "But..."
 .byte WaitForA 
 .byte NewLine
 .text "I said I'm one who likes to help, did I not?"
 .byte NewLine
-.text "So, while I may not stay there forever…"
+.text "So, while I may not stay there forever..."
 .byte WaitForA 
 .byte NewLine
 .text "I'd love to give you all a visit"
@@ -556,7 +554,7 @@ DagdarRalphTalk
 .text "Sounds like you people really need the help."
 .byte WaitForA
 .byte NewLine
-.text "That and… Well, I think I have a knack for"
+.text "That and... Well, I think I have a knack for"
 .byte NewLine
 .text "being in the right place at the right time."
 .byte WaitForA 
@@ -587,7 +585,7 @@ ConomorMirandaTalk
 
 .byte left_slot
 .byte ScrollText
-.text "I… I wanted to ask you some questions."
+.text "I... I wanted to ask you some questions."
 .byte NewLine
 .text "And I command you to answer"
 .byte NewLine
@@ -603,7 +601,7 @@ ConomorMirandaTalk
 
 .byte left_slot
 .byte ScrollText
-.text "Was… Was my father a bad ruler?"
+.text "Was... Was my father a bad ruler?"
 .byte WaitForA 
 
 .byte right_slot
@@ -620,12 +618,12 @@ ConomorMirandaTalk
 
 .byte right_slot
 .byte ScrollText
-.text "I… *sigh* "
+.text "I... *sigh* "
 .byte WaitForA 
 .byte NewLine
 .text "Look, Princess."
 .byte NewLine
-.text "Your father was a good man.
+.text "Your father was a good man."
 .byte WaitForA 
 .byte ScrollText
 .text "I still remember when he personally appointed"
@@ -637,14 +635,14 @@ ConomorMirandaTalk
 
 .byte left_slot
 .byte ScrollText
-.text "Go on…"
+.text "Go on..."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
 .text "Your father was loved by his people, and it"
 .byte NewLine
-.text "stayed that way…Up until things grew dire."
+.text "stayed that way...Up until things grew dire."
 .byte WaitForA 
 .byte ScrollText
 .text "When the fate of our nation was at stake,"
@@ -668,10 +666,10 @@ ConomorMirandaTalk
 
 .byte left_slot
 .byte ScrollText
-.text "But why?! How could he…?"
+.text "But why?! How could he...?"
 .byte WaitForA
 .byte NewLine
-.text "I always thought the best of my father…"
+.text "I always thought the best of my father..."
 .byte NewLine
 .text "Why would he refuse to take action?!"
 .byte WaitForA 
@@ -688,16 +686,16 @@ ConomorMirandaTalk
 .text "Travant set with the Aed Massacre."
 .byte WaitForA
 .byte ScrollText
-.text "Knowing full-well that Travant would've slain"
+.text "Knowing full—well that Travant would've slain"
 .byte NewLine
-.text "you both without hesitation…"
+.text "you both without hesitation..."
 .byte NewLine
 .text "It made his heart tremble."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "... I…"
+.text "... I..."
 .byte WaitForA 
 
 .byte right_slot
@@ -716,7 +714,7 @@ ConomorMirandaTalk
 
 .byte left_slot
 .byte ScrollText
-.text "……"
+.text "......"
 .byte WaitForA 
 
 .byte right_slot
@@ -770,7 +768,7 @@ ConomorMirandaTalk
 
 .byte right_slot
 .byte ScrollText
-.text "Ah! That's…!"
+.text "Ah! That's...!"
 .byte WaitForA 
 
 .byte left_slot
@@ -782,7 +780,7 @@ ConomorMirandaTalk
 .byte ScrollText
 .text "How could I not, milady?"
 .byte NewLine
-.text "But how…?"
+.text "But how...?"
 .byte WaitForA 
 .byte NewLine
 .text "How did you get ahold of this?"
@@ -799,7 +797,7 @@ ConomorMirandaTalk
 .byte ScrollText
 .text "The blade forged to be wielded"
 .byte NewLine
-.text "by the leader of the Ulster Knights…"
+.text "by the leader of the Ulster Knights..."
 .byte WaitForA
 .byte NewLine
 .text "Fragarach!"
@@ -807,16 +805,16 @@ ConomorMirandaTalk
 
 .byte right_slot
 .byte ScrollText
-.text "Ah…"
+.text "Ah..."
 .byte NewLine
-.text "I thought of it as lost back when Ulster fell…"
+.text "I thought of it as lost back when Ulster fell..."
 .byte NewLine
-.text "But to see it shine in all its glory once again…"
+.text "But to see it shine in all its glory once again..."
 .byte WaitForA
 .byte ScrollText
 .text "By goodness, look at me!"
 .byte NewLine
-.text "now I am the one that's moved to tears…"
+.text "now I am the one that's moved to tears..."
 .byte WaitForA 
 
 .byte left_slot
