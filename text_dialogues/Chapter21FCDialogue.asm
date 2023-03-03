@@ -1,4 +1,4 @@
-ch21edalinoan
+EdaLinoanTalk
 
 .byte left_slot
 .word LoadPortrait
@@ -148,7 +148,7 @@ ch21edalinoan
 .byte WaitForA 
 .byte EndText
 
-ch21mirandaleif
+MirandaLeifTalk
 
 .byte left_slot
 .word LoadPortrait
@@ -329,7 +329,7 @@ ch21mirandaleif
 .byte WaitForA 
 .byte EndText
 
-ch21dagdarralph
+DagdarRalphTalk
 
 .byte left_slot
 .word LoadPortrait
@@ -562,7 +562,7 @@ ch21dagdarralph
 .byte WaitForA 
 .byte EndText
 
-ch21mirandaconomor
+ConomorMirandaTalk
 
 .byte left_slot
 .word LoadPortrait
