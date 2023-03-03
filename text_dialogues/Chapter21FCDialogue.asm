@@ -1,4 +1,4 @@
-edalinoan
+ch21edalinoan
 
 .byte left_slot
 .word LoadPortrait
@@ -148,7 +148,7 @@ edalinoan
 .byte WaitForA 
 .byte EndText
 
-mirandaleif
+ch21mirandaleif
 
 .byte left_slot
 .word LoadPortrait
@@ -329,7 +329,7 @@ mirandaleif
 .byte WaitForA 
 .byte EndText
 
-dagdarralph
+ch21dagdarralph
 
 .byte left_slot
 .word LoadPortrait
@@ -515,9 +515,6 @@ dagdarralph
 .text "I’ve always preferred being on my own."
 .byte WaitForA 
 
-
-
-
 .byte left_slot
 .byte ScrollText
 .text "Oh… I see…"
@@ -565,7 +562,7 @@ dagdarralph
 .byte WaitForA 
 .byte EndText
 
-mirandaconomor
+ch21mirandaconomor
 
 .byte left_slot
 .word LoadPortrait
@@ -835,16 +832,4 @@ mirandaconomor
 .byte ScrollText
 .text "As you wish, Princess!"
 .byte WaitForA
-.byte EndText
-
-.byte right_slot
-.word LoadPortrait
-.word augustus_portrait
-.text "This conversation currently cannot be viewed."
-.byte NewLine
-.text "If you wish to view the conversation,"
-.byte NewLine
-.text "you must purchase the Talk Convos DLC pack."
-.byte WaitForA
-
 .byte EndText
