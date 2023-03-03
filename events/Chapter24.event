@@ -119,6 +119,22 @@ eventChapter24Events ; B9/B000
 			CMP_WORD aSelectedCharacterBuffer.Character, Mareeta
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
 		END_DEFINITION
+		EVENT $11, _SaiasVsRaydrik
+			CMP_WORD aSelectedCharacterBuffer.Character, Saias
+			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
+		END_DEFINITION
+		EVENT $12, _NannaVsRaydrik
+			CMP_WORD aSelectedCharacterBuffer.Character, Nanna
+			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
+		END_DEFINITION
+		EVENT $13, _BrightonVsRaydrik
+			CMP_WORD aSelectedCharacterBuffer.Character, Brighton
+			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
+		END_DEFINITION
+		EVENT $14, _GalzusVsRaydrik
+			CMP_WORD aSelectedCharacterBuffer.Character, Galzus
+			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; B9/B136
@@ -588,6 +604,22 @@ eventChapter24Events ; B9/B000
 	
 	_MareetaVsRaydrik
 		macroDialogueHouse mareetavsraydrik
+	END2
+	
+	_SaiasVsRaydrik
+		macroDialogueHouse saiasvsraydrik
+	END2
+	
+	_NannaVsRaydrik
+		macroDialogueHouse nannavsraydrik
+	END2
+	
+	_BrightonVsRaydrik
+		macroDialogueHouse brightonvsraydrik
+	END2
+	
+	_GalzusVsRaydrik
+		macroDialogueHouse galzusvsraydrik
 	END2
 	
 	_RaydrikSkillIssue
