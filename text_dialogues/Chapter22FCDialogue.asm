@@ -229,14 +229,16 @@ byte left_slot
 
 .byte left_slot
 .byte ScrollText
-.text "Huh?! No! I just wanted to talk!"
+.text "Huh?!"
+.byte NewLine
+.text "No! I just wanted to talk!"
 .byte NewLine
 .text "No need to get all worked up over nothing!"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "*Sigh* Alright, alright."
+.text "*sigh* Alright, alright."
 .byte NewLine
 .text "I know better than to follow along"
 .byte NewLine
