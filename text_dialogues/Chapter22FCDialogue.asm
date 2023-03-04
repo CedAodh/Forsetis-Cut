@@ -395,8 +395,6 @@ byte left_slot
 
 .byte right_slot
 .byte ScrollText
-.byte left_slot
-.byte ScrollText
 .text "..."
 .byte WaitForA 
 .byte NewLine
@@ -433,9 +431,10 @@ byte left_slot
 .byte WaitForA
 .byte NewLine
 .text "WHAT?!"
-.text "No I haven't!"
-.byte WaitForA 
 .byte NewLine
+.text "No I haven't!"
+.byte WaitForA
+.byte ScrollText
 .text "I'm just trying to be nice to you for once!"
 .byte NewLine
 .text "Why can't you see that, you big idiot?!"
@@ -461,7 +460,7 @@ byte left_slot
 .byte NewLine
 .text "for actually caring about you?!"
 .byte WaitForA 
-.byte NewLine
+.byte ScrollText
 .text "Oh, just wait, you're not gonna"
 .byte NewLine
 .text "Keep laughing about this in a bit..."
