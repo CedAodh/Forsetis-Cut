@@ -404,9 +404,9 @@
 
 ; .byte EndText
 
-; ch16Btinaasbel
+ch16Btinaasbel
 
-; .byte right_slot
+.byte right_slot
 .word LoadPortrait
 .word asbel_portrait
 .text "Good day, Tina."
@@ -601,7 +601,8 @@
 .text "See ya later, Asbel!"
 .byte WaitForA
 .byte ScrollText
-.byte ClearPortrait
+.word ClearPortrait
+.word RetractBox
 
 .byte right_slot
 .byte ScrollText
