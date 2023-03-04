@@ -485,6 +485,172 @@ byte left_slot
 .byte WaitForA 
 .byte EndText
 
+amaldaolwen
+
+.byte left_slot
+.word LoadPortrait
+.word amalda_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word olwen_portrait 
+
+.byte left_slot
+.text "You doing alright, Olwen?"
+.byte NewLine
+.text "You look pale as a sheet."
+.byte WaitForA 
+
+.byte right_slot
+.text "...Oh? L—Lady Amalda?"
+.byte WaitForA 
+.byte NewLine
+.text "You have my apologies,"
+.byte NewLine
+.text "it isn't right for a soldier's mind"
+.byte NewLine
+.text "to wander in the middle of battle."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "That makes two of us, it seems."
+.byte NewLine
+.text "I find my feet have gotten heavier"
+.byte NewLine
+.text "with each step I take on this path."
+.byte WaitForA 
+.byte ScrollText
+.text "... And yet, that must be nothing"
+.byte NewLine
+.text "when compared to what your mind"
+.byte NewLine
+.text "must be going through right now."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Once I heard the Gelbenritter were"
+.byte NewLine
+.text "stationed at the fort, my mind began"
+.byte NewLine
+.text "having the most terrible of thoughts."
+.byte WaitForA
+.byte ScrollText
+.text "I... I do not feel like I can face my brother."
+.byte WaitForA
+.byte NewLine
+.text "I can't even fathom the thought of besting"
+.byte NewLine
+.text "him in combat, let alone to bring myself to"
+.byte NewLine
+.text "point my blade at him."
+.byte WaitForA
+.byte ScrollText
+.text "But I... I don't have a choice, do I?"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "Stay strong, Olwen."
+.byte NewLine
+.text "What you're about to do is something"
+.byte NewLine
+.text "I wouldn't wish upon anyone, and yet..."
+.byte WaitForA 
+.byte ScrollText
+.text "You must never forget the reason we are"
+.byte NewLine
+.text "fighting in the first place. You wish to see"
+.byte NewLine
+.text "change within our country, do you not?"
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "...I do, but I just wish there was another way."
+.byte WaitForA 
+.byte ScrollText
+.text "The Gelbenritter will be a most ferocious"
+.byte NewLine
+.text "enemy. We must prepare ourselves to give"
+.byte NewLine
+.text "our all if we wish to make it out of here alive."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "That, I cannot deny. But let me say this,"
+.byte NewLine
+.text "as both a friend and a former superior officer—"
+.byte WaitForA 
+.byte NewLine
+.text "Your strength and courage to have come so far"
+.byte NewLine
+.text "are outstanding, your conviction is impregnable."
+.byte WaitForA 
+.byte ScrollText
+.text "I know you can do this, Olwen."
+.byte NewLine
+.text "And if you don't believe in yourself,"
+.byte NewLine
+.text "do know that I wholeheartedly believe in you."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Lady Amalda...thank you."
+.byte NewLine
+.text "I shall not stop fighting,"
+.byte NewLine
+.text "not until I see this world made anew!"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "I am glad to see you're in much higher spirits."
+.byte WaitForA 
+.byte NewLine
+.text "If this may help boost your confidence further,"
+.byte NewLine
+.text "here, I want you to have this."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "A ring?"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "It was a gift from one of the"
+.byte NewLine
+.text "many children we have saved."
+.byte WaitForA
+.byte ScrollText
+.text "It might not make up for all of our fellow"
+.byte NewLine
+.text "countrymen we've had to slay along our way,"
+.byte NewLine
+.text "but I hope you hold it dear to your heart."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Thank you so much, Amalda!"
+.byte NewLine
+.text "I'll be sure to treasure it!"
+.byte WaitForA 
+.byte NewLine
+.text "Now, let us move forward!"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "Yes, onward!"
+.byte WaitForA 
+.byte EndText
+
 juliusreinhardt1
 
 .byte right_slot
