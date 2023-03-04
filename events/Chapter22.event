@@ -730,7 +730,7 @@ eventChapter22Events ; 8C/F611
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE ch22tinaasbel
 		YIELD
 	END2
 	
@@ -770,7 +770,7 @@ eventChapter22Events ; 8C/F611
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE ch22karinfergus
 		YIELD
 	END2
 	
