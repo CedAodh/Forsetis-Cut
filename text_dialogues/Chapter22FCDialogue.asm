@@ -411,7 +411,7 @@ byte left_slot
 
 .byte left_slot
 .byte ScrollText
-.text "F—Fergus?
+.text "F—Fergus?"
 .byte WaitForA 
 .byte NewLine
 .text "What's so funny?"
