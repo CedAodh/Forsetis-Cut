@@ -27,9 +27,9 @@ aForsetiWeaponLock ; B0/99F0
 	.word CedChp4x
 	.word 0
 
-;aUnknown3WeaponLock ; B0/99F6
-;	.word Galzus
-;	.word 0
+aFailinisWeaponLock ; B0/99F6
+	.word Miranda
+	.word 0
 
 aBragisBladeWeaponLock ; B0/99FA
 	.word Nanna
