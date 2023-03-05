@@ -2,7 +2,7 @@ ch15ralphamaldaspawn
 
 .byte Right_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 
 .byte Left_slot
 .word LoadPortrait
@@ -114,7 +114,7 @@ ch15ralphamaldaspawn
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 
 .byte Right_slot
 .byte ScrollText
@@ -1138,7 +1138,7 @@ ch15bishopnoleif
 
 .byte Right_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 .text "Good heavens, what a day this has been..."
 .byte NewLine
 .text "Ah! You're the strangers that came"
@@ -1162,7 +1162,7 @@ ch15bishopleif
 
 .byte Right_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 .text "My goodness, we owe you and your forces"
 .byte NewLine
 .text "quite the debt... Your decision to aid us is"
@@ -1182,7 +1182,7 @@ ch15closing
 
 .byte Left_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 
 .byte Right_slot
 .word LoadPortrait
@@ -1254,7 +1254,7 @@ ch15bishopyesno
 .word leif_portrait
 .byte Left_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 .text "Which way shall I send you?"
 
 .byte Right_slot
