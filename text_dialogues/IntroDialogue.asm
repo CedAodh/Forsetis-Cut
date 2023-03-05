@@ -34,8 +34,8 @@ cinch1
 .byte Right_slot
 .byte ScrollText
 .word ClearPortrait
-.word PauseDialogue
-.byte $5A
+;.word PauseDialogue
+;.byte $5A
 
 .byte Left_Slot
 .byte ScrollText
@@ -50,33 +50,25 @@ cinch2
 
 .byte Right_slot
 .word LoadPortrait
-.word eyvel_portrait
+.word augustus_portrait
 
 .byte Left_slot
 .word LoadPortrait
-.word leif_portrait
-.text "Commander, over here!"
+.word lifis_portrait
+.text "So, August, you got the deets, right?"
 .byte NewLine
-.text "That village is being raided!"
+.text "Tell me and the rest of the boys"
+.byte NewLine
+.text "'bout our next target!"
 .word PauseDialogue
 .byte $5A
 
 .byte Right_slot
-.text "Hmm... That's Lifis' crew, by the look of it."
+.text "...Very well."
 .byte NewLine
-.word PlayMusic
-.byte $23
-.text "They've been quiet as a mouse for a while,"
+.text "I'll tell you everything I know about the"
 .byte NewLine
-.text "but I guess they move fast."
-.word PauseDialogue
-.byte $5A
-
-.byte Left_slot
-.byte ScrollText
-.text "And we have to move faster!"
-.byte NewLine
-.text "We cannot stand by and allow this to happen!"
+.text "village, and then you'll have your opening."
 .word PauseDialogue
 .byte $5A
 
@@ -128,9 +120,7 @@ cinorsin
 
 cinhalvan
 
-.text "I'm having a hard time keeping up,"
-.byte NewLine
-.text "Mareeta..."
+.text "I can hardly keep up, Mareeta..."
 .byte NewLine
 .text "You're very nimble!"
 .word PauseDialogue

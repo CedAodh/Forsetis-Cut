@@ -406,3 +406,90 @@ ch4daisyturn1
 	.byte WaitForA
 
 	.byte EndText
+	
+	leifbrighton
+	
+	.byte right_slot
+	.word $3A00
+	.word brighton_portrait	
+
+	.byte left_slot
+	.word $3A00
+	.word leif_portrait
+	.text "Excuse me, you're the one in charge"
+	.byte NewLine
+	.text "of this rescue mission, correct?"
+	.byte WaitForA
+
+	.byte right_slot
+	.text "I am."
+	.byte ScrollText
+	.text "The name is Brighton; though actually I"
+	.byte NewLine
+	.text "have to admit I'm not fully in charge here."
+	.byte WaitForA
+	.byte ScrollText
+	.text "That would be Lord Ced."
+	.byte NewLine
+	.text "He has tasked us with freeing the civilians"
+	.byte NewLine
+	.text "imprisoned on this level."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Ah, then isn't that convenient?"
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Hmm..."
+	.byte NewLine
+	.text "Begging your pardon, but...you"
+	.byte NewLine
+	.text "look like more than just a civilian."
+	.byte WaitForA
+	.byte NewLine
+	.text "Who might you be?"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "I..."
+	.byte NewLine
+	.text "I am Leif, of House Leonster."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "House Leonster, you say?"
+	.byte NewLine
+	.text "Well, that explains a lot!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Fear not, Prince."
+	.byte NewLine
+	.text "Stay behind me and we'll find a way"
+	.byte NewLine
+	.text "for you to get out of here."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "I appreciate the offer, but"
+	.byte NewLine
+	.text "I'm not as helpless as you might think."
+	.byte WaitForA
+	.byte NewLine
+	.text "I can hold my own with a sword, and I will"
+	.byte NewLine
+	.text "fight my way out just like the rest of you."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Well, we could always use the extra help!"
+	.byte NewLine
+	.text "I guess we're really in this together now."
+	.byte NewLine
+	.text "Let us make haste!"

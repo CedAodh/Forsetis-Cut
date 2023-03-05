@@ -647,6 +647,7 @@ eventChapter6Events ; 99/A346
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000
 
 		EVENT_TEST_FLAG_SET FlagGalzusDead
+		EVENT_TEST_FLAG_SET FlagMareetaDiedInChp5
 		JUMP_TRUE +
 
 		STORE_WORD wEventEngineParameter1, 3
