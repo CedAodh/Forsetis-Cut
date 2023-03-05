@@ -505,7 +505,7 @@ ch17Asarah
 
 .byte Right_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 
 .byte Left_slot
 .word LoadPortrait
