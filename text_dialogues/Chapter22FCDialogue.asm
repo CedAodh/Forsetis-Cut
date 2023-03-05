@@ -209,7 +209,7 @@ ch22tinaasbel
 
 ch22karinfergus
 
-byte left_slot
+.byte left_slot
 .word LoadPortrait
 .word karin_portrait
 .text "Hey, Fergus."
