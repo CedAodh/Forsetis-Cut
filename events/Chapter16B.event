@@ -236,7 +236,7 @@ eventChapter16BEvents ; 99/EC9A
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE tinaasbel
 		YIELD
 	END2
 	

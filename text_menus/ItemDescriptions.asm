@@ -236,7 +236,11 @@ _FireDesc
 _ElfireDesc
 .text "{Lock}(Miranda"
 .word $0000
-.text "Gives {+}{1}{0} Lck"
+.text "Grants Paragon"
+.word $0000
+.text "Effective against "
+.word $0000
+.text "{ARM1}{ARM2}{CAV1}{CAV2} units"
 .word $0000
 .word $0000
 
