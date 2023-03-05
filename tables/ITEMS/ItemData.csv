@@ -78,7 +78,7 @@ KillerBallista,TypeBow,None,12,90,20,10,30,3,10,WeaponLocks.aBallistaWeaponLock,
 VeninBallista,TypeBow,None,12,75,20,10,0,3,10,WeaponLocks.aVeninBallistaWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._VeninBallistaDesc,None,$2,None,None,TraitBallista | TraitWeapon,$4B
 BrokenBow,TypeBow,None,0,0,12,-1,0,2,2,RankE,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenBowDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$4C
 Fire,TypeFire,None,7,75,2,25,0,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._FireDesc,None,None,None,None,TraitWeapon | TraitTome,$4D
-Elfire,TypeFire,None,16,90,3,54,10,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._ElfireDesc,None,None,None,None,TraitWeapon | TraitTome,$4E
+Elfire,TypeFire,None,16,90,3,54,10,1,2,aFailinisWeaponLock,ItemEffectivenesses.aCavalryAndArmorEffectiveness,aNoItemBonuses,3200,<>item_descs._ElfireDesc,None,None,None,Skill3Paragon,TraitWeapon | TraitTome,$4E
 Bolganone,TypeFire,None,15,85,5,18,0,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._BolganoneDesc,None,None,None,None,TraitWeapon | TraitTome,$4F
 Valflame,TypeFire,None,20,90,15,50,20,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._ValflameDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnsellable,$50
 Thunder,TypeThunder,None,6,70,1,30,5,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._ThunderDesc,None,None,None,None,TraitWeapon | TraitTome,$51
