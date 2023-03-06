@@ -14,6 +14,16 @@ ch17Bamaldarel
 .byte WaitForA
 .byte EndText
 
+beatricerel
+.text "You're... Letting me go?"
+.byte NewLine
+.text "You DO know we're paid to kill you, right?"
+.byte WaitForA
+.byte NewLine
+.text "Heh. So foolish... It's kind of cute, actually."
+.byte WaitForA
+.byte EndText
+
 weismannrel
 .text "Damn... Bested by a bunch of backwoods"
 .byte NewLine
