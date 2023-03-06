@@ -163,6 +163,9 @@ eventChapter17BEvents ; FD/C4D0
 		EVENT $06, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Amalda
 		END_DEFINITION
+		EVENT $10, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Beatrice
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; FD/C6E4

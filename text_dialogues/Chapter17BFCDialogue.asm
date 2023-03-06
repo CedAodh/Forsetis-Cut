@@ -375,9 +375,9 @@ beatricespawn
 .byte right_slot
 .word LoadPortrait
 .word Priestess1Portrait
-.text "Oh no, we're late for the fight!"
+.text "Well, I can't say this is what I"
 .byte NewLine
-.text "This is just terrible!"
+.text "expected to see upon our return."
 .byte WaitForA
 
 .byte left_slot
@@ -409,11 +409,11 @@ beatricespawn
 
 .byte right_slot
 .byte ScrollText
-.text "Since he's clearly failing against the rebels,"
+.text "Since he's clearly failing against the rebels, it"
 .byte NewLine
-.text "it means that once we come in for the kill,"
+.text "means that once we come in for the kill—of our"
 .byte NewLine
-.text "he'll be indebted to us for saving his skin."
+.text "own volition—he'll owe us for saving his skin."
 .byte WaitForA
 .byte NewLine
 .text "It'll be easy money."
@@ -428,7 +428,7 @@ beatricespawn
 
 .byte right_slot
 .byte ScrollText
-.text "Of course it is."
+.text "Of course."
 .byte WaitForA
 .byte ScrollText
 .text "Now, let's seize those rebel heads,"
@@ -436,5 +436,6 @@ beatricespawn
 .text "and the rest will fall into place."
 .byte NewLine
 .text "Charge!"
+.byte WaitForA
 
 .byte EndText
