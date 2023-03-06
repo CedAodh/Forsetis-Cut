@@ -338,6 +338,13 @@ reinkochboss
 .byte WaitForA
 .byte EndText
 
+beatriceboss
+.text "Why must you be such nuisances?"
+.byte NewLine
+.text "Just roll over and die already!"
+.byte WaitForA
+.byte EndText
+
 palmanboss
 .text "You'll never reclaim"
 .byte NewLine
