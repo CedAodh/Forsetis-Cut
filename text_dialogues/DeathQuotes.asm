@@ -603,6 +603,13 @@ shannamdeath1
 .byte WaitForA
 .byte EndText
 
+beatricedeath
+.text "Your majesty..."
+.byte NewLine
+.text "I'm sorry..."
+.byte WaitForA
+.byte EndText
+
 palmandeath
 .text "Castle Friege...is so very far..."
 .byte WaitForA
