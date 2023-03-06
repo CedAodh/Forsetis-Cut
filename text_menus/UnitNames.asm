@@ -1039,7 +1039,7 @@ _FriegeName
 	.word $0000
 
 _RilkeName
-	.text "Rilke "
+	.text "Beatrice "
 	.word $0000
 
 _ManfroyName
