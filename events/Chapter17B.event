@@ -19,10 +19,9 @@ eventChapter17BEvents ; FD/C4D0
 			CMP_WORD wCurrentPhase, Enemy
 			CHECK_NUM_UNITS_LTE Amalda, 0
 		END_DEFINITION
-		EVENT $00, _DummyReinforcements1
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
-			ROLL_RNG 60
+		EVENT $00, _BeatriceSpawn
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT $00, _DummyReinforcements2
 			CMP_WORD wCurrentPhase, Enemy
@@ -177,7 +176,27 @@ eventChapter17BEvents ; FD/C4D0
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
-	_DummyReinforcements1 ; FD/C70C
+	_BeatriceSpawn ; FD/C70C
+		PLAY_SOUND_WORD $E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $3D
+		YIELD
+
+		SCROLL_CAMERA_ADDRESS eventChapter17BData._BeatriceCameraCoordinates
+		YIELD
+
+		LOAD1 eventChapter17BData._BeatriceGroup
+		WAIT_MOVE
+		YIELD
+		
+		SCROLL_CAMERA_CHAR Beatrice
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE beatricespawn
+		YIELD
 	END2
 
 	_DummyReinforcements2 ; FD/C70D

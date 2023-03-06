@@ -56,8 +56,18 @@ eventChapter17BData ; B1/A2A9
 		UNIT ResistanceMage, NPC, [12, 15], [12, 15], Emily, [Fire], 1, False, [$00, $19, $00, $00]
 	UNIT
 
-	;_UnusedCoordinates1 ; B1/A621
-	;	.byte 8, 7
+	_BeatriceCameraCoordinates ; B1/A621
+		.byte 14, 22
+		
+	_BeatriceGroup
+		UNIT Beatrice, Enemy, [14, 31], [14, 29], Merloch, [LightningSword, SilverLance, Vulnerary], 12, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [13, 31], [13, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [15, 31], [15, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [12, 31], [12, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [16, 31], [16, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [11, 31], [11, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [17, 31], [17, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+	UNIT
 
 	_AmaldaGroup ; B1/A623
 		UNIT Amalda, Enemy, [22, 1], [22, 1], Amalda, [MasterSword, Physic, Vulnerary, BragisScroll, AdeptManual], 7, False, [$09, $03, $00, $00]

@@ -369,3 +369,72 @@ Ch17Bopening2FC
 .byte WaitForA
 
 .byte EndText
+
+beatricespawn
+
+.byte right_slot
+.word LoadPortrait
+.word Priestess1Portrait
+.text "Oh no, we're late for the fight!"
+.byte NewLine
+.text "This is just terrible!"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word dvorak_portrait
+.text "What will we do, Captain?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "We're actually in a very convenient position."
+.byte NewLine
+.text "I've already got it figured out..."
+.byte WaitForA
+.byte ScrollText
+.text "Gustav has not been able to make contact with"
+.byte NewLine
+.text "us since we were assigned scouting duty."
+.byte NewLine
+.text "We did not return on his orders."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Right..."
+.byte NewLine
+.text "Does that mean something?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Since he's clearly failing against the rebels,"
+.byte NewLine
+.text "it means that once we come in for the kill,"
+.byte NewLine
+.text "he'll be indebted to us for saving his skin."
+.byte WaitForA
+.byte NewLine
+.text "It'll be easy money."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, wow!"
+.byte NewLine
+.text "That's a good plan."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Of course it is."
+.byte WaitForA
+.byte ScrollText
+.text "Now, let's seize those rebel heads,"
+.byte NewLine
+.text "and the rest will fall into place."
+.byte NewLine
+.text "Charge!"
+
+.byte EndText
