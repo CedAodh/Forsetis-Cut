@@ -404,7 +404,7 @@
 
 ; .byte EndText
 
-ch16Btinaasbel
+tinaasbel
 
 .byte right_slot
 .word LoadPortrait
@@ -426,7 +426,7 @@ ch16Btinaasbel
 .byte WaitForA
 .byte ScrollText
 .text "I was thinking of what book I should read"
- byte NewLine
+.byte NewLine
 .text "next. Perhaps the 'Guide to Dendrology'"
 .byte NewLine
 .text "would be a good pick."
