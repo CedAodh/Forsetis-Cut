@@ -738,7 +738,7 @@ eventChapter22Events ; 8C/F611
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE iliosreinhardt
 		YIELD
 	END2
 	

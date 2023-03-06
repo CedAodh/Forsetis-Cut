@@ -65,8 +65,8 @@ eventChapter24Data ; 99/F2A4
 		.byte 15, 23
 
 	_SoldierReinforcementsGroup ; 99/F682
-		UNIT MunsterSoldier2, Enemy, [22, 23], [22, 23], RaydrikChp24, [Greatlance], 20, False, [$00, $00, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [22, 22], [22, 22], RaydrikChp24, [Greatlance], 20, False, [$00, $00, $00, $00]
+		UNIT Pfahler, Enemy, [22, 23], [22, 23], RaydrikChp24, [Greatlance], 20, False, [$00, $00, $00, $00]
+		UNIT Pfahler, Enemy, [22, 22], [22, 22], RaydrikChp24, [Greatlance], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	_SorcererReinforcementsCameraCoordinates ; 99/F6AC
