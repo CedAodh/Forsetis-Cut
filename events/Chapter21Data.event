@@ -58,7 +58,7 @@ eventChapter21Data ; B1/8D4F
 	_PrepGroup2 ; B1/90B3
 		.byte 23, 24
 
-		UNIT Seimetz, Enemy, [14, 28], [14, 28], Seimetz, [KillerLance, Javelin, Vulnerary], 13, False, [$00, $0C, $02, $40]
+		UNIT Beatrice, Enemy, [14, 28], [14, 28], Beatrice, [KillerLance, Javelin, Vulnerary], 13, False, [$00, $0C, $02, $40]
 		UNIT FriegePriest1, Enemy, [23, 25], [23, 25], Fraus, [Sleep, Fortify], 16, False, [$0D, $03, $00, $00]
 	UNIT
 

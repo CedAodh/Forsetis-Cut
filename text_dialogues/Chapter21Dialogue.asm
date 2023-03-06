@@ -6,7 +6,7 @@ ch21churchlinoan
 
 .byte Left_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 .text "Ah..."
 .byte NewLine
 .text "You're Duchess Linoan of Tahra, are you not?"
@@ -110,7 +110,7 @@ ch21churchother
 
 .byte Right_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 .text "The fighting will only become more intense"
 .byte NewLine
 .text "as you draw closer to the Imperial base"
