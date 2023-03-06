@@ -33,8 +33,8 @@ eventChapter6Data ; B1/E22A
 		UNIT MunsterThunderMage, Enemy, [9, 8], [9, 8], Tolman, [Elfire], 12, False, [$00, $03, $00, $00]
 		UNIT MunsterBishop1, Enemy, [7, 7], [7, 7], Tolman, [Meteor, Physic], 5, False, [$01, $03, $00, $00]
 		UNIT MunsterBishop1, Enemy, [8, 7], [8, 7], Tolman, [Meteor, Physic], 5, False, [$01, $03, $00, $00]
-		UNIT MunsterSoldier1, Enemy, [12, 16], [12, 16], Tolman, [ShortLance], 3, False, [$02, $0A, $00, $00]
-		UNIT MunsterSoldier1, Enemy, [12, 22], [12, 22], Tolman, [ShortLance], 3, False, [$02, $0A, $00, $20]
+		UNIT MunsterSoldier2, Enemy, [12, 16], [12, 16], Tolman, [ShortLance], 3, False, [$02, $0A, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [12, 22], [12, 22], Tolman, [ShortLance], 3, False, [$02, $0A, $00, $20]
 		UNIT MunsterPriest1, Enemy, [2, 4], [2, 4], Tolman, [Physic], 5, False, [$03, $03, $00, $00]
 	UNIT
 
