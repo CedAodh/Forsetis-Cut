@@ -160,7 +160,7 @@ eventChapter7Events ; 99/B023
 		.word Eisenhau
 		.word MunsterCavalier
 		.word MunsterBowKnight
-		.word MunsterTroubadour
+		.word MunsterCavalier
 		.word MunsterAxeKnight
 		.word Raydrik
 	.word $0000
@@ -436,7 +436,7 @@ eventChapter7Events ; 99/B023
 		macroSetCharacterByte Eisenhau, structCharacterDataRAM.Unknown3F, $1000
 		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.Unknown3F, $1000
 		macroSetCharacterByte MunsterBowKnight, structCharacterDataRAM.Unknown3F, $1000
-		macroSetCharacterByte MunsterTroubadour, structCharacterDataRAM.Unknown3F, $1000
+		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.Unknown3F, $1000
 		macroSetCharacterByte MunsterAxeKnight, structCharacterDataRAM.Unknown3F, $1000
 
 		macroSetCharacterByte Eisenhau, structCharacterDataRAM.AI1, $02
@@ -454,10 +454,10 @@ eventChapter7Events ; 99/B023
 		macroSetCharacterByte MunsterBowKnight, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte MunsterBowKnight, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterTroubadour, structCharacterDataRAM.AI1, $02
-		macroSetCharacterByte MunsterTroubadour, structCharacterDataRAM.AI4, $00
-		macroSetCharacterByte MunsterTroubadour, structCharacterDataRAM.AI2, $0B
-		macroSetCharacterByte MunsterTroubadour, structCharacterDataRAM.Unknown3E, $00
+		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.Unknown3E, $00
 
 		macroSetCharacterByte MunsterAxeKnight, structCharacterDataRAM.AI1, $02
 		macroSetCharacterByte MunsterAxeKnight, structCharacterDataRAM.AI4, $00
