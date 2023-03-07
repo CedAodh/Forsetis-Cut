@@ -564,7 +564,7 @@ SaraMartyTalk
 
 	.byte Left_slot
 	.word $3A00
-	.word sara_portrait
+	.word sarah_portrait
 	
 	.byte Right_Slot
 	.word $3A00
