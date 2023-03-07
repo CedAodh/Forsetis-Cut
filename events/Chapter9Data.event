@@ -91,7 +91,7 @@ eventChapter9Data ; B1/D508
 	.byte $FF
 
 	_Armory ; B1/D82D
-		SHOP [14, 4], [IronLance, SteelLance, SlimLance, SteelBow]
+		SHOP [14, 4], [SlimSword, SteelSword, SlimLance, SteelLance, SteelBow]
 
 	_Vendor ; B1/D83F
-		SHOP [22, 29], [Vulnerary, Torch, Heal, Thunder, StaminaDrink]
+		SHOP [22, 29], [Heal, Mend, Torch, Thunder, Vulnerary, StaminaDrink]
