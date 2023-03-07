@@ -118,4 +118,4 @@ eventChapter7Data ; B1/DE9B
 	.byte $FF
 
 	_Vendor ; B1/E218
-		SHOP [6, 48], [Vulnerary, Heal]
+		SHOP [6, 48], [Heal, DoorKey, Vulnerary, Antitoxin]

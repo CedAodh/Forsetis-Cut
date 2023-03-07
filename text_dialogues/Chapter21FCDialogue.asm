@@ -560,6 +560,153 @@ DagdarRalphTalk
 .byte WaitForA 
 .byte EndText
 
+SaraMartyTalk
+
+	.byte Left_slot
+	.word $3A00
+	.word sarah_portrait
+	
+	.byte Right_Slot
+	.word $3A00
+	.word marty_portrait
+
+	.byte Left_slot
+	.text "......"
+	.byte WaitForA
+	
+	.byte Right_Slot
+ .text "Whoa! Ya startled me!"
+	.byte NewLine
+	.text "Something about the way you walk up"
+	.byte NewLine
+	.text "on people makes my hairs stand end to end..."
+	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.text "Hmm..."
+	.byte NewLine
+	.text "Say, how did you get so tall?"
+	.byte WaitForA
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "I dunno, it's just one of those things ya don't"
+	.byte NewLine
+	.text "think abo-- Wh-why are you walking in circles"
+	.byte NewLine
+	.text "around me?"
+	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.text "Is the air thin up there?"
+	.byte WaitForA
+	.byte NewLine
+	.text "Do you have trouble breathing?"
+	.byte WaitForA
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "No, I don't think so..."
+	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.text "Hey... See that tree over there?"
+	.byte NewLine
+	.text "I want you to uproot it..."
+	.byte WaitForA
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "S...Sure? If nothing else, it's good exercise."
+	.byte WaitForA
+	.byte NewLine
+	.text "Rrgghhh...GRAH!"
+	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.text "Fascinating... The components here are"
+	.byte NewLine
+	.text "quite refined..."
+	.byte WaitForA
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "Er, uh... Why did you ask me to do this again?"
+	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.text "Natural materials such as these make for the"
+	.byte NewLine
+	.text "best tomes and staves, and as I suspected,"
+	.byte WaitForA
+	.byte NewLine
+	.text "the trees around this area make for"
+	.byte NewLine
+	.text "exceptional items."
+	.byte WaitForA
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "So you craft your own stuff?"
+	.byte NewLine
+	.text "That's impressive for your age."
+	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.text "I've had a lot of time to devote to"
+	.byte NewLine
+	.text "these crafts."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I imagine they'll be my life's work,"
+	.byte NewLine
+	.text "my defining achievement..."
+	.byte WaitForA
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "Say, what's that stuck to the end of"
+	.byte NewLine
+	.text "that branch?"
+	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.text "Hmm, it appears to be a blessed ring!"
+	.byte ScrollText
+	.text "Perhaps that was the source of this place's"
+	.byte NewLine
+	.text "great lumber... You should keep it."
+	.byte WaitForA
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "Really? Aw, thanks."
+	.byte NewLine
+	.text "You ain't such a bad sort after all."
+	.byte NewLine
+	.text "See ya 'round!"
+	.byte WaitForA
+	
+	.byte Left_slot
+	.word ClearPortrait
+	.word RetractBox
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "Whoa... She's gone already?"
+	.byte NewLine
+	.text "Interestin' little girl, that one."
+	.byte WaitForA
+	
+	.byte EndText
+
 ConomorMirandaTalk
 
 .byte left_slot

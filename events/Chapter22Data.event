@@ -105,4 +105,4 @@ eventChapter22Data ; B1/8425
 		SHOP [5, 28], [KillingEdge, KillerLance, KillerAxe, KillerBow]
 
 	_Vendor ; B1/8850
-		SHOP [3, 27], [Mend, Elfire, Light, DoorKey, MasterSeal]
+		SHOP [3, 27], [Light, Thoron, Tornado, Bolganone, Recover, DoorKey, MasterSeal]

@@ -118,4 +118,4 @@ eventChapter15Data ; B1/B3B3
 	.byte $FF
 
 	_Vendor ; B1/B6EC
-		SHOP [16, 13], [Vulnerary, Antitoxin, DoorKey, Torch]
+		SHOP [16, 13], [Heal, Torch, Light, Thunder, Vulnerary, DoorKey]

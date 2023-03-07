@@ -138,7 +138,7 @@ eventChapter6Data ; B1/E22A
 	.byte $FF
 
 	_Vendor ; B1/E661
-		SHOP [25, 20], [Vulnerary, DoorKey, Fire]
+		SHOP [25, 20], [Fire, Heal, DoorKey, Vulnerary]
 
 	_Armory ; B1/E673
 		SHOP [27, 20], [IronSword, IronLance, IronAxe, IronBow]
