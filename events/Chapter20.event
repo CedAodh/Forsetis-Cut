@@ -75,6 +75,9 @@ eventChapter20Events ; FD/D942
 		EVENT $07, _ConomorXavierTalk
 			CHECK_CHARS2 Conomor, Xavier
 		END_DEFINITION
+		EVENT $08, _OlwenBharatTalk
+			CHECK_CHARS2 Olwen, Bharat
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/DA40
@@ -710,6 +713,14 @@ eventChapter20Events ; FD/D942
 		YIELD
 		
 		DIALOGUE placeholder
+		YIELD
+	END2
+	
+	_OlwenBharatTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE olwenbharat
 		YIELD
 	END2
 
