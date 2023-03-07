@@ -213,6 +213,10 @@ eventChapter20Events ; FD/D942
 			CMP_BYTE_AT wCursorXCoord, eventChapter20Data._Vendor
 			CMP_BYTE_AT wCursorYCoord, eventChapter20Data._Vendor+1
 		END_DEFINITION
+		EVENT $00, eventChapter20Data._SecretShop
+			CMP_BYTE_AT wCursorXCoord, eventChapter20Data._SecretShop
+			CMP_BYTE_AT wCursorYCoord, eventChapter20Data._SecretShop+1
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_SilenceHouseVisit ; FD/DC25
