@@ -108,13 +108,17 @@ aDragonpikeWeaponLock ; B0/9A44
 ;	.word Perne
 ;	.word 0
 
+aGungnirWeaponLock
+	.word Travant
+	.word Arion
+	.word 0
+
 aMareetaWeaponLock ; B0/9A4E
 	.word Mareeta
 	.word 0
 
 aOlwenReinhardtWeaponLock ; B0/9A52
 	.word Olwen
-	.word ReinhardtDialogue
 	.word Reinhardt
 	.word 0
 

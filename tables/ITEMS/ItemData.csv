@@ -46,7 +46,7 @@ MasterLance,TypeLance,None,15,70,13,20,0,1,2,RankA,ItemEffectivenesses.aNoEffect
 Ridersbane,TypeLance,None,13,60,13,20,0,1,1,RankB,ItemEffectivenesses.aCavalryEffectiveness,aNoItemBonuses,3000,<>item_descs._RidersbaneDesc,None,None,None,None,TraitWeapon,$2B
 KillerLance,TypeLance,None,11,70,9,25,30,1,1,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3000,<>item_descs._KillerLanceDesc,None,None,None,None,TraitWeapon,$2C
 GaeBolg,TypeLance,None,20,90,15,50,10,1,1,RankB,ItemEffectivenesses.aNoEffectiveness,aGaeBolgItemBonuses,0,<>item_descs._GaeBolgDesc,None,None,None,None,TraitWeapon | TraitUnsellable,$2D
-Gungnir,TypeLance,None,20,80,13,50,0,1,1,WeaponLocks.aBraveLanceWeaponLock,ItemEffectivenesses.aNoEffectiveness,aGungnirItemBonuses,0,<>item_descs._GungnirDesc,None,None,None,None,TraitWeapon | TraitUnsellable,$2E
+Gungnir,TypeLance,None,20,80,13,50,0,1,1,WeaponLocks.aGungnirWeaponLock,ItemEffectivenesses.aNoEffectiveness,aGungnirItemBonuses,0,<>item_descs._GungnirDesc,None,None,None,None,TraitWeapon | TraitUnsellable,$2E
 BrokenLance,TypeLance,None,0,0,15,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenLanceDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$2F
 IronAxe,TypeAxe,None,9,70,9,40,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1100,<>item_descs._IronAxeDesc,None,None,None,None,TraitWeapon,$30
 VeninAxe,TypeAxe,None,6,70,9,40,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._VeninAxeDesc,None,$2,None,None,TraitWeapon,$31

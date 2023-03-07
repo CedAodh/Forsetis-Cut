@@ -1031,7 +1031,7 @@ shivaasaello
 .word asaello_portrait 
 
 .byte left_slot
-.text "The River Thracia… Heh."
+.text "The River Thracia... Heh."
 .byte WaitForA 
 .byte NewLine
 .text "You can sense the souls of all the miserable"
@@ -1090,7 +1090,7 @@ shivaasaello
 
 .byte left_slot
 .byte ScrollText
-.text "…Someone to protect, huh?"
+.text "...Someone to protect, huh?"
 .byte WaitForA 
 
 .byte right_slot

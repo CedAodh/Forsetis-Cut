@@ -355,3 +355,203 @@ ch14opening5
 	.byte WaitForA
 
 	.byte EndText
+	
+fctravantarion
+
+.byte Right_slot
+.word LoadPortrait
+.word mccloy_portrait
+
+.byte Left_slot
+.word LoadPortrait
+.word travant_portrait
+.text "It's about time."
+.byte NewLine
+.text "I trust you're aware of my plans, McCloy?"
+.byte WaitForA
+
+.byte right_slot
+.text "I am, Your Majesty."
+.byte NewLine
+.text "Now that the Empire has finally folded, it's time"
+.byte NewLine
+.text "for us to step in and take Tahra for ourselves!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's right."
+.byte NewLine
+.text "This will be a key card in dealing with Bloom."
+.byte WaitForA
+.byte NewLine
+.text "Seizing Imperial territory is but a dream"
+.byte NewLine
+.text "under normal circumstances, so do not waste it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Of course, sire."
+.byte NewLine
+.text "The rest of the troops will soon reach us."
+.byte NewLine
+.text "Then we shall attack with everything we have!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Very good—I'll leave you to it."
+.byte NewLine
+.text "Arion!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word arion_portrait
+.text "Yes, my lord father."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Time for us to make our move."
+.byte NewLine
+.text "We're to keep the enemy occupied"
+.byte NewLine
+.text "until the main force arrives."
+.byte WaitForA
+.byte NewLine
+.text "You and I are no exception."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I understand, Father."
+.byte NewLine
+.text "But..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Tahra's citizens are united in their hatred"
+.byte NewLine
+.text "of the Empire."
+.byte WaitForA
+.byte ScrollText 
+.text "Now that the Empire has officially invaded,"
+.byte NewLine
+.text "wouldn't it be better for us to ally with"
+.byte NewLine
+.text "Tahra instead of taking their land by force?"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Hah! You think shackling ourselves to Tahra"
+.byte NewLine
+.text "would be enough to triumph over the Empire?"
+.byte WaitForA
+.byte ScrollText
+.text "Have you already forgotten our defeat"
+.byte NewLine
+.text "at Mergen?"
+.byte WaitForA
+.byte ScrollText
+.text "We had all of North and South Thracia"
+.byte NewLine
+.text "united under our rule then,"
+.byte NewLine
+.text "and we were still no match for the Empire."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "...We lost only because Raydrik betrayed us."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Maybe so, maybe so... But the fact remains"
+.byte NewLine
+.text "that the battle ended with us humiliated,"
+.byte NewLine
+.text "and having to resort to suing for peace."
+.byte WaitForA
+.byte ScrollText
+.text "North Thracia—the land I had gone through"
+.byte NewLine
+.text "so much to finally regain—was taken from me"
+.byte NewLine
+.text "all over again. All those years...for nothing."
+.byte WaitForA
+.byte ScrollText
+.text "As it stands, it's no exaggeration to say"
+.byte NewLine
+.text "that the Empire's might exceeds our own"
+.byte NewLine
+.text "by tenfold."
+.byte WaitForA
+.byte ScrollText
+.text "You still like those odds?"
+.byte NewLine
+.text "You still think you can win?"
+.byte WaitForA
+.byte ScrollText
+.text "A whole lot of people will die:"
+.byte NewLine
+.text "Imperials, Thracians, Tahrans."
+.byte NewLine
+.text "They'll all bleed just the same."
+.byte WaitForA
+.byte ScrollText
+.text "You still want to go through with your plan?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "N-no..."
+.byte NewLine
+.text "You've the right of it, my lord father."
+.byte NewLine
+.text "I was...being too rash."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "So are we done here?"
+.byte NewLine
+.text "We're losing time."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte EndText
+
+fcarionmusing
+
+.byte right_slot
+.word LoadPortrait
+.word arion_portrait
+.text "No... This isn't right."
+.byte NewLine
+.text "If things keep going the way they are,"
+.byte NewLine
+.text "countless innocent civilians will perish..."
+.byte WaitForA
+.byte ScrollText
+.text "I must speak with Linoan..."
+.byte WaitForA
+
+.byte EndText

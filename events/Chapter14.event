@@ -703,6 +703,10 @@ eventChapter14Events ; FD/9790
 		LOAD1 eventChapter14Data._TravantGroup
 		WAIT_MOVE
 		YIELD
+		
+		LOAD1 eventChapter14Data._ArionGroup
+		WAIT_MOVE
+		YIELD
 
 		SCROLL_CAMERA_CHAR Travant
 		SET_CAMERA_SPEED 4
@@ -712,17 +716,9 @@ eventChapter14Events ; FD/9790
 		WAIT_MOVE
 		YIELD
 
-		DIALOGUE ch14npcarrive
+		DIALOGUE fctravantarion
 		YIELD
 
-		MOVE_UNIT Travant, [0, 0], [21, 25], 2, _TravantMovestring
-		YIELD_UNK
-
-		WAIT_MOVE
-		YIELD
-
-		STORE_WORD wEventEngineCharacterTarget, Travant
-		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 	END2
 
 	_TravantMovestring ; FD/9F76
@@ -957,19 +953,11 @@ eventChapter14Events ; FD/9790
 
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000
 
-		LOAD1 eventChapter14Data._ArionGroup
-		WAIT_MOVE
-		YIELD
-
-		LOAD1 eventChapter14Data._TravantGroup
-		WAIT_MOVE
-		YIELD
-
 		SCROLL_CAMERA_CHAR Arion
 		SET_CAMERA_SPEED 4
 		YIELD
 
-		DIALOGUE ch14ending1
+		DIALOGUE fcarionmusing
 		YIELD
 
 		SCROLL_CAMERA_SPEED [16, 1], 4
@@ -977,16 +965,10 @@ eventChapter14Events ; FD/9790
 		MOVE_UNIT Arion, [0, 0], [16, 1], 2, None
 		YIELD_UNK
 
-		MOVE_UNIT Travant, [0, 0], [30, 24], 2, None
-		YIELD_UNK
-
 		WAIT_MOVE
 		YIELD
 
 		STORE_WORD wEventEngineCharacterTarget, Arion
-		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, Travant
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		STORE_BYTE wEventEngineParameter1, $0000

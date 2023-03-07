@@ -98,14 +98,14 @@ eventChapter14Data ; B1/B9FF
 	;	.byte 21, 18
 
 	_ArionGroup ; B1/BF15
-		UNIT Arion, NPC, [22, 23], [22, 23], Arion, [SilverLance], 20, False, [$02, $04, $00, $00]
+		UNIT Arion, NPC, [22, 23], [22, 23], Arion, [SilverSword, MasterLance, Vulnerary], 20, False, [$00, $0F, $02, $02]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/BF2B
 	;	.byte 21, 18
 
 	_TravantGroup ; B1/BF2D
-		UNIT Travant, NPC, [21, 23], [21, 23], Travant, [SilverLance], 20, False, [$02, $03, $00, $00]
+		UNIT Travant, NPC, [21, 23], [21, 23], Travant, [Gungnir, Vulnerary], 20, False, [$00, $0F, $02, $02]
 	UNIT
 
 	;_UnusedCoordinates4 ; B1/BF43

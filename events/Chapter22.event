@@ -43,10 +43,10 @@ eventChapter22Events ; 8C/F611
 
 	_TalkEventDefinitions ; 8C/F68D
 		EVENT $0B, _OlwenReinhardtTalk
-			CHECK_CHARS2 Olwen, Reinhardt
+			CHECK_CHARS2 Ilios, Reinhardt
 		END_DEFINITION
 		EVENT $0C, _IliosReinhardtTalk
-			CHECK_CHARS2 Ilios, Reinhardt
+			CHECK_CHARS2 Olwen, Reinhardt
 		END_DEFINITION
 		EVENT $0D, _AsbelTinaTalk
 			CHECK_CHARS2 Asbel, Tina
@@ -735,7 +735,11 @@ eventChapter22Events ; 8C/F611
 	END2
 	
 	_IliosReinhardtTalk
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $33
 		YIELD
 		
 		DIALOGUE iliosreinhardt
