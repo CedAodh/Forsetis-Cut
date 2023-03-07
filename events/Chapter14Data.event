@@ -155,4 +155,4 @@ eventChapter14Data ; B1/B9FF
 		SHOP [8, 2], [SlimSword, IronBlade, SilverSword, SteelBow]
 
 	_Vendor ; B1/BFBC
-		SHOP [10, 2], [Thunder, Heal, Vulnerary, Antitoxin, StaminaDrink]
+		SHOP [10, 2], [Heal, Light, Vulnerary, Antitoxin, StaminaDrink]
