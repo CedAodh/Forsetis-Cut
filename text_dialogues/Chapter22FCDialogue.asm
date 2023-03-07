@@ -850,6 +850,176 @@ iliosreinhardt
 .byte WaitForA
 .byte EndText
 
+diarmuidshannam
+
+.byte left_slot
+.word LoadPortrait
+.word dermott_portrait
+.text "Hah..."
+.byte NewLine
+.text "This battle is proving to be quite difficult."
+.byte WaitForA
+.byte NewLine
+.text "We're gonna have to pull out all the stops"
+.byte NewLine
+.text "for this one."
+.byte WaitForA
+.byte ScrollText
+.text "Wait...is that..."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte right_slot
+.word LoadPortrait
+.word shannam_portrait
+.text "Hng! C—Careful there, Shannam..."
+.byte NewLine
+.text "If you put yourself too out there,"
+.byte NewLine
+.text "then you are surely done for..."
+.byte WaitForA
+.byte ScrollText
+.text "Just lay low, and wait for things"
+.byte NewLine
+.text "to simmer down."
+
+.byte left_slot
+.word LoadPortrait
+.word dermott_portrait
+
+.byte left_slot
+.byte ScrollText
+.text "Prince Shannan?"
+.byte NewLine
+.text "What are you doing here?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "GAH! Wh... Who's asking?!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It's... Diarmuid, my prince."
+.byte NewLine
+.text "Did I touch a nerve just now?"
+.byte NewLine
+.text "If so, please forgive me."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I—It's alright, lad."
+.byte WaitForA
+.byte NewLine
+.text "We're reaching a breaking point in this battle,"
+.byte NewLine
+.text "and I must admit I have allowed myself"
+.byte NewLine
+.text "to become a tad disgruntled."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Of course, I understand."
+.byte WaitForA
+.byte ScrollText
+.text "Anyhow, going back to my question..."
+.byte NewLine
+.text "Weren't you supposed to march with"
+.byte NewLine
+.text "Lord Seliph's army to Connaught?"
+.byte WaitForA
+.text "I don't mean to make light of his skill,"
+.byte NewLine
+.text "but I'm sure he would've been more"
+.byte NewLine
+.text "at ease with you by his side."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I... I cleared some things up with Lord Seliph."
+.byte NewLine
+.text "We both agreed that Prince Leif's army has a"
+.byte NewLine
+.text "much bigger need for my sword arm."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ah, that does make sense."
+.byte NewLine
+.text "But if that is the case, Prince,"
+.byte NewLine
+.text "then where is the Balmung?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I, uh... I left it back at the camp!"
+.byte WaitForA
+.byte NewLine
+.text "Yes, you see, the funds from Prince Leif's"
+.byte NewLine
+.text "army are nowhere near enough to afford"
+.byte NewLine
+.text "the constant upkeep of such a precious relic."
+.byte WaitForA
+.byte ScrollText
+.text "With that in mind,"
+.byte NewLine
+.text "I can't just go swinging it left and right!"
+.byte NewLine
+.text "I must carefully consider when to use it."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I... I see, then."
+.byte WaitForA
+.byte NewLine
+.text "Well, if you say so, my Prince."
+.byte NewLine
+.text "I believe I have already taken too much"
+.byte NewLine
+.text "of your time, so let us return to the front lines!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Of course! But let me rest a little bit,"
+.byte NewLine
+.text "this whole talk has left me out of breath."
+.byte WaitForA
+.byte NewLine
+.text "I'll catch up with you in a moment!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Understood!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, boy..."
+.byte NewLine
+.text "I could've sworn I would be busted this time,"
+.byte NewLine
+.text "but luckily my guise survives another day!"
+.byte WaitForA
+.byte ScrollText
+.text "... I only hope I can keep this up"
+.byte NewLine
+.text "with this guy so close by. *gulp*"
+.byte WaitForA
+.byte EndText
+
 juliusreinhardt2
 
 .byte right_slot
