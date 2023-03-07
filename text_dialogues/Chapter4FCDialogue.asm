@@ -91,7 +91,7 @@ ch4daisyturn1
 	.byte NewLine
 	.text "lemme be the one to help ya, Boss!"
 	.byte WaitForA
-    .byte ScrollText
+        .byte ScrollText
 	.word $3A00
 	.word bandit_portrait
 	.text "Hey, what the hell're you saying?!"
