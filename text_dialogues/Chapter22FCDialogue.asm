@@ -696,6 +696,160 @@ juliusreinhardt1
 
 .byte EndText
 
+iliosreinhardt
+
+.byte left_slot
+.word LoadPortrait
+.word ilios_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word reinhardt_portrait 
+
+.byte left_slot
+.text "Hmph."
+.byte NewLine
+.text "Reinhardt."
+.byte WaitForA
+
+.byte right_slot
+.text "Ilios?!"
+.byte NewLine
+.text "I see... So the rumors are true."
+.byte NewLine
+.text "You really have turned against us..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Do you take issue with that?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I find it to be a real shame."
+.byte NewLine
+.text "I saw incredible potential in you,"
+.byte NewLine
+.text "even with your origins from a lower society."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Shame? SHAME?!"
+.byte NewLine
+.text "Are you trying to make me laugh?!"
+.byte WaitForA
+.byte NewLine
+.text "I didn't know Lady Ishtar promoted you"
+.byte NewLine
+.text "from a royal guard to a royal jester."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...I have made my point."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "How pathetic."
+.byte NewLine
+.text "Just look at yourself!"
+.byte WaitForA
+.byte ScrollText
+.text "Standing all high and mighty, while your"
+.byte NewLine
+.text "only sister, the girl who idolized you"
+.byte NewLine
+.text "her whole life, is now dead."
+.byte WaitForA
+.byte ScrollText
+.text "Ah, but I can see why you're at ease—"
+.byte NewLine
+.text "you rest well knowing that she has half the"
+.byte NewLine
+.text "Friegan high command to keep her company!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What?!"
+.byte NewLine
+.text "Did you really just—"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I did. And she wasn't taken prisoner, either."
+.byte WaitForA
+.byte ScrollText
+.text "She joined Lord Leif's army out of her own"
+.byte NewLine
+.text "volition, all in a valiant attempt to oppose"
+.byte NewLine
+.text "you and your blatant stubbornness."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You really have lost your mind."
+.byte NewLine
+.text "I see now that none of my words can"
+.byte NewLine
+.text "do anything for a tragedy such as this."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "If I'm to be a tragedy, you're to be a complete"
+.byte NewLine
+.text "and utter joke. How puzzling that such a"
+.byte NewLine
+.text "so—called prodigy can't realize his own folly."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Are you done now?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I am."
+.byte WaitForA
+.byte NewLine
+.text "I am done with House Friege's cowardice,"
+.byte NewLine
+.text "and I am done with sitting back and watching"
+.byte NewLine
+.text "my comrades die for such a pointless cause!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You've made yourself clear."
+.byte NewLine
+.text "Very well, then."
+.byte NewLine
+.text "Come."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "'The second coming of Thrud,' huh?"
+.byte NewLine
+.text "Pah... What a fall from grace."
+.byte WaitForA
+.byte ScrollText
+.text "I might be nothing but a dirty peasant"
+.byte NewLine
+.text "when compared to you, but watch as this"
+.byte NewLine
+.text "dirty peasant wipes the floor with you!"
+.byte WaitForA
+.byte EndText
+
 juliusreinhardt2
 
 .byte right_slot
