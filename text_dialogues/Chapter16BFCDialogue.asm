@@ -404,6 +404,151 @@
 
 ; .byte EndText
 
+LeifShannamTalk
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word shannam_portrait
+.text "Ah, greetings, Prince Leif."
+.byte NewLine
+.text "It is I, Prince Shannan."
+.byte WaitForA
+
+.byte right_slot
+.text "What?!"
+.byte NewLine
+.text "THE Prince Shannan?!"
+.byte NewLine
+.text "What in the world are you doing here?!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I received word that you were in deep turmoil,"
+.byte NewLine
+.text "so I decided to journey from my native Isaach"
+.byte NewLine
+.text "to pledge my blade to your cause."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "T-thank you so much, Prince Shannan..."
+.byte NewLine
+.text "This is an outstanding honor!"
+.byte WaitForA
+.byte NewLine
+.text "With you by our side, our strength"
+.byte NewLine
+.text "and morale will surely be bolstered!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Indeed! However, Prince, I must warn you:"
+.byte NewLine
+.text "my blade, the holy Balmung, is a very"
+.byte NewLine
+.text "expensive weapon to maintain."
+.byte WaitForA
+.byte ScrollText
+.text "Unless you're high on gold reserves,"
+.byte NewLine
+.text "I suggest you refrain from putting me"
+.byte NewLine
+.text "on the frontlines excessively, if at all."
+.byte WaitForA
+.byte ScrollText
+.text "I'll happily do everything I can to support"
+.byte NewLine
+.text "all other parts of your Liberation Army."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "O-of course. I understand."
+.byte WaitForA
+.byte NewLine
+.text "We'll save your prowess for when"
+.byte NewLine
+.text "our situation is the most dire,"
+.byte NewLine
+.text "if that's alright with you."
+.byte WaitForA
+.byte ScrollText
+.text "Is there...anything else we can do to"
+.byte NewLine
+.text "accommodate you in the meantime?"
+.byte WaitForA
+.byte ScrollText
+.text "You look as though you're rather weary"
+.byte NewLine
+.text "from such a long trek down here."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Th-thank you for the offer,"
+.byte NewLine
+.text "but it's not necessary."
+.byte WaitForA
+.byte ScrollText
+.text "Other than some payment for my"
+.byte NewLine
+.text "contributions, I believe I can get by"
+.byte NewLine
+.text "well enough on my own."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "P...Payment...?"
+.byte NewLine
+.text "A-all right..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I will be taking my leave now—"
+.byte NewLine
+.text "we must escape this forest at once."
+.byte WaitForA
+.byte ScrollText
+.text "I look forward to bearing witness to"
+.byte NewLine
+.text "your sword skills, Prince Leif!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "Well, that was...unexpected, to say the least. "
+.byte NewLine
+.text "Isn't Shannan a prince with tremendous"
+.byte NewLine
+.text "support from his kingdom?"
+.byte WaitForA
+.byte NewLine
+.text "Why would he of all people be asking for gold?"
+.byte WaitForA
+.byte NewLine
+.text "I suppose maybe..."
+.byte NewLine
+.text "it's not really any of my business?"
+.byte WaitForA
+.byte ScrollText
+.text "Regardless, I have much more"
+.byte NewLine
+.text "important things to focus on."
+.byte WaitForA
+.byte EndText
+
 tinaasbel
 
 .byte right_slot
