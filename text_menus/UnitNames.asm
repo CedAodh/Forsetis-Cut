@@ -96,7 +96,7 @@ char_name_pointers		.block
 	.word	<>char_names._MunsterName
 	.word	<>char_names._MunsterName	; Unused
 	.word	<>char_names._MunsterName	; Unused
-	.word	<>char_names._MunsterName	; Unused
+	.word	<>char_names._PierreName	; Unused
 
 	.word	<>char_names._EisenhauName
 	.word	<>char_names._HannibalName
@@ -1173,7 +1173,10 @@ _DracoName
 _ColhoName
 	.text "Colho "
 	.word $0000
-
+	
+_PierreName
+	.text "Pierre"
+	.word $0000
 
 .bend
 .here
