@@ -94,7 +94,7 @@ eventChapter10Data ; B1/D1EF
 	.byte $FF
 
 	_Armory ; B1/D4E4
-		SHOP [27, 5], [IronSword, SteelSword, SlimSword, IronBlade]
+		SHOP [27, 5], [IronBlade, SlimSword, SteelSword, KillingEdge]
 
 	_Vendor ; B1/D4F6
-		SHOP [28, 4], [Vulnerary, Heal, Torch, Thunder]
+		SHOP [28, 4], [Heal, Torch, Thunder, PureWater, Vulnerary]
