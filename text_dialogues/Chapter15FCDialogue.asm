@@ -692,3 +692,112 @@ ch15tanyamareeta
 .byte WaitForA
 
 .byte EndText
+
+leifasaello
+
+.byte right_slot
+.word LoadPortrait
+.word asaello_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "Greetings. You must be Sir Asaello."
+.byte NewLine
+.text "Daisy has told me all about you."
+.byte WaitForA
+.byte NewLine
+.text "It's an honor to have such a skilled marksman"
+.byte NewLine
+.text "in our arsenal."
+.byte WaitForA
+
+.byte right_slot
+.text "Yeah, you mean “expendable,” right?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I-I'm sorry?"
+.byte NewLine
+.text "Where in the world did you get that from?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Forget it."
+.byte WaitForA
+.byte ScrollText
+.text "Look, I understand that you're the leader"
+.byte NewLine
+.text "of this army and some majestic figurehead—but don't"
+.byte NewLine
+.text "think that I don't have my eye on you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Huh?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I'm here now for my sister—not you."
+.byte WaitForA
+.byte ScrollText
+.text "I don't know what's going on between"
+.byte NewLine
+.text "the two of you; but if I find out that"
+.byte NewLine
+.text "you're manipulating her, or anything like that...
+.byte WaitForA
+.byte ScrollText
+.text "Don't be surprised if you end up in disfigurement."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Excuse me?!"
+.byte NewLine
+.text "I think that's a little—"
+.byte NewLine
+.text "I-I mean, why would you..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You heard me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Then you know what?"
+.byte NewLine
+.text "I accept your terms, Sir Asaello."
+.byte WaitForA
+.byte ScrollText
+.text "At least out of the interest in keeping"
+.byte NewLine
+.text "my limbs attached...I will fight—"
+.byte WaitForA
+.byte NewLine
+.text "fight and prove that I'm worthy"
+.byte NewLine
+.text "of both your trust and ability."
+.byte WaitForA
+.byte ScrollText
+.text "All I ask is that you join me and watch.
+.byte NewLine
+.text "Are we in agreement?"
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Hmm... Looks like it."
+.byte NewLine
+.text "So... I guess I'm under your command"
+.byte NewLine
+.text "now...Prince Leif."
+.byte WaitForA
+
+.byte EndText

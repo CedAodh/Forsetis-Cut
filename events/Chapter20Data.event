@@ -186,3 +186,6 @@ eventChapter20Data ; B1/9194
 
 	_Vendor ; B1/9889
 		SHOP [9, 1], [Vulnerary, Torch, Heal, Thunder]
+		
+	_SecretShop
+		SHOP [4, 1], [LightningSword, FlameSword, WindSword, Recover, Unlock, Ensorcel, StaminaDrink]
