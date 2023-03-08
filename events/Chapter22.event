@@ -1021,7 +1021,7 @@ eventChapter22Events ; 8C/F611
 		STORE_WORD wEventEngineCharacterTarget, Reinhardt
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 		
-		MOVE_UNIT JuliusJuliaPortrait, [0, 0], [18, 17], 1, None
+		MOVE_UNIT Julius, [0, 0], [18, 17], 1, None
 		YIELD
 		
 		WAIT_MOVE
@@ -1031,7 +1031,7 @@ eventChapter22Events ; 8C/F611
 		
 		STORE_WORD wEventEngineParameter1, Rewarp
 		STORE_WORD wEventEngineParameter2, $0000
-		STORE_WORD wEventEngineCharacterStructParameter, JuliusJuliaPortrait
+		STORE_WORD wEventEngineCharacterStructParameter, Julius
 		STORE_WORD wEventEngineCharacterTarget, $0000
 		STORE_WORD wEventEngineXCoordinate, $00FF
 		STORE_WORD wEventEngineYCoordinate, $00FF

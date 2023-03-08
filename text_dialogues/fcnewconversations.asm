@@ -2742,7 +2742,7 @@ nannamareeta
 	.byte ScrollText
 	.text "We managed to escape from Munster,"
 	.byte NewLine
-	.text "and now we’re on our way to aid Tahra."
+	.text "and now we’re on our way to aid Tarrah."
 	.byte WaitForA
 	.byte NewLine
 	.text "We’re only here because going through this"
@@ -3238,7 +3238,7 @@ homernanna1
 	.byte NewLine
 	.text "I...didn’t know you actually followed us"
 	.byte NewLine
-	.text "all the way from Tahra."
+	.text "all the way from Tarrah."
 	.byte WaitForA
 
 	.byte right_slot
@@ -3997,7 +3997,7 @@ safylinoan
 	.byte NewLine
 	.text "There are no words to thank you for making"
 	.byte NewLine
-	.text "such a perilous journey just for Tahra’s sake."
+	.text "such a perilous journey just for Tarrah’s sake."
 	.byte WaitForA
 
 	.byte left_slot
@@ -4085,7 +4085,7 @@ safylinoan
 	.byte NewLine
 	.text "in exchange for being the one to"
 	.byte NewLine
-	.text "help Tahra in her hour of need."
+	.text "help Tarrah in her hour of need."
 	.byte WaitForA
 	.byte ScrollText
 	.text "For the future of our city,"
@@ -4137,7 +4137,7 @@ safylinoan
 	.byte ScrollText
 	.text "But please, Safy..."
 	.byte NewLine
-	.text "I know how much Tahra and I mean to you."
+	.text "I know how much Tarrah and I mean to you."
 	.byte WaitForA
 	.byte NewLine
 	.text "But you must promise me that you’ll never"
@@ -4518,7 +4518,7 @@ daisyshannam
 	.byte ScrollText
 	.text "Right now,"
 	.byte NewLine
-	.text "it is up to us to defend the people of Tahra,"
+	.text "it is up to us to defend the people of Tarrah,"
 	.byte NewLine
 	.text "and we will not fail!"
 	.byte WaitForA

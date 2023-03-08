@@ -45,7 +45,7 @@ eventChapter4xData ; B1/EB48
 		UNIT MunsterArmoredAxe, Enemy, [10, 3], [10, 3], Bandole, [HandAxe, BattleAxe], 7, False, [$01, $03, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [10, 4], [10, 4], Bandole, [LongLance, Vulnerary], 10, False, [$01, $03, $00, $00]
 		UNIT MunsterArmoredAxe, Enemy, [8, 3], [8, 3], Bandole, [HandAxe, BattleAxe], 7, False, [$01, $03, $00, $00]
-		UNIT MunsterBishop1, Enemy, [9, 3], [9, 3], Bandole, [Elfire, Physic, DoorKey], 3, False, [$01, $03, $00, $00]
+		UNIT MunsterBishop1, Enemy, [9, 3], [9, 3], Bandole, [Bolganone, Physic, DoorKey], 3, False, [$01, $03, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [5, 7], [5, 7], Bandole, [ShortLance], 1, False, [$01, $03, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [11, 7], [11, 7], Bandole, [ShortLance], 1, False, [$00, $03, $00, $00]
 		UNIT MunsterMage2, Enemy, [3, 2], [3, 2], Bandole, [Thunder], 7, False, [$01, $03, $00, $00]

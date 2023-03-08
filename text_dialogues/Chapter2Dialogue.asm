@@ -385,7 +385,7 @@ ch2villagevulnerary
 .byte NewLine
 .text "Just recently, I heard that a cleric"
 .byte NewLine
-.text "fleeing Tahra was taken prisoner by 'em!"
+.text "fleeing Tarrah was taken prisoner by 'em!"
 .byte WaitForA
 .byte ScrollText
 .text "Mayhap you can help the poor dear, eh?"

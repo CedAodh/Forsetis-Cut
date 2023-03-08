@@ -18,7 +18,7 @@ eventChapter17AData ; B1/A909
 		UNIT SilessePegasusRider3, Enemy, [6, 3], [6, 3], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
 		UNIT SilessePegasusRider3, Enemy, [7, 2], [7, 2], Misha, [Ridersbane, Javelin, Vulnerary], 8, False, [$00, $0C, $00, $40]
 		UNIT Misha, Enemy, [4, 3], [28, 2], Misha, [Ridersbane, WindSword, Vulnerary], 4, False, [$00, $0C, $00, $40]
-		UNIT FriegeBishop2, Enemy, [30, 2], [30, 2], Nicolov, [Physic, Elfire, Meteor], 6, False, [$01, $03, $00, $00]
+		UNIT FriegeBishop2, Enemy, [30, 2], [30, 2], Nicolov, [Physic, Bolganone, Meteor], 6, False, [$01, $03, $00, $00]
 		UNIT FriegeBishop2, Enemy, [26, 2], [26, 2], Nicolov, [Physic, Thoron, Bolting], 6, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredSword1, Enemy, [26, 17], [26, 17], Nicolov, [Longsword, Vulnerary], 16, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredSword1, Enemy, [26, 18], [26, 18], Nicolov, [Longsword, Vulnerary], 16, False, [$00, $03, $00, $00]

@@ -106,14 +106,14 @@ ch7op1
 
 .byte Right_slot
 .byte ScrollText
-.text "...I understand. We'll take refuge"
+.text "...I understand. We'll take refuge in"
 .byte NewLine
-.text "in Castle Meath, and head for Tahra afterward."
+.text "Castle Meath, and head for Tarrah afterward."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "You want to make for Tahra...? As in,"
+.text "You want to make for Tarrah...? As in,"
 .byte NewLine
 .text "the city refusing to take part in child hunts?"
 .byte WaitForA
@@ -132,9 +132,9 @@ ch7op1
 
 .byte Right_slot
 .byte ScrollText
-.text "Tahra is...my home away from home,"
+.text "Tarrah is...my home away from home,"
 .byte NewLine
-.text "you could say. The Duke of Tahra sheltered me"
+.text "you could say. The Duke of Tarrah sheltered me"
 .byte NewLine
 .text "for years and was killed by the Empire for it."
 .byte WaitForA
@@ -253,7 +253,9 @@ ch7ending1
 
 .byte Right_slot
 .byte ScrollText
-.text "We'll head to Tahra to fend off the Empire's siege."
+.text "We'll head to Tarrah to fend off"
+.byte NewLine
+.text "the Empire's siege."
 .byte NewLine
 .text "I've many friends there in need of help."
 .byte WaitForA
@@ -628,7 +630,7 @@ ch7finnsafie5
 .byte ScrollText
 .text "I cannot allow myself to be delayed any longer."
 .byte NewLine
-.text "Sister, please make your way back to Tahra."
+.text "Sister, please make your way back to Tarrah."
 .byte WaitForA
 
 .byte Left_slot
@@ -646,7 +648,7 @@ ch7finnsafie5
 
 .byte Left_slot
 .byte ScrollText
-.text "When I left Tahra, I swore to Saint Heim that,"
+.text "When I left Tarrah, I swore to Saint Heim that,"
 .byte NewLine
 .text "for those willing to defend the city,"
 .byte NewLine
@@ -655,7 +657,7 @@ ch7finnsafie5
 .byte ScrollText
 .text "If I can help Lord Leif—and in so doing, help"
 .byte NewLine
-.text "Tahra—then I must. We are both bound by duty,"
+.text "Tarrah—then I must. We are both bound by duty,"
 .byte NewLine
 .text "Sir Finn. Allow me to uphold my own oath."
 .byte WaitForA
@@ -820,7 +822,7 @@ ch7safieshiva
 
 .byte Left_slot
 .byte ScrollText
-.text "Safy. I'm Safy of Tahra."
+.text "Safy. I'm Safy of Tarrah."
 .byte WaitForA
 
 .byte EndText
@@ -969,7 +971,7 @@ ch7finnleif
 .byte NewLine
 .text "see to their release. With our forces bolstered,"
 .byte NewLine
-.text "we can make our way to Tahra."
+.text "we can make our way to Tarrah."
 .byte WaitForA
 .byte ScrollText
 .text "...You've missed the city as well, haven't you?"
@@ -1228,7 +1230,7 @@ ch7antitoxinhouse
 .byte Right_slot
 .word LoadPortrait
 .word beardedman_portrait
-.text "Yer headed fer Tahra?"
+.text "Yer headed fer Tarrah?"
 .byte NewLine
 .text "Best take this Antitoxin with you, then."
 .byte WaitForA

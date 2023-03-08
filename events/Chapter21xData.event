@@ -91,7 +91,7 @@ eventChapter21xData ; B1/8862
 	;	.byte 8, 7
 
 	_JuliusIshtarGroup ; B1/8C04
-		UNIT JuliusJuliaPortrait, Enemy, [15, 17], [15, 17], Zaun, [BattleAxe, HandAxe, Vulnerary], 18, False, [$00, $03, $02, $00]
+		UNIT Julius, Enemy, [15, 17], [15, 17], Zaun, [BattleAxe, HandAxe, Vulnerary], 18, False, [$00, $03, $02, $00]
 		UNIT Ishtar, Enemy, [14, 17], [14, 17], Zaun, [BattleAxe, HandAxe, Vulnerary], 18, False, [$00, $03, $02, $00]
 	UNIT
 

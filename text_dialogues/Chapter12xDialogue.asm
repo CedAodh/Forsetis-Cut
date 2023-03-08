@@ -543,7 +543,7 @@ ch12xtinasafie
 .byte ScrollText
 .text "Start from the beginning."
 .byte NewLine
-.text "Why did you leave Tahra?"
+.text "Why did you leave Tarrah?"
 .byte WaitForA
 
 .byte Left_slot
@@ -673,7 +673,7 @@ ch12xtinasafie
 .byte ScrollText
 .text "...It's nothing. Listen, I told you to wait"
 .byte NewLine
-.text "in Tahra until I returned. Promise me"
+.text "in Tarrah until I returned. Promise me"
 .byte NewLine
 .text "you'll do as I say from now on, all right?"
 .byte WaitForA
@@ -1023,7 +1023,7 @@ ch12xending1
 .byte NewLine
 .text "the rest of the men a much-needed breather."
 .byte NewLine
-.text "We must make haste to Tahra!"
+.text "We must make haste to Tarrah!"
 .byte WaitForA
 
 .byte EndText

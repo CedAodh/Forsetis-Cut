@@ -9,7 +9,7 @@ ch4xop1
 .word ced_portrait
 
 .byte Left_slot
-.text "Sir Ced, do you think the kids are safe?"
+.text "Lord Ced, do you think the kids are safe?"
 .byte WaitForA
 
 .byte Right_slot
@@ -72,7 +72,7 @@ ch4xop1
 .byte ScrollText
 .text "Lord Leif was a dear friend of mine, you see."
 .byte NewLine
-.text "We got separated in Tahra, years ago,"
+.text "We got separated in Tarrah, years ago,"
 .byte NewLine
 .text "and I've been looking for him ever since."
 .byte WaitForA
@@ -126,16 +126,16 @@ ch4xop1
 .text "It's no fault of yours."
 .byte WaitForA
 .byte ScrollText
-.text "Besides, all I really taught you"
+.text "Besides, all I've really done for you is help"
 .byte NewLine
-.text "was that Grafcalibur spell."
+.text "you master your family's Grafcalibur spell."
 .byte NewLine
-.text "Do me proud, and use it to protect Prince Leif."
+.text "Do us proud, and use it to protect Prince Leif."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Sir Ced, will... Will we see each other again?"
+.text "Lord Ced, will... Will we see each other again?"
 .byte WaitForA
 
 .byte Right_slot
@@ -156,7 +156,7 @@ ch4xop1
 .byte ScrollText
 .text "Munster...? R-right! Munster it is!"
 .byte NewLine
-.text "Don't you forget it, Sir Ced!"
+.text "Don't you forget it, Lord Ced!"
 .byte WaitForA
 
 .byte EndText
@@ -226,7 +226,7 @@ ch4xasbelleiftalk
 .byte Left_slot
 .text "Asbel?! What in the world are you doing here?"
 .byte NewLine
-.text "Why aren't you still in Tahra?"
+.text "Why aren't you still in Tarrah?"
 .byte WaitForA
 
 .byte Right_slot
@@ -245,7 +245,7 @@ ch4xasbelleiftalk
 
 .byte Left_slot
 .byte ScrollText
-.text "You left Tahra that quickly?! Then...you've"
+.text "You left Tarrah that quickly?! Then...you've"
 .byte NewLine
 .text "spent the last three years looking for me..."
 .byte WaitForA
@@ -273,7 +273,7 @@ ch4xasbelleiftalk
 .text "At the time, I didn't have a choice."
 .byte WaitForA
 .byte ScrollText
-.text "Tahra had been surrounded by the Empire."
+.text "Tarrah had been surrounded by the Empire."
 .byte NewLine
 .text "I had... I had prepared myself"
 .byte NewLine

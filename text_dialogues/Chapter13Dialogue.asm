@@ -30,7 +30,7 @@ ch13armorslayerhouse
 .byte Right_slot
 .word LoadPortrait
 .word oldman_portrait
-.text "If you're headed to help Tahra, watch out"
+.text "If you're headed to help Tarrah, watch out"
 .byte NewLine
 .text "for the Imperial troops—they're not your normal"
 .byte NewLine
@@ -56,7 +56,7 @@ ch13hammerhouse
 .byte NewLine
 .text "I tell ya, you've got stones on you,"
 .byte NewLine
-.text "comin' to Tahra's rescue like this."
+.text "comin' to Tarrah's rescue like this."
 .byte WaitForA
 .byte ScrollText
 .text "Just in case you're runnin' low on weapons,"
@@ -177,7 +177,7 @@ ch13gladefinn
 .byte NewLine
 .text "that Prince Leif and his retinue make it"
 .byte NewLine
-.text "inside Tahra's walls!"
+.text "inside Tarrah's walls!"
 .byte WaitForA
 .byte ScrollText
 .text "We've gotten word that one of House Friege's"
@@ -212,7 +212,7 @@ ch13gladeselphinaA
 
 .byte Left_slot
 .byte ScrollText
-.text "Of course! Prince Leif heard that Tahra"
+.text "Of course! Prince Leif heard that Tarrah"
 .byte NewLine
 .text "was in jeopardy, and we set off together."
 .byte NewLine
@@ -276,7 +276,7 @@ ch13gladeselphinaA
 .byte ScrollText
 .text "I came across it by chance during my time"
 .byte NewLine
-.text "in Tahra. I took the liberty of buying it"
+.text "in Tarrah. I took the liberty of buying it"
 .byte NewLine
 .text "for you, for when we met again..."
 .byte WaitForA
@@ -318,7 +318,7 @@ ch13gladeselphinaB
 
 .byte Left_slot
 .byte ScrollText
-.text "Of course! Prince Leif heard that Tahra"
+.text "Of course! Prince Leif heard that Tarrah"
 .byte NewLine
 .text "was in jeopardy, and we set off together."
 .byte WaitForA
@@ -505,7 +505,7 @@ ch13gladeselphinaB
 .byte ScrollText
 .text "I came across it by chance during my time"
 .byte NewLine
-.text "in Tahra. I took the liberty of buying it"
+.text "in Tarrah. I took the liberty of buying it"
 .byte NewLine
 .text "for you, for when we met again..."
 .byte WaitForA
@@ -810,7 +810,7 @@ ch13opening3
 .byte ScrollText
 .text "So he means to keep womanizing"
 .byte NewLine
-.text "while the people of Tahra fight for their lives?"
+.text "while the people of Tarrah fight for their lives?"
 .byte WaitForA
 .byte ScrollText
 .text "Damned philanderer... He won't be any help."
@@ -854,7 +854,7 @@ ch13opening4
 .byte ScrollText
 .text "The road has been long,"
 .byte NewLine
-.text "but may I present the city of Tahra—"
+.text "but may I present the city of Tarrah—"
 .byte WaitForA
 .byte ScrollText
 .text "H-how?! How is this possible?"
@@ -865,7 +865,7 @@ ch13opening4
 .byte Right_slot
 .text "To arms, then!"
 .byte NewLine
-.text "Tell our forces to charge into Tahra!"
+.text "Tell our forces to charge into Tarrah!"
 .byte NewLine
 .text "We can't abandon the city's people!"
 .byte WaitForA
@@ -884,7 +884,7 @@ ch13opening4
 .byte ScrollText
 .text "Any of our forces that made for"
 .byte NewLine
-.text "Tahra's defense now would face..."
+.text "Tarrah's defense now would face..."
 .byte NewLine
 .text "more than their share of danger."
 .byte WaitForA
@@ -893,7 +893,7 @@ ch13opening4
 .byte ScrollText
 .text "...I'm aware of the risks. But if we stand here"
 .byte NewLine
-.text "and allow Tahra to be razed to the ground,"
+.text "and allow Tarrah to be razed to the ground,"
 .byte NewLine
 .text "our war will be lost before it's even begun!"
 .byte WaitForA
@@ -909,7 +909,7 @@ ch13opening4
 .byte WaitForA
 
 .byte Left_slot
-.text "I am. If we do nothing to defend Tahra,"
+.text "I am. If we do nothing to defend Tarrah,"
 .byte NewLine
 .text "we lose the support of the people."
 .byte NewLine
@@ -978,7 +978,7 @@ ch13closing
 .byte ScrollText
 .text "From the moment he met you, my father knew"
 .byte NewLine
-.text "what sheltering you in Tahra would mean..."
+.text "what sheltering you in Tarrah would mean..."
 .byte NewLine
 .text "He was prepared for the consequences."
 .byte WaitForA
@@ -1008,7 +1008,7 @@ ch13closing
 .byte NewLine
 .text "but now I've imperiled the tens of thousands"
 .byte NewLine
-.text "of people that call Tahra home."
+.text "of people that call Tarrah home."
 .byte WaitForA
 .byte ScrollText
 .text "I... I don't know what to do"
@@ -1022,7 +1022,7 @@ ch13closing
 .byte NewLine
 .text "I swear upon my sword"
 .byte NewLine
-.text "that I'll protect both you and the city of Tahra!"
+.text "that I'll protect both you and the city of Tarrah!"
 .byte WaitForA
 
 .byte EndText
@@ -1052,7 +1052,7 @@ ch13wm1
 
 ch13wm2
 
-.text "the walled city of Tahra, its shape tall and"
+.text "the walled city of Tarrah, its shape tall and"
 .byte NewLine
 .text "imposing, stood before them on the horizon."
 .byte WaitForA
@@ -1064,7 +1064,7 @@ ch13wm2
 .word $0126 ;linoan
 .word $0311 ;y then x
 .byte NewLine
-.text "daughter of the late Duke of Tahra,"
+.text "daughter of the late Duke of Tarrah,"
 .byte WaitForA
 .byte NewLine
 .text "the free city had rebelled against the Empire,"
@@ -1093,7 +1093,7 @@ ch13wm2
 .byte NewLine
 .text "attack had even begun,"
 .byte WaitForA
-.text " Tahra would now"
+.text " Tarrah would now"
 .byte NewLine
 .text "find it exceptionally difficult to recover."
 .byte WaitForA
@@ -1115,7 +1115,7 @@ ch13wm2
 .byte WaitForA
 .byte ScrollText
 
-.text "In exchange, Tahra had been allowed to keep"
+.text "In exchange, Tarrah had been allowed to keep"
 .byte NewLine
 .text "its autonomy, but even at the time,"
 .byte WaitForA
@@ -1133,7 +1133,7 @@ ch13fall
 .byte Right_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "T-Tahra has fallen!"
+.text "T-Tarrah has fallen!"
 .byte WaitForA
 .byte ScrollText
 .text "With the city crushed by the Empire,"

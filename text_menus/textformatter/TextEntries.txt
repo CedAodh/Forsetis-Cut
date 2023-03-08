@@ -213,7 +213,7 @@ Loptrian
 (Mercenary
 Resistance
 Silesse
-Tahra
+Tarrah
 Thracia Troop 
 
 //-Archer
@@ -252,7 +252,7 @@ Travant
 Liberation Ar[my
 Raydrik's Unit
 Unkno]wn Party
-Tahra's Ar[my
+Tarrah's Ar[my
 //Leonster's Ar[my
   Leonster34Ar[my
 //(Munster's Ar[my

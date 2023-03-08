@@ -9,7 +9,7 @@ ch21churchlinoan
 .word jeanne_portrait
 .text "Ah..."
 .byte NewLine
-.text "You're Duchess Linoan of Tahra, are you not?"
+.text "You're Duchess Linoan of Tarrah, are you not?"
 .byte WaitForA
 
 .byte Right_slot
@@ -76,7 +76,7 @@ ch21churchlinoan
 .text "Your father didn't tell you?"
 .byte WaitForA
 .byte ScrollText
-.text "The Ducal House of Tahra is descended from"
+.text "The Ducal House of Tarrah is descended from"
 .byte NewLine
 .text "Saint Heim, the first of the Grannvale kings."
 .byte WaitForA
@@ -247,7 +247,7 @@ ch21opening1
 .byte ScrollText
 .text "I've heard it was built to receive the prayers"
 .byte NewLine
-.text "of the Ducal Family of Tahra..."
+.text "of the Ducal Family of Tarrah..."
 .byte WaitForA
 
 .byte Left_slot

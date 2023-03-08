@@ -34,7 +34,7 @@ eventChapter13Data ; B1/BFCE
 		UNIT FriegeMage1, Enemy, [7, 20], [7, 20], Liszt, [Thunder], 7, False, [$00, $03, $00, $00]
 		UNIT FriegeMage1, Enemy, [11, 20], [11, 20], Liszt, [Thunder], 7, False, [$00, $03, $00, $00]
 		UNIT FriegePriest1, Enemy, [10, 20], [10, 20], Liszt, [Heal], 5, False, [$03, $07, $00, $00]
-		UNIT FriegeBishop1, Enemy, [2, 21], [2, 21], Baldach, [Bolting, Elfire, Physic, Vulnerary], 12, False, [$01, $03, $00, $00]
+		UNIT FriegeBishop1, Enemy, [2, 21], [2, 21], Baldach, [Bolting, Bolganone, Physic, Vulnerary], 12, False, [$01, $03, $00, $00]
 		UNIT FriegeBowKnight2, Enemy, [36, 6], [36, 6], Liszt, [Longbow], 6, False, [$00, $0F, $00, $00]
 		UNIT FriegeBowKnight2, Enemy, [37, 6], [37, 6], Liszt, [Longbow], 6, False, [$00, $0F, $00, $00]
 		UNIT FriegeBallista1, Enemy, [1, 12], [1, 12], Liszt, [Ballista], 3, False, [$01, $03, $00, $00]

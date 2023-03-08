@@ -674,7 +674,7 @@ ch11endfreddead
 .byte ScrollText
 .text "Ignore any enemies already in retreat."
 .byte NewLine
-.text "We must make for Tahra on the double!"
+.text "We must make for Tarrah on the double!"
 .byte WaitForA
 
 .byte EndText
@@ -721,7 +721,7 @@ ch11wm2
 .byte ScrollText
 .text "If they could not capture Fort Dundrum,"
 .byte NewLine
-.text "the army would never reach Tahra in time..."
+.text "the army would never reach Tarrah in time..."
 .byte WaitForA
 
 .byte EndText

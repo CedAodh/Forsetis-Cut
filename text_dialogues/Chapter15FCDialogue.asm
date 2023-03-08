@@ -749,7 +749,7 @@ leifasaello
 .byte NewLine
 .text "the two of you; but if I find out that"
 .byte NewLine
-.text "you're manipulating her, or anything like that...
+.text "you're manipulating her, or anything like that..."
 .byte WaitForA
 .byte ScrollText
 .text "Don't be surprised if you end up in disfigurement."
@@ -786,7 +786,7 @@ leifasaello
 .text "of both your trust and ability."
 .byte WaitForA
 .byte ScrollText
-.text "All I ask is that you join me and watch.
+.text "All I ask is that you join me and watch."
 .byte NewLine
 .text "Are we in agreement?"
 .byte WaitForA 

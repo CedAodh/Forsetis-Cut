@@ -48,9 +48,9 @@ ch12magicringhousenotolwen
 .text "too dangerous to be worth the trouble."
 .byte WaitForA
 .byte ScrollText
-.text "That was before the Imperial Army"
+.text "That was before the Imperial Army started"
 .byte NewLine
-.text "started showin' up in droves to attack Tahra..."
+.text "showin' up in droves to attack Tarrah..."
 .byte WaitForA
 .byte ScrollText
 .text "If you plan on makin' trouble fer them,"
@@ -562,7 +562,7 @@ ch12opening1
 .byte ScrollText
 .text "Just be on the lookout for the Imperial Army."
 .byte NewLine
-.text "With all the troops they're sending to Tahra,"
+.text "With all the troops they're sending to Tarrah,"
 .byte NewLine
 .text "they might come through the forest."
 .byte WaitForA
@@ -806,7 +806,7 @@ ch12closingfailedgaiden
 .byte ScrollText
 .text "Then we're in agreement, sire. We should"
 .byte NewLine
-.text "march with all haste—we're nearly to Tahra."
+.text "march with all haste—we're nearly to Tarrah."
 .byte WaitForA
 
 .byte EndText
@@ -830,7 +830,7 @@ ch12closingtogaiden
 .byte NewLine
 .text "I advise that we seize this opportunity"
 .byte NewLine
-.text "to purge Tahra's borders of these vermin."
+.text "to purge Tarrah's borders of these vermin."
 .byte WaitForA
 
 .byte Right_slot
@@ -992,7 +992,7 @@ ch12wm1
 .byte NewLine
 .text "just how little time remained before"
 .byte NewLine
-.text "the Empire launched its assault on Tahra."
+.text "the Empire launched its assault on Tarrah."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -1026,7 +1026,7 @@ ch12wm3
 .word $0614 ;y then x
 .text "When they finally arrived at the edges"
 .byte NewLine
-.text "of Dacia Forest, which extends around Tahra's"
+.text "of Dacia Forest, which extends around Tarrah's"
 .byte WaitForA
 .byte NewLine
 .text "eastern border, it was the dead of night."

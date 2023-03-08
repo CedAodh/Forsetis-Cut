@@ -37,7 +37,7 @@ ch10wm1
 .text "all their own: the Liberation Army."
 .byte WaitForA
 .byte ScrollText
-.text "The time was finally right to head for Tahra"
+.text "The time was finally right to head for Tarrah"
 .byte NewLine
 .text "and break the siege upon the city."
 .byte WaitForA
@@ -675,9 +675,9 @@ ch10endlargodead
 .byte ScrollText
 .text "That seems to be the hand we've been dealt,"
 .byte NewLine
-.text "my prince. If we're to arrive at Tahra in time"
+.text "my prince. If we're to arrive at Tarrah"
 .byte NewLine
-.text "to act, we must take Fort Dundrum."
+.text "in time to act, we must take Fort Dundrum."
 .byte WaitForA
 
 .byte Left_slot

@@ -736,7 +736,7 @@ ch4npcturn3
 
 .byte Left_slot
 .byte ScrollText
-.text "Their leader, Sir Ced..."
+.text "Their leader, Lord Ced..."
 .byte NewLine
 .text "They call 'im the “Hero on the Wind.”"
 .byte WaitForA
@@ -759,7 +759,7 @@ ch4npcturn3
 .byte ScrollText
 .text "More'n luck, maybe."
 .byte NewLine
-.text "That's why Sir Ced's a man worth believin' in."
+.text "That's why Lord Ced's a man worth believin' in."
 .byte NewLine
 .text "Can't go wrong with a fella like that."
 .byte WaitForA
@@ -1135,7 +1135,7 @@ ch4ending
 
 .byte Left_slot
 .byte ScrollText
-.text "Splendid! Then Tahra is the only city"
+.text "Splendid! Then Tarrah is the only city"
 .byte NewLine
 .text "not under our influence."
 .byte WaitForA

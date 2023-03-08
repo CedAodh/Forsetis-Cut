@@ -297,7 +297,7 @@ eventChapter4Events ; 99/8778
 		macroOpenDoorByTileChangeID 11
 
 		EVENT_CMP_BYTE_AT_EQ wUnknown001730, 0
-		JUMP_FALSE +
+		JUMP_FALSE ++
 
 		STORE_WORD wEventEngineCharacterTarget, Lifis
 		CALL_ASM_LOOP rlASMCCheckUnitRescuedByPlayerOrNPC, $0000
@@ -305,6 +305,14 @@ eventChapter4Events ; 99/8778
 
 		PLAY_SOUND_WORD $00F7
 		DIALOGUE ch4lifiscellopened
+		YIELD
+		
+		JUMP ++
+		
+		+
+		
+		PLAY_SOUND_WORD $00F7
+		DIALOGUE placeholder
 		YIELD
 
 		PLAY_SOUND_WORD $00E8

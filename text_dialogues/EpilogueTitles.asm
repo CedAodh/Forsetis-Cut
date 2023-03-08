@@ -222,7 +222,7 @@ tanyatitle
 
 linoantitle
 .byte $09
-.text "Linoan — Blossoming Flower of Tahra"
+.text "Linoan — Blossoming Flower of Tarrah"
 .byte $05
 .byte EndText
 

@@ -499,7 +499,7 @@ ch6cedarrive
 .byte ScrollText
 .text "As if you even have to ask!"
 .byte NewLine
-.text "We're with you, Sir Ced!"
+.text "We're with you, Lord Ced!"
 .byte WaitForA
 
 .byte EndText
@@ -577,7 +577,7 @@ ch6southgateopened2
 
 .byte Right_slot
 .byte ScrollText
-.text "Wait a little longer, and Sir Ced oughta show"
+.text "Wait a little longer, and Lord Ced oughta show"
 .byte NewLine
 .text "up with the Magi. Should make things easier."
 .byte WaitForA
@@ -923,7 +923,7 @@ ch6cliffsaved
 .word black_mustache_portrait
 .text "Yer the folk that helped me grandson Cliff,"
 .byte NewLine
-.text "ain't ya? I'm mighty thankful that Sir Ced"
+.text "ain't ya? I'm mighty thankful that Lord Ced"
 .byte NewLine
 .text "has friends like y'all to rely on."
 .byte WaitForA

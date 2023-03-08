@@ -51,7 +51,7 @@ ch2xop1
 	.byte NewLine
 	.text "hopes realized. Unless you wish to join us"
 	.byte NewLine
-	.text "in fighting for Tahra, I will not falter."
+	.text "in fighting for Tarrah, I will not falter."
 	.byte WaitForA
 	
 	.byte Left_slot
@@ -98,7 +98,7 @@ ch2xop1
 	.text "The world hurtles ever closer toward his jaws."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Tahra is the only place in Jugdral"
+	.text "Tarrah is the only place in Jugdral"
 	.byte NewLine
 	.text "still in dispute—where will you be"
 	.byte NewLine
@@ -198,7 +198,7 @@ ch2xturn2
 	.byte Left_slot ; opentext left
 	.byte $09 ; font 9(always use font 9)
 	
-	.text "Boss, you really mean to make for Tahra?"
+	.text "Boss, you really mean to make for Tarrah?"
 	.byte NewLine
 	.text "I'm goin' pale jus' thinkin' about fightin'"
 	.byte NewLine
@@ -340,14 +340,14 @@ ch2xend1
 	.byte ScrollText
 	.text "Have you forgotten me already, Lord Leif?"
 	.byte NewLine
-	.text "It's me, Safy—we met in Tahra."
+	.text "It's me, Safy—we met in Tarrah."
 	.byte WaitForA
 
 	.byte Left_slot
 	.byte ScrollText
 	.text "Safy, you say? I knew a young woman"
 	.byte NewLine
-	.text "at the monastery in Tahra by that name."
+	.text "at the monastery in Tarrah by that name."
 	.byte WaitForA
 
 	.byte Right_slot
@@ -379,7 +379,7 @@ ch2xend1
 	.byte ScrollText
 	.text "As close as a woman of common birth can be, I"
 	.byte NewLine
-	.text "suppose. The Duke of Tahra was Lady Linoan's"
+	.text "suppose. The Duke of Tarrah was Lady Linoan's"
 	.byte NewLine
 	.text "father, and I am more her servant than peer."
 	.byte WaitForA
@@ -395,7 +395,7 @@ ch2xend1
 	.byte ScrollText
 	.text "You mean to say you don't know"
 	.byte NewLine
-	.text "what's happened to Tahra since you left?"
+	.text "what's happened to Tarrah since you left?"
 	.byte NewLine
 	.text "Ah... Let me start from the beginning."
 	.byte WaitForA
@@ -409,7 +409,7 @@ ch2xend1
 	.byte NewLine
 	.text "tragedy after tragedy upon us. Just this year,"
 	.byte NewLine
-	.text "they even began child hunts in Tahra."
+	.text "they even began child hunts in Tarrah."
 	.byte WaitForA
 
 	.byte Left_slot
@@ -421,7 +421,7 @@ ch2xend1
 	.byte ScrollText
 	.text "That proved to be the breaking point."
 	.byte NewLine
-	.text "The people of Tahra revolted,"
+	.text "The people of Tarrah revolted,"
 	.byte NewLine
 	.text "installing Lady Linoan as rightful Duchess."
 	.byte WaitForA
@@ -437,7 +437,7 @@ ch2xend1
 	.byte NewLine
 	.text "of Thracia did not forgive such a slight, and"
 	.byte NewLine
-	.text "summoned the Imperial Army to besiege Tahra."
+	.text "summoned the Imperial Army to besiege Tarrah."
 	.byte WaitForA
 	.byte ScrollText
 	.text "The sellswords proved craven and fled,"
@@ -449,7 +449,7 @@ ch2xend1
 	.byte ScrollText
 	.text "Lady Linoan bade me leave and seek out any"
 	.byte NewLine
-	.text "who would fight in Tahra's defense."
+	.text "who would fight in Tarrah's defense."
 	.byte WaitForA
 
 	.byte Left_slot
@@ -466,16 +466,16 @@ ch2xend1
 	.text "of his generosity..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "You're seeking folk to aid Tahra? Look no more."
+	.text "You're seeking folk to aid Tarrah? Look no more."
 	.byte NewLine
-	.text "I pledge to deliver Tahra from this evil."
+	.text "I pledge to deliver Tarrah from this evil."
 	.byte NewLine
 	.text "Let's be off, Safy."
 	.byte WaitForA
 
 	.byte Right_slot
 	.byte ScrollText
-	.text "You will be most welcome in Tahra, Lord Leif."
+	.text "You will be most welcome in Tarrah, Lord Leif."
 	.byte NewLine
 	.text "Thank you."
 	.byte WaitForA
@@ -521,7 +521,7 @@ ch2xend2
 .byte ScrollText
 .text "Safy, c'mon, we had a deal—"
 .byte NewLine
-.text "I said I'd go to Tahra with you!"
+.text "I said I'd go to Tarrah with you!"
 .byte WaitForA
 .byte ScrollText
 

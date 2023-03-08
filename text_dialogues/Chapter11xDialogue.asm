@@ -589,7 +589,7 @@ ch11xclosing1
 .word leif_portrait2
 .text "Yet more children caged... It's easy to see"
 .byte NewLine
-.text "why the people of Tahra rebelled."
+.text "why the people of Tarrah rebelled."
 .byte WaitForA
 
 .byte Right_slot
@@ -597,12 +597,12 @@ ch11xclosing1
 .word dorias_portrait
 .text "Indeed. But that makes the Empire all the more"
 .byte NewLine
-.text "desperate to make an example of Tahra"
+.text "desperate to make an example of Tarrah"
 .byte NewLine
 .text "and stamp out their uprising."
 .byte WaitForA
 .byte ScrollText
-.text "Supposing they allowed Tahra to defy them,"
+.text "Supposing they allowed Tarrah to defy them,"
 .byte NewLine
 .text "countless cities would follow suit."
 .byte WaitForA
@@ -615,7 +615,7 @@ ch11xclosing1
 .byte WaitForA
 .text "they move to crush"
 .byte NewLine
-.text "both Tahra and its hopes all at once."
+.text "both Tarrah and its hopes all at once."
 .byte WaitForA
 .byte ScrollText
 .text "I've even heard tell that the Gelbenritter"

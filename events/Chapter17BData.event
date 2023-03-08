@@ -108,4 +108,4 @@ eventChapter17BData ; B1/A2A9
 		SHOP [9, 28], [IronBow, SteelBow, SilverBow, SilverAxe]
 
 	_Vendor ; B1/A6E8
-		SHOP [10, 27], [Fire, Elfire, Vulnerary, Antitoxin]
+		SHOP [10, 27], [Fire, Bolganone, Vulnerary, Antitoxin]

@@ -119,7 +119,7 @@
         .endblock
 
         _ArmoredAxeShields .block
-	  .structBattleAnimationShieldEntry	Dalsin,		Shield_General,		BA_ShieldPalette_Dalsin	
+	  .structBattleAnimationShieldEntry	Dalsin,		Shield_Armors,		BA_ShieldPalette_Dalsin	
           .structBattleAnimationShieldEntry	-1, 		Shield_Armors,		BA_ShieldPalette_Armors
         .endblock
 

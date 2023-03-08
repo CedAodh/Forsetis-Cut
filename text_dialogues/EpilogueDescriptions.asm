@@ -774,7 +774,7 @@ safiyaepi
 .byte $04
 .text "Safy made her way"
 .byte NewLine
-.text "back to Tahra,"
+.text "back to Tarrah,"
 .byte NewLine
 .text "and devoted herself"
 .byte NewLine
@@ -1450,7 +1450,7 @@ panepi
 .byte NewLine
 .text "to banditry, others say"
 .byte NewLine
-.text "he helped rebuild Tahra,"
+.text "he helped rebuild Tarrah,"
 .byte NewLine
 .text "and so on. The truth"
 .byte NewLine
@@ -2114,7 +2114,7 @@ linoanepi
 .byte $09
 .word $1200
 .byte $04
-.text "Linoan returned to Tahra"
+.text "Linoan returned to Tarrah"
 .byte NewLine
 .text "and set about rebuilding"
 .byte NewLine
@@ -2126,7 +2126,7 @@ linoanepi
 .byte ScrollText
 .byte $0F
 .byte $10
-.text "She guided Tahra"
+.text "She guided Tarrah"
 .byte NewLine
 .text "into an unprecedented"
 .byte NewLine
@@ -2404,7 +2404,7 @@ tinaepi
 .byte NewLine
 .text "had been through, upon"
 .byte NewLine
-.text "returning to Tahra, Tina"
+.text "returning to Tarrah, Tina"
 .byte NewLine
 .text "remained just as rash"
 .byte NewLine

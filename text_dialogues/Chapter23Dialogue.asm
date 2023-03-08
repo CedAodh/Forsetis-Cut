@@ -451,7 +451,7 @@ ch23leifced
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
-.text "Aren't you...Sir Ced?!"
+.text "Aren't you...Lord Ced?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -732,7 +732,7 @@ ch23leifsaias
 .byte WaitForA
 
 .byte Right_slot
-.text "Indeed. I did so on behalf of Sir Ced"
+.text "Indeed. I did so on behalf of Lord Ced"
 .byte NewLine
 .text "of the Magi. Thank you for taking us in."
 .byte WaitForA
@@ -790,7 +790,7 @@ ch23leifsaias
 
 .byte Right_slot
 .byte ScrollText
-.text "Make no mistake: Sir Ced wanted you"
+.text "Make no mistake: Lord Ced wanted you"
 .byte NewLine
 .text "to have this. I gave him my word"
 .byte NewLine
@@ -799,7 +799,7 @@ ch23leifsaias
 .byte ScrollText
 .text "It's a sacred blade that can only be wielded"
 .byte NewLine
-.text "by someone of holy blood—but Sir Ced"
+.text "by someone of holy blood—but Lord Ced"
 .byte NewLine
 .text "knows little of swordplay himself, you see."
 .byte WaitForA
@@ -852,7 +852,7 @@ ch23opening1
 .byte Left_slot
 .word LoadPortrait
 .word younglady_portrait
-.text "Sir Ced!"
+.text "Lord Ced!"
 .byte NewLine
 .text "Raydrik has found our last safehouse!"
 .byte WaitForA
@@ -1305,7 +1305,7 @@ ch23saiasblade
 .text "been handled for you."
 .byte WaitForA
 .byte ScrollText
-.text "Sir Ced bade me deliver this blade to you—"
+.text "Lord Ced bade me deliver this blade to you—"
 .byte NewLine
 .text "as Crusader blood runs in your veins,"
 .byte NewLine
@@ -1351,7 +1351,7 @@ ch23saiasblade
 
 .byte Left_slot
 .byte ScrollText
-.text "Please, save your thanks for Sir Ced."
+.text "Please, save your thanks for Lord Ced."
 .byte NewLine
 .text "I was just the errand boy."
 .byte WaitForA

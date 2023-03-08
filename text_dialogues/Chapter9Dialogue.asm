@@ -159,7 +159,7 @@ ch9finnselphina1
 .byte ScrollText
 .text "Your reunion will have to wait a little longer,"
 .byte NewLine
-.text "I'm afraid. He's away in Tahra,"
+.text "I'm afraid. He's away in Tarrah,"
 .byte NewLine
 .text "trying to aid the city's defenders."
 .byte WaitForA
@@ -426,7 +426,7 @@ ch9villagestaminasrink
 .byte ScrollText
 .text "Oh, but best stock up while you can!"
 .byte NewLine
-.text "Tahra's the only other place that sells these."
+.text "Tarrah's the only other place that sells these."
 .byte NewLine
 .text "It's worth every coin for soldiers like you!"
 .byte WaitForA
@@ -632,7 +632,7 @@ ch9opening2
 .byte Right_slot
 .text "So Travant has finally noticed us..."
 .byte NewLine
-.text "A pox on it all! With Glade in Tahra, there's"
+.text "A pox on it all! With Glade in Tarrah, there's"
 .byte NewLine
 .text "no one here with any experience in battle..."
 .byte WaitForA
@@ -872,7 +872,7 @@ ch9closing1
 .text "on past wounds—we've much work to do yet."
 .byte WaitForA
 .byte ScrollText
-.text "I understand you wish to aid Tahra."
+.text "I understand you wish to aid Tarrah."
 .byte NewLine
 .text "I mean to do the same, but we've precious"
 .byte NewLine
@@ -886,7 +886,7 @@ ch9closing1
 .byte NewLine
 .text "he reports that the Empire means to mount an"
 .byte NewLine
-.text "all-out assault against Tahra perilously soon."
+.text "all-out assault against Tarrah perilously soon."
 .byte WaitForA
 .byte ScrollText
 .text "With you and your forces here,"

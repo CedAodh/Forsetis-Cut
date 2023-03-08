@@ -224,7 +224,7 @@ ch16Bmiranda
 .byte ScrollText
 .text "But then came the insurrections"
 .byte NewLine
-.text "in Tahra and Leonster..."
+.text "in Tarrah and Leonster..."
 .byte WaitForA
 .byte ScrollText
 .text "That stoked the fires of revolution,"

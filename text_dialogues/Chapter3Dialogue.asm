@@ -456,7 +456,7 @@ ch3cairprevillagecairpre
 
 .byte Right_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 
 .text "Master Cairpre! Thank the gods you're all right!"
 .byte NewLine
@@ -486,7 +486,7 @@ ch3cairprevillageother
 
 .byte Right_slot
 .word LoadPortrait
-.word bishop_portrait
+.word jeanne_portrait
 
 .text "Master Cairpre, taken by those savages..."
 .byte NewLine

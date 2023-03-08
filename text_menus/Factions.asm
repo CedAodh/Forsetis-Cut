@@ -221,7 +221,7 @@ _MysteryLeader
 .word $0000
 
 _TahraLeader
-	.text "Tahra's Ar[my "
+	.text "Tarrah's Ar[my"
 .word $0000
 
 _MansterLeader

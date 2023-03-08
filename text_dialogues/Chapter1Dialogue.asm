@@ -989,7 +989,7 @@ ch1wm3
 	
 ch1wm4
 
-	.text "and Tahra, posing as common vagrants."
+	.text "and Tarrah, posing as common vagrants."
 	.byte WaitForA
 	.byte ScrollText
 	

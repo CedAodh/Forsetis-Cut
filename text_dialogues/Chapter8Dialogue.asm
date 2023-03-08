@@ -457,7 +457,7 @@ ch8opening
 .byte NewLine
 .text "to reclaim Leonster—for the time being,"
 .byte NewLine
-.text "I merely want to aid Tahra."
+.text "I merely want to aid Tarrah."
 .byte WaitForA
 
 .byte Left_slot

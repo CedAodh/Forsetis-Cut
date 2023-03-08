@@ -1322,7 +1322,7 @@ ch15wm1
 .word $0915 ;y then x
 .byte WaitForA
 .byte NewLine
-.text "the Liberation Army withdrew from Tahra."
+.text "the Liberation Army withdrew from Tarrah."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -1364,7 +1364,7 @@ ch15wm3
 .word $0112 ;y then x
 .text "while the nobles of Leonster"
 .byte NewLine
-.text "and the sellswords of Tahra"
+.text "and the sellswords of Tarrah"
 .byte WaitForA
 .byte NewLine
 .text "favored liberating Castle Leonster first."

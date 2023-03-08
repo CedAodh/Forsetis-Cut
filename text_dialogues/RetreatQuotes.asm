@@ -378,7 +378,7 @@ linoanesc
 .byte Right_slot
 .word LoadPortrait
 .word linoan_portrait
-.text "I wonder how the people of Tahra are faring"
+.text "I wonder how the people of Tarrah are faring"
 .byte NewLine
 .text "right now..."
 .byte WaitForA

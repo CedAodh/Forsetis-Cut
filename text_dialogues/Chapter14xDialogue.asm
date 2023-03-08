@@ -103,7 +103,7 @@ ch14xvillager6
 .word youngman2_portrait
 .text "We made it out alive! Why, I was afraid the"
 .byte NewLine
-.text "long line of Tahra's esteemed Stamina Drink"
+.text "long line of Tarrah's esteemed Stamina Drink"
 .byte NewLine
 .text "vintners would die in this forlorn valley!"
 .byte WaitForA
@@ -141,7 +141,7 @@ ch14xopening1
 .byte Left_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "Escaping Tahra may be difficult"
+.text "Escaping Tarrah may be difficult"
 .byte NewLine
 .text "with all these civilians in tow..."
 .byte WaitForA
@@ -149,7 +149,7 @@ ch14xopening1
 .byte Right_slot
 .text "Civilians?"
 .byte NewLine
-.text "You mean townsfolk from Tahra"
+.text "You mean townsfolk from Tarrah"
 .byte NewLine
 .text "are following us?"
 .byte WaitForA
@@ -400,7 +400,7 @@ ch14xclosing
 .text "I know how you think."
 .byte WaitForA
 .byte ScrollText
-.text "When I heard Tahra had fallen,"
+.text "When I heard Tarrah had fallen,"
 .byte NewLine
 .text "I anticipated this would be the route you'd take"
 .byte NewLine
@@ -423,7 +423,7 @@ ch14xclosing
 
 .byte Left_slot
 .byte ScrollText
-.text "Oh, don't kid yourself. Tahra's capitulation"
+.text "Oh, don't kid yourself. Tarrah's capitulation"
 .byte NewLine
 .text "was inevitable—we both knew this."
 .byte NewLine

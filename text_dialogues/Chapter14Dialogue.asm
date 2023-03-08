@@ -68,7 +68,7 @@ ch14homernanna
 .byte NewLine
 .text "All the people of the city, young and old,"
 .byte NewLine
-.text "are fighting tooth-and-nail for Tahra!"
+.text "are fighting tooth-and-nail for Tarrah!"
 .byte WaitForA
 .byte ScrollText
 .text "But here you are, already halfway"
@@ -159,7 +159,7 @@ ch14villager4
 .word younglady_portrait
 .text "My Ma and Pa were both killed..."
 .byte NewLine
-.text "Tahra has already lost, just like"
+.text "Tarrah has already lost, just like"
 .byte NewLine
 .text "all the other cities that resisted the Empire!"
 .byte WaitForA
@@ -172,7 +172,7 @@ ch14villager5
 .byte Right_slot ; HOUSE NORTH WEST
 .word LoadPortrait
 .word black_mustache_portrait
-.text "It seems Tahra's fate is already sealed..."
+.text "It seems Tarrah's fate is already sealed..."
 .byte NewLine
 .text "I wish I could go back and do it all over again,"
 .byte NewLine
@@ -192,7 +192,7 @@ ch14villager6
 .text "of Thracia and the Empire..."
 .byte WaitForA
 .byte ScrollText
-.text "If Tahra falls to either of them,"
+.text "If Tarrah falls to either of them,"
 .byte NewLine
 .text "there's not much point in the city still existing."
 .byte WaitForA
@@ -454,7 +454,7 @@ ch14npcarrive
 .byte NewLine
 .text "have exhausted themselves,"
 .byte NewLine
-.text "we turn on them and seize Tahra for ourselves."
+.text "we turn on them and seize Tarrah for ourselves."
 .byte WaitForA
 
 .byte Left_slot
@@ -462,7 +462,7 @@ ch14npcarrive
 .text "Exactly."
 .byte WaitForA
 .byte ScrollText
-.text "Tahra is the most important card we can play"
+.text "Tarrah is the most important card we can play"
 .byte NewLine
 .text "against Blume... See that you don't damage"
 .byte NewLine
@@ -708,7 +708,7 @@ ch14opening1
 .byte ScrollText
 .text "I'll remain vigilant, Colonel."
 .byte NewLine
-.text "On my honor, Tahra will fall this day!"
+.text "On my honor, Tarrah will fall this day!"
 .byte WaitForA
 
 .byte EndText
@@ -862,7 +862,7 @@ ch14opening2
 .byte ScrollText
 .text "His Highness Prince Arion was worried sick"
 .byte NewLine
-.text "about the crisis unfolding in Tahra,"
+.text "about the crisis unfolding in Tarrah,"
 .byte NewLine
 .text "and secretly arranged for Dean to rescue you."
 .byte WaitForA
@@ -928,20 +928,20 @@ ch14ending1
 .word travant_portrait
 
 .byte Right_slot
-.text "My lord father, doesn't attacking Tahra"
+.text "My lord father, doesn't attacking Tarrah"
 .byte NewLine
 .text "only serve to benefit the Empire?"
 .byte WaitForA
 .byte ScrollText
-.text "Tahra's citizens are united in their hatred of the"
+.text "Tarrah's citizens are united in their hatred of"
 .byte NewLine
-.text "Empire. If we come to their aid now, it could"
+.text "the Empire. If we come to their aid now, it could"
 .byte NewLine
 .text "pave the way for a new alliance between us."
 .byte WaitForA
 
 .byte Left_slot
-.text "Hah! You think shackling ourselves to Tahra"
+.text "Hah! You think shackling ourselves to Tarrah"
 .byte NewLine
 .text "would be enough to triumph over the Empire?"
 .byte WaitForA
@@ -993,7 +993,7 @@ ch14ending1
 .byte ScrollText
 .text "A whole lot of people will die:"
 .byte NewLine
-.text "Imperials, Thracians, Tahrans."
+.text "Imperials, Thracians, those of Tarrah."
 .byte NewLine
 .text "They'll all bleed just the same."
 .byte WaitForA
@@ -1022,7 +1022,7 @@ ch14ending1
 
 .byte Right_slot
 .byte ScrollText
-.text "I wish to help you seize Tahra."
+.text "I wish to help you seize Tarrah."
 .byte WaitForA
 
 .byte Left_slot
@@ -1056,7 +1056,7 @@ ch14ending1
 .byte NewLine
 .text "longer, and I'd rather not use my main body"
 .byte NewLine
-.text "of troops to seize Tahra if I can avoid it."
+.text "of troops to seize Tarrah if I can avoid it."
 .byte WaitForA
 
 .byte Right_slot
@@ -1108,7 +1108,7 @@ ch14ending2
 .text "and surrender. Immediately."
 .byte WaitForA
 .byte ScrollText
-.text "If you keep fighting like this, Tahra will never"
+.text "If you keep fighting like this, Tarrah will never"
 .byte NewLine
 .text "recover from this battle. Its fate will be sealed."
 .byte WaitForA
@@ -1127,7 +1127,7 @@ ch14ending2
 
 .byte Right_slot
 .byte ScrollText
-.text "My lord father is planning to seize Tahra"
+.text "My lord father is planning to seize Tarrah"
 .byte NewLine
 .text "for himself."
 .byte WaitForA
@@ -1160,7 +1160,7 @@ ch14ending2
 .byte ScrollText
 .text "When they arrive here, they'll slaughter"
 .byte NewLine
-.text "every single man, woman, and child in Tahra."
+.text "every single man, woman, and child in Tarrah."
 .byte NewLine
 .text "It will be genocide."
 .byte WaitForA
@@ -1176,7 +1176,7 @@ ch14ending2
 .byte ScrollText
 .text "Linoan, you must trust me."
 .byte NewLine
-.text "Allow Thracia to occupy Tahra."
+.text "Allow Thracia to occupy Tarrah."
 .byte WaitForA
 .byte ScrollText
 .text "We can place the city's people under our"
@@ -1222,7 +1222,7 @@ ch14ending2
 .byte NewLine
 .text "I shall avail myself of your kind offer,"
 .byte NewLine
-.text "and entrust the city of Tahra to you."
+.text "and entrust the city of Tarrah to you."
 .byte WaitForA
 
 .byte Right_slot
@@ -1251,7 +1251,7 @@ ch14ending2
 .byte ScrollText
 .text "When that day comes, Your Highness,"
 .byte NewLine
-.text "do you promise to return Tahra to my rule?"
+.text "do you promise to return Tarrah to my rule?"
 .byte WaitForA
 
 .byte Right_slot
@@ -1260,7 +1260,7 @@ ch14ending2
 .byte NewLine
 .text "I'll agree to those terms. If you can truly defeat"
 .byte NewLine
-.text "the Empire, I'll gladly return Tahra to you."
+.text "the Empire, I'll gladly return Tarrah to you."
 .byte WaitForA
 
 .byte Left_slot

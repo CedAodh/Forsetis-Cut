@@ -883,7 +883,7 @@ ch25ending5linoan
 .byte ScrollText
 .text "North Thracia has returned to our rightful"
 .byte NewLine
-.text "hands, but Tahra remains in Thracia's clutches."
+.text "hands, but Tarrah remains in Thracia's clutches."
 .byte WaitForA
 .byte ScrollText
 .text "You know I'll stop at nothing to recapture"
@@ -950,7 +950,7 @@ ch25ending6dean
 
 .byte Right_slot
 .byte ScrollText
-.text "I will abandon my plans to retake Tahra"
+.text "I will abandon my plans to retake Tarrah"
 .byte NewLine
 .text "if it means you would stay, Dean."
 .byte NewLine

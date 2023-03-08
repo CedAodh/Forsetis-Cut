@@ -258,7 +258,7 @@ deaneda
 	.byte ScrollText
 	.text "Right now,"
 	.byte NewLine
-	.text "it is up to us to defend the people of Tahra,"
+	.text "it is up to us to defend the people of Tarrah,"
 	.byte NewLine
 	.text "and we will not fail!"
 	.byte WaitForA
@@ -375,7 +375,7 @@ fctravantarion
 .byte NewLine
 .text "Now that the Empire has finally folded, it's time"
 .byte NewLine
-.text "for us to step in and take Tahra for ourselves!"
+.text "for us to step in and take Tarrah for ourselves!"
 .byte WaitForA
 
 .byte left_slot
@@ -439,7 +439,7 @@ fctravantarion
 
 .byte right_slot
 .byte ScrollText
-.text "Tahra's citizens are united in their hatred"
+.text "Tarrah's citizens are united in their hatred"
 .byte NewLine
 .text "of the Empire."
 .byte WaitForA
@@ -448,12 +448,12 @@ fctravantarion
 .byte NewLine
 .text "wouldn't it be better for us to ally with"
 .byte NewLine
-.text "Tahra instead of taking their land by force?"
+.text "Tarrah instead of taking their land by force?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Hah! You think shackling ourselves to Tahra"
+.text "Hah! You think shackling ourselves to Tarrah"
 .byte NewLine
 .text "would be enough to triumph over the Empire?"
 .byte WaitForA
@@ -505,7 +505,7 @@ fctravantarion
 .byte ScrollText
 .text "A whole lot of people will die:"
 .byte NewLine
-.text "Imperials, Thracians, Tahrans."
+.text "Imperials, Thracians, those of Tarrah."
 .byte NewLine
 .text "They'll all bleed just the same."
 .byte WaitForA

@@ -19,7 +19,7 @@ eventChapter3Data ; B1F318
 		UNIT MunsterSoldier2, Enemy, [9, 10], [9, 10], Lobos, [ShortLance], 9, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [18, 7], [18, 7], Lobos, [ShortLance], 10, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [3, 5], [3, 5], Lobos, [ShortLance], 8, False, [$19, $29, $00, $00]
-		UNIT MunsterBishop2, Enemy, [15, 3], [15, 3], Lobos, [Elfire, Heal, DoorKey, ChestKey], 10, False, [$08, $03, $00, $00]
+		UNIT MunsterBishop2, Enemy, [15, 3], [15, 3], Lobos, [Fire, Heal, DoorKey, ChestKey], 10, False, [$08, $03, $00, $00]
 	UNIT
 
 	_EnemyGroup2CameraCoordinates ; B1/F3D4
