@@ -10,7 +10,7 @@
 	g4bppcPortraitBeatrice .binary "sprites/Beatrice.4bpp.comp"
 	g4bppcPortraitFilat .binary "sprites/Filat.4bpp.comp"
 	g4bppcPortraitGunnar .binary "sprites/Gunnar.4bpp.comp"
-	
+	g4bppcPortraitGerald .binary "sprites/Gerald.4bpp.comp"
 	
 .here
 	
