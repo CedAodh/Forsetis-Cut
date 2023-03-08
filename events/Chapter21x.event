@@ -517,7 +517,7 @@ eventChapter21xEvents ; FD/E9EE
 		WAIT_MOVE
 		YIELD
 
-		SCROLL_CAMERA_CHAR JuliusJuliaPortrait
+		SCROLL_CAMERA_CHAR JuliusPortrait
 		SET_CAMERA_SPEED 4
 		YIELD
 
@@ -531,14 +531,14 @@ eventChapter21xEvents ; FD/E9EE
 		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
 		JUMP_FALSE +
 
-		STORE_WORD wEventEngineCharacterTarget, JuliusJuliaPortrait
+		STORE_WORD wEventEngineCharacterTarget, JuliusPortrait
 		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
 		JUMP_FALSE +
 
 		STORE_WORD wEventEngineParameter1, Warp
 		STORE_WORD wEventEngineParameter2, $0000
 		STORE_WORD wEventEngineCharacterStructParameter, Ishtar
-		STORE_WORD wEventEngineCharacterTarget, JuliusJuliaPortrait
+		STORE_WORD wEventEngineCharacterTarget, JuliusPortrait
 		STORE_WORD wEventEngineXCoordinate, $00FF
 		STORE_WORD wEventEngineYCoordinate, $00FF
 		CALL_ASM_SKIPPABLE $9A8D4A, $0000
@@ -576,7 +576,7 @@ eventChapter21xEvents ; FD/E9EE
 		PAUSE_SKIPPABLE 2
 		YIELD
 
-		STORE_WORD wEventEngineCharacterTarget, JuliusJuliaPortrait
+		STORE_WORD wEventEngineCharacterTarget, JuliusPortrait
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		STORE_WORD wEventEngineCharacterTarget, Ishtar
