@@ -162,7 +162,7 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word Arion
 
 	.word JuliusPortrait
-	.word JuliusJuliaPortrait
+	.word JuliusPortrait
 
 	.word IshtarPortrait
 	.word Ishtar
@@ -183,7 +183,7 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word Raydrik
 
 	.word SaiasPortrait			;<<
-	.word JuliusSaiasPortrait
+	.word Saias
 
 	.word VeldPortrait
 	.word Veld

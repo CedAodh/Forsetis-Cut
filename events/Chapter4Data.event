@@ -119,10 +119,10 @@ eventChapter4Data ; B1/EF95
 	;	.byte 12, 18
 
 	_EndingGroup ; B1/F2BF
-		UNIT Ishtar, Enemy, [11, 15], [11, 15], Raydrik, [], 1, False, [$00, $00, $00, $00]
-		UNIT JuliusJuliaPortrait, Enemy, [12, 15], [12, 15], Raydrik, [], 1, False, [$00, $00, $00, $00]
-		UNIT Veld, Enemy, [10, 16], [10, 16], Raydrik, [], 1, False, [$00, $00, $00, $00]
-		UNIT ManfroyMachaPortrait, Enemy, [13, 16], [13, 16], Raydrik, [], 1, False, [$00, $00, $00, $00]
+		UNIT Ishtar, Enemy, [11, 15], [11, 15], Raydrik, [], 13, False, [$00, $00, $00, $00]
+		UNIT Julius, Enemy, [12, 15], [12, 15], Raydrik, [], 20, False, [$00, $00, $00, $00]
+		UNIT Veld, Enemy, [10, 16], [10, 16], Raydrik, [], 20, False, [$00, $00, $00, $00]
+		UNIT Manfroy, Enemy, [13, 16], [13, 16], Raydrik, [], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/F311
