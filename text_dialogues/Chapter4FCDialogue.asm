@@ -493,6 +493,7 @@ ch4daisyturn1
 	.text "I guess we're really in this together now."
 	.byte NewLine
 	.text "Let us make haste!"
+	.byte EndText
 
 	leiflifis
 
