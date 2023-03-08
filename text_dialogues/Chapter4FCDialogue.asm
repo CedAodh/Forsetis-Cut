@@ -423,7 +423,7 @@ ch4daisyturn1
 
 	.byte right_slot
 	.text "I am."
-	.byte ScrollText
+	.byte NewLine
 	.text "The name is Brighton; though actually I"
 	.byte NewLine
 	.text "have to admit I'm not fully in charge here."
@@ -469,7 +469,7 @@ ch4daisyturn1
 	.byte ScrollText
 	.text "Fear not, Prince."
 	.byte NewLine
-	.text "Stay behind me and we'll find a way"
+	.text "Stay behind me, and we'll find a way"
 	.byte NewLine
 	.text "for you to get out of here."
 	.byte WaitForA
@@ -495,4 +495,127 @@ ch4daisyturn1
 	.text "Let us make haste!"
 	.byte WaitForA
 	
+	.byte EndText
+
+	leiflifis
+
+	.byte right_slot
+	.word $3A00
+	.word lifis_portrait
+
+	.byte left_slot
+	.word $3A00
+	.word leif_portrait
+	.text "Lifis?! Is that you?"
+	.byte NewLine
+	.text "What in the world are you doing here?"
+	.byte WaitForA
+
+	.byte right_slot
+	.text "H-huh?"
+	.byte NewLine
+	.text "Oh, heeey!"
+	.byte NewLine
+	.text "How's it goin', Prince?"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Man..."
+	.byte NewLine
+	.text "I can't believe it took me this long"
+	.byte NewLine
+	.text "to find ya!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Find me?"
+	.byte NewLine
+	.text "You don't mean..."
+	.byte WaitForA
+	.byte NewLine
+	.text "You allowed yourself to be captured"
+	.byte NewLine
+	.text "just for my sake?"
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Bingo!"
+	.byte NewLine
+	.text "An expert thief like me wouldn't just"
+	.byte NewLine
+	.text "give himself in without a plan."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I was waiting for just the right moment"
+	.byte NewLine
+	.text "to bust out and look for you."
+	.byte WaitForA
+	.byte NewLine
+	.text "But it seems I ended up charming some of"
+	.byte NewLine
+	.text "our fellow inmates, enough for them to"
+	.byte NewLine
+	.text "fall under my grandiose leadership!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Lifis, I..."
+	.byte NewLine	
+	.text "I can see now that I've severely misjudged you."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I was still skeptical even after what"
+	.byte NewLine
+	.text "Safy had told me on your behalf."
+	.byte WaitForA
+	.byte NewLine
+	.text "But clearly you are nothing short of"
+	.byte NewLine
+	.text "an honorable and reliable ally."
+	.byte NewLine
+	.text "You have my eternal gratitude."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Aw, darn it, Prince!"
+	.byte NewLine
+	.text "Stop trying to make me cry!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Well now, with that out of the way,"
+	.byte NewLine
+	.text "what do you say we make a run for it"
+	.byte NewLine
+	.text "and kiss this place goodbye?"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Sounds good to me!"
+	.byte NewLine
+	.text "Just stay behind us,"
+	.byte NewLine
+	.text "and we'll keep you out of harm's way!"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "You got it!"
+	.byte WaitForA
+
+	.byte left_slot
+	.word ClearPortrait
+	.word RetractBox
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Heh heh..."
+	.byte NewLine
+	.text "Well, ain't this something."
+	.byte NewLine
+	.text "It's only getting better and better for me!"
+	.byte WaitForA
+
 	.byte EndText

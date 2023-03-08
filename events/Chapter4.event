@@ -361,7 +361,7 @@ eventChapter4Events ; 99/8778
 	END2
 	
 	_LeifLifisTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse leiflifis
 	END2
 	
 	_LeifDaisyTalk

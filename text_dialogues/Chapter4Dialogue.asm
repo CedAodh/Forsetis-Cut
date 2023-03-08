@@ -378,16 +378,18 @@ ch4leifturn2
 
 .byte Right_slot
 .byte ScrollText
-.text "Fergus the sellsword, at yer service. An' I'm this"
+.text "Fergus the sellsword, at your service."
 .byte NewLine
-.text "close to bein' done with Jugdral, lemme tell ya."
+.text "And I'm this close to being done"
+.byte NewLine
+.text "with Jugdral, lemme tell you."
 .byte WaitForA
 .byte ScrollText
-.text "Saw a bunch of soldiers makin' trouble"
+.text "Saw a bunch of soldiers makin' trouble for a"
 .byte NewLine
-.text "fer a young lass, so I stepped in."
+.text "young lass, so I stepped in. Got arrested for "
 .byte NewLine
-.text "Got arrested fer the effort. Terrible story, really."
+.text "the effort. Terrible story, really."
 .byte WaitForA
 
 .byte Left_slot

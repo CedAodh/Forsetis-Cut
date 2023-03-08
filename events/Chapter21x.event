@@ -576,6 +576,7 @@ eventChapter21xEvents ; FD/E9EE
 		PAUSE_SKIPPABLE 2
 		YIELD
 
+
 		STORE_WORD wEventEngineCharacterTarget, Julius
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
