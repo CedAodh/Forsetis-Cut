@@ -266,11 +266,11 @@ eventChapter12Events ; 99/DBD6
 	END2
 
 	_DagdarTanyaTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse dagdartanyach12
 	END2
 	
 	_NannaMareetaTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse nannamareetach12
 	END2
 	
 	_GaidenFail ; 99/E0F1
