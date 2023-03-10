@@ -261,7 +261,7 @@ salemtina
 .byte NewLine
 .text "You're nothing like that jerk, and the horror"
 .byte NewLine
-.text "stories you read at night are AWESOME!"
+.text "stories you read to all of us are AWESOME!"
 .byte NewLine
 .text "...Even if my head at night doesn't think that."
 .byte WaitForA
@@ -291,7 +291,7 @@ salemtina
 .byte NewLine
 .text "so he really shouldn't have a problem"
 .byte NewLine
-.text "with you sticking around."
+.text "with you sticking around. Whaddaya think?"
 .byte WaitForA
 
 .byte left_slot
@@ -321,9 +321,9 @@ salemtina
 .byte right_slot
 .word $3A00
 .word salem_portrait
-.text "Perhaps this is the heavens giving me"
+.text "Always the cheerful one,"
 .byte NewLine
-.text "a chance to find redemption..."
+.text "isn't she?"
 .byte WaitForA
 
 .byte EndText
