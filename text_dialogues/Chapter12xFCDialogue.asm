@@ -327,3 +327,113 @@ salemtina
 .byte WaitForA
 
 .byte EndText
+
+leifperne
+
+.byte left_slot
+.word $3A00
+.word leif_portrait
+.text "You must be the leader of these bandits."
+.byte NewLine
+.text "Perne, was it? "
+.byte WaitForA
+
+.byte right_slot
+.word $3A00
+.word pan_portrait
+.text "That's me!"
+.byte NewLine
+.text "Let me guess, you're..."
+.byte NewLine
+.text "Prince Beef, was it?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It's... Leif, actually."
+.byte NewLine
+.text "Anyhow, I wanted to thank you"
+.byte NewLine
+.text "for lowering your swords."
+.byte WaitForA
+.byte ScrollText
+.text "After helping out the locals,"
+.byte NewLine
+.text "I was made aware of your ethics"
+.byte NewLine
+.text "and the help you've given to them."
+.byte WaitForA
+ 
+.byte right_slot
+.byte ScrollText
+.text "'Tis what we do."
+.byte NewLine
+.text "If there's one thing I hate, its seeing"
+.byte NewLine
+.text "people starve and worried for their lives."
+.byte WaitForA
+.byte ScrollText
+.text "If I can avoid that kind of injustice, I just"
+.byte NewLine
+.text "move without thinking and do the right thing."
+.byte WaitForA
+ 
+.byte left_slot
+.byte ScrollText
+.text "That is most admirable of you."
+.byte WaitForA
+ 
+.byte right_slot
+.byte ScrollText
+.text "Hm..."
+.byte NewLine
+.text "You know, I normally don't"
+.byte NewLine
+.text "look too kindly at nobles, but..."
+.byte WaitForA
+.byte NewLine
+.text "You seem somewhat different."
+.byte WaitForA
+.byte NewLine
+.text "Oh, I know!"
+.byte NewLine
+.text "How about me an' my boys give you a hand?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Really?"
+.byte NewLine
+.text "You'd be willing to join us?"
+.byte WaitForA
+ 
+.byte right_slot
+.byte ScrollText
+.text "If the high and mighty prince wouldn't mind"
+.byte NewLine
+.text "having a rough band of ruffians by his side,"
+.byte NewLine
+.text "then consider us in!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Thank you so much Perne,"
+.byte NewLine
+.text "I promise you won't regret your decision!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "... I sure wont'!"
+.byte NewLine
+.text "Boy, that was easy."
+.byte WaitForA
+.byte NewLine
+.text "With my gang officially joining the Liberation"
+.byte NewLine
+.text "Army, we'll be more famous than ever!"
+.byte WaitForA
