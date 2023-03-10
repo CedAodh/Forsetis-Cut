@@ -894,7 +894,7 @@ _CodhaName
 	.word $0000
 
 _LoptrianName
-	.text ")Welkenrosen"
+	.text "Bergrosen "
 	.word $0000
 
 _CivilianName

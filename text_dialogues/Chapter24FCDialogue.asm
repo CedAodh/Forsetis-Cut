@@ -191,7 +191,7 @@ saiasvsraydrik
 .byte ScrollText
 .text "You whisked away vital tools that"
 .byte NewLine
-.text "the Welkenrosen worked hard to get."
+.text "the Bergrosen worked hard to get."
 .byte WaitForA
 .byte ScrollText
 .text "Why the change of heart, hm?"

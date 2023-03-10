@@ -39,7 +39,7 @@ eventChapter9Events ; 8C/F011
 			CHECK_CHARS2 Callion, Selphina
 		END_DEFINITION
 		EVENT $0A, _RobertSelphinaTalk
-			CHECK_CHARS2 Selphina, Robert
+			CHECK_CHARS2 Robert, Selphina
 		END_DEFINITION
 		EVENT $0B, _LeifMartyTalk
 			CHECK_CHARS2 Leif, Marty

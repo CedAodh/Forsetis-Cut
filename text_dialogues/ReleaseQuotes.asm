@@ -449,7 +449,7 @@ eichnerrel
 .text "how I should make a living..."
 .byte WaitForA
 .byte ScrollText
-.text "I'm sure we'll meet again eventually!"
+.text "Maybe we'll meet again someday!"
 .byte WaitForA
 .byte EndText
 

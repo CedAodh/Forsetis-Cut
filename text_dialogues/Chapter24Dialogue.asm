@@ -234,7 +234,7 @@ ch24opening
 .byte ScrollText
 .text "I shall spare you a battalion of sorcerers"
 .byte NewLine
-.text "from the esteemed Welkenrosen."
+.text "from the esteemed Bergrosen."
 .byte WaitForA
 
 .byte EndText
@@ -809,7 +809,7 @@ ch24closing
 .byte NewLine
 .text "the region's child hunts—and to sic"
 .byte NewLine
-.text "the Welkenrosen on any villages who resist."
+.text "the Bergrosen on any villages who resist."
 .byte WaitForA
 .byte ScrollText
 .text "Raydrik was little more than Veld's pawn."

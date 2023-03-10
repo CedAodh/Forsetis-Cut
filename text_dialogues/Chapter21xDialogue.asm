@@ -98,7 +98,7 @@ ch21xopening2
 
 .byte Left_slot
 .byte ScrollText
-.text "Could it be the Welkenrosen...?"
+.text "Could it be the Bergrosen...?"
 .byte NewLine
 .text "Well, let's not stay and find out!"
 .byte NewLine

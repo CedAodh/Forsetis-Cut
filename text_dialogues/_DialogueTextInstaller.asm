@@ -140,11 +140,11 @@
 .include "Chapter23FCDialogue.asm"
 .include "Chapter24FCDialogue.asm"
 .include "Chapter24xFCDialogue.asm"
-.include "Chapter25FCDialogue.asm"
 .here
 
 * = $5FA000
 .logical lorom($5FA000, 1)
+.include "Chapter25FCDialogue.asm"
 .include "BattleQuotes.asm"
 .include "DeathQuotes.asm"
 .include "ReleaseQuotes.asm"

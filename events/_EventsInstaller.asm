@@ -36,6 +36,7 @@
 	.include "Chapter24Data.event"
 	.include "Chapter24xData.event"
 	.include "ChapterFinalData.event"
+	.include "ChapterFinalWorldMap.event"
 .here
 	
 * = $0D6134
@@ -195,5 +196,4 @@
 	.include "Chapter3Data.event"
 	.include "Chapter2xData.event"
 	.include "Chapter2Data.event"
-	.include "ChapterFinalWorldMap.event"
 .here

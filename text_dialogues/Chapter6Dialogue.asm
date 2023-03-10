@@ -192,7 +192,7 @@ ch6op1
 .byte ScrollText
 .text "The Church's elite unit of sorcerers,"
 .byte NewLine
-.text "the Welkenrosen, use methods"
+.text "the Bergrosen, use methods"
 .byte NewLine
 .text "that are the very definition of cruelty:"
 .byte WaitForA

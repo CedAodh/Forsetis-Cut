@@ -1153,9 +1153,9 @@ ch14ending2
 .byte ScrollText
 .text "And not just any sorcerers—"
 .byte NewLine
-.text "they've sent the Welkenrosen,"
+.text "they've sent the Bergrosen,"
 .byte NewLine
-.text "the withered roses of Loptous himself."
+.text "the feral roses of Loptous himself."
 .byte WaitForA
 .byte ScrollText
 .text "When they arrive here, they'll slaughter"
@@ -1167,7 +1167,7 @@ ch14ending2
 
 .byte Left_slot
 .byte ScrollText
-.text "The Welkenrosen..."
+.text "The Bergrosen..."
 .byte NewLine
 .text "This was my greatest fear..."
 .byte WaitForA

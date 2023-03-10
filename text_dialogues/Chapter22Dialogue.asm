@@ -6,7 +6,7 @@ ch22saiasleavecohenalive
 
 .byte Left_slot
 .word LoadPortrait
-.word bishop_portrait
+.word CohenPortrait
 .text "Gods above, the enemy has advanced this far?"
 .byte NewLine
 .text "Saias, you must flee! Now!"
@@ -404,7 +404,7 @@ ch22saiascohen
 
 .byte Left_slot
 .word LoadPortrait
-.word bishop_portrait
+.word CohenPortrait
 .text "You've done plenty, Saias!"
 .byte NewLine
 .text "Quickly, you must begone from here!"
@@ -439,33 +439,23 @@ ch22saiascohen
 .byte ScrollText
 .text "Yet hiding you in such a remote place"
 .byte NewLine
-.text "was all I could do to shield you from him."
+.text "was all I could do to shield you from him"
+.byte NewLine
+.text "while withstanding his relentless threats."
 .byte WaitForA
 .byte ScrollText
-.text "I could scarcely contain my laughter when"
+.text "The influence he carries indeed took its toll—"
 .byte NewLine
-.text "you finally came of age and were appointed a"
+.text "Manfroy's own scheming is what has led to my"
 .byte NewLine
-.text "military officer at Manfroy's own suggestion—"
-.byte WaitForA
-.byte NewLine
-.text "the fool didn't realize who you really were,"
-.byte NewLine
-.text "having lost your trail years prior."
+.text "becoming the military officer before you now."
 .byte WaitForA
 .byte ScrollText
-.text "Yet his mistake was your gain, and you set to"
+.text "Fortunately, as I was immersed in this new role,"
 .byte NewLine
-.text "honing your skills as a tactician with a passion"
+.text "your talents came to the fore and you rose to"
 .byte NewLine
-.text "that not even I knew you possessed."
-.byte WaitForA
-.byte ScrollText
-.text "So obvious was your talent that it only"
-.byte NewLine
-.text "took you a decade to rise from a lowly officer"
-.byte NewLine
-.text "to the Royal Bishop of House Velthomer."
+.text "the position of Royal Bishop of House Velthomer."
 .byte WaitForA
 .byte ScrollText
 .text "And for a brief time, you were so trusted"

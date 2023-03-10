@@ -53,7 +53,7 @@ eventChapter8Data ; B1/DD06
 	;	.byte 22, 10
 
 	_CallionGroup ; B1/DE38
-		UNIT Callion, Player, [30, 15], [28, 9], Leif, [SteelLance], 1, False, [$00, $00, $00, $00]
+		UNIT Callion, Player, [30, 15], [28, 9], Leif, [IronSword, Javelin, Vulnerary], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/DE4E

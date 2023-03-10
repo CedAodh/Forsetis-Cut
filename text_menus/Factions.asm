@@ -313,7 +313,7 @@ _UlsterLeader
 .word $0000
 
 _WelkenrosenLeader
-	.text ")Welkenrosen"
+	.text "Bergrosen "
 .word $0000
 
 _LifisCrewLeader
