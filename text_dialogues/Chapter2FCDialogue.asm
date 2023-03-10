@@ -26,7 +26,7 @@ tanyaronan1
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Um... You all right?"
+	.text "Uh... What is it?"
 	.byte NewLine
 	.text "Is there something on my face?"
 	.byte WaitForA
@@ -38,25 +38,21 @@ tanyaronan1
 	.text "I'm sorry."
 	.byte WaitForA
 	.byte NewLine
-	.text "I guess I'm just starting to get used to this."
+	.text "I guess I'm just getting used to this."
 	.byte NewLine
-	.text "I didn't expect others to welcome me so readily,"
-	.byte NewLine
-	.text "is all."
+	.text "I didn't expect others to be so welcoming, is all."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
 	.text "Well, no need to get flustered!"
 	.byte NewLine
-	.text "We're a fairly small group anyway."
+	.text "We're a pretty small group anyway."
 	.byte WaitForA
 	.byte ScrollText
-	.text "My name's Tanya,"
+	.text "My name's Tanya."
 	.byte NewLine
-	.text "I hope we can get along."
-	.byte NewLine
-	.text "You seem to be pretty good with a bow!"
+	.text "You look like you're pretty good with a bow!"
 	.byte WaitForA
 
 	.byte left_slot
@@ -64,25 +60,20 @@ tanyaronan1
 	.text "R-really?"
 	.byte NewLine
 	.text "I don't think I'm anything special."
-	.byte WaitForA
-	.byte ScrollText
-	.text "After all, I was only able to use one"
 	.byte NewLine
-	.text "because my mother allowed it."
-	.byte NewLine
-	.text "And it was just for the sake of hunting food."
+	.text "I use it really just for hunting."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Guess we're not so different then!"
+	.text "Hey, it's still something."
 	.byte WaitForA
 	.byte ScrollText
 	.text "I grew up with my dad's bandit crew up on"
 	.byte NewLine
 	.text "Mount Violdrake, and I've always wanted to do"
 	.byte NewLine
-	.text "some hand-to-hand combat ever since I was a kid."
+	.text "some hand-to-hand combat since I was a kid."
 	.byte WaitForA
 
 	.byte left_slot
@@ -99,75 +90,63 @@ tanyaronan1
 	
 	.byte right_slot
 	.byte ScrollText
-	.text "Yeah,"
+	.text "Yeah, I was real earnest about it..."
 	.byte NewLine
-	.text "I was very earnest about it..."
+	.text "But my dad's never let me even touch an axe."
+	.byte NewLine
+	.text "He always says it's “too dangerous for me.”"
 	.byte WaitForA
 	.byte ScrollText
-	.text "But my dad never allowed me"
-	.byte NewLine
-	.text "to even touch an axe."
-	.byte NewLine
-	.text "He actually said it was “too dangerous” for me."
-	.byte WaitForA
-	.byte ScrollText
-	.text "His worry often comes at the expense of"
-	.byte NewLine
-	.text "my annoyance..."
+	.text "He worries too much..."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "And yet you just said it yourself:"
+	.text "Well, that's why he's your father."
 	.byte NewLine
-	.text "he simply worries about you."
+	.text "What's a parent if they don't keep on top"
+    .byte NewLine
+    .text "of their child every now and again?"
 	.byte WaitForA
 	.byte ScrollText
-	.text "I feel like you should cherish your dad"
+	.text "I think you should cherish that, Tanya."
 	.byte NewLine
-	.text "at least a little."
-	.byte NewLine
-	.text "Because, well..."
-	.byte WaitForA
-	.byte NewLine
-	.text "You never know when you might"
-	.byte NewLine
-	.text "lose him for good..."
+	.text "At least a little, right?"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
 	.text "...Huh."
 	.byte NewLine
-	.text "You might be right about that..."
+	.text "Maybe you're right..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Man, you're such a nice kid."
+	.text "I like this feeling I get from talking to you."
 	.byte NewLine
-	.text "It sure is a change of pace from"
+	.text "It's like...we're having an enjoyable time, instead"
 	.byte NewLine
-	.text "all the others."
+	.text "of just making a bunch of noise for no reason."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
 	.text "Is...is that so?"
 	.byte NewLine
-	.text "I really only said what I was thinking."
+	.text "I was just trying to be polite."
 	.byte NewLine
-	.text "But regardless, I'm glad I could be of help."
+	.text "Well, either way, I guess I'm glad I could help."
 	.byte WaitForA
 	
 	.byte right_slot
 	.byte ScrollText
 	.text "Yeah!"
 	.byte NewLine
-	.text "I do feel better now, as a matter of fact."
+	.text "I actually feel better now."
 	.byte WaitForA
+	.byte ScrollText
+	.text "Maybe we could make this a regular thing, Ronan."
 	.byte NewLine
-	.text "We should talk more often, Ronan."
-	.byte NewLine
-	.text "I think it's good for the both of us."
+	.text "I think we're “compatible,” as you'd say."
 	.byte WaitForA
 	
 	.byte EndText

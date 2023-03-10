@@ -125,7 +125,7 @@ eventChapter1Events ; FD/8000
 	END2
 
 	_LeifDagdarTalk ; FD/8324
-		macroDialogueHouse placeholder
+		macroDialogueHouse leifdagdar
 	END2
 
 	_DagdarAndCo ; FD/832D

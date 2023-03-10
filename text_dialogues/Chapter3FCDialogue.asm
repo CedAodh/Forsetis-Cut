@@ -7,14 +7,11 @@ eyvelhalvan
 	.byte left_slot
 	.word $3A00
 	.word eyvel_portrait
-	.text "Halvan..."
-	.byte NewLine
-	.text "Is there something wrong?"
-	.byte WaitForA
+	.text "Halvan... Is there something wrong?"
 	.byte NewLine
 	.text "I know you're usually quiet,"
 	.byte NewLine
-	.text "but something about it today seems...off."
+	.text "but something about it right now seems...off."
 	.byte WaitForA
 	
 	.byte right_slot
@@ -23,110 +20,69 @@ eyvelhalvan
 	.text "but it is nothing to worry yourself over."
 	.byte WaitForA
 	.byte ScrollText
-	.text "It's just that..."
+	.text "It's just that...once I had heard that priest tell"
 	.byte NewLine
-	.text "once I had heard that priest tell Lord Leif"
+	.text "Lord Leif about what the Empire does to these"
 	.byte NewLine
-	.text "about the imprisoned children in this fortress,"
-	.byte WaitForA
-	.byte NewLine
-	.text "I went into a bit of a...trance."
+	.text "innocent children, I...lost myself for a moment."
 	.byte WaitForA
 	
 	.byte left_slot
 	.byte ScrollText
-	.text "I know this must be quite hard on you, Halvan."
+	.text "...It's the world we live in, Halvan."
 	.byte NewLine
-	.text "After all...you and Patricia were once caught"
-	.byte NewLine
-	.text "in that same position yourselves."
+	.text "You and Patricia are no strangers to it."
 	.byte WaitForA
 	
 	.byte right_slot
-	.byte ScrollText
-	.text "It all happened while no one was watching."
-	.byte NewLine
-	.text "My sister and I kicked and screamed"
-	.byte NewLine
-	.text "and tried to get away..."
-	.byte WaitForA
-	.byte NewLine
-	.text "Then our parents arrived."
-	.byte WaitForA
-	.byte ScrollText
-	.text "They started a fuss, got us free,"
-	.byte NewLine
-	.text "and then...they were killed for it."
-	.byte WaitForA
 	.byte ScrollText
 	.text "I will never be able to erase those"
 	.byte NewLine
 	.text "pictures and...sounds from my head."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Our father's last words to us were to run."
-	.byte WaitForA
+	.text "Our parents; the rapid footsteps of soldiers;"
 	.byte NewLine
-	.text "So in all the confusion,"
+	.text "the screaming and...the blood everywhere..."
 	.byte NewLine
-	.text "we got up off the ground,"
-	.byte NewLine
-	.text "and ran away as fast as we possibly could."
+	.text "We had to run from it all."
 	.byte WaitForA
 	
 	.byte left_slot
 	.byte ScrollText
-	.text "...And that's when I found you."
+	.text "And then that's when I found you guys"
+	.byte NewLine
+	.text "and took you in."
 	.byte WaitForA
 	
 	.byte right_slot
 	.byte ScrollText
-	.text "I'm not sure I will ever be able to repay you,"
+	.text "...I've come to terms with everything."
 	.byte NewLine
-	.text "Commander Eyvel."
+	.text "Now I focus on what can be helped:"
 	.byte NewLine
-	.text "For all that you have done for the both of us."
-	.byte WaitForA
-	.byte ScrollText
-	.text "I know that we wouldn't have lasted much longer,"
-	.byte NewLine
-	.text "had you not shown up to take us in."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Now, I just hope that I'm of enough"
-	.byte NewLine
-	.text "use to the Freeblades."
+	.text "the work of the Fiana Freeblades."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "You certainly have been and always will be."
-	.byte WaitForA
+	.text "I'm proud of you, Halvan."
 	.byte NewLine
-	.text "I remember how eagerly you raised your axe"
+	.text "That's a healthy way to think of things."
 	.byte NewLine
-	.text "back when the Freeblades were founded"
-	.byte NewLine
-	.text "and I was asking for volunteers."
+	.text "You were able to pull through in the end."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Now that you have the ability to"
+	.text "By honor of the Freeblades, let's break down"
 	.byte NewLine
-	.text "back up your desire,"
-	.byte WaitForA
+	.text "these fortress doors and give those Imperials"
 	.byte NewLine
-	.text "you don't want to allow any children to"
-	.byte NewLine
-	.text "suffer the way you did, right?"
-	.byte NewLine
-	.text "So let's go put a stop to that!"
+	.text "what they got coming!"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Yes, Commander!"
-	.byte NewLine
-	.text "You're right!"
+	.text "Understood, Commander!"
 	.byte WaitForA
 	
 	.byte EndText

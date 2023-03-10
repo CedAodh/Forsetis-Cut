@@ -1,96 +1,82 @@
 leifdagdar
 
-.byte Left_slot
-.word $3A00
-.word leif_portrait
+	.byte Left_slot
+	.word $3A00
+	.word leif_portrait
 
-.byte Right_Slot
-.word $3A00
-.word dagdar_portrait
+	.byte Right_Slot
+	.word $3A00
+	.word dagdar_portrait
 
-.byte Left_slot
-.text "Dagdar?"
-.byte WaitForA
+	.byte Left_slot
+	.text "Dagdar?"
+	.byte WaitForA
 
-.byte Right_Slot
-.text "Well, if it isn't Prince Leif!"
-.byte WaitForA
+	.byte Right_Slot
+	.text "Well, if it isn't Prince Leif!"
+	.byte WaitForA
 
-.byte Left_slot
-.byte ScrollText
-.text "...“Prince”?"
-.byte WaitForA
+	.byte Left_slot
+	.byte ScrollText
+	.text "...“Prince”?"
+	.byte NewLine
+	.text "Does...that mean...?"
+	.byte WaitForA
 
-.byte Right_Slot
-.byte ScrollText
-.text "Prince of Leonster, right?"
-.byte WaitForA
+	.byte Right_Slot
+	.byte ScrollText
+	.text "Aye. Eyvel just filled me in."
+	.byte NewLine
+	.text "But ya don't have to worry;"
+	.byte NewLine
+	.text "I get why it was better to keep it a secret."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Besides, it ain't like it changes much about ya."
+	.byte WaitForA
+	.byte NewLine
+	.text "Yer a good lad,"
+	.byte NewLine
+	.text "and I always saw you and Nanna as"
+	.byte NewLine
+	.text "the nephew and niece I never had."
+	.byte WaitForA
 
-.byte Left_slot
-.byte ScrollText
-.text "Wh-what?"
-.byte NewLine
-.text "I'm not the prince of Leonster."
-.byte WaitForA
+	.byte Left_slot
+	.byte ScrollText
+	.text "Dagdar... Thank you, truly."
+	.byte WaitForA
+	.byte ScrollText
+	.text "All these years I've felt a heavy burden,"
+	.byte NewLine
+	.text "having to hide something like this"
+	.byte NewLine
+	.text "from someone as close as you."
+	.byte WaitForA
+	.byte ScrollText
+	.text "But I promise, those days are over."
+	.byte NewLine
+	.text "As for the days to come, we stand together."
+	.byte WaitForA
+	.byte NewLine
+	.text "With someone as strong as you by our side,"
+	.byte NewLine
+	.text "I know that we can face anything!"
+	.byte WaitForA
 
-.byte Right_Slot
-.byte ScrollText
-.text "Hi, “not the prince of Leonster!”"
-.byte NewLine
-.text "*Snicker*"
-.byte NewLine
-.text "I'm Dad!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "...What are you saying?!"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Hey, watch your mouth!"
-.byte NewLine
-.text "Pay some respect to your dad!"
-.byte NewLine
-.text "It's Father's Day after all!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "But Dagdar,"
-.byte NewLine
-.text "Father's Day was last month."
-.byte WaitForA
+	.byte Right_Slot
+	.byte ScrollText
+	.text "Yer damn right we can!"
+	.byte NewLine
+	.text "So quit the glum face, will ya?"
+	.byte WaitForA
+	.byte NewLine
+	.text "We're gonna go get Nanna and Mareeta back."
+	.byte NewLine
+	.text "That's my promise to YOU!"
+	.byte WaitForA
 	
-.byte right_slot
-.byte ScrollText
-.text "......"
-.byte NewLine
-.text "You don't love me!"
-.byte WaitForA
-.byte ScrollText
-.text "Leave me alone!"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-	
-.byte left_slot
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-.byte right_slot
-.word $3A00
-.word leif_portrait2
-.text "......"
-.byte WaitForA
-.byte ScrollText
-.text "God..."
-.byte NewLine
-.text "goddammit..."
-.byte WaitForA
-		
-.byte EndText
+	.byte EndText
 
 placeholder
 
