@@ -93,6 +93,10 @@ eventChapter12xEvents ; FD/8F98
 			CHECK_CHARS2 Leif, Tina
 			TEST_FLAG_SET $08
 		END_DEFINITION
+		EVENT $1A, _LeifPerneTalk
+			CHECK_CHARS2 Leif, Perne
+			TEST_FLAG_SET $05
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/90B1
@@ -416,6 +420,18 @@ eventChapter12xEvents ; FD/8F98
 
 	_LeifTinaTalk
 		macroDialogueHouse placeholder
+	END2
+	
+	_LeifPerneTalk
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE leifperne
+		YIELD
 	END2
 	
 	_PrepGroups ; FD/95A8

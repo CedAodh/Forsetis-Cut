@@ -22,7 +22,7 @@ eventChapter24Data ; 99/F2A4
 		UNIT LoptrianSorcerer1, Enemy, [16, 32], [16, 32], Codha, [Restore, Heal], 18, False, [$00, $07, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [15, 33], [15, 33], Codha, [Rescue, Heal], 18, False, [$00, $07, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [17, 34], [17, 34], Codha, [Ensorcel, Heal], 18, False, [$00, $07, $00, $00]
-		UNIT LoptrianSorcerer, Enemy, [19, 34], [19, 34], Codha, [Fortify, Heal], 18, False, [$00, $07, $00, $00]
+		UNIT LoptrianSorcerer, Enemy, [19, 34], [19, 34], Codha, [Thief, Fortify], 18, False, [$00, $07, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [20, 32], [20, 32], Codha, [Fenrir, Heal], 18, False, [$00, $00, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [19, 31], [19, 31], Codha, [Berserk, Heal], 18, False, [$00, $07, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [20, 31], [20, 31], Codha, [Hel, Heal], 18, False, [$00, $07, $00, $00]
@@ -49,8 +49,8 @@ eventChapter24Data ; 99/F2A4
 		UNIT SniperEnemy, Enemy, [12, 13], [12, 13], RaydrikChp24, [MasterBow, VeninBow], 18, False, [$00, $00, $00, $00]
 		UNIT RaydrikChp24, Enemy, [10, 12], [10, 12], RaydrikChp24, [LoptrianFang], 20, True, [$01, $03, $00, $80]
 		UNIT LoptrianSorcerer1, Enemy, [2, 8], [2, 8], Codha, [Jormungand, DoorKey], 18, False, [$00, $00, $00, $00]
-		UNIT MunsterBishop1, Enemy, [9, 13], [9, 13], RaydrikChp24, [Restore, Physic, PureWater], 20, False, [$00, $07, $00, $00]
-		UNIT MunsterBishop1, Enemy, [11, 13], [11, 13], RaydrikChp24, [Restore, Physic, PureWater], 20, False, [$00, $07, $00, $00]
+		UNIT MunsterBishop1, Enemy, [9, 13], [9, 13], RaydrikChp24, [Bolganone, Meteor, Restore, Physic, PureWater], 20, False, [$00, $07, $00, $00]
+		UNIT MunsterBishop1, Enemy, [11, 13], [11, 13], RaydrikChp24, [Bolganone, Meteor, Restore, Physic, PureWater], 20, False, [$00, $07, $00, $00]
 		UNIT Pierre, Enemy, [24, 25], [24, 25], LoptrianDarkBishop, [Venin, Fenrir, Jormungand, Fortify, PureWater], 20, False, [$00, $03, $00, $00]
 	UNIT
 
