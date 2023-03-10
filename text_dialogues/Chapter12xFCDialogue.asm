@@ -343,97 +343,63 @@ leifperne
 .word pan_portrait
 .text "That's me!"
 .byte NewLine
-.text "Let me guess, you're..."
+.text "We are the Dandelion Bandits!"
 .byte NewLine
-.text "Prince Beef, was it?"
+.text "Let me guess, you're Prince...Beef!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "It's... Leif, actually."
+.text "...Leif, but close enough."
 .byte NewLine
-.text "Anyhow, I wanted to thank you"
-.byte NewLine
-.text "for lowering your swords."
+.text "You have my thanks for lowering your weapons."
 .byte WaitForA
-.byte ScrollText
-.text "After helping out the locals,"
 .byte NewLine
-.text "I was made aware of your ethics"
+.text "We've been informed of the truth about your"
 .byte NewLine
-.text "and the help you've given to them."
+.text "operations, so I'm just glad it wasn't too late."
 .byte WaitForA
- 
+
 .byte right_slot
 .byte ScrollText
-.text "'Tis what we do."
+.text "Yeah, we thought you were the Empire."
 .byte NewLine
-.text "If there's one thing I hate, its seeing"
+.text "I'll tell ya, that would've ended"
 .byte NewLine
-.text "people starve and worried for their lives."
+.text "pretty badly for one of us..."
 .byte WaitForA
 .byte ScrollText
-.text "If I can avoid that kind of injustice, I just"
+.text "So, princey, what's goin' on?"
 .byte NewLine
-.text "move without thinking and do the right thing."
+.text "Yer the leader of this so-called Liberation Army?"
 .byte WaitForA
  
 .byte left_slot
 .byte ScrollText
-.text "That is most admirable of you."
+.text "That's right. We are en route to Tarrah."
 .byte WaitForA
  
 .byte right_slot
 .byte ScrollText
-.text "Hm..."
+.text "All right, then I'm comin' along!"
 .byte NewLine
-.text "You know, I normally don't"
+.text "Holin' up in these woods, I can only do so"
 .byte NewLine
-.text "look too kindly at nobles, but..."
-.byte WaitForA
-.byte NewLine
-.text "You seem somewhat different."
-.byte WaitForA
-.byte NewLine
-.text "Oh, I know!"
-.byte NewLine
-.text "How about me an' my boys give you a hand?"
+.text "much, so thank you kindly for this opportunity."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Really?"
+.text "Excellent."
 .byte NewLine
-.text "You'd be willing to join us?"
+.text "Let us finish our business here,"
+.byte NewLine
+.text "and then we'll be on our way."
 .byte WaitForA
  
 .byte right_slot
 .byte ScrollText
-.text "If the high and mighty prince wouldn't mind"
-.byte NewLine
-.text "having a rough band of ruffians by his side,"
-.byte NewLine
-.text "then consider us in!"
+.text "Leave it to me!"
 .byte WaitForA
 
-.byte left_slot
-.byte ScrollText
-.text "Thank you so much Perne,"
-.byte NewLine
-.text "I promise you won't regret your decision!"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.byte ScrollText
-.text "... I sure wont'!"
-.byte NewLine
-.text "Boy, that was easy."
-.byte WaitForA
-.byte NewLine
-.text "With my gang officially joining the Liberation"
-.byte NewLine
-.text "Army, we'll be more famous than ever!"
-.byte WaitForA
+.byte EndText
