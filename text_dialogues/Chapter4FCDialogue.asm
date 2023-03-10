@@ -423,6 +423,7 @@ ch4daisyturn1
 
 	.byte right_slot
 	.text "I am."
+	.byte WaitForA
 	.byte NewLine
 	.text "The name is Brighton; though actually I"
 	.byte NewLine

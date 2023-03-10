@@ -57,12 +57,12 @@ char_name_pointers		.block
 	.word	<>char_names._SaraName
 	.word	<>char_names._SaiasName
 	.word	<>char_names._RaydrikName
-	.word	<>char_names._JuliusName	; Unused
+	.word	<>char_names._GeraldName
 	.word	<>char_names._VeldName
 	.word	<>char_names._WeissmannName
 	.word	<>char_names._MunsterName
 	.word	<>char_names._BucksName
-	.word	<>char_names._JabalName		; Unused
+	.word	<>char_names._JabalName		
 
 	.word	<>char_names._LifisCrewName
 	.word	<>char_names._LifisCrewName
@@ -96,7 +96,7 @@ char_name_pointers		.block
 	.word	<>char_names._MunsterName
 	.word	<>char_names._MunsterName	; Unused
 	.word	<>char_names._MunsterName	; Unused
-	.word	<>char_names._PierreName	; Unused
+	.word	<>char_names._PierreName	
 
 	.word	<>char_names._EisenhauName
 	.word	<>char_names._HannibalName
@@ -173,7 +173,7 @@ char_name_pointers		.block
 	.word	<>char_names._ZaunName
 	.word	<>char_names._CohenName
 	.word	<>char_names._AlphandName
-	.word	<>char_names._DaisyName		; Unused
+	.word	<>char_names._DaisyName		
 	.word	<>char_names._FadenName
 
 	.word	<>char_names._CoulterName
@@ -1177,6 +1177,10 @@ _ColhoName
 _PierreName
 	.text "Pierre"
 	.word $0000
-
+	
+_GeraldName
+	.text "Gerald"
+	.word $0000
+	
 .bend
 .here

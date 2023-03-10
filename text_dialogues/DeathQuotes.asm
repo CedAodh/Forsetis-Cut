@@ -844,6 +844,12 @@ pierredeath
 .byte WaitForA
 .byte EndText
 
+geralddeath
+.text "B-but..."
+.byte NewLine
+.text "My magic swords..."
+.byte WaitForA
+
 deadlorddeath
 .text "............"
 .byte WaitForA

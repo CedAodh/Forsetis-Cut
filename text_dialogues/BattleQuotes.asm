@@ -546,6 +546,13 @@ pierreboss
 .byte WaitForA
 .byte EndText
 
+geraldboss
+.text "Words are useless now."
+.byte NewLine
+.text "Answer to my sword!"
+.byte WaitForA
+.byte EndText
+
 musboss
 .text "IT'S TOO LATE FOR YOU...CARL..."
 .byte NewLine

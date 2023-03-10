@@ -127,7 +127,7 @@ eventChapter8xEvents ; 97/844D
 		SET_MUSIC $4B
 		YIELD
 
-		DIALOGUE placeholder
+		DIALOGUE ronantanya8x
 		YIELD
 
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden

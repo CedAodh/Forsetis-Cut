@@ -465,6 +465,13 @@ pierrerel
 .byte WaitForA
 .byte EndText
 
+geraldrel
+.text "If I had a... yes... it'd be your undoing!"
+.byte NewLine
+.text "You'll not live on!"
+.byte WaitForA
+.byte EndText
+
 musrel
 .text "ALL YOUR RICHES...WILL BE MINE..."
 .byte WaitForA
