@@ -193,3 +193,145 @@ olwenbharat
 .text "Lord Bharat?! I... No...!"
 .byte WaitForA 
 .byte EndText
+
+martyosian
+.byte left_slot
+.word LoadPortrait
+.word marty_portrait 
+
+.byte left_slot
+.text "M-man...I gotta get outta here...this stinks..."
+.byte NewLine
+.text "Is that... Osian?"
+.byte ScrollText
+.text "Oh, anyone but him..."
+.byte WaitForA 
+
+.byte right_slot
+.word LoadPortrait
+.word osian_portrait
+
+.byte right_slot
+.text "Marty!"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "*gulp* H-hey, Osian! What brings you here?"
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "I jus' don't get it. You're the tallest man on" 
+.byte NewLine
+.text "the battlefield, yet you insist on slurking "
+.byte NewLine
+.text "around like a lowly pickpocket?"
+.byte WaitForA 
+
+.byte ScrollText
+.text "What's that all about?"
+
+.byte left_slot
+.byte ScrollText
+.text "I dunno, jus' never been a fan of confrontation."
+.byte NewLine
+.text "People tend to get the jump on me in a fight."
+.byte NewLine
+.text "Best thing to do is avoid that, right?"
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Marty, we've been under siege for months now!"
+.byte NewLine
+.text "Could you at least act like you're concerned?!"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "Uhuh, I'm plenty concerned! What do ya suppose"
+.byte NewLine
+.text "I do 'bout that?"
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Stand with your head tall! Don't let your"
+.byte NewLine
+.text "enemies push you around! Show some spine when"
+.byte NewLine
+.text "you're out in the thick of it!"
+.byte WaitForA 
+.byte ScrollText
+.text "...I'll give you an example. Pretend I'm about"
+.byte NewLine
+.text "to cleave your head off. Whatcha gonna do in"
+.byte NewLine
+.text "this life or death scenario, huh? HUH?!"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "I... I uhh..."
+
+.byte right_slot
+.byte ScrollText
+.text "C'MON, MARTY! HIT ME! QUIT BEING DENSE!"
+.byte NewLine
+.text "YOU DON'T WANNA BE DAGDAR'S ERRAND BOY" 
+.byte NewLine
+.text "FOREVER, DO YA? "
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "GRAAAH!"
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+					;marty axe swing go here
+.byte left_slot
+.word LoadPortrait
+.word marty_portrait
+
+.byte right_slot
+.word LoadPortrait
+.word osian_portrait
+
+.byte right_slot
+.text "Whoa... If I didn't dodge that, I'd"
+.byte NewLine
+.text "be a pile of guts right about now."
+.byte WaitForA
+
+.byte left_slot
+.text "...I've had my fill 'o being knocked"
+.byte NewLine
+.text "around. This was an eye-opening moment"
+.byte NewLine
+.text "for me. T-thanks, Osian."
+
+.byte right_slot
+.byte ScrollText
+.text "Hey, no problem! Now make the empire"
+.byte NewLine 
+.text "face your wrath!"
+.byte EndText
+
+
+
+
+
+
+
+
+
+
