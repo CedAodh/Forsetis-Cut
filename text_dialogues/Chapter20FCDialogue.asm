@@ -203,6 +203,7 @@ martyosian
 .text "M-man...I gotta get outta here...this stinks..."
 .byte NewLine
 .text "Is that... Osian?"
+.byte WaitForA 
 .byte ScrollText
 .text "Oh, anyone but him..."
 .byte WaitForA 
@@ -288,16 +289,10 @@ martyosian
 .byte ScrollText
 .text "GRAAAH!"
 
-.byte left_slot
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
+.byte EndText
 
-.byte right_slot
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-					;marty axe swing go here
+martyosian2
+					
 .byte left_slot
 .word LoadPortrait
 .word marty_portrait
@@ -324,9 +319,8 @@ martyosian
 .text "Hey, no problem! Now make the empire"
 .byte NewLine 
 .text "face your wrath!"
+.byte WaitForA
 .byte EndText
-
-
 
 
 
