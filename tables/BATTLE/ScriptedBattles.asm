@@ -56,12 +56,12 @@ MareetaShannamScriptedBattle .dstruct structScriptedBattleSetup, $00, [Mareeta, 
 	.byte $00, $02, $00, $0C	;Right0;Miss2;0;
 .word $FFFF, $FFFF
 
-NannaLoptrianScriptedBattle .dstruct structScriptedBattleSetup, $00, [Linoan, Player, SageF, Aura, TerrainCastle, [34, 34], 10, 99, 34, 14, 0], [LoptrianSorcerer1, Enemy, Sorcerer, Jormungand, TerrainCastle, [38, 38], 12, 67, 24, 10, 8], $0A, Halvan, None, Halvan, None, Chapter5, None ; 9A/E8CC
+NannaLoptrianScriptedBattle .dstruct structScriptedBattleSetup, $00, [Marty, Player, Warrior, $FFFF, TerrainCastle, [$FF, 30], 6, 56, 18, 14, 0], [Osian, Enemy, Hero, $FFFF, TerrainCastle, [38, 35], 18, 100, 20, 7, 8], $01, Halvan, None, Halvan, None, $FFFF, None ; 9A/E8CC
 
 	; Rounds
 					   ; Dmg
-	.byte $82, $00, $00, $09	;First80+Left2;Hit0;0;
-	.byte $00, $01, $00, $20	;Right0;Crit1;0;
+	.byte $00, $03, $00, $0C	;Right0;Crit1+Miss2;0;
+	.byte $00, $03, $00, $0C	;Right0;Crit1+Miss2;0;
 .word $FFFF, $FFFF
 
 CedAlphandScriptedBattle .dstruct structScriptedBattleSetup, $17, [CedChp23, Player, Sage, Forseti, TerrainCastle, [$FF, 32], 17, 99, 37, 17, 8], [Alphand, Enemy, DarkBishop, $FFFF, TerrainCastle, [56, 56], 13, 67, 31, 12, 8], $09, Halvan, None, Halvan, None, $FFFF, $9A9B45

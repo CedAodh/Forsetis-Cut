@@ -645,7 +645,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
         aChapter18TalkTargetTable
           ZQOL_TALK_ENTRY Xavier, [Leif]
           ZQOL_TALK_ENTRY Leif, [Xavier]
-		  ZQOL_TALK_ENTRY GunterDialogue, [Asbel]
+	  ZQOL_TALK_ENTRY GunterDialogue, [Asbel]
           ZQOL_TALK_ENTRY Civilian9, [XavierArmor1]
           ZQOL_TALK_ENTRY Civilian10, [XavierArmor2]
           ZQOL_TALK_ENTRY Civilian11, [XavierArmor3]
@@ -665,6 +665,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		
 		aChapter20TalkTargetTable
 		  ZQOL_TALK_ENTRY Conomor, [Xavier]
+		  ZQOL_TALK_ENTRY Marty, [Osian]
 		ZQOL_END_TALK_CHAPTER
 
 		aChapter21TalkTargetTable

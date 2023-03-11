@@ -203,6 +203,9 @@ eventChapter20Events ; FD/D942
 	END_DEFINITION_ARRAY
 
 	_AfterActionEventDefinitions ; FD/DC04
+		EVENT $0A, _MartyPromotion
+			TEST_FLAG_SET $09
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; FD/DC06
@@ -740,6 +743,32 @@ eventChapter20Events ; FD/D942
 		
 		DIALOGUE martyosian
 		YIELD
+	END1
+	
+	_MartyPromotion
+
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $11
+		YIELD
+
+		STORE_WORD_FROM wEventEngineParameter1, wCurrentChapter
+		STORE_WORD wEventEngineParameter2, 2
+		CALL_ASM_SKIPPABLE $9A98E6, $0000
+
+		STORE_BYTE $7E41AC, $00
+		HALT_UNTIL_WORD_SKIPPABLE $7FAA14, $0000
+
+		STORE_WORD_FROM wCurrentChapter, wEventEngineParameter1
+
+		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+
+		YIELD
+		
+		DIALOGUE martyosian
+		YIELD
 		
 		STORE_WORD wEventEngineCharacterTarget, Marty
 		STORE_WORD wEventEngineParameter1, Berserker
@@ -751,6 +780,9 @@ eventChapter20Events ; FD/D942
 
 		STORE_WORD wUnknown001791, $FFFF
 		
+		STORE_WORD wEventEngineCharacterTarget, Marty
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
 	END2
 
 	_BharatCharge ; FD/E13C

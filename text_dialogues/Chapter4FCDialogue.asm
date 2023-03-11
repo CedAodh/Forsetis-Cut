@@ -162,7 +162,7 @@ ch4daisyturn1
 	.byte ScrollText
 	.text "Hmm..."
 	.byte NewLine
-	.text "I guess I shouldn't have put a label"
+	.text "Maybe I shouldn't have put a label"
 	.byte NewLine
 	.text "on stupidity like that just now."
 	.byte WaitForA
