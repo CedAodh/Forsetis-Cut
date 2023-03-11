@@ -78,6 +78,9 @@ eventChapter20Events ; FD/D942
 		EVENT $08, _OlwenBharatTalk
 			CHECK_CHARS2 Olwen, Bharat
 		END_DEFINITION
+		EVENT $09, _MartyOsianTalk
+		CHECK_CHARS2 Marty, Osian
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/DA40
@@ -726,6 +729,28 @@ eventChapter20Events ; FD/D942
 		
 		DIALOGUE olwenbharat
 		YIELD
+	END2
+	
+	_MartyOsianTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SET_MUSIC $3F
+		YIELD
+		
+		DIALOGUE martyosian
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Marty
+		STORE_WORD wEventEngineParameter1, Berserker
+		CALL_ASM_LOOP rlASMCPromoteUnit, $0000
+		
+		HALT_UNTIL_WORD_SKIPPABLE $7FAA14, $0000
+
+		macroUnsetCharacterTurnStatus Marty, TurnStatusHidden
+
+		STORE_WORD wUnknown001791, $FFFF
+		
 	END2
 
 	_BharatCharge ; FD/E13C
