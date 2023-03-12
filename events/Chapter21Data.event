@@ -41,6 +41,7 @@ eventChapter21Data ; B1/8D4F
 		UNIT FriegeArmoredAxe1, Enemy, [9, 18], [9, 18], Fraus, [BattleAxe, Hammer, Vulnerary], 18, False, [$00, $03, $02, $00]
 		UNIT FriegeBallista5, Enemy, [24, 27], [24, 27], Fraus, [IronBallista], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [30, 3], [30, 3], Fraus, [BattleAxe, Hammer, Vulnerary], 18, False, [$00, $03, $02, $00]
+		UNIT Mannheim, Enemy, [29, 10], [29, 10], Fraus, [MasterAxe, Poleax, Vulnerary], 18, False, [$01, $03, $00, $80]
 	UNIT
 
 	_RightReinforcementsCameraCoordinates ; B1/9037
