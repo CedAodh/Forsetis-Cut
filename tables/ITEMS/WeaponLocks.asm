@@ -71,7 +71,7 @@ aVeninBallistaWeaponLock ; B0/9A1C
 	.word 0
 
 aIronBallistaWeaponLock ; B0/9A22
-	.word BallistaEnemy
+	.word LeonsterBallista
 	.word FriegeBallista5
 	.word 0
 
