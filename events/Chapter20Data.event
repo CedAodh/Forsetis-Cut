@@ -134,8 +134,12 @@ eventChapter20Data ; B1/9194
 		UNIT FriegeArmoredAxe1, Enemy, [28, 30], [28, 30], Bharat, [HandAxe, BattleAxe], 18, False, [$00, $22, $00, $00]
 	UNIT
 
-	;_UnusedCoordinates1 ; B1/980C
-	;	.byte 8, 7
+	_LeonsterBallistaGroup ; B1/980C
+		UNIT LeonsterBallista, Player, [7, 17], [7, 17], Glade, [IronBallista], 5, False, [$00, $00, $00, $00]
+		UNIT LeonsterBallista, Player, [19, 17], [19, 17], Glade, [IronBallista], 5, False, [$00, $00, $00, $00]
+		UNIT LeonsterBallista, Player, [1, 24], [1, 24], Glade, [IronBallista], 5, False, [$00, $00, $00, $00]
+		UNIT LeonsterBallista, Player, [30, 24], [30, 24], Glade, [IronBallista], 5, False, [$00, $00, $00, $00]
+	UNIT
 
 	_ReinhardtGroup ; B1/980E
 		UNIT Reinhardt, Enemy, [1, 28], [14, 29], Reinhardt, [], 2, False, [$00, $00, $00, $00]
