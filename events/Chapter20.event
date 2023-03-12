@@ -918,6 +918,13 @@ eventChapter20Events ; FD/D942
 
 		DIALOGUE ch20opening3
 		YIELD
+
+		DIALOGUE ch20opening4
+		YIELD
+		
+		LOAD1 eventChapter20Data._LeonsterBallistaGroup
+		WAIT_MOVE
+		YIELD
 	END2
 
 	_EndingEvent ; FD/E306
