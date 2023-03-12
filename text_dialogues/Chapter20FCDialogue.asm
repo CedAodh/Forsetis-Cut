@@ -322,10 +322,28 @@ martyosian2
 .byte WaitForA
 .byte EndText
 
+ch20opening4
 
+.byte Right_slot
+.word LoadPortrait
+.word blond_portrait
+.byte Left_slot
+.word LoadPortrait
+.word leif_portrait
 
+.byte Right_slot
+.text "Lord Leif!"
+.byte NewLine
+.text "All the artillerymen are now in position."
+.byte NewLine
+.text "We're ready to fight until the very end."
+.byte WaitForA
 
-
-
-
-
+.byte Left_slot
+.text "As we all should."
+.byte NewLine
+.text "Thank you for your report, soldier."
+.byte NewLine
+.text "You may return to your post as well."
+.byte WaitForA
+.byte EndText
