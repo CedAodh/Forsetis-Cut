@@ -109,6 +109,9 @@ eventChapter21Events ; FD/E42D
 		EVENT $06, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Seimetz
 		END_DEFINITION
+		EVENT $1A, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Mannheim
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; FD/E553
