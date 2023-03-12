@@ -389,7 +389,7 @@ eventChapter4xEvents ; FD/85C5
 	END2
 	
 	_LaraAsbelTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse laraasbel4x
 	END2
 	
 	_DaisyCedTalk
@@ -397,7 +397,7 @@ eventChapter4xEvents ; FD/85C5
 	END2
 	
 	_MachaCedTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse machaced4x
 	END2
 
 	_OpeningEvent ; FD/8E69
