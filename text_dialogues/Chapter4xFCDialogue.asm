@@ -708,3 +708,114 @@ machaced4x
 .byte WaitForA
 
 .byte EndText
+
+daisyced
+
+.byte right_slot
+.word $3A00
+.word ced_portrait
+	
+.byte left_slot
+.word $3A00
+.word daisy_portrait
+
+.byte left_slot
+.text "Eeeeek!"
+.byte NewLine
+.text "Ohmygosh, it's Lord Ced!"
+.byte WaitForA
+
+.byte right_slot
+.text "...I'm sorry, but do I know you?"
+.byte NewLine
+.text "Also, could I ask you to not alert"
+.byte NewLine
+.text "every guard stationed in this dungeon?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Please, there was a good reason for that!"
+.byte NewLine
+.text "You don't meet your heroes every day,"
+.byte NewLine
+.text "you know?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*Sigh*"
+.byte WaitForA
+.byte NewLine
+.text "...Listen, if you're not in need of my"
+.byte NewLine
+.text "assistance, then I would strongly suggest"
+.byte NewLine
+.text "that you flee this place alongside the others."
+.byte WaitForA
+.byte ScrollText
+.text "This is no place for a little girl to frolic around."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Little girl?!"
+.byte NewLine
+.text "Have you ever seen a little girl"
+.byte NewLine
+.text "with these before?! Oh, how rude!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Okay, that has nothing to do"
+.byte NewLine
+.text "with the issue at hand."
+.byte WaitForA
+.byte ScrollText
+.text "If that's all you had to say to me,"
+.byte NewLine
+.text "then I'm afraid I must get going."
+.byte NewLine
+.text "I can't afford to waste any more time."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "O-okay...sorry for the trouble."
+.byte NewLine
+.text "You're still my hero, though!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte Left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.word LoadPortrait
+.word daisy_portrait
+.byte right_slot
+.byte ScrollText
+.text "Teehee."
+.byte NewLine
+.text "I can't believe he didn't notice!"
+.byte WaitForA
+.byte ScrollText
+.text "Prince Leif being captured meant he had"
+.byte NewLine
+.text "empty pockets, but this on the other hand"
+.byte NewLine
+.text "is a nice haul!"
+.byte WaitForA
+.byte ScrollText
+.text "And...swoosh!"
+.byte NewLine
+.text "Wh-whoa! All right..."
+.byte NewLine
+.text "Let's try not to break this thing so quickly..."
+.byte WaitForA
+
+.byte EndText
