@@ -1,3 +1,225 @@
+daisyshiva
+
+	.byte right_slot
+	.word $3A00
+	.word daisy_portrait
+	.text "Hold on a sec..."
+	.byte NewLine
+	.text "You!"
+	.byte NewLine
+	.text "Over there!"
+	.byte WaitForA
+
+	.byte left_slot
+	.word $3A00
+	.word shiva_portrait
+
+	.byte right_slot
+	.byte ScrollText
+	.text "You're not that “Shiva” guy, are you?"
+	.byte WaitForA
+
+	.byte left_slot
+	.text "Hm?"
+	.byte NewLine
+	.text "What does a clumsy brat have to do with me?"
+	.byte WaitForA
+	.byte ScrollText
+	.text "I can't recall your face."
+	.byte NewLine
+	.text "Not from any job I've ever done."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Hey! Rude!"
+	.byte NewLine
+	.text "My adorable face was not made for forgetting!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Seems like it was."
+	.byte NewLine
+	.text "So, do I know you?"
+	.byte NewLine
+	.text "Or are you done here?"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "I remember you from about a year ago."
+	.byte NewLine
+	.text "Maybe you don't remember me, but I'm sure you"
+	.byte NewLine
+	.text "remember my big brother: the big, scary Asaello!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Well, of course."
+	.byte NewLine
+	.text "He's the Hitman from Connaught."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Wait..."
+	.byte NewLine
+	.text "I think I'm seeing it. I..."
+	.byte NewLine
+	.text "Yes, he did mention having a younger sister..."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "That's me!"
+	.byte NewLine
+	.text "I'm Daisy, by the way."
+	.byte NewLine
+	.text "It's nice to finally meet you!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Say, why don't you point your sword the"
+	.byte NewLine
+	.text "other way and fight for Prince Leif instead?"
+	.byte WaitForA
+	.byte NewLine
+	.text "I'm sure you'd make more with him than"
+	.byte NewLine
+	.text "whatever spare change you make right now."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Heh."
+	.byte NewLine
+	.text "You say that about a deposed and wanted prince?"
+	.byte NewLine
+	.text "Not likely."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I was offered a bounty, and I'll let"
+	.byte NewLine
+	.text "nothing get in the way of my target."
+	.byte NewLine
+	.text "That's all there is to it."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "H-hey!"
+	.byte NewLine
+	.text "If you think you're gonna get his head,"
+	.byte NewLine
+	.text "then you'll have to go through me first!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "What?!"
+	.byte NewLine
+	.text "Are you daft?"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Maybe, but I don't care!"
+	.byte WaitForA
+	.byte NewLine
+	.text "Prince Leif is kind and genuine!"
+	.byte NewLine
+	.text "All the normal people in North Thracia"
+	.byte NewLine
+	.text "are counting on him right now!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Are you seriously that stupid that you're still"
+	.byte NewLine
+	.text "going to slay him for a pouch of gold?"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Tch..."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Come on, then!"
+	.byte NewLine
+	.text "Whatever you're gonna do, do it!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "...You're really willing to die for him,"
+	.byte NewLine
+	.text "aren't you?"
+	.byte WaitForA
+	.byte ScrollText
+	.text "All right, then."
+	.byte NewLine
+	.text "I give in."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "You do?"
+	.byte NewLine
+	.text "Phew, that was close..."
+	.byte WaitForA
+	.byte NewLine
+	.text "Wait, you do?!"
+	.byte NewLine
+	.text "Why?"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Your naïveté..."
+	.byte NewLine
+	.text "It's certainly something to behold."
+	.byte NewLine
+	.byte WaitForA
+	.byte ScrollText
+	.text "Just one thing: don't talk so lightly"
+	.byte NewLine
+	.text "about throwing your life away."
+	.byte WaitForA
+	.byte NewLine
+	.text "There's nothing more loathsome than"
+	.byte NewLine
+	.text "people rushing toward their own death."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I know that in this case, the Hitman would"
+	.byte NewLine
+	.text "have been after me until his dying breath."
+	.byte NewLine
+	.text "And that wouldn't have gotten us anywhere."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Oops..."
+	.byte NewLine
+	.text "That's what I did, isn't it..."
+	.byte WaitForA
+	.byte NewLine
+	.text "I'm sorry about that."
+	.byte NewLine
+	.text "You're...you're totally right."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Now, how about we get a move on, Shiva?"
+	.byte WaitForA
+ 
+	.byte left_slot
+	.byte ScrollText
+	.text "...As you say."
+	.byte WaitForA
+
+	.byte EndText
+
 leifshiva
 
 .byte right_slot
@@ -61,7 +283,7 @@ leifshiva
 .byte ScrollText
 .text "That won't be necessary."
 .byte NewLine
-.text "Everyone in the merc business knows"
+.text "Everybody in the merc business knows"
 .byte NewLine
 .text "damn well who you are by now."
 .byte WaitForA
@@ -84,12 +306,12 @@ leifshiva
 .byte ScrollText
 .text "No need for me to answer that."
 .byte NewLine
-.text "You should figure it out yourself soon enough."
+.text "You'll figure it out yourself soon enough."
 .byte WaitForA
 .byte ScrollText
 .text "Now, point to your target"
 .byte NewLine
-.text "and allow me to get to work."
+.text "and let me to get to work."
 .byte WaitForA
 
 .byte EndText
@@ -156,41 +378,32 @@ finnkarin
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Oh, really?"
+	.text "Is that right?"
 	.byte NewLine
-	.text "Wow, that's...such an honor!"
+	.text "Wow, that's...that's really an honor!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "But, who was this woman?"
+	.text "Who was this woman?"
 	.byte NewLine
-	.text "Was she a lover of yours?"
+	.text "Maybe there's a chance I know her..."
+	.byte NewLine
+	.text "The Queen had introduced me to many knights."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Oh, what am I saying!"
+	.text "...Wait, please excuse me."
 	.byte NewLine
-	.text "P-please forgive my manners, sir."
-	.byte WaitForA
+	.text "I'm not at liberty to be asking you"
 	.byte NewLine
-	.text "We don't even know each other, and here I am"
-	.byte NewLine
-	.text "instantly peeping into your personal life..."
-	.byte NewLine
-	.text "Queen Erinys would be ashamed."
-	.byte WaitForA 
+	.text "stuff like that on the spot."
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Queen Erinys? Of Silesse?"
-	.byte WaitForA
-	.byte NewLine
-	.text "My..."
-	.byte NewLine
-	.text "I've not heard much about"
-	.byte NewLine
-	.text "the current state of Silesse."
+	.text "Pay it no mind."
 	.byte WaitForA
 	.byte ScrollText
-	.text "How does Her Majesty fare?"
+	.text "Do you refer to Queen Erinys of Silesse?"
+	.byte NewLine
+	.text "How does Her Majesty fare in all this?"
 	.byte WaitForA
 
 	.byte right_slot
@@ -204,16 +417,16 @@ finnkarin
 
 	.byte left_slot
 	.byte ScrollText
-	.text "No... I see."
+	.text "...I understand."
 	.byte NewLine
 	.text "I apologize again."
 	.byte NewLine
-	.text "I didn't mean to open such a touchy subject."
+	.text "I did not mean to open such a delicate subject."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "No, no! It's fine."
+	.text "Oh, no, no! It's fine!"
 	.byte NewLine
 	.text "I just..."
 	.byte WaitForA
@@ -230,7 +443,7 @@ finnkarin
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Heh..."
+	.text "I see..."
 	.byte NewLine
 	.text "Well, take this as you may,"
 	.byte NewLine
@@ -244,11 +457,11 @@ finnkarin
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Y-you do?!"
+	.text "D-do you really mean that?"
 	.byte NewLine
-	.text "I... I don't know what to say..."
+	.text "Ah... I don't know what to say..."
 	.byte NewLine
-	.text "*Sniff*"
+	.text "*sniff*"
 	.byte WaitForA
 
 	.byte left_slot
@@ -256,9 +469,9 @@ finnkarin
 	.text "Just hang in there."
 	.byte WaitForA
 	.byte NewLine
-	.text "Be steady, patient, and train at your own pace,"
+	.text "Be steady and patient, and train at your"
 	.byte NewLine
-	.text "without ever forgetting your reasons for"
+	.text "own pace, never forgetting your reasons for"
 	.byte NewLine
 	.text "becoming a knight."
 	.byte WaitForA
@@ -277,7 +490,7 @@ finnkarin
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Karin... A Pleasure."
+	.text "Karin... A pleasure."
 	.byte NewLine
 	.text "My name is Finn."
 	.byte WaitForA
@@ -287,13 +500,20 @@ finnkarin
 	.text "Nice to meet you, Sir Finn!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "And hey, now that we actually know each other,"
+	.text "And hey, I just unloaded some of my baggage;"
 	.byte NewLine
-	.text "please, tell me:"
-	.byte NewLine
-	.text "this woman that I reminded you of..."
+	.text "maybe now you'd like to do the same?"
 	.byte WaitForA
+	
+	.byte left_slot
 	.byte ScrollText
+	.text "......"
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "This woman that I reminded you of..."
+	.byte NewLine
 	.text "What was she like?"
 	.byte NewLine
 	.text "What was her name?"
@@ -305,7 +525,7 @@ finnkarin
 	.byte NewLine
 	.text "for another time."
 	.byte NewLine
-	.text "Let us return to battle!"
+	.text "As knights, let us return to battle!"
 	.byte WaitForA
 
 	.byte right_slot

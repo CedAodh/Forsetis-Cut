@@ -48,7 +48,7 @@ bucksrel
 .byte EndText
 
 shivarel
-.text "What a naive bunch..."
+.text "What a naïve bunch..."
 .byte NewLine
 .text "Still, I owe them a debt now."
 .byte WaitForA
@@ -184,7 +184,7 @@ moorerel
 .byte EndText
 
 mullerrel
-.text "How naive..."
+.text "How naïve..."
 .byte WaitForA
 .byte EndText
 

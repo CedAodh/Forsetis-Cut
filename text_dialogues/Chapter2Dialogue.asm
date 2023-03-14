@@ -310,7 +310,7 @@ ch2villagespeedring
 
 .byte Right_Slot
 .byte ScrollText
-.text "You're too naive!"
+.text "You're too naïve!"
 .byte NewLine
 .text "The pirates would've killed a few of us, sure,"
 .byte NewLine

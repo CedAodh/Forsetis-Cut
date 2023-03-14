@@ -64,7 +64,7 @@ ch23coulterspawn
 
 .byte Right_slot
 .byte ScrollText
-.text "Bah, Lady Altena is too naive..."
+.text "Bah, Lady Altena is too naïve..."
 .byte NewLine
 .text "We'll never have another opportunity like this"
 .byte NewLine

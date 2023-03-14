@@ -370,7 +370,7 @@ ch11opening1
 .text "not the skill of her sword-arm."
 .byte WaitForA
 .byte ScrollText
-.text "So naive, so oblivious to the way"
+.text "So naïve, so oblivious to the way"
 .byte NewLine
 .text "of the world... You're lucky to have"
 .byte NewLine

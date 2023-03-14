@@ -536,18 +536,16 @@ ch1osianhouseosian
 	.byte WaitForA
 	
 	.byte Right_slot
-	.text "We're risking life and limb to protect the"
+	.text "Get outta my face with the lectures, old man."
 	.byte NewLine
-	.text "village, and you're giving me a lecture? You've"
-	.byte NewLine
-	.text "got a strange sense of gratitude, old man."
+	.text "You think I came here to listen to that crap?"
 	.byte WaitForA
 	
 	.byte Left_slot
 	.byte ScrollText
 	.text "Not even the Empire knockin' down our front"
 	.byte NewLine
-	.text "door can stop that fool mouth of yours, I see."
+	.text "door can stop that foul mouth of yours, I see."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Well, no point in draggin' this out."
@@ -573,14 +571,14 @@ ch1osianhouseosian
 	
 	.byte Right_slot
 	.byte ScrollText
-	.text "Hey, I came here for the axe,"
+	.text "Hey, I told you I didn't come here"
 	.byte NewLine
-	.text "not to get chewed out!"
+	.text "to get chewed out!"
 	.byte WaitForA
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "If that's all you wanted, then get going!"
+	.text "Then stop standin' around and get going!"
 	.byte NewLine
 	.text "Go on, now!"
 	.byte NewLine
@@ -589,7 +587,7 @@ ch1osianhouseosian
 	
 	.byte Right_slot
 	.byte ScrollText
-	.text "You don't need to tell me twice!"
+	.text "Yeah, I got it!"
 	.byte WaitForA
 	
 	.byte EndText

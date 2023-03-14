@@ -761,7 +761,7 @@ ch7safieshiva
 .byte ScrollText
 .text "...Well, all the better."
 .byte NewLine
-.text "I can appreciate that kind of naive innocence."
+.text "I can appreciate that kind of naïve innocence."
 .byte WaitForA
 
 .byte Left_slot

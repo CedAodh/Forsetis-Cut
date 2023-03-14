@@ -79,7 +79,7 @@ ch2xop1
 	.text "and allow this to continue."
 	.byte WaitForA
 	.byte ScrollText
-	.text "We're not naive. Everyone knows the risks—"
+	.text "We're not naïve. Everyone knows the risks—"
 	.byte NewLine
 	.text "we know we'll likely die."
 	.byte NewLine
