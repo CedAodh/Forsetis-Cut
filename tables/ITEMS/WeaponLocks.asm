@@ -1,7 +1,7 @@
 
-;aUnknown1WeaponLock ; B0/99D6
-;	.word Halvan
-;	.word 0
+aGaeBolgWeaponLockWeaponLock ; B0/99D6
+	.word Altena
+	.word 0
 
 aEarthSwordWeaponLock ; B0/99DA
 	.word Nanna
@@ -11,12 +11,9 @@ aGrafcaliburWeaponLock ; B0/99DE
 	.word Asbel
 	.word 0
 
-;aUnknown2WeaponLock ; B0/99E2
-;	.word Schroff
-;	.word Sara
-;	.word FriegePriest2
-;	.word Cohen
-;	.word 0
+FragarachWeaponLock ; B0/99E2
+	.word Conomor
+	.word 0
 
 aKiaWeaponLock ; B0/99EC
 	.word Sara
@@ -71,7 +68,7 @@ aVeninBallistaWeaponLock ; B0/9A1C
 	.word 0
 
 aIronBallistaWeaponLock ; B0/9A22
-	.word LeonsterBallista
+	.word BallistaEnemy
 	.word FriegeBallista5
 	.word 0
 
@@ -104,9 +101,9 @@ aDragonpikeWeaponLock ; B0/9A44
 	.word Dean
 	.word 0
 
-;aUnknown4WeaponLock ; B0/9A4A
-;	.word Perne
-;	.word 0
+aBaldungWeaponLock ; B0/9A4A
+	.word Shannam
+	.word 0
 
 aGungnirWeaponLock
 	.word Travant

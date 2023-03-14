@@ -9,10 +9,11 @@ aArmorEffectiveness ; B0/807A
 	.byte ArmoredSword
 	.byte 0
 
-aUnknownEffectiveness ; B0/8082
-	.byte Dracorider
-	.byte Dracoknight
-	.byte DragonMaster
+aMyrmidonEffectiveness ; B0/8082
+	.byte Myrmidon
+	.byte MyrmidonF
+	.byte Swordmaster
+	.byte SwordmasterF
 	.byte 0
 
 aFlyingEffectiveness ; B0/8086
