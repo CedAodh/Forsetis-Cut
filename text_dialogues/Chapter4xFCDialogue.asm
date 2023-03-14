@@ -22,21 +22,21 @@ ferguskarin1
 	.byte ScrollText
 	.text "And it's only gonna get tougher from here."
 	.byte NewLine
-	.text "I recommend you step aside and"
+	.text "I suggest you step aside and"
 	.byte NewLine
-	.text "leave the heavy work to me."
+	.text "let me do the heavy lifting."
 	.byte WaitForA
 	.byte ScrollText
 	.text "After all,"
 	.byte NewLine
-	.text "I'm already used to fighting on the ground."
+	.text "I'm used to fighting on the ground."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
 	.text "Hmph!"
 	.byte NewLine
-	.text "You speak to me like I'm nothing more"
+	.text "You talk to me like I'm nothing more"
 	.byte NewLine
 	.text "than a pushover!"
 	.byte WaitForA
@@ -57,7 +57,7 @@ ferguskarin1
 	.byte ScrollText
 	.text "Listen, sweetie,"
 	.byte NewLine
-	.text "I ain't trying to say that you're weak."
+	.text "I ain't trying to say you're weak."
 	.byte WaitForA
 
 	.byte left_slot
@@ -88,9 +88,9 @@ ferguskarin1
 	.byte NewLine
 	.text "Such a sharp tongue, and yet it looks like"
 	.byte NewLine
-	.text "any common soldier might knock her down"
+	.text "any common soldier could knock her down"
 	.byte NewLine
-	.text "in one swing!"
+	.text "in a single swing!"
 	.byte WaitForA
 	.byte ScrollText
 	.text "Buuut, I guess she had a point."
@@ -98,6 +98,244 @@ ferguskarin1
 	.text "Women, huh?"
 	.byte WaitForA
 
+	.byte EndText
+	
+	laraasbel
+
+	.byte right_slot
+	.word $3A00
+	.word asbel_portrait
+
+	.byte left_slot
+	.word $3A00
+	.word lara_portrait
+	.text "Asbel!"
+	.byte NewLine
+	.text "It's you!"
+	.byte WaitForA
+
+	.byte right_slot
+	.text "Lara?"
+	.byte NewLine
+	.text "I didn't think I'd see you again so soon!"
+	.byte NewLine
+	.text "Are you all right?"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Sure am!"
+	.byte NewLine
+	.text "You shouldn't worry about me so much."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I'm as sneaky as a mouse:"
+	.byte NewLine
+	.text "if an enemy spots me, I can get around"
+	.byte NewLine
+	.text "and away from them just like that."
+	.byte WaitForA
+	.byte ScrollText
+	.text "And maybe even snatch something"
+	.byte NewLine
+	.text "while I'm at it!"
+	.byte WaitForA
+	.byte NewLine
+	.text "Like this!"
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Wha—"
+	.byte NewLine
+	.text "Hey! No fair!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Tee hee!"
+	.byte NewLine
+	.text "Sorry, couldn't resist."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "There's soldiers all around here, Lara—"
+	.byte NewLine
+	.text "you shouldn't be playing around like that."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Oops, sorry."
+	.byte NewLine
+	.text "But still, you gotta let loose"
+	.byte NewLine
+	.text "once in a while, Asbel."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Reading those boring books all the time"
+	.byte NewLine
+	.text "isn't doing you much good."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Sometimes I call out your name"
+	.byte NewLine
+	.text "and you just keep walking."
+	.byte NewLine
+	.text "I've seen you run into a wall before!"
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Don't blame this on my books!"
+	.byte NewLine
+	.text "They're essential for me to become"
+	.byte NewLine
+	.text "a full-fledged mage!"
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "OK then, Mr. Full-of-it Mage."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Just remember that you're my friend."
+	.byte NewLine
+	.text "Idolize Lord Ced all you want,"
+	.byte NewLine
+	.text "but don't overdo it, OK?"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "I... All right."
+	.byte NewLine
+	.text "I promise, Lara."
+	.byte NewLine
+	.text "Let's get back to it now."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Great!"
+	.byte NewLine
+	.text "See ya later, Asbel!"
+	.byte WaitForA
+
+	.byte EndText
+	
+cedmacha
+
+	.byte right_slot
+	.word $3A00
+	.word ced_portrait
+	
+	.byte left_slot
+	.word $3A00
+	.word macha_portrait
+	.text "Lord Ced!"
+	.byte NewLine
+	.text "Over here!"
+	.byte WaitForA
+
+	.byte right_slot
+	.text "Macha?"
+	.byte NewLine
+	.text "I'm glad to see you safe."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Yes, our mission was a success."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Even if we were a little overwhelmed"
+	.byte NewLine
+	.text "by guards..."
+	.byte NewLine
+	.text "But Brighton gave them quite the fight!"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Excellent."
+	.byte NewLine
+	.text "I knew you would be able to get the job done."
+	.byte NewLine
+	.text "I'm honored to have such capable help."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "That's what I should be saying!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "He'd never let you see it,"
+	.byte NewLine
+	.text "but Brighton is beyond thankful that"
+	.byte NewLine
+	.text "you volunteered to step in as leader."
+	.byte WaitForA
+	.byte ScrollText
+	.text "He's second to none in a fight, but"
+	.byte NewLine
+	.text "directing others isn't really his strong suit."
+	.byte NewLine
+	.text "The anxiety kicks in, and then, you know..."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Well, I'm glad I was able to"
+	.byte NewLine
+	.text "relieve him of that!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "I'm not quite sure what my expectations"
+	.byte NewLine
+	.text "were going into this, but it seems like"
+	.byte NewLine
+	.text "we're all pleased with the result."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "I'd say so."
+	.byte NewLine
+	.text "Now what's next on our agenda?"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Ah, I had already spoken to Asbel about it:"
+	.byte NewLine
+	.text "I wish for you to accompany Prince Leif"
+	.byte NewLine
+	.text "even after he's clear of the castle."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Right now the fate of North Thracia rests"
+	.byte NewLine
+	.text "on his shoulders, and I'd like to ensure"
+	.byte NewLine
+	.text "he recieves a fair share of support from us."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "Trust me, Prince Leif in good hands."
+	.byte NewLine
+	.text "He's all full of conviction and everything—"
+	.byte NewLine
+	.text "I know we'll do great things with him."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "You have my eternal thanks, Macha."
+	.byte NewLine
+	.text "Until next time!"
+	.byte WaitForA
+	
 	.byte EndText
 	
 ch4xop3

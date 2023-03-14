@@ -582,3 +582,131 @@ ch4daisyturn1
 	.byte WaitForA
 
 	.byte EndText
+
+brightonmacha
+
+	.byte right_slot
+	.word $3A00
+	.word macha_portrait
+	.text "*sigh*"
+	.byte WaitForA
+	.byte ScrollText
+	.text "......"
+	.byte WaitForA
+
+	.byte left_slot
+	.word $3A00
+	.word brighton_portrait
+	.text "Macha, my sweet."
+	.byte NewLine
+	.text "Is something wrong?"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Oh, Brighton."
+	.byte NewLine
+	.text "...It's nothing new."
+	.byte WaitForA
+	.byte ScrollText
+	.text "My feelings in a place like this..."
+	.byte NewLine
+	.text "They're overwhelming."
+	.byte NewLine
+	.text "Please, tell me we're not in Munster."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "...I'm sorry, Macha."
+	.byte NewLine
+	.text "I...I don't know what to say."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "It's all right."
+	.byte NewLine
+	.text "There wouldn't..."
+	.byte NewLine
+	.text "There wouldn't even be any point."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "It just means we have to start thinking"
+	.byte NewLine
+	.text "about the future, then."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "The future..."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "That's right!"
+	.byte NewLine
+	.text "And we've already gotten a start on it:"
+	.byte NewLine
+	.text "the Magi Squad."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "The Magi were barely getting by recently."
+	.byte NewLine
+	.text "If Lord Ced hadn't taken over, I can only"
+	.byte NewLine
+	.text "wonder how you'd be acting right now."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Th-that's a little beside the point..."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Either way, I did what I thought was best."
+	.byte NewLine
+	.text "I could never have gone down the path"
+	.byte NewLine
+	.text "Father laid out for me."
+	.byte WaitForA
+	.byte ScrollText
+	.text "A knight exists to protect his subjects."
+	.byte NewLine
+	.text "Once the Knights of Munster stopped"
+	.byte NewLine
+	.text "doing that, I had no reason to stay."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Well, I'm glad you left."
+	.byte NewLine
+	.text "Because it means I now have a"
+	.byte NewLine
+	.text "handsome knight all to myself."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "As you say, my lady."
+	.byte WaitForA
+	.byte ScrollText
+	.text "And there's the smile I was looking for!"
+	.byte NewLine
+	.text "It's a very nice smile, I'll remind you."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Haha... You got me this time."
+	.byte NewLine
+	.text "Thank you, Brighton."
+	.byte NewLine
+	.text "Now, let's get back to it."
+	.byte WaitForA
+
+	.byte EndText
