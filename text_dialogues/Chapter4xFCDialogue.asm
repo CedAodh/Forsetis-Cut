@@ -431,125 +431,126 @@ ch4xop4
 
 laraasbel4x
 
-.byte right_slot
-.word $3A00
-.word asbel_portrait
+	.byte right_slot
+	.word $3A00
+	.word asbel_portrait
 
-.byte left_slot
-.word $3A00
-.word lara_portrait
-.text "Asbel! It's you!"
-.byte WaitForA
+	.byte left_slot
+	.word $3A00
+	.word lara_portrait
+	.text "Asbel!"
+	.byte NewLine
+	.text "It's you!"
+	.byte WaitForA
 
-.byte right_slot
-.text "Lara?"
-.byte NewLine
-.text "I didn't think we would meet again so soon!"
-.byte NewLine
-.text "Are you all right?"
-.byte WaitForA
+	.byte right_slot
+	.text "Lara?"
+	.byte NewLine
+	.text "I didn't think I'd see you again so soon!"
+	.byte NewLine
+	.text "Are you all right?"
+	.byte WaitForA
 
-.byte left_slot
-.byte ScrollText
-.text "Sure am!"
-.byte WaitForA
-.byte ScrollText
-.text "You shouldn't worry so much about me, you know."
-.byte WaitForA
-.byte NewLine
-.text "I'm as sneaky as a mouse,"
-.byte NewLine
-.text "so if an enemy spots me, I can get around"
-.byte NewLine
-.text "and away from them just like that."
-.byte WaitForA
-.byte ScrollText
-.text "Maybe I can even snatch"
-.byte NewLine
-.text "something while I'm at it!"
-.byte WaitForA
-.byte NewLine
-.text "Like this!"
-.byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Sure am!"
+	.byte NewLine
+	.text "You shouldn't worry about me so much."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I'm as sneaky as a mouse:"
+	.byte NewLine
+	.text "if an enemy spots me, I can get around"
+	.byte NewLine
+	.text "and away from them just like that."
+	.byte WaitForA
+	.byte ScrollText
+	.text "And maybe even snatch something"
+	.byte NewLine
+	.text "while I'm at it!"
+	.byte WaitForA
+	.byte NewLine
+	.text "Like this!"
 
-.byte right_slot
-.byte ScrollText
-.text "Wha-"
-.byte NewLine
-.text "Hey! No fair!"
-.byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "Wha—"
+	.byte NewLine
+	.text "Hey! No fair!"
+	.byte WaitForA
 
-.byte left_slot
-.byte ScrollText
-.text "Heehee!"
-.byte NewLine
-.text "Sorry, couldn't resist."
-.byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Tee hee!"
+	.byte NewLine
+	.text "Sorry, couldn't resist."
+	.byte WaitForA
 
-.byte right_slot
-.byte ScrollText
-.text "This is a battlefield, Lara."
-.byte NewLine
-.text "You shouldn't be playing around like that."
-.byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "There's soldiers all around here, Lara—"
+	.byte NewLine
+	.text "you shouldn't be playing around like that."
+	.byte WaitForA
 
-.byte left_slot
-.byte ScrollText
-.text "Oopsie. Sorry."
-.byte WaitForA
-.byte ScrollText
-.text "You know, we might be soldiers,"
-.byte NewLine
-.text "in the sense that we're fighting all the time,"
-.byte NewLine
-.text "but we're still the youngest Magi guys here!"
-.byte WaitForA
-.byte ScrollText
-.text "You could try to have a little fun now and then,"
-.byte NewLine
-.text "instead of just reading boring books all day!"
-.byte NewLine
-.text "It'd be good for you!"
-.byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Oops, sorry."
+	.byte NewLine
+	.text "But still, you gotta let loose"
+	.byte NewLine
+	.text "once in a while, Asbel."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Reading those boring books all the time"
+	.byte NewLine
+	.text "isn't doing you much good."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Sometimes I call out your name"
+	.byte NewLine
+	.text "and you just keep walking."
+	.byte NewLine
+	.text "I've seen you run into a wall before!"
 
-.byte right_slot
-.byte ScrollText
-.text "They're not boring!"
-.byte NewLine
-.text "They're essential for me to become"
-.byte NewLine
-.text "a fully fledged mage!"
-.byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "Don't blame this on my books!"
+	.byte NewLine
+	.text "They're essential for me to become"
+	.byte NewLine
+	.text "a full-fledged mage!"
+	.byte WaitForA
 
-.byte left_slot
-.byte ScrollText
-.text "Okay then, Mr. Fully Fledged Mage."
-.byte WaitForA
-.byte ScrollText
-.text "Just know that I consider you a friend."
-.byte NewLine
-.text "I know how much Lord Ced means to you,"
-.byte NewLine
-.text "but don't overdo it, okay?"
-.byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "OK then, Mr. Full-of-it Mage."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Just remember that you're my friend."
+	.byte NewLine
+	.text "Idolize Lord Ced all you want,"
+	.byte NewLine
+	.text "but don't overdo it, OK?"
+	.byte WaitForA
 
-.byte right_slot
-.byte ScrollText
-.text "I... All right."
-.byte NewLine
-.text "It's a promise, Lara."
-.byte NewLine
-.text "Let's get back to battle."
-.byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "I... All right."
+	.byte NewLine
+	.text "I promise, Lara."
+	.byte NewLine
+	.text "Let's get back to it now."
+	.byte WaitForA
 
-.byte left_slot
-.byte ScrollText
-.text "Great!"
-.byte NewLine
-.text "Take care, Asbel!"
-.byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Great!"
+	.byte NewLine
+	.text "See ya later, Asbel!"
+	.byte WaitForA
 
-.byte EndText
+	.byte EndText
 
 machaced4x
 
