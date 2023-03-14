@@ -374,5 +374,10 @@ ch8xclosing
 .byte NewLine
 .text "to not repeat your father's mistake..."
 .byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.byte Left_slot
+.byte ScrollText
 
+.byte EndText
 .byte EndText

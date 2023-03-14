@@ -46,7 +46,7 @@ eventChapter8Data ; B1/DD06
 	;	.byte 8, 7
 
 	_RumaighGroup ; B1/DE20
-		UNIT Rumaigh, Enemy, [2, 10], [2, 10], Rumaigh, [Ridersbane, SteelLance, IronSword, Vulnerary, MasterSeal], 5, True, [$01, $03, $02, $80]
+		UNIT Rumaigh, Enemy, [2, 10], [2, 10], Rumaigh, [Ridersbane, SteelLance, SlimSword, Vulnerary, MasterSeal], 5, True, [$01, $03, $02, $80]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/DE36

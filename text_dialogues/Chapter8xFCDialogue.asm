@@ -240,3 +240,122 @@ ronantanya8x
 	.byte WaitForA
 
 	.byte EndText
+
+ch8xclosing2
+
+.byte left_slot
+.word LoadPortrait
+.word augustus_potrait
+.byte right_slot
+.word $3A00
+.word dagdar_portrait
+
+.byte left_slot
+.text "Sir Dagdar, there appears to be"
+.byte NewLine
+.text "some noise coming from the basement."
+.byte WaitForA
+
+.byte right_slot
+.text "Aye, I hear it too. Let's take a look."
+.byte NewLine
+.text "I suggest ye stand aside, bishop."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte Left_slot
+.byte ScrollText
+.word ClearPortrait
+.word LoadPortrait
+.word dagdar_portrait
+.text "Well, I'll be!"
+.byte NewLine
+.text "What's all the ruckus down here?!"
+.byte WaitForA
+
+.byte Right_slot
+.word LoadPortrait
+.word bucks_potrait
+.text "Boss! Yer alive!"
+.byte NewLine
+.text "Someone pinch me,"
+.byte NewLine
+.text "cause I think I'm seeing gho-"
+.byte WaitForA
+.byte NewLine
+.text "AAAGH!"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "That do the job?"
+.byte NewLine
+.text "It's really me, goddamnit!"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "W-We're sorry, boss!"
+.byte NewLine
+.text "We would've fought by yer side,"
+.byte NewLine
+.text "but Gomez trapped us in here like rats!"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "It's alright, lads...I..."
+.byte NewLine
+.text "I thought Gomez and his crooks did you in."
+.byte NewLine
+.text "What's important is that yer safe and sound."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "B-Boss..."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Hahaha!"
+.byte NewLine
+.text "Watcha all lookin' teary-eyed for?"
+.byte NewLine
+.text "That can wait for later."
+.byte WaitForA
+.byte ScrollText
+.text "Now then, listen up, you scrubs,"
+.byte NewLine
+.text "because you have new orders!"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "S-Sir, yes sir!"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "From now on, we'll be fighting with"
+.byte NewLine
+.text "Prince Leif's army against the Empire!"
+.byte WaitForA
+.byte ScrollText
+.text "I'll be going with him meself, but I want"
+.byte NewLine
+.text "most of you to stay here and protect the"
+.byte NewLine
+.text "mountains like always. Are we clear?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Y-Yes sir!"
+.byte WaitForA
+
+.byte EndText
