@@ -1523,7 +1523,7 @@ _TathlumDesc
 _BaldungDesc
 .text "{Lock}Shannam "
 .word $0000
-.text "Far from genuine"
+.text "Far fro[m genuine"
 .word $0000
 .text "Reduces Skill to 0"
 .word $0000
