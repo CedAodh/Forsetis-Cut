@@ -1,5 +1,5 @@
 
-aGaeBolgWeaponLockWeaponLock ; B0/99D6
+aGaeBolgWeaponLock ; B0/99D6
 	.word Altena
 	.word 0
 
