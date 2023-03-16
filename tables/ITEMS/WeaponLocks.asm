@@ -11,7 +11,7 @@ aGrafcaliburWeaponLock ; B0/99DE
 	.word Asbel
 	.word 0
 
-FragarachWeaponLock ; B0/99E2
+aFragarachWeaponLock ; B0/99E2
 	.word Conomor
 	.word 0
 
