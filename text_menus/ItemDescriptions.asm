@@ -1523,7 +1523,7 @@ _TathlumDesc
 _BaldungDesc
 .text "{Lock}Shanna[m"
 .word $0000
-.text "Far from genuine "
+.text "Far fro[m genuine "
 .word $0000
 .text "Grants confidence "
 .word $0000
