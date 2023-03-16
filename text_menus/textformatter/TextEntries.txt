@@ -1318,6 +1318,18 @@ Gives )Wrath
 Use for   (Mag 
 Eff against 
 
+Baldung
+Shanna[m
+Far fro[m genuine
+Grants confidence
+Gives Astra
+
+Fragarach
+Cono[mor
+A refined ]weapon
+Effective against
+units
+
 Valfla[me
 Exalted fire [magic
 High critical rate
