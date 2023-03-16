@@ -1520,23 +1520,25 @@ _TathlumDesc
 .word $0000
 
 
-_ReturnDesc
-.text "    Range     {blue1}"
+_BaldungDesc
+.text "{Lock}Shannam "
 .word $0000
-.text "Allo]ws an ally "
+.text "Far from genuine"
 .word $0000
-.text "to escape "
+.text "Reduces Skill to 0"
 .word $0000
-.text "the chapter "
+.text "Gives Astra "
 .word $0000
 .word $0000
 
-_WatchDesc
-.text "    Range   {INF1}{INF2}"
+_FragarachDesc
+.text "{Lock}Cono[mor"
 .word $0000
-.text "Reveals concealed "
+.text "A refined ]weapon "
 .word $0000
-.text "areas under a roof"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
