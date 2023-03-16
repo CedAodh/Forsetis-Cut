@@ -1521,11 +1521,11 @@ _TathlumDesc
 
 
 _BaldungDesc
-.text "{Lock}Shannam "
+.text "{Lock}Shanna[m"
 .word $0000
-.text "Far fro[m genuine"
+.text "Far from genuine"
 .word $0000
-.text "Reduces Skill to 0"
+.text "Grants confidence "
 .word $0000
 .text "Gives Astra "
 .word $0000
