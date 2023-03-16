@@ -2176,7 +2176,7 @@ rlUnknown838D28 ; 83/8D28
 	rep #$30
 
 	+
-	jmp rlFillMovementRangeArray
+	jml rlFillMovementRangeArray
 
 
 
