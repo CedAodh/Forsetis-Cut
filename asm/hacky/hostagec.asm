@@ -25,7 +25,7 @@
 	
 	_Exit
 	asl
-	jmp		rlGetCharacterNamePointer._HookCh19HostageCReturn
+	jmL		rlGetCharacterNamePointer._HookCh19HostageCReturn
 	
 	_ChangeToCivilian
 	lda		#$00A5 ; Civilian2Name
