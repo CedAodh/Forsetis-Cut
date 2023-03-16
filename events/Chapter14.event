@@ -907,27 +907,12 @@ eventChapter14Events ; FD/9790
 		STORE_LONG lEventEngineLongParameter, ch14opening4
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
-		+
-		
-		STORE_WORD wEventEngineCharacterTarget, Asbel
-		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-		JUMP_TRUE +
-		
-		macroCheckTurnStatusSet Asbel, TurnStatusCaptured
-		JUMP_TRUE +
-		
 		STORE_LONG lEventEngineLongParameter, ch14opening5
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter14Data._GunnarGroup
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
-		
-		+
-		
-		STORE_LONG lEventEngineLongParameter, ch14opening6
-		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
-		YIELD
 		
 	END2
 
