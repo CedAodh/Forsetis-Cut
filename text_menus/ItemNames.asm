@@ -646,7 +646,7 @@ _Torch_name
 	.word $0000
 
 _Return_name
-	.text "Return"
+	.text "Baldung "
 	.word $0000
 
 _Hammerne_name
@@ -658,7 +658,7 @@ _Thief_name
 	.word $0000
 
 _Watch_name
-	.text ")Watch"
+	.text "Fragarach "
 	.word $0000
 
 _Berserk_name
@@ -727,7 +727,7 @@ _MasterSeal_name
 	.word $0000
 
 _MasterCrown_name
-	.text "(Master Cro]wn"
+	.text "Tathlu[m"
 	.word $0000
 
 _ChestKey_name
