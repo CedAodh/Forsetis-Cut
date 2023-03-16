@@ -30,7 +30,7 @@ rlUnknown80E626replacement
 	cmp #$0000
 	bne +
 
-	jmp rlUnknown80E662._End
+	jml rlUnknown80E662._End
 
 	+
 	ldx #<>aVisibilityMap
