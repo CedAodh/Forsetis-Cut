@@ -750,7 +750,7 @@ eventChapter22Events ; 8C/F611
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE shivaasaello
 		YIELD
 	END2
 	
@@ -766,7 +766,7 @@ eventChapter22Events ; 8C/F611
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE diarmuidshannam
 		YIELD
 	END2
 
