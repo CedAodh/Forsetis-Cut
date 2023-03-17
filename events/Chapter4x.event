@@ -362,7 +362,7 @@ eventChapter4xEvents ; FD/85C5
 		macroConvertToPlayerAllegiance Asbel
 
 		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Leif
-		macroUnsetCharacterBitsWord Tanya, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
+		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
 	END2
 
 	_KarinCedTalk ; FD/8E18
