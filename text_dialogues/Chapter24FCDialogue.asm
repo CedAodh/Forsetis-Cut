@@ -336,3 +336,210 @@ getgudraydrik
 .byte WaitForA
 
 .byte EndText
+
+
+leifgalzus
+
+.byte right_slot
+.word LoadPortrait
+.word galzus_portrait
+.text "Hah."
+
+.byte left_slot
+.word $3A00
+.word leif_portrait2
+.text "Hm?"
+.byte NewLine
+.text "What... What is it?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I can't say I expected to see you of all"
+.byte NewLine
+.text "people coming back to this place so soon."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What do you mean?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "The last time you were here,"
+.byte NewLine
+.text "I was tasked with hunting you down."
+.byte WaitForA
+.byte ScrollText
+.text "I never would have imagined"
+.byte NewLine
+.text "you being able to actually get away,"
+.byte NewLine
+.text "and yet you somehow pulled it off."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Is that so?"
+.byte NewLine
+.text "Well, I was just as shocked as you,"
+.byte NewLine
+.text "now that I think about it."
+.byte WaitForA
+.byte ScrollText
+.text "Now that I finally get a proper look at you,"
+.byte NewLine
+.text "I get the feeling that you're more than just" 
+.byte NewLine
+.text "some mercenary. Who exactly are you?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "S-Sorry for asking this so suddenly,"
+.byte NewLine
+.text "but when I look at your own swordsmanship..." 
+.byte NewLine
+.text "Well, it's safe to say that your form is—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Guess I spoke too much."
+.byte WaitForA
+.byte NewLine
+.text "Regardless, that's not what's important"
+.byte NewLine
+.text "right now. I'm sure you have more"
+.byte NewLine
+.text "pressing matters at hand, don't you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You're right."
+.byte NewLine
+.text "I'm sorry for being so intrusive."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Forget about it."
+.byte NewLine
+.text "It'll help keep the both of us focused on"
+.byte NewLine
+.text "the current mission. I won't disappoint you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Okay, Galzus. I'll try to do the same!"
+.byte WaitForA
+
+.byte EndText
+
+
+galzussaias
+
+.byte left_slot
+.word LoadPortrait
+.word galzus_portrait
+.byte right_slot
+.word LoadPortrait
+.word saias_portrait
+
+.byte left_slot
+.text "Bishop."
+.byte WaitForA
+
+.byte right_slot
+.text "Galzus!"
+.byte NewLine
+.text "So,you've joined us, have you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Fate brought me a new opportunity."
+.byte NewLine
+.text "I am here to repay a debt."
+.byte NewLine
+.text "Nothing more."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Is that so?"
+.byte NewLine
+.text "Regardless of your reasoning,"
+.byte NewLine
+.text "I am glad to have you at our side."
+.byte WaitForA
+.byte ScrollText
+.text "I had an inkling that Mareeta would sway you."
+.byte NewLine
+.text "Now that you stand here before me..."
+.byte NewLine
+.text "I take it she's your daughter, correct?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "A man stained as I has no rights to a"
+.byte NewLine
+.text "daughter, and yet she does not blame me"
+.byte NewLine
+.text "for it... I'm not really sure what to do."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Even if you think you're a man"
+.byte NewLine
+.text "with no rights to a daughter,"
+.byte NewLine
+.text "Mareeta has every right to have a father."
+.byte WaitForA
+.byte NewLine
+.text "If there is something you can do to atone,"
+.byte NewLine
+.text "it is to be there beside her now."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I understand."
+.byte NewLine
+.text "I truly owe you, Bishop."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I was simply fulfilling my seraphic duties,"
+.byte NewLine
+.text "you owe me nothing, Galzus."
+.byte WaitForA
+.byte ScrollText
+.text "Your sword arm is more than enough to aid "
+.byte NewLine
+.text "this army. You can turn the tide of this battle"
+.byte NewLine
+.text "in its most crucial hour. That is payment alone."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "If the strength of this remnant of war is what"
+.byte NewLine
+.text "you desire, consider it yours to command,"
+.byte NewLine
+.text "Bishop."
+.byte WaitForA
+
+.byte EndText
