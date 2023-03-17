@@ -1550,30 +1550,23 @@ _KillerBallistaDesc
 .word $0000
 
 
-_BaldungDesc
-.text "{Lock}Shanna[m"
+_ReturnDesc
+.text "    Range     {blue1}"
 .word $0000
-.text "Far fro[m genuine "
+.text "Allo]ws an ally "
 .word $0000
-.text "Grants confidence "
+.text "to escape "
 .word $0000
-.text "Gives Astra "
+.text "the chapter "
 .word $0000
 .word $0000
 
-<<<<<<< Updated upstream
-_FragarachDesc
-.text "{Lock}Cono[mor"
-=======
 _WatchDesc
 .text "    Range   {blue1}{blue-}{INF1}{INF2}"
->>>>>>> Stashed changes
 .word $0000
-.text "A refined ]weapon "
+.text "Reveals concealed "
 .word $0000
-.text "Effective against "
-.word $0000
-.text "{FLY1}{FLY2} units"
+.text "areas under a roof"
 .word $0000
 .word $0000
 

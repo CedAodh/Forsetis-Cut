@@ -47,9 +47,7 @@
 
     .here
 
-  
-* := $4C1100
-.logical lorom ($4C1100, 1)
+  .section NewSecretShopCodeSection
 
       rlLoadNewShopPortrait
 
@@ -131,118 +129,25 @@
 
       aNewSecretShopData
 
-        .long annasshop_text.NewSecretShopIntro
+        .long aNewSecretShopText
         .byte 11, 2
         .word $0400
         .byte $00, $00
         .word $00E0
+        
+        .long shop_text._buy_sell
+        .byte 20, 6
+        .word $0800
+        .byte $01, 00
+        .word $0000, $0000
 
-		.long annasshop_text.NewSecretShopBuySell
-		.byte 20, 6
-		.word $0800
-		.byte $01, 00
-		.word $0000, $0000
-		
-		.long annasshop_text.NewSecretShopIntro
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0
+      aNewSecretShopText
 
-		.long annasshop_text.NewSecretShopBuySell
-		.byte 20, 6
-		.word $0800
-		.byte $01, 00
-		.word $0000, $0000
-	
-		.long annasshop_text.NewSecretShopContinue
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0
+        .enc "DialogueCharacters"
 
-		.long annasshop_text.NewSecretShopBuySell
-		.byte 20, 6
-		.word $0800
-		.byte $01, 00
-		.word $0000, $0000
+        .text "Um... How did you find this place?"
+        .byte NewLine
+        .text "I mean, hello! What'll it be today?"
+        .byte EndTextNoPortraitFade
 
-		.long annasshop_text.NewSecretShopBuyIntro
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-
-		.long annasshop_text.NewSecretShopAfterBuy
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-
-		.long annasshop_text.NewSecretShopNoItemsToSell
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-	
-		.long annasshop_text.NewSecretShopSellIntro
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-	
-		.long annasshop_text.NewSecretShopAfterSale
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-
-		.long annasshop_text.NewSecretShopTooExpensive
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-
-		.long annasshop_text.NewSecretShopBuySellConfirm
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0
-	
-		.long annasshop_text.NewSecretShopYesNo
-		.byte 20, 6
-		.word $0800
-		.byte $01, 00
-		.word $0000, $0000
-
-		.long annasshop_text.NewSecretShopBuySellConfirm
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0
-
-		.long annasshop_text.NewSecretShopYesNo
-		.byte 20, 6
-		.word $0800
-		.byte $01, 00
-		.word $0000, $0000
-
-		.long annasshop_text.NewSecretShopLeave
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-
-		.long annasshop_text.NewSecretShopUnsellable
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-
-		.long annasshop_text.NewSecretShopInventoryFull
-		.byte 11, 2
-		.word $0400
-		.byte $00, $00
-		.word $00E0, $0000
-	
-.endlogical
+  .endsection NewSecretShopCodeSection

@@ -534,17 +534,20 @@ eventChapter4Events ; 99/8778
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
 		
-		macroCheckTurnStatusSet Safy, (TurnStatusHidden | TurnStatusInvisible)
-		JUMP_TRUE +
+		;macroCheckTurnStatusSet Safy, (TurnStatusHidden | TurnStatusInvisible)
+		;JUMP_TRUE +
 		
-		STORE_WORD wEventEngineCharacterTarget, Lifis
-		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
-		JUMP_TRUE +
+		;STORE_WORD wEventEngineCharacterTarget, Lifis
+		;CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		;JUMP_TRUE +
 		
-		macroCheckTurnStatusSet Safy, TurnStatusCaptured
-		JUMP_TRUE +
+		;macroCheckTurnStatusSet Safy, TurnStatusCaptured
+		;JUMP_TRUE +
 		
-		macroCheckTurnStatusSet Lifis, TurnStatusCaptured
+		;macroCheckTurnStatusSet Lifis, TurnStatusCaptured
+		;JUMP_TRUE +
+		
+		TEST_FLAG_SET FlagLifisGoneForGood
 		JUMP_TRUE +
 		
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._DaisyGroup

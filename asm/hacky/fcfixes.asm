@@ -128,3 +128,13 @@
 ;.byte $00, $80, $2A
 
 ;.here
+
+;When initiating combat with a magic sword,
+;reduces distance between attacker and opponent
+
+* := $0DB639
+  .logical $9BB639
+
+.byte $50
+
+.here

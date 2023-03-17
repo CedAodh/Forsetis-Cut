@@ -302,6 +302,12 @@ eventChapter2xEvents ; 97/805A
 
 		STORE_LONG lEventEngineLongParameter, ch2xend2
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		JUMP ++
+		
+		+
+		
+		SET_FLAG FlagLifisGoneForGood
 
 		+
 		YIELD

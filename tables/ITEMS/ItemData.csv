@@ -94,10 +94,17 @@ Nosferatu,TypeLight,None,12,80,7,30,0,1,2,RankB,ItemEffectivenesses.aNoEffective
 Aura,TypeLight,None,18,90,6,50,0,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._AuraDesc,None,None,None,None,TraitWeapon | TraitTome,$5B
 Jormungand,TypeDark,None,14,70,5,20,10,1,2,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._JormungandDesc,None,$2,None,None,TraitWeapon | TraitTome,$5C
 Fenrir,TypeDark,None,18,80,20,5,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._FenrirDesc,None,None,None,None,TraitWeapon | TraitTome,$5D
+<<<<<<< Updated upstream
 Hel,TypeDark,None,-1,60,7,10,0,1,2,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._HelDesc,None,$A,None,None,TraitWeapon | TraitTome | TraitUnsellable,$5E
 Thokk,TypeDark,None,0,100,4,-1,0,1,2,WeaponLocks.aThokkWeaponLock,ItemEffectivenesses.aNoEffectiveness,aLoptrianFangItemBonuses,0,<>item_descs._ThokkDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnbreakable | TraitUnsellable,$65
 Meteor,TypeFire,None,11,80,20,5,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._MeteorDesc,None,None,None,None,TraitWeapon | TraitTome,$60
 Bolting,TypeThunder,None,10,70,20,5,20,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._BoltingDesc,None,None,None,None,TraitWeapon | TraitTome,$61
+=======
+Hel,TypeDark,None,-1,60,7,13,0,1,2,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._HelDesc,None,$A,None,None,TraitWeapon | TraitTome | TraitUnsellable,$5E
+Thokk,TypeDark,None,0,100,4,3,0,1,2,WeaponLocks.aThokkWeaponLock,ItemEffectivenesses.aNoEffectiveness,aLoptrianFangItemBonuses,0,<>item_descs._LoptousDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnbreakable | TraitUnsellable,$65
+Meteor,TypeFire,None,11,80,20,6,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._MeteorDesc,None,None,None,None,TraitWeapon | TraitTome,$60
+Bolting,TypeThunder,None,10,70,20,8,20,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._BoltingDesc,None,None,None,None,TraitWeapon | TraitTome,$61
+>>>>>>> Stashed changes
 Blizzard,TypeWind,None,9,75,20,3,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._BlizzardDesc,None,$E,None,None,TraitWeapon | TraitTome,$62
 Venin,TypeDark,None,8,70,20,5,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._VeninDesc,None,$2,None,None,TraitWeapon | TraitTome,$63
 Petrify,TypeDark,None,1,100,20,1,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._PetrifyDesc,None,$8,None,None,TraitWeapon | TraitTome,$64
@@ -134,7 +141,11 @@ ShieldRing,TypeItem,None,0,0,0,1,4,1,1,RankE,ItemEffectivenesses.aNoEffectivenes
 SkillRing,TypeItem,None,0,0,0,1,7,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._SkillRingDesc,$10,None,None,None,None,$83
 LegRing,TypeItem,None,0,0,0,1,6,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._LegRingDesc,$12,None,None,None,None,$84
 MasterSeal,TypeItem,None,0,0,0,1,6,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._MasterSealDesc,$14,None,None,None,None,$85
+<<<<<<< Updated upstream
 Tathlum,TypeBow,None,12,90,7,60,10,2,2,WeaponLocks.aTathlumWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,6200,<>item_descs._TathlumDesc,$22,None,None,Skill3Wrath,TraitWeapon | TraitUnsellable,$9F
+=======
+MasterCrown,TypeBow,None,12,90,7,60,10,2,2,WeaponLocks.aTathlumWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,6200,<>item_descs._MasterCrownDesc,$22,None,None,Skill3Wrath,TraitWeapon | TraitUnsellable,$22
+>>>>>>> Stashed changes
 ChestKey,TypeItem,None,0,0,0,20,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,6200,<>item_descs._ChestKeyDesc,$18,None,None,None,None,$87
 DoorKey,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,700,<>item_descs._DoorKeyDesc,$1A,None,None,None,None,$88
 BridgeKey,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,700,<>item_descs._BridgeKeyDesc,$1C,None,None,None,None,$89
@@ -159,7 +170,11 @@ BragisScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffective
 HeimsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HeimsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9C
 ParagonManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._ParagonManualDesc,$28,None,None,None,None,$9D
 AccostManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._AccostManualDesc,$2A,None,None,None,None,$9E
+<<<<<<< Updated upstream
 BargainManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,6200,<>item_descs._BargainManualDesc,$22,None,None,None,None,$9F
+=======
+Tathlum,TypeBow,None,12,90,7,60,10,2,2,WeaponLocks.aTathlumWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,6200,<>item_descs._BargainManualDesc,$22,None,None,Skill3Wrath,TraitWeapon | TraitUnsellable,$22
+>>>>>>> Stashed changes
 VantageManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._VantageManualDesc,$2E,None,None,None,None,$A0
 WrathManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._WrathManualDesc,$30,None,None,None,None,$A1
 AdeptManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._AdeptManualDesc,$32,None,None,None,None,$A2

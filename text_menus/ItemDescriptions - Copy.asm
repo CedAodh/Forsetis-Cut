@@ -63,7 +63,7 @@ _GreatswordDesc
 .word $0000
 
 _IronBladeDesc
-.text "A huge broads]word"
+.text "A deadly broads]word"
 .word $0000
 .text "]with tre[mendous "
 .word $0000
@@ -75,22 +75,13 @@ _IronBladeDesc
 
 
 _SlimSwordDesc
-.text "A light]weight"
+_SlimLanceDesc
+.text "Light]weight and"
 .word $0000
-.text "s]word that's easy"
-.word $0000
-.text "to hit ]with"
+.text "si[mple to hit ]with"
 .word $0000
 .word $0000
 
-_SlimLanceDesc
-.text "A light]weight lance"
-.word $0000
-.text "that's easy to hit"
-.word $0000
-.text "]with "
-.word $0000
-.word $0000
 
 _IronLanceDesc
 .text "A co{mm}non lance "
@@ -118,11 +109,9 @@ _SilverLanceDesc
 .word $0000
 
 _ShortLanceDesc
-.text "A standard lance"
+.text "Co{mm}non, s{im}ple "
 .word $0000
-.text "suited ]well for"
-.word $0000
-.text "beginners "
+.text "lance "
 .word $0000
 .word $0000
 
@@ -169,11 +158,9 @@ _SilverAxeDesc
 .word $0000
 
 _BattleAxeDesc
-.text "A staunch axe "
+.text "Deadly axe, but "
 .word $0000
-.text "favored by seasoned "
-.word $0000
-.text "fighters"
+.text "difficult to ]wield "
 .word $0000
 .word $0000
 
@@ -185,7 +172,7 @@ _IronBowDesc
 .word $0000
 .text "easy to ]wield"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 
@@ -194,7 +181,7 @@ _SteelBowDesc
 .word $0000
 .text "that hits harder"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 
@@ -205,14 +192,16 @@ _SilverBowDesc
 .word $0000
 .text "its steep price "
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 
 _ShortbowDesc
 .text "Co{mm}non, s{im}ple bo12"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
@@ -223,7 +212,7 @@ _LongbowDesc
 .word $0000
 .text "for its plain design"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Anti{-}Fliers"
 .word $0000
 .word $0000
 
@@ -232,17 +221,15 @@ _GreatbowDesc
 .word $0000
 .text "bo12"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
 
 _FireDesc
 .text "Basic fire [magic "
-.word $0000
-.text "that sends a ball of"
-.word $0000
-.text "fla[me at the ene[my" 
 .word $0000
 .word $0000
 
@@ -251,14 +238,14 @@ _ElfireDesc
 .word $0000
 .text "Grants Paragon"
 .word $0000
-.text "Anti{dash}Ar[mor"
+.text "Effective against "
 .word $0000
-.text "Anti{dash}Cavalry "
+.text "{ARM1}{ARM2}{CAV1}{CAV2} units"
 .word $0000
 .word $0000
 
 _MeteorDesc
-.text "Long{dash}range "
+.text "Long range"
 .word $0000
 .text "fire [magic "
 .word $0000
@@ -280,7 +267,7 @@ _ThoronDesc
 .word $0000
 
 _BoltingDesc
-.text "Long{dash}range "
+.text "Long range"
 .word $0000
 .text "thunder [magic"
 .word $0000
@@ -292,7 +279,9 @@ _BoltingDesc
 _WindDesc
 .text "Basic ]wind [magic"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
@@ -301,7 +290,9 @@ _TornadoDesc
 .word $0000
 .text "]wind [magic"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
@@ -315,7 +306,7 @@ _LightDesc
 
 
 _FenrirDesc
-.text "Long{dash}range "
+.text "Long range"
 .word $0000
 .text "dark [magic "
 .word $0000
@@ -325,20 +316,24 @@ _FenrirDesc
 
 _ArmorslayerDesc
 _HammerDesc
-.text "Anti{dash}Ar[mor"
+.text "Effective against "
+.word $0000
+.text "{ARM1}{ARM2} units"
 .word $0000
 .word $0000
 
 _RidersbaneDesc
 _PoleaxDesc
-.text "Anti{dash}Cavalry "
+.text "Effective against "
+.word $0000
+.text "{CAV1}{CAV2} units"
 .word $0000
 .word $0000
 
 _RapierDesc
-.text "Anti{dash}Ar[mor"
+.text "Effective against "
 .word $0000
-.text "Anti{dash}Cavalry "
+.text "{ARM1}{ARM2}{CAV1}{CAV2} units"
 .word $0000
 .word $0000
 
@@ -361,103 +356,52 @@ _KingmakerDesc
 
 
 _KillingEdgeDesc
-.text "A deadly s]word "
-.word $0000
-.text "that yields frequent"
-.word $0000
-.text "critical hits "
-.word $0000
-.word $0000
-
 _KillerLanceDesc
-.text "A deadly lance"
-.word $0000
-.text "that yields frequent"
-.word $0000
-.text "critical hits "
-.word $0000
-.word $0000
-
 _KillerAxeDesc
-.text "A deadly axe"
-.word $0000
-.text "that yields frequent"
-.word $0000
-.text "critical hits "
+.text "High critical rate"
 .word $0000
 .word $0000
 
 _KillerBowDesc
-.text "A deadly bo12 "
+.text "High critical rate"
 .word $0000
-.text "that yields frequent"
+.text "Effective against "
 .word $0000
-.text "critical hits "
-.word $0000
-.text "Anti{dash}Fliers"
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
 
 _BraveSwordDesc
-.text "A precious s]word "
-.word $0000
-.text "noted for invariably"
-.word $0000
-.text "striking t]wice "
-.word $0000
-.text "{BRA1}{BRA2}"
-.word $0000
-.word $0000
-
-_BraveAxeDesc
-.text "A precious axe"
-.word $0000
-.text "noted for invariably"
-.word $0000
-.text "striking t]wice "
-.word $0000
-.text "{BRA1}{BRA2}"
-.word $0000
-.word $0000
-
 _MasterSwordDesc
-.text "A superior s]word "
+_BraveAxeDesc
+.text "For those ]who have "
 .word $0000
-.text "[made for those of"
-.word $0000
-.text "the highest caliber "
+.text "[mastered the s]word"
 .word $0000
 .text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 _BraveBowDesc
-.text "A precious bo12 "
+.text "{BRA1}{BRA2}"
 .word $0000
-.text "noted for invariably"
+.text "High critical rate"
 .word $0000
-.text "striking t]wice "
+.text "Effective against "
 .word $0000
-.text "{BRA1}{BRA2}  Anti{dash}Fliers"
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
+
 
 _JavelinDesc
-.text "A thro]wing lance "
-.word $0000
-.text "capable of indirect "
-.word $0000
-.text "attacks "
-.word $0000
-.word $0000
-
 _HandAxeDesc
 .text "A thro]wing axe "
 .word $0000
-.text "capable of indirect "
+.text "capable of"
 .word $0000
-.text "attacks "
+.text "indirect attacks"
 .word $0000
 .word $0000
 
@@ -472,25 +416,41 @@ _MasterAxeDesc
 _MasterBowDesc
 .text "{BRA1}{BRA2}"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
 
 _BallistaDesc
-.text "Long{dash}range "
+.text "Long range"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
 _IronBallistaDesc
 .text "Super long range"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
+_KillerBallistaDesc
+.text "Long range"
+.word $0000
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
+.word $0000
+.text "High critical rate"
+.word $0000
+.word $0000
 
 _FlameSwordDesc
 .text "Casts fire [magic "
@@ -535,7 +495,7 @@ _VeninAxeDesc
 .word $0000
 
 _VeninBowDesc
-.text "Anti{dash}Fliers"
+.text "Eff against {FLY1}{FLY2}"
 .word $0000
 .text "Poisons on hit"
 .word $0000
@@ -546,9 +506,9 @@ _VeninBowDesc
 .word $0000
 
 _VeninBallistaDesc
-.text "Long{dash}range "
+.text "Long range"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Eff against {FLY1}{FLY2}"
 .word $0000
 .text "Poisons the target"
 .word $0000
@@ -557,7 +517,7 @@ _VeninBallistaDesc
 .word $0000
 
 _VeninDesc
-.text "Long{dash}range dark"
+.text "Long range dark "
 .word $0000
 .text "[magic, Poisons on"
 .word $0000
@@ -569,7 +529,7 @@ _VeninDesc
 
 
 _PetrifyDesc
-.text "Long{dash}range dark"
+.text "Long range dark "
 .word $0000
 .text "[magic, Petrifies on"
 .word $0000
@@ -581,7 +541,7 @@ _PetrifyDesc
 
 
 _BlizzardDesc
-.text "Long{dash}range [magic"
+.text "Long range [magic "
 .word $0000
 .text "Applies Sleep on hit"
 .word $0000
@@ -615,7 +575,7 @@ _BerserkEdgeDesc
 
 
 _SleepDesc
-.text "    Range   {blue1}{blue-}{blue1}{blue-}{INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Puts a target ]with "
 .word $0000
@@ -884,18 +844,18 @@ _MareetasSwordDesc
 _BeoBladeDesc
 .text "{Lock}Fergus, Diar[muid "
 .word $0000
-.text "A novel blade "
+.text "High critical rate"
 .word $0000
-.text "Gives Accost and"
+.text "Gives Vantage "
 .word $0000
-.text ")Wrath"
+.text "and )Wrath"
 .word $0000
 .word $0000
 
 _BlessedSwordDesc
 .text "{Lock}Ol]wen, High crit "
 .word $0000
-.text "Anti{dash}Cavalry "
+.text "Eff against {CAV1}{CAV2}"
 .word $0000
 .text "{BRA1}{BRA2}, Gives (Miracle"
 .word $0000
@@ -904,11 +864,11 @@ _BlessedSwordDesc
 .word $0000
 
 _BragisBladeDesc
-.text "{Lock}Crusader lineage"
+.text "{Lock}Holy blood"
 .word $0000
 .text "Pierces Fang's curse"
 .word $0000
-.text "Anti{dash}Ar[mor"
+.text "Eff against {ARM1}{ARM2}"
 .word $0000
 .text "Gives (Miracle"
 .word $0000
@@ -927,7 +887,11 @@ _LoptrianFangDesc
 
 
 _BraveLanceDesc
-.text "{Lock}Finn, {BRA1}{BRA2}"
+.text "{Lock}Lanzenritter"
+.word $0000
+.text "A gift fro[m an "
+.word $0000
+.text "{BRA1}{BRA2}"
 .word $0000
 .text "Gives {+}{1}{0} Lck"
 .word $0000
@@ -965,7 +929,7 @@ _HammerneDesc
 .word $0000
 
 _ThiefDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range   {INF1}{INF2}"
 .word $0000
 .text "{Lock}Tina, Steals a"
 .word $0000
@@ -978,7 +942,7 @@ _ThiefDesc
 .word $0000
 
 _UnlockDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range   {INF1}{INF2}"
 .word $0000
 .text "{Lock}Tina"
 .word $0000
@@ -1015,19 +979,21 @@ _GrafcaliburDesc
 .word $0000
 .text "High critical rate"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
 _ForsetiDesc
 _ForsetiInfiniteDesc
-.text "{Lock}Ced "
+.text "{Lock}Ced, Gives  {+}{2}{0}"
 .word $0000
-.text "Holy ]wind [magic "
+.text "Skl & Spd, High crit"
 .word $0000
-.text "Anti{dash}Fliers, Skl "
+.text "Exalted ]wind [magic"
 .word $0000
-.text "{+}{1}{0}, Spd {+}{2}{0}"
+.text "Eff against {FLY1}{FLY2}"
 .word $0000
 .word $0000
 
@@ -1395,7 +1361,7 @@ _HeimsScrollDesc
 .text "Blocks criticals"
 .word $0000
 .text "(Modifies gro]wths"
-.word $0000F
+.word $0000
 .text "(Magic      {+}{3}{0}{%}"
 .word $0000
 .text "Luck        {+}{1}{0}{%}"
@@ -1494,7 +1460,9 @@ _BrokenBowDesc
 .word $0000
 .text "Al[most unusable"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Effective against "
+.word $0000
+.text "{FLY1}{FLY2} units"
 .word $0000
 .word $0000
 
@@ -1531,49 +1499,44 @@ _GaeBolgDesc
 _GungnirDesc
 .text "{Lock}Travant, Arion"
 .word $0000
-.text "A holy lance"
+.text "An exalted lance"
 .word $0000
-.text "Str, Spd, and Def "
+.text "Gives {+}{1}{0} Str, "
 .word $0000
-.text "{+}{1}{0}"
-.word $0000
-.word $0000
-
-
-_KillerBallistaDesc
-.text "Long{dash}range "
-.word $0000
-.text "High critical rate"
-.word $0000
-.text "Anti{dash}Fliers"
+.text "Spd, and Def"
 .word $0000
 .word $0000
 
 
-_BaldungDesc
-.text "{Lock}Shanna[m"
+_TathlumDesc
+.text "{Lock}Tanya, Ronan"
 .word $0000
-.text "Far fro[m genuine "
+.text "Gives )Wrath"
 .word $0000
-.text "Grants confidence "
+.text "Use for {+}{7} (Mag "
 .word $0000
-.text "Gives Astra "
+.text "Eff against {FLY1}{FLY2}"
 .word $0000
 .word $0000
 
-<<<<<<< Updated upstream
-_FragarachDesc
-.text "{Lock}Cono[mor"
-=======
+
+_ReturnDesc
+.text "    Range     {blue1}"
+.word $0000
+.text "Allo]ws an ally "
+.word $0000
+.text "to escape "
+.word $0000
+.text "the chapter "
+.word $0000
+.word $0000
+
 _WatchDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
->>>>>>> Stashed changes
+.text "    Range   {INF1}{INF2}"
 .word $0000
-.text "A refined ]weapon "
+.text "Reveals concealed "
 .word $0000
-.text "Effective against "
-.word $0000
-.text "{FLY1}{FLY2} units"
+.text "areas under a roof"
 .word $0000
 .word $0000
 
@@ -1587,13 +1550,7 @@ _AuraDesc
 
 
 _BolganoneDesc
-.text "Advanced fire [magic"
-.word $0000
-.text "su{mm}noning lava to"
-.word $0000
-.text "co[me bursting fro[m"
-.word $0000
-.text "under the ground"
+.text "Superior fire [magic"
 .word $0000
 .word $0000
 
@@ -1606,19 +1563,23 @@ _ValflameDesc
 
 
 _MjolnirDesc
-.text "{Lock}Ishtar"
+.text "Exalted thunder "
 .word $0000
-.text "Holy thunder [magic "
+.text "[magic"
 .word $0000
-.text "Skl {+}{2}{0}, Spd "
-.word $0000
-.text "{+}{1}{0}"
+.text "High critical rate"
 .word $0000
 .word $0000
 
 
-_LoptousDesc
-.text "+No special effect"
+_ThokkDesc
+.text "{Lock}Veld"
+.word $0000
+.text "Obscure and arcane"
+.word $0000
+.text "dark [magic "
+.word $0000
+.text "Gives {+}{2}{0} (Mag "
 .word $0000
 .word $0000
 

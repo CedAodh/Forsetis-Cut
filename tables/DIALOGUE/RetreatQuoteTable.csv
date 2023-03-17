@@ -9,7 +9,7 @@ DagdarRetreatQuote,Dagdar,Chapter9,None,dagdaresc
 RalphRetreatQuote,Ralph,Chapter19,None,ralphesc
 MartyRetreatQuote,Marty,Chapter9,None,martyesc
 RonanRetreatQuote,Ronan,Chapter9,None,ronanesc
-MirandaRetreatQuote,Miranda,Chapter19,None,mirandaesc
+MirandaRetreatQuote,Miranda,Chapter16B,None,mirandaesc
 SafyRetreatQuote,Safy,Chapter7,None,safieesc
 LaraRetreatQuote,Lara,Chapter4,None,laraesc
 BrightonRetreatQuote,Brighton,Chapter4,None,brightonesc
@@ -35,7 +35,7 @@ CedChp23RetreatQuote,CedChp23,Chapter24x,None,cedesc
 LifisRetreatQuote,Lifis,Chapter4,None,lithisesc
 KarinRetreatQuote,Karin,Chapter4,None,karinesc
 DeanRetreatQuote,Dean,Chapter19,None,deanesc
-ShannamRetreatQuote,Shannam,Chapter19,None,shannamesc
+ShannamRetreatQuote,Shannam,Chapter16B,None,shannamesc
 TrudeRetreatQuote,Trude,Chapter13,None,trudeesc
 TanyaRetreatQuote,Tanya,Chapter9,None,tanyaesc
 LinoanRetreatQuote,Linoan,Chapter19,None,linoanesc
@@ -53,4 +53,6 @@ DiarmuidRetreatQuote,Diarmuid,Chapter24x,None,dermottesc
 SaraRetreatQuote,Sara,Chapter19,None,sarahesc
 SaiasRetreatQuote,Saias,Chapter24x,None,saiasesc
 ShivaRetreatQuote,Shiva,Chapter7,None,shivaesc
-XavierRetreatQuote,Xavier,Chapter24x,None,xavieresc
+XavierRetreatQuote,Xavier,Chapter19,None,xavieresc
+AsaelloRetreatQuote,Asaello,Chapter19,None,asaelloesc
+DaisyRetreatQuote,Daisy,Chapter4,None,daisyesc

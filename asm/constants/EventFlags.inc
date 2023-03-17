@@ -106,9 +106,9 @@
 	FlagJubelSaved			= $83
 	FlagDaisyRecruited		= $84 ; $84 - $88 unused in vanilla
 	FlagOltophAliveInChp11x = $85
-;	FlagLifisGoneForGood				= $86
-;	FlagSafyGoneForGood				= $87
-;							= $88
+	FlagLifisGoneForGood	= $86
+	FlagSafyGoneForGood	= $87
+;				= $88
 	FlagEmilySaved			= $89
 	FlagMurphySaved			= $8A
 	FlagBellaSaved			= $8B

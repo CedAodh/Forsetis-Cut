@@ -17,7 +17,7 @@ l_878358_sub
 	lda #$8000 ;
 	sta $2F ;
 	jsl reset_map_cursor_pos
-	jsl reset_map_cursor_coordinate_value
+	;jsl reset_map_cursor_coordinate_value
 	rtl
 ; Reset cursor position
 reset_map_cursor_pos
@@ -29,16 +29,16 @@ reset_map_cursor_pos
 	rep #$20 ; A:16
 	rtl;
 ; Recalculate coordinates
-reset_map_cursor_coordinate_value
-	phx;
-	lda $0E4F ; Map cursor Y coordinate
-	asl A;
-	taxes;
-	lda $5142,X ; Map Y direction, Each row coordinate origin
-	clc;
-	adc $0E4D ; Map cursor X coordinate
-	plx;
-	sta $0E4B ; Map cursor coordinate value
-	rtl
+;reset_map_cursor_coordinate_value
+	;phx;
+	;lda $0E4F ; Map cursor Y coordinate
+	;asl A;
+	;taxes;
+	;lda $5142,X ; Map Y direction, Each row coordinate origin
+	;clc;
+	;adc $0E4D ; Map cursor X coordinate
+	;plx;
+	;sta $0E4B ; Map cursor coordinate value
+	;rtl
 	
 .endlogical

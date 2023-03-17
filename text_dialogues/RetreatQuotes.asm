@@ -500,6 +500,30 @@ galzusesc
 .byte WaitForA
 .byte EndText
 
+daisyesc
+.byte Right_slot
+.word LoadPortrait
+.word daisy_portrait
+.text "Phew!"
+.byte NewLine
+.text "That was a fright and a half!"
+.byte NewLine
+.text "C'mon, Prince Leif, you can do it!"
+.byte WaitForA
+.byte EndText
+
+asaelloesc
+.byte Right_slot
+.word LoadPortrait
+.word asaello_portrait
+.text "Guys..."
+.byte NewLine
+.text "I know you're waiting for me."
+.byte NewLine
+.text "I promise I'll bring back lots of good stuff..."
+.byte WaitForA
+.byte EndText
+
 ; Unused
 
 gunteresc

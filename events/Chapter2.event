@@ -393,6 +393,9 @@ eventChapter2Events ; 99/81B4
 		JUMP_FALSE +
 
 		macroDialogueWithBackground ch2endingreg, 3
+		
+		SET_FLAG FlagSafyGoneForGood
+		SET_FLAG FlagLifisGoneForGood
 
 		ADD_WORD wCurrentChapter, Chapter3 - Chapter2 - 1
 		YIELD_UNK

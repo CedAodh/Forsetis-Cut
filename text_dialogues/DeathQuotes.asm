@@ -862,9 +862,11 @@ asaellodeath
 .byte NewLine
 .text "I'm sorry..."
 .byte WaitForA
+.byte EndText
 
 daisydeath
 .text "No...no way..."
 .byte NewLine
 .text "Help me...Asaello..."
 .byte WaitForA
+.byte EndText

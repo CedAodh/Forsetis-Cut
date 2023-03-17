@@ -233,6 +233,12 @@
 	.include "PROCS/DemoRain.asm"
 .here
 
+* := $4C1100
+    .logical $189100
+
+        .dsection NewSecretShopCodeSection
+
+.here
 ; Hacky LM fixes
 .include "hacky/convoystuff.asm"
 .include "hacky/hostagec.asm"

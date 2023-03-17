@@ -34,7 +34,7 @@ RalphDeathQuote,Ralph,AnyChapter,None,ralphdeath
 MartyDeathQuote,Marty,AnyChapter,None,martydeath
 RonanDeathQuote,Ronan,AnyChapter,None,ronandeath
 MirandaDeathQuote,Miranda,AnyChapter,None,mirandadeath
-SafyDeathQuote,Safy,AnyChapter,None,safiedeath
+SafyDeathQuote,Safy,AnyChapter,FlagSafyGoneForGood,safiedeath
 LaraDeathQuote,Lara,AnyChapter,None,laradeath
 BrightonDeathQuote,Brighton,AnyChapter,None,brightondeath
 FergusDeathQuote,Fergus,AnyChapter,None,fergusdeath
@@ -54,7 +54,7 @@ RobertDeathQuote,Robert,AnyChapter,None,robertdeath
 FredDeathQuote,Fred,AnyChapter,None,freddeath
 OlwenDeathQuote,Olwen,AnyChapter,None,olwendeath
 CedChp23DeathQuote,CedChp23,AnyChapter,None,ceddeath
-LifisDeathQuote1,Lifis,AnyChapter,None,lithisdeath
+LifisDeathQuote1,Lifis,AnyChapter,FlagLifisGoneForGood,lithisdeath
 KarinDeathQuote,Karin,AnyChapter,None,karindeath
 DeanDeathQuote,Dean,AnyChapter,None,deandeath
 ShannamDeathQuote,Shannam,AnyChapter,None,shannamdeath

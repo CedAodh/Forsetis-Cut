@@ -14,13 +14,6 @@ _intro_shop
 	.text "How can I help you?"
 .byte EndTextNoPortraitFade
 
-_intro_secret_shop
-	
-	.text "...Um, how did you find this place?"
-        .byte NewLine
-        .text "I mean, hello! What'll it be today?"
-.byte EndTextNoPortraitFade
-
 _buy_sell
 
 	.text "Buy        Sell"

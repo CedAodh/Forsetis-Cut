@@ -12,7 +12,6 @@
 .include "Chapter1Dialogue.asm"
 .include "Chapter2Dialogue.asm"
 .include "ShopDialogue.asm"
-.include "NewSecretShopDialogue.asm"
 .include "ArenaDialogue.asm"
 .include "ChapterNames.asm"
 .include "Objectives.asm"
