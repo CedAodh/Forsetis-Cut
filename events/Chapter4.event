@@ -312,7 +312,7 @@ eventChapter4Events ; 99/8778
 		+
 		
 		PLAY_SOUND_WORD $00F7
-		DIALOGUE placeholder
+		DIALOGUE ch4daisycellopened
 		YIELD
 
 		PLAY_SOUND_WORD $00E8
