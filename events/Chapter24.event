@@ -563,7 +563,7 @@ eventChapter24Events ; B9/B000
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE galzussaias
 		YIELD
 	END2
 	
@@ -571,7 +571,7 @@ eventChapter24Events ; B9/B000
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE leifgalzus
 		YIELD
 	END2
 	
