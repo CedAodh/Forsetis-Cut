@@ -294,7 +294,7 @@ eventChapter24xEvents ; 97/8895
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE galzussara
 		YIELD
 	END2
 	
