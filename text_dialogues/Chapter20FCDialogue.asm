@@ -347,3 +347,173 @@ ch20opening4
 .text "You may return to your post as well."
 .byte WaitForA
 .byte EndText
+
+
+conomorxavier
+
+.byte left_slot
+.word LoadPortrait
+.word conomor_portrait 
+
+.byte right_slot
+.word LoadPortrait
+.word xavier_portrait
+
+.byte left_slot
+.text "Losing some of your speed, General Xavier?"
+.byte WaitForA
+
+.byte right_slot
+.text "Hm? Ah, Count Conomor."
+.byte NewLine
+.text "You know, I'd never have expected to hear"
+.byte NewLine
+.text "those kinds of words from your mouth."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I mean nothing by it."
+.byte WaitForA
+.byte NewLine
+.text "Times have been harsh in our country—"
+.byte NewLine
+.text "not to mention this current onslaught—"
+.byte NewLine
+.text "and many good soldiers have perished."
+.byte WaitForA
+.byte ScrollText
+.text "I'm still shocked by it all...but I'm glad"
+.byte NewLine
+.text "to see such a familiar face after so long."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That so, eh?"
+.byte NewLine
+.text "I'll admit, it's good to see my old academy"
+.byte NewLine
+.text "friend still kicking through all this."
+.byte WaitForA
+.byte ScrollText
+.text "A pair of former turncoats and old bones"
+.byte NewLine
+.text "like us ought to do our best to not fall behind!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Without a doubt."
+.byte NewLine
+.text "Even after the disgraceful acts we've led,"
+.byte NewLine
+.text "many still look up to us; so we'd better"
+.byte NewLine
+.text "not let them down."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hah! You're right about that..."
+.byte NewLine
+.text "Say, Conomor, do you recall that bet"
+.byte NewLine
+.text "you made during our academy days?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Bet? What bet...?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Wh-what the...!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Remember now?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, obviously."
+.byte WaitForA
+.byte ScrollText
+.text "That face could never not throw me off: it is"
+.byte NewLine
+.text "the same from when you used it to take me for"
+.byte NewLine
+.text "all I had when we played cards in Connaught."
+.byte WaitForA
+.byte ScrollText
+.text "That old bastard Gustav was letting you"
+.byte NewLine
+.text "keep practicing all this time, eh?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Perhaps; but either way, you still owe me."
+.byte WaitForA
+.byte ScrollText
+.text "You had promised me a drink,"
+.byte NewLine
+.text "but we parted ways too soon and"
+.byte NewLine
+.text "never had the chance to follow up."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hmph, quite the memory you have;"
+.byte NewLine
+.text "I can't believe I had almost forgotten."
+.byte WaitForA
+.byte ScrollText
+.text "Still, the castle is falling apart as we speak,"
+.byte NewLine
+.text "and you think now's the right time to talk"
+.byte NewLine
+.text "about getting a drink?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "So is that a yes or a no?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Straight to the point, I see. But very well!"
+.byte WaitForA
+.byte NewLine
+.text "Should we come out of this victorious,"
+.byte NewLine
+.text "it shall become my top priority to"
+.byte NewLine
+.text "make good on my promise."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, don't worry, Conomor."
+.byte NewLine
+.text "Remember—we're in this together now."
+.byte WaitForA
+.byte ScrollText
+.text "I know you're not one who will kick the bucket"
+.byte NewLine
+.text "easily, and even them you won't go forsaking"
+.byte NewLine
+.text "me if I have any say about it!"
+.byte WaitForA
+
+.byte EndText
