@@ -1020,7 +1020,7 @@
 		GaeBolgCritrate					= 20
 		GaeBolgMinRange					= 1
 		GaeBolgMaxRange					= 1
-		GaeBolgWeaponRank				= RankA
+		GaeBolgWeaponRank				= WeaponLocks.aGaeBolgWeaponLock
 		GaeBolgEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		GaeBolgStatBonus				= aGaeBolgItemBonuses
 		GaeBolgCost						= 0
@@ -2538,7 +2538,7 @@
 		BaldungCritrate					= 0
 		BaldungMinRange					= 1
 		BaldungMaxRange					= 1
-		BaldungWeaponRank				= RankA
+		BaldungWeaponRank				= WeaponLocks.aBaldungWeaponLock
 		BaldungEffectiveness			= ItemEffectivenesses.aMyrmidonEffectiveness
 		BaldungStatBonus				= aNoItemBonuses
 		BaldungCost						= 2000
@@ -2604,7 +2604,7 @@
 		FragarachCritrate				= 0
 		FragarachMinRange				= 1
 		FragarachMaxRange				= 1
-		FragarachWeaponRank				= RankC
+		FragarachWeaponRank				= WeaponLocks.aFragarachWeaponLock
 		FragarachEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		FragarachStatBonus				= aFragarachItemBonuses
 		FragarachCost					= 1800
@@ -2648,7 +2648,7 @@
 		UnlockCritrate					= 0
 		UnlockMinRange					= 1
 		UnlockMaxRange					= 10
-		UnlockWeaponRank				= RankD
+		UnlockWeaponRank				= RankE
 		UnlockEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		UnlockStatBonus					= aNoItemBonuses
 		UnlockCost						= 1400
