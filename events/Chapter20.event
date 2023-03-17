@@ -722,7 +722,7 @@ eventChapter20Events ; FD/D942
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE conomorxavier
 		YIELD
 	END2
 	
