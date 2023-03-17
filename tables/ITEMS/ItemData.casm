@@ -2094,7 +2094,7 @@
 		HelMight						= -1
 		HelAccuracy						= 60
 		HelWeight						= 7
-		HelDurability					= 10
+		HelDurability					= 13
 		HelCritrate						= 0
 		HelMinRange						= 1
 		HelMaxRange						= 2
@@ -2116,7 +2116,7 @@
 		ThokkMight						= 0
 		ThokkAccuracy					= 100
 		ThokkWeight						= 4
-		ThokkDurability					= -1
+		ThokkDurability					= 3
 		ThokkCritrate					= 0
 		ThokkMinRange					= 1
 		ThokkMaxRange					= 2
@@ -2124,7 +2124,7 @@
 		ThokkEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		ThokkStatBonus					= aLoptrianFangItemBonuses
 		ThokkCost						= 0
-		ThokkDescription				= <>item_descs._ThokkDesc
+		ThokkDescription				= <>item_descs._LoptousDesc
 		ThokkUseEffect					= None
 		ThokkWeaponEffect				= None
 		ThokkSkills2					= None
@@ -2138,7 +2138,7 @@
 		MeteorMight						= 11
 		MeteorAccuracy					= 80
 		MeteorWeight					= 20
-		MeteorDurability				= 5
+		MeteorDurability				= 6
 		MeteorCritrate					= 0
 		MeteorMinRange					= 3
 		MeteorMaxRange					= 10
@@ -2160,7 +2160,7 @@
 		BoltingMight					= 10
 		BoltingAccuracy					= 70
 		BoltingWeight					= 20
-		BoltingDurability				= 5
+		BoltingDurability				= 8
 		BoltingCritrate					= 20
 		BoltingMinRange					= 3
 		BoltingMaxRange					= 10

@@ -1561,19 +1561,13 @@ _BaldungDesc
 .word $0000
 .word $0000
 
-<<<<<<< Updated upstream
+
 _FragarachDesc
 .text "{Lock}Cono[mor"
-=======
-_WatchDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
->>>>>>> Stashed changes
 .word $0000
 .text "A refined ]weapon "
 .word $0000
-.text "Effective against "
-.word $0000
-.text "{FLY1}{FLY2} units"
+.text "Anti{dash}Fliers"
 .word $0000
 .word $0000
 
@@ -1623,7 +1617,7 @@ _LoptousDesc
 .word $0000
 
 
-_MasterCrownDesc
+_TathlumDesc
 .text "Does nothing"
 .word $0000
 .word $0000
