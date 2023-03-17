@@ -284,7 +284,7 @@ ch2villagespeedring
 
 .byte Right_Slot
 .word LoadPortrait
-.word youngman2_portrait
+.word teenageboy_portrait
 .byte $09 ; font 9(always use font 9)
 .text "You lot just had to play hero, didn't you?"
 .byte NewLine
