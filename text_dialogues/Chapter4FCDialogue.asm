@@ -710,3 +710,74 @@ brightonmacha
 	.byte WaitForA
 
 	.byte EndText
+	
+	ch4daisycellopened
+
+.byte left_slot
+.word $3A00
+.word bandit1_portrait
+.byte right_slot
+.word $3A00
+.word daisy_portrait
+
+.byte left_slot
+.text "Boss! Boss! The door's open!"
+.byte NewLine
+.text "Those Magi guys must've"
+.byte NewLine
+.text "come here to bust us out!"
+.byte WaitForA
+
+.byte right_slot
+.text "Huh?"
+.byte NewLine
+.text "Oh, how wonderful!"
+.byte NewLine
+.text "Say, why don't you guys go help them"
+.byte NewLine
+.text "clear out a path for us, or something?"
+.byte WaitForA
+.byte ScrollText
+.text "Or... do you think a cutie like me should"
+.byte NewLine
+.text "risk getting herself captured again?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "N-not at all, Boss!"
+.byte NewLine
+.text "If they got you, then we wouldn't"
+.byte NewLine
+.text "know where to find the treasure!"
+.byte WaitForA
+.byte ScrollText
+.text "Alrighty, boys, let's show those"
+.byte NewLine
+.text "Imperial dastards what we're made of!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Okay, then please go on ahead!"
+.byte NewLine
+.text "I'll catch up with you guys"
+.byte NewLine
+.text "once the area is safe!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "I guess that's one annoyance taken care of."
+.byte NewLine
+.text "Now I hope that our rescuers"
+.byte NewLine
+.text "aren't idiots themselves..."
+.byte WaitForA
+
+.byte EndText
