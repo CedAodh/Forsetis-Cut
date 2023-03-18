@@ -37,9 +37,9 @@ pernesalem24x
 
 .byte left_slot
 .byte ScrollText
-.text "I know you left the church behind, an' all, but"
+.text "I know you left the church behind, an' all,"
 .byte NewLine 
-.text "seeing so many of your former comrades lay"
+.text "but seeing so many of your former comrades lay"
 .byte NewLine
 .text "dead before your path can give you chills, no?"
 .byte WaitForA
@@ -58,8 +58,8 @@ pernesalem24x
 .text "..."
 .byte NewLine
 .text "That ain't the only thing on your mind, is it?"
+.byte WaitForA
 .byte ScrollText
-.byte NewLine
 .text "Spill the beans, Salem. I've taken a real big"
 .byte NewLine
 .text "likin' to you, and while you're still a bit hard"
@@ -154,6 +154,7 @@ pernesalem24x
 .word LoadPortrait
 .word pan_portrait
 .text "I couldn't agree more!"
+.byte NewLine
 .text "Wait..."
 .byte WaitForA
 .byte ScrollText
