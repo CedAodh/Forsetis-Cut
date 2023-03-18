@@ -13,11 +13,9 @@ _NoneDesc
 ; Common weapons
 
 _IronSwordDesc
-.text "A co{mm}non s]word"
+.text "A co{mm}non but "
 .word $0000
-.text "that's durable and"
-.word $0000
-.text "easy to ]wield"
+.text "reliable s]word "
 .word $0000
 .word $0000
 
@@ -29,75 +27,59 @@ _SteelSwordDesc
 .word $0000
 
 _SilverSwordDesc
-.text "A [mighty s]word"
+.text "A very strong and "
 .word $0000
-.text "]whose blo]ws offset"
-.word $0000
-.text "its steep price "
+.text "expensive s]word"
 .word $0000
 .word $0000
 
 _ShortswordDesc
+.text "An ordinary s]word"
+.word $0000
+.text "fitted for beginners"
+.word $0000
+.word $0000
+ 
+_LongswordDesc
 .text "A standard s]word "
 .word $0000
-.text "suited ]well for"
-.word $0000
-.text "beginners "
-.word $0000
-.word $0000
-
-_LongswordDesc
-.text "A conveniently"
-.word $0000
-.text "strong s]word "
-.word $0000
-.text "for its plain design"
+.text "with decent strength"
 .word $0000
 .word $0000
 
 _GreatswordDesc
-.text "(Massive, si[mple "
+.text "A tre[mendous s]word"
 .word $0000
-.text "s]word"
+.text "unrivaled in po]wer "
 .word $0000
 .word $0000
 
 _IronBladeDesc
-.text "A huge broads]word"
+.text "A sturdy broads]word"
 .word $0000
-.text "]with tre[mendous "
-.word $0000
-.text "po]wer, but tough to"
-.word $0000
-.text "handle"
+.text "that's tough to grip"
 .word $0000
 .word $0000
 
 
 _SlimSwordDesc
-.text "A light]weight"
+.text "A s]word that's easy"
 .word $0000
-.text "s]word that's easy"
-.word $0000
-.text "to hit ]with"
+.text "to ]wield, but ]weak"
 .word $0000
 .word $0000
 
 _SlimLanceDesc
-.text "A light]weight lance"
+.text "A lance that's easy "
 .word $0000
-.text "that's easy to hit"
-.word $0000
-.text "]with "
+.text "to ]wield, but ]weak"
 .word $0000
 .word $0000
 
 _IronLanceDesc
-.text "A co{mm}non lance "
+.text "A co{mm}non but "
 .word $0000
-.text "that's durable and"
-.word $0000
-.text "easy to ]wield"
+.text "reliable lance"
 .word $0000
 .word $0000
 
@@ -109,46 +91,38 @@ _SteelLanceDesc
 .word $0000
 
 _SilverLanceDesc
-.text "A [mighty lance "
+.text "A very strong and "
 .word $0000
-.text "]whose blo]ws offset"
-.word $0000
-.text "its steep price "
+.text "expensive lance "
 .word $0000
 .word $0000
 
 _ShortLanceDesc
-.text "A standard lance"
+.text "An ordinary lance "
 .word $0000
-.text "suited ]well for"
-.word $0000
-.text "beginners "
+.text "fitted for beginners"
 .word $0000
 .word $0000
 
 _LongLanceDesc
-.text "A conveniently"
+.text "A standard lance"
 .word $0000
-.text "strong lance"
-.word $0000
-.text "for its plain design"
+.text "with decent strength"
 .word $0000
 .word $0000
 
 _GreatlanceDesc
-.text "(Massive, si[mple "
+.text "A tre[mendous lance "
 .word $0000
-.text "lance "
+.text "unrivaled in po]wer "
 .word $0000
 .word $0000
 
 
 _IronAxeDesc
-.text "A co{mm}non axe "
+.text "A co{mm}non but "
 .word $0000
-.text "that's durable and"
-.word $0000
-.text "easy to ]wield"
+.text "reliable axe"
 .word $0000
 .word $0000
 
@@ -160,30 +134,24 @@ _SteelAxeDesc
 .word $0000
 
 _SilverAxeDesc
-.text "A [mighty axe "
+.text "A very strong and "
 .word $0000
-.text "]whose blo]ws offset"
-.word $0000
-.text "its steep price "
+.text "expensive axe "
 .word $0000
 .word $0000
 
 _BattleAxeDesc
-.text "A staunch axe "
+.text "A stout axe favored "
 .word $0000
-.text "favored by seasoned "
-.word $0000
-.text "fighters"
+.text "by seasoned soldiers"
 .word $0000
 .word $0000
 
 
 _IronBowDesc
-.text "A co{mm}non bo12"
+.text "A co{mm}non but "
 .word $0000
-.text "that's durable and"
-.word $0000
-.text "easy to ]wield"
+.text "reliable bo12 "
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -199,38 +167,36 @@ _SteelBowDesc
 .word $0000
 
 _SilverBowDesc
-.text "A [mighty bo12"
+.text "A very strong and "
 .word $0000
-.text "]whose blo]ws offset"
-.word $0000
-.text "its steep price "
+.text "expensive bo12"
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
 .word $0000
 
 _ShortbowDesc
-.text "Co{mm}non, s{im}ple bo12"
+.text "An ordinary bo12"
+.word $0000
+.text "fitted for beginners"
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
 .word $0000
 
 _LongbowDesc
-.text "A conveniently"
+.text "A standard bo12 "
 .word $0000
-.text "strong bo12 "
-.word $0000
-.text "for its plain design"
+.text "with decent strength"
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
 .word $0000
 
 _GreatbowDesc
-.text "(Massive, si[mple "
+.text "A tre[mendous bo12"
 .word $0000
-.text "bo12"
+.text "unrivaled in po]wer "
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -239,10 +205,6 @@ _GreatbowDesc
 
 _FireDesc
 .text "Basic fire [magic "
-.word $0000
-.text "that sends a ball of"
-.word $0000
-.text "fla[me at the ene[my" 
 .word $0000
 .word $0000
 
@@ -258,9 +220,9 @@ _ElfireDesc
 .word $0000
 
 _MeteorDesc
-.text "Long{dash}range "
+.text "Fire [magic used"
 .word $0000
-.text "fire [magic "
+.text "to attack fro[m afar"
 .word $0000
 .word $0000
 
@@ -280,11 +242,9 @@ _ThoronDesc
 .word $0000
 
 _BoltingDesc
-.text "Long{dash}range "
+.text "Thunder [magic used "
 .word $0000
-.text "thunder [magic"
-.word $0000
-.text "High critical rate"
+.text "to attack fro[m afar"
 .word $0000
 .word $0000
 
@@ -315,27 +275,56 @@ _LightDesc
 
 
 _FenrirDesc
-.text "Long{dash}range "
+.text "Dark [magic used"
 .word $0000
-.text "dark [magic "
+.text "to attack fro[m afar"
 .word $0000
 .word $0000
 
 ; Specialty weapons
 
-_ArmorslayerDesc
+
 _HammerDesc
+.text "An axe effective"
+.word $0000
+.text "against ar[mor units"
+.word $0000
+.text "Anti{dash}Ar[mor"
+.word $0000
+.word $0000
+
+_ArmorslayerDesc
+.text "A s]word effective"
+.word $0000
+.text "against ar[mor units"
+.word $0000
 .text "Anti{dash}Ar[mor"
 .word $0000
 .word $0000
 
 _RidersbaneDesc
+.text "A lance effective "
+.word $0000
+.text "against cavalry "
+.word $0000
+.text "Anti{dash}Cavalry "
+.word $0000
+.word $0000
+
 _PoleaxDesc
+.text "An axe effective"
+.word $0000
+.text "against cavalry "
+.word $0000
 .text "Anti{dash}Cavalry "
 .word $0000
 .word $0000
 
 _RapierDesc
+.text "A slender and regal "
+.word $0000
+.text "s]word"
+.word $0000
 .text "Anti{dash}Ar[mor"
 .word $0000
 .text "Anti{dash}Cavalry "
@@ -344,55 +333,53 @@ _RapierDesc
 
 
 _ParagonSwordDesc
+.text "A s]word suited for "
+.word $0000
+.text "defensive play"
+.word $0000
 .text "Gives Paragon "
 .word $0000
-.text "and {+}{5} Def"
+.text "Def {+}{5}"
 .word $0000
 .word $0000
 
 _KingmakerDesc
-.text "{BRA1}{BRA2}"
+.text "A blade fit for a "
 .word $0000
-.text "High critical rate"
+.text "true leader "
 .word $0000
 .text "Gives Char{m}"
+.word $0000
+.text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 
 _KillingEdgeDesc
-.text "A deadly s]word "
+.text "An especially deadly"
 .word $0000
-.text "that yields frequent"
-.word $0000
-.text "critical hits "
+.text "s]word"
 .word $0000
 .word $0000
 
 _KillerLanceDesc
-.text "A deadly lance"
+.text "An especially deadly"
 .word $0000
-.text "that yields frequent"
-.word $0000
-.text "critical hits "
+.text "lance "
 .word $0000
 .word $0000
 
 _KillerAxeDesc
-.text "A deadly axe"
+.text "An especially deadly"
 .word $0000
-.text "that yields frequent"
-.word $0000
-.text "critical hits "
+.text "axe "
 .word $0000
 .word $0000
 
 _KillerBowDesc
-.text "A deadly bo12 "
+.text "An especially deadly"
 .word $0000
-.text "that yields frequent"
-.word $0000
-.text "critical hits "
+.text "bo12"
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -400,79 +387,83 @@ _KillerBowDesc
 
 
 _BraveSwordDesc
-.text "A precious s]word "
+.text "A for[midable s]word"
 .word $0000
-.text "noted for invariably"
-.word $0000
-.text "striking t]wice "
+.text "that strikes t]wice "
 .word $0000
 .text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 _BraveAxeDesc
-.text "A precious axe"
+.text "A for[midable axe "
 .word $0000
-.text "noted for invariably"
-.word $0000
-.text "striking t]wice "
+.text "that strikes t]wice "
 .word $0000
 .text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 _MasterSwordDesc
-.text "A superior s]word "
+.text "A devastatingly "
 .word $0000
-.text "[made for those of"
-.word $0000
-.text "the highest caliber "
+.text "po]werful s]word"
 .word $0000
 .text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 _BraveBowDesc
-.text "A precious bo12 "
+.text "A for[midable bo12"
 .word $0000
-.text "noted for invariably"
+.text "that strikes t]wice "
 .word $0000
-.text "striking t]wice "
+.text "Anti{dash}Fliers"
 .word $0000
-.text "{BRA1}{BRA2}  Anti{dash}Fliers"
+.text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 _JavelinDesc
-.text "A thro]wing lance "
+.text "A lance capable "
 .word $0000
-.text "capable of indirect "
-.word $0000
-.text "attacks "
+.text "of indirect attacks "
 .word $0000
 .word $0000
 
 _HandAxeDesc
-.text "A thro]wing axe "
+.text "An axe capable"
 .word $0000
-.text "capable of indirect "
-.word $0000
-.text "attacks "
+.text "of indirect attacks "
 .word $0000
 .word $0000
 
 _MasterLanceDesc
+.text "A devastatingly "
+.word $0000
+.text "po]werful lance "
+.word $0000
+.text "{BRA1}{BRA2}"
+.word $0000
+.word $0000
+
 _MasterAxeDesc
-.text "Can attack at range "
+.text "A devastatingly "
+.word $0000
+.text "po]werful axe "
 .word $0000
 .text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 _MasterBowDesc
-.text "{BRA1}{BRA2}"
+.text "A devastatingly "
+.word $0000
+.text "po]werful bo12"
 .word $0000
 .text "Anti{dash}Fliers"
+.word $0000
+.text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
@@ -581,13 +572,13 @@ _PetrifyDesc
 
 
 _BlizzardDesc
-.text "Long{dash}range [magic"
+.text ")Wind [magic used "
 .word $0000
-.text "Applies Sleep on hit"
+.text "to attack fro[m afar"
 .word $0000
-.text "Targets on thrones"
+.text "Applies Sleep, Gates"
 .word $0000
-.text "or gates are i{mm}nune"
+.text "and Thrones excluded"
 .word $0000
 .word $0000
 
@@ -615,11 +606,11 @@ _BerserkEdgeDesc
 
 
 _SleepDesc
-.text "    Range   {blue1}{blue-}{blue1}{blue-}{INF1}{INF2}"
+.text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Puts a target ]with "
+.text "Applies Sleep to a"
 .word $0000
-.text "lo]wer (Mag to Sleep"
+.text "lo]wer (Mag target"
 .word $0000
 .text "Ene[mies on thrones "
 .word $0000
@@ -630,9 +621,9 @@ _SleepDesc
 _BerserkDesc
 .text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Berserks a target "
+.text "Applies Berserk to a"
 .word $0000
-.text "]with lo]wer (Mag "
+.text "lo]wer (Mag target"
 .word $0000
 .text "Ene[mies on thrones "
 .word $0000
@@ -643,9 +634,9 @@ _BerserkDesc
 _SilenceDesc
 .text "    Range   {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Silences a target "
+.text "Applies Silence to a"
 .word $0000
-.text "]with lo]wer (Mag "
+.text "lo]wer (Mag target"
 .word $0000
 .text "Ene[mies on thrones "
 .word $0000
@@ -1395,7 +1386,7 @@ _HeimsScrollDesc
 .text "Blocks criticals"
 .word $0000
 .text "(Modifies gro]wths"
-.word $0000F
+.word $0000
 .text "(Magic      {+}{3}{0}{%}"
 .word $0000
 .text "Luck        {+}{1}{0}{%}"
@@ -1518,13 +1509,13 @@ _ShadowSpearDesc
 .word $0000
 
 _GaeBolgDesc
-.text "High crit rate, {BRA1}{BRA2}"
+.text "{Lock}Altena"
 .word $0000
-.text "Gives {+}{1}{0} Str, "
+.text "A holy lance"
 .word $0000
-.text "+Nihil, )Wrath, "
+.text "Str, Skl, and Def "
 .word $0000
-.text "Vantage and Char{m}"
+.text "{+}{1}{0}"
 .word $0000
 .word $0000
 
@@ -1583,12 +1574,6 @@ _AuraDesc
 _BolganoneDesc
 .text "Advanced fire [magic"
 .word $0000
-.text "su{mm}noning lava to"
-.word $0000
-.text "co[me bursting fro[m"
-.word $0000
-.text "under the ground"
-.word $0000
 .word $0000
 
 _ValflameDesc
@@ -1618,7 +1603,13 @@ _LoptousDesc
 
 
 _TathlumDesc
-.text "Does nothing"
+.text "{Lock}Tanya, Ronan"
+.word $0000
+.text "Anti{dash}Fliers"
+.word $0000
+.text "Gives )Wrath"
+.word $0000
+.text "Use for {+}{7} (Mag "
 .word $0000
 .word $0000
 

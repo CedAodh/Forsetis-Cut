@@ -837,13 +837,13 @@ axe
  axe
 bo12
  bo12
-offset
-conveniently
-design
 favored by
-that yields frequent
 fla[me at the ene[my
 Str, Spd, and Def 
+Applies Sleep, Gates
+that strikes t]wice 
+A devastatingly
+po]werful
 
 
 High critical rate
@@ -861,6 +861,7 @@ For those ]who have
 Basic
 Potent
 Superior
+Po]werful
 Long range
 Super long range
 

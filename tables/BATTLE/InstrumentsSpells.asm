@@ -108,7 +108,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsFires       	; Fire				STFire
 .byte InstrumentsFires       	; Elfire			STFire
 .byte InstrumentsFires       	; Bolganone			STMeteor		vanilla:00
-.byte InstrumentsFires       	; Valflame			STFire			vanilla:00
+.byte InstrumentsBows       	; Valflame			STFire			vanilla:00
 					    
 ; Thunder               
 .byte InstrumentsThunders     	; Thunder			STThunder
@@ -308,7 +308,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsFires+1     	; Fire
 .byte InstrumentsFires+1     	; Elfire
 .byte InstrumentsFires+1     	; Bolganone		vanilla:00
-.byte InstrumentsFires+1     	; Valflame		vanilla:00
+.byte InstrumentsBows+1     	; Valflame		vanilla:00
 					    
 ; Thunder               
 .byte InstrumentsThunders+1  	; Thunder

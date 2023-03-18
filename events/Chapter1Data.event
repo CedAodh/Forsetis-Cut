@@ -6,7 +6,7 @@ eventChapter1Data ; B1/FB37
 
 	_LeifUnitGroup ; B1/FB39
 		UNIT Leif, Player, [1, 20], [3, 19], Leif, [LightBrand, IronSword], 1, False, [$00, $00, $00, $00]
-		UNIT Finn, Player, [1, 20], [2, 19], Leif, [BraveLance, IronSword], 5, False, [$00, $00, $00, $00]
+		UNIT Finn, Player, [1, 20], [2, 19], Leif, [BraveLance, IronSword], 7, False, [$00, $00, $00, $00]
 		UNIT Eyvel, Player, [1, 20], [3, 18], Leif, [IronBlade, FlameSword, DoorKey], 13, False, [$00, $00, $00, $00]
 		UNIT Osian, Player, [1, 20], [4, 18], Leif, [IronAxe], 1, False, [$00, $00, $00, $00]
 		UNIT Halvan, Player, [1, 20], [2, 18], Leif, [IronAxe], 2, False, [$00, $00, $00, $00]
@@ -18,7 +18,7 @@ eventChapter1Data ; B1/FB37
 	_DagdarUnitGroup ; B1/FBA1
 		UNIT Marty, Player, [1, 7], [1, 7], Leif, [SteelAxe], 1, False, [$00, $00, $00, $00]
 		UNIT Dagdar, Player, [1, 6], [1, 6], Leif, [Hammer, HandAxe], 6, False, [$00, $00, $00, $00]
-		UNIT Tanya, Player, [1, 5], [1, 5], Leif, [Tathlum, IronBow, DoorKey], 1, False, [$00, $00, $00, $00]
+		UNIT Tanya, Player, [1, 5], [1, 5], Leif, [IronBow, DoorKey], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	_Opening1CameraCoordinates ; B1/FBDF

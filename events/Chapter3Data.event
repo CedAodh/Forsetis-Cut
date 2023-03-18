@@ -54,7 +54,7 @@ eventChapter3Data ; B1F318
 	_EnemyGroup5 ; B1/F482
 		UNIT MunsterArcher, Enemy, [6, 23], [6, 23], Lobos, [Shortbow], 10, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [4, 23], [4, 23], Lobos, [ShortLance, Vulnerary], 11, False, [$19, $29, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [5, 29], [5, 25], Lobos, [ShortLance], 12, False, [$19, $29, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [5, 29], [5, 25], Lobos, [ShortLance, DoorKey], 12, False, [$19, $29, $00, $00]
 	UNIT
 
 	_SoldierReinforcementsCameraCoordinates ; B1/F4C0

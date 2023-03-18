@@ -512,7 +512,7 @@ _Bolganone_name
 	.word $0000
 
 _Valflame_name
-	.text "Valfla[me "
+	.text "Tathlu{m}"
 	.word $0000
 
 _Thunder_name

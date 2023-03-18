@@ -12,8 +12,8 @@ aArmorEffectiveness ; B0/807A
 aMyrmidonEffectiveness ; B0/8082
 	.byte Myrmidon
 	.byte MyrmidonF
-	.byte Swordmaster
-	.byte SwordmasterF
+	;.byte Swordmaster
+	;.byte SwordmasterF
 	.byte 0
 
 aFlyingEffectiveness ; B0/8086

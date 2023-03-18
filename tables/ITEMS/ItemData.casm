@@ -1720,7 +1720,7 @@
 		FireMight						= 7
 		FireAccuracy					= 75
 		FireWeight						= 2
-		FireDurability					= 25
+		FireDurability					= 23
 		FireCritrate					= 0
 		FireMinRange					= 1
 		FireMaxRange					= 2
@@ -1742,7 +1742,7 @@
 		ElfireMight						= 11
 		ElfireAccuracy					= 90
 		ElfireWeight					= 3
-		ElfireDurability				= 50
+		ElfireDurability				= 54
 		ElfireCritrate					= 10
 		ElfireMinRange					= 1
 		ElfireMaxRange					= 2
@@ -1764,7 +1764,7 @@
 		BolganoneMight					= 15
 		BolganoneAccuracy				= 85
 		BolganoneWeight					= 5
-		BolganoneDurability				= 20
+		BolganoneDurability				= 16
 		BolganoneCritrate				= 0
 		BolganoneMinRange				= 1
 		BolganoneMaxRange				= 2
@@ -1780,27 +1780,27 @@
 		BolganoneTraits					= TraitWeapon | TraitTome
 		BolganoneIcon					= $4F
 
-	Valflame							= 81
-		ValflameType					= TypeFire
-		ValflameAlternateType			= None
-		ValflameMight					= 20
-		ValflameAccuracy				= 90
-		ValflameWeight					= 7
-		ValflameDurability				= 50
-		ValflameCritrate				= 20
-		ValflameMinRange				= 1
-		ValflameMaxRange				= 2
-		ValflameWeaponRank				= RankA
-		ValflameEffectiveness			= ItemEffectivenesses.aNoEffectiveness
-		ValflameStatBonus				= aNoItemBonuses
-		ValflameCost					= 0
-		ValflameDescription				= <>item_descs._ValflameDesc
-		ValflameUseEffect				= None
-		ValflameWeaponEffect			= None
-		ValflameSkills2					= None
-		ValflameSkills3					= None
-		ValflameTraits					= TraitWeapon | TraitTome | TraitUnsellable
-		ValflameIcon					= $50
+	Tathlum								= 81
+		TathlumType						= TypeBow
+		TathlumAlternateType			= None
+		TathlumMight					= 12
+		TathlumAccuracy					= 90
+		TathlumWeight					= 7
+		TathlumDurability				= 60
+		TathlumCritrate					= 10
+		TathlumMinRange					= 2
+		TathlumMaxRange					= 2
+		TathlumWeaponRank				= WeaponLocks.aTathlumWeaponLock
+		TathlumEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
+		TathlumStatBonus				= aNoItemBonuses
+		TathlumCost						= 6200
+		TathlumDescription				= <>item_descs._TathlumDesc
+		TathlumUseEffect				= $22
+		TathlumWeaponEffect				= None
+		TathlumSkills2					= None
+		TathlumSkills3					= Skill3Wrath
+		TathlumTraits					= TraitWeapon | TraitUnsellable
+		TathlumIcon						= $9F
 
 	Thunder								= 82
 		ThunderType						= TypeThunder
@@ -1808,7 +1808,7 @@
 		ThunderMight					= 6
 		ThunderAccuracy					= 70
 		ThunderWeight					= 1
-		ThunderDurability				= 30
+		ThunderDurability				= 25
 		ThunderCritrate					= 5
 		ThunderMinRange					= 1
 		ThunderMaxRange					= 2
@@ -1852,7 +1852,7 @@
 		ThoronMight						= 13
 		ThoronAccuracy					= 75
 		ThoronWeight					= 5
-		ThoronDurability				= 20
+		ThoronDurability				= 18
 		ThoronCritrate					= 20
 		ThoronMinRange					= 1
 		ThoronMaxRange					= 2
@@ -1896,7 +1896,7 @@
 		WindMight						= 5
 		WindAccuracy					= 80
 		WindWeight						= 0
-		WindDurability					= 20
+		WindDurability					= 21
 		WindCritrate					= 10
 		WindMinRange					= 1
 		WindMaxRange					= 2
@@ -1940,7 +1940,7 @@
 		TornadoMight					= 12
 		TornadoAccuracy					= 90
 		TornadoWeight					= 3
-		TornadoDurability				= 20
+		TornadoDurability				= 13
 		TornadoCritrate					= 0
 		TornadoMinRange					= 1
 		TornadoMaxRange					= 2
@@ -1984,7 +1984,7 @@
 		LightMight						= 9
 		LightAccuracy					= 80
 		LightWeight						= 3
-		LightDurability					= 20
+		LightDurability					= 24
 		LightCritrate					= 20
 		LightMinRange					= 1
 		LightMaxRange					= 2
@@ -2006,7 +2006,7 @@
 		NosferatuMight					= 12
 		NosferatuAccuracy				= 80
 		NosferatuWeight					= 7
-		NosferatuDurability				= 30
+		NosferatuDurability				= 33
 		NosferatuCritrate				= 0
 		NosferatuMinRange				= 1
 		NosferatuMaxRange				= 2
@@ -2094,7 +2094,7 @@
 		HelMight						= -1
 		HelAccuracy						= 60
 		HelWeight						= 7
-		HelDurability					= 13
+		HelDurability					= 3
 		HelCritrate						= 0
 		HelMinRange						= 1
 		HelMaxRange						= 2
@@ -2138,7 +2138,7 @@
 		MeteorMight						= 11
 		MeteorAccuracy					= 80
 		MeteorWeight					= 20
-		MeteorDurability				= 6
+		MeteorDurability				= 5
 		MeteorCritrate					= 0
 		MeteorMinRange					= 3
 		MeteorMaxRange					= 10
@@ -2160,7 +2160,7 @@
 		BoltingMight					= 10
 		BoltingAccuracy					= 70
 		BoltingWeight					= 20
-		BoltingDurability				= 8
+		BoltingDurability				= 5
 		BoltingCritrate					= 20
 		BoltingMinRange					= 3
 		BoltingMaxRange					= 10
@@ -2292,7 +2292,7 @@
 		HealMight						= 30
 		HealAccuracy					= 80
 		HealWeight						= 4
-		HealDurability					= 20
+		HealDurability					= 15
 		HealCritrate					= 0
 		HealMinRange					= 1
 		HealMaxRange					= 1
@@ -2314,7 +2314,7 @@
 		MendMight						= 20
 		MendAccuracy					= 80
 		MendWeight						= 6
-		MendDurability					= 15
+		MendDurability					= 12
 		MendCritrate					= 0
 		MendMinRange					= 1
 		MendMaxRange					= 1
@@ -2358,7 +2358,7 @@
 		PhysicMight						= 10
 		PhysicAccuracy					= 80
 		PhysicWeight					= 8
-		PhysicDurability				= 5
+		PhysicDurability				= 6
 		PhysicCritrate					= 0
 		PhysicMinRange					= 1
 		PhysicMaxRange					= 10
@@ -2597,11 +2597,11 @@
 	Fragarach							= 118
 		FragarachType					= TypeSword
 		FragarachAlternateType			= None
-		FragarachMight					= 17
-		FragarachAccuracy				= 75
-		FragarachWeight					= 13
+		FragarachMight					= 14
+		FragarachAccuracy				= 95
+		FragarachWeight					= 12
 		FragarachDurability				= 60
-		FragarachCritrate				= 0
+		FragarachCritrate				= 10
 		FragarachMinRange				= 1
 		FragarachMaxRange				= 1
 		FragarachWeaponRank				= WeaponLocks.aFragarachWeaponLock
@@ -2611,7 +2611,7 @@
 		FragarachDescription			= <>item_descs._FragarachDesc
 		FragarachUseEffect				= None
 		FragarachWeaponEffect			= None
-		FragarachSkills2				= None
+		FragarachSkills2				= Skill2Pavise
 		FragarachSkills3				= None
 		FragarachTraits					= TraitWeapon | TraitUnsellable
 		FragarachIcon					= $75
@@ -2688,7 +2688,7 @@
 		RewarpMight						= 5
 		RewarpAccuracy					= 80
 		RewarpWeight					= 6
-		RewarpDurability				= 5
+		RewarpDurability				= 4
 		RewarpCritrate					= 0
 		RewarpMinRange					= 1
 		RewarpMaxRange					= 10
@@ -2710,7 +2710,7 @@
 		KiaMight						= 5
 		KiaAccuracy						= 80
 		KiaWeight						= 7
-		KiaDurability					= 5
+		KiaDurability					= 6
 		KiaCritrate						= 0
 		KiaMinRange						= 1
 		KiaMaxRange						= 10
@@ -2968,27 +2968,27 @@
 		MasterSealTraits				= None
 		MasterSealIcon					= $85
 
-	Tathlum								= 135
-		TathlumType						= TypeBow
-		TathlumAlternateType			= None
-		TathlumMight					= 12
-		TathlumAccuracy					= 90
-		TathlumWeight					= 7
-		TathlumDurability				= 60
-		TathlumCritrate					= 10
-		TathlumMinRange					= 2
-		TathlumMaxRange					= 2
-		TathlumWeaponRank				= WeaponLocks.aTathlumWeaponLock
-		TathlumEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
-		TathlumStatBonus				= aNoItemBonuses
-		TathlumCost						= 6200
-		TathlumDescription				= <>item_descs._TathlumDesc
-		TathlumUseEffect				= $22
-		TathlumWeaponEffect				= None
-		TathlumSkills2					= None
-		TathlumSkills3					= Skill3Wrath
-		TathlumTraits					= TraitWeapon | TraitUnsellable
-		TathlumIcon						= $9F
+	TathlumBroken						= 135
+		TathlumBrokenType				= TypeBow
+		TathlumBrokenAlternateType		= None
+		TathlumBrokenMight				= 12
+		TathlumBrokenAccuracy			= 90
+		TathlumBrokenWeight				= 7
+		TathlumBrokenDurability			= 60
+		TathlumBrokenCritrate			= 10
+		TathlumBrokenMinRange			= 2
+		TathlumBrokenMaxRange			= 2
+		TathlumBrokenWeaponRank			= WeaponLocks.aTathlumWeaponLock
+		TathlumBrokenEffectiveness		= ItemEffectivenesses.aFlyingEffectiveness
+		TathlumBrokenStatBonus			= aNoItemBonuses
+		TathlumBrokenCost				= 6200
+		TathlumBrokenDescription		= <>item_descs._TathlumDesc
+		TathlumBrokenUseEffect			= $22
+		TathlumBrokenWeaponEffect		= None
+		TathlumBrokenSkills2			= None
+		TathlumBrokenSkills3			= Skill3Wrath
+		TathlumBrokenTraits				= TraitWeapon | TraitUnsellable
+		TathlumBrokenIcon				= $9F
 
 	ChestKey							= 136
 		ChestKeyType					= TypeItem
@@ -3775,7 +3775,7 @@ BrokenBowItemDataEntry .dstruct StructItemDataEntry, BrokenBowType, BrokenBowAlt
 FireItemDataEntry .dstruct StructItemDataEntry, FireType, FireAlternateType, FireMight, FireAccuracy, FireWeight, FireDurability, FireCritrate, FireMinRange, FireMaxRange, FireWeaponRank, FireEffectiveness, FireStatBonus, FireCost, FireDescription, FireUseEffect, FireWeaponEffect, FireSkills2, FireSkills3, FireTraits, FireIcon
 ElfireItemDataEntry .dstruct StructItemDataEntry, ElfireType, ElfireAlternateType, ElfireMight, ElfireAccuracy, ElfireWeight, ElfireDurability, ElfireCritrate, ElfireMinRange, ElfireMaxRange, ElfireWeaponRank, ElfireEffectiveness, ElfireStatBonus, ElfireCost, ElfireDescription, ElfireUseEffect, ElfireWeaponEffect, ElfireSkills2, ElfireSkills3, ElfireTraits, ElfireIcon
 BolganoneItemDataEntry .dstruct StructItemDataEntry, BolganoneType, BolganoneAlternateType, BolganoneMight, BolganoneAccuracy, BolganoneWeight, BolganoneDurability, BolganoneCritrate, BolganoneMinRange, BolganoneMaxRange, BolganoneWeaponRank, BolganoneEffectiveness, BolganoneStatBonus, BolganoneCost, BolganoneDescription, BolganoneUseEffect, BolganoneWeaponEffect, BolganoneSkills2, BolganoneSkills3, BolganoneTraits, BolganoneIcon
-ValflameItemDataEntry .dstruct StructItemDataEntry, ValflameType, ValflameAlternateType, ValflameMight, ValflameAccuracy, ValflameWeight, ValflameDurability, ValflameCritrate, ValflameMinRange, ValflameMaxRange, ValflameWeaponRank, ValflameEffectiveness, ValflameStatBonus, ValflameCost, ValflameDescription, ValflameUseEffect, ValflameWeaponEffect, ValflameSkills2, ValflameSkills3, ValflameTraits, ValflameIcon
+TathlumItemDataEntry .dstruct StructItemDataEntry, TathlumType, TathlumAlternateType, TathlumMight, TathlumAccuracy, TathlumWeight, TathlumDurability, TathlumCritrate, TathlumMinRange, TathlumMaxRange, TathlumWeaponRank, TathlumEffectiveness, TathlumStatBonus, TathlumCost, TathlumDescription, TathlumUseEffect, TathlumWeaponEffect, TathlumSkills2, TathlumSkills3, TathlumTraits, TathlumIcon
 ThunderItemDataEntry .dstruct StructItemDataEntry, ThunderType, ThunderAlternateType, ThunderMight, ThunderAccuracy, ThunderWeight, ThunderDurability, ThunderCritrate, ThunderMinRange, ThunderMaxRange, ThunderWeaponRank, ThunderEffectiveness, ThunderStatBonus, ThunderCost, ThunderDescription, ThunderUseEffect, ThunderWeaponEffect, ThunderSkills2, ThunderSkills3, ThunderTraits, ThunderIcon
 DireThunderItemDataEntry .dstruct StructItemDataEntry, DireThunderType, DireThunderAlternateType, DireThunderMight, DireThunderAccuracy, DireThunderWeight, DireThunderDurability, DireThunderCritrate, DireThunderMinRange, DireThunderMaxRange, DireThunderWeaponRank, DireThunderEffectiveness, DireThunderStatBonus, DireThunderCost, DireThunderDescription, DireThunderUseEffect, DireThunderWeaponEffect, DireThunderSkills2, DireThunderSkills3, DireThunderTraits, DireThunderIcon
 ThoronItemDataEntry .dstruct StructItemDataEntry, ThoronType, ThoronAlternateType, ThoronMight, ThoronAccuracy, ThoronWeight, ThoronDurability, ThoronCritrate, ThoronMinRange, ThoronMaxRange, ThoronWeaponRank, ThoronEffectiveness, ThoronStatBonus, ThoronCost, ThoronDescription, ThoronUseEffect, ThoronWeaponEffect, ThoronSkills2, ThoronSkills3, ThoronTraits, ThoronIcon
@@ -3829,7 +3829,7 @@ ShieldRingItemDataEntry .dstruct StructItemDataEntry, ShieldRingType, ShieldRing
 SkillRingItemDataEntry .dstruct StructItemDataEntry, SkillRingType, SkillRingAlternateType, SkillRingMight, SkillRingAccuracy, SkillRingWeight, SkillRingDurability, SkillRingCritrate, SkillRingMinRange, SkillRingMaxRange, SkillRingWeaponRank, SkillRingEffectiveness, SkillRingStatBonus, SkillRingCost, SkillRingDescription, SkillRingUseEffect, SkillRingWeaponEffect, SkillRingSkills2, SkillRingSkills3, SkillRingTraits, SkillRingIcon
 LegRingItemDataEntry .dstruct StructItemDataEntry, LegRingType, LegRingAlternateType, LegRingMight, LegRingAccuracy, LegRingWeight, LegRingDurability, LegRingCritrate, LegRingMinRange, LegRingMaxRange, LegRingWeaponRank, LegRingEffectiveness, LegRingStatBonus, LegRingCost, LegRingDescription, LegRingUseEffect, LegRingWeaponEffect, LegRingSkills2, LegRingSkills3, LegRingTraits, LegRingIcon
 MasterSealItemDataEntry .dstruct StructItemDataEntry, MasterSealType, MasterSealAlternateType, MasterSealMight, MasterSealAccuracy, MasterSealWeight, MasterSealDurability, MasterSealCritrate, MasterSealMinRange, MasterSealMaxRange, MasterSealWeaponRank, MasterSealEffectiveness, MasterSealStatBonus, MasterSealCost, MasterSealDescription, MasterSealUseEffect, MasterSealWeaponEffect, MasterSealSkills2, MasterSealSkills3, MasterSealTraits, MasterSealIcon
-TathlumItemDataEntry .dstruct StructItemDataEntry, TathlumType, TathlumAlternateType, TathlumMight, TathlumAccuracy, TathlumWeight, TathlumDurability, TathlumCritrate, TathlumMinRange, TathlumMaxRange, TathlumWeaponRank, TathlumEffectiveness, TathlumStatBonus, TathlumCost, TathlumDescription, TathlumUseEffect, TathlumWeaponEffect, TathlumSkills2, TathlumSkills3, TathlumTraits, TathlumIcon
+TathlumBrokenItemDataEntry .dstruct StructItemDataEntry, TathlumBrokenType, TathlumBrokenAlternateType, TathlumBrokenMight, TathlumBrokenAccuracy, TathlumBrokenWeight, TathlumBrokenDurability, TathlumBrokenCritrate, TathlumBrokenMinRange, TathlumBrokenMaxRange, TathlumBrokenWeaponRank, TathlumBrokenEffectiveness, TathlumBrokenStatBonus, TathlumBrokenCost, TathlumBrokenDescription, TathlumBrokenUseEffect, TathlumBrokenWeaponEffect, TathlumBrokenSkills2, TathlumBrokenSkills3, TathlumBrokenTraits, TathlumBrokenIcon
 ChestKeyItemDataEntry .dstruct StructItemDataEntry, ChestKeyType, ChestKeyAlternateType, ChestKeyMight, ChestKeyAccuracy, ChestKeyWeight, ChestKeyDurability, ChestKeyCritrate, ChestKeyMinRange, ChestKeyMaxRange, ChestKeyWeaponRank, ChestKeyEffectiveness, ChestKeyStatBonus, ChestKeyCost, ChestKeyDescription, ChestKeyUseEffect, ChestKeyWeaponEffect, ChestKeySkills2, ChestKeySkills3, ChestKeyTraits, ChestKeyIcon
 DoorKeyItemDataEntry .dstruct StructItemDataEntry, DoorKeyType, DoorKeyAlternateType, DoorKeyMight, DoorKeyAccuracy, DoorKeyWeight, DoorKeyDurability, DoorKeyCritrate, DoorKeyMinRange, DoorKeyMaxRange, DoorKeyWeaponRank, DoorKeyEffectiveness, DoorKeyStatBonus, DoorKeyCost, DoorKeyDescription, DoorKeyUseEffect, DoorKeyWeaponEffect, DoorKeySkills2, DoorKeySkills3, DoorKeyTraits, DoorKeyIcon
 BridgeKeyItemDataEntry .dstruct StructItemDataEntry, BridgeKeyType, BridgeKeyAlternateType, BridgeKeyMight, BridgeKeyAccuracy, BridgeKeyWeight, BridgeKeyDurability, BridgeKeyCritrate, BridgeKeyMinRange, BridgeKeyMaxRange, BridgeKeyWeaponRank, BridgeKeyEffectiveness, BridgeKeyStatBonus, BridgeKeyCost, BridgeKeyDescription, BridgeKeyUseEffect, BridgeKeyWeaponEffect, BridgeKeySkills2, BridgeKeySkills3, BridgeKeyTraits, BridgeKeyIcon

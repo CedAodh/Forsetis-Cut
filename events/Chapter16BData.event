@@ -51,7 +51,7 @@ eventChapter16BData ; B1/A6FA
 		.byte 8, 7
 
 	_ShannamGroup ; B1/A8D8
-		UNIT Shannam, Enemy, [6, 1], [6, 1], Reinkoch, [IronBlade], 1, False, [$00, $03, $00, $00]
+		UNIT Shannam, Enemy, [6, 1], [6, 1], Reinkoch, [IronBlade, Baldung, StaminaDrink], 1, False, [$00, $03, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/A8EE

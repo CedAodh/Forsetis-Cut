@@ -379,6 +379,8 @@ eventChapter21Events ; FD/E42D
 		
 		DIALOGUE placeholder
 		YIELD
+		
+		macroSetCharacterByte Nanna, structCharacterDataRAM.MovementStars, 2
 	END2
 	
 	_DagdarRalphTalk
@@ -411,6 +413,14 @@ eventChapter21Events ; FD/E42D
 		
 		DIALOGUE ConomorMirandaTalk
 		YIELD
+		
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		macroGiveItemToActiveUnit Fragarach
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
 
 	_PrepGroups ; FD/E82C

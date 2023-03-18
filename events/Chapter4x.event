@@ -223,10 +223,10 @@ eventChapter4xEvents ; FD/85C5
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI1, $00
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI4, $00
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI2, $00
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.Unknown3E, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI2, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.Unknown3E, $00
 
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI4, $00

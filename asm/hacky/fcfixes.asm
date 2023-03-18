@@ -62,12 +62,12 @@
 
 .here
 
-; Stops Physic from having animations forced off
+; Stops Physic, Baldung, and Fragarach from having animations forced off
 
-* := $01CE09
-  .logical $83CE09
+* := $01CE08
+  .logical $83CE08
 
-.byte $00, $6B, $00
+.byte $60, $00, $6B, $00, $6D, $01, $6E, $01, $72, $01, $73, $00, $74, $01, $75, $01, $76, $00, $78, $01, $7A, $01
 
 .here
 

@@ -133,7 +133,7 @@ eventChapter8xEvents ; 97/844D
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
 
-		macroGiveItemToActiveUnit SilverBow
+		macroGiveItemToActiveUnit Tathlum
 
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
