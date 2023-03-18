@@ -149,15 +149,15 @@
 
 * = $5F5000
 .logical lorom($5F5000, 1)
-.include "Chapter24FCDialogue.asm"
-.include "Chapter24xFCDialogue.asm"
-.include "Chapter25FCDialogue.asm"
 .include "BattleQuotes.asm"
 .include "DeathQuotes.asm"
 .include "ReleaseQuotes.asm"
 .include "RetreatQuotes.asm"
 .include "FCEpilogueDescriptions.asm"
 .include "FCEpilogueTitles.asm"
+.include "Chapter24FCDialogue.asm"
+.include "Chapter24xFCDialogue.asm"
+.include "Chapter25FCDialogue.asm"
 .here
 ; Actual font setup
 
