@@ -91,12 +91,12 @@
 
 ; Double staff weapon experience (Except for Prfs)
 
-* := $01F429
-  .logical $83F429
+;* := $01F429
+;  .logical $83F429
 
-.byte $00, $00, $02, $00, $04, $00, $06, $00, $08, $00, $00, $00, $A9, $05
+;.byte $00, $00, $02, $00, $04, $00, $06, $00, $08, $00, $00, $00, $A9, $05
 
-.here
+;.here
 
 ; Repoints the table of characters who get endings, reorders them in order
 ; of recruitment, and adds Asaello, Daisy, and Gunnar to the table

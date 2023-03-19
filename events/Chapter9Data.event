@@ -11,10 +11,10 @@ eventChapter9Data ; B1/D508
 	_PrepGroup1 ; B1/D520
 		.byte 18, 21
 
-		UNIT ThraciaDracorider, Enemy, [16, 27], [16, 27], Merloch, [KillerLance], 6, False, [$02, $14, $00, $00]
-		UNIT ThraciaDracorider, Enemy, [16, 29], [16, 29], Merloch, [KillerLance], 7, False, [$02, $14, $00, $30]
-		UNIT ThraciaDracorider, Enemy, [18, 27], [18, 27], Merloch, [KillerLance], 7, False, [$02, $14, $00, $10]
-		UNIT ThraciaDracorider, Enemy, [18, 29], [18, 29], Merloch, [KillerLance], 7, False, [$02, $14, $00, $40]
+		UNIT ThraciaDracorider, Enemy, [16, 27], [16, 27], Merloch, [SteelLance], 7, False, [$02, $14, $00, $00]
+		UNIT ThraciaDracorider, Enemy, [16, 29], [16, 29], Merloch, [SteelLance], 7, False, [$02, $14, $00, $30]
+		UNIT ThraciaDracorider, Enemy, [18, 27], [18, 27], Merloch, [SteelLance], 7, False, [$02, $14, $00, $10]
+		UNIT ThraciaDracorider, Enemy, [18, 29], [18, 29], Merloch, [SteelLance], 7, False, [$02, $14, $00, $40]
 	UNIT
 
 	_PrepGroup2 ; B1/D574

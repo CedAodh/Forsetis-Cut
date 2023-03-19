@@ -365,7 +365,7 @@ eventChapter21Events ; FD/E42D
 		YIELD
 	END1
 	
-		_MirandaLeifTalk
+	_MirandaLeifTalk
 		PAUSE_SKIPPABLE 32
 		YIELD
 		

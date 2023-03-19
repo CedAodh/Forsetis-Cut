@@ -394,7 +394,19 @@ eventChapter4xEvents ; FD/85C5
 	END2
 	
 	_DaisyCedTalk
-		macroDialogueHouse placeholder
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE placeholder
+		YIELD
+		
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		macroGiveItemToActiveUnit WindSword
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
 	
 	_MachaCedTalk
