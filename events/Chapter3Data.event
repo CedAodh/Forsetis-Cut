@@ -35,7 +35,7 @@ eventChapter3Data ; B1F318
 		.byte 8, 10
 
 	_EnemyGroup3 ; B1/F416
-		UNIT MunsterThunderMage, Enemy, [1, 11], [1, 11], Lobos, [Fire], 6, False, [$19, $29, $00, $00]
+		UNIT MunsterThunderMage, Enemy, [1, 11], [1, 11], Lobos, [Fire, DoorKey], 6, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [4, 11], [4, 11], Lobos, [ShortLance], 11, False, [$19, $29, $00, $00]
 	UNIT
 
