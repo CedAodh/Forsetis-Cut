@@ -397,7 +397,7 @@ eventChapter4xEvents ; FD/85C5
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE daisyced
 		YIELD
 		
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
