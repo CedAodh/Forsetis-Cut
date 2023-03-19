@@ -395,6 +395,7 @@ finnkarin
 	.text "I'm not at liberty to be asking you"
 	.byte NewLine
 	.text "stuff like that on the spot."
+	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
