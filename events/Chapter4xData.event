@@ -25,10 +25,10 @@ eventChapter4xData ; B1/EB48
 	;	.byte 8, 7
 
 	_ArmorGroup ; B1/EBF2
-		UNIT MunsterArmoredSword, Enemy, [8, 12], [8, 12], Bandole, [Longsword], 8, False, [$00, $03, $00, $00]
-		UNIT MunsterArmoredSword, Enemy, [6, 12], [6, 12], Bandole, [Longsword], 8, False, [$00, $03, $00, $00]
-		UNIT MunsterArmoredSword, Enemy, [7, 12], [7, 12], Bandole, [Longsword], 8, False, [$00, $03, $00, $00]
-		UNIT MunsterArmoredSword, Enemy, [9, 12], [9, 12], Bandole, [Longsword], 8, False, [$00, $03, $00, $00]
+		UNIT MunsterArmoredSword, Enemy, [8, 12], [8, 12], Bandole, [Shortsword], 8, False, [$00, $03, $00, $00]
+		UNIT MunsterArmoredSword, Enemy, [6, 12], [6, 12], Bandole, [Shortsword], 8, False, [$00, $03, $00, $00]
+		UNIT MunsterArmoredSword, Enemy, [7, 12], [7, 12], Bandole, [Shortsword], 8, False, [$00, $03, $00, $00]
+		UNIT MunsterArmoredSword, Enemy, [9, 12], [9, 12], Bandole, [Shortsword], 8, False, [$00, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/EC44
