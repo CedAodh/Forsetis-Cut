@@ -152,8 +152,8 @@ eventChapter5Data ; B1/E685
 		.word MagicRing
 
 	_Chest1Events ; B1/EA80
-		STORE_WORD wEventEngineXCoordinate, 2
-		STORE_WORD wEventEngineYCoordinate, 9
+		STORE_WORD wEventEngineXCoordinate, 1
+		STORE_WORD wEventEngineYCoordinate, 13
 		STORE_WORD wEventEngineParameter1, $0026
 
 		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
