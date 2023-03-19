@@ -389,6 +389,7 @@ laraasbel4x
 	.text "and you just keep walking."
 	.byte NewLine
 	.text "I've seen you run into a wall before!"
+	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
