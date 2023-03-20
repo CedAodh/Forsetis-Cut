@@ -150,3 +150,131 @@ tanyaronan1
 	.byte WaitForA
 	
 	.byte EndText
+	
+
+finneyvel
+
+.byte right_slot
+.word $3A00
+.word eyvel_portrait
+
+.byte left_slot
+.word $3A00
+.word finn_portrait
+
+.byte left_slot
+.text "Eyvel, a moment?"
+.byte WaitForA
+
+.byte right_slot
+.text "You know we're well past the point"
+.byte NewLine
+.text "of asking permission to talk, Finn."
+.byte NewLine
+.text "What is it?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It occurs to me that I never apologized"
+.byte NewLine
+.text "for putting Fiana and Mareeta in peril."
+.byte WaitForA
+.byte ScrollText
+.text "I always knew something like this"
+.byte NewLine
+.text "was bound to happen eventually..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Finn, you don't need to"
+.byte NewLine
+.text "concern yourself with that."
+.byte WaitForA
+.byte ScrollText
+.text "Seeing what you... Well, what you looked like"
+.byte NewLine
+.text "when you first came to Fiana, I knew there'd"
+.byte NewLine
+.text "be serious stakes from taking you in."
+.byte WaitForA
+.byte ScrollText
+.text "It's nothing we can't handle,"
+.byte NewLine
+.text "and besides, I'm also at fault:"
+.byte WaitForA
+.byte NewLine
+.text "I vowed to protect you three, and I..."
+.byte NewLine
+.text "I let them take Little Nan too..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I suppose you're right."
+.byte WaitForA
+.byte NewLine
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Something else on your mind?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Something about what's going on right now..."
+.byte NewLine
+.text "It's reminded me of another time I engaged"
+.byte NewLine
+.text "pirates in battle. Far away from here."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Pirates, huh?"
+.byte NewLine
+.text "Are you talking about the Orgahil region?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Y-yes, that's right..."
+.byte NewLine
+.text "Have you been there before?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "No. I just know of it from travelers."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh."
+.byte NewLine
+.text "I see..."
+.byte NewLine
+.text "Nevermind, then."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+	
+.byte right_slot
+.byte ScrollText
+.text "Are you sure that's all-"
+.byte NewLine
+.text "... And he's gone."
+.byte WaitForA
+.byte NewLine
+.text "Huh. I wonder what that was about."
+.byte NewLine
+.text "He's not one to normally talk about the past..."
+.byte WaitForA
+
+.byte EndText
