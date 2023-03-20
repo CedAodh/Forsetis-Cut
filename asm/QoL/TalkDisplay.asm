@@ -502,6 +502,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 
         aChapter2TalkTargetTable
 		  ZQOL_TALK_ENTRY Tanya, [Ronan]
+		  ZQOL_TALK_ENTRY Finn, [Eyvel]
 		ZQOL_END_TALK_CHAPTER
 		
 		aChapter2xTalkTargetTable
@@ -582,10 +583,11 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Lifis, [Perne]
           ZQOL_TALK_ENTRY Lara, [Perne]
           ZQOL_TALK_ENTRY Perne, [Trude]
-		  ZQOL_TALK_ENTRY Salem, [Trude]
+	  ZQOL_TALK_ENTRY Salem, [Trude]
           ZQOL_TALK_ENTRY Safy, [Tina]
-		  ZQOL_TALK_ENTRY Salem, [Tina]
-		  ZQOL_TALK_ENTRY Leif, [Tina]
+	  ZQOL_TALK_ENTRY Salem, [Tina]
+          ZQOL_TALK_ENTRY Leif, [Tina]
+	  ZQOL_TALK_ENTRY Leif, [Perne]
         ZQOL_END_TALK_CHAPTER
 
         aChapter13TalkTargetTable
