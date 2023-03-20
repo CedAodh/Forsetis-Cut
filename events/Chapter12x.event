@@ -388,7 +388,7 @@ eventChapter12xEvents ; FD/8F98
 		SET_MUSIC $4C
 		YIELD
 
-		DIALOGUE placeholder
+		DIALOGUE salemtina
 		YIELD
 
 		macroCountEnemyUncapturedAliveUnits Tina
@@ -410,7 +410,7 @@ eventChapter12xEvents ; FD/8F98
 		SET_MUSIC $4A
 		YIELD
 
-		DIALOGUE placeholder
+		DIALOGUE salemtrude
 		YIELD
 
 		macroConvertToNPCAllegiance Trude
@@ -419,7 +419,7 @@ eventChapter12xEvents ; FD/8F98
 	END2
 
 	_LeifTinaTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse leiftina
 	END2
 	
 	_LeifPerneTalk
