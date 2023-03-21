@@ -540,6 +540,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		  ZQOL_TALK_ENTRY Shiva, [Leif]
 		  ZQOL_TALK_ENTRY Finn, [Karin]
 		  ZQOL_TALK_ENTRY Daisy, [Shiva]
+		  ZQOL_TALK_ENTRY Safy, [Lifis]
         ZQOL_END_TALK_CHAPTER
 
         aChapter8TalkTargetTable
