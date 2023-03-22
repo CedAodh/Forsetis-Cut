@@ -133,7 +133,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 9, 24
 
 	_ReinforcementsGroup4 ; 99/FEAE
-		UNIT Hero3, Enemy, [1, 25], [1, 25], Veld, [KillerSword], 15, False, [$00, $00, $00, $00]
+		UNIT Hero3, Enemy, [1, 25], [1, 25], Veld, [KillingEdge], 15, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; 99/FEC4
