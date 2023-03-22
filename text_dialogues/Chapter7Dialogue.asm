@@ -1255,42 +1255,31 @@ ch7mastersealhouse
 
 .byte Right_slot
 .word LoadPortrait
-.word younglady_portrait
-.text "Heeey there, soldier. At the risk of sounding"
+.word oldman_orange_portrait
+.text "Oh, no, no..."
 .byte NewLine
-.text "too forward, I've always admired"
+.text "I-it's not what it looks like!"
 .byte NewLine
-.text "the Panzerritter, you know."
+.text "I can explain it all!"
 .byte WaitForA
 .byte ScrollText
-.text "You folks are just so brave,"
+.text "Just don't take me in..."
 .byte NewLine
-.text "with a body to match..."
+.text "I beg you!"
+.byte NewLine
+.text "Please...!"
 .byte WaitForA
 .byte ScrollText
-.text "Hm? Beg pardon?"
+.text "...Wait, you're not the castle guards?"
 .byte NewLine
-.text "You're not with the Panzerritter?"
+.text "Hoo, what a relief..."
+.byte NewLine
+.text "Look, how about a little exchange:"
 .byte WaitForA
-.byte ScrollText
-.text "...Oh, c'mon! I had this whole spiel prepared"
 .byte NewLine
-.text "an' everything! Ugh, there go my plans..."
-.byte WaitForA
-.byte ScrollText
-.text "Look, one of the knights in the Panzerritter"
+.text "I give you this, and you keep quiet"
 .byte NewLine
-.text "was by earlier, and he left this here."
-.byte WaitForA
-.byte ScrollText
-.text "I thought it was the classic “pretend to forget"
-.byte NewLine
-.text "something so you have an excuse"
-.byte NewLine
-.text "to come back” ploy, but I guess not..."
-.byte WaitForA
-.byte ScrollText
-.text "Well, see that this gets back to him, will you?"
+.text "about what you just saw. Fair? Fair."
 .byte WaitForA
 
 .byte EndText
