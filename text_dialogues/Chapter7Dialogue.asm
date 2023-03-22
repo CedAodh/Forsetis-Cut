@@ -1273,9 +1273,9 @@ ch7mastersealhouse
 .text "...Wait, you're not the castle guards?"
 .byte NewLine
 .text "Hoo, what a relief..."
-.byte NewLine
-.text "Look, how about a little exchange:"
 .byte WaitForA
+.byte ScrollText
+.text "Look, how about a little exchange:"
 .byte NewLine
 .text "I give you this, and you keep quiet"
 .byte NewLine
