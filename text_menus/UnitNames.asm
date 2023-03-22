@@ -233,7 +233,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._TolmanName
 
-	.word	<>char_names._MunsterName
+	.word	<>char_names._LoptrianName
 
 	.word	<>char_names._BrigandName
 
