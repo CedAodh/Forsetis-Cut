@@ -252,9 +252,15 @@ eventChapter15Events ; FD/A812
 		YIELD_UNK
 		YIELD_UNK
 		
-		EVENT_TEST_FLAG_SET FlagDaisyRecruited
-		JUMP_FALSE +
+		EVENT_TEST_FLAG_SET FlagSafyGoneForGood
+		JUMP_TRUE _AsaelloSpawn
 		
+		EVENT_TEST_FLAG_SET FlagLifisGoneForGood
+		JUMP_TRUE _AsaelloSpawn
+		
+		JUMP +
+		
+		_AsaelloSpawn
 		STORE_LONG lEventEngineLongParameter, ch15asaellospawn
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		

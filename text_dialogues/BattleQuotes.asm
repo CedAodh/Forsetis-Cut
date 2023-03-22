@@ -124,12 +124,16 @@ eisenauboss
 .byte EndText
 
 raydrikboss
-.text "I watched your grandfather die!"
+.text "Hah!"
 .byte NewLine
-.text "I saw your father's castle burn!"
+.text "You think you have a chance"
+.byte NewLine
+.text "against me?"
 .byte WaitForA
 .byte ScrollText
-.text "I outlived them and I'll outlive you!"
+.text "You're all just bodies"
+.byte NewLine
+.text "to be laid in a row."
 .byte WaitForA
 .byte EndText
 
