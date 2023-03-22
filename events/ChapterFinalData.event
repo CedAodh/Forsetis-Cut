@@ -13,12 +13,12 @@ eventChapterFinalData ; 99/FAF0
 		UNIT LoptrianSorcerer1, Enemy, [16, 1], [16, 1], Veld, [Hel, Fenrir, Jormungand, DoorKey], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [5, 4], [5, 4], Veld, [Hel, Fenrir, Jormungand, DoorKey], 20, False, [$00, $03, $00, $00]
 		UNIT BerserkerEnemy1, Enemy, [13, 17], [13, 17], Veld, [Hammer], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [14, 17], [14, 17], Veld, [Hammer], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [15, 17], [15, 17], Veld, [Hammer], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [16, 17], [16, 17], Veld, [Hammer], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [17, 17], [17, 17], Veld, [Hammer], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [18, 17], [18, 17], Veld, [Hammer], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [19, 17], [19, 17], Veld, [Hammer], 20, False, [$00, $15, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [14, 17], [14, 17], Veld, [Poleax], 20, False, [$00, $15, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [15, 17], [15, 17], Veld, [KillerAxe], 20, False, [$00, $15, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [16, 17], [16, 17], Veld, [SilverAxe], 20, False, [$00, $15, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [17, 17], [17, 17], Veld, [BraveAxe], 20, False, [$00, $15, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [18, 17], [18, 17], Veld, [BattleAxe], 20, False, [$00, $15, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [19, 17], [19, 17], Veld, [DevilAxe], 20, False, [$00, $15, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [15, 13], [15, 13], Veld, [Silence, Jormungand, Restore], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [16, 13], [16, 13], Veld, [Ensorcel, Hel, Restore], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [17, 13], [17, 13], Veld, [Silence, Jormungand, Restore], 20, False, [$00, $03, $00, $00]
@@ -27,15 +27,15 @@ eventChapterFinalData ; 99/FAF0
 		UNIT LoptrianGeneral, Enemy, [15, 25], [15, 25], Veld, [MasterLance], 20, False, [$00, $00, $00, $00]
 		UNIT LoptrianGeneral, Enemy, [15, 2], [15, 2], Veld, [SilverLance], 20, False, [$00, $00, $00, $00]
 		UNIT LoptrianGeneral, Enemy, [17, 2], [17, 2], Veld, [SilverLance], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSniper, Enemy, [26, 22], [26, 22], Veld, [VeninBow], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSniper, Enemy, [28, 22], [28, 22], Veld, [VeninBow], 20, False, [$00, $00, $00, $00]
+		UNIT LoptrianSniper, Enemy, [26, 22], [26, 22], Veld, [SilverBow], 20, False, [$00, $00, $00, $00]
+		UNIT LoptrianSniper, Enemy, [28, 22], [28, 22], Veld, [SilverBow], 20, False, [$00, $00, $00, $00]
 		UNIT LoptrianSniper, Enemy, [4, 5], [4, 5], Veld, [MasterBow], 20, False, [$00, $00, $00, $00]
 		UNIT LoptrianSniper, Enemy, [6, 5], [6, 5], Veld, [MasterBow], 20, False, [$00, $00, $00, $00]
 		UNIT LoptrianSwordmaster, Enemy, [26, 5], [26, 5], Veld, [MasterSword], 20, False, [$00, $00, $00, $00]
 		UNIT LoptrianSwordmaster, Enemy, [28, 5], [28, 5], Veld, [MasterSword], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSwordmaster, Enemy, [4, 22], [4, 22], Veld, [KillingEdge], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSwordmaster, Enemy, [6, 22], [6, 22], Veld, [KillingEdge], 20, False, [$00, $00, $00, $00]
-		UNIT Veld, Enemy, [16, 12], [16, 12], Veld, [Petrify, Jormungand, Vulnerary], 20, True, [$01, $03, $02, $80]
+		UNIT LoptrianSwordmaster, Enemy, [4, 22], [4, 22], Veld, [SilverSword], 20, False, [$00, $00, $00, $00]
+		UNIT LoptrianSwordmaster, Enemy, [6, 22], [6, 22], Veld, [SilverSword], 20, False, [$00, $00, $00, $00]
+		UNIT Veld, Enemy, [16, 12], [16, 12], Veld, [Thokk, Petrify, Petrify, Petrify, Petrify, Petrify,], 20, True, [$01, $03, $02, $80]
 	UNIT
 
 	_ReinforcementsCameraCoordinates1 ; 99/FD74
@@ -56,7 +56,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_TigrisDagdarGroup ; 99/FDA6
-		UNIT TigrisDagdar, Enemy, [27, 22], [27, 22], Veld, [MasterAxe], 20, False, [$00, $03, $00, $00]
+		UNIT TigrisDagdar, Enemy, [27, 22], [27, 22], Veld, [Hammer, MasterBow], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_CanisSaraCameraCoordinates ; 99/FDBC
@@ -70,7 +70,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_CanisGroup ; 99/FDD6
-		UNIT Canis, Enemy, [27, 5], [27, 5], Veld, [Nosferatu, Berserk], 20, False, [$00, $03, $00, $00]
+		UNIT Canis, Enemy, [27, 5], [27, 5], Veld, [Aura, Berserk], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_BovisGalzusCameraCoordinates ; 99/FDEC
@@ -84,28 +84,28 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_BovisGroup ; 99/FE06
-		UNIT Bovis, Enemy, [16, 2], [16, 2], Veld, [MasterSword, FlameSword, Vulnerary, Vulnerary, MasterAxe], 20, False, [$00, $03, $00, $00]
+		UNIT Bovis, Enemy, [16, 2], [16, 2], Veld, [WindSword, KillerAxe], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_PorcusLifisCameraCoordinates ; 99/FE1C
 		.byte 8, 7
 
 	_PorcusLifisGroup ; 99/FE1E
-		UNIT PorcusLifis, Enemy, [5, 5], [5, 5], Veld, [BerserkEdge], 20, False, [$00, $03, $00, $00]
+		UNIT PorcusLifis, Enemy, [5, 5], [5, 5], Veld, [Armorslayer], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_PorcusCameraCoordinates ; 99/FE34
 		.byte 8, 7
 
 	_PorcusGroup ; 99/FE36
-		UNIT Porcus, Enemy, [5, 5], [5, 5], Veld, [BerserkEdge], 20, False, [$00, $03, $00, $00]
+		UNIT Porcus, Enemy, [5, 5], [5, 5], Veld, [BerserkEdge, SleepEdge, VeninEdge], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_DracoEyvelCameraCoordinates ; 99/FE4C
 		.byte 8, 7
 
 	_DracoEyvelGroup ; 99/FE4E
-		UNIT DracoEyvel, Enemy, [5, 22], [5, 22], Veld, [MasterBow], 20, False, [$00, $03, $00, $00]
+		UNIT DracoEyvel, Enemy, [5, 22], [5, 22], Veld, [BraveBow], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_DracoCameraCoordinates ; 99/FE64
@@ -119,21 +119,21 @@ eventChapterFinalData ; 99/FAF0
 		.byte 23, 8
 
 	_ReinforcementsGroup2 ; 99/FE7E
-		UNIT BerserkerEnemy1, Enemy, [30, 8], [30, 8], Veld, [Hammer, DevilAxe], 20, False, [$00, $00, $00, $00]
+		UNIT LoptrianSoldier, Enemy, [30, 8], [30, 8], Veld, [ShadowSpear], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	_ReinforcementsCameraCoordinates3 ; 99/FE94
 		.byte 23, 24
 
 	_ReinforcementsGroup3 ; 99/FE96
-		UNIT SniperEnemy, Enemy, [30, 25], [30, 25], Veld, [SilverBow], 15, False, [$00, $00, $00, $00]
+		UNIT SniperEnemy, Enemy, [30, 25], [30, 25], Veld, [KillerBow], 15, False, [$00, $00, $00, $00]
 	UNIT
 
 	_ReinforcementsCameraCoordinates4 ; 99/FEAC
 		.byte 9, 24
 
 	_ReinforcementsGroup4 ; 99/FEAE
-		UNIT Hero3, Enemy, [1, 25], [1, 25], Veld, [SilverSword], 15, False, [$00, $00, $00, $00]
+		UNIT Hero3, Enemy, [1, 25], [1, 25], Veld, [KillerSword], 15, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; 99/FEC4

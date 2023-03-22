@@ -82,6 +82,9 @@ eventChapter7Events ; 99/B023
 			CHECK_CHARS2 Shiva, Leif
 			TEST_FLAG_SET $0F
 		END_DEFINITION
+		EVENT $17, _SafyLifisTalk
+			CHECK_CHARS2 Safy, Lifis
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/B112
@@ -379,7 +382,19 @@ eventChapter7Events ; 99/B023
 	END2
 	
 	_LeifShivaTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse leifshiva
+	END2
+
+	_SafyLifisTalk
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+		
+		DIALOGUE ch7safylifis
+		YIELD
 	END2
 
 	_HannibalAppearCheck ; 99/B43C

@@ -33,6 +33,9 @@ eventChapter2Events ; 99/81B4
 		EVENT $07, _TanyaRonanTalk
 			CHECK_CHARS2 Tanya, Ronan
 		END_DEFINITION
+		EVENT $08, _FinnEyvelTalk
+			CHECK_CHARS2 Finn, Eyvel
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/820C
@@ -104,6 +107,10 @@ eventChapter2Events ; 99/81B4
 	
 	_TanyaRonanTalk
 		macroDialogueHouse tanyaronan1
+	END2
+
+	_FinnEyvelTalk
+		macroDialogueHouse finneyvel
 	END2
 
 	_RonanHouseVisit ; 99/8324

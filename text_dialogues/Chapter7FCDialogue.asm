@@ -540,6 +540,136 @@ finnkarin
 
 	.byte EndText
 	
+ch7safylifis
+
+.byte right_slot
+.word $3A00
+.word lifis_portrait
+
+.byte left_slot
+.word $3A00
+.word safie_portrait
+.text "Lifis? Is that you?!"
+.byte WaitForA
+
+.byte right_slot
+.text "*huff* *huff*"
+.byte NewLine
+.text "Huh? O-Oh, hey, Safy!"
+.byte NewLine
+.text "I uh, didn't see you there!"
+.byte WaitForA
+.byte NewLine
+.text "Why the weird face?"
+.byte NewLine
+.text "Don't tell me you were worried about me!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Of course I was!"
+.byte NewLine
+.text "After I lost sight of you in Kerberos,"
+.byte NewLine
+.text "I... I feared for the worst. What happened?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, I, uh..."
+.byte WaitForA
+.byte NewLine
+.text "I snuck into the castle dungeon"
+.byte NewLine
+.text "all by myself and rescued the Prince!"
+.byte NewLine
+.text "You better believe it!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I... I'm sorry, Lifis, but..."
+.byte NewLine
+.text "Even my faith has its limits."
+.byte NewLine
+.text "Do you speak the truth?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ow, you hurt me, Safy!"
+.byte WaitForA
+.byte NewLine
+.text "The Prince is right over there,"
+.byte NewLine
+.text "you can ask him if for some reason"
+.byte NewLine
+.text "you think I would ever lie to a beauty like you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I... I have no words..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Don't sweat it!"
+.byte NewLine
+.text "That's what I'm here for."
+.byte NewLine
+.text "We made a promise, didn't we?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, Lifis, thank you!"
+.byte NewLine
+.text "I knew it... I knew you were but a"
+.byte NewLine
+.text "lost soul looking for redemption!"
+.byte WaitForA
+.byte ScrollText
+.text "Make no mistake, Lifis, your deeds"
+.byte NewLine
+.text "will not go ignored once this war is over!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "F-For real?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Of course!"
+.byte WaitForA
+.byte NewLine
+.text "But let us waste no more time right now,"
+.byte NewLine
+.text "there is a battle we must attend to."
+.byte NewLine
+.text "May the gods be with you, Lifis!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "...And Lifis scores once again!"
+.byte NewLine
+.text "Screw selling the prince over,"
+.byte NewLine
+.text "I got the bag of a lifetime secured just for me!"
+.byte WaitForA
+
+.byte EndText
+
+	
 ch7ending9FC
 
 .byte Right_slot
