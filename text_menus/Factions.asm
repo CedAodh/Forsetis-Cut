@@ -143,7 +143,7 @@ leader_sets				.block
 .word $008E
 .word <>leader_text._WelkenrosenLeader
 
-.word $00B8
+.word $0054
 .word <>leader_text._WelkenrosenLeader
 
 .word $0020
