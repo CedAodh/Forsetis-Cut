@@ -368,6 +368,8 @@ eventChapter24xEvents ; 97/8895
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill2Anchor | (Skill3Immortal << 8)
 		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
+		
+		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Eyvel
 
 		CALL_ASM_SKIPPABLE rlUpdateUnitMapsAndFog, $0000
 

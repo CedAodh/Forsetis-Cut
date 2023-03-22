@@ -322,7 +322,7 @@ eventChapter7Events ; 99/B023
 
 		macroConvertToPlayerAllegiance Shiva
 
-		macroSetCharacterWord Shiva, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Shiva, structCharacterDataRAM.Leader, Finn
 
 		SET_FLAG $0C
 	END2
@@ -340,7 +340,7 @@ eventChapter7Events ; 99/B023
 
 		macroConvertToPlayerAllegiance Shiva
 
-		macroSetCharacterWord Shiva, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Shiva, structCharacterDataRAM.Leader, Finn
 
 		SET_FLAG $0C
 	END2

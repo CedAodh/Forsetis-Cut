@@ -13,7 +13,7 @@ eventChapter5Data ; B1/E685
 		.byte 14, 17
 
 	_NannaGroup ; B1/E6B3
-		UNIT Nanna, Player, [20, 16], [15, 16], Leif, [EarthSword, Heal], 1, False, [$00, $00, $00, $00]
+		UNIT Nanna, Player, [20, 16], [15, 16], Finn, [EarthSword, Heal], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 

@@ -347,6 +347,34 @@ eventChapter9Events ; 8C/F011
 		YIELD
 
 		macroAddCharacterByte Leif, structCharacterDataRAM.LeadershipStars, 1
+		
+		macroSetCharacterWord Leif, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Finn, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Osian, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Halvan, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Tanya, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Dagdar, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Ronan, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Safy, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Lifis, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Daisy, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Brighton, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Macha, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Lara, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Fergus, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Karin, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Dalsin, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Nanna, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Hicks, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Shiva, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Callion, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Selphina, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Kane, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Alba, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Robert, structCharacterDataRAM.Leader, Leif
 
 		PLAY_SOUND_WORD $00E7
 

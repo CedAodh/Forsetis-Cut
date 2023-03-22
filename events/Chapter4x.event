@@ -344,6 +344,9 @@ eventChapter4xEvents ; FD/85C5
 
 		DIALOGUE ch4xasbelleiftalk
 		YIELD
+		
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
+		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
 
 		CALL_ASM_SKIPPABLE $83A3BF, $0000
 	END2
@@ -361,7 +364,7 @@ eventChapter4xEvents ; FD/85C5
 
 		macroConvertToPlayerAllegiance Asbel
 
-		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
 		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
 	END2
 

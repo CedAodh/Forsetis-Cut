@@ -754,6 +754,18 @@ eventChapter3Events ; 8C/E435
 		macroSetCharacterTurnStatus Tanya, (TurnStatusHidden | TurnStatusInvisible)
 
 		+
+		
+		macroSetCharacterWord Leif, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Finn, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Osian, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Halvan, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Tanya, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Dagdar, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Ronan, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Safy, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Lifis, structCharacterDataRAM.Leader, Finn
+		
 		FADE_OUT $01
 		YIELD
 

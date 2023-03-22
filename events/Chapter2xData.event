@@ -130,7 +130,7 @@ eventChapter2xData ; B1/F66D
 	;	.byte 8, 7
 
 	_SafyGroup ; B1/F8F3
-		UNIT Safy, Player, [0, 0], [0, 0], Leif, [Heal, Hammerne], 3, False, [$00, $00, $00, $00]
+		UNIT Safy, Player, [0, 0], [0, 0], Eyvel, [Heal, Hammerne], 3, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/F909

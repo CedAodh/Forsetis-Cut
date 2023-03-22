@@ -12,7 +12,7 @@ eventChapter6Data ; B1/E22A
 	;	.byte 9, 8
 
 	_GalzusGroup ; B1/E244
-		UNIT Galzus, Enemy, [2, 1], [2, 2], Tolman, [MasterSword], 20, False, [$00, $00, $00, $02]
+		UNIT Galzus, Enemy, [2, 1], [2, 2], Raydrik, [MasterSword], 20, False, [$00, $00, $00, $02]
 	UNIT
 
 	_TolmanCameraCoordinates ; B1/E25A
@@ -72,7 +72,7 @@ eventChapter6Data ; B1/E22A
 	;	.byte 8, 7
 
 	_HicksGroup ; B1/E4B0
-		UNIT Hicks, Player, [14, 15], [14, 15], Leif, [Poleax, IronSword, Vulnerary], 8, False, [$00, $00, $00, $00]
+		UNIT Hicks, Player, [14, 15], [14, 15], Finn, [Poleax, IronSword, Vulnerary], 8, False, [$00, $00, $00, $00]
 	UNIT
 
 	_KnightReinforcementsCameraCoordinates2 ; B1/E4C6
@@ -114,7 +114,7 @@ eventChapter6Data ; B1/E22A
 	;	.byte 8, 7
 
 	_BishopGroup ; B1/E628
-		UNIT FriegeBishop2, Player, [26, 11], [22, 6], Leif, [], 2, False, [$00, $00, $00, $00]
+		UNIT FriegeBishop2, NPC, [26, 11], [22, 6], Finn, [], 2, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/E63E

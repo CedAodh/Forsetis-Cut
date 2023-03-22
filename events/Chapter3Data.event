@@ -99,7 +99,7 @@ eventChapter3Data ; B1F318
 	;	.byte 13, 8
 
 	_BishopGroup ; B1/F576
-		UNIT ThraciaBishop, Player, [11, 28], [11, 28], Leif, [], 1, False, [$00, $00, $00, $00]
+		UNIT ThraciaBishop, NPC, [11, 28], [11, 28], Eyvel, [], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates4 ; B1/F58C

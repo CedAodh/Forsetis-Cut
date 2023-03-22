@@ -167,7 +167,7 @@ eventChapter8Events ; 99/BE7D
 		YIELD
 
 		macroConvertToPlayerAllegiance Marty
-		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Finn
 
 		SET_FLAG $0A
 	END2
@@ -184,7 +184,7 @@ eventChapter8Events ; 99/BE7D
 		YIELD
 
 		macroConvertToPlayerAllegiance Marty
-		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Finn
 
 		SET_FLAG $0A
 	END2
@@ -204,6 +204,7 @@ eventChapter8Events ; 99/BE7D
 		YIELD
 
 		macroConvertToPlayerAllegianceIfCaptured Marty
+		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Finn
 
 		SET_FLAG $0A
 	END2
