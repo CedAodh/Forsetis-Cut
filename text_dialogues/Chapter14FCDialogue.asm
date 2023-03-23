@@ -555,3 +555,221 @@ fcarionmusing
 .byte WaitForA
 
 .byte EndText
+
+
+kanetina
+
+.byte right_slot
+.word LoadPortrait
+.word tina_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word kane_portrait
+.text "Hello there. Miss Tina, yes?"
+.byte WaitForA
+
+.byte right_slot
+.text "That's me! Who are you?"
+.byte WaitForA
+ 
+.byte left_slot
+.byte ScrollText
+.text "Ah, forgive my bluntness. My name is Kane."
+.byte NewLine
+.text "I am the acting quartermaster of this army."
+.byte NewLine
+.text "I ask only for a moment of your time."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Uh... O-OK...?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Rumor has it that you carry a..."
+.byte NewLine
+.text "special trinket with you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What, this?"
+.byte NewLine
+.text "This is just a boring old staff."
+.byte NewLine
+.text "I know a few other folks here use them too."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I am afraid that act will not help you, my lady."
+.byte NewLine
+.text "I am aware of your precious “Thief Staff.”"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "HUH?!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Now, hear me out."
+.byte NewLine
+.text "All I want to know is how you've been using it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "W-What are you getting at?"
+.byte NewLine
+.text "I haven't done anything bad."
+.byte NewLine
+.text "I promise!"
+.byte WaitForA
+ 
+.byte left_slot
+.byte ScrollText
+.text "And I believe you, but after receiving a tip"
+.byte NewLine
+.text "regarding you, it does help explain some"
+.byte NewLine
+.text "inconsistencies in our money and inventory."
+.byte WaitForA
+.byte ScrollText
+.text "I would like to straighten these out, the only"
+.byte NewLine
+.text "thing that I ask is that you promise to report"
+.byte NewLine
+.text "and let me know when you make use of it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What the... Who told on me?!"
+.byte NewLine
+.text "Oh, I bet I know who it was..."
+.byte NewLine
+.text "Grr..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Let us keep our composure here, Miss Tina."
+.byte NewLine
+.text "I'm not trying to single you out."
+.byte WaitForA
+.byte ScrollText
+.text "Thieving skills are essential for us—"
+.byte WaitForA
+.byte NewLine
+.text "We're fighting a war against an army much "
+.byte NewLine
+.text "larger and more organized than ours, where"
+.byte NewLine
+.text "any potential advantage must be taken."
+.byte WaitForA
+.byte ScrollText
+.text "It is easier for us to find these advantages"
+.byte NewLine
+.text "when we're able to maintain good records."
+.byte NewLine
+.text "What do you say? Can I count on your help?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "OK, first off, it's just Tina—"
+.byte NewLine
+.text "don't call me “miss” or “lady”"
+.byte NewLine
+.text "or any of that junk."
+.byte WaitForA
+.byte ScrollText
+.text "Second off...fine. I'll try to remember"
+.byte NewLine
+.text "everything I take with my staff."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You have my gratitude."
+.byte WaitForA
+.byte ScrollText
+.text "Now that we're both on the same page, would"
+.byte NewLine
+.text "you be able to attend our war council as well?"
+.byte NewLine
+.text "This ability of yours has quite unique potential."
+.byte WaitForA
+.byte ScrollText
+.text "If we could-"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Pass!"
+.byte NewLine
+.text "War meetings are SO boring."
+.byte WaitForA
+.byte NewLine
+.text "Having to plan all the little details"
+.byte NewLine
+.text "takes ALL the fun out of it!"
+.byte WaitForA
+.byte ScrollText
+.text "Look, I always know what to do on my own!"
+.byte NewLine
+.text "There's like...this feeling in my gut"
+.byte NewLine
+.text "that always tells me where the best loot is!"
+.byte WaitForA
+.byte NewLine
+.text "I promise, you don't have to worry about me!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Really, now?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Uh-huh! And right now, that feeling is telling"
+.byte NewLine
+.text "me I should stop talking and go back to do..."
+.byte NewLine
+.text "Whatever it is that healers do!"
+.byte WaitForA
+.byte ScrollText
+.text "It's been nice meeting you!"
+.byte NewLine
+.text "Bye bye!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.word $3A00
+.word kane_portrait
+
+.text "......Well, at least this was a bit fruitful."
+.byte WaitForA
+.byte ScrollText
+.text "That should save Bishop August some trouble."
+.byte NewLine
+.text "I think I'll play along and see what exactly"
+.byte NewLine
+.text "this “gut feeling” of hers is capable of."
+.byte WaitForA
+
+.byte EndText
