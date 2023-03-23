@@ -600,6 +600,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		aChapter14TalkTargetTable
           ZQOL_TALK_ENTRY Dean, [Eda]
           ZQOL_TALK_ENTRY GunterDialogue, [Safy]
+	  ZQOL_TALK_ENTRY Kane, [Tina]
         ZQOL_END_TALK_CHAPTER
 
         aChapter15TalkTargetTable
