@@ -691,7 +691,7 @@ eventChapter14Events ; FD/9790
 	END2
 	
 	_GunnarSafyTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse gunnarsafy
 	END2
 	
 	_KaneTinaTalk
