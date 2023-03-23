@@ -773,3 +773,158 @@ kanetina
 .byte WaitForA
 
 .byte EndText
+
+
+gunnarsafy
+
+.byte right_slot
+.word LoadPortrait
+.word safie_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word cohen_portrait
+.text "It's good to see you're doing well, Safy."
+.byte WaitForA
+
+.byte right_slot
+.text "Bishop Gunnar!"
+.byte NewLine
+.text "You came all the way to Tahra as well?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, how couldn't I?"
+.byte NewLine
+.text "Your father was a dear friend of mine."
+.byte NewLine
+.text "His passing was great grief for us all."
+.byte WaitForA
+.byte NewLine
+.text "I can only hope your sister is alright."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*chuckle* You know how she is."
+.byte NewLine
+.text "That zappy little spirit of hers"
+.byte NewLine
+.text "doesn't seem like it'll ever go away."
+.byte WaitForA
+.byte ScrollText
+.text "I've always tried my best to set an example"
+.byte NewLine
+.text "for her, but... I'm afraid I still might be"
+.byte NewLine
+.text "failing her as her older sister."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Pay it no mind, Sister."
+.byte NewLine
+.text "That's just how all children should be."
+.byte WaitForA
+.byte ScrollText
+.text "She has shown no interest in joining the"
+.byte NewLine
+.text "clergy, and yet she tries her best to master"
+.byte NewLine
+.text "healing staves just like her big sister does."
+.byte WaitForA
+.byte ScrollText
+.text "Have you ever wondered why that is?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I... No, actually."
+.byte NewLine
+.text "I don't think I ever realized that..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "She might have trouble expressing how she"
+.byte NewLine
+.text "really feels about you, but that doesn't mean"
+.byte NewLine
+.text "that she doesn't look up to you."
+.byte WaitForA
+.byte ScrollText
+.text "It is imperative that you both find"
+.byte NewLine
+.text "a way to keep your bond strong."
+.byte NewLine
+.text "You've only got each other, after all."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Indeed."
+.byte NewLine
+.text "I barely touch the topic with her, but..."
+.byte WaitForA
+.byte NewLine
+.text "I'm sure the loss of our parents must"
+.byte NewLine
+.text "have hurt her dearly, despite not having"
+.byte NewLine
+.text "many memories of them."
+.byte WaitForA
+.byte ScrollText
+.text "I can only hope I've done a good job"
+.byte NewLine
+.text "taking their role in her upbringing."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Believe me when I say that you have."
+.byte NewLine
+.text "You have grown into a most resilient woman,"
+.byte NewLine
+.text "and an exemplary member of the clergy."
+.byte WaitForA
+.byte ScrollText
+.text "I'm sure your sister is proud of you,"
+.byte NewLine
+.text "just as both your parents would be."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "All I've been doing is following our faith"
+.byte NewLine
+.text "as I have been taught. Regardless..."
+.byte NewLine
+.text "Thank you for your support, Bishop."
+.byte WaitForA
+.byte ScrollText
+.text "I don't know if either of us may live to see"
+.byte NewLine
+.text "another day, but I pray to Saint Heim that"
+.byte NewLine
+.text "we do. For the sake of our loved ones."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Things may look dire for the city,"
+.byte NewLine
+.text "but remember that is when the"
+.byte NewLine
+.text "greatest miracles can happen."
+.byte WaitForA
+.byte ScrollText
+.text "Stay strong, Sister Safy."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You too, Bishop."
+.byte WaitForA
+
+.byte EndText
