@@ -53,6 +53,8 @@ eventChapter14Events ; FD/9790
 		EVENT $0B, _GunnarSafyTalk
 			CHECK_CHARS2 GunterDialogue, Safy
 		END_DEFINITION
+		EVENT $0C, _KaneTinaTalk
+			CHECK_CHARS2 Kane, Tina
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/982C
@@ -690,6 +692,10 @@ eventChapter14Events ; FD/9790
 	
 	_GunnarSafyTalk
 		macroDialogueHouse placeholder
+	END2
+	
+	_KaneTinaTalk
+		macroDialogueHouse kanetina
 	END2
 
 	_WyvernReinforcements ; FD/9F3B
