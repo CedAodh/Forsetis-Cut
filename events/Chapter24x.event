@@ -22,7 +22,6 @@ eventChapter24xEvents ; 97/8895
 		EVENT $00, _SniperHeroReinforcements
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD_RANGE wCurrentTurn, 1, 20
-		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 97/88E2
@@ -108,6 +107,9 @@ eventChapter24xEvents ; 97/8895
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; 97/89DF
+	EVENT $06, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Pierre
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; 97/89E1
@@ -368,8 +370,6 @@ eventChapter24xEvents ; 97/8895
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill2Anchor | (Skill3Immortal << 8)
 		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
-		
-		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Eyvel
 
 		CALL_ASM_SKIPPABLE rlUpdateUnitMapsAndFog, $0000
 

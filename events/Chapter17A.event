@@ -22,7 +22,7 @@ eventChapter17AEvents ; FD/BAAF
 		END_DEFINITION
 		EVENT $00, _PirateReinforcements
 			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 3, 4
+			CMP_WORD_RANGE wCurrentTurn, 3, 8
 		END_DEFINITION
 		EVENT $00, _SaiasLeave
 			CMP_WORD wCurrentPhase, Player
@@ -30,7 +30,7 @@ eventChapter17AEvents ; FD/BAAF
 		END_DEFINITION
 		EVENT $0B, _MishaSleep
 			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 11, 15
+			CMP_WORD wCurrentTurn, 10, 15
 			TEST_FLAG_SET $0A
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -143,7 +143,7 @@ eventChapter17AEvents ; FD/BAAF
 			CHECK_SINGLE Misha
 		END_DEFINITION
 		EVENT $09, eventBattleQuoteDummyEvent
-			CHECK_SINGLE Xavier
+			CHECK_SINGLE Gerald
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

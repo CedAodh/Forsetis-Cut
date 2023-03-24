@@ -21,10 +21,10 @@ eventChapter24xData ; 99/F7B3
 		UNIT BerserkerEnemy1, Enemy, [8, 30], [8, 30], Pierre, [SilverAxe, Torch], 20, False, [$00, $03, $00, $00]
 		UNIT BerserkerEnemy1, Enemy, [21, 26], [21, 26], Pierre, [Hammer, Torch], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSoldier, Enemy, [20, 19], [20, 19], Pierre, [ShadowSpear], 20, False, [$00, $03, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [21, 14], [21, 14], Pierre, [BraveAxe, Torch], 20, False, [$00, $03, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [21, 14], [21, 14], Pierre, [KillerAxe, Torch], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSoldier, Enemy, [23, 10], [23, 10], Pierre, [ShadowSpear], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSoldier, Enemy, [5, 13], [5, 13], Pierre, [ShadowSpear], 20, False, [$00, $03, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [4, 25], [4, 25], Pierre, [MasterAxe], 20, False, [$00, $03, $00, $00]
+		UNIT LoptrianDancer, Enemy, [4, 25], [4, 25], Pierre, [KillingEdge, LuckRing], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [12, 37], [12, 37], Pierre, [Warp, Warp, Jormungand, Physic, Rescue, PureWater], 14, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [14, 37], [14, 37], Pierre, [Warp, Warp, Jormungand, Physic, Rescue, PureWater], 14, False, [$00, $03, $00, $00]
 	UNIT
