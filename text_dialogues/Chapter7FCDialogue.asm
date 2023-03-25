@@ -533,7 +533,7 @@ finnkarin
 	.byte ScrollText
 	.text "Ah! Right!"
 	.byte NewLine
-	.text "Sorry for pulling your ear for so long!"
+	.text "Sorry for bending your ear for so long!"
 	.byte NewLine
 	.text "See you around!"
 	.byte WaitForA

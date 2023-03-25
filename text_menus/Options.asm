@@ -1,4 +1,4 @@
-.include "../asm/QoL/NewOptionFixes.asm"
+.include "../asm/QOL/NewOptionFixes.asm"
 
 ;	Remodeled Options setup
 

@@ -286,14 +286,16 @@ ch15skillringhouse
 .word oldman_portrait
 .text "Hey there, chum!"
 .byte NewLine
-.text "I've got somethin' just for you."
+.text "You showed up just in time."
+.byte NewLine
+.text "I want you to have this here ring."
 .byte WaitForA
 .byte ScrollText
-.text "Never you mind how I got ahold of such a"
+.text "“Why?”"
 .byte NewLine
-.text "thing. Them bandits outside are tryin' to take"
+.text "Well, if you don't take it, then them bandits will."
 .byte NewLine
-.text "what little this village has, that's what matters!"
+.text "Uh-huh, suddenly makes a lotta sense, right?"
 .byte WaitForA
 
 .byte EndText

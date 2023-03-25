@@ -346,6 +346,7 @@ eventChapter9Events ; 8C/F011
 		DIALOGUE ch9closing3
 		YIELD
 
+		macroSubtractCharacterByte Selphina, structCharacterDataRAM.LeadershipStars, 1
 		macroAddCharacterByte Leif, structCharacterDataRAM.LeadershipStars, 1
 		
 		macroSetCharacterWord Leif, structCharacterDataRAM.Leader, Leif

@@ -13,7 +13,7 @@ eventChapter5Data ; B1/E685
 		.byte 14, 17
 
 	_NannaGroup ; B1/E6B3
-		UNIT Nanna, Player, [20, 16], [15, 16], Leif, [EarthSword, Heal], 1, False, [$00, $00, $00, $00]
+		UNIT Nanna, Player, [20, 16], [15, 16], Finn, [EarthSword, Heal], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 
@@ -88,7 +88,7 @@ eventChapter5Data ; B1/E685
 		UNIT MunsterSniper, Enemy, [4, 24], [4, 24], Bandole, [SilverBow], 5, False, [$00, $03, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [7, 24], [7, 24], Bandole, [Fire], 7, False, [$00, $01, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [8, 24], [8, 24], Bandole, [Fire], 7, False, [$00, $01, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [2, 12], [2, 12], Codha, [Jormungand, Physic], 3, False, [$00, $03, $00, $00]
+		UNIT LoptrianDarkBishop, Enemy, [2, 12], [2, 12], Codha, [Jormungand, Physic], 3, False, [$00, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates8 ; B1/E9D9
@@ -152,8 +152,8 @@ eventChapter5Data ; B1/E685
 		.word MagicRing
 
 	_Chest1Events ; B1/EA80
-		STORE_WORD wEventEngineXCoordinate, 2
-		STORE_WORD wEventEngineYCoordinate, 9
+		STORE_WORD wEventEngineXCoordinate, 1
+		STORE_WORD wEventEngineYCoordinate, 13
 		STORE_WORD wEventEngineParameter1, $0026
 
 		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000

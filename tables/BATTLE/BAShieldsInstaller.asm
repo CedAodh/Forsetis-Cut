@@ -95,7 +95,7 @@
         .endblock
 
         _MageKnightShields .block
-          .structBattleAnimationShieldEntry Reinhardt,	Shield_MageKnight,	BA_ShieldPalette_Brighton
+          .structBattleAnimationShieldEntry Reinhardt,	Shield_Unknown11,	BA_ShieldPalette_Brighton
 		  .structBattleAnimationShieldEntry Kempf,	Shield_MageKnight,	BA_ShieldPalette_Glade
 		  .structBattleAnimationShieldEntry	Olwen,		Shield_MageKnight,	BA_ShieldPalette_Olwen
 		  .structBattleAnimationShieldEntry	Miranda,	Shield_MasterKnight,	BA_ShieldPalette_Unknown0A

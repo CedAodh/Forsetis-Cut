@@ -755,6 +755,8 @@ eventChapter3Events ; 8C/E435
 
 		+
 		
+		macroAddCharacterByte Halvan, structCharacterDataRAM.LeadershipStars, 1
+		
 		macroSetCharacterWord Leif, structCharacterDataRAM.Leader, Finn
 		macroSetCharacterWord Finn, structCharacterDataRAM.Leader, Finn
 		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Finn

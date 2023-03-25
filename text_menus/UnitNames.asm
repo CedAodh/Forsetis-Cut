@@ -1063,7 +1063,7 @@ _MagiName
 	.word $0000
 
 _BishopName
-	.text "Bishop"
+	.text "Tr{im}"
 	.word $0000
 
 _DvorakName

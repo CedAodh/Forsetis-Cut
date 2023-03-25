@@ -199,7 +199,7 @@ machaced4x
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Trust me, Prince Leif in good hands."
+	.text "Trust me, Prince Leif is in good hands."
 	.byte NewLine
 	.text "He's all full of conviction and everything—"
 	.byte NewLine
@@ -275,7 +275,7 @@ ch4xop3
 .byte NewLine
 .text "but this is something I have to do."
 .byte NewLine
-.text "I have a duty to protect these civilains."
+.text "I have a duty to protect these civilians."
 .byte WaitForA
 
 .byte right_slot

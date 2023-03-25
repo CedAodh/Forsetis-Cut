@@ -913,6 +913,8 @@ eventChapter14Events ; FD/9790
 		STORE_LONG lEventEngineLongParameter, ch14opening4
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
+		+
+		
 		STORE_LONG lEventEngineLongParameter, ch14opening5
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
