@@ -456,7 +456,7 @@ eventChapter15Events ; FD/A812
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder ;homernanna1
+		DIALOGUE placeholder homernanna1
 		YIELD
 	END2
 	
