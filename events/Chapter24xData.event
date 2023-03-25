@@ -27,7 +27,6 @@ eventChapter24xData ; 99/F7B3
 		UNIT BerserkerEnemy1, Enemy, [4, 25], [4, 25], Pierre, [MasterAxe], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [12, 37], [12, 37], Pierre, [Warp, Warp, Jormungand, Physic, Rescue, PureWater], 14, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [14, 37], [14, 37], Pierre, [Warp, Warp, Jormungand, Physic, Rescue, PureWater], 14, False, [$00, $03, $00, $00]
-		UNIT Trim, NPC, [24, 21], [24, 21], Rumaigh, [WindSword, MasterSword, SilverSword, KillingEdge, Rapier, IronBlade, Vulnerary], 18, False, [$0B, $10, $00, $00]
 	UNIT
 
 	_SorcererReinforcementsCameraCoordinates ; 99/F983

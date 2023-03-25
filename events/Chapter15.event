@@ -456,7 +456,7 @@ eventChapter15Events ; FD/A812
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder homernanna1
+		DIALOGUE homernanna1
 		YIELD
 	END2
 	
@@ -472,7 +472,7 @@ eventChapter15Events ; FD/A812
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder safylinoan
+		DIALOGUE safylinoan
 		YIELD
 	END2
 	

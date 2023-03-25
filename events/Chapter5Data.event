@@ -88,7 +88,7 @@ eventChapter5Data ; B1/E685
 		UNIT MunsterSniper, Enemy, [4, 24], [4, 24], Bandole, [SilverBow], 5, False, [$00, $03, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [7, 24], [7, 24], Bandole, [Fire], 7, False, [$00, $01, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [8, 24], [8, 24], Bandole, [Fire], 7, False, [$00, $01, $00, $00]
-		UNIT LoptrianDarkBishop, Enemy, [2, 12], [2, 12], Codha, [Jormungand, Physic], 3, False, [$00, $03, $00, $00]
+		UNIT LoptrianSorcerer, Enemy, [2, 12], [2, 12], Codha, [Jormungand, Physic], 3, False, [$00, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates8 ; B1/E9D9
