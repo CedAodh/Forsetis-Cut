@@ -472,7 +472,7 @@ eventChapter15Events ; FD/A812
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder ;safylinoan
+		DIALOGUE placeholder safylinoan
 		YIELD
 	END2
 	
