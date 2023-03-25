@@ -72,20 +72,12 @@
 .here
 
 ; Changes the weapon triangle advantage and disadvantage bonus from +/-5 hit to +/-10 hit
+; make that +1 hit lol
 
 * := $01E072
   .logical $83E072
 
-.byte $0A
-
-.here
-
-; Removes the 25% crit cap from first attacks
-
-* := $01E087
-  .logical $83E087
-
-.byte $0A
+.byte $01
 
 .here
 
