@@ -1349,179 +1349,302 @@ leifasaello
 	; .byte WaitForA
 
 
-; homernanna1
+homernanna1
 
-	; .byte right_slot
-	; .word $3A00
-	; .word homer_portrait
-	
-	; .byte left_slot
-	; .word $3A00
-	; .word nanna_portrait
-	
-	; .byte right_slot
-	; .text "Ah, if it isn’t the lovely Lady Nanna!"
-	; .byte NewLine
-	; .text "Such a beautiful day has gotten only"
-	; .byte NewLine
-	; .text "more beautiful solely by your presence!"
-	; .byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word nanna_portrait
 
-	; .byte left_slot
-	; .text "Ah, h-hello...sir."
-	; .byte NewLine
-	; .text "I...didn’t know you actually followed us"
-	; .byte NewLine
-	; .text "all the way from Tarrah."
-	; .byte WaitForA
+.byte left_slot
+.word LoadPortrait
+.word homer_portrait
+.text "Well, well! If it isn't Lady Nanna!"
+.byte NewLine
+.text "To what do we owe the pleasure of seeing"
+.byte NewLine
+.text "such a beautiful flower on the battlefield?"
+.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Aah!"
-	; .byte NewLine
-	; .text "Your words have pierced my heart!"
-	; .byte NewLine
-	; .text "Did I never so much as introduce myself?"
-	; .byte WaitForA
+.byte right_slot
+.text "Oh! H-hello, sir."
+.byte NewLine
+.text "I... didn't know you actually"
+.byte NewLine
+.text "followed us all the way from Tarrah."
+.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "You...attempted to,"
-	; .byte NewLine
-	; .text "but you didn’t get very far."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "Though to be fair,"
-	; .byte NewLine
-	; .text "it’s not like I'd given you much of a chance..."
-	; .byte NewLine
-	; .text "Please, forgive me."
-	; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Really, now?"
+.byte NewLine
+.text "Could've sworn a good-lookin' guy"
+.byte NewLine
+.text "such as myself would certainly stick out!"
+.byte WaitForA
+.byte ScrollText
+.text "But alas, I see that's not the case."
+.byte NewLine
+.text "Oh, you wound me, milady!"
+.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Nevermind that, milady."
-	; .byte NewLine
-	; .text "What matters most is that I wish"
-	; .byte NewLine
-	; .text "for you to accept my apologies."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I was overcome by the sweetest of ales–"
-	; .byte NewLine
-	; .text "I was nearly possessed by it!"
-	; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "Uhm..."
+.byte WaitForA
+.byte ScrollText
+.text "I must admit you're a peculiar fellow,"
+.byte NewLine
+.text "but nevermind that, I just wanted to"
+.byte NewLine
+.text "apoogize for what happened back in Tarrah."
+.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Th-that’s..."
-	; .byte NewLine
-	; .text "Well, it’s no problem now, really."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "So long as you’ve learned from that time,"
-	; .byte NewLine
-	; .text "I'm sure I can allow myself to think past it."
-	; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Oh, no, no!"
+.byte NewLine
+.text "Don't even think about it, milady!"
+.byte NewLine
+.text "It is I who should be apologizing."
+.byte WaitForA
+.byte NewLine
+.text "What an embarrassing blunder that was..."
+.byte WaitForA
 
+.byte right_slot
+.byte ScrollText
+.text "I don't mind it, sir..."
+.byte NewLine
+.text "...Uhm..."
+.byte NewLine
+.text "I don't think I ever got your name."
+.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Is that so?"
-	; .byte NewLine
-	; .text "Marvelous!"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Now,"
-	; .byte NewLine
-	; .text "having been blessed by your forgiveness,"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "I do believe it is finally time"
-	; .byte NewLine
-	; .text "to properly introduce myself:"
-	; .byte NewLine
-	; .text "I am Homer, merely an unassuming bard."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "As a man born to please and soothe the hearts"
-	; .byte NewLine
-	; .text "of those around me, I could not help but notice"
-	; .byte NewLine
-	; .text "a most curious expression you bear."
-	; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Homer!"
+.byte NewLine
+.text "A simple name for a simple man."
+.byte WaitForA
+.byte ScrollText
+.text "I'm just a travelling bard who wants"
+.byte NewLine
+.text "to spread love and joy throughout the land."
+.byte NewLine
+.text "Sure, I can get a little carried away..."
+.byte WaitForA
+.byte NewLine
+.text "But I think you already know that."
+.byte NewLine
+.text "Unfortunately."
+.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "An expression?"
-	; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "*giggle*"
+.byte NewLine
+.text "Quite, actually."
+.byte NewLine
+.text "But I see you're not always like that."
+.byte WaitForA
+.byte ScrollText
+.text "Who would've thought you could be"
+.byte NewLine
+.text "more approachable when you're not"
+.byte NewLine
+.text "drowning in ale?"
+.byte WaitForA
 
+.byte left_slot
+.byte ScrollText
+.text "Come on, now!"
+.byte NewLine
+.text "I'm not THAT bad, am I?"
+.byte NewLine
+.text "Ah, who am I kidding..."
+.byte WaitForA
+.byte ScrollText
+.text "I must admit, though."
+.byte NewLine
+.text "You hit pretty hard for your physique!"
+.byte NewLine
+.text "You're way tougher than my last girlfriend."
+.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "That’s right,"
-	; .byte NewLine
-	; .text "and it is still there, even now."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Having such experience with the female kind,"
-	; .byte NewLine
-	; .text "I can feel an air of sorrow and solemnity"
-	; .byte NewLine
-	; .text "coming through this expression of yours."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Is it nostalgia?"
-	; .byte NewLine
-	; .text "Or perhaps the cold realization of war?"
-	; .byte NewLine
-	; .text "Could it be both?"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Are you willing to confess your feelings"
-	; .byte NewLine
-	; .text "to this humble servant of the people?"
-	; .byte WaitForA
-	
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "I...um..."
-	; .byte NewLine
-	; .text "I’m terribly sorry, Sir Homer,"
-	; .byte NewLine
-	; .text "but I had best be off!"
-	; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "I...am?"
+.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Ah, I..."
-	; .byte NewLine
-	; .text "I see."
-	; .byte WaitForA
-	
-	; .byte left_slot
-	; .word ClearPortrait
-	; .word RetractBox
+.byte left_slot
+.byte ScrollText
+.text "Quite!"
+.byte NewLine
+.text "That smack made me feel like I had been"
+.byte NewLine
+.text "woken up by the bolts of Mjolnir itself!"
+.byte WaitForA
+.byte ScrollText
+.text "...Then again, you don't hit"
+.byte NewLine
+.text "AS hard as my 3rd ex."
+.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Hm."
-	; .byte NewLine
-	; .text "Well, there she goes..."
-	; .byte NewLine
-	; .text "Maybe I was a little too hasty."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "But alas,"
-	; .byte NewLine
-	; .text "a wonderful face as hers"
-	; .byte NewLine
-	; .text "does not deserve to be marred by such sadness."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Who in their right mind"
-	; .byte NewLine
-	; .text "would possibly turn a blind eye to this..."
-	; .byte WaitForA
-	
-	; .byte EndText
+.byte right_slot
+.byte ScrollText
+.text "Homer?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "She was smoking hot, let me tell you."
+.byte NewLine
+.text "Oh, I still remember the day I met her..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Homer..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I assure you though,"
+.byte NewLine
+.text "despite her outrageous beauty,"
+.byte NewLine
+.text "she still has nothing on you—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "HOMER!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Gah! Y-Yes?"
+.byte NewLine
+.text "I was daydreaming again, wasn't I?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Again?"
+.byte NewLine
+.text "Don't tell me you do this"
+.byte NewLine
+.text "to every girl you meet..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Uh... No comment?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*sigh*"
+.byte WaitForA
+.byte ScrollText
+.text "Look, Homer, you seem like a very nice guy"
+.byte NewLine
+.text "on the inside, but you really have to work on"
+.byte NewLine
+.text "yourself!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Huh? On what?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I'll tell you what. If you want to talk to me" 
+.byte NewLine
+.text "again, then you must promise me that you" 
+.byte NewLine
+.text "won't drink while you're in this army."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "..."
+.byte WaitForA
+.byte NewLine
+.text "......"
+.byte WaitForA
+.byte NewLine
+.text "WHAT?!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "And you also cannot talk about any..."
+.byte NewLine
+.text "Romantic or indecent things."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Now, now, you're just trying to kill me here!"
+.byte NewLine
+.text "You might as well ask me to stop breathing!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Am I, really?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ah...!"
+.byte NewLine
+.text "W-What's with that stare?"
+.byte NewLine
+.text "(S-She suddenly seems very dominant...)"
+.byte WaitForA
+.byte ScrollText
+.text "Aright, alright! I concede."
+.byte NewLine
+.text "If only because a true man could never"
+.byte NewLine
+.text "refuse a plea from a girl so beauteous."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You mean it?"
+.byte NewLine
+.text "Oh, thank you so much, Homer!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, what a cruel mistress you are!"
+.byte WaitForA
+.byte NewLine
+.text "Finding pleasure in the oppression of"
+.byte NewLine
+.text "her most devoted! But alas, I would"
+.byte NewLine
+.text "be lying if that didn't have its charms."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Homer!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I kid, I kid."
+.byte NewLine
+.text "We never said anything about jokes, did we?"
+.byte NewLine
+.text "May the gods be with you, milady!"
+.byte WaitForA
+
+.byte EndText
