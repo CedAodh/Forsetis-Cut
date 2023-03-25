@@ -803,194 +803,194 @@ leifasaello
 .byte EndText
 
 
-; safylinoan
+safylinoan
 
-	; .byte right_slot
-	; .word $3A00
-	; .word linoan_portrait
+.byte right_slot
+.word $3A00
+.word linoan_portrait
 	
-	; .byte left_slot
-	; .word $3A00
-	; .word safy_portrait
-	; .text "Lady Linoan!"
-	; .byte NewLine
-	; .text "You’re safe!"
-	; .byte WaitForA
+.byte left_slot
+.word $3A00
+.word safie_portrait
+.text "Lady Linoan!"
+.byte NewLine
+.text "You're safe!"
+.byte WaitForA
 
-	; .byte right_slot
-	; .text "Safy!"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "I’m the one who should be glad!"
-	; .byte NewLine
-	; .text "There are no words to thank you for making"
-	; .byte NewLine
-	; .text "such a perilous journey just for Tarrah’s sake."
-	; .byte WaitForA
+.byte right_slot
+.text "Safy!"
+.byte WaitForA
+.byte NewLine
+.text "I'm the one who should be glad!"
+.byte NewLine
+.text "There are no words to thank you for making"
+.byte NewLine
+.text "such a perilous journey just for Tarrah's sake."
+.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "I merely did what was best for our city;"
-	; .byte NewLine
-	; .text "all in the name of our freedom."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I traveled far and wide across the lands"
-	; .byte NewLine
-	; .text "to search for those who would help us."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Once I met with Lord Leif and"
-	; .byte NewLine
-	; .text "informed him of our circumstances,"
-	; .byte NewLine
-	; .text "I was glad to know that I had done my part."
-	; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "I merely did what was best for our city;"
+.byte NewLine
+.text "all in the name of our freedom."
+.byte WaitForA
+.byte ScrollText
+.text "I traveled far and wide across the lands"
+.byte NewLine
+.text "to search for those who would help us."
+.byte WaitForA
+.byte ScrollText
+.text "Once I met with Lord Leif and"
+.byte NewLine
+.text "informed him of our circumstances,"
+.byte NewLine
+.text "I was glad to know that I had done my part."
+.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "So that’s what had caused him to"
-	; .byte NewLine
-	; .text "venture over this way..."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "If it wasn’t for you, Safy,"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "I genuinely question whether we would have"
-	; .byte NewLine
-	; .text "had the means of holding the city"
-	; .byte NewLine
-	; .text "and protecting the people like we did."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "You have my heartfelt gratitude."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "But..."
-	; .byte NewLine
-	; .text "you were gone for so long..."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Forgive me, but I have to ask:"
-	; .byte NewLine
-	; .text "did you not come across any danger"
-	; .byte NewLine
-	; .text "while you sought out aid?"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Please,"
-	; .byte NewLine
-	; .text "please tell me the truth."
-	; .byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "So that's what had caused him to"
+.byte NewLine
+.text "venture over this way..."
+.byte WaitForA
+.byte ScrollText
+.text "If it wasn't for you, Safy,"
+.byte WaitForA
+.byte NewLine
+.text "I genuinely question whether we would have"
+.byte NewLine
+.text "had the means of holding the city"
+.byte NewLine
+.text "and protecting the people like we did."
+.byte WaitForA
+.byte NewLine
+.text "You have my heartfelt gratitude."
+.byte WaitForA
+.byte ScrollText
+.text "But..."
+.byte NewLine
+.text "you were gone for so long..."
+.byte WaitForA
+.byte ScrollText
+.text "Forgive me, but I have to ask:"
+.byte NewLine
+.text "did you not come across any danger"
+.byte NewLine
+.text "while you sought out aid?"
+.byte WaitForA
+.byte ScrollText
+.text "Please,"
+.byte NewLine
+.text "please tell me the truth."
+.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "......"
-	; .byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
 	
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Safy...?"
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "Safy...?"
+	.byte WaitForA
 	
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "...Very well."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "As I neared the eastern coast,"
-	; .byte NewLine
-	; .text "I was taken hostage by"
-	; .byte NewLine
-	; .text "a group of barbaric pirates."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Their leader, Lifis, he was..."
-	; .byte NewLine
-	; .text "intent on having his way with me,"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "in exchange for being the one to"
-	; .byte NewLine
-	; .text "help Tarrah in her hour of need."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "For the future of our city,"
-	; .byte NewLine
-	; .text "I was prepared to do anything..."
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "...Very well."
+	.byte WaitForA
+	.byte ScrollText
+	.text "As I neared the eastern coast,"
+	.byte NewLine
+	.text "I was taken hostage by"
+	.byte NewLine
+	.text "a group of barbaric pirates."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Their leader, Lifis, he was..."
+	.byte NewLine
+	.text "intent on having his way with me,"
+	.byte WaitForA
+	.byte NewLine
+	.text "in exchange for being the one to"
+	.byte NewLine
+	.text "help Tarrah in her hour of need."
+	.byte WaitForA
+	.byte ScrollText
+	.text "For the future of our city,"
+	.byte NewLine
+	.text "I was prepared to do anything..."
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "My gods...!"
-	; .byte NewLine
-	; .text "Safy, what happened?!"
-	; .byte NewLine
-	; .text "Did he hurt you?!"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Ohhh..."
-	; .byte NewLine
-	; .text "Why would you put yourself"
-	; .byte NewLine
-	; .text "at risk like that for me...?"
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "My gods...!"
+	.byte NewLine
+	.text "Safy, what happened?!"
+	.byte NewLine
+	.text "Did he hurt you?!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Ohhh..."
+	.byte NewLine
+	.text "Why would you put yourself"
+	.byte NewLine
+	.text "at risk like that for me...?"
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "It is all right, Lady Linoan."
-	; .byte NewLine
-	; .text "Lord Leif had come to my rescue"
-	; .byte NewLine
-	; .text "before anything adverse had befallen me."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "It is because of him that"
-	; .byte NewLine
-	; .text "I stand here with you today, unscathed."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "So worry not."
-	; .byte NewLine
-	; .text "Please."
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "It is all right, Lady Linoan."
+	.byte NewLine
+	.text "Lord Leif had come to my rescue"
+	.byte NewLine
+	.text "before anything adverse had befallen me."
+	.byte WaitForA
+	.byte ScrollText
+	.text "It is because of him that"
+	.byte NewLine
+	.text "I stand here with you today, unscathed."
+	.byte WaitForA
+	.byte ScrollText
+	.text "So worry not."
+	.byte NewLine
+	.text "Please."
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "That’s..."
-	; .byte NewLine
-	; .text "Oh, I’m so glad...!"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "But please, Safy..."
-	; .byte NewLine
-	; .text "I know how much Tarrah and I mean to you."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "But you must promise me that you’ll never"
-	; .byte NewLine
-	; .text "put yourself in danger like that again."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I...I wouldn’t ever be able to forgive myself"
-	; .byte NewLine
-	; .text "if something happened to you..."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "That's..."
+	.byte NewLine
+	.text "Oh, I'm so glad...!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "But please, Safy..."
+	.byte NewLine
+	.text "I know how much Tarrah and I mean to you."
+	.byte WaitForA
+	.byte NewLine
+	.text "But you must promise me that you'll never"
+	.byte NewLine
+	.text "put yourself in danger like that again."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I...I wouldn't ever be able to forgive myself"
+	.byte NewLine
+	.text "if something happened to you..."
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Lady Linoan,"
-	; .byte NewLine
-	; .text "I..."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I understand."
-	; .byte NewLine
-	; .text "A promise it is."
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Lady Linoan,"
+	.byte NewLine
+	.text "I..."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I understand."
+	.byte NewLine
+	.text "A promise it is."
+	.byte WaitForA
 
-	; .byte EndText
+	.byte EndText
 	
 
 ; gladeperne
