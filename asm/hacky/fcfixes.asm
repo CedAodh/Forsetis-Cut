@@ -72,12 +72,19 @@
 .here
 
 ; Changes the weapon triangle advantage and disadvantage bonus from +/-5 hit to +/-10 hit
-; make that +1 hit lol
+; make that 2% lol
 
 * := $01E072
   .logical $83E072
 
-.byte $01
+.byte $02
+
+.here
+
+* := $01E087
+  .logical $83E087
+
+.byte $02
 
 .here
 
