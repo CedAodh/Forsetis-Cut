@@ -993,361 +993,362 @@ safylinoan
 	.byte EndText
 	
 
-; gladeperne
+gladeperne
 
-	; .byte right_slot
-	; .word $3A00
-	; .word glade_portrait
-	; .text "Excuse me–"
+	.byte right_slot
+	.word $3A00
+	.word glade_portrait
+	.text "Excuse me—"
 
-	; .byte left_slot
-	; .word $3A00
-	; .word perne_portrait
+	.byte left_slot
+	.word $3A00
+	.word pan_portrait
 	
-	; .byte right_slot
-	; .byte NewLine
-	; .text "Sir Perne?"
-	; .byte WaitForA
+	.byte right_slot
+	.byte NewLine
+	.text "Sir Perne?"
+	.byte WaitForA
 
-	; .byte left_slot
-	; .text "Hm?"
-	; .byte NewLine
-	; .text "Oh, it's one of you knightly types."
-	; .byte NewLine
-	; .text "How can I help ya?"
-	; .byte WaitForA
+	.byte left_slot
+	.text "Hm?"
+	.byte NewLine
+	.text "Oh, it's one of you knightly types."
+	.byte NewLine
+	.text "How can I help ya?"
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "I-I should have introduced myself first."
-	; .byte NewLine
-	; .text "I am Glade, member of the Lanzenritter."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "I-I should have introduced myself first."
+	.byte NewLine
+	.text "I am Glade, member of the Lanzenritter."
+	.byte WaitForA
 	
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Leonster folk, eh?"
-	; .byte NewLine
-	; .text "Well, what is it?"
-	; .byte NewLine
-	; .text "Am I getting in trouble for something?"
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Leonster folk, eh?"
+	.byte NewLine
+	.text "Well, what is it?"
+	.byte NewLine
+	.text "Am I getting in trouble for something?"
+	.byte WaitForA
 
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Oh, no, not at all."
-	; .byte NewLine
-	; .text "I simply wanted to inquire about something"
-	; .byte NewLine
-	; .text "that caught my attention."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I noticed you were carrying"
-	; .byte NewLine
-	; .text "a most unusual sword..."
-	; .byte NewLine
-	; .text "And I’ve seen it before."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Do you know its origin?"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "Or did you perhaps get it"
-	; .byte NewLine
-	; .text "from an underhanded dealer,"
-	; .byte NewLine
-	; .text "unaware of what it was?"
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "Oh, no, not at all."
+	.byte NewLine
+	.text "I simply wanted to inquire about something"
+	.byte NewLine
+	.text "that caught my attention."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I noticed you were carrying"
+	.byte NewLine
+	.text "a most unusual sword..."
+	.byte NewLine
+	.text "And I've seen it before."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Do you know its origin?"
+	.byte WaitForA
+	.byte NewLine
+	.text "Or did you perhaps get it"
+	.byte NewLine
+	.text "from an underhanded dealer,"
+	.byte NewLine
+	.text "unaware of what it was?"
+	.byte WaitForA
 	
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Well, I wasn’t totally unaware:"
-	; .byte NewLine
-	; .text "I stole that beauty myself,"
-	; .byte NewLine
-	; .text "straight from one of Connaught’s treasuries!"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "That Raydrik was payin’ a little visit,"
-	; .byte NewLine
-	; .text "and oh,"
-	; .byte NewLine
-	; .text "the sound he made when he saw it was gone..."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Now that’s something I’ll never forget!"
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Well, I wasn't totally unaware:"
+	.byte NewLine
+	.text "I stole that beauty myself,"
+	.byte NewLine
+	.text "straight from one of Connaught's treasuries!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "That Raydrik was payin' a little visit,"
+	.byte NewLine
+	.text "and oh,"
+	.byte NewLine
+	.text "the sound he made when he saw it was gone..."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Now that's something I'll never forget!"
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "It all makes sense, then."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "You see, Sir Perne,"
-	; .byte NewLine
-	; .text "that sword...is all that remains"
-	; .byte NewLine
-	; .text "of the royal family of Connaught."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "It all makes sense, then."
+	.byte WaitForA
+	.byte NewLine
+	.text "You see, Sir Perne,"
+	.byte NewLine
+	.text "that sword...is all that remains"
+	.byte NewLine
+	.text "of the royal family of Connaught."
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Is that so?"
-	; .byte NewLine
-	; .text "Well, now I’m invested!"
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Is that so?"
+	.byte NewLine
+	.text "Well, now I'm invested!"
+	.byte WaitForA
 	
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Hah,"
-	; .byte NewLine
-	; .text "just as I'd expect."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Despite their status and relative independence,"
-	; .byte NewLine
-	; .text "the royalty of Connaught lacked any holy blood."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "And as such, in ages past,"
-	; .byte NewLine
-	; .text "they made an heirloom to be passed on"
-	; .byte NewLine
-	; .text "from king to king:"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "a common blade,"
-	; .byte NewLine
-	; .text "forged in order to be worthy of a monarch."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "Hah,"
+	.byte NewLine
+	.text "just as I'd expect."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Despite their status and relative independence,"
+	.byte NewLine
+	.text "the royalty of Connaught lacked any holy blood."
+	.byte WaitForA
+	.byte ScrollText
+	.text "And as such, in ages past,"
+	.byte NewLine
+	.text "they made an heirloom to be passed on"
+	.byte NewLine
+	.text "from king to king:"
+	.byte WaitForA
+	.byte ScrollText
+	.text "a common blade,"
+	.byte NewLine
+	.text "forged in order to be worthy of a monarch."
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Wow..."
-	; .byte NewLine
-	; .text "I can’t believe I never figured that out!"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "You know,"
-	; .byte NewLine
-	; .text "from the moment you started talking,"
-	; .byte NewLine
-	; .text "I thought I’d heard that story somewhere before."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Guess we can never escape our roots, eh?"
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Wow..."
+	.byte NewLine
+	.text "I can't believe I never figured that out!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "You know,"
+	.byte NewLine
+	.text "from the moment you started talking,"
+	.byte NewLine
+	.text "I thought I'd heard that story somewhere before."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Guess we can never escape our roots, eh?"
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Hm?"
-	; .byte NewLine
-	; .text "What do you mean?"
-	; .byte NewLine
-	; .text "Are you..."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "Hm?"
+	.byte NewLine
+	.text "What do you mean?"
+	.byte NewLine
+	.text "Are you..."
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Bingo!"
-	; .byte NewLine
-	; .text "I’m from Connaught myself."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "I was born in a small village named Arcas,"
-	; .byte NewLine
-	; .text "far in the countryside."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I began my acts of thievery back there,"
-	; .byte NewLine
-	; .text "but a lot of conflict and Imperial squabbles"
-	; .byte NewLine
-	; .text "are what led me to settle in Dacia."
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Bingo!"
+	.byte NewLine
+	.text "I'm from Connaught myself."
+	.byte WaitForA
+	.byte NewLine
+	.text "I was born in a small village named Arcas,"
+	.byte NewLine
+	.text "far in the countryside."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I began my acts of thievery back there,"
+	.byte NewLine
+	.text "but a lot of conflict and Imperial squabbles"
+	.byte NewLine
+	.text "are what led me to settle in Dacia."
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Then that leads me to another question."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "I suppose my own ignorance is why I have to ask,"
-	; .byte NewLine
-	; .text "but,"
-	; .byte NewLine
-	; .text "why did you embark on the path of thievery?"
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "Then that leads me to another question."
+	.byte WaitForA
+	.byte NewLine
+	.text "I suppose my own ignorance is why I have to ask,"
+	.byte NewLine
+	.text "but,"
+	.byte NewLine
+	.text "why did you embark on the path of thievery?"
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Same story a guy can hear a thousand times!"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "Our village was poor,"
-	; .byte NewLine
-	; .text "and we were so far out of the way that"
-	; .byte NewLine
-	; .text "we were kinda left to fend for ourselves."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "People starved to death fairly often;"
-	; .byte NewLine
-	; .text "I saw children come to this world"
-	; .byte NewLine
-	; .text "and go just as quickly..."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I had enough of all that crap,"
-	; .byte NewLine
-	; .text "and so I found my way outta that hole"
-	; .byte NewLine
-	; .text "to begin making a name and living for myself."
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Same story a guy can hear a thousand times!"
+	.byte WaitForA
+	.byte NewLine
+	.text "Our village was poor,"
+	.byte NewLine
+	.text "and we were so far out of the way that"
+	.byte NewLine
+	.text "we were kinda left to fend for ourselves."
+	.byte WaitForA
+	.byte ScrollText
+	.text "People starved to death fairly often;"
+	.byte NewLine
+	.text "I saw children come to this world"
+	.byte NewLine
+	.text "and go just as quickly..."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I had enough of all that crap,"
+	.byte NewLine
+	.text "and so I found my way outta that hole"
+	.byte NewLine
+	.text "to begin making a name and living for myself."
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "I...I see."
-	; .byte NewLine
-	; .text "I recall going to Castle Connaught"
-	; .byte NewLine
-	; .text "on diplomatic visits."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "The halls were grand,"
-	; .byte NewLine
-	; .text "and King Carl seemed like a very honorable man–"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "I’m surprised to hear that"
-	; .byte NewLine
-	; .text "he’d have let things like that persist."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "I...I see."
+	.byte NewLine
+	.text "I recall going to Castle Connaught"
+	.byte NewLine
+	.text "on diplomatic visits."
+	.byte WaitForA
+	.byte ScrollText
+	.text "The halls were grand,"
+	.byte NewLine
+	.text "and King Carl seemed like a very honorable man—"
+	.byte WaitForA
+	.byte NewLine
+	.text "I'm surprised to hear that"
+	.byte NewLine
+	.text "he'd have let things like that persist."
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Guess that’s what it looks like"
-	; .byte NewLine
-	; .text "for people like you."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "When Raydrik had him killed"
-	; .byte NewLine
-	; .text "and the Empire came in to take that warm seat,"
-	; .byte NewLine
-	; .text "I remember the village was overjoyed."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "People thought it meant things would"
-	; .byte NewLine
-	; .text "actually change for the better."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "Heh."
-	; .byte NewLine
-	; .text "The poor fools were worked right to the bone."
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Guess that's what it looks like"
+	.byte NewLine
+	.text "for people like you."
+	.byte WaitForA
+	.byte ScrollText
+	.text "When Raydrik had him killed"
+	.byte NewLine
+	.text "and the Empire came in to take that warm seat,"
+	.byte NewLine
+	.text "I remember the village was overjoyed."
+	.byte WaitForA
+	.byte ScrollText
+	.text "People thought it meant things would"
+	.byte NewLine
+	.text "actually change for the better."
+	.byte WaitForA
+	.byte NewLine
+	.text "Heh."
+	.byte NewLine
+	.text "The poor fools were worked right to the bone."
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "......"
-	; .byte NewLine
-	; .text "You have my deepest sympathies, Sir Perne."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "And I’d like to thank you for"
-	; .byte NewLine
-	; .text "widening my perspective with all this."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "As someone who has fought for over a decade"
-	; .byte NewLine
-	; .text "in order to return to the pulchritudinous days"
-	; .byte NewLine
-	; .text "I look back on so fondly,"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "it's still...difficult...to take in"
-	; .byte NewLine
-	; .text "the fact that the entire coalition failed"
-	; .byte NewLine
-	; .text "the common folk even back then..."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "......"
+	.byte NewLine
+	.text "You have my deepest sympathies, Sir Perne."
+	.byte WaitForA
+	.byte NewLine
+	.text "And I'd like to thank you for"
+	.byte NewLine
+	.text "widening my perspective with all this."
+	.byte WaitForA
+	.byte ScrollText
+	.text "As someone who has fought for over a decade"
+	.byte NewLine
+	.text "in order to return to the pulchritudinous days"
+	.byte NewLine
+	.text "I look back on so fondly,"
+	.byte WaitForA
+	.byte ScrollText
+	.text "it's still...difficult...to take in"
+	.byte NewLine
+	.text "the fact that the entire coalition failed"
+	.byte NewLine
+	.text "the common folk even back then..."
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Hey, no big deal."
-	; .byte NewLine
-	; .text "There’s no hard feelings."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "In fact, let's drop the formalities between us!"
-	; .byte NewLine
-	; .text "Just Perne is fine."
-	; .byte NewLine
-	; .text "And you also deserve a thank you, Glade."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Prince Leif has already shown me that"
-	; .byte NewLine
-	; .text "there might finally be rulers who"
-	; .byte NewLine
-	; .text "won’t neglect us, the little guys, and now,"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "I know that not all knights are"
-	; .byte NewLine
-	; .text "pretentious twats!"
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Hey, no big deal."
+	.byte NewLine
+	.text "There's no hard feelings."
+	.byte WaitForA
+	.byte ScrollText
+	.text "In fact, let's drop the formalities between us!"
+	.byte NewLine
+	.text "Just Perne is fine."
+	.byte NewLine
+	.text "And you also deserve a thank you, Glade."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Prince Leif has already shown me that"
+	.byte NewLine
+	.text "there might finally be rulers who"
+	.byte NewLine
+	.text "won't neglect us, the little guys, and now,"
+	.byte WaitForA
+	.byte ScrollText
+	.text "I know that not all knights are"
+	.byte NewLine
+	.text "pretentious twats!"
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "That gladdens me."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "...Now that I think about it,"
-	; .byte NewLine
-	; .text "it’s funny, isn’t it?"
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "The Kingmaker once stood as"
-	; .byte NewLine
-	; .text "the mightiest symbol of monarchy."
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "But they fell,"
-	; .byte NewLine
-	; .text "and now it is in the hands of a common thief."
-	; .byte WaitForA
+	.byte right_slot
+	.byte ScrollText
+	.text "That gladdens me."
+	.byte WaitForA
+	.byte ScrollText
+	.text "...Now that I think about it,"
+	.byte NewLine
+	.text "it's funny, isn't it?"
+	.byte WaitForA
+	.byte ScrollText
+	.text "The Kingmaker once stood as"
+	.byte NewLine
+	.text "the mightiest symbol of monarchy."
+	.byte WaitForA
+	.byte NewLine
+	.text "But they fell,"
+	.byte NewLine
+	.text "and now it is in the hands of a common thief."
+	.byte WaitForA
 
-	; .byte left_slot
-	; .byte ScrollText
-	; .text "Heh, yeah!"
-	; .byte WaitForA
-	; .byte NewLine
-	; .text "And I don’t mind sharing it, either–"
-	; .byte NewLine
-	; .text "if anybody’s got a use for it,"
-	; .byte NewLine
-	; .text "I’ll gladly hand it over."
-	; .byte WaitForA
-	; .byte ScrollText
-	; .text "Ever since I started walking this road,"
-	; .byte NewLine
-	; .text "I’ve always been one to share with"
-	; .byte NewLine
-	; .text "those in need."
-	; .byte WaitForA
+	.byte left_slot
+	.byte ScrollText
+	.text "Heh, yeah!"
+	.byte WaitForA
+	.byte NewLine
+	.text "And I don't mind sharing it, either—"
+	.byte NewLine
+	.text "if anybody's got a use for it,"
+	.byte NewLine
+	.text "I'll gladly hand it over."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Ever since I started walking this road,"
+	.byte NewLine
+	.text "I've always been one to share with"
+	.byte NewLine
+	.text "those in need."
+	.byte WaitForA
 
-	; .byte right_slot
-	; .byte ScrollText
-	; .text "Good!"
-	; .byte NewLine
-	; .text "Then maybe..."
-	; .byte NewLine
-	; .text "this is how fate willed it."
-	; .byte WaitForA
-
+	.byte right_slot
+	.byte ScrollText
+	.text "Good!"
+	.byte NewLine
+	.text "Then maybe..."
+	.byte NewLine
+	.text "this is how fate willed it."
+	.byte WaitForA
+	
+	.byte EndText
 
 homernanna1
 
