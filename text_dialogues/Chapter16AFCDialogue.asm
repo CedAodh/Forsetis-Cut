@@ -131,3 +131,111 @@ deanlinoanA
 .byte WaitForA
 
 .byte EndText
+
+
+fredilios
+
+.byte right_slot
+.word LoadPortrait
+.word ilios_portrait
+
+.byte right_slot
+.word LoadPortrait
+.word fred_portrait
+.text "Ilios? Is that you?"
+.byte WaitForA
+
+.byte right_slot
+.text "Fred?! What the hell are you doing here?!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It's a bit of a long story, but..."
+.byte WaitForA
+.byte ScrollText
+.text "After Kempf left our batallion to die at"
+.byte NewLine
+.text "Fort Dundrum, I realized Lord Leif's cause"
+.byte NewLine
+.text "was the one that was worth following more."
+.byte WaitForA
+.byte ScrollText
+.text "What about you, Ilios?"
+.byte WaitForA
+.byte NewLine
+.text "Ilios? Are you listening?"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, goddamnit!"
+.byte NewLine
+.text "I can't believe Fred just went"
+.byte NewLine
+.text "and stole my thunder like this!"
+.byte WaitForA
+.byte ScrollText
+.text "Here I thought I could boast about being the"
+.byte NewLine
+.text "first Friegan to oppose the Empire's tyranny..."
+.byte NewLine
+.text "But no! Must nobles always get on my way?!"
+.byte WaitForA
+
+
+.byte right_slot
+.word LoadPortrait
+.word fred_portrait
+.text "Ilios? Are you alright?"
+.byte NewLine
+.text "You look red as a beetroot!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Agh... Nothing, it's nothing."
+.byte WaitForA
+.byte NewLine
+.text "Look, Fred."
+.byte WaitForA
+.byte NewLine
+.text "You might've been one of the only people"
+.byte NewLine
+.text "who didn't laugh at me back at the academy,"
+.byte NewLine
+.text "but that doesn't mean we're on friendly terms!"
+.byte WaitForA
+.byte ScrollText
+.text "As long as you don't get in my way,"
+.byte NewLine
+.text "I guess I can tolerate you being here."
+.byte WaitForA
+.byte ScrollText
+.text "Now if you'll excuse me,"
+.byte NewLine
+.text "there's a battle I need to get back to."
+.byte NewLine
+.text "Goodbye!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.word $3A00
+.word fred_portrait
+.text "... He never changes, does he?"
+.byte NewLine
+.text "Then again, I'm truly glad to see him well."
+.byte WaitForA
+
+.byte EndText
