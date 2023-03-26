@@ -464,7 +464,7 @@ eventChapter15Events ; FD/A812
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder ;gladeperne
+		DIALOGUE gladeperne
 		YIELD
 	END2
 	
