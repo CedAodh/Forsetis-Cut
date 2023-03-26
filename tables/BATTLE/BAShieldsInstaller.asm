@@ -74,7 +74,7 @@
 
         _GreatKnightShields .block
           .structBattleAnimationShieldEntry	Brighton,	Shield_GreatKnight,	BA_ShieldPalette_PromotedHicks
-		  .structBattleAnimationShieldEntry	Hicks,		Shield_GreatKnight,	BA_ShieldPalette_Unknown1C
+		  .structBattleAnimationShieldEntry	Hicks,		Shield_GreatKnight,	BA_ShieldPalette_Unknown1B
 		  .structBattleAnimationShieldEntry	-1,			Shield_GreatKnight,	BA_ShieldPalette_GreatKnight
         .endblock
 

@@ -416,21 +416,21 @@ eventChapter16BEvents ; 99/EC9A
 
 	_OpeningEvent ; 99/F084
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 16 | (9 << 8)
+		STORE_WORD wEventEngineCharacterTarget, 5 | (2 << 8)
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill2Miracle
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 16 | (4 << 8)
+		STORE_WORD wEventEngineCharacterTarget, 4 | (3 << 8)
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Pavise
+		STORE_WORD wEventEngineParameter2, Skill2Adept
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 18 | (4 << 8)
+		STORE_WORD wEventEngineCharacterTarget, 6 | (3 << 8)
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Adept
+		STORE_WORD wEventEngineParameter2, Skill2Accost
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
@@ -440,7 +440,7 @@ eventChapter16BEvents ; 99/EC9A
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 17 | (16 << 8)
+		STORE_WORD wEventEngineCharacterTarget, 4 | (2 << 8)
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill2Accost
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
@@ -452,33 +452,21 @@ eventChapter16BEvents ; 99/EC9A
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 17 | (10 << 8)
+		STORE_WORD wEventEngineCharacterTarget, 16 | (4 << 8)
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Pavise
-		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
-		
-		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 10 | (2 << 8)
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Nihil
+		STORE_WORD wEventEngineParameter2, Skill2Miracle
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 7 | (4 << 8)
+		STORE_WORD wEventEngineCharacterTarget, 18 | (4 << 8)
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill3Wrath << 8
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 3 | (3 << 8)
+		STORE_WORD wEventEngineCharacterTarget, 17 | (3 << 8)
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Vantage
-		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
-		
-		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
-		STORE_WORD wEventEngineCharacterTarget, 2 | (2 << 8)
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill3Wrath
+		STORE_WORD wEventEngineParameter2, Skill2Charm
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 
 		EVENT_TEST_FLAG_SET $A3

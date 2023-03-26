@@ -235,6 +235,7 @@ eventChapter8xEvents ; 97/844D
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		YIELD
 
+		+
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
 

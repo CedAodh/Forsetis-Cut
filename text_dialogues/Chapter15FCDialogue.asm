@@ -1652,8 +1652,6 @@ homernanna1
 
 asaellotrude
 
-asaellotrude
-
 .byte right_slot
 .word $3A00
 .word trude_portrait
