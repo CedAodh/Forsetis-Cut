@@ -314,7 +314,7 @@ eventChapter16AEvents ; FD/B120
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE deanlinoanA
 		YIELD
 	END2
 
