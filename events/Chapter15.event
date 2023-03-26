@@ -480,7 +480,7 @@ eventChapter15Events ; FD/A812
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder ;asaellotrude
+		DIALOGUE asaellotrude
 		YIELD
 	END2
 	
