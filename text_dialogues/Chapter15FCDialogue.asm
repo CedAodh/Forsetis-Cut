@@ -1649,3 +1649,119 @@ homernanna1
 .byte WaitForA
 
 .byte EndText
+
+asaellotrude
+
+asaellotrude
+
+.byte right_slot
+.word $3A00
+.word trude_portrait
+
+.byte left_slot
+.word $3A00
+.word asaello_portrait
+.text "Well, if it isn't Trude."
+.byte WaitForA
+
+.byte right_slot
+.text "You..."
+.byte NewLine
+.text "What's The Hitman from Connaught"
+.byte NewLine
+.text "doing all the way out here?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You know the drill, the usual business."
+.byte WaitForA
+.byte ScrollText
+.text "I know you're not one to talk, but man,"
+.byte NewLine
+.text "it's been a pretty long while since we last"
+.byte NewLine
+.text "worked together. How have you been?"
+.byte WaitForA
+.byte ScrollText
+.text "Last I heard from you, some folks were"
+.byte NewLine
+.text "whispering that you settled with the"
+.byte NewLine
+.text "Dandelion Bandits. Is that true?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah. I'm not really sure how I ended up"
+.byte NewLine
+.text "there, but it didn't take long before they"
+.byte NewLine
+.text "convinced me to stay with them for good."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Huh. That's amusing, to say the least."
+.byte WaitForA
+.byte ScrollText
+.text "I thought you once said that you weren't one"
+.byte NewLine
+.text "to lend your services to wicked men, but you"
+.byte NewLine
+.text "somehow ended up working with bandits?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I still abide by that rule."
+.byte NewLine
+.text "You see, Perne is... different."
+.byte WaitForA
+.byte ScrollText
+.text "Not only does he work for the good of"
+.byte NewLine
+.text "the people, he's the first employer"
+.byte NewLine
+.text "who doesn't treat me like a tool."
+.byte WaitForA
+.byte ScrollText
+.text "He shared food and a table with me often,"
+.byte NewLine
+.text "and has a habit of checking up on not just me,"
+.byte NewLine
+.text "but on every single one of us."
+.byte WaitForA
+.byte ScrollText
+.text "Those things go a long way."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's quite the unique group you've found."
+.byte NewLine
+.text "I'm happy to hear that someone like you was "
+.byte NewLine
+.text "able to find real happiness in this profession."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Thanks."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Always the chatter, eh?"
+.byte NewLine
+.text "I might've nabbed your ear for too long."
+.byte NewLine
+.text "Let's hope things keep looking up for you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "And I wish the same to you... Asaello."
+.byte WaitForA
+	
+.byte EndText
