@@ -549,211 +549,199 @@ LeifShannamTalk
 .byte WaitForA
 .byte EndText
 
-tinaasbel
+tinaasbel1
 
 .byte right_slot
+.word LoadPortrait
+.word tina_portrait
+.text "Hum dee dum dee doo~"
+.byte WaitForA
+
+.byte left_slot
 .word LoadPortrait
 .word asbel_portrait
-.text "Good day, Tina."
-.byte WaitForA
-
-.byte left_slot
-.word LoadPortrait
-.word tina_portrait
-.text "Oh, hi, Asbel!"
-.byte NewLine
-.text "Whatcha doin'?"
+.text "......"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Not much, if I'm being honest."
-.byte WaitForA
-.byte ScrollText
-.text "I was thinking of what book I should read"
-.byte NewLine
-.text "next. Perhaps the 'Guide to Dendrology'"
-.byte NewLine
-.text "would be a good pick."
+.text "EEEEEK!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Dundrum...ology?"
-.byte NewLine
-.text "What the heck is that?"
+.text "Gah! Wh-what's wrong?!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Well, you see,"
-.byte NewLine
-.text "dendrology is the study of trees and-"
+.text "S-s-s-s-s—"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Booooring!"
+.text "Please, calm down!"
+.byte NewLine
+.text "Breathe in, breathe out..."
 .byte WaitForA
 .byte ScrollText
-.text "All you do is read, read, and read!"
+.text "Now, what happened?"
 .byte NewLine
-.text "Don't you ever do something else?!"
+.text "Did you see an enemy?"
 .byte NewLine
-.text "Something more fun?!"
+.text "Say where, and I'll drive them away!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "W-Well, I... I can't say I do."
-.byte NewLine
-.text "Would practicing my magic count?"
+.text "SPIDER!!! ON YOUR SHOULDER!!!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "No, no, no! IT DOES NOT!"
-.byte NewLine
-.text "We've already done things your way before,"
-.byte NewLine
-.text "so now we'll do it my way! How about it?"
+.text "...Huh? On my what?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Sure! I'm always up for trying new things."
-.byte NewLine
-.text "So, what did you have in mind?"
+.text "Eeek!!! It's moving!!!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Hm... You seem pretty light, so..."
+.text "Oh, this little critter?"
 .byte NewLine
-.text "How about we play tag?"
+.text "He's not bothering me."
 .byte NewLine
-.text "Tag!"
+.text "There, I'll put him down. See?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "... I don't think that would be a good idea,"
+.text "I-it's going away!"
 .byte NewLine
-.text "especially in the middle of a battlefield."
+.text "I can't believe it!"
+.byte NewLine
+.text "How did you tame that monster?!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh?"
+.text "Monster...?"
 .byte NewLine
-.text "Sorry, what was that?"
+.text "Uh, call it a hunch, but something"
 .byte NewLine
-.text "I can't hear you from over here!"
+.text "tells me you don't really like spiders."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Tina! Look out!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "H-Huh?! Kyaaaaaa!"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-
-.byte right_slot
-.byte ScrollText
-.text "TINA!!!"
-.byte WaitForA
-
-.byte left_slot
-.word LoadPortrait
-.word colho_portrait
-.text "Gah...!"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-
-.word LoadPortrait
-.word tina_portrait
-
-.byte right_slot
-.byte ScrollText
-.text "Tina! Are you alright?!"
-.byte WaitForA
-
-.byte left_slot
-.text "I... I..."
+.text "I HATE spiders!"
 .byte NewLine
-.text "Waaaaaaah!!!"
+.text "They're small and yucky!"
+.byte NewLine
+.text "They can totally bite and kill you!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, not all of them."
+.byte NewLine
+.text "That one I just let go of wasn't poisonous."
+.byte NewLine
+.text "I've read books on entomology before."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "There, there..."
-.byte WaitForA
+.text "Really? That's so cool!"
 .byte NewLine
-.text "It's all over now, see?"
+.text "Wait, what did you call it?"
 .byte NewLine
-.text "Just don't try to do such a silly thing"
-.byte NewLine
-.text "when we're in the middle of a battle."
+.text "Entombol...what?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "O-Okay... *sniff*"
+.text "Uh...never mind that."
 .byte NewLine
-.text "Oh, I was so scared..."
+.text "By the way, I don't think I know your name."
+.byte NewLine
+.text "I'm Asbel, what's yours?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "As was I, but uhm..."
+.text "I'm Tina! Nice to meet you!"
 .byte NewLine
-.text "Y-You can let go of me now."
+.text "You know, I've thought about approaching"
+.byte NewLine
+.text "you before, but you always look so serious!"
+.byte WaitForA
+.byte ScrollText
+.text "When you're not fighting,"
+.byte NewLine
+.text "you're reading all day!"
+.byte NewLine
+.text "Do you eat books for breakfast or something?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Huh? O-Oh! R-Right!"
+.text "Well, I... I'm sorry if I give off that impression." 
 .byte NewLine
-.text "Sorry, I got a bit carried away, teehee."
+.text "And no, I don't eat books, I promise."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "N-No problem."
+.text "Okie dokie!"
 .byte NewLine
-.text "Just be more careful out there."
-.byte WaitForA
-.byte ScrollText
-.text "Hey, I know! You said you wanted to do"
+.text "Now that I know you're not a big weirdo,"
 .byte NewLine
-.text "something fun, right? Well, how about we"
-.byte NewLine
-.text "read some scary stories by the campfire tonight?"
+.text "would you like to be friends?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Ooh! That sounds exciting! Count me in!"
+.text "M-me? Of course!"
 .byte NewLine
-.text "But let's save that for tonight!"
+.text "I don't have many friends,"
 .byte NewLine
-.text "See ya later, Asbel!"
+.text "so I always welcome more!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yay! Oh, thank you so much, Asbel!"
+.byte NewLine
+.text "I... Wait a minute!"
+.byte WaitForA
+.byte ScrollText
+.text "Ugh, my sister's told me SO many times"
+.byte NewLine
+.text "not to get distracted in battle!"
+.byte WaitForA
+.byte ScrollText
+.text "S-sorry about leaving so suddenly, Asbel!" 
+.byte NewLine
+.text "Let's talk later, okay? See ya!"
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
 .word RetractBox
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
-.text "Heh... She's as cute as she is funny."
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.word $3A00
+.word asbel_portrait
+.text "Phew. Quite the lively spirit, isn't she?"
 .byte NewLine
-.text "Wait, w-what am I saying?!"
+.text "No... I need a better word than that."
 .byte WaitForA
 
 .byte EndText
