@@ -765,8 +765,9 @@ deanlinoan
 .word linoan_portrait
 .text "Ah!"
 .byte WaitForA
+.byte NewLine
 .text "Oh, Dean, it's just you..."
-.byte WaitForA
+.byte NewLine
 .text "I apologize, I was so lost in thought."
 .byte WaitForA
 .byte NewLine
