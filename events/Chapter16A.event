@@ -77,7 +77,7 @@ eventChapter16AEvents ; FD/B120
 			TEST_FLAG_SET $0A
 		END_DEFINITION
 		EVENT $14, _FredIliosTalk
-			CHECK_CHARS2 Ilios, Fred
+			CHECK_CHARS2 Fred, Ilios
 			TEST_FLAG_SET $0A
 		END_DEFINITION
 		EVENT $11, _DeanLinoanTalk
@@ -298,7 +298,7 @@ eventChapter16AEvents ; FD/B120
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE leifilios
 		YIELD
 	END2
 	
