@@ -239,3 +239,163 @@ fredilios
 .byte WaitForA
 
 .byte EndText
+
+
+leifilios
+
+.byte right_slot
+.word LoadPortrait
+.word ilios_portrait
+.text "Excuse me."
+.text "...Excuse..."
+.text "...Hey!"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word fred_portrait
+.text "Oh, hello. Sir Ilios, was it?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That's right!"
+.byte NewLine
+.text "Wait... Did you just call me “Sir Ilios”?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Um... I did. Is there a problem with that?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "N-No, no... Sorry."
+.byte NewLine
+.text "Uh, anyway,"
+.byte NewLine
+.text "you're Prince Leif of Leonster, correct?”"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes, that's right."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Okay, great!"
+.byte NewLine
+.text "You seem to already know,"
+.byte NewLine
+.text "but I'll introduce myself properly."
+.byte WaitForA
+.byte NewLine
+.text "I am Ilios, proud Mage Knight of House Friege!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "A Mage Knight..."
+.byte NewLine
+.text "You must be quite powerful, then."
+.byte NewLine
+.text "So, what did you need from me?”"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Do you...really not know?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I... I don't."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You didn't hear anything about"
+.byte NewLine
+.text "the whole nobility thing? ...Or Troy?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I was informed about someone named Troy"
+.byte NewLine
+.text "who wished to earn their way to nobility" 
+.byte NewLine
+.text "through their efforts in this war."
+.byte WaitForA
+.byte ScrollText
+.text "I haven't been able to meet with him yet,"
+.byte NewLine
+.text "though. Why do you ask?"
+.text "Do you know Troy—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's me!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's me! I'm Troy!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But you had just said your name is Ilios."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes, that's my actual name!"
+.byte NewLine
+.text "I told that girl not to go around"
+.byte NewLine
+.text "messing with people's names..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Okay... Sir Ilios. I apologize for the confusion."
+.byte NewLine
+.text "I'll...make sure to go get things"
+.byte NewLine
+.text "sorted out for you at some point."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "All right then."
+.byte NewLine
+.text "I apologize for losing my temper just now."
+.byte NewLine
+.text "It's ill-befitting of a noble."
+.byte WaitForA
+.byte ScrollText
+.text "Now, I shall go and engage the enemy."
+.byte NewLine
+.text "Leave everything to me, Lord Leif!"
+.byte WaitForA
+
+.byte EndText
