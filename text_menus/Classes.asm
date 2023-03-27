@@ -433,7 +433,7 @@ _Soldier_data
 	.word $0000
 
 _BrigandAlternate_data
-	.text "Marauder"
+	.text "(Marauder "
 	.word $0000
 	
 .bend
