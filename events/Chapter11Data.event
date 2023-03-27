@@ -5,8 +5,8 @@ eventChapter11Data ; B1/CEFC
 		.byte 8, 7
 
 		UNIT FriegeArmoredLance1, Enemy, [7, 9], [7, 9], Kempf, [Javelin, Vulnerary, DoorKey], 10, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [8, 9], [8, 9], Kempf, [VeninLance, Antitoxin, DoorKey], 15, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [6, 9], [6, 9], Kempf, [Javelin, Vulnerary], 12, False, [$00, $10, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [8, 9], [8, 9], Kempf, [VeninLance, Antitoxin, DoorKey], 16, False, [$00, $10, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [6, 9], [6, 9], Kempf, [Javelin, Vulnerary, DoorKey], 12, False, [$00, $10, $00, $00]
 		UNIT FriegeArmoredLance1, Enemy, [9, 9], [9, 9], Kempf, [Javelin, Vulnerary, DoorKey], 10, False, [$00, $10, $00, $00]
 		UNIT FriegeArmoredLance1, Enemy, [6, 10], [6, 10], Kempf, [LongLance], 14, False, [$00, $10, $00, $00]
 		UNIT FriegeArmoredLance1, Enemy, [7, 10], [7, 10], Kempf, [LongLance], 9, False, [$00, $10, $00, $00]
@@ -23,8 +23,8 @@ eventChapter11Data ; B1/CEFC
 		UNIT FriegeSoldier2, Enemy, [6, 3], [6, 3], Kempf, [Javelin], 12, False, [$00, $03, $00, $00]
 		UNIT FriegeMage1, Enemy, [14, 1], [14, 1], Kempf, [Thunder], 12, False, [$01, $03, $00, $00]
 		UNIT FriegeBishop2, Enemy, [13, 3], [13, 3], Kempf, [Thunder, Physic], 10, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [6, 17], [6, 17], Kempf, [LongLance], 14, False, [$02, $15, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [10, 17], [10, 17], Kempf, [LongLance], 14, False, [$02, $15, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [6, 17], [6, 17], Kempf, [LongLance, KillerLance], 12, False, [$02, $15, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [10, 17], [10, 17], Kempf, [LongLance, KillerLance], 12, False, [$02, $15, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [9, 17], [9, 17], Kempf, [ShortLance], 8, False, [$02, $15, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [7, 17], [7, 17], Kempf, [ShortLance], 8, False, [$02, $15, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [8, 17], [8, 17], Kempf, [ShortLance], 8, False, [$02, $15, $00, $00]
@@ -38,7 +38,7 @@ eventChapter11Data ; B1/CEFC
 		.byte 8, 7
 
 	_FredGroup ; B1/D132
-		UNIT Fred, Enemy, [8, 19], [8, 19], Olwen, [LightningSword, Vulnerary], 2, False, [$01, $03, $02, $80]
+		UNIT Fred, Enemy, [8, 19], [8, 19], Olwen, [LightningSword, Longsword, Vulnerary], 2, False, [$01, $03, $02, $80]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/D148
@@ -46,7 +46,7 @@ eventChapter11Data ; B1/CEFC
 
 	_BallistaGroup ; B1/D14A
 		UNIT FriegeBallista2, Enemy, [3, 12], [3, 12], Kempf, [Ballista], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeBallista2, Enemy, [13, 12], [13, 12], Kempf, [Ballista], 8, False, [$00, $03, $00, $00]
+		UNIT FriegeBallista2, Enemy, [13, 12], [13, 12], Kempf, [Ballista], 10, False, [$00, $03, $00, $00]
 	UNIT
 
 	_OlwenCameraCoordinates ; B1/D174
