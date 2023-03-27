@@ -139,7 +139,7 @@ fredilios
 .word LoadPortrait
 .word ilios_portrait
 
-.byte right_slot
+.byte left_slot
 .word LoadPortrait
 .word fred_portrait
 .text "Ilios? Is that you?"
