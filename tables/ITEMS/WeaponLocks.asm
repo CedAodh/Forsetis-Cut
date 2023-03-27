@@ -9,6 +9,7 @@ aEarthSwordWeaponLock ; B0/99DA
 
 aGrafcaliburWeaponLock ; B0/99DE
 	.word Asbel
+	.word GunterDialogue
 	.word 0
 
 aFragarachWeaponLock ; B0/99E2
@@ -29,6 +30,7 @@ aFailinisWeaponLock ; B0/99F6
 	.word 0
 
 aBragisBladeWeaponLock ; B0/99FA
+	.word Miranda
 	.word Nanna
 	.word Diarmuid
 	.word Fergus
@@ -94,10 +96,13 @@ aBeoBladeWeaponLock ; B0/9A3A
 
 aBraveLanceWeaponLock ; B0/9A40
 	.word Finn
+	.word Kane
+	.word Alba
+	.word Glade
 	.word 0
 
 aDragonpikeWeaponLock ; B0/9A44
-	.word Altena
+	.word Eda
 	.word Dean
 	.word 0
 
@@ -117,14 +122,8 @@ aMareetaWeaponLock ; B0/9A4E
 aOlwenReinhardtWeaponLock ; B0/9A52
 	.word Olwen
 	.word Reinhardt
+	.word Fred
 	.word 0
-
-;aUnknown5WeaponLock ; B0/9A5A
-;	.word Linoan
-;	.word Sara
-;	.word CanisSara
-;	.word Canis
-;	.word 0
 
 aLoptrianFangWeaponLock ; B0/9A64
 	.word Raydrik
@@ -135,9 +134,6 @@ aLoptrianFangWeaponLock ; B0/9A64
 aThokkWeaponLock ; B0/9A6C
 	.word Veld
 	.word 0
-
-;aUnusedTomeWeaponLock ; B0/9A76
-;	.word 0
-
+	
 aBrokenMagicWeaponLock ; B0/9A78
 	.word 0

@@ -145,7 +145,9 @@ martydeath
 .byte EndText
 
 ronandeath
-.text "Ugh...! Ma... I'm scared..."
+.text "Ugh...!"
+.byte NewLine
+.text "M-Mother..."
 .byte WaitForA
 .byte EndText
 

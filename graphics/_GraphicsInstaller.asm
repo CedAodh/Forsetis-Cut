@@ -540,3 +540,16 @@ nintendo_logo
 
 .here
 
+* = $249F9B
+.logical lorom($249F9B, 1)
+
+.binary "highpriest.4bpp.fe4"
+
+.here
+
+* = $24B030
+.logical lorom($24B030, 1)
+
+.binary "highpriestess.4bpp.fe4"
+
+.here
