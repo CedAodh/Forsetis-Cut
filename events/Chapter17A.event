@@ -466,7 +466,7 @@ eventChapter17AEvents ; FD/BAAF
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE robertgladeA
 		YIELD
 	END2
 	
@@ -474,7 +474,7 @@ eventChapter17AEvents ; FD/BAAF
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE safysalemA
 		YIELD
 	END2
 
