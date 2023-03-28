@@ -187,7 +187,7 @@ fredilios
 .byte WaitForA
 
 
-.byte right_slot
+.byte left_slot
 .word LoadPortrait
 .word fred_portrait
 .text "Ilios? Are you alright?"
@@ -253,7 +253,7 @@ leifilios
 
 .byte left_slot
 .word LoadPortrait
-.word fred_portrait
+.word leif_portrait
 .text "Oh, hello. Sir Ilios, was it?"
 .byte WaitForA
 
