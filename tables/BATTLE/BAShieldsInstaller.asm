@@ -91,12 +91,14 @@
 
 	_BaronShields .block
 	  .structBattleAnimationShieldEntry	RaydrikChp24,	Shield_Baron,		BA_ShieldPalette_Unknown0F
+	  .structBattleAnimationShieldEntry	Gustav,	Shield_Baron,		BA_ShieldPalette_Unknown1C
 	  	  .structBattleAnimationShieldEntry	-1,		Shield_Baron,		BA_ShieldPalette_Baron_Emperor
         .endblock
 
         _MageKnightShields .block
           .structBattleAnimationShieldEntry Reinhardt,	Shield_Unknown11,	BA_ShieldPalette_Brighton
 		  .structBattleAnimationShieldEntry Kempf,	Shield_MageKnight,	BA_ShieldPalette_Glade
+		  .structBattleAnimationShieldEntry Ilios,	Shield_MageKnight,	BA_ShieldPalette_MasterKnight
 		  .structBattleAnimationShieldEntry	Olwen,		Shield_MageKnight,	BA_ShieldPalette_Olwen
 		  .structBattleAnimationShieldEntry	Miranda,	Shield_MasterKnight,	BA_ShieldPalette_Unknown0A
 		  .structBattleAnimationShieldEntry	-1,			Shield_MageKnight,	BA_ShieldPalette_MageKnight
@@ -107,7 +109,7 @@
         .endblock
 
         _MasterKnightShields .block
-          .structBattleAnimationShieldEntry	-1,			Shield_MasterKnight, BA_ShieldPalette_MasterKnight
+          .structBattleAnimationShieldEntry	-1,			Shield_MasterKnight, BA_ShieldPalette_MageKnight
         .endblock
 
         _ArmoredLanceShields .block	  
