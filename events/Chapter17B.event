@@ -343,7 +343,7 @@ eventChapter17BEvents ; FD/C4D0
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE callionmiranda
 		YIELD
 	END2
 	
@@ -351,7 +351,7 @@ eventChapter17BEvents ; FD/C4D0
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE robertgladeB
 		YIELD
 	END2
 	
@@ -359,7 +359,7 @@ eventChapter17BEvents ; FD/C4D0
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE safysalemB
 		YIELD
 	END2
 	
