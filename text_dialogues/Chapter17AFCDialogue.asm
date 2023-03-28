@@ -75,7 +75,9 @@ safysalemA
 .byte right_slot
 .byte ScrollText
 .text "Hm?"
+.byte NewLine
 .text "Ah, greetings."
+.byte NewLine
 .text "You're...Safy, correct?"
 .byte WaitForA
 
@@ -193,9 +195,9 @@ safysalemA
 
 .byte right_slot
 .byte ScrollText
-.text "These concepts were brought to me when I had nothing..."
+.text "These concepts were brought to me when"
 .byte NewLine
-.text "They were things that I,"
+.text "I had nothing... They were things that I,"
 .byte NewLine
 .text "and many others, could truly believe in."
 .byte WaitForA
@@ -260,7 +262,7 @@ safysalemA
 .byte NewLine
 .text "I've concluded that I now owe it to the world"
 .byte NewLine
-.text "to do everything I can to put an end to this tragedy."
+.text "to do everything I can to put an end to this."
 .byte WaitForA
 
 .byte left_slot
@@ -300,6 +302,7 @@ safysalemA
 .byte right_slot
 .byte ScrollText
 .text "...I will bear that in mind."
+.byte NewLine
 .text "Thank you, Sister Safy."
 .byte WaitForA
 
@@ -365,6 +368,7 @@ robertgladeA
 .byte NewLine
 .text "when we fled the castle."
 .byte WaitForA
+.byte NewLine
 .text "That was when I had realized the"
 .byte NewLine
 .text "true intensity of my feelings for her."
