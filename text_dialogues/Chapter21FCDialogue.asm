@@ -978,3 +978,181 @@ ConomorMirandaTalk
 .text "As you wish, Princess!"
 .byte WaitForA
 .byte EndText
+
+
+homernanna2
+
+.byte right_slot
+.word LoadPortrait
+.word homer_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word nanna_portrait
+.text "Homer, do you have a second?"
+.byte WaitForA
+
+.byte right_slot
+.text "For you?"
+.byte NewLine
+.text "I have all the time in the world, milady."
+.byte NewLine
+.text "How may I help?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I just wanted to thank you"
+.byte NewLine
+.text "for keeping your promise."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You? Thanking me?"
+.byte NewLine
+.text "Well, I'm afraid I cannot accept that, milady."
+.byte WaitForA
+.byte ScrollText
+.text "All I've done is what's expected"
+.byte NewLine
+.text "from me upon joining this army."
+.byte WaitForA
+.byte ScrollText
+.text "Sure, it has been painful, and I may have"
+.byte NewLine
+.text "been close to giving in during the castle siege,"
+.byte NewLine
+.text "but I've managed to be helpful here and there."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "And I'm sure that requires an immense"
+.byte NewLine
+.text "amount of motivation. I merely wanted"
+.byte NewLine
+.text "to acknowledge that."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, pish posh!"
+.byte WaitForA
+.byte ScrollText
+.text "As long as I'm able to help just a little in"
+.byte NewLine
+.text "keeping that beautiful smile of yours going,"
+.byte NewLine
+.text "this humble bard can consider his job done."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Huh? What do you mean by that?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, I mean no offense milady, but you are"
+.byte NewLine
+.text "quite easy to read, and it always seems like"
+.byte NewLine
+.text "something's eating at you. Making you sad."
+.byte WaitForA
+.byte ScrollText
+.text "Seeing the bright future you have with"
+.byte NewLine
+.text "Prince Leif, I just cannot allow you to be"
+.byte NewLine
+.text "soured by whatever is consuming your mind."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "W-Where did that come from?!"
+.byte NewLine
+.text "I don't... I don't..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Haha!"
+.byte NewLine
+.text "Forgive me, I may have stepped in too far,"
+.byte NewLine
+.text "but my point still stands."
+.byte WaitForA
+.byte ScrollText
+.text "I may not know what keeps you down, but..."
+.byte NewLine
+.text "If you ever need someone to cheer you up,"
+.byte NewLine
+.text "I can always play my lute and sing a song."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You mean it?"
+.byte NewLine
+.text "I've seen you perform a few times at the army"
+.byte NewLine
+.text "camp, and... You seem to be quite talented."
+.byte WaitForA
+.byte NewLine
+.text "Are you sure?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, I'm always one to please."
+.byte WaitForA
+.byte ScrollText
+.text "Besides, if my performance gets the Princess'"
+.byte NewLine
+.text "seal of approval, then I'm sure to hit it big"
+.byte NewLine
+.text "once the war is over and I return to my travels."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Teehee, fair enough."
+.byte NewLine
+.text "Thank you for your support, Homer."
+.byte NewLine
+.text "I feel reinvigorated and ready to go!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That's the spirit."
+.byte NewLine
+.text "Now, don't keep the army waiting, milady."
+.byte NewLine
+.text "Your place in this army is irreplaceable."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I will!"
+.byte NewLine
+.text "Thank you once again, Homer!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "Ah, to be young..."
+.byte WaitForA
+.byte ScrollText
+.text "She looks so happy now,"
+.byte NewLine
+.text "I'm sure she wouldn't mind if I helped"
+.byte NewLine
+.text "myself with a bottle just this once..."
+.byte WaitForA
+
+.byte EndText
