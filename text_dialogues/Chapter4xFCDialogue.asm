@@ -441,76 +441,89 @@ daisyced
 .word daisy_portrait
 
 .byte left_slot
-.text "Eeeeek!"
-.byte NewLine
-.text "Ohmygosh, it's Lord Ced!"
+.text "Boo!"
 .byte WaitForA
 
 .byte right_slot
-.text "...I'm sorry, but do I know you?"
+.text "What the—"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Didn't see that comin', huh, LORD CED?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...O-oh, no, I definitely did not."
 .byte NewLine
-.text "Also, could I ask you to not alert"
+.text "Still, you...were nearly blasted"
 .byte NewLine
-.text "every guard stationed in this dungeon?"
+.text "to oblivion by my magic."
+.byte WaitForA
+.byte ScrollText
+.text "I hope you will not be as reckless"
+.byte NewLine
+.text "the next time."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Please, there was a good reason for that!"
 .byte NewLine
-.text "You don't meet your heroes every day,"
+.text "You're our savior, right?"
 .byte NewLine
-.text "you know?"
+.text "How could I not personally thank you?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "*Sigh*"
-.byte WaitForA
-.byte NewLine
-.text "...Listen, if you're not in need of my"
-.byte NewLine
-.text "assistance, then I would strongly suggest"
-.byte NewLine
-.text "that you flee this place alongside the others."
+.text "I appreciate the thought, but..."
 .byte WaitForA
 .byte ScrollText
-.text "This is no place for a little girl to frolic around."
+.text "Listen, if you don't require my assistance"
+.byte NewLine
+.text "right in this moment, then I highly suggest"
+.byte NewLine
+.text "you flee this place like everyone else."
+.byte WaitForA
+.byte ScrollText
+.text "This is no place for a little girl"
+.byte NewLine
+.text "to frolic around."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Little girl?!"
+.text "L-little girl?!"
 .byte NewLine
-.text "Have you ever seen a little girl"
+.text "Who— Who are you calling a little girl?!"
 .byte NewLine
-.text "with these before?! Oh, how rude!"
+.text "You think calling me that helps ANYTHING?!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Okay, that has nothing to do"
+.text "I'm truly sorry for having said that."
 .byte NewLine
-.text "with the issue at hand."
-.byte WaitForA
-.byte ScrollText
-.text "If that's all you had to say to me,"
+.text "But it really is dangerous to stay here."
 .byte NewLine
-.text "then I'm afraid I must get going."
-.byte NewLine
-.text "I can't afford to waste any more time."
+.text "So that means leave. Now."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "O-okay...sorry for the trouble."
+.text "O-OK..."
 .byte NewLine
-.text "You're still my hero, though!"
+.text "I'm sorry too."
+.byte NewLine
+.text "You're still my savior, though!"
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
+.word RetractBox
 
-.byte Left_slot
+.byte right_slot
 .byte ScrollText
 .word ClearPortrait
 .word RetractBox
@@ -520,9 +533,9 @@ daisyced
 .word daisy_portrait
 .byte right_slot
 .byte ScrollText
-.text "Teehee."
+.text "Hee hee."
 .byte NewLine
-.text "I can't believe he didn't notice!"
+.text "He really fell for it..."
 .byte WaitForA
 .byte ScrollText
 .text "Prince Leif being captured meant he had"
@@ -536,7 +549,7 @@ daisyced
 .byte NewLine
 .text "Wh-whoa! All right..."
 .byte NewLine
-.text "Let's try not to break this thing so quickly..."
+.text "Let's avoid breaking this thing so quickly..."
 .byte WaitForA
 
 .byte EndText

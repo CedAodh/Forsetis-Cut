@@ -137,11 +137,11 @@
 .include "Chapter16AFCDialogue.asm"
 .include "Chapter17AFCDialogue.asm"
 .include "Chapter16BFCDialogue.asm"
-.include "Chapter17BFCDialogue.asm"
 .here
 
 * = $4D8000
 .logical lorom($4D8000, 1)
+.include "Chapter17BFCDialogue.asm"
 .include "Chapter18FCDialogue.asm"
 .include "Chapter19FCDialogue.asm"
 .include "Chapter20FCDialogue.asm"

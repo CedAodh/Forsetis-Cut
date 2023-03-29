@@ -123,9 +123,9 @@ tanyaronan1
 	.byte ScrollText
 	.text "I like this feeling I get from talking to you."
 	.byte NewLine
-	.text "It's like...we're having an enjoyable time, instead"
+	.text "You know, we're...doing a lot of thinking."
 	.byte NewLine
-	.text "of just making a bunch of noise for no reason."
+	.text "That really does wonders."
 	.byte WaitForA
 
 	.byte left_slot
@@ -144,9 +144,16 @@ tanyaronan1
 	.text "I actually feel better now."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Maybe we could make this a regular thing, Ronan."
+	.text "Maybe this could be a regular thing, Ronan."
 	.byte NewLine
-	.text "I think we're “compatible,” as you'd say."
+	.text "So... I'll see you around."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "All right, then!"
+	.byte NewLine
+	.text "I'll... I will be around!"
 	.byte WaitForA
 	
 	.byte EndText
