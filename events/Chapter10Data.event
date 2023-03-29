@@ -15,7 +15,7 @@ eventChapter10Data ; B1/D1EF
 		UNIT FriegeBallista1, Enemy, [9, 15], [9, 15], Largo, [Ballista], 3, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [12, 18], [12, 18], Largo, [Ballista], 3, False, [$01, $03, $00, $00]
 		UNIT Dvorak, Enemy, [3, 3], [3, 3], Dvorak, [SilverLance], 8, False, [$00, $0C, $00, $30]
-		UNIT FriegeArcher, Enemy, [27, 3], [27, 3], Largo, [Greatbow], 10, False, [$01, $03, $00, $00]
+		UNIT FriegeArcher, Enemy, [27, 3], [27, 3], Largo, [Greatbow], 12, False, [$01, $01, $00, $00]
 		UNIT FriegeArmoredBow1, Enemy, [14, 9], [14, 9], Largo, [Longbow], 8, False, [$01, $03, $02, $00]
 		UNIT FriegeBallista1, Enemy, [17, 10], [17, 10], Largo, [Ballista], 3, False, [$01, $03, $00, $00]
 	UNIT
@@ -32,7 +32,7 @@ eventChapter10Data ; B1/D1EF
 		UNIT FriegeCavalier1, Enemy, [7, 11], [7, 11], Largo, [Longsword], 12, False, [$02, $15, $02, $00]
 		UNIT FriegeSoldier2, Enemy, [9, 20], [9, 20], Largo, [Javelin], 12, False, [$02, $15, $00, $00]
 		UNIT FriegeArmoredBow1, Enemy, [15, 11], [15, 11], Largo, [Longbow], 8, False, [$01, $03, $02, $00]
-		UNIT FriegeMage1, Enemy, [14, 12], [14, 12], Largo, [Thunder], 10, False, [$01, $03, $02, $00]
+		UNIT FriegeMage1, Enemy, [14, 12], [14, 12], Largo, [Thunder], 10, False, [$01, $01, $02, $00]
 		UNIT FriegeArmoredBow1, Enemy, [14, 10], [14, 10], Largo, [Longbow], 8, False, [$01, $03, $02, $00]
 		UNIT FriegeArmoredSword2, Enemy, [15, 12], [15, 12], Largo, [Longsword], 8, False, [$01, $03, $02, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [9, 10], [9, 10], Largo, [BattleAxe], 8, False, [$01, $03, $02, $00]

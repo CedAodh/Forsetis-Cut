@@ -5,12 +5,12 @@ eventChapter12Data ; B1/C788
 		.byte 8, 9
 
 		UNIT Salem, Enemy, [3, 9], [3, 9], Perne, [Jormungand, Sleep], 5, False, [$0D, $03, $00, $00]
-		UNIT BanditBrigand2, Enemy, [17, 11], [17, 11], Colho, [IronAxe], 8, False, [$00, $00, $00, $00]
-		UNIT BanditBerserker, Enemy, [16, 9], [16, 9], Colho, [HandAxe], 4, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand2, Enemy, [17, 11], [17, 11], Colho, [VeninAxe], 10, False, [$00, $00, $00, $00]
+		UNIT BanditBerserker, Enemy, [16, 9], [16, 9], Colho, [HandAxe], 4, False, [$04, $01, $00, $00]
 		UNIT BanditBrigand1, Enemy, [16, 13], [16, 13], Colho, [HandAxe], 6, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand2, Enemy, [18, 13], [18, 13], Colho, [VeninAxe], 10, False, [$00, $00, $00, $00]
 		UNIT BanditHunter, Enemy, [19, 12], [19, 12], Colho, [IronBow], 6, False, [$00, $00, $00, $00]
-		UNIT BanditBrigand1, Enemy, [20, 14], [20, 14], Colho, [IronAxe], 6, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, Enemy, [20, 14], [20, 14], Colho, [KillerAxe], 14, False, [$00, $00, $00, $00]
 		UNIT BanditHunter, Enemy, [16, 15], [16, 15], Colho, [IronBow], 6, False, [$00, $00, $00, $00]
 		UNIT BanditHunter, Enemy, [19, 9], [19, 9], Colho, [SilverBow, BridgeKey], 14, False, [$02, $09, $00, $00]
 		UNIT BanditBrigand2, Enemy, [20, 8], [20, 8], Colho, [VeninAxe], 10, False, [$00, $00, $00, $00]
@@ -19,9 +19,9 @@ eventChapter12Data ; B1/C788
 		UNIT BanditBrigand2, Enemy, [24, 5], [24, 5], Colho, [VeninAxe], 10, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand1, Enemy, [18, 14], [18, 14], Colho, [Hammer], 6, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand1, Enemy, [20, 10], [20, 10], Colho, [Poleax], 6, False, [$00, $00, $00, $00]
-		UNIT BanditBrigand1, Enemy, [18, 16], [18, 16], Colho, [BattleAxe], 6, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, Enemy, [18, 16], [18, 16], Colho, [SteelAxe], 6, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand1, Enemy, [20, 17], [20, 17], Colho, [SteelAxe], 6, False, [$00, $00, $00, $00]
-		UNIT BanditBerserker, Enemy, [16, 3], [16, 3], Colho, [IronAxe], 4, False, [$00, $00, $00, $00]
+		UNIT BanditBerserker, Enemy, [16, 3], [16, 3], Colho, [HandAxe], 4, False, [$04, $01, $00, $00]
 		UNIT BanditBrigand1, Enemy, [19, 4], [19, 4], Colho, [SteelAxe], 6, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand1, Enemy, [14, 17], [14, 17], Colho, [KillerAxe], 14, False, [$00, $09, $00, $00]
 		UNIT BanditHunter, Enemy, [15, 11], [15, 11], Colho, [IronBow], 6, False, [$00, $09, $00, $00]
@@ -30,7 +30,7 @@ eventChapter12Data ; B1/C788
 		UNIT BanditBrigand1, Enemy, [7, 3], [7, 3], Colho, [IronAxe], 2, False, [$00, $09, $00, $00]
 		UNIT BanditBrigand1, Enemy, [9, 4], [9, 4], Colho, [IronAxe], 2, False, [$00, $09, $00, $00]
 		UNIT BanditBrigand1, Enemy, [8, 9], [8, 9], Colho, [IronAxe], 2, False, [$00, $09, $00, $00]
-		UNIT Colho, Enemy, [14, 7], [14, 7], Colho, [VeninAxe, Hammer, Vulnerary, VantageManual], 8, True, [$00, $03, $00, $80]
+		UNIT Colho, Enemy, [14, 7], [14, 7], Colho, [HandAxe, KillerAxe, Vulnerary, VantageManual], 8, True, [$00, $03, $00, $80]
 	UNIT
 
 	_MareetaCameraCoordinates ; B1/C9A8
