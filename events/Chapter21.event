@@ -377,7 +377,7 @@ eventChapter21Events ; FD/E42D
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE homernanna2
 		YIELD
 		
 		macroSetCharacterByte Nanna, structCharacterDataRAM.MovementStars, 2
