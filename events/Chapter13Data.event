@@ -39,7 +39,7 @@ eventChapter13Data ; B1/BFCE
 		UNIT FriegeBowKnight2, Enemy, [37, 6], [37, 6], Liszt, [Longbow], 6, False, [$00, $0F, $00, $00]
 		UNIT FriegeBallista1, Enemy, [1, 12], [1, 12], Liszt, [Ballista], 3, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [17, 12], [17, 12], Liszt, [Ballista], 3, False, [$01, $03, $00, $00]
-		UNIT FriegeBallista1, Enemy, [30, 1], [30, 1], Liszt, [Ballista], 3, False, [$01, $03, $00, $00]
+		UNIT FriegeBallista1, Enemy, [18, 1], [18, 1], Liszt, [Ballista], 3, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [31, 8], [31, 8], Liszt, [Ballista], 3, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [18, 17], [18, 17], Liszt, [Ballista], 3, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredLance1, Enemy, [19, 7], [19, 7], Liszt, [Javelin], 8, False, [$01, $03, $02, $00]
@@ -49,11 +49,11 @@ eventChapter13Data ; B1/BFCE
 	;	.byte 11, 17
 
 	_LeonsterKnightGroup ; B1/C2E0
-		UNIT LeonsterBowKnight, Player, [9, 6], [7, 7], Glade, [SteelBow], 5, False, [$00, $00, $00, $00]
-		UNIT LeonsterBowKnight, Player, [9, 6], [11, 7], Glade, [SteelBow], 5, False, [$00, $00, $00, $00]
-		UNIT LeonsterLanceKnight, Player, [9, 6], [8, 7], Glade, [IronLance], 5, False, [$00, $00, $00, $00]
-		UNIT LeonsterLanceKnight, Player, [9, 6], [9, 7], Glade, [IronLance], 5, False, [$00, $00, $00, $00]
-		UNIT LeonsterLanceKnight, Player, [9, 6], [10, 7], Glade, [IronLance], 5, False, [$00, $00, $00, $00]
+		UNIT LeonsterBowKnight, Player, [9, 6], [7, 7], Glade, [SteelBow], 7, False, [$00, $00, $00, $00]
+		UNIT LeonsterBowKnight, Player, [9, 6], [11, 7], Glade, [IronBow], 7, False, [$00, $00, $00, $00]
+		UNIT LeonsterLanceKnight, Player, [9, 6], [8, 7], Glade, [SteelLance], 7, False, [$00, $00, $00, $00]
+		UNIT LeonsterLanceKnight, Player, [9, 6], [9, 7], Glade, [IronLance], 7, False, [$00, $00, $00, $00]
+		UNIT LeonsterLanceKnight, Player, [9, 6], [10, 7], Glade, [Javelin], 7, False, [$00, $00, $00, $00]
 	UNIT
 
 	_GladeCameraCoordinates ; B1/C346
@@ -67,7 +67,7 @@ eventChapter13Data ; B1/BFCE
 		.byte 31, 7
 
 	_BowKnightReinforcementsGroup ; B1/C360
-		UNIT FriegeBowKnight2, Enemy, [38, 6], [38, 6], Liszt, [Shortbow], 4, False, [$00, $0F, $00, $00]
+		UNIT FriegeBowKnight2, Enemy, [38, 6], [38, 6], Liszt, [Longbow], 6, False, [$00, $0F, $00, $00]
 	UNIT
 
 	_ArmorReinforcementsCameraCoordinates ; B1/C376
@@ -76,7 +76,7 @@ eventChapter13Data ; B1/BFCE
 	_ArmorReinforcementsGroup ; B1/C378
 		UNIT FriegeArmoredLance2, Enemy, [8, 1], [8, 1], Baldach, [LongLance], 15, False, [$00, $0F, $00, $00]
 		UNIT FriegeArmoredLance2, Enemy, [10, 1], [10, 1], Baldach, [LongLance], 15, False, [$00, $0F, $00, $00]
-		UNIT FriegeArmoredBow2, Enemy, [9, 1], [9, 1], Baldach, [Longbow], 14, False, [$00, $0F, $00, $00]
+		UNIT FriegeArmoredBow2, Enemy, [9, 1], [9, 1], Baldach, [Longbow], 15, False, [$00, $0F, $00, $00]
 	UNIT
 
 	_MageReinforcementsCameraCoordinates ; B1/C3B6
