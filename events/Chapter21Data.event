@@ -48,7 +48,7 @@ eventChapter21Data ; B1/8D4F
 		.byte 22, 13
 
 	_RightReinforcementsGroup ; B1/9039
-		UNIT FriegeMageKnight, Enemy, [31, 10], [30, 10], Fraus, [Bolganone], 8, False, [$00, $00, $00, $00]
+		UNIT FriegeDukeKnight, Enemy, [31, 10], [30, 10], Fraus, [Ridersbane], 8, False, [$00, $00, $00, $00]
 		UNIT FriegeArmoredAxe4, Enemy, [31, 11], [30, 11], Fraus, [Poleax], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeArmoredAxe4, Enemy, [31, 12], [30, 12], Fraus, [Poleax], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeArchKnight1, Enemy, [31, 13], [30, 13], Fraus, [Greatbow], 13, False, [$00, $00, $00, $00]
@@ -59,7 +59,7 @@ eventChapter21Data ; B1/8D4F
 	_PrepGroup2 ; B1/90B3
 		.byte 23, 24
 
-		UNIT Beatrice, Enemy, [14, 28], [14, 28], Beatrice, [KillerLance, Javelin, Vulnerary], 13, False, [$00, $0C, $02, $40]
+		UNIT Seimetz, Enemy, [14, 28], [14, 28], Beatrice, [KillerLance, Javelin, Vulnerary], 13, False, [$00, $0C, $02, $40]
 		UNIT FriegePriest1, Enemy, [23, 25], [23, 25], Fraus, [Sleep, Fortify], 16, False, [$0D, $03, $00, $00]
 	UNIT
 
