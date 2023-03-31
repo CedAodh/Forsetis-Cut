@@ -5,6 +5,7 @@ aGaeBolgWeaponLock ; B0/99D6
 
 aEarthSwordWeaponLock ; B0/99DA
 	.word Nanna
+	.word IllusionNanna
 	.word 0
 
 aGrafcaliburWeaponLock ; B0/99DE
@@ -30,7 +31,6 @@ aFailinisWeaponLock ; B0/99F6
 	.word 0
 
 aBragisBladeWeaponLock ; B0/99FA
-	.word Miranda
 	.word Nanna
 	.word Diarmuid
 	.word Fergus
@@ -40,6 +40,7 @@ aBragisBladeWeaponLock ; B0/99FA
 
 aLightBrandWeaponLock ; B0/9A00
 	.word Leif
+	.word IllusionLeif
 	.word 0
 
 aVougeWeaponLock ; B0/9A04
@@ -62,6 +63,7 @@ aBallistaWeaponLock ; B0/9A0E
 aTathlumWeaponLock ; B0/9A1A
 	.word Tanya
 	.word Ronan
+	.word MunsterSniper
 	.word 0
 
 aVeninBallistaWeaponLock ; B0/9A1C
@@ -99,11 +101,18 @@ aBraveLanceWeaponLock ; B0/9A40
 	.word Kane
 	.word Alba
 	.word Glade
+	.word LoptrianGeneral
 	.word 0
 
 aDragonpikeWeaponLock ; B0/9A44
-	.word Eda
+	.word Altena
+	.word Seimetz
+	.word Coulter
+	.word Beatrice
+	.word Mccloy
+	.word Merloch
 	.word Dean
+	.word Eda
 	.word 0
 
 aBaldungWeaponLock ; B0/9A4A
@@ -117,13 +126,20 @@ aGungnirWeaponLock
 
 aMareetaWeaponLock ; B0/9A4E
 	.word Mareeta
+	.word IllusionMareeta
 	.word 0
 
 aOlwenReinhardtWeaponLock ; B0/9A52
 	.word Olwen
 	.word Reinhardt
-	.word Fred
 	.word 0
+
+;aUnknown5WeaponLock ; B0/9A5A
+;	.word Linoan
+;	.word Sara
+;	.word CanisSara
+;	.word Canis
+;	.word 0
 
 aLoptrianFangWeaponLock ; B0/9A64
 	.word Raydrik
@@ -134,6 +150,9 @@ aLoptrianFangWeaponLock ; B0/9A64
 aThokkWeaponLock ; B0/9A6C
 	.word Veld
 	.word 0
-	
+
+;aUnusedTomeWeaponLock ; B0/9A76
+;	.word 0
+
 aBrokenMagicWeaponLock ; B0/9A78
 	.word 0
