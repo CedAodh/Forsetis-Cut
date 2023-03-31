@@ -236,7 +236,7 @@ eventChapter16BEvents ; 99/EC9A
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE tinaasbel
+		DIALOGUE tinaasbel1
 		YIELD
 	END2
 	
