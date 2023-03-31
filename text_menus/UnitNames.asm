@@ -297,7 +297,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._CivilianName	; Unused
 
-	.word	<>char_names._HiredSwordName
+	.word	<>char_names._IllusionName
 
 	.word	<>char_names._HiredSwordName
 
@@ -314,9 +314,9 @@ char_name_pointers		.block
 
 	.word	<>char_names._ArcherName		; Unused
 
-	.word	<>char_names._HiredSwordName	; Unused
+	.word	<>char_names._IllusionName	
 
-	.word	<>char_names._HiredSwordName	; Unused
+	.word	<>char_names._IllusionName	
 
 	.word	<>char_names._XavierName
 
@@ -1180,6 +1180,10 @@ _PierreName
 	
 _GeraldName
 	.text "Gerald"
+	.word $0000
+	
+_IllusionName
+	.text "Illusion"
 	.word $0000
 	
 .bend
