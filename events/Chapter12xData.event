@@ -14,34 +14,35 @@ eventChapter12xData ; B1/C3F7
 		UNIT ThiefEnemy2, Enemy, [19, 9], [19, 9], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$02, $06, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [7, 7], [7, 7], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [23, 4], [23, 4], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
-		UNIT ArcherEnemy1, Enemy, [17, 7], [17, 7], Perne, [IronBow], 6, False, [$00, $03, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [17, 7], [17, 7], Perne, [IronBow], 8, False, [$00, $03, $00, $00]
 		UNIT ArcherEnemy1, Enemy, [9, 5], [9, 5], Perne, [IronBow], 8, False, [$00, $03, $00, $00]
-		UNIT ArcherEnemy1, Enemy, [5, 5], [5, 5], Perne, [IronBow], 9, False, [$00, $03, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [5, 5], [5, 5], Perne, [IronBow], 8, False, [$00, $03, $00, $00]
 		UNIT DancerEnemy, Enemy, [19, 7], [19, 7], Perne, [SlimSword], 1, False, [$07, $07, $00, $80]
 		UNIT ThiefEnemy2, Enemy, [7, 13], [7, 13], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
 		UNIT DancerEnemy, Enemy, [14, 3], [14, 3], Perne, [SlimSword], 1, False, [$07, $07, $00, $80]
 		UNIT DancerEnemy, Enemy, [7, 10], [7, 10], Perne, [SlimSword], 1, False, [$07, $07, $00, $80]
+		UNIT MercenaryMyrmidon2, Enemy, [1, 2], [1, 2], Perne, [IronBlade], 10, False, [$00, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/C54F
 	;	.byte 10, 7
 
 	_ArcherLeftGroup ; B1/C551
-		UNIT ArcherEnemy1, Enemy, [3, 5], [3, 5], Perne, [IronBow], 5, False, [$00, $10, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [3, 5], [3, 5], Perne, [IronBow], 8, False, [$00, $10, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/C567
 	;	.byte 13, 7
 
 	_ArcherMiddleGroup ; B1/C569
-		UNIT ArcherEnemy1, Enemy, [11, 5], [11, 5], Perne, [IronBow], 5, False, [$00, $10, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [11, 5], [11, 5], Perne, [IronBow], 8, False, [$00, $10, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/C57F
 	;	.byte 17, 8
 
 	_ArcherRightGroup ; B1/C581
-		UNIT ArcherEnemy1, Enemy, [21, 7], [21, 7], Perne, [IronBow], 5, False, [$00, $10, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [21, 7], [21, 7], Perne, [IronBow], 8, False, [$00, $10, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates4 ; B1/C597

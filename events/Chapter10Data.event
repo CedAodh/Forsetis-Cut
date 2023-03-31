@@ -27,7 +27,7 @@ eventChapter10Data ; B1/D1EF
 		UNIT FriegeCavalier1, Enemy, [6, 12], [6, 12], Largo, [Ridersbane], 15, False, [$02, $15, $02, $00]
 		UNIT FriegeCavalier1, Enemy, [6, 11], [6, 11], Largo, [Armorslayer], 14, False, [$02, $15, $02, $00]
 		UNIT FriegeSoldier2, Enemy, [9, 18], [9, 18], Largo, [Javelin], 12, False, [$02, $15, $00, $00]
-		UNIT FriegeMage1, Enemy, [8, 19], [8, 19], Largo, [Thunder], 10, False, [$02, $15, $00, $00]
+		UNIT FriegeMage1, Enemy, [8, 19], [8, 19], Largo, [Fire], 10, False, [$02, $15, $00, $00]
 		UNIT FriegeArmoredLance1, Enemy, [9, 19], [9, 19], Largo, [LongLance], 8, False, [$02, $15, $00, $00]
 		UNIT FriegeCavalier1, Enemy, [7, 11], [7, 11], Largo, [Longsword], 12, False, [$02, $15, $02, $00]
 		UNIT FriegeSoldier2, Enemy, [9, 20], [9, 20], Largo, [Javelin], 12, False, [$02, $15, $00, $00]
@@ -40,11 +40,13 @@ eventChapter10Data ; B1/D1EF
 		UNIT FriegeArmoredBow1, Enemy, [16, 14], [16, 14], Largo, [Longbow], 8, False, [$01, $03, $02, $00]
 		UNIT FriegeSoldier2, Enemy, [28, 5], [28, 5], Largo, [Javelin], 10, False, [$01, $03, $00, $00]
 		UNIT ThiefEnemy1, Enemy, [2, 16], [2, 16], Seil, [Lockpick, IronSword, StaminaDrink], 10, False, [$02, $05, $00, $02]
-		UNIT FriegeArmoredSword2, Enemy, [24, 11], [24, 11], Largo, [FlameSword, BridgeKey, Vulnerary], 10, False, [$01, $03, $03, $00]
+		UNIT FriegeArmoredSword2, Enemy, [24, 11], [24, 11], Largo, [FlameSword, Vulnerary], 10, False, [$01, $03, $03, $00]
 		UNIT FriegeSoldier2, Enemy, [15, 19], [15, 19], Largo, [ShortLance], 6, False, [$00, $03, $00, $00]
 		UNIT ThiefEnemy1, Enemy, [6, 9], [6, 9], Seil, [Rapier, StaminaDrink], 9, False, [$02, $05, $00, $02]
 		UNIT FriegeSoldier2, Enemy, [27, 6], [27, 6], Largo, [Javelin], 10, False, [$01, $03, $00, $00]
 		UNIT FriegeBishop2, Enemy, [10, 4], [10, 4], Largo, [Bolting, Physic, Heal], 5, False, [$01, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [26, 19], [26, 19], Largo, [Greatsword, BridgeKey, Vulnerary], 14, False, [$01, $03, $03, $00]
+		UNIT FriegeMage1, Enemy, [25, 19], [25, 19], Largo, [Wind], 10, False, [$02, $15, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/D453
