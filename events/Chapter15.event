@@ -10,7 +10,7 @@ eventChapter15Events ; FD/A812
 	_TurnEventDefinitions ; FD/A81F
 		EVENT $00, _BrigandHunterReinforcements
 			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 1, 10
+			CMP_WORD_RANGE wCurrentTurn, 2, 9
 		END_DEFINITION
 		EVENT $00, _ShannamSpawn
 			CMP_WORD wCurrentPhase, Player
@@ -18,15 +18,15 @@ eventChapter15Events ; FD/A812
 		END_DEFINITION
 		EVENT $00, _ThiefMyrmidonReinforcements
 			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 2, 15
+			CMP_WORD_RANGE wCurrentTurn, 12, 14
 		END_DEFINITION
 		EVENT $00, _WarriorReinforcements
 			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 16, 18
+			CMP_WORD_RANGE wCurrentTurn, 15, 17
 		END_DEFINITION
 		EVENT $00, _BrigandHunterThiefReinforcements
 			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 19, 20
+			CMP_WORD_RANGE wCurrentTurn, 18, 20
 		END_DEFINITION
 		EVENT $00, _BrigandReinforcements
 			CMP_WORD wCurrentPhase, Player
