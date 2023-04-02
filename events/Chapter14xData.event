@@ -4,7 +4,7 @@ eventChapter14xData ; B1/B6FE
 	_PrepGroup1 ; B1/B6FE
 		.byte 8, 7
 
-		UNIT Eichner, Enemy, [6, 1], [6, 1], Codha, [VeninEdge, KillerAxe, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT Eichner, Enemy, [6, 1], [6, 1], Codha, [SilverSword, KillerAxe, Vulnerary], 10, False, [$00, $03, $00, $00]
 		UNIT Codha, Enemy, [5, 2], [5, 2], Codha, [Jormungand, Fenrir], 9, True, [$01, $03, $00, $80]
 		UNIT LoptrianSorcerer1, Enemy, [6, 2], [6, 2], Codha, [Jormungand], 5, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [7, 4], [7, 4], Codha, [Jormungand], 5, False, [$00, $03, $00, $00]

@@ -71,15 +71,15 @@ eventChapter7Data ; B1/DE9B
 		UNIT BanditWarrior, Enemy, [1, 20], [1, 20], Jabal, [IronBow, Hammer, HandAxe, Vulnerary], 5, False, [$01, $03, $02, $00]
 		UNIT BanditHunter, Enemy, [2, 20], [2, 20], Jabal, [IronBow, PureWater], 8, False, [$01, $03, $00, $00]
 		UNIT BanditHunter, Enemy, [1, 21], [1, 21], Jabal, [IronBow, PureWater], 8, False, [$01, $03, $00, $00]
-		UNIT BanditHunter, Enemy, [1, 23], [1, 23], Jabal, [SteelBow], 12, False, [$00, $03, $00, $00]
-		UNIT ThiefEnemy1, Enemy, [2, 21], [2, 21], Jabal, [Lockpick, IronSword], 3, False, [$01, $03, $00, $00]
+		UNIT BanditHunter, Enemy, [1, 23], [1, 23], Jabal, [SteelBow], 12, False, [$01, $03, $00, $00]
+		UNIT ThiefEnemy1, Enemy, [2, 21], [2, 21], Jabal, [Lockpick, IronSword], 3, False, [$00, $03, $00, $00]
 		UNIT BanditBrigand1, Enemy, [1, 22], [1, 22], Jabal, [HandAxe], 7, False, [$00, $03, $00, $00]
 		UNIT BanditBrigand1, Enemy, [1, 27], [1, 27], Jabal, [HandAxe], 7, False, [$00, $03, $00, $00]
-		UNIT BanditBrigand1, Enemy, [1, 25], [1, 25], Jabal, [IronAxe], 8, False, [$00, $03, $00, $00]
-		UNIT BanditBrigand1, Enemy, [2, 25], [2, 25], Jabal, [IronAxe], 8, False, [$00, $03, $00, $00]
-		UNIT BanditBrigand1, Enemy, [2, 26], [2, 26], Jabal, [SteelAxe], 8, False, [$00, $03, $00, $00]
-		UNIT BanditBrigand1, Enemy, [1, 26], [1, 26], Jabal, [SteelAxe], 8, False, [$00, $03, $00, $00]
-		UNIT Jabal, Enemy, [1, 29], [1, 29], Jabal, [SilverAxe, HandAxe, Vulnerary], 5, False, [$00, $03, $02, $00]
+		UNIT BanditBrigand1, Enemy, [1, 25], [1, 25], Jabal, [IronAxe], 8, False, [$01, $03, $00, $00]
+		UNIT BanditBrigand1, Enemy, [2, 25], [2, 25], Jabal, [IronAxe], 8, False, [$01, $03, $00, $00]
+		UNIT BanditBrigand1, Enemy, [2, 26], [2, 26], Jabal, [SteelAxe], 8, False, [$01, $03, $00, $00]
+		UNIT BanditBrigand1, Enemy, [1, 26], [1, 26], Jabal, [SteelAxe], 8, False, [$01, $03, $00, $00]
+		UNIT Jabal, Enemy, [1, 29], [1, 29], Jabal, [SilverAxe, HandAxe, Vulnerary, PureWater], 5, False, [$01, $03, $00, $00]
 	UNIT
 
 	_ShivaCameraCoordinates ; B1/E14F

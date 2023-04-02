@@ -19,8 +19,8 @@ eventChapter15Data ; B1/B3B3
 		UNIT BanditBrigand1, Enemy, [8, 14], [8, 14], Seil, [SteelAxe], 3, False, [$00, $01, $00, $00]
 		UNIT BanditBrigand1, Enemy, [7, 15], [7, 15], Seil, [Hammer], 3, False, [$00, $01, $00, $00]
 		UNIT BanditBrigand2, Enemy, [8, 16], [8, 16], Seil, [IronAxe], 3, False, [$00, $01, $00, $00]
-		UNIT BanditHunter, Enemy, [16, 2], [16, 2], Seil, [SteelBow], 16, False, [$00, $00, $00, $00]
-		UNIT BanditHunter, Enemy, [18, 2], [18, 2], Seil, [SteelBow], 16, False, [$00, $00, $00, $00]
+		UNIT BanditHunter, Enemy, [16, 2], [16, 2], Seil, [KillerBow], 16, False, [$00, $00, $00, $00]
+		UNIT BanditHunter, Enemy, [18, 2], [18, 2], Seil, [KillerBow], 16, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand2, Enemy, [16, 3], [16, 3], Seil, [KillerAxe], 14, False, [$02, $09, $00, $00]
 		UNIT BanditBrigand2, Enemy, [17, 3], [17, 3], Seil, [KillerAxe], 14, False, [$02, $09, $00, $00]
 		UNIT BanditBrigand2, Enemy, [18, 3], [18, 3], Seil, [KillerAxe], 14, False, [$02, $09, $00, $00]
@@ -40,7 +40,7 @@ eventChapter15Data ; B1/B3B3
 
 	_ThiefMyrmidonGroup ; B1/B589
 		UNIT ThiefEnemy1, Enemy, [16, 1], [16, 1], Seil, [VeninEdge], 7, False, [$02, $09, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [17, 1], [17, 1], Seil, [KillingEdge], 12, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [17, 1], [17, 1], Seil, [KillingEdge], 14, False, [$00, $00, $00, $00]
 		UNIT ThiefEnemy1, Enemy, [18, 1], [18, 1], Seil, [VeninEdge], 7, False, [$00, $00, $00, $00]
 	UNIT
 
@@ -48,9 +48,9 @@ eventChapter15Data ; B1/B3B3
 		.byte 17, 8
 
 	_WarriorGroup ; B1/B5C9
-		UNIT BanditWarrior, Enemy, [16, 1], [16, 1], Seil, [SteelAxe, VeninBow], 12, False, [$00, $00, $00, $00]
+		UNIT BanditWarrior, Enemy, [16, 1], [16, 1], Seil, [KillerAxe, VeninBow], 12, False, [$00, $00, $00, $00]
 		UNIT BanditBerserker, Enemy, [17, 1], [17, 1], Seil, [KillerAxe, HandAxe], 10, False, [$02, $09, $00, $00]
-		UNIT BanditWarrior, Enemy, [18, 1], [18, 1], Seil, [VeninAxe, SteelBow], 12, False, [$00, $00, $00, $00]
+		UNIT BanditWarrior, Enemy, [18, 1], [18, 1], Seil, [VeninAxe, KillerBow], 12, False, [$00, $00, $00, $00]
 	UNIT
 
 	_ShannamCameraCoordinates ; B1/B607
