@@ -59,7 +59,7 @@ InstrumentsSilence		    = $25
 .byte $00               		; VeninLance
 .byte $00               		; Dragonpike
 .byte $00               		; ShadowSpear
-.byte $00               		; BraveLance
+.byte $00                		; BraveLance
 .byte $00               		; ShortLance
 .byte $00               		; LongLance
 .byte $00               		; Greatlance
@@ -131,7 +131,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsJormungandr 	; Jormungandr		STJormungandr
 .byte InstrumentsFenrirs     	; Fenrir			STFenrirs
 .byte InstrumentsHel         	; Hel				STJormungandr
-.byte InstrumentsMeteor   	; Loptous			STFire			vanilla:00
+.byte InstrumentsForseti	; Loptous			STFire			vanilla:00
 					    
 ; Siege magic           
 .byte InstrumentsMeteor      	; Meteor			STMeteor

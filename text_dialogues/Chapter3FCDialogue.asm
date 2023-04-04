@@ -9,20 +9,20 @@ eyvelhalvan
 	.word eyvel_portrait
 	.text "Halvan... Is there something wrong?"
 	.byte NewLine
-	.text "I know you're usually quiet,"
+	.text "I know you're usually quiet, but something"
 	.byte NewLine
-	.text "but something about it right now seems...off."
+	.text "about it right now seems...off."
 	.byte WaitForA
 	
 	.byte right_slot
 	.text "I appreciate your concern, Commander,"
 	.byte NewLine
-	.text "but it is nothing to worry yourself over."
+	.text "but it is nothing to worry about."
 	.byte WaitForA
 	.byte ScrollText
 	.text "It's just that...once I had heard that priest tell"
 	.byte NewLine
-	.text "Lord Leif about what the Empire does to these"
+	.text "Lord Leif about what the Empire is doing to these"
 	.byte NewLine
 	.text "innocent children, I...lost myself for a moment."
 	.byte WaitForA
@@ -45,7 +45,7 @@ eyvelhalvan
 	.byte NewLine
 	.text "the screaming and...the blood everywhere..."
 	.byte NewLine
-	.text "We had to run from it all."
+	.text "We had to run away from it all."
 	.byte WaitForA
 	
 	.byte left_slot
@@ -68,12 +68,12 @@ eyvelhalvan
 	.byte ScrollText
 	.text "I'm proud of you, Halvan."
 	.byte NewLine
-	.text "That's a healthy way to think of things."
+	.text "That's a healthy way to look at it."
 	.byte NewLine
-	.text "You were able to pull through in the end."
+	.text "You pulled through in the end."
 	.byte WaitForA
 	.byte ScrollText
-	.text "By honor of the Freeblades, let's break down"
+	.text "By honor of the Freeblades, let's bust down"
 	.byte NewLine
 	.text "these fortress doors and give those Imperials"
 	.byte NewLine
@@ -102,25 +102,23 @@ ronanlifis
 	.byte right_slot
 	.text "Uh... Hey!"
 	.byte NewLine
-	.text "You're looking kinda miffed."
+	.text "You look kinda miffed."
 	.byte NewLine
 	.text "H-how can I help ya?"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "If I answered that honestly,"
+	.text "If I answered that honestly, there would"
 	.byte NewLine
-	.text "there would already be"
-	.byte NewLine
-	.text "a dozen arrows in your head!"
+	.text "be a dozen arrows in your head right now!"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
 	.text "Aah!"
 	.byte NewLine
-	.text "Why the aggression, man?!"
+	.text "What's with the aggression, man?!"
 	.byte NewLine
 	.text "Wh-what did I do to you?!"
 	.byte WaitForA
@@ -138,7 +136,7 @@ ronanlifis
 	.byte NewLine
 	.text "plague to my entire village for years now,"
 	.byte NewLine
-	.text "and you have the gall to play dumb like that?!"
+	.text "and you have the gall to play dumb like this?!"
 	.byte WaitForA
 
 	.byte right_slot
@@ -146,18 +144,22 @@ ronanlifis
 	.text "Oh...r—"
 	.byte NewLine
 	.text "Yeah..."
+	.byte NewLine
+	.text "I guess I...uh..."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "I don't know what could've possessed"
+	.text "I don't know what could have happened"
 	.byte NewLine
-	.text "Lord Leif to give you a second chance,"
+	.text "to make Lord Leif even think"
 	.byte NewLine
-	.text "but here's a little warning:"
+	.text "of giving you another chance."
 	.byte WaitForA
 	.byte ScrollText
-	.text "if you ever get in between me and an enemy target,"
+	.text "But here's a little warning:"
+	.byte NewLine
+	.text "If you ever come between me and an enemy target,"
 	.byte NewLine
 	.text "I won't hesitate to kill two birds with one stone."
 	.byte WaitForA
@@ -169,7 +171,7 @@ ronanlifis
 	.text "N-now if you'll excuse me..."
 	.byte WaitForA
 	.byte NewLine
-	.text "I think I heard the prince calling"
+	.text "I think I heard the prince callin'"
 	.byte NewLine
 	.text "my name from over there!"
 	.byte NewLine
@@ -179,6 +181,7 @@ ronanlifis
 	.word ClearPortrait
 	
 	.byte left_slot
+	.byte ScrollText
 	.word ClearPortrait
 	.word RetractBox
 	
@@ -216,7 +219,7 @@ lifiscaptured
 .byte ScrollText
 .text "H-huh?"
 .byte NewLine
-.text "What's goin— Hey, hey!"
+.text "What's goin'— Hey, hey!"
 .byte NewLine
 .text "I-it's not what you think! I was just..."
 .byte WaitForA

@@ -13,32 +13,32 @@ ferguskarin1
 	.byte WaitForA
 
 	.byte left_slot
-	.text "Well, better than I expected, but oh boy,"
+	.text "Well, better than I anticipated."
 	.byte NewLine
-	.text "fighting without my pegasus is pretty tough!"
+	.text "I just wasn't ready to fight without Hermes!" 
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "And it's only gonna get tougher from here."
+	.text "Uh-huh. Well, it's only gonna get tougher"
 	.byte NewLine
-	.text "I suggest you step aside and"
+	.text "from here, so I suggest you step aside"
 	.byte NewLine
-	.text "let me do the heavy lifting."
+	.text "and let me do the heavy lifting."
 	.byte WaitForA
 	.byte ScrollText
-	.text "After all,"
+	.text "After all, I'm used to"
 	.byte NewLine
-	.text "I'm used to fighting on the ground."
+	.text "fighting on the ground."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
 	.text "Hmph!"
 	.byte NewLine
-	.text "You talk to me like I'm nothing more"
+	.text "What do you think you're getting at?"
 	.byte NewLine
-	.text "than a pushover!"
+	.text "That I'm just an inconvenience?"
 	.byte WaitForA
 	.byte ScrollText
 	.text "I've proven I can hold my own, haven't I?"
@@ -47,10 +47,8 @@ ferguskarin1
 	.byte NewLine
 	.text "who has skill with a blade."
 	.byte WaitForA
-	.byte ScrollText
-	.text "Why don't you go play the tough guy"
 	.byte NewLine
-	.text "with someone else?"
+	.text "Go play the tough guy with someone else!"
 	.byte WaitForA
 
 	.byte right_slot
@@ -74,8 +72,9 @@ ferguskarin1
 	.byte NewLine
 	.text "maybe try to consider other people's"
 	.byte NewLine
-	.text "feelings before you open your mouth!"
+	.text "feelings before opening your mouth!"
 	.byte WaitForA
+	.byte ScrollText
 	.word ClearPortrait
 	.word RetractBox
 
@@ -83,10 +82,10 @@ ferguskarin1
 	.byte ScrollText
 	.text "...Sheesh."
 	.byte NewLine
-	.text "She sure is hot-headed."
+	.text "That sure is some temper."
 	.byte WaitForA
 	.byte NewLine
-	.text "Such a sharp tongue, and yet it looks like"
+	.text "Such a sharp tongue, but yet it looks like"
 	.byte NewLine
 	.text "any common soldier could knock her down"
 	.byte NewLine

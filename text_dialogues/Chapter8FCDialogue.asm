@@ -48,9 +48,7 @@ ch8leifhalvan
 .byte ScrollText
 .text "I wouldn't say 'changed.'"
 .byte NewLine
-.text "It's more like..."
-.byte NewLine
-.text "you've taken up a new role."
+.text "It's more like...you've taken up a new role."
 .byte WaitForA
 
 .byte left_slot
@@ -95,7 +93,7 @@ ch8leifhalvan
 .byte ScrollText
 .text "Right."
 .byte NewLine
-.text "I...I didn't just lose a comrade in all this."
+.text "I...I didn't just lose a comrade in all of this."
 .byte NewLine
 .text "I lost family."
 .byte WaitForA
@@ -109,16 +107,14 @@ ch8leifhalvan
 
 .byte right_slot
 .byte ScrollText
-.text "I never doubt your commitment, Halvan."
+.text "I never doubted your commitment, Halvan."
 .byte NewLine
-.text "Though...it does feel nice to"
+.text "Although...it does feel good to"
 .byte NewLine
 .text "hear you speak on it."
 .byte WaitForA
 .byte ScrollText
-.text "It helps to make me feel worthy"
-.byte NewLine
-.text "of your support."
+.text "It helps me feel worthy of your support."
 .byte NewLine
 .text "Thank you for that."
 .byte WaitForA

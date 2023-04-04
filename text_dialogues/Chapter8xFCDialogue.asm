@@ -17,12 +17,12 @@ ch8xopening2
 .byte NewLine
 .text "...Wait, Leif?!"
 .byte NewLine
-.text "Aren't you supposed to be in jail?"
+.text "Didn't I see you get thrown in jail?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "We'll talk about it later!"
+.text "Let's talk about that later!"
 .byte NewLine
 .text "I've brought a small squad;"
 .byte NewLine
@@ -33,7 +33,7 @@ ch8xopening2
 .byte ScrollText
 .text "Sounds good to me!"
 .byte NewLine
-.text "Gomez rallied the entire group against my dad."
+.text "Gomez rallied the entire group against my dad—"
 .byte NewLine
 .text "I-I don't know how long he's gonna last..."
 .byte WaitForA
@@ -66,7 +66,7 @@ ronantanya8x
 	.byte WaitForA
 
 	.byte left_slot
-	.text "Ronan, you're here too?"
+	.text "Ronan, you came along too?"
 	.byte NewLine
 	.text "Thanks for the hand!"
 	.byte WaitForA
@@ -76,7 +76,7 @@ ronantanya8x
 	.text "Don't sweat it."
 	.byte WaitForA
 	.byte NewLine
-	.text "But even now we need to be careful."
+	.text "We need to be careful, though."
 	.byte NewLine
 	.text "There could still be bandits around any corner,"
 	.byte NewLine
@@ -85,113 +85,95 @@ ronantanya8x
 
 	.byte left_slot
 	.byte ScrollText
-	.text "I agree."
+	.text "Good thinking."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Oh, but wait! Don't go yet!"
 	.byte NewLine
 	.text "I almost forgot something!"
+	.byte NewLine
+	.text "Ronan!"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
 	.text "Huh?"
 	.byte NewLine
+	.text "Oh, sorry!"
+	.byte NewLine
 	.text "What is it?"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "When I first got back here with my dad,"
+	.text "It's a little gift my dad got for me!"
+	.byte WaitForA
 	.byte NewLine
-	.text "I saw that his crew came across something."
+	.text "Heh, remember when you said I should"
+	.byte NewLine
+	.text "more appreciative of him?"
+	.byte NewLine
+	.text "I wonder if this is the result of that."
 	.byte WaitForA
 	.byte ScrollText
-	.text "He noticed how much I was looking at it,"
+	.text "But...I think I want to give it to you."
 	.byte NewLine
-	.text "and he let me keep it!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "But, I've been wondering if you might get"
+	.text "As a thank you for teaching me these..."
 	.byte NewLine
-	.text "better use out of it than me, so..."
-	.byte NewLine
-	.text "I want you to have it."
+	.text "important life values, let's say."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Wait, you want to give it to ME?"
+	.text "Oh, wow!"
 	.byte NewLine
-	.text "Wh-what exactly is it?"
+	.text "This is an incredible bow!"
+	.byte NewLine
+	.text "I've never seen anything like it..."
 	.byte NewLine
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Right here, check it out!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "Quite a bow, huh?"
+	.text "You and I both!"
 	.byte NewLine
-	.text "It certainly looks like someone"
-	.byte NewLine
-	.text "put in some overtime to craft this!"
+	.text "Someone put in some overtime to make this!"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "I can see that!"
+	.text "Without a doubt."
 	.byte NewLine
-	.text "Wow..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "But I'd still like to know the first part."
-	.byte NewLine
-	.text "Why would you want to give this to me?"
+	.text "Are you really sure I should have this?"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Because we're friends!"
-	.byte WaitForA
+	.text "Absolutely!"
 	.byte NewLine
-	.text "You've always been really earnest"
+	.text "You're my friend, so I wanted to do"
 	.byte NewLine
-	.text "about getting better with the bow,"
-	.byte NewLine
-	.text "so I'm sure you'd handle it better than I could."
+	.text "something nice for you!"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "What a bunch of nonsense!"
+	.text "Still...your father got this for YOU."
+	.byte NewLine
+	.text "But if you insist..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Er,"
+	.text "Hmm..."
 	.byte NewLine
-	.text "not your intentions, that is."
-	.byte WaitForA
-	.byte ScrollText
-	.text "I just can't believe you'd go out of your way"
-	.byte NewLine
-	.text "to get such a refined bow"
-	.byte NewLine
-	.text "and then hand it off like that!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "I will not allow it."
-	.byte NewLine
-	.text "If someone is to use this bow, it should be you."
-	.byte WaitForA
-	.byte NewLine
-	.text "Or if anything, actually,"
-	.byte NewLine
-	.text "maybe we could...share it?"
+	.text "Oh, I know!"
+	.text NewLine
+	.text "How about we share it?"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Y-you mean it?"
+	.text "Share it?"
+	.byte NewLine
+	.text "Really?"
 	.byte WaitForA
 
 	.byte right_slot
@@ -203,17 +185,14 @@ ronantanya8x
 
 	.byte left_slot
 	.byte ScrollText
-	.text "R-Ronan..."
-	.byte NewLine
-	.text "I..."
-	.byte WaitForA
+	.text "R-Ronan... That's so..."
 	.byte NewLine
 	.text "Oh, what am I thinking?"
 	.byte NewLine
 	.text "This isn't the time to be getting all worked up!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "But OK, I accept your little arrangement."
+	.text "OK, Ronan, I accept your little arrangement."
 	.byte NewLine
 	.text "Anyhow, we still have a fight to win!"
 	.byte NewLine
@@ -223,20 +202,6 @@ ronantanya8x
 	.byte right_slot
 	.byte ScrollText
 	.text "You can count on me!"
-	.byte WaitForA
-
-	.byte left_slot
-	.word ClearPortrait
-	.word RetractBox
-
-	.byte right_slot
-	.byte ScrollText
-	.text "How unusual, though."
-	.byte NewLine
-	.text "Why was she..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Was she...blushing?"
 	.byte WaitForA
 
 	.byte EndText
@@ -251,15 +216,17 @@ ch8xclosing2
 .word dagdar_portrait
 
 .byte left_slot
-.text "Sir Dagdar, there appears to be"
+.text "...Dagdar, there appears to be some noise"
 .byte NewLine
-.text "some noise coming from the basement."
+.text "coming from below the main floor."
 .byte WaitForA
 
 .byte right_slot
-.text "Aye, I hear it too. Let's take a look."
+.text "Aye, I hear it too."
 .byte NewLine
-.text "I suggest ye stand aside, bishop."
+.text "Let's go take a look."
+.byte NewLine
+.text "I suggest standin' back, priest."
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
@@ -277,11 +244,11 @@ ch8xclosing2
 .byte Right_slot
 .word LoadPortrait
 .word bucks_potrait
-.text "Boss! Yer alive!"
+.text "Boss! Yer alive?!"
 .byte NewLine
 .text "Someone pinch me,"
 .byte NewLine
-.text "cause I think I'm seeing gho-"
+.text "'cause I think I'm seein' gho—"
 .byte WaitForA
 .byte NewLine
 .text "AAAGH!"
@@ -291,71 +258,90 @@ ch8xclosing2
 .byte ScrollText
 .text "That do the job?"
 .byte NewLine
-.text "It's really me, goddamnit!"
+.text "It's really me, dammit!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "W-We're sorry, boss!"
+.text "W-we're sorry, boss!"
 .byte NewLine
-.text "We would've fought by yer side,"
+.text "We wanted t'help ya, but Gomez jus' threw"
 .byte NewLine
-.text "but Gomez trapped us in here like rats!"
+.text "us in 'ere like we was some useless scraps!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "It's alright, lads...I..."
+.text "It's all right, lads... I..."
 .byte NewLine
-.text "I thought Gomez and his crooks did you in."
+.text "I thought Gomez and the others"
 .byte NewLine
-.text "What's important is that yer safe and sound."
+.text "mighta done ya in."
+.byte WaitForA
+.byte ScrollText
+.text "But yer safe."
+.byte NewLine
+.text "It's all I could want."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "B-Boss..."
+.text "B-boss..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "......"
+.text "...I gotta apologize, lads."
+.byte NewLine
+.text "I stopped puttin' you guys first,"
+.byte NewLine
+.text "an'...an' I'm sorry I did that."
 .byte WaitForA
 .byte ScrollText
-.text "Hahaha!"
+.text "I was so desperate t'do the right thing,"
 .byte NewLine
-.text "Watcha all lookin' teary-eyed for?"
+.text "I didn't think twice 'bout a backup plan"
 .byte NewLine
-.text "That can wait for later."
+.text "fer how we'd stay comfy."
 .byte WaitForA
 .byte ScrollText
-.text "Now then, listen up, you scrubs,"
-.byte NewLine
-.text "because you have new orders!"
+.text "Can ya ever forgive me?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "S-Sir, yes sir!"
+.text "Boss, I jus' said we're on yer side!"
+.byte NewLine
+.text "You got nuthin' to say sorry 'bout!"
+.byte WaitForA
+.byte ScrollText
+.byte NewLine
+.text "We wanna make a livin' with our own hands—"
+.byte NewLine
+.text "an' that's why yer the boss."
+.byte NewLine
+.text "Show us we can do it!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "From now on, we'll be fighting with"
+.text "*Sniff...*"
 .byte NewLine
-.text "Prince Leif's army against the Empire!"
+.text "I'm so proud o' you boys."
 .byte WaitForA
 .byte ScrollText
-.text "I'll be going with him meself, but I want"
+.text "Now, I gotta go with the prince and make"
 .byte NewLine
-.text "most of you to stay here and protect the"
+.text "sure he wins over some good land fer us."
 .byte NewLine
-.text "mountains like always. Are we clear?"
+.text "Till then, y'all will watch over the manor."
 .byte WaitForA
+.byte ScrollText
+.text "Are we clear?"
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-Yes sir!"
+.text "Y-yes, sir!"
 .byte WaitForA
 
 .byte EndText

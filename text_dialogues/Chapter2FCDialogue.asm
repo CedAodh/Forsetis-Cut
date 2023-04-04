@@ -61,7 +61,7 @@ tanyaronan1
 	.byte NewLine
 	.text "I don't think I'm anything special."
 	.byte NewLine
-	.text "I use it really just for hunting."
+	.text "I really just use it for hunting."
 	.byte WaitForA
 
 	.byte right_slot
@@ -80,12 +80,12 @@ tanyaronan1
 	.byte ScrollText
 	.text "You?"
 	.byte NewLine
-	.text "Fighting up close?"
+	.text "Close combat?"
 	.byte WaitForA
 	.byte NewLine
-	.text "I can't even imagine handling a sword without"
+	.text "I can't even imagine handling a sword"
 	.byte NewLine
-	.text "losing my hand in the process."
+	.text "without losing my hand in the process."
 	.byte WaitForA
 	
 	.byte right_slot
@@ -121,11 +121,14 @@ tanyaronan1
 	.text "Maybe you're right..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I like this feeling I get from talking to you."
+	.text "Ronan, you're really great to talk to."
 	.byte NewLine
-	.text "You know, we're...doing a lot of thinking."
+	.text "It's nice to be able to talk to someone"
 	.byte NewLine
-	.text "That really does wonders."
+	.text "like we're equals."
+	.byte WaitForA
+	.byte NewLine
+	.text "Honestly, I don't experience it too much."
 	.byte WaitForA
 
 	.byte left_slot
@@ -134,26 +137,26 @@ tanyaronan1
 	.byte NewLine
 	.text "I was just trying to be polite."
 	.byte NewLine
-	.text "Well, either way, I guess I'm glad I could help."
+	.text "Well, anyway, I'm glad I could help."
 	.byte WaitForA
 	
 	.byte right_slot
 	.byte ScrollText
 	.text "Yeah!"
 	.byte NewLine
-	.text "I actually feel better now."
+	.text "I do feel better now."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Maybe this could be a regular thing, Ronan."
+	.text "I wanna make this a regular thing, Ronan."
 	.byte NewLine
-	.text "So... I'll see you around."
+	.text "Promise you'll stick around?"
 	.byte WaitForA
 	
 	.byte left_slot
 	.byte ScrollText
-	.text "All right, then!"
+	.text "I... Sure!"
 	.byte NewLine
-	.text "I'll... I will be around!"
+	.text "I'll... I will be around, I promise!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -174,7 +177,7 @@ finneyvel
 .byte WaitForA
 
 .byte right_slot
-.text "You know we're well past the point"
+.text "You know we're way past the point"
 .byte NewLine
 .text "of asking permission to talk, Finn."
 .byte NewLine
@@ -185,12 +188,12 @@ finneyvel
 .byte ScrollText
 .text "It occurs to me that I never apologized"
 .byte NewLine
-.text "for putting Fiana and Mareeta in peril."
+.text "for putting Fiana and Mareeta in danger."
 .byte WaitForA
 .byte ScrollText
 .text "I always knew something like this"
 .byte NewLine
-.text "was bound to happen eventually..."
+.text "would happen eventually..."
 .byte WaitForA
 
 .byte right_slot
@@ -200,21 +203,21 @@ finneyvel
 .text "concern yourself with that."
 .byte WaitForA
 .byte ScrollText
-.text "Seeing what you... Well, what you looked like"
+.text "Seeing what you... Well, the way you looked"
 .byte NewLine
 .text "when you first came to Fiana, I knew there'd"
 .byte NewLine
 .text "be serious stakes from taking you in."
 .byte WaitForA
 .byte ScrollText
-.text "It's nothing we can't handle,"
+.text "It's nothing we can't handle, and besides,"
 .byte NewLine
-.text "and besides, I'm also at fault:"
+.text "it's my fault too:"
 .byte WaitForA
 .byte NewLine
-.text "I vowed to protect you three, and I..."
+.text "I swore to protect the three of you, and I..."
 .byte NewLine
-.text "I let them take Little Nan too..."
+.text "I let them take Little Nan as well..."
 .byte WaitForA
 
 .byte left_slot
@@ -255,7 +258,9 @@ finneyvel
 
 .byte right_slot
 .byte ScrollText
-.text "No. I just know of it from travelers."
+.text "No."
+.byte NewLine
+.text "I just know of it from travelers."
 .byte WaitForA
 
 .byte left_slot
@@ -264,7 +269,7 @@ finneyvel
 .byte NewLine
 .text "I see..."
 .byte NewLine
-.text "Nevermind, then."
+.text "Never mind, then."
 .byte WaitForA
 
 .byte left_slot
@@ -274,14 +279,16 @@ finneyvel
 	
 .byte right_slot
 .byte ScrollText
-.text "Are you sure that's all-"
+.text "Are you sure that's—"
 .byte NewLine
-.text "... And he's gone."
+.text "...And he's gone."
 .byte WaitForA
+.byte ScrollText
+.text "Huh."
 .byte NewLine
-.text "Huh. I wonder what that was about."
+.text "I wonder what that was all about."
 .byte NewLine
-.text "He's not one to normally talk about the past..."
+.text "He never talks about the past like that..."
 .byte WaitForA
 
 .byte EndText

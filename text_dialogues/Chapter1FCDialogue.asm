@@ -37,9 +37,9 @@ leifdagdar
 	.byte NewLine
 	.text "Yer a good lad,"
 	.byte NewLine
-	.text "and I always saw you and Nanna as"
+	.text "and I always thought o' you and Nanna"
 	.byte NewLine
-	.text "the nephew and niece I never had."
+	.text "like the nephew and niece I never had."
 	.byte WaitForA
 
 	.byte Left_slot
@@ -54,21 +54,21 @@ leifdagdar
 	.text "from someone as close as you."
 	.byte WaitForA
 	.byte ScrollText
-	.text "But I promise, those days are over."
+	.text "But I promise you, those days are over."
 	.byte NewLine
-	.text "As for the days to come, we stand together."
+	.text "As for the days ahead, we stand together."
 	.byte WaitForA
 	.byte NewLine
 	.text "With someone as strong as you by our side,"
 	.byte NewLine
-	.text "I know that we can face anything!"
+	.text "I know we can face anything!"
 	.byte WaitForA
 
 	.byte Right_Slot
 	.byte ScrollText
 	.text "Yer damn right we can!"
 	.byte NewLine
-	.text "So quit the glum face, will ya?"
+	.text "So stop lookin' so glum, will ya?"
 	.byte WaitForA
 	.byte NewLine
 	.text "We're gonna go get Nanna and Mareeta back."
