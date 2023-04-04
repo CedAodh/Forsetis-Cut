@@ -111,7 +111,7 @@ ronantanya8x
 	.byte NewLine
 	.text "Heh, remember when you said I should"
 	.byte NewLine
-	.text "more appreciative of him?"
+	.text "be more appreciative of him?"
 	.byte NewLine
 	.text "I wonder if this is the result of that."
 	.byte WaitForA
