@@ -26,10 +26,6 @@ aForsetiWeaponLock ; B0/99F0
 	.word CedChp4x
 	.word 0
 
-aFailinisWeaponLock ; B0/99F6
-	.word Miranda
-	.word 0
-
 aBragisBladeWeaponLock ; B0/99FA
 	.word Nanna
 	.word Diarmuid
@@ -37,6 +33,9 @@ aBragisBladeWeaponLock ; B0/99FA
 	.word Eyvel
 	.word Mareeta
 	.word Galzus
+	
+aFailinisWeaponLock ; B0/99F6
+	.word Miranda
 
 aLightBrandWeaponLock ; B0/9A00
 	.word Leif
@@ -89,6 +88,7 @@ aUnlockWeaponLock ; B0/9A2E
 
 aHammerneWeaponLock ; B0/9A36
 	.word Safy
+	.word Linoan
 	.word 0
 
 aBeoBladeWeaponLock ; B0/9A3A
@@ -105,12 +105,6 @@ aBraveLanceWeaponLock ; B0/9A40
 	.word 0
 
 aDragonpikeWeaponLock ; B0/9A44
-	.word Altena
-	.word Seimetz
-	.word Coulter
-	.word Beatrice
-	.word Mccloy
-	.word Merloch
 	.word Dean
 	.word Eda
 	.word 0
@@ -132,14 +126,8 @@ aMareetaWeaponLock ; B0/9A4E
 aOlwenReinhardtWeaponLock ; B0/9A52
 	.word Olwen
 	.word Reinhardt
+	.word Fred
 	.word 0
-
-;aUnknown5WeaponLock ; B0/9A5A
-;	.word Linoan
-;	.word Sara
-;	.word CanisSara
-;	.word Canis
-;	.word 0
 
 aLoptrianFangWeaponLock ; B0/9A64
 	.word Raydrik
@@ -150,9 +138,6 @@ aLoptrianFangWeaponLock ; B0/9A64
 aThokkWeaponLock ; B0/9A6C
 	.word Veld
 	.word 0
-
-;aUnusedTomeWeaponLock ; B0/9A76
-;	.word 0
 
 aBrokenMagicWeaponLock ; B0/9A78
 	.word 0

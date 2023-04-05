@@ -222,8 +222,10 @@
 	aItemData .include "ITEMS/ItemData.casm"
 .here
 
-* = $1819D6
-.logical $B099D6
+;* = $1819D6
+;.logical $B099D6
+* = $4C0B00
+.logical $188B00
 	WeaponLocks .block
 		.include "ITEMS/WeaponLocks.asm"
 	.bend

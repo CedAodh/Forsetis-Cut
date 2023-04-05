@@ -11,103 +11,101 @@ robertselphina
 	.byte WaitForA
 
 	.byte right_slot
-	.text "Robert?"
+	.text "Is something amiss, Robert?"
 	.byte NewLine
-	.text "Is something amiss?"
-	.byte WaitForA
-	.byte NewLine
-	.text "You know this isn't the time for chatter—"
-	.byte NewLine
-	.text "a battle is upon us."
+	.text "I regret to say this isn't the time for chatter."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "I know,"
+	.text "I know—I-I'm very sorry about this."
 	.byte NewLine
-	.text "and I'm sorry."
-	.byte WaitForA
-	.byte ScrollText
-	.text "I'm just..."
+	.text "I just...feel very anxious right now,"
 	.byte NewLine
-	.text "extremely nervous, is all."
+	.text "and I'm worried it'll hinder my aim..."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "And I don't blame you."
+	.text "I understand... I...I strongly wish things didn't"
 	.byte NewLine
-	.text "You're the youngest"
+	.text "have to go this way, but...we must simply make"
 	.byte NewLine
-	.text "of the new Leonster knights."
+	.text "the best of this hand we've been dealt."
 	.byte WaitForA
 	.byte ScrollText
-	.text "If anything,"
+	.text "I intended to allow you the proper time needed"
 	.byte NewLine
-	.text "I blame myself for dragging you into this."
-	.byte WaitForA
-	.byte ScrollText
-	.text "I know you're not combat ready yet,"
+	.text "for your training and journey to knighthood—"
 	.byte NewLine
-	.text "but as you can see,"
-	.byte NewLine
-	.text "such a desperate situation called for it."
+	.text "the world had another idea in mind, however."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Nonsense!"
-	.byte NewLine
-	.text "Kane and Alba are out here"
-	.byte NewLine
-	.text "risking their lives too!"
+	.text "Th-then I accept!"
 	.byte WaitForA
-	.byte ScrollText
-	.text "What kind of coward would just sit and wait"
 	.byte NewLine
-	.text "for the fight to be over?!"
+	.text "Kane and Alba joined in with no second thought."
+	.byte NewLine
+	.text "I'd be an utter fool to think I have the right"
+	.byte NewLine
+	.text "to special treatment in light of all this."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "All right, all right,"
+	.text "Oh...! That's..."
 	.byte NewLine
-	.text "I understand. "
+	.text "You've picked up quite the resolve, Robert."
 	.byte NewLine
-	.text "I shouldn't say things like that."
+	.text "How did that happen so suddenly?"
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Y...you really think so, milady?"
+	.byte NewLine
+	.text "I-I was just trying to...er..."
+	.byte WaitForA
+	.byte NewLine
+	.text "I just really wish to repay the care and love"
+	.byte NewLine
+	.text "you and Count Dorius have bestowed upon us."
+	.byte WaitForA
+	.byte ScrollText
+	.text "After everything you two went through for it..."
+	.byte NewLine
+	.text "h-how could I not feel this way?"
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "...Thank you, Robert."
+	.byte NewLine
+	.text "You really have grown up... *sniff*"
+	.byte WaitForA
+	.byte NewLine
+	.text "I don't mean to make such a big fuss over it;"
+	.byte NewLine
+	.text "I...just didn't think it was that time already."
+	.byte WaitForA
+	.byte ScrollText
+	.text "......"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Robert, we now call for help from Leonster's"
+	.byte NewLine
+	.text "finest—I trust you're ready to answer that call?"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "...Well, regardless,"
+	.text "I am, yes!"
 	.byte NewLine
-	.text "I'm sorry for being such a craven..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "My only wish is to become good enough"
+	.text "I swear it upon my knightly honor!"
 	.byte NewLine
-	.text "with a bow to serve you, milady."
-	.byte WaitForA
-	.byte ScrollText
-	.text "You treated all of us like your own children,"
-	.byte NewLine
-	.text "and we looked up to you as our mother."
-	.byte WaitForA
-	.byte NewLine
-	.text "And now,"
-	.byte NewLine
-	.text "I feel very honored to be able to fight"
-	.byte NewLine
-	.text "alongside you and finally do my part."
-	.byte WaitForA
-
-	.byte right_slot
-	.byte ScrollText
-	.text "Oh, Robert..."
-	.byte NewLine
-	.text "Thank you."
-	.byte NewLine
-	.text "I couldn't have asked for better children."
+	.text "I am yours to command!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -118,14 +116,11 @@ leifmarty
 	.byte right_slot
 	.word $3A00
 	.word marty_portrait
-	.text "*Huff... Huff...*"
+	.text "*huff... huff...*"
 	.byte NewLine
-	.text "I can't go on...much longer..."
-	.byte WaitForA
+	.text "I can't...keep goin' like this..."
 	.byte NewLine
-	.text "B-but if I stop now..."
-	.byte NewLine
-	.text "the commander'll..."
+	.text "B-but if I stop now...the boss'll..."
 	.byte WaitForA
 
 	.byte left_slot
@@ -143,25 +138,30 @@ leifmarty
 	.text "L-Lord Leif!"
 	.byte NewLine
 	.text "I'm sorry I didn't tell ya sooner!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "Between reaching this villa and"
 	.byte NewLine
-	.text "bein' tangled up in Gomez's schemes, I was—"
+	.text "I-I was jus'—"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Hey,"
-	.byte NewLine
-	.text "ease yourself, Marty."
-	.byte NewLine
-	.text "I've no ill will towards you."
+	.text "Marty... At ease, please."
 	.byte WaitForA
+	
+	.byte right_slot
 	.byte ScrollText
-	.text "Just make sure to give me some sort of notice"
+	.text "Y-yessir."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "I'm not angry or anything."
 	.byte NewLine
-	.text "when you're here for the battle next time."
+	.text "I simply had no idea you were here again, and"
+	.byte NewLine
+	.text "I want to make sure everyone's accounted for."
+	.byte WaitForA
+	.byte NewLine
+	.text "That's all. I promise."
 	.byte WaitForA
 	.byte ScrollText
 	.word ClearPortrait
@@ -171,46 +171,41 @@ leifmarty
 	.byte ScrollText
 	.text "Phew..."
 	.byte NewLine
-	.text "Nearly took a lashing there..."
+	.text "Close one there..."
 	.byte WaitForA
 
 	.byte left_slot
 	.word $3A00
 	.word leif_portrait
-	.text "Lashing?"
-	.byte NewLine
-	.text "From whom?"
+	.text "...Marty, what do you mean by that?"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Urm, when I was wee lad,"
+	.text "Urm, well, when I was wee lad,"
 	.byte NewLine
-	.text "Dagdar put me to work"
+	.text "Dagdar put me to work foragin'"
 	.byte NewLine
-	.text "foraging for food in the mountains."
+	.text "for food in the mountains."
 	.byte WaitForA
 	.byte ScrollText
-	.text "It was exhausting work,"
+	.text "It was really, really exhausting, combin'"
 	.byte NewLine
-	.text "combing for berries on those crooked trees..."
-	.byte WaitForA
+	.text "fer berries on those crooked trees...and ya"
 	.byte NewLine
-	.text "and ya also had to make sure"
-	.byte NewLine
-	.text "you didn't drop 'em."
+	.text "also had to make sure you didn't drop 'em."
 	.byte WaitForA
 	.byte ScrollText
-	.text "One day, I was really starving,"
+	.text "One day, I jus' couldn't help myself..."
 	.byte NewLine
-	.text "and I just went an' scarfed down all the berries"
+	.text "I went an' scarfed down all the berries"
 	.byte NewLine
-	.text "I'd just picked while Dagdar wasn't looking."
+	.text "I'd jus' picked while Dagdar wasn't looking."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I can still feel the mark he left"
+	.text "...I still feel the mark he left"
 	.byte NewLine
-	.text "when I sit down..."
+	.text "whenever I sit down."
 	.byte WaitForA
 	
 	.byte left_slot
@@ -218,16 +213,16 @@ leifmarty
 	.text "......"
 	.byte WaitForA
 	.byte ScrollText
-	.text "Well, stow your fears, Marty."
+	.text "Well, stow your fear, Marty."
 	.byte NewLine
 	.text "As long as you're under my command,"
 	.byte NewLine
-	.text "you've no need to fear corporeal punishment."
+	.text "you've no need to fear corporal punishment."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Discipline is always important,"
 	.byte NewLine
-	.text "but I stand to gain nothing"
+	.text "but I gain nothing"
 	.byte NewLine
 	.text "by getting you in line with fear tactics."
 	.byte WaitForA
@@ -236,50 +231,62 @@ leifmarty
 	.byte ScrollText
 	.text "That's a relief..."
 	.byte NewLine
-	.text "Just say the word, Lord Leif,"
+	.text "Jus' say the word, Lord Leif,"
 	.byte NewLine
-	.text "and I'll be ready to serve you."
+	.text "and I'm ready to serve ya."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Don't think of our relationship in terms of"
+	.text "Marty, do not think of us as master and servant."
 	.byte NewLine
-	.text "master and servant."
-	.byte WaitForA
+	.text "Think of this instead as you choosing to help us—"
 	.byte NewLine
-	.text "Think of it instead as you choosing to help us—"
-	.byte NewLine
-	.text "wanting to lend us your strength."
+	.text "WANTING to lend us your strength and ability."
 	.byte WaitForA
 	.byte ScrollText
-	.text "When you serve me,"
+	.text "When you “serve” me, that feeling of"
 	.byte NewLine
-	.text "only I stand to gain."
+	.text "fulfillment really...only goes one way."
+	.byte NewLine
+	.text "That's not what I seek."
 	.byte WaitForA
+	.byte ScrollText
+	.text "Now, when you “help” us, everyone—you included,"
 	.byte NewLine
-	.text "But when you help us,"
+	.text "Marty—is better off as a result."
 	.byte NewLine
-	.text "everyone feels the weight of your contribution."
+	.text "Believe me: I only want what's best for you."
 	.byte WaitForA
 	
 	.byte right_slot
 	.byte ScrollText
 	.text "Huh...?"
-	.byte WaitForA
-	.byte ScrollText
-	.text "......"
 	.byte NewLine
-	.text "Huh."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Man,"
-	.byte NewLine
-	.text "this feels...liberating..."
-	.byte NewLine
-	.text "I'll show you what I can do, Leif!"
+	.text "Er... I think...I think I get it..."
 	.byte WaitForA
 
+	.byte left_slot
+	.byte ScrollText
+	.text "All right."
+	.byte NewLine
+	.text "Thank you, Marty."
+	.byte NewLine
+	.text "Keep up the good work."
+	.byte WaitForA
+	.byte ScrollText
+	.word ClearPortrait
+	.word RetractBox
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "...I like Lord Leif."
+	.byte NewLine
+	.text "He's so nice...and patient, too."
+	.byte NewLine
+	.text "I'll make sure I do a real good job for 'im."
+	.byte WaitForA
+	
 	.byte EndText
 	
 kanealba
@@ -291,149 +298,104 @@ kanealba
 	.byte left_slot
 	.word $3A00
 	.word kane_portrait
-	.text "Think you can keep up, Alba?"
+	.text "What's it going to be, Alba?"
+	.byte NewLine
+	.text "Think you'll manage to pull through?"
 	.byte WaitForA
 
 	.byte right_slot
-	.text "Whether I can or not,"
+	.text "Whether I can or not, I shall give it my all,"
 	.byte NewLine
-	.text "I shall give it my all, just like everyone else."
+	.text "just like anyone else would."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Well, our parents gave it their all."
+	.text "What a dull answer."
 	.byte NewLine
-	.text "And look how that turned out."
+	.text "Our parents gave it their all."
+	.byte NewLine
+	.text "And now here we are."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
 	.text "Kane, please..."
 	.byte NewLine
-	.text "You know that's not what I meant."
+	.text "That attitude of yours isn't helping anything."
+	.byte NewLine
+	.text "Maybe try showing some respect for once?"
 	.byte WaitForA
 	.byte ScrollText
-	.text "You really should stop being so"
+	.text "They were our parents, and they tried to"
 	.byte NewLine
-	.text "condescending all the time,"
+	.text "protect us in whatever way they could."
 	.byte NewLine
-	.text "and for once see that you show some respect."
+	.text "Stop acting like that's a bad thing."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "What I see is at least one battalion of"
+	.text "It gets worse with every step"
 	.byte NewLine
-	.text "Thracian soldiers marching straight"
-	.byte NewLine
-	.text "to our doorstep."
-	.byte WaitForA
-	.byte ScrollText
-	.text "They seem to outnumber us 5 to 1,"
-	.byte NewLine
-	.text "and that's being generous."
-	.byte WaitForA
-	.byte ScrollText
-	.text "You know as well as I that"
-	.byte NewLine
-	.text "we haven't trained enough."
+	.text "those Thracian soldiers take."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Well..."
+	.text "...Well, there's nothing to be done about it now."
 	.byte NewLine
-	.text "Yeah, you do sort of have a point."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Still, I don't think that's what Robert"
+	.text "Nothing except giving this fight all we have."
 	.byte NewLine
-	.text "needs to hear at a time like this."
+	.text "Let's at least agree on that. For Robert's sake."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "That kid?"
+	.text "Who, the kid? Bah."
 	.byte NewLine
-	.text "Bah."
+	.text "Don't pretend he's grouped in with us."
 	.byte WaitForA
 	.byte NewLine
-	.text "He might be our age,"
+	.text "Do you see what he's like next to Lady Selphina?"
 	.byte NewLine
-	.text "but he sure as hell doesn't act that way."
+	.text "I almost told him to stay inside with Count Dorius"
 	.byte NewLine
-	.text "His only aim is tailing after Selphina."
-	.byte WaitForA
-	.byte ScrollText
-	.text "She spoiled him rotten from the cradle,"
-	.byte NewLine
-	.text "and if you and I are both undertrained,"
-	.byte WaitForA
-	.byte NewLine
-	.text "then Robert's horse can probably do"
-	.byte NewLine
-	.text "more for us on the battlefield"
-	.byte NewLine
-	.text "than Robert himself can with his bow."
+	.text "so his lone horse would stand a fighting chance."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Hmph."
+	.text "And that's why you're not in charge yet:"
 	.byte NewLine
-	.text "And yet here we are, just the three of us."
-	.byte WaitForA
-	.byte NewLine
-	.text "Believe me when I say that"
-	.byte NewLine
-	.text "we'll live to tell this one."
+	.text "you have no patience for others' shortcomings."
 	.byte WaitForA
 	.byte ScrollText
-	.text "That being said,"
+	.text "Learn to work with people's weaknesses,"
 	.byte NewLine
-	.text "you're the tactician, are you not?"
-	.byte WaitForA
+	.text "which we all have. Learn to be tolerant."
 	.byte NewLine
-	.text "Was it not you who so quickly"
-	.byte NewLine
-	.text "formulated our current strategy?"
+	.text "Your reputation will soar—I swear this to you."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Pft."
-	.byte NewLine
-	.text "There's no actual strategy for"
-	.byte NewLine
-	.text "something like this."
+	.text "......"
 	.byte WaitForA
 	.byte ScrollText
-	.text "That was less of a strategy and more so"
-	.byte NewLine
-	.text "just some common sense mixed in with a prayer."
+	.text "Fine."
 	.byte WaitForA
-	.byte ScrollText
-	.text "With that in mind,"
-	.byte NewLine
-	.text "we only need to hold out until Prince Leif's"
-	.byte NewLine
-	.text "troops are done hiking to our position."
-	.byte WaitForA
-	.byte ScrollText
-	.text "From there, we'll have a real chance."
-	.byte WaitForA
-
+	
 	.byte right_slot
 	.byte ScrollText
-	.text "A chance is a chance."
-	.byte NewLine
-	.text "And we must not miss nor waste it."
+	.text "That's a tremendous start, Kane!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "We can do this, Kane—"
+	.text "We'll continue this another time."
 	.byte NewLine
-	.text "our parents and Njörun shall watch over us."
+	.text "For now, let us pool our strength and wit and"
+	.byte NewLine
+	.text "prevail this day—we shall do our legacy proud."
 	.byte WaitForA
 
 	.byte left_slot
