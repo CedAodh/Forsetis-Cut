@@ -64,99 +64,46 @@ dagdartanyach12
 	
 .byte right_slot
 .byte NewLine
-.text "Forest bandits ain't the same as the ones"
+.text "These forest bandits ain't the same"
 .byte NewLine
-.text "back home on Mount Violdrake."
+.text "as the ones back home."
 .byte WaitForA
 .byte NewLine
-.text "They can hide just about anywhere,"
-.byte NewLine
-.text "and come out swinging without"
-.byte NewLine
-.text "so much as a single warning."
+.text "They like gettin' folk by surprise."
 .byte WaitForA
 	
 .byte left_slot
-.text "Yes, yes,"
+.text "Yes, yes, I know, Dad..."
 .byte NewLine
-.text "I know, Dad..."
+.text "I WAS listening to Leif and the others,"
+.byte NewLine
+.text "for the record."
 .byte WaitForA
 .byte ScrollText
-.text "I just wish you thought a little more of me."
-.byte WaitForA
+.text "I don't need you doubling down on this."
 .byte NewLine
-.text "I already hold my own well enough with a bow,"
-.byte NewLine
-.text "and yet you're still gonna treat me like a kid?"
-.byte NewLine
-.text "As if Osian wasn't enough..."
+.text "Trust me!"
 .byte WaitForA
 	
 .byte right_slot
 .byte ScrollText
-.text "Listen Tanya,"
+.text "I...I trust ya, Tanya!"
 .byte NewLine
-.text "I know sometimes it looks like"
-.byte NewLine
-.text "I ain't lettin' you do nothin', but—"
-.byte WaitForA
-	
-.byte left_slot
-.byte ScrollText
-.text "Oh, it doesn't look like it—"
-.byte NewLine
-.text "that's EXACTLY what it is!"
-.byte WaitForA
-	
-.byte right_slot
-.byte ScrollText
-.text "......"
-.byte WaitForA
-	
-.byte left_slot
-.byte ScrollText
-.text "You've raised me like a boy"
-.byte NewLine
-.text "ever since I was little,"
-.byte WaitForA
-.byte NewLine
-.text "and yet you refuse to"
-.byte NewLine
-.text "ever let me touch an axe,"
+.text "I always do!"
 .byte WaitForA
 .byte ScrollText
-.text "while that's all that you and"
+.text "But...y'know, yer my darling."
 .byte NewLine
-.text "everyone else were ever doing."
+.text "My precious little girl."
+.byte NewLine
+.text "It's always jus' been the two of us..."
 .byte WaitForA
 .byte ScrollText
-.text "What's wrong with finally wanting"
+.text "Ever since the run-in with Gomez,"
 .byte NewLine
-.text "to be more than just some helpless thing"
+.text "I've been scared o' losin' ya."
 .byte NewLine
-.text "that needs constant babysitting?"
-.byte WaitForA
-	
-.byte right_slot
-.byte ScrollText
-.text "Tanya, I..."
-.byte WaitForA
-.byte ScrollText
-.text "Look, yer my darling!"
-.byte NewLine
-.text "My daughter!"
-.byte NewLine
-.text "The only family I've got!"
-.byte WaitForA
-.byte ScrollText
-.text "You know how dangerous things were up there,"
-.byte NewLine
-.text "and if something ever happened to you,"
-.byte NewLine
-.text "I..."
-.byte WaitForA
-.byte ScrollText
-.text "I don't know what I would do..."
+.text "I jus' want ya to be safe an' happy."
 .byte WaitForA
 
 .byte left_slot
@@ -166,50 +113,88 @@ dagdartanyach12
 
 .byte right_slot
 .byte ScrollText
-.text "Back at the mansion,"
+.text "If somethin' happened an' I wasn't"
 .byte NewLine
-.text "time was runnin' and my blood was boilin',"
+.text "there to protect ya..."
 .byte NewLine
-.text "but now I feel like it's the time to say it."
-.byte WaitForA
-.byte ScrollText
-.text "If somethin' ever happened to me..."
-.byte NewLine
-.text "and you all see the end of it..."
-.byte WaitForA
-.byte ScrollText
-.text "I don't want you to look back."
-.byte WaitForA
-.byte NewLine
-.text "I don't want you to go on thinking"
-.byte NewLine
-.text "you should be proud of having"
-.byte NewLine
-.text "an ol' brigand boss for a father."
-.byte WaitForA
-.byte ScrollText
-.text "Be your own woman,"
-.byte NewLine
-.text "and do whatever ya gotta do"
-.byte NewLine
-.text "to make yerself happy and proud."
-.byte WaitForA
-.byte ScrollText
-.text "I...I know that's what she would've wanted."
+.text "I could never look at myself again..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Ah...!"
-.byte NewLine
-.text "D-Dad, you...you jerk!"
+.text "Dad, look...I'm really—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Tanya, I... I ain't finished yet."
 .byte WaitForA
 .byte ScrollText
-.text "Who told you this was the..."
+.text "Now...I'm not expectin' ya to do the same."
 .byte NewLine
-.text "the right time to..."
+.text "You don't have to worry 'bout lookin' out"
+.byte NewLine 
+.text "fer me. It's not yer responsibility."
+.byte WaitForA
+.byte ScrollText
+.text "I don't want ya to walk away from this talk"
 .byte NewLine
-.text "I... *sniff*"
+.text "thinkin' you need to be proud o' having"
+.byte NewLine
+.text "an ol' brigand boss for a father."
+.byte WaitForA
+.byte ScrollText
+.text "So...even when I kick it one day..."
+.byte NewLine
+.text "Don't look back."
+.byte NewLine
+.text "Jus' focus on yerself. Please."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ah...! D-Dad, you—"
+.byte NewLine
+.text "You can't talk to your daughter like that!"
+.byte WaitForA
+.byte NewLine
+.text "H-how the hell did you come up"
+.byte NewLine
+.text "with such a stupid idea?!" 
+.byte WaitForA
+.byte ScrollText
+.text "You're my father, and I'm gonna treat"
+.byte NewLine
+.text "you like my father!"
+.byte NewLine
+.text "That's the deal! No buts!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......!"
+.byte WaitForA
+.byte ScrollText
+.text "Tanya, my...my little girl...!"
+.byte NewLine
+.text "You treasure this dirty sack of old bones"
+.byte NewLine
+.text "too much! I don't deserva ya in my life..."
+.byte WaitForA
+.byte NewLine
+.text "C'mere! Gimme a hug!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Dad, maybe we should— Oof...!"
+.byte WaitForA
+.byte ScrollText
+.text "...I love you too, Dad."
+.byte NewLine
+.text "That will never change."
+.byte NewLine
+.text "Never."
 .byte WaitForA
 	
 .byte EndText

@@ -14,7 +14,7 @@ ch11xclosing3
 	.word oltoph_portrait
 	.text "...General Kempf..."
 	.byte NewLine
-	.text "You shouldn't have done this."
+	.text "What rationale could have led you to this?"
 	.byte NewLine
 	.text "Using my men and I as cannon fodder..."
 	.byte WaitForA
@@ -45,9 +45,9 @@ ch11xopening3
 .byte WaitForA
 
 .byte left_slot
-.text "Yes."
+.text "Apparently."
 .byte NewLine
-.text "I wouldn't have expected this, though."
+.text "I did not expect this, however."
 .byte WaitForA
 .byte ScrollText
 .text "They had us pincered in the last battle—"
@@ -73,16 +73,16 @@ ch11xopening3
 
 .byte left_slot
 .byte ScrollText
-.text "Either way,"
+.text "Tactics fundamentals aside,"
 .byte NewLine
 .text "the battle is now more difficult as a result."
 .byte WaitForA
 .byte ScrollText
-.text "We'll need to move quickly"
+.text "We'll need to move quickly to rescue any"
 .byte NewLine
-.text "to rescue any prisoners,"
+.text "prisoners, but be extra mindful of"
 .byte NewLine
-.text "but be mindful when approaching any walls."
+.text "whatever they may try to throw at us."
 .byte WaitForA
 
 .byte EndText

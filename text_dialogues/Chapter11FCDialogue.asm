@@ -24,7 +24,7 @@ ch11opening4
 
 .byte left_slot
 .byte ScrollText
-.text "That's about the whole of it, I believe."
+.text "That's about the whole of it."
 .byte NewLine
 .text "Now, let us get a move on."
 .byte NewLine
@@ -49,7 +49,7 @@ ch11opening4
 
 .byte right_slot
 .byte ScrollText
-.text "Of course not..."
+.text "D-definitely not..."
 .byte NewLine
 .text "But, what do you propose I do?"
 .byte NewLine
@@ -58,11 +58,11 @@ ch11opening4
 
 .byte left_slot
 .byte ScrollText
-.text "It's nothing all that complicated."
+.text "Simply adapt as the battle progresses."
 .byte NewLine
-.text "Just avoid unnecessary risks as we march."
+.text "Be sure to keep your wits about you."
 .byte NewLine
-.text "Do that, and the battle will be ours."
+.text "Do that, and the day will be ours."
 .byte WaitForA
 
 .byte EndText
