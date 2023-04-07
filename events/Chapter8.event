@@ -284,7 +284,7 @@ eventChapter8Events ; 99/BE7D
 		PAUSE_SKIPPABLE 32
 		YIELD
 
-		SET_MUSIC $31
+		SET_MUSIC $32
 		YIELD
 
 		macroChapterTitlePopup ch8titlename
