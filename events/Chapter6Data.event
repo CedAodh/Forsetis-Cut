@@ -5,14 +5,14 @@ eventChapter6Data ; B1/E22A
 		.byte 9, 8
 
 	_RaydrikGroup ; B1E22C
-		UNIT Raydrik, Enemy, [2, 3], [2, 3], Raydrik, [LoptrianFang, Warp], 20, False, [$01, $03, $00, $00]
+		UNIT Raydrik, Enemy, [2, 3], [2, 3], Raydrik, [LoptrianFang, Warp], 8, False, [$01, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/E242
 	;	.byte 9, 8
 
 	_GalzusGroup ; B1/E244
-		UNIT Galzus, Enemy, [2, 1], [2, 2], Raydrik, [MasterSword], 20, False, [$00, $00, $00, $02]
+		UNIT Galzus, Enemy, [2, 1], [2, 2], Raydrik, [MasterSword, Vulnerary], 20, False, [$00, $00, $00, $02]
 	UNIT
 
 	_TolmanCameraCoordinates ; B1/E25A
@@ -62,10 +62,10 @@ eventChapter6Data ; B1/E22A
 		.byte 22, 10
 
 	_KnightReinforcementsGroup1 ; B1/E45C
-		UNIT MunsterCavalier, Enemy, [31, 10], [30, 10], Tolman, [LongLance], 10, False, [$00, $00, $00, $00]
-		UNIT MunsterCavalier, Enemy, [31, 10], [27, 10], Tolman, [LongLance], 10, False, [$00, $00, $00, $00]
-		UNIT MunsterCavalier, Enemy, [31, 10], [28, 10], Tolman, [LongLance], 10, False, [$00, $00, $00, $00]
-		UNIT MunsterCavalier, Enemy, [31, 10], [29, 10], Tolman, [LongLance], 10, False, [$00, $00, $00, $00]
+		UNIT MunsterCavalier, Enemy, [31, 10], [30, 10], Tolman, [Longsword], 10, False, [$00, $00, $00, $00]
+		UNIT MunsterCavalier, Enemy, [31, 10], [27, 10], Tolman, [Longsword], 10, False, [$00, $00, $00, $00]
+		UNIT MunsterCavalier, Enemy, [31, 10], [28, 10], Tolman, [Longsword], 10, False, [$00, $00, $00, $00]
+		UNIT MunsterCavalier, Enemy, [31, 10], [29, 10], Tolman, [Longsword], 10, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/E4AE
@@ -92,9 +92,9 @@ eventChapter6Data ; B1/E22A
 		UNIT CedChp4x, NPC, [19, 1], [19, 1], CedChp4x, [ForsetiInfinite], 5, False, [$00, $00, $00, $00]
 		UNIT MagiSquadMyrmidon2, NPC, [18, 1], [18, 1], CedChp4x, [KillingEdge], 7, False, [$00, $00, $00, $00]
 		UNIT MagiSquadMyrmidon1, NPC, [20, 1], [20, 1], CedChp4x, [IronSword], 4, False, [$00, $00, $00, $00]
-		UNIT MagiSquadFighter, NPC, [17, 1], [17, 1], CedChp4x, [HandAxe], 5, False, [$00, $00, $00, $00]
+		UNIT MagiSquadFighter, NPC, [17, 1], [17, 1], CedChp4x, [KillerAxe], 7, False, [$00, $00, $00, $00]
 		UNIT MagiSquadFighter, NPC, [21, 1], [21, 1], CedChp4x, [HandAxe], 5, False, [$00, $00, $00, $00]
-		UNIT MagiSquadArcher, NPC, [16, 1], [16, 1], CedChp4x, [IronBow], 4, False, [$00, $00, $00, $00]
+		UNIT MagiSquadArcher, NPC, [16, 1], [16, 1], CedChp4x, [KillerBow], 7, False, [$00, $00, $00, $00]
 		UNIT MagiSquadArcher, NPC, [22, 1], [22, 1], CedChp4x, [IronBow], 4, False, [$00, $00, $00, $00]
 		UNIT MagiSquadMyrmidon2, NPC, [18, 2], [18, 2], CedChp4x, [IronBlade], 5, False, [$00, $00, $00, $00]
 		UNIT MagiSquadMyrmidon2, NPC, [19, 2], [19, 2], CedChp4x, [IronBlade], 5, False, [$00, $00, $00, $00]

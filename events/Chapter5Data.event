@@ -5,7 +5,7 @@ eventChapter5Data ; B1/E685
 	;	.byte 8, 16
 
 	_RaydrikVeldGroup ; B1/E687
-		UNIT Raydrik, Enemy, [8, 16], [8, 16], Raydrik, [LoptrianFang], 9, False, [$01, $03, $00, $00]
+		UNIT Raydrik, Enemy, [8, 16], [8, 16], Raydrik, [LoptrianFang], 8, False, [$01, $03, $00, $00]
 		UNIT Veld, Enemy, [8, 15], [8, 15], Veld, [Thokk, Petrify, Hel], 20, False, [$02, $03, $00, $00]
 	UNIT
 
@@ -35,19 +35,19 @@ eventChapter5Data ; B1/E685
 	;	.byte 16, 14
 
 	_PitfighterGeneralGroup ; B1/E6FB
-		UNIT PitfighterGeneral, Enemy, [17, 11], [17, 11], Raydrik, [SlimLance, Vulnerary], 5, False, [$00, $00, $00, $00]
+		UNIT PitfighterGeneral, Enemy, [17, 11], [17, 11], Raydrik, [IronLance, Vulnerary], 5, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates5 ; B1/E711
 	;	.byte 8, 7
 
 	_BandoleGroup ; B1/E713
-		UNIT MunsterArcher, Enemy, [15, 3], [15, 3], Bandole, [Longbow, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterArcher, Enemy, [16, 3], [16, 3], Bandole, [Longbow, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterArcher, Enemy, [14, 1], [14, 1], Bandole, [Longbow, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterArcher, Enemy, [14, 3], [14, 3], Bandole, [Longbow, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterArcher, Enemy, [16, 1], [16, 1], Bandole, [Longbow, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT Bandole, Enemy, [15, 1], [15, 1], Bandole, [Longsword, HandAxe, Vulnerary, Longbow], 5, False, [$00, $03, $00, $00]
+		UNIT MunsterArcher, Enemy, [15, 3], [15, 3], Bandole, [Longbow, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterArcher, Enemy, [16, 3], [16, 3], Bandole, [Longbow, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterArcher, Enemy, [14, 1], [14, 1], Bandole, [Longbow, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterArcher, Enemy, [14, 3], [14, 3], Bandole, [Longbow, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterArcher, Enemy, [16, 1], [16, 1], Bandole, [Longbow, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT Bandole, Enemy, [15, 1], [15, 1], Bandole, [Longsword, HandAxe, Longbow, Vulnerary], 5, False, [$00, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates6 ; B1/E78D
@@ -58,12 +58,14 @@ eventChapter5Data ; B1/E685
 		UNIT MunsterSoldier2, Enemy, [8, 8], [8, 8], Bandole, [Javelin, Vulnerary], 12, False, [$00, $03, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [6, 6], [6, 6], Bandole, [Javelin, Vulnerary], 12, False, [$00, $03, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [8, 6], [8, 6], Bandole, [Javelin, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterArmoredAxe, Enemy, [7, 7], [7, 7], Bandole, [BattleAxe, Vulnerary], 15, False, [$00, $03, $00, $00]
-		UNIT MunsterArmoredAxe, Enemy, [23, 7], [23, 7], Bandole, [BattleAxe, Vulnerary], 15, False, [$00, $03, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [24, 8], [24, 8], Bandole, [ShortLance, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [22, 6], [22, 6], Bandole, [ShortLance, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [24, 6], [24, 6], Bandole, [ShortLance, Vulnerary], 12, False, [$00, $03, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [22, 8], [22, 8], Bandole, [ShortLance, Vulnerary], 12, False, [$00, $03, $00, $00]
+		UNIT MunsterArmoredAxe, Enemy, [7, 7], [7, 7], Bandole, [BattleAxe, Vulnerary], 14, False, [$00, $03, $00, $00]
+		UNIT MunsterArmoredAxe, Enemy, [23, 7], [23, 7], Bandole, [BattleAxe, Vulnerary], 12, False, [$00, $03, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [24, 8], [24, 8], Bandole, [ShortLance, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [22, 6], [22, 6], Bandole, [ShortLance, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [24, 6], [24, 6], Bandole, [ShortLance, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [22, 8], [22, 8], Bandole, [ShortLance, Vulnerary], 10, False, [$00, $03, $00, $00]
+		UNIT MunsterArmoredBow, Enemy, [28, 2], [28, 2], Bandole, [Longbow, Vulnerary], 10, False, [$00, $00, $00, $00]
+		UNIT MunsterArmoredBow, Enemy, [2, 2], [2, 2], Bandole, [Longbow, Vulnerary], 12, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates7 ; B1/E859
@@ -73,22 +75,22 @@ eventChapter5Data ; B1/E685
 		UNIT MunsterArmoredSword, Enemy, [24, 25], [24, 25], Bandole, [Longsword], 10, False, [$00, $03, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [26, 25], [26, 25], Bandole, [Fire], 7, False, [$00, $03, $00, $00]
 		UNIT MunsterArmoredSword, Enemy, [24, 23], [24, 23], Bandole, [Longsword], 10, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [1, 12], [1, 12], Codha, [Jormungand], 8, False, [$00, $03, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [5, 23], [5, 23], Bandole, [Thunder], 8, False, [$00, $03, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [7, 23], [7, 23], Bandole, [Thunder], 8, False, [$00, $01, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [6, 23], [6, 23], Bandole, [Thunder], 8, False, [$00, $01, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [8, 23], [8, 23], Bandole, [Thunder], 8, False, [$00, $01, $00, $00]
 		UNIT MunsterPriest2, Enemy, [25, 24], [25, 24], Bandole, [Heal, DoorKey, PureWater], 4, False, [$03, $03, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [26, 23], [26, 23], Bandole, [Fire], 7, False, [$00, $03, $00, $00]
-		UNIT MunsterBishop1, Enemy, [25, 5], [25, 5], Bandole, [Heal], 5, False, [$01, $03, $00, $00]
+		UNIT MunsterBishop1, Enemy, [25, 5], [25, 5], Bandole, [Heal, Physic], 5, False, [$01, $03, $00, $00]
 		UNIT MunsterPriest2, Enemy, [5, 24], [5, 24], Bandole, [Physic], 7, False, [$03, $03, $00, $00]
-		UNIT MunsterBishop1, Enemy, [5, 5], [5, 5], Bandole, [Meteor, Heal], 5, False, [$01, $03, $00, $00]
-		UNIT MunsterThunderMage, Enemy, [4, 23], [4, 23], Bandole, [Thunder], 8, False, [$00, $03, $00, $00]
+		UNIT MunsterBishop1, Enemy, [5, 5], [5, 5], Bandole, [Bolganone, Heal], 5, False, [$01, $03, $00, $00]
+		UNIT MunsterThunderMage, Enemy, [4, 23], [4, 23], Bandole, [Fire], 8, False, [$00, $03, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [6, 24], [6, 24], Bandole, [Fire], 7, False, [$00, $01, $00, $00]
 		UNIT MunsterSniper, Enemy, [4, 24], [4, 24], Bandole, [SilverBow], 5, False, [$00, $03, $00, $00]
-		UNIT MunsterThunderMage, Enemy, [7, 24], [7, 24], Bandole, [Fire], 7, False, [$00, $01, $00, $00]
-		UNIT MunsterThunderMage, Enemy, [8, 24], [8, 24], Bandole, [Fire], 7, False, [$00, $01, $00, $00]
-		UNIT LoptrianSorcerer, Enemy, [2, 12], [2, 12], Codha, [Jormungand, Physic], 3, False, [$00, $03, $00, $00]
+		UNIT MunsterThunderMage, Enemy, [7, 24], [7, 24], Bandole, [Wind], 7, False, [$00, $01, $00, $00]
+		UNIT MunsterThunderMage, Enemy, [8, 24], [8, 24], Bandole, [Wind], 7, False, [$00, $01, $00, $00]
+		UNIT LoptrianSorcerer, Enemy, [2, 12], [2, 12], Veld, [Jormungand, Physic], 8, False, [$00, $03, $00, $00]
+		UNIT LoptrianSorcerer1, Enemy, [1, 12], [1, 12], Veld, [Jormungand], 8, False, [$00, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates8 ; B1/E9D9
@@ -109,7 +111,7 @@ eventChapter5Data ; B1/E685
 	;	.byte 16, 14
 
 	_PitfighterSwordmasterGroup ; B1/EA0B
-		UNIT PitfighterSwordmaster, Enemy, [13, 9], [13, 9], Raydrik, [KillingEdge, Vulnerary], 9, False, [$00, $00, $00, $00]
+		UNIT PitfighterSwordmaster, Enemy, [13, 9], [13, 9], Raydrik, [KillingEdge, Vulnerary], 10, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates11 ; B1/EA21
@@ -123,7 +125,7 @@ eventChapter5Data ; B1/E685
 	;	.byte 16, 14
 
 	_GalzusGroup ; B1/EA3B
-		UNIT Galzus, Enemy, [15, 9], [15, 9], Raydrik, [SlimSword, Vulnerary, Vulnerary], 20, False, [$00, $00, $00, $00]
+		UNIT Galzus, Enemy, [15, 9], [15, 9], Raydrik, [MasterSword, Vulnerary], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates13 ; B1/EA51

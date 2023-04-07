@@ -4,13 +4,15 @@ eventChapter16AData ; B1/AE46
 	_PrepGroup1 ; B1/AE46
 		.byte 42, 12
 
-		UNIT FriegeArmoredLance1, Enemy, [55, 8], [55, 8], Brook, [KillerLance, Vulnerary], 13, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [56, 7], [56, 7], Brook, [KillerLance, Vulnerary], 13, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [18, 9], [18, 9], Brook, [KillerLance, Vulnerary], 13, False, [$00, $03, $00, $00]
-		UNIT Kempf, Enemy, [49, 8], [49, 8], Kempf, [VeninEdge, Thoron], 10, False, [$01, $03, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [55, 8], [55, 8], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [56, 7], [56, 7], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [15, 10], [15, 10], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
+		UNIT Kempf, Enemy, [49, 8], [49, 8], Kempf, [VeninEdge, MasterSword, Thoron], 10, False, [$01, $03, $00, $00]
+	    UNIT FriegeArmoredAxe1, Enemy, [45, 6], [45, 6], Kempf, [BattleAxe], 10, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [45, 7], [45, 7], Kempf, [BattleAxe], 10, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [45, 8], [45, 8], Kempf, [BattleAxe], 10, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [45, 9], [45, 9], Kempf, [BattleAxe], 10, False, [$01, $03, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [46, 6], [46, 6], Kempf, [Javelin], 14, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [46, 7], [46, 7], Kempf, [Javelin], 14, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [46, 8], [46, 8], Kempf, [Javelin], 14, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [46, 9], [46, 9], Kempf, [Javelin], 14, False, [$01, $03, $00, $00]
@@ -22,17 +24,13 @@ eventChapter16AData ; B1/AE46
 		UNIT FriegeBallista3, Enemy, [50, 8], [50, 8], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeBallista3, Enemy, [50, 9], [50, 9], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeBallista3, Enemy, [51, 8], [51, 8], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeBallista3, Enemy, [49, 11], [49, 11], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeBallista3, Enemy, [23, 9], [23, 9], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [46, 13], [46, 13], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [47, 14], [47, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [45, 14], [45, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [21, 9], [21, 9], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [54, 7], [54, 7], Brook, [KillerLance, Vulnerary], 13, False, [$00, $03, $00, $00]
+		UNIT FriegeBallista3, Enemy, [22, 12], [22, 12], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [21, 9], [21, 9], Brook, [KillingEdge, Vulnerary], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [54, 7], [54, 7], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
 		UNIT Ilios, Enemy, [36, 7], [36, 7], Ilios, [Bolting, MasterSword, Thoron, SolManual], 8, False, [$02, $15, $00, $00]
-		UNIT FriegeBowKnight1, Enemy, [35, 6], [35, 6], Ilios, [Longbow], 14, False, [$02, $15, $02, $00]
-		UNIT FriegeTroubadour2, Enemy, [35, 7], [35, 7], Ilios, [Rapier, Heal], 10, False, [$02, $15, $02, $00]
-		UNIT FriegeBowKnight1, Enemy, [35, 8], [35, 8], Ilios, [Longbow], 14, False, [$02, $15, $02, $00]
+		UNIT FriegeBowKnight1, Enemy, [35, 6], [35, 6], Ilios, [KillerBow], 14, False, [$02, $15, $02, $00]
+		UNIT FriegeTroubadour2, Enemy, [35, 7], [35, 7], Ilios, [Rapier, Mend], 10, False, [$02, $15, $02, $00]
+		UNIT FriegeBowKnight1, Enemy, [35, 8], [35, 8], Ilios, [KillerBow], 14, False, [$02, $15, $02, $00]
 		UNIT FriegeLanceKnight1, Enemy, [34, 6], [34, 6], Ilios, [Ridersbane], 13, False, [$02, $15, $02, $00]
 		UNIT FriegeLanceKnight1, Enemy, [34, 7], [34, 7], Ilios, [Ridersbane], 13, False, [$02, $15, $02, $00]
 		UNIT FriegeLanceKnight1, Enemy, [34, 8], [34, 8], Ilios, [Ridersbane], 13, False, [$02, $15, $02, $00]
@@ -42,7 +40,7 @@ eventChapter16AData ; B1/AE46
 		UNIT BanditBrigand1, Enemy, [36, 5], [36, 5], Seil, [Hammer], 3, False, [$02, $09, $00, $00]
 		UNIT BanditBrigand1, Enemy, [2, 12], [2, 12], Seil, [Hammer], 3, False, [$02, $09, $00, $00]
 		UNIT FriegeBallista3, Enemy, [50, 7], [50, 7], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
-		UNIT Brook, Enemy, [55, 8], [55, 6], Brook, [MasterLance, Armorslayer, MasterBow, Ridersbane], 16, True, [$01, $03, $00, $80]
+		UNIT Brook, Enemy, [55, 8], [55, 6], Brook, [MasterLance, Armorslayer, MasterBow, Poleax], 16, True, [$01, $03, $00, $80]
 	UNIT
 
 	_ConomorCameraCoordinates ; B1/B16A
@@ -55,7 +53,7 @@ eventChapter16AData ; B1/AE46
 		UNIT UlsterCavalier2, Enemy, [2, 13], [2, 13], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [3, 13], [3, 13], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [4, 13], [4, 13], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
-		UNIT Conomor, Enemy, [1, 12], [1, 12], Conomor, [MasterLance, KillingEdge, NihilManual], 13, False, [$00, $00, $00, $00]
+		UNIT Conomor, Enemy, [1, 12], [1, 12], Conomor, [MasterLance, KillingEdge, NihilManual], 8, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [2, 12], [2, 12], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [3, 12], [3, 12], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [1, 11], [1, 11], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
@@ -74,42 +72,42 @@ eventChapter16AData ; B1/AE46
 		.byte 36, 14
 
 	_PegasusReinforcementsGroup ; B1/B278
-		UNIT SilessePegasusRider1, Enemy, [32, 20], [32, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [33, 20], [33, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [34, 20], [34, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [35, 20], [35, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [36, 20], [36, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [37, 20], [37, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [38, 20], [38, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [39, 20], [39, 20], Misha, [Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [32, 20], [32, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [33, 20], [33, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [34, 20], [34, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [35, 20], [35, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [36, 20], [36, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [37, 20], [37, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [38, 20], [38, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [39, 20], [39, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
 	UNIT
 
 	_BottomPirateReinforcements1CameraCoordinates ; B1/B31A
 		.byte 42, 14
 
 	_BottomPirateReinforcements1Group ; B1/B31C
-		UNIT PirateEnemy, Enemy, [42, 20], [42, 20], Seil, [IronAxe], 3, False, [$02, $09, $00, $00]
+		UNIT PirateEnemy, Enemy, [42, 20], [42, 20], Seil, [IronAxe], 4, False, [$02, $09, $00, $00]
 	UNIT
 
 	_TopPirateReinforcements1CameraCoordinates ; B1/B332
 		.byte 18, 8
 
 	_TopPirateReinforcements1Group ; B1/B334
-		UNIT PirateEnemy, Enemy, [18, 1], [18, 1], Seil, [IronAxe], 3, False, [$02, $09, $00, $00]
+		UNIT PirateEnemy, Enemy, [18, 1], [18, 1], Seil, [IronAxe], 12, False, [$02, $09, $00, $00]
 	UNIT
 
 	_BottomPirateReinforcements2CameraCoordinates ; B1/B34A
 		.byte 51, 14
 
 	_BottomPirateReinforcements2Group ; B1/B34C
-		UNIT PirateEnemy, Enemy, [55, 20], [55, 20], Seil, [IronAxe], 3, False, [$02, $09, $00, $00]
+		UNIT PirateEnemy, Enemy, [55, 20], [55, 20], Seil, [IronAxe], 8, False, [$02, $09, $00, $00]
 	UNIT
 
 	_TopPirateReinforcements2CameraCoordinates ; B1/B362
 		.byte 45, 8
 
 	_TopPirateReinforcements2Group ; B1/B364
-		UNIT PirateEnemy, Enemy, [45, 1], [45, 1], Seil, [IronAxe], 3, False, [$02, $09, $00, $00]
+		UNIT PirateEnemy, Enemy, [45, 1], [45, 1], Seil, [IronAxe], 16, False, [$02, $09, $00, $00]
 	UNIT
 
 	_PrepGroup2 ; B1/B37A
@@ -138,9 +136,17 @@ eventChapter16AData ; B1/AE46
 	.byte $FF
 	
 	_BishopGroup
-		UNIT FriegeBishop2, Enemy, [47, 12], [47, 12], Brook, [Physic, Bolganone], 6, False, [$00, $03, $00, $00]
+		UNIT FriegeBishop2, Enemy, [47, 12], [47, 12], Brook, [Physic, Meteor], 6, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [46, 13], [46, 13], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [47, 14], [47, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [45, 14], [45, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeBallista3, Enemy, [49, 11], [49, 11], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
 	UNIT
 	
 	_OltophGroup
-		UNIT Oltoph, Enemy, [47, 12], [47, 12], Brook, [Physic, Tornado, Vulnerary], 6, False, [$00, $03, $00, $00]
+		UNIT Oltoph, Enemy, [47, 12], [47, 12], Brook, [Bolganone, Meteor, Thoron, Bolting, Physic, Vulnerary], 8, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [46, 13], [46, 13], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [47, 14], [47, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [45, 14], [45, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeBallista3, Enemy, [49, 11], [49, 11], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
 	UNIT
