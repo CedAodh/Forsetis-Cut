@@ -14,7 +14,7 @@ eventChapter7Data ; B1/DE9B
 	_CavalierReinforcementsGroup ; B1/DEB5
 		UNIT MunsterCavalier, Enemy, [10, 1], [10, 1], Eisenhau, [Longsword, ShortLance], 8, False, [$00, $00, $00, $00]
 		UNIT MunsterCavalier, Enemy, [9, 1], [9, 1], Eisenhau, [LongLance, Rapier], 10, False, [$00, $00, $00, $00]
-		UNIT MunsterCavalier, Enemy, [8, 1], [8, 1], Eisenhau, [Javelin, Shortsword], 6, False, [$00, $00, $00, $00]
+		UNIT MunsterCavalier, Enemy, [8, 1], [8, 1], Eisenhau, [Ridersbane, Shortsword], 6, False, [$00, $00, $00, $00]
 	UNIT
 
 	_MageBishopReinforcementsCameraCoordinates ; B1/DEF3
@@ -87,7 +87,7 @@ eventChapter7Data ; B1/DE9B
 
 	_ShivaGroup ; B1/E14F
 		UNIT MercenaryMyrmidon2, Enemy, [9, 36], [9, 36], Shiva, [SlimSword], 3, False, [$00, $00, $00, $00]
-		UNIT Shiva, Enemy, [9, 38], [9, 38], Shiva, [KillingEdge, Vulnerary], 4, False, [$0F, $00, $00, $00]
+		UNIT Shiva, Enemy, [9, 38], [9, 38], Shiva, [KillingEdge], 4, False, [$0F, $00, $00, $00]
 		UNIT MercenaryMyrmidon2, Enemy, [10, 36], [10, 36], Shiva, [IronSword], 5, False, [$00, $00, $00, $00]
 		UNIT MercenaryMyrmidon2, Enemy, [8, 36], [8, 36], Shiva, [Rapier, Vulnerary], 6, False, [$00, $00, $00, $00]
 		UNIT MercenaryMyrmidon2, Enemy, [9, 37], [9, 37], Shiva, [SteelSword], 7, False, [$00, $00, $00, $00]
