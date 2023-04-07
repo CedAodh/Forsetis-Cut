@@ -194,7 +194,7 @@ eventChapter8Events ; 99/BE7D
 	END2
 	
 	_LeifHalvanTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse ch8leifhalvan
 	END2
 	
 	_MartyCaptured ; 99/C0F0
