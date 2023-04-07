@@ -6,7 +6,8 @@ eventChapter16AData ; B1/AE46
 
 		UNIT FriegeArmoredLance1, Enemy, [55, 8], [55, 8], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredLance1, Enemy, [56, 7], [56, 7], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [15, 10], [15, 10], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [15, 10], [15, 10], Brook, [KillerLance, Vulnerary], 15, False, [$01, $03, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [23, 18], [23, 18], Brook, [KillerAxe, Vulnerary], 15, False, [$01, $03, $00, $00]
 		UNIT Kempf, Enemy, [49, 8], [49, 8], Kempf, [VeninEdge, MasterSword, Thoron], 10, False, [$01, $03, $00, $00]
 	    UNIT FriegeArmoredAxe1, Enemy, [45, 6], [45, 6], Kempf, [BattleAxe], 10, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [45, 7], [45, 7], Kempf, [BattleAxe], 10, False, [$01, $03, $00, $00]
@@ -25,7 +26,7 @@ eventChapter16AData ; B1/AE46
 		UNIT FriegeBallista3, Enemy, [50, 9], [50, 9], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeBallista3, Enemy, [51, 8], [51, 8], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeBallista3, Enemy, [22, 12], [22, 12], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [21, 9], [21, 9], Brook, [KillingEdge, Vulnerary], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [21, 9], [21, 9], Brook, [KillingEdge, Vulnerary], 15, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredLance1, Enemy, [54, 7], [54, 7], Brook, [KillerLance, Vulnerary], 15, False, [$00, $03, $00, $00]
 		UNIT Ilios, Enemy, [36, 7], [36, 7], Ilios, [Bolting, MasterSword, Thoron, SolManual], 8, False, [$02, $15, $00, $00]
 		UNIT FriegeBowKnight1, Enemy, [35, 6], [35, 6], Ilios, [KillerBow], 14, False, [$02, $15, $02, $00]
