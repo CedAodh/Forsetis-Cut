@@ -346,6 +346,11 @@ eventChapter9Events ; 8C/F011
 
 		DIALOGUE ch9closing3
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Selphina
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.LeadershipStars
+		STORE_WORD wEventEngineParameter2, 0
+		CALL_ASM_LOOP rlASMCSubtractCharacterDataByte, $0000
 
 		macroAddCharacterByte Leif, structCharacterDataRAM.LeadershipStars, 1
 
