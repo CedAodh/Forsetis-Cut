@@ -166,10 +166,13 @@ eventChapter23Events ; FD/F056
 			CMP_BYTE wCursorYCoord, 4
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
-		EVENT $24, _PureWaterHouseVisit
-			CMP_BYTE wCursorXCoord, 29
-			CMP_BYTE wCursorYCoord, 5
-			CMP_WORD wCurrentPhase, Player
+		EVENT $24, _DalsinHouseVisit
+			macroEventConditionCheckCoords [29, 5]
+			CMP_WORD aSelectedCharacterBuffer.Character, Dalsin
+		END_DEFINITION
+		EVENT FlagAlwaysZero, _DalsinHouseOther
+			TEST_FLAG_UNSET $24
+			macroEventConditionCheckCoords [29, 5]
 		END_DEFINITION
 		EVENT $29, _PureWaterHouseDestroy
 			CMP_BYTE wCursorXCoord, 29
@@ -571,15 +574,15 @@ _MachaHouseVisit ; FD/F5F5
 		YIELD
 	END2
 
-	_PureWaterHouseVisit ; FD/F658
+		_DalsinHouseVisit ; FD/F658
 		PLAY_SOUND_WORD $00F7
-		DIALOGUE ch23purewaterhouse
+		DIALOGUE DalsinHouseDalsin
 		YIELD
 
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
 
-		STORE_WORD wEventEngineParameter1, PureWater
+		STORE_WORD wEventEngineParameter1, LegRing
 		PAUSE_SKIPPABLE 10
 		YIELD
 
@@ -600,6 +603,12 @@ _MachaHouseVisit ; FD/F5F5
 		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
 		YIELD_UNK
 	END2
+	
+	_DalsinHouseOther ; FD/9CCF
+		PLAY_SOUND_WORD $00F7
+		DIALOGUE DalsinHouseOther
+		YIELD
+	END2	
 
 	_HicksHouseVisit ; FD/F6BB
 		PLAY_SOUND_WORD $00F7
