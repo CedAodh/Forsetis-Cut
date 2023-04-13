@@ -878,3 +878,101 @@ MachaHouseOther
 .byte WaitForA
 
 .byte EndText
+
+
+HicksHouseHicks
+
+.byte right_slot
+.word LoadPortrait
+.word boy_portrait 
+
+.byte left_slot
+.word LoadPortrait
+.word hicks_portrait 
+
+.byte right_slot
+.text "Dad! You came back!"
+.byte WaitForA
+
+.byte left_slot
+.text "Murphy! 'Course I did!"
+.byte NewLine
+.text "Don't tell me ya were worried 'bout me!"
+.byte NewLine
+.text "How's my little man been?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It was getting real dangerous in the streets,"
+.byte NewLine
+.text "so Bella's sis told me to come here with 'em."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That so? That's awful kind of her."
+.byte NewLine
+.text "Did you say thank you?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yessir!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's good."
+.byte WaitForA
+.byte ScrollText
+.text "Well, son, it's been good to see you well,"
+.byte NewLine
+.text "and I wish I could sit down to tell ya more,"
+.byte NewLine
+.text "but I'm afraid I gotta get back into the frey."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Aw, but you just got here! I'm sure you're"
+.byte NewLine
+.text "mighty tired, ridin' all the way up here."
+.byte NewLine
+.text "How about want something to drink?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You know I can't say no"
+.byte NewLine
+.text "to a treat from my own son!"
+.byte NewLine
+.text "Tell you what, though: I'll take it to go."
+.byte WaitForA
+.byte ScrollText
+.text "Don't ya worry son, I won't take too long."
+.byte NewLine
+.text "This war will be over in no time!"
+.byte NewLine
+.text "I'll be sure to make you proud!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I know ya will, Dad!"
+.byte WaitForA
+
+.byte EndText
+
+HicksHouseOther
+
+.byte right_slot
+.word LoadPortrait
+.word boy_portrait
+.text "Oh! It's the Lee-bear... Liber..."
+.byte NewLine
+.text "Lord Leif's Army! Is my dad 'round here?"
+.byte WaitForA
+
+.byte EndText
