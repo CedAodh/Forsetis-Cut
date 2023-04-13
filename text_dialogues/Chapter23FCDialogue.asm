@@ -976,3 +976,115 @@ HicksHouseOther
 .byte WaitForA
 
 .byte EndText
+
+DalsinHouseDalsin
+
+.byte right_slot
+.word LoadPortrait
+.word younglady_portrait
+
+.byte Left_Slot
+.word LoadPortrait
+.word dalsin_portrait
+
+.byte right_slot
+.text "Big brother! You're alive!"
+.byte WaitForA
+
+.byte Left_Slot
+.text "Diana?!"
+.byte NewLine
+.text "What in the world are you doing here?!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Helping out as best as I can!"
+.byte NewLine
+.text "A lot of folk from nearby villages have"
+.byte NewLine
+.text "made their way here to Munster to help!"
+.byte WaitForA
+.byte ScrollText
+.text "Bringing food, sheltering children,"
+.byte NewLine
+.text "even brining any weapons one can find!"
+.byte WaitForA
+.byte ScrollText
+.text "Don't you worry about Jubel,"
+.byte NewLine
+.text "he's in a real safe place now."
+.byte WaitForA
+
+.byte Left_Slot
+.byte ScrollText
+.text "I'm glad..."
+.byte NewLine
+.text "And to think I was still foolish enough to lend"
+.byte NewLine
+.text "my axe to the Empire for a good while."
+.byte WaitForA
+.byte NewLine
+.text "Could you ever forgive me?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Are you kidding?!"
+.byte NewLine
+.text "What's there to forgive?"
+.byte NewLine
+.text "Just look around you!"
+.byte WaitForA
+.byte ScrollText
+.text "Lord Leif's army have all done the impossible!"
+.byte NewLine
+.text "Giving the Empire what-for,"
+.byte NewLine
+.text "giving us all a glimpse of hope..."
+.byte WaitForA
+.byte NewLine
+.text "And you have been a part of it all!"
+.byte WaitForA
+
+.byte Left_Slot
+.byte ScrollText
+.text "Diana..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You really should see how Jubel talks about"
+.byte NewLine
+.text "you with the other children. You're his hero!"
+.byte NewLine
+.text "In fact, he even prepared a present for you!"
+.byte WaitForA
+
+.byte Left_Slot
+.byte ScrollText
+.text "Jubel..."
+.byte NewLine
+.text "Thank you for everything, Diana."
+.byte WaitForA
+.byte NewLine
+.text "I need to get going now, but believe me,"
+.byte NewLine
+.text "we're not about to lose after coming so far!"
+.byte WaitForA
+
+.byte EndText
+
+DalsinHouseOther
+
+.byte right_slot
+.word LoadPortrait
+.word younglady_portrait
+.text "It's good to see you folks again!"
+.byte NewLine
+.text "Say, would my brother Dalsin happen to"
+.byte NewLine
+.text "be with you? Tell him his sister's over here!"
+.byte WaitForA
+
+.byte EndText
