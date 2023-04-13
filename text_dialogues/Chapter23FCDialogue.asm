@@ -728,40 +728,153 @@ ch23mareetasaias
 
 .byte EndText
 
-; hickshouse
 
-; Dad! You came back!
+MachaHouseMacha1
 
-; Murphy! 'Course I did. How's my little man been?
+.byte right_slot
+.word LoadPortrait
+.word oldlady_portrait
+.byte Left_Slot
+.word LoadPortrait
+.word macha_portrait
 
-; It was getting dangerous in the streets, so Bella's sister told me to come with her.
+.byte right_slot
+.text "Macha, my darling! Is it really you?"
+.byte WaitForA
 
-; Is that so? That's awfully kind of her. Did you tell her "Thank you"?
+.byte Left_Slot
+.text "Mother! You're alright!"
+.byte WaitForA
 
-; Yes, sir!
+.byte right_slot
+.byte ScrollText
+.text "Yes, yes, as you can see, I've made a full"
+.byte NewLine
+.text "recovery. It'll take more than some sickness"
+.byte NewLine
+.text "to take me before I see you fulfill your dream."
+.byte WaitForA
 
-; That's what I like to hear! Now gimme a hug!
+.byte Left_Slot
+.byte ScrollText
+.text "Oh, mother..."
+.byte WaitForA
 
-; You have to be tired, Dad. Do you want something to drink?
+.byte right_slot
+.byte ScrollText
+.text "What about you, dearie?"
+.byte WaitForA
+.byte ScrollText
+.text "Looks like you're more than pulling your"
+.byte NewLine
+.text "weight with these fine folk."
+.byte WaitForA
 
-; I'm sorry, Murphy, but I can't stay for long. Right now, they're countin' on me to go beat up the bad guys. Tell you what, though: I'll take it to go.
+MachaHouseMacha2
 
-; machahouse
+.byte right_slot
+.byte ScrollText
+.text "So! Did you get things rolling"
+.byte NewLine
+.text "with Mr. Handsome yet?"
+.byte WaitForA
 
-; My darling Macha, is it really you?
+.byte Left_Slot
+.byte ScrollText
+.text "M-Mother! How many times"
+.byte NewLine
+.text "have I told you to not call Brighton that?!"
+.byte WaitForA
 
-; Mother! You're alive!
+.byte right_slot
+.byte ScrollText
+.text "Oh, quit yer complainin'!"
+.byte NewLine
+.text "Your feelings for him are as clear as day!"
+.byte WaitForA
+.byte ScrollText
+.text "Oh well, I guess that red on yer face"
+.byte NewLine
+.text "answers my question nicely, heheh."
+.byte WaitForA
+.byte ScrollText
+.text "'Tis a real blessing that you could find"
+.byte NewLine
+.text "some-one like him. A good, hard-working"
+.byte NewLine
+.text "man, AND he's a knight!"
+.byte WaitForA
 
-; Yes, yes, I've made a full recovery. It took a few months, but I can finally start carrying firewood back to the house again. And what about you? Did you get things rolling with Mr. Handsome yet?
+.byte Left_Slot
+.byte ScrollText
+.text "I...I believe you've made your point, Mother."
+.byte WaitForA
 
-; A-are you talking about Brighton?
+MachaHouseMacha3
 
-; Now, who else could it be? I've seen the way you look at him. AND he's a knight! A good-hearted knight—isn't snobby or anything—who truly works for the good of people like us! I'm tellin' you, my dear, you better hop on that before it's too late.
+.byte right_slot
+.byte ScrollText
+.text "Oh, don't just listen to me yammerin'."
+.byte NewLine
+.text "I know you have a battle to go back to,"
+.byte NewLine
+.text "but don't you leave just yet! Look at this!"
+.byte WaitForA
 
-; I...I believe you've made your point, Mother. ......
+.byte Left_Slot
+.byte ScrollText
+.text "Huh? That's... What a beautiful sword!"
+.byte NewLine
+.text "How in the world did you ever get this?!"
+.byte WaitForA
 
-; Bah, don't listen to me babble on and on. It's your business after all.
+.byte right_slot
+.byte ScrollText
+.text "Your father came across it in the woods"
+.byte NewLine
+.text "a couple weeks ago, we were hoping to"
+.byte NewLine
+.text "gift it to you when, or if, you came back."
+.byte WaitForA
+.byte ScrollText
+.text "He's gone back to the city, that old fool."
+.byte NewLine
+.text "He said he'd rather help the people any"
+.byte NewLine
+.text "way he could while I kept the house safe."
+.byte WaitForA
+.byte NewLine
+.text "I guess the apple doesn't fall far from the tree."
+.byte WaitForA
 
-; ...That's right. Right now, all I want is to pick up a sword and use it to help those in need.
+.byte Left_Slot
+.byte ScrollText
+.text "*giggle* Oh, father..."
+.byte WaitForA
 
-; Speakin' of swords, your father came across this one in the woods a couple weeks ago. I'm gonna go get it for you.
+.byte right_slot
+.byte ScrollText
+.text "We're both proud of you, my dear."
+.byte NewLine
+.text "Now don't keep your companions waiting!"
+.byte WaitForA
+
+.byte EndText
+
+
+MachaHouseOther
+
+.byte right_slot
+.word LoadPortrait
+.word oldlady_portrait
+.text "Good day to you."
+.byte NewLine
+.text "Say, is my dear Macha with you?"
+.byte WaitForA
+.byte NewLine
+.text "If she is, then tell her it's very rude to come"
+.byte NewLine
+.text "back home without giving her folks a knock!"
+.byte WaitForA
+
+.byte EndText
