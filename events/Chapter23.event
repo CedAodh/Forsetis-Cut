@@ -154,11 +154,13 @@ eventChapter23Events ; FD/F056
 			CMP_BYTE wCursorYCoord, 3
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
-		EVENT $23, _VulneraryHouseVisit
-			CMP_BYTE wCursorXCoord, 28
-			CMP_BYTE wCursorYCoord, 4
-			CMP_WORD wCurrentPhase, Player
+		EVENT $23, _MachaHouseVisit
+			macroEventConditionCheckCoords [28, 4]
+			CMP_WORD aSelectedCharacterBuffer.Character, Macha
 		END_DEFINITION
+		EVENT FlagAlwaysZero, _MachaHouseOther
+			TEST_FLAG_UNSET $23
+			macroEventConditionCheckCoords [28, 4]
 		EVENT $28, _VulneraryHouseDestroy
 			CMP_BYTE wCursorXCoord, 28
 			CMP_BYTE wCursorYCoord, 4
@@ -519,15 +521,26 @@ eventChapter23Events ; FD/F056
 		YIELD_UNK
 	END2
 
-	_VulneraryHouseVisit ; FD/F5F5
+_MachaHouseVisit ; FD/F5F5
 		PLAY_SOUND_WORD $00F7
-		DIALOGUE ch23vulneraryhouse
+		DIALOGUE MachaHouseMacha1
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Brighton
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
+		
+		DIALOGUE MachaHouseMacha2
+		YIELD
+		
+		+
+		DIALOGUE MachaHouseMacha3
 		YIELD
 
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
 
-		STORE_WORD wEventEngineParameter1, Vulnerary
+		STORE_WORD wEventEngineParameter1, MasterSword
 		PAUSE_SKIPPABLE 10
 		YIELD
 
@@ -547,6 +560,12 @@ eventChapter23Events ; FD/F056
 		STORE_WORD wEventEngineParameter1, $0021
 		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
 		YIELD_UNK
+	END2
+	
+	_MachaHouseOther ; FD/9CCF
+		PLAY_SOUND_WORD $00F7
+		DIALOGUE MachaHouseOther
+		YIELD
 	END2
 
 	_PureWaterHouseVisit ; FD/F658
