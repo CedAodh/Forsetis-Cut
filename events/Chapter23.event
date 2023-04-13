@@ -176,10 +176,13 @@ eventChapter23Events ; FD/F056
 			CMP_BYTE wCursorYCoord, 5
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
-		EVENT $25, _PhysicHouseVisit
-			CMP_BYTE wCursorXCoord, 30
-			CMP_BYTE wCursorYCoord, 4
-			CMP_WORD wCurrentPhase, Player
+		EVENT $25, _HicksHouseVisit
+			macroEventConditionCheckCoords [30, 4]
+			CMP_WORD aSelectedCharacterBuffer.Character, Hicks
+		END_DEFINITION
+		EVENT FlagAlwaysZero, _HicksHouseOther
+			TEST_FLAG_UNSET $25
+			macroEventConditionCheckCoords [30, 4]
 		END_DEFINITION
 		EVENT $2A, _PhysicHouseDestroy
 			CMP_BYTE wCursorXCoord, 30
@@ -598,15 +601,15 @@ _MachaHouseVisit ; FD/F5F5
 		YIELD_UNK
 	END2
 
-	_PhysicHouseVisit ; FD/F6BB
+	_HicksHouseVisit ; FD/F6BB
 		PLAY_SOUND_WORD $00F7
-		DIALOGUE ch23physichouse
+		DIALOGUE HicksHouseHicks
 		YIELD
 
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
 
-		STORE_WORD wEventEngineParameter1, Physic
+		STORE_WORD wEventEngineParameter1, StaminaDrink
 		PAUSE_SKIPPABLE 10
 		YIELD
 
@@ -626,6 +629,12 @@ _MachaHouseVisit ; FD/F5F5
 		STORE_WORD wEventEngineParameter1, $0021
 		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
 		YIELD_UNK
+	END2
+	
+	_HicksHouseOther ; FD/9CCF
+		PLAY_SOUND_WORD $00F7
+		DIALOGUE HicksHouseOther
+		YIELD
 	END2
 
 	_ItemlessHouse1Destroy ; FD/F71E
