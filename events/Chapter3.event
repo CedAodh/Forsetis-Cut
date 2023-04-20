@@ -45,6 +45,9 @@ eventChapter3Events ; 8C/E435
 		EVENT $08, _RonanLifisTalk
 			CHECK_CHARS2 Ronan, Lifis
 		END_DEFINITION
+		EVENT $09, _MartyDagdarTalk
+			CHECK_CHARS2 Marty, Dagdar
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 8C/E4B0
@@ -217,6 +220,10 @@ eventChapter3Events ; 8C/E435
 	
 	_RonanLifisTalk
 		macroDialogueHouse ronanlifis
+	END2
+	
+	_MartyDagdarTalk
+		macroDialogueHouse martydagdarch3
 	END2
 
 	_LucciaHouseOther ; 8C/E733
