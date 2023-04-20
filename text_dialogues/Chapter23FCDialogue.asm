@@ -1088,3 +1088,164 @@ DalsinHouseOther
 .byte WaitForA
 
 .byte EndText
+
+
+ch23fredolwen
+
+.byte right_slot
+.word LoadPortrait
+.word olwen_portrait
+
+.byte Left_Slot
+.word LoadPortrait
+.word fred_portrait
+.text "Lady Olwen, are you all right?"
+.byte NewLine
+.text "You've been awfully quiet since our last battle."
+.byte WaitForA
+
+.byte right_slot
+.text "Oh, Fred, don't mind me..."
+.byte NewLine
+.text "I still need some time to"
+.byte NewLine
+.text "process all of this, that's all."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I cannot imagine how much this"
+.byte NewLine
+.text "has been weighing on you, milady,"
+.byte NewLine
+.text "but remember that you are not alone in this."
+.byte WaitForA
+.byte ScrollText
+.text "You now have new allies and friends in the"
+.byte NewLine
+.text "Liberation Army, you have Prince Leif,"
+.byte NewLine
+.text "and of course... You have me."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Thank you, Fred."
+.byte NewLine
+.text "To be quite honest with you, my mind has"
+.byte NewLine
+.text "been flooded with memories of our past."
+.byte WaitForA
+.byte ScrollText
+.text "My early childhood with my dear brother,"
+.byte NewLine
+.text "our first days at the academy,"
+.byte NewLine
+.text "how you and I first met..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "W-Well, that is a story I would much rather"
+.byte NewLine
+.text "have you forget about, milady!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*giggle* Why?"
+.byte NewLine
+.text "It was entirely your fault that"
+.byte NewLine
+.text "you fell asleep during the exam!"
+.byte WaitForA
+.byte ScrollText
+.text "I can't believe you spent the"
+.byte NewLine
+.text "entire previous night studying!"
+.byte NewLine
+.text "You've always worked a bit too hard..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, how could I not?"
+.byte NewLine
+.text "Before we met, I had to do my best just to"
+.byte NewLine
+.text "keep my part as a knight of House Friege." 
+.byte WaitForA
+.byte ScrollText
+.text "However, after we met, and"
+.byte NewLine
+.text "especially after I was assigned under you..."
+.byte NewLine
+.text "I suppose I found a new reason to do so."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "F-Fred? What's that supposed to mean?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What I mean is that you're nothing short of"
+.byte NewLine
+.text "admirable, milady. Most people in your shoes"
+.byte NewLine
+.text "would have already faltered long ago, but..."
+.byte WaitForA
+.byte ScrollText
+.text "You've kept going no matter what."
+.byte NewLine
+.text "I couldn't be prouder to fight,"
+.byte NewLine
+.text "by your side, and..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "And...?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "N-Nevermind that, milady."
+.byte NewLine
+.text "It appears your spirits have been lifted,"
+.byte NewLine
+.text "judging by your ever-lovely smile."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, Fred..."
+.byte NewLine
+.text "Thank you."
+.byte WaitForA
+.byte ScrollText
+.text "I really don't know why my heart sunk so low..."
+.byte NewLine
+.text "But with you and my comrades all by my side,"
+.byte NewLine
+.text "I believe I will be able to overcome anything."
+.byte WaitForA
+.byte ScrollText
+.text "Let us return to battle now, but not before you"
+.byte NewLine
+.text "promise that you'll tell me what you meant to"
+.byte NewLine
+.text "say earlier!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "M-Milady!"
+.byte NewLine
+.text "I... Heh. Fair enough."
+.byte NewLine
+.text "It's a promise then."
+.byte WaitForA
+
+.byte EndText
