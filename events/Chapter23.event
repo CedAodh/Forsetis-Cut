@@ -131,6 +131,9 @@ eventChapter23Events ; FD/F056
 		EVENT $14, _MareetaSaiasTalk
 			CHECK_CHARS2 Mareeta, Saias
 		END_DEFINITION
+		EVENT $15, _FredOlwenTalk
+			CHECK_CHARS2 Fred, Olwen
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/F1F6
@@ -864,6 +867,10 @@ _MachaHouseVisit ; FD/F5F5
 	
 	_MareetaSaiasTalk
 		macroDialogueHouse ch23mareetasaias
+	END2
+	
+	_FredOlwenTalk
+		macroDialogueHouse ch23fredolwen
 	END2
 	
 	_PrepGroups ; FD/F90E
