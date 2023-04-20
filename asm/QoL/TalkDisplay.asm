@@ -698,6 +698,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Asbel, [CedChp23]
           ZQOL_TALK_ENTRY Misha, [CedChp23]
           ZQOL_TALK_ENTRY Hicks, [Dalsin]
+	  ZQOL_TALK_ENTRY Fred, [Olwen]
         ZQOL_END_TALK_CHAPTER
 
         aChapter24TalkTargetTable
