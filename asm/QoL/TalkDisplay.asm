@@ -511,7 +511,8 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		
 		aChapter3TalkTargetTable
           ZQOL_TALK_ENTRY Eyvel, [Halvan]
-		  ZQOL_TALK_ENTRY Ronan, [Lifis]
+	  ZQOL_TALK_ENTRY Ronan, [Lifis]
+	  ZQOL_TALK_ENTRY Marty, [Dagdar]
         ZQOL_END_TALK_CHAPTER
 
         aChapter4TalkTargetTable
