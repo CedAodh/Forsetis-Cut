@@ -234,3 +234,116 @@ lifiscaptured
 .byte WaitForA
 
 .byte EndText
+
+
+martydagdarch3
+
+.byte right_slot
+.word LoadPortrait
+.word dagdar_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word marty_portrait
+
+.byte left_slot
+.text "Boss?"
+.byte NewLine
+.text "You uh, you have a moment?"
+.byte WaitForA
+
+.byte right_slot
+.text "Marty!"
+.byte NewLine
+.text "I got all the time in the world for ye, lad."
+.byte NewLine
+.text "So, what's the matter?"
+.byte WaitForA
+.byte NewLine
+.text "It's kinda rare to see somethin' chewing at ya."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Uhm..."
+.byte NewLine
+.text "I was just wondering..."
+.byte NewLine
+.text "When can we go home?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte NewLine
+.text "Are ye seriously askin' that right now?!"
+.byte WaitForA
+.byte NewLine
+.text "Are ye too scared or too tired to keep going?"
+.byte NewLine
+.text "I expected more from you, lad!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "No! It's not that, boss!"
+.byte WaitForA
+.byte ScrollText
+.text "I just heard some whisperin' from some of the"
+.byte NewLine
+.text "boys back home as we were leavin' and uh..."
+.byte NewLine
+.text "I've just kinda been worried since then."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hm... You might be onto somethin', lad."
+.byte NewLine
+.text "But you know this was far more important."
+.byte WaitForA
+.byte ScrollText
+.text "Once Nan' and Mareeta are safe,"
+.byte NewLine
+.text "we can go back and see what the matter is."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "As you say, Boss."
+.byte NewLine
+.text "Guess I'll just do my best and get goin'."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That's the spirit, lad!"
+.byte NewLine
+.text "Let's get back there and show those Imperials"
+.byte NewLine
+.text "what the Violdrake Bandits are capable of!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But... We're no longer bandits, boss."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ahaha! Good catch there."
+.byte NewLine
+.text "We might need to come up with a new name."
+.byte WaitForA
+.byte NewLine
+.text "But that can come later! Come on, lad!"
+.byte NewLine
+.text "Less talkin', more axe-swingin'!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Aye aye, Boss!"
+.byte WaitForA
+
+.byte EndText
