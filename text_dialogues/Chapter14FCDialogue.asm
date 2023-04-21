@@ -928,3 +928,135 @@ gunnarsafy
 .byte WaitForA
 
 .byte EndText
+
+
+leifdean
+
+.byte right_slot
+.word LoadPortrait
+.word dean_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.text "Excuse me, you're Sir Dean, right?"
+.byte WaitForA
+
+.byte right_slot
+.text "Just Dean is fine, but yes."
+.byte NewLine
+.text "So, to what do I owe the privilege of having"
+.byte NewLine
+.text "the Prince of Leonster address me by name?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Huh?"
+.byte NewLine
+.text "W-What do you mean?"
+.byte NewLine
+.text "Is it really that strange?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Feel free to drop the act, kid."
+.byte WaitForA
+.byte ScrollText
+.text "Everyone knows no royal from the north"
+.byte NewLine
+.text "would ever consider themselves to be"
+.byte NewLine
+.text "on equal ground with a Thracian."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hyenas, dogs, vultures..."
+.byte NewLine
+.text "I've heard some even call us monsters."
+.byte WaitForA
+.byte ScrollText
+.text "Just know my allegiance is with Linoan,"
+.byte NewLine
+.text "not you, as if you would ever allow a"
+.byte NewLine
+.text "Thracian knight to fight in your army."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I... I believe there is some misunderstanding."
+.byte WaitForA
+.byte ScrollText
+.text "I want to apologize, Dean, for I do not know"
+.byte NewLine
+.text "what could've given you that impression, but I "
+.byte NewLine
+.text "very much intend to treat you for what you are."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That being?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "A person, and not just that, but a powerful"
+.byte NewLine
+.text "knight with an unwavering resolve."
+.byte WaitForA
+.byte ScrollText
+.text "I... I've been forced to learn about the sins of" 
+.byte NewLine
+.text "my kin, and I do not think an apology from me"
+.byte NewLine
+.text "would mean much, so if you'd would allow me..."
+.byte WaitForA
+.byte ScrollText
+.text "I would like to consider you as a friend and ally"
+.byte NewLine
+.text "for as long as we fight under the same banner."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "... Hm."
+.byte NewLine
+.text "I do not sense any deceit from your words."
+.byte NewLine
+.text "Well, I guess I was mistaken."
+.byte WaitForA
+.byte NewLine
+.text "I know it must've been hard, Prince, but let me"
+.byte NewLine
+.text "commend you for the work you've done so far."
+.byte WaitForA
+.byte ScrollText
+.text "I'm glad to see that things might finally be"
+.byte NewLine
+.text "starting to change, but I'm getting a bit ahead"
+.byte NewLine
+.text "of myself. Regardless, I want to thank you."
+.byte WaitForA
+.byte ScrollText
+.text "Just point at our enemies,"
+.byte NewLine
+.text "and I'll gladly do my part."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It shall be so, Dean."
+.byte WaitForA
+
+.byte EndText
