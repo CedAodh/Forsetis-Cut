@@ -28,7 +28,7 @@ eventChapter17BData ; B1/A2A9
 		UNIT FriegeArmoredAxe1, Enemy, [10, 22], [10, 22], Palman, [BattleAxe], 12, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [10, 28], [10, 28], Palman, [BattleAxe], 12, False, [$00, $03, $00, $00]
 		UNIT FriegeSniper, Enemy, [12, 19], [12, 19], Palman, [SilverBow], 8, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredAxe4, Enemy, [11, 17], [11, 17], Palman, [KillerAxe], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeAxeKnight, Enemy, [11, 17], [11, 17], Palman, [KillerAxe], 15, False, [$00, $03, $00, $00]
 		UNIT FriegeBowKnight2, Enemy, [5, 22], [5, 22], Palman, [KillerBow], 15, False, [$00, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [13, 14], [13, 14], Palman, [LongLance], 6, False, [$02, $15, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [13, 19], [13, 19], Palman, [LongLance], 6, False, [$02, $15, $00, $00]

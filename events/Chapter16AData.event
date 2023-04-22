@@ -146,8 +146,8 @@ eventChapter16AData ; B1/AE46
 	
 	_OltophGroup
 		UNIT Oltoph, Enemy, [47, 12], [47, 12], Brook, [Bolganone, Meteor, Thoron, Bolting, Physic, Vulnerary], 8, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [46, 13], [46, 13], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [47, 14], [47, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [45, 14], [45, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeBallista3, Enemy, [49, 11], [49, 11], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword3, Enemy, [46, 13], [46, 13], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredLance2, Enemy, [47, 14], [47, 14], Brook, [Greatlance], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredAxe2, Enemy, [45, 14], [45, 14], Brook, [Poleax], 10, False, [$00, $03, $00, $00]
+		UNIT FriegeBallista1, Enemy, [49, 11], [49, 11], Brook, [Ballista], 10, False, [$00, $03, $00, $00]
 	UNIT

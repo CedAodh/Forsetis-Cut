@@ -153,6 +153,11 @@ eventChapter16AEvents ; FD/B120
 		EVENT $0F, _SchroffSpawn
 			TEST_FLAG_SET $21
 		END_DEFINITION
+		EVENT $2A, _OltophRevolt
+		
+		CMP_WORD aSelectedCharacterBuffer.Character, Leif
+			macroEventConditionCheckCoordRanges [38, 0], [57, 19]
+		END_DEFINITION	
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; FD/B306
@@ -682,7 +687,7 @@ eventChapter16AEvents ; FD/B120
 		YIELD
 	END1
 
-	_Drawbridge ; FD/B8CB
+	_Drawbridge ; FD/B89C
 		PLAY_SOUND_BYTE $6E
 		HALT_UNTIL_BYTE bDecompListFlag, $00
 
@@ -695,6 +700,30 @@ eventChapter16AEvents ; FD/B120
 		HALT_UNTIL_BYTE bDMAArrayFlag, $00
 		YIELD_UNK
 		YIELD_UNK
+	END1
+	
+	_OltophRevolt ;FD/B8CB
+					PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $39
+		YIELD
+
+		DIALOGUE ch16oltophrevolt
+		YIELD
+	
+		macroConvertToNPCAllegiance Oltoph
+
+		macroConvertToNPCAllegiance FriegeArmoredSword3
+		macroConvertToNPCAllegiance FriegeArmoredLance2
+		macroConvertToNPCAllegiance FriegeArmoredAxe2
+		
+		macroConvertToNPCAllegiance FriegeBallista1
+		
+		SET_MUSIC $01
+		YIELD
+	
 	END1
 
 	_PrepGroups ; FD/B8F6
