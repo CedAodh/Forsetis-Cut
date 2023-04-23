@@ -45,6 +45,12 @@ eventChapter17AEvents ; FD/BAAF
 		EVENT $0F, _SafySalemTalk
 			CHECK_CHARS2 Safy, Salem
 		END_DEFINITION
+		EVENT $1A, _HalvanMareetaTalk
+			CHECK_CHARS2 Halvan, Mareeta
+		END_DEFINITION
+		EVENT $1B, _SalemSaraTalk
+			CHECK_CHARS2 Salem, Sara
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/BB23
@@ -462,11 +468,11 @@ eventChapter17AEvents ; FD/BAAF
 		YIELD
 	END2
 	
-	_GladeRobertTalk
+		_GladeRobertTalk
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE robertgladeA
+		DIALOGUE robertgladeAB
 		YIELD
 	END2
 	
@@ -474,7 +480,27 @@ eventChapter17AEvents ; FD/BAAF
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE safysalemA
+		DIALOGUE safysalemAB
+		YIELD
+	END2
+	
+	_HalvanMareetaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE halvanmareetaAB
+		YIELD
+	END2
+	
+	_SalemSaraTalk ; 99/EE61
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4F
+		YIELD
+
+		DIALOGUE ch16Bsarahsalem
 		YIELD
 	END2
 
