@@ -628,8 +628,11 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 
         aChapter17ATalkTargetTable
           ZQOL_TALK_ENTRY Karin, [Misha]
-		  ZQOL_TALK_ENTRY Glade, [Robert]
-		  ZQOL_TALK_ENTRY Safy, [Salem]
+	  ZQOL_TALK_ENTRY Glade, [Robert]
+	  ZQOL_TALK_ENTRY Safy, [Salem]
+	  ZQOL_TALK_ENTRY Halvan, [Mareeta]
+	  ZQOL_TALK_ENTRY Salem, [Sara]
+          ZQOL_TALK_ENTRY Leif, [Sara]
         ZQOL_END_TALK_CHAPTER
 
         aChapter16BTalkTargetTable
@@ -646,6 +649,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		  ZQOL_TALK_ENTRY Glade, [Robert]
 		  ZQOL_TALK_ENTRY Safy, [Salem]
 		  ZQOL_TALK_ENTRY Callion, [Miranda]
+		  ZQOL_TALK_ENTRY Halvan, [Mareeta]
 		ZQOL_END_TALK_CHAPTER
 
         aChapter18TalkTargetTable
