@@ -21,8 +21,18 @@ chapter16aoltophopening
 	.byte WaitForA
 	
 	.byte EndText
+	
+ch16oltophrevolt
 
-
+	.byte right_slot
+	.word LoadPortrait
+	.word oltoph_portrait
+	.text "Mr. Kempf! I should"
+	.text "KICK YOUR FUCKIGN ASS"
+	.byte WaitForA
+	
+	.byte EndText
+	
 deanlinoanA
 
 .byte right_slot
