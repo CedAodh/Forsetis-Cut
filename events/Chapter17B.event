@@ -72,6 +72,9 @@ eventChapter17BEvents ; FD/C4D0
 		EVENT $0F, _SafySalemTalk
 			CHECK_CHARS2 Safy, Salem
 		END_DEFINITION
+		EVENT $1A, _HalvanMareetaTalk
+			CHECK_CHARS2 Halvan, Mareeta
+		END_DEFINITION	
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/C5A4
@@ -351,7 +354,7 @@ eventChapter17BEvents ; FD/C4D0
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE robertgladeB
+		DIALOGUE robertgladeAB
 		YIELD
 	END2
 	
@@ -359,7 +362,15 @@ eventChapter17BEvents ; FD/C4D0
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE safysalemB
+		DIALOGUE safysalemAB
+		YIELD
+	END2
+
+	_HalvanMareetaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE halvanmareetaAB
 		YIELD
 	END2
 	
