@@ -51,6 +51,9 @@ eventChapter17AEvents ; FD/BAAF
 		EVENT $1B, _SalemSaraTalk
 			CHECK_CHARS2 Salem, Sara
 		END_DEFINITION
+		EVENT $1C, _LeifSaraTalk
+			CHECK_CHARS2 Leif, Sara
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/BB23
@@ -489,6 +492,18 @@ eventChapter17AEvents ; FD/BAAF
 		YIELD
 		
 		DIALOGUE halvanmareetaAB
+		YIELD
+	END2
+	
+	_LeifSaraTalk
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4F
+		YIELD
+
+		DIALOGUE ch16Bsarahleif
 		YIELD
 	END2
 	
