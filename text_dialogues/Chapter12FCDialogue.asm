@@ -167,7 +167,7 @@ dagdartanyach12
 .byte NewLine
 .text "you like my father!"
 .byte NewLine
-.text "That's the deal! No buts!"
+.text "That's the deal! No buts about it!"
 .byte WaitForA
 
 .byte right_slot
@@ -175,7 +175,7 @@ dagdartanyach12
 .text "......!"
 .byte WaitForA
 .byte ScrollText
-.text "Tanya, my...my little girl...!"
+.text "Tanya, my...my little girl...! *sob*"
 .byte NewLine
 .text "You treasure this dirty sack of old bones"
 .byte NewLine
@@ -212,121 +212,153 @@ nannamareetach12
 .byte left_slot
 .word $3A00
 .word mareeta_portrait
-.text "Nanna?!"
+.text "*gasp* Nanna!"
 .byte NewLine
-.text "Am I dreaming?"
+.text "There's no way..."
 .byte NewLine
-.text "What on earth are you doing here?"
+.text "How could..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I...I'm not even sure where to begin!"
-.byte WaitForA
-.byte ScrollText
-.text "We managed to escape from Munster,"
+.text "Oh, Mareeta...!"
 .byte NewLine
-.text "and now we're on our way to aid Tarrah."
+.text "I missed you so much!"
 .byte WaitForA
 .byte NewLine
-.text "We're only here because going through this"
+.text "I... It never occurred to me that you"
 .byte NewLine
-.text "forest is the quickest way for us to get there."
-.byte WaitForA
-.byte ScrollText
-.text "But...what about you?"
-.byte NewLine
-.text "Why are you here?"
+.text "would have escaped Munster as well."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Ah, that's...a long story,"
+.text "Well, it happened...somehow."
 .byte NewLine
-.text "and one I don't even know the whole of!"
-.byte WaitForA
-.byte ScrollText
-.text "After I caught sight of what had happened"
-.byte NewLine
-.text "to Mother, I just sort of fell to the ground"
-.byte NewLine
-.text "and fully lost consciousness."
-.byte WaitForA
-.byte ScrollText
-.text "And then from there..."
-.byte NewLine
-.text "I woke up here being taken care of"
-.byte NewLine
-.text "by a kind priest and the local villagers."
-.byte WaitForA
-.byte ScrollText
-.text "I have no idea what happened"
-.byte NewLine
-.text "between then and now..."
-.byte WaitForA
-.byte ScrollText
-.text "But anyway,"
-.byte NewLine
-.text "you didn't come alone, did you?"
+.text "Honestly, I'm just as surprised as you are."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Don't worry, I'm not."
-.byte NewLine
-.text "With me is just our vanguard;"
-.byte NewLine
-.text "we'll have even more help on the way."
+.text "What do you mean?"
 .byte WaitForA
-.byte ScrollText
-.text "Oh, Mareeta, I'm just..."
-.byte NewLine
-.text "I'm just so happy to see you that I..."
-.byte NewLine
-.text "I could cry..."
-	.byte WaitForA
 
 .byte left_slot
-.byte ScrollText
-.text "Same here..."
-.byte WaitForA
-.byte NewLine
-.text "I've always thought of you as my sister;"
-.byte NewLine
-.text "there are no words to express how overjoyed"
-.byte NewLine
-.text "I am to be with you again."
-.byte WaitForA
-	
-.byte right_slot
-.byte ScrollText
-.text "Aw, Mareeta..."
-.byte WaitForA
 .byte ScrollText
 .text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mareeta...?"
 .byte NewLine
-.text "Huh?!"
-.byte NewLine
-.text "M-Mareeta, why does your face look like that?"
+.text "What are you..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, I...!"
+.text "...Oh, it's nothing!"
 .byte NewLine
-.text "Hmmm."
-.byte WaitForA
-.byte NewLine
-.text "I wasn't going to say anything,"
-.byte NewLine
-.text "but now that you've asked me,"
-.byte NewLine
-.text "I WILL."
+.text "I'm just...trying to remember..."
 .byte WaitForA
 .byte ScrollText
-.text "How are things going between you and..."
+.text "I'm reluctant to admit that I can't"
 .byte NewLine
-.text "Leif?"
+.text "properly recall what had become of me."
+.byte NewLine
+.text "What happened before I arrived here or..."
+.byte WaitForA
+.byte ScrollText
+.text "Whatever comes back to me, it's blurry"
+.byte NewLine
+.text "and distorted, or...or like a dream."
+.byte WaitForA
+.byte ScrollText
+.text "Sometimes I even see my father from long ago."
+.byte NewLine
+.text "I don't— I don't know what it all means..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Memories of your father...?"
+.byte NewLine
+.text "You don't suppose that... I-I mean..."
+.byte NewLine
+.text "Well, was he possibly...involved somehow?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Wishful thinking, perhaps, on my part."
+.byte NewLine
+.text "I'm sorry, Mareeta."
+.byte NewLine
+.text "It's been over a decade, you said, right?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Yes..."
+.byte NewLine
+.text "*sniff*"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Come here."
+.byte NewLine
+.text "I didn't mean to make you cry..."
+.byte NewLine
+.text "Again, I'm sorry."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Why?"
+.byte NewLine
+.text "You didn't do anything wrong."
+.byte WaitForA
+.byte ScrollText
+.text "It helps, actually."
+.byte NewLine
+.text "You know, rather than bury these confused"
+.byte NewLine
+.text "feelings, I should face them once in a while."
+.byte WaitForA
+.byte NewLine
+.text "It's healthy, and it helps give me closure."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh? Then I'm relieved to hear it."
+.byte NewLine
+.text "You're my friend, Mareeta, and all"
+.byte NewLine
+.text "I wish for you is happiness."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You know I'm of the same mind on that."
+.byte WaitForA
+.byte NewLine
+.text "No matter what anyone says, we're sisters."
+.byte NewLine
+.text "We'll always be around for each other—"
+.byte NewLine
+.text "for anything and everything."
+.byte WaitForA
+.byte ScrollText
+.text "So! On that note..."
+.byte NewLine
+.text "How's it coming along with...Leif?"
 .byte WaitForA
 
 .byte right_slot
@@ -340,32 +372,75 @@ nannamareetach12
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, come on!"
+.text "Yes you do!"
 .byte NewLine
-.text "You can't fool me, Nanna!"
-.byte NewLine
-.text "And besides, I was just teasing."
+.text "There's no fooling me on this one!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Oh, Mareeta, don't do that!"
-.byte NewLine
-.text "You shouldn't joke about that of all things..."
+.text "Ahh...!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Right, I'm sorry."
+.text "But it's all right—I'm just teasing."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Mareeta! Don't do that!"
 .byte NewLine
-.text "But you should have seen the look on YOUR face!"
+.text "If you must tease me, at least do so"
+.byte NewLine
+.text "over something else... Anything else!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Right, right... I'm sorry."
+.byte NewLine
+.text "But still, heh... Your face..."
+.byte NewLine
+.text "Your face is what makes it all worth it."
 .byte WaitForA
 .byte ScrollText
-.text "Though that's enough for now."
+.text "Okay, I'm done now."
 .byte NewLine
-.text "I'm eager to get to talk to Leif after so long,"
+.text "Leif's around here, right?"
 .byte NewLine
-.text "so let's wrap this fight up and continue later!"
+.text "I need to go meet with him proper."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Mareeta!"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word mareeta_portrait
+.text "Hmm?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You're not going to..."
+.byte NewLine
+.text "You won't...er..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Of course not."
+.byte NewLine
+.text "You're my sister; your secret's safe with me."
 .byte WaitForA
 	
 .byte EndText

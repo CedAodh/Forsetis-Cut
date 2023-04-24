@@ -27,81 +27,65 @@ salemtrude
 .word trude_portrait
 .text "Huh?"
 .byte NewLine
-.text "Am I seeing ghosts,"
+.text "Am I seeing ghosts already...?"
 .byte NewLine
-.text "or is that really you, Salem?"
+.text "Or...is that really you, Salem?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "There's very little time to explain."
 .byte NewLine
-.text "These aren't Imperial soldiers,"
+.text "These aren't imperial soldiers—"
 .byte NewLine
 .text "they're the Liberation Army."
 .byte WaitForA
 .byte ScrollText
-.text "They've no intent to harm us,"
+.text "They mean us no harm, so long as"
 .byte NewLine
-.text "so long as Perne is willing to talk things out."
+.text "Perne is willing to talk things out."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Ah, I get it..."
+.text "Ah, I get ya..."
 .byte WaitForA
 .byte ScrollText
-.text "So THESE folks are the liberators"
+.text "You're a good judge of character, I'd say."
 .byte NewLine
-.text "I've been hearin' so much about."
-.byte WaitForA
+.text "If you of all people are convinced of their"
 .byte NewLine
-.text "I thought their morale was too high"
-.byte NewLine
-.text "fer them to be Imperial troops."
-.byte WaitForA
-.byte ScrollText
-.text "So yer joinin' up with 'em, huh?"
-.byte NewLine
-.text "I understand."
-.byte NewLine
-.text "Looks fun enough, I s'pose."
+.text "motives, then fine, I'll get out of the way."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "So you'll be joining us as well, then?"
+.text "You won't come with us?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Maybe, maybe not."
-.byte WaitForA
 .byte NewLine
-.text "I'm still at Perne's command,"
+.text "I only listen to Perne for stuff like that."
 .byte NewLine
-.text "so I'll see how everything settles"
-.byte NewLine
-.text "before I make that kind of decision."
+.text "If he agrees, then I'll join up."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "Ah, right."
 .byte NewLine
-.text "Of course."
-.byte WaitForA
-.byte ScrollText
-.text "Well then, this should not take too long."
+.text "I should have expected that."
 .byte NewLine
-.text "Just know that everyone I come with"
-.byte NewLine
-.text "means you no harm."
+.text "I'll make my way to Perne's chambers, then." 
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "All right, I gotcha."
+.text "Sounds good."
+.byte NewLine
+.text "I'll be here."
 .byte WaitForA
 	
 .byte EndText
@@ -119,238 +103,271 @@ leiftina
 .byte WaitForA
 
 .byte right_slot
-.text "Hello there, miss."
+.text "A priestess?"
 .byte NewLine
-.text "Are you all right?"
+.text "Are you all right, sister?"
 .byte NewLine
-.text "You...look awfully terrified..."
+.text "I imagine it's been rough for you."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "...Oh, phew!"
 .byte NewLine
-.text "I-I'm sorry, sir."
+.text "E-excuse me, sir!"
 .byte WaitForA
 .byte NewLine
-.text "It's just really hard to see"
+.text "I just— I can't see a thing in"
 .byte NewLine
-.text "in this dark, stinky mansion—"
+.text "this dark stench of a building!"
 .byte NewLine
-.text "I thought you were someone else!"
+.text "I didn't know WHO you were!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Ah, my apologies."
-.byte WaitForA
+.text "Ah, forgive me, then."
 .byte NewLine
-.text "Then..."
+.text "I am Leif, prince of Leonster."
 .byte NewLine
-.text "I'm not sure if you've heard,"
-.byte NewLine
-.text "but we are not here to harm you."
+.text "We're here to rescue you."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, I know that, you silly!"
+.text "*gasp* Really?!"
 .byte NewLine
-.text "Someone as cute as you"
+.text "Oh, it's like I always dreamed!"
 .byte NewLine
-.text "couldn't possibly hurt a blossom like me!"
+.text "My name is Tina!"
+.byte WaitForA
+.byte ScrollText
+.text "All right, I'm ready!"
+.byte NewLine
+.text "Catch me, and run me over to your"
+.byte NewLine
+.text "white horse in the sacred moonlight!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "R-right..."
+.text "What? Why do you need me to—"
+.byte NewLine
+.text "Dear gods, she's actually doing it..."
 .byte WaitForA
 .byte ScrollText
-.text "Er, what was that last part"
+.text "*grunt*"
 .byte NewLine
-.text "of what you said just now?"
+.text "There, I caught you."
+.byte WaitForA
+.byte NewLine
+.text "But I regret to say I don't ride a white horse."
+.byte NewLine
+.text "...Or any horse for that matter."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Huh?"
+.text "Whaaat?! B-but your shining white armor..."
 .byte NewLine
-.text "What's that?"
+.text "It'd look so perfect with...with..."
 .byte NewLine
-.text "Idunnowhatyouretalkingabout!"
+.text "And you're saying you don't..."
 .byte WaitForA
 .byte ScrollText
-.text "Anyhow,"
+.text "WHY NOT?!"
 .byte NewLine
-.text "I need to go pack up my stuff if I'm gonna"
-.byte NewLine
-.text "go on an adventure with you guys, so, ta-ta!"
+.text "Why don't you ride a white horse?!"
 .byte WaitForA
-.word ClearPortrait
-.word RetractBox
 
 .byte right_slot
 .byte ScrollText
-.text "Hm..."
+.text "I-it's just not my selected style of combat."
 .byte NewLine
-.text "What an unusual...yet amusing girl."
+.text "I'm sorry to disappoint you."
+.byte NewLine
+.text "But there's really nothing to be done for it."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "No, I know what it is..."
+.byte NewLine
+.text "You're poor!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...That's one way of putting it."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "And guess what?"
+.byte NewLine
+.text "I'M going to help you,"
+.byte NewLine
+.text "all out of the kindness of my own heart!"
 .byte WaitForA
 .byte ScrollText
-.text "I know it wouldn't be right for me"
+.text "See these nifty staves here?"
 .byte NewLine
-.text "to turn down anyone who's willing, but..."
+.text "They're used for nabbing treasure—"
 .byte NewLine
-.text "is her coming along really a good idea?"
+.text "even if it's miles away!"
 .byte WaitForA
 .byte ScrollText
-.text "I'm concerned that she may"
+.text "Just you watch!"
 .byte NewLine
-.text "bring us more worry than help."
+.text "Soon enough, your hands'll be so full, you"
+.byte NewLine
+.text "won't be able to PICK what to treat me to!"
 .byte WaitForA
+
+.byte right_slot
 .byte ScrollText
-.text "No..."
+.text "Do you really possess such a power?"
 .byte NewLine
-.text "I'll give her a chance."
+.text "I don't intend to sound shallow, but..."
 .byte NewLine
-.text "She's earned that much."
+.text "that would be absolutely invaluable to us."
 .byte WaitForA
-	
+.byte NewLine
+.text "You're truly willing to lend us your services?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yep!"
+.byte NewLine
+.text "And you can repay the favor by buying a"
+.byte NewLine
+.text "nice white horse and taking me for a ride!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Heh. Very well."
+.byte NewLine
+.text "I shall do just that...one day."
+.byte NewLine
+.text "I promise, Tina."
+.byte WaitForA
+
 .byte EndText
 
 salemtina
 
 .byte right_slot
 .word $3A00
-.word tina_portrait
-.text "Salem! You're alive!"
-.byte WaitForA
+.word salem_portrait
 
 .byte left_slot
 .word $3A00
-.word salem_portrait
-
-.byte right_slot
+.word tina_portrait
+.text "Salem!"
+.byte NewLine
+.text "You're okay!"
 .byte NewLine
 .text "Oh, I'm so happy to see you!"
-.byte NewLine
+.byte WaitForA
+.byte ScrollText
 .text "After I heard someone broke into"
 .byte NewLine
 .text "the mansion, I thought... I thought..."
-.byte WaitForA
 .byte NewLine
 .text "*sniff*"
 .byte WaitForA
 
-.byte left_slot
+.byte right_slot
 .text "There, there."
 .byte NewLine
 .text "I'm alive and well, see?"
 .byte WaitForA
 .byte NewLine
-.text "Thank you for worrying about me,"
+.text "But you need not go to such great lengths"
 .byte NewLine
-.text "but know I'm worth no such concern."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "W-What are you saying, silly?"
-.byte NewLine
-.text "I've liked you ever since Perne brought you in!"
-.byte WaitForA
-.byte NewLine
-.text "You're nothing like that jerk, and the horror"
-.byte NewLine
-.text "stories you read to all of us are AWESOME!"
-.byte NewLine
-.text "...Even if my head at night doesn't think that."
+.text "to worry about me like that."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Heh. I'm happy to hear that."
+.text "What's that mean?"
 .byte NewLine
-.text "By the way, I haven't forgotten my promise."
+.text "You're my friend, Salem!"
+.byte NewLine
+.text "You're supposed to worry about your friends!"
 .byte WaitForA
+.byte ScrollText
+.text "We always have fun together, what with"
 .byte NewLine
-.text "We can go search for your sister after all of"
+.text "those spooky stories at night!"
 .byte NewLine
-.text "this is over. With all the traveling the Liberation"
-.byte NewLine
-.text "Army does, we should find her sooner or later."
+.text "That makes us friends, doesn't it?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Yay!"
+.text "...It does."
 .byte NewLine
-.text "Thank you so much, Salem!"
-.byte WaitForA
-.byte NewLine
-.text "Prince Leif looks like a good guy,"
-.byte NewLine
-.text "so he really shouldn't have a problem"
-.byte NewLine
-.text "with you sticking around. Whaddaya think?"
+.text "Forgive me for...not seeing that until now."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I'll look into it, but I agree with your notion."
+.text "It's okay."
 .byte NewLine
-.text "Well, if you're going with us, you better go"
-.byte NewLine
-.text "pack your things."
+.text "As your friend, I forgive you!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Okie dokie!"
+.text "We'll be leaving Perne's manor, Tina."
 .byte NewLine
-.text "See you later, Salem!"
+.text "Your sister will be found soon enough—"
+.byte NewLine
+.text "I promise you this."
 .byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
+.byte NewLine
+.text "...Excuse me. I mean pinky promise."
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.word $3A00
-.word salem_portrait
-.text "Always the cheerful one,"
+.text "*gasp* No way... You remembered!"
 .byte NewLine
-.text "isn't she?"
+.text "...I'm talking about both of those"
+.byte NewLine
+.text "things when I say that!"
 .byte WaitForA
 
 .byte EndText
 
 leifperne
 
+.byte right_slot
+.word LoadPortrait
+.word pan_portrait
+
 .byte left_slot
 .word $3A00
 .word leif_portrait
 .text "You must be the leader of these bandits."
 .byte NewLine
-.text "Perne, was it? "
+.text "Perne, was it?"
 .byte WaitForA
 
 .byte right_slot
-.word $3A00
-.word pan_portrait
 .text "That's me!"
 .byte NewLine
-.text "We are the Dandelion Bandits!"
+.text "We're the Dandelion Bandits!"
 .byte NewLine
 .text "Let me guess, you're Prince...Beef!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "...Leif, but close enough."
+.text "...Almost. I go by Leif."
 .byte NewLine
 .text "You have my thanks for lowering your weapons."
 .byte WaitForA
@@ -362,7 +379,7 @@ leifperne
 
 .byte right_slot
 .byte ScrollText
-.text "Yeah, we thought you were the Empire."
+.text "Yeah, we thought you were the empire at first."
 .byte NewLine
 .text "I'll tell ya, that would've ended"
 .byte NewLine
@@ -376,23 +393,25 @@ leifperne
  
 .byte left_slot
 .byte ScrollText
-.text "That's right. We are en route to Tarrah."
+.text "That's right."
+.byte NewLine
+.text "We are en route to Tarrah."
 .byte WaitForA
  
 .byte right_slot
 .byte ScrollText
-.text "All right, then I'm comin' along!"
+.text "All right, then I'm definitely comin' along!"
 .byte NewLine
-.text "Holin' up in these woods, I can only do so"
+.text "My hands've been pretty tied here lately—"
 .byte NewLine
-.text "much, so thank you kindly for this opportunity."
+.text "I'd never dream of passin' up THIS opportunity!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Excellent."
 .byte NewLine
-.text "Let us finish our business here,"
+.text "Let us conclude our business here,"
 .byte NewLine
 .text "and then we'll be on our way."
 .byte WaitForA
