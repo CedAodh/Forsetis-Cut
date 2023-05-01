@@ -229,7 +229,7 @@ ch11opening1
 .byte ScrollText
 .text "Remind me: what was your assignment again?"
 .byte NewLine
-.text "I'm just a lowly General of House Friege,"
+.text "I'm just a lowly general of House Friege,"
 .byte NewLine
 .text "and these little details escape me all the time."
 .byte WaitForA
@@ -278,9 +278,9 @@ ch11opening1
 .byte ScrollText
 .text "Fort Dundrum earned its reputation of being"
 .byte NewLine
-.text "impregnable only because House Friege's"
+.text "impregnable only because the Grannvale"
 .byte NewLine
-.text "12th Division is here to guard it!"
+.text "Empire's 12th Division is here to guard it!"
 .byte WaitForA
 .byte NewLine
 .text "Without them, the fort is mere stone and slate!"

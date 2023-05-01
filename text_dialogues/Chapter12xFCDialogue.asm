@@ -48,7 +48,7 @@ salemtrude
 
 .byte left_slot
 .byte ScrollText
-.text "Ah, I get ya..."
+.text "Ah, I getcha..."
 .byte WaitForA
 .byte ScrollText
 .text "You're a good judge of character, I'd say."

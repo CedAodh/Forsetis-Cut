@@ -7,116 +7,98 @@ deaneda
 	.byte left_slot
 	.word $3A00
 	.word eda_portrait
-	.text "Brother."
+	.text "Are you ready, Dean?"
 	.byte WaitForA
 
 	.byte right_slot
-	.text "Doesn't seem like there'll be any way"
+	.text "Of course I'm ready."
 	.byte NewLine
-	.text "out of this one."
-	.byte NewLine
-	.text "Eda, I need to ask something of you."
+	.text "That goes without saying."
 	.byte WaitForA
 	.byte ScrollText
-	.text "If anything happens to me today,"
+	.text "But Eda...I would ask something of you."
 	.byte NewLine
-	.text "I want you to take care of Lady Linoan."
+	.text "Should anything happen to me today,"
+	.byte NewLine
+	.text "I want you to look after Duchess Linoan."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Talk about reading the room."
-	.byte WaitForA
-	.byte ScrollText
-	.text "We're both well aware of how she's come"
+	.text "You just said you were ready, and now"
 	.byte NewLine
-	.text "to feel about you."
-	.byte WaitForA
+	.text "you jump to contemplating defeat?"
 	.byte NewLine
-	.text "How dense are you,"
-	.byte NewLine
-	.text "to jump so quickly to talking about"
-	.byte NewLine
-	.text "leaving her alone in a world like this?"
+	.text "Please, be mindful of your words..."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "The dense one here might be you."
-	.byte NewLine
-	.text "“Leaving her alone”?"
+	.text "I'm merely stating things as they are."
 	.byte WaitForA
-	.byte NewLine
-	.text "What, are you expecting me to"
-	.byte NewLine
-	.text "run away with the prince's fiancée?"
-	.byte WaitForA
-	.byte ScrollText
-	.text "To emotionally betray the master for whom"
-	.byte NewLine
-	.text "I risked it all in the first place?!"
-	.byte WaitForA
-
 
 	.byte left_slot
 	.byte ScrollText
-	.text "......"
+	.text "Indeed, you are..."
+	.byte NewLine
+	.text "But still—these thoughts of yours would"
+	.byte NewLine
+	.text "be enough to tear at her heart."
+	.byte WaitForA
+	.byte ScrollText
+	.text "You're more than just her bodyguard, Dean."
+	.byte WaitForA
+	.byte NewLine
+	.text "Practically everywhere you go, we all"
+	.byte NewLine
+	.text "see how close she puts herself next to you."
+	.byte NewLine
+	.text "That goes beyond duty, if you ask me."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Therein lies the problem."
+	.byte NewLine
+	.text "You said you saw it for yourself—what causes"
+	.byte NewLine
+	.text "you to celebrate such a breach of conduct?"
+	.byte WaitForA
+	.byte ScrollText
+	.text "It means I've violated Lord Arion's trust."
+	.byte NewLine
+	.text "There's no pride to be had in that."
+	.byte NewLine
+	.text "Not after all he's done for us..."
+
+	.byte left_slot
+	.byte ScrollText
+	.text "*sigh* Very well."
+	.byte NewLine
+	.text "I just...wanted to help you find happiness."
+	.byte NewLine
+	.text "Forgive my impudence."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Don't forget our place, Eda."
+	.text "You're not at fault, Eda."
+	.byte NewLine
+	.text "I've been on this mission awhile; all these"
+	.byte NewLine
+	.text "various loopholes have already been explored."
 	.byte WaitForA
 	.byte ScrollText
-	.text "The reason why I could"
+	.text "This is simply put a very delicate matter,"
 	.byte NewLine
-	.text "become a Royal Dracoknight..."
-	.byte WaitForA
+	.text "but I know how to handle it properly."
 	.byte NewLine
-	.text "The reason we didn't end up as child corpses"
-	.byte NewLine
-	.text "in the hills as everyone around us starved..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Do not ever forget."
+	.text "Are we in agreement?"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "*sigh*"
-	.byte NewLine
-	.text "As you say, my dear brother."
-	.byte WaitForA
-	.byte NewLine
-	.text "Just know that after all you've gone through,"
-	.byte NewLine
-	.text "you're deserving of some happiness."
-	.byte WaitForA
-
-	.byte right_slot
-	.byte ScrollText
-	.text "And happiness I have received."
-	.byte NewLine
-	.text "Looking after Lady Linoan has brought me joy"
-	.byte NewLine
-	.text "like none other."
-	.byte WaitForA
-	.byte ScrollText
-	.text "I simply wish to avoid coming between"
-	.byte NewLine
-	.text "the two people I cherish the most"
-	.byte NewLine
-	.text "any more than I am supposed to."
-	.byte WaitForA
-	.byte ScrollText
-	.text "...We're finished here now."
-	.byte NewLine
-	.text "Understood?"
-	.byte WaitForA
-
-	.byte left_slot
-	.byte ScrollText
-	.text "...Yes, Brother."
+	.text "...Yes. Agreed."
 	.byte WaitForA
 	
 	.byte EndText
@@ -550,7 +532,7 @@ fcarionmusing
 .byte NewLine
 .text "countless innocent civilians will perish..."
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "I must speak with Linoan..."
 .byte WaitForA
 
@@ -566,16 +548,20 @@ kanetina
 .byte left_slot
 .word LoadPortrait
 .word kane_portrait
-.text "Hello there. Miss Tina, yes?"
+.text "Hello."
+.byte NewLine
+.text "Miss Tina, yes?"
 .byte WaitForA
 
 .byte right_slot
-.text "That's me! Who are you?"
+.text "I'm Tina!"
+.byte NewLine
+.text "Who are you?"
 .byte WaitForA
  
 .byte left_slot
 .byte ScrollText
-.text "Ah, forgive my bluntness. My name is Kane."
+.text "My name is Kane."
 .byte NewLine
 .text "I am the acting quartermaster of this army."
 .byte NewLine
@@ -584,114 +570,182 @@ kanetina
 
 .byte right_slot
 .byte ScrollText
-.text "Uh... O-OK...?"
+.text "Uh...o-okay?"
+.byte NewLine
+.text "What's this all about?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Rumor has it that you carry a..."
+.text "It's become common knowledge that you"
 .byte NewLine
-.text "special trinket with you."
+.text "carry a...special trinket with you."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "What, this?"
 .byte NewLine
-.text "This is just a boring old staff."
+.text "It's just some ol' staff."
 .byte NewLine
-.text "I know a few other folks here use them too."
+.text "I know a few other folks here use 'em too."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I am afraid that act will not help you, my lady."
+.text "That act will do nothing for you, my lady."
 .byte NewLine
-.text "I am aware of your precious “Thief Staff.”"
+.text "I am aware of your precious thief staff."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "HUH?!"
+.text "Wh-what are you talking about...?"
+.byte NewLine
+.text "...You don't know anything!"
+.byte NewLine
+.text "You—"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Now, hear me out."
+.text "Now please, hear me out."
 .byte NewLine
-.text "All I want to know is how you've been using it."
+.text "It's not as though I'm looking"
+.byte NewLine
+.text "to take it from you."
+.byte WaitForA
+.byte NewLine
+.text "I just wish to know what it's been used for."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "W-What are you getting at?"
+.text "Yeah, I'm sure you do!"
 .byte NewLine
-.text "I haven't done anything bad."
+.text "So you can find an excuse to punish me"
 .byte NewLine
-.text "I promise!"
+.text "or put me through some boring lecture!"
 .byte WaitForA
  
 .byte left_slot
 .byte ScrollText
-.text "And I believe you, but after receiving a tip"
+.text "I understand your qualms, but I"
 .byte NewLine
-.text "regarding you, it does help explain some"
+.text "emphasize that no such fate awaits you."
 .byte NewLine
-.text "inconsistencies in our money and inventory."
-.byte WaitForA
-.byte ScrollText
-.text "I would like to straighten these out, the only"
-.byte NewLine
-.text "thing that I ask is that you promise to report"
-.byte NewLine
-.text "and let me know when you make use of it."
+.text "I swear it."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "What the... Who told on me?!"
-.byte NewLine
-.text "Oh, I bet I know who it was..."
-.byte NewLine
-.text "Grr..."
+.text "Fiiine..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Let us keep our composure here, Miss Tina."
+.text "Now, I've noticed some discrepancies"
 .byte NewLine
-.text "I'm not trying to single you out."
+.text "regarding our army's resources."
 .byte WaitForA
 .byte ScrollText
-.text "Thieving skills are essential for us—"
-.byte WaitForA
+.text "I would like to straighten these out."
 .byte NewLine
-.text "We're fighting a war against an army much "
+.text "All you need to do is notify me when"
 .byte NewLine
-.text "larger and more organized than ours, where"
-.byte NewLine
-.text "any potential advantage must be taken."
-.byte WaitForA
-.byte ScrollText
-.text "It is easier for us to find these advantages"
-.byte NewLine
-.text "when we're able to maintain good records."
-.byte NewLine
-.text "What do you say? Can I count on your help?"
+.text "your thief staff comes into play."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "OK, first off, it's just Tina—"
+.text "...Ugh, why?"
 .byte NewLine
-.text "don't call me “miss” or “lady”"
+.text "Can't I just use it and that's it?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, there's more to it than that."
 .byte NewLine
-.text "or any of that junk."
+.text "It's about communication, Miss Tina."
 .byte WaitForA
 .byte ScrollText
-.text "Second off...fine. I'll try to remember"
+.text "As you're surely aware,"
 .byte NewLine
-.text "everything I take with my staff."
+.text "thieving skills are essential for us—"
+.byte WaitForA
+.byte NewLine
+.text "we're fighting a war against an enemy much"
+.byte NewLine
+.text "larger and more coordinated than us, where"
+.byte NewLine
+.text "any potential advantage must be taken."
+.byte WaitForA
+.byte ScrollText
+.text "It is easier for us to discover these"
+.byte NewLine
+.text "advantages when we maintain proper records."
+.byte WaitForA
+.byte ScrollText
+.text "You can't just take this and the other thing,"
+.byte NewLine
+.text "throw them wherever, and call it a day."
+.byte WaitForA
+.byte NewLine
+.text "You have to tell someone;"
+.byte NewLine
+.text "preferably August or myself."
+.byte NewLine
+.text "We don't just automatically know everything."
+.byte WaitForA
+.byte ScrollText
+.text "We're not going to know to use this powerful"
+.byte NewLine
+.text "weapon you got for us when we're not actually"
+.byte NewLine
+.text "aware that it's in our barracks."
+.byte WaitForA
+.byte ScrollText
+.text "It will lead to many missed opportunities."
+.byte NewLine
+.text "So now, what do you say?"
+.byte NewLine
+.text "Can I count on your help?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Miss Tina?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "H-how is this not over yet...?"
+.byte NewLine
+.text "I-I mean, okay, sure! I'll help, or..."
+.byte NewLine
+.text "whatever I gotta do to make this stop."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "My thoughts exactly."
+.byte NewLine
+.text "This has to stop, or it could cost us"
+.byte NewLine
+.text "something dear."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*sigh*"
+.byte NewLine
+.text "You're tellin' me..."
 .byte WaitForA
 
 .byte left_slot
@@ -699,77 +753,37 @@ kanetina
 .text "You have my gratitude."
 .byte WaitForA
 .byte ScrollText
-.text "Now that we're both on the same page, would"
+.text "Now that we're both on the same page, might"
 .byte NewLine
 .text "you be able to attend our war council as well?"
 .byte NewLine
 .text "This ability of yours has quite unique potential."
 .byte WaitForA
-.byte ScrollText
-.text "If we could-"
+.byte NewLine
+.text "If we could—"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Pass!"
+.text "Pass! HARD pass!"
 .byte NewLine
-.text "War meetings are SO boring."
-.byte WaitForA
+.text "Just, oh, no, no, no, no..."
 .byte NewLine
-.text "Having to plan all the little details"
-.byte NewLine
-.text "takes ALL the fun out of it!"
+.text "I'm not gonna do that to myself!"
 .byte WaitForA
 .byte ScrollText
-.text "Look, I always know what to do on my own!"
+.text "There's a reason the thief staff belongs to me."
 .byte NewLine
-.text "There's like...this feeling in my gut"
+.text "It's because I know how to use it the best!"
 .byte NewLine
-.text "that always tells me where the best loot is!"
-.byte WaitForA
-.byte NewLine
-.text "I promise, you don't have to worry about me!"
+.text "I know what I'm doing! Just trust me, won't ya?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "...Really, now?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Uh-huh! And right now, that feeling is telling"
+.text "A fair compromise, I suppose..."
 .byte NewLine
-.text "me I should stop talking and go back to do..."
-.byte NewLine
-.text "Whatever it is that healers do!"
-.byte WaitForA
-.byte ScrollText
-.text "It's been nice meeting you!"
-.byte NewLine
-.text "Bye bye!"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte left_slot
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.word $3A00
-.word kane_portrait
-
-.text "......Well, at least this was a bit fruitful."
-.byte WaitForA
-.byte ScrollText
-.text "That should save Bishop August some trouble."
-.byte NewLine
-.text "I think I'll play along and see what exactly"
-.byte NewLine
-.text "this “gut feeling” of hers is capable of."
+.text "Very well—we'll defer to your judgment."
 .byte WaitForA
 
 .byte EndText
