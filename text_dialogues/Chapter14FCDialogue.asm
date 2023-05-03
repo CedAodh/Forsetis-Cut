@@ -786,6 +786,25 @@ kanetina
 .text "Very well—we'll defer to your judgment."
 .byte WaitForA
 
+.byte right_slot
+.byte ScrollText
+.text "That's right, you defer!"
+.byte NewLine
+.text "Now I'm gonna defer myself outta here!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Er, right..."
+.byte NewLine
+.text "We look forward to your cooperation."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah, yeah—some other time!"
+.byte WaitForA
+
 .byte EndText
 
 
