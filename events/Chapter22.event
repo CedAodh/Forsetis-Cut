@@ -17,7 +17,7 @@ eventChapter22Events ; 8C/F611
 		END_DEFINITION
 		EVENT $00, _Reinforcements
 			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 10, 20
+			CMP_WORD_RANGE wCurrentTurn, 10, 12
 		END_DEFINITION
 		EVENT $27, _SaiasApproachDialogue
 			CMP_WORD wCurrentPhase, Enemy

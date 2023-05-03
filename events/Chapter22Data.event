@@ -15,7 +15,7 @@ eventChapter22Data ; B1/8425
 		UNIT FriegeArchKnight2, Enemy, [18, 13], [18, 13], Cohen, [Greatbow, KillerBow], 16, False, [$02, $15, $00, $00]
 		UNIT FriegeArchKnight2, Enemy, [19, 13], [19, 13], Cohen, [Greatbow, KillerBow], 16, False, [$02, $15, $00, $00]
 		UNIT FriegeArchKnight2, Enemy, [20, 13], [20, 13], Cohen, [Greatbow, KillerBow], 16, False, [$02, $15, $00, $00]
-		UNIT FriegeBallista5, Enemy, [4, 27], [4, 27], Cohen, [IronBallista], 14, False, [$01, $03, $00, $00]
+		UNIT BanditWarrior, Enemy, [3, 25], [3, 25], Cohen, [MasterAxe], 16, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista5, Enemy, [25, 26], [25, 26], Cohen, [IronBallista], 14, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista5, Enemy, [22, 6], [22, 6], Cohen, [IronBallista], 14, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista5, Enemy, [28, 15], [28, 15], Cohen, [IronBallista], 14, False, [$01, $03, $00, $00]
@@ -23,10 +23,11 @@ eventChapter22Data ; B1/8425
 		UNIT FriegeBallista1, Enemy, [8, 26], [8, 26], Cohen, [Ballista], 20, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [7, 27], [7, 27], Cohen, [Ballista], 20, False, [$01, $03, $00, $00]
 		UNIT FriegeBallista1, Enemy, [8, 27], [8, 27], Cohen, [Ballista], 20, False, [$01, $03, $00, $00]
-		UNIT FriegeGeneral1, Enemy, [8, 25], [8, 25], Cohen, [Hammer, Ridersbane], 10, False, [$00, $00, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [5, 25], [5, 25], Cohen, [MasterLance], 16, False, [$00, $00, $00, $00]
 		UNIT FriegeBishop2, Enemy, [7, 28], [7, 28], Cohen, [Bolting, Thoron, Physic], 10, False, [$00, $07, $00, $00]
 		UNIT FriegeBishop2, Enemy, [8, 28], [8, 28], Cohen, [Bolting, Thoron, Physic], 10, False, [$00, $07, $00, $00]
 		UNIT FriegePriest1, Enemy, [9, 24], [9, 24], Cohen, [Physic, Silence, Heal], 16, False, [$00, $07, $00, $00]
+		UNIT FriegePriest1, Enemy, [8, 25], [8, 25], Cohen, [Physic, Mend], 16, False, [$00, $07, $00, $00]
 		UNIT FriegeMyrmidon, Enemy, [6, 23], [6, 23], Cohen, [ParagonSword, Vulnerary], 16, False, [$00, $03, $00, $00]
 		UNIT FriegeSniper, Enemy, [4, 23], [4, 23], Cohen, [MasterBow], 17, False, [$00, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [5, 15], [5, 15], Cohen, [KillerLance, Vulnerary, PureWater], 6, False, [$02, $0B, $00, $00]
@@ -56,8 +57,8 @@ eventChapter22Data ; B1/8425
 	_ReinforcementsGroup ; B1/879B
 		UNIT FriegeBowKnight2, Enemy, [30, 18], [30, 18], Cohen, [Greatbow], 17, False, [$00, $00, $00, $00]
 		UNIT FriegeLanceKnight2, Enemy, [30, 19], [30, 19], Cohen, [Greatlance], 18, False, [$00, $00, $00, $00]
-		UNIT FriegeAxeKnight, Enemy, [30, 20], [30, 20], Cohen, [BattleAxe], 15, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [19, 16], [19, 16], Cohen, [BattleAxe], 19, False, [$00, $00, $00, $00]
+		UNIT FriegeAxeKnight, Enemy, [30, 20], [30, 20], Cohen, [Poleax], 16, False, [$00, $00, $00, $00]
+		UNIT FriegeCavalier2, Enemy, [19, 16], [19, 16], Cohen, [Greatsword], 19, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/87ED
@@ -79,7 +80,7 @@ eventChapter22Data ; B1/8425
 	UNIT
 	
 	_CohenGroup ; B1/8807
-		UNIT Cohen, Enemy, [28, 3], [28, 3], Cohen, [Blizzard, Berserk, Restore, MasterLance], 20, True, [$01, $03, $00, $80]
+		UNIT Cohen, Enemy, [28, 3], [28, 3], Cohen, [Blizzard, Berserk, Restore, Bolganone, MasterLance], 20, True, [$01, $03, $00, $80]
 	UNIT
 
 	_StartingPositions ; B1/881D

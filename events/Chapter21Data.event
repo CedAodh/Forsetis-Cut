@@ -48,7 +48,7 @@ eventChapter21Data ; B1/8D4F
 		.byte 22, 13
 
 	_RightReinforcementsGroup ; B1/9039
-		UNIT FriegeDukeKnight, Enemy, [31, 10], [30, 10], Fraus, [Ridersbane], 8, False, [$00, $00, $00, $00]
+		UNIT FriegeRanger, Enemy, [31, 10], [30, 10], Fraus, [Armorslayer], 8, False, [$00, $00, $00, $00]
 		UNIT FriegeAxeKnight, Enemy, [31, 11], [30, 11], Fraus, [Poleax], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeAxeKnight, Enemy, [31, 12], [30, 12], Fraus, [Poleax], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeArchKnight1, Enemy, [31, 13], [30, 13], Fraus, [Greatbow], 13, False, [$00, $00, $00, $00]

@@ -72,9 +72,9 @@ eventChapter19Data ; B1/989B
 		.byte 10, 56
 
 	_RightReinforcementsGroup ; B1/9BBD
-		UNIT FriegePaladin1, Enemy, [12, 62], [12, 62], Wolfe, [Armorslayer], 16, False, [$00, $0F, $00, $00]
+		UNIT FriegePaladin1, Enemy, [12, 62], [12, 62], Wolfe, [Ridersbane], 16, False, [$00, $0F, $00, $00]
 		UNIT FriegeGreatKnight, Enemy, [13, 62], [13, 62], Wolfe, [Poleax], 16, False, [$00, $0F, $00, $00]
-		UNIT FriegeDukeKnight, Enemy, [14, 62], [14, 62], Wolfe, [Ridersbane], 16, False, [$00, $0F, $00, $00]
+		UNIT FriegeRanger, Enemy, [14, 62], [14, 62], Wolfe, [Rapier], 16, False, [$00, $0F, $00, $00]
 	UNIT
 
 	_LeftReinforcementsCameraCoordinates ; B1/9BFB
