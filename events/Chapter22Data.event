@@ -27,7 +27,7 @@ eventChapter22Data ; B1/8425
 		UNIT FriegeBishop2, Enemy, [7, 28], [7, 28], Cohen, [Bolting, Thoron, Physic], 10, False, [$00, $07, $00, $00]
 		UNIT FriegeBishop2, Enemy, [8, 28], [8, 28], Cohen, [Bolting, Thoron, Physic], 10, False, [$00, $07, $00, $00]
 		UNIT FriegePriest1, Enemy, [9, 24], [9, 24], Cohen, [Physic, Silence, Heal], 16, False, [$00, $07, $00, $00]
-		UNIT FriegePriest1, Enemy, [8, 25], [8, 25], Cohen, [Physic, Mend], 16, False, [$00, $07, $00, $00]
+		UNIT FriegePriest1, Enemy, [8, 25], [8, 25], Cohen, [Physic, Recover], 16, False, [$00, $07, $00, $00]
 		UNIT FriegeMyrmidon, Enemy, [6, 23], [6, 23], Cohen, [ParagonSword, Vulnerary], 16, False, [$00, $03, $00, $00]
 		UNIT FriegeSniper, Enemy, [4, 23], [4, 23], Cohen, [MasterBow], 17, False, [$00, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [5, 15], [5, 15], Cohen, [KillerLance, Vulnerary, PureWater], 6, False, [$02, $0B, $00, $00]

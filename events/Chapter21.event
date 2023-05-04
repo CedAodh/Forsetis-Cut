@@ -21,7 +21,7 @@ eventChapter21Events ; FD/E42D
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
 			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 6, 10
+			CMP_WORD_RANGE wCurrentTurn, 9, 10
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
 			CMP_WORD wCurrentPhase, Enemy

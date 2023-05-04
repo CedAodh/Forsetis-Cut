@@ -26,11 +26,11 @@ eventChapter14Events ; FD/9790
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
 			CMP_BYTE $7E4976, 0
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
 			CMP_BYTE $7E4976, 0
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $00, _WyvernReinforcements
 			CMP_BYTE $7E4976, 3
@@ -55,10 +55,6 @@ eventChapter14Events ; FD/9790
 		END_DEFINITION
 		EVENT $0C, _KaneTinaTalk
 			CHECK_CHARS2 Kane, Tina
-		END_DEFINITION
-		EVENT $0D, _LeifDeanTalk
-			CHECK_CHARS2 Leif, Dean
-		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/982C
@@ -700,10 +696,6 @@ eventChapter14Events ; FD/9790
 	
 	_KaneTinaTalk
 		macroDialogueHouse kanetina
-	END2
-	
-	_LeifDeanTalk
-		macroDialogueHouse leifdean
 	END2
 
 	_WyvernReinforcements ; FD/9F3B
