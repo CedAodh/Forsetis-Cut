@@ -118,11 +118,11 @@ deaneda
 	.byte WaitForA
 
 	.byte right_slot
-	.text "It has been an honor, Prince Leif."
+	.text "The pleasure is all mine, Prince Leif."
 	.byte NewLine
-	.text "It is a most welcome surprise to see that"
+	.text "Knowing you've remained safe and sound"
 	.byte NewLine
-	.text "you've made your way back to us safely."
+	.text "all this time is its own reward."
 	.byte WaitForA
 
 	.byte EndText
@@ -131,11 +131,11 @@ deaneda
 	
 	.byte right_slot
 	.byte ScrollText
-	.text "And I must thank you"
+	.text "And I must thank you for"
 	.byte NewLine
-	.text "for bringing Asbel back as well."
+	.text "bringing Asbel back as well."
 	.byte NewLine
-	.text "I was so worried about him..."
+	.text "I was worried sick, to put it lightly."
 	.byte WaitForA
 
 	.byte left_slot
@@ -147,37 +147,25 @@ deaneda
 	.text "I'm sorry for what I did..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "But it was necessary!"
+	.text "But I— I HAD to do it!"
 	.byte NewLine
-	.text "I needed to become as strong as I could"
+	.text "I made a vow to Lord Leif—"
 	.byte NewLine
-	.text "to help make Lord Leif's dream a reality!"
+	.text "he's in need of my strength!"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "I'm not faulting you for what you did, Asbel."
-	.byte WaitForA
+	.text "I'm not picking apart your actions, Asbel."
 	.byte NewLine
-	.text "You made your own choice"
+	.text "The perfect opportunity had arisen for you to"
 	.byte NewLine
-	.text "to break free of this city's walls-"
-	.byte NewLine
-	.text "to live and do as you knew best."
+	.text "embark on your own path—who was I to stop you?"
 	.byte WaitForA
 	.byte ScrollText
-	.text "Your magical prowess has grown far beyond"
+	.text "And now because of this,"
 	.byte NewLine
-	.text "what we could have hoped,"
-	.byte NewLine
-	.text "and..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "were he still with us,"
-	.byte NewLine
-	.text "I know your father would have been proud"
-	.byte NewLine
-	.text "beyond words."
+	.text "I believe your father can rest in peace."
 	.byte WaitForA
 
 	.byte left_slot
@@ -196,40 +184,98 @@ deaneda
 	.word LoadPortrait
 	.word leif_portrait
 	.text "Asbel..."
+	.byte NewLine
+	.text "How could you keep that from me?"
+	.byte NewLine
+	.text "I...I never knew..."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Lord Leif, it's... It's all right."
+	.text "...I-I'm sorry, Lord Leif. It..."
 	.byte NewLine
-	.text "I've always known that my father went"
+	.text "It was never my intention, I promise. Just..."
 	.byte NewLine
-	.text "with no regrets."
+	.text "There was never a proper time to mourn."
 	.byte WaitForA
 	.byte ScrollText
-	.text "He willfully died for your sake,"
+	.text "I thought that maybe once I'd done right"
 	.byte NewLine
-	.text "and once I came to terms with his death..."
+	.text "by you, the people of Tarrah...then I"
+	.byte NewLine
+	.text "could take a moment to process everything."
 	.byte WaitForA
 	.byte NewLine
-	.text "I knew that it was up to me"
+	.text "Give it all the time it deserves."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "......"
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "...Don't you see the problem?"
 	.byte NewLine
-	.text "to follow you in his stead."
+	.text "We're getting into all this right"
+	.byte NewLine
+	.text "as our walls are being broken down!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "So no more mourning!"
+	.text "Right now, I'm rushing out to push back"
 	.byte NewLine
-	.text "From here on,"
+	.text "these invaders—I guess you'll join in"
 	.byte NewLine
-	.text "we need to look to the future:"
+	.text "whenever your grieving time is over."
 	.byte WaitForA
 	.byte ScrollText
-	.text "protecting everyone we can,"
-	.byte NewLine
-	.text "and returning Thracia to your hands"
-	.byte NewLine
-	.text "where it rightfully belongs!"
+	.word ClearPortrait
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "What in the..."
 	.byte WaitForA
+	
+	.byte right_slot
+	.word LoadPortrait
+	.word cohen_portrait
+	.text "It's nothing to worry about."
+	.byte NewLine
+	.text "Asbel's just...very persistent about"
+	.byte NewLine
+	.text "his way at times."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Yes, I'm...definitely realizing that."
+	.byte NewLine
+	.text "Come to think of it, he acted in a similar"
+	.byte NewLine
+	.text "manner back when we crossed paths in Munster."
+	.byte WaitForA
+	.byte ScrollText
+	.text "...But enough of this talk."
+	.byte NewLine
+	.text "Let us concern ourselves with Tarrah's defense."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Very good."
+	.byte NewLine
+	.text "I trust my magic and staff will"
+	.byte NewLine
+	.text "prove a most worthwhile asset."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Oh, I've no doubt about that!"
+	.byte WaitForA
+	
+	.byte EndText
 
 	.byte left_slot
 	.byte ScrollText
@@ -817,147 +863,109 @@ gunnarsafy
 .byte left_slot
 .word LoadPortrait
 .word cohen_portrait
-.text "It's good to see you're doing well, Safy."
+.text "To what do I owe this pleasure, Sister Safy?"
 .byte WaitForA
 
 .byte right_slot
 .text "Bishop Gunnar!"
 .byte NewLine
-.text "You came all the way to Tahra as well?"
+.text "You came to Tarrah as well?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Well, how couldn't I?"
+.text "But of course I did."
 .byte NewLine
 .text "Your father was a dear friend of mine."
 .byte NewLine
-.text "His passing was great grief for us all."
+.text "His was a tragic loss for us all."
 .byte WaitForA
-.byte NewLine
-.text "I can only hope your sister is alright."
+.byte ScrollText
+.text "How has your sister fared in all this?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "*chuckle* You know how she is."
+.text "*chuckle* Well, you know how Tina is."
 .byte NewLine
-.text "That zappy little spirit of hers"
+.text "It seems that zappy little spirit"
 .byte NewLine
-.text "doesn't seem like it'll ever go away."
+.text "of hers is here to stay."
 .byte WaitForA
 .byte ScrollText
-.text "I've always tried my best to set an example"
+.text "I've always tried my utmost to set an example;"
 .byte NewLine
-.text "for her, but... I'm afraid I still might be"
+.text "but truly, no matter what I do, she'll never"
 .byte NewLine
-.text "failing her as her older sister."
+.text "listen unless...well, she feels like it."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Pay it no mind, Sister."
+.text "I'd pay it no mind."
 .byte NewLine
 .text "That's just how all children should be."
 .byte WaitForA
 .byte ScrollText
-.text "She has shown no interest in joining the"
+.text "She's shown no interest in joining the clergy,"
 .byte NewLine
-.text "clergy, and yet she tries her best to master"
+.text "and yet she pushes herself to her limits to"
 .byte NewLine
-.text "healing staves just like her big sister does."
+.text "practice the staff just like her big sister."
 .byte WaitForA
-.byte ScrollText
-.text "Have you ever wondered why that is?"
+.byte NewLine
+.text "It's an indicator, you should know."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I... No, actually."
-.byte NewLine
-.text "I don't think I ever realized that..."
+.text "......"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "She might have trouble expressing how she"
+.text "She may struggle in expressing things to you,"
 .byte NewLine
-.text "really feels about you, but that doesn't mean"
+.text "but that's not to say"
 .byte NewLine
-.text "that she doesn't look up to you."
+.text "she doesn't look up to you."
 .byte WaitForA
 .byte ScrollText
-.text "It is imperative that you both find"
+.text "I suggest making a larger effort"
 .byte NewLine
-.text "a way to keep your bond strong."
+.text "to recognize these signs."
 .byte NewLine
-.text "You've only got each other, after all."
+.text "You're all she has, after all."
+.byte WaitForA
+.byte ScrollText
+.text "Of course, Duchess Linoan would never"
+.byte NewLine
+.text "let anything happen to her,"
+.byte NewLine
+.text "but I...believe you take my meaning."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Indeed."
+.text "...I do."
 .byte NewLine
-.text "I barely touch the topic with her, but..."
-.byte WaitForA
+.text "I've...I've never even considered that."
 .byte NewLine
-.text "I'm sure the loss of our parents must"
-.byte NewLine
-.text "have hurt her dearly, despite not having"
-.byte NewLine
-.text "many memories of them."
-.byte WaitForA
-.byte ScrollText
-.text "I can only hope I've done a good job"
-.byte NewLine
-.text "taking their role in her upbringing."
+.text "Thank you for your wisdom, Bishop."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Believe me when I say that you have."
+.text "It is my honor."
 .byte NewLine
-.text "You have grown into a most resilient woman,"
+.text "Remain strong, Sister Safy."
 .byte NewLine
-.text "and an exemplary member of the clergy."
-.byte WaitForA
-.byte ScrollText
-.text "I'm sure your sister is proud of you,"
-.byte NewLine
-.text "just as both your parents would be."
+.text "I know you can put things right."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "All I've been doing is following our faith"
-.byte NewLine
-.text "as I have been taught. Regardless..."
-.byte NewLine
-.text "Thank you for your support, Bishop."
-.byte WaitForA
-.byte ScrollText
-.text "I don't know if either of us may live to see"
-.byte NewLine
-.text "another day, but I pray to Saint Heim that"
-.byte NewLine
-.text "we do. For the sake of our loved ones."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Things may look dire for the city,"
-.byte NewLine
-.text "but remember that is when the"
-.byte NewLine
-.text "greatest miracles can happen."
-.byte WaitForA
-.byte ScrollText
-.text "Stay strong, Sister Safy."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "You too, Bishop."
+.text "Yes... I will."
 .byte WaitForA
 
 .byte EndText
@@ -974,36 +982,36 @@ leifdean
 .word leif_portrait
 
 .byte left_slot
-.text "Excuse me, you're Sir Dean, right?"
+.text "You're Sir Dean, yes?"
 .byte WaitForA
 
 .byte right_slot
-.text "Just Dean is fine, but yes."
+.text "I'm a simple merc—just Dean is fine."
 .byte NewLine
-.text "So, to what do I owe the privilege of having"
+.text "But still, the prince of Leonster calling me by"
 .byte NewLine
-.text "the Prince of Leonster address me by name?"
+.text "my name in any capacity—what's the deal here?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Huh?"
 .byte NewLine
-.text "W-What do you mean?"
+.text "Th-there's no...“deal.”"
 .byte NewLine
-.text "Is it really that strange?"
+.text "Is my conduct so outlandish?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Feel free to drop the act, kid."
+.text "I, for one, would certainly say so."
 .byte WaitForA
-.byte ScrollText
-.text "Everyone knows no royal from the north"
 .byte NewLine
-.text "would ever consider themselves to be"
+.text "The majority of northerners I've known"
 .byte NewLine
-.text "on equal ground with a Thracian."
+.text "would never consider themselves"
+.byte NewLine
+.text "on equal terms with a southerner."
 .byte WaitForA
 
 .byte left_slot
@@ -1015,81 +1023,86 @@ leifdean
 .byte ScrollText
 .text "Hyenas, dogs, vultures..."
 .byte NewLine
-.text "I've heard some even call us monsters."
+.text "We're all despised as such."
 .byte WaitForA
 .byte ScrollText
-.text "Just know my allegiance is with Linoan,"
+.text "Just bear in mind that my allegiance is"
 .byte NewLine
-.text "not you, as if you would ever allow a"
+.text "with Duchess Linoan—not you, Prince."
 .byte NewLine
-.text "Thracian knight to fight in your army."
+.text "...As if you would have me, anyway."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I... I believe there is some misunderstanding."
+.text "I... There must be some misunderstanding."
+.byte NewLine
+.text "Accept my apologies, Dean, for I do not know"
+.byte NewLine
+.text "what could have given you such an impression."
 .byte WaitForA
 .byte ScrollText
-.text "I want to apologize, Dean, for I do not know"
+.text "What I do know, however, is that I intend"
 .byte NewLine
-.text "what could've given you that impression, but I "
-.byte NewLine
-.text "very much intend to treat you for what you are."
+.text "to treat you the same that Linoan does."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "That being?"
+.text "Is that so?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "A person, and not just that, but a powerful"
+.text "Yes."
 .byte NewLine
-.text "knight with an unwavering resolve."
+.text "You're a trusted bodyguard in our fight against"
+.byte NewLine
+.text "the empire—thereby an irreplaceable friend."
 .byte WaitForA
 .byte ScrollText
-.text "I... I've been forced to learn about the sins of" 
+.text "I was...confronted with our history in" 
 .byte NewLine
-.text "my kin, and I do not think an apology from me"
+.text "recent times, so there's been significant"
 .byte NewLine
-.text "would mean much, so if you'd would allow me..."
-.byte WaitForA
-.byte ScrollText
-.text "I would like to consider you as a friend and ally"
-.byte NewLine
-.text "for as long as we fight under the same banner."
+.text "thought put into what I say to you now."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "... Hm."
+.text "Hmm..."
 .byte NewLine
-.text "I do not sense any deceit from your words."
+.text "Whether you speak truly or not, I've little"
 .byte NewLine
-.text "Well, I guess I was mistaken."
-.byte WaitForA
-.byte NewLine
-.text "I know it must've been hard, Prince, but let me"
-.byte NewLine
-.text "commend you for the work you've done so far."
+.text "means of doing anything about it as of now."
 .byte WaitForA
 .byte ScrollText
-.text "I'm glad to see that things might finally be"
+.text "The duchess appears to place her faith in"
 .byte NewLine
-.text "starting to change, but I'm getting a bit ahead"
-.byte NewLine
-.text "of myself. Regardless, I want to thank you."
+.text "you, and so...I suppose you've earned mine."
 .byte WaitForA
 .byte ScrollText
-.text "Just point at our enemies,"
+.text "As for outside of that..."
 .byte NewLine
-.text "and I'll gladly do my part."
+.text "Well, let's just say I'd love to have"
+.byte NewLine
+.text "reason to take back what I said before."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "It shall be so, Dean."
+.text "Indeed... I can't guarantee anything, but..."
+.byte NewLine
+.text "I will do my best."
+.byte NewLine
+.text "I hope you can accept that, Dean."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Sounds fair to me."
+.byte NewLine
+.text "Your orders, Prince Leif."
 .byte WaitForA
 
 .byte EndText
