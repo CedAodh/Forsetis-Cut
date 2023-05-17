@@ -855,3 +855,92 @@ deanlinoan
 .byte WaitForA
 
 .byte EndText
+
+
+ch16Bbaldungevent
+
+.byte right_slot
+.word LoadPortrait
+.word shannam_portrait
+.text "Phew..."
+.byte NewLine
+.text "Seems like there's nobody here."
+.byte NewLine
+.text "I s'pose I can sit down and take a break."
+.byte WaitForA
+.byte ScrollText
+.text "Or..."
+.byte NewLine
+.text "I could venture in and see if them Loptrians"
+.byte NewLine
+.text "left some useful trinkets for me to sell!"
+.byte WaitForA
+.byte ScrollText
+.text "Not here... Not here either..."
+.byte NewLine
+.text "What's this crystal ball doing here?"
+.byte WaitForA
+.byte NewLine
+.text "Crap, crap, more crap..."
+.byte WaitForA
+.byte ScrollText
+.text "Bingo!"
+.byte NewLine
+.text "*whistle*"
+.byte NewLine
+.text "Would you look at that!"
+.byte WaitForA
+.byte NewLine
+.text "Now this is a fancy sword!"
+.byte NewLine
+.text "I bet I could use it to improve my disguise!"
+.byte NewLine
+.text "Oh, what a blessing from above!"
+.byte WaitForA
+
+.byte left_slot
+.text "...Who goes there...?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*gulp*"
+.byte NewLine
+.text "C-Can I be the first one to ask...?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You..."
+.byte NewLine
+.text "State your business, or begone!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "AAAAAHHHHH!!!"
+.byte WaitForA
+
+.byte EndText
+
+ch16Bbaldungevent2
+
+.byte right_slot
+.word LoadPortrait
+.word shannam_portrait
+.text "*pant pant*"
+.byte NewLine
+.text "W-What in Naga's name was that?!"
+.byte NewLine
+.text "Oh, I'm just so glad I held on to the sword..."
+.byte WaitForA
+.byte NewLine
+.text "Wait. Why is it all... Rusty?"
+.byte NewLine
+.text "Eh, who cares?"
+.byte WaitForA
+.byte NewLine
+.text "Guess I'm gettin' something outta this after all!"
+.byte WaitForA
+
+.byte EndText
