@@ -96,6 +96,11 @@ eventChapter16BEvents ; 99/EC9A
 		EVENT $0F, _MirandaSpawn
 			TEST_FLAG_SET $08
 		END_DEFINITION
+		EVENT $1A, _BaldungEvent
+			TEST_FLAG_SET $0F
+			macroEventConditionCheckCoords [10, 9]
+			CMP_WORD aSelectedCharacterBuffer.Character, Shannam
+		END_DEFINITION
 		EVENT $00, _EndingEvent
 			TEST_FLAG_SET $0E
 		END_DEFINITION
@@ -166,6 +171,43 @@ eventChapter16BEvents ; 99/EC9A
 		LOAD1 eventChapter16BData._MirandaSpawnGroup
 		WAIT_MOVE
 		YIELD
+	END2
+	
+	_BaldungEvent
+	PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4C
+		YIELD
+		
+		STORE_WORD wEventEngineParameter1, 1
+		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+
+		CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, ch16Bbaldungevent
+		YIELD_UNK
+		YIELD_UNK
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+		
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE ch16Bbaldungevent2
+		YIELD
+	
+	STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		macroGiveItemToActiveUnit Baldung
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
+		CALL_ASM_LOOP rlASMCSaveActiveUnitData, $0000 
 	END2
 
 	_HomerShannamTalk ; 99/EE2B
