@@ -107,12 +107,8 @@
 
       aEnemyRetreatTilesCh2x ; 8F87A1
 
-        .byte  7,  4, 0
-        .byte  9,  4, 0
-        .byte 11,  4, 0
         .byte 18, 28, 0
         .byte 23, 35, 0
-        .byte 25, 23, 0
         .byte 20,  4, 0
         .byte 25,  4, 0
         .byte 0
@@ -294,6 +290,10 @@
         .byte  9,  1, 3
         .byte 32,  1, 3
         .byte 33,  1, 3
+        .byte  8, 20, 1
+        .byte  9, 20, 1
+        .byte 33, 20, 1
+        .byte 34, 20, 1
         .byte 0
 
       aEnemyRetreatTilesCh19 ; 8F889D
