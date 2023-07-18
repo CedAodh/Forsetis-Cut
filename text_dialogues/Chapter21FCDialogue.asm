@@ -187,7 +187,7 @@ MirandaLeifTalk
 .byte NewLine
 .text "You know just as well as I do— I... I..."
 .byte NewLine
-.text "I bear the blame for Duke Dryas' death!"
+.text "I bear the blame for Count Dorius' death!"
 .byte WaitForA 
 
 .byte right_slot
@@ -302,7 +302,7 @@ MirandaLeifTalk
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, Leif... *sniffs*"
+.text "Oh, Leif... *sniffle*"
 .byte WaitForA 
 
 .byte right_slot
@@ -1153,6 +1153,223 @@ homernanna2
 .text "I'm sure she wouldn't mind if I helped"
 .byte NewLine
 .text "myself with a bottle just this once..."
+.byte WaitForA
+
+.byte EndText
+
+fergusdiarmuid
+
+.byte right_slot
+.word LoadPortrait
+.word dermott_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word fergus_portrait
+.text "Hey, you're Diarmuid, right?"
+.byte WaitForA
+
+.byte right_slot
+.text "I am."
+.byte NewLine
+.text "Who are you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "My name's Fergus."
+.byte NewLine
+.text "I'm s'posed to be helping you make"
+.byte NewLine
+.text "the rounds at the base camp."
+.byte WaitForA
+.byte ScrollText
+.text "Get to know people, get settled in."
+.byte NewLine
+.text "That sorta stuff."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That would be greatly appreciated."
+.byte NewLine
+.text "But...we are a few dozen miles away"
+.byte NewLine
+.text "from the base camp, are we not?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hey, I said what I was supposed to do,"
+.byte NewLine
+.text "not what I'm gonna do."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Forgive my impudence."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "No biggie."
+.byte NewLine
+.text "I've just been so exhausted the past"
+.byte NewLine
+.text "few days, so I gotta sorta play catch-up."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's no trouble. For what it's worth,"
+.byte NewLine
+.text "I'm glad to have someone to converse"
+.byte NewLine
+.text "with besides Prince Leif and my sister."
+.byte WaitForA
+.byte ScrollText
+.text "I may be a soldier from Lord Seliph's army,"
+.byte NewLine
+.text "but I see no reason why that should prevent"
+.byte NewLine
+.text "me from forming lasting friendships in this army."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Makes sense to me."
+.byte WaitForA
+.byte ScrollText
+.text "By the way, can I take a second to check out"
+.byte NewLine
+.text "that nice shiny blade o' yours?"
+.byte NewLine
+.text "Feel like it keeps looking at me, heh."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, sure. Be my guest."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Mmm..."
+.byte NewLine
+.text "That's quality craftsmanship right there."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Indeed."
+.byte NewLine
+.text "This blade happens to be"
+.byte NewLine
+.text "an inheritance from my father."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "From Finn?!"
+.byte NewLine
+.text "No kidding!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Sir Finn? He's not..."
+.byte WaitForA
+.byte NewLine
+.text "Oh, I see the confusion."
+.byte NewLine
+.text "Yes, he acted as Nanna's parental figure,"
+.byte NewLine
+.text "but they are not related by blood."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Huh?! But he—"
+.byte NewLine
+.text "Are you sure?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "“But he”...what?"
+.byte NewLine
+.text "What were you going to say?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I just...I dunno,"
+.byte NewLine
+.text "I always got that feeling. A gut feeling."
+.byte WaitForA
+.byte NewLine
+.text "But you'd probably know better than me."
+.byte NewLine
+.text "Maybe I'm talkin' outta my rear."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Maybe you aren't."
+.byte NewLine
+.text "Truth be told...I don't know"
+.byte NewLine
+.text "who my father is—or was."
+.byte WaitForA
+.byte ScrollText
+.text "I never met him, saw him,"
+.byte NewLine
+.text "or got told very much about him."
+.byte NewLine
+.text "I never even learned his name..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...That's rough, kid. I'm sorry."
+.byte NewLine
+.text "I hear about things like this all the time," 
+.byte NewLine
+.text "yet it never gets any easier to listen to."
+.byte WaitForA
+.byte ScrollText
+.text "No matter how you put it,"
+.byte NewLine
+.text "no kid deserves to grow up like that,"
+.byte NewLine
+.text "not knowin' who his folks are."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, be that as it may, I'm proud of"
+.byte NewLine
+.text "what I've made myself into—and no absence"
+.byte NewLine
+.text "of family can ever take that away from me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Look at you, puttin' a positive spin on it."
+.byte NewLine
+.text "Think we'll get along just fine, Diarmuid."
+.byte NewLine
+.text "Yer less stuck-up than you look, I'll say."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Thank you for the kind words, I suppose."
+.byte NewLine
+.text "But I'm compelled to agree, Fergus;"
+.byte NewLine
+.text "it was good meeting you."
 .byte WaitForA
 
 .byte EndText

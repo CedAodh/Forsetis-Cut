@@ -8,36 +8,41 @@ eventChapter18Events ; E7/8000
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; E7/800D
-		EVENT $01, eventMapDeathQuoteDummyEvent
-			TEST_FLAG_SET $03
+		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
+			CHECK_DEAD Gustav
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 2, 11
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _RewarpSorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 2, 11
 			ROLL_RNG 50
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _MageArmorReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 12, 21
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _FenrirSorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 19, 20
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 19
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _ThiefReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 2, 5
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _MageReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 6, 15
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $08, _XavierAIChange
-			CMP_WORD wCurrentPhase, Enemy
 			CMP_BYTE $7E4976, 8
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -51,7 +56,10 @@ eventChapter18Events ; E7/8000
 			CMP_BYTE $7E4976, 8
 		END_DEFINITION
 		EVENT $0C, _GunnarAsbelTalk
-			CHECK_CHARS2 Leif, Asbel
+			CHECK_CHARS2 GunterDialogue, Asbel
+		END_DEFINITION
+		EVENT $0D, _MirandaLinoanTalk
+			CHECK_CHARS2 Miranda, Linoan
 		END_DEFINITION
 		EVENT $00, _XavierArmorDialogue1
 			CHECK_CHARS2 Civilian9, XavierArmor1
@@ -375,6 +383,14 @@ eventChapter18Events ; E7/8000
 		YIELD
 	END2
 
+	_MirandaLinoanTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE mirandalinoan
+		YIELD
+	END2
+	
 	_XavierArmorDialogue1 ; E7/8463
 		PLAY_SOUND_WORD $00F7
 		DIALOGUE ch18villager1

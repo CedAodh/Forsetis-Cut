@@ -9,28 +9,28 @@ eventChapter15Events ; FD/A812
 
 	_TurnEventDefinitions ; FD/A81F
 		EVENT $00, _BrigandHunterReinforcements
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 2, 9
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 9
 		END_DEFINITION
 		EVENT $00, _ShannamSpawn
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 11
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 10
 		END_DEFINITION
 		EVENT $00, _ThiefMyrmidonReinforcements
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 12, 14
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 11, 14
 		END_DEFINITION
 		EVENT $00, _WarriorReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 15, 17
 		END_DEFINITION
 		EVENT $00, _BrigandHunterThiefReinforcements
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 18, 20
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 18, 19
 		END_DEFINITION
 		EVENT $00, _BrigandReinforcements
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 4, 6
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 5, 7
 		END_DEFINITION
 		EVENT $00, _RalphAmaldaSpawn
 			CMP_WORD wCurrentPhase, NPC
@@ -39,7 +39,7 @@ eventChapter15Events ; FD/A812
 		EVENT $09, _AmaldaFlee
 			TEST_FLAG_UNSET $A2
 			TEST_FLAG_SET $07
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -52,7 +52,7 @@ eventChapter15Events ; FD/A812
 			RUN_ASM rlEventDefinitionCheckMareetaShannamEquippedWeapons
 		END_DEFINITION
 		EVENT $0B, _DaisyAsaelloTalk
-			CHECK_CHARS2 Daisy, Asaello
+			CHECK_CHARS2 Leif, Asaello
 		END_DEFINITION
 		EVENT $0C, _AlbaEdaTalk
 			CHECK_CHARS2 Alba, Eda
@@ -253,7 +253,7 @@ eventChapter15Events ; FD/A812
 		YIELD_UNK
 		
 		EVENT_TEST_FLAG_SET FlagSafyGoneForGood
-		JUMP_TRUE _AsaelloSpawn
+		JUMP_FALSE _AsaelloSpawn
 		
 		EVENT_TEST_FLAG_SET FlagLifisGoneForGood
 		JUMP_TRUE _AsaelloSpawn
@@ -449,6 +449,8 @@ eventChapter15Events ; FD/A812
 		YIELD
 		
 		DIALOGUE albaeda
+		STORE_LONG lEventEngineLongParameter, albaeda2
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		YIELD
 	END2
 	

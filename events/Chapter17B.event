@@ -16,12 +16,11 @@ eventChapter17BEvents ; FD/C4D0
 			TEST_FLAG_SET $07
 		END_DEFINITION
 		EVENT $0B, eventMapDeathQuoteDummyEvent
-			CMP_WORD wCurrentPhase, Enemy
 			CHECK_NUM_UNITS_LTE Amalda, 0
 		END_DEFINITION
 		EVENT $00, _BeatriceSpawn
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 7
 		END_DEFINITION
 		EVENT $00, _DummyReinforcements2
 			CMP_WORD wCurrentPhase, Enemy

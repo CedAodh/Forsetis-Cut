@@ -92,12 +92,12 @@ ch16Bmiranda
 .byte NewLine
 .text "who hadn't the heart for battle—and he knew"
 .byte NewLine
-.text "there was little sense in fighting the Empire."
+.text "there was little sense in fighting the empire."
 .byte WaitForA
 .byte ScrollText
 .text "But nevertheless, he took you in,"
 .byte NewLine
-.text "sheltered you from the Empire—"
+.text "sheltered you from the empire—"
 .byte NewLine
 .text "and in so doing, invited their wrath!"
 .byte WaitForA
@@ -129,7 +129,7 @@ ch16Bmiranda
 .text "...Princess Miranda, I must beg to differ."
 .byte WaitForA
 .byte ScrollText
-.text "The Empire planned to conquer Ulster"
+.text "The empire planned to conquer Ulster"
 .byte NewLine
 .text "all along. Prince Leif's presence was merely"
 .byte NewLine
@@ -234,7 +234,7 @@ ch16Bmiranda
 .text "plotted rebellion."
 .byte WaitForA
 .byte ScrollText
-.text "Evidently, the Empire feared their position"
+.text "Evidently, the empire feared their position"
 .byte NewLine
 .text "was becoming too vulnerable, and so"
 .byte NewLine
@@ -377,7 +377,7 @@ ch16Bsarahsalem
 .byte NewLine
 .text "You see, I once belonged to the Loptr Church,"
 .byte NewLine
-.text "but the granddaughter of the Archbishop"
+.text "but the granddaughter of the archbishop"
 .byte NewLine
 .text "would have no reason to know me."
 .byte WaitForA
@@ -460,7 +460,7 @@ ch16Bsarahleif
 .byte ScrollText
 .text "I'm Sara."
 .byte NewLine
-.text "I know everything about you."
+.text "I know all there is to know about you."
 .byte WaitForA
 .byte ScrollText
 .text "I know you're Prince Leif of House Leonster,"
@@ -482,17 +482,19 @@ ch16Bsarahleif
 .byte ScrollText
 .text "Don't look so afraid."
 .byte NewLine
-.text "My Mama and Papa are dead, too."
+.text "My mother and father are dead, too."
 .byte WaitForA
 .byte ScrollText
-.text "Mama died when I was little, and Papa..."
+.text "My father was murdered by my grandfather—"
 .byte NewLine
-.text "Grandfather got angry at Papa"
+.text "they say it was because he fell in love"
 .byte NewLine
-.text "for falling in love with Mama, and killed him."
+.text "with my mother."
 .byte WaitForA
+.byte ScrollText
+.text "That was before I was born."
 .byte NewLine
-.text "It happened before I was born."
+.text "My mother died soon after."
 .byte WaitForA
 
 .byte Right_slot
@@ -533,7 +535,7 @@ ch16Bsarahleif
 .byte ScrollText
 .text "Uh-huh, I'm fine with that."
 .byte NewLine
-.text "You know, I really like your voice."
+.text "You know, I really like your voice, Leif."
 .byte WaitForA
 
 .byte Right_slot

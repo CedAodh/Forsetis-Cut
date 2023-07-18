@@ -23,7 +23,7 @@ ch16Aconomorarrive
 
 .byte Right_slot
 .byte ScrollText
-.text "I know. But if we betray the Empire now,"
+.text "I know. But if we betray the empire now,"
 .byte NewLine
 .text "I shudder to think what fate would befall"
 .byte NewLine
@@ -178,7 +178,7 @@ ch16Ailioskarin
 .byte ScrollText
 .text "I mean, a commoner in House Friege is like"
 .byte NewLine
-.text "a pegasus flying with Thracia's Dracoknights!"
+.text "a pegasus flying with Thracia's dracoknights!"
 .byte WaitForA
 
 .byte Right_slot
@@ -575,11 +575,11 @@ ch16Abridgekeyhouse
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "Ever since this place got swallowed up by"
 .byte NewLine
-.text "King Blume, nothing's gone right around here."
+.text "King Bloom, nothing's gone right around here."
 .byte WaitForA
 .byte ScrollText
 .text "Oh, how I miss the days when Leonster"
@@ -622,7 +622,7 @@ ch16Apurewaterhouse
 .text "Does this mean our kingdom is to be reborn?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah, here! Take this Pure Water!"
+.text "Ah, here! Take this pure water!"
 .byte NewLine
 .text "I...know we're not much in the way of help,"
 .byte NewLine
@@ -644,7 +644,7 @@ ch16Amastersealhouse
 .byte ScrollText
 .text "I offer you a token from my days"
 .byte NewLine
-.text "in the knighthood: a Master Seal. Go on,"
+.text "in the knighthood: a master seal. Go on,"
 .byte NewLine
 .text "take it—a gift from one soldier to another."
 .byte WaitForA
@@ -1137,7 +1137,7 @@ ch16Aclosing3
 
 .byte Right_slot
 .byte ScrollText
-.text "Then why is such a man serving the Empire?"
+.text "Then why is such a man serving the empire?"
 .byte NewLine
 .text "Does their tyranny not concern him?"
 .byte WaitForA
@@ -1188,7 +1188,7 @@ ch16Awm2
 
 .text "the army would have to breach"
 .byte NewLine
-.text "Fort Nordrhein, an Imperial base."
+.text "Fort Nordrhein, an imperial base."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortraitalt_1

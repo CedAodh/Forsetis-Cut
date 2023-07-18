@@ -141,7 +141,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsFenrirs     	; Petrify			STFenrirs
 					    
 ; Forseti2              
-.byte InstrumentsForseti     	; ForsetiInfinite	STThoron
+.byte InstrumentsBows     	; ForsetiInfinite	STThoron
 					    
 ; Broken tome           
 .byte InstrumentsStaves      	; BrokenTome		STFire
@@ -341,7 +341,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsFenrirs+1   	; Petrify		vanilla:00
 					    
 ; Forseti2              
-.byte InstrumentsForseti+1   	; ForsetiInfinite
+.byte InstrumentsBows +1   	; ForsetiInfinite
 					    
 ; Broken tome           
 .byte InstrumentsStaves+1    	; BrokenTome

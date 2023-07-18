@@ -9,7 +9,7 @@ KillingEdge,TypeSword,None,9,80,7,25,30,1,1,RankC,ItemEffectivenesses.aNoEffecti
 VeninEdge,TypeSword,None,3,85,6,40,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._VeninEdgeDesc,None,$2,None,None,TraitWeapon,$6
 BerserkEdge,TypeSword,None,5,75,18,10,0,1,1,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._BerserkEdgeDesc,None,$C,None,None,TraitWeapon,$7
 SleepEdge,TypeSword,None,3,60,16,10,0,1,1,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2800,<>item_descs._SleepEdgeDesc,None,$E,None,None,TraitWeapon,$8
-BeoBlade,TypeSword,None,16,60,13,60,30,1,1,WeaponLocks.aBeoBladeWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BeoBladeDesc,None,None,Skill2Accost,Skill3Wrath ,TraitWeapon | TraitUnsellable,$9
+BeoBlade,TypeSword,None,16,70,13,60,30,1,1,WeaponLocks.aBeoBladeWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BeoBladeDesc,None,None,Skill2Accost | Skill2Adept,None,TraitWeapon | TraitUnsellable,$9
 BlessedSword,TypeSword,None,15,75,9,60,20,1,1,WeaponLocks.aOlwenReinhardtWeaponLock,ItemEffectivenesses.aCavalryEffectiveness,aBlessedSwordItemBonuses,0,<>item_descs._BlessedSwordDesc,None,None,Skill2Miracle,Skill3Brave,TraitWeapon | TraitUnsellable,$A
 LoptrianFang,TypeSword,TypeDark,20,80,20,-1,0,1,1,WeaponLocks.aLoptrianFangWeaponLock,ItemEffectivenesses.aNoEffectiveness,aLoptrianFangItemBonuses,0,<>item_descs._LoptrianFangDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitUnsellable,$B
 BragisBlade,TypeSword,TypeLight,10,100,10,-1,5,1,1,WeaponLocks.aBragisBladeWeaponLock,ItemEffectivenesses.aArmorEffectiveness,aNoItemBonuses,0,<>item_descs._BragisBladeDesc,None,None,Skill2Miracle,None,TraitWeapon | TraitUnbreakable | TraitUnsellable,$C
@@ -29,7 +29,7 @@ Greatsword,TypeSword,None,18,65,16,20,0,1,1,RankC,ItemEffectivenesses.aNoEffecti
 MasterSword,TypeSword,None,13,80,11,20,10,1,1,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._MasterSwordDesc,None,None,None,Skill3Brave,TraitWeapon,$1A
 ShadowSword,TypeSword,TypeDark,11,80,5,60,20,1,1,WeaponLocks.aMareetaWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._ShadowSwordDesc,None,None,Skill2Nihil,Skill3Brave,TraitWeapon | TraitUnsellable,$1B
 MareetasSword,TypeSword,None,11,80,5,60,20,1,1,WeaponLocks.aMareetaWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._MareetasSwordDesc,None,None,Skill2Nihil,Skill3Brave,TraitWeapon | TraitUnsellable,$1C
-BrokenSword,TypeSword,None,0,0,20,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenSwordDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$1D
+BrokenSword,TypeSword,None,0,30,15,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenSwordDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$1D
 IronLance,TypeLance,None,8,75,8,40,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._IronLanceDesc,None,None,None,None,TraitWeapon,$1E
 SteelLance,TypeLance,None,12,65,12,30,0,1,1,RankD,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2800,<>item_descs._SteelLanceDesc,None,None,None,None,TraitWeapon,$1F
 SilverLance,TypeLance,None,16,80,10,25,0,1,1,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,4200,<>item_descs._SilverLanceDesc,None,None,None,None,TraitWeapon,$20
@@ -47,7 +47,7 @@ Ridersbane,TypeLance,None,13,60,13,20,0,1,1,RankB,ItemEffectivenesses.aCavalryEf
 KillerLance,TypeLance,None,11,70,9,25,30,1,1,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2800,<>item_descs._KillerLanceDesc,None,None,None,None,TraitWeapon,$2C
 GaeBolg,TypeLance,None,20,90,15,50,20,1,1,WeaponLocks.aGaeBolgWeaponLock,ItemEffectivenesses.aNoEffectiveness,aGaeBolgItemBonuses,0,<>item_descs._GaeBolgDesc,None,None,None,None,TraitWeapon | TraitUnsellable,$2D
 Gungnir,TypeLance,None,20,75,12,50,0,1,1,WeaponLocks.aGungnirWeaponLock,ItemEffectivenesses.aNoEffectiveness,aGungnirItemBonuses,0,<>item_descs._GungnirDesc,None,None,None,None,TraitWeapon | TraitUnsellable,$2E
-BrokenLance,TypeLance,None,0,0,15,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenLanceDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$2F
+BrokenLance,TypeLance,None,0,30,15,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenLanceDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$2F
 IronAxe,TypeAxe,None,9,70,9,40,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1100,<>item_descs._IronAxeDesc,None,None,None,None,TraitWeapon,$30
 VeninAxe,TypeAxe,None,6,70,9,40,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._VeninAxeDesc,None,$2,None,None,TraitWeapon,$31
 SteelAxe,TypeAxe,None,13,60,13,30,0,1,1,RankD,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1700,<>item_descs._SteelAxeDesc,None,None,None,None,TraitWeapon,$32
@@ -61,12 +61,12 @@ DevilAxe,TypeAxe,TypeDark,20,80,20,30,0,1,1,RankE,ItemEffectivenesses.aNoEffecti
 BattleAxe,TypeAxe,None,14,65,15,20,10,1,1,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1000,<>item_descs._BattleAxeDesc,None,None,None,None,TraitWeapon,$3A
 Poleax,TypeAxe,None,15,60,16,20,0,1,1,RankC,ItemEffectivenesses.aCavalryEffectiveness,aNoItemBonuses,1200,<>item_descs._PoleaxDesc,None,None,None,None,TraitWeapon,$3B
 MasterAxe,TypeAxe,None,16,60,14,20,0,1,2,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._MasterAxeDesc,None,None,None,Skill3Brave,TraitWeapon,$3C
-BrokenAxe,TypeAxe,None,0,0,20,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenAxeDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$3D
+BrokenAxe,TypeAxe,None,0,30,15,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenAxeDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$3D
 IronBow,TypeBow,None,7,80,7,40,0,2,2,RankE,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._IronBowDesc,None,None,None,None,TraitWeapon,$3E
 SteelBow,TypeBow,None,11,70,11,30,0,2,2,RankD,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2800,<>item_descs._SteelBowDesc,None,None,None,None,TraitWeapon,$3F
 SilverBow,TypeBow,None,15,85,9,25,0,2,2,RankB,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,4000,<>item_descs._SilverBowDesc,None,None,None,None,TraitWeapon,$40
 VeninBow,TypeBow,None,4,80,7,40,0,2,2,RankE,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,0,<>item_descs._VeninBowDesc,None,$2,None,None,TraitWeapon,$41
-KillerBow,TypeBow,None,10,75,8,25,30,2,2,RankB,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,3200,<>item_descs._KillerBowDesc,None,None,None,None,TraitWeapon,$42
+KillerBow,TypeBow,None,10,75,8,25,30,2,2,RankC,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,3200,<>item_descs._KillerBowDesc,None,None,None,None,TraitWeapon,$42
 BraveBow,TypeBow,None,13,100,8,60,20,2,2,RankB,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,0,<>item_descs._BraveBowDesc,None,None,None,Skill3Brave,TraitWeapon | TraitUnsellable,$43
 Shortbow,TypeBow,None,5,85,4,20,0,2,2,RankE,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,800,<>item_descs._ShortbowDesc,None,None,None,None,TraitWeapon,$44
 Longbow,TypeBow,None,11,75,11,20,0,2,2,RankD,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,1400,<>item_descs._LongbowDesc,None,None,None,None,TraitWeapon,$45
@@ -76,7 +76,7 @@ Ballista,TypeBow,None,15,75,20,10,0,3,10,WeaponLocks.aBallistaWeaponLock,ItemEff
 IronBallista,TypeBow,None,20,65,20,10,0,3,15,WeaponLocks.aIronBallistaWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,4200,<>item_descs._IronBallistaDesc,None,None,None,None,TraitBallista | TraitWeapon,$49
 KillerBallista,TypeBow,None,12,90,20,10,30,3,10,WeaponLocks.aBallistaWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,3200,<>item_descs._KillerBallistaDesc,None,None,None,None,TraitBallista | TraitWeapon,$4A
 VeninBallista,TypeBow,None,12,75,20,10,0,3,10,WeaponLocks.aVeninBallistaWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,2200,<>item_descs._VeninBallistaDesc,None,$2,None,None,TraitBallista | TraitWeapon,$4B
-BrokenBow,TypeBow,None,0,0,12,-1,0,2,2,RankE,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenBowDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$4C
+BrokenBow,TypeBow,None,0,10,10,-1,0,2,2,RankE,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenBowDesc,None,None,None,None,TraitWeapon | TraitUnbreakable | TraitBroken,$4C
 Fire,TypeFire,None,7,75,2,23,0,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._FireDesc,None,None,None,None,TraitWeapon | TraitTome,$4D
 Elfire,TypeFire,None,11,90,3,60,10,1,2,WeaponLocks.aFailinisWeaponLock,ItemEffectivenesses.aCavalryAndArmorEffectiveness,aNoItemBonuses,0,<>item_descs._ElfireDesc,None,None,None,Skill3Paragon,TraitWeapon | TraitTome,$4E
 Bolganone,TypeFire,None,15,85,5,16,0,1,2,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,4200,<>item_descs._BolganoneDesc,None,None,None,None,TraitWeapon | TraitTome,$4F
@@ -101,7 +101,7 @@ Bolting,TypeThunder,None,10,70,20,5,20,3,10,RankA,ItemEffectivenesses.aNoEffecti
 Blizzard,TypeWind,None,9,75,20,3,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3400,<>item_descs._BlizzardDesc,None,$E,None,None,TraitWeapon | TraitTome,$62
 Venin,TypeDark,None,8,70,20,5,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3400,<>item_descs._VeninDesc,None,$2,None,None,TraitWeapon | TraitTome,$63
 Petrify,TypeDark,None,1,100,20,1,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._PetrifyDesc,None,$8,None,None,TraitWeapon | TraitTome,$64
-ForsetiInfinite,TypeWind,None,20,90,5,-1,30,1,2,WeaponLocks.aForsetiWeaponLock,ItemEffectivenesses.aNoEffectiveness,aForsetiItemBonuses,0,<>item_descs._ForsetiInfiniteDesc,None,None,None,None,TraitWeapon | TraitTome | TraitUnbreakable | TraitUnsellable,$58
+ForsetiInfinite,TypeBow,None,10,80,8,30,5,2,3,WeaponLocks.aRecurveBowWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3400,<>item_descs._ForsetiInfiniteDesc,None,None,None,None,TraitWeapon,$86
 BrokenTome,TypeItem,None,0,0,0,-1,0,1,1,WeaponLocks.aBrokenMagicWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenTomeDesc,None,None,None,None,TraitUnbreakable | TraitBroken,$66
 Heal,TypeStaff,None,30,80,4,20,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._HealDesc,$3C,None,None,None,TraitStaff,$67
 Mend,TypeStaff,None,20,80,6,15,0,1,1,RankD,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3000,<>item_descs._MendDesc,$3E,None,None,None,TraitStaff,$68
@@ -134,7 +134,7 @@ ShieldRing,TypeItem,None,0,0,0,1,4,1,1,RankE,ItemEffectivenesses.aNoEffectivenes
 SkillRing,TypeItem,None,0,0,0,1,7,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._SkillRingDesc,$10,None,None,None,None,$83
 LegRing,TypeItem,None,0,0,0,1,6,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._LegRingDesc,$12,None,None,None,None,$84
 MasterSeal,TypeItem,None,0,0,0,1,6,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._MasterSealDesc,$14,None,None,None,None,$85
-MasterCrown,TypeItem,None,0,0,0,1,6,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._MasterSealDesc,$16,None,None,None,None,$86
+MasterCrown,TypeItem,None,0,0,0,1,6,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._MasterSealDesc,$16,None,None,None,None,$85
 ChestKey,TypeItem,None,0,0,0,20,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1500,<>item_descs._ChestKeyDesc,$18,None,None,None,None,$87
 DoorKey,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,700,<>item_descs._DoorKeyDesc,$1A,None,None,None,None,$88
 BridgeKey,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,700,<>item_descs._BridgeKeyDesc,$1C,None,None,None,None,$89
@@ -145,18 +145,18 @@ PureWater,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness
 Torch,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,700,<>item_descs._TorchDesc,$24,None,None,None,None,$8E
 Antitoxin,TypeItem,None,0,0,0,3,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,500,<>item_descs._AntitoxinDesc,$26,None,None,None,None,$8F
 MemberCard,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._MemberCardDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$90
-OdsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._OdsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$91
-BaldrsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BaldrsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$92
-HezulsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HezulsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$93
+OdsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._OdsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$91
+BaldrsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BaldrsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$92
+HezulsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HezulsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$93
 DainnsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._DainnsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$94
 NjorunsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._NjorunsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$95
-NalsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._NalsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$96
-UllursScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._UllursScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$97
-ThrudsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._ThrudsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$98
-FjalarsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._FjalarsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$99
-CedsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._CedsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9A
-BragisScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BragisScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9B
-HeimsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HeimsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9C
+NalsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._NalsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$96
+UllursScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._UllursScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$97
+ThrudsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._ThrudsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$98
+FjalarsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._FjalarsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$99
+CedsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._CedsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$9A
+BragisScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BragisScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$9B
+HeimsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HeimsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$9C
 ParagonManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._ParagonManualDesc,$28,None,None,None,None,$9D
 AccostManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._AccostManualDesc,$2A,None,None,None,None,$9E
 BargainManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._BargainManualDesc,$22,None,None,None,None,$9F

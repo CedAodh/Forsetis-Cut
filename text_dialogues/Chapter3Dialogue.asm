@@ -87,7 +87,7 @@ ch3op1
 .byte ScrollText
 .text "Never a moment's peace these days..."
 .byte NewLine
-.text "And what of you, sire?"
+.text "And what of you, Your Excellency?"
 .byte NewLine
 .text "Will you be returning to Munster?"
 .byte WaitForA
@@ -108,7 +108,7 @@ ch3op1
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! Indeed, sire."
+.text "Hah! Indeed, Your Excellency."
 .byte WaitForA
 
 .byte EndText
@@ -159,9 +159,9 @@ ch3op2
 
 .byte Left_slot
 .byte ScrollText
-.text "...All across the Empire, children aged seven to"
+.text "...All across the empire, children aged seven to"
 .byte NewLine
-.text "thirteen are seized by Imperial soldiers."
+.text "thirteen are seized by imperial soldiers."
 .byte WaitForA
 .byte ScrollText
 .text "They're sent to Belhalla, the capital, and after"
@@ -204,11 +204,8 @@ ch3op2
 .text "to be sure."
 .byte WaitForA
 .byte ScrollText
-.text "I'm sorry, August,"
+.text "I'm sorry, August, but we must part ways here."
 .byte NewLine
-.text "but we must part ways here."
-.byte WaitForA
-.byte ScrollText
 .text "I cannot allow this evil to go unchallenged—"
 .byte NewLine
 .text "I must free those children from this barbarism."
@@ -241,8 +238,15 @@ ch3op2
 .byte NewLine
 .text "they can never repay."
 .byte WaitForA
+
+.byte EndText
+
+ch3op3
+
 .byte ScrollText
-.text "Fortune be with you, Prince of Leonster."
+.text "I shall be off now."
+.byte NewLine
+.text "Fortune be with you, prince of Leonster."
 .byte WaitForA
 
 .byte Right_slot
@@ -273,9 +277,9 @@ ch3end1
 .text "but we've taken control of Kerberos' Gate."
 .byte WaitForA
 
+.byte ScrollText
 .word PlayMusic
 .byte $3B
-.byte ScrollText
 
 .byte Right_slot
 .word LoadPortrait
@@ -297,7 +301,6 @@ ch3end1
 .word nanna_portrait
 
 .byte Left_slot
-.byte ScrollText
 .text "Nanna?!"
 .byte WaitForA
 .byte ScrollText
@@ -353,16 +356,16 @@ ch3end2
 .word LoadPortrait
 .word eyvel_portrait
 
-.text "Damn...! Little Leif got himself captured?"
+.text "Damn...! Lord Leif got himself captured?"
 .byte NewLine
 .text "Well, two can play at that game."
 .byte WaitForA
 .byte ScrollText
 .text "I'm goin' in and waving the white flag—"
 .byte NewLine
-.text "no doubt they'll arrest me too. I'll do what I can"
+.text "no doubt they'll arrest me too. I'll do what"
 .byte NewLine
-.text "to protect Lord Leif from the inside."
+.text "I can to protect him from the inside."
 .byte WaitForA
 .byte ScrollText
 .text "The rest of you, hightail it outta here"
@@ -564,11 +567,11 @@ ch3jubelvillagejubel
 .text "thank you fer helpin'. Truly."
 .byte WaitForA
 .byte ScrollText
-.text "Now listen, me older brother is an Imperial"
+.text "Now listen, me older brother is an imperial"
 .byte NewLine
 .text "soldier, but if'n you ever meet him, tell him"
 .byte NewLine
-.text "what the Empire done to our youngest kin."
+.text "what the empire done to our youngest kin."
 .byte WaitForA
 .byte ScrollText
 .text "His name's Dalsin. Ain't a doubt in me mind"
@@ -593,7 +596,7 @@ ch3jubelvillageother
 .byte NewLine
 .text "and you've the arms an' army to give"
 .byte NewLine
-.text "them Imperial dastards what-for!"
+.text "them imperial dastards what-for!"
 .byte WaitForA
 
 .byte EndText

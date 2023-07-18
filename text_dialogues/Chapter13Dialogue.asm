@@ -32,7 +32,7 @@ ch13armorslayerhouse
 .word oldman_portrait
 .text "If you're headed to help Tarrah, watch out"
 .byte NewLine
-.text "for the Imperial troops—they're not your normal"
+.text "for the imperial troops—they're not your normal"
 .byte NewLine
 .text "soldiers, they're decked out in heavy armor."
 .byte WaitForA
@@ -66,7 +66,7 @@ ch13hammerhouse
 .byte ScrollText
 .text "I'd consider it a personal favor if you used it"
 .byte NewLine
-.text "to smash open some Imperial skulls!"
+.text "to smash open some imperial skulls!"
 .byte WaitForA
 
 .byte EndText
@@ -685,7 +685,7 @@ ch13opening2
 .text "and let Baldach rob me of all the glory!"
 .byte WaitForA
 .byte ScrollText
-.text "All Imperial forces, begin the assault!"
+.text "All imperial forces, begin the assault!"
 .byte NewLine
 .text "Try to retreat, and I'll kill you myself!"
 .byte NewLine
@@ -704,7 +704,7 @@ ch13opening3
 .byte Left_slot
 .word LoadPortrait
 .word dean_portrait
-.text "The Empire's finally making their move..."
+.text "The empire's finally making their move..."
 .byte NewLine
 .text "What's the plan, Glade?"
 .byte WaitForA
@@ -737,7 +737,7 @@ ch13opening3
 .text "you'd be easy pickings for their ballistae."
 .byte WaitForA
 .byte ScrollText
-.text "A Dracoknight's entire way of fighting is to"
+.text "A dracoknight's entire way of fighting is to"
 .byte NewLine
 .text "swoop down, strike, and fly away—all in one"
 .byte NewLine
@@ -822,7 +822,7 @@ ch13opening3
 .byte ScrollText
 .text "Don't push yourself, Glade."
 .byte NewLine
-.text "The Empire's just getting started."
+.text "The empire's just getting started."
 .byte WaitForA
 .byte ScrollText
 .text "However this ends, we've got a long way to go."
@@ -859,7 +859,7 @@ ch13opening4
 .byte ScrollText
 .text "H-how?! How is this possible?"
 .byte NewLine
-.text "The Empire has already begun their assault!"
+.text "The empire has already begun their assault!"
 .byte WaitForA
 
 .byte Right_slot
@@ -997,7 +997,7 @@ ch13closing
 .text "personally."
 .byte WaitForA
 .byte ScrollText
-.text "Long have I endured the Empire's tyranny,"
+.text "Long have I endured the empire's tyranny,"
 .byte NewLine
 .text "comforted by the belief that we would meet"
 .byte NewLine
@@ -1064,10 +1064,10 @@ ch13wm2
 .word $0126 ;linoan
 .word $0311 ;y then x
 .byte NewLine
-.text "daughter of the late Duke of Tarrah,"
+.text "daughter of the late duke of Tarrah,"
 .byte WaitForA
 .byte NewLine
-.text "the free city had rebelled against the Empire,"
+.text "the free city had rebelled against the empire,"
 .byte NewLine
 .text "refusing to be complicit in their many crimes."
 .byte WaitForA
@@ -1078,7 +1078,7 @@ ch13wm2
 .text "the city had already been under siege"
 .byte WaitForA
 .byte NewLine
-.text "by the Imperial Army,"
+.text "by the imperial army,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word paulus_portrait
@@ -1089,7 +1089,7 @@ ch13wm2
 .byte WaitForA
 .byte ScrollText
 
-.text "Already in dire straits before the Empire's"
+.text "Already in dire straits before the empire's"
 .byte NewLine
 .text "attack had even begun,"
 .byte WaitForA
@@ -1136,7 +1136,7 @@ ch13fall
 .text "T-Tarrah has fallen!"
 .byte WaitForA
 .byte ScrollText
-.text "With the city crushed by the Empire,"
+.text "With the city crushed by the empire,"
 .byte NewLine
 .text "the people will surely turn against us..."
 .byte NewLine

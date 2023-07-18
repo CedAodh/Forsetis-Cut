@@ -1,3 +1,4 @@
+
 ch17Amullerspawn
 
 .byte Right_slot
@@ -50,7 +51,7 @@ ch17Amullerspawn
 .byte ScrollText
 .text "Agh!"
 .byte NewLine
-.text "F-Forgive me, General, I meant nothing by it!"
+.text "F-forgive me, General, I meant nothing by it!"
 .byte WaitForA
 
 .byte ScrollText
@@ -84,7 +85,7 @@ ch17Asaiasnicolov
 .byte Right_slot
 .text "Oh, Bishop Saias!"
 .byte NewLine
-.text "We've been waiting for you, sire!"
+.text "We've been waiting for you, sir!"
 .byte WaitForA
 
 .byte Left_slot
@@ -136,7 +137,7 @@ ch17Asaiasnicolov
 
 .byte Right_slot
 .byte ScrollText
-.text "It shall be done, sire!"
+.text "It shall be done, my lord!"
 .byte WaitForA
 
 .byte EndText
@@ -158,7 +159,7 @@ ch17Asaiassoldier
 .text "Oh, you're Bishop Saias!"
 .byte WaitForA
 .byte ScrollText
-.text "W-Well, sire, we didn't expect the enemy"
+.text "W-well, sir, we didn't expect the enemy"
 .byte NewLine
 .text "to attack with such...viciousness."
 .byte NewLine
@@ -172,7 +173,7 @@ ch17Asaiassoldier
 
 .byte Right_slot
 .byte ScrollText
-.text "B-But you're here now!"
+.text "B-but you're here now!"
 .byte NewLine
 .text "Seeing the Bishop of Flame in the flesh"
 .byte NewLine
@@ -206,7 +207,7 @@ ch17Asaiassoldier
 
 .byte Right_slot
 .byte ScrollText
-.text "Of course, sire!"
+.text "Of course, sir!"
 .byte WaitForA
 
 .byte EndText
@@ -221,7 +222,7 @@ ch17Asaiasleif
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "W-What is the meaning of this?!"
+.text "Wh-what is the meaning of this?!"
 .byte NewLine
 .text "The enemy's morale is suddenly sky-high!"
 .byte WaitForA
@@ -255,7 +256,7 @@ ch17Asaiasleif
 
 .byte Left_slot
 .byte ScrollText
-.text "There's been such a person in the Empire"
+.text "There's been such a person in the empire"
 .byte NewLine
 .text "all along?"
 .byte WaitForA
@@ -398,7 +399,7 @@ ch17Amishakarin
 .byte ScrollText
 .text "Hey, last I checked, Silesse wasn't"
 .byte NewLine
-.text "all buddy-buddy with the Empire!"
+.text "all buddy-buddy with the empire!"
 .byte NewLine
 .text "Why are you on their side?!"
 .byte WaitForA
@@ -431,7 +432,7 @@ ch17Amagicringhouse
 .byte Right_slot
 .word LoadPortrait
 .word youngman2_portrait
-.text "A-Are you trying to attack Castle Leonster"
+.text "A-are you trying to attack Castle Leonster"
 .byte NewLine
 .text "with that kind of gear?"
 .byte NewLine
@@ -453,7 +454,7 @@ ch17Apurewaterhouse
 .word beardedman_portrait
 .text "Castle Leonster has lots of those Loptrian"
 .byte NewLine
-.text "lunatics inside, but this Pure Water oughta"
+.text "lunatics inside, but this pure water oughta"
 .byte NewLine
 .text "ruin their day. Take it, with my thanks!"
 .byte WaitForA
@@ -473,7 +474,7 @@ ch17Arescuehouse
 .text "the soldiers are scattered about everywhere."
 .byte WaitForA
 .byte ScrollText
-.text "...I'd be worried. But mayhap this Rescue staff"
+.text "...I'd be worried. But mayhap this rescue staff"
 .byte NewLine
 .text "can help your chances."
 .byte WaitForA
@@ -486,16 +487,16 @@ ch17Awarphouse
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "Finally, we can break free of the Empire's"
+.text "Finally, we can break free of the empire's"
 .byte NewLine
 .text "rule! It's what I've always dreamed of..."
 .byte NewLine
 .text "Gods be with you!"
 .byte WaitForA
 .byte ScrollText
-.text "Oh, and take this Warp staff before you go!"
+.text "Oh, and take this warp staff before you go!"
 .byte NewLine
-.text "Now send the Empire packing, you hear?"
+.text "Now send the empire packing, you hear?"
 .byte WaitForA
 
 .byte EndText
@@ -545,7 +546,7 @@ ch17Asarah
 .byte Left_slot
 .word LoadPortrait
 .word sarah_portrait
-.text "...Go..."
+.text "...I will go..."
 .byte WaitForA
 
 .byte Right_slot
@@ -555,14 +556,14 @@ ch17Asarah
 
 .byte Left_slot
 .byte ScrollText
-.text "...Go..."
+.text "...With them..."
 .byte NewLine
 .text "I will go with them..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "B-But they said they were with the army—"
+.text "B-but they said they were with the army—"
 .byte WaitForA
 
 .byte Left_slot
@@ -578,11 +579,9 @@ ch17Asarah
 .byte ScrollText
 .word LoadPortrait
 .word sarah_portrait
-.text "Go..."
+.text "Take me with you..."
 .byte NewLine
-.text "Take me with you,"
-.byte NewLine
-.text "you have to take me with you..."
+.text "You have to take me with you..."
 .byte WaitForA
 
 .byte EndText
@@ -773,7 +772,7 @@ ch17Aopening2
 .byte ScrollText
 .text "Ah. I take it that's why you became"
 .byte NewLine
-.text "a mercenary fighting on behalf of the Empire?"
+.text "a mercenary fighting on behalf of the empire?"
 .byte WaitForA
 
 .byte Right_slot
@@ -832,7 +831,7 @@ ch17Aopening3
 .text "mercenaries positioned in the northwest."
 .byte WaitForA
 .byte ScrollText
-.text "If we advance towards the castle,"
+.text "If we advance toward the castle,"
 .byte NewLine
 .text "they'll cut us down from behind."
 .byte WaitForA
@@ -895,7 +894,7 @@ ch17Aclosing
 .byte ScrollText
 .text "The man inside, Marquess Gustav,"
 .byte NewLine
-.text "is King Blume's right-hand man—"
+.text "is King Bloom's right-hand man—"
 .byte NewLine
 .text "and he's been ruling Leonster with an iron fist."
 .byte WaitForA
@@ -1023,7 +1022,7 @@ ch17Amishajoin
 .byte ScrollText
 .text "I didn't know how many people were going"
 .byte NewLine
-.text "hungry in the places where the Empire is still"
+.text "hungry in the places where the empire is still"
 .byte NewLine
 .text "in charge..."
 .byte WaitForA
@@ -1033,7 +1032,7 @@ ch17Amishajoin
 .text "Just wasting away..."
 .byte WaitForA
 .byte ScrollText
-.text "She told me she'd hired on with the Empire"
+.text "She told me she'd hired on with the empire"
 .byte NewLine
 .text "just to buy food."
 .byte WaitForA
@@ -1052,14 +1051,14 @@ ch17Amishajoin
 .text "It's almost funny, in a macabre way."
 .byte WaitForA
 .byte ScrollText
-.text "By helping the Empire, you're sacrificing"
+.text "By helping the empire, you're sacrificing"
 .byte NewLine
 .text "the children of another country to save"
 .byte NewLine
 .text "the children of your own country."
 .byte WaitForA
 .byte ScrollText
-.text "The Empire is conducting child hunts"
+.text "The empire is conducting child hunts"
 .byte NewLine
 .text "in Thracia—and it won't be long"
 .byte NewLine
@@ -1128,7 +1127,7 @@ ch17Awm1
 .word $0327 ;misha
 .word $0013 ;y then x
 .byte NewLine
-.text "of Imperial troops, "
+.text "of imperial troops, "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0267 ;moore

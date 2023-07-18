@@ -8,29 +8,34 @@ eventChapter17AEvents ; FD/BAAF
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/BABC
+		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
+			CHECK_DEAD Nicolov
+		END_DEFINITION
 		EVENT $00, _SaiasSpawn
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 10
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 9
 		END_DEFINITION
 		EVENT $00, _MullerSpawn
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 12
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 11
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD_RANGE wCurrentTurn, 11, 20
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 10, 19
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _PirateReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 4
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _SaiasLeave
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 15
 		END_DEFINITION
 		EVENT $0B, _MishaSleep
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 11, 15
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 10, 14
 			TEST_FLAG_SET $0A
 		END_DEFINITION
 	END_DEFINITION_ARRAY

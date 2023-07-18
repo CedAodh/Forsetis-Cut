@@ -49,11 +49,11 @@ eventChapter13Data ; B1/BFCE
 	;	.byte 11, 17
 
 	_LeonsterKnightGroup ; B1/C2E0
-		UNIT LeonsterBowKnight, Player, [9, 6], [7, 7], Glade, [SteelBow], 7, False, [$00, $00, $00, $00]
-		UNIT LeonsterBowKnight, Player, [9, 6], [11, 7], Glade, [IronBow], 7, False, [$00, $00, $00, $00]
-		UNIT LeonsterLanceKnight, Player, [9, 6], [8, 7], Glade, [SteelLance], 7, False, [$00, $00, $00, $00]
-		UNIT LeonsterLanceKnight, Player, [9, 6], [9, 7], Glade, [IronLance], 7, False, [$00, $00, $00, $00]
-		UNIT LeonsterLanceKnight, Player, [9, 6], [10, 7], Glade, [Javelin], 7, False, [$00, $00, $00, $00]
+		UNIT LeonsterBowknight, NPC, [9, 6], [7, 7], Glade, [SteelBow, Vulnerary], 11, False, [$00, $00, $00, $00]
+		UNIT LeonsterBowknight, NPC, [9, 6], [11, 7], Glade, [SilverBow], 12, False, [$00, $00, $00, $00]
+		UNIT LeonsterLanceKnight, NPC, [9, 6], [8, 7], Glade, [SteelLance, Vulnerary], 12, False, [$00, $00, $00, $00]
+		UNIT LeonsterLanceKnight, NPC, [9, 6], [9, 7], Glade, [KillerLance, Vulnerary], 13, False, [$00, $00, $00, $00]
+		UNIT LeonsterLanceKnight, NPC, [9, 6], [10, 7], Glade, [SteelLance, Javelin], 12, False, [$00, $00, $00, $00]
 	UNIT
 
 	_GladeCameraCoordinates ; B1/C346
@@ -92,7 +92,11 @@ eventChapter13Data ; B1/BFCE
 	_PaulusGroup ; B1/C3D0
 		UNIT Paulus, Enemy, [9, 23], [9, 21], Paulus, [KillerLance], 15, False, [$00, $03, $00, $80]
 	UNIT
-
+	
+	_NPCDeanGroup
+		UNIT Dean, NPC, [9, 9], [9, 9], Dean, [SilverLance], 3, False, [$00, $03, $00, $80]
+	UNIT
+	
 	_StartingPositions ; B1/C3E6
 		.byte 30, 20
 		.byte 31, 19

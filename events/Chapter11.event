@@ -10,15 +10,13 @@ eventChapter11Events ; 99/CB04
 	_TurnEventDefinitions ; 99/CB11
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Kempf
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			CMP_WORD wCurrentTurn, 30
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $0A, _KempfLeave
 			TEST_FLAG_SET $09
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _KempfDialogue
 			CMP_WORD wCurrentTurn, 1

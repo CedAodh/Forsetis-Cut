@@ -10,21 +10,20 @@ eventChapter2Events ; 99/81B4
 	_TurnEventDefinitions ; 99/81C1
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Bucks
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BottomPirateReinforcements
 			CMP_WORD wCurrentTurn, 3
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MiddlePirateReinforcements
-			CMP_WORD wCurrentTurn, 6
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 5
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _TopPirateReinforcements
-			CMP_WORD wCurrentTurn, 8
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 7
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY

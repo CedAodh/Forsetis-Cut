@@ -10,26 +10,27 @@ eventChapter21Events ; FD/E42D
 	_TurnEventDefinitions ; FD/E43A
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Fraus
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
 		END_DEFINITION
 		EVENT $07, _SeimetzDead
 			CHECK_NUM_UNITS_LTE Seimetz, 0
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 9, 10
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 8, 9
+			TEST_FLAG_SET $02
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 2, 7
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 6
+			TEST_FLAG_SET $02
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 7, 10
+			TEST_FLAG_SET $02
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -51,6 +52,9 @@ eventChapter21Events ; FD/E42D
 		END_DEFINITION
 		EVENT $10, _ConomorMirandaTalk
 			CHECK_CHARS2 Conomor, Miranda
+		END_DEFINITION
+		EVENT $11, _FergusDiarmuidTalk
+			CHECK_CHARS2 Fergus, Diarmuid
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -404,6 +408,14 @@ eventChapter21Events ; FD/E42D
 		YIELD
 		
 		DIALOGUE SaraMartyTalk
+		YIELD
+	END2
+	
+	_FergusDiarmuidTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE fergusdiarmuid
 		YIELD
 	END2
 	

@@ -40,7 +40,7 @@ rlUnknown839D02Replacement
     bit #$00C0 ; Enemy or NPC
     bne _stop ; Do not process anything other than ally
     lda aBurstWindowCharacterBuffer.Character,b
-    and #$00FF
+	and #$00FF
     sta wEventEngineCharacterTarget,b
     jsl rlASMCGiveUnitItemsToConvoy
 

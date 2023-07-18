@@ -8,8 +8,8 @@
 	
 .endlogical
 
-* := $4A5080
-.logical lorom ($4A5080, 1)
+* := $4A5900
+.logical lorom ($4A5900, 1)
 
 modernizethisshit
 

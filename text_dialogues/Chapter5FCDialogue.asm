@@ -108,3 +108,109 @@ ch5op4
 .byte WaitForA
 
 .byte EndText
+
+raydrikbadatjailing
+
+.byte right_slot
+.word LoadPortrait
+.word raydrik_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word guard_portrait
+.text "Baron Raydrik! Your Excellency!"
+.byte NewLine
+.text "Prince Leif has made it clear of the castle walls!"
+.byte WaitForA
+
+.byte right_slot
+.text "What?!"
+.byte NewLine
+.text "And just how did he accomplish this?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It must've been the Magi that stepped in"
+.byte NewLine
+.text "and broke him free."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Blast it..."
+.byte NewLine
+.text "Now I know to keep a closer eye on him."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What should we do?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "How is it not obvious?"
+.byte NewLine
+.text "Prepare a host to block them off"
+.byte NewLine
+.text "and subdue them!"
+.byte WaitForA
+.byte ScrollText
+.text "Can you not just think for yourself?"
+.byte NewLine
+.text "It's not that difficult!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "F-forgive me, Your Excellency."
+.byte NewLine
+.text "It's just that...we are often chastised"
+.byte NewLine
+.text "for acting without your direct orders."
+.byte WaitForA
+.byte NewLine
+.text "So I was merely—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What are you rambling on about now?"
+.byte NewLine
+.text "Care to repeat yourself?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...It was just some trivial spouting."
+.byte NewLine
+.text "Please do not concern yourself, Your Excellency."
+.byte WaitForA
+
+.byte EndText
+
+galzusmia
+
+.byte right_slot
+.byte ScrollText
+.text "And where is Galzus?"
+.byte NewLine
+.text "Right as I need him, the man eludes us..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I am unsure."
+.byte NewLine
+.text "I will look for him right away."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Good."
+.byte NewLine
+.text "Bring him before me."
+.byte WaitForA
+
+.byte EndText

@@ -170,7 +170,7 @@ ch5raydrikveldturn1
 .text "and mean it, much less a thousand."
 .byte WaitForA
 .byte ScrollText
-.text "For the Baron of such a troubled area"
+.text "For the baron of such a troubled area"
 .byte NewLine
 .text "as Munster, you seem to have"
 .byte NewLine
@@ -191,7 +191,7 @@ ch5raydrikveldturn1
 
 .byte Left_slot
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "Oh, very well."
 .byte NewLine
@@ -625,7 +625,7 @@ ch5eyvelcaptured
 .byte Left_slot
 .word LoadPortrait
 .word guard_portrait
-.text "What do you want done with her, sire?"
+.text "What do you want done with her, milord?"
 .byte WaitForA
 .byte ScrollText
 
@@ -710,7 +710,7 @@ ch5nannaleftalone
 
 .byte Left_slot
 .byte ScrollText
-.text "As you wish, sire."
+.text "As you wish, Your Excellency."
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
@@ -954,7 +954,7 @@ ch5arenaopennannaalone
 
 .byte Right_slot
 .byte ScrollText
-.text "Is the Commander with you?"
+.text "Is the commander with you?"
 .byte WaitForA
 
 .byte Left_slot

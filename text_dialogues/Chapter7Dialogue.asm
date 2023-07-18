@@ -58,7 +58,7 @@ ch7op1
 .byte NewLine
 .text "of vengeance, my prince—we fight to liberate"
 .byte NewLine
-.text "North Thracia from the tyranny of the Empire."
+.text "North Thracia from the tyranny of the empire."
 .byte WaitForA
 .byte ScrollText
 .text "You yourself said that there was"
@@ -79,7 +79,7 @@ ch7op1
 .byte NewLine
 .text "what makes you think we can trust Thracia?"
 .byte NewLine
-.text "They're allies of the Empire!"
+.text "They're allies of the empire!"
 .byte WaitForA
 
 .byte Left_slot
@@ -120,7 +120,7 @@ ch7op1
 .byte ScrollText
 .text "The same city being besieged"
 .byte NewLine
-.text "by the Imperial Army for their rebellion?"
+.text "by the imperial army for their rebellion?"
 .byte WaitForA
 .byte ScrollText
 .text "Going there with the small force we have now"
@@ -134,9 +134,9 @@ ch7op1
 .byte ScrollText
 .text "Tarrah is...my home away from home,"
 .byte NewLine
-.text "you could say. The Duke of Tarrah sheltered me"
+.text "you could say. The duke of Tarrah sheltered me"
 .byte NewLine
-.text "for years and was killed by the Empire for it."
+.text "for years and was killed by the empire for it."
 .byte WaitForA
 .byte ScrollText
 .text "I have many friends there, August."
@@ -212,7 +212,7 @@ ch7ending1
 .byte NewLine
 .text "shore. I was...captured while freeing"
 .byte NewLine
-.text "several children from an Imperial prison."
+.text "several children from an imperial prison."
 .byte WaitForA
 .byte ScrollText
 .text "The Magi, the local resistance, later rescued"
@@ -255,7 +255,7 @@ ch7ending1
 .byte ScrollText
 .text "We'll head to Tarrah to fend off"
 .byte NewLine
-.text "the Empire's siege."
+.text "the empire's siege."
 .byte NewLine
 .text "I've many friends there in need of help."
 .byte WaitForA
@@ -273,7 +273,7 @@ ch7ending1
 .byte NewLine
 .text "As rebels, we obviously can't risk"
 .byte NewLine
-.text "crossing through Imperial territory."
+.text "crossing through imperial territory."
 .byte WaitForA
 
 .byte Left_slot
@@ -334,11 +334,11 @@ ch7ending3halvan
 .byte Left_slot
 .word LoadPortrait
 .word halvan_portrait
-.text "Prince Leif! Sheesh, some help I turned out"
+.text "Thanks for coming to the rescue, milord."
 .byte NewLine
-.text "to be, huh? Might as well have stayed in Fiana,"
+.text "I guess I could've just stayed in Fiana"
 .byte NewLine
-.text "for all the good I did..."
+.text "and saved you the trouble..."
 .byte WaitForA
 .byte ScrollText
 
@@ -349,9 +349,11 @@ ch7ending4osian
 .byte Left_slot
 .word LoadPortrait
 .word osian_portrait
-.text "Damned Thracians! Next time I see them,"
+.text "Damned Thracians!"
 .byte NewLine
-.text "they'll pay for what they've done!"
+.text "You're not off the hook for this!"
+.byte NewLine
+.text "...Hey! Listen to me when I'm—"
 .byte WaitForA
 .byte ScrollText
 
@@ -362,9 +364,9 @@ ch7ending5ronan
 .byte Left_slot
 .word LoadPortrait
 .word ronan_portrait
-.text "I'm awful sorry, Prince Leif..."
+.text "I'm truly sorry..."
 .byte NewLine
-.text "I guess I'm just not very strong..."
+.text "I...I thought I was better than this..."
 .byte WaitForA
 .byte ScrollText
 
@@ -414,7 +416,7 @@ ch7ending7callion
 .byte WaitForA
 
 .byte Right_slot
-.text "Of course, sire. They can count on me!"
+.text "Of course, General. They can count on me!"
 .byte WaitForA
 
 .byte ScrollText
@@ -483,7 +485,7 @@ ch7ending8cairpre
 .byte NewLine
 .text "you a token of my gratitude. Here you are. It's"
 .byte NewLine
-.text "a very powerful staff imbued with Warp magic."
+.text "a very powerful staff imbued with warp magic."
 .byte WaitForA
 
 .byte Left_slot
@@ -893,7 +895,7 @@ ch7finnleif
 
 .byte Right_slot
 .byte ScrollText
-.text "The Commander is still in Munster..."
+.text "The commander is still in Munster..."
 .byte NewLine
 .text "She... She was turned to stone"
 .byte NewLine
@@ -914,7 +916,7 @@ ch7finnleif
 .byte ScrollText
 .text "You've nothing to apologize for, Finn."
 .byte NewLine
-.text "As for the Commander..."
+.text "As for the commander..."
 .byte NewLine
 .text "Nothing will stop me from getting her back."
 .byte WaitForA
@@ -1139,7 +1141,7 @@ ch7eisenauspawn
 
 .byte Right_slot
 .byte ScrollText
-.text "Oh, please... Thracia and the Empire"
+.text "Oh, please... Thracia and the empire"
 .byte NewLine
 .text "can mix no better than oil and water."
 .byte WaitForA
@@ -1232,7 +1234,7 @@ ch7antitoxinhouse
 .word beardedman_portrait
 .text "Yer headed fer Tarrah?"
 .byte NewLine
-.text "Best take this Antitoxin with you, then."
+.text "Best take this antitoxin with you, then."
 .byte WaitForA
 .byte ScrollText
 .text "If you get stuck with one o' them"
@@ -1246,7 +1248,7 @@ ch7antitoxinhouse
 .byte NewLine
 .text "poisons... One dose o' the stuff an' you'll be in"
 .byte NewLine
-.text "fer a bad time, so keep that Antitoxin handy."
+.text "fer a bad time, so keep that antitoxin handy."
 .byte WaitForA
 
 .byte EndText

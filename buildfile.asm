@@ -35,6 +35,15 @@ DSizeEnds		:= []
 
 .include "asm/QoL/_QOLInstaller.asm"
 
+* = $00BB2B
+.logical lorom($00BB2B, 1)
+.binary "asm/hacky/range1.bin"
+.here
+
+* = $0299D5
+.logical lorom($0299D5, 1)
+.binary "asm/hacky/range2.bin"
+.here
 
 ; End of hacky hex edits
 

@@ -83,7 +83,7 @@ robertselphina
 	.byte ScrollText
 	.text "...Thank you, Robert."
 	.byte NewLine
-	.text "You really have grown up... *sniff*"
+	.text "You really have grown up... *sniffle*"
 	.byte WaitForA
 	.byte NewLine
 	.text "I don't mean to make such a big fuss over it;"
@@ -116,7 +116,7 @@ leifmarty
 	.byte right_slot
 	.word $3A00
 	.word marty_portrait
-	.text "*huff... huff...*"
+	.text "*huff* *huff*"
 	.byte NewLine
 	.text "I can't...keep goin' like this..."
 	.byte NewLine

@@ -8,28 +8,26 @@ eventChapter16BEvents ; 99/EC9A
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/ECA7
-		EVENT $01, eventMapDeathQuoteDummyEvent
-			TEST_FLAG_SET $03
-		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 2, 20
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			TEST_FLAG_UNSET $08
 			ROLL_RNG 50
 		END_DEFINITION
 		EVENT $00, _SaraArrive
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT $00, _SaraWarp1
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 3
 		END_DEFINITION
 		EVENT $00, _SaraWarp2
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 4
 		END_DEFINITION
 		EVENT $00, _SaraWarp3
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 5
 		END_DEFINITION
 	END_DEFINITION_ARRAY

@@ -10,97 +10,109 @@ eventChapter23Events ; FD/F056
 	_TurnEventDefinitions ; FD/F063
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Alphand
-			CMP_WORD wCurrentPhase, Enemy
+			CHECK_DEAD Faden
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
 		END_DEFINITION
 		EVENT $00, _ThiefReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 3
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _KnightReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer1Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer2Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer3Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer4Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer5Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer6Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer7Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer8Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer9Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer10Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 			ROLL_RNG 25
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $0A, _CoulterSpawn
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 2
 			TEST_FLAG_UNSET $08
 		END_DEFINITION
 		EVENT $00, _AlphandFetch
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			RUN_ASM rlEventDefinitionCheckAlphand
 			CMP_WORD wCurrentTurn, 3
 		END_DEFINITION
 		EVENT $00, _AlphandTome
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			RUN_ASM rlEventDefinitionCheckAlphand
 			CMP_WORD wCurrentTurn, 5
 		END_DEFINITION
 		EVENT $0B, _CedAppear
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			RUN_ASM rlEventDefinitionCheckAlphand
 			TEST_FLAG_SET $08
 		END_DEFINITION
 		EVENT $09, _AltenaLeave
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $08
 			TEST_FLAG_SET $0A
 			TEST_FLAG_UNSET $0F
 		END_DEFINITION
 		EVENT $09, _AltenaLeave
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $02
 			TEST_FLAG_SET $0A
 			TEST_FLAG_UNSET $0F
@@ -164,6 +176,7 @@ eventChapter23Events ; FD/F056
 		EVENT FlagAlwaysZero, _MachaHouseOther
 			TEST_FLAG_UNSET $23
 			macroEventConditionCheckCoords [28, 4]
+		END_DEFINITION	
 		EVENT $28, _VulneraryHouseDestroy
 			CMP_BYTE wCursorXCoord, 28
 			CMP_BYTE wCursorYCoord, 4

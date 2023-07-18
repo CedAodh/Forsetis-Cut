@@ -1,3 +1,45 @@
+raydrikmocking
+
+.byte right_slot
+.word LoadPortrait
+.word raydrik_portrait
+.text "So, Leonster pup... What have we here?"
+.byte NewLine
+.text "You believe you possess the cunning"
+.byte NewLine
+.text "to outwit me?"
+.byte WaitForA
+.byte ScrollText
+.text "I was not proclaimed ruler of Munster"
+.byte NewLine
+.text "by birthright or by playing the fool!"
+.byte NewLine
+.text "Nevertheless, you'll soon realize your mistake."
+.byte WaitForA
+
+.byte EndText
+
+tolmanplan
+
+.byte right_slot
+.word LoadPortrait
+.word TolmanPortrait
+.text "Everyone knows our role here, right?"
+.byte NewLine
+.text "If the fugitives' aim is to escape,"
+.byte NewLine
+.text "they'll have no choice but to go through us."
+.byte WaitForA
+.byte ScrollText
+.text "For now, remain in defensive formation."
+.byte NewLine
+.text "Do not move from your position until"
+.byte NewLine
+.text "we have a confirmed sighting." 
+.byte WaitForA
+
+.byte EndText
+ 
 money
 
 .byte right_slot
@@ -8,187 +50,359 @@ money
 
 .byte EndText
 
-; FCM
+FCM
 
-; .byte right_slot
-; .word LoadPortrait
-; .word NPCMan1Portrait
-; .text "So you know about follow-up attacks, right?"
-; .byte NewLine
-; .text "When you're considerably faster than your"
-; .byte NewLine
-; .text "opponent, you get more openings for an attack."
-; .byte WaitForA
-; .byte ScrollText
-; .text "BUT...there's another neat part to that!"
-; .byte NewLine
-; .text "You'll find that some fighters are somehow able"
-; .byte NewLine
-; .text "to make really good use of those extra attacks."
-; .byte WaitForA
-; .byte ScrollText
-; .text "It's like they instantly get double the power!"
-; .byte NewLine
-; .text "Certainly nifty against those guys with"
-; .byte NewLine
-; .text "hard-to-top defensive ablities."
-; .byte WaitForA
-; .byte ScrollText
-; .text "They even made up a name for it."
-; .byte NewLine
-; .text "But for whatever reason, everyone calls it"
-; .byte NewLine
-; .text "something different, so I don't bother anymore."
-; .byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "So you know about follow-up attacks, right?"
+.byte NewLine
+.text "When you're considerably faster than your"
+.byte NewLine
+.text "opponent, you get more openings for an attack."
+.byte WaitForA
+.byte ScrollText
+.text "BUT...there's another neat part to that!"
+.byte NewLine
+.text "You'll find that some fighters are able to"
+.byte NewLine
+.text "make really good use of those extra attacks."
+.byte WaitForA
+.byte ScrollText
+.text "It's like they instantly get double the power!"
+.byte NewLine
+.text "Certainly nifty against those guys with"
+.byte NewLine
+.text "hard-to-top defensive ablities."
+.byte WaitForA
+.byte ScrollText
+.text "They even made up a name for it!"
+.byte WaitForA
+.byte NewLine
+.text "Though for whatever reason, everybody calls it"
+.byte NewLine
+.text "somethin' different—whether they're from Friege,"
+.byte NewLine
+.text "Connaught, or Munster—so I don't bother anymore."
+.byte WaitForA
 
-; .byte EndText
+.byte EndText
 
-; Canto
+Canto
 
-; .byte right_slot
-; .word LoadPortrait
-; .word NPCMan1Portrait
-; .text "With a mount, you can always use up the entirety"
-; .byte NewLine
-; .text "of your movement when taking an action."
-; .byte WaitForA
-; .byte ScrollText
-; .text "Having a mount also allows you to"
-; .byte NewLine
-; .text "capture an enemy or carry an ally to safety"
-; .byte NewLine
-; .text "regardless of their build."
-; .byte WaitForA
-; .byte ScrollText
-; .text "...Really makes me wish my horse"
-; .byte NewLine
-; .text "was still around..."
-; .byte WaitForA
-; .byte ScrollText
-; .text "Eh, but that's how life goes."
-; .byte NewLine
-; .text "At least without her, I don't have to"
-; .byte NewLine
-; .text "worry about a Ridersbane anymore."
-; .byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "With a mount, you can always use up the entirety"
+.byte NewLine
+.text "of your movement when taking an action."
+.byte WaitForA
+.byte ScrollText
+.text "Having a mount also allows you to"
+.byte NewLine
+.text "capture an enemy or carry an ally to safety"
+.byte NewLine
+.text "regardless of their build."
+.byte WaitForA
+.byte ScrollText
+.text "...Really makes me wish my horse"
+.byte NewLine
+.text "were still around..."
+.byte WaitForA
+.byte ScrollText
+.text "Eh, but that's how life goes."
+.byte NewLine
+.text "At least without her, I don't have to"
+.byte NewLine
+.text "worry about a ridersbane anymore."
+.byte WaitForA
 
-; .byte EndText
+.byte EndText
 
-; crusader
+crusader
 
-; .byte right_slot
-; .word LoadPortrait
-; .word NPCMan1Portrait
-; .text "One of the neighboring houses here owns"
-; .byte NewLine
-; .text "what they call a “Crusader Scroll.”"
-; .byte WaitForA
-; .byte NewLine
-; .text "And it was definitely “Crusader” singular,"
-; .byte NewLine
-; .text "so there's probably more of 'em...somewhere."
-; .byte WaitForA
-; .byte ScrollText
-; .text "If there's one for each crusader, I'd be"
-; .byte NewLine
-; .text "stoked to see them together all in one place."
-; .byte WaitForA
-; .byte ScrollText
-; .text "...“Is there a reward for that”?"
-; .byte NewLine
-; .text "Well, I...kinda doubt it..."
-; .byte NewLine
-; .text "But you'd still feel some sense of achievement!"
-; .byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "One of the neighboring houses here owns"
+.byte NewLine
+.text "what they call a “crusader scroll.”"
+.byte WaitForA
+.byte NewLine
+.text "And it was definitely “crusader” singular,"
+.byte NewLine
+.text "so there's probably more of 'em...somewhere."
+.byte WaitForA
+.byte ScrollText
+.text "If there's one for each crusader, I'd be"
+.byte NewLine
+.text "stoked to see them all together."
+.byte WaitForA
+.byte ScrollText
+.text "...“Is there a reward for that”?"
+.byte NewLine
+.text "Well, I...kinda doubt it..."
+.byte NewLine
+.text "But you'd still feel some sense of achievement!"
+.byte WaitForA
 
-; .byte EndText
+.byte EndText
 
-; stavescanmiss
+stavescanmiss
 
-; .byte right_slot
-; .word LoadPortrait
-; .word NPCMan1Portrait
-; .text "Just because a man or woman of the cloth"
-; .byte NewLine
-; .text "rarely sees combat doesn't mean that"
-; .byte NewLine
-; .text "they don't need skill."
-; .byte WaitForA
-; .byte ScrollText
-; .text "Casting a staff is pretty much like"
-; .byte NewLine
-; .text "letting off a fire spell or firing a bow;"
-; .byte NewLine
-; .text "you're not gonna hit super often if you can't aim."
-; .byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "Just because a man or woman'a the cloth"
+.byte NewLine
+.text "rarely gets into scraps doesn't mean that"
+.byte NewLine
+.text "they don't need skill."
+.byte WaitForA
+.byte ScrollText
+.text "Casting a staff is pretty much like"
+.byte NewLine
+.text "lettin' off a fire spell or firin' a bow;"
+.byte NewLine
+.text "not gonna hit super often if ya can't aim."
+.byte WaitForA
 
-; .byte EndText
+.byte EndText
 
-; authority
+authority
 
-; .byte right_slot
-; .word LoadPortrait
-; .word NPCMan1Portrait
-; .text "You'll find that army leaders do more"
-; .byte NewLine
-; .text "than just give orders—their mere presence"
-; .byte NewLine
-; .text "rallies the fighting spirit of their soldiers."
-; .byte WaitForA
-; .byte ScrollText
-; .text "They'll then get a better rhythm for combat,"
-; .byte NewLine
-; .text "so it'll be easier for them to hit"
-; .byte NewLine
-; .text "their targets and dodge incoming attacks."
-; .byte WaitForA
-; .byte ScrollText
-; .text "But the same goes for you guys."
-; .byte WaitForA
-; .byte NewLine
-; .text "If you come across some natural-born leaders"
-; .byte NewLine
-; .text "during your travels, having them join the"
-; .byte NewLine
-; .text "battle might just turn the tide for y'all."
-; .byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "You'll find that army leaders do more"
+.byte NewLine
+.text "than just give orders—their mere presence"
+.byte NewLine
+.text "rallies the fighting spirit of their soldiers."
+.byte WaitForA
+.byte ScrollText
+.text "They'll then get a better rhythm for combat,"
+.byte NewLine
+.text "so it'll be easier for them to hit"
+.byte NewLine
+.text "their targets and dodge incoming attacks."
+.byte WaitForA
+.byte ScrollText
+.text "But the same goes for you guys."
+.byte WaitForA
+.byte NewLine
+.text "If you come across some natural-born leaders"
+.byte NewLine
+.text "during your travels, having them join the"
+.byte NewLine
+.text "battle might just turn the tide for y'all."
+.byte WaitForA
 
-; .byte EndText
+.byte EndText
 
-; vigor
+vigor
 
-; .byte right_slot
-; .word LoadPortrait
-; .word NPCMan1Portrait
-; .text "You lot are looking pretty upbeat, I'd say."
-; .byte NewLine
-; .text "Sometimes you just get that extra burst"
-; .byte NewLine
-; .text "of energy to do a little more, right?"
-; .byte WaitForA
-; .byte ScrollText
-; .text "I used to have my lucky moments like that"
-; .byte NewLine
-; .text "too...but then I got old."
-; .byte WaitForA
-; .byte ScrollText
-; .text "My son is so fascinated by this concept"
-; .byte NewLine
-; .text "that he's decided to do some research."
-; .byte WaitForA
-; .byte ScrollText
-; .text "He wrote down some note and circled it,"
-; .byte NewLine
-; .text "but...he can't remember why he wrote it,"
-; .byte NewLine
-; .text "and I can't make any sense of it."
-; .byte WaitForA
-; .byte ScrollText
-; .text "“5 per, per S.”"
-; .byte NewLine
-; .text "I'm...I'm baffled."
-; .byte NewLine
-; .text "Maybe the meaning will come to you?"
-; .byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "You lot are looking pretty upbeat, I'd say."
+.byte NewLine
+.text "Sometimes you just get that extra burst"
+.byte NewLine
+.text "of energy to do a little more, right?"
+.byte WaitForA
+.byte ScrollText
+.text "I used to have my lucky moments like that"
+.byte NewLine
+.text "too, heh heh...but then I got old."
+.byte WaitForA
+.byte ScrollText
+.text "My son got so fascinated by this concept"
+.byte NewLine
+.text "that he decided to do some research."
+.byte WaitForA
+.byte ScrollText
+.text "He wrote down some note and circled it,"
+.byte NewLine
+.text "but...he can't remember why he wrote it,"
+.byte NewLine
+.text "and I sure as hell can't make any sense of it."
+.byte WaitForA
+.byte ScrollText
+.text "“5 per, per S”"
+.byte NewLine
+.text "I'm...I'm baffled."
+.byte NewLine
+.text "Maybe the meaning will come to you?"
+.byte WaitForA
 
-; .byte EndText
+.byte EndText
+
+deadunititems
+
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "It's a damned shame when one'a yer"
+.byte NewLine
+.text "friends gets killed in action, huh?"
+.byte WaitForA
+.byte ScrollText
+.text "It's not all bad news, though—least this"
+.byte NewLine
+.text "way, you get the chance to reclaim"
+.byte NewLine
+.text "their belongings and take 'em to storage."
+.byte WaitForA
+.byte ScrollText
+.text "A soldier ain't gonna prioritize"
+.byte NewLine
+.text "disarmin' the dead, I can tell ya that."
+.byte WaitForA
+
+.byte EndText
+
+weapontriangle
+
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "Y'all know of the weapon triangle, right?"
+.byte WaitForA
+.byte NewLine
+.text "Swords beat axes; axes beat lances; lances"
+.byte NewLine
+.text "beat swords; fire beats wind; wind beats"
+.byte NewLine
+.text "thunder; thunder beats fire, and..."
+.byte WaitForA
+.byte ScrollText
+.text "dark and light magic both beat anima magic!"
+.byte NewLine
+.text "*sigh*"
+.byte NewLine
+.text "'scuse me, I'm...outta breath now."
+.byte WaitForA
+.byte ScrollText
+.text "Now, repeat the magic part back t'me!"
+.byte NewLine
+.text "That's yer little quiz."
+.byte NewLine
+.text "Can't leave till ya do!"
+.byte WaitForA
+.byte ScrollText
+.text "...You don't have time for this?"
+.byte NewLine
+.text "Pah, fine—go liberate the peninsula, or..."
+.byte NewLine
+.text "whatever it is ya gotta do."
+.byte WaitForA
+.byte NewLine
+.text "I'll just stay here...being IGNORED."
+.byte WaitForA
+
+.byte EndText
+
+mages
+
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "Don't ya find that mages pack"
+.byte NewLine
+.text "some real good offensive power?"
+.byte NewLine
+.text "They're real handy, so they are."
+.byte WaitForA
+.byte ScrollText
+.text "Though I can't say I've seen many"
+.byte NewLine
+.text "who aren't already sworn to the empire..."
+.byte WaitForA
+.byte ScrollText
+.text "That said, whatever mages you CAN get"
+.byte NewLine
+.text "on yer side, you better be on it"
+.byte NewLine
+.text "about protectin' 'em!"
+.byte WaitForA
+
+.byte EndText
+
+instantcapture
+
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "Somethin' you maybe didn't realize yet is"
+.byte NewLine
+.text "that when you don't have a weapon t'fight"
+.byte NewLine
+.text "back with, an enemy can just yoink ya."
+.byte WaitForA
+.byte ScrollText
+.text "Makes sense t'me, since there's really no"
+.byte NewLine
+.text "winnin' disarmed against an armed guy."
+.byte NewLine
+.text "Might as well give in willingly, am I right?"
+.byte WaitForA
+.byte ScrollText
+.text "...Heh."
+.byte NewLine
+.text "Y'know, that give me an idea..."
+.byte WaitForA
+.byte NewLine
+.text "How 'bout next time, you let someone play"
+.byte NewLine
+.text "the bait, then instantly swarm the sorry"
+.byte NewLine
+.text "dullard who thinks he just got some leverage?"
+.byte WaitForA
+
+secretshop
+
+.byte right_slot
+.word LoadPortrait
+.word anna_portrait
+.text "Welcome!"
+.byte NewLine
+.text "Oh, wait, I'm not at the shop. Silly me!"
+.byte NewLine
+.text "Sorry, I had a long day at work today."
+.byte WaitForA
+.text "...No, it wasn't strenuous or anything—"
+.byte NewLine
+.text "just simply a long day at work."
+.byte WaitForA
+.byte ScrollText
+.text "Where do I work?"
+.byte NewLine
+.text "It's called none other than the Secret Shop!"
+.byte NewLine
+.text "It's so secret, you need a member card to get in!"
+.byte WaitForA
+.byte ScrollText
+.text "If you want to apply for one, you're outta luck!"
+.byte NewLine
+.text "It wouldn't much of a secret if everyone could"
+.byte NewLine
+.text "get a card just like that. Uh-huh, I know!"
+.byte WaitForA
+.byte NewLine
+.text "Looking at my records...my most recent"
+.byte NewLine
+.text "applicant is said to live in Leonster."
+.byte NewLine
+.text "As per our policy, their name is kept a secret!"
+.byte WaitForA
+.byte ScrollText
+.text "It's been nice talking, but I gotta"
+.byte NewLine
+.text "get ready to go back tomorrow."
+.byte NewLine
+.text "It's gonna be a long day again! Too-da-loo!"
+.byte WaitForA
+
+.byte EndText
+

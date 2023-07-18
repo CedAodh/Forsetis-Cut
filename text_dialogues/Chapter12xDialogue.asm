@@ -16,14 +16,14 @@ ch12xpansalem
 .text "What, have you sold us out already?"
 .byte WaitForA
 .byte NewLine
-.text "How much is the Empire payin' you for this?"
+.text "How much is the empire payin' you for this?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "You've got it all wrong, you idiot."
 .byte NewLine
-.text "These people aren't with the Empire."
+.text "These people aren't with the empire."
 .byte WaitForA
 .byte ScrollText
 .text "This is Prince Leif's Liberation Army,"
@@ -220,7 +220,7 @@ ch12xpanlithis
 .byte Left_slot
 .word LoadPortrait
 .word pan_portrait
-.text "Hey, you feelin' OK there, little buddy?"
+.text "Hey, you feelin' good there, little buddy?"
 .byte NewLine
 .text "You're lookin' pretty pale."
 .byte WaitForA
@@ -342,7 +342,7 @@ ch12xpanlara
 .text "you were just a kid."
 .byte WaitForA
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "Look, if it means that much to ya..."
 .byte NewLine
@@ -477,7 +477,7 @@ ch12xpantrude
 .byte ScrollText
 .text "I thought their morale was too high"
 .byte NewLine
-.text "fer them to be Imperial troops."
+.text "fer them to be imperial troops."
 .byte WaitForA
 .byte ScrollText
 .text "So yer joinin' up with 'em, huh?"
@@ -531,7 +531,7 @@ ch12xtinasafie
 .word tina_portrait
 .text "Oh, Big Sis!"
 .byte NewLine
-.text "*Sniffle, whimper*"
+.text "*sniffle*"
 .byte WaitForA
 
 .byte Right_slot
@@ -550,7 +550,7 @@ ch12xtinasafie
 .byte ScrollText
 .text "I w-wanted to help you!"
 .byte NewLine
-.text "*Sniffle*"
+.text "*sniffle*"
 .byte WaitForA
 .byte ScrollText
 .text "Just thinkin' of you out there, all on your"
@@ -583,7 +583,7 @@ ch12xtinasafie
 .byte ScrollText
 .text "Steal things for him, mostly..."
 .byte NewLine
-.text "With my Thief and Unlock staves, you know?"
+.text "With my thief and unlock staves, you know?"
 .byte NewLine
 .text "He said those were what made me useful..."
 .byte WaitForA
@@ -628,7 +628,7 @@ ch12xtinasafie
 
 .byte Left_slot
 .byte ScrollText
-.text "*Sniffle, whimper*"
+.text "*sniffle* *sniffle*"
 .byte WaitForA
 .byte ScrollText
 .text "H-he... He'd take a big, hairy caterpillar"
@@ -659,7 +659,7 @@ ch12xtinasafie
 
 .byte Right_slot
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "Oh, Tina..."
 .byte WaitForA
@@ -767,7 +767,7 @@ ch12xopening1
 
 .byte Left_slot
 .byte ScrollText
-.text "The Imperial Army's come to bring the"
+.text "The imperial army's come to bring the"
 .byte NewLine
 .text "hammer down on us, that's what."
 .byte WaitForA
@@ -777,7 +777,7 @@ ch12xopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Th-the Empire's here...?"
+.text "Th-the empire's here...?"
 .byte WaitForA
 
 .byte Left_slot
@@ -906,7 +906,7 @@ ch12xopening3lithis
 .text "don't get along with too well. If he's here..."
 .byte WaitForA
 .byte ScrollText
-.text "Look, just leave me out of this one, OK?"
+.text "Look, just leave me out of this one, okay?"
 .byte NewLine
 .text "Pretty please?"
 .byte WaitForA

@@ -57,7 +57,7 @@ ch10wm2
 .word $0417 ;y then x
 .text "The Liberation Army made their way to the"
 .byte NewLine
-.text "Imperial-Thracian border, "
+.text "imperial-Thracian border, "
 .byte WaitForA
 .text "which they would"
 .byte NewLine
@@ -178,7 +178,7 @@ ch10rescuehouse
 .text "You folks are with the Liberation Army, right?"
 .byte WaitForA
 .byte ScrollText
-.text "Well, you be sure to show the Empire"
+.text "Well, you be sure to show the empire"
 .byte NewLine
 .text "some of our famous Thracian hospitality!"
 .byte NewLine
@@ -212,7 +212,7 @@ ch10ensorcelhouse
 .byte ScrollText
 .text "I wanted to see what would happen"
 .byte NewLine
-.text "if I watered a tree using only Pure Water."
+.text "if I watered a tree using only pure water."
 .byte WaitForA
 .byte ScrollText
 .text "I won't keep you in suspense—this here staff"
@@ -222,7 +222,7 @@ ch10ensorcelhouse
 .byte ScrollText
 .text "Use it, and it'll fortify your magic, same as if"
 .byte NewLine
-.text "you'd just gulped down Pure Water yourself."
+.text "you'd just gulped down pure water yourself."
 .byte WaitForA
 .byte ScrollText
 .text "Hm? Where's the rest of the tree, you ask?"
@@ -234,7 +234,7 @@ ch10ensorcelhouse
 .byte ScrollText
 .text "Poor thing never grew bigger than three feet"
 .byte NewLine
-.text "tall... Heh, it turns out Pure Water actually"
+.text "tall... Heh, it turns out pure water actually"
 .byte NewLine
 .text "isn't very good for plants."
 .byte WaitForA
@@ -319,7 +319,7 @@ ch10opening1
 .byte ScrollText
 .text "but to be so vindictive about it as to"
 .byte NewLine
-.text "take it out on the Commander's only sister?"
+.text "take it out on the commander's only sister?"
 .byte WaitForA
 .byte ScrollText
 .text "You'd scarcely believe there was"
@@ -419,7 +419,7 @@ ch10opening2
 .byte NewLine
 .text "is Fort Nowell, which guards the border"
 .byte NewLine
-.text "between Thracia and the Empire."
+.text "between Thracia and the empire."
 .byte WaitForA
 
 .byte Right_slot
@@ -606,7 +606,7 @@ ch10endlargodead
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
-.text "August, did you see the Mage Knight"
+.text "August, did you see the mage knight"
 .byte NewLine
 .text "that fled midway through the battle?"
 .byte WaitForA

@@ -165,7 +165,7 @@ kempfrel
 .byte EndText
 
 brookrel
-.text "I'll be the laughing stock of the Empire..."
+.text "I'll be the laughing stock of the empire..."
 .byte WaitForA
 .byte EndText
 

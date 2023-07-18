@@ -157,7 +157,7 @@ olwenbharat
 .byte NewLine
 .text "No matter what happens, not even the"
 .byte NewLine
-.text "Emperor would disrespect your brother."
+.text "emperor would disrespect your brother."
 .byte WaitForA 
 .byte ScrollText
 .text "But me? I still have my children to take care of"

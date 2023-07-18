@@ -19,7 +19,7 @@ ch20silencehouse
 .byte NewLine
 .text "I couldn't stand going back"
 .byte NewLine
-.text "to those horrible days of Imperial rule!"
+.text "to those horrible days of imperial rule!"
 .byte WaitForA
 
 .byte EndText
@@ -77,7 +77,7 @@ ch20opening1
 .byte NewLine
 .text "yet Leonster still stands."
 .byte NewLine
-.text "King Blume is...displeased."
+.text "King Bloom is...displeased."
 .byte WaitForA
 .byte ScrollText
 .text "I don't mean to speak out of turn,"
@@ -134,7 +134,7 @@ ch20opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "And what does His Highness himself"
+.text "And what does His Majesty himself"
 .byte NewLine
 .text "intend to do?"
 .byte WaitForA
@@ -605,7 +605,7 @@ ch20closing3
 .byte NewLine
 .text "when the war is finally over."
 .byte NewLine
-.text "So...don't cry anymore, OK?"
+.text "So...don't cry anymore, okay?"
 .byte WaitForA
 .byte ScrollText
 

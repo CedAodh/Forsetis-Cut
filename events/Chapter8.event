@@ -10,35 +10,34 @@ eventChapter8Events ; 99/BE7D
 	_TurnEventDefinitions ; 99/BE8A
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Rumaigh
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _GomezAppear
 			CMP_WORD wCurrentTurn, 1
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 5, 24
-			CMP_WORD wCurrentPhase, Player
-			ROLL_RNG 30
+			CMP_WORD_RANGE wCurrentTurn, 3, 24
+			CMP_WORD wCurrentPhase, NPC
+			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LeftReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 7, 30
-			CMP_WORD wCurrentPhase, Player
-			ROLL_RNG 80
+			CMP_WORD_RANGE wCurrentTurn, 6, 30
+			CMP_WORD wCurrentPhase, NPC
+			ROLL_RNG 70
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RumaighAIChange
-			CMP_WORD wCurrentTurn, 16
+			CMP_WORD wCurrentTurn, 15
 			CHECK_NUM_UNITS_GTE Rumaigh, 1
 			CMP_STATUS_UNSET Rumaigh, TurnStatusRescued
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
-			CMP_WORD wCurrentTurn, 16
+			CMP_WORD wCurrentTurn, 15
 			CHECK_NUM_UNITS_GTE Rumaigh, 1
 			CMP_STATUS_UNSET Rumaigh, TurnStatusRescued
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -190,7 +189,7 @@ eventChapter8Events ; 99/BE7D
 	END2
 	
 	_LeifOsianTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse leifosian
 	END2
 	
 	_LeifHalvanTalk

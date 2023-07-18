@@ -20,8 +20,8 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word DagdarPortrait
 	.word Dagdar
 
-	.word RalphPortrait
-	.word Ralph
+	.word TolmanPortrait
+	.word Tolman
 
 	.word MartyPortrait
 	.word Marty

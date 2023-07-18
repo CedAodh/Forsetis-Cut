@@ -18,8 +18,8 @@
 
 ; .section ActionStructRoundTryProcAdeptReplacementSection
 
-* := $4A5080
-.logical lorom ($4A5080, 1)
+* := $4A5800
+.logical lorom ($4A5800, 1)
   rlActionStructRoundTryProcAdeptReplacement ; 83/D6FC
 
     .al

@@ -113,12 +113,12 @@ ch21churchother
 .word jeanne_portrait
 .text "The fighting will only become more intense"
 .byte NewLine
-.text "as you draw closer to the Imperial base"
+.text "as you draw closer to the imperial base"
 .byte NewLine
 .text "to the east."
 .byte WaitForA
 .byte ScrollText
-.text "Keep hold of this Pure Water."
+.text "Keep hold of this pure water."
 .byte NewLine
 .text "I'm sure it will come in handy."
 .byte WaitForA
@@ -131,7 +131,7 @@ ch21purewaterhouse
 .byte Right_slot
 .word LoadPortrait
 .word elder_portrait
-.text "Ever since the Empire took over,"
+.text "Ever since the empire took over,"
 .byte NewLine
 .text "this whole place has gone to hell..."
 .byte NewLine
@@ -140,7 +140,7 @@ ch21purewaterhouse
 .byte ScrollText
 .text "So I don't care what you do,"
 .byte NewLine
-.text "just drive the Empire outta here!"
+.text "just drive the empire outta here!"
 .byte WaitForA
 .byte ScrollText
 .text "I know this little vial seems worthless now,"
@@ -544,7 +544,7 @@ ch21prisoners
 
 .byte Right_slot
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "I suppose this is unavoidable..."
 .byte WaitForA
@@ -594,7 +594,7 @@ ch21wm3
 .word $017C ;blume
 .word $0407 ;y then x
 .byte NewLine
-.text "King Blume, had escaped to Connaught."
+.text "King Bloom, had escaped to Connaught."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -626,7 +626,7 @@ ch21wm4
 .byte NewLine
 .text "the “Scion of Light” and"
 .byte NewLine
-.text "Lord of House Chalphy, Seliph..."
+.text "lord of House Chalphy, Seliph..."
 .byte WaitForA
 
 .byte EndText

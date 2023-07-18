@@ -9,39 +9,39 @@ eventChapter4xEvents ; FD/85C5
 
 	_TurnEventDefinitions ; FD/85D2
 		EVENT FlagAlwaysZero, _SoldierLeftReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 24
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 8, 24
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherLeftReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 24
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 8, 24
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _SoldierRightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 24
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 8, 24
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherRightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 24
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 8, 24
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonLeftReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 12, 32
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 10, 32
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonRightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 12, 32
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 10, 32
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT $07, _CedAISwitch
 			RUN_ASM _rlNPCCheck
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 32, 255
+			CMP_WORD_RANGE wCurrentTurn, 33, 255
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

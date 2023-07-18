@@ -227,7 +227,7 @@ nannadeath
 .byte EndText
 
 selphinadeath
-.text "*Huff... Huff...*"
+.text "*huff* *huff*"
 .byte NewLine
 .text "I...made it this far..."
 .byte NewLine
@@ -457,7 +457,7 @@ deandeath
 .byte EndText
 
 paulusdeath
-.text "King Blume, I beg of you..."
+.text "King Bloom, I beg of you..."
 .byte NewLine
 .text "I've...seen what will happen..."
 .byte NewLine
@@ -673,7 +673,7 @@ zaundeath
 .byte EndText
 
 cohendeath
-.text "The Empire...is undefeatable..."
+.text "The empire...is undefeatable..."
 .byte NewLine
 .text "Guhh!"
 .byte WaitForA

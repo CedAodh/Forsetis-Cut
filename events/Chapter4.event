@@ -13,28 +13,28 @@ eventChapter4Events ; 99/8778
 			TEST_FLAG_UNSET $07
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LeftSoldierReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $07
 			CMP_WORD_RANGE wCurrentTurn, 7, 20
 			ROLL_RNG 40
 			CHECK_NUM_UNITS_LTE MunsterSoldier2, 12
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MiddleLeftSoldierReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $07
 			CMP_WORD_RANGE wCurrentTurn, 8, 60
 			ROLL_RNG 40
 			CHECK_NUM_UNITS_LTE MunsterSoldier2, 12
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MiddleRightSoldierReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $07
 			CMP_WORD_RANGE wCurrentTurn, 12, 24
 			ROLL_RNG 40
 			CHECK_NUM_UNITS_LTE MunsterSoldier2, 12
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RightSoldierReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $07
 			CMP_WORD_RANGE wCurrentTurn, 10, 24
 			ROLL_RNG 40
@@ -547,8 +547,11 @@ eventChapter4Events ; 99/8778
 		;macroCheckTurnStatusSet Lifis, TurnStatusCaptured
 		;JUMP_TRUE +
 		
-		TEST_FLAG_SET FlagLifisGoneForGood
-		JUMP_TRUE +
+		;TEST_FLAG_SET FlagLifisGoneForGood
+		;JUMP_TRUE +
+		
+		;TEST_FLAG_SET FlagSafyGoneForGood
+		;JUMP_TRUE +
 		
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._DaisyGroup
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000

@@ -18,7 +18,7 @@ eventChapter4xData ; B1/EB48
 
 	_CedGroup ; B1/EBC6
 		UNIT Asbel, NPC, [2, 8], [2, 8], CedChp4x, [Grafcalibur, DoorKey, Vulnerary], 1, False, [$0E, $11, $02, $80]
-		UNIT CedChp4x, NPC, [3, 8], [3, 8], CedChp4x, [ForsetiInfinite, Vulnerary], 7, False, [$00, $00, $00, $80]
+		UNIT CedChp4x, NPC, [3, 8], [3, 8], CedChp4x, [Forseti, Vulnerary], 7, False, [$00, $00, $00, $80]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/EBF0

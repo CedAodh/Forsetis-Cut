@@ -13,12 +13,12 @@ objectivech2_2
 
 
 objectivech2x
-	.text "Seize the gate."
+	.text "Seize the gate"
 .byte EndTextNoPortraitFade
 
 
 objectivech3
-	.text "Seize the throne."
+	.text "Seize the throne"
 .byte EndTextNoPortraitFade
 
 
@@ -52,11 +52,11 @@ objectivech7
 
 
 objectivech8
-	.text "Seize the gate (Have Lemay captured"
+	.text "Seize the gate (within 15 turns; Dagdar"
 .byte EndTextNoPortraitFade
 
 objectivech8_2
-	.text "at the time of seizing)"
+	.text "and Tanya are not dead or captured)"
 .byte EndTextNoPortraitFade
 
 
@@ -202,7 +202,7 @@ objectivech23
 .byte EndTextNoPortraitFade
 
 objectivech23_2
-	.text "AND keep the Magi alive"
+	.text "AND keep the Magi Squad alive"
 .byte EndTextNoPortraitFade
 
 

@@ -32,7 +32,7 @@ ch23coulterspawn
 .byte ScrollText
 .text "Even if we don't conquer Munster, as long as"
 .byte NewLine
-.text "it's liberated from the Empire, we'll have"
+.text "it's liberated from the empire, we'll have"
 .byte NewLine
 .text "dealt a tremendous blow to our mutual enemy."
 .byte WaitForA
@@ -41,7 +41,7 @@ ch23coulterspawn
 .byte NewLine
 .text "simply join forces with the rebels and still"
 .byte NewLine
-.text "do just as much damage to the Empire?"
+.text "do just as much damage to the empire?"
 .byte WaitForA
 
 .byte Right_slot
@@ -93,7 +93,7 @@ ch23cedalphand
 .byte Left_slot
 .word LoadPortrait
 .word alphand_portrait
-.text "*Pant... Pant...*"
+.text "*pant* *pant*"
 .byte NewLine
 .text "Wh-what manner of heathen are you?!"
 .byte WaitForA
@@ -283,7 +283,7 @@ ch23vulneraryhouse
 .word braidedgirl_portrait
 .text "You've come so far already!"
 .byte NewLine
-.text "Please, save our city from the Empire!"
+.text "Please, save our city from the empire!"
 .byte WaitForA
 .byte ScrollText
 .text "This Vulnerary is all I can spare,"
@@ -326,7 +326,7 @@ ch23physichouse
 .text "Wish I could get outta here that easy..."
 .byte WaitForA
 .byte ScrollText
-.text "Here, take this Physic staff with you."
+.text "Here, take this physic staff with you."
 .byte NewLine
 .text "It's only got a few charges left,"
 .byte NewLine
@@ -552,7 +552,7 @@ ch23leifced
 .text "you and Lord Seliph."
 .byte WaitForA
 .byte NewLine
-.text "I... I'm no Crusader..."
+.text "I... I'm no crusader..."
 .byte WaitForA
 
 .byte Right_slot
@@ -562,14 +562,14 @@ ch23leifced
 .text "How could you say such a thing?!"
 .byte WaitForA
 .byte ScrollText
-.text "Being a Crusader means more than just"
+.text "Being a crusader means more than just"
 .byte NewLine
 .text "happening to inherit the right kind of blood."
 .byte WaitForA
 .byte ScrollText
 .text "For centuries, Jugdral was ruled by"
 .byte NewLine
-.text "the Loptr Church and its Empire—the Crusaders"
+.text "the Loptr Church and its empire—the crusaders"
 .byte NewLine
 .text "were the ones that overthrew their rule."
 .byte WaitForA
@@ -590,7 +590,7 @@ ch23leifced
 .byte NewLine
 .text "holy war to free countless souls"
 .byte NewLine
-.text "from the grip of the Empire!"
+.text "from the grip of the empire!"
 .byte WaitForA
 .byte ScrollText
 .text "Neither Lord Seliph nor I have any right"
@@ -609,7 +609,7 @@ ch23leifced
 .byte NewLine
 .text "for longer than any of us have!"
 .byte NewLine
-.text "If you're not a Crusader, who the hell is?!"
+.text "If you're not a crusader, who the hell is?!"
 .byte WaitForA
 .byte ScrollText
 .text "Take heart, Prince Leif!"
@@ -1049,7 +1049,7 @@ ch23opening2
 .byte WaitForA
 
 .byte Right_slot
-.text "I'm afraid so, sire."
+.text "I'm afraid so, milord."
 .byte NewLine
 .text "And it seems the Magi have been sheltering"
 .byte NewLine
@@ -1062,7 +1062,7 @@ ch23opening2
 .byte NewLine
 .text "the only bargaining chips we have"
 .byte NewLine
-.text "to get the Empire to overlook this mess!"
+.text "to get the empire to overlook this mess!"
 .byte WaitForA
 
 .byte Right_slot
@@ -1083,7 +1083,7 @@ ch23opening2
 .byte WaitForA
 
 .byte Right_slot
-.text "Leave it to me, milord."
+.text "Leave it to me, Your Excellency."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -1112,7 +1112,7 @@ ch23opening2
 
 .byte Right_slot
 .byte ScrollText
-.text "Of course, sire."
+.text "I understand what is at stake."
 .byte NewLine
 .text "We'll take every measure to secure the city!"
 .byte WaitForA
@@ -1307,7 +1307,7 @@ ch23saiasblade
 .byte ScrollText
 .text "Lord Ced bade me deliver this blade to you—"
 .byte NewLine
-.text "as Crusader blood runs in your veins,"
+.text "as crusader blood runs in your veins,"
 .byte NewLine
 .text "Prince Leif, you should be able to wield it."
 .byte WaitForA

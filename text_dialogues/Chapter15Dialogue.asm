@@ -17,7 +17,7 @@ ch15ralphamaldaspawn
 .byte Right_slot
 .text "Of course, milady. They'll be most safe here—"
 .byte NewLine
-.text "the Empire has no reason to come all this way"
+.text "the empire has no reason to come all this way"
 .byte NewLine
 .text "through the mountains for one poor village."
 .byte WaitForA
@@ -32,7 +32,7 @@ ch15ralphamaldaspawn
 .text "Will you be all right?"
 .byte WaitForA
 .byte ScrollText
-.text "If the Empire learns of what you've done here,"
+.text "If the empire learns of what you've done here,"
 .byte NewLine
 .text "I shudder to think of what terrible fate"
 .byte NewLine
@@ -482,7 +482,7 @@ ch15ralphrecruitment
 .byte ScrollText
 .text "Because I won't put up with living under"
 .byte NewLine
-.text "the Empire's thumb for one moment longer."
+.text "the empire's thumb for one moment longer."
 .byte NewLine
 .text "That good enough of a reason?"
 .byte WaitForA
@@ -496,7 +496,7 @@ ch15ralphrecruitment
 .byte ScrollText
 .text "Ralph, my greatest desire is to free every"
 .byte NewLine
-.text "person suffering under the Empire's tyranny."
+.text "person suffering under the empire's tyranny."
 .byte NewLine
 .text "Do you swear to fight for that cause?"
 .byte WaitForA
@@ -544,7 +544,7 @@ ch15mareetashannam1
 .word mareeta_portrait
 .text "Hold! Who are you?!"
 .byte NewLine
-.text "Another one of the Empire's lapdogs?!"
+.text "Another one of the empire's lapdogs?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -903,7 +903,7 @@ ch15opening1
 .byte ScrollText
 .text "That route will allow us to attack Leonster"
 .byte NewLine
-.text "from the south, where the Empire's defenses"
+.text "from the south, where the empire's defenses"
 .byte NewLine
 .text "are sure to be weaker."
 .byte WaitForA
@@ -931,7 +931,7 @@ ch15opening1
 .byte ScrollText
 .text "I'm well aware of the dangers—but so is"
 .byte NewLine
-.text "the Empire. They won't be expecting an attack"
+.text "the empire. They won't be expecting an attack"
 .byte NewLine
 .text "to come from such a treacherous area."
 .byte WaitForA
@@ -956,7 +956,7 @@ ch15opening1
 .byte NewLine
 .text "in such a way that gives inspiration and hope"
 .byte NewLine
-.text "to the masses oppressed by the Empire!"
+.text "to the masses oppressed by the empire!"
 .byte WaitForA
 .byte ScrollText
 .text "Are we to skulk through the woods"
@@ -975,7 +975,7 @@ ch15opening1
 .byte ScrollText
 .text "Such a spectacle would indeed be glorious—"
 .byte NewLine
-.text "for the Empire."
+.text "for the empire."
 .byte WaitForA
 .byte ScrollText
 .text "We'd be charging right into their front lines."
@@ -1020,7 +1020,7 @@ ch15opening1
 .text "to an insult!"
 .byte WaitForA
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "Though I suppose there's little point"
 .byte NewLine
@@ -1224,7 +1224,7 @@ ch15closing
 .byte ScrollText
 .text "That said, I offer to send you partway there"
 .byte NewLine
-.text "with my Warp staff."
+.text "with my warp staff."
 .byte WaitForA
 .byte ScrollText
 .text "I can teleport you to one of two places:"
@@ -1241,7 +1241,7 @@ ch15closing
 .byte NewLine
 .text "that runs all the way to Leonster. But you'd"
 .byte NewLine
-.text "have to breach the fort the Empire has there."
+.text "have to breach the fort the empire has there."
 .byte WaitForA
 
 .byte EndText
@@ -1281,7 +1281,7 @@ ch15leftdorias
 .text "take us north along the coast to Leonster."
 .byte WaitForA
 .byte ScrollText
-.text "Seasoned Imperial troops will be"
+.text "Seasoned imperial troops will be"
 .byte NewLine
 .text "on the lookout for us. I anticipate"
 .byte NewLine

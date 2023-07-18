@@ -10,19 +10,18 @@ eventChapter10Events ; 99/C559
 	_TurnEventDefinitions ; 99/C566
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Largo
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
 		EVENT $06, _OlwenFredArrive
-			CMP_WORD wCurrentTurn, 4
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _OlwenFredLeave
-			CMP_WORD wCurrentTurn, 6
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 5
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $06
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -203,7 +202,7 @@ eventChapter10Events ; 99/C559
 	.word $0000
 	
 	_LeifRonanTalk
-		macroDialogueHouse placeholder
+		macroDialogueHouse leifronan
 	END2
 
 	_OpeningEvent ; 99/CA1F

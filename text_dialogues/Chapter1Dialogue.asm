@@ -36,9 +36,11 @@ ch1op1
 	.byte WaitForA	
 	
 	.byte Right_Slot
-	.text "Regretfully not, milord. The men searched the"
+	.text "Regretfully not, Your Excellency."
 	.byte NewLine
-	.text "village top to bottom, but came up with nothing."
+	.text "The men searched the village"
+	.byte NewLine
+	.text "top to bottom, but came up with nothing."
 	.byte WaitForA
 	
 	.byte Left_slot
@@ -76,7 +78,7 @@ ch1op1
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "They're the local militia, sire. As I understand it,"
+	.text "They are the local militia. As I understand it,"
 	.byte NewLine
 	.text "this village was once home to a group"
 	.byte NewLine
@@ -141,7 +143,7 @@ ch1op1
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "Your trust in me is well placed, sire."
+	.text "Your trust in me is well placed, Your Excellency."
 	
 	.byte Left_slot
 	.word ClearPortrait
@@ -230,7 +232,7 @@ ch1op2
 	.byte WaitForA
 
 	.byte Right_Slot
-	.text "All shall be as you wish it, milord."
+	.text "All shall be as you wish it, Your Excellency."
 	.byte WaitForA
 	
 	.byte EndText
@@ -268,7 +270,7 @@ ch1op4
 	.byte $09 ; font 9(always use font 9)	
 	.text "Commander, Fiana is packed to the brim"
 	.byte NewLine
-	.text "with Imperial troops!"
+	.text "with imperial troops!"
 	.byte NewLine
 	.text "They...must have struck while we were away."
 	.byte WaitForA
@@ -277,7 +279,7 @@ ch1op4
 	.byte Left_Slot
 	.word LoadPortrait
 	.word osian_portrait
-	.text "What? No way is the Empire gonna make a mess"
+	.text "What? No way is the empire gonna make a mess"
 	.byte NewLine
 	.text "of our home! "
 	
@@ -316,7 +318,7 @@ ch1op4
 	.byte NewLine
 	.text "Seems we've finally been noticed"
 	.byte NewLine
-	.text "by the Empire."
+	.text "by the empire."
 	.byte WaitForA
 	
 	.byte Left_Slot
@@ -386,7 +388,7 @@ ch1op4
 	.byte NewLine
 	.text "by now. He's old enough to choose for himself—"
 	.byte NewLine
-	.text "and as my liege, I will abide by his judgment."
+	.text "and as my liege, he has my full faith."
 	.byte WaitForA
 
 	.byte Right_Slot 
@@ -423,7 +425,7 @@ ch1op4
 	.byte NewLine
 	.text "most foot-soldiers are just regular folk,"
 	.byte NewLine
-	.text "forced into the Imperial Army against their will."
+	.text "forced into the imperial army against their will."
 	.byte WaitForA
 	.byte ScrollText
 	.text "If they surrender, just take their weapons"
@@ -471,7 +473,7 @@ ch1op4
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "OK, enough chatter! Let's give the Empire"
+	.text "Okay, enough chatter! Let's give the empire"
 	.byte NewLine
 	.text "a battle worthy of our names as Freeblades!"
 	.byte WaitForA
@@ -543,9 +545,9 @@ ch1osianhouseosian
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Not even the Empire knockin' down our front"
+	.text "Not even the empire knockin' down our front"
 	.byte NewLine
-	.text "door can stop that foul mouth of yours, I see."
+	.text "door can stop that fool mouth of yours, I see."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Well, no point in draggin' this out."
@@ -582,7 +584,7 @@ ch1osianhouseosian
 	.byte NewLine
 	.text "Go on, now!"
 	.byte NewLine
-	.text "Don't keep the Commander waitin' on you!"
+	.text "Don't keep the commander waitin' on you!"
 	.byte WaitForA
 	
 	.byte Right_slot
@@ -613,7 +615,7 @@ ch1liferinghouse
     .word LoadPortrait
     .word oldlady_portrait
 	.byte $09 ; font 9(always use font 9)
-	.text "Those Imperial dogs took Dame Mareeta"
+	.text "Those imperial dogs took Dame Mareeta"
 	.byte NewLine
 	.text "and Lady Nanna—just snatched 'em right up"
 	.byte NewLine
@@ -625,7 +627,7 @@ ch1liferinghouse
 	.text "are you?"
 	.byte WaitForA
 	.byte ScrollText
-	.text "If you're fixin' to fight the Empire,"
+	.text "If you're fixin' to fight the empire,"
 	.byte NewLine
 	.text "take this with you. This here ring's enchanted"
 	.byte NewLine
@@ -655,7 +657,7 @@ ch1vulneraryhouse
 	.byte NewLine
 	.text "Fiana, right? So don't just stop with them"
 	.byte NewLine
-	.text "pirates—drive the Empire from our village, too!"
+	.text "pirates—drive the empire from our village, too!"
 	.byte WaitForA
 	.byte ScrollText
 	.text "...Not to imply that I ain't grateful, a' course."
@@ -667,7 +669,7 @@ ch1vulneraryhouse
 	.byte NewLine
 	.text "but it's the least we can do after everythin'"
 	.byte NewLine
-	.text "the Commander's done fer us."
+	.text "the commander's done fer us."
 	.byte WaitForA
 	
 	.byte EndText
@@ -682,7 +684,7 @@ ch1ironswordhouse
 	.byte NewLine
 	.text "Most folk here gotta make do by nicking"
 	.byte NewLine
-	.text "supplies from Imperial troops."
+	.text "supplies from imperial troops."
 	.byte WaitForA
 	.byte ScrollText
 	.text "It's awful risky, but if you can capture an enemy"
@@ -690,7 +692,7 @@ ch1ironswordhouse
 	.text "alive, you get to help yourself to their stuff."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Matter of fact, I got the drop on an Imperial"
+	.text "Matter of fact, I got the drop on an imperial"
 	.byte NewLine
 	.text "soldier myself. Heard 'im snoring from three"
 	.byte NewLine
@@ -880,7 +882,7 @@ ch1endingnoeyvel
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "The Empire took 'er, sure as you're standin'"
+	.text "The empire took 'er, sure as you're standin'"
 	.byte NewLine
 	.text "here. Mareeta tried to break her loose,"
 	.byte NewLine
@@ -910,7 +912,7 @@ ch1endingnoeyvel
 	.byte NewLine
 	.text "I'll bring everyone home: Nanna, Mareeta,"
 	.byte NewLine
-	.text "and the Commander!"
+	.text "and the commander!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -1071,7 +1073,7 @@ ch1dagdareyveltalk
 	.text "in one piece!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "Listen, ya have any idea why the Empire"
+	.text "Listen, ya have any idea why the empire"
 	.byte NewLine
 	.text "would come all the way out here?"
 	.byte WaitForA
@@ -1088,7 +1090,7 @@ ch1dagdareyveltalk
 	.text "He's the heir to House Leonster."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I've been helping him hide from the Empire."
+	.text "I've been helping him hide from the empire."
 	.byte NewLine
 	.text "I'm sorry... I shouldn't have kept it from you."
 	.byte WaitForA
@@ -1099,7 +1101,7 @@ ch1dagdareyveltalk
 	.byte NewLine
 	.text "about it now. Long as I get to cut down some of"
 	.byte NewLine
-	.text "those Imperial dastards meself, we're even."
+	.text "those imperial dastards meself, we're even."
 	.byte WaitForA
 	
 	.byte EndText

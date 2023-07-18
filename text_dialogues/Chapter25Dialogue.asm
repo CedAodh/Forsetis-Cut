@@ -505,7 +505,7 @@ ch25ending2finn
 .byte ScrollText
 .text "My only regret is that I couldn't kill"
 .byte NewLine
-.text "King Blume with my own hands."
+.text "King Bloom with my own hands."
 .byte WaitForA
 
 .byte Right_slot
@@ -695,7 +695,7 @@ ch25ending3eyvel
 .byte ScrollText
 .text "Lord Leif, I'll be looking forward to the day"
 .byte NewLine
-.text "when you beat the Empire for good"
+.text "when you beat the empire for good"
 .byte NewLine
 .text "and come back to Leonster."
 .byte WaitForA
@@ -729,7 +729,7 @@ ch25ending3eyvel
 .byte ScrollText
 .text "I believe in you, Little Leif."
 .byte NewLine
-.text "Go show the Empire what it's like"
+.text "Go show the empire what it's like"
 .byte NewLine
 .text "to have you for an enemy!"
 .byte WaitForA
@@ -1191,7 +1191,7 @@ ch25finale
 .byte ScrollText
 .text "If a country that vast and wealthy were to join"
 .byte NewLine
-.text "the fight against the Empire, my Liberation"
+.text "the fight against the empire, my Liberation"
 .byte NewLine
 .text "Army would have cause for celebration."
 .byte WaitForA

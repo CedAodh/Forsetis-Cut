@@ -163,7 +163,7 @@ ch17Belder1
 .byte ScrollText
 .text "Indeed."
 .byte NewLine
-.text "We'll not bear the abuses of the Empire"
+.text "We'll not bear the abuses of the empire"
 .byte NewLine
 .text "for one moment longer."
 .byte WaitForA
@@ -571,7 +571,7 @@ ch17Bclosing1
 .byte ScrollText
 .text "The castle's commander is a man named"
 .byte NewLine
-.text "Gustav, a close associate of King Blume."
+.text "Gustav, a close associate of King Bloom."
 .byte NewLine
 .text "He is...a man of many vices."
 .byte WaitForA
@@ -708,7 +708,7 @@ ch17Bclosing1
 .byte NewLine
 .text "No, it can't be! The prince has returned,"
 .byte NewLine
-.text "yet he still serves the Empire!"
+.text "yet he still serves the empire!"
 .byte WaitForA
 .byte ScrollText
 .text "If he and his men would just turn against them,"

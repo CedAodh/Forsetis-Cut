@@ -10,7 +10,6 @@ eventChapter16AEvents ; FD/B120
 	_TurnEventDefinitions ; FD/B12D
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Brook
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
@@ -33,29 +32,29 @@ eventChapter16AEvents ; FD/B120
 		EVENT $12, _ConomorUnitsFlee
 			TEST_FLAG_SET $A4
 		END_DEFINITION
-		EVENT $12, _ConomorUnitsFlee
-			TEST_FLAG_SET $0E
-		END_DEFINITION
 		EVENT $00, _SchroffDialogue
 			RUN_ASM rlCheckSchroffDeadOrUnrecruited
 			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT $00, _TopPirateReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 5
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 4
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _BottomPirateReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 12
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 11
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _PegasusReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 15
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 9
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _ConomorReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 14
 		END_DEFINITION
 		EVENT $10, _KempfCharge
 			CMP_WORD wCurrentPhase, Enemy
@@ -153,9 +152,8 @@ eventChapter16AEvents ; FD/B120
 		EVENT $0F, _SchroffSpawn
 			TEST_FLAG_SET $21
 		END_DEFINITION
-		EVENT $2A, _OltophRevolt
-		
-		CMP_WORD aSelectedCharacterBuffer.Character, Leif
+		EVENT $15, _OltophRevolt
+			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 			macroEventConditionCheckCoordRanges [38, 0], [57, 19]
 		END_DEFINITION	
 	END_DEFINITION_ARRAY
@@ -703,8 +701,20 @@ eventChapter16AEvents ; FD/B120
 	END1
 	
 	_OltophRevolt ;FD/B8CB
-					PLAY_SOUND_WORD $00E0
+		STORE_WORD wEventEngineCharacterTarget, Oltoph
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+
+		STORE_WORD wEventEngineCharacterTarget, Oltoph
+		CALL_ASM_LOOP rlASMCIsUnitRescued, $0000
+		JUMP_TRUE +
+		
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_CHAR Oltoph
+		SET_CAMERA_SPEED 4
 		YIELD
 
 		SET_MUSIC $39
@@ -720,9 +730,9 @@ eventChapter16AEvents ; FD/B120
 		macroConvertToNPCAllegiance FriegeArmoredAxe2
 		
 		macroConvertToNPCAllegiance FriegeBallista1
-		
-		SET_MUSIC $01
 		YIELD
+		
+		+
 	
 	END1
 
@@ -732,7 +742,7 @@ eventChapter16AEvents ; FD/B120
 	.word $0000
 
 	_OpeningEvent ; FD/B8FE
-		TEST_FLAG_SET FlagOltophAliveInChp11x
+		TEST_FLAG_SET FlagNoHelpFromOltoph
 		JUMP_TRUE +
 		
 		LOAD1 eventChapter16AData._OltophGroup
@@ -787,7 +797,7 @@ eventChapter16AEvents ; FD/B120
 		STORE_WORD wEventEngineCharacterTarget, Nicolov
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 		
-		TEST_FLAG_SET FlagOltophAliveInChp11x
+		TEST_FLAG_SET FlagNoHelpFromOltoph
 		JUMP_TRUE +
 		
 		SCROLL_CAMERA_CHAR Oltoph

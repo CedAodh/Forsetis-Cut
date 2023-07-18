@@ -10,37 +10,37 @@ eventChapter2xEvents ; 97/805A
 	_TurnEventDefinitions ; 97/8067
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Lifis
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ShivaAIChange
-			CMP_WORD wCurrentTurn, 20
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 19
+			CHECK_NUM_UNITS_GTE Shiva, 1
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
-			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentTurn, 19
 			CHECK_NUM_UNITS_GTE Shiva, 1
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonWarriorReinforcements
 			CMP_WORD wCurrentTurn, 2
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _TopIslandReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 5, 9
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 9, 13
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 30
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LowerRightIslandReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 14
+			CMP_WORD_RANGE wCurrentTurn, 14, 17
 			ROLL_RNG 80
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LowerLeftIslandReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 15, 20
+			CMP_WORD_RANGE wCurrentTurn, 15, 18
 			ROLL_RNG 20
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -102,10 +102,6 @@ eventChapter2xEvents ; 97/805A
 		YIELD
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
-
-		LOAD1 eventChapter2xData._EnemyGroup2
-		WAIT_MOVE
-		YIELD
 	END2
 
 	_ShivaAIChange ; 97/81A5
@@ -156,6 +152,10 @@ eventChapter2xEvents ; 97/805A
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
 
+		STORE_LONG lEventEngineUnitGroupPointer, eventChapter2xData._EnemyGroup2
+		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
+		YIELD_UNK
+		
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter2xData._EnemyGroup3
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK

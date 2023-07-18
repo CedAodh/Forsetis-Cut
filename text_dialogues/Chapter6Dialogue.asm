@@ -28,14 +28,14 @@ ch6op1
 
 .byte Right_slot
 .byte ScrollText
-.text "I've never hated the Empire more than I do"
+.text "I've never hated the empire more than I do"
 .byte NewLine
 .text "in this moment, August."
 .byte WaitForA
 .byte ScrollText
 .text "My parents were snatched from"
 .byte NewLine
-.text "this world because of the Empire's actions"
+.text "this world because of the empire's actions"
 .byte NewLine
 .text "and now..."
 .byte WaitForA
@@ -148,7 +148,7 @@ ch6op1
 .text "seized and sent to Belhalla!"
 .byte WaitForA
 .byte ScrollText
-.text "In places where the Church's influence"
+.text "In places where the church's influence"
 .byte NewLine
 .text "runs strong, places like your native Leonster or"
 .byte NewLine
@@ -175,14 +175,14 @@ ch6op1
 .byte NewLine
 .text "however they can, not just in Munster"
 .byte NewLine
-.text "but everywhere the Empire has dominion."
+.text "but everywhere the empire has dominion."
 .byte WaitForA
 .byte ScrollText
 .text "But they're simple folk with no real weapons!"
 .byte NewLine
 .text "They could never match the might of the"
 .byte NewLine
-.text "Imperial Army, let alone the Loptr Church!"
+.text "imperial army, let alone the Loptr Church!"
 .byte WaitForA
 .byte ScrollText
 .text "Any who do try are arrested and executed—"
@@ -190,7 +190,7 @@ ch6op1
 .text "at best!"
 .byte WaitForA
 .byte ScrollText
-.text "The Church's elite unit of sorcerers,"
+.text "The church's elite unit of sorcerers,"
 .byte NewLine
 .text "the Bergrosen, use methods"
 .byte NewLine
@@ -263,19 +263,19 @@ ch6op1
 .byte NewLine
 .text "army, all those in North Thracia who"
 .byte NewLine
-.text "oppose the Empire would unite behind him."
+.text "oppose the empire would unite behind him."
 .byte WaitForA
 .byte ScrollText
 .text "If such a thing were to occur,"
 .byte NewLine
-.text "perhaps—just perhaps—the Empire and"
+.text "perhaps—just perhaps—the empire and"
 .byte NewLine
 .text "the Loptrians could be driven from Thracia."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I refuse to abandon the Commander, but..."
+.text "I refuse to abandon the commander, but..."
 .byte NewLine
 .text "I understand your reasoning, August."
 .byte WaitForA
@@ -284,7 +284,7 @@ ch6op1
 .byte NewLine
 .text "liberation of Thracia, if I could rebuild Leonster"
 .byte NewLine
-.text "and lead its army to crush the Empire..."
+.text "and lead its army to crush the empire..."
 .byte WaitForA
 .byte ScrollText
 .text "It would be nothing short of what Finn and I"
@@ -299,7 +299,7 @@ ch6op1
 .text "unwilling to endure!"
 .byte WaitForA
 .byte ScrollText
-.text "But...is defeating the Empire even possible?"
+.text "But...is defeating the empire even possible?"
 .byte WaitForA
 
 .byte Left_slot
@@ -610,7 +610,9 @@ ch6closing
 
 .byte Left_slot
 .byte ScrollText
-.text "We... We offer our deepest apologies, sire!"
+.text "We...we offer our deepest apologies,"
+.byte NewLine
+.text "Your Excellency!"
 .byte NewLine
 .text "We're truly sorry!"
 .byte WaitForA
@@ -661,7 +663,7 @@ ch6closing
 .byte NewLine
 .text "stationed, and made off with her. I..."
 .byte NewLine
-.text "I cannot begin to express my apologies, sire!"
+.text "I cannot begin to express my apologies, milord!"
 .byte WaitForA
 
 .byte Right_slot
@@ -722,7 +724,7 @@ ch6closing
 .byte NewLine
 .text "Shannan, in fact. With the deaths of his kin,"
 .byte NewLine
-.text "he's technically the Prince of Ribaut, himself."
+.text "he's technically the prince of Ribaut, himself."
 .byte WaitForA
 
 .byte Left_slot
@@ -779,7 +781,7 @@ ch6closing
 
 .byte Left_slot
 .byte ScrollText
-.text "Uh, sire?"
+.text "Uh, milord?"
 .byte WaitForA
 
 .byte Right_slot
@@ -878,7 +880,7 @@ ch6hicksmurphysaved
 .text "again... Shucks, but I'm bein' awful impolite!"
 .byte WaitForA
 .byte ScrollText
-.text "I'm Hicks, proud Axe Knight of Munster!"
+.text "I'm Hicks, proud axe knight of Munster!"
 .byte NewLine
 .text "An' after what Raydrik's done,"
 .byte NewLine
@@ -906,7 +908,7 @@ ch6cliffdead
 .byte NewLine
 .text "when y'all busted outta the castle."
 .byte NewLine
-.text "Yer no Crusaders, just common riffraff."
+.text "Yer no crusaders, just common riffraff."
 .byte WaitForA
 .byte ScrollText
 .text "Guess that Prince Shannan's rebellion"
@@ -1021,7 +1023,7 @@ ch6bellasaved
 .byte ScrollText
 .text "If it please ye, good folk, this here is"
 .byte NewLine
-.text "a flask of Pure Water. There's enough"
+.text "a flask of pure water. There's enough"
 .byte NewLine
 .text "in there fer ye to get a few uses outta it."
 .byte WaitForA

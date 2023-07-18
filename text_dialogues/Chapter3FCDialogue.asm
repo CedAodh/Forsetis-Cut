@@ -22,7 +22,7 @@ eyvelhalvan
 	.byte ScrollText
 	.text "It's just that...once I had heard that priest tell"
 	.byte NewLine
-	.text "Lord Leif about what the Empire is doing to these"
+	.text "Lord Leif about what the empire is doing to these"
 	.byte NewLine
 	.text "innocent children, I...lost myself for a moment."
 	.byte WaitForA
@@ -75,7 +75,7 @@ eyvelhalvan
 	.byte ScrollText
 	.text "By honor of the Freeblades, let's bust down"
 	.byte NewLine
-	.text "these fortress doors and give those Imperials"
+	.text "these fortress doors and give those imperials"
 	.byte NewLine
 	.text "what they got coming!"
 	.byte WaitForA
@@ -319,7 +319,7 @@ martydagdarch3
 .byte ScrollText
 .text "That's the spirit, lad!"
 .byte NewLine
-.text "Let's get back there and show those Imperials"
+.text "Let's get back there and show those imperials"
 .byte NewLine
 .text "what the Violdrake Bandits are capable of!"
 .byte WaitForA
@@ -344,6 +344,73 @@ martydagdarch3
 .byte left_slot
 .byte ScrollText
 .text "Aye aye, Boss!"
+.byte WaitForA
+
+.byte EndText
+
+augusteyvel
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word eyvel_portrait
+
+.byte left_slot
+.byte ScrollText
+.text "Lady Eyvel, it has been a pleasure."
+.byte NewLine
+.text "Thank you for allowing me to accompany"
+.byte NewLine
+.text "you and your Fiana Freeblades thus far."
+.byte WaitForA
+
+.byte right_slot
+.text "You're awfully polite, aren't you, August?"
+.byte NewLine
+.text "Well, don't go thinking you're indebted to us."
+.byte NewLine
+.text "If anything, we're just as grateful for your help."
+.byte WaitForA
+.byte ScrollText
+.text "Really, I'm just hoping your personal agenda"
+.byte NewLine
+.text "in Munster doesn't leave you all tied up—"
+.byte NewLine
+.text "because we'll take you back in a heartbeat."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I see..."
+.byte NewLine
+.text "I'll have to make note of that."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.byte ScrollText
+.text "I shall be off now."
+.byte NewLine
+.text "Fortune be with you, prince of Leonster."
+.byte WaitForA
+
+.byte Right_slot
+.text "Hold! This whole time, you've known I was"
+.byte NewLine
+.text "the heir to House Leonster?"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "But of course. What's more, I want to see you"
+.byte NewLine
+.text "returned to power. Let's arrange to meet"
+.byte NewLine
+.text "in Munster after your business is concluded."
 .byte WaitForA
 
 .byte EndText

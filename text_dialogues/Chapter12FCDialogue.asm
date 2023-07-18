@@ -306,7 +306,7 @@ nannamareetach12
 .byte ScrollText
 .text "...Yes..."
 .byte NewLine
-.text "*sniff*"
+.text "*sniffle*"
 .byte WaitForA
 
 .byte right_slot

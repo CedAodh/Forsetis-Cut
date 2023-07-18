@@ -105,7 +105,7 @@
 	FlagShivaDiedInChp2x	= $82
 	FlagJubelSaved			= $83
 	FlagDaisyRecruited		= $84 ; $84 - $88 unused in vanilla
-	FlagOltophAliveInChp11x = $85
+	FlagNoHelpFromOltoph = $85
 	FlagLifisGoneForGood	= $86
 	FlagSafyGoneForGood	= $87
 ;				= $88

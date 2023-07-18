@@ -6,7 +6,7 @@ leifepi
 .byte NewLine
 .text "the rightful heir"
 .byte NewLine
-.text "to the Imperial throne,"
+.text "to the imperial throne,"
 .byte NewLine
 .text "Leif led the war"
 .byte NewLine
@@ -135,7 +135,7 @@ LeifGoodEnding
 .byte NewLine
 .text "the rightful heir"
 .byte NewLine
-.text "to the Imperial throne,"
+.text "to the imperial throne,"
 .byte NewLine
 .text "Leif led the war"
 .byte NewLine
@@ -460,7 +460,7 @@ halvanepi
 .byte NewLine
 .text "the role of village leader"
 .byte NewLine
-.text "and Commander"
+.text "and commander"
 .byte NewLine
 .text "of the Freeblades."
 .word PauseDialogue
@@ -1468,7 +1468,7 @@ gladeepi
 .byte $04
 .text "Glade was appointed"
 .byte NewLine
-.text "Commander of the"
+.text "commander of the"
 .byte NewLine
 .text "New Kingdom of"
 .byte NewLine
@@ -1928,7 +1928,7 @@ karinepi
 .byte NewLine
 .text "regarded as an excellent"
 .byte NewLine
-.text "Pegasus Knight"
+.text "pegasus knight"
 .byte NewLine
 .text "in her own right."
 .word PauseDialogue
@@ -2206,7 +2206,7 @@ mishaepi
 .byte $10
 .text "Afterward, she was"
 .byte NewLine
-.text "named Commander of"
+.text "named commander of"
 .byte NewLine
 .text "the next generation of"
 .byte NewLine
@@ -2224,7 +2224,7 @@ mishaepi
 .byte NewLine
 .text "was a capable and fair"
 .byte NewLine
-.text "Commander, and to her"
+.text "commander, and to her"
 .byte NewLine
 .text "subordinates, she was a"
 .byte NewLine

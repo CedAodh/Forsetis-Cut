@@ -341,7 +341,7 @@ ch11opening1
 .byte NewLine
 .text "your superior officer, knowing what"
 .byte NewLine
-.text "the Empire does to traitors?"
+.text "the empire does to traitors?"
 .byte WaitForA
 
 .byte Left_slot
@@ -448,7 +448,7 @@ ch11opening1
 .byte ScrollText
 .word LoadPortrait
 .word guard_portrait
-.text "Lady Olwen, in the name of the Empire,"
+.text "Lady Olwen, in the name of the empire,"
 .byte NewLine
 .text "you're under arrest! Drop your weapon!"
 .byte WaitForA
@@ -630,7 +630,7 @@ ch11endfredsaved
 .byte ScrollText
 .text "We cannot afford to rest on our laurels,"
 .byte NewLine
-.text "however. This being an Imperial fort, I expect"
+.text "however. This being an imperial fort, I expect"
 .byte NewLine
 .text "there are children imprisoned here as well."
 .byte WaitForA
@@ -684,7 +684,7 @@ ch11wm1
 
 .text "Breaking through the enemy's lines, the"
 .byte NewLine
-.text "Liberation Army finally set foot on Imperial"
+.text "Liberation Army finally set foot on imperial"
 .byte WaitForA
 .byte NewLine
 .text "soil. Their invasion could now begin in full."

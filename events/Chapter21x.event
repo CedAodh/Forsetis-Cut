@@ -9,20 +9,20 @@ eventChapter21xEvents ; FD/E9EE
 
 	_TurnEventDefinitions ; FD/E9FB
 		EVENT $00, _MyrmidonReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 5, 15
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 4, 14
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 1, 20
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 19
 		END_DEFINITION
 		EVENT $00, _MageReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 30
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 24
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

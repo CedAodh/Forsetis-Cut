@@ -53,7 +53,7 @@
 	
 * = $188000
 .logical $B18000
-	.include "Chapter23Data.event"
+	;.include "Chapter23Data.event"
 	.include "Chapter22Data.event"
 	.include "Chapter21xData.event"
 	.include "Chapter21Data.event"
@@ -142,9 +142,9 @@
 	.include "Chapter17B.event"
 	.include "Chapter19.event"
 	.include "Chapter20.event"
-	.include "Chapter21.event"
-	.include "Chapter21x.event"
-	; .include "Chapter23.event"
+	;.include "Chapter21.event"
+	;.include "Chapter21x.event"
+	;.include "Chapter23.event"
 .here	
 
 * = $510000
@@ -187,7 +187,8 @@
 	.logical lorom($500000, 1)
 	.include "Chapter4.event"
 	.include "Chapter14.event"
-	.include "Chapter23.event"
+	.include "Chapter21.event"
+	.include "Chapter21x.event"
 	.include "Chapter7Data.event"
 	.include "Chapter6Data.event"
 	.include "Chapter5Data.event"
@@ -196,4 +197,11 @@
 	.include "Chapter3Data.event"
 	.include "Chapter2xData.event"
 	.include "Chapter2Data.event"
+	.include "Chapter2xWorldMap.event"
+.here
+
+* = $520000
+.logical lorom($520000, 1)
+	.include "Chapter23.event"
+	.include "Chapter23Data.event"
 .here

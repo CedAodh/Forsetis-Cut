@@ -438,8 +438,8 @@
 
 .here
 
-* = $4E0000
-.logical $1C8000
+* = $4E8000
+.logical $1D8000
 	
 	g4bppcPortraitSara .binary "sprites/Sara.4bpp.comp"
 	g4bppcPortraitCohen .binary "sprites/Cohen.4bpp.comp"

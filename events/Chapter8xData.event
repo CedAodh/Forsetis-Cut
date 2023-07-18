@@ -183,7 +183,7 @@ eventChapter8xData ; B1/D851
 		.byte 17, 3
 
 	_Chest2Item ; B1/DCC4
-		.word PureWater
+		.word ForsetiInfinite
 
 	_Chest2Events ; B1/DCC6
 		STORE_WORD wEventEngineXCoordinate, 17

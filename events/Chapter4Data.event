@@ -5,8 +5,8 @@ eventChapter4Data ; B1/EF95
 		.byte 8, 7
 
 	_PlayerGroup1 ; B1/EF97
-		UNIT CedChp4x, Player, [17, 18], [17, 18], CedChp23, [Light, Forseti], 1, False, [$00, $00, $00, $30]
-		UNIT Asbel, Player, [16, 17], [16, 17], CedChp23, [Wind, Fire, DoorKey], 1, False, [$00, $00, $00, $30]
+		UNIT CedChp4x, NPC, [17, 18], [17, 18], CedChp23, [Light, Forseti], 1, False, [$00, $00, $00, $30]
+		UNIT Asbel, NPC, [16, 17], [16, 17], CedChp23, [Wind, Fire, DoorKey], 1, False, [$00, $00, $00, $30]
 		UNIT Brighton, Player, [18, 17], [18, 17], CedChp23, [SteelSword, SteelAxe, IronSword], 1, False, [$00, $00, $00, $30]
 		UNIT Macha, Player, [19, 18], [19, 18], CedChp23, [IronSword, Vulnerary, Shortsword, ChestKey], 3, False, [$00, $00, $00, $30]
 		UNIT Lara, Player, [20, 17], [20, 17], CedChp23, [Lockpick, SlimSword], 2, False, [$00, $00, $00, $30]

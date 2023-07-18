@@ -125,7 +125,7 @@ ch18xavierrecruitment
 .text "they're yours."
 .byte WaitForA
 .byte ScrollText
-.text "To fight against the Empire is all I could want!"
+.text "To fight against the empire is all I could want!"
 .byte WaitForA
 
 .byte EndText
@@ -264,7 +264,7 @@ ch18villager5
 .byte Right_slot
 .text "Ah, it's not what you think!"
 .byte NewLine
-.text "I was only helping the Empire"
+.text "I was only helping the empire"
 .byte NewLine
 .text "because you'd been imprisoned—"
 .byte WaitForA
@@ -364,7 +364,7 @@ ch18villager8
 .byte NewLine
 .text "With you back, there's no reason"
 .byte NewLine
-.text "to fight for the damned Empire!"
+.text "to fight for the damned empire!"
 .byte WaitForA
 
 .byte EndText
@@ -549,7 +549,7 @@ ch18opening2
 .byte ScrollText
 .text "Just take care that they're not spotted by"
 .byte NewLine
-.text "Imperial soldiers—if Gustav's men catch sight"
+.text "imperial soldiers—if Gustav's men catch sight"
 .byte NewLine
 .text "of an escaped hostage, the plan is ruined."
 .byte WaitForA
@@ -585,7 +585,7 @@ ch18closing1
 .byte Left_slot
 .word LoadPortrait
 .word dorius_portrait
-.text "The last remains of the Empire's forces"
+.text "The last remains of the empire's forces"
 .byte NewLine
 .text "have been dealt with, Prince Leif."
 .byte NewLine
@@ -742,7 +742,7 @@ ch18closing4
 .byte NewLine
 .text "the only reason the city is still standing"
 .byte NewLine
-.text "is because it swears fealty to the Empire."
+.text "is because it swears fealty to the empire."
 .byte WaitForA
 .byte ScrollText
 .text "But yesterday, things reached"
@@ -780,7 +780,7 @@ ch18closing4
 .text "That rebellion swiftly ended in failure..."
 .byte WaitForA
 .byte ScrollText
-.text "Then the Empire retaliated,"
+.text "Then the empire retaliated,"
 .byte NewLine
 .text "and killed Ulster's people by the dozens..."
 .byte WaitForA
@@ -823,7 +823,7 @@ ch18closing5
 .text "I agree with Count Dorius' assessment."
 .byte WaitForA
 .byte ScrollText
-.text "A frontal assault against the Empire"
+.text "A frontal assault against the empire"
 .byte NewLine
 .text "has little chance to succeed—"
 .byte NewLine
@@ -839,7 +839,7 @@ ch18closing5
 .byte ScrollText
 .text "Our victories thus far have been because of"
 .byte NewLine
-.text "the Empire's own blunders—don't forget that!"
+.text "the empire's own blunders—don't forget that!"
 .byte WaitForA
 
 .byte Right_slot
@@ -989,7 +989,7 @@ ch18closing5
 .text "will yield many able hands."
 .byte WaitForA
 .byte ScrollText
-.text "Many who fought for the Empire"
+.text "Many who fought for the empire"
 .byte NewLine
 .text "did so against their will. Their numbers will"
 .byte NewLine

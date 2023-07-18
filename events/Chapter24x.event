@@ -12,15 +12,15 @@ eventChapter24xEvents ; 97/8895
 			TEST_FLAG_SET $03
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 1, 32
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 20
 		END_DEFINITION
 		EVENT $00, _SniperHeroReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 1, 20
 		END_DEFINITION
 	END_DEFINITION_ARRAY

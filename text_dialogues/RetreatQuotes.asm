@@ -84,7 +84,7 @@ martyesc
 .byte Right_slot
 .word LoadPortrait
 .word marty_portrait
-.text "*Pant, pant, wheeze*"
+.text "*pant* *pant* *wheeze*"
 .byte NewLine
 .text "G-good grief..."
 .byte WaitForA
@@ -114,7 +114,7 @@ laraesc
 .word lara_portrait
 .text "Sorry to duck out like this..."
 .byte NewLine
-.text "Watch your back, OK?"
+.text "Watch your back, okay?"
 .byte WaitForA
 .byte EndText
 
@@ -270,7 +270,7 @@ albaesc
 .byte Right_slot
 .word LoadPortrait
 .word alba_portrait
-.text "OK, onto the next battle!"
+.text "Okay, onto the next battle!"
 .byte NewLine
 .text "Ever onward and upward!"
 .byte WaitForA

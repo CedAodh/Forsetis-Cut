@@ -401,7 +401,7 @@ fctravantarion
 .byte right_slot
 .text "I am, Your Majesty."
 .byte NewLine
-.text "Now that the Empire has finally folded, it's time"
+.text "Now that the empire has finally folded, it's time"
 .byte NewLine
 .text "for us to step in and take Tarrah for ourselves!"
 .byte WaitForA
@@ -413,7 +413,7 @@ fctravantarion
 .text "This will be a key card in dealing with Bloom."
 .byte WaitForA
 .byte NewLine
-.text "Seizing Imperial territory is but a dream"
+.text "Seizing imperial territory is but a dream"
 .byte NewLine
 .text "under normal circumstances, so do not waste it."
 .byte WaitForA
@@ -469,10 +469,10 @@ fctravantarion
 .byte ScrollText
 .text "Tarrah's citizens are united in their hatred"
 .byte NewLine
-.text "of the Empire."
+.text "of the empire."
 .byte WaitForA
 .byte ScrollText 
-.text "Now that the Empire has officially invaded,"
+.text "Now that the empire has officially invaded,"
 .byte NewLine
 .text "wouldn't it be better for us to ally with"
 .byte NewLine
@@ -483,7 +483,7 @@ fctravantarion
 .byte ScrollText
 .text "Hah! You think shackling ourselves to Tarrah"
 .byte NewLine
-.text "would be enough to triumph over the Empire?"
+.text "would be enough to triumph over the empire?"
 .byte WaitForA
 .byte ScrollText
 .text "Have you already forgotten our defeat"
@@ -495,7 +495,7 @@ fctravantarion
 .byte NewLine
 .text "united under our rule then,"
 .byte NewLine
-.text "and we were still no match for the Empire."
+.text "and we were still no match for the empire."
 .byte WaitForA
 
 .byte Right_slot
@@ -521,7 +521,7 @@ fctravantarion
 .byte ScrollText
 .text "As it stands, it's no exaggeration to say"
 .byte NewLine
-.text "that the Empire's might exceeds our own"
+.text "that the empire's might exceeds our own"
 .byte NewLine
 .text "by tenfold."
 .byte WaitForA
@@ -533,7 +533,7 @@ fctravantarion
 .byte ScrollText
 .text "A whole lot of people will die:"
 .byte NewLine
-.text "Imperials, Thracians, those of Tarrah."
+.text "imperials, Thracians, those of Tarrah."
 .byte NewLine
 .text "They'll all bleed just the same."
 .byte WaitForA

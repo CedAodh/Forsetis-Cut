@@ -17,7 +17,7 @@
         .autsiz
         .databank ?
 
-        HolyWeaponFlashList := [Gungnir, GaeBolg, BragisBlade, LoptrianFang, Mjolnir, Forseti, ForsetiInfinite]
+        HolyWeaponFlashList := [Gungnir, GaeBolg, BragisBlade, LoptrianFang, Mjolnir, Forseti]
 
         and #$00FF
 

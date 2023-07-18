@@ -10,7 +10,7 @@ ch10fredboss
 ch10olwenboss
 .text "Invaders, hear me: you must leave"
 .byte NewLine
-.text "Imperial territory at once!"
+.text "imperial territory at once!"
 .byte WaitForA
 .byte EndText
 

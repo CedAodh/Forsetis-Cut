@@ -138,3 +138,12 @@
 .byte $A0
 
 .here
+
+;Plays victory music when 5 enemies remain as opposed to 6
+
+* := $01A5D8
+  .logical $83A5D8
+
+.byte $05
+
+.here

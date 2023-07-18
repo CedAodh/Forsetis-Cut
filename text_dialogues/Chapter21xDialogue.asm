@@ -51,7 +51,7 @@ ch21xopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Clear as a vial of Pure Water, sir."
+.text "Clear as a vial of pure water, sir."
 .byte WaitForA
 
 .byte EndText
@@ -66,7 +66,7 @@ ch21xopening2
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "So this is the Imperial prison camp..."
+.text "So this is the imperial prison camp..."
 .byte WaitForA
 
 .byte Right_slot
@@ -120,7 +120,7 @@ ch21xclosing
 .text "Hmm..."
 .byte WaitForA
 .byte NewLine
-.text "It's not enough that Blume is struggling to hold"
+.text "It's not enough that Bloom is struggling to hold"
 .byte NewLine
 .text "Connaught against the Isaachian rebels—"
 .byte NewLine

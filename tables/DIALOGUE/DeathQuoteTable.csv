@@ -15,7 +15,6 @@ BaldachChapter13DeathQuote,Baldach,Chapter13,None,ch13baldackdeath
 RalphChapter15DeathQuote,Ralph,Chapter15,None,ralphdeath
 ShannamChapter15DeathQuote,Shannam,Chapter15,FlagShannamDead,shannamdeath1
 ShannamChapter16BDeathQuote,Shannam,Chapter16B,FlagShannamDead,shannamdeath1
-AmaldaChapter15DeathQuote,Amalda,Chapter15,FlagAmaldaDead,amaldadeath
 ConomorChapter16ADeathQuote,Conomor,Chapter16A,FlagConomorDead,ch16Aconomordeath
 AmaldaChapter17BDeathQuote,Amalda,Chapter17B,FlagAmaldaDead,amaldadeath
 SaraChapter17BDeathQuote,Sara,Chapter17B,None,ch17Bsarahdeath
@@ -86,7 +85,7 @@ RumaighDeathQuote,Rumaigh,AnyChapter,None,rumaighdeath
 GomezDeathQuote,Gomez,AnyChapter,None,gomezdeath
 MerlochDeathQuote,Merloch,AnyChapter,None,merlochdeath
 LargoDeathQuote,Largo,AnyChapter,$07,largodeath
-OltophDeathQuote,Oltoph,Chapter11x,$08,oltophdeath
+OltophDeathQuote,Oltoph,AnyChapter,FlagNoHelpFromOltoph,oltophdeath
 ColhoDeathQuote,Colho,AnyChapter,None,colhodeath
 LisztDeathQuote,Liszt,AnyChapter,None,lisztdeath
 PaulusDeathQuote,Paulus,AnyChapter,None,paulusdeath
@@ -127,7 +126,9 @@ JabalDeathQuote,Jabal,AnyChapter,None,jabaldeath
 DvorakDeathQuote,Dvorak,AnyChapter,None,dvorakdeath
 McCloyDeathQuote,McCloy,AnyChapter,None,mccloydeath
 EichnerDeathQuote,Eichner,AnyChapter,None,eichnerdeath
-UlsterCavalier2Chapter16ADeathQuote,UlsterCavalier2,Chapter16A,$0E,None
-LeonsterSoldierChapter18DeathQuote,LeonsterSoldier,Chapter18,$09,None
 BeatriceDeathQuote,Beatrice,AnyChapter,None,beatricedeath
 PierreDeathQuote,Pierre,AnyChapter,None,pierredeath
+LeonsterLanceKnightDeathQuote,LeonsterLanceKnight,AnyChapter,None,None
+UlsterCavalier2Chapter16ADeathQuote,UlsterCavalier2,Chapter16A,$0E,None
+LeonsterSoldierChapter18DeathQuote,LeonsterSoldier,Chapter18,$09,None
+DancerEnemyChapter12xDeathQuote,DancerEnemy,Chapter12x,$0E,None

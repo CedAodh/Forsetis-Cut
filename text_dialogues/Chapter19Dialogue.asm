@@ -38,7 +38,7 @@ ch19conomorrecruit
 .byte NewLine
 .text "What idiocy compelled you to make"
 .byte NewLine
-.text "Ulster's finest knights into Imperial lapdogs?!"
+.text "Ulster's finest knights into imperial lapdogs?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -52,7 +52,7 @@ ch19conomorrecruit
 .byte ScrollText
 .text "The enemy isn't Leonster, you fool!"
 .byte NewLine
-.text "The enemy is the Empire!"
+.text "The enemy is the empire!"
 .byte WaitForA
 .byte ScrollText
 .text "Command the Knights of Ulster"
@@ -190,7 +190,7 @@ ch19amaldarecruit
 .byte ScrollText
 .text "I know what I must do:"
 .byte NewLine
-.text "rescue the children stolen by the Empire!"
+.text "rescue the children stolen by the empire!"
 .byte WaitForA
 
 .byte EndText
@@ -205,10 +205,10 @@ ch19balladpurewater
 .byte NewLine
 .text "at Ulster? Are we doomed to live"
 .byte NewLine
-.text "under the Empire forever?"
+.text "under the empire forever?"
 .byte WaitForA
 .byte ScrollText
-.text "Come, have a sip of this Pure Water"
+.text "Come, have a sip of this pure water"
 .byte NewLine
 .text "and toast with me to the final days of"
 .byte NewLine
@@ -374,7 +374,7 @@ ch19killerlancehouse
 .byte ScrollText
 .text "I mean, you folks are here, so that means"
 .byte NewLine
-.text "there's still more Knights of Leonster"
+.text "there's still more knights of Leonster"
 .byte NewLine
 .text "to fight for our motherland!"
 .byte WaitForA
@@ -386,7 +386,7 @@ ch19killerlancehouse
 .byte ScrollText
 .text "It's mighty easy-to-use, so lop off a few"
 .byte NewLine
-.text "Imperial heads with it for me!"
+.text "imperial heads with it for me!"
 .byte WaitForA
 
 .byte EndText
@@ -411,7 +411,7 @@ ch19speedringhouse
 .text "The others are shocked by how fast I am!"
 .byte WaitForA
 .byte ScrollText
-.text "But with the Empire here now, it looks like"
+.text "But with the empire here now, it looks like"
 .byte NewLine
 .text "I won't be able to sneak food over for a while."
 .byte NewLine
@@ -433,14 +433,14 @@ ch19purewaterhouse2
 .text "I'm so glad to have met you!"
 .byte WaitForA
 .byte ScrollText
-.text "Here, take this Pure Water"
+.text "Here, take this pure water"
 .byte NewLine
 .text "to match the purity of your heart!"
 .byte WaitForA
 .byte ScrollText
 .text "Best drink it, even if you don't use magic"
 .byte NewLine
-.text "yourself—lots of folks in the Imperial Army"
+.text "yourself—lots of folks in the imperial army"
 .byte NewLine
 .text "use spells."
 .byte WaitForA
@@ -453,7 +453,7 @@ ch19healhouse
 .byte Right_slot
 .word LoadPortrait
 .word youngman_portrait
-.text "So the Imperial Army has come"
+.text "So the imperial army has come"
 .byte NewLine
 .text "to bring down the hammer..."
 .byte WaitForA
@@ -462,7 +462,7 @@ ch19healhouse
 .byte NewLine
 .text "who've been injured."
 .byte NewLine
-.text "Use this—it's a Heal staff."
+.text "Use this—it's a heal staff."
 .byte WaitForA
 
 .byte EndText
@@ -473,7 +473,7 @@ ch19ensorcelhouse
 .byte Right_slot
 .word LoadPortrait
 .word younglady_portrait
-.text "The Imperial Army looks to be"
+.text "The imperial army looks to be"
 .byte NewLine
 .text "awfully strong..."
 .byte NewLine
@@ -491,7 +491,7 @@ ch19ensorcelhouse
 .byte NewLine
 .text "after my idiot brother tried to water my plants"
 .byte NewLine
-.text "with Pure Water..."
+.text "with pure water..."
 .byte WaitForA
 
 .byte EndText
@@ -502,12 +502,12 @@ ch19healhouse2
 .byte Right_slot
 .word LoadPortrait
 .word oldman_portrait
-.text "Flyin' Forseti! The other knights"
+.text "Cyclin' Ced! The other knights"
 .byte NewLine
 .text "have been hurt pretty bad, right?!"
 .byte WaitForA
 .byte ScrollText
-.text "Take this Heal staff, an' help them!"
+.text "Take this heal staff, an' help them!"
 .byte NewLine
 .text "On the double!"
 .byte WaitForA
@@ -578,7 +578,7 @@ ch19opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Th-the Imperial Army counterattacked..."
+.text "Th-the imperial army counterattacked..."
 .byte NewLine
 .text "We were...slaughtered..."
 .byte WaitForA
@@ -677,7 +677,7 @@ ch19opening2
 .word blume_portrait
 .text "...Now the maggots understand"
 .byte NewLine
-.text "what the Empire is capable of."
+.text "what the empire is capable of."
 .byte WaitForA
 .byte ScrollText
 .text "I'll leave the rest to you, Wolfe."
@@ -688,7 +688,7 @@ ch19opening2
 .byte WaitForA
 
 .byte Right_slot
-.text "It shall be done."
+.text "It shall be done, Your Majesty."
 .byte WaitForA
 
 .byte EndText
@@ -734,7 +734,7 @@ ch19closing1
 .byte Left_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "And so the Empire's retaliation begins..."
+.text "And so the empire's retaliation begins..."
 .byte NewLine
 .text "There's nothing more we can do."
 .byte NewLine
@@ -783,7 +783,7 @@ ch19closing1
 .byte ScrollText
 .text "They seem to be putting up a good fight"
 .byte NewLine
-.text "against the Empire, by all accounts."
+.text "against the empire, by all accounts."
 .byte NewLine
 .text "Do you know who their leader is?"
 .byte WaitForA
@@ -843,7 +843,7 @@ ch19closing1
 .text "was your uncle."
 .byte WaitForA
 .byte ScrollText
-.text "The Crusader Sigurd..."
+.text "The crusader Sigurd..."
 .byte WaitForA
 .byte NewLine
 .text "As recently as a decade ago,"
@@ -853,7 +853,7 @@ ch19closing1
 .text "but nowadays he's a popular folk hero."
 .byte WaitForA
 .byte ScrollText
-.text "He saw through the Emperor's schemes"
+.text "He saw through the emperor's schemes"
 .byte NewLine
 .text "from the beginning, and died trying"
 .byte NewLine
@@ -864,7 +864,7 @@ ch19closing1
 .byte NewLine
 .text "it captivated the hearts of every man, woman,"
 .byte NewLine
-.text "and child suffering under the Empire's rule..."
+.text "and child suffering under the empire's rule..."
 .byte WaitForA
 .byte NewLine
 .text "And so he's become more legend than man."
@@ -993,7 +993,7 @@ ch19closing2
 .byte Right_slot
 .text "Oh, well, uh... We fled from Ulster, y'see."
 .byte NewLine
-.text "The Imperials were hot on our trail"
+.text "The imperials were hot on our trail"
 .byte NewLine
 .text "when your army showed up to help us!"
 .byte WaitForA

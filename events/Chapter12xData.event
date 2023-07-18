@@ -4,9 +4,9 @@ eventChapter12xData ; B1/C3F7
 	_PrepEnemies ; B1/C3F7
 		.byte 9, 9
 
-		UNIT Trude, Enemy, [12, 3], [12, 3], Perne, [SilverSword, Vulnerary], 4, False, [$02, $08, $04, $00]
+		UNIT Trude, Enemy, [12, 3], [12, 3], Perne, [SilverSword, Vulnerary], 4, False, [$00, $08, $04, $00]
 		UNIT Perne, Enemy, [8, 10], [8, 10], Perne, [Kingmaker, Lockpick, Vulnerary], 3, True, [$01, $03, $04, $80]
-		UNIT Tina, Enemy, [9, 10], [9, 10], Perne, [ThiefStaff, Unlock, StaminaDrink], 1, False, [$0D, $03, $00, $00]
+		UNIT Tina, Enemy, [9, 10], [9, 10], Perne, [ThiefStaff, Unlock, StaminaDrink], 1, False, [$02, $03, $00, $00]
 		UNIT ThiefEnemy2, Enemy, [7, 1], [7, 1], Perne, [SlimSword, Vulnerary], 12, False, [$00, $00, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [17, 5], [17, 5], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [3, 13], [3, 13], Perne, [SlimSword, Vulnerary], 12, False, [$00, $00, $02, $00]

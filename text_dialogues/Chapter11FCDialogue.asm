@@ -11,7 +11,7 @@ ch11opening4
 .byte NewLine
 .text "House Friege's primary defense point of the"
 .byte NewLine
-.text "Imperial-Thracian border: Fort Dundrum."
+.text "imperial-Thracian border: Fort Dundrum."
 .byte WaitForA
 
 .byte right_slot

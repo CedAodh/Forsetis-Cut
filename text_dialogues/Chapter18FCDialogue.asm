@@ -343,3 +343,167 @@ gunnarasbel
 .byte WaitForA
 
 .byte EndText
+
+mirandalinoan
+
+.byte right_slot
+.word LoadPortrait
+.word linoan_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word miranda_portrait
+.text "Duchess Linoan!"
+.byte NewLine
+.text "Please, spare me a moment, would you not?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Princess Miranda!"
+.byte NewLine
+.text "To what do I owe this privilege, Your Highness?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ah, such etiquette..."
+.byte NewLine
+.text "The other, more boorish types in Prince Leif's"
+.byte NewLine
+.text "army ought to follow your example, you know."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "P-perhaps?"
+.byte NewLine
+.text "I understand that you've a great many things"
+.byte NewLine
+.text "to attend to."
+.byte WaitForA
+.byte ScrollText
+.text "I was simply surprised that you thought"
+.byte NewLine
+.text "to go and converse with me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's a rather absurd line of thought."
+.byte NewLine
+.text "You are Duchess Linoan of Tarrah, correct?"
+.byte WaitForA
+.byte NewLine
+.text "It's only natural that the nobility"
+.byte NewLine
+.text "would take the time to exchange greetings"
+.byte NewLine
+.text "and other words, is it not?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That's... Of course."
+.byte NewLine
+.text "Forgive me, Princess Miranda."
+.byte NewLine
+.text "I've done you a disservice with such negligence."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Perish the thought."
+.byte NewLine
+.text "And...I think I would prefer just Miranda,"
+.byte NewLine
+.text "coming from you, Duchess Linoan."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I beg your pardon?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Duchess Linoan, you've set a prime example,"
+.byte NewLine
+.text "resisting the empire's dreary reach as you did."
+.byte WaitForA
+.byte ScrollText
+.text "You shone where I could not, and it's clear"
+.byte NewLine
+.text "as day that your popularity far exceeds my own."
+.byte WaitForA
+.byte ScrollText
+.text "I look up to you...and with your approval,"
+.byte NewLine
+.text "I would forge a new friendship and receive"
+.byte NewLine
+.text "tutelage to sharpen my scope on kingdoms and ruling."
+.byte WaitForA
+.byte ScrollText
+.text "May I...count on your assistance in this matter?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Of course, Miranda."
+.byte WaitForA
+.byte ScrollText
+.text "When one nation thrives more greatly than its"
+.byte NewLine
+.text "neighbors, it is the duty of that nation to lead and"
+.byte NewLine
+.text "guide the others back onto the path of salvation."
+.byte WaitForA
+.byte ScrollText
+.text "With that said, I've no reason of my own"
+.byte NewLine
+.text "to believe I'm one fit to guide you,"
+.byte NewLine
+.text "but I will gladly honor your request nonetheless."
+.byte WaitForA
+.byte ScrollText
+.text "It would be my greatest delight."
+.byte NewLine
+.text "There is only one condition to speak of..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Y-yes? What could it be?"
+.byte NewLine
+.text "You may consider it already fulfilled, Duchess Linoan!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You must refer to me as Linoan."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh...! Of course, that is..."
+.byte NewLine
+.text "That is very much a standard regulation"
+.byte NewLine
+.text "in friendship, isn't it?"
+.byte WaitForA
+.byte ScrollText
+.text "Linoan..."
+.byte NewLine
+.text "I shall not ever forget your generosity, Linoan."
+.byte NewLine
+.text "You have my eternal thanks."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hee hee."
+.byte NewLine
+.text "The pleasure is all mine, Miranda. Truly."
+.byte WaitForA
+
+.byte EndText

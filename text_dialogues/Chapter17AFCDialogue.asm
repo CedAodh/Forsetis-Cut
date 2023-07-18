@@ -39,20 +39,15 @@ mishasleep
 
 .byte left_slot
 .byte ScrollText
-.text "Understood, sire."
+.text "Understood, milord."
 .byte WaitForA
+.byte ScrollText
 .word ClearPortrait
 .word RetractBox
 
 .byte right_slot
 .byte ScrollText
 .text "......"
-.byte WaitForA
-
-.byte left_slot
-.word LoadPortrait
-.word guard_portrait
-.text "Big meaty claws."
 .byte WaitForA
 
 .byte EndText

@@ -276,7 +276,7 @@ salemtina
 .byte NewLine
 .text "the mansion, I thought... I thought..."
 .byte NewLine
-.text "*sniff*"
+.text "*sniffle*"
 .byte WaitForA
 
 .byte right_slot

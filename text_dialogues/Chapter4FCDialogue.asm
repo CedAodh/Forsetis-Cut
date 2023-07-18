@@ -216,7 +216,7 @@ ch4daisyturn1
 	.byte NewLine
 	.text "I'm a thief who got caught"
 	.byte NewLine
-	.text "by those stupid Imperials."
+	.text "by those stupid imperials."
 	.byte WaitForA
 	.byte NewLine
 	.text "B-but I'm not a bad thief, I promise you!"
@@ -653,7 +653,7 @@ brightonmacha
 .byte NewLine
 .text "C'mon, boys, let's show these"
 .byte NewLine
-.text "Imperial wimps what we're made of!"
+.text "imperial wimps what we're made of!"
 .byte WaitForA
 
 .byte right_slot

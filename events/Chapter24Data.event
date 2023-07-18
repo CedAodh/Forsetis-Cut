@@ -96,7 +96,7 @@ eventChapter24Data ; 99/F2A4
 		.byte 8, 7
 
 	_GalzusGroup ; 99/F70A
-		UNIT Galzus, Enemy, [10, 15], [10, 15], RaydrikChp24, [MasterSword, FlameSword, Vulnerary, Vulnerary, MasterAxe], 20, False, [$00, $00, $00, $00]
+		UNIT Galzus, Enemy, [10, 15], [10, 15], RaydrikChp24, [MasterSword, FlameSword, Vulnerary, Vulnerary, MasterAxe], 19, False, [$00, $00, $00, $00]
 	UNIT
 
 	_UnusedCoordinates2 ; 99/F720

@@ -86,7 +86,7 @@ ch24xkaiaeyvelleif
 .byte ScrollText
 .text "All you need to know is that we're fighting to"
 .byte NewLine
-.text "liberate Thracia from the Empire, and we're in"
+.text "liberate Thracia from the empire, and we're in"
 .byte NewLine
 .text "the middle of recapturing Munster right now!"
 .byte WaitForA
@@ -388,7 +388,7 @@ ch24xeyvelleif
 .text "I wanted so badly to see you again..."
 .byte WaitForA
 .byte ScrollText
-.text "Every day we spent fighting the Empire"
+.text "Every day we spent fighting the empire"
 .byte NewLine
 .text "this past year was another night I spent"
 .byte NewLine
@@ -722,7 +722,7 @@ ch24xeyveltanya
 .byte ScrollText
 .text "O-oh, that's... You're right, I guess."
 .byte NewLine
-.text "*sniff* Thank you...Eyvel."
+.text "*sniffle* Thank you...Eyvel."
 .byte NewLine
 .text "Dammit. Now I'm the one getting all mushy."
 .byte WaitForA
@@ -851,7 +851,7 @@ ch24xeyvelmareeta
 .byte ScrollText
 .text "There, there, sweet pea."
 .byte NewLine
-.text "I'm OK now, see?"
+.text "I'm okay now, see?"
 .byte NewLine
 .text "Everything's gonna be all right..."
 .byte WaitForA

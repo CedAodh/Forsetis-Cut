@@ -87,7 +87,7 @@ ch14homernanna
 .text "all wet with tears..."
 .byte WaitForA
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "All right, all right, I get it."
 .byte NewLine
@@ -161,7 +161,7 @@ ch14villager4
 .byte NewLine
 .text "Tarrah has already lost, just like"
 .byte NewLine
-.text "all the other cities that resisted the Empire!"
+.text "all the other cities that resisted the empire!"
 .byte WaitForA
 
 .byte EndText
@@ -189,7 +189,7 @@ ch14villager6
 .word youngman2_portrait
 .text "I came to this city to escape the rule"
 .byte NewLine
-.text "of Thracia and the Empire..."
+.text "of Thracia and the empire..."
 .byte WaitForA
 .byte ScrollText
 .text "If Tarrah falls to either of them,"
@@ -227,7 +227,7 @@ ch14nosferatuhouse
 .text "a book that I'm to give to Lady Linoan."
 .byte WaitForA
 .byte ScrollText
-.text "Her father, the late Duke, entrusted it to me,"
+.text "Her father, the late duke, entrusted it to me,"
 .byte NewLine
 .text "and gave me strict instructions to only deliver"
 .byte NewLine
@@ -435,14 +435,14 @@ ch14npcarrive
 .text "I trust you're aware of my plans, McCloy?"
 .byte WaitForA
 .byte ScrollText
-.text "Officially, we're the Empire's allies,"
+.text "Officially, we're the empire's allies,"
 .byte NewLine
 .text "here to lend a helping hand"
 .byte NewLine
 .text "with their little insurrection."
 .byte WaitForA
 .byte ScrollText
-.text "Keep the Imperial Army believing that,"
+.text "Keep the imperial army believing that,"
 .byte NewLine
 .text "but only help them as little as possible—just"
 .byte NewLine
@@ -450,7 +450,7 @@ ch14npcarrive
 .byte WaitForA
 
 .byte Right_slot
-.text "...And when the Empire's forces"
+.text "...And when the empire's forces"
 .byte NewLine
 .text "have exhausted themselves,"
 .byte NewLine
@@ -464,7 +464,7 @@ ch14npcarrive
 .byte ScrollText
 .text "Tarrah is the most important card we can play"
 .byte NewLine
-.text "against Blume... See that you don't damage"
+.text "against Bloom... See that you don't damage"
 .byte NewLine
 .text "the city too much in all the fighting."
 .byte WaitForA
@@ -727,7 +727,7 @@ ch14opening2
 .byte WaitForA
 
 .byte Right_slot
-.text "And so the Empire brings the full weight"
+.text "And so the empire brings the full weight"
 .byte NewLine
 .text "of their army to bear against us..."
 .byte NewLine
@@ -764,7 +764,7 @@ ch14opening2
 .byte NewLine
 .text "When I was a small child, I was often told"
 .byte NewLine
-.text "the story of Dáinn, the legendary Dracoknight."
+.text "the story of Dáinn, the legendary dracoknight."
 .byte WaitForA
 .byte ScrollText
 .text "Dean always reminded me of him—flying"
@@ -819,7 +819,7 @@ ch14opening2
 .byte ScrollText
 .text "And for all that time, the wretched governor"
 .byte NewLine
-.text "sent by the Empire interrogated me"
+.text "sent by the empire interrogated me"
 .byte NewLine
 .text "about Prince Leif's location."
 .byte WaitForA
@@ -834,7 +834,7 @@ ch14opening2
 .byte ScrollText
 .text "After the deed was done, he protected me"
 .byte NewLine
-.text "from the Empire's assassins—"
+.text "from the empire's assassins—"
 .byte WaitForA
 .text "and when"
 .byte NewLine
@@ -930,12 +930,12 @@ ch14ending1
 .byte Right_slot
 .text "My lord father, doesn't attacking Tarrah"
 .byte NewLine
-.text "only serve to benefit the Empire?"
+.text "only serve to benefit the empire?"
 .byte WaitForA
 .byte ScrollText
 .text "Tarrah's citizens are united in their hatred of"
 .byte NewLine
-.text "the Empire. If we come to their aid now, it could"
+.text "the empire. If we come to their aid now, it could"
 .byte NewLine
 .text "pave the way for a new alliance between us."
 .byte WaitForA
@@ -943,7 +943,7 @@ ch14ending1
 .byte Left_slot
 .text "Hah! You think shackling ourselves to Tarrah"
 .byte NewLine
-.text "would be enough to triumph over the Empire?"
+.text "would be enough to triumph over the empire?"
 .byte WaitForA
 .byte ScrollText
 .text "Have you already forgotten our defeat"
@@ -955,7 +955,7 @@ ch14ending1
 .byte NewLine
 .text "united under our rule then,"
 .byte NewLine
-.text "and we were still no match for the Empire."
+.text "and we were still no match for the empire."
 .byte WaitForA
 
 .byte Right_slot
@@ -981,7 +981,7 @@ ch14ending1
 .byte ScrollText
 .text "As it stands, it's no exaggeration to say"
 .byte NewLine
-.text "that the Empire's might exceeds our own"
+.text "that the empire's might exceeds our own"
 .byte NewLine
 .text "by tenfold."
 .byte WaitForA
@@ -993,7 +993,7 @@ ch14ending1
 .byte ScrollText
 .text "A whole lot of people will die:"
 .byte NewLine
-.text "Imperials, Thracians, those of Tarrah."
+.text "imperials, Thracians, those of Tarrah."
 .byte NewLine
 .text "They'll all bleed just the same."
 .byte WaitForA
@@ -1015,7 +1015,7 @@ ch14ending1
 
 .byte Left_slot
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "What?"
 .byte WaitForA
@@ -1134,7 +1134,7 @@ ch14ending2
 .byte ScrollText
 .text "He's prepared a massive army"
 .byte NewLine
-.text "to take the city from the Empire"
+.text "to take the city from the empire"
 .byte NewLine
 .text "once their forces are exhausted."
 .byte WaitForA
@@ -1183,7 +1183,7 @@ ch14ending2
 .byte NewLine
 .text "protection, and I'll see to it they're treated well."
 .byte NewLine
-.text "The Empire won't be able to harm them."
+.text "The empire won't be able to harm them."
 .byte WaitForA
 .byte ScrollText
 .text "Being under Thracian rule also means the city"
@@ -1211,7 +1211,7 @@ ch14ending2
 .byte ScrollText
 .text "I'm afraid they'll have no choice but to flee"
 .byte NewLine
-.text "the city. The Empire cannot allow the prince"
+.text "the city. The empire cannot allow the prince"
 .byte NewLine
 .text "to escape, and Father fears him as a threat."
 .byte WaitForA
@@ -1244,7 +1244,7 @@ ch14ending2
 .text "but I believe this would be best for everyone."
 .byte WaitForA
 .byte ScrollText
-.text "Once the Empire lies destroyed at the hands"
+.text "Once the empire lies destroyed at the hands"
 .byte NewLine
 .text "of Lord Leif and myself, I'll return home."
 .byte WaitForA
@@ -1256,11 +1256,11 @@ ch14ending2
 
 .byte Right_slot
 .byte ScrollText
-.text "You...plan to overthrow the Empire?"
+.text "You...plan to overthrow the empire?"
 .byte NewLine
 .text "I'll agree to those terms. If you can truly defeat"
 .byte NewLine
-.text "the Empire, I'll gladly return Tarrah to you."
+.text "the empire, I'll gladly return Tarrah to you."
 .byte WaitForA
 
 .byte Left_slot
@@ -1274,7 +1274,7 @@ ch14ending2
 .byte NewLine
 .text "I wonder? Is the boy really up to such"
 .byte NewLine
-.text "a monumental task as fighting the Empire?"
+.text "a monumental task as fighting the empire?"
 .byte WaitForA
 .byte ScrollText
 .text "Will he grow to be Thracia's ally,"

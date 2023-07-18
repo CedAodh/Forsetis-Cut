@@ -544,8 +544,11 @@ _Tornado_name
 	.word $0000
 
 _Forseti_name
-_ForsetiInfinite_name
 	.text "Forseti "
+	.word $0000
+
+_ForsetiInfinite_name
+	.text "Recurve Bo12"
 	.word $0000
 
 _Light_name

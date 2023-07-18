@@ -325,9 +325,9 @@ ch8xclosing2
 
 .byte Left_slot
 .byte ScrollText
-.text "*Sniff...*"
+.text "*sniffle*"
 .byte NewLine
-.text "I'm so proud o' you boys."
+.text "I'm so proud'a you boys."
 .byte WaitForA
 .byte ScrollText
 .text "Now, I gotta go with the prince and make"

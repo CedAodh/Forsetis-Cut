@@ -80,7 +80,7 @@ eventChapter2Data ; B1/F91C
 	;	.byte 8, 7
 
 	_RonanGroup ; B1/FAE6
-		UNIT Ronan, Player, [9, 10], [9, 10], Eyvel, [IronBow, Vulnerary], 1, False, [$00, $00, $00, $00]
+		UNIT Ronan, Player, [9, 10], [9, 10], Eyvel, [IronBow, Vulnerary], 2, False, [$00, $00, $00, $00]
 	UNIT
 
 	_BishopCameraCoordinates ; B1/FAFC

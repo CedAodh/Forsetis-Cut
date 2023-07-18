@@ -61,7 +61,7 @@ ch8martyosian
 .byte NewLine
 .text "Raiding villages?! You think that's what"
 .byte NewLine
-.text "Dagdar would want? Or the Commander?"
+.text "Dagdar would want? Or the commander?"
 .byte WaitForA
 .byte ScrollText
 .text "If you've seen fit to go against everything they"
@@ -172,7 +172,7 @@ ch8martyhalvan
 .byte NewLine
 .text "me one thing: have you gone against what"
 .byte NewLine
-.text "Dagdar and the Commander taught you?"
+.text "Dagdar and the commander taught you?"
 .byte WaitForA
 .byte ScrollText
 .text "Are you just a common bandit now?"
@@ -223,7 +223,7 @@ ch8martyrelease
 .byte NewLine
 .text "But I had no choice... They made me!"
 .byte NewLine
-.text "I'll apologize, OK...?"
+.text "I'll apologize, okay...?"
 .byte WaitForA
 
 .byte EndText
@@ -388,7 +388,7 @@ ch8opening
 
 .byte Left_slot
 .byte ScrollText
-.text "Do you think the General a fool?"
+.text "Do you think the general a fool?"
 .byte NewLine
 .text "He knew full well who you really were—"
 .byte NewLine
@@ -404,7 +404,7 @@ ch8opening
 .byte NewLine
 .text "of time until this survivor took up arms"
 .byte NewLine
-.text "and rallied an army to battle the Empire."
+.text "and rallied an army to battle the empire."
 .byte WaitForA
 .byte ScrollText
 .text "I always expected—nay, prayed—that this day"
@@ -520,6 +520,10 @@ ch8opening
 
 .byte Left_slot
 .byte ScrollText
+
+.word PlayMusic
+.byte $31
+ 
 .word LoadPortrait
 .word augustus_portrait
 .text "Begging your pardon, my prince,"
@@ -623,7 +627,7 @@ ch8leifrumaigh
 .byte NewLine
 .text "If I accepted mercy from an enemy,"
 .byte NewLine
-.text "I'd bring shame to the Dracoknights!"
+.text "I'd bring shame to the dracoknights!"
 .byte WaitForA
 
 .byte Right_slot
@@ -898,7 +902,7 @@ ch8leiftanya
 
 .byte Left_slot
 .byte ScrollText
-.text "No, it's OK... Dad did what he thought"
+.text "No, it's okay... Dad did what he thought"
 .byte NewLine
 .text "was right. If he died for something,"
 .byte NewLine

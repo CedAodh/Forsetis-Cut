@@ -61,7 +61,7 @@ ch9leifselphina
 .byte ScrollText
 .text "Oh, it would be terribly improper to ever say"
 .byte NewLine
-.text "such a thing of the Prince of Leonster."
+.text "such a thing of the prince of Leonster."
 .byte NewLine
 .text "I'll have to take you at your word, milord."
 .byte WaitForA
@@ -884,7 +884,7 @@ ch9closing1
 .byte NewLine
 .text "We've gotten word back from him, and"
 .byte NewLine
-.text "he reports that the Empire means to mount an"
+.text "he reports that the empire means to mount an"
 .byte NewLine
 .text "all-out assault against Tarrah perilously soon."
 .byte WaitForA
@@ -950,7 +950,7 @@ ch9closing2
 .text "...Who in blazes is that?"
 .byte WaitForA
 .byte ScrollText
-.text "That Dracoknight—a woman, by the look of it—"
+.text "That dracoknight—a woman, by the look of it—"
 .byte NewLine
 .text "what's she saying to the Thracian troops?"
 .byte NewLine
@@ -976,7 +976,7 @@ ch9closing3
 .byte ScrollText
 .text "The men in that villa are not bandits—they're a"
 .byte NewLine
-.text "mercenary unit the General has stationed here"
+.text "mercenary unit the general has stationed here"
 .byte NewLine
 .text "to PROTECT this area from bandits!"
 .byte WaitForA

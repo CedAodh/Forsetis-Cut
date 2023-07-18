@@ -333,7 +333,7 @@ ch24ced
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
 .byte NewLine
-.text "army, as they wield Berserk and Sleep staves."
+.text "army, as they wield sleep and berserk staves."
 .byte WaitForA
 
 .byte Right_slot
@@ -469,7 +469,7 @@ ch24saias
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
 .byte NewLine
-.text "army, as they wield Berserk and Sleep staves."
+.text "army, as they wield sleep and berserk staves."
 .byte WaitForA
 
 .byte Right_slot
@@ -594,7 +594,7 @@ ch24augustus
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
 .byte NewLine
-.text "army, as they wield Berserk and Sleep staves."
+.text "army, as they wield sleep and berserk staves."
 .byte WaitForA
 
 .byte Right_slot
@@ -690,7 +690,7 @@ ch24nogalzus
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
 .byte NewLine
-.text "army, as they wield Berserk and Sleep staves."
+.text "army, as they wield sleep and berserk staves."
 .byte WaitForA
 
 .byte Right_slot
@@ -878,54 +878,57 @@ ch24closingkaia
 
 .byte Left_slot
 .byte ScrollText
-.word LoadPortrait
-.word sarah_portrait
 
 .word PlayMusic
 .byte $4F
 
-.text "Nothing's been wasted, silly."
+.word LoadPortrait
+.word sarah_portrait
+
+.text "Get it together, silly."
 .byte NewLine
-.text "I'm right here. I'll use the staff."
+.text "I'm right here; I'll use the staff."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Sara...?!"
 .byte NewLine
-.text "You don't mean..."
+.text "You'll... What?"
 .byte NewLine
 .text "How can you use the staff?!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Because I know how the seal works."
+.text "Because I know how the seal works—"
 .byte NewLine
-.text "I mean, it was Grandfather that sealed it up"
-.byte NewLine
-.text "in the first place, so..."
+.text "it was done by my grandfather, after all."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Grandfather...?"
 .byte NewLine
-.text "It can't be..."
+.text "That can't be..."
 .byte NewLine
 .text "Sara, you're Manfroy's granddaughter?!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Don't make me talk about Grandfather..."
+.text "I do not wish to speak of"
 .byte NewLine
-.text "I never liked him. He was such a weird man."
+.text "my grandfather any more."
+.byte NewLine
+.text "I despise him."
 .byte WaitForA
 .byte ScrollText
-.text "Let's just hurry up and save your friend."
+.text "Let's just hurry along and save your friend."
 .byte NewLine
-.text "Don't forget the staff, Lord Leif!"
+.text "And when we go, Leif, don't forget"
+.byte NewLine
+.text "to bring the staff!"
 .byte WaitForA
 
 .byte EndText

@@ -258,8 +258,8 @@
 .include "BossMusicWithAnimationsOn.asm"
 .include "hacky/NewSecretShopCode.asm"
 .include "hacky/RetreatTiles.asm"
-
-
+.include "hacky/nofactionreset.asm"
+.include "hacky/Nocounterat3range.asm"
 
 
 

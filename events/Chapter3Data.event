@@ -29,6 +29,7 @@ eventChapter3Data ; B1F318
 		UNIT MunsterArmoredBow, Enemy, [18, 13], [18, 13], Lobos, [Shortbow, Vulnerary], 7, False, [$19, $03, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [23, 15], [23, 15], Lobos, [ShortLance, Vulnerary], 13, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [21, 12], [21, 12], Lobos, [ShortLance], 13, False, [$19, $29, $00, $00]
+		UNIT MunsterCavalier, Enemy, [20, 11], [20, 11], Lobos, [ShortSword], 9, False, [$19, $29, $00, $00]
 	UNIT
 
 	_EnemyGroup3CameraCoordinates ; B1/F414
@@ -37,6 +38,7 @@ eventChapter3Data ; B1F318
 	_EnemyGroup3 ; B1/F416
 		UNIT MunsterThunderMage, Enemy, [1, 11], [1, 11], Lobos, [Fire, DoorKey], 6, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [4, 11], [4, 11], Lobos, [ShortLance], 11, False, [$19, $29, $00, $00]
+		UNIT MunsterCavalier, Enemy, [1, 12], [2, 12], Lobos, [ShortSword, Vulnerary], 8, False, [$19, $29, $00, $00]
 	UNIT
 
 	_EnemyGroup4CameraCoordinates ; B1/F440
@@ -55,6 +57,7 @@ eventChapter3Data ; B1F318
 		UNIT MunsterArcher, Enemy, [6, 23], [6, 23], Lobos, [Shortbow], 10, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [4, 23], [4, 23], Lobos, [ShortLance, Vulnerary], 11, False, [$19, $29, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [5, 29], [5, 25], Lobos, [ShortLance, DoorKey], 12, False, [$19, $29, $00, $00]
+		UNIT MunsterCavalier, Enemy, [1, 22], [2, 23], Lobos, [ShortLance], 10, False, [$19, $29, $00, $00]
 	UNIT
 
 	_SoldierReinforcementsCameraCoordinates ; B1/F4C0

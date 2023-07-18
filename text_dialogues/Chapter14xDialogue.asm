@@ -170,7 +170,7 @@ ch14xopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "*Sigh*"
+.text "*sigh*"
 .byte NewLine
 .text "I can see that..."
 .byte NewLine

@@ -166,7 +166,7 @@ ch4xop2
 .byte Right_slot
 .word LoadPortrait
 .word girl_portrait
-.text "*Sniffle... Sniffle...*"
+.text "*sniffle* *sniffle*"
 .byte WaitForA
 
 .byte Left_slot
@@ -179,7 +179,7 @@ ch4xop2
 .byte ScrollText
 .text "B-b-but...!"
 .byte NewLine
-.text "*Sniffle*"
+.text "*sniffle*"
 .byte WaitForA
 
 .byte Left_slot
@@ -231,11 +231,11 @@ ch4xasbelleiftalk
 
 .byte Right_slot
 .byte ScrollText
-.text "I set off after you just as soon as"
+.text "I set off after you just as soon as we"
 .byte NewLine
-.text "we got separated! Lotta good that did..."
+.text "got separated! Not like it did much..."
 .byte NewLine
-.text "I couldn't figure out where you'd gone."
+.text "I couldn't figure out where you had gone."
 .byte WaitForA
 .byte ScrollText
 .text "For the last half-year now,"
@@ -256,14 +256,14 @@ ch4xasbelleiftalk
 .byte NewLine
 .text "remember? With your blade and my magic,"
 .byte NewLine
-.text "we were gonna take Thracia back—together!"
+.text "we were to take Thracia back—together!"
 .byte WaitForA
 .byte ScrollText
-.text "But you just up an' left me behind! That..."
+.text "But you just up and left me behind! I felt..."
 .byte NewLine
-.text "That was quite heartless of you, Leif."
+.text "I really felt played for a fool, Leif."
 .byte NewLine
-.text "Er, Lord Leif."
+.text "...Excuse me. Lord Leif."
 .byte WaitForA
 
 .byte Left_slot
@@ -273,7 +273,7 @@ ch4xasbelleiftalk
 .text "At the time, I didn't have a choice."
 .byte WaitForA
 .byte ScrollText
-.text "Tarrah had been surrounded by the Empire."
+.text "Tarrah had been surrounded by the empire."
 .byte NewLine
 .text "I had... I had prepared myself"
 .byte NewLine
@@ -289,11 +289,11 @@ ch4xasbelleiftalk
 
 .byte Right_slot
 .byte ScrollText
-.text "What a load of pegasus dung...! We swore"
+.text "All right, enough of this blather, Lord Leif!"
 .byte NewLine
-.text "to live and die together, didn't we? Or was"
+.text "We swore to live and die together, didn't we?"
 .byte NewLine
-.text "that whole oath just part of some kids' game?"
+.text "Or was that whole oath just to pass the time?"
 .byte WaitForA
 .byte ScrollText
 .text "I've spent all these years with those words"
@@ -316,6 +316,21 @@ ch4xasbelleiftalk
 .byte NewLine
 .text "my years of searching meant something!"
 .byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "I will, Asbel. Without fail."
+.byte NewLine
+.text "Thank you...so much for believing in me."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Always."
+.byte NewLine
+.text "Now, back to my magic, allow me to introduce"
+.byte NewLine
+.text "you to my most recent: Grafcalibur!" 
 
 .byte EndText
 
@@ -646,7 +661,7 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "...OK, but I'm only keeping it safe for you."
+.text "...Okay, but I'm only keeping it safe for you."
 .byte NewLine
 .text "You'll get it back the second you return"
 .byte NewLine
@@ -677,7 +692,7 @@ ch4xuppercell
 .text "I jus' wanna go home..."
 .byte WaitForA
 .byte ScrollText
-.text "*Sniffle, sniffle*"
+.text "*sniffle* *sniffle*"
 .byte NewLine
 .text "H-how do I get home?"
 .byte NewLine
@@ -686,7 +701,7 @@ ch4xuppercell
 .byte ScrollText
 .text "Then I'll run that way and won't stop"
 .byte NewLine
-.text "till I'm back home...! Th-Thank you..."
+.text "till I'm back home...! Th-thank you..."
 .byte WaitForA
 
 .byte EndText

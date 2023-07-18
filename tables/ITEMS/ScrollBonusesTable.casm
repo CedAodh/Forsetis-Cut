@@ -12,10 +12,10 @@
 
 	ScrollBonus01					= 1
 		ScrollBonus01Item			= BaldrsScroll
-		ScrollBonus01HP				= 10
+		ScrollBonus01HP				= 5
 		ScrollBonus01Strength		= 5
 		ScrollBonus01Magic			= 0
-		ScrollBonus01Skill			= 0
+		ScrollBonus01Skill			= 5
 		ScrollBonus01Speed			= 0
 		ScrollBonus01Defense		= 5
 		ScrollBonus01Constitution	= 5
@@ -36,26 +36,26 @@
 
 	ScrollBonus03					= 3
 		ScrollBonus03Item			= DainnsScroll
-		ScrollBonus03HP				= 0
+		ScrollBonus03HP				= 5
 		ScrollBonus03Strength		= 5
 		ScrollBonus03Magic			= 0
 		ScrollBonus03Skill			= 0
-		ScrollBonus03Speed			= -10
-		ScrollBonus03Defense		= 30
+		ScrollBonus03Speed			= 0
+		ScrollBonus03Defense		= 10
 		ScrollBonus03Constitution	= 0
-		ScrollBonus03Luck			= 0
+		ScrollBonus03Luck			= 5
 		ScrollBonus03Movement		= 5
 
 	ScrollBonus04					= 4
 		ScrollBonus04Item			= NjorunsScroll
-		ScrollBonus04HP				= 0
+		ScrollBonus04HP				= 10
 		ScrollBonus04Strength		= 30
 		ScrollBonus04Magic			= -10
-		ScrollBonus04Skill			= 0
-		ScrollBonus04Speed			= 5
-		ScrollBonus04Defense		= 10
+		ScrollBonus04Skill			= 10
+		ScrollBonus04Speed			= -10
+		ScrollBonus04Defense		= 0
 		ScrollBonus04Constitution	= 0
-		ScrollBonus04Luck			= -5
+		ScrollBonus04Luck			= 0
 		ScrollBonus04Movement		= 0
 
 	ScrollBonus05					= 5
@@ -65,20 +65,20 @@
 		ScrollBonus05Magic			= 0
 		ScrollBonus05Skill			= -10
 		ScrollBonus05Speed			= 0
-		ScrollBonus05Defense		= 10
+		ScrollBonus05Defense		= 5
 		ScrollBonus05Constitution	= 10
-		ScrollBonus05Luck			= 0
+		ScrollBonus05Luck			= 5
 		ScrollBonus05Movement		= 0
 
 	ScrollBonus06					= 6
 		ScrollBonus06Item			= UllursScroll
-		ScrollBonus06HP				= 0
-		ScrollBonus06Strength		= 0
+		ScrollBonus06HP				= 5
+		ScrollBonus06Strength		= 5
 		ScrollBonus06Magic			= 0
 		ScrollBonus06Skill			= 10
 		ScrollBonus06Speed			= 10
 		ScrollBonus06Defense		= 0
-		ScrollBonus06Constitution	= 0
+		ScrollBonus06Constitution	= -10
 		ScrollBonus06Luck			= 10
 		ScrollBonus06Movement		= 0
 
@@ -110,20 +110,20 @@
 		ScrollBonus09Item			= CedsScroll
 		ScrollBonus09HP				= -10
 		ScrollBonus09Strength		= 0
-		ScrollBonus09Magic			= 10
+		ScrollBonus09Magic			= 0
 		ScrollBonus09Skill			= 0
 		ScrollBonus09Speed			= 30
 		ScrollBonus09Defense		= 0
 		ScrollBonus09Constitution	= 0
-		ScrollBonus09Luck			= 0
+		ScrollBonus09Luck			= 10
 		ScrollBonus09Movement		= 0
 
 	ScrollBonus0A					= 10
 		ScrollBonus0AItem			= BragisScroll
 		ScrollBonus0AHP				= 0
 		ScrollBonus0AStrength		= -10
-		ScrollBonus0AMagic			= 10
-		ScrollBonus0ASkill			= 0
+		ScrollBonus0AMagic			= 5
+		ScrollBonus0ASkill			= 5
 		ScrollBonus0ASpeed			= 0
 		ScrollBonus0ADefense		= 0
 		ScrollBonus0AConstitution	= 0
@@ -132,11 +132,11 @@
 
 	ScrollBonus0B					= 11
 		ScrollBonus0BItem			= HeimsScroll
-		ScrollBonus0BHP				= 0
+		ScrollBonus0BHP				= 10
 		ScrollBonus0BStrength		= 0
-		ScrollBonus0BMagic			= 30
+		ScrollBonus0BMagic			= 10
 		ScrollBonus0BSkill			= 0
-		ScrollBonus0BSpeed			= 0
+		ScrollBonus0BSpeed			= 10
 		ScrollBonus0BDefense		= -10
 		ScrollBonus0BConstitution	= 0
 		ScrollBonus0BLuck			= 10

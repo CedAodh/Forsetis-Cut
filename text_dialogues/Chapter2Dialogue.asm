@@ -40,7 +40,7 @@ ch2op1
 .text "yer worried about, we already saw to them."
 .byte WaitForA
 .byte ScrollText
-.text "The boss tipped off the Empire"
+.text "The boss tipped off the empire"
 .byte NewLine
 .text "that the Leonster boy was hidin' with 'em."
 .byte WaitForA
@@ -82,7 +82,7 @@ ch2op1
 .byte NewLine
 .text "he knows about interrogatin'! There's a reason"
 .byte NewLine
-.text "you ain't with the Church no more, mate."
+.text "you ain't with the church no more, mate."
 .byte WaitForA
 
 .byte ScrollText

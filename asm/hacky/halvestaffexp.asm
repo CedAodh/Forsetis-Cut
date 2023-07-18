@@ -2,6 +2,7 @@
 .logical $83EFCA
 
 	.al
+	.xl
 	.autsiz
 	.databank ?
 	
@@ -13,19 +14,24 @@
 * := $4A5400
 .logical lorom ($4A5400, 1)
 
-l_exp_calc_upper_class:
-	lda $5108; Class setting: Temporary storage, Lower class ID
-	and #$00ff ;
-	bne + ;
-	
-	clc
-	adc #1 ; Experience gain is halved
-	
-+ ; original processing
-	lda $001D,X ; Personal Skills loading
-	;ora $0F4E ; Stacking Weapon Skills
-	rtl;
-	
-	.databank 0
+l_exp_calc_upper_class
+
+  .al
+  .xl
+  .autsiz
+  .databank `aClassDataBuffer
+
+  lda aClassDataBuffer.Tier1Class
+  and #$00FF
+  beq +
+
+    lsr wR0
+
+  +
+
+  lda structActionStructEntry.Skills2,b,x
+  ora aItemDataBuffer.Skills2,b
+
+  rtl
 	
 .endlogical

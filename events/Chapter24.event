@@ -18,22 +18,23 @@ eventChapter24Events ; B9/B000
 		EVENT $00, _OpenedDoorReinforcements
 			CMP_WORD wCurrentPhase, Enemy
 			TEST_FLAG_SET $22
+			TEST_FLAG_UNSET $16
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 2, 5
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 5
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 10, 20
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
 		END_DEFINITION
 		EVENT $00, _UnlockSorcererReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 8
 		END_DEFINITION
-		EVENT $00, _ThiefReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 20
+		EVENT $15, _ThiefReinforcements
+			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_SET $22
 		END_DEFINITION
 		EVENT $10, _RaydrikSkillIssue
 			CMP_WORD wCurrentPhase, Player
@@ -158,6 +159,14 @@ eventChapter24Events ; B9/B000
 		YIELD
 
 		YIELD_UNK
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_TRUE +
+		
+		SET_FLAG $16
+		
+		+
 	END2
 
 	_SoldierReinforcements ; B9/B16A

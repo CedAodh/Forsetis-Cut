@@ -53,7 +53,7 @@ ch22villagerpurewater
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "Hey, listen up! The Empire's got a whole"
+.text "Hey, listen up! The empire's got a whole"
 .byte NewLine
 .text "bunch of troops waitin' across the river,"
 .byte NewLine
@@ -80,14 +80,14 @@ ch22villagerwarpstaff
 .byte ScrollText
 .text "Now look, if you just storm in from the front,"
 .byte NewLine
-.text "the Empire will charge before all your troops"
+.text "the empire will charge before all your troops"
 .byte NewLine
 .text "are done crossin' the river!"
 .byte WaitForA
 .byte ScrollText
 .text "What you oughta do instead is use a"
 .byte NewLine
-.text "Warp staff to attack the Imperials from behind!"
+.text "warp staff to attack the imperials from behind!"
 .byte WaitForA
 .byte ScrollText
 .text "If you don't have one handy, it just so happens"
@@ -102,7 +102,7 @@ ch22villagerwarpstaff
 .byte ScrollText
 .text "Naw, I'm just kidding!"
 .byte NewLine
-.text "I hate the Empire as much as the next guy,"
+.text "I hate the empire as much as the next guy,"
 .byte NewLine
 .text "so the staff is yours, free of charge."
 .byte WaitForA
@@ -134,10 +134,10 @@ ch22villagerrescuestaff
 .byte NewLine
 .text "makin' your assault on the castle, just use this"
 .byte NewLine
-.text "Rescue staff to pull your folks outta trouble!"
+.text "rescue staff to pull your folks outta trouble!"
 .byte WaitForA
 .byte ScrollText
-.text "Truth be told, I've just been usin' it to warp"
+.text "Truth be told, I've just been usin' it to zap"
 .byte NewLine
 .text "my chickens back to me when they get loose."
 .byte NewLine
@@ -455,7 +455,7 @@ ch22saiascohen
 .byte NewLine
 .text "your talents came to the fore and you rose to"
 .byte NewLine
-.text "the position of Royal Bishop of House Velthomer."
+.text "the position of royal bishop of House Velthomer."
 .byte WaitForA
 .byte ScrollText
 .text "And for a brief time, you were so trusted"
@@ -472,7 +472,7 @@ ch22saiascohen
 .byte NewLine
 .text "the Loptr Church now wields more influence"
 .byte NewLine
-.text "than the Emperor himself."
+.text "than the emperor himself."
 .byte WaitForA
 .byte ScrollText
 .text "You bear the brand of Fjalar, Saias—"

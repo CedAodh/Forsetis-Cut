@@ -387,7 +387,7 @@ finnkarin
 	.byte NewLine
 	.text "Maybe there's a chance I know her..."
 	.byte NewLine
-	.text "The Queen had introduced me to many knights."
+	.text "The queen had introduced me to many knights."
 	.byte WaitForA
 	.byte ScrollText
 	.text "...Wait, please excuse me."
@@ -462,7 +462,7 @@ finnkarin
 	.byte NewLine
 	.text "Ah... I don't know what to say..."
 	.byte NewLine
-	.text "*sniff*"
+	.text "*sniffle*"
 	.byte WaitForA
 
 	.byte left_slot
@@ -553,7 +553,7 @@ ch7safylifis
 .byte WaitForA
 
 .byte right_slot
-.text "*huff* *huff*"
+.text "*pant* *pant*"
 .byte NewLine
 .text "Huh? O-Oh, hey, Safy!"
 .byte NewLine
@@ -781,7 +781,7 @@ ch7ending9FC
 .byte NewLine
 .text "I understand that this may be a"
 .byte NewLine
-.text "foreign practice to the Empire."
+.text "foreign practice to the empire."
 .byte WaitForA
 
 .byte left_slot

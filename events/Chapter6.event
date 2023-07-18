@@ -25,17 +25,17 @@ eventChapter6Events ; 99/A346
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _GalzusSpawn
-			CMP_WORD wCurrentTurn, 15
+			CMP_WORD wCurrentTurn, 14
 			TEST_FLAG_UNSET FlagGalzusDead
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
-			CMP_WORD wCurrentTurn, 15
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 14
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT FlagAlwaysZero, _KnightReinforcements
-			CMP_WORD wCurrentTurn, 13
-			CMP_WORD wCurrentPhase, Player
+		EVENT $0D, _KnightReinforcements
+			CMP_WORD_FALSE $7E4F9A, $0000
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $07, _TolmanGroupCharge
 			CMP_WORD_FALSE $7E4F9A, $0000
@@ -114,6 +114,12 @@ eventChapter6Events ; 99/A346
 	END_DEFINITION_ARRAY
 
 	_TolmanGroupCharge ; 99/A531
+		
+		macroSetCharacterByte Tolman, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte Tolman, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte Tolman, structCharacterDataRAM.AI2, $00
+		macroSetCharacterByte Tolman, structCharacterDataRAM.Unknown3E, $00
+		
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI2, $00
@@ -515,8 +521,7 @@ eventChapter6Events ; 99/A346
 
 	_OpeningEvent ; 99/AE86
 		STORE_WORD $7E4F9A, $0000
-
-
+		
 		macroAddCharacterByte Leif, structCharacterDataRAM.LeadershipStars, 1
 
 		macroSetAllCharacterTurnStatus (TurnStatusUnknown1 | TurnStatusHidden)
@@ -564,33 +569,41 @@ eventChapter6Events ; 99/A346
 		YIELD
 
 		macroRemoveUnit FriegeBishop2
+		
+		SET_MUSIC $39
+		YIELD
 
-		SCROLL_CAMERA_ADDRESS eventChapter6Data._RaydrikCameraCoordinates
+		SCROLL_CAMERA_CHAR Raydrik
+		SET_CAMERA_SPEED 4
 		YIELD
 
 		LOAD1 eventChapter6Data._RaydrikGroup
 		WAIT_MOVE
 		YIELD
-
-		SCROLL_CAMERA_ADDRESS eventChapter6Data._TolmanCameraCoordinates
+		
+		DIALOGUE raydrikmocking
 		YIELD
-
-		LOAD1 eventChapter6Data._TolmanGroup
-		WAIT_MOVE
-		YIELD
-
+		
 		SCROLL_CAMERA_ADDRESS eventChapter6Data._ArmorCameraCoordinates
 		YIELD
-
+		
 		LOAD1 eventChapter6Data._ArmorGroup
 		WAIT_MOVE
 		YIELD
-
-		SCROLL_CAMERA_ADDRESS eventChapter6Data._SoldierCameraCoordinates
-		YIELD
-
+		
 		LOAD1 eventChapter6Data._SoldierGroup
 		WAIT_MOVE
+		YIELD
+		
+		LOAD1 eventChapter6Data._TolmanGroup
+		WAIT_MOVE
+		YIELD
+		
+		SCROLL_CAMERA_CHAR Tolman
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE tolmanplan
 		YIELD
 	END2
 

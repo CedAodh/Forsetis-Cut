@@ -234,7 +234,7 @@ mishatitle
 
 salemtitle
 .byte $09
-.text "Salem — The Sorcerer"
+.text "Salem — Dark Sage"
 .byte $05
 .byte EndText
 

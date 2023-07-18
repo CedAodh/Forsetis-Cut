@@ -16,7 +16,7 @@ ch11xoltophflees
 .byte ScrollText
 .text "I must be off. I'll report how dire"
 .byte NewLine
-.text "our situation is to the General—or to whatever"
+.text "our situation is to the general—or to whatever"
 .byte NewLine
 .text "commanding officer still remains here."
 .byte WaitForA
@@ -111,7 +111,7 @@ ch11xleifolwen
 .text "are you not?"
 .byte WaitForA
 .byte ScrollText
-.text "I... I am Olwen, Mage Knight"
+.text "I... I am Olwen, mage knight"
 .byte NewLine
 .text "of House Friege, at your service."
 .byte WaitForA
@@ -269,7 +269,7 @@ ch11xolwenfred
 .byte ScrollText
 .text "...Lady Olwen, I can tell you only one thing"
 .byte NewLine
-.text "for certain: your place isn't with the Empire"
+.text "for certain: your place isn't with the empire"
 .byte NewLine
 .text "and its army. Not anymore."
 .byte WaitForA
@@ -292,7 +292,7 @@ ch11xolwenfred
 .byte NewLine
 .text "what little I saw, his values are far more in line"
 .byte NewLine
-.text "with ours than the Empire's are."
+.text "with ours than the empire's are."
 .byte WaitForA
 .byte ScrollText
 .text "Whatever it is you've lost sight of,"
@@ -337,7 +337,7 @@ ch11xopening1
 .byte NewLine
 .text "border skirmish. I must ride out at once"
 .byte NewLine
-.text "and alert the Imperial Army's high command."
+.text "and alert the imperial army's high command."
 .byte WaitForA
 .byte ScrollText
 .text "Not to imply that this relieves you"
@@ -461,7 +461,7 @@ ch11xopening2
 .byte Left_slot
 .word LoadPortrait
 .word boy_portrait
-.text "Y-yer an Imperial soldier...!"
+.text "Y-yer an imperial soldier...!"
 .byte WaitForA
 .byte NewLine
 .text "You witch! All you do is go around"
@@ -533,7 +533,7 @@ ch11xopening2
 .byte ScrollText
 .text "It can't be..."
 .byte NewLine
-.text "Has the Empire really been conducting"
+.text "Has the empire really been conducting"
 .byte NewLine
 .text "child hunts?"
 .byte WaitForA
@@ -545,12 +545,12 @@ ch11xopening2
 .text "I never even considered that it could be true..."
 .byte WaitForA
 .byte ScrollText
-.text "For the Empire to be doing"
+.text "For the empire to be doing"
 .byte NewLine
 .text "something so heinous... This is inexcusable!"
 .byte WaitForA
 .byte ScrollText
-.text "I believed in the Empire,"
+.text "I believed in the empire,"
 .byte NewLine
 .text "I trusted in House Friege..."
 .byte NewLine
@@ -595,7 +595,7 @@ ch11xclosing1
 .byte Right_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "Indeed. But that makes the Empire all the more"
+.text "Indeed. But that makes the empire all the more"
 .byte NewLine
 .text "desperate to make an example of Tarrah"
 .byte NewLine
@@ -607,7 +607,7 @@ ch11xclosing1
 .text "countless cities would follow suit."
 .byte WaitForA
 .byte ScrollText
-.text "It's for this very reason that the Empire"
+.text "It's for this very reason that the empire"
 .byte NewLine
 .text "has summoned troops from across Jugdral"
 .byte NewLine
@@ -637,7 +637,7 @@ ch11xclosing1
 .text "Indeed, but they are no mere knights."
 .byte WaitForA
 .byte NewLine
-.text "They're Mage Knights, each of them"
+.text "They're mage knights, each of them"
 .byte NewLine
 .text "handpicked for the job, and each of them"
 .byte NewLine
@@ -759,7 +759,7 @@ ch11xclosing2
 .byte ScrollText
 .text "...I see. If that's the case, Olwen, take a good,"
 .byte NewLine
-.text "hard look at what the Empire has done here."
+.text "hard look at what the empire has done here."
 .byte NewLine
 .text "See them for what they truly are."
 .byte WaitForA

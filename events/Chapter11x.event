@@ -10,7 +10,6 @@ eventChapter11xEvents ; 99/D51C
 	_TurnEventDefinitions ; 99/D529
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Oltoph
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
@@ -18,7 +17,6 @@ eventChapter11xEvents ; 99/D51C
 		EVENT FlagAlwaysZero, _FredCheck
 			CMP_WORD_RANGE wCurrentTurn, 2, $FF
 			CMP_WORD wCurrentPhase, NPC
-			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _FredArrive
 			CMP_WORD wCurrentTurn, 2
@@ -26,23 +24,23 @@ eventChapter11xEvents ; 99/D51C
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _OltophLeave
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 30
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 29
 			CHECK_NUM_UNITS_GTE Oltoph, 1
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Left1Reinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 10
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RightReinforcements
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 8
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 7
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Left2Reinforcements
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 15
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 14
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -389,13 +387,22 @@ eventChapter11xEvents ; 99/D51C
 
 		STORE_LONG lEventEngineLongParameter, ch11xclosing2
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		JUMP ++
+		
+		+
+		YIELD
+		
+		macroCountPlayerUncapturedAliveUnits Fred
+		JUMP_FALSE +
+		
+		STORE_LONG lEventEngineLongParameter, fredjoinsalone
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		+
 		YIELD
 		
-		EVENT_TEST_FLAG_SET $08
+		EVENT_TEST_FLAG_SET FlagNoHelpFromOltoph
 		JUMP_TRUE +
-		SET_FLAG FlagOltophAliveInChp11x
 		STORE_LONG lEventEngineLongParameter, ch11xclosing3
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		YIELD

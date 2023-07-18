@@ -35,12 +35,12 @@ eventChapter5Events ; 99/9246
 			TEST_FLAG_UNSET $08
 		END_DEFINITION
 		EVENT $11, _BerserkerSpawn
-			CMP_WORD wCurrentPhase, N
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $06
 			TEST_FLAG_UNSET $08
 		END_DEFINITION
 		EVENT $12, _GalzusSpawn
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $06
 			TEST_FLAG_UNSET $08
 			RUN_ASM _Chapter4xCheck
@@ -797,6 +797,21 @@ eventChapter5Events ; 99/9246
 
 		+
 		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
+		
+		SET_MUSIC $3B
+		YIELD
+		
+		macroDialogueWithBackground raydrikbadatjailing, 1
+		
+		EVENT_TEST_FLAG_SET FlagGalzusDead
+		JUMP_TRUE +
+		
+		STORE_LONG lEventEngineLongParameter, galzusmia
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		+
+		
+		YIELD
 
 		FADE_OUT $01
 		YIELD

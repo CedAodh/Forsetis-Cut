@@ -50,7 +50,7 @@ ch8xosiantanya
 
 .byte Left_slot
 .byte ScrollText
-.text "H-hey! Wait, wait, don't cry, OK?"
+.text "H-hey! Wait, wait, don't cry, okay?"
 .byte NewLine
 .text "I... I just... I mean, I was really..."
 .byte WaitForA
@@ -226,7 +226,7 @@ ch8xclosing
 .byte NewLine
 .text "during all those days you were fleeing"
 .byte NewLine
-.text "from the Empire?"
+.text "from the empire?"
 .byte WaitForA
 
 .byte Left_slot

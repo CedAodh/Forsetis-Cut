@@ -12,20 +12,20 @@ eventChapter19Events ; FD/CBB9
 			TEST_FLAG_SET $03
 		END_DEFINITION
 		EVENT $00, _BrigandReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 1, 2
 		END_DEFINITION
 		EVENT $00, _IshtarArrival
-			CMP_WORD wCurrentPhase, Player
-			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 6
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 6, 25
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 8, 25
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 6, 25
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

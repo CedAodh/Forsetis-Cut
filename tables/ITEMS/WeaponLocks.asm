@@ -139,5 +139,13 @@ aThokkWeaponLock ; B0/9A6C
 	.word Veld
 	.word 0
 
+aRecurveBowWeaponLock
+	.word Tanya
+	.word Ronan
+	.word Selphina
+	.word Robert
+	.word Asaello
+	.word 0
+
 aBrokenMagicWeaponLock ; B0/9A78
 	.word 0

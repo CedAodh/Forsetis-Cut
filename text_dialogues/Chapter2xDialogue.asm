@@ -56,7 +56,7 @@ ch2xop1
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "T-take up arms against the Empire?!"
+	.text "T-take up arms against the empire?!"
 	.byte NewLine
 	.text "May as well stand on the shore"
 	.byte NewLine
@@ -202,7 +202,7 @@ ch2xturn2
 	.byte NewLine
 	.text "I'm goin' pale jus' thinkin' about fightin'"
 	.byte NewLine
-	.text "the Empire..."
+	.text "the empire..."
 	.byte WaitForA
 	.byte ScrollText
 	.text "I mean, we might as well jus' jab a knife in our"
@@ -379,7 +379,7 @@ ch2xend1
 	.byte ScrollText
 	.text "As close as a woman of common birth can be, I"
 	.byte NewLine
-	.text "suppose. The Duke of Tarrah was Lady Linoan's"
+	.text "suppose. The duke of Tarrah was Lady Linoan's"
 	.byte NewLine
 	.text "father, and I am more her servant than peer."
 	.byte WaitForA
@@ -400,9 +400,9 @@ ch2xend1
 	.text "Ah... Let me start from the beginning."
 	.byte WaitForA
 	.byte ScrollText
-	.text "After the Duke passed away,"
+	.text "After the duke passed away,"
 	.byte NewLine
-	.text "the Empire installed their own governor."
+	.text "the empire installed their own governor."
 	.byte WaitForA
 	.byte ScrollText
 	.text "The man proved to be a walking pox, inflicting"
@@ -423,28 +423,28 @@ ch2xend1
 	.byte NewLine
 	.text "The people of Tarrah revolted,"
 	.byte NewLine
-	.text "installing Lady Linoan as rightful Duchess."
+	.text "installing Lady Linoan as rightful duchess."
 	.byte WaitForA
 	.byte ScrollText
 	.text "They hired any sellsword who could stand"
 	.byte NewLine
 	.text "upright, and then sent offerings of gold and"
 	.byte NewLine
-	.text "gemstones to the Empire's leading noblemen."
+	.text "gemstones to the empire's leading noblemen."
 	.byte WaitForA
 	.byte ScrollText
-	.text "It was...an admirable effort, but King Blume"
+	.text "It was...an admirable effort, but King Bloom"
 	.byte NewLine
-	.text "of Thracia did not forgive such a slight, and"
+	.text "did not forgive such a slight, and summoned"
 	.byte NewLine
-	.text "summoned the Imperial Army to besiege Tarrah."
+	.text "the imperial army to besiege Tarrah."
 	.byte WaitForA
 	.byte ScrollText
 	.text "The sellswords proved craven and fled,"
 	.byte NewLine
 	.text "and now only a handful of militiamen"
 	.byte NewLine
-	.text "stand between the Empire and our city."
+	.text "stand between the empire and our city."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Lady Linoan bade me leave and seek out any"
@@ -456,9 +456,9 @@ ch2xend1
 	.byte ScrollText
 	.text "Are things truly that dire...?"
 	.byte NewLine
-	.text "The Duke sheltered me for half a decade before"
+	.text "The duke sheltered me for half a decade before"
 	.byte NewLine
-	.text "the Empire learned of it and had him executed."
+	.text "the empire learned of it and had him executed."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Not a day goes by that I don't think"
@@ -574,7 +574,7 @@ ch2xend2
 .byte NewLine
 .text "If that boy's really the missing Leonster heir,"
 .byte NewLine
-.text "the Empire'd pay mighty well to hear of it..."
+.text "the empire'd pay mighty well to hear of it..."
 .byte WaitForA
 .byte ScrollText
 .text "It's worth mulling over, at least."

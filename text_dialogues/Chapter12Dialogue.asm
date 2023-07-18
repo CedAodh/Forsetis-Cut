@@ -39,7 +39,7 @@ ch12magicringhousenotolwen
 .word oldlady3_portrait
 .text "We thought the children of our village"
 .byte NewLine
-.text "would be safe from the Empire, "
+.text "would be safe from the empire, "
 .byte WaitForA
 .text "long as"
 .byte NewLine
@@ -48,7 +48,7 @@ ch12magicringhousenotolwen
 .text "too dangerous to be worth the trouble."
 .byte WaitForA
 .byte ScrollText
-.text "That was before the Imperial Army started"
+.text "That was before the imperial army started"
 .byte NewLine
 .text "showin' up in droves to attack Tarrah..."
 .byte WaitForA
@@ -68,7 +68,7 @@ ch12heimscrollhousefailed
 .byte Right_slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "*Cough, cough! Wheeze!*"
+.text "*cough* *cough*"
 .byte NewLine
 .text "It won't be much longer now, Sera..."
 .byte NewLine
@@ -367,7 +367,7 @@ ch12mareetadialogue
 
 .byte Left_slot
 .byte ScrollText
-.text "No—I'm a swordswoman, a Myrmidon,"
+.text "No—I'm a swordswoman, a myrmidon,"
 .byte NewLine
 .text "like my mother before me!"
 .byte NewLine
@@ -434,7 +434,7 @@ ch12opening1
 .byte NewLine
 .text "I mean, you just said you wanted to leave"
 .byte NewLine
-.text "the Church, that's all."
+.text "the church, that's all."
 .byte WaitForA
 .byte ScrollText
 .text "It ain't right to kill a man"
@@ -449,14 +449,14 @@ ch12opening1
 .byte ScrollText
 .text "I hear the Loptrian bishops have even more"
 .byte NewLine
-.text "power than the Emperor now. That's an awful"
+.text "power than the emperor now. That's an awful"
 .byte NewLine
 .text "luxurious position to just walk away from."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I...no longer understood the Church."
+.text "I...no longer understood the church."
 .byte NewLine
 .text "That was my reason—nothing more,"
 .byte NewLine
@@ -560,7 +560,7 @@ ch12opening1
 .text "Don't say I never did anything for you."
 .byte WaitForA
 .byte ScrollText
-.text "Just be on the lookout for the Imperial Army."
+.text "Just be on the lookout for the imperial army."
 .byte NewLine
 .text "With all the troops they're sending to Tarrah,"
 .byte NewLine
@@ -574,7 +574,7 @@ ch12opening1
 .byte ScrollText
 .text "Not to worry. If anyone draws near,"
 .byte NewLine
-.text "I'll use my Sleep staff to send them"
+.text "I'll use my sleep staff to send them"
 .byte NewLine
 .text "into a deep slumber."
 .byte WaitForA
@@ -680,7 +680,7 @@ ch12opening2
 .byte ScrollText
 .text "You wish to carry on your mother's legacy"
 .byte NewLine
-.text "and become a Swordmaster, do you not?"
+.text "and become a swordmaster, do you not?"
 .byte WaitForA
 .byte ScrollText
 .text "If that's your goal, you must learn"
@@ -721,7 +721,7 @@ ch12opening2
 .byte NewLine
 .text "and if you believe otherwise,"
 .byte NewLine
-.text "then you won't ever truly be a Swordmaster."
+.text "then you won't ever truly be a swordmaster."
 .byte WaitForA
 
 .byte Right_slot
@@ -779,7 +779,7 @@ ch12closingfailedgaiden
 .byte NewLine
 .text "the bandits of this forest only target nobles"
 .byte NewLine
-.text "who've aligned themselves with the Empire."
+.text "who've aligned themselves with the empire."
 .byte WaitForA
 .byte ScrollText
 .text "They steal coin and goods from them,"
@@ -909,7 +909,7 @@ ch12ending2mareetaleif
 .byte NewLine
 .text "for what happened to your mother. It was"
 .byte NewLine
-.text "my fault that the Commander... That she..."
+.text "my fault that the commander... That she..."
 .byte WaitForA
 
 .byte Left_slot
@@ -928,7 +928,7 @@ ch12ending2mareetaleif
 .byte ScrollText
 .text "...Mareeta, this I swear to you:"
 .byte NewLine
-.text "I'll get the Commander back, whatever it takes!"
+.text "I'll get the commander back, whatever it takes!"
 .byte WaitForA
 
 .byte Left_slot
@@ -959,7 +959,7 @@ ch12ending2mareetaleif
 .byte ScrollText
 .text "But someday, we'll be able to go back"
 .byte NewLine
-.text "for the Commander. You can count on that."
+.text "for the commander. You can count on that."
 .byte WaitForA
 .byte ScrollText
 .text "And when that day comes, there's no force"
@@ -992,7 +992,7 @@ ch12wm1
 .byte NewLine
 .text "just how little time remained before"
 .byte NewLine
-.text "the Empire launched its assault on Tarrah."
+.text "the empire launched its assault on Tarrah."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A

@@ -81,7 +81,7 @@ ch8leifhalvan
 .byte NewLine
 .text "Commander Eyvel acted as our parent"
 .byte NewLine
-.text "after ours were lost to the Empire."
+.text "after ours were lost to the empire."
 .byte WaitForA
 
 .byte right_slot
@@ -124,6 +124,115 @@ ch8leifhalvan
 .text "It's an honor, Lord Leif."
 .byte NewLine
 .text "I'll always be on your side."
+.byte WaitForA
+
+.byte EndText
+
+leifosian
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word osian_portrait
+.text "Hey, Leif!"
+.byte NewLine
+.text "Got a second?"
+.byte WaitForA
+
+.byte right_slot
+.text "Sure, Osian."
+.byte NewLine
+.text "Is there something you need?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Sort of."
+.byte NewLine
+.text "I just wanted to say sorry for getting into it"
+.byte NewLine
+.text "with those guards at Meath."
+.byte WaitForA
+.byte ScrollText
+.text "Well, it's more like THEY wanted me to say sorry"
+.byte NewLine
+.text "for the embarrassment I must've caused you."
+.byte NewLine
+.text "So anyway...yeah."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Did General Hannibal release the wrong Osian?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Wh-what the—"
+.byte NewLine
+.text "The hell's that mean?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, okay, good. You're the right Osian."
+.byte NewLine
+.text "I'm sorry, I just— I am not at all used to"
+.byte NewLine
+.text "hearing you...well, apologize."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yeah, har har. Real funny."
+.byte NewLine
+.text "I'll have you know, I didn't apologize as Osian—"
+.byte NewLine
+.text "I did it as your trusty comrade, Prince."
+.byte WaitForA
+.byte ScrollText
+.text "Don't get me wrong, I've got my own opinions"
+.byte NewLine
+.text "and methods for all we do—but I recognize"
+.byte NewLine
+.text "AND rectify insubordination when I see it."
+.byte WaitForA
+.byte ScrollText
+.text "I figured I oughta personally let you know that."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ah, I see..."
+.byte NewLine
+.text "Either way, I thank you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You're welcome."
+.byte WaitForA
+.byte ScrollText
+.text "Now, how about we smash in these thugs"
+.byte NewLine
+.text "and clear the way to Dagdar's manor?"
+.byte NewLine
+.text "I got a few things to say to Tanya..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Then I shall leave you to it."
+.byte NewLine
+.text "I'm counting on you, my trusty comrade."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hah, good one!"
 .byte WaitForA
 
 .byte EndText

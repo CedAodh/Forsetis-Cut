@@ -10,15 +10,12 @@ eventChapter12Events ; 99/DBD6
 	_TurnEventDefinitions ; 99/DBE3
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Colho
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
-		EVENT FlagAlwaysZero, _SalemCheck
-			CMP_WORD wCurrentPhase, Enemy
-			TEST_FLAG_UNSET FlagBossDeath
-		END_DEFINITION
+		;EVENT FlagAlwaysZero, _SalemCheck
+		;END_DEFINITION
 		EVENT FlagAlwaysZero, _ColhoDialogue
 			CMP_WORD wCurrentTurn, 1
 			CMP_WORD wCurrentPhase, Enemy
@@ -30,7 +27,7 @@ eventChapter12Events ; 99/DBD6
 		END_DEFINITION
 		EVENT $05, _GaidenFail
 			CMP_WORD wCurrentTurn, 20
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MareetaArrive
 			TEST_FLAG_UNSET $8F
@@ -38,19 +35,19 @@ eventChapter12Events ; 99/DBD6
 			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BrigandLeftReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 4, 12
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BrigandMiddleReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 4, 12
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BrigandRightReinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 4, 12
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath

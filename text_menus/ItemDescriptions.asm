@@ -1011,7 +1011,6 @@ _GrafcaliburDesc
 .word $0000
 
 _ForsetiDesc
-_ForsetiInfiniteDesc
 .text "{Lock}Ced "
 .word $0000
 .text "Holy ]wind [magic "
@@ -1019,6 +1018,17 @@ _ForsetiInfiniteDesc
 .text "Anti{dash}Fliers, Skl "
 .word $0000
 .text "{+}{1}{0}, Spd {+}{2}{0}"
+.word $0000
+.word $0000
+
+_ForsetiInfiniteDesc
+.text "{Lock}Archers, Bo12 "
+.word $0000
+.text "Knights "
+.word $0000
+.text "A tailored bo12 "
+.word $0000
+.text "]with enhanced range"
 .word $0000
 .word $0000
 
@@ -1215,20 +1225,18 @@ _MemberCardDesc
 ; Scrolls
 
 _BasicScrollDesc 	; Displayed when Hidden Data is off
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .word $0000
 
 _BaldrsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
-.text "{H}{P}        {+}{1}{0}{%}"
+.text "{H}{P}          {+}{5}{%}"
 .word $0000
 .text "Strength      {+}{5}{%}"
+.word $0000
+.text "Skill         {+}{5}{%}"
 .word $0000
 .text "Luck          {+}{5}{%}"
 .word $0000
@@ -1239,8 +1247,6 @@ _BaldrsScrollDesc
 .word $0000
 
 _OdsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "Skill       {+}{3}{0}{%}"
@@ -1248,8 +1254,6 @@ _OdsScrollDesc
 .word $0000
 
 _HezulsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}        {+}{3}{0}{%}"
@@ -1265,15 +1269,15 @@ _NjorunsScrollDesc
 .word $0000
 .text "(Modifies gro]wths"
 .word $0000
+.text "{H}{P}        {+}{1}{0}{%}"
+.word $0000
 .text "Strength    {+}{3}{0}{%}"
 .word $0000
 .text "(Magic      {-}{1}{0}{%}"
 .word $0000
-.text "Speed         {+}{5}{%}"
+.text "Skill       {+}{1}{0}{%}"
 .word $0000
-.text "Luck          {-}{5}{%}"
-.word $0000
-.text "Defense     {+}{1}{0}{%}"
+.text "Speed       {-}{1}{0}{%}"
 .word $0000
 .word $0000
 
@@ -1282,19 +1286,19 @@ _DainnsScrollDesc
 .word $0000
 .text "(Modifies gro]wths"
 .word $0000
+.text "{H}{P}          {+}{5}{%}"
+.word $0000
 .text "Strength      {+}{5}{%}"
 .word $0000
-.text "Speed       {-}{1}{0}{%}"
+.text "Luck          {+}{5}{%}"
 .word $0000
-.text "Defense     {+}{3}{0}{%}"
+.text "Defense     {+}{1}{0}{%}"
 .word $0000
 .text "(Move[ment    {+}{5}{%}"
 .word $0000
 .word $0000
 
 _NalsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}        {+}{1}{0}{%}"
@@ -1303,16 +1307,20 @@ _NalsScrollDesc
 .word $0000
 .text "Skill       {-}{1}{0}{%}"
 .word $0000
-.text "Defense     {+}{1}{0}{%}"
+.text "Luck          {+}{5}{%}"
+.word $0000
+.text "Defense       {+}{5}{%}"
 .word $0000
 .text "Constitution{+}{1}{0}{%}"
 .word $0000
 .word $0000
 
 _UllursScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
+.word $0000
+.text "{H}{P}          {+}{5}{%}"
+.word $0000
+.text "Strength      {+}{5}{%}"
 .word $0000
 .text "Skill       {+}{1}{0}{%}"
 .word $0000
@@ -1320,24 +1328,24 @@ _UllursScrollDesc
 .word $0000
 .text "Luck        {+}{1}{0}{%}"
 .word $0000
+.text "Constitution{-}{1}{0}{%}"
+.word $0000
 .word $0000
 
 _BragisScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "Strength    {-}{1}{0}{%}"
 .word $0000
-.text "(Magic      {+}{1}{0}{%}"
+.text "(Magic        {+}{5}{%}"
+.word $0000
+.text "Skill         {+}{5}{%}"
 .word $0000
 .text "Luck        {+}{3}{0}{%}"
 .word $0000
 .word $0000
 
 _FjalarsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}        {+}{1}{0}{%}"
@@ -1353,8 +1361,6 @@ _FjalarsScrollDesc
 .word $0000
 
 _ThrudsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "Strength      {+}{5}{%}"
@@ -1370,24 +1376,24 @@ _ThrudsScrollDesc
 .word $0000
 
 _CedsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}        {-}{1}{0}{%}"
 .word $0000
-.text "(Magic      {+}{1}{0}{%}"
-.word $0000
 .text "Speed       {+}{3}{0}{%}"
+.word $0000
+.text "Luck        {+}{1}{0}{%}"
 .word $0000
 .word $0000
 
 _HeimsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
-.text "(Magic      {+}{3}{0}{%}"
+.text "{H}{P}        {+}{1}{0}{%}"
+.word $0000
+.text "(Magic      {+}{1}{0}{%}"
+.word $0000
+.text "Speed       {+}{1}{0}{%}"
 .word $0000
 .text "Luck        {+}{1}{0}{%}"
 .word $0000

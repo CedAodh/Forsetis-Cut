@@ -23,7 +23,7 @@ ch4op1
 .byte WaitForA
 
 .byte Left_slot
-.text "...Aye, sire."
+.text "...Aye, milord."
 .byte WaitForA
 
 .byte ScrollText
@@ -157,7 +157,7 @@ ch4op3
 .byte Right_slot
 .text "Uh-huh. No lock is gonna stand in my way!"
 .byte NewLine
-.text "Just watch my back, OK?"
+.text "Just watch my back, okay?"
 .byte WaitForA
 
 .byte Left_slot
@@ -193,7 +193,7 @@ ch4dalshinconvo
 
 .text "Wh-what?!"
 .byte NewLine
-.text "The Empire tried to take me own kin"
+.text "The empire tried to take me own kin"
 .byte NewLine
 .text "in their damned child hunts?!"
 .byte WaitForA
@@ -205,7 +205,7 @@ ch4dalshinconvo
 .text "be spared!"
 .byte WaitForA
 .byte ScrollText
-.text "Tch...! Damn Raydrik and damn the Empire!"
+.text "Tch...! Damn Raydrik and damn the empire!"
 .byte NewLine
 .text "I've no love left fer any of 'em!"
 .byte NewLine
@@ -288,7 +288,7 @@ ch4lithisturn1
 .text "whaddaya think they'll do?"
 .byte WaitForA
 .byte ScrollText
-.text "Not waltz up and ask nice for the Empire"
+.text "Not waltz up and ask nice for the empire"
 .byte NewLine
 .text "to let me go, that's for sure. In fact, I'll bet"
 .byte NewLine
@@ -501,7 +501,7 @@ ch4leifturn2
 .byte ScrollText
 .text "I'd heard that the Kingdom of Silesse"
 .byte NewLine
-.text "had been overthrown by the Empire."
+.text "had been overthrown by the empire."
 .byte NewLine
 .text "How is it the royal family is still alive?"
 .byte WaitForA
@@ -534,7 +534,7 @@ ch4leifturn2
 .byte ScrollText
 .text "Well, I can fly already, but I won't be doing"
 .byte NewLine
-.text "aerial acrobatics like a knight any time soon."
+.text "aerial acrobatics like a knight anytime soon."
 .byte WaitForA
 .byte ScrollText
 .text "Still, my pegasus and I can already understand"
@@ -630,7 +630,7 @@ ch4leifturn2
 .byte ScrollText
 .word LoadPortrait
 .word fergus_portrait
-.text "See? Even the Empire agrees with me!"
+.text "See? Even the empire agrees with me!"
 .byte NewLine
 .text "Bahaha...!"
 .byte WaitForA
@@ -676,7 +676,7 @@ ch4npcturn3
 .byte Left_slot
 .word LoadPortrait
 .word oldlady3_portrait
-.text "*Huff... Puff... Puff...*"
+.text "*huff* *puff* *puff*"
 .byte WaitForA
 
 .byte Right_slot
@@ -692,7 +692,7 @@ ch4npcturn3
 .text "It's me grandchildren I'm worried about..."
 .byte WaitForA
 .byte ScrollText
-.text "*Hack! Ack! Wheeze!*"
+.text "*cough* Ack! *wheeze*"
 .byte WaitForA
 
 .byte Right_slot
@@ -707,7 +707,7 @@ ch4npcturn3
 .byte ScrollText
 .word LoadPortrait
 .word ylgreen_portrait
-.text "Sheesh, the Empire even locks up"
+.text "Sheesh, the empire even locks up"
 .byte NewLine
 .text "sick ol' grandmas now?"
 .byte WaitForA
@@ -724,7 +724,7 @@ ch4npcturn3
 .byte ScrollText
 .text "You reckon them Magi folk have a chance"
 .byte NewLine
-.text "of takin' the Empire down?"
+.text "of takin' the empire down?"
 .byte WaitForA
 
 .byte Right_slot
@@ -749,12 +749,12 @@ ch4npcturn3
 .byte NewLine
 .text "'Fore he showed up, the Magi had been"
 .byte NewLine
-.text "all but wiped out by the Empire..."
+.text "all but wiped out by the empire..."
 .byte WaitForA
 .byte ScrollText
 .text "Then he showed up, an' just look at how the"
 .byte NewLine
-.text "Magi are doin' now. The Empire keeps tryin' to"
+.text "Magi are doin' now. The empire keeps tryin' to"
 .byte NewLine
 .text "grab hold of 'em, but they just keep lucking out."
 .byte WaitForA
@@ -987,7 +987,7 @@ ch4ending
 .text "of them: burn the city and its people."
 .byte WaitForA
 .byte ScrollText
-.text "Show Munster that the Empire"
+.text "Show Munster that the empire"
 .byte NewLine
 .text "does not tolerate resistance."
 .byte WaitForA
@@ -1077,7 +1077,7 @@ ch4ending
 .byte NewLine
 .text "sculpted into adults worthy to inhabit"
 .byte NewLine
-.text "the Empire."
+.text "the empire."
 .byte WaitForA
 .byte ScrollText
 .text "The ones who survive our rigorous training will"
@@ -1164,7 +1164,7 @@ ch4wm1
 .long LoadPortraitalt_2
 .word $0001
 .word $0605 ;y then x
-.text "and taken to Munster by Imperial soldiers."
+.text "and taken to Munster by imperial soldiers."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -1205,15 +1205,15 @@ ch4wm3
 .text "a general of the Kingdom of Connaught, "
 .byte WaitForA
 .byte NewLine
-.text "but colluded with the Empire during the war."
+.text "but colluded with the empire during the war."
 .byte WaitForA
 .byte ScrollText
 .text "For that service,"
 .byte NewLine
-.text "he was made Baron of Munster."
+.text "he was made baron of Munster."
 .byte WaitForA
 .byte ScrollText
-.text "While still subordinate to Lord Blume,"
+.text "While still subordinate to Bloom,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $017C ;blume

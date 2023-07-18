@@ -10,29 +10,28 @@ eventChapter3Events ; 8C/E435
 	_TurnEventDefinitions ; 8C/E442
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Lobos
-			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Brigand1Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 16
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 9, 10
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 60
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Brigand2Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 16
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 9, 10
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 60
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _SoldierReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 14, 16
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 13, 15
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 75
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArmorReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 11, 17
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD_RANGE wCurrentTurn, 10, 16
+			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 50
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
@@ -505,7 +504,20 @@ eventChapter3Events ; 8C/E435
 		YIELD
 
 		DIALOGUE ch3op2
-		YIELD
+		
+		macroCountAllUncapturedAliveUnits Eyvel
+		JUMP_FALSE +
+		
+		STORE_LONG lEventEngineLongParameter, augusteyvel
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		JUMP ++
+		
+		+
+		
+		STORE_LONG lEventEngineLongParameter, ch3op3
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		+
 
 		MOVE_UNIT ThraciaBishop, [11, 28], [1, 27], 1, None
 		YIELD_UNK

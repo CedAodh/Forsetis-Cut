@@ -42,8 +42,8 @@
 .byte $0B, $24     ; Special Triangle Masking: ???
 .byte $73, $54     ; --Wait: 115 frames--
 ;.byte $FE, $FF     ; --Wait--
-.byte $67, $16     ; Effect / Palette: ???
-.byte $51, $16     ; Palette: Valflame Red 2
+;.byte $67, $16     ; Effect / Palette: ???
+;.byte $51, $16     ; Palette: Valflame Red 2
 ;.byte $14, $54     ; --Wait: 20 frames--
 ;.byte $6A, $16     ; Effect / Palette: ???
 ;.byte $18, $54     ; --Wait: 16 frames--

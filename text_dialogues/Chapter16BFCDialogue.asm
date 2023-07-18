@@ -928,7 +928,7 @@ ch16Bbaldungevent2
 .byte right_slot
 .word LoadPortrait
 .word shannam_portrait
-.text "*pant pant*"
+.text "*pant* *pant*"
 .byte NewLine
 .text "W-What in Naga's name was that?!"
 .byte NewLine
