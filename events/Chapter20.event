@@ -36,33 +36,31 @@ eventChapter20Events ; FD/D942
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD wCurrentTurn, 7
 		END_DEFINITION
-		EVENT $00, _Turn10Reinforcements
+		EVENT $00, _Turn9Reinforcements
+			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentTurn, 8
+		END_DEFINITION
+		EVENT $00, _Turn11Reinforcements
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD wCurrentTurn, 10
 		END_DEFINITION
-		EVENT $00, _Turn12Reinforcements
+		EVENT $00, _Turn13Reinforcements
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD wCurrentTurn, 12
 		END_DEFINITION
-		EVENT $00, _MageReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			TEST_FLAG_UNSET $02
-			CMP_WORD wCurrentTurn, 15
-		END_DEFINITION
-		EVENT $00, _BharatCharge
-			CMP_WORD wCurrentPhase, Enemy
-			TEST_FLAG_UNSET $02
-			CMP_WORD wCurrentTurn, 15
-		END_DEFINITION
-		EVENT $00, _ReoccurringReinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			TEST_FLAG_UNSET $02
-			CMP_WORD_RANGE wCurrentTurn, 12, 15
+		EVENT $00, _Turn14Reinforcements
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 14
 		END_DEFINITION
 		EVENT $06, _EnemiesFlee
 			CMP_WORD wCurrentPhase, Enemy
 			TEST_FLAG_SET $02
 			CMP_WORD wCurrentTurn, 14
+		END_DEFINITION
+		EVENT $00, _BharatCharge
+			CMP_WORD wCurrentPhase, Enemy
+			TEST_FLAG_UNSET $02
+			CMP_WORD wCurrentTurn, 15
 		END_DEFINITION
 		EVENT $00, _EndingEvent
 			CMP_WORD wCurrentPhase, Player
@@ -674,44 +672,44 @@ eventChapter20Events ; FD/D942
 		YIELD_UNK
 	END2
 
-	_Turn10Reinforcements ; FD/E108
-		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn10ReinforcementsCameraCoordinates
+	_Turn9Reinforcements ; FD/E108
+		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn9ReinforcementsCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter20Data._Turn10ReinforcementsGroup
+		LOAD2 eventChapter20Data._Turn9ReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 
 		YIELD_UNK
 	END2
 
-	_Turn12Reinforcements ; FD/E115
-		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn12ReinforcementsCameraCoordinates
+	_Turn11Reinforcements ; FD/E115
+		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn11ReinforcementsCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter20Data._Turn12ReinforcementsGroup
+		LOAD2 eventChapter20Data._Turn11ReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 
 		YIELD_UNK
 	END2
 
-	_MageReinforcements ; FD/E122
-		SCROLL_CAMERA_ADDRESS eventChapter20Data._MageReinforcementsCameraCoordinates
+	_Turn13Reinforcements ; FD/E122
+		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn13ReinforcementsCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter20Data._MageReinforcementsGroup
+		LOAD2 eventChapter20Data._Turn13ReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 
 		YIELD_UNK
 	END2
 
-	_ReoccurringReinforcements ; FD/E12F
-		SCROLL_CAMERA_ADDRESS eventChapter20Data._ReoccurringReinforcementsCameraCoordinates
+	_Turn14Reinforcements ; FD/E12F
+		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn14ReinforcementsCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter20Data._ReoccuringReinforcementsGroup
+		LOAD2 eventChapter20Data._Turn14ReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 
@@ -765,9 +763,6 @@ eventChapter20Events ; FD/D942
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
 
-		YIELD
-		
-		DIALOGUE martyosian
 		YIELD
 		
 		STORE_WORD wEventEngineCharacterTarget, Marty
