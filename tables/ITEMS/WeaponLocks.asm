@@ -145,6 +145,11 @@ aRecurveBowWeaponLock
 	.word Selphina
 	.word Robert
 	.word Asaello
+	.word FriegeArcher
+	.word MunsterSniper
+	.word FriegeSniper
+	.word SniperEnemy
+	.word Draco
 	.word 0
 
 aBrokenMagicWeaponLock ; B0/9A78
