@@ -4,7 +4,7 @@ eventChapter24xData ; 99/F7B3
 	_PrepGroup ; 99/F7B3
 		.byte 8, 7
 
-		UNIT Pierre, Enemy, [13, 19], [13, 19], Pierre, [Venin, Berserk, Jormungand], 20, True, [$01, $03, $00, $80]
+		UNIT Pierre, Enemy, [13, 19], [13, 19], Pierre, [Jormungand, Venin, Berserk], 20, True, [$01, $03, $00, $80]
 		UNIT LoptrianSorcerer1, Enemy, [12, 19], [12, 19], Pierre, [Jormungand, Fenrir, Silence], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [14, 19], [14, 19], Pierre, [Jormungand, Fenrir, Sleep], 20, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [11, 18], [11, 18], Pierre, [Jormungand], 15, False, [$00, $03, $00, $00]
