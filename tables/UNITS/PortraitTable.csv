@@ -48,7 +48,7 @@ AmaldaPortrait,g4bppcPortraitECE173,$33
 ConomorPortrait,g4bppcPortraitEEBA8A,$6B
 HomerPortrait,g4bppcPortraitED9D9B,$3F
 DiarmuidPortrait,g4bppcPortraitEB9717,$0B
-SaraPortrait,g4bppcPortraitSara,$2C
+SaraPortrait,g4bppcNewSara,$2C
 SaiasPortrait,g4bppcPortraitECDC66,$32
 Ced2Portrait,g4bppcPortraitED930E,$3D
 AltenaPortrait,g4bppcPortraitED9854,$3E
@@ -119,7 +119,7 @@ ColhoPortrait,g4bppcPortraitEE8ED4,$62
 GomezPortrait,g4bppcPortraitEE9378,$63
 BucksPortrait,g4bppcPortraitEE9840,$64
 ShivaPortrait,g4bppcPortraitEE9D0E,$65
-RaydrikPortrait,g4bppcPortraitEEA236,$66
+RaydrikPortrait,g4bppcNewRaydrik,$66
 LargoPortrait,g4bppcPortraitEEA74E,$67
 BaldachPortrait,g4bppcPortraitEEA74E,$BA
 BrookPortrait,g4bppcPortraitEEA74E,$D6
@@ -129,9 +129,9 @@ BharatPortrait,g4bppcPortraitEEB5B3,$6A
 Conomor2Portrait,g4bppcPortraitEEBA8A,$6B
 KempfPortrait,g4bppcPortraitEEBF63,$6C
 VeldPortrait,g4bppcPortraitEEC477,$6D
-RaydrikMusPortrait,g4bppcPortraitEEA236,$F2
+RaydrikMusPortrait,g4bppcNewRaydrik,$F2
 DagdarTigrisPortrait,g4bppcPortraitEBC9DC,$EE
-SaraCanisPortrait,g4bppcPortraitECBE8D,$EF
+SaraCanisPortrait,g4bppcNewSara,$EF
 GalzusBovisPortrait,g4bppcPortraitEBDE20,$F1
 LifisPorcusPortrait,g4bppcPortraitED8DD2,$F0
 EyvelDracoPortrait,g4bppcPortraitEBD3D2,$ED
