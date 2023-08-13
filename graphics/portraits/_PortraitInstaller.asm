@@ -450,6 +450,8 @@
 	g4bppcPortraitFilat .binary "sprites/Filat.4bpp.comp"
 	g4bppcPortraitGunnar .binary "sprites/Gunnar.4bpp.comp"
 	g4bppcPortraitGerald .binary "sprites/Gerald.4bpp.comp"
+	g4bppcNewBrighton .binary "sprites/NewBrighton.4bpp.comp"
+	g4bppcNewGlade .binary "sprites/NewGlade.4bpp.comp"
 	g4bppcPortraitEAFE34 .binary "sprites/PortraitEAFE34.4bpp.comp"
 	g4bppcPortraitEBFD2F .binary "sprites/PortraitEBFD2F.4bpp.comp"
 	g4bppcPortraitECFE67 .binary "sprites/PortraitECFE67.4bpp.comp"
