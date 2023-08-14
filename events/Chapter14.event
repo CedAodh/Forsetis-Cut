@@ -54,6 +54,11 @@ eventChapter14Events ; FD/9790
 		END_DEFINITION
 		EVENT $0C, _KaneTinaTalk
 			CHECK_CHARS2 Kane, Tina
+		END_DEFINITION
+		EVENT $0D, _LeifDeanTalk
+			CHECK_CHARS2 Leif, Dean
+			RUN_ASM _Chapter8xCheck
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/982C
@@ -372,9 +377,12 @@ eventChapter14Events ; FD/9790
 		.long ch14homerwomen
 
 		.word Mareeta, $00FF
-		.long ch14homerkids
+		.long ch14homerwomen
 
 		.word Tina, $00FF
+		.long ch14homerkids
+		
+		.word Daisy, $00FF
 		.long ch14homerkids
 
 	.word $0000
@@ -696,6 +704,10 @@ eventChapter14Events ; FD/9790
 	_KaneTinaTalk
 		macroDialogueHouse kanetina
 	END2
+	
+	_LeifDeanTalk
+		macroDialogueHouse leifdean
+	END2
 
 	_WyvernReinforcements ; FD/9F3B
 		PLAY_SOUND_WORD $00E0
@@ -825,6 +837,26 @@ eventChapter14Events ; FD/9790
 
 		+
 	END2
+	
+	_Chapter8xCheck ; 9993F5
+
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		lda #Chapter8x
+		sta wEventEngineParameter1,b
+		jsl rlASMCGetChapterTurncount
+		lda wEventEngineParameter1,b
+		beq +
+
+		sec
+		rtl
+
+		+
+		clc
+		rtl
 
 	_PrepGroups ; FD/A002
 		.long eventChapter14Data._PrepEnemies
@@ -1020,6 +1052,10 @@ eventChapter14Events ; FD/9790
 		YIELD_UNK
 
 		+
+		
+		macroSetCharacterWord Eda, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Dean, structCharacterDataRAM.Leader, Leif
+		
 		STORE_WORD wEventEngineParameter1, 1
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
@@ -1029,6 +1065,10 @@ eventChapter14Events ; FD/9790
 		YIELD_UNK
 		YIELD_UNK
 		YIELD_UNK
+		YIELD
+		
+		STORE_LONG lEventEngineLongParameter, leifmeetsarion
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		YIELD
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000

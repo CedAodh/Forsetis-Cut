@@ -85,7 +85,7 @@ eventChapter12xEvents ; FD/8F98
 		EVENT $08, _SalemTinaTalk
 			CHECK_CHARS2 Salem, Tina
 		END_DEFINITION
-		EVENT $0C, _SalemTrudeTalk
+		EVENT $07, _SalemTrudeTalk
 			CHECK_CHARS2 Salem, Trude
 		END_DEFINITION
 		EVENT $0F, _LeifTinaTalk
@@ -280,6 +280,14 @@ eventChapter12xEvents ; FD/8F98
 		SET_FLAG $0B
 
 		macroSetCharacterByte Perne, structCharacterDataRAM.LeadershipStars, 0
+		
+		TEST_FLAG_SET $0C
+		JUMP_FALSE +
+		
+		macroConvertToPlayerAllegiance Trude
+		macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+		
+		+
 	END2
 
 	_LifisPerneTalk ; FD/943E
@@ -306,6 +314,14 @@ eventChapter12xEvents ; FD/8F98
 		macroSetCharacterByte Perne, structCharacterDataRAM.LeadershipStars, 0
 
 		SET_FLAG $0B
+		
+		TEST_FLAG_SET $0C
+		JUMP_FALSE +
+		
+		macroConvertToPlayerAllegiance Trude
+		macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+		
+		+
 	END2
 
 	_LaraPerneTalk ; FD/94A8
@@ -324,6 +340,14 @@ eventChapter12xEvents ; FD/8F98
 		macroSetCharacterByte Perne, structCharacterDataRAM.LeadershipStars, 0
 
 		SET_FLAG $0B
+		
+		TEST_FLAG_SET $0C
+		JUMP_FALSE +
+		
+		macroConvertToPlayerAllegiance Trude
+		macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+		
+		+
 
 		STORE_WORD wEventEngineCharacterTarget, Lara
 		STORE_WORD wEventEngineParameter1, Dancer
@@ -384,7 +408,7 @@ eventChapter12xEvents ; FD/8F98
 		PAUSE_SKIPPABLE 32
 		YIELD
 
-		SET_MUSIC $4C
+		SET_MUSIC $4A
 		YIELD
 
 		DIALOGUE salemtina
@@ -405,14 +429,31 @@ eventChapter12xEvents ; FD/8F98
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
+		
+		macroCountPlayerUncapturedAliveUnits Perne
+		JUMP_TRUE +
 
-		SET_MUSIC $4A
+		SET_MUSIC $3F
 		YIELD
 
 		DIALOGUE salemtrude
 		YIELD
 
 		macroConvertToNPCAllegiance Trude
+		JUMP ++
+		
+		+
+		
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE salemtrudealternate
+		YIELD
+		
+		macroConvertToPlayerAllegiance Trude
+		macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+		
+		+
 
 		SET_FLAG $0A
 	END2
@@ -422,15 +463,7 @@ eventChapter12xEvents ; FD/8F98
 	END2
 	
 	_LeifPerneTalk
-		PLAY_SOUND_WORD $00E0
-		PAUSE_SKIPPABLE 32
-		YIELD
-
-		SET_MUSIC $4A
-		YIELD
-
-		DIALOGUE leifperne
-		YIELD
+		macroDialogueHouse leifperne
 	END2
 	
 	_PrepGroups ; FD/95A8

@@ -862,40 +862,71 @@ ch16Bbaldungevent
 .byte right_slot
 .word LoadPortrait
 .word shannam_portrait
-.text "Phew..."
+.text "Uh... Hello!"
 .byte NewLine
-.text "Seems like there's nobody here."
+.text "Is...is my money here?"
+.byte WaitForA
 .byte NewLine
-.text "I s'pose I can sit down and take a break."
+.text "I was promised half up front,"
+.byte NewLine
+.text "but I guess you guys, heh..."
+.byte NewLine
+.text "I-it's no big deal or anything."
 .byte WaitForA
 .byte ScrollText
-.text "Or..."
-.byte NewLine
-.text "I could venture in and see if them Loptrians"
-.byte NewLine
-.text "left some useful trinkets for me to sell!"
+.text "......"
 .byte WaitForA
 .byte ScrollText
-.text "Not here... Not here either..."
+.text "Okay, no one's here."
 .byte NewLine
-.text "What's this crystal ball doing here?"
-.byte WaitForA
-.byte NewLine
-.text "Crap, crap, more crap..."
+.text "I'll go help myself, then."
 .byte WaitForA
 .byte ScrollText
-.text "Bingo!"
+.text "Hrm... No good."
 .byte NewLine
+.text "Where the hell could it be...?"
+.byte NewLine
+.text "Maybe I'll just nab something else instead."
+.byte WaitForA
+.byte ScrollText
+.text "...Like this!"
+.byte NewLine
+.text "This nice, impossible-to-sheathe-looking"
+.byte NewLine
+.text "sword right here! Must be worth a fortune!"
+.byte WaitForA
+.byte ScrollText
+.text "Right below, it says..."
+.byte NewLine
+.text "“Duplication of the divine blade Balmung,"
+.byte NewLine
+.text "currently encased within Aed Shrine.”"
+.byte WaitForA
+.byte ScrollText
+.text "Huh. Looks pretty legit to me."
+.byte NewLine
+.text "...Except for all the RUST!"
+.byte NewLine
+.text "Damn! Look at that!"
+.byte WaitForA
+.byte ScrollText
+.text "They go out of their way to hang it up,"
+.byte NewLine
+.text "but they can't be bothered to give it a"
+.byte NewLine
+.text "good cleaning once in a blue moon?"
+.byte WaitForA
+.byte ScrollText
+.text "Hmm... If I can actually get it in a sheath,"
+.byte NewLine
+.text "it could still be of some use..."
+.byte NewLine
+.text "Yeah, let's try that!"
+.byte WaitForA
+.byte ScrollText
 .text "*whistle*"
 .byte NewLine
-.text "Would you look at that!"
-.byte WaitForA
-.byte NewLine
-.text "Now this is a fancy sword!"
-.byte NewLine
-.text "I bet I could use it to improve my disguise!"
-.byte NewLine
-.text "Oh, what a blessing from above!"
+.text "Lookin' good, Prince Shannan!"
 .byte WaitForA
 
 .byte left_slot
@@ -904,21 +935,25 @@ ch16Bbaldungevent
 
 .byte right_slot
 .byte ScrollText
-.text "*gulp*"
+.text "Tch..."
 .byte NewLine
-.text "C-Can I be the first one to ask...?"
+.text "I believe you'd be better off not knowing."
+.byte NewLine
+.text "Keep your distance if you value your life."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "You..."
+.text "Trespassing upon this holy place is forbidden."
 .byte NewLine
-.text "State your business, or begone!"
+.text "Leave at once, or suffer the consequences!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "AAAAAHHHHH!!!"
+.text "...I was just joking, anyway!"
+.byte NewLine
+.text "I-I'll get out! See ya! Bye!"
 .byte WaitForA
 
 .byte EndText
@@ -928,19 +963,16 @@ ch16Bbaldungevent2
 .byte right_slot
 .word LoadPortrait
 .word shannam_portrait
-.text "*pant* *pant*"
+.text "*pant*"
 .byte NewLine
-.text "W-What in Naga's name was that?!"
-.byte NewLine
-.text "Oh, I'm just so glad I held on to the sword..."
+.text "Phew...! Close one there..."
 .byte WaitForA
+.byte ScrollText
+.text "...Huh? The building's still up."
 .byte NewLine
-.text "Wait. Why is it all... Rusty?"
+.text "I thought it woulda collapsed or somethin'."
 .byte NewLine
-.text "Eh, who cares?"
-.byte WaitForA
-.byte NewLine
-.text "Guess I'm gettin' something outta this after all!"
+.text "Sorta anticlimactic... Not that I should complain."
 .byte WaitForA
 
 .byte EndText

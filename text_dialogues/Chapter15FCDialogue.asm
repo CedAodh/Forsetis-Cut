@@ -73,9 +73,9 @@ ch15daisyasaello
 	.byte right_slot
 	.text "Daisy?! I-I should be the one asking that!"
 	.byte NewLine
-	.text "I'm not the one who just went missing"
+	.text "Where have you been all this time?!"
 	.byte NewLine
-	.text "for several months!"
+	.text "You're waltzing up to me way too casually!"
 	.byte WaitForA
 
 	.byte left_slot
@@ -387,36 +387,36 @@ albaeda
 
 .byte left_slot
 .byte ScrollText
-.text "You're telling me you saw me earlier—you knew I"
+.text "Are you saying you saw me before?"
 .byte NewLine
-.text "was here—and you didn't think to say anything?"
+.text "Why didn't you call out to me?"
 .byte NewLine
-.text "You couldn't just say hello?"
+.text "Couldn't just do a simple hello?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "When you put it like that, I...could have..."
 .byte NewLine
-.text "B-but you looked like you were neck-deep in"
+.text "B-but you looked really busy!"
 .byte NewLine
-.text "all sorts of stuff! I didn't want to disturb—"
+.text "I didn't want to bother you with my stuff."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Okay, okay, I get it."
+.text "Oh, it was just that?"
 .byte NewLine
-.text "...Sorry, Alba. I was just...taken aback for a"
+.text "...I'm sorry, Alba."
 .byte NewLine
-.text "moment and let my tongue a little too loose."
+.text "Sorry for putting you on the spot."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "Don't worry about it."
 .byte NewLine
-.text "I know you weren't ACTUALLY upset."
+.text "I know you weren't like UPSET."
 .byte NewLine
 .text "...Right?"
 .byte WaitForA
@@ -698,9 +698,9 @@ ch15tanyamareeta
 .word tanya_portrait
 .text "Mareeta...?"
 .byte NewLine
-.text "You holding up OK?"
+.text "You holding up okay?"
 .byte NewLine
-.text "You don't look so good..."
+.text "You don't look too good..."
 .byte WaitForA
 
 .byte right_slot
@@ -737,7 +737,7 @@ ch15tanyamareeta
 .byte NewLine
 .text "You know, I can stick around a bit in case"
 .byte NewLine
-.text "you decide you want to talk about it."
+.text "you decide you wanna talk about it."
 .byte WaitForA
 
 .byte right_slot
@@ -756,7 +756,7 @@ ch15tanyamareeta
 .text "I get it, we all need a little space sometimes."
 .byte WaitForA
 .byte ScrollText
-.text "But...I'm going to stick around anyway."
+.text "But...I'm gonna stick around anyway."
 .byte NewLine
 .text "I'll just be off to the side restringing my bow."
 .byte NewLine
@@ -767,7 +767,7 @@ ch15tanyamareeta
 .byte ScrollText
 .text "That's not quite what I—"
 .byte NewLine
-.text "Actually, on second thought, I would like that."
+.text "Actually, that...may be a good idea."
 .byte NewLine
 .text "Thanks, Tanya."
 .byte WaitForA
@@ -866,7 +866,7 @@ ch15tanyamareeta
 .byte ScrollText
 .text "Good!"
 .byte NewLine
-.text "Then...I'll see ya around!"
+.text "Then I'll see ya around!"
 .byte WaitForA
 .word ClearPortrait
 .word RetractBox
@@ -887,7 +887,7 @@ ch15tanyamareeta
 .byte NewLine
 .text "They'll get no redemption or forgiveness"
 .byte NewLine
-.text "as long as I hold this sword."
+.text "so long as I hold this sword."
 .byte WaitForA
 
 .byte EndText
@@ -927,11 +927,11 @@ leifasaello
 .text "...Forget it."
 .byte WaitForA
 .byte ScrollText
-.text "Look, I understand that you're the leader"
+.text "Look, I understand that you're the leader of"
 .byte NewLine
-.text "of this army and some majestic figurehead—but don't"
+.text "this army and some majestic figurehead—but"
 .byte NewLine
-.text "think that I don't have my eye on you."
+.text "don't think that I don't have my eye on you."
 .byte WaitForA
 
 .byte left_slot
@@ -946,9 +946,9 @@ leifasaello
 .byte ScrollText
 .text "I don't know what's going on between"
 .byte NewLine
-.text "the two of you; but if I find out that"
+.text "the two of you; but if I find out that you're"
 .byte NewLine
-.text "you're manipulating her, or anything like that..."
+.text "exploiting her or anything along those lines..."
 .byte WaitForA
 .byte ScrollText
 .text "Don't be surprised if you end up in disfigurement."
@@ -1017,7 +1017,9 @@ safylinoan
 .byte WaitForA
 
 .byte right_slot
-.text "Safy!"
+.text "Safy? Can it truly be...?"
+.byte NewLine
+.text "It's you! It's really you!"
 .byte WaitForA
 .byte NewLine
 .text "I'm the one who should be glad!"
@@ -1810,107 +1812,143 @@ asaellotrude
 .byte left_slot
 .word $3A00
 .word asaello_portrait
-.text "Well, if it isn't Trude."
+.text "Hey, it's Trude."
 .byte WaitForA
 
 .byte right_slot
 .text "You..."
 .byte NewLine
-.text "What's The Hitman from Connaught"
-.byte NewLine
-.text "doing all the way out here?"
+.text "You're the Hitman from Connaught."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "You know the drill, the usual business."
-.byte WaitForA
-.byte ScrollText
-.text "I know you're not one to talk, but man,"
+.text "Ah, thanks for telling me."
 .byte NewLine
-.text "it's been a pretty long while since we last"
+.text "Thought my name mighta been Asaello for"
 .byte NewLine
-.text "worked together. How have you been?"
-.byte WaitForA
-.byte ScrollText
-.text "Last I heard from you, some folks were"
-.byte NewLine
-.text "whispering that you settled with the"
-.byte NewLine
-.text "Dandelion Bandits. Is that true?"
+.text "some reason. Maybe I'm just a big moron."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Yeah. I'm not really sure how I ended up"
-.byte NewLine
-.text "there, but it didn't take long before they"
-.byte NewLine
-.text "convinced me to stay with them for good."
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Did you need something from me?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Huh. That's amusing, to say the least."
-.byte WaitForA
-.byte ScrollText
-.text "I thought you once said that you weren't one"
+.text "Yeah, maybe sound a little more monotone?"
 .byte NewLine
-.text "to lend your services to wicked men, but you"
+.text "Anyway, is it true that you joined up"
 .byte NewLine
-.text "somehow ended up working with bandits?"
+.text "with a bandit gang?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I still abide by that rule."
-.byte NewLine
-.text "You see, Perne is... different."
-.byte WaitForA
-.byte ScrollText
-.text "Not only does he work for the good of"
-.byte NewLine
-.text "the people, he's the first employer"
-.byte NewLine
-.text "who doesn't treat me like a tool."
-.byte WaitForA
-.byte ScrollText
-.text "He shared food and a table with me often,"
-.byte NewLine
-.text "and has a habit of checking up on not just me,"
-.byte NewLine
-.text "but on every single one of us."
-.byte WaitForA
-.byte ScrollText
-.text "Those things go a long way."
+.text "Yes, it's true."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "That's quite the unique group you've found."
+.text "But why? Didn't you, like,"
 .byte NewLine
-.text "I'm happy to hear that someone like you was "
+.text "discover something about yourself?"
 .byte NewLine
-.text "able to find real happiness in this profession."
+.text "Having nothing to do with wicked men, or..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "...Thanks."
+.text "Also true."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Always the chatter, eh?"
+.text "Okay..."
 .byte NewLine
-.text "I might've nabbed your ear for too long."
+.text "Are you...gonna tell me why these"
 .byte NewLine
-.text "Let's hope things keep looking up for you."
+.text "bandits made the cut?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "And I wish the same to you... Asaello."
+.text "Sure, though there's not much to it."
 .byte WaitForA
-	
+.byte ScrollText
+.text "Perne, who calls me his friend,"
+.byte NewLine
+.text "holds the best intentions for those"
+.byte NewLine
+.text "who are less fortunate."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Is that all..."
+.byte NewLine
+.text "I guess that resonates with me enough."
+.byte NewLine
+.text "All right, sorry for looking for trouble."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "And what about you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Huh?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You claim to despise noblemen, and yet here"
+.byte NewLine
+.text "you are, having just signed up with a prince."
+.byte NewLine
+.text "Care to explain that?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, our...interests seemed to"
+.byte NewLine
+.text "have actually aligned for once."
+.byte NewLine
+.text "That's all there is to it."
+.byte WaitForA
+.byte ScrollText
+.text "...Stop making me seem like a hypocrite."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I couldn't have done it without you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Meh."
+.byte NewLine
+.text "See ya later, Trude."
+.byte WaitForA
+
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Asaello oughta meet Perne sometime..."
+.byte WaitForA
+
 .byte EndText

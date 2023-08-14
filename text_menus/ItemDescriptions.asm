@@ -606,7 +606,7 @@ _BerserkEdgeDesc
 
 
 _SleepDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Applies Sleep to a"
 .word $0000
@@ -619,7 +619,7 @@ _SleepDesc
 .word $0000
 
 _BerserkDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Applies Berserk to a"
 .word $0000
@@ -632,7 +632,7 @@ _BerserkDesc
 .word $0000
 
 _SilenceDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Applies Silence to a"
 .word $0000
@@ -678,7 +678,7 @@ _RecoverDesc
 .word $0000
 
 _PhysicDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Restore {1}{0}  {H}{P}"
 .word $0000
@@ -689,7 +689,7 @@ _PhysicDesc
 .word $0000
 
 _FortifyDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Restore {1}{0}  {H}{P}"
 .word $0000
@@ -712,7 +712,7 @@ _RestoreDesc
 
 
 _RescueDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Transports an ally"
 .word $0000
@@ -736,7 +736,7 @@ _WarpDesc
 .word $0000
 
 _RewarpDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "Transports the user "
 .word $0000
@@ -956,7 +956,7 @@ _HammerneDesc
 .word $0000
 
 _ThiefDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "{Lock}Tina, Steals a"
 .word $0000
@@ -969,7 +969,7 @@ _ThiefDesc
 .word $0000
 
 _UnlockDesc
-.text "    Range   {blue1}{blue-}{INF1}{INF2}"
+.text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
 .text "{Lock}Tina"
 .word $0000

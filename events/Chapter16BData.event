@@ -18,7 +18,7 @@ eventChapter16BData ; B1/A6FA
 		UNIT DancerEnemy, Enemy, [4, 1], [4, 1], Reinkoch, [FlameSword], 14, False, [$07, $07, $00, $00]
 		UNIT Hero1, Enemy, [17, 5], [17, 5], Reinkoch, [BraveAxe], 7, False, [$00, $03, $00, $00]
 		UNIT Hero1, Enemy, [16, 9], [16, 9], Reinkoch, [Poleax], 7, False, [$00, $03, $00, $00]
-		UNIT MunsterSniper, Enemy, [17, 10], [17, 10], Reinkoch, [RecurveBow], 9, False, [$00, $03, $00, $00]
+		UNIT MunsterSniper, Enemy, [17, 10], [17, 10], Reinkoch, [ForsetiInfinite], 9, False, [$00, $03, $00, $00]
 		UNIT HeroEnemy, Enemy, [16, 4], [16, 4], Reinkoch, [BraveSword], 7, False, [$00, $03, $00, $00]
 		UNIT HeroEnemy, Enemy, [18, 4], [18, 4], Reinkoch, [WindSword], 7, False, [$00, $03, $00, $00]
 		UNIT HeroEnemy, Enemy, [10, 2], [10, 2], Reinkoch, [BerserkEdge], 7, False, [$00, $03, $00, $00]

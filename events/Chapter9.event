@@ -347,7 +347,7 @@ eventChapter9Events ; 8C/F011
 		
 		STORE_WORD wEventEngineCharacterTarget, Selphina
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.LeadershipStars
-		STORE_WORD wEventEngineParameter2, 0
+		STORE_WORD wEventEngineParameter2, 1
 		CALL_ASM_LOOP rlASMCSubtractCharacterDataByte, $0000
 
 		macroAddCharacterByte Leif, structCharacterDataRAM.LeadershipStars, 1

@@ -383,114 +383,83 @@ ch14opening5
 	.byte WaitForA
 
 	.byte EndText
-	
+
 fctravantarion
-
-.byte Right_slot
-.word LoadPortrait
-.word mccloy_portrait
-
-.byte Left_slot
+	
+.byte right_slot
 .word LoadPortrait
 .word travant_portrait
-.text "It's about time."
-.byte NewLine
-.text "I trust you're aware of my plans, McCloy?"
+
+.byte left_slot
+.word LoadPortrait
+.word arion_portrait
+.text "My unit and I have arrived, my lord father."
 .byte WaitForA
 
 .byte right_slot
-.text "I am, Your Majesty."
+.text "Very good, Arion."
 .byte NewLine
-.text "Now that the empire has finally folded, it's time"
-.byte NewLine
-.text "for us to step in and take Tarrah for ourselves!"
+.text "Now, you're all aware of my intentions, yes?"
 .byte WaitForA
 
 .byte left_slot
+.byte ScrollText
+.text "Yes. We've led the empire to believe that"
+.byte NewLine
+.text "we're indeed an ally in their siege of Tarrah."
+.byte WaitForA
+.byte ScrollText
+.text "Now is the time for us to catch them unawares"
+.byte NewLine
+.text "and take the city for ourselves."
+.byte WaitForA
+
+.byte right_slot
 .byte ScrollText
 .text "That's right."
 .byte NewLine
-.text "This will be a key card in dealing with Bloom."
-.byte WaitForA
-.byte NewLine
-.text "Seizing imperial territory is but a dream"
-.byte NewLine
-.text "under normal circumstances, so do not waste it."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Of course, sire."
-.byte NewLine
-.text "The rest of the troops will soon reach us."
-.byte NewLine
-.text "Then we shall attack with everything we have!"
+.text "Get to it."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Very good—I'll leave you to it."
-.byte NewLine
-.text "Arion!"
+.text "...I should question this approach, however."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.word LoadPortrait
-.word arion_portrait
-.text "Yes, my lord father."
+.text "*sigh*"
+.byte NewLine
+.text "What's wrong?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Time for us to make our move."
+.text "Is this truly our wisest option, Father?"
 .byte NewLine
-.text "We're to keep the enemy occupied"
-.byte NewLine
-.text "until the main force arrives."
+.text "Taking Tarrah by force?"
 .byte WaitForA
 .byte NewLine
-.text "You and I are no exception."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "I understand, Father."
+.text "Why not come to their aid in this crisis?"
 .byte NewLine
-.text "But..."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "What?"
+.text "Surely it would bolster our future relations."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Tarrah's citizens are united in their hatred"
-.byte NewLine
-.text "of the empire."
+.text "Hah! So what?"
 .byte WaitForA
-.byte ScrollText 
-.text "Now that the empire has officially invaded,"
 .byte NewLine
-.text "wouldn't it be better for us to ally with"
+.text "You really think shackling ourselves to Tarrah"
 .byte NewLine
-.text "Tarrah instead of taking their land by force?"
-.byte WaitForA
-
-.byte Left_slot
-.byte ScrollText
-.text "Hah! You think shackling ourselves to Tarrah"
-.byte NewLine
-.text "would be enough to triumph over the empire?"
+.text "will do the trick? Help take down the empire?"
 .byte WaitForA
 .byte ScrollText
-.text "Have you already forgotten our defeat"
+.text "Have you already forgotten about"
 .byte NewLine
-.text "at Mergen?"
+.text "our defeat at Mergen?"
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "We had all of North and South Thracia"
 .byte NewLine
 .text "united under our rule then,"
@@ -498,25 +467,25 @@ fctravantarion
 .text "and we were still no match for the empire."
 .byte WaitForA
 
-.byte Right_slot
+.byte left_slot
 .byte ScrollText
 .text "...We lost only because Raydrik betrayed us."
 .byte WaitForA
 
-.byte Left_slot
+.byte right_slot
 .byte ScrollText
-.text "Maybe so, maybe so... But the fact remains"
+.text "Perhaps... But the fact remains that"
 .byte NewLine
-.text "that the battle ended with us humiliated,"
+.text "the battle ended with us humiliated,"
 .byte NewLine
 .text "and having to resort to suing for peace."
 .byte WaitForA
 .byte ScrollText
-.text "North Thracia—the land I had gone through"
+.text "North Thracia—the land I had gone through so"
 .byte NewLine
-.text "so much to finally regain—was taken from me"
+.text "much to finally have as my own—was taken from me"
 .byte NewLine
-.text "all over again. All those years...for nothing."
+.text "just like that. All those years...for nothing."
 .byte WaitForA
 .byte ScrollText
 .text "As it stands, it's no exaggeration to say"
@@ -531,38 +500,20 @@ fctravantarion
 .text "You still think you can win?"
 .byte WaitForA
 .byte ScrollText
-.text "A whole lot of people will die:"
+.text "Tarrahns, Thracians, imperials—it'll be"
 .byte NewLine
-.text "imperials, Thracians, those of Tarrah."
+.text "thousands of pointless casualties all around."
 .byte NewLine
-.text "They'll all bleed just the same."
-.byte WaitForA
-.byte ScrollText
 .text "You still want to go through with your plan?"
 .byte WaitForA
 
-.byte Right_slot
+.byte left_slot
 .byte ScrollText
 .text "N-no..."
 .byte NewLine
 .text "You've the right of it, my lord father."
 .byte NewLine
 .text "I was...being too rash."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "So are we done here?"
-.byte NewLine
-.text "We're losing time."
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.byte ScrollText
-.text "......"
 .byte WaitForA
 
 .byte EndText
@@ -986,16 +937,16 @@ leifdean
 .byte WaitForA
 
 .byte right_slot
-.text "I'm a simple merc—just Dean is fine."
+.text "I'm a simple merc; just Dean is fine."
 .byte NewLine
-.text "But still, the prince of Leonster calling me by"
+.text "But still, for the prince of Leonster to call"
 .byte NewLine
-.text "my name in any capacity—what's the deal here?"
+.text "me by any name... What's the deal here?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Huh?"
+.text "Hm?"
 .byte NewLine
 .text "Th-there's no...“deal.”"
 .byte NewLine
@@ -1030,21 +981,21 @@ leifdean
 .byte NewLine
 .text "with Duchess Linoan—not you, Prince."
 .byte NewLine
-.text "...As if you would have me, anyway."
+.text "...You can put your fears to rest."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "I... There must be some misunderstanding."
 .byte NewLine
-.text "Accept my apologies, Dean, for I do not know"
+.text "Accept my apologies, Dean, for it was not"
 .byte NewLine
-.text "what could have given you such an impression."
+.text "my intention to create such an impression."
 .byte WaitForA
 .byte ScrollText
-.text "What I do know, however, is that I intend"
+.text "Rather, my intention is to treat you"
 .byte NewLine
-.text "to treat you the same that Linoan does."
+.text "the same that Linoan does."
 .byte WaitForA
 
 .byte right_slot
@@ -1077,9 +1028,9 @@ leifdean
 .text "means of doing anything about it as of now."
 .byte WaitForA
 .byte ScrollText
-.text "The duchess appears to place her faith in"
+.text "The duchess appears to place her faith in you,"
 .byte NewLine
-.text "you, and so...I suppose you've earned mine."
+.text "and with that...I suppose you've earned mine."
 .byte WaitForA
 .byte ScrollText
 .text "As for outside of that..."
@@ -1103,6 +1054,124 @@ leifdean
 .text "Sounds fair to me."
 .byte NewLine
 .text "Your orders, Prince Leif."
+.byte WaitForA
+
+.byte EndText
+
+leifmeetsarion
+
+.word PauseDialogue
+.byte $3C
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "Duchess Linoan!"
+.byte NewLine
+.text "Are you all right?!"
+.byte NewLine
+.text "Where are you?!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ah, as I live and breathe..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You, identify yourself!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Very well."
+.byte NewLine
+.text "My name is Arion, son of"
+.byte NewLine
+.text "His Majesty King Travant."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What...?! How is that—?"
+.byte NewLine
+.text "You...you're..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "And who do I have the honor of addressing?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I am Leif, son of Quan."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "So you are..."
+.byte NewLine
+.text "Well met, Prince Leif."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I beg your pardon?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "While I'd like to grant you some insight,"
+.byte NewLine
+.text "I'm afraid time is currently of the essence."
+.byte WaitForA
+.byte ScrollText
+.text "It's my understanding that you've a"
+.byte NewLine
+.text "great many things left to accomplish."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Should you remain here, doubtless you'll fall in"
+.byte NewLine
+.text "battle soon, whether it be to my father, or to"
+.byte NewLine
+.text "the regiments of imperial soldiers and Loptrians."
+.byte WaitForA
+.byte ScrollText
+.text "If you wish to avoid this fate, I suggest"
+.byte NewLine
+.text "seeing what Duchess Linoan has to say."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What would YOU know about Linoan?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Do you really wish to prioritize that?"
+.byte WaitForA
+.byte ScrollText
+.text "I've spoken only truth, Prince Leif."
+.byte NewLine
+.text "Leave this place, if only so that one day"
+.byte NewLine
+.text "the two of us might exchange words again."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hmph..."
 .byte WaitForA
 
 .byte EndText

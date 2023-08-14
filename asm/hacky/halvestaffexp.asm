@@ -8,6 +8,7 @@
 	
 	jsl l_exp_calc_upper_class
 	nop
+	nop
 	
 .endlogical
 
@@ -25,7 +26,7 @@ l_exp_calc_upper_class
   and #$00FF
   beq +
 
-    lsr wR0
+  lsr wR0
 
   +
 

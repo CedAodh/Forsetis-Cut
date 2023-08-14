@@ -1,17 +1,3 @@
-ch12xfc
-
-.byte right_slot
-.word LoadPortrait
-.word augustus_portrait
-.text "This conversation currently cannot be viewed."
-.byte NewLine
-.text "If you wish to view the conversation,"
-.byte NewLine
-.text "you must purchase the Talk Convos DLC pack."
-.byte WaitForA
-
-.byte EndText
-
 salemtrude
 
 .byte right_slot
@@ -90,6 +76,70 @@ salemtrude
 	
 .byte EndText
 
+salemtrudealternate
+
+.byte right_slot
+.word LoadPortrait
+.word salem_portrait
+.text "Trude! Lower your sword!"
+.byte NewLine
+.text "It's me, Salem!"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word trude_portrait
+.text "Huh?"
+.byte NewLine
+.text "Am I seeing ghosts already...?"
+.byte NewLine
+.text "Or...is that really you, Salem?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It really is me."
+.byte NewLine
+.text "Listen, Perne himself has agreed"
+.byte NewLine
+.text "to join the Liberation Army."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What? He did?"
+.byte NewLine
+.text "...Really?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I understand your apprehension, Trude—"
+.byte NewLine
+.text "but I assure you, I speak the truth."
+.byte WaitForA
+.byte NewLine
+.text "Believe me, I've no desire to make an"
+.byte NewLine
+.text "enemy of you. I would not dare lie."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hm..."
+.byte NewLine
+.text "All right, I'm choosin' to believe you."
+.byte NewLine
+.text "Don't go making me regret that, Salem."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I won't."
+.byte WaitForA
+
+.byte EndText
+
 leiftina
 
 .byte right_slot
@@ -146,7 +196,7 @@ leiftina
 .byte NewLine
 .text "Catch me, and run me over to your"
 .byte NewLine
-.text "white horse in the sacred moonlight!"
+.text "white horse in the blessed moonlight!"
 .byte WaitForA
 
 .byte right_slot
@@ -182,28 +232,44 @@ leiftina
 
 .byte right_slot
 .byte ScrollText
-.text "I-it's just not my selected style of combat."
+.text "Uh... Well, let's see... It really just"
 .byte NewLine
-.text "I'm sorry to disappoint you."
+.text "comes down to a lack of experience."
 .byte NewLine
-.text "But there's really nothing to be done for it."
+.text "I have yet to master combat on foot first."
+.byte WaitForA
+.byte ScrollText
+.text "After that, I'd have to recieve tutelage on"
+.byte NewLine
+.text "horseback riding from Dorius, and to do that..."
+.byte NewLine
+.text "Let us say it's hard to find the time for it."
+.byte WaitForA
+.byte ScrollText
+.text "I do greatly aspire to learn. I really do."
+.byte NewLine
+.text "It's a dream of mine to lead an elite unit"
+.byte NewLine
+.text "of cavalry just like my father did long ago."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "No, I know what it is..."
+.text "Awwww... That's so SWEET!"
 .byte NewLine
-.text "You're poor!"
+.text "But what's the real reason? Are you poor?"
+.byte NewLine
+.text "Don't tell me you're poor. ...You're poor!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "...That's one way of putting it."
+.text "...That is...one way of putting it."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "And guess what?"
+.text "Well, guess what?"
 .byte NewLine
 .text "I'M going to help you,"
 .byte NewLine
@@ -252,6 +318,23 @@ leiftina
 .text "I shall do just that...one day."
 .byte NewLine
 .text "I promise, Tina."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yaaay!"
+.byte NewLine
+.text "Mark it on your calendar—"
+.byte NewLine
+.text "if you even have one, heehee!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "...Just keep a straight face..."
 .byte WaitForA
 
 .byte EndText
@@ -379,7 +462,7 @@ leifperne
 
 .byte right_slot
 .byte ScrollText
-.text "Yeah, we thought you were the empire at first."
+.text "Yeah, we thought y'all were the empire at first."
 .byte NewLine
 .text "I'll tell ya, that would've ended"
 .byte NewLine
@@ -419,6 +502,173 @@ leifperne
 .byte right_slot
 .byte ScrollText
 .text "Leave it to me!"
+.byte WaitForA
+
+.byte EndText
+
+ch12xpanlaraalternate
+
+.byte Right_slot
+.word LoadPortrait
+.word lara_portrait
+.text "Perne!"
+.byte WaitForA
+
+.byte Left_slot
+.word LoadPortrait
+.word pan_portrait
+.text "Yeah?"
+.byte NewLine
+.text "Huh...? Lara? Is that you?"
+.byte NewLine
+.text "What're you doing here?"
+.byte WaitForA
+.byte ScrollText
+.text "Wait, don't tell me!"
+.byte NewLine
+.text "You just missed me so much you couldn't help"
+.byte NewLine
+.text "but come runnin' back into my arms, right?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Er... Would it make you happy"
+.byte NewLine
+.text "if I actually said that?"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "H-hey, what's got you so serious?"
+.byte NewLine
+.text "Yer face is all scrunched up"
+.byte NewLine
+.text "like ya just swallowed a whole lemon."
+.byte WaitForA
+.byte ScrollText
+.text "C'mon, now. Get real."
+.byte NewLine
+.text "What would I want with some little kid runnin'"
+.byte NewLine
+.text "around me, gettin' all up in my business?"
+.byte WaitForA
+.byte ScrollText
+.text "Turn 'round and get yerself back to Munster,"
+.byte NewLine
+.text "kiddo."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "So that's it then, huh? You're shooing me away"
+.byte NewLine
+.text "like a stray dog, just like before..."
+.byte WaitForA
+.byte ScrollText
+.text "I at least thought you liked it when I danced."
+.byte WaitForA
+.byte ScrollText
+.text "I still remember you comin' to see me perform,"
+.byte NewLine
+.text "watchin' me like I was the only thing"
+.byte NewLine
+.text "in the world..."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "W-well, yeah, but that was before I realized"
+.byte NewLine
+.text "you were just a kid."
+.byte WaitForA
+.byte ScrollText
+.text "*sigh*"
+.byte NewLine
+.text "Look, if it means that much to ya..."
+.byte NewLine
+.text "Yeah, I did like watchin' you dance."
+.byte WaitForA
+.byte ScrollText
+.text "An' it was more'n, like, attraction or whatever."
+.byte NewLine
+.text "It just made me feel...alive."
+.byte NewLine
+.text "Like... I was invigorated, y'know?"
+.byte WaitForA
+.byte ScrollText
+.text "But ya hated it, right?"
+.byte NewLine
+.text "So it's for the best that you quit."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Y-yeah..."
+.byte NewLine
+.text "Well, I didn't hate dancing, I just hated"
+.byte NewLine
+.text "the way that troupe treated me, is all."
+.byte WaitForA
+.byte ScrollText
+.text "So... If you want me to, Perne,"
+.byte NewLine
+.text "I can go back to doin' it for you."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Look, don't be stupid..."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Not JUST for you, I mean! For everybody!"
+.byte NewLine
+.text "Maybe I could make everyone feel"
+.byte NewLine
+.text "a little bit more lively with my dancing..."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "“Everybody”?"
+.byte NewLine
+.text "...Wait, you mean to tell me you're here"
+.byte NewLine
+.text "with all the other guys who just barged in?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "More or less."
+.byte NewLine
+.text "Not that I'm much help, myself..."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Hmm... You might be onto somethin', Lara."
+.byte NewLine
+.text "I'd say I consider this a done deal."
+.byte NewLine
+.text "Go for it! Go back to dancing."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "I will!"
+.byte NewLine
+.text "Thank you, Perne, for helping me realize"
+.byte NewLine
+.text "how I can really prove my worth."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Aw shucks..."
+.byte NewLine
+.text "Anytime, kiddo."
 .byte WaitForA
 
 .byte EndText

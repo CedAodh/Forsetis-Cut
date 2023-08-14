@@ -36,10 +36,20 @@ eventChapter15Events ; FD/A812
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 1
 		END_DEFINITION
+		EVENT $13, _AsaelloSpawn
+			RUN_ASM _rlCheckLifisDeadOrUnrecruited
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 1
+		END_DEFINITION
+		EVENT $13, _AsaelloSpawn
+			RUN_ASM _rlCheckSafyDeadOrUnrecruited
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 1
+		END_DEFINITION
 		EVENT $09, _AmaldaFlee
 			TEST_FLAG_UNSET $A2
 			TEST_FLAG_SET $07
-			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -165,6 +175,62 @@ eventChapter15Events ; FD/A812
 			CMP_BYTE_AT wCursorYCoord, eventChapter15Data._Vendor+1
 		END_DEFINITION
 	END_DEFINITION_ARRAY
+	
+	_rlCheckLifisDeadOrUnrecruited
+
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		lda #Lifis
+		sta wR0
+
+		+
+		lda #aBurstWindowCharacterBuffer
+		sta wR1
+		jsl $83976E
+		and #$FFFF
+		bne +
+
+		lda aBurstWindowCharacterBuffer.TurnStatus,b
+		bit #TurnStatusDead
+		bne +
+
+		clc
+		rtl
+		
+		+
+		sec
+		rtl
+		
+	_rlCheckSafyDeadOrUnrecruited
+
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		lda #Safy
+		sta wR0
+
+		+
+		lda #aBurstWindowCharacterBuffer
+		sta wR1
+		jsl $83976E
+		and #$FFFF
+		bne +
+
+		lda aBurstWindowCharacterBuffer.TurnStatus,b
+		bit #TurnStatusDead
+		bne +
+
+		clc
+		rtl
+		
+		+
+		sec
+		rtl
 
 	_BrigandHunterReinforcements ; FD/A9FF
 		SCROLL_CAMERA_ADDRESS eventChapter15Data._BrigandHunterCameraCoordinates
@@ -252,23 +318,23 @@ eventChapter15Events ; FD/A812
 		YIELD_UNK
 		YIELD_UNK
 		
-		EVENT_TEST_FLAG_SET FlagSafyGoneForGood
-		JUMP_FALSE _AsaelloSpawn
+		;EVENT_TEST_FLAG_SET FlagSafyGoneForGood
+		;JUMP_FALSE _AsaelloSpawn
 		
-		EVENT_TEST_FLAG_SET FlagLifisGoneForGood
-		JUMP_TRUE _AsaelloSpawn
+		;EVENT_TEST_FLAG_SET FlagLifisGoneForGood
+		;JUMP_TRUE _AsaelloSpawn
 		
-		JUMP +
+		;JUMP +
 		
-		_AsaelloSpawn
-		STORE_LONG lEventEngineLongParameter, ch15asaellospawn
-		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		;_AsaelloSpawn
+		;STORE_LONG lEventEngineLongParameter, ch15asaellospawn
+		;CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
-		LOAD1 eventChapter15Data._AsaelloGroup
-		WAIT_MOVE
-		YIELD
+		;LOAD1 eventChapter15Data._AsaelloGroup
+		;WAIT_MOVE
+		;YIELD
 		
-		+
+		;+
 		
 		LOAD1 eventChapter15Data._RalphAmaldaGroup
 		WAIT_MOVE
@@ -279,7 +345,13 @@ eventChapter15Events ; FD/A812
 		STORE_WORD wEventEngineParameter2, Skill3Immortal << 8
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
 	END2
-
+	
+	_AsaelloSpawn
+		LOAD1 eventChapter15Data._AsaelloGroup
+		WAIT_MOVE
+		YIELD
+	END2
+	
 	_ArmorslayerHouseVisit ; FD/AA97
 		PLAY_SOUND_WORD $00F7
 

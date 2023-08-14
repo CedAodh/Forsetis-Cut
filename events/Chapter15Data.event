@@ -85,7 +85,7 @@ eventChapter15Data ; B1/B3B3
 	UNIT
 	
 	_AsaelloGroup ; B1/B679
-		UNIT Asaello, Player, [18, 14], [18, 14], Ralph, [SilverBow, MasterBow], 4, False, [$00, $03, $02, $80]
+		UNIT Asaello, NPC, [18, 14], [18, 14], Ralph, [SilverBow, MasterBow], 4, False, [$00, $03, $02, $80]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/B6A3

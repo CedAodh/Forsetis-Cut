@@ -144,7 +144,7 @@ char_name_pointers		.block
 	.word	<>char_names._LoptrianName
 
 	.word	<>char_names._CivilianName	; Unused
-	.word	<>char_names._ThiefName
+	.word	<>char_names._BrigandName
 
 	.word	<>char_names._SniperName
 
@@ -254,9 +254,9 @@ char_name_pointers		.block
 
 	.word	<>char_names._BrigandName
 
-	.word	<>char_names._ThiefName
+	.word	<>char_names._DandelionName
 
-	.word	<>char_names._ArcherName
+	.word	<>char_names._DandelionName
 
 	.word	<>char_names._FriegeName
 	.word	<>char_names._FriegeName
@@ -281,7 +281,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._SilesseName
 
-	.word	<>char_names._GelbenritterName
+	.word	<>char_names._FriegeName
 
 	.word	<>char_names._FriegeName	; Unused
 	.word	<>char_names._FriegeName
@@ -312,7 +312,7 @@ char_name_pointers		.block
 	.word	<>char_names._FriegeName
 	.word	<>char_names._FriegeName
 
-	.word	<>char_names._ArcherName		; Unused
+	.word	<>char_names._HiredSwordName		; Unused
 
 	.word	<>char_names._IllusionName	
 
@@ -987,7 +987,7 @@ _GustavName
 	.word $0000
 
 _DancerName
-	.text "Dancer"
+	.text "Thrall"
 	.word $0000
 
 _ClericName
@@ -1070,8 +1070,8 @@ _DvorakName
 	.text "Dvorak"
 	.word $0000
 
-_ArcherName
-	.text "Archer"
+_DandelionName
+	.text "Dandelion "
 	.word $0000
 
 _BallisticianName

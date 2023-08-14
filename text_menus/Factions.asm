@@ -341,7 +341,7 @@ _KolkhoLeader
 .word $0000
 
 _DandelionLeader
-	.text "Dandelion "
+	.text "Dandelions"
 .word $0000
 
 _MercenaryLeader

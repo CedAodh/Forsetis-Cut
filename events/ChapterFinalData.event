@@ -112,7 +112,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_DracoGroup ; 99/FE66
-		UNIT Draco, Enemy, [5, 22], [5, 22], Veld, [RecurveBow], 20, False, [$00, $03, $00, $00]
+		UNIT Draco, Enemy, [5, 22], [5, 22], Veld, [ForsetiInfinite], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_ReinforcementsCameraCoordinates2 ; 99/FE7C

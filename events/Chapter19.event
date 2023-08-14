@@ -1094,11 +1094,20 @@ eventChapter19Events ; FD/CBB9
 		YIELD_UNK
 		YIELD_UNK
 		YIELD_UNK
+		
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
 
-		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		FADE_OUT $01
 		YIELD
 
-		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+		STORE_BYTE bBuf_INIDISP, $00
+
+		;CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		;YIELD
+
+		;HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
 
 		EVENT_TEST_FLAG_SET $0E
 		JUMP_FALSE +
@@ -1173,13 +1182,67 @@ eventChapter19Events ; FD/CBB9
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		+
-		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
-
-		FADE_OUT $01
+		
+		FADE_OUT $02
+		YIELD
+		
+		STORE_BYTE bBuf_INIDISP, $00
+		
+		CALL_ASM_SKIPPABLE $888550, $0000
+		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
 		YIELD
 
+		LOAD1 eventChapter19Data._Ishtar2Group
+		WAIT_MOVE
+		YIELD
+		
+		SCROLL_CAMERA_CHAR Ishtar
+		SET_CAMERA_SPEED 4
+		YIELD
+		
+		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
+		
+		FADE_In $01
+		YIELD
+		
+		LOAD1 eventChapter19Data._ReinhardtGroup
+		WAIT_MOVE
+		YIELD
+		
+		SET_MUSIC $3C
+		YIELD
+		
+		DIALOGUE ishtarreinhardt
+		YIELD
+		
+		MOVE_UNIT Reinhardt, [0, 0], [13, 29], 1, _ReinhardtMovestring
+		YIELD_UNK
+
+		WAIT_MOVE
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Ishtar
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		MOVE_UNIT Reinhardt, [0, 0], [23, 32], 2, None
+		YIELD_UNK
+
+		WAIT_MOVE
+		YIELD
+		
+		+
+		
+		FADE_OUT $01
+		YIELD
+		
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1
+	
+	_ReinhardtMovestring
+		MS_MOVE_RIGHT
+	MS_END
 
 
 

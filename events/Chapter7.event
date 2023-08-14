@@ -95,7 +95,7 @@ eventChapter7Events ; 99/B023
 	END_DEFINITION_ARRAY
 
 	_BeforeActionEventDefinitions ; 99/B153
-		macroPlayerRetreatDefinition $14, eventChapter7Events._PlayerRetreat
+		;macroPlayerRetreatDefinition $14, eventChapter7Events._PlayerRetreat
 	END_DEFINITION_ARRAY
 
 	_AfterActionEventDefinitions ; 99/B193
@@ -105,8 +105,14 @@ eventChapter7Events ; 99/B023
 			RUN_ASM _rlEnemyCheck
 			TEST_FLAG_UNSET $14
 		END_DEFINITION
-		EVENT FlagAlwaysZero, _EndingEvent
-			TEST_FLAG_SET $14
+		;EVENT FlagAlwaysZero, _EndingEvent
+		;	TEST_FLAG_SET $14
+		;END_DEFINITION
+		EVENT $00, _EndingEvent
+			CMP_BITS $7E4F98, $0008
+			CMP_BYTE wCursorXCoord, 10
+			CMP_BYTE wCursorYCoord, 48
+			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -766,7 +772,7 @@ eventChapter7Events ; 99/B023
 
 		PLAY_SOUND_WORD $00E7
 
-		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
+		;CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
 
 		macroCheckTurnStatusSet Osian, TurnStatusInvisible
 		JUMP_FALSE +

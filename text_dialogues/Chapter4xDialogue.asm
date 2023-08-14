@@ -330,7 +330,8 @@ ch4xasbelleiftalk
 .byte NewLine
 .text "Now, back to my magic, allow me to introduce"
 .byte NewLine
-.text "you to my most recent: Grafcalibur!" 
+.text "you to my most recent: Grafcalibur!"
+.byte WaitForA
 
 .byte EndText
 

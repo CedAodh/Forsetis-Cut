@@ -56,6 +56,8 @@ Ch19ishtararrival
 
 .byte EndText
 
+ishtarreinhardt
+
 .byte right_slot
 .word LoadPortrait
 .word ishtar_portrait
@@ -74,11 +76,14 @@ Ch19ishtararrival
 
 .byte left_slot
 .byte ScrollText
-.text "That was my desire, but...I have received a most"
+.text "That was my desire, but...I've received a most"
 .byte NewLine
 .text "unexpected edict from His Highness Lord Julius."
+.byte WaitForA
 .byte NewLine
-.text "He wishes to see you at once. I am his messenger."
+.text "He wishes to see you at once."
+.byte NewLine
+.text "I am his messenger."
 .byte WaitForA
 
 .byte right_slot

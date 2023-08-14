@@ -47,7 +47,7 @@ objectivech6
 
 
 objectivech7
-	.text "Have Leif escape"
+	.text "Have Leif arrive at the exit point"
 .byte EndTextNoPortraitFade
 
 

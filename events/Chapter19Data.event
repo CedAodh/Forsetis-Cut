@@ -101,6 +101,14 @@ eventChapter19Data ; B1/989B
 	_IshtarGroup ; B1/9C91
 		UNIT Ishtar, Enemy, [10, 63], [10, 62], Wolfe, [Mjolnir, Vulnerary], 12, False, [$00, $00, $00, $00]
 	UNIT
+	
+	_Ishtar2Group ; B1/9C91
+		UNIT Ishtar, Enemy, [14, 29], [14, 29], Wolfe, [Mjolnir, Vulnerary], 12, False, [$00, $00, $00, $00]
+	UNIT
+	
+	_ReinhardtGroup ; B1/9C91
+		UNIT Reinhardt, Enemy, [23, 32], [13, 29], Wolfe, [DireThunder, Vulnerary], 20, False, [$00, $00, $00, $00]
+	UNIT
 
 	;_UnusedCoordinates4 ; B1/9CA7
 	;	.byte 8, 7

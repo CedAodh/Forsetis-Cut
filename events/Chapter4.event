@@ -8,6 +8,12 @@ eventChapter4Events ; 99/8778
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/8785
+		EVENT $00, _DaisySpawn
+			RUN_ASM _rlCheckLifisDeadOrUnrecruited
+			RUN_ASM _rlCheckSafyDeadOrUnrecruited
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 1
+		END_DEFINITION
 		EVENT FlagAlwaysZero, _DetectedCheck
 			CMP_WORD wCurrentPhase, Enemy
 			TEST_FLAG_UNSET $07
@@ -121,6 +127,62 @@ eventChapter4Events ; 99/8778
 
 	_ShopEventDefinitions ; 99/897E
 	END_DEFINITION_ARRAY
+	
+	_rlCheckLifisDeadOrUnrecruited
+
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		lda #Lifis
+		sta wR0
+
+		+
+		lda #aBurstWindowCharacterBuffer
+		sta wR1
+		jsl $83976E
+		and #$FFFF
+		bne +
+
+		lda aBurstWindowCharacterBuffer.TurnStatus,b
+		bit #TurnStatusDead
+		bne +
+
+		clc
+		rtl
+		
+		+
+		sec
+		rtl
+		
+	_rlCheckSafyDeadOrUnrecruited
+
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		lda #Safy
+		sta wR0
+
+		+
+		lda #aBurstWindowCharacterBuffer
+		sta wR1
+		jsl $83976E
+		and #$FFFF
+		bne +
+
+		lda aBurstWindowCharacterBuffer.TurnStatus,b
+		bit #TurnStatusDead
+		bne +
+
+		clc
+		rtl
+		
+		+
+		sec
+		rtl	
 
 	_LeftSoldierReinforcements ; 99/8980
 		SCROLL_CAMERA_ADDRESS eventChapter4Data._LeftSoldierReinforcementsCameraCoordinates
@@ -161,7 +223,13 @@ eventChapter4Events ; 99/8778
 		YIELD
 		YIELD_UNK
 	END2
-
+	
+	_DaisySpawn
+		STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._DaisyGroup
+		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
+		YIELD_UNK
+	END2
+	
 	_DetectedCheck ; 99/89B4
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
 		STORE_WORD wEventEngineParameter2, $0A
@@ -533,32 +601,6 @@ eventChapter4Events ; 99/8778
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._EnemyGroup3
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
-		
-		;macroCheckTurnStatusSet Safy, (TurnStatusHidden | TurnStatusInvisible)
-		;JUMP_TRUE +
-		
-		;STORE_WORD wEventEngineCharacterTarget, Lifis
-		;CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
-		;JUMP_TRUE +
-		
-		;macroCheckTurnStatusSet Safy, TurnStatusCaptured
-		;JUMP_TRUE +
-		
-		;macroCheckTurnStatusSet Lifis, TurnStatusCaptured
-		;JUMP_TRUE +
-		
-		;TEST_FLAG_SET FlagLifisGoneForGood
-		;JUMP_TRUE +
-		
-		;TEST_FLAG_SET FlagSafyGoneForGood
-		;JUMP_TRUE +
-		
-		STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._DaisyGroup
-		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
-		YIELD_UNK
-		SET_FLAG FlagDaisyRecruited
-		
-		+
 		
 		LOAD1 eventChapter4Data._LifisBrigands
 		WAIT_MOVE

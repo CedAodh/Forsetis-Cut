@@ -59,10 +59,14 @@
 .byte $40, $04	; Display Tiles: ???
 .byte $F9, $FF     ; Dodge point
 .byte $FA, $FF     ; Damage point
+.byte $0F, $54		; --Wait: 15 frames--
 .byte $FE, $FF	; --Wait: 15 frames--
 ;.byte $57, $04     ; Display Tiles: ???
-.byte $34, $04     ; Display Tiles: Black out BG
-.byte $1E, $54     ; --Wait--
+.byte $54, $16		; Effect / Palette: ???
+;.byte $77, $16		; Palette: ???
+;.byte $78, $16		; Palette: ???
+;.byte $34, $04     ; Display Tiles: Black out BG
+.byte $5A, $54     ; --Wait--
 .byte $FE, $FF	; --Wait: 15 frames--
 .byte $FD, $FF	; Cast2: resting
 .byte $FC, $FF	; Reaction point

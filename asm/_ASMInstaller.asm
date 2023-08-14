@@ -252,7 +252,7 @@
 .include "hacky/virtual.h"
 .include "hacky/warpcancelfix.asm"
 .include "hacky/solfix.asm"
-;.include "hacky/halvestaffexp.asm"
+.include "hacky/halvestaffexp.asm"
 .include "hacky/maketalkdisplayevenbetter.asm"
 .include "hacky/stealvisionbonus.asm"
 .include "BossMusicWithAnimationsOn.asm"
@@ -260,6 +260,7 @@
 .include "hacky/RetreatTiles.asm"
 .include "hacky/nofactionreset.asm"
 .include "hacky/Nocounterat3range.asm"
+.include "hacky/changedancerheartcolor.asm"
 
 
 

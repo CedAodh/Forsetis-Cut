@@ -20,17 +20,17 @@ eventChapter21Events ; FD/E42D
 		EVENT $00, _RightReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 8, 9
-			TEST_FLAG_SET $02
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 1, 6
-			TEST_FLAG_SET $02
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 7, 10
-			TEST_FLAG_SET $02
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

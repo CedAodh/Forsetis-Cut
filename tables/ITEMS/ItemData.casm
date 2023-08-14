@@ -1918,7 +1918,7 @@
 		GrafcaliburMight				= 10
 		GrafcaliburAccuracy				= 100
 		GrafcaliburWeight				= 2
-		GrafcaliburDurability			= 40
+		GrafcaliburDurability			= 43
 		GrafcaliburCritrate				= 30
 		GrafcaliburMinRange				= 1
 		GrafcaliburMaxRange				= 2
@@ -2321,7 +2321,7 @@
 		MendWeaponRank					= RankD
 		MendEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		MendStatBonus					= aNoItemBonuses
-		MendCost						= 3000
+		MendCost						= 2300
 		MendDescription					= <>item_descs._MendDesc
 		MendUseEffect					= $3E
 		MendWeaponEffect				= None
@@ -2343,7 +2343,7 @@
 		RecoverWeaponRank				= RankC
 		RecoverEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		RecoverStatBonus				= aNoItemBonuses
-		RecoverCost						= 3800
+		RecoverCost						= 2400
 		RecoverDescription				= <>item_descs._RecoverDesc
 		RecoverUseEffect				= $40
 		RecoverWeaponEffect				= None
@@ -2387,7 +2387,7 @@
 		FortifyWeaponRank				= RankB
 		FortifyEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		FortifyStatBonus				= aNoItemBonuses
-		FortifyCost						= 4200
+		FortifyCost						= 1700
 		FortifyDescription				= <>item_descs._FortifyDesc
 		FortifyUseEffect				= $44
 		FortifyWeaponEffect				= None
@@ -2409,7 +2409,7 @@
 		RescueWeaponRank				= RankB
 		RescueEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		RescueStatBonus					= aNoItemBonuses
-		RescueCost						= 3600
+		RescueCost						= 2000
 		RescueDescription				= <>item_descs._RescueDesc
 		RescueUseEffect					= $46
 		RescueWeaponEffect				= None
@@ -2431,7 +2431,7 @@
 		WarpWeaponRank					= RankA
 		WarpEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		WarpStatBonus					= aNoItemBonuses
-		WarpCost						= 8200
+		WarpCost						= 2000
 		WarpDescription					= <>item_descs._WarpDesc
 		WarpUseEffect					= $48
 		WarpWeaponEffect				= None
@@ -2453,7 +2453,7 @@
 		RestoreWeaponRank				= RankC
 		RestoreEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		RestoreStatBonus				= aNoItemBonuses
-		RestoreCost						= 2800
+		RestoreCost						= 3200
 		RestoreDescription				= <>item_descs._RestoreDesc
 		RestoreUseEffect				= $4A
 		RestoreWeaponEffect				= None
@@ -2475,7 +2475,7 @@
 		SilenceWeaponRank				= RankC
 		SilenceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SilenceStatBonus				= aNoItemBonuses
-		SilenceCost						= 2800
+		SilenceCost						= 1400
 		SilenceDescription				= <>item_descs._SilenceDesc
 		SilenceUseEffect				= $4C
 		SilenceWeaponEffect				= None
@@ -2497,7 +2497,7 @@
 		SleepWeaponRank					= RankB
 		SleepEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		SleepStatBonus					= aNoItemBonuses
-		SleepCost						= 3600
+		SleepCost						= 1700
 		SleepDescription				= <>item_descs._SleepDesc
 		SleepUseEffect					= $4E
 		SleepWeaponEffect				= None
@@ -2629,7 +2629,7 @@
 		BerserkWeaponRank				= RankA
 		BerserkEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		BerserkStatBonus				= aNoItemBonuses
-		BerserkCost						= 4200
+		BerserkCost						= 2000
 		BerserkDescription				= <>item_descs._BerserkDesc
 		BerserkUseEffect				= $5A
 		BerserkWeaponEffect				= None
@@ -2673,7 +2673,7 @@
 		EnsorcelWeaponRank				= RankC
 		EnsorcelEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		EnsorcelStatBonus				= aNoItemBonuses
-		EnsorcelCost					= 2400
+		EnsorcelCost					= 2200
 		EnsorcelDescription				= <>item_descs._EnsorcelDesc
 		EnsorcelUseEffect				= $5E
 		EnsorcelWeaponEffect			= None
@@ -2695,7 +2695,7 @@
 		RewarpWeaponRank				= RankA
 		RewarpEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		RewarpStatBonus					= aNoItemBonuses
-		RewarpCost						= 4200
+		RewarpCost						= 1200
 		RewarpDescription				= <>item_descs._RewarpDesc
 		RewarpUseEffect					= $60
 		RewarpWeaponEffect				= None

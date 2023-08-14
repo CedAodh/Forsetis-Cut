@@ -487,7 +487,7 @@ ch12xpantrude
 .byte ScrollText
 .text "Then sure, I'll come with you."
 .byte NewLine
-.text "We men of the Dandelion"
+.text "We men of the Dandelions"
 .byte NewLine
 .text "gotta stick together, right?"
 .byte WaitForA

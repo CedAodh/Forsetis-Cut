@@ -542,6 +542,8 @@ eventChapter4xEvents ; FD/85C5
 		STORE_WORD wCurrentMapMusic, $0000
 		PAUSE_SKIPPABLE 16
 		YIELD
+		
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
 
 		CALL_ASM_LOOP rlASMCSaveActiveUnitDataChapterEnd, $0000
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000

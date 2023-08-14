@@ -147,3 +147,12 @@
 .byte $05
 
 .here
+
+;Gives M!Dragonmaster the proper gender map animations
+
+* := $026EC5
+  .logical $84EEC5
+
+.byte $3A, $B6, $A4, $AC, $BA, $A4, $BB, $BE, $A4, $3A, $B6, $A4, $F6, $CB, $A4, $0F, $C3, $A4, $4E, $C7, $A4, $F6, $CB, $A4, $15, $CA, $AD, $9D, $D0, $AD
+
+.here
