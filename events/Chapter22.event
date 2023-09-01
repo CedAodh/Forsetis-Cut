@@ -63,6 +63,9 @@ eventChapter22Events ; 8C/F611
 		EVENT $11, _AmaldaOlwenTalk
 			CHECK_CHARS2 Amalda, Olwen
 		END_DEFINITION
+		EVENT $12, _GunnarSchroffTalk
+			CHECK_CHARS2 GunterDialogue, Schroff
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 8C/F68D
@@ -775,6 +778,14 @@ eventChapter22Events ; 8C/F611
 		YIELD
 		
 		DIALOGUE ch22karinfergus
+		YIELD
+	END2
+
+        _GunnarSchroffTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE gunnarschroff
 		YIELD
 	END2
 	
