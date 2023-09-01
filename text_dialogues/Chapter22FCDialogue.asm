@@ -653,6 +653,233 @@ amaldaolwen
 .byte WaitForA 
 .byte EndText
 
+gunnarschroff
+
+.byte left_slot
+.word LoadPortrait
+.word cohen_portrait
+
+.byte right_slot
+.word LoadPortrait
+.word schroff_portrait
+
+.byte left_slot
+.text "Father Schroff, may I have a moment?"
+.byte WaitForA
+
+.byte right_slot
+.text "Of course, Bishop Gunnar."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You were once the star pupil of my former"
+.byte NewLine
+.text "colleague and good friend, Bishop Rodan."
+.byte WaitForA
+.byte ScrollText
+.text "I was hoping that we might take"
+.byte NewLine
+.text "a moment to speak of him."
+.byte NewLine
+.text "Is he well?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...He is on thin ice, as it were, Bishop."
+.byte WaitForA
+.byte ScrollText
+.text "As you well know, all inhabitants"
+.byte NewLine
+.text "on the continent have been barred"
+.byte NewLine
+.text "entry from the Tower of Bragi."
+.byte WaitForA
+.byte ScrollText
+.text "The Loptr Church has reach in"
+.byte NewLine
+.text "northern Agustria and most of Silesse—"
+.byte NewLine
+.text "they keep a firm watch at all times."
+.byte WaitForA
+.byte ScrollText
+.text "This started approximately three years ago."
+.byte NewLine
+.text "The year before that, he arranged for the two"
+.byte NewLine
+.text "of us to visit the tower—in secret, obviously."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Wh...what happened?"
+.byte NewLine
+.text "Did the Loptr Church catch on?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes, though they were unable to"
+.byte NewLine
+.text "procure evidence to warrant conviction."
+.byte WaitForA
+.byte ScrollText
+.text "Normally, the church disregards"
+.byte NewLine
+.text "this and does as they will."
+.byte WaitForA
+.byte ScrollText
+.text "But given that Bishop Rodan swears fealty"
+.byte NewLine
+.text "to the empire on behalf of house Edda,"
+.byte NewLine
+.text "he was granted some respite."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Thank the gods..."
+.byte NewLine
+.text "No doubt he's been under a fair amount"
+.byte NewLine
+.text "of strict surveillance ever since."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Correct..."
+.byte WaitForA
+.byte ScrollText
+.text "At that point, he delegated the duty of"
+.byte NewLine
+.text "carrying out Father Claud's will to me,"
+.byte NewLine
+.text "and sent me on my way."
+.byte WaitForA
+.byte ScrollText
+.text "None knew it was me who accompanied"
+.byte NewLine
+.text "Bishop Rodan to the tower, so I could"
+.byte NewLine
+.text "disperse without much trouble."
+.byte WaitForA
+.byte ScrollText
+.text "I was only rising into my upcoming role,"
+.byte NewLine
+.text "so it makes sense that not many were"
+.byte NewLine
+.text "familiar with me."
+.byte WaitForA
+.byte ScrollText
+.text "It was...very convenient, to say the least."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Father Schroff, that was likely"
+.byte NewLine
+.text "Rodan's plan from the beginning."
+.byte WaitForA
+.byte ScrollText
+.text "He predicted such an obstacle, so he selected"
+.byte NewLine
+.text "a mere pupil—though diligent and trustworthy,"
+.byte NewLine
+.text "I should add—and ended up with you."
+.byte WaitForA
+.byte ScrollText
+.text "He kept you in the dark so you wouldn't act up"
+.byte NewLine
+.text "with how much he was letting rest on your"
+.byte NewLine
+.text "shoulders. That is a tremendous honor."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I..."
+.byte NewLine
+.text "Now I can see why you made a point"
+.byte NewLine
+.text "of calling him your “good friend.”"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Haha... Well, he's safe,"
+.byte NewLine
+.text "and that's all I needed to know."
+.byte NewLine
+.text "Thank you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You are more than welcome."
+.byte NewLine
+.text "I am fearful, however..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What troubles you?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Once Thracia is liberated, where will"
+.byte NewLine
+.text "Lords Leif and Seliph venture to next?"
+.byte WaitForA
+.byte ScrollText
+.text "If they aim to topple Grannvale, House Edda"
+.byte NewLine
+.text "will stand in their way to the imperial capital."
+.byte NewLine
+.text "And when that happens..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Perhaps I shouldn't be talking about this..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "There is no harm."
+.byte NewLine
+.text "I asked, and you answered."
+.byte NewLine
+.text "I share your feelings on the matter, of course."
+.byte WaitForA
+.byte ScrollText
+.text "But, as long as you are alive to carry on his work—"
+.byte NewLine
+.text "his lifelong aspirations, Father Schroff—"
+.byte WaitForA
+.byte NewLine
+.text "then Bishop Rodan will surely find peace if"
+.byte NewLine
+.text "he were to fall in the name of liberation."
+.byte NewLine
+.text "Always bear that in mind."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Very well."
+.byte NewLine
+.text "I will heed your words, Bishop Gunnar."
+.byte WaitForA
+.byte EndText
+
+
 juliusreinhardt1
 
 .byte right_slot
