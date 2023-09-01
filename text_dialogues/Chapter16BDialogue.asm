@@ -653,11 +653,11 @@ ch16Bopening1
 .byte NewLine
 .text "a sprawling woodland deserving of the name"
 .byte NewLine
-.text "“Mirage Forest.”"
+.text "“Stray Forest.”"
 .byte WaitForA
 
 .byte Right_slot
-.text "A forest of mirages..."
+.text "Quite an inviting name..."
 .byte NewLine
 .text "So, how do we proceed from here?"
 .byte WaitForA
@@ -887,7 +887,7 @@ ch16Bwm2
 .word $0A12 ;y then x
 .text "However, this meant crossing through"
 .byte NewLine
-.text "Millefeuille—the so-called “Mirage Forest.”"
+.text "Millefeuille—the so-called “Stray Forest.”"
 .byte WaitForA
 .byte ScrollText
 .word LoadPortraitalt_1

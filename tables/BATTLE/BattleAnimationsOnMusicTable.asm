@@ -58,7 +58,7 @@ aBattleAnimationsOnMusicTable .block	; 96/846C
 .word	Eichner
 .word	Seil
 .word	Bharat
-.word	Mus
+.word	Beatrice
 .word	Tigris
 .word	TigrisDagdar
 .word	CanisSara

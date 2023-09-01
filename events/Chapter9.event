@@ -284,6 +284,10 @@ eventChapter9Events ; 8C/F011
 		YIELD
 
 		macroDialogueWithBackground ch9opening2, 1
+		
+		STORE_LONG lEventEngineLongParameter, kanealbarobert
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		YIELD
 
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD

@@ -542,6 +542,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		  ZQOL_TALK_ENTRY Finn, [Karin]
 		  ZQOL_TALK_ENTRY Daisy, [Shiva]
 		  ZQOL_TALK_ENTRY Safy, [Lifis]
+		  ZQOL_TALK_ENTRY Leif, [Hannibal]
         ZQOL_END_TALK_CHAPTER
 
         aChapter8TalkTargetTable
@@ -598,7 +599,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Leif, [Glade]
         ZQOL_END_TALK_CHAPTER
 		
-		aChapter14TalkTargetTable
+	aChapter14TalkTargetTable
           ZQOL_TALK_ENTRY Dean, [Eda]
           ZQOL_TALK_ENTRY GunterDialogue, [Safy]
 	  ZQOL_TALK_ENTRY Kane, [Tina]
@@ -656,6 +657,8 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Xavier, [Leif]
           ZQOL_TALK_ENTRY Leif, [Xavier]
 	  ZQOL_TALK_ENTRY GunterDialogue, [Asbel]
+	  ZQOL_TALK_ENTRY Miranda, [Linoan]
+	  ZQOL_TALK_ENTRY Dalsin, [Misha]
           ZQOL_TALK_ENTRY Civilian9, [XavierArmor1]
           ZQOL_TALK_ENTRY Civilian10, [XavierArmor2]
           ZQOL_TALK_ENTRY Civilian11, [XavierArmor3]
@@ -694,6 +697,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		  ZQOL_TALK_ENTRY Ilios, [Reinhardt]
 		  ZQOL_TALK_ENTRY Diarmuid, [Shannam]
 		  ZQOL_TALK_ENTRY Amalda, [Olwen]
+		  ZQOL_TALK_ENTRY GunterDialogue, [Schroff]
           ZQOL_TALK_ENTRY Olwen, [Reinhardt]
         ZQOL_END_TALK_CHAPTER
 

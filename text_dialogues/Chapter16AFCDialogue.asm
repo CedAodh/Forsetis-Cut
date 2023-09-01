@@ -3,21 +3,16 @@ chapter16aoltophopening
 	.byte right_slot
 	.word LoadPortrait
 	.word oltoph_portrait
-	.text "......"
+	.text "Ah, General Kempf..."
 	.byte NewLine
-	.text "It shouldn't be long now."
+	.text "He's reappeared at last."
+	.byte NewLine
+	.text "He looks to be in good health and spirits."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Damned coward has no choice but to"
+	.text "But if he thinks his only enemy is the prince"
 	.byte NewLine
-	.text "actually stay here and fight."
-	.byte WaitForA
-	.byte ScrollText
-	.text "We just need to wait for some"
-	.byte NewLine
-	.text "diversion from the Liberation Army,"
-	.byte NewLine
-	.text "and then we'll have our chance."
+	.text "of Leonster, then he's got another thing coming."
 	.byte WaitForA
 	
 	.byte EndText
@@ -27,8 +22,49 @@ ch16oltophrevolt
 	.byte right_slot
 	.word LoadPortrait
 	.word oltoph_portrait
-	.text "Mr. Kempf! I should"
-	.text "KICK YOUR FUCKIGN ASS"
+	.text "The time is now."
+	.byte NewLine
+	.text "Soldiers, destroy Kempf and his battalion!"
+	.byte WaitForA
+	
+	.byte left_slot
+	.word LoadPortrait
+	.word guard_portrait
+	.text "General, have you gone mad?!"
+	.byte NewLine
+	.text "Why would you order such a thing?!"
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Me, mad? You couldn't be further off!"
+	.byte NewLine
+	.text "I'm ordering vengeance against the conniving"
+	.byte NewLine
+	.text "weasel who left us to die at Fort Dundrum!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "You've dreamed of this chance, haven't you?"
+	.byte NewLine
+	.text "Then have at it!"
+	.byte NewLine
+	.text "You have my full blessing and support."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "...Brilliant thinking, sir!"
+	.byte NewLine
+	.text "If he gets stuck between us and the rebels,"
+	.byte NewLine
+	.text "then Kempf will surely meet his demise!"
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "That he will!"
+	.byte NewLine
+	.text "For the glory and honor of House Friege!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -73,7 +109,7 @@ deanlinoanA
 .byte ScrollText
 .text "Oh, how I wish I could hide things from you..."
 .byte NewLine
-.text "I still feel deep regret over all of"
+.text "I still feel lingering regret over all of"
 .byte NewLine
 .text "what happened back in Tarrah."
 .byte WaitForA
@@ -99,9 +135,9 @@ deanlinoanA
 .text "I'm sure they understand this was for the best."
 .byte WaitForA
 .byte ScrollText
-.text "Thracia does not partake in the Child Hunts,"
+.text "Thracia does not partake in the child hunts,"
 .byte NewLine
-.text "and I'm sure they will appreciate getting to"
+.text "and I'm sure they'll appreciate getting to"
 .byte NewLine
 .text "know their duchess's fiancé a little bit more."
 .byte WaitForA
@@ -257,35 +293,28 @@ leifilios
 .word LoadPortrait
 .word ilios_portrait
 .text "Excuse me."
-.text "...Excuse..."
+.byte WaitForA
+.byte ScrollText
+.text "E...excuse..."
+.byte NewLine
 .text "...Hey!"
 .byte WaitForA
 
 .byte left_slot
 .word LoadPortrait
 .word leif_portrait
-.text "Oh, hello. Sir Ilios, was it?"
+.text "Oh! Please forgive me."
+.byte NewLine
+.text "I— I'm so sorry."
+.byte NewLine
+.text "You must be Sir Ilios."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "That's right!"
+.text "That's what they call me!"
 .byte NewLine
-.text "Wait... Did you just call me “Sir Ilios”?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Um... I did. Is there a problem with that?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "N-No, no... Sorry."
-.byte NewLine
-.text "Uh, anyway,"
-.byte NewLine
-.text "you're Prince Leif of Leonster, correct?”"
+.text "And you're Prince Leif of Leonster?"
 .byte WaitForA
 
 .byte left_slot
@@ -295,70 +324,23 @@ leifilios
 
 .byte right_slot
 .byte ScrollText
-.text "Okay, great!"
+.text "All right, nice!"
 .byte NewLine
-.text "You seem to already know,"
-.byte NewLine
-.text "but I'll introduce myself properly."
-.byte WaitForA
-.byte NewLine
-.text "I am Ilios, proud Mage Knight of House Friege!"
+.text "I oughta let you know I'm a mage knight too."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "A Mage Knight..."
+.text "A mage knight..."
 .byte NewLine
-.text "You must be quite powerful, then."
+.text "You must be very powerful, then."
 .byte NewLine
-.text "So, what did you need from me?”"
+.text "Anyway, did you need something?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "......"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "...?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Do you...really not know?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "I... I don't."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "You didn't hear anything about"
-.byte NewLine
-.text "the whole nobility thing? ...Or Troy?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "I was informed about someone named Troy"
-.byte NewLine
-.text "who wished to earn their way to nobility" 
-.byte NewLine
-.text "through their efforts in this war."
-.byte WaitForA
-.byte ScrollText
-.text "I haven't been able to meet with him yet,"
-.byte NewLine
-.text "though. Why do you ask?"
-.text "Do you know Troy—"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "It's me!"
+.text "...Huh?"
 .byte WaitForA
 
 .byte left_slot
@@ -368,26 +350,77 @@ leifilios
 
 .byte right_slot
 .byte ScrollText
-.text "It's me! I'm Troy!"
+.text "I mean...sort of, but..."
+.byte NewLine
+.text "Well, the wheels are in motion, right?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "But you had just said your name is Ilios."
+.text "The wheels of...?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Yes, that's my actual name!"
+.text "Has that pegasus knight of yours talked"
 .byte NewLine
-.text "I told that girl not to go around"
+.text "to you about your new recruits?"
 .byte NewLine
-.text "messing with people's names..."
+.text "...Or should I say, Troy?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Okay... Sir Ilios. I apologize for the confusion."
+.text "Yes; I was informed of someone named Troy"
+.byte NewLine
+.text "who wishes to earn his way to nobility" 
+.byte NewLine
+.text "through his efforts in this war."
+.byte WaitForA
+.byte ScrollText
+.text "I have yet to meet with him, though."
+.byte NewLine
+.text "Are you acquainted with this Troy fellow?"
+.byte NewLine
+.text "Why do you—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's me!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What's you?!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's— Gah!"
+.byte NewLine
+.text "I'M TROY!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But you had just identified yourself as"
+.byte NewLine
+.text "Sir Ilios."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Gods, take a hint!"
+.byte NewLine
+.text "My birth name is Ilios, and THAT GIRL—for"
+.byte NewLine
+.text "whatever reason—gave me the alias of Troy!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Okay, now I understand...Sir Ilios."
 .byte NewLine
 .text "I'll...make sure to go get things"
 .byte NewLine
@@ -396,16 +429,27 @@ leifilios
 
 .byte right_slot
 .byte ScrollText
-.text "All right then."
+.text "Very good. I mean, much obliged."
 .byte NewLine
-.text "I apologize for losing my temper just now."
+.text "I wish to apologize for losing my temper"
 .byte NewLine
-.text "It's ill-befitting of a noble."
+.text "just now. It's ill-befitting of a noble."
 .byte WaitForA
+
+.byte left_slot
 .byte ScrollText
+.text "Um, right. We'll be okay, though."
+.byte NewLine
+.text "I suppose names can be tricky at times."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Haha, indeed."
+.byte NewLine
 .text "Now, I shall go and engage the enemy."
 .byte NewLine
-.text "Leave everything to me, Lord Leif!"
+.text "Leave everything to me, Prince Leif!"
 .byte WaitForA
 
 .byte EndText

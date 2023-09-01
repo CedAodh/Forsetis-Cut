@@ -70,7 +70,7 @@ eventChapter24xData ; 99/F7B3
 		.byte 3, 25
 
 	_Chest1Item ; 99/FA26
-		.word Blizzard
+		.word MiracleManual
 
 	_Chest1Events ; 99/FA28
 		STORE_WORD wEventEngineXCoordinate, 3

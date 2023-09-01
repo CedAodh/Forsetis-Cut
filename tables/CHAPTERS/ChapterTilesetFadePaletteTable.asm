@@ -23,7 +23,7 @@ aChapterTilesetFadePaletteTable ; 8C/C9F9
 	.long $EFFF4F
 	.long $EFFFE9
 	.long $F08079
-	.long $F0810B
+	.long a16BFadedPalette; $F0810B
 	.long $F08198
 	.long $F0822B
 	.long $F082C9

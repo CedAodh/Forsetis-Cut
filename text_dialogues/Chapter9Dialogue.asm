@@ -667,42 +667,42 @@ ch9opening2
 .byte WaitForA
 .byte ScrollText
 
-.byte Right_slot
-.byte ScrollText
-.byte ScrollText
-.word LoadPortrait
-.word kane_portrait
+; .byte Right_slot
+; .byte ScrollText
+; .byte ScrollText
+; .word LoadPortrait
+; .word kane_portrait
 
-.byte Left_slot
-.text "Kane!  "
+; .byte Left_slot
+; .text "Kane!  "
 
-.byte Right_slot
-.byte ScrollText
-.byte ScrollText
-.word LoadPortrait
-.word alba_portrait
+; .byte Right_slot
+; .byte ScrollText
+; .byte ScrollText
+; .word LoadPortrait
+; .word alba_portrait
 
-.byte Left_slot
-.text " Alba! "
+; .byte Left_slot
+; .text " Alba! "
 
-.byte Right_slot
-.byte ScrollText
-.byte ScrollText
-.word LoadPortrait
-.word robert_portrait
+; .byte Right_slot
+; .byte ScrollText
+; .byte ScrollText
+; .word LoadPortrait
+; .word robert_portrait
 
-.byte Left_slot
-.text " Robert!"
+; .byte Left_slot
+; .text " Robert!"
 
-.byte Right_slot
-.byte ScrollText
-.byte ScrollText
-.word ClearPortrait
+; .byte Right_slot
+; .byte ScrollText
+; .byte ScrollText
+; .word ClearPortrait
 
-.byte Left_slot
-.byte NewLine
-.text "We're moving out! Follow me!"
-.byte WaitForA
+; .byte Left_slot
+; .byte NewLine
+; .text "We're moving out! Follow me!"
+; .byte WaitForA
 
 .byte EndText
 

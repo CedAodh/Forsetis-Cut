@@ -507,3 +507,262 @@ mirandalinoan
 .byte WaitForA
 
 .byte EndText
+
+dalsinmisha
+
+.byte right_slot
+.word LoadPortrait
+.word misha_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word dalsin_portrait
+.text "Are you well, Dame Misha?"
+.byte WaitForA
+
+.byte right_slot
+.text "I am."
+.byte NewLine
+.text "...Do we know one another?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, no, though I've had the honor of"
+.byte NewLine
+.text "befriending your trusted companion."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Helena?"
+.byte NewLine
+.text "When... When did you..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's her name, eh?"
+.byte NewLine
+.text "Very pretty."
+.byte WaitForA
+.byte ScrollText
+.text "Anyway, while you were in Prince Leif's custody,"
+.byte NewLine
+.text "your pegasus needed SOMEWHERE to go, ha ha."
+.byte WaitForA
+.byte ScrollText
+.text "Happy to say she wasn't a bit fussy,"
+.byte NewLine
+.text "and she was also good company."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Y-yes, that's..."
+.byte NewLine
+.text "So it was you she was telling me about."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What can I say, I'm good with animals."
+.byte NewLine
+.text "Oh, and yeah, my name's Dalsin."
+.byte WaitForA
+.byte ScrollText
+.text "I think you'd be surprised to hear I have a"
+.byte NewLine
+.text "bear friend waiting for me back home in Munster."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "A bear friend?"
+.byte NewLine
+.text "I don't think I should be surprised."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yep! I— What?"
+.byte NewLine
+.text "You're not surprised?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Considering you instantly won the affection"
+.byte NewLine
+.text "of Helena, a bear's friendship would then"
+.byte NewLine
+.text "pale in comparison, no?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Yeah, I guess. You're probably right."
+.byte NewLine
+.text "I call her Sue, if you wanted to know her name."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's a nice name."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Thanks."
+.byte NewLine
+.text "Y-you know, obviously, I came up with it myself."
+.byte WaitForA
+.byte ScrollText
+.text "So, Dame Misha..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "The prince happened to give me a little background"
+.byte NewLine
+.text "about you. You know, the circumstances that"
+.byte NewLine
+.text "had you pitted against us."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mm-hmm."
+.byte NewLine
+.text "And?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, I'm gonna admit, it was a somewhat"
+.byte NewLine
+.text "relieving thing to hear, in a way."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...What are you getting at?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I-I mean that I'm glad that...I'm not"
+.byte NewLine
+.text "the only one who...who made that mistake."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hmph. Glad I could help you out, then."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'm sorry."
+.byte NewLine
+.text "I didn't know a good way to say it,"
+.byte NewLine
+.text "but I still wanted to get that off my chest."
+.byte WaitForA
+.byte ScrollText
+.text "Back when I was with the empire,"
+.byte NewLine
+.text "I was going along with whatever they wanted—"
+.byte NewLine
+.text "like helping them rip away children—because I"
+.byte NewLine
+.text "was told my little brother would then be left out."
+.byte WaitForA
+.byte NewLine
+.text "And I let myself think I was doing the right thing!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "After I swore fealty to Prince Leif—because he up"
+.byte NewLine
+.text "and saved my brother when I never even knew he was"
+.byte NewLine
+.text "taken—I really contemplated my whole existence."
+.byte WaitForA
+.byte ScrollText
+.text "“Who else could be this stupid, this shortsighted?”"
+.byte NewLine
+.text "So...when I found out you—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Okay, enough."
+.byte NewLine
+.text "I get the point."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I— All right."
+.byte NewLine
+.text "Thanks for listening. For indulging me."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Consider it payment for looking after Helena"
+.byte WaitForA
+.text "in my absence."
+.byte WaitForA
+.byte ScrollText
+.text "I ought to head back into battle."
+.byte NewLine
+.text "I owe it to all of you to help right"
+.byte NewLine
+.text "the wrongs I've done in the name of Silesse."
+.byte WaitForA
+.byte NewLine
+.text "Farewell, Sir Dalsin."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You as well, Dame Misha..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+
+.byte left_slot
+.byte ScrollText
+
+.byte right_slot
+.word ClearPortrait
+
+.byte left_slot
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.word LoadPortrait
+.word dalsin_portrait
+.text "Huh. She wholly acknowledges her wrongdoings, but"
+.byte NewLine
+.text "she still moves about with such poise and confidence."
+.byte NewLine
+.text "I'd like to learn to do that."
+.byte WaitForA
+
+.byte EndText

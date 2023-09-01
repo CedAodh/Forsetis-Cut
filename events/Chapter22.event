@@ -1012,7 +1012,7 @@ eventChapter22Events ; 8C/F611
 		CALL_ASM_SKIPPABLE $9A8D0F, $0000
 
 		STORE_WORD wEventEngineParameter1, DireThunder
-		STORE_WORD wEventEngineParameter2, Hel
+		STORE_WORD wEventEngineParameter2, Meteor
 		STORE_WORD wEventEngineXCoordinate, 18
 		STORE_WORD wEventEngineYCoordinate, 16
 		STORE_WORD wEventEngineXCoordinateAlt, 18

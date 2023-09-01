@@ -13,7 +13,7 @@ eventChapter6Data ; B1/E22A
 	;	.byte 9, 8
 
 	_GalzusGroup ; B1/E244
-		UNIT Galzus, Enemy, [2, 1], [2, 2], Raydrik, [MasterSword, Vulnerary], 20, False, [$00, $00, $00, $02]
+		UNIT Galzus, Enemy, [2, 1], [2, 2], Raydrik, [MasterAxe, Vulnerary], 19, False, [$00, $00, $00, $02]
 	UNIT
 
 	_TolmanCameraCoordinates ; B1/E25A

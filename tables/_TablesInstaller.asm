@@ -216,9 +216,6 @@
 * = $180000
 .logical $B08000
 	.include "ITEMS/ItemStatBonuses.asm"
-	ItemEffectivenesses .block
-		.include "ITEMS/ItemEffectiveness.asm"
-	.bend
 	aItemData .include "ITEMS/ItemData.casm"
 .here
 
@@ -228,6 +225,9 @@
 .logical $188B00
 	WeaponLocks .block
 		.include "ITEMS/WeaponLocks.asm"
+	.bend
+	ItemEffectivenesses .block
+		.include "ITEMS/ItemEffectiveness.asm"
 	.bend
 .here
 

@@ -89,7 +89,7 @@
 	SlimSword							= 4
 		SlimSwordType					= TypeSword
 		SlimSwordAlternateType			= None
-		SlimSwordMight					= 5
+		SlimSwordMight					= 4
 		SlimSwordAccuracy				= 100
 		SlimSwordWeight					= 3
 		SlimSwordDurability				= 30
@@ -265,7 +265,7 @@
 	LoptrianFang						= 12
 		LoptrianFangType				= TypeSword
 		LoptrianFangAlternateType		= TypeDark
-		LoptrianFangMight				= 20
+		LoptrianFangMight				= 18
 		LoptrianFangAccuracy			= 80
 		LoptrianFangWeight				= 20
 		LoptrianFangDurability			= -1
@@ -287,7 +287,7 @@
 	BragisBlade							= 13
 		BragisBladeType					= TypeSword
 		BragisBladeAlternateType		= TypeLight
-		BragisBladeMight				= 10
+		BragisBladeMight				= 12
 		BragisBladeAccuracy				= 100
 		BragisBladeWeight				= 10
 		BragisBladeDurability			= -1
@@ -397,11 +397,11 @@
 	WindSword							= 18
 		WindSwordType					= TypeSword
 		WindSwordAlternateType			= TypeWind
-		WindSwordMight					= 10
-		WindSwordAccuracy				= 75
-		WindSwordWeight					= 9
+		WindSwordMight					= 8
+		WindSwordAccuracy				= 80
+		WindSwordWeight					= 8
 		WindSwordDurability				= 40
-		WindSwordCritrate				= 0
+		WindSwordCritrate				= 5
 		WindSwordMinRange				= 1
 		WindSwordMaxRange				= 2
 		WindSwordWeaponRank				= RankB
@@ -421,7 +421,7 @@
 		FlameSwordAlternateType			= TypeFire
 		FlameSwordMight					= 10
 		FlameSwordAccuracy				= 75
-		FlameSwordWeight				= 9
+		FlameSwordWeight				= 10
 		FlameSwordDurability			= 40
 		FlameSwordCritrate				= 0
 		FlameSwordMinRange				= 1
@@ -441,11 +441,11 @@
 	LightningSword						= 20
 		LightningSwordType				= TypeSword
 		LightningSwordAlternateType		= TypeThunder
-		LightningSwordMight				= 10
-		LightningSwordAccuracy			= 75
+		LightningSwordMight				= 9
+		LightningSwordAccuracy			= 70
 		LightningSwordWeight			= 9
 		LightningSwordDurability		= 40
-		LightningSwordCritrate			= 0
+		LightningSwordCritrate			= 10
 		LightningSwordMinRange			= 1
 		LightningSwordMaxRange			= 2
 		LightningSwordWeaponRank		= RankB
@@ -597,7 +597,7 @@
 		MasterSwordAlternateType		= None
 		MasterSwordMight				= 13
 		MasterSwordAccuracy				= 80
-		MasterSwordWeight				= 11
+		MasterSwordWeight				= 12
 		MasterSwordDurability			= 20
 		MasterSwordCritrate				= 10
 		MasterSwordMinRange				= 1
@@ -750,7 +750,7 @@
 		SlimLanceType					= TypeLance
 		SlimLanceAlternateType			= None
 		SlimLanceMight					= 6
-		SlimLanceAccuracy				= 95
+		SlimLanceAccuracy				= 90
 		SlimLanceWeight					= 5
 		SlimLanceDurability				= 30
 		SlimLanceCritrate				= 5
@@ -949,7 +949,7 @@
 		MasterLanceAlternateType		= None
 		MasterLanceMight				= 15
 		MasterLanceAccuracy				= 70
-		MasterLanceWeight				= 13
+		MasterLanceWeight				= 14
 		MasterLanceDurability			= 20
 		MasterLanceCritrate				= 0
 		MasterLanceMinRange				= 1
@@ -1174,7 +1174,7 @@
 		HandAxeCritrate					= 0
 		HandAxeMinRange					= 1
 		HandAxeMaxRange					= 2
-		HandAxeWeaponRank				= RankD
+		HandAxeWeaponRank				= RankE
 		HandAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		HandAxeStatBonus				= aNoItemBonuses
 		HandAxeCost						= 900
@@ -1276,7 +1276,7 @@
 
 	DevilAxe							= 58
 		DevilAxeType					= TypeAxe
-		DevilAxeAlternateType			= TypeDark
+		DevilAxeAlternateType			= None
 		DevilAxeMight					= 20
 		DevilAxeAccuracy				= 80
 		DevilAxeWeight					= 20
@@ -1345,7 +1345,7 @@
 		MasterAxeAlternateType			= None
 		MasterAxeMight					= 16
 		MasterAxeAccuracy				= 60
-		MasterAxeWeight					= 14
+		MasterAxeWeight					= 15
 		MasterAxeDurability				= 20
 		MasterAxeCritrate				= 0
 		MasterAxeMinRange				= 1
@@ -1497,7 +1497,7 @@
 	BraveBow							= 68
 		BraveBowType					= TypeBow
 		BraveBowAlternateType			= None
-		BraveBowMight					= 13
+		BraveBowMight					= 12
 		BraveBowAccuracy				= 100
 		BraveBowWeight					= 8
 		BraveBowDurability				= 60
@@ -1587,7 +1587,7 @@
 		MasterBowAlternateType			= None
 		MasterBowMight					= 14
 		MasterBowAccuracy				= 75
-		MasterBowWeight					= 12
+		MasterBowWeight					= 13
 		MasterBowDurability				= 20
 		MasterBowCritrate				= 10
 		MasterBowMinRange				= 2
@@ -1742,7 +1742,7 @@
 		ElfireMight						= 11
 		ElfireAccuracy					= 90
 		ElfireWeight					= 3
-		ElfireDurability				= 60
+		ElfireDurability				= 54
 		ElfireCritrate					= 10
 		ElfireMinRange					= 1
 		ElfireMaxRange					= 2
@@ -1783,8 +1783,8 @@
 	Tathlum								= 81
 		TathlumType						= TypeBow
 		TathlumAlternateType			= None
-		TathlumMight					= 12
-		TathlumAccuracy					= 90
+		TathlumMight					= 13
+		TathlumAccuracy					= 100
 		TathlumWeight					= 7
 		TathlumDurability				= 60
 		TathlumCritrate					= 10
@@ -1795,9 +1795,9 @@
 		TathlumStatBonus				= aNoItemBonuses
 		TathlumCost						= 6200
 		TathlumDescription				= <>item_descs._TathlumDesc
-		TathlumUseEffect				= $22
+		TathlumUseEffect				= None
 		TathlumWeaponEffect				= None
-		TathlumSkills2					= None
+		TathlumSkills2					= Skill2Miracle
 		TathlumSkills3					= Skill3Wrath
 		TathlumTraits					= TraitWeapon | TraitUnsellable
 		TathlumIcon						= $9F
@@ -1897,7 +1897,7 @@
 		WindAccuracy					= 80
 		WindWeight						= 0
 		WindDurability					= 21
-		WindCritrate					= 10
+		WindCritrate					= 0
 		WindMinRange					= 1
 		WindMaxRange					= 2
 		WindWeaponRank					= RankE
@@ -1988,7 +1988,7 @@
 		LightCritrate					= 20
 		LightMinRange					= 1
 		LightMaxRange					= 2
-		LightWeaponRank					= RankE
+		LightWeaponRank					= RankD
 		LightEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		LightStatBonus					= aNoItemBonuses
 		LightCost						= 2800
@@ -2051,7 +2051,7 @@
 		JormungandAccuracy				= 70
 		JormungandWeight				= 5
 		JormungandDurability			= 20
-		JormungandCritrate				= 10
+		JormungandCritrate				= 5
 		JormungandMinRange				= 1
 		JormungandMaxRange				= 2
 		JormungandWeaponRank			= RankC
@@ -2253,7 +2253,7 @@
 		ForsetiInfiniteMinRange			= 2
 		ForsetiInfiniteMaxRange			= 3
 		ForsetiInfiniteWeaponRank		= WeaponLocks.aRecurveBowWeaponLock
-		ForsetiInfiniteEffectiveness	= ItemEffectivenesses.aNoEffectiveness
+		ForsetiInfiniteEffectiveness	= ItemEffectivenesses.aFlyingEffectiveness
 		ForsetiInfiniteStatBonus		= aNoItemBonuses
 		ForsetiInfiniteCost				= 3400
 		ForsetiInfiniteDescription		= <>item_descs._ForsetiInfiniteDesc
@@ -2531,20 +2531,20 @@
 	Baldung								= 115
 		BaldungType						= TypeSword
 		BaldungAlternateType			= None
-		BaldungMight					= 20
-		BaldungAccuracy					= 100
-		BaldungWeight					= 20
+		BaldungMight					= 13
+		BaldungAccuracy					= 80
+		BaldungWeight					= 15
 		BaldungDurability				= 60
 		BaldungCritrate					= 0
 		BaldungMinRange					= 1
 		BaldungMaxRange					= 1
 		BaldungWeaponRank				= WeaponLocks.aBaldungWeaponLock
 		BaldungEffectiveness			= ItemEffectivenesses.aMyrmidonEffectiveness
-		BaldungStatBonus				= aNoItemBonuses
+		BaldungStatBonus				= aFragarachItemBonuses
 		BaldungCost						= 0
 		BaldungDescription				= <>item_descs._BaldungDesc
 		BaldungUseEffect				= None
-		BaldungWeaponEffect				= $2
+		BaldungWeaponEffect				= None
 		BaldungSkills2					= Skill2Adept
 		BaldungSkills3					= None
 		BaldungTraits					= TraitWeapon | TraitUnsellable
@@ -2606,13 +2606,13 @@
 		FragarachMaxRange				= 1
 		FragarachWeaponRank				= WeaponLocks.aFragarachWeaponLock
 		FragarachEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
-		FragarachStatBonus				= aFragarachItemBonuses
+		FragarachStatBonus				= aNoItemBonuses
 		FragarachCost					= 0
 		FragarachDescription			= <>item_descs._FragarachDesc
 		FragarachUseEffect				= None
 		FragarachWeaponEffect			= None
 		FragarachSkills2				= Skill2Pavise
-		FragarachSkills3				= None
+		FragarachSkills3				= Skill3Wrath
 		FragarachTraits					= TraitWeapon | TraitUnsellable
 		FragarachIcon					= $75
 

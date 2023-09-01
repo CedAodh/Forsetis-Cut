@@ -17,7 +17,7 @@ steal_laras_heart
 	sta $a53c
 	rep #$20
 	
-	lda #$0014
+	lda #$000A
 	sta $a695
 
 	rtl

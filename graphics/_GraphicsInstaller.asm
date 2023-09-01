@@ -554,10 +554,18 @@ nintendo_logo
 
 .here
 
+;* = $2D34B1
+;.logical lorom($2D34B1, 1)
+
+;.binary "leonster2d34b1.4bpp.fe4"
+
+;.here
+
 * = $4B7A00
 .logical lorom($4B7A00, 1)
 
 a16B      .binary "16BMapMain.bin.fe4"
-a16BPalette      .binary "edited12palette.bin"
+a16BPalette      .binary "editedforestpalette.bin"
+a16BFadedPalette	.binary "editedforestpalettefaded.bin"
 
 .here

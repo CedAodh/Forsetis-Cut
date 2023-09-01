@@ -1,5 +1,5 @@
-* := $01EFCA
-.logical $83EFCA
+* := $01EF7B
+.logical $83EF7B
 
 	.al
 	.xl
@@ -17,22 +17,22 @@
 
 l_exp_calc_upper_class
 
-  .al
-  .xl
-  .autsiz
-  .databank `aClassDataBuffer
+	lda $25
+	clc
+    adc #$000a
+    
+	pha
+    lda aClassDataBuffer.Tier1Class
+	and #$00ff
+	beq +
+    
+	pla
+	lsr 
+	rtl
 
-  lda aClassDataBuffer.Tier1Class
-  and #$00FF
-  beq +
-
-  lsr wR0
-
-  +
-
-  lda structActionStructEntry.Skills2,b,x
-  ora aItemDataBuffer.Skills2,b
-
-  rtl
+	+
+	
+	pla
+	rtl
 	
 .endlogical

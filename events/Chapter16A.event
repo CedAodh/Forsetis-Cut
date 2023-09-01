@@ -61,6 +61,14 @@ eventChapter16AEvents ; FD/B120
 			CHECK_NUM_UNITS_GTE Kempf, 1
 			TEST_FLAG_SET $09
 		END_DEFINITION
+		EVENT $16, _OltophRevolt
+			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_SET $15
+		END_DEFINITION
+		EVENT $16, _OltophRevolt
+			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_SET $09
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/B1EE
@@ -152,9 +160,9 @@ eventChapter16AEvents ; FD/B120
 		EVENT $0F, _SchroffSpawn
 			TEST_FLAG_SET $21
 		END_DEFINITION
-		EVENT $15, _OltophRevolt
+		EVENT $15, eventMapDeathQuoteDummyEvent
 			CMP_WORD aSelectedCharacterBuffer.Character, Leif
-			macroEventConditionCheckCoordRanges [38, 0], [57, 19]
+			macroEventConditionCheckCoordRanges [40, 0], [57, 21]
 		END_DEFINITION	
 	END_DEFINITION_ARRAY
 
@@ -724,13 +732,34 @@ eventChapter16AEvents ; FD/B120
 		YIELD
 	
 		macroConvertToNPCAllegiance Oltoph
+		STORE_WORD wEventEngineCharacterTarget, Oltoph
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineParameter2, Oltoph
+		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 
 		macroConvertToNPCAllegiance FriegeArmoredSword3
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineParameter2, Oltoph
+		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
+		
 		macroConvertToNPCAllegiance FriegeArmoredLance2
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance2
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineParameter2, Oltoph
+		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
+		
 		macroConvertToNPCAllegiance FriegeArmoredAxe2
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe2
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineParameter2, Oltoph
+		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 		
 		macroConvertToNPCAllegiance FriegeBallista1
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, FriegeBallista1
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineParameter2, Oltoph
+		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 		
 		+
 	

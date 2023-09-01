@@ -5,8 +5,8 @@ aTransformingItemTable ; 88/8223
 	.byte VeninAxe
 	.byte VeninBow
 	.byte VeninBallista
-	.byte Venin
-	.byte Petrify
+	.byte ShadowSpear
+	.byte ShadowSword
 .byte $00
 
 aTransformedItemTable ; 88/822B
@@ -15,5 +15,5 @@ aTransformedItemTable ; 88/822B
 	.byte IronAxe
 	.byte IronBow
 	.byte IronBallista
-	.byte Fenrir
-	.byte Fenrir
+	.byte Javelin
+	.byte MareetasSword

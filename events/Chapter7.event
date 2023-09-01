@@ -77,6 +77,9 @@ eventChapter7Events ; 99/B023
 		EVENT $17, _SafyLifisTalk
 			CHECK_CHARS2 Safy, Lifis
 		END_DEFINITION
+		EVENT $18, _LeifHannibalTalk
+			CHECK_CHARS2 Leif, Hannibal
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/B112
@@ -381,6 +384,10 @@ eventChapter7Events ; 99/B023
 	
 	_LeifShivaTalk
 		macroDialogueHouse leifshiva
+	END2
+	
+	_LeifHannibalTalk
+		macroDialogueHouse leifhannibal
 	END2
 
 	_SafyLifisTalk

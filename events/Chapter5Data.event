@@ -125,7 +125,7 @@ eventChapter5Data ; B1/E685
 	;	.byte 16, 14
 
 	_GalzusGroup ; B1/EA3B
-		UNIT Galzus, Enemy, [15, 9], [15, 9], Raydrik, [MasterSword, Vulnerary], 20, False, [$00, $00, $00, $00]
+		UNIT Galzus, Enemy, [15, 9], [15, 9], Raydrik, [MasterSword, Vulnerary], 19, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates13 ; B1/EA51

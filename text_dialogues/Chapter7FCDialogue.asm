@@ -816,3 +816,66 @@ ch7ending9FC
 .byte WaitForA
 
 .byte EndText
+
+leifhannibal
+
+.byte right_slot
+.word LoadPortrait
+.word hannibal_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "Your banner..."
+.byte NewLine
+.text "Are you soldiers from Meath?"
+.byte NewLine
+.text "The Panzerritter?"
+.byte WaitForA
+
+.byte right_slot
+.text "Indeed."
+.byte NewLine
+.text "There seemed to be quite the commotion;"
+.byte NewLine
+.text "we marched out at once to address it."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "So...so we're finally safe..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mm."
+.byte NewLine
+.text "My name is Hannibal."
+.byte NewLine
+.text "Under my protection, you may rest easy."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hannibal as in, the “Shield of Thracia”?"
+.byte NewLine
+.text "The renowned Thracian general?!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That is how my kingdom acknowledges me, yes."
+.byte NewLine
+.text "But let us speak more in my castle—first,"
+.byte NewLine
+.text "we're going to send this stampede scurrying."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Forgive my impatience."
+.byte NewLine
+.text "I'll leave you and your men to it."
+.byte WaitForA
+
+.byte EndText

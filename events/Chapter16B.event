@@ -622,8 +622,8 @@ eventChapter16BEvents ; 99/EC9A
 		YIELD_UNK
 		YIELD
 		
-		;STORE_LONG lEventEngineLongParameter, ch16Bending2
-		;CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		STORE_LONG lEventEngineLongParameter, ch16Bending2
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
 		FADE_OUT $01

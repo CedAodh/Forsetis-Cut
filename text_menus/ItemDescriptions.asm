@@ -1548,13 +1548,13 @@ _KillerBallistaDesc
 
 
 _BaldungDesc
-.text "{Lock}Shanna[m"
+.text "{Lock}Shanna{m}"
 .word $0000
-.text "Far fro[m genuine "
+.text "Gives Adept "
 .word $0000
-.text "Grants confidence "
+.text "Skl {+}{1}, Spd {+}{2}"
 .word $0000
-.text "Gives Astra "
+.text "Anti{dash}(Myr[midons "
 .word $0000
 .word $0000
 

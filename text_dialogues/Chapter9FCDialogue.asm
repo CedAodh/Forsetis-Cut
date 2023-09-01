@@ -404,3 +404,203 @@ kanealba
 	.byte WaitForA
 
 	.byte EndText
+	
+kanealbarobert
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word robert_portrait
+
+.byte left_slot
+.text "Robert!"
+.byte WaitForA
+
+.byte right_slot
+.text "Y-yes, milady!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I need you to go get Kane and Alba"
+.byte NewLine
+.text "and tell them to meet us over here."
+.byte NewLine
+.text "Do that while we prepare the horses."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "O-of course! I'll go right now!"
+.byte WaitForA
+.byte ScrollText
+
+.byte left_slot
+.byte ScrollText
+
+.byte right_slot
+.word ClearPortrait
+
+.byte left_slot
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.byte right_slot
+.word LoadPortrait
+.word kane_portrait
+.text "This is vexing..."
+
+.byte left_slot
+.word LoadPortrait
+.word alba_portrait
+
+.byte right_slot
+.byte NewLine
+.text "First the two of us had our sparring mishap,"
+.byte NewLine
+.text "and now I can't find my backup gloves."
+.byte WaitForA
+
+.byte left_slot
+.text "Well... What do they look like?"
+.byte NewLine
+.text "Maybe that'd help me find them."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...They look like gloves, Alba."
+.byte NewLine
+.text "They look exactly...like...gloves."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "“What do they look like”..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "All right, then I guess we've looked"
+.byte NewLine
+.text "everywhere. Sorry I couldn't help."
+.byte WaitForA
+
+.word PauseDialogue
+.byte $3C
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word robert_portrait
+.text "K-Kane!"
+.byte NewLine
+.text "Alba...!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Robert?"
+.byte NewLine
+.text "Why are you out of breath?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "N-no time..."
+.byte NewLine
+.text "Thracian...here...they..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Get ahold of yourself, Robert!"
+.byte NewLine
+.text "Repeat yourself!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Gah! I-I'm sorry, Kane."
+.byte WaitForA
+.byte ScrollText
+.text "The Thracian army's here!"
+.byte NewLine
+.text "They've come for us!"
+.byte NewLine
+.text "W-we need to hurry!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word alba_portrait
+.text "But we've come to know you as"
+.byte NewLine
+.text "the boy who cried Thracia."
+.byte NewLine
+.text "How do we know it's actually them this time?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I— What? Come on!"
+.byte NewLine
+.text "Look, I'm sorry for all the past false alarms."
+.byte NewLine
+.text "It's real this time!"
+.byte WaitForA
+.byte ScrollText
+.text "While she's preparing the horses,"
+.byte NewLine
+.text "Lady Selphina told me to c-come get you guys,"
+.byte NewLine
+.text "so grab your weapons and meet us out in front!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.byte left_slot
+.byte ScrollText
+.text "Robert?"
+.byte NewLine
+.text "Hey, Robert, you dropped some—"
+
+.byte right_slot
+.word LoadPortrait
+.word kane_portrait
+
+.byte left_slot
+.byte NewLine
+.text "...Hey, Kane, are these possibly your backup gloves?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Huh? Yes, it would appear so..."
+.byte NewLine
+.text "But...why does Robert possess MY gloves?"
+.byte NewLine
+.text "That's completely unacceptable."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Save that for later, Kane."
+.byte NewLine
+.text "Just stick them on and let's hurry on over"
+.byte NewLine
+.text "to the two of them and Count Dorius."
+.byte WaitForA
+
+.byte EndText

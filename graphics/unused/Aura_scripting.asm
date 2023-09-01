@@ -25,7 +25,7 @@
 .byte $5B, $04     ; Display tiles: ???
 .byte $49, $56     ; Effects: Change Floor Color 1 (+pause)
 .byte $FE, $FF     ; --Wait-- (normally, Sound after this)
-.byte $18, $2E     ; Play sound: Tornado (lower)
+.byte $07, $2E     ; Play sound: Tornado (lower)
 .byte $08, $06     ; Tile effects: Heavy Ripple (Does not move, need to animate layer) (+special horizontal split?)
 .byte $4A, $16     ; Effects: Change Floor Color 2
 .byte $36, $1A     ; Scrolling: Upward, slightly forward

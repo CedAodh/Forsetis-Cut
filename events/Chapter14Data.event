@@ -119,7 +119,7 @@ eventChapter14Data ; B1/B9FF
 	UNIT
 	
 	_GunnarGroup
-		UNIT GunterDialogue, Player, [16, 1], [17, 6], Leif, [Wind, Fortify, Rescue], 7, False, [$00, $00, $00, $00]
+		UNIT GunterDialogue, Player, [16, 1], [17, 6], Leif, [Tornado, Fortify, Rescue], 5, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/BF8B

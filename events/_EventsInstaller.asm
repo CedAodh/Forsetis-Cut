@@ -198,6 +198,8 @@
 	.include "Chapter2xData.event"
 	.include "Chapter2Data.event"
 	.include "Chapter2xWorldMap.event"
+	.include "Chapter14WorldMap.event"
+	.include "Chapter14xWorldMap.event"
 .here
 
 * = $520000

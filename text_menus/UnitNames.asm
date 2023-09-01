@@ -850,19 +850,19 @@ _LeonsterName
 
 ; Xavier's adjutants. Names are a Lil' Manster QoL addition, and act as mini-credits.
 _Leonsterite1Name
-	.text "(Marlon "
+	.text "Cole"
 	.word $0000
 	
 _Leonsterite2Name
-	.text "Frank "
+	.text "(Marlon "
 	.word $0000
 	
 _Leonsterite3Name
-	.text "Charles "
+	.text "Ray "
 	.word $0000
 	
 _Leonsterite4Name
-	.text "Dirk"
+	.text "Kevin "
 	.word $0000
 	
 _Leonsterite5Name
@@ -870,15 +870,15 @@ _Leonsterite5Name
 	.word $0000
 	
 _Leonsterite6Name
-	.text "Ed]ward "
-	.word $0000
-	
-_Leonsterite7Name
 	.text "Andre]w "
 	.word $0000
 	
+_Leonsterite7Name
+	.text "Lia[m "
+	.word $0000
+	
 _Leonsterite8Name
-	.text "+Nicholas "
+	.text "Isaiah"
 	.word $0000
 
 _ArionName
@@ -903,19 +903,19 @@ _CivilianName
 	
 ; Xavier hostages. Names are a Lil' Manster QoL addition, and act as mini-credits.
 _Civilian1Name
-	.text "(Mia"
+	.text "Cynthia "
 	.word $0000
 	
 _Civilian2Name
-	.text "Frieda"
+	.text "(Mia"
 	.word $0000
 	
 _Civilian3Name
-	.text "Chris "
+	.text "Reese "
 	.word $0000
 	
 _Civilian4Name
-	.text "Daphnée "
+	.text "Katherine "
 	.word $0000
 	
 _Civilian5Name
@@ -923,15 +923,15 @@ _Civilian5Name
 	.word $0000
 	
 _Civilian6Name
-	.text "Edgar "
+	.text "Ada[m "
 	.word $0000
 	
 _Civilian7Name
-	.text "A[my"
+	.text "Lidia "
 	.word $0000
 	
 _Civilian8Name
-	.text "+Nira "
+	.text "Isabel"
 	.word $0000
 
 _ThiefName

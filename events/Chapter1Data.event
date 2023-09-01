@@ -18,7 +18,7 @@ eventChapter1Data ; B1/FB37
 	_DagdarUnitGroup ; B1/FBA1
 		UNIT Marty, Player, [1, 7], [1, 7], Eyvel, [SteelAxe], 1, False, [$00, $00, $00, $00]
 		UNIT Dagdar, Player, [1, 6], [1, 6], Eyvel, [Hammer, HandAxe], 6, False, [$00, $00, $00, $00]
-		UNIT Tanya, Player, [1, 5], [1, 5], Eyvel, [VeninBow, IronBow, ForsetiInfinite, Fragarach, Baldung, Tathlum, DoorKey], 1, False, [$00, $00, $00, $00]
+		UNIT Tanya, Player, [1, 5], [1, 5], Eyvel, [IronBow, DoorKey], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	_Opening1CameraCoordinates ; B1/FBDF

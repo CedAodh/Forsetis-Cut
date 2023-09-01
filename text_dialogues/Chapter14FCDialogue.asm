@@ -1175,3 +1175,60 @@ leifmeetsarion
 .byte WaitForA
 
 .byte EndText
+
+ch14wm1
+
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $013F ;laif
+.word $0B08 ;y then x
+.text "Having scraped by the window of opportunity,"
+.byte NewLine
+.text "Leif found himself secure within Tarrah's walls."
+.byte WaitForA
+.byte NewLine
+.text "Though the true struggle was yet to commence."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortraitalt
+.long $82937A
+.word $0001
+
+.byte EndText
+
+ch14wm2
+
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $0135 ;travant
+.word $0B08 ;y then x
+.text "Thracia's finest—including King Travant himself—"
+.byte WaitForA
+.byte NewLine
+.text "were acting on an imperial edict demanding that"
+.byte NewLine
+.text "the kingdom assist in Tarrah's destabilization."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortraitalt
+.long $82937A
+.word $0001
+
+.byte EndText
+
+ch14wm3
+
+.text "The odds were stacked against Tarrah's deliverer."
+.byte WaitForA
+.byte ScrollText
+.text "As walls crumble, soldiers roar, and bolts rain,"
+.byte NewLine
+.text "the city plays witness to a momentous battle"
+.byte WaitForA
+.byte NewLine
+.text "that stands to forever alter history"
+.byte NewLine
+.text "of the Thracian peninsula..."
+.byte WaitForA
+
+.byte EndText

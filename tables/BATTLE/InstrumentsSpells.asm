@@ -125,7 +125,7 @@ InstrumentsSilence		    = $25
 ; Light                 
 .byte InstrumentsLight       	; Light				STLight
 .byte InstrumentsNosferatu   	; Nosferatu			STNosferatu
-.byte InstrumentsLight       	; Aura				STJormungandr	vanilla:00
+.byte InstrumentsLight      	; Aura				STJormungandr	vanilla:00
 					    
 ; Dark                  
 .byte InstrumentsJormungandr 	; Jormungandr		STJormungandr

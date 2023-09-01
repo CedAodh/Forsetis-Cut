@@ -61,6 +61,9 @@ eventChapter18Events ; E7/8000
 		EVENT $0D, _MirandaLinoanTalk
 			CHECK_CHARS2 Miranda, Linoan
 		END_DEFINITION
+		EVENT $0E, _DalsinMishaTalk
+			CHECK_CHARS2 Dalsin, Misha
+		END_DEFINITION
 		EVENT $00, _XavierArmorDialogue1
 			CHECK_CHARS2 Civilian9, XavierArmor1
 		END_DEFINITION
@@ -341,7 +344,7 @@ eventChapter18Events ; E7/8000
 		DIALOGUE ch18xavierrecruitment
 		YIELD
 
-		STORE_BYTE aSelectedCharacterBuffer.LeadershipStars, 1
+		STORE_BYTE aSelectedCharacterBuffer.LeadershipStars, 2
 		STORE_BYTE aSelectedCharacterBuffer.Leader, Leif
 		CALL_ASM_SKIPPABLE $83A3BF, $0000
 		
@@ -369,7 +372,7 @@ eventChapter18Events ; E7/8000
 
 		STORE_WORD wEventEngineCharacterTarget, Xavier
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.LeadershipStars
-		STORE_WORD wEventEngineParameter2, 1
+		STORE_WORD wEventEngineParameter2, 2
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
 		SET_FLAG $06
@@ -388,6 +391,14 @@ eventChapter18Events ; E7/8000
 		YIELD
 		
 		DIALOGUE mirandalinoan
+		YIELD
+	END2
+	
+	_DalsinMishaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE dalsinmisha
 		YIELD
 	END2
 	
@@ -427,6 +438,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor1, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue2 ; E7/84F7
@@ -465,6 +478,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor2, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue3 ; E7/858B
@@ -503,6 +518,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor3, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue4 ; E7/861F
@@ -541,6 +558,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor4, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue5 ; E7/86B3
@@ -579,6 +598,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor5, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue6 ; E7/8747
@@ -617,6 +638,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor6, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue7 ; E7/87DB
@@ -655,6 +678,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor7, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue8 ; E7/886F
@@ -693,6 +718,8 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterBitsWord XavierArmor8, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierAIChange ; E7/8903
@@ -819,7 +846,7 @@ eventChapter18Events ; E7/8000
 		DIALOGUE ch18opening1
 		YIELD
 
-		MOVE_UNIT Xavier, [0, 0], [21, 6], 1, None
+		MOVE_UNIT Xavier, [0, 0], [21, 10], 1, None
 		YIELD_UNK
 
 		WAIT_MOVE

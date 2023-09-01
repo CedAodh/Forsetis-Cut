@@ -60,7 +60,7 @@ eventChapter17BEvents ; FD/C4D0
 
 	_TalkEventDefinitions ; FD/C5A2
 		EVENT $04, _ShannamDaisyTalk
-			CHECK_CHARS2 Leif, Nanna
+			CHECK_CHARS2 Shannam, Daisy
 		END_DEFINITION
 		EVENT $0D, _CallionMirandaTalk
 			CHECK_CHARS2 Callion, Miranda
