@@ -292,3 +292,20 @@ finneyvel
 .byte WaitForA
 
 .byte EndText
+
+leifmutter
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "Rrgh..."
+.byte NewLine
+.text "This is taking longer than I had hoped."
+.byte WaitForA
+.byte NewLine
+.text "We'll have to continue on to Munster"
+.byte NewLine
+.text "immediately after things have calmed down."
+.byte WaitForA
+
+.byte EndText

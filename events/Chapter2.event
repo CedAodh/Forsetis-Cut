@@ -26,6 +26,10 @@ eventChapter2Events ; 99/81B4
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
+		EVENT $0A, _LeifHasPlacesToBe
+			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/A8B1
@@ -110,6 +114,16 @@ eventChapter2Events ; 99/81B4
 
 	_FinnEyvelTalk
 		macroDialogueHouse finneyvel
+	END2
+	
+	_LeifHasPlacesToBe
+		PLAY_SOUND_WORD $00F7
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE leifmutter
+		YIELD
 	END2
 
 	_RonanHouseVisit ; 99/8324

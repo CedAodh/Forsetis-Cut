@@ -43,7 +43,7 @@ _ShortswordDesc
 _LongswordDesc
 .text "A standard s]word "
 .word $0000
-.text "with decent strength"
+.text "of decent strength"
 .word $0000
 .word $0000
 
@@ -107,7 +107,7 @@ _ShortLanceDesc
 _LongLanceDesc
 .text "A standard lance"
 .word $0000
-.text "with decent strength"
+.text "of decent strength"
 .word $0000
 .word $0000
 
@@ -187,7 +187,7 @@ _ShortbowDesc
 _LongbowDesc
 .text "A standard bo12 "
 .word $0000
-.text "with decent strength"
+.text "of decent strength"
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -821,15 +821,11 @@ _JormungandDesc
 .word $0000
 .text "Poisons the target"
 .word $0000
-.text "on hit if used"
-.word $0000
-.text "by ene[my [mages"
+.text "on hit"
 .word $0000
 .word $0000
 
 _HelDesc
-.text "{Lock}Loptrians "
-.word $0000
 .text "Reduces target's"
 .word $0000
 .text "{H}{P} to {1}"
@@ -877,9 +873,9 @@ _BeoBladeDesc
 .word $0000
 .text "A novel blade "
 .word $0000
-.text "Gives Accost and"
+.text "Gives Adept and "
 .word $0000
-.text ")Wrath"
+.text "Accost"
 .word $0000
 .word $0000
 
@@ -918,7 +914,9 @@ _LoptrianFangDesc
 
 
 _BraveLanceDesc
-.text "{Lock}Finn, {BRA1}{BRA2}"
+.text "{Lock}Lance Knights "
+.word $0000
+.text "{BRA1}{BRA2}"
 .word $0000
 .text "Gives {+}{1}{0} Lck"
 .word $0000
@@ -945,7 +943,7 @@ _VougeDesc
 _HammerneDesc
 .text "    Range     {blue1}"
 .word $0000
-.text "{Lock}Safy"
+.text "{Lock}Safy, Linoan"
 .word $0000
 .text "Restore an ally's "
 .word $0000
@@ -970,8 +968,6 @@ _ThiefDesc
 
 _UnlockDesc
 .text "    Range {blue1}{blue-}{INF1}{INF2}"
-.word $0000
-.text "{Lock}Tina"
 .word $0000
 .text "Opens a door or "
 .word $0000
@@ -1002,7 +998,7 @@ _DireThunderDesc
 
 
 _GrafcaliburDesc
-.text "{Lock}Asbel "
+.text "{Lock}Asbel, Gunnar "
 .word $0000
 .text "High critical rate"
 .word $0000

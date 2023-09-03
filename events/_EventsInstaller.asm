@@ -12,8 +12,8 @@
 * = $0B805A
 .logical $97805A
 	; .include "Chapter2x.event"
-	; .include "Chapter8x.event"
-	.include "Chapter24x.event"
+	.include "Chapter8x.event"
+	; .include "Chapter24x.event"
 .here
 
 * = $0C8024
@@ -158,7 +158,6 @@
 	.include "Chapter6.event"
 	.include "Chapter7.event"
 	.include "Chapter8.event"
-	.include "Chapter8x.event"
 	.include "Chapter9.event"
 	.include "Chapter10.event"
 	.include "Chapter11.event"
@@ -186,6 +185,7 @@
 * = $500000
 	.logical lorom($500000, 1)
 	.include "Chapter4.event"
+	.include "Chapter24x.event"
 	.include "Chapter14.event"
 	.include "Chapter21.event"
 	.include "Chapter21x.event"

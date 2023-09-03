@@ -157,9 +157,9 @@ ronanlifis
 	.text "of giving you another chance."
 	.byte WaitForA
 	.byte ScrollText
-	.text "But here's a little warning:"
+	.text "But here's a little warning: if you ever"
 	.byte NewLine
-	.text "If you ever come between me and an enemy target,"
+	.text "come between me and an enemy target,"
 	.byte NewLine
 	.text "I won't hesitate to kill two birds with one stone."
 	.byte WaitForA

@@ -965,6 +965,8 @@ Restore an ally's
 staff or ]weapon to
 pristine condition
 
+Asbel, Gunnar 
+
 Tina, Steals a
 ]weapon, staff or
 ite[m fro[m a target

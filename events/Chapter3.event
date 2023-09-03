@@ -518,6 +518,8 @@ eventChapter3Events ; 8C/E435
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
 		+
+		
+		YIELD
 
 		MOVE_UNIT ThraciaBishop, [11, 28], [1, 27], 1, None
 		YIELD_UNK

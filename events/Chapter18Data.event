@@ -55,7 +55,7 @@ eventChapter18Data ; B1/9CE8
 		UNIT Civilian14, NPC, [8, 10], [8, 10], Ishtar, [], 1, False, [$02, $1F, $00, $00]
 		UNIT Civilian15, NPC, [7, 10], [7, 10], Ishtar, [], 1, False, [$02, $20, $00, $00]
 		UNIT Civilian16, NPC, [5, 8], [5, 8], Ishtar, [], 1, False, [$02, $21, $00, $00]
-		UNIT Xavier, Enemy, [21, 10], [21, 10], Xavier, [MasterAxe, SilverAxe, KillerBow, Vulnerary], 10, False, [$14, $15, $00, $00]
+		UNIT Xavier, Enemy, [21, 10], [21, 10], Xavier, [MasterAxe, SilverAxe, KillerBow, Vulnerary], 10, False, [$14, $03, $00, $00]
 	UNIT
 
 	_SoldierReinforcementsCameraCoordinates ; B1/A0C0

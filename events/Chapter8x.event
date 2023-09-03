@@ -8,7 +8,6 @@ eventChapter8xEvents ; 97/844D
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 97/845A
-		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION

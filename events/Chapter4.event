@@ -429,15 +429,39 @@ eventChapter4Events ; 99/8778
 	END2
 	
 	_LeifLifisTalk
-		macroDialogueHouse leiflifis
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE leiflifis
+		YIELD
 	END2
 	
 	_LeifDaisyTalk
-		macroDialogueHouse leifdaisy
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE leifdaisy
+		YIELD
 	END2
 	
 	_LeifBrightonTalk
-		macroDialogueHouse leifbrighton
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE leifbrighton
+		YIELD
 	END2
 	
 	_LifisDialogue ; 99/8F07
