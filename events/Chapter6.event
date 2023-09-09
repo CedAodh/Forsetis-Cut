@@ -497,6 +497,13 @@ eventChapter6Events ; 99/A346
 		YIELD
 
 		macroScriptedWarpStaff Raydrik, Galzus, [8, 3]
+		
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.MaxHP, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.CurrentHP, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Magic, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Speed, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Luck, 2
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Defense, 1
 	END2
 
 	_KnightReinforcements ; 99/AE6D

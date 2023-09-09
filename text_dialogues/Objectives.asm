@@ -174,7 +174,7 @@ objectivech20
 .byte EndTextNoPortraitFade
 
 objectivech20_2
-	.text "AND defeat Bharat"
+	.text "AND defeat Baráth"
 .byte EndTextNoPortraitFade
 
 

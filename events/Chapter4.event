@@ -14,6 +14,11 @@ eventChapter4Events ; 99/8778
 			CMP_WORD wCurrentPhase, Player
 			CMP_WORD wCurrentTurn, 1
 		END_DEFINITION
+		EVENT $00, _DaisyScroll
+			CMP_WORD wCurrentPhase, Player
+			RUN_ASM _Chapter2xCheck
+			CMP_WORD wCurrentTurn, 1
+		END_DEFINITION
 		EVENT FlagAlwaysZero, _DetectedCheck
 			CMP_WORD wCurrentPhase, Enemy
 			TEST_FLAG_UNSET $07
@@ -229,6 +234,32 @@ eventChapter4Events ; 99/8778
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
 	END2
+	
+	_DaisyScroll
+		STORE_WORD wEventEngineCharacterTarget, Daisy
+		STORE_WORD wEventEngineParameter1, HezulsScroll
+		CALL_ASM_LOOP rlASMCGiveUnitItemSilent, $0000
+	END2
+	
+	_Chapter2xCheck ; 9993F5
+
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		lda #Chapter2x
+		sta wEventEngineParameter1,b
+		jsl rlASMCGetChapterTurncount
+		lda wEventEngineParameter1,b
+		beq +
+
+		clc
+		rtl
+
+		+
+		sec
+		rtl
 	
 	_DetectedCheck ; 99/89B4
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2

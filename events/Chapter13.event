@@ -450,7 +450,7 @@ eventChapter13Events ; 99/E392
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
 
-		STORE_WORD wEventEngineParameter1, Hammer
+		STORE_WORD wEventEngineParameter1, Thoron
 		PAUSE_SKIPPABLE 10
 		YIELD
 

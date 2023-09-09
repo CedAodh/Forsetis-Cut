@@ -1115,7 +1115,7 @@ _ResistanceName
 	.word $0000
 
 _BharatName
-	.text "Bharat"
+	.text "Baráth"
 	.word $0000
 
 _UlsterName

@@ -172,6 +172,15 @@ eventChapter2xEvents ; 97/805A
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
 
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.MaxHP, 2
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.CurrentHP, 2
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.Strength, 1
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.Skill, 2
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.Speed, 1
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.Luck, 1
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.Defense, 2
+		macroSubtractCharacterByte Shiva, structCharacterDataRAM.Movement, 1
+
 		PLAY_SOUND_WORD $00E7
 
 		SCROLL_CAMERA_SPEED [9, 11], 3

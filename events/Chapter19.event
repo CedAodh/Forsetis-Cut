@@ -483,7 +483,7 @@ eventChapter19Events ; FD/CBB9
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE leifamalda
 		YIELD
 	END2
 	
@@ -491,7 +491,7 @@ eventChapter19Events ; FD/CBB9
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE placeholder
+		DIALOGUE leifconomor
 		YIELD
 	END2
 
@@ -1063,6 +1063,8 @@ eventChapter19Events ; FD/CBB9
 		YIELD
 
 		+
+		
+		UNSET_FLAG FlagNoHelpFromOltoph
 	END2
 
 	_RaydrikMovestring ; FD/D838

@@ -38,6 +38,10 @@ eventChapter4xEvents ; FD/85C5
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
+		EVENT FlagAlwaysZero, _AsbelRemoveImmortality
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 5
+		END_DEFINITION
 		EVENT $07, _CedAISwitch
 			RUN_ASM _rlNPCCheck
 			CMP_WORD wCurrentPhase, NPC
@@ -252,10 +256,10 @@ eventChapter4xEvents ; FD/85C5
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI1, $00
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI4, $00
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI2, $00
-		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.Unknown3E, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI2, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.Unknown3E, $00
 
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI4, $00
@@ -333,7 +337,10 @@ eventChapter4xEvents ; FD/85C5
 		MS_MOVE_UP
 		MS_MOVE_UP
 	MS_END
-
+	
+	_AsbelRemoveImmortality
+		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
+	END1
 	_AsbelLeifTalk ; FD/8DCE
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
@@ -345,8 +352,7 @@ eventChapter4xEvents ; FD/85C5
 		DIALOGUE ch4xasbelleiftalk
 		YIELD
 		
-		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
-		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
+		STORE_BYTE aSelectedCharacterBuffer.Leader, Finn
 
 		CALL_ASM_SKIPPABLE $83A3BF, $0000
 	END2
@@ -365,7 +371,6 @@ eventChapter4xEvents ; FD/85C5
 		macroConvertToPlayerAllegiance Asbel
 
 		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
-		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
 	END2
 
 	_KarinCedTalk ; FD/8E18

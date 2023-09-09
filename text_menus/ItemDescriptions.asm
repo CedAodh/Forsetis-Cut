@@ -233,11 +233,9 @@ _ThunderDesc
 .word $0000
 
 _ThoronDesc
-.text "Superior"
+.text "Advanced thunder"
 .word $0000
-.text "thunder [magic"
-.word $0000
-.text "High critical rate"
+.text "[magic"
 .word $0000
 .word $0000
 
@@ -257,9 +255,9 @@ _WindDesc
 .word $0000
 
 _TornadoDesc
-.text "Superior"
+.text "Advanced ]wind"
 .word $0000
-.text "]wind [magic"
+.text "[magic"
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -268,8 +266,6 @@ _TornadoDesc
 
 _LightDesc
 .text "Basic light [magic"
-.word $0000
-.text "High critical rate"
 .word $0000
 .word $0000
 
@@ -484,27 +480,33 @@ _IronBallistaDesc
 
 
 _FlameSwordDesc
-.text "Casts fire [magic "
+.text "An enchanted s]word "
 .word $0000
-.text "at range"
+.text "that casts fire "
+.word $0000
+.text "[magic at range "
 .word $0000
 .text "Gives {+}{5} (Mag "
 .word $0000
 .word $0000
 
 _LightningSwordDesc
-.text "Casts thunder [magic"
+.text "An enchanted s]word "
 .word $0000
-.text "at range"
+.text "that casts thunder"
+.word $0000
+.text "[magic at range "
 .word $0000
 .text "Gives {+}{5} Skl"
 .word $0000
 .word $0000
 
 _WindSwordDesc
-.text "Casts ]wind [magic"
+.text "An enchanted s]word "
 .word $0000
-.text "at range"
+.text "that casts ]wind"
+.word $0000
+.text "[magic at range "
 .word $0000
 .text "Gives {+}{5} Spd"
 .word $0000
@@ -810,7 +812,9 @@ _DevilAxeDesc
 .word $0000
 
 _NosferatuDesc
-.text "Potent light [magic "
+.text "Advanced light"
+.word $0000
+.text "[magic"
 .word $0000
 .text "Drains target's {H}{P}"
 .word $0000
@@ -1261,8 +1265,6 @@ _HezulsScrollDesc
 .word $0000
 
 _NjorunsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}        {+}{1}{0}{%}"
@@ -1278,8 +1280,6 @@ _NjorunsScrollDesc
 .word $0000
 
 _DainnsScrollDesc
-.text "Blocks criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}          {+}{5}{%}"
@@ -1566,15 +1566,21 @@ _FragarachDesc
 
 
 _AuraDesc
-.text "Superior"
+.text "Pro[minent light"
 .word $0000
-.text "light [magic"
+.text "[magic"
+.word $0000
+.text "Gives (Miracle and"
+.word $0000
+.text "+Nihil"
 .word $0000
 .word $0000
 
 
 _BolganoneDesc
-.text "Advanced fire [magic"
+.text "Advanced fire "
+.word $0000
+.text "[magic"
 .word $0000
 .word $0000
 

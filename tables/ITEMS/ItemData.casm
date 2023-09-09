@@ -1797,7 +1797,7 @@
 		TathlumDescription				= <>item_descs._TathlumDesc
 		TathlumUseEffect				= None
 		TathlumWeaponEffect				= None
-		TathlumSkills2					= Skill2Miracle
+		TathlumSkills2					= None
 		TathlumSkills3					= Skill3Wrath
 		TathlumTraits					= TraitWeapon | TraitUnsellable
 		TathlumIcon						= $9F
@@ -1851,7 +1851,7 @@
 		ThoronAlternateType				= None
 		ThoronMight						= 13
 		ThoronAccuracy					= 75
-		ThoronWeight					= 5
+		ThoronWeight					= 4
 		ThoronDurability				= 18
 		ThoronCritrate					= 20
 		ThoronMinRange					= 1
@@ -2010,7 +2010,7 @@
 		NosferatuCritrate				= 0
 		NosferatuMinRange				= 1
 		NosferatuMaxRange				= 2
-		NosferatuWeaponRank				= RankB
+		NosferatuWeaponRank				= RankC
 		NosferatuEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		NosferatuStatBonus				= aNoItemBonuses
 		NosferatuCost					= 6400
@@ -2026,7 +2026,7 @@
 		AuraType						= TypeLight
 		AuraAlternateType				= None
 		AuraMight						= 18
-		AuraAccuracy					= 90
+		AuraAccuracy					= 95
 		AuraWeight						= 6
 		AuraDurability					= 50
 		AuraCritrate					= 0
@@ -2039,9 +2039,9 @@
 		AuraDescription					= <>item_descs._AuraDesc
 		AuraUseEffect					= None
 		AuraWeaponEffect				= None
-		AuraSkills2						= None
+		AuraSkills2						= Skill2Miracle | Skill2Nihil
 		AuraSkills3						= None
-		AuraTraits						= TraitWeapon | TraitTome
+		AuraTraits						= TraitWeapon | TraitTome | TraitUnsellable
 		AuraIcon						= $5B
 
 	Jormungand							= 93
@@ -2657,7 +2657,7 @@
 		UnlockWeaponEffect				= None
 		UnlockSkills2					= None
 		UnlockSkills3					= None
-		UnlockTraits					= TraitStaff | TraitUnsellable
+		UnlockTraits					= TraitStaff
 		UnlockIcon						= $77
 
 	Ensorcel							= 121
@@ -3228,7 +3228,7 @@
 		OdsScrollUseEffect				= None
 		OdsScrollWeaponEffect			= None
 		OdsScrollSkills2				= None
-		OdsScrollSkills3				= None
+		OdsScrollSkills3				= Skill3Scroll
 		OdsScrollTraits					= TraitUnbreakable | TraitUnsellable
 		OdsScrollIcon					= $91
 
@@ -3250,7 +3250,7 @@
 		BaldrsScrollUseEffect			= None
 		BaldrsScrollWeaponEffect		= None
 		BaldrsScrollSkills2				= None
-		BaldrsScrollSkills3				= None
+		BaldrsScrollSkills3				= Skill3Scroll
 		BaldrsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		BaldrsScrollIcon				= $92
 
@@ -3272,7 +3272,7 @@
 		HezulsScrollUseEffect			= None
 		HezulsScrollWeaponEffect		= None
 		HezulsScrollSkills2				= None
-		HezulsScrollSkills3				= None
+		HezulsScrollSkills3				= Skill3Scroll
 		HezulsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		HezulsScrollIcon				= $93
 
@@ -3338,7 +3338,7 @@
 		NalsScrollUseEffect				= None
 		NalsScrollWeaponEffect			= None
 		NalsScrollSkills2				= None
-		NalsScrollSkills3				= None
+		NalsScrollSkills3				= Skill3Scroll
 		NalsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		NalsScrollIcon					= $96
 
@@ -3360,7 +3360,7 @@
 		UllursScrollUseEffect			= None
 		UllursScrollWeaponEffect		= None
 		UllursScrollSkills2				= None
-		UllursScrollSkills3				= None
+		UllursScrollSkills3				= Skill3Scroll
 		UllursScrollTraits				= TraitUnbreakable | TraitUnsellable
 		UllursScrollIcon				= $97
 
@@ -3382,7 +3382,7 @@
 		ThrudsScrollUseEffect			= None
 		ThrudsScrollWeaponEffect		= None
 		ThrudsScrollSkills2				= None
-		ThrudsScrollSkills3				= None
+		ThrudsScrollSkills3				= Skill3Scroll
 		ThrudsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		ThrudsScrollIcon				= $98
 
@@ -3404,7 +3404,7 @@
 		FjalarsScrollUseEffect			= None
 		FjalarsScrollWeaponEffect		= None
 		FjalarsScrollSkills2			= None
-		FjalarsScrollSkills3			= None
+		FjalarsScrollSkills3			= Skill3Scroll
 		FjalarsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		FjalarsScrollIcon				= $99
 
@@ -3426,7 +3426,7 @@
 		CedsScrollUseEffect				= None
 		CedsScrollWeaponEffect			= None
 		CedsScrollSkills2				= None
-		CedsScrollSkills3				= None
+		CedsScrollSkills3				= Skill3Scroll
 		CedsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		CedsScrollIcon					= $9A
 
@@ -3448,7 +3448,7 @@
 		BragisScrollUseEffect			= None
 		BragisScrollWeaponEffect		= None
 		BragisScrollSkills2				= None
-		BragisScrollSkills3				= None
+		BragisScrollSkills3				= Skill3Scroll
 		BragisScrollTraits				= TraitUnbreakable | TraitUnsellable
 		BragisScrollIcon				= $9B
 
@@ -3470,7 +3470,7 @@
 		HeimsScrollUseEffect			= None
 		HeimsScrollWeaponEffect			= None
 		HeimsScrollSkills2				= None
-		HeimsScrollSkills3				= None
+		HeimsScrollSkills3				= Skill3Scroll
 		HeimsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		HeimsScrollIcon					= $9C
 

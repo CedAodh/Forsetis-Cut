@@ -16,7 +16,7 @@ eventChapter4Data ; B1/EF95
 	.byte 8, 7
 
 	_PlayerGroup2 ; B1/EFFF
-		UNIT Fergus, Player, [6, 26], [6, 26], Finn, [], 3, False, [$00, $00, $00, $30]
+		UNIT Fergus, Player, [6, 26], [6, 26], Finn, [], 5, False, [$00, $00, $00, $30]
 		UNIT Karin, Player, [8, 28], [8, 28], Finn, [], 1, False, [$00, $00, $00, $00]
 	UNIT
 

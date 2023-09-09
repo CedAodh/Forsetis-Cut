@@ -161,6 +161,10 @@ eventChapter20Data ; B1/9194
 	_ReinhardtGroup ; B1/980E
 		UNIT Reinhardt, Enemy, [1, 28], [14, 29], Reinhardt, [], 2, False, [$00, $00, $00, $00]
 	UNIT
+	
+	_WolfeGroup
+		UNIT Wolfe, Enemy, [28, 3], [28, 3], Bharat, [MasterSword, Vulnerary], 20, True, [$00, $00, $00, $00]
+	UNIT
 
 	_StartingPositions ; B1/9824
 		.byte 3, 6

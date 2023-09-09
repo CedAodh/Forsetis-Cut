@@ -5,8 +5,8 @@ eventChapter5Data ; B1/E685
 	;	.byte 8, 16
 
 	_RaydrikVeldGroup ; B1/E687
-		UNIT Raydrik, Enemy, [8, 16], [8, 16], Raydrik, [LoptrianFang], 8, False, [$01, $03, $00, $00]
-		UNIT Veld, Enemy, [8, 15], [8, 15], Veld, [Thokk, Petrify, Hel], 20, False, [$02, $03, $00, $00]
+		UNIT Raydrik, Enemy, [8, 16], [8, 16], Raydrik, [MasterSword], 15, False, [$01, $03, $00, $00]
+		UNIT Veld, Enemy, [8, 15], [8, 15], Veld, [Jormungand, Petrify], 18, False, [$02, $03, $00, $00]
 	UNIT
 
 	_NannaCameraCoordinates ; B1/E6B1
@@ -125,7 +125,7 @@ eventChapter5Data ; B1/E685
 	;	.byte 16, 14
 
 	_GalzusGroup ; B1/EA3B
-		UNIT Galzus, Enemy, [15, 9], [15, 9], Raydrik, [MasterSword, Vulnerary], 19, False, [$00, $00, $00, $00]
+		UNIT Galzus, Enemy, [15, 9], [15, 9], Raydrik, [MasterSword, Vulnerary], 17, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates13 ; B1/EA51

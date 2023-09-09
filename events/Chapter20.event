@@ -899,6 +899,21 @@ eventChapter20Events ; FD/D942
 
 		DIALOGUE ch20opening2
 		YIELD
+		
+		TEST_FLAG_SET FlagNoHelpFromOltoph
+		JUMP_TRUE +
+		
+		LOAD1 eventChapter20Data._WolfeGroup
+		WAIT_MOVE
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [28, 3], 4
+		YIELD
+		
+		DIALOGUE wolfefurious
+		YIELD
+		
+		+
 
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32

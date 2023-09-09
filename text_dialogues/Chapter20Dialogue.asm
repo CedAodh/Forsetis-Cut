@@ -34,7 +34,7 @@ ch20opening1
 .byte Left_slot
 .word LoadPortrait
 .word reinhardt_portrait
-.text "How goes the war, Lord Bharat?"
+.text "How goes the war, Lord Baráth?"
 .byte WaitForA
 
 .byte Right_slot
@@ -664,7 +664,7 @@ ch20wm1
 .text "...Half a year has passed."
 .byte WaitForA
 .byte ScrollText
-.text "The army of House Friege, led by Bharat, has"
+.text "The army of House Friege, led by Baráth, has"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $007E ;TF?rururu

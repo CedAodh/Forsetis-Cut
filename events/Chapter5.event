@@ -592,6 +592,14 @@ eventChapter5Events ; 99/9246
 		YIELD
 
 		macroSetCharacterByte Galzus, structCharacterDataRAM.MovementStars, 0
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.MaxHP, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.CurrentHP, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Magic, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Speed, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Luck, 2
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Defense, 1
+		
+		
 
 		JUMP _ArenaEnemyCheck
 
@@ -690,6 +698,14 @@ eventChapter5Events ; 99/9246
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter5Data._RaydrikVeldGroup
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
+
+		macroSubtractCharacterByte Veld, structCharacterDataRAM.MaxHP, 5
+		macroSubtractCharacterByte Veld, structCharacterDataRAM.CurrentHP, 5
+		macroSubtractCharacterByte Veld, structCharacterDataRAM.Strength, 1
+		macroSubtractCharacterByte Veld, structCharacterDataRAM.Skill, 1
+		macroSubtractCharacterByte Veld, structCharacterDataRAM.Speed, 2
+		macroSubtractCharacterByte Veld, structCharacterDataRAM.Luck, 1
+		macroSubtractCharacterByte Veld, structCharacterDataRAM.Defense, 1
 
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter5Data._BandoleGroup
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
@@ -810,6 +826,9 @@ eventChapter5Events ; 99/9246
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
 		+
+		
+		STORE_LONG lEventEngineLongParameter, velddislikesraydrik
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
 		YIELD
 

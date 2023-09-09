@@ -27,7 +27,7 @@ eventChapter2Events ; 99/81B4
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $0A, _LeifHasPlacesToBe
-			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentTurn, 16
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY

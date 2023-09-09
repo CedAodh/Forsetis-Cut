@@ -921,7 +921,7 @@ ch15opening1
 .byte NewLine
 .text "and never returning!"
 .byte NewLine
-.text "Hell, the locals even call it the “Stray Forest!”"
+.text "Hell, the locals call it the “Wayward Forest!”"
 .byte WaitForA
 
 .byte Left_slot
@@ -1105,7 +1105,7 @@ ch15rightaugustus
 .byte NewLine
 .text "woodlands of Millefeuille Forest, better"
 .byte NewLine
-.text "known as the infamous “Stray Forest.”"
+.text "known as the infamous “Wayward Forest.”"
 .byte WaitForA
 .byte ScrollText
 .text "We would encounter little resistance,"
@@ -1234,7 +1234,7 @@ ch15closing
 .byte NewLine
 .text "to the south of Leonster. Be warned: there's"
 .byte NewLine
-.text "a reason it has the nickname “Stray Forest.”"
+.text "a reason it has the nickname “Wayward Forest.”"
 .byte WaitForA
 .byte ScrollText
 .text "The second is Nordrhein, the coastline"

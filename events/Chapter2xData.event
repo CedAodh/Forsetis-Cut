@@ -6,7 +6,7 @@ eventChapter2xData ; B1/F66D
 
 	_LifisShivaGroup ; B1/F66F
 		UNIT Lifis, Enemy, [23, 2], [23, 2], Lifis, [HezulsScroll, Lockpick], 4, True, [$01, $03, $00, $80]
-		UNIT Shiva, Enemy, [25, 4], [25, 4], Lifis, [KillingEdge, Vulnerary], 8, False, [$02, $03, $00, $00]
+		UNIT Shiva, Enemy, [25, 4], [25, 4], Lifis, [KillingEdge, Vulnerary], 6, False, [$02, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/F699

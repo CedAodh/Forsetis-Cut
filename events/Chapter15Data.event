@@ -81,11 +81,11 @@ eventChapter15Data ; B1/B3B3
 
 	_RalphAmaldaGroup ; B1/B679
 		UNIT Amalda, NPC, [19, 10], [19, 10], Amalda, [MasterSword, Recover, Vulnerary], 6, False, [$00, $03, $02, $80]
-		UNIT Ralph, NPC, [18, 14], [17, 9], Ralph, [IronBlade, HandAxe], 3, False, [$00, $03, $02, $80]
+		UNIT Ralph, NPC, [18, 14], [17, 9], Ralph, [IronBlade, HandAxe], 1, False, [$00, $03, $02, $80]
 	UNIT
 	
 	_AsaelloGroup ; B1/B679
-		UNIT Asaello, NPC, [18, 14], [18, 14], Ralph, [SilverBow, ForsetiInfinite], 4, False, [$00, $03, $02, $00]
+		UNIT Asaello, NPC, [18, 14], [18, 14], Ralph, [SilverBow, ForsetiInfinite], 3, False, [$00, $03, $02, $00]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/B6A3

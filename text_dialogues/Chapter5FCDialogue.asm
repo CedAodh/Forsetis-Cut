@@ -214,3 +214,115 @@ galzusmia
 .byte WaitForA
 
 .byte EndText
+
+velddislikesraydrik
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.word PlayMusic
+.byte $3C
+
+.word LoadPortrait
+.word veld_portrait
+.text "Raydrik."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Your Eminence?"
+.byte NewLine
+.text "What do you require?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Here. This is for you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What a magnificent blade!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Magnificent indeed..."
+.byte WaitForA
+.byte NewLine
+.text "It is known as the Loptrian Fang—a blade"
+.byte NewLine
+.text "imbued with Loptous' own magic and protection"
+.byte NewLine
+.text "during the reign of the Loptrian Empire."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It is a fine gift, Your Eminence."
+.byte NewLine
+.text "...Upon closer examination, I'd say it"
+.byte NewLine
+.text "complements me quite well, wouldn't you agree?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hmm..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Raydrik, I should have you know that this “gift”"
+.byte NewLine
+.text "is not to be taken as a representation of any"
+.byte NewLine
+.text "merit you think you may have accrued with us."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I-I do not take your meaning."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Originally, the Loptrian Fang was to be"
+.byte NewLine
+.text "bestowed upon Marquess Gustav, he who"
+.byte NewLine
+.text "rules over Leonster, as you well know."
+.byte WaitForA
+.byte ScrollText
+.text "However, in spite of your local and...unique"
+.byte NewLine
+.text "current opposition, the Loptr Church has"
+.byte NewLine
+.text "seen fit for it to be granted to you instead."
+.byte WaitForA
+.byte ScrollText
+.text "I trust you will make prudent use of it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Without a doubt."
+.byte WaitForA
+.byte NewLine
+.text "Once the rebels lay eyes upon my weapon and"
+.byte NewLine
+.text "see just what they're up against, their morale"
+.byte NewLine
+.text "shall plummet in short order. Heheheh..."
+.byte WaitForA
+
+.byte EndText

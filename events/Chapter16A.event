@@ -78,14 +78,24 @@ eventChapter16AEvents ; FD/B120
 		EVENT $0A, _KarinIliosTalk
 			CHECK_CHARS2 Karin, Ilios
 			RUN_ASM rlCheckOlwenDeadOrUnrecruited
+			TEST_FLAG_UNSET $17
 		END_DEFINITION
 		EVENT $13, _LeifIliosTalk
 			CHECK_CHARS2 Ilios, Leif
 			TEST_FLAG_SET $0A
 		END_DEFINITION
+		EVENT $17, _LeifIliosRecruitment
+			CHECK_CHARS2 Leif, Ilios
+			RUN_ASM rlCheckOlwenDeadOrUnrecruited
+			TEST_FLAG_UNSET $0A
+		END_DEFINITION
 		EVENT $14, _FredIliosTalk
-			CHECK_CHARS2 Fred, Ilios
-			TEST_FLAG_SET $0A
+			CHECK_CHARS2 Ilios, Fred
+			TEST_FLAG_SET $17
+		END_DEFINITION	
+		EVENT $14, _FredIliosTalk
+			CHECK_CHARS2 Ilios, Fred
+			TEST_FLAG_SET $0A	
 		END_DEFINITION
 		EVENT $11, _DeanLinoanTalk
 			CHECK_CHARS2 Dean, Linoan
@@ -292,6 +302,38 @@ eventChapter16AEvents ; FD/B120
 
 		SET_FLAG $07
 	END2
+	
+	_LeifIliosRecruitment
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		STORE_WORD wEventEngineCharacterTarget, Olwen
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+
+		CALL_ASM_LOOP rlASMCClearOlwenWinsLosses, $0000
+
+		DIALOGUE leifrecruitsilios
+		YIELD
+
+		STORE_WORD wEventEngineCharacterTarget, Ilios
+		CALL_ASM_LOOP rlASMCChangeAllegianceToPlayer, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Ilios
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineParameter2, Leif
+		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Ilios
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.LeadershipStars
+		STORE_WORD wEventEngineParameter2, 0
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		SET_FLAG $07
+	END2
 
 	_OlwenKempfTalk ; FD/B3F4
 		PLAY_SOUND_WORD $00E0
@@ -317,7 +359,7 @@ eventChapter16AEvents ; FD/B120
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		DIALOGUE fredilios
+		DIALOGUE fredmockilios
 		YIELD
 	END2
 	

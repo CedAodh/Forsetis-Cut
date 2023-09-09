@@ -129,12 +129,297 @@ ishtarreinhardt
 .byte ScrollText
 .text "You need not worry, milady."
 .byte NewLine
-.text "Lord Bharat is set to arrive soon,"
+.text "Lord Baráth is set to arrive soon,"
 .byte NewLine
 .text "and he will take up the charge himself."
 .byte WaitForA
 .byte ScrollText
 .text "Now then, let us be off!"
+.byte WaitForA
+
+.byte EndText
+
+leifamalda
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word amalda_portrait
+.text "Prince Leif?"
+.byte NewLine
+.text "Forgive my intrusion."
+.byte NewLine
+.text "I am Amalda, knight of House Friege."
+.byte WaitForA 
+
+.byte right_slot
+.text "Well met, Lady Amalda."
+.byte NewLine
+.text "May I ask what brings you before me?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Very well."
+.byte NewLine
+.text "For some time now, I've stood witness"
+.byte NewLine
+.text "to my homeland's vile misdeeds."
+.byte WaitForA
+.byte ScrollText
+.text "Only in this passing moment was I able to"
+.byte NewLine
+.text "summon the courage to turn my back on Friege."
+.byte WaitForA
+.byte ScrollText
+.text "I believe you are acquainted with Father Schroff."
+.byte NewLine
+.text "It was he who lent me guidance."
+.byte WaitForA
+.byte NewLine
+.text "As a result, I ask to take up arms at your side."
+.byte NewLine
+.text "Will you have me, milord?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Without a doubt."
+.byte NewLine
+.text "A beloved general such as yourself would be"
+.byte NewLine
+.text "a most welcome addition to our ranks."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "“Beloved”?"
+.byte NewLine
+.text "I...do not know what you mean by that."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, as I see it, your troops remain"
+.byte NewLine
+.text "steadfast and loyal to you even after"
+.byte NewLine
+.text "you turned to the enemy."
+.byte WaitForA
+.byte ScrollText
+.text "I have never seen something like that"
+.byte NewLine
+.text "happen before. You must truly be worthy"
+.byte NewLine
+.text "of admiration and reverence."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You're telling me they...they also"
+.byte NewLine
+.text "turned against their homeland?"
+.byte NewLine
+.text "...Ah, I see them out there now."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You hadn't realized?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I... No. I had no idea."
+.byte NewLine
+.text "They didn't..."
+.byte NewLine
+.text "They said nothing to me."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hmm..."
+.byte NewLine
+.text "Then I suppose that aforementioned loyalty"
+.byte NewLine
+.text "runs even deeper than previously stated."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "So it seems..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Dame Amalda..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Milord?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You said you gained your resolve from"
+.byte NewLine
+.text "exchanging words with Father Schroff,"
+.byte NewLine
+.text "did you not?"
+.byte WaitForA
+.byte ScrollText
+.text "I'm all but grateful for it, but I would advise"
+.byte NewLine
+.text "that you become...self-reliant on these matters"
+.byte NewLine
+.text "in the future."
+.byte WaitForA
+.byte ScrollText
+.text "You shouldn't have to wait for another to tell"
+.byte NewLine
+.text "you to do what YOU already know to be right."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "P-please don't misconstrue my words."
+.byte NewLine
+.text "I mean no disrespect. I'm just trying to—"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I understand, Prince Leif."
+.byte NewLine
+.text "And I will heed your words. I promise you this."
+.byte WaitForA
+
+.byte EndText
+
+leifconomor
+
+.byte right_slot
+.word LoadPortrait
+.word conomor_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "I can scarcely believe my eyes..."
+.byte NewLine
+.text "Are you the one called Count Conomor?"
+.byte WaitForA
+ 
+.byte right_slot
+.text "Well met, Prince Leif."
+.byte NewLine
+.text "Indeed, that is what many call me."
+.byte NewLine
+.text "But it is a false title—I am no knight."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I-I beg your pardon, Count?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "My actions are nothing short of treachery"
+.byte NewLine
+.text "and cowardice. I am party to the death of"
+.byte NewLine
+.text "Count Dorius, and I've no rebuttal."
+.byte WaitForA
+.byte ScrollText
+.text "I have no right to stand before you, Prince—"
+.byte NewLine
+.text "but I beg to pledge you my blade regardless."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Count Conomor, I know full well"
+.byte NewLine
+.text "that's all a far-fetched lie."
+.byte WaitForA
+.byte ScrollText
+.text "Princess Miranda has gone to great lengths"
+.byte NewLine
+.text "to keep the stain away from your good name,"
+.byte NewLine
+.text "and I will not let that be for naught."
+.byte WaitForA
+.byte ScrollText
+.text "You're no different from General Xavier—"
+.byte NewLine
+.text "you selflessly shouldered my burden as"
+.byte NewLine
+.text "rightful ruler when I disappeared from our realm."
+.byte WaitForA
+.byte ScrollText
+.text "If anything, I feel unfit to be addressed"
+.byte NewLine
+.text "by YOU, sir, for I am deeply indebted to you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Prince Leif... You have humbled me."
+.byte WaitForA
+.byte NewLine
+.text "In our realm's past, the Kingdom of Ulster"
+.byte NewLine
+.text "stood still and watched as Leonster was"
+.byte NewLine
+.text "torn asunder by the hands of outside forces."
+.byte WaitForA
+.byte ScrollText
+.text "I renew my oath as a knight before you now by"
+.byte NewLine
+.text "vowing never to allow a repeat of this mutiny."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'll have it no other way, Count. Thank you."
+.byte NewLine
+.text "...Ironically, however, I must order you"
+.byte NewLine
+.text "to run away from the fight once more."
+.byte WaitForA
+.byte ScrollText
+.text "We'll do no good by putting up"
+.byte NewLine
+.text "a brave front here and now."
+.byte NewLine
+.text "It pains me to have to say it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hah! As you wish, my lord."
+.byte NewLine
+.text "Even if you should venture into"
+.byte NewLine
+.text "the jaws of Loptous himself,"
+.byte WaitForA
+.byte ScrollText
+.text "rest assured that the Knights of Ulster will"
+.byte NewLine
+.text "be there with you, no more than an arm's"
+.byte NewLine
+.text "length away. Know that, if nothing else."
 .byte WaitForA
 
 .byte EndText

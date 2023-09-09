@@ -225,3 +225,138 @@ chfinalwm3
 .byte WaitForA
 
 .byte EndText
+
+leifasbel
+
+.byte right_slot
+.word LoadPortrait
+.word asbel_portrait
+.text "Lord Leif!"
+.byte NewLine
+.text "Congratulations on the amazing feat!"
+.byte WaitForA
+.byte ScrollText
+.text "I always knew we could pull it off..."
+.byte NewLine
+.text "But to just think about it:"
+.byte NewLine
+.text "North Thracia, free at last."
+.byte WaitForA
+.byte ScrollText
+.text "It'll take a while for the reality"
+.byte NewLine
+.text "of that to kick in, I think. Heh heh."
+.byte WaitForA
+
+.byte left_slot
+.text "Asbel, I'd say I speak for the entire Liberation"
+.byte NewLine
+.text "Army when I say we never would have made it this"
+.byte NewLine
+.text "far were it not for your magical talents."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You say things like that all the time,"
+.byte NewLine
+.text "Lord Leif. It's starting to get stale."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'm merely speaking the truth, my good friend."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mm-hmm."
+.byte NewLine
+.text "I suppose I'll have to let it slide, then."
+.byte WaitForA
+.byte ScrollText
+.text "Though, I wonder..."
+.byte NewLine
+.text "How vital will my magic be now?"
+.byte WaitForA
+.byte ScrollText
+.text "All I've focused on while honing my"
+.byte NewLine
+.text "magical arts was freeing North Thracia."
+.byte NewLine
+.text "And now... Now we're past that..."
+.byte WaitForA
+.byte ScrollText
+.text "If I may ask, Lord Leif, what comes next?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Worry not, Asbel; our next destination"
+.byte NewLine
+.text "will likely be South Thracia and finally"
+.byte NewLine
+.text "settling the century-long conflict there."
+.byte WaitForA
+.byte ScrollText
+.text "I pray I may count on your assistance"
+.byte NewLine
+.text "in this new endeavor."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Never a doubt. I've a legacy to uphold, after"
+.byte NewLine
+.text "all—that of Father, Grandfather, and Lord Ced."
+.byte WaitForA
+.byte ScrollText
+.text "I owe it to all of them to aid you in"
+.byte NewLine
+.text "whatever means possible."
+.byte NewLine
+.text "And on top of that..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Y-yes?"
+.byte NewLine
+.text "I'm listening."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, it was my desire long before it was"
+.byte NewLine
+.text "ever theirs. In case you couldn't tell"
+.byte NewLine
+.text "or...or you hadn't realized."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I know, Asbel. Deep down, I always knew."
+.byte NewLine
+.text "I'll always be grateful for the trust and"
+.byte NewLine
+.text "friendship you've given me. Thank you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You'll always be able to call upon me, Lord Leif."
+.byte WaitForA
+.byte NewLine
+.text "Whether on or off the battlefield, I'll always"
+.byte NewLine
+.text "be there to pool my strength with yours."
+.byte NewLine
+.text "You need not say a word."
+.byte WaitForA
+.byte ScrollText
+
+.byte left_slot
+.byte ScrollText
+
+.byte EndText

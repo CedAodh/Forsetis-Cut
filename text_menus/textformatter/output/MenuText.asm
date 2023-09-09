@@ -263,7 +263,7 @@
 .edef "ko", [$CD, $00]
 .edef "Gu", [$CE, $00]
 .edef "fe", [$CF, $00]
-.edef "Bh", [$D0, $00]
+.edef "rá", [$D0, $00]
 .edef "et", [$D1, $00]
 .edef "z ", [$D2, $00]
 .edef "Za", [$D3, $00]

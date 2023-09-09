@@ -20,7 +20,7 @@ AmaldaChapter17BDeathQuote,Amalda,Chapter17B,FlagAmaldaDead,amaldadeath
 SaraChapter17BDeathQuote,Sara,Chapter17B,None,ch17Bsarahdeath
 ConomorChapter19DeathQuote,Conomor,Chapter19,None,ch16Aconomordeath
 AmaldaChapter19DeathQuote,Amalda,Chapter19,None,amaldadeath
-WolfeChapter19DeathQuote,Wolfe,Chapter19,None,ch19wolfedeath
+WolfeChapter19DeathQuote,Wolfe,AnyChapter,FlagNoHelpFromOltoph,ch19wolfedeath
 RaydrikChp24DeathQuote,RaydrikChp24,Chapter24,FlagRaydrikDead,ch24raydrikdeath
 GalzusChapter24DeathQuote,Galzus,Chapter24,None,ch24galzusdeath
 LeifDeathQuote,Leif,AnyChapter,None,leifdeath

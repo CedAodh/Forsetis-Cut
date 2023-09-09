@@ -179,114 +179,6 @@ deanlinoanA
 .byte EndText
 
 
-fredilios
-
-.byte right_slot
-.word LoadPortrait
-.word ilios_portrait
-
-.byte left_slot
-.word LoadPortrait
-.word fred_portrait
-.text "Ilios? Is that you?"
-.byte WaitForA
-
-.byte right_slot
-.text "Fred?! What the hell are you doing here?!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "It's a bit of a long story, but..."
-.byte WaitForA
-.byte ScrollText
-.text "After Kempf left our batallion to die at"
-.byte NewLine
-.text "Fort Dundrum, I realized Lord Leif's cause"
-.byte NewLine
-.text "was the one that was worth following more."
-.byte WaitForA
-.byte ScrollText
-.text "What about you, Ilios?"
-.byte WaitForA
-.byte NewLine
-.text "Ilios? Are you listening?"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.byte ScrollText
-.text "Oh, goddamnit!"
-.byte NewLine
-.text "I can't believe Fred just went"
-.byte NewLine
-.text "and stole my thunder like this!"
-.byte WaitForA
-.byte ScrollText
-.text "Here I thought I could boast about being the"
-.byte NewLine
-.text "first Friegan to oppose the Empire's tyranny..."
-.byte NewLine
-.text "But no! Must nobles always get on my way?!"
-.byte WaitForA
-
-
-.byte left_slot
-.word LoadPortrait
-.word fred_portrait
-.text "Ilios? Are you alright?"
-.byte NewLine
-.text "You look red as a beetroot!"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Agh... Nothing, it's nothing."
-.byte WaitForA
-.byte NewLine
-.text "Look, Fred."
-.byte WaitForA
-.byte NewLine
-.text "You might've been one of the only people"
-.byte NewLine
-.text "who didn't laugh at me back at the academy,"
-.byte NewLine
-.text "but that doesn't mean we're on friendly terms!"
-.byte WaitForA
-.byte ScrollText
-.text "As long as you don't get in my way,"
-.byte NewLine
-.text "I guess I can tolerate you being here."
-.byte WaitForA
-.byte ScrollText
-.text "Now if you'll excuse me,"
-.byte NewLine
-.text "there's a battle I need to get back to."
-.byte NewLine
-.text "Goodbye!"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte left_slot
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.word $3A00
-.word fred_portrait
-.text "... He never changes, does he?"
-.byte NewLine
-.text "Then again, I'm truly glad to see him well."
-.byte WaitForA
-
-.byte EndText
-
-
 leifilios
 
 .byte right_slot
@@ -450,6 +342,417 @@ leifilios
 .text "Now, I shall go and engage the enemy."
 .byte NewLine
 .text "Leave everything to me, Prince Leif!"
+.byte WaitForA
+
+.byte EndText
+
+leifrecruitsilios
+
+.byte right_slot
+.word LoadPortrait
+.word ilios_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "Mage knight of Friege!"
+.byte NewLine
+.text "I am Prince Leif of Leonster,"
+.byte NewLine
+.text "leader of the North Thracian Liberation Army!"
+.byte WaitForA
+.byte ScrollText
+.text "Your division is outnumbered—"
+.byte NewLine
+.text "I ask that you surrender to us at once!"
+.byte WaitForA
+
+.byte right_slot
+.text "Pah. But I guess I may as well."
+.byte NewLine
+.text "Not like I feel particularly obligated"
+.byte NewLine
+.text "toward Friege, anyway."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I beg your pardon?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What?"
+.byte NewLine
+.text "Are you gonna hear me out?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, I'll admit you've given me"
+.byte NewLine
+.text "no reason not to. It sounds as though"
+.byte NewLine
+.text "you have quite a story to tell."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I'll keep it simple."
+.byte NewLine
+.text "I've a long-held desire to rise to nobility."
+.byte WaitForA
+.byte NewLine
+.text "I tried it with House Friege,"
+.byte NewLine
+.text "but they're not cutting it."
+.byte WaitForA
+.byte ScrollText
+.text "Here's the deal I'd like to strike up:"
+.byte NewLine
+.text "if you can promise me a real shot"
+.byte NewLine
+.text "at nobility within your kingdom,"
+.byte WaitForA
+.byte ScrollText
+.text "then you'll have gotten my surrender"
+.byte NewLine
+.text "as well as a mage knight at your command."
+.byte NewLine
+.text "A top-notch one, I should add."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Your fervor has certainly fallen under note."
+.byte NewLine
+.text "Do you...possess any motives beyond this?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Are you calling me shallow?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Th-that sounded a tad supercilious, didn't it?"
+.byte NewLine
+.text "Sorry. I, er..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well however you meant it, I think you should"
+.byte NewLine
+.text "be thankful for a chance like this, if anything."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "How is that?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I'm sure there's thousands of other commoners who"
+.byte NewLine
+.text "dream of rising through the hierarchy like I do."
+.byte WaitForA
+.byte ScrollText
+.text "You have to make an example out of me!"
+.byte NewLine
+.text "Not only will me and my old man's dreams be realized,"
+.byte NewLine
+.text "but your reputation as a prince'll really go up there!"
+.byte WaitForA
+.byte ScrollText
+.text "People will look to you, realizing that great things"
+.byte NewLine
+.text "CAN happen to those who truly keep at it,"
+.byte NewLine
+.text "no matter how low in the low they came from."
+.byte WaitForA
+.byte NewLine
+.text "What do you say?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hmm..."
+.byte NewLine
+.text "I shall accept."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hah, amazing! Let's shake on it!"
+.byte NewLine
+.text "Nice to meet you, Prince Leif."
+.byte NewLine
+.text "My name is Ilios."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Likewise, Sir Ilios."
+.byte NewLine
+.text "We've a battle to resume, so let's get back to it."
+.byte NewLine
+.text "Show me what you can do!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes, sire!"
+.byte WaitForA
+
+.byte EndText
+
+fredmockilios
+
+.byte right_slot
+.word LoadPortrait
+.word fred_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word ilios_portrait
+.text "Well, well..."
+.byte NewLine
+.text "You're just about everywhere, aren't you, Fred?"
+.byte WaitForA
+
+.byte right_slot
+.text "Ilios!"
+.byte NewLine
+.text "Well met, my old acquaintance."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's “Sir Ilios” to you, FRED."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "No kidding!"
+.byte NewLine
+.text "You were finally knighted? It's official?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You'd better believe it—"
+.byte NewLine
+.text "I stand before you now as a rightful mage knight!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "So you do..."
+.byte NewLine
+.text "But, uh...why?"
+.byte NewLine
+.text "Aren't you with one of the imperial divisions?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I was, but..."
+.byte NewLine
+.text "Well, some stuff happened."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Right, right..."
+.byte NewLine
+.text "And...you spent how many years"
+.byte NewLine
+.text "fetching for that opportunity?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Okay, how about you—"
+.byte NewLine
+.text "Nngh..."
+.byte WaitForA
+.byte ScrollText
+.text "And how is that any of your business?"
+.byte NewLine
+.text "Yeah, that's right, you think about that."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I'm merely trying to make sense of all this."
+.byte NewLine
+.text "Forgive me for overstepping."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "No...it's all right."
+.byte NewLine
+.text "I've just been fed up, is all."
+.byte WaitForA
+.byte ScrollText
+.text "You'd think high command in House Friege"
+.byte NewLine
+.text "would be the ultimate luxury. But all the"
+.byte NewLine
+.text "nitpicking, the pettiness, the controversy..."
+.byte WaitForA
+.byte ScrollText
+.text "Just— I could never sit still for a minute!"
+.byte NewLine
+.text "I was constantly being harangued,"
+.byte NewLine
+.text "even in my position."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That is typically the norm when"
+.byte NewLine
+.text "a country is at war."
+.byte NewLine
+.text "What did you expect?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Whatever. Still, you should've seen the"
+.byte NewLine
+.text "complete jokester I was assigned under."
+.byte NewLine
+.text "His name was Ke—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Kempf."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "So you...also..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mm-hmm."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ooooh boy..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Like you said, Ilios,"
+.byte NewLine
+.text "I've been in all manner of places."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "So he's the reason you defected?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "He WAS the final straw, technically."
+.byte NewLine
+.text "But...unique circumstances led me to discover"
+.byte NewLine
+.text "a bond with Prince Leif."
+.byte WaitForA
+.byte ScrollText
+.text "My values are far more in line with his,"
+.byte NewLine
+.text "so I saw fit to pledge him my sword."
+.byte NewLine
+.text "...I was also indebted to him."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Interesting. You know, if you're on"
+.byte NewLine
+.text "such good terms with Prince Leif,"
+.byte NewLine
+.text "maybe you'll put in a proper word for me, huh?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "A proper word?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You know, just...periodically talk about"
+.byte NewLine
+.text "how you have high hopes for me,"
+.byte NewLine
+.text "your good friend Sir Ilios."
+.byte WaitForA
+.byte ScrollText
+.text "...It'd be like what they did in the"
+.byte NewLine
+.text "academy sometimes where they pool together"
+.byte NewLine
+.text "answers for “Most likely to...” prompts."
+.byte WaitForA
+.byte ScrollText
+.text "There was “Most likely to get married,”"
+.byte NewLine
+.text "or “Most likely to make friends with a bear.”"
+.byte WaitForA
+.byte ScrollText
+.text "Just pretend this one is...uh, I dunno."
+.byte NewLine
+.text "“Most likely to become a noble of Leonster.”"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ha ha ha..."
+.byte NewLine
+.text "Very well."
+.byte NewLine
+.text "I'll tell Prince Leif what he needs to know."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I appreciate it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.word LoadPortrait
+.word ilios_portrait
+.text "But wait, that's..."
+.byte NewLine
+.text "“What he needs to know”..."
+.byte NewLine
+.text "That phrasing...worries me."
 .byte WaitForA
 
 .byte EndText

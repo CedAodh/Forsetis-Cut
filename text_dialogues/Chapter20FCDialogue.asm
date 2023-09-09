@@ -23,7 +23,7 @@ olwenbharat
 .word bharat_portrait
 
 .byte left_slot
-.text "Ah... Lord Bharat."
+.text "Ah... Lord Baráth."
 .byte WaitForA 
 
 .byte right_slot
@@ -169,7 +169,7 @@ olwenbharat
 
 .byte left_slot
 .byte ScrollText
-.text "I... B-But think about this well, Lord Bharat!"
+.text "I... B-But think about this well, Lord Baráth!"
 .byte NewLine
 .text "Would this really be what your children"
 .byte NewLine
@@ -190,7 +190,7 @@ olwenbharat
 
 .byte left_slot
 .byte ScrollText
-.text "Lord Bharat?! I... No...!"
+.text "Lord Baráth?! I... No...!"
 .byte WaitForA 
 .byte EndText
 
@@ -514,6 +514,61 @@ conomorxavier
 .text "easily, and even them you won't go forsaking"
 .byte NewLine
 .text "me if I have any say about it!"
+.byte WaitForA
+
+.byte EndText
+
+wolfefurious
+
+.byte right_slot
+.word LoadPortrait
+.word guard_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word wolfe_portrait
+.text "What complete and utter derision...!"
+.byte NewLine
+.text "They think themselves so grand, showing mercy"
+.byte NewLine
+.text "followed by turning their backs on us?"
+.byte WaitForA
+.byte NewLine
+.text "I swear, once I get my hands on them again..."
+.byte WaitForA
+
+.byte right_slot
+.text "Forgive me, sir, but...how are we"
+.byte NewLine
+.text "supposed to accomplish that, exactly?"
+.byte NewLine
+.text "We're in a cell! A jail cell!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hmph. I assure you, soldier, we'll"
+.byte NewLine
+.text "emerge from here in a timely fashion."
+.byte NewLine
+.text "I wager no more than a couple of hours..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "If you say so, sir. I guess."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "How does one tell time in here, anyway?"
+.byte NewLine
+.text "I'd like to learn to do that..."
 .byte WaitForA
 
 .byte EndText
