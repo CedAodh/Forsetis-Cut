@@ -105,7 +105,7 @@ eventChapter20Data ; B1/9194
 
 	_Turn11ReinforcementsGroup ; B1/965E
 		UNIT FriegeSniper, Enemy, [1, 30], [1, 30], Bharat, [ForsetiInfinite], 14, False, [$00, $00, $00, $00]
-		UNIT FriegeBishop3, Enemy, [3, 30], [3, 30], Bharat, [Thoron, Sleep, Physic], 14, False, [$00, $00, $00, $00]
+		UNIT FriegeBishop3, Enemy, [3, 30], [3, 30], Bharat, [Thoron, Physic], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeArcher, Enemy, [5, 30], [5, 30], Bharat, [KillerBow], 20, False, [$00, $00, $00, $00]
 		UNIT FriegeGeneral1, Enemy, [7, 30], [7, 30], Bharat, [MasterAxe, MasterBow], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeArmoredBow2, Enemy, [9, 30], [9, 30], Bharat, [MasterBow], 18, False, [$00, $00, $00, $00]
@@ -114,7 +114,7 @@ eventChapter20Data ; B1/9194
 		UNIT FriegeArmoredBow2, Enemy, [18, 30], [18, 30], Bharat, [MasterBow], 18, False, [$00, $00, $00, $00]
 		UNIT FriegeGeneral1, Enemy, [20, 30], [20, 30], Bharat, [MasterAxe, MasterBow], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeArcher, Enemy, [24, 30], [24, 30], Bharat, [KillerBow], 20, False, [$00, $00, $00, $00]
-		UNIT FriegeBishop3, Enemy, [26, 30], [26, 30], Bharat, [Thoron, Sleep, Physic], 14, False, [$00, $00, $00, $00]
+		UNIT FriegeBishop3, Enemy, [26, 30], [26, 30], Bharat, [Thoron, Physic], 14, False, [$00, $00, $00, $00]
 		UNIT FriegeSniper, Enemy, [28, 30], [28, 30], Bharat, [ForsetiInfinite], 14, False, [$00, $00, $00, $00]
 	UNIT
 
