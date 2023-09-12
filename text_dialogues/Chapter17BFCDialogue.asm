@@ -713,7 +713,7 @@ robertgladeAB
 .byte ScrollText
 .text "That it is."
 .byte NewLine
-.text "Selphina, Count Dorius, and I have"
+.text "Selphina, Count Dryas, and I have"
 .byte NewLine
 .text "dreamt of this day for 13 years..."
 .byte WaitForA
@@ -778,6 +778,7 @@ robertgladeAB
 .byte NewLine
 .text "I had to protect her."
 .byte WaitForA
+
 .byte right_slot
 .byte ScrollText
 .text "...W...wow..."

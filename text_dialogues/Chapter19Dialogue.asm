@@ -559,7 +559,7 @@ ch19opening1
 .byte NewLine
 .text "It seems someone has come to the castle..."
 .byte NewLine
-.text "One of Dorius' men, I believe."
+.text "One of Dryas' men, I believe."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -587,12 +587,12 @@ ch19opening1
 .byte ScrollText
 .text "Wh-what?!"
 .byte NewLine
-.text "Where's Dorius?!"
+.text "Where's Dryas?!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Count Dorius, he..."
+.text "Count Dryas, he..."
 .byte NewLine
 .text "To ensure some of us could escape, he..."
 .byte NewLine
@@ -606,7 +606,7 @@ ch19opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Dorius..."
+.text "Dryas..."
 .byte NewLine
 .text "He's..."
 .byte WaitForA
@@ -655,7 +655,7 @@ ch19opening1
 .byte ScrollText
 .text "If we lose our troops now,"
 .byte NewLine
-.text "Count Dorius will have died for nothing!"
+.text "Count Dryas will have died for nothing!"
 .byte WaitForA
 .byte ScrollText
 .text "We owe it to him to save"
@@ -744,7 +744,7 @@ ch19closing1
 .byte Right_slot
 .text "August, this is all my fault..."
 .byte NewLine
-.text "It's like I killed Dorius myself..."
+.text "It's like I killed Dryas myself..."
 .byte WaitForA
 
 .byte Left_slot
@@ -754,7 +754,7 @@ ch19closing1
 .text "of wallowing in regret—not now."
 .byte WaitForA
 .byte ScrollText
-.text "There will be time to atone to Count Dorius"
+.text "There will be time to atone to Count Dryas"
 .byte NewLine
 .text "after you've defended Leonster."
 .byte WaitForA
@@ -949,7 +949,7 @@ ch19closing1
 .text "Though I will say this..."
 .byte WaitForA
 .byte NewLine
-.text "Recall that Count Dorius lost an arm"
+.text "Recall that Count Dryas lost an arm"
 .byte NewLine
 .text "protecting you—and now he's traded"
 .byte NewLine
@@ -1020,7 +1020,7 @@ ch19closing2
 
 ch19wm1
 
-.text "Already a day behind Dorius,"
+.text "Already a day behind Dryas,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $033C ;dorius

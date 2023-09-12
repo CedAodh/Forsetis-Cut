@@ -492,18 +492,18 @@ ch8opening
 .byte ScrollText
 .text "There, under the protection"
 .byte NewLine
-.text "of General Hannibal, Count Dorius trains us"
+.text "of General Hannibal, Count Dryas trains us"
 .byte NewLine
 .text "in the ways of knighthood."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "D-did I hear you correctly? Dorius...?!"
+.text "D-did I hear you correctly? Dryas...?!"
 .byte NewLine
 .text "I can scarcely believe it..."
 .byte NewLine
-.text "Count Dorius is alive...?"
+.text "Count Dryas is alive...?"
 .byte WaitForA
 
 .byte Left_slot
@@ -515,7 +515,7 @@ ch8opening
 .byte ScrollText
 .text "Of course, at once! Being able to see"
 .byte NewLine
-.text "Count Dorius again... It's like a waking dream!"
+.text "Count Dryas again... It's like a waking dream!"
 .byte WaitForA
 
 .byte Left_slot
@@ -555,7 +555,7 @@ ch8opening
 .byte ScrollText
 .text "I apologize, Callion,"
 .byte NewLine
-.text "but it seems Count Dorius will have to wait."
+.text "but it seems Count Dryas will have to wait."
 .byte NewLine
 .text "Will you aid me in defending the villagers?"
 .byte WaitForA

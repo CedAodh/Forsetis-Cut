@@ -100,7 +100,7 @@ ch18xavierrecruitment
 
 .byte Right_slot
 .byte ScrollText
-.text "Count Dorius..."
+.text "Count Dryas..."
 .byte NewLine
 .text "Your words are more than I deserve."
 .byte NewLine
@@ -598,7 +598,7 @@ ch18closing1
 .byte WaitForA
 
 .byte Right_slot
-.text "Thank you, Dorius."
+.text "Thank you, Dryas."
 .byte NewLine
 .text "I never would've made it here"
 .byte NewLine
@@ -820,7 +820,7 @@ ch18closing5
 .byte ScrollText
 .word LoadPortrait
 .word augustus_portrait
-.text "I agree with Count Dorius' assessment."
+.text "I agree with Count Dryas' assessment."
 .byte WaitForA
 .byte ScrollText
 .text "A frontal assault against the empire"
@@ -844,7 +844,7 @@ ch18closing5
 
 .byte Right_slot
 .byte ScrollText
-.text "Dorius! August!"
+.text "Dryas! August!"
 .byte NewLine
 .text "You would have me stand idly by"
 .byte NewLine
@@ -910,7 +910,7 @@ ch18closing5
 .byte ScrollText
 .text "No. I should lead the vanguard."
 .byte NewLine
-.text "Please, Dorius."
+.text "Please, Dryas."
 .byte WaitForA
 
 .byte Left_slot
@@ -937,7 +937,7 @@ ch18closing5
 .byte ScrollText
 .word LoadPortrait
 .word leif_portrait2
-.text "Why not bring the whole army, Dorius?"
+.text "Why not bring the whole army, Dryas?"
 .byte NewLine
 .text "I'll go with you. We can get a head start"
 .byte NewLine
@@ -973,7 +973,7 @@ ch18closing5
 
 .byte Right_slot
 .byte ScrollText
-.text "...You've the right of it, Dorius."
+.text "...You've the right of it, Dryas."
 .byte NewLine
 .text "I apologize."
 .byte NewLine
@@ -1002,7 +1002,7 @@ ch18closing5
 .byte NewLine
 .text "I'll follow behind you as soon as I'm able."
 .byte NewLine
-.text "Take care of Ulster's people for me, Dorius!"
+.text "Take care of Ulster's people for me, Dryas!"
 .byte WaitForA
 
 .byte Left_slot
@@ -1049,7 +1049,7 @@ ch18closing5
 .text "but my fight isn't over until I rescue Eyvel."
 .byte WaitForA
 .byte NewLine
-.text "We have to seize Munster together, Dorius."
+.text "We have to seize Munster together, Dryas."
 .byte WaitForA
 
 .byte Left_slot

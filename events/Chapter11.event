@@ -12,7 +12,7 @@ eventChapter11Events ; 99/CB04
 			CHECK_DEAD Kempf
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
-			CMP_WORD wCurrentTurn, 30
+			CMP_WORD wCurrentTurn, 20
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $0A, _KempfLeave
@@ -574,7 +574,7 @@ eventChapter11Events ; 99/CB04
 		SET_FLAG FlagFredSaved
 
 		+
-		EVENT_CMP_WORD_AT_LT wCurrentTurn, 30
+		EVENT_CMP_WORD_AT_LT wCurrentTurn, 21
 		JUMP_TRUE +
 
 		macroDialogueWithBackground ch11endfredsaved, 1

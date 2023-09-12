@@ -53,7 +53,7 @@ ch11opening4
 .byte NewLine
 .text "But, what do you propose I do?"
 .byte NewLine
-.text "Join the frontlines or command from the rear?"
+.text "Join the front lines or command from the rear?"
 .byte WaitForA
 
 .byte left_slot

@@ -1163,7 +1163,7 @@ ch16Awm1
 .long LoadPortraitalt_2
 .word $013C ;dorius
 .word $0C18 ;y then x
-.text "Acting on the advice of Dorius,"
+.text "Acting on the advice of Dryas,"
 .byte NewLine
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2

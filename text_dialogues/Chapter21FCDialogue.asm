@@ -187,7 +187,7 @@ MirandaLeifTalk
 .byte NewLine
 .text "You know just as well as I do— I... I..."
 .byte NewLine
-.text "I bear the blame for Count Dorius' death!"
+.text "I bear the blame for Count Dryas' death!"
 .byte WaitForA 
 
 .byte right_slot

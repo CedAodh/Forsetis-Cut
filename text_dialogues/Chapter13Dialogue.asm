@@ -117,7 +117,7 @@ ch13gladefinn
 .byte WaitForA
 .text "you have"
 .byte NewLine
-.text "helped Count Dorius raise the next generation"
+.text "helped Count Dryas raise the next generation"
 .byte NewLine
 .text "of the Lanzenritter, and kept their name alive."
 .byte WaitForA
@@ -574,7 +574,7 @@ ch13gladeleif
 .byte NewLine
 .text "Army both... Our prayers have finally"
 .byte NewLine
-.text "been answered, Count Dorius!"
+.text "been answered, Count Dryas!"
 .byte WaitForA
 
 .byte Left_slot

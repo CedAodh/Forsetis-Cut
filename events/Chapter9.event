@@ -377,6 +377,7 @@ eventChapter9Events ; 8C/F011
 		macroSetCharacterWord Nanna, structCharacterDataRAM.Leader, Leif
 		macroSetCharacterWord Hicks, structCharacterDataRAM.Leader, Leif
 		macroSetCharacterWord Shiva, structCharacterDataRAM.Leader, Leif
+		macroSetCharacterWord Callion, structCharacterDataRAM.Leader, Leif
 		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Leif
 		macroSetCharacterWord Selphina, structCharacterDataRAM.Leader, Leif
 		macroSetCharacterWord Robert, structCharacterDataRAM.Leader, Leif

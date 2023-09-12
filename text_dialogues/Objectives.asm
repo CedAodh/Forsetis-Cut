@@ -52,7 +52,7 @@ objectivech7
 
 
 objectivech8
-	.text "Seize the gate (within 15 turns; Dagdar"
+	.text "Seize the gate (Capture Lemay; Dagdar"
 .byte EndTextNoPortraitFade
 
 objectivech8_2
@@ -84,7 +84,7 @@ objectivech11
 .byte EndTextNoPortraitFade
 
 objectivech11_2
-	.text "keep Fred alive; seize within 30 turns)"
+	.text "keep Fred alive; seize within 20 turns)"
 .byte EndTextNoPortraitFade
 
 

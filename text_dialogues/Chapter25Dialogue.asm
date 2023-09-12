@@ -764,7 +764,7 @@ ch25ending4miranda
 
 .byte Left_slot
 .byte ScrollText
-.text "If this is about Dorius, what happened"
+.text "If this is about Dryas, what happened"
 .byte NewLine
 .text "was my fault. You're not to blame for it,"
 .byte NewLine

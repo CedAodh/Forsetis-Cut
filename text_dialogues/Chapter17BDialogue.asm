@@ -310,7 +310,7 @@ ch17Belder1
 
 .byte Right_slot
 .byte ScrollText
-.text "...Dorius, what say you?"
+.text "...Dryas, what say you?"
 .byte WaitForA
 
 .byte Left_slot
@@ -423,7 +423,7 @@ ch17Bopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Dorius, what would you suggest?"
+.text "Dryas, what would you suggest?"
 .byte WaitForA
 
 .byte Left_slot
@@ -626,7 +626,7 @@ ch17Bclosing1
 
 .byte Left_slot
 .byte ScrollText
-.text "I...take it you know him, Dorius?"
+.text "I...take it you know him, Dryas?"
 .byte WaitForA
 
 .byte Right_slot
@@ -659,7 +659,7 @@ ch17Bclosing1
 .byte ScrollText
 .word LoadPortrait
 .word elder_portrait
-.text "It's not what you think, Count Dorius!"
+.text "It's not what you think, Count Dryas!"
 .byte WaitForA
 
 .byte Right_slot

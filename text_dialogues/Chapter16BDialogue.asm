@@ -171,7 +171,7 @@ ch16Bmiranda
 .byte ScrollText
 .word LoadPortrait
 .word leif_portrait2
-.text "Enough, Dorius!"
+.text "Enough, Dryas!"
 .byte NewLine
 .text "Nothing good will come of talk like that!"
 .byte WaitForA
@@ -451,7 +451,7 @@ ch16Bsarahleif
 .byte Right_slot
 .text "Oh, this is...quite the nuisance."
 .byte NewLine
-.text "August, Dorius, where have you two gone?"
+.text "August, Dryas, where have you two gone?"
 .byte NewLine
 .text "I could use your advice right about now..."
 .byte WaitForA

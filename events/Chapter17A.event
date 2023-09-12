@@ -916,8 +916,8 @@ eventChapter17AEvents ; FD/BAAF
 
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000
 
-		EVENT_TEST_FLAG_SET $0A
-		JUMP_FALSE +
+		;EVENT_TEST_FLAG_SET $0A
+		;JUMP_FALSE +
 
 		STORE_WORD wEventEngineCharacterTarget, Karin
 		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
@@ -951,6 +951,8 @@ eventChapter17AEvents ; FD/BAAF
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.LeadershipStars
 		STORE_WORD wEventEngineParameter2, 0
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		macroSetCharacterWord Misha, structCharacterDataRAM.Leader, Leif
 
 		JUMP ++
 

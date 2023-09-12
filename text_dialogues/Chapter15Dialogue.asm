@@ -894,7 +894,7 @@ ch15opening1
 .byte Left_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "And it is on this matter that Count Dorius"
+.text "And it is on this matter that Count Dryas"
 .byte NewLine
 .text "and I are of different minds."
 .byte NewLine
@@ -996,7 +996,7 @@ ch15opening1
 .byte ScrollText
 .text "Don't presume to speak for all of us,"
 .byte NewLine
-.text "Count Dorius. Only a small fraction of our"
+.text "Count Dryas. Only a small fraction of our"
 .byte NewLine
 .text "troops are knights—many more hold no title."
 .byte WaitForA

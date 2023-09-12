@@ -71,7 +71,7 @@ robertselphina
 	.byte NewLine
 	.text "I just really wish to repay the care and love"
 	.byte NewLine
-	.text "you and Count Dorius have bestowed upon us."
+	.text "you and Count Dryas have bestowed upon us."
 	.byte WaitForA
 	.byte ScrollText
 	.text "After everything you two went through for it..."
@@ -359,7 +359,7 @@ kanealba
 	.byte NewLine
 	.text "Do you see what he's like next to Lady Selphina?"
 	.byte NewLine
-	.text "I almost told him to stay inside with Count Dorius"
+	.text "I almost told him to stay inside with Count Dryas"
 	.byte NewLine
 	.text "so his lone horse would stand a fighting chance."
 	.byte WaitForA
@@ -473,7 +473,7 @@ kanealbarobert
 .byte ScrollText
 .text "...They look like gloves, Alba."
 .byte NewLine
-.text "They look exactly...like...gloves."
+.text "They look exactly...like gloves."
 .byte WaitForA
 
 .byte left_slot
@@ -521,6 +521,8 @@ kanealbarobert
 
 .byte left_slot
 .byte ScrollText
+.word LoadPortrait
+.word kane_portrait
 .text "Get ahold of yourself, Robert!"
 .byte NewLine
 .text "Repeat yourself!"
@@ -574,7 +576,12 @@ kanealbarobert
 .byte ScrollText
 .text "Robert?"
 .byte NewLine
-.text "Hey, Robert, you dropped some—"
+.text "Hey, Robert, you dropped some— Huh?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Hey, Kane,"
 
 .byte right_slot
 .word LoadPortrait
@@ -582,11 +589,10 @@ kanealbarobert
 
 .byte left_slot
 .byte NewLine
-.text "...Hey, Kane, are these possibly your backup gloves?"
+.text "are these perhaps your backup gloves?"
 .byte WaitForA
 
 .byte right_slot
-.byte ScrollText
 .text "Huh? Yes, it would appear so..."
 .byte NewLine
 .text "But...why does Robert possess MY gloves?"
@@ -600,7 +606,7 @@ kanealbarobert
 .byte NewLine
 .text "Just stick them on and let's hurry on over"
 .byte NewLine
-.text "to the two of them and Count Dorius."
+.text "to the two of them and Count Dryas."
 .byte WaitForA
 
 .byte EndText

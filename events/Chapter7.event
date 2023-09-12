@@ -553,11 +553,11 @@ eventChapter7Events ; 99/B023
 
 		YIELD_UNK
 
-		MOVE_UNIT Raydrik, [0, 0], [9, 5], 1, None
-		YIELD_UNK
+		;MOVE_UNIT Raydrik, [0, 0], [9, 5], 1, None
+		;YIELD_UNK
 
-		WAIT_MOVE
-		YIELD
+		;WAIT_MOVE
+		;YIELD
 
 		SCROLL_CAMERA_SPEED [7, 9], 3
 		YIELD
@@ -571,6 +571,13 @@ eventChapter7Events ; 99/B023
 
 		DIALOGUE ch7eisenauspawn
 		YIELD
+		
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.MaxHP, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.CurrentHP, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Magic, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Speed, 1
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Luck, 2
+		macroSubtractCharacterByte Galzus, structCharacterDataRAM.Defense, 1
 
 		UNSET_FLAG FlagBossDeath
 
@@ -584,6 +591,8 @@ eventChapter7Events ; 99/B023
 
 		WAIT_MOVE
 		YIELD
+		
+
 	END2
 
 	_PureWaterHouse ; 99/BA0E

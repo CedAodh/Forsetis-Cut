@@ -51,7 +51,7 @@ Ch19ishtararrival
 .text "I carry it because my father shares my feelings."
 .byte WaitForA
 .byte ScrollText
-.text "Now, allow me to join the frontlines."
+.text "Now, allow me to join the front lines."
 .byte WaitForA
 
 .byte EndText
@@ -339,7 +339,7 @@ leifconomor
 .byte NewLine
 .text "and cowardice. I am party to the death of"
 .byte NewLine
-.text "Count Dorius, and I've no rebuttal."
+.text "Count Dryas, and I've no rebuttal."
 .byte WaitForA
 .byte ScrollText
 .text "I have no right to stand before you, Prince—"

@@ -5,7 +5,7 @@ eventChapter7Data ; B1/DE9B
 		.byte 8, 8
 
 	_EisenhauGroup ; B1/DE9D
-		UNIT Eisenhau, Enemy, [8, 5], [8, 5], Eisenhau, [Greatlance, Javelin, Vulnerary], 6, True, [$01, $03, $02, $00]
+		UNIT Eisenhau, Enemy, [8, 0], [8, 5], Eisenhau, [Greatlance, Javelin, Vulnerary], 6, True, [$01, $03, $02, $00]
 	UNIT
 
 	_CavalierReinforcementsCameraCoordinates ; B1/DEB3
@@ -61,7 +61,9 @@ eventChapter7Data ; B1/DE9B
 		.byte 8, 8
 
 	_RaydrikGroup ; B1/E045
-		UNIT Raydrik, Enemy, [11, 2], [11, 2], Raydrik, [LoptrianFang], 20, False, [$02, $03, $00, $00]
+		UNIT Raydrik, Enemy, [9, 0], [9, 5], Raydrik, [LoptrianFang], 20, False, [$02, $03, $00, $00]
+		UNIT Galzus, Enemy, [10, 0], [11, 2], Eisenhau, [MasterAxe, Vulnerary], 17, False, [$00, $03, $00, $00]
+		
 	UNIT
 
 	_BanditCameraCoordinates ; B1/E05B

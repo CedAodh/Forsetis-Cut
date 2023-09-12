@@ -1795,7 +1795,7 @@
 		TathlumStatBonus				= aNoItemBonuses
 		TathlumCost						= 6200
 		TathlumDescription				= <>item_descs._TathlumDesc
-		TathlumUseEffect				= None
+		TathlumUseEffect				= $22
 		TathlumWeaponEffect				= None
 		TathlumSkills2					= None
 		TathlumSkills3					= Skill3Wrath

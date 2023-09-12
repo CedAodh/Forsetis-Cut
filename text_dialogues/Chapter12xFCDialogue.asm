@@ -241,7 +241,7 @@ leiftina
 .byte ScrollText
 .text "After that, I'd have to recieve tutelage on"
 .byte NewLine
-.text "horseback riding from Dorius, and to do that..."
+.text "horseback riding from Dryas, and to do that..."
 .byte NewLine
 .text "Let us say it's hard to find the time for it."
 .byte WaitForA

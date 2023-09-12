@@ -155,7 +155,7 @@ ch11xleifolwen
 .byte NewLine
 .text "However, I must consult my advisors,"
 .byte NewLine
-.text "August and Dorius, on this matter."
+.text "August and Dryas, on this matter."
 .byte WaitForA
 .byte ScrollText
 .text "You'll have to wait until this battle is over"

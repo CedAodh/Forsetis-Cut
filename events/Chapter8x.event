@@ -120,7 +120,7 @@ eventChapter8xEvents ; 97/844D
 		PAUSE_SKIPPABLE 32
 		YIELD
 
-		SET_MUSIC $4B
+		SET_MUSIC $4A
 		YIELD
 
 		DIALOGUE ronantanya8x

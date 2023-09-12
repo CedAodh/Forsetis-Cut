@@ -53,40 +53,47 @@ ronantanya8x
 
 	.byte right_slot
 	.word $3A00
-	.word ronan_portrait
+	.word tanya_portrait
 
 	.byte left_slot
 	.word $3A00
-	.byte tanya_portrait
+	.word ronan_portrait
 	
-	.byte right_slot
+	.byte left_slot
 	.text "Tanya!"
 	.byte NewLine
 	.text "Oh, I'm so glad to see you're all right!"
 	.byte WaitForA
 
-	.byte left_slot
+	.byte right_slot
 	.text "Ronan, you came along too?"
 	.byte NewLine
 	.text "Thanks for the hand!"
 	.byte WaitForA
 
-	.byte right_slot
+	.byte left_slot
 	.byte ScrollText
 	.text "Don't sweat it."
 	.byte WaitForA
 	.byte NewLine
 	.text "We need to be careful, though."
 	.byte NewLine
-	.text "There could still be bandits around any corner,"
+	.text "There could still be enemies around any corner,"
 	.byte NewLine
 	.text "so let's not stray too far from the others."
 	.byte WaitForA
 
-	.byte left_slot
+	.byte right_slot
 	.byte ScrollText
 	.text "Good thinking."
 	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.word ClearPortrait
+	.word RetractBox
+	
+	.byte right_slot
 	.byte ScrollText
 	.text "Oh, but wait! Don't go yet!"
 	.byte NewLine
@@ -95,8 +102,9 @@ ronantanya8x
 	.text "Ronan!"
 	.byte WaitForA
 
-	.byte right_slot
-	.byte ScrollText
+	.byte left_slot
+	.word LoadPortrait
+	.word ronan_portrait
 	.text "Huh?"
 	.byte NewLine
 	.text "Oh, sorry!"
@@ -104,7 +112,7 @@ ronantanya8x
 	.text "What is it?"
 	.byte WaitForA
 
-	.byte left_slot
+	.byte right_slot
 	.byte ScrollText
 	.text "It's a little gift my dad got for me!"
 	.byte WaitForA
@@ -116,37 +124,37 @@ ronantanya8x
 	.text "I wonder if this is the result of that."
 	.byte WaitForA
 	.byte ScrollText
-	.text "But...I think I want to give it to you."
+	.text "But...I think I wanna give it to you."
 	.byte NewLine
-	.text "As a thank you for teaching me these..."
+	.text "As a thank-you for teaching me these..."
 	.byte NewLine
 	.text "important life values, let's say."
 	.byte WaitForA
 
-	.byte right_slot
+	.byte left_slot
 	.byte ScrollText
 	.text "Oh, wow!"
 	.byte NewLine
 	.text "This is an incredible bow!"
 	.byte NewLine
 	.text "I've never seen anything like it..."
-	.byte NewLine
+	.byte WaitForA
 
-	.byte left_slot
+	.byte right_slot
 	.byte ScrollText
 	.text "You and I both!"
 	.byte NewLine
 	.text "Someone put in some overtime to make this!"
 	.byte WaitForA
 
-	.byte right_slot
+	.byte left_slot
 	.byte ScrollText
 	.text "Without a doubt."
 	.byte NewLine
-	.text "Are you really sure I should have this?"
+	.text "Are you really sure I can have it?"
 	.byte WaitForA
 
-	.byte left_slot
+	.byte right_slot
 	.byte ScrollText
 	.text "Absolutely!"
 	.byte NewLine
@@ -155,7 +163,7 @@ ronantanya8x
 	.text "something nice for you!"
 	.byte WaitForA
 
-	.byte right_slot
+	.byte left_slot
 	.byte ScrollText
 	.text "Still...your father got this for YOU."
 	.byte NewLine
@@ -169,37 +177,30 @@ ronantanya8x
 	.text "How about we share it?"
 	.byte WaitForA
 
-	.byte left_slot
+	.byte right_slot
 	.byte ScrollText
 	.text "Share it?"
 	.byte NewLine
 	.text "Really?"
 	.byte WaitForA
 
-	.byte right_slot
+	.byte left_slot
 	.byte ScrollText
 	.text "Of course!"
 	.byte NewLine
 	.text "Consider it a symbol of our bond!"
 	.byte WaitForA
 
-	.byte left_slot
+	.byte right_slot
 	.byte ScrollText
-	.text "R-Ronan... That's so..."
+	.text "Hey, works for me!"
 	.byte NewLine
-	.text "Oh, what am I thinking?"
+	.text "Anyhow, we still have lots to get done here,"
 	.byte NewLine
-	.text "This isn't the time to be getting all worked up!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "OK, Ronan, I accept your little arrangement."
-	.byte NewLine
-	.text "Anyhow, we still have a fight to win!"
-	.byte NewLine
-	.text "So let's go!"
+	.text "so let's hurry along!"
 	.byte WaitForA
 
-	.byte right_slot
+	.byte left_slot
 	.byte ScrollText
 	.text "You can count on me!"
 	.byte WaitForA
@@ -341,7 +342,7 @@ ch8xclosing2
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-yes, sir!"
+.text "Yes, sir!"
 .byte WaitForA
 
 .byte EndText
