@@ -106,6 +106,10 @@ eventChapter12Events ; 99/DBD6
 	END_DEFINITION_ARRAY
 
 	_AfterActionEventDefinitions ; 99/DD68
+          EVENT $0A, _SalemAIChange
+                macroEventConditionCheckCoordRanges [1,1], [11, 12]
+                CMP_WORD wCurrentPhase, Player
+            END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; 99/DD6A
@@ -328,6 +332,29 @@ eventChapter12Events ; 99/DBD6
 		DIALOGUE ch12colho
 		YIELD
 	END2
+
+        _SalemAIChange ; 99/E122
+                macroCountAllUncapturedAliveUnits Salem
+                JUMP_FALSE +
+
+                macroCheckIfRescued Salem
+                JUMP_TRUE +
+
+                macroSetCharacterByte Salem, structCharacterDataRAM.AI1, $0D
+                macroSetCharacterByte Salem, structCharacterDataRAM.AI4, $03
+                macroSetCharacterByte Salem, structCharacterDataRAM.AI2, $00
+                macroSetCharacterByte Salem, structCharacterDataRAM.Unknown3E, $00
+
+                PLAY_SOUND_WORD $00F7
+                SCROLL_CAMERA_CHAR Salem
+                SET_CAMERA_SPEED 4
+                YIELD
+
+                DIALOGUE salemwarning
+                YIELD
+
+                +
+         END2
 
 	_MareetaArrive ; 99/E163
 		PLAY_SOUND_WORD $00E0
