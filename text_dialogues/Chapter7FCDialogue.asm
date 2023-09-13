@@ -301,6 +301,7 @@ leifshiva
 .byte WaitForA
 
 .byte right_slot
+.byte ScrollText
 .text "......"
 .byte WaitForA
 .byte ScrollText
