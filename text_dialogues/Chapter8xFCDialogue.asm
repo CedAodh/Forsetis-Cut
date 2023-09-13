@@ -316,7 +316,6 @@ ch8xclosing2
 .text "You got nuthin' to say sorry 'bout!"
 .byte WaitForA
 .byte ScrollText
-.byte NewLine
 .text "We wanna make a livin' with our own hands—"
 .byte NewLine
 .text "an' that's why yer the boss."
