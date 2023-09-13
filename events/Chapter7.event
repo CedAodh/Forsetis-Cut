@@ -336,7 +336,7 @@ eventChapter7Events ; 99/B023
 		SET_MUSIC $4A
 		YIELD
 
-		DIALOGUE placeholder
+		DIALOGUE daisyshiva
 		YIELD
 
 		macroConvertToPlayerAllegiance Shiva
