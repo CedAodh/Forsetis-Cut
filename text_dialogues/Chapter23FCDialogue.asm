@@ -770,6 +770,9 @@ MachaHouseMacha1
 .text "weight with these fine folk."
 .byte WaitForA
 
+.byte EndText
+
+
 MachaHouseMacha2
 
 .byte right_slot
@@ -809,6 +812,9 @@ MachaHouseMacha2
 .byte ScrollText
 .text "I...I believe you've made your point, Mother."
 .byte WaitForA
+
+.byte EndText
+
 
 MachaHouseMacha3
 
