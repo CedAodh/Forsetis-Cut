@@ -206,19 +206,23 @@ galzussara
 .byte left_slot
 .byte ScrollText
 .text "Well, you have more guts"
+.byte NewLine
 .text "than any kid I've seen in this army."
+.byte NewLine
 .text "What is a kid like you doing here anyway?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "Teehee."
+.byte NewLine
 .text "The same thing that you're doing, silly!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Huh?"
+.byte NewLine
 .text "You mean... slaying Prince Leif's enemies?"
 .byte WaitForA
 
@@ -230,6 +234,7 @@ galzussara
 .byte left_slot
 .byte ScrollText
 .text "Whatever do you mean, then?"
+.byte NewLine
 .text "Gods, you're a strange one..."
 .byte WaitForA
 
@@ -241,33 +246,50 @@ galzussara
 .byte left_slot
 .byte ScrollText
 .text "...!"
+.byte NewLine
 .text "How do you know my name?!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "I know all there is to know about you."
+.byte NewLine
 .text "You said you were scared before,"
+.byte NewLine
 .text "but I know that's not true."
+.byte WaitForA
+.byte ScrollText
 .text "I can see there was a time long ago"
+.byte NewLine
 .text "where you were really, really scared."
+.byte WaitForA
+.byte ScrollText
 .text "I know that you're secretly a prince"
+.byte NewLine
 .text "but hate the thought of being called that."
+.byte WaitForA
+.byte ScrollText
 .text "Oh! And I also know that your wife"
+.byte NewLine
 .text "was a beautiful woman named—"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "ENOUGH!"
+.byte NewLine
 .text "Say another word, and I swear I'll—"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "Kill me? I know you won't do that."
+.byte NewLine
 .text "Your voice is strong and scary,"
+.byte NewLine
 .text "but it's also filled with sadness..."
+.byte WaitForA
+.byte ScrollText
 .text "You really hate killing people, don't you?"
 .byte WaitForA
 
@@ -279,7 +301,9 @@ galzussara
 .byte right_slot
 .byte ScrollText
 .text "You hate the family from you come from,"
+.byte NewLine
 .text "and can only hope that by joining this army,"
+.byte NewLine
 .text "you atone for their sins even just a little bit..."
 .byte WaitForA
 
@@ -291,16 +315,24 @@ galzussara
 .byte right_slot
 .byte ScrollText
 .text "Sara."
+.byte WaitForA
+.byte ScrollText
 .text "...Hm?"
+.byte NewLine
 .text "Oh, can you hear that?"
+.byte NewLine
 .text "Your voice... It sounds more at peace now!"
+.byte WaitForA
+.byte NewLine
 .text "You should try doing that more often, teehee."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "I... I suppose I should be thanking you."
+.byte NewLine
 .text "But I don't think you ever answered"
+.byte NewLine
 .text "my question—"
 .byte WaitForA
 
@@ -316,6 +348,7 @@ galzussara
 .byte right_slot
 .word galzus_portrait
 .text "...And she's gone."
+.byte NewLine
 .text "What in the world just happened?"
 .byte WaitForA
 
