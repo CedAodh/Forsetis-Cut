@@ -501,6 +501,78 @@ ch6cedarrive
 .byte NewLine
 .text "We're with you, Lord Ced!"
 .byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word asbel_portrait
+
+.byte Right_slot
+.byte ScrollText
+.text "I guess this is farewell, Asbel."
+.byte NewLine
+.text "We're almost certain that Prince Leif is still"
+.byte NewLine
+.text "within the city, but time's running out for you."
+.byte WaitForA
+.byte NewLine
+.text "If you wish to join him, it's now or never."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "I really can't thank you enough, Lord Ced."
+.byte NewLine
+.text "You've spent this whole time teaching me,"
+.byte NewLine
+.text "and all I'm doing now is leaving your side?"
+.byte WaitForA
+.byte NewLine
+.text "Some apprentice I turned out to be..."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "It's no fault of yours, Asbel."
+.byte WaitForA
+.byte ScrollText
+.text "I'm aware that you've been looking"
+.byte NewLine
+.text "for Prince Leif for quite a long time."
+.byte NewLine
+.text "I know how much this means to you."
+.byte WaitForA
+.byte ScrollText
+.text "Besides, all I've really done for you is help"
+.byte NewLine
+.text "you master your family's Grafcalibur spell."
+.byte NewLine
+.text "Do us proud, and use it to protect Prince Leif."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Lord Ced, will... Will we see each other again?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "If Prince Leif is the hero we've been"
+.byte NewLine
+.text "waiting for, then the long night is finally over,"
+.byte NewLine
+.text "and Thracia will breathe free again."
+.byte WaitForA
+.byte ScrollText
+.text "...We will see each other again, Asbel."
+.byte NewLine
+.text "Right here in Munster."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Munster...? R-right! Munster it is!"
+.byte NewLine
+.text "Don't you forget it, Lord Ced!"
+.byte WaitForA
 
 .byte EndText
 
