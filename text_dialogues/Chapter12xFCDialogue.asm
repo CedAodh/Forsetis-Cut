@@ -672,3 +672,23 @@ ch12xpanlaraalternate
 .byte WaitForA
 
 .byte EndText
+
+
+tinafreakout
+
+.byte Right_slot
+.word LoadPortrait
+.word tina_portrait
+.text "Th-this is the worst time to"
+.byte NewLine
+.text "be hearing creaking footsteps..."
+.byte WaitForA
+.byte ScrollText
+.text "...NO! Get away, get away!"
+.byte NewLine
+.text "I-I have a super powerful staff"
+.byte NewLine
+.text "and I'm not afraid to use it!"
+.byte WaitForA
+	
+.byte EndText

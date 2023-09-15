@@ -444,3 +444,17 @@ nannamareetach12
 .byte WaitForA
 	
 .byte EndText
+
+salemwarning
+
+.byte Right_slot
+.word LoadPortrait
+.word salem_portrait
+.text "Whoever approaches... I know not who you"
+.byte NewLine
+.text "are, but I do know you to be a threat. I'll put"
+.byte NewLine
+.text "a halt to your meddling right here and now."
+.byte WaitForA
+	
+.byte EndText
