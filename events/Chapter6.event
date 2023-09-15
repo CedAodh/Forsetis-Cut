@@ -43,6 +43,24 @@ eventChapter6Events ; 99/A346
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/A3D4
+                EVENT $1A, _AsbelLeifTalk
+			CHECK_CHARS2 Asbel, Leif
+		END_DEFINITION
+		EVENT $1B, _LeifAsbelTalk
+			CHECK_CHARS2 Leif, Asbel
+		END_DEFINITION
+		EVENT $1C, _KarinCedTalk
+			CHECK_CHARS2 Karin, CedChp4x
+		END_DEFINITION
+		EVENT $1D, _DaisyCedTalk
+			CHECK_CHARS2 Daisy, CedChp4x
+		END_DEFINITION
+		EVENT $1E, _MachaCedTalk
+			CHECK_CHARS2 Macha, CedChp4x
+		END_DEFINITION
+		EVENT $1F, _LeifBrightonTalk
+			CHECK_CHARS2 Leif, Brighton
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/A3D6
@@ -525,6 +543,91 @@ eventChapter6Events ; 99/A346
 
 		YIELD_UNK
 	END2
+
+        _AsbelRemoveImmortality
+		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
+	END2
+	
+	_AsbelLeifTalk ; FD/8DCE
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE ch4xasbelleiftalk
+		YIELD
+		
+		STORE_BYTE aSelectedCharacterBuffer.Leader, Finn
+
+		CALL_ASM_SKIPPABLE $83A3BF, $0000
+	END2
+
+	_LeifAsbelTalk ; FD/8DE4
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE ch4xasbelleiftalk
+		YIELD
+
+		macroConvertToPlayerAllegiance Asbel
+
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
+	END2
+	
+	_LaraAsbelTalk
+		macroDialogueHouse laraasbel4x
+	END2
+	
+	_LeifBrightonTalk
+		macroDialogueHouse leifbrightonch6
+	END2
+	
+	_DaisyCedTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE daisyced
+		YIELD
+		
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		macroGiveItemToActiveUnit WindSword
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
+	END2
+	
+	_MachaCedTalk
+		macroDialogueHouse machaced4x
+	END2
+
+	_KarinCedTalk ; FD/8E18
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4B
+		YIELD
+
+		DIALOGUE ch4xcedkarintalk
+		YIELD
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		macroGiveItemToActiveUnit CedsScroll
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
+	END2
+
 
 	_OpeningEvent ; 99/AE86
 		STORE_WORD $7E4F9A, $0000
