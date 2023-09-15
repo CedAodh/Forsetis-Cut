@@ -459,7 +459,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           .long aChapter4TalkTargetTable
           .long aChapter4xTalkTargetTable
           .long None
-          .long None
+          .long aChapter6TalkTargetTable
           .long aChapter7TalkTargetTable
           .long aChapter8TalkTargetTable
           .long aChapter8xTalkTargetTable
@@ -529,6 +529,16 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
           ZQOL_TALK_ENTRY Leif, [Asbel]
           ZQOL_TALK_ENTRY Karin, [CedChp4x]
 		  ZQOL_TALK_ENTRY Fergus, [Karin]
+		  ZQOL_TALK_ENTRY Lara, [Asbel]
+		  ZQOL_TALK_ENTRY Daisy, [CedChp4x]
+		  ZQOL_TALK_ENTRY Macha, [CedChp4x]
+        ZQOL_END_TALK_CHAPTER
+
+        aChapter6TalkTargetTable
+          ZQOL_TALK_ENTRY Asbel, [Leif]
+          ZQOL_TALK_ENTRY Leif, [Asbel]
+          ZQOL_TALK_ENTRY Leif, [Brighton]
+          ZQOL_TALK_ENTRY Karin, [CedChp4x]
 		  ZQOL_TALK_ENTRY Lara, [Asbel]
 		  ZQOL_TALK_ENTRY Daisy, [CedChp4x]
 		  ZQOL_TALK_ENTRY Macha, [CedChp4x]
