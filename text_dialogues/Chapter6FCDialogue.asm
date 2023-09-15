@@ -406,3 +406,104 @@ secretshop
 
 .byte EndText
 
+
+leifbrightonch6
+
+.byte right_slot
+	.word $3A00
+	.word brighton_portrait	
+
+	.byte left_slot
+	.word $3A00
+	.word leif_portrait
+	.text "Brighton, do you have a moment?"
+	.byte WaitForA
+
+	.byte right_slot
+	.text "Given our priority is to escape the city,"
+	.byte NewLine
+	.text "I'm afraid we don't have much time."
+	.byte NewLine
+	.text "What do you need, milord?"
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "I just wanted to thank you for everything."
+	.byte NewLine
+	.text "Your help and advice has been invaluable."
+	.byte NewLine
+	.text "I owe you a debt I could never pay."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "I've only done my sworn duty."
+	.byte NewLine
+	.text "Nothing more, nothing less."
+	.byte WaitForA
+	.byte ScrollText
+	.text "With that being said, where do you"
+	.byte NewLine
+	.text "plan to go once we're out of here?"
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "I'm heading to Tarrah."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Is that so?"
+	.byte NewLine
+	.text "Well then, I guess that will be our next stop!"
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "I beg your pardon?"
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "What, you thought we'd just abandon"
+	.byte NewLine
+	.text "you once we were clear of the castle?"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Lord Ced's orders were clear—"
+	.byte NewLine
+	.text "We are to help you be free from Raydrik's"
+	.byte NewLine
+	.text "clutches, and join you in all future endeavors."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Is that so?"
+	.byte NewLine
+	.text "I must thank you yet again, Brigton."
+	.byte NewLine
+	.text "My debt to you all grows ever larger."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "And we'll only accept one thing as payment—"
+	.byte NewLine
+	.text "the liberation of Northern Thracia!"
+	.byte NewLine
+	.text "So don't go dying on us, you hear?"
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Hahah."
+	.byte NewLine
+	.text "Fair enough, then."
+	.byte NewLine
+	.text "It is a promise."
+	.byte WaitForA
+	
+	.byte EndText
