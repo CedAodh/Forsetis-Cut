@@ -454,7 +454,7 @@ salemwarning
 .byte NewLine
 .text "are, but I do know you to be a threat. I'll put"
 .byte NewLine
-.text "a halt to your meddling right here and now.
+.text "a halt to your meddling right here and now."
 .byte WaitForA
 	
 .byte EndText
