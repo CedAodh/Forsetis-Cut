@@ -140,5 +140,46 @@ eventChapter21WorldMapEvents ; E7/F242
 
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
+	
+	FADE_OUT $02
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	macroDialogueWithBackground leifmeetsseliph, 3
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	macroDialogueWithBackground leifmeetsseliph2, 2
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	macroDialogueWithBackground leifmeetsseliph3, 3
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	SET_MUSIC $2D
+	YIELD
 END1
 

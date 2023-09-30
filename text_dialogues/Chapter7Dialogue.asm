@@ -817,7 +817,7 @@ ch7safieshiva
 .byte ScrollText
 .text "...You know, I don't think I even know"
 .byte NewLine
-.text "your name. I'm Shiva of Saban, by the way."
+.text "your name. I'm Shiva of Sabhain, by the way."
 .byte NewLine
 .text "What do you go by?"
 .byte WaitForA

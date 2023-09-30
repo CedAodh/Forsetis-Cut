@@ -251,16 +251,16 @@ leifasbel
 .byte left_slot
 .text "Asbel, I'd say I speak for the entire Liberation"
 .byte NewLine
-.text "Army when I say we never would have made it this"
+.text "Army when I say we never would have made it"
 .byte NewLine
-.text "far were it not for your magical talents."
+.text "this far were it not for your magical talents."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "You say things like that all the time,"
+.text "You say things like that all the time, Lord Leif."
 .byte NewLine
-.text "Lord Leif. It's starting to get stale."
+.text "It's starting to get stale."
 .byte WaitForA
 
 .byte left_slot
@@ -306,12 +306,14 @@ leifasbel
 
 .byte right_slot
 .byte ScrollText
-.text "Never a doubt. I've a legacy to uphold, after"
+.text "Never a doubt."
 .byte NewLine
-.text "all—that of Father, Grandfather, and Lord Ced."
+.text "I've a legacy to uphold, after all—"
+.byte NewLine
+.text "that of Father, Grandfather, and Lord Ced."
 .byte WaitForA
 .byte ScrollText
-.text "I owe it to all of them to aid you in"
+.text "I owe it to each of them to aid you in"
 .byte NewLine
 .text "whatever means possible."
 .byte NewLine
@@ -346,13 +348,496 @@ leifasbel
 .byte right_slot
 .byte ScrollText
 .text "You'll always be able to call upon me, Lord Leif."
-.byte WaitForA
 .byte NewLine
 .text "Whether on or off the battlefield, I'll always"
 .byte NewLine
-.text "be there to pool my strength with yours."
+.text "be there to pool my strength with yours!"
+.byte WaitForA
+.byte ScrollText
+
+.byte left_slot
+.byte ScrollText
+
+.byte EndText
+
+leifselphina
+
+.byte right_slot
+.word LoadPortrait
+.word selphina_portrait
+.text "Prince Leif!"
+.byte WaitForA
+
+.byte left_slot
+.text "Oh! Selphina..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Prince Leif, please, do away with"
 .byte NewLine
-.text "You need not say a word."
+.text "those downcast eyes when we speak."
+.byte WaitForA
+.byte NewLine
+.text "This is a happy day, even if my father"
+.byte NewLine
+.text "is not here to share it with us."
+.byte WaitForA
+.byte ScrollText
+.text "I know him to be overjoyed with what"
+.byte NewLine
+.text "he made possible during his final moments."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But even still... It could have just been"
+.byte NewLine
+.text "avoided had I not been so careless and"
+.byte NewLine
+.text "insistent on having my way with things."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I understand looking at it from that viewpoint."
+.byte NewLine
+.text "I really do. However, as you well know,"
+.byte NewLine
+.text "that train of thought will get you nowhere."
+.byte WaitForA
+.byte ScrollText
+.text "What ultimately matters is that you took a lesson"
+.byte NewLine
+.text "away from it—one you may not have otherwise."
+.byte NewLine
+.text "And that is more than enough for me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Selphina... I will heed your words."
+.byte WaitForA
+.byte NewLine
+.text "I won't expect the pain of my decision to ever"
+.byte NewLine
+.text "truly disappear, but perhaps it's still worth"
+.byte NewLine
+.text "trying the glass half full approach on this one."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+
+.byte left_slot
+.byte ScrollText
+
+.byte EndText
+
+gladetryingtoohard
+
+.byte right_slot
+.word LoadPortrait
+.word glade_portrait
+.text "Well put, sire."
+.byte WaitForA
+.byte NewLine
+.text "And if that doesn't work, just realize that I"
+.byte NewLine
+.text "now have a shot at rising to a count"
+.byte NewLine
+.text "before my hair goes gray! Ha ha ha..."
+.byte WaitForA
+
+.byte left_slot
+.text "Glade! That's a terrible thing to say!"
+.byte NewLine
+.text "And to say it in front of Selphina of all people...!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, as it happens...I've let that thought"
+.byte NewLine
+.text "slip out in front of my dearest in times past."
+.byte NewLine
+.text "It was a private jest between us two, anyway."
+.byte WaitForA
+.byte ScrollText
+.text "That even with his age and condition, Dryas"
+.byte NewLine
+.text "wasn't willing to pass on his station to anyone."
+.byte WaitForA
+.byte NewLine
+.text "“I'm just getting started,” he'd say."
+.byte NewLine
+.text "“This position came with a lifetime guarantee!”"
+.byte WaitForA
+.byte ScrollText
+.text "I thought it proper to give it remembrance,"
+.byte NewLine
+.text "and that even in spite of its vulgarity,"
+.byte NewLine
+.text "you'd perk up, my prince."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I...I suppose?"
+.byte NewLine
+.text "But my point obviously still stands."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word selphina_portrait
+.text "I agree with Glade's assessment, actually."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What could you possibly mean, Selphina?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I mean it is in a way true that some"
+.byte NewLine
+.text "opportunities only arise when"
+.byte NewLine
+.text "the tragic and unexpected takes place."
+.byte WaitForA
+.byte ScrollText
+.text "Glade merely reinforces my earlier point: you must"
+.byte NewLine
+.text "cherish and focus on the good that took place"
+.byte NewLine
+.text "following my father's final act of selflessness,"
+.byte WaitForA
+.byte ScrollText
+.text "for there's no knowing if it would have"
+.byte NewLine
+.text "come to pass otherwise."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I get it this time."
+.byte NewLine
+.text "I'll cease dwelling on what could have been."
+.byte WaitForA
+.byte NewLine
+.text "There's no reason for me to hesitate in"
+.byte NewLine
+.text "marking this as the highest point in my life."
+.byte WaitForA
+.byte ScrollText
+.text "Selphina, Glade..."
+.byte WaitForA
+.byte NewLine
+.text "I hope you'll continue with me as Dryas'"
+.byte NewLine
+.text "wisdom and strength. Work together to"
+.byte NewLine
+.text "grant me such in his stead. Please."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "We'll always be your friends and allies, Prince Leif."
+.byte NewLine
+.text "Nothing could change that."
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word glade_portrait
+.text "All we wish is for you to grow into"
+.byte NewLine
+.text "someone you'll be proud of."
+.byte WaitForA
+.byte ScrollText
+.text "...Knowing well the severity you demand"
+.byte NewLine
+.text "from yourself on a daily basis,"
+.byte NewLine
+.text "I'll wager I could have gone without saying that."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Leave it to me, then."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+
+.byte left_slot
+.byte ScrollText
+
+.byte EndText
+
+leifsara
+
+.byte right_slot
+.word LoadPortrait
+.word sarah_portrait
+
+.byte left_slot
+.text "Sara!"
+.byte NewLine
+.text "You're all secluded in the corner there."
+.byte NewLine
+.text "Are you all right?"
+.byte WaitForA
+
+.byte right_slot
+.text "I've never heard so many joyous voices"
+.byte NewLine
+.text "as I do in this moment."
+.byte NewLine
+.text "They're beautiful, but...also exhausting."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Er... I'm sorry to have to hear you say that."
+.byte NewLine
+.text "There's tremendous reason for it, however."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah, I know."
+.byte NewLine
+.text "It's not bad, I just need to get used to it."
+.byte NewLine
+.text "Like I said, it's never been this way before."
+.byte WaitForA
+.byte ScrollText
+.text "My whole life, no group of voices has ever been"
+.byte NewLine
+.text "so happy and earnest as they are right now."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I sure know what you mean."
+.byte NewLine
+.text "But still, Sara..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mm."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I know they're undoubtedly our enemy,"
+.byte NewLine
+.text "but those of the Loptr Church..."
+.byte WaitForA
+.byte NewLine
+.text "They raised you, did they not?"
+.byte NewLine
+.text "Do you feel any sympathy or regret"
+.byte NewLine
+.text "about ending them?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Not really."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I see..."
+.byte NewLine
+.text "I just thought I should ask."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Can we go for a walk outside, Leif?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "A walk? With me?"
+.byte NewLine
+.text "Does it have to be now?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You don't...want to?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "N-no, I'd love to, but...I am"
+.byte NewLine
+.text "quite occupied at the moment."
+.byte NewLine
+.text "Perhaps another day?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Okay..."
+.byte WaitForA
+.byte ScrollText
+
+.byte left_slot
+.byte ScrollText
+
+.byte EndText
+
+leifced
+
+.byte right_slot
+.word LoadPortrait
+.word ced_portrait
+.text "Ho, Prince Leif!"
+.byte WaitForA
+
+.byte left_slot
+.text "Prince Ced!"
+.byte NewLine
+.text "How goes the fighting in the city streets?"
+.byte NewLine
+.text "Has it subsided?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's all wrapping up quite smoothly."
+.byte NewLine
+.text "If there are any stragglers left looking to flee"
+.byte NewLine
+.text "the castle, they'll have to go through the Magi."
+.byte WaitForA
+.byte ScrollText
+.text "Still, though... Here I am, maintaining a"
+.byte NewLine
+.text "resistance effort for gods know how long,"
+.byte WaitForA
+.byte NewLine
+.text "only for you to enter the picture and finish"
+.byte NewLine
+.text "things in what felt like a manner of minutes."
+.byte WaitForA
+.byte ScrollText
+.text "It appears you're more fit to lead"
+.byte NewLine
+.text "than I will ever be."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Prince Ced, I'm beginning to suspect you say"
+.byte NewLine
+.text "these things just to lift the pressure off"
+.byte NewLine
+.text "of you and instead rest it on MY shoulders."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...What?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "To think, that's what you've"
+.byte NewLine
+.text "been after this whole time..."
+.byte NewLine
+.text "It's... I don't even have the words for it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "And THAT is for before."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh! W— That's..."
+.byte NewLine
+.text "Wow, you..."
+.byte NewLine
+.text "Okay, you really had me going there, Prince Leif."
+.byte WaitForA
+.byte ScrollText
+.text "I knew that to be an obvious falsehood,"
+.byte NewLine
+.text "and yet I...I somehow found myself terrified."
+.byte NewLine
+.text "Perhaps I'd best refrain from teasing."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hmm..."
+.byte NewLine
+.text "I'd prefer you didn't."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What's that?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "If you did, you'd be taking away a core piece"
+.byte NewLine
+.text "of your charisma, Prince Ced."
+.byte WaitForA
+.byte ScrollText
+.text "It...may seem unfitting for a leader,"
+.byte NewLine
+.text "but it does provide a sense of comfort."
+.byte NewLine
+.text "Any army is in need of that."
+.byte WaitForA
+.byte ScrollText
+.text "I mean, I won't suddenly start doing that"
+.byte NewLine
+.text "because then everyone will think"
+.byte NewLine
+.text "I got hit in the head."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Heh."
+.byte NewLine
+.text "Sounds to me like you're ahead of yourself."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "W-well..."
+.byte NewLine
+.text "Eh, good point."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "If there's nothing else, I'll be heading"
+.byte NewLine
+.text "back out to help secure the outskirts."
+.byte NewLine
+.text "Let us speak again soon, Prince Leif!"
 .byte WaitForA
 .byte ScrollText
 

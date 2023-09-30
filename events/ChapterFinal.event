@@ -563,6 +563,15 @@ eventChapterFinalEvents ; B9/BA0E
 		YIELD_UNK
 		YIELD_UNK
 		YIELD_UNK
+		
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
+
+		STORE_LONG lEventEngineLongParameter, leifced
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+
+		+
 
 		STORE_WORD wEventEngineCharacterTarget, Finn
 		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
@@ -572,6 +581,16 @@ eventChapterFinalEvents ; B9/BA0E
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		+
+		
+		STORE_WORD wEventEngineCharacterTarget, Asbel
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
+
+		STORE_LONG lEventEngineLongParameter, leifasbel
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+
+		+
+		
 		STORE_WORD wEventEngineCharacterTarget, Eyvel
 		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 		JUMP_FALSE +
@@ -593,6 +612,32 @@ eventChapterFinalEvents ; B9/BA0E
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		+
+		
+		STORE_WORD wEventEngineCharacterTarget, Sara
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
+
+		STORE_LONG lEventEngineLongParameter, leifsara
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+
+		+
+		
+		STORE_WORD wEventEngineCharacterTarget, Selphina
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
+
+		STORE_LONG lEventEngineLongParameter, leifselphina
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Glade
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
+
+		STORE_LONG lEventEngineLongParameter, gladetryingtoohard
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+
+		+
+		
 		STORE_WORD wEventEngineCharacterTarget, Linoan
 		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 		JUMP_FALSE +

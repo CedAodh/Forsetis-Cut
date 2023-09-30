@@ -83,7 +83,7 @@ ch15titlename
 .byte $01
 
 ch16Atitlename
-.text "Chapter 16: Nordrhein"
+.text "Chapter 16: Norden Way"
 .byte $01
 
 ch17Atitlename

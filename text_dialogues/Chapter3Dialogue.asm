@@ -34,7 +34,7 @@ ch3op1
 
 .text "Are the cattle being collected on schedule,"
 .byte NewLine
-.text "Lobos?"
+.text "Erebos?"
 .byte WaitForA
 
 .byte Right_slot
@@ -103,7 +103,7 @@ ch3op1
 .byte NewLine
 .text "breath than the impregnable Kerberos' Gate,"
 .byte NewLine
-.text "eh, Lobos?"
+.text "eh, Erebos?"
 .byte WaitForA
 
 .byte Right_slot

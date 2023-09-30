@@ -340,7 +340,7 @@ DagdarRalphTalk
 .word ralph_portrait
 
 .byte left_slot
-.text "So you're Ralph, eh?"
+.text "So you're Ralf, eh?"
 .byte NewLine
 .text "I've heard an awful lot about you"
 .byte NewLine
@@ -542,7 +542,7 @@ DagdarRalphTalk
 .text "We got a deal then!"
 .byte WaitForA 
 .byte ScrollText
-.text "It's been nice meetin' ya, Ralph,"
+.text "It's been nice meetin' ya, Ralf,"
 .byte NewLine
 .text "There are no big enough words to thank ye!"
 .byte WaitForA 
@@ -1370,6 +1370,466 @@ fergusdiarmuid
 .text "But I'm compelled to agree, Fergus;"
 .byte NewLine
 .text "it was good meeting you."
+.byte WaitForA
+
+.byte EndText
+
+leifmeetsseliph
+
+.byte right_slot
+.word LoadPortrait
+.word dermott_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word julia_portrait
+.text "You're back, Sir Diarmuid!"
+.byte NewLine
+.text "Are you all right?"
+.byte WaitForA
+
+.byte right_slot
+.text "You worry too much, Julia."
+.byte NewLine
+.text "It was a simple travel to Leonster."
+.byte NewLine
+.text "I encountered little more than stragglers."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Regardless, I'm relieved..."
+.byte NewLine
+.text "Who is this by your side?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, right."
+.byte NewLine
+.text "I'd like to introduce Prince Leif of Leonster."
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait
+.text "Thank you both for the kind welcome."
+.byte NewLine
+.text "Lady Julia, correct?"
+.byte NewLine
+.text "The pleasure is all mine."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh!"
+.byte NewLine
+.text "You're as kind-hearted as rumor has it,"
+.byte NewLine
+.text "Prince Leif."
+.byte WaitForA
+.byte ScrollText
+.text "...It seems I've forgotten myself."
+.byte NewLine
+.text "Please forgive me."
+.byte NewLine
+.text "You must be here to meet with Lord Seliph."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word dermott_portrait
+.text "That's right."
+.byte NewLine
+.text "Is he about? Deeper in the castle, perhaps?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Y-yes, he is."
+.byte NewLine
+.text "Allow me to bring you to him presently."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "A little shy, isn't she?"
+.byte NewLine
+.text "A calming presence nonetheless, though."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Agreed."
+.byte NewLine
+.text "However...I regret to say"
+.byte NewLine
+.text "none of us know of her origin."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What do you mean?"
+.byte NewLine
+.text "She's lost her memory?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "She has."
+.byte WaitForA
+.byte NewLine
+.text "Lord Lewyn came across her in his travels a few"
+.byte NewLine
+.text "years ago and took her in. Then nearly"
+.byte NewLine
+.text "one year ago, she came to be in our company."
+.byte WaitForA
+.byte ScrollText
+.text "Though since that short time,"
+.byte NewLine
+.text "she's essentially become family to us."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'm glad for her, then."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "As am I."
+.byte NewLine
+.text "...Oh, she's moving pretty quickly."
+.byte NewLine
+.text "We need to catch up before we lose her."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "O-oh. Right."
+.byte NewLine
+.text "I apologize for distracting you."
+.byte WaitForA
+
+.byte EndText
+
+leifmeetsseliph2
+
+.byte right_slot
+.word LoadPortrait
+.word seliph_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word julia_portrait
+.text "My lord Seliph, may I present Prince Leif."
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait
+.text "Prince Seliph..."
+.byte NewLine
+.text "Long have I awaited this day."
+.byte WaitForA
+
+.byte right_slot
+.text "Heh, as have I, Prince Leif."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "P-please, just Leif will do."
+.byte NewLine
+.text "I'm deeply indebted to you, after all."
+.byte NewLine
+.text "You don't have to worry about honorifics."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Forgive me, but I don't feel that way at all,"
+.byte NewLine
+.text "Prince Leif."
+.byte NewLine
+.text "Anyway, I'm thrilled to see you unharmed."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Your efforts have indeed borne fruit."
+.byte NewLine
+.text "We've both been through quite a lot"
+.byte NewLine
+.text "in the past few months, haven't we?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That much is for certain."
+.byte NewLine
+.text "We both fought and toiled for this."
+.byte WaitForA
+.byte ScrollText
+.text "And you know what?"
+.byte NewLine
+.text "I say we take a moment to enjoy it."
+.byte WaitForA
+.byte ScrollText
+.text "I'm sure we have lots and lots to"
+.byte NewLine
+.text "regale each other with."
+.byte NewLine
+.text "Shall we go out on the town?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "R-right now?"
+.byte NewLine
+.text "It would be my lifelong pleasure, Lord Seliph."
+.byte NewLine
+.text "Yes, let us be off."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+
+.byte right_slot
+.byte ScrollText
+
+.byte left_slot
+.word ClearPortrait
+
+.byte right_slot
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.byte right_slot
+.word LoadPortrait
+.word lewyn_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word augustus_portrait
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...As far as anyone else is concerned,"
+.byte NewLine
+.text "this is our first time meeting, is it not?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mm-hmm."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I am August, advisor to Prince Leif."
+.byte NewLine
+.text "I'm to understand you are Lord Lewyn?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes. I fill the same role for Seliph."
+.byte WaitForA
+.byte NewLine
+.text "Speaking out of the blue, but I've a feeling"
+.byte NewLine
+.text "the two of us will get along well, August."
+.byte NewLine
+.text "Let us do great work together."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "As you say, Lord Lewyn."
+.byte WaitForA
+
+.byte EndText
+
+leifmeetsseliph3
+
+.byte right_slot
+.word LoadPortrait
+.word seliph_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "...And here we are."
+.byte NewLine
+.text "Literally speaking, we're halfway there."
+.byte WaitForA
+
+.byte right_slot
+.text "And to think, after all that, your heart"
+.byte NewLine
+.text "is still contained within your chest."
+.byte NewLine
+.text "Ha ha ha..."
+.byte WaitForA
+.byte ScrollText
+.text "Now, preparations to march on Connaught"
+.byte NewLine
+.text "are in the works as we speak."
+.byte NewLine
+.text "Are we in agreement on this?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well...actually..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Is there a problem?"
+.byte NewLine
+.text "I'm happy to listen."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Remember what I told you about Munster?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Oh! How did it slip my mind?"
+.byte NewLine
+.text "Are you saying you wish to"
+.byte NewLine
+.text "change course for Munster?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Truthfully, yes."
+.byte NewLine
+.text "I promised to go back as soon as I could,"
+.byte NewLine
+.text "and I desire to make good on that promise."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I see..."
+.byte NewLine
+.text "This weighs heavily on your mind, doesn't it?"
+.byte NewLine
+.text "I can tell."
+.byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Okay, I'll discuss this with the others,"
+.byte NewLine
+.text "and see if something can't be worked out."
+.byte WaitForA
+.byte ScrollText
+.text "It's just I'm not at liberty to give"
+.byte NewLine
+.text "a definitive answer right here and now."
+.byte NewLine
+.text "...Can you accept that?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Of course."
+.byte NewLine
+.text "I'm aware my request is not at all a light one."
+.byte NewLine
+.text "You have my gratitude merely for considering it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Don't worry—I'm holding pretty high hopes."
+.byte NewLine
+.text "I personally want to help you with this,"
+.byte NewLine
+.text "but again, the decision isn't just mine to make."
+.byte WaitForA
+
+.byte EndText
+
+linoanwantstopromote
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word linoan_portrait
+.text "Lord Leif."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Duchess Linoan?"
+.byte NewLine
+.text "Is there something you require?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I recieved word there's a church a ways"
+.byte NewLine
+.text "east from here, and that my presence"
+.byte NewLine
+.text "has been requested there."
+.byte WaitForA
+.byte ScrollText
+.text "If possible, could you arrange it so that"
+.byte NewLine
+.text "I may go there when we begin to march again?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What could the meaning be behind that?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'm not entirely sure..."
+.byte NewLine
+.text "But it would reflect poorly on Tarrah"
+.byte NewLine
+.text "if I were to ignore this."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I understand."
+.byte NewLine
+.text "I'll try to get someone to escort you there."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Thank you, Lord Leif."
 .byte WaitForA
 
 .byte EndText

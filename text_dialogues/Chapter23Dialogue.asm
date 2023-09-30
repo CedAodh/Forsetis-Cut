@@ -1072,7 +1072,7 @@ ch23opening2
 
 .byte Left_slot
 .byte ScrollText
-.text "Faden, cut them down in the streets!"
+.text "Verden, cut them down in the streets!"
 .byte NewLine
 .text "Slay every last little brat!"
 .byte WaitForA

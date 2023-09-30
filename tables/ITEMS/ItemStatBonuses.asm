@@ -16,6 +16,6 @@ aBraveLanceItemBonuses		.dstruct structItemStatBonuses,  0,  0,  0,  0,  0,  0, 
 aForsetiItemBonuses			.dstruct structItemStatBonuses,  0,  0, 10, 20,  0,  0,  0,  0 ; B0/804A
 aFragarachItemBonuses		.dstruct structItemStatBonuses,  0,  0,  1,  2,  0,  0,  0,  0 ; B0/8052
 aMjolnirItemBonuses		.dstruct structItemStatBonuses,  0,  0, 20, 10,  0,  0,  0,  0 ; B0/805A
-aUnknown2ItemBonuses		.dstruct structItemStatBonuses,  0,  0,  0, 20,  0,  0,  0,  0 ; B0/8062
+aTathlumItemBonuses		.dstruct structItemStatBonuses,  0,  0,  0, 10,  0,  0,  0,  0 ; B0/8062
 aGungnirItemBonuses			.dstruct structItemStatBonuses,  10,  0,  0,  10, 10,  0,  0,  0 ; B0/806A
 aGaeBolgItemBonuses			.dstruct structItemStatBonuses, 10,  0,  10,  0,  10,  0,  0,  0 ; B0/8072

@@ -17,15 +17,15 @@ eventChapter19Events ; FD/CBB9
 		END_DEFINITION
 		EVENT $00, _IshtarArrival
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 6
+			CMP_WORD wCurrentTurn, 4
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 6, 25
+			CMP_WORD_RANGE wCurrentTurn, 3, 25
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 6, 25
+			CMP_WORD_RANGE wCurrentTurn, 4, 25
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

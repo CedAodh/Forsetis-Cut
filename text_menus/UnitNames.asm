@@ -263,7 +263,7 @@ char_name_pointers		.block
 	.word	<>char_names._FriegeName
 	.word	<>char_names._FriegeName
 
-	.word	<>char_names._BallisticianName	; Unused
+	.word	<>char_names._LeonsterName	; Once unused
 
 	.word	<>char_names._FriegeName
 
@@ -501,7 +501,7 @@ _DagdarName
 	.word $0000
 
 _RalphName
-	.text "Ralph "
+	.text "Ralf"
 	.word $0000
 
 _MartyName
@@ -705,7 +705,7 @@ _LifisCrewName
 	.word $0000
 
 _LobosName
-	.text "Lobos "
+	.text "Erebos"
 	.word $0000
 
 _RomeoName
@@ -753,7 +753,7 @@ _BowieName
 	.word $0000
 
 _LeenaName
-	.text "Leena "
+	.text "Lina"
 	.word $0000
 
 _HiredSwordName
@@ -781,7 +781,7 @@ _WarriorName
 	.word $0000
 
 _RumaighName
-	.text "Le[may"
+	.text "Le[mais "
 	.word $0000
 
 _GomezName
@@ -813,7 +813,7 @@ _KempfName
 	.word $0000
 
 _OltophName
-	.text "Oltoph"
+	.text "Ortov "
 	.word $0000
 
 _RosaName
@@ -841,7 +841,7 @@ _PaulusName
 	.word $0000
 
 _BaldachName
-	.text "Baldach "
+	.text "Bartok"
 	.word $0000
 
 _LeonsterName
@@ -886,7 +886,7 @@ _ArionName
 	.word $0000
 
 _McCloyName
-	.text "(McCloy "
+	.text "(McCroy "
 	.word $0000
 
 _CodhaName
@@ -951,7 +951,7 @@ _AsaelloName
 	.word $0000
 
 _BrookName
-	.text "Brook "
+	.text "Brooke"
 	.word $0000
 
 _SilesseName
@@ -1003,7 +1003,7 @@ _FrausName
 	.word $0000
 
 _SeimetzName
-	.text "Se{im}etz "
+	.text "De{im}etor"
 	.word $0000
 
 _ZaunName
@@ -1023,7 +1023,7 @@ _DaisyName
 	.word $0000
 
 _FadenName
-	.text "Faden "
+	.text "Verden"
 	.word $0000
 
 _NancyName
@@ -1051,7 +1051,7 @@ _PitfighterName
 	.word $0000
 
 _BandoleName
-	.text "Bandole "
+	.text "Bondol"
 	.word $0000
 
 _TolmanName
@@ -1059,7 +1059,7 @@ _TolmanName
 	.word $0000
 
 _MagiName
-	.text "(Magi Fighter "
+	.text "(Magi "
 	.word $0000
 
 _BishopName
@@ -1119,7 +1119,7 @@ _BharatName
 	.word $0000
 
 _UlsterName
-	.text "Ulster Troop"
+	.text "Ulster"
 	.word $0000
 
 _GelbenritterName

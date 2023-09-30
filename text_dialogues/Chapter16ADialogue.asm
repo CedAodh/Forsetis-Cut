@@ -866,7 +866,7 @@ ch16Aopening2
 .byte WaitForA
 
 .byte Right_slot
-.text "Hm... The perimeter of Ford Nordrhein is"
+.text "Hm... The perimeter of Ford Norden is"
 .byte NewLine
 .text "protected by ballistae..."
 .byte WaitForA
@@ -1188,7 +1188,7 @@ ch16Awm2
 
 .text "the army would have to breach"
 .byte NewLine
-.text "Fort Nordrhein, an imperial base."
+.text "Fort Norden, an imperial base."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortraitalt_1

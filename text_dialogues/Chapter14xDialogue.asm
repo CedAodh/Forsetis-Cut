@@ -335,14 +335,14 @@ ch14xclosing
 
 .byte Right_slot
 .byte ScrollText
-.text "I'd advise crossing over the Dauph Mountains"
+.text "I'd advise crossing over the Dauphiné Mountains"
 .byte NewLine
-.text "to reach the road to Nordrhein."
+.text "to reach the road to Norden Way."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "The road to Nordrhein?"
+.text "Norden Way?"
 .byte NewLine
 .text "So you propose that we make our way"
 .byte NewLine

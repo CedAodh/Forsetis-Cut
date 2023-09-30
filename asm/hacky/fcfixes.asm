@@ -122,12 +122,12 @@
 
 .here
 
-;* := $0A69F5
-  ;.logical $94E9F5
+* := $0A69F5
+  .logical $94E9F5
 
-;.byte $00, $80, $2A
+.byte $00, $80, $2A
 
-;.here
+.here
 
 ;When initiating combat with a magic sword,
 ;reduces distance between attacker and opponent

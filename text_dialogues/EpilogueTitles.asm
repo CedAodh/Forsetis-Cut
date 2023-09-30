@@ -1,6 +1,6 @@
 leiftitle
 .byte $09
-.text "Leif — Prince of Leonster"
+.text "Leif — Unifier of Thracia"
 .byte $05
 .byte EndText
 
@@ -18,7 +18,7 @@ orsintitle
 
 halvantitle
 .byte $09
-.text "Halvan — Layman Turned Hero"
+.text "Halvan — Quiet Hero"
 .byte $05
 .byte EndText
 
@@ -30,19 +30,19 @@ eyveltitle
 
 dagdartitle
 .byte $09
-.text "Dagdar — Ex-Bandit of Mount Violdrake"
+.text "Dagdar — Peak Ex-Bandit"
 .byte $05
 .byte EndText
 
 ralphtitle
 .byte $09
-.text "Ralph — Wandering Sellsword"
+.text "Ralf — Rootless Mercenary"
 .byte $05
 .byte EndText
 
 martytitle
 .byte $09
-.text "Marty — Dagdar's Beloved Man"
+.text "Marty — Dagdar's Right-Hand"
 .byte $05
 .byte EndText
 
@@ -60,13 +60,13 @@ mirandatitle
 
 safiyatitle
 .byte $09
-.text "Safy — Servant of the Divine"
+.text "Safy — Divine Servant"
 .byte $05
 .byte EndText
 
 laratitle
 .byte $09
-.text "Lara — From Innocence to Thievery"
+.text "Lara — Innocent Thief"
 .byte $05
 .byte EndText
 
@@ -78,13 +78,13 @@ brightontitle
 
 fergustitle
 .byte $09
-.text "Fergus — Free-Spirited Knight"
+.text "Fergus — Impromptu Knight"
 .byte $05
 .byte EndText
 
 edatitle
 .byte $09
-.text "Eda — Dracoknight of Thracia"
+.text "Eda — Steadfast Rider"
 .byte $05
 .byte EndText
 
@@ -108,7 +108,7 @@ hickstitle
 
 nannatitle
 .byte $09
-.text "Nanna — Nordion Princess"
+.text "Nanna — Beloved Princess"
 .byte $05
 .byte EndText
 
@@ -120,13 +120,13 @@ selphinatitle
 
 dalsintitle
 .byte $09
-.text "Dalsin — Knight of Unwavering Resolve"
+.text "Dalsin — Knight of Passion"
 .byte $05
 .byte EndText
 
 calliontitle
 .byte $09
-.text "Callion — Nobleman of Leonster"
+.text "Callion — Leonster's Courtesy"
 .byte $05
 .byte EndText
 
@@ -150,25 +150,25 @@ gladetitle
 
 kanetitle
 .byte $09
-.text "Kane — Lance of Leonster"
+.text "Kane — Pragmatic Knight"
 .byte $05
 .byte EndText
 
 albatitle
 .byte $09
-.text "Alba — Lance of Leonster"
+.text "Alba — Optimistic Knight"
 .byte $05
 .byte EndText
 
 roberttitle
 .byte $09
-.text "Robert — Bowman of Leonster"
+.text "Robert — Bashful Knight"
 .byte $05
 .byte EndText
 
 fredtitle
 .byte $09
-.text "Fred — Knight of House Stade"
+.text "Fred — Paladin of Friege"
 .byte $05
 .byte EndText
 
@@ -180,7 +180,7 @@ olwentitle
 
 cedtitle
 .byte $09
-.text "Ced — Crusader of Wind"
+.text "Ced — Sage of the Wind"
 .byte $05
 .byte EndText
 
@@ -192,13 +192,13 @@ lithistitle
 
 karintitle
 .byte $09
-.text "Karin — Swift Rider"
+.text "Karin — Driven Knight"
 .byte $05
 .byte EndText
 
 deantitle
 .byte $09
-.text "Dean — Hero of the Clear Blue Skies"
+.text "Dean — Hero of the Cerulean"
 .byte $05
 .byte EndText
 
@@ -210,25 +210,25 @@ shanamtitle
 
 trudetitle
 .byte $09
-.text "Trude — The Man Called Death Itself"
+.text "Trude — Death Incarnate"
 .byte $05
 .byte EndText
 
 tanyatitle
 .byte $09
-.text "Tanya — Dagdar's Beloved Kid"
+.text "Tanya — Dagdar's Kid"
 .byte $05
 .byte EndText
 
 linoantitle
 .byte $09
-.text "Linoan — Blossoming Flower of Tarrah"
+.text "Linoan — Tarrah's Lone Flower"
 .byte $05
 .byte EndText
 
 mishatitle
 .byte $09
-.text "Misha — First of the New Falcon Knights"
+.text "Misha — Rider of the Wind"
 .byte $05
 .byte EndText
 
@@ -252,7 +252,7 @@ mareetatitle
 
 tinatitle
 .byte $09
-.text "Tina — Mischievous Little Sister"
+.text "Tina — Capricious Little One"
 .byte $05
 .byte EndText
 
@@ -264,7 +264,7 @@ amaldatitle
 
 conomortitle
 .byte $09
-.text "Conomor — Knight of Ulster"
+.text "Conomor — Count of Ulster"
 .byte $05
 .byte EndText
 
@@ -282,7 +282,7 @@ dermotttitle
 
 sarahtitle
 .byte $09
-.text "Sara — Doomed by Fate"
+.text "Sara — Lady of Loptr"
 .byte $05
 .byte EndText
 
@@ -294,7 +294,7 @@ saiastitle
 
 galzustitle
 .byte $09
-.text "Galzus — Sullied Swordsman of Od"
+.text "Galzus — Dark Blade of Od"
 .byte $05
 .byte EndText
 

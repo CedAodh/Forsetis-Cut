@@ -321,7 +321,7 @@ ch25ending1augustus
 
 .byte Left_slot
 .word LoadPortrait
-.word leif_portrait2
+.word leif_portrait
 .text "We...won...?"
 .byte NewLine
 .text "Is it...really over?"

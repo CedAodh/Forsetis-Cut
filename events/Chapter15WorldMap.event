@@ -92,4 +92,33 @@ eventChapter15WorldMapEvents ; E7/EC0F
 
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
+	
+	STORE_WORD wEventEngineCharacterTarget, Daisy
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	FADE_OUT $02
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	macroDialogueWithBackground daisyrequest, 3
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	SET_MUSIC $2D
+	YIELD
+	
+	+
 END1

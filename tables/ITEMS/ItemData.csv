@@ -80,7 +80,7 @@ BrokenBow,TypeBow,None,0,10,10,-1,0,2,2,RankE,ItemEffectivenesses.aFlyingEffecti
 Fire,TypeFire,None,7,75,2,23,0,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._FireDesc,None,None,None,None,TraitWeapon | TraitTome,$4D
 Elfire,TypeFire,None,11,90,3,54,10,1,2,WeaponLocks.aFailinisWeaponLock,ItemEffectivenesses.aCavalryAndArmorEffectiveness,aNoItemBonuses,0,<>item_descs._ElfireDesc,None,None,None,Skill3Paragon,TraitWeapon | TraitTome,$4E
 Bolganone,TypeFire,None,15,85,5,16,0,1,2,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,4200,<>item_descs._BolganoneDesc,None,None,None,None,TraitWeapon | TraitTome,$4F
-Tathlum,TypeBow,None,13,100,7,60,10,2,2,WeaponLocks.aTathlumWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,6200,<>item_descs._TathlumDesc,$22,None,None,Skill3Wrath,TraitWeapon | TraitUnsellable,$9F
+Tathlum,TypeBow,None,13,100,7,60,10,2,2,WeaponLocks.aTathlumWeaponLock,ItemEffectivenesses.aMagicEffectiveness,aTathlumItemBonuses,6200,<>item_descs._TathlumDesc,None,None,Skill2Nihil,None,TraitWeapon | TraitUnsellable,$9F
 Thunder,TypeThunder,None,6,70,1,25,5,1,2,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._ThunderDesc,None,None,None,None,TraitWeapon | TraitTome,$51
 DireThunder,TypeThunder,None,15,80,5,60,10,1,2,WeaponLocks.aOlwenReinhardtWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._DireThunderDesc,None,None,None,Skill3Brave,TraitWeapon | TraitTome | TraitUnsellable,$52
 Thoron,TypeThunder,None,13,75,4,18,20,1,2,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,4200,<>item_descs._ThoronDesc,None,None,None,None,TraitWeapon | TraitTome,$53
@@ -158,8 +158,8 @@ CedsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectivene
 BragisScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BragisScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9B
 HeimsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HeimsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9C
 ParagonManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._ParagonManualDesc,$28,None,None,None,None,$9D
-AccostManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._AccostManualDesc,$2A,None,None,None,None,$9E
-BargainManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._BargainManualDesc,$22,None,None,None,None,$9F
+AccostManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._AccostManualDesc,$3C,None,None,None,None,$9E
+BargainManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._BargainManualDesc,$2C,None,None,None,None,$9F
 VantageManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._VantageManualDesc,$2E,None,None,None,None,$A0
 WrathManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._WrathManualDesc,$30,None,None,None,None,$A1
 AdeptManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._AdeptManualDesc,$32,None,None,None,None,$A2

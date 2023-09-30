@@ -60,5 +60,44 @@ aCavalryEffectiveness ; B0/8096
 	.byte MasterKnightF
 	.byte 0
 
+aMagicEffectiveness ; B0/8096
+	.byte Troubadour
+	.byte PaladinF
+	.byte MageKnight
+	.byte Baron
+	.byte MageKnightDismounted
+	.byte MageKnightFDismounted
+	.byte Priest
+	.byte Mage
+	.byte LoptrianMage
+	.byte ThunderMage
+	.byte WindMage
+	.byte HighPriest
+	.byte Bishop
+	.byte Sage
+	.byte Bard
+	.byte Cleric
+	.byte Sorcerer
+	.byte DarkBishop
+	.byte TroubadourDismounted
+	.byte PaladinFDismounted
+	.byte MageF
+	.byte ThunderMageF
+	.byte LoptrianMageF
+	.byte WindMageF
+	.byte MageKnightF
+	.byte SageF
+	.byte Priestess
+	.byte HighPriestess
+	.byte FalconKnight
+	.byte FalconKnightDismounted
+	.byte MasterKnight
+	.byte MasterKnightF
+	.byte MasterKnightDismounted
+	.byte MasterKnightFDismounted
+	.byte BaronGlitched
+	.byte Emperor
+	.byte 0
+
 aNoEffectiveness ; B0/80AA
 	.byte 0

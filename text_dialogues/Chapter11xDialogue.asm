@@ -319,7 +319,7 @@ ch11xopening1
 .byte Left_slot
 .word LoadPortrait
 .word kempf_portrait
-.text "Bishop Oltoph, listen closely:"
+.text "Bishop Ortov, listen closely:"
 .byte NewLine
 .text "these attackers are none other than"
 .byte NewLine

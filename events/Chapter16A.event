@@ -813,7 +813,7 @@ eventChapter16AEvents ; FD/B120
 	.word $0000
 
 	_OpeningEvent ; FD/B8FE
-		TEST_FLAG_SET FlagNoHelpFromOltoph
+		EVENT_TEST_FLAG_SET FlagNoHelpFromOltoph
 		JUMP_TRUE +
 		
 		LOAD1 eventChapter16AData._OltophGroup

@@ -450,3 +450,113 @@ robertgladeA
 .byte WaitForA
 
 .byte EndText
+
+karinseesmisha
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+
+.byte left_slot
+.word LoadPortrait
+.word karin_portrait
+.text "Hey, Lord Leif!"
+.byte NewLine
+.text "I have something to run by you."
+.byte WaitForA
+
+.byte right_slot
+.text "Something to run by me?"
+.byte NewLine
+.text "About the upcoming battle?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yeah."
+.byte NewLine
+.text "When I was out with the scouts,"
+.byte NewLine
+.text "we saw more Silessian mercenaries."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "More?"
+.byte NewLine
+.text "I've seen quite a few of them myself recently."
+.byte NewLine
+.text "What's that all about?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I...I really don't know."
+.byte NewLine
+.text "That's what I want to find out, too."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ah, excellent."
+.byte NewLine
+.text "I take it you have a plan, then?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "W-well...sort of? I'm just looking to"
+.byte NewLine
+.text "get a chance to talk to their commander,"
+.byte NewLine
+.text "but there's no guarantee it'll do anything."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Then why take the risk?"
+.byte NewLine
+.text "We can't afford to lose you, Karin!"
+.byte NewLine
+.text "You know that!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I promise I'll be careful!"
+.byte WaitForA
+.byte NewLine
+.text "Even— Even if I can't get her to switch,"
+.byte NewLine
+.text "I need to find out what's going on!"
+.byte NewLine
+.text "Please, Lord Leif—let me go through with this!"
+.byte WaitForA
+.byte ScrollText
+.text "If you want to help,"
+.byte NewLine
+.text "maybe if I talk to her and she refuses,"
+.byte NewLine
+.text "the rest of you could rush in and capture her."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Considering she's a pegasus knight,"
+.byte NewLine
+.text "that sounds rather difficult to pull off."
+.byte NewLine
+.text "But I'll... Fine, I'll think on it."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Th-thank you!"
+.byte NewLine
+.text "That's all I ask!"
+.byte WaitForA
+
+.byte EndText

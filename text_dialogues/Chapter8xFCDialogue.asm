@@ -345,3 +345,64 @@ ch8xclosing2
 .byte WaitForA
 
 .byte EndText
+
+ronanrequest
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+
+.byte left_slot
+.word LoadPortrait
+.word ronan_portrait
+.text "Hey, Lord Leif?"
+.byte WaitForA
+
+.byte right_slot
+.text "What is it, Ronan?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "So, er... Dagdar AND Tanya are both"
+.byte NewLine
+.text "trapped in the manor, are they not?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That's what we've heard."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Then allow me to join you and help save them!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I'm glad that you're so eager,"
+.byte NewLine
+.text "but...what's in it for you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "W-well, I..."
+.byte NewLine
+.text "I've only known her for a short time,"
+.byte NewLine
+.text "but I really want to make sure Tanya's safe."
+.byte WaitForA
+.byte ScrollText
+.text "She was so nice to me when I was just"
+.byte NewLine
+.text "a novice to you all, and...and I want"
+.byte NewLine
+.text "to do all I can to repay her."
+.byte WaitForA
+.byte ScrollText
+.text "Please, Lord Leif!"
+.byte WaitForA
+
+.byte EndText

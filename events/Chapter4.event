@@ -620,13 +620,29 @@ eventChapter4Events ; 99/8778
 		MS_MOVE_UP
 	MS_END
 
-	_OpeningEvent ; 99/8FD4
+	_OpeningEvent ; 99/8FD4		
+		FADE_OUT $02
+		YIELD
+	
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+	
+		macroDialogueWithBackground raydrikloreeee, 1
+	
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+	
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+		
 		CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 
 		macroSetAllCharacterByte structCharacterDataRAM.Fatigue, 0
 
 		CALL_ASM_LOOP $83ACEA, $0000
-
+		
 		macroSetAllCharacterTurnStatus (TurnStatusUnknown1 | TurnStatusHidden)
 
 		macroUnsetAllCharacterTurnStatus (TurnStatusGrayed | TurnStatusMovementStar | TurnStatusMoved)

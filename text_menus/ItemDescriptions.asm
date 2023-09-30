@@ -888,9 +888,9 @@ _BlessedSwordDesc
 .word $0000
 .text "Anti{dash}Cavalry "
 .word $0000
-.text "{BRA1}{BRA2}, Gives (Miracle"
+.text "Gives (Miracle, {BRA1}{BRA2}"
 .word $0000
-.text "and {+}{1}{0} (Mag "
+.text "(Mag{+}{1}{0}"
 .word $0000
 .word $0000
 
@@ -1267,15 +1267,11 @@ _HezulsScrollDesc
 _NjorunsScrollDesc
 .text "(Modifies gro]wths"
 .word $0000
-.text "{H}{P}        {+}{1}{0}{%}"
-.word $0000
 .text "Strength    {+}{3}{0}{%}"
 .word $0000
 .text "(Magic      {-}{1}{0}{%}"
 .word $0000
-.text "Skill       {+}{1}{0}{%}"
-.word $0000
-.text "Speed       {-}{1}{0}{%}"
+.text "Defense     {+}{1}{0}{%}"
 .word $0000
 .word $0000
 
@@ -1284,11 +1280,11 @@ _DainnsScrollDesc
 .word $0000
 .text "{H}{P}          {+}{5}{%}"
 .word $0000
-.text "Strength      {+}{5}{%}"
+.text "Strength    {+}{1}{0}{%}"
 .word $0000
-.text "Luck          {+}{5}{%}"
+.text "Speed       {-}{1}{0}{%}"
 .word $0000
-.text "Defense     {+}{1}{0}{%}"
+.text "Defense     {+}{2}{0}{%}"
 .word $0000
 .text "(Move[ment    {+}{5}{%}"
 .word $0000
@@ -1303,9 +1299,7 @@ _NalsScrollDesc
 .word $0000
 .text "Skill       {-}{1}{0}{%}"
 .word $0000
-.text "Luck          {+}{5}{%}"
-.word $0000
-.text "Defense       {+}{5}{%}"
+.text "Defense     {+}{1}{0}{%}"
 .word $0000
 .text "Constitution{+}{1}{0}{%}"
 .word $0000
@@ -1316,15 +1310,13 @@ _UllursScrollDesc
 .word $0000
 .text "{H}{P}          {+}{5}{%}"
 .word $0000
-.text "Strength      {+}{5}{%}"
-.word $0000
 .text "Skill       {+}{1}{0}{%}"
 .word $0000
 .text "Speed       {+}{1}{0}{%}"
 .word $0000
 .text "Luck        {+}{1}{0}{%}"
 .word $0000
-.text "Constitution{-}{1}{0}{%}"
+.text "Constitution  {-}{5}{%}"
 .word $0000
 .word $0000
 
@@ -1333,9 +1325,7 @@ _BragisScrollDesc
 .word $0000
 .text "Strength    {-}{1}{0}{%}"
 .word $0000
-.text "(Magic        {+}{5}{%}"
-.word $0000
-.text "Skill         {+}{5}{%}"
+.text "(Magic      {+}{1}{0}{%}"
 .word $0000
 .text "Luck        {+}{3}{0}{%}"
 .word $0000
@@ -1346,13 +1336,15 @@ _FjalarsScrollDesc
 .word $0000
 .text "{H}{P}        {+}{1}{0}{%}"
 .word $0000
-.text "(Magic        {+}{5}{%}"
+.text "(Magic      {+}{1}{0}{%}"
 .word $0000
 .text "Skill         {+}{5}{%}"
 .word $0000
 .text "Speed         {+}{5}{%}"
 .word $0000
 .text "Defense       {+}{5}{%}"
+.word $0000
+.text "(Move[ment    {-}{5}{%}"
 .word $0000
 .word $0000
 
@@ -1365,9 +1357,7 @@ _ThrudsScrollDesc
 .word $0000
 .text "Skill       {+}{1}{0}{%}"
 .word $0000
-.text "Luck          {+}{5}{%}"
-.word $0000
-.text "(Move[ment    {+}{5}{%}"
+.text "(Move[ment  {+}{1}{0}{%}"
 .word $0000
 .word $0000
 
@@ -1376,20 +1366,22 @@ _CedsScrollDesc
 .word $0000
 .text "{H}{P}        {-}{1}{0}{%}"
 .word $0000
+.text "(Magic        {+}{5}{%}"
+.word $0000
 .text "Speed       {+}{3}{0}{%}"
 .word $0000
-.text "Luck        {+}{1}{0}{%}"
+.text "Luck          {+}{5}{%}"
 .word $0000
 .word $0000
 
 _HeimsScrollDesc
 .text "(Modifies gro]wths"
 .word $0000
-.text "{H}{P}        {+}{1}{0}{%}"
+.text "{H}{P}          {+}{5}{%}"
 .word $0000
-.text "(Magic      {+}{1}{0}{%}"
+.text "(Magic      {+}{2}{0}{%}"
 .word $0000
-.text "Speed       {+}{1}{0}{%}"
+.text "Speed         {+}{5}{%}"
 .word $0000
 .text "Luck        {+}{1}{0}{%}"
 .word $0000
@@ -1613,11 +1605,11 @@ _LoptousDesc
 _TathlumDesc
 .text "{Lock}Tanya, Ronan"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Anti{dash}(Magic"
 .word $0000
-.text "Gives )Wrath"
+.text "Gives +Nihil"
 .word $0000
-.text "Use for {+}{7} (Mag "
+.text "Spd {+}{1}{0}"
 .word $0000
 .word $0000
 

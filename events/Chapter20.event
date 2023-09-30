@@ -18,54 +18,54 @@ eventChapter20Events ; FD/D942
 		EVENT $00, _EndingEvent
 			TEST_FLAG_UNSET $06
 			TEST_FLAG_SET $02
-			CMP_WORD_RANGE wCurrentTurn, 15, $FFFF
+			CMP_WORD_RANGE wCurrentTurn, 16, $FFFF
 		END_DEFINITION
 		EVENT $00, _BharatRemoveImmortality
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 3
 		END_DEFINITION
 		EVENT $00, _Turn3Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 3
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT $00, _Turn5Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 5
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 4
 		END_DEFINITION
 		EVENT $00, _Turn7Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 7
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 6
 		END_DEFINITION
 		EVENT $00, _Turn9Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 8
 		END_DEFINITION
 		EVENT $00, _Turn11Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 10
 		END_DEFINITION
 		EVENT $00, _Turn13Reinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 12
 		END_DEFINITION
 		EVENT $00, _Turn14Reinforcements
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 14
 		END_DEFINITION
 		EVENT $06, _EnemiesFlee
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $02
 			CMP_WORD wCurrentTurn, 14
 		END_DEFINITION
 		EVENT $00, _BharatCharge
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $02
 			CMP_WORD wCurrentTurn, 15
 		END_DEFINITION
 		EVENT $00, _EndingEvent
 			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_SET $02
-			CMP_WORD wCurrentTurn, 15
+			CMP_WORD wCurrentTurn, 16
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -900,7 +900,7 @@ eventChapter20Events ; FD/D942
 		DIALOGUE ch20opening2
 		YIELD
 		
-		TEST_FLAG_SET FlagNoHelpFromOltoph
+		EVENT_TEST_FLAG_SET FlagNoHelpFromOltoph
 		JUMP_TRUE +
 		
 		LOAD1 eventChapter20Data._WolfeGroup

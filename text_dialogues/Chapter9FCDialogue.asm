@@ -610,3 +610,75 @@ kanealbarobert
 .byte WaitForA
 
 .byte EndText
+
+callionrequest
+
+.word PlayMusic
+.byte $32
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word callion_portrait
+.text "Prince Leif."
+.byte WaitForA
+
+.byte right_slot
+.text "Yes, Callion?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Allow me a moment to further test your memory:"
+.byte NewLine
+.text "do you remember Lady Selphina?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Remember Selphina?"
+.byte NewLine
+.text "Of course I do—she's Count Dryas' daughter!"
+.byte NewLine
+.text "I could never forget her."
+.byte WaitForA
+.byte ScrollText
+.text "I take it she's been assisting him"
+.byte NewLine
+.text "with raising our new knights?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That she has."
+.byte WaitForA
+.byte ScrollText
+.text "I'd like to formally request to ride ahead"
+.byte NewLine
+.text "and meet with her as soon as possible,"
+.byte NewLine
+.text "if you will allow it, milord."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I see no problem with that."
+.byte NewLine
+.text "I wager I'd want you close to the helm anyway"
+.byte NewLine
+.text "to ensure we don't lose our way all of a sudden."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Then unless something should go"
+.byte NewLine
+.text "horribly wrong, it's settled."
+.byte NewLine
+.text "Thank you, sire!"
+.byte WaitForA
+
+.byte EndText

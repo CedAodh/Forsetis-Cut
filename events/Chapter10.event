@@ -20,7 +20,7 @@ eventChapter10Events ; 99/C559
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _OlwenFredLeave
-			CMP_WORD wCurrentTurn, 5
+			CMP_WORD wCurrentTurn, 4
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $06
 		END_DEFINITION

@@ -236,3 +236,88 @@ leifosian
 .byte WaitForA
 
 .byte EndText
+
+introtopreps
+
+.byte right_slot
+.word LoadPortrait
+.word augustus_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "Ah, to no longer be on the run."
+.byte NewLine
+.text "I can finally be outdoors and"
+.byte NewLine
+.text "let my shoulders down."
+.byte WaitForA
+
+.byte right_slot
+.text "I resonate with your feelings."
+.byte NewLine
+.text "Now we can act against our adversaries"
+.byte NewLine
+.text "on our own terms. It's quite the blessing."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes."
+.byte NewLine
+.text "Now that we can partake in proper inventory"
+.byte NewLine
+.text "management, we'll be braced for anything."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Such a privilege will be invaluable to us."
+.byte WaitForA
+.byte NewLine
+.text "We also have traveling merchants accompanying"
+.byte NewLine
+.text "us, should we need—and that is if we're actually"
+.byte NewLine
+.text "able—to equip ourselves with new weaponry."
+.byte WaitForA
+.byte ScrollText
+.text "But from here on out, my prince, we must"
+.byte NewLine
+.text "also be mindful of our party's endurance."
+.byte WaitForA
+.byte NewLine
+.text "No matter how one yearns for a goal,"
+.byte NewLine
+.text "exhaustion can still do them in."
+.byte WaitForA
+.byte ScrollText
+.text "We ought to consider when we truly need"
+.byte NewLine
+.text "certain soldiers present and at their best—"
+.byte NewLine
+.text "and allow them a moment of rest otherwise."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hmm... That will definitely be a drawback."
+.byte NewLine
+.text "How effectively can we fight, then?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "There's little point in discussing that, honestly."
+.byte NewLine
+.text "This is our wisest and most realistic option."
+.byte NewLine
+.text "You should acknowledge that."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I understand—we'll simply have to make do."
+.byte WaitForA
+
+.byte EndText

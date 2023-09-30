@@ -726,6 +726,29 @@ eventChapter13Events ; 99/E392
 		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
 
 		PLAY_SOUND_WORD $00E7
+		
+		SCROLL_CAMERA_CHAR Gustav
+		SET_CAMERA_SPEED 4
+		YIELD
+		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $39
+		YIELD
+		
+		DIALOGUE catfight1
+		YIELD
+		
+		DIALOGUE catfight2
+		YIELD
+		
+		DIALOGUE catfight3
+		YIELD
+		
+		DIALOGUE catfight4
+		YIELD
 
 		FADE_OUT $01
 		YIELD

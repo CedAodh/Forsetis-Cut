@@ -182,7 +182,7 @@ eventChapter14Events ; FD/9790
 	END_DEFINITION_ARRAY
 
 	_BeforeActionEventDefinitions ; FD/9A19
-		EVENT $00, $99EC7F
+		EVENT $00, _PlayerLoss
 			CMP_BYTE wCursorXCoord, 16
 			CMP_BYTE wCursorYCoord, 1
 			CMP_WORD wCurrentPhase, Enemy
@@ -1084,4 +1084,16 @@ eventChapter14Events ; FD/9790
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1
 
+	_PlayerLoss ; 99/EC7F
+		PLAY_SOUND_WORD $00E0
+
+		STORE_WORD wCurrentMapMusic, $00
+
+		DIALOGUE ch13fall
+		YIELD
+
+		CALL_ASM_SKIPPABLE rlUnknown80C29D, $0000
+
+		STORE_WORD wUnknown001791, $FFFF
+	END1
 

@@ -657,7 +657,7 @@ ch13opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Why the hurry? Baldach and the 8th Division"
+.text "Why the hurry? Bartok and the 8th Division"
 .byte NewLine
 .text "should be here shortly."
 .byte WaitForA
@@ -682,7 +682,7 @@ ch13opening2
 .word liszt_portrait
 .text "Hmph! I'll be damned if I just sit on my hands"
 .byte NewLine
-.text "and let Baldach rob me of all the glory!"
+.text "and let Bartok rob me of all the glory!"
 .byte WaitForA
 .byte ScrollText
 .text "All imperial forces, begin the assault!"

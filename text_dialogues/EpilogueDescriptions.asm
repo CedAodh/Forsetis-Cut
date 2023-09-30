@@ -2,7 +2,7 @@ leifepi
 .byte $09
 .word $1200
 .byte $04
-.text "Along with Lord Seliph,"
+.text "Along with Prince Seliph,"
 .byte NewLine
 .text "the rightful heir"
 .byte NewLine
@@ -68,9 +68,17 @@ leifepi
 .byte NewLine
 .text "of this New Kingdom"
 .byte NewLine
-.text "of Thracia, and together"
+.text "of Thracia,"
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
+.text "and together with"
 .byte NewLine
-.text "with his older sister,"
+.text "his older sister,"
 .byte NewLine
 .text "Altena, led his"
 .byte NewLine
@@ -131,7 +139,7 @@ LeifGoodEnding
 .byte $09
 .word $1200
 .byte $04
-.text "Along with Lord Seliph,"
+.text "Along with Prince Seliph,"
 .byte NewLine
 .text "the rightful heir"
 .byte NewLine
@@ -197,11 +205,19 @@ LeifGoodEnding
 .byte NewLine
 .text "of this New Kingdom"
 .byte NewLine
-.text "of Thracia, and together"
+.text "of Thracia,"
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
+.text "and together with"
 .byte NewLine
-.text "with his queen, Nanna,"
+.text "his queen, Nanna, and"
 .byte NewLine
-.text "and older sister, Altena,"
+.text "older sister, Altena,"
 .byte NewLine
 .text "led his motherland into"
 .byte NewLine
@@ -342,7 +358,7 @@ nannaepi
 .byte $10
 .text "After wedding Leif, now"
 .byte NewLine
-.text "King of New Thracia,"
+.text "king of New Thracia,"
 .byte NewLine
 .text "Nanna dedicated her"
 .byte NewLine
@@ -364,7 +380,7 @@ nannaepi
 .byte NewLine
 .text "“Princess Nanna” even"
 .byte NewLine
-.text "after becoming Queen."
+.text "after becoming queen."
 .word PauseDialogue
 .byte $5A
 .byte $0F
@@ -602,7 +618,7 @@ ralphepi
 .byte NewLine
 .text "as he swung a sword,"
 .byte NewLine
-.text "Ralph poured his energy"
+.text "Ralf poured his energy"
 .byte NewLine
 .text "into healing the land."
 .word PauseDialogue
@@ -614,7 +630,7 @@ ralphepi
 .byte $10
 .text "Save for this one detail,"
 .byte NewLine
-.text "no other record of Ralph"
+.text "no other record of Ralf"
 .byte NewLine
 .text "can be found"
 .byte NewLine
@@ -626,11 +642,19 @@ ralphepi
 .byte ScrollText
 .byte $0F
 .byte $10
-.text "Having made no effort to"
+.text "Having made no effort"
 .byte NewLine
-.text "preserve a record of his"
+.text "to preserve a record of"
 .byte NewLine
-.text "deeds, he is emblematic"
+.text "his deeds,"
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
+.text "he is emblematic"
 .byte NewLine
 .text "of the many humble folk"
 .byte NewLine
@@ -1506,13 +1530,19 @@ gladeepi
 .byte NewLine
 .text "divided into several"
 .byte NewLine
-.text "new branches, with only"
+.text "new branches,"
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
+.text "with only an elite few"
 .byte NewLine
-.text "an elite few soldiers"
+.text "soldiers permitted to"
 .byte NewLine
-.text "permitted to stay in the"
-.byte NewLine
-.text "main force."
+.text "stay in the main force."
 .word PauseDialogue
 .byte $5A
 .byte $0F
@@ -1735,7 +1765,13 @@ fredepi
 .text "with close ties to House"
 .byte NewLine
 .text "Friege's inner circle,"
-.byte NewLine
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
 .text "though the difference"
 .byte NewLine
 .text "in their age made him"
@@ -1922,13 +1958,19 @@ karinepi
 .byte NewLine
 .text "anything particularly"
 .byte NewLine
-.text "noteworthy, Karin"
+.text "noteworthy,"
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
+.text "Karin nevertheless"
 .byte NewLine
-.text "nevertheless became"
+.text "became regarded as an"
 .byte NewLine
-.text "regarded as an excellent"
-.byte NewLine
-.text "pegasus knight"
+.text "excellent pegasus knight"
 .byte NewLine
 .text "in her own right."
 .word PauseDialogue
@@ -2351,7 +2393,13 @@ mareetaepi
 .text "been possessed"
 .byte NewLine
 .text "by the Shadow Sword,"
-.byte NewLine
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
 .text "Mareeta embarked"
 .byte NewLine
 .text "on a journey to train and"
@@ -2758,11 +2806,19 @@ iliosepi
 .byte ScrollText
 .byte $0F
 .byte $10
-.text "Reassigned to a"
+.text "Upon being reassigned"
 .byte NewLine
-.text "symbolic, do-nothing"
+.text "to a symbolic,"
 .byte NewLine
-.text "post, he would often"
+.text "do-nothing post,"
+.word PauseDialogue
+.byte $5A
+.byte $0F
+.byte $40
+.byte ScrollText
+.byte $0F
+.byte $10
+.text "he would often"
 .byte NewLine
 .text "corner his subordinates"
 .byte NewLine

@@ -1104,7 +1104,7 @@ ch17Amishajoin
 
 ch17Awm1
 
-.text "Having breached Fort Nordrhein,"
+.text "Having breached Fort Norden,"
 .byte WaitForA
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
@@ -1135,7 +1135,7 @@ ch17Awm1
 .byte WaitForA
 .text "even larger in number than"
 .byte NewLine
-.text "the one at Fort Nordrhein, awaited them..."
+.text "the one at Fort Norden, awaited them..."
 .byte WaitForA
 
 .byte EndText

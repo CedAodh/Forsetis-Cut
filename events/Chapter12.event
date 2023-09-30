@@ -53,7 +53,7 @@ eventChapter12Events ; 99/DBD6
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
                 EVENT $0B, _SalemAIChange
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $0A
 		END_DEFINITION
 	END_DEFINITION_ARRAY

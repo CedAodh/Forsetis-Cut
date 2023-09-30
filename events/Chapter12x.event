@@ -13,60 +13,60 @@ eventChapter12xEvents ; FD/8F98
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MasterSealDancer
-			CMP_WORD wCurrentTurn, 24
+			CMP_WORD wCurrentTurn, 14
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $0E
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _WarpDancer
-			CMP_WORD wCurrentTurn, 29
+			CMP_WORD wCurrentTurn, 19
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $0E
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _PerneCheck
 		END_DEFINITION
 		EVENT $0D, _BeginFleeing
-			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherLeftReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 9, 18
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
 			ROLL_RNG 40
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherMiddleReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 9, 18
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
 			ROLL_RNG 40
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherRightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 9, 18
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
 			ROLL_RNG 40
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonMiddleReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 9, 18
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
 			ROLL_RNG 50
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonBottomReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 9, 18
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
 			ROLL_RNG 50
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ThiefReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 19
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
 			ROLL_RNG 50
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-                EVENT $1C, _TinaAIChange
-			CMP_WORD wCurrentPhase, Enemy
+            	EVENT $1C, _TinaAIChange
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $1B
+			TEST_FLAG_UNSET $0D
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -89,7 +89,7 @@ eventChapter12xEvents ; FD/8F98
 		EVENT $08, _SalemTinaTalk
 			CHECK_CHARS2 Salem, Tina
 		END_DEFINITION
-		EVENT $07, _SalemTrudeTalk
+		EVENT $0C, _SalemTrudeTalk
 			CHECK_CHARS2 Salem, Trude
 		END_DEFINITION
 		EVENT $0F, _LeifTinaTalk
@@ -125,10 +125,18 @@ eventChapter12xEvents ; FD/8F98
 
 	_AfterActionEventDefinitions ; FD/9156
         EVENT $1B, eventMapDeathQuoteDummyEvent
-             macroEventConditionCheckCoordRanges [3,7], [11, 13]
-             CMP_WORD wCurrentPhase, Player
-            END_DEFINITION
-	END_DEFINITION_ARRAY
+            macroEventConditionCheckCoordRanges [3,7], [11, 13]
+            CMP_WORD wCurrentPhase, Player
+        END_DEFINITION
+		;EVENT $1D, _TrudeBecomesPlayer
+        ;    TEST_FLAG_SET $05
+		;	TEST_FLAG_SET $07
+        ;END_DEFINITION
+		;EVENT $1D, _TrudeBecomesPlayer
+        ;    TEST_FLAG_SET $05
+		;	TEST_FLAG_SET $0C
+        ;END_DEFINITION
+	;END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; FD/9158
 		macroBossQuoteDefinition $09, Tina
@@ -234,11 +242,6 @@ eventChapter12xEvents ; FD/8F98
 		macroSetCharacterByte ArcherEnemy1, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte ArcherEnemy1, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte ArcherEnemy1, structCharacterDataRAM.Unknown3E, $00
-
-		macroSetCharacterByte Trude, structCharacterDataRAM.AI1, $02
-		macroSetCharacterByte Trude, structCharacterDataRAM.AI4, $00
-		macroSetCharacterByte Trude, structCharacterDataRAM.AI2, $0B
-		macroSetCharacterByte Trude, structCharacterDataRAM.Unknown3E, $00
 	END1
 
 	_MasterSealDancer ; FD/9380
@@ -289,11 +292,12 @@ eventChapter12xEvents ; FD/8F98
 
 		macroSetCharacterByte Perne, structCharacterDataRAM.LeadershipStars, 0
 		
-		TEST_FLAG_SET $0C
+		EVENT_TEST_FLAG_SET $0C
 		JUMP_FALSE +
 		
 		macroConvertToPlayerAllegiance Trude
 		macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+		SET_FLAG $07
 		
 		+
 	END2
@@ -323,11 +327,12 @@ eventChapter12xEvents ; FD/8F98
 
 		SET_FLAG $0B
 		
-		TEST_FLAG_SET $0C
+		EVENT_TEST_FLAG_SET $0C
 		JUMP_FALSE +
 		
 		macroConvertToPlayerAllegiance Trude
 		macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+		SET_FLAG $07
 		
 		+
 	END2
@@ -349,11 +354,12 @@ eventChapter12xEvents ; FD/8F98
 
 		SET_FLAG $0B
 		
-		TEST_FLAG_SET $0C
+		EVENT_TEST_FLAG_SET $0C
 		JUMP_FALSE +
 		
 		macroConvertToPlayerAllegiance Trude
 		macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+		SET_FLAG $07
 		
 		+
 
@@ -438,7 +444,7 @@ eventChapter12xEvents ; FD/8F98
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
-		macroCountPlayerUncapturedAliveUnits Perne
+		EVENT_TEST_FLAG_SET $05
 		JUMP_TRUE +
 
 		SET_MUSIC $3F
@@ -464,6 +470,7 @@ eventChapter12xEvents ; FD/8F98
 		+
 
 		SET_FLAG $0A
+		SET_FLAG $07
 	END2
 
 	_LeifTinaTalk
@@ -473,6 +480,13 @@ eventChapter12xEvents ; FD/8F98
 	_LeifPerneTalk
 		macroDialogueHouse leifperne
 	END2
+	
+	;_TrudeBecomesPlayer
+	;	macroConvertToPlayerAllegiance Trude
+	;	macroSetCharacterWord Trude, structCharacterDataRAM.Leader, Leif
+
+	;	SET_FLAG $0A
+	;END2
 	
 	_PrepGroups ; FD/95A8
 		.long eventChapter12xData._PrepEnemies
@@ -547,7 +561,7 @@ eventChapter12xEvents ; FD/8F98
 		+
 	END2
 
-_TinaAIChange ; 99/E122
+	_TinaAIChange ; 99/E122
         macroCountAllUncapturedAliveUnits Tina
         JUMP_FALSE +
 

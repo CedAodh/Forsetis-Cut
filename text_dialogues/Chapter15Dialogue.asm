@@ -242,7 +242,7 @@ ch15ralphamaldaspawn
 .text "Will the gods grant us no respite? Bah!"
 .byte WaitForA
 .byte ScrollText
-.text "Very well, Ralph, I'll do as you say."
+.text "Very well, Ralf, I'll do as you say."
 .byte NewLine
 .text "You have my apologies..."
 .byte WaitForA
@@ -454,7 +454,7 @@ ch15ralphrecruitment
 .byte ScrollText
 .text "Talk about being in the right place"
 .byte NewLine
-.text "at the right time! See, I'm Ralph, an' I'm"
+.text "at the right time! See, I'm Ralf, an' I'm"
 .byte NewLine
 .text "not much more than a lowly sellsword, myself."
 .byte WaitForA
@@ -494,7 +494,7 @@ ch15ralphrecruitment
 .text "so that suffices for me, yes."
 .byte WaitForA
 .byte ScrollText
-.text "Ralph, my greatest desire is to free every"
+.text "Ralf, my greatest desire is to free every"
 .byte NewLine
 .text "person suffering under the empire's tyranny."
 .byte NewLine
@@ -888,7 +888,7 @@ ch15opening1
 .byte ScrollText
 .text "I would advise heading west at the pass"
 .byte NewLine
-.text "up ahead to reach the road to Nordrhein."
+.text "up ahead to reach the road to Norden Way."
 .byte WaitForA
 
 .byte Left_slot

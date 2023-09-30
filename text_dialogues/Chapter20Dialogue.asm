@@ -120,7 +120,7 @@ ch20opening1
 .byte NewLine
 .text "Cohen and the 26th Division, Banba and"
 .byte NewLine
-.text "her sisters, as well as Lady Tinni and her unit"
+.text "her sisters, as well as Lady Tine and her unit"
 .byte NewLine
 .text "of mages, are all moving to intercept them."
 .byte WaitForA

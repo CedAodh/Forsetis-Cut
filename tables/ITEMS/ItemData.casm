@@ -1791,14 +1791,14 @@
 		TathlumMinRange					= 2
 		TathlumMaxRange					= 2
 		TathlumWeaponRank				= WeaponLocks.aTathlumWeaponLock
-		TathlumEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
-		TathlumStatBonus				= aNoItemBonuses
+		TathlumEffectiveness			= ItemEffectivenesses.aMagicEffectiveness
+		TathlumStatBonus				= aTathlumItemBonuses
 		TathlumCost						= 6200
 		TathlumDescription				= <>item_descs._TathlumDesc
-		TathlumUseEffect				= $22
+		TathlumUseEffect				= None
 		TathlumWeaponEffect				= None
-		TathlumSkills2					= None
-		TathlumSkills3					= Skill3Wrath
+		TathlumSkills2					= Skill2Nihil
+		TathlumSkills3					= None
 		TathlumTraits					= TraitWeapon | TraitUnsellable
 		TathlumIcon						= $9F
 
@@ -3511,7 +3511,7 @@
 		AccostManualStatBonus			= aNoItemBonuses
 		AccostManualCost				= 8200
 		AccostManualDescription			= <>item_descs._AccostManualDesc
-		AccostManualUseEffect			= $2A
+		AccostManualUseEffect			= $3C
 		AccostManualWeaponEffect		= None
 		AccostManualSkills2				= None
 		AccostManualSkills3				= None
@@ -3533,7 +3533,7 @@
 		BargainManualStatBonus			= aNoItemBonuses
 		BargainManualCost				= 8200
 		BargainManualDescription		= <>item_descs._BargainManualDesc
-		BargainManualUseEffect			= $22
+		BargainManualUseEffect			= $2C
 		BargainManualWeaponEffect		= None
 		BargainManualSkills2			= None
 		BargainManualSkills3			= None

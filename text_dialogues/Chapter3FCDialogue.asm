@@ -414,3 +414,146 @@ augusteyvel
 .byte WaitForA
 
 .byte EndText
+
+yeahlifisbad
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+.text "Back to the mainland at last..."
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word augustus_portrait
+.text "Has seasickness taken you, Lord Leif?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I have to admit a little, yeah."
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word lifis_portrait
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait2
+.text "As for YOU, however, I'm sure you feel"
+.byte NewLine
+.text "fresh as a daisy. We'll be most interested"
+.byte NewLine
+.text "in seeing how you can perform."
+.byte WaitForA
+
+.byte right_slot
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "If I catch so much as a whiff of desertion"
+.byte NewLine
+.text "or betrayal, we will turn right back to Iz."
+.byte WaitForA
+.byte ScrollText
+.text "It won't matter what Safy says at that point."
+.byte NewLine
+.text "You got that?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah, I heard ya. Loud and clear..."
+.byte NewLine
+.text "I figured we were past the annoying part"
+.byte NewLine
+.text "with all the doubts, but I guess not."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word safie_portrait
+.text "Lifis..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Huh?"
+.byte NewLine
+.text "Wh-where'd you come from, Safy?"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "The path to redemption must be a difficult one."
+.byte NewLine
+.text "But know that I believe in you."
+.byte WaitForA
+.byte ScrollText
+.text "You can do it, Lifis."
+.byte NewLine
+.text "You need just the conscious willpower."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Y-yeah, you're right."
+.byte NewLine
+.text "...You're totally right!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait
+
+.byte right_slot
+.byte ScrollText
+.text "All right, princey, whaddya got for me?"
+.byte NewLine
+.text "Locks? Distractin' folks?"
+.byte NewLine
+.text "Lemme hear it!"
+.byte WaitForA
+
+.byte left_slot
+.text "We...we'll have something for you shortly."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.word LoadPortrait
+.word safie_portrait
+
+.byte left_slot
+.byte ScrollText
+.text "Wow, what a..."
+.byte NewLine
+.text "That was a real sudden turnaround."
+.byte NewLine
+.text "Maybe...maybe I WAS too rash?"
+.byte WaitForA
+
+.byte right_slot
+.text "Indeed. He really is eager to make amends"
+.byte NewLine
+.text "and earn your favor, Lord Leif—he just needs"
+.byte NewLine
+.text "a thoughtful nudge once every now and again."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Er...right."
+.byte WaitForA
+
+.byte EndText

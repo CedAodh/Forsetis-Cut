@@ -654,7 +654,7 @@ ch14opening1
 .text "old man whose glory days are long past him."
 .byte WaitForA
 .byte ScrollText
-.text "Go ahead and laugh, Baldach."
+.text "Go ahead and laugh, Bartok."
 .byte WaitForA
 
 .byte Right_slot
@@ -671,7 +671,7 @@ ch14opening1
 .text "of House Friege, and I have a duty to uphold."
 .byte WaitForA
 .byte ScrollText
-.text "Will you lend me your strength, Baldach?"
+.text "Will you lend me your strength, Bartok?"
 .byte WaitForA
 
 .byte Right_slot

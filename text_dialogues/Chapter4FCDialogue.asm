@@ -678,3 +678,200 @@ brightonmacha
 .byte WaitForA
 
 .byte EndText
+
+; dalsinweismann
+
+; .byte right_slot
+; .byte ScrollText
+
+; .byte left_slot
+; .byte ScrollText
+
+; .byte right_slot
+; .word ClearPortrait
+
+; .byte left_slot
+; .word ClearPortrait
+
+; .word PauseDialogue
+; .byte $3C
+
+; .byte right_slot
+; .word LoadPortrait
+; .word weismann_portrait
+
+; .byte left_slot
+; .word LoadPortrait
+; .word dalsin_portrait
+; .text "Sir Weismann, what are you doing here?"
+; .byte NewLine
+; .text "Weren't you dispatched to capture the prince?"
+; .byte WaitForA
+
+; .byte right_slot
+; .text "As it happens, the...opposite"
+; .byte NewLine
+; .text "of that occurred."
+; .byte WaitForA
+
+; I beg your pardon? YOU were taken captive by the prince and his fighters? Is that what you're telling me?
+
+; ……
+
+; Damn, that's…rather messed up. I'm sorry, sir.
+
+; I've heard enough from His Excellency. Don't you go joining in on it.
+
+; F-forgive me, sir.
+
+; I've been replaced by Bandole of all people, ugh… I'm to assist you in the prisoner watch.
+
+; Watching over the prisoner…that you failed to capture yourself…
+
+; Watch it.
+
+; ……
+
+raydrikloreeee
+
+.byte right_slot
+.word LoadPortrait
+.word raydrik_portrait
+.text "We're nearly to your cage, pup."
+.byte NewLine
+.text "Don't let up now."
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "Ngh..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Not so tenacious anymore, eh?"
+.byte NewLine
+.text "A long walk is all it took to do you in."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Raydrik, why?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hrm?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You were once— Guh...!"
+.byte NewLine
+.text "You...you were once King Carl's"
+.byte NewLine
+.text "trusted and capable aide..."
+.byte WaitForA
+.byte ScrollText
+.text "Why did you turn against us?"
+.byte NewLine
+.text "What made you do it?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I can see you've put much consideration"
+.byte NewLine
+.text "into asking me that."
+.byte NewLine
+.text "I shall do the same with my response: he was a fool."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "A fool..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "He knew nothing of this world or"
+.byte NewLine
+.text "how to plan for the future."
+.byte WaitForA
+.byte ScrollText
+.text "Of course, he was a rather remarkable stepping stone;"
+.byte NewLine
+.text "he had rewarded my efforts at every turn. But even"
+.byte NewLine
+.text "a remarkable stepping stone is still a stepping stone."
+.byte WaitForA
+.byte ScrollText
+.text "I was prepared to cast away what I was given"
+.byte NewLine
+.text "and was familiar with for something greater,"
+.byte NewLine
+.text "and therefore was granted such."
+.byte WaitForA
+.byte ScrollText
+.text "Try as I may, I can never understand those"
+.byte NewLine
+.text "who cannot see and grasp this truth,"
+.byte NewLine
+.text "for it is so glaringly obvious."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "What do you mean by “something greater”?"
+.byte NewLine
+.text "A better-sounding title?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "While we speak, if you would, please redirect"
+.byte NewLine
+.text "your nipping to your new fellow inmates."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Why not just kill me?"
+.byte NewLine
+.text "Or has two rounds of regicide perhaps"
+.byte NewLine
+.text "sated your appetite?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ha ha ha..."
+.byte NewLine
+.text "What, do you think me a man who holds grudges?"
+.byte NewLine
+.text "That I wish to gut you right here and now"
+.byte NewLine
+.text "out of personal disdain?"
+.byte WaitForA
+.byte ScrollText
+.text "No... I merely act in whatever way"
+.byte NewLine
+.text "I stand to gain the most from."
+.byte WaitForA
+.byte ScrollText
+.text "When considering what the empire has in store"
+.byte NewLine
+.text "for me in exchange for a live Leonster prince..."
+.byte NewLine
+.text "Yes, I believe killing you myself would be wasteful."
+.byte WaitForA
+.byte ScrollText
+.text "Now, be sure to rest up!"
+.byte NewLine
+.text "I'm certain you have a long day ahead of you"
+.byte NewLine
+.text "on the morrow."
+.byte WaitForA
+
+.byte EndText

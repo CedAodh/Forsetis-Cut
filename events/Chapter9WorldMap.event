@@ -70,4 +70,35 @@ eventChapter9WorldMapEvents ; E7/E75C
 
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
+	
+	STORE_WORD wEventEngineCharacterTarget, Callion
+	CALL_ASM_LOOP rlASMCCheckUnitExists, $0000
+	JUMP_FALSE +
+	macroCheckTurnStatusSet Callion, TurnStatusCaptured
+	JUMP_TRUE +
+	
+	FADE_OUT $02
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	macroDialogueWithBackground callionrequest, 3
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	SET_MUSIC $2D
+	YIELD
+	
+	+
 END1

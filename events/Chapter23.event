@@ -962,6 +962,11 @@ _MachaHouseVisit ; FD/F5F5
 		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
 
 		STORE_WORD wEventEngineCharacterTarget, Saias
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+		STORE_WORD wEventEngineParameter2, Skill2Charm
+		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Saias
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
 		STORE_WORD wEventEngineParameter2, Rumaigh
 		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000

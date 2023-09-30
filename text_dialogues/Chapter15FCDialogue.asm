@@ -4,7 +4,7 @@ ch15asaellospawn
 	.byte ScrollText
 	.word LoadPortrait
 	.word asaello_portrait
-	.text "Ralph, wait!"
+	.text "Ralf, wait!"
 	.byte WaitForA
 
 	.byte right_slot
@@ -1001,6 +1001,38 @@ leifasaello
 
 .byte EndText
 
+; safylinoan
+
+; Safy! There you are! I've been looking all over for you!
+
+; For me, my lady?
+
+; Yes! I'm sorry we had to cut our last conversation short. Just… So many things sprang at me all at once, and they all needed immediate attention.
+
+; I understand, Lady Linoan. Such are your priorities.
+
+; Safy, you sound…distant. I'm truly sorry…
+
+; I can't think of anything you need apologize for.
+
+; But that's simply not true. You're my close friend, Safy, and I wish to apologize for dismissing you like I did. Can you forgive me?
+
+; …Absolutely. I accept your apology, Lady Linoan.
+
+; Now I may be at ease. …Safy.
+
+; Yes?
+
+; You've no idea how glad I am that you returned safely to us. I've tried to retain the air of formality between my people and I all this time, but I… I'm just so indebted to you. You and your father, and little Tina… You each helped me tremendously to fill my father's shoes once he was no more. While you stood steadfast by my side, your father was my lead instructor on how to rule, and Tina… Every time I saw a smile on her face as she ran around, it was always a friendly reminder of all the people I help guide and thrive at the end of the day.
+
+; Indeed… Though we were practically surrounded by creeping darkness, we really did find some true solace in those days. Though what astounds me the most is how much it's amounted to here and now. You've done well, Lady Linoan.
+; You say that, and yet, had Sir Glade and Prince Leif not intervened when they did, everything would have crumpled. The empire would have had us squashed much sooner, and Lord Arion would not have gotten his chance to secure the city and allow us all to slip away. I am not the one who will live on in song.
+
+; Preposterous. Was it not you, my lady, who insisted on openly taking a stand against the empire? Yes, the others played crucial roles, but they were all granted their own spots to hide away in. Did you receive that? Certainly not. But no matter how it tortured you, you would always get up and dust yourself off, and continue your eternal stand. Never in my existence could I… Could I be more proud to have someone to think of as my best friend.
+
+; gasp Safy…! Th…thank you…
+
+; Never give up, Linoan. I, and beyond countless others, are depending on you.
 
 safylinoan
 
@@ -1942,6 +1974,216 @@ asaellotrude
 .byte WaitForA
 .byte ScrollText
 .text "He oughta meet Perne sometime..."
+.byte WaitForA
+
+.byte EndText
+
+; shivarecruitasaello
+
+; Good to see you, Asaello.
+
+; Oh, hey, Shiva. What're you doing all the way out here?
+
+; Just cutting down brigands that were causing too much trouble for my liking.
+
+; Heh, good to hear. Do you have a job now, or what? Who're you with?
+
+; I've pledged my sword to the prince of Leonster and his acclaimed Liberation Army.
+
+; Oh, really? I always thought you tried to stay away from that kind of business.
+
+; Me too.
+
+; …That sounded weird, coming from you. I don't like it.
+
+; That's all right. What do you have going on now? Perhaps you'd be interested in joining us.
+
+; What makes you say that? I'll have you know I got something real high-paying right now. I can't imagine passing that up for whatever meager sum some little brat'll give me.
+
+; …Money's not everything. Not in times like these.
+
+; What do you mean?
+
+; If the money were for just you, I wouldn't be saying anything. But that's not the case, is it?
+
+; No…
+
+; You can protect yourself just fine. But all you have for your little ones is money. It's not any real, substantial protection. If your hometown suddenly comes under attack, money sure won't shoo anyone away. And you think the empire would give a damn?
+
+; All right, what's your point?
+
+; You should join the prince in fighting the empire. I don't agree with accepting them as the new higher-ups here, and you shouldn't either. Get rid of them, and then you'll have secured some actual protection for your hometown. Something that a big slump of money won't do.
+
+; That's…a pretty good point. Consider me convinced. And if I'm paired with you of all people, Shiva, then no one's stopping us anytime soon!
+
+; Indeed. Though, what of your other job? Are you going to just stop showing up?
+
+; Seems like the most appropriate thing to do. My employer was Bloom, after all.
+
+; Hah. Then yeah, he'll likely get the message.
+
+daisyrequest
+
+
+.word PlayMusic
+.byte $4C
+
+.byte right_slot
+.word LoadPortrait
+.word daisy_portrait
+.text "Leeeeeif... Where are yoooouuuu...?"
+.byte NewLine
+.text "Your not-so-secret secret admirer has"
+.byte NewLine
+.text "something she'd like to share with yooouuu..."
+.byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "PRINCE LEI—"
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "W-wait! Daisy, I'm right..."
+.byte NewLine
+.text "*pant*"
+.byte NewLine
+.text "I'm right here..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You ARE here!"
+.byte NewLine
+.text "Goodie!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But why... Why must you seek me out"
+.byte NewLine
+.text "in such an unseemly way?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I don't see how I couldn't."
+.byte NewLine
+.text "Gotta keep you on your toes—"
+.byte NewLine
+.text "but for fun reasons!"
+.byte WaitForA
+.byte ScrollText
+.text "Surprises should be about so much more"
+.byte NewLine
+.text "than just, “*gasp* An enemy ambush?!”"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Clearly not your first time imitating me."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Anywho, the mountain range we're walking by."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes, what about it?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word PlayMusic
+.byte $32
+.text "There's a village tucked away in there,"
+.byte NewLine
+.text "you should know. It's one me and Asaello"
+.byte NewLine
+.text "stay at quite a bit when we're on the road."
+.byte WaitForA
+.byte NewLine
+.text "...Even though it's a ways off the road, hehe."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You think he may currently be residing there?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Probably not now—but maybe the elder can"
+.byte NewLine
+.text "tell me if he's seen him recently."
+.byte WaitForA
+.byte ScrollText
+.text "Just so I can get some idea of where he"
+.byte NewLine
+.text "actually is. I wanna let him know I'm safe."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, I get it."
+.byte NewLine
+.text "You said he's an expert bowman, right?"
+.byte NewLine
+.text "Works as a mercenary most of the time?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yep!"
+.byte NewLine
+.text "He wasn't always that way, though."
+.byte WaitForA
+.byte ScrollText
+.text "It took him a LONG time to get to"
+.byte NewLine
+.text "where he is today. He's come so far,"
+.byte NewLine
+.text "and I'm really, really proud of him..."
+.byte WaitForA
+.byte ScrollText
+.text "He learned all that stuff and how to"
+.byte NewLine
+.text "do it really damn well so I wouldn't."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "He's irreplaceable to you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "H-huh...?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, I mean... That is to say, Daisy,"
+.byte NewLine
+.text "your eyes light up in quite a unique way"
+.byte NewLine
+.text "when you speak of Sir Asaello."
+.byte WaitForA
+.byte NewLine
+.text "It says a lot. Th— That's all."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Y-yeah."
+.byte NewLine
+.text "So again, I wanna be able to stop by the village."
+.byte NewLine
+.text "Please, Prince Leif."
 .byte WaitForA
 
 .byte EndText

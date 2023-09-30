@@ -992,3 +992,75 @@ ch16Bbaldungevent2
 .byte WaitForA
 
 .byte EndText
+
+homerseesshannam
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word homer_portrait
+.text "Hey! Princey!"
+.byte NewLine
+.text "O'er here!"
+.byte WaitForA
+
+.byte right_slot
+.text "Huh? You...you're Homer."
+.byte NewLine
+.text "Do you need something?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Uh...sorta."
+.byte NewLine
+.text "You know this giant forest"
+.byte NewLine
+.text "we're all about to go through?"
+.byte WaitForA
+.byte ScrollText
+.text "So this'll sound insane, but I..."
+.byte NewLine
+.text "I think I saw...an acquaintance of mine,"
+.byte NewLine
+.text "let's say, wander into there just now."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes, that indeed sounds insane."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yeah, and I wanna make sure he didn't"
+.byte NewLine
+.text "get hit in the head or somethin'."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Do you want us to find him?"
+.byte NewLine
+.text "Describe him to me, please."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Nah, it'd be better if I do it myself."
+.byte NewLine
+.text "I'll save you the trouble."
+.byte WaitForA
+.byte NewLine
+.text "Just let me be with the first"
+.byte NewLine
+.text "group'a guys who go in, okay?"
+.byte NewLine
+.text "I might miss my chance otherwise."
+.byte WaitForA
+
+.byte EndText
+

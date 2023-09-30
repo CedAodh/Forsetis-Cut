@@ -104,7 +104,7 @@ Dean
 Eda
 Ho[mer
 Linoan
-Ralph
+Ralf
 Ilios
 Schroff
 (Misha
@@ -122,26 +122,26 @@ Galzus
 
 )Weis[mann
 Bucks
-Lobos
-Bandole
+Erebos
+Bondol
 Tol[man
 Eisenhau
-Le[may
+Le[mais 
 Go[mez
 (Merloch
 Dvorak
 Largo
 Ke[mpf
-Oltoph
+Ortov
 Colho
 Liszt
-Baldach
+Bartok
 Paulus
-(McCloy
+(McCroy
 Codha
 Eichner
 Seil
-Brook
+Brooke
 (Moore
 +Nicolov
 (Mueller
@@ -150,14 +150,14 @@ Pal[man
 Gustav
 )Wolfe
 Baráth
-//Seimetz
-  Seetz
+//Deimetor
+  Deetor
 Fraus
 Zaun
 Cohen
 Reinhardt
 Alphan
-Farden
+Verden
 Coulter
 Altena
 Raydrik
@@ -177,7 +177,7 @@ E[mily
 Bella
 Cliff
 (Murphy
-Leena
+Lina
 Bo]wie
 Hannibal
 Rosa
