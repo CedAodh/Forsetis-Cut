@@ -67,10 +67,13 @@ eventChapter13Events ; 99/E392
 			CMP_BYTE wCursorYCoord, 21
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
-		EVENT $24, _HammerHouse
-			CMP_BYTE wCursorXCoord, 19
-			CMP_BYTE wCursorYCoord, 1
-			CMP_WORD wCurrentPhase, Player
+		EVENT $24, _ThoronHouseLeif
+			macroEventConditionCheckCoords [19, 1]
+			CMP_WORD aSelectedCharacterBuffer.Character, Leif
+		END_DEFINITION
+		EVENT FlagAlwaysZero, _ThoronHouseOther
+			TEST_FLAG_UNSET $24
+			macroEventConditionCheckCoords [19, 1]
 		END_DEFINITION
 		EVENT $21, _Drawbridge1
 			CMP_BYTE wEventEngineUnknownXTarget, 33
@@ -441,7 +444,7 @@ eventChapter13Events ; 99/E392
 		YIELD_UNK
 	END2
 
-	_HammerHouse ; 99/E9F6
+	_ThoronHouseLeif ; 99/E9F6
 		PLAY_SOUND_WORD $00F7
 
 		DIALOGUE leifmeetshisarchnemesis
@@ -470,6 +473,10 @@ eventChapter13Events ; 99/E392
 		STORE_WORD wEventEngineParameter1, $0021
 		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
 		YIELD_UNK
+	END2
+
+        _ThoronHouseOther
+	    macroDialogueHouse epichouse
 	END2
 
 	_FinnGladeTalk ; 99/EA59
