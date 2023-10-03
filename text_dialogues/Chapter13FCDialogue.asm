@@ -484,3 +484,29 @@ catfight4
 .byte WaitForA
 
 .byte EndText
+
+epichouse
+
+.byte Right_slot
+.word LoadPortrait
+.word youngman2_portrait
+.text "Please tell me you're with the Liberation Army..."
+.byte NewLine
+.text "I got a guy here sayin' he wants"
+.byte NewLine
+.text "to meet with your leader."
+.byte WaitForA
+.byte ScrollText
+.text "He must wanna be discreet about it,"
+.byte NewLine
+.text "'cause otherwise, why do it in MY house?"
+.byte WaitForA
+.byte ScrollText
+.text "Don't get me wrong, he's nice and all,"
+.byte NewLine
+.text "but he's still makin' me feel weird."
+.byte NewLine
+.text "Like it's not even my house anymore!"
+.byte WaitForA
+
+.byte EndText
