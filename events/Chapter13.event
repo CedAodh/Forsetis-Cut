@@ -748,10 +748,32 @@ eventChapter13Events ; 99/E392
 		DIALOGUE catfight1
 		YIELD
 		
+		MOVE_UNIT Raydrik, [31, 1], [31, 0], 1, None
+		YIELD_UNK
+		WAIT_MOVE
+		YIELD
+		
+		macroRemoveUnit Raydrik
+		WAIT_MOVE
+		YIELD
+		
 		DIALOGUE catfight2
 		YIELD
 		
+		LOAD1 eventChapter13Data._NewChallenger
+		WAIT_MOVE
+		YIELD
+		
 		DIALOGUE catfight3
+		YIELD
+		
+		MOVE_UNIT None, [31, 1], [31, 0], 1, None
+		YIELD_UNK
+		WAIT_MOVE
+		YIELD
+		
+		macroRemoveUnit Reinhardt
+		WAIT_MOVE
 		YIELD
 		
 		DIALOGUE catfight4
@@ -775,4 +797,3 @@ eventChapter13Events ; 99/E392
 
 		STORE_WORD wUnknown001791, $FFFF
 	END1
-
