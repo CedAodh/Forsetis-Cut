@@ -109,11 +109,11 @@ ch4op2
 .byte Right_slot
 .word LoadPortrait
 .word ced_portrait
-.text "This is it. Asbel and I will locate the children, but"
+.text "This is it. Asbel and I will locate the children,"
 .byte NewLine
-.text "I want the rest of you to go down to the prison"
+.text "but I want the rest of you to go down to the"
 .byte NewLine
-.text "and free everyone locked up there."
+.text "prison and free everyone locked up there."
 .byte WaitForA
 
 .byte Left_slot
