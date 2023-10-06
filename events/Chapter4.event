@@ -715,7 +715,7 @@ eventChapter4Events ; 99/8778
                 EVENT_TEST_FLAG_SET FlagWeismannDeath
                 JUMP_TRUE +
 
-                macroDialogueWithBackground placeholder, 1
+                macroDialogueWithBackground ch4op1weisedition, 1
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD
                 JUMP ++
