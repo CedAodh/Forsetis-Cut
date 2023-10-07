@@ -479,6 +479,10 @@ eventChapter13Events ; 99/E392
 	    macroDialogueHouse epichouse
 	END2
 
+        _ThoronHouseOther
+	    macroDialogueHouse epichouse
+	END2
+
 	_FinnGladeTalk ; 99/EA59
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
@@ -801,4 +805,3 @@ eventChapter13Events ; 99/E392
 
 		STORE_WORD wUnknown001791, $FFFF
 	END1
-
