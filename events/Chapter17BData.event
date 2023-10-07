@@ -35,7 +35,7 @@ eventChapter17BData ; B1/A2A9
 		UNIT FriegeSoldier2, Enemy, [6, 20], [6, 20], Palman, [LongLance], 6, False, [$02, $15, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [13, 21], [13, 21], Palman, [LongLance], 6, False, [$02, $15, $00, $00]
 		UNIT FriegeArmoredAxe1, Enemy, [15, 13], [15, 13], Palman, [BattleAxe], 12, False, [$02, $15, $00, $00]
-                UNIT Ilios, Enemy, [10, 28], [10, 28], Palman, [MasterSword, Thoron, Vulnerary], 8, False, [$01, $03, $00, $80]
+        UNIT Ilios, Enemy, [10, 28], [10, 28], Palman, [MasterSword, Thoron, Vulnerary], 8, False, [$01, $03, $00, $80]
 		UNIT Palman, Enemy, [3, 1], [3, 1], Palman, [Greatsword, Vulnerary], 14, True, [$01, $03, $00, $80]
 	UNIT
 
