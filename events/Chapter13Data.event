@@ -45,8 +45,8 @@ eventChapter13Data ; B1/BFCE
 		UNIT FriegeArmoredLance1, Enemy, [19, 7], [19, 7], Liszt, [Javelin], 8, False, [$01, $03, $02, $00]
 	UNIT
 
-	;_UnusedCoordinates1 ; B1/C2DE
-	;	.byte 11, 17
+	_CatfightCameraCoordinates ; B1/C2DE
+		.byte 29, 8
 
 	_LeonsterKnightGroup ; B1/C2E0
 		UNIT LeonsterBowknight, NPC, [9, 6], [7, 7], Glade, [SteelBow, Vulnerary], 11, False, [$00, $00, $00, $00]
@@ -86,8 +86,15 @@ eventChapter13Data ; B1/BFCE
 		UNIT FriegeMage2, Enemy, [3, 1], [3, 1], Baldach, [Thunder], 10, False, [$0A, $0F, $00, $00]
 	UNIT
 
-	;_UnusedCoordinates2 ; B1/C3CE
-	;	.byte 9, 16
+	_Catfighters ; B1/C3CE
+		UNIT Raydrik, Enemy, [31, 1], [31, 1], Raydrik, [MasterSword], 1, False, [$00, $00, $00, $00]
+		UNIT Paulus, Enemy, [30, 1], [30, 1], Paulus, [KillerLance], 15, False, [$00, $03, $00, $80]
+		UNIT Gustav, Enemy, [29, 1], [29, 1], Gustav, [MasterLance], 17, True, [$01, $03, $00, $80]
+	UNIT
+	
+	_NewChallenger
+	    UNIT Reinhardt, Enemy, [31, 0], [31, 1], Cohen, [DireThunder], 20, False, [$18, $03, $00, $00]
+	UNIT
 
 	_PaulusGroup ; B1/C3D0
 		UNIT Paulus, Enemy, [9, 23], [9, 21], Paulus, [KillerLance], 15, False, [$00, $03, $00, $80]

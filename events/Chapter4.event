@@ -661,6 +661,20 @@ eventChapter4Events ; 99/8778
 		CALL_ASM_LOOP rlASMCAddFixedItemsToRandomChestArray, $0000
 		CALL_ASM_LOOP rlASMCCreateRandomChestTiles, $0000
 		
+		EVENT_TEST_FLAG_SET FlagWeismannDeath
+        JUMP_TRUE +
+
+        STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._WeismannGroup
+        CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
+        YIELD_UNK
+        JUMP ++
+
+        +
+        STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._NotWeismannGroup
+        CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
+        YIELD_UNK
+
+        +
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._EnemyGroup1
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
@@ -697,12 +711,21 @@ eventChapter4Events ; 99/8778
 		YIELD
 
 		macroChapterTitlePopup ch4titlename
+		
+		EVENT_TEST_FLAG_SET FlagWeismannDeath
+        JUMP_TRUE +
 
+        macroDialogueWithBackground ch4op1weisedition, 1
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+        JUMP ++
+
+        +
 		macroDialogueWithBackground ch4op1, 1
-
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD
 
+		+
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
 
 		SCROLL_CAMERA_ADDRESS eventChapter4Data._PlayerGroup1CameraCoordinates

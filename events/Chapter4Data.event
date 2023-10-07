@@ -50,8 +50,9 @@ eventChapter4Data ; B1/EF95
 		UNIT MunsterSoldier2, Enemy, [11, 28], [11, 28], Bandole, [ShortLance, Vulnerary], 3, False, [$00, $00, $00, $00]
 	UNIT
 
-	;_UnusedCoordinates2 ; B1/F0D5
-	;	.byte 9, 18
+	_WeismannGroup ; B1/F0D5
+		UNIT Weissmann, Enemy, [15, 4], [15, 4], Bandole, [Longsword, Vulnerary], 5, True, [$02, $03, $00, $00]
+	UNIT
 
 	_EnemyGroup2 ; B1/F0D7
 		UNIT MunsterArmoredLance, Enemy, [8, 3], [8, 3], Bandole, [Javelin], 5, False, [$02, $03, $00, $00]
@@ -62,11 +63,11 @@ eventChapter4Data ; B1/EF95
 		UNIT Dalsin, Enemy, [8, 4], [8, 4], Bandole, [BattleAxe, Torch], 9, False, [$02, $03, $00, $00]
 	UNIT
 
-	;_UnusedCoordinates3 ; B1/F151
-	;	.byte 12, 22
+	_NotWeismannGroup ; B1/F151
+		UNIT MunsterArmoredAxe, Enemy, [15, 4], [15, 4], Bandole, [BattleAxe], 3, False, [$02, $03, $00, $00]
+	UNIT
 
 	_EnemyGroup3 ; B1/F153
-		UNIT MunsterArmoredAxe, Enemy, [15, 4], [15, 4], Bandole, [BattleAxe], 3, False, [$02, $03, $00, $00]
 		UNIT MunsterArmoredAxe, Enemy, [16, 3], [16, 3], Bandole, [HandAxe, Vulnerary], 4, False, [$02, $03, $00, $00]
 		UNIT MunsterPriest1, Enemy, [17, 4], [17, 4], Bandole, [Heal], 4, False, [$02, $03, $00, $00]
 		UNIT MunsterMage1, Enemy, [17, 3], [17, 3], Bandole, [Thunder], 3, False, [$02, $03, $00, $00]

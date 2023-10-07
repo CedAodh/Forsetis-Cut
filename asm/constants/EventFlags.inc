@@ -108,7 +108,7 @@
 	FlagNoHelpFromOltoph = $85
 	FlagLifisGoneForGood	= $86
 	FlagSafyGoneForGood	= $87
-;				= $88
+	FlagWeismannDeath               = $88
 	FlagEmilySaved			= $89
 	FlagMurphySaved			= $8A
 	FlagBellaSaved			= $8B

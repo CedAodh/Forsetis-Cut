@@ -783,9 +783,9 @@ raydrikloreeee
 .byte ScrollText
 .text "I can see you've put much consideration"
 .byte NewLine
-.text "into asking me that."
+.text "into asking me that. I shall do the same"
 .byte NewLine
-.text "I shall do the same with my response: he was a fool."
+.text "with my response: he was a fool."
 .byte WaitForA
 
 .byte left_slot
@@ -800,11 +800,11 @@ raydrikloreeee
 .text "how to plan for the future."
 .byte WaitForA
 .byte ScrollText
-.text "Of course, he was a rather remarkable stepping stone;"
+.text "Of course, he was a rather remarkable stepping"
 .byte NewLine
-.text "he had rewarded my efforts at every turn. But even"
+.text "stone; he had rewarded my efforts at every"
 .byte NewLine
-.text "a remarkable stepping stone is still a stepping stone."
+.text "turn. But a stepping stone is still just that."
 .byte WaitForA
 .byte ScrollText
 .text "I was prepared to cast away what I was given"
@@ -839,9 +839,9 @@ raydrikloreeee
 .byte ScrollText
 .text "Why not just kill me?"
 .byte NewLine
-.text "Or has two rounds of regicide perhaps"
+.text "Or has two rounds of regicide"
 .byte NewLine
-.text "sated your appetite?"
+.text "perhaps sated your appetite?"
 .byte WaitForA
 
 .byte right_slot
@@ -864,14 +864,203 @@ raydrikloreeee
 .byte NewLine
 .text "for me in exchange for a live Leonster prince..."
 .byte NewLine
-.text "Yes, I believe killing you myself would be wasteful."
+.text "I believe killing you myself would be wasteful."
 .byte WaitForA
 .byte ScrollText
 .text "Now, be sure to rest up!"
 .byte NewLine
-.text "I'm certain you have a long day ahead of you"
+.text "I'm certain you have a long day"
 .byte NewLine
-.text "on the morrow."
+.text "ahead of you on the morrow."
+.byte WaitForA
+
+.byte EndText
+
+ch4op1weisedition
+
+.byte Right_slot
+.word LoadPortrait
+.word raydrik_portrait
+
+.text "Ahahaha! Without a doubt, this feat will secure"
+.byte NewLine
+.text "my position in Munster and beyond."
+.byte WaitForA
+
+.byte Left_slot
+.word LoadPortrait
+.word dalsin_portrait
+
+.byte Right_slot
+.byte ScrollText
+.text "Dalsin! See that the brat doesn't so much as"
+.byte NewLine
+.text "blink before the Knights of Connaught come"
+.byte NewLine
+.text "to claim him!"
+.byte WaitForA
+
+.byte Left_slot
+.text "...Aye, milord."
+.byte WaitForA
+
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte Right_slot
+.byte ScrollText
+.text "It's high time to celebrate"
+.byte NewLine
+.text "with a visit to the arena."
+.byte WaitForA
+
+.byte Left_slot
+.word LoadPortrait
+.word eyvel_portrait
+
+.byte Right_slot
+.byte ScrollText
+.text "You, woman!"
+.byte NewLine
+.text "You'll be accompanying me."
+.byte WaitForA
+
+.byte Left_slot
+.text "Why me...?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "I assumed you would want to see the other"
+.byte NewLine
+.text "girls. But if you wish to spit on my generosity..."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Other girls?"
+.byte NewLine
+.text "You mean...Mareeta and Nanna?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "I believe those are their names, yes."
+.byte NewLine
+.text "Never fear—I haven't laid a finger on them."
+.byte NewLine
+.text "I've been keeping them quite comfortable."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "...Are you really gonna let me see them?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "You have my word."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "...Fine. Lead the way."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Ah, how old-fashioned, leading the way"
+.byte NewLine
+.text "for such a fine lady. Heh, heh, heh..."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.byte Right_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte Right_slot
+.word LoadPortrait
+.word weissman_portrait
+
+.byte Left_slot
+.word LoadPortrait
+.word dalsin_portrait
+.text "Sir Weismann, what are you doing here?"
+.byte NewLine
+.text "Weren't you dispatched to capture the prince?"
+.byte WaitForA
+
+.byte right_slot
+.text "As it happens, the..."
+.byte NewLine
+.text "opposite of that occurred."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "I beg your pardon?"
+.byte NewLine
+.text "YOU were taken captive by the prince and"
+.byte NewLine
+.text "his fighters? Is that what you're telling me?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+
+.byte Left_slot
+.byte ScrollText
+.text "Damn, that's... rather scuffed."
+.byte NewLine
+.text "I'm sorry, sir."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I've heard enough from His Excellency."
+.byte NewLine
+.text "Don't you go joining in on it."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "F-forgive me, sir."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I've been replaced by Bandole of all people,"
+.byte NewLine
+.text "as if my luck couldn't get any worse..."
+.byte NewLine
+.text "I'm to assist you in the prisoner watch."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Watching over the prisoner..."
+.byte NewLine
+.text "that you failed to capture yourself..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Watch it."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "......"
 .byte WaitForA
 
 .byte EndText

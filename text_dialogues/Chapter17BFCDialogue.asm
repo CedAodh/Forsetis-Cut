@@ -251,6 +251,48 @@ Ch17Bopening2FC
 
 .byte left_slot
 .byte ScrollText
+.text "I wish I was done delivering news to you,"
+.byte NewLine
+.text "but there's one more favor I must ask."
+.byte NewLine
+.text "Ilios! You may step forward now!"
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word ilios_portrait
+.text "..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You too, Sir Ilios?"
+.byte NewLine
+.text "Why, has the operation on the coastal front"
+.byte NewLine
+.text "been that disastrous, Marquess Gustav?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word gustav_portrait
+.text "As much as it pains me, yes."
+.byte NewLine
+.text "While his misconduct was not as grave"
+.byte NewLine
+.text "as Kempf's, he still needs to learn a lesson."
+.byte WaitForA
+.byte NewLine
+.text "He shall remain here with you and Amalda."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "As you wish, sire."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
 .text "I'm going to check on the other sections"
 .byte NewLine
 .text "of the castle."
@@ -272,15 +314,21 @@ Ch17Bopening2FC
 .text "...Understood, sir."
 .byte WaitForA
 
-
 .byte left_slot
+.text "...or you, Ilios."
+.byte WaitForA
+
+.byte right_slot
 .byte ScrollText
+.word LoadPortrait
+.word ilios_portrait
 .text "Hmph."
 .byte WaitForA
 .byte ScrollText
 
 .byte right_slot
 .byte ScrollText
+.word ClearPortrait
 
 .byte left_slot
 .word ClearPortrait
@@ -289,8 +337,15 @@ Ch17Bopening2FC
 .byte $3C
 
 .byte Left_slot
+.byte ScrollText
 .word LoadPortrait
 .word palman_portrait
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word amalda_portrait
+
+.byte Left_slot
 .text "...General Amalda,"
 .byte NewLine
 .text "how did you of all fine soldiers get"
@@ -366,6 +421,151 @@ Ch17Bopening2FC
 .text "I longed to become a knight in his service..."
 .byte NewLine
 .text "How did he go so wrong?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word ilios_portrait
+.text "I'll tell you what happened."
+.byte WaitForA
+.byte ScrollText
+.text "The power must've gone to his head,"
+.byte NewLine
+.text "and now he's so far gone that he"
+.byte NewLine
+.text "can't even tell right from wrong."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "I-Ilios!"
+.byte NewLine
+.text "What you're saying is treachery"
+.byte NewLine
+.text "of the highest order!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Is it?"
+.byte NewLine
+.text "Pah, I don't even care anymore..."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "You look troubled, sir Ilios."
+.byte NewLine
+.text "May I ask what happened"
+.byte NewLine
+.text "back in Fort Norden?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "The worst day of my life happened."
+.byte NewLine
+.text "We're all aware of Kempf's venomous tongue,"
+.byte NewLine
+.text "and yet I let one of his comments get to me."
+.byte WaitForA
+.byte ScrollText
+.text "I want to say things devolved into a fight, but..."
+.byte WaitForA
+.byte NewLine
+.text "It was moreso me delivering a single punch" 
+.byte NewLine
+.text "before he cried bloody murder, and that"
+.byte NewLine
+.text "was when the other officials intervened."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Oh, goodness..."
+.byte NewLine
+.text "So that's what it was!"
+.byte WaitForA
+.byte NewLine
+.text "Here I was thinking that the enemy had"
+.byte NewLine
+.text "attacked and that you both broke ranks!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hah, I wish."
+.byte WaitForA
+.byte ScrollText
+.text "Nevertheless, they at least acknowledged "
+.byte NewLine
+.text "Kempf was the one who started it, so he got"
+.byte NewLine
+.text "sent back to Friege. But I was not spared..."
+.byte WaitForA
+.byte ScrollText
+.text "They took my troops from me and sent me"
+.byte NewLine
+.text "here as a sort of punishment. What a joke."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "You have my condolences, sir Ilios,"
+.byte NewLine
+.text "but look at the bright side. None of us"
+.byte NewLine
+.text "will have to deal with Kempf for a long time."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I guess you're right about that..."
+.byte NewLine
+.text "But my rank... my troops..."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Chin up, Ilios."
+.byte NewLine
+.text "I'm sure you'll earn them back someday."
+.byte WaitForA
+.byte ScrollText
+.text "Well, it was nice to catch up with you,"
+.byte NewLine
+.text "but I'm afraid I must go to my post."
+.byte NewLine
+.text "Do take care."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte Right_slot
+.word LoadPortrait
+.word ilios_portrait
+.text "......"
+.byte NewLine
+.text "Pft, as if I needed anyone's pity."
+.byte WaitForA
+.byte ScrollText
+.text "What could SHE possibly understand"
+.byte NewLine
+.text "about the long, grueling efforts it took"
+.byte NewLine
+.text "me to get to where I am? Preposterous."
+.byte WaitForA
+.byte ScrollText
+.text "Well, I guess I don't have direct orders, so..."
+.byte NewLine
+.text "Bleh. I guess I'll head to the castle town"
+.byte NewLine
+.text "and drink my sorrows away at the tavern."
 .byte WaitForA
 
 .byte EndText
