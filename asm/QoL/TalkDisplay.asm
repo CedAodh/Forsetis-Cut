@@ -610,7 +610,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
         ZQOL_END_TALK_CHAPTER
 		
 	aChapter14TalkTargetTable
-          ZQOL_TALK_ENTRY Dean, [Eda]
+          ZQOL_TALK_ENTRY Eda, [Dean]
           ZQOL_TALK_ENTRY GunterDialogue, [Safy]
 	  ZQOL_TALK_ENTRY Kane, [Tina]
 	  ZQOL_TALK_ENTRY Leif, [Dean]
@@ -661,6 +661,9 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		  ZQOL_TALK_ENTRY Safy, [Salem]
 		  ZQOL_TALK_ENTRY Callion, [Miranda]
 		  ZQOL_TALK_ENTRY Halvan, [Mareeta]
+                  ZQOL_TALK_ENTRY Karin, [Ilios]
+		  ZQOL_TALK_ENTRY Ilios, [Leif]
+		  ZQOL_TALK_ENTRY Ilios, [Fred]
 		ZQOL_END_TALK_CHAPTER
 
         aChapter18TalkTargetTable
