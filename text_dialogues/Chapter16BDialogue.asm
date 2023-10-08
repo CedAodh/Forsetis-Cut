@@ -703,11 +703,70 @@ ch16Bopening2
 
 .byte Left_slot
 .word LoadPortrait
+.word Veld2Portrait
+.text "I hope you understand what an outstanding"
+.byte NewLine
+.text "honor it is to be entrusted with such a task,"
+.byte NewLine
+.text "Bishop Reinkoch."
+.byte WaitForA
+
+.byte Right_slot
+.text "I'm well aware."
+.byte NewLine
+.text "She's proven to be a most peculiar child, if"
+.byte NewLine
+.text "I may be so bold. But I'll manage regardless."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Make sure that you do."
+.byte NewLine
+.text "She is of utmost importance to the future"
+.byte NewLine
+.text "of our people, as you likely know."
+.byte WaitForA
+.byte ScrollText
+.text "...Well, if you have nothing else to report,"
+.byte NewLine
+.text "I'll let you go about your business as usual."
+.byte WaitForA
+.byte NewLine
+.text "I don't imagine that brat would dare pass"
+.byte NewLine
+.text "through your territory, but remain aware."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Of course, I understand what is at stake,"
+.byte NewLine
+.text "Your Eminence."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word PauseDialogue
+.byte $3C
+
+.byte Right_slot
+.byte ScrollText
+.text "...Hm?"
+.byte WaitForA
+.byte ScrollText
+.text "Well, well. Right on cue."
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
 .word guard_portrait
 .text "Is something amiss, Bishop Reinkoch?"
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Eheheheh... Gaze into the crystal ball"
 .byte NewLine
 .text "and have a look for yourself."
