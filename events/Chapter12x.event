@@ -63,7 +63,7 @@ eventChapter12xEvents ; FD/8F98
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-            	EVENT $1C, _TinaAIChange
+            EVENT $1C, _TinaAIChange
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $1B
 			TEST_FLAG_UNSET $0D
@@ -136,7 +136,7 @@ eventChapter12xEvents ; FD/8F98
         ;    TEST_FLAG_SET $05
 		;	TEST_FLAG_SET $0C
         ;END_DEFINITION
-	;END_DEFINITION_ARRAY
+	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; FD/9158
 		macroBossQuoteDefinition $09, Tina

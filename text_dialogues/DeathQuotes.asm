@@ -817,9 +817,9 @@ dvorakdeath
 .byte EndText
 
 mccloydeath
-.text "All Dracoknights...are destined..."
+.text "All wyvern knights..."
 .byte NewLine
-.text "for this..."
+.text "are destined...for this..."
 .byte WaitForA
 .byte EndText
 
@@ -870,5 +870,26 @@ daisydeath
 .text "No...no way..."
 .byte NewLine
 .text "Help me...Asaello..."
+.byte WaitForA
+.byte EndText
+
+speerdeath
+.text "Inconceivable..."
+.byte NewLine
+.text "What in creation...is this...?"
+.byte WaitForA
+.byte EndText
+
+rilkedeath
+.text "Now you see..."
+.byte NewLine
+.text "There was no other way..."
+.byte WaitForA
+.byte EndText
+
+orvisdeath
+.text "S...so be it..."
+.byte NewLine
+.text "The way forward...is yours..."
 .byte WaitForA
 .byte EndText

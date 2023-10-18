@@ -262,6 +262,7 @@
 .include "hacky/Nocounterat3range.asm"
 .include "hacky/changedancerheartcolor.asm"
 .include "hacky/rs_85AC1C (1).asm"
+.include "hacky/changebargainmanualtogivepavise.asm"
 
 
 

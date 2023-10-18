@@ -2,7 +2,7 @@
 aBattleAnimationsOnMusicTable .block	; 96/846C
 .word	Marty
 .word	Dalsin
-.word	Ishtar	;used to be Callion
+.word	Speer	;used to be Callion
 .word	Shiva
 .word	Perne
 .word	Fred
@@ -41,7 +41,7 @@ aBattleAnimationsOnMusicTable .block	; 96/846C
 .word	Reinkoch
 .word	Palman
 .word	Kant
-.word	Gustav
+.word	Rilke
 .word	Wolfe
 .word	Mannheim
 .word	Fraus
@@ -52,12 +52,12 @@ aBattleAnimationsOnMusicTable .block	; 96/846C
 .word	Bandole	;used to be Orvis
 .word	Faden
 .word	Coulter
-.word	Reinhardt
+.word	Orvis
 .word	Tolman
 .word	Dvorak
 .word	Eichner
 .word	Seil
-.word	Bharat
+.word	Jabal
 .word	Beatrice
 .word	Tigris
 .word	TigrisDagdar

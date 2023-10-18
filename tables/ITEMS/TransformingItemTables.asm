@@ -14,6 +14,6 @@ aTransformedItemTable ; 88/822B
 	.byte IronLance
 	.byte IronAxe
 	.byte IronBow
-	.byte IronBallista
+	.byte Ballista
 	.byte Javelin
 	.byte MareetasSword

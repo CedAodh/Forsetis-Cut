@@ -64,6 +64,9 @@ eventChapter18Events ; E7/8000
 		EVENT $0E, _DalsinMishaTalk
 			CHECK_CHARS2 Dalsin, Misha
 		END_DEFINITION
+		EVENT $0F, _SafyShivaTalk
+			CHECK_CHARS2 Safy, Shiva
+		END_DEFINITION
 		EVENT $00, _XavierArmorDialogue1
 			CHECK_CHARS2 Civilian9, XavierArmor1
 		END_DEFINITION
@@ -399,6 +402,14 @@ eventChapter18Events ; E7/8000
 		YIELD
 		
 		DIALOGUE dalsinmisha
+		YIELD
+	END2
+
+	_SafyShivaTalk
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		DIALOGUE safyshiva
 		YIELD
 	END2
 	

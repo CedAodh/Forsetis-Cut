@@ -261,13 +261,13 @@ _VantageDesc
 .word $0000
 
 _AccostDesc
-	.text "If user's {H}{P} and"
+	.text "If user attacks and "
 	.word $0000
-	.text "{A}{S} are higher than"
+	.text "has [more {H}{P} and"
 	.word $0000
-	.text "the ene[my's, adds"
+	.text "{A}{S} than ene[my, "
 	.word $0000
-	.text "one round of co[mbat"
+	.text "add round of co[mbat"
 	.word $0000
 .word $0000
 

@@ -762,9 +762,9 @@ ch14opening2
 .byte ScrollText
 .text "Heh. That much I already know."
 .byte NewLine
-.text "When I was a small child, I was often told"
+.text "When I was a small child, I was often told the"
 .byte NewLine
-.text "the story of Dáinn, the legendary dracoknight."
+.text "story of Dáinn, the legendary wyvern knight."
 .byte WaitForA
 .byte ScrollText
 .text "Dean always reminded me of him—flying"

@@ -46,7 +46,7 @@ eventChapter20Events ; FD/D942
 		END_DEFINITION
 		EVENT $00, _Turn13Reinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 12
+			CMP_WORD wCurrentTurn, 1
 		END_DEFINITION
 		EVENT $00, _Turn14Reinforcements
 			CMP_WORD wCurrentPhase, NPC
@@ -209,6 +209,9 @@ eventChapter20Events ; FD/D942
 	_BattleEventDefinitions ; FD/DC06
 		EVENT $05, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Bharat
+		END_DEFINITION
+		EVENT $0B, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Orvis
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -695,12 +698,39 @@ eventChapter20Events ; FD/D942
 	END2
 
 	_Turn13Reinforcements ; FD/E122
+		PLAY_SOUND_WORD $E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $39
+		YIELD
+		
 		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn13ReinforcementsCameraCoordinates
 		YIELD
 
 		LOAD2 eventChapter20Data._Turn13ReinforcementsGroup
 		WAIT_MOVE
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Bharat
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+
+		STORE_WORD wEventEngineCharacterTarget, Bharat
+		CALL_ASM_LOOP rlASMCIsUnitRescued, $0000
+		JUMP_TRUE +
+		
+		DIALOGUE speerspawna
+		YIELD
+		
+		JUMP ++
+		
+		+
+		
+		DIALOGUE speerspawnb
+		YIELD
+		
+		+
 
 		YIELD_UNK
 	END2

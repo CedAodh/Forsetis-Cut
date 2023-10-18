@@ -950,7 +950,7 @@ ch9closing2
 .text "...Who in blazes is that?"
 .byte WaitForA
 .byte ScrollText
-.text "That dracoknight—a woman, by the look of it—"
+.text "That wyvern knight—a woman, by the look of it—"
 .byte NewLine
 .text "what's she saying to the Thracian troops?"
 .byte NewLine

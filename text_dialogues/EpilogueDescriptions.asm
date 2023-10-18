@@ -2006,7 +2006,7 @@ deanepi
 .byte NewLine
 .text "appointed the head of"
 .byte NewLine
-.text "the reborn Dracoknights"
+.text "the reborn wyvern knights"
 .byte NewLine
 .text "of Thracia."
 .word PauseDialogue

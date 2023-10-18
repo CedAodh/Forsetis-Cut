@@ -513,6 +513,13 @@ nintendo_logo
 
 .here
 
+* = $1C93D0
+.logical lorom($1C93D0, 1)
+
+.binary "pavisespin.bin.fe4"
+
+.here
+
 ;* = $554A4
 ;.logical lorom($554A4, 1)
 ;    aBattleAnimationDynamicTiles .binary "BattleAnimationDynamicTiles.bin"

@@ -543,3 +543,51 @@ galzussaias
 .byte WaitForA
 
 .byte EndText
+
+galzusraydrik
+
+.byte right_slot
+.word LoadPortrait
+.word galzus_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word Raydrik2Portrait
+.text "Oh, Galzus..."
+.byte NewLine
+.text "You would truly cast away my hospitality?"
+.byte WaitForA
+.byte NewLine
+.text "What, was I not accomodating enough?"
+.byte NewLine
+.text "Your sheer skill was rewarded handsomely."
+.byte WaitForA
+.byte ScrollText
+.text "I never desired to make an enemy of you,"
+.byte NewLine
+.text "but defy me and I will make you regret it!"
+.byte WaitForA
+
+.byte right_slot
+.text "...Truly astounding."
+.byte NewLine
+.text "Never have I seen a man pose the same threat"
+.byte NewLine
+.text "alive that he would if he were dead."
+.byte WaitForA
+.byte ScrollText
+.text "When I kill you, let's see if"
+.byte NewLine
+.text "any differences arise, shall we?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Wh-what?! N...never!"
+.byte NewLine
+.text "You can never best the power at my command!"
+.byte NewLine
+.text "Y-you're the one who's going to die!"
+.byte WaitForA
+
+.byte EndText

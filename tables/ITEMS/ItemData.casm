@@ -264,7 +264,7 @@
 
 	LoptrianFang						= 12
 		LoptrianFangType				= TypeSword
-		LoptrianFangAlternateType		= TypeDark
+		LoptrianFangAlternateType		= None
 		LoptrianFangMight				= 18
 		LoptrianFangAccuracy			= 80
 		LoptrianFangWeight				= 20
@@ -286,7 +286,7 @@
 
 	BragisBlade							= 13
 		BragisBladeType					= TypeSword
-		BragisBladeAlternateType		= TypeLight
+		BragisBladeAlternateType		= None
 		BragisBladeMight				= 12
 		BragisBladeAccuracy				= 100
 		BragisBladeWeight				= 10
@@ -310,7 +310,7 @@
 		LightBrandType					= TypeSword
 		LightBrandAlternateType			= TypeLight
 		LightBrandMight					= 12
-		LightBrandAccuracy				= 90
+		LightBrandAccuracy				= 85
 		LightBrandWeight				= 9
 		LightBrandDurability			= 60
 		LightBrandCritrate				= 0
@@ -376,7 +376,7 @@
 		EarthSwordType					= TypeSword
 		EarthSwordAlternateType			= TypeLight
 		EarthSwordMight					= 12
-		EarthSwordAccuracy				= 80
+		EarthSwordAccuracy				= 75
 		EarthSwordWeight				= 7
 		EarthSwordDurability			= 60
 		EarthSwordCritrate				= 0
@@ -616,7 +616,7 @@
 
 	ShadowSword							= 28
 		ShadowSwordType					= TypeSword
-		ShadowSwordAlternateType		= TypeDark
+		ShadowSwordAlternateType		= None
 		ShadowSwordMight				= 11
 		ShadowSwordAccuracy				= 80
 		ShadowSwordWeight				= 5
@@ -814,7 +814,7 @@
 
 	ShadowSpear							= 37
 		ShadowSpearType					= TypeLance
-		ShadowSpearAlternateType		= TypeDark
+		ShadowSpearAlternateType		= None
 		ShadowSpearMight				= 20
 		ShadowSpearAccuracy				= 60
 		ShadowSpearWeight				= 20
@@ -1673,7 +1673,7 @@
 	VeninBallista						= 76
 		VeninBallistaType				= TypeBow
 		VeninBallistaAlternateType		= None
-		VeninBallistaMight				= 12
+		VeninBallistaMight				= 10
 		VeninBallistaAccuracy			= 75
 		VeninBallistaWeight				= 20
 		VeninBallistaDurability			= 10
@@ -1719,7 +1719,7 @@
 		FireAlternateType				= None
 		FireMight						= 7
 		FireAccuracy					= 75
-		FireWeight						= 2
+		FireWeight						= 3
 		FireDurability					= 23
 		FireCritrate					= 0
 		FireMinRange					= 1
@@ -1727,7 +1727,7 @@
 		FireWeaponRank					= RankE
 		FireEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		FireStatBonus					= aNoItemBonuses
-		FireCost						= 2200
+		FireCost						= 2000
 		FireDescription					= <>item_descs._FireDesc
 		FireUseEffect					= None
 		FireWeaponEffect				= None
@@ -1741,7 +1741,7 @@
 		ElfireAlternateType				= None
 		ElfireMight						= 11
 		ElfireAccuracy					= 90
-		ElfireWeight					= 3
+		ElfireWeight					= 4
 		ElfireDurability				= 54
 		ElfireCritrate					= 10
 		ElfireMinRange					= 1
@@ -1763,7 +1763,7 @@
 		BolganoneAlternateType			= None
 		BolganoneMight					= 15
 		BolganoneAccuracy				= 85
-		BolganoneWeight					= 5
+		BolganoneWeight					= 7
 		BolganoneDurability				= 16
 		BolganoneCritrate				= 0
 		BolganoneMinRange				= 1
@@ -1785,7 +1785,7 @@
 		TathlumAlternateType			= None
 		TathlumMight					= 13
 		TathlumAccuracy					= 100
-		TathlumWeight					= 7
+		TathlumWeight					= 9
 		TathlumDurability				= 60
 		TathlumCritrate					= 10
 		TathlumMinRange					= 2
@@ -1800,14 +1800,14 @@
 		TathlumSkills2					= Skill2Nihil
 		TathlumSkills3					= None
 		TathlumTraits					= TraitWeapon | TraitUnsellable
-		TathlumIcon						= $9F
+		TathlumIcon						= $50
 
 	Thunder								= 82
 		ThunderType						= TypeThunder
 		ThunderAlternateType			= None
 		ThunderMight					= 6
 		ThunderAccuracy					= 70
-		ThunderWeight					= 1
+		ThunderWeight					= 2
 		ThunderDurability				= 25
 		ThunderCritrate					= 5
 		ThunderMinRange					= 1
@@ -1829,7 +1829,7 @@
 		DireThunderAlternateType		= None
 		DireThunderMight				= 15
 		DireThunderAccuracy				= 80
-		DireThunderWeight				= 5
+		DireThunderWeight				= 10
 		DireThunderDurability			= 60
 		DireThunderCritrate				= 10
 		DireThunderMinRange				= 1
@@ -1851,7 +1851,7 @@
 		ThoronAlternateType				= None
 		ThoronMight						= 13
 		ThoronAccuracy					= 75
-		ThoronWeight					= 4
+		ThoronWeight					= 6
 		ThoronDurability				= 18
 		ThoronCritrate					= 20
 		ThoronMinRange					= 1
@@ -1878,7 +1878,7 @@
 		MjolnirCritrate					= 30
 		MjolnirMinRange					= 1
 		MjolnirMaxRange					= 2
-		MjolnirWeaponRank				= RankA
+		MjolnirWeaponRank				= WeaponLocks.aMjolnirWeaponLock
 		MjolnirEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		MjolnirStatBonus				= aMjolnirItemBonuses
 		MjolnirCost						= 0
@@ -1917,7 +1917,7 @@
 		GrafcaliburAlternateType		= None
 		GrafcaliburMight				= 10
 		GrafcaliburAccuracy				= 100
-		GrafcaliburWeight				= 2
+		GrafcaliburWeight				= 1
 		GrafcaliburDurability			= 43
 		GrafcaliburCritrate				= 30
 		GrafcaliburMinRange				= 1
@@ -1939,7 +1939,7 @@
 		TornadoAlternateType			= None
 		TornadoMight					= 12
 		TornadoAccuracy					= 90
-		TornadoWeight					= 3
+		TornadoWeight					= 4
 		TornadoDurability				= 13
 		TornadoCritrate					= 0
 		TornadoMinRange					= 1
@@ -1982,8 +1982,8 @@
 		LightType						= TypeLight
 		LightAlternateType				= None
 		LightMight						= 9
-		LightAccuracy					= 80
-		LightWeight						= 3
+		LightAccuracy					= 75
+		LightWeight						= 4
 		LightDurability					= 24
 		LightCritrate					= 20
 		LightMinRange					= 1
@@ -2004,8 +2004,8 @@
 		NosferatuType					= TypeLight
 		NosferatuAlternateType			= None
 		NosferatuMight					= 12
-		NosferatuAccuracy				= 80
-		NosferatuWeight					= 7
+		NosferatuAccuracy				= 70
+		NosferatuWeight					= 8
 		NosferatuDurability				= 33
 		NosferatuCritrate				= 0
 		NosferatuMinRange				= 1
@@ -2049,7 +2049,7 @@
 		JormungandAlternateType			= None
 		JormungandMight					= 14
 		JormungandAccuracy				= 70
-		JormungandWeight				= 5
+		JormungandWeight				= 6
 		JormungandDurability			= 20
 		JormungandCritrate				= 5
 		JormungandMinRange				= 1
@@ -2093,7 +2093,7 @@
 		HelAlternateType				= None
 		HelMight						= -1
 		HelAccuracy						= 60
-		HelWeight						= 7
+		HelWeight						= 9
 		HelDurability					= 3
 		HelCritrate						= 0
 		HelMinRange						= 1
@@ -2115,7 +2115,7 @@
 		ThokkAlternateType				= None
 		ThokkMight						= 0
 		ThokkAccuracy					= 100
-		ThokkWeight						= 4
+		ThokkWeight						= 7
 		ThokkDurability					= 3
 		ThokkCritrate					= 0
 		ThokkMinRange					= 1
@@ -2161,11 +2161,11 @@
 		BoltingAccuracy					= 70
 		BoltingWeight					= 20
 		BoltingDurability				= 5
-		BoltingCritrate					= 20
+		BoltingCritrate					= 10
 		BoltingMinRange					= 3
 		BoltingMaxRange					= 10
 		BoltingWeaponRank				= RankA
-		BoltingEffectiveness			= ItemEffectivenesses.aNoEffectiveness
+		BoltingEffectiveness			= ItemEffectivenesses.aBallisticianEffectiveness
 		BoltingStatBonus				= aNoItemBonuses
 		BoltingCost						= 2200
 		BoltingDescription				= <>item_descs._BoltingDesc
@@ -2201,8 +2201,8 @@
 	Venin								= 100
 		VeninType						= TypeDark
 		VeninAlternateType				= None
-		VeninMight						= 8
-		VeninAccuracy					= 70
+		VeninMight						= 12
+		VeninAccuracy					= 80
 		VeninWeight						= 20
 		VeninDurability					= 5
 		VeninCritrate					= 0
@@ -2223,14 +2223,14 @@
 	Petrify								= 101
 		PetrifyType						= TypeDark
 		PetrifyAlternateType			= None
-		PetrifyMight					= 1
+		PetrifyMight					= 5
 		PetrifyAccuracy					= 100
 		PetrifyWeight					= 20
 		PetrifyDurability				= 1
 		PetrifyCritrate					= 0
 		PetrifyMinRange					= 3
 		PetrifyMaxRange					= 10
-		PetrifyWeaponRank				= RankA
+		PetrifyWeaponRank				= WeaponLocks.aThokkWeaponLock
 		PetrifyEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		PetrifyStatBonus				= aNoItemBonuses
 		PetrifyCost						= 0

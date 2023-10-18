@@ -224,7 +224,7 @@ ch16Bending2
 
 .byte left_slot
 .byte ScrollText
-.text "How the hell would that help anything?!"
+.text "And how the hell would that help anything?!"
 .byte NewLine
 .text "If it's as you say and"
 .byte NewLine
@@ -258,6 +258,41 @@ ch16Bending2
 .byte left_slot
 .byte ScrollText
 .text "And I take it another prize is insanity?"
+.byte NewLine
+.text "I genuinely cannot believe you attempted to"
+.byte NewLine
+.text "deter me from my mission as you just have."
+.byte WaitForA
+.byte ScrollText
+.text "Think about what's changed since"
+.byte NewLine
+.text "your time of suffering!"
+.byte WaitForA
+.byte ScrollText
+.text "Your group has decided that its best"
+.byte NewLine
+.text "course of action is to hunt down children."
+.byte NewLine
+.text "CHILDREN."
+.byte WaitForA
+.byte ScrollText
+.text "Do you not realize by now that it would"
+.byte NewLine
+.text "make your story much more reasonable if"
+.byte NewLine
+.text "you hadn't resorted to that of all things?"
+.byte WaitForA
+.byte ScrollText
+.text "Whatever you claim happened to you before,"
+.byte NewLine
+.text "I have no way of denying. But I can for"
+.byte NewLine
+.text "damn sure tell you it no longer persists today."
+.byte WaitForA
+.byte ScrollText
+.text "Why are you not as capable of learning"
+.byte NewLine
+.text "to improve and forgive?"
 .byte WaitForA
 
 .byte left_slot
@@ -285,7 +320,7 @@ ch16Bending2
 .byte NewLine
 .text "So be it."
 .byte NewLine
-.text "It is clear that we are not meant to coexist.."
+.text "It is clear that we are not meant to coexist."
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
@@ -321,7 +356,7 @@ ch16Bending2
 .byte WaitForA
 
 .byte Right_slot
-.text "I won't say that any harm came from it,"
+.text "I can't say that any harm came from it,"
 .byte NewLine
 .text "my prince."
 .byte WaitForA
@@ -361,7 +396,7 @@ ch16Bending2
 .text "Have you ever thought about that?"
 .byte WaitForA
 .byte ScrollText
-.text "I said it to the Loptrian bishop before:"
+.text "We said it to the Loptrian bishop before:"
 .byte NewLine
 .text "we seek to end the cycle of suffering."
 .byte NewLine
@@ -392,7 +427,7 @@ ch16Bending2
 .byte NewLine
 .text "It does not have to be now or soon,"
 .byte NewLine
-.text "but it is a requirement nonetheless."
+.text "but it will a requirement eventually."
 .byte WaitForA
 
 .byte EndText
@@ -467,7 +502,7 @@ LeifShannamTalk
 .byte ScrollText
 .text "O-of course. I understand."
 .byte NewLine
-.text "...And yes, I do see your holy blade there."
+.text "...And yes, I do see your divine blade there."
 .byte NewLine
 .text "It looks very valuable and, er...antiquated?"
 .byte WaitForA
@@ -1026,12 +1061,16 @@ homerseesshannam
 .byte NewLine
 .text "I think I saw...an acquaintance of mine,"
 .byte NewLine
-.text "let's say, wander into there just now."
+.text "let's say, just wander into there just now."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Yes, that indeed sounds insane."
+.text "I was preparing myself to doubt you, but..."
+.byte NewLine
+.text "Yes, I'd agree that “insane” might be"
+.byte NewLine
+.text "the best word choice for that."
 .byte WaitForA
 
 .byte left_slot
@@ -1053,6 +1092,8 @@ homerseesshannam
 .text "Nah, it'd be better if I do it myself."
 .byte NewLine
 .text "I'll save you the trouble."
+.byte NewLine
+.text "He'd be very liable to...inconvenience you."
 .byte WaitForA
 .byte NewLine
 .text "Just let me be with the first"

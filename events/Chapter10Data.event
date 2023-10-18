@@ -75,7 +75,7 @@ eventChapter10Data ; B1/D1EF
 
 	_FredOlwenGroup ; B1/D49D
 		UNIT Fred, Enemy, [4, 13], [4, 13], Largo, [LightningSword, Longsword, Vulnerary], 1, False, [$00, $01, $02, $00]
-		UNIT Olwen, Enemy, [3, 13], [3, 13], Largo, [DireThunder, Vulnerary], 2, False, [$00, $01, $02, $00]
+		UNIT Olwen, Enemy, [3, 13], [3, 13], Largo, [DireThunder, Vulnerary], 1, False, [$00, $01, $02, $00]
 	UNIT
 
 	_StartingPositions ; B1/D4C7

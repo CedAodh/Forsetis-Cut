@@ -737,9 +737,9 @@ ch13opening3
 .text "you'd be easy pickings for their ballistae."
 .byte WaitForA
 .byte ScrollText
-.text "A dracoknight's entire way of fighting is to"
+.text "A wyvern knight's entire way of fighting is"
 .byte NewLine
-.text "swoop down, strike, and fly away—all in one"
+.text "to swoop down, strike, and fly away—all in one"
 .byte NewLine
 .text "swift move. That's how you stay alive, Eda."
 .byte WaitForA

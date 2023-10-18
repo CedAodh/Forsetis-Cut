@@ -1237,7 +1237,7 @@ ch15closing
 .text "a reason it has the nickname “Wayward Forest.”"
 .byte WaitForA
 .byte ScrollText
-.text "The second is Nordrhein, the coastline"
+.text "The second is Norden Way, the coastline"
 .byte NewLine
 .text "that runs all the way to Leonster. But you'd"
 .byte NewLine
@@ -1262,7 +1262,7 @@ ch15bishopyesno
 .byte Right_slot
 .text "Please send us toward..."
 .byte NewLine
-.text "     Fort Nordrhein"
+.text "     Fort Norden"
 .byte NewLine
 .text "     Millefeuille Forest"
 .word $2E00
@@ -1276,7 +1276,7 @@ ch15leftdorias
 .byte Right_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "This way leads to Nordrhein, which will"
+.text "This path leads to Norden Way, which will"
 .byte NewLine
 .text "take us north along the coast to Leonster."
 .byte WaitForA

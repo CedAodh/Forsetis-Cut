@@ -262,7 +262,7 @@ menutextSkillLearned
 skill_text_table
 	.long skill_name_text._ParagonName
 	.long skill_name_text._AccostName
-	.long skill_name_text._BargainName
+	.long skill_name_text._PaviseName
 	.long skill_name_text._VantageName
 	.long skill_name_text._WrathName
 	.long skill_name_text._AdeptName

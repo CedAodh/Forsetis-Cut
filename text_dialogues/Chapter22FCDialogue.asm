@@ -209,6 +209,10 @@ ch22tinaasbel
 
 ch22karinfergus
 
+.byte right_slot
+.word LoadPortrait
+.word fergus_portrait 
+
 .byte left_slot
 .word LoadPortrait
 .word karin_portrait
@@ -217,194 +221,189 @@ ch22karinfergus
 .text "Got a minute?"
 .byte WaitForA 
 
-.byte right_slot
-.word LoadPortrait
-.word fergus_portrait 
-.text "Aw, cripes!"
-.byte NewLine
+.byte right_slot 
 .text "What is it now, Karin?"
 .byte NewLine
-.text "Did I breathe the wrong way or something?"
+.text "Don't tell me my breathing was obtrusive."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Huh?!"
+.text "What?"
 .byte NewLine
-.text "No! I just wanted to talk!"
+.text "Hey, I just said hello!"
 .byte NewLine
-.text "No need to get all worked up over nothing!"
+.text "You're the one who got all defensive!"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "*sigh* Alright, alright."
+.text "*sigh* All right, all right."
 .byte NewLine
-.text "I know better than to follow along"
+.text "That's...that's good."
 .byte NewLine
-.text "with your little yelling contests."
-.byte WaitForA 
-.byte ScrollText
-.text "So, what did you wanna talk about?"
+.text "So what did you wanna talk about?"
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, uhm..."
+.text "Oh, right!"
 .byte NewLine
-.text "Well, I just wanted to ask you..."
+.text "Well, I just thought I should ask..."
 .byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Ask me what?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "W-well, what do you plan to do"
 .byte NewLine
-.text "What do you plan to do after the war?"
+.text "after the war is finished?"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Same I've always done."
+.text "Same as I've always done."
+.byte NewLine
+.text "I'll pack up and be on my merry way"
+.byte NewLine
+.text "while eyein' out a new job."
 .byte WaitForA
 .byte NewLine
-.text "Once a job is finished,"
-.byte NewLine
-.text "I'll just go looking for the next one."
-.byte WaitForA
-.byte NewLine
-.text "That's just how I am, I don't really like"
-.byte NewLine
-.text "sticking to just one employer or one place."
+.text "I'm a wanderer who likes wanderin'."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Really, now? Why is that?"
+.text "Really, now?"
+.byte NewLine
+.text "Why is that?"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "You might wanna slow down there, lass."
-.byte WaitForA
+.text "Okay, slow down there, sport."
 .byte NewLine
-.text "I'm not one to speak openly about my past."
+.text "I see how you got your foot in the door—"
 .byte NewLine
-.text "At least not without good reason."
+.text "but I'm afraid that topic remains closed off."
 .byte WaitForA
+
+.byte left_slot
 .byte ScrollText
-.text "I'd ask you about your plans as well, but"
+.text "F...fine then!"
 .byte NewLine
-.text "I think you already burned your answer"
+.text "But now you won't know what I'll be doing!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You mean you're not gonna go back to"
 .byte NewLine
-.text "pretty deep into my skull! *chuckle*"
+.text "Silesse as a pegasus knight?"
+.byte NewLine
+.text "Man, you're sinkin' low these days."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "*sigh*"
+.byte NewLine
+.text "Come on, Fergus, let me in."
+.byte NewLine
+.text "Won't you be upfront for once?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Eh, you're right."
+.byte NewLine
+.text "Guess I'm just not used to being"
+.byte NewLine
+.text "someone's main concern an' all."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Hey!"
+.text "I can see why that'd be the case..."
 .byte WaitForA
 .byte NewLine
-.text "What's that supposed to mean?!"
+.text "You don't really...bring up any one name"
 .byte NewLine
-.text "Are you saying I'm annoying?!"
+.text "frequently whenever you talk about"
+.byte NewLine
+.text "your past travels and exploits."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Hey, hey!"
-.byte WaitForA
-.byte NewLine
-.text "Calm down, there. Sheesh."
-.byte NewLine
-.text "Don't go putting words into people's mouths!"
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "Well, you're the one making sarcastic"
-.byte NewLine
-.text "comments in the first place!"
-.byte WaitForA
-.byte ScrollText
-.text "It's frustrating to care about someone"
-.byte NewLine
-.text "and to be met with such behavior!"
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "I.... *sigh* I'm real sorry about that, lass."
-.byte WaitForA
-.byte NewLine
-.text "I'm really not used to having people"
-.byte NewLine
-.text "care that much about me."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "F—Fergus..."
-.byte NewLine
-.text "Don't you have anyone"
-.byte NewLine
-.text "waiting for you somewhere?"
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "Not really. Everyone I loved is long gone,"
-.byte NewLine
-.text "and ever since I was a lad I'd just travel from"
-.byte NewLine
-.text "place to place in hopes of finding a purpose."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "Fergus...I... I'm sorry, I had no idea."
-.byte NewLine
-.text "But now that you've told me this,"
-.byte NewLine
-.text "I'm more confident about my offer than ever."
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "An offer?"
-.byte WaitForA 
-.byte NewLine
-.text "What's all that about?"
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "I know you don't like staying in one place,"
-.byte NewLine
-.text "but... If you ever need someplace to stay,"
-.byte NewLine
-.text "you could always come with me to Silesse."
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "Huh..."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "Y—Yeah! Sure, it might be a bit colder than"
-.byte NewLine
-.text "you're used to, but we could always use"
-.byte NewLine
-.text "an extra hand when it's time to rebuild."
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "..."
-.byte WaitForA 
-.byte NewLine
 .text "......"
 .byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "Fergus...I... I'm sorry, I never realized."
 .byte NewLine
-.text "Ha..."
+.text "But now that I do realize, I'm more"
+.byte NewLine
+.text "confident about my offer than ever."
 .byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "Ooh, an offer?"
+.byte NewLine
+.text "With a word like that, it already sounds enticing."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "If Mr. Wanderlust decides he"
+.byte NewLine
+.text "may want to settle down at some point,"
+.byte NewLine
+.text "I'm happy to extend an invitation to Silesse."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "To Silesse?"
+.byte NewLine
+.text "What would I want to go there for?"
+.byte NewLine
+.text "Snow's not really my strong suit."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, it's not all that bad!"
+.byte NewLine
+.text "The spring is a beautiful season,"
+.byte NewLine
+.text "I should have you know!"
+.byte WaitForA 
+.byte ScrollText
+.text "And anyway, the whole point is to let"
+.byte NewLine
+.text "yourself be around familiar faces for"
+.byte NewLine
+.text "an extended period of time."
+.byte WaitForA
+.byte ScrollText
+.text "Find out if, after all this time,"
+.byte NewLine
+.text "it's something you...prefer."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA 
+.byte ScrollText
+.text "Ha..." 
 .byte NewLine
 .text "Ahahahaha!"
 .byte WaitForA 
@@ -412,7 +411,6 @@ ch22karinfergus
 .byte left_slot
 .byte ScrollText
 .text "F-Fergus?"
-.byte WaitForA 
 .byte NewLine
 .text "What's so funny?"
 .byte WaitForA 
@@ -420,7 +418,6 @@ ch22karinfergus
 .byte right_slot
 .byte ScrollText
 .text "I genuinely can't believe it!"
-.byte WaitForA 
 .byte NewLine
 .text "You actually fell for me!"
 .byte NewLine
@@ -429,62 +426,62 @@ ch22karinfergus
 
 .byte left_slot
 .byte ScrollText
-.text "..."
-.byte WaitForA
+.text "I fe..."
 .byte NewLine
 .text "WHAT?!"
 .byte NewLine
 .text "No I haven't!"
 .byte WaitForA
 .byte ScrollText
-.text "I'm just trying to be nice to you for once!"
+.text "I was just trying to be NICE!"
+.byte NewLine
+.text "Because I— I felt bad for you!"
 .byte NewLine
 .text "Why can't you see that, you big idiot?!"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "What I see is your face turning beet red!"
-.byte WaitForA 
+.text "All I see is your face turning beet red!" 
+.byte WaitForA
+.byte ScrollText
+.text "Is it from the heat of the moment?"
 .byte NewLine
-.text "Is it from embarrassment?"
-.byte WaitForA 
-.byte NewLine
-.text "From love?"
+.text "From LOVE?"
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "From ANGER!"
-.byte WaitForA 
-.byte NewLine
-.text "How dare you make fun of me"
-.byte NewLine
-.text "for actually caring about you?!"
-.byte WaitForA 
+.text "How about from ANGER!"
+.byte WaitForA
 .byte ScrollText
-.text "Oh, just wait, you're not gonna"
+.text "Oh, just you wait, you're not gonna"
 .byte NewLine
-.text "Keep laughing about this in a bit..."
+.text "be laughing about this in a little bit..."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Wait, what are you...?"
-.byte WaitForA 
-.byte NewLine
-.text "W—WOAH! Put that sword down, lass!"
-.byte NewLine
-.text "Someone could actually get hurt here!"
-.byte NewLine
+.text "Heh, heh, he—"
 .byte WaitForA
 .byte ScrollText
-.text "Gah! H—Help! Prince Leif! Call the healers!"
+.text "W-w-wait! Put down the lance, Karin!"
+.byte WaitForA
 .byte NewLine
-.text "We've got someone going berserk over here!"
+.text "If there's one thing I've learned,"
 .byte NewLine
-.text "H—hey! Calm down! You'll kill me for real!!!"
-.byte WaitForA 
+.text "it's that angry ladies and sharp objects"
+.byte NewLine
+.text "DO NOT GO TOGETHER!"
+.byte WaitForA
+.byte ScrollText
+.text "Gah! H-help!"
+.byte NewLine
+.text "Prince Leif! Call the healers!"
+.byte NewLine
+.text "That damned berserk staff's at work here!"
+.byte WaitForA
+
 .byte EndText
 
 amaldaolwen

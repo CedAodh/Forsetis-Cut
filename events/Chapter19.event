@@ -1206,6 +1206,9 @@ eventChapter19Events ; FD/CBB9
 		
 		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
 		
+		macroSetCharacterBitsWord Leif, structCharacterDataRAM.Skills1, (Skill1Renewal << 0)
+		macroSetAllCharacterByte structCharacterDataRAM.Fatigue, 15
+		
 		FADE_In $01
 		YIELD
 		

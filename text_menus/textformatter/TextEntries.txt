@@ -461,9 +461,9 @@ Ranger
 Great Knight
 Pegasus Knight
 Falcon Knight
-Dracorider
-Dracoknight
-Dragon[master
+)Wyvern Rider 
+)Wyvern Knight
+)Wyvern Lord
 Archer
 (Myr[midon
 S]word[master
