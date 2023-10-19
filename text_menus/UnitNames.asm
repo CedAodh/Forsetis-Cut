@@ -166,7 +166,7 @@ char_name_pointers		.block
 	.word	<>char_names._KantName		; Unused
 	.word	<>char_names._GustavName
 	.word	<>char_names._DancerName
-	.word	<>char_names._ClericName	; Unused
+	.word	<>char_names._RilkeName	; Unused
 	.word	<>char_names._MannheimName	; Unused
 	.word	<>char_names._FrausName
 	.word	<>char_names._SeimetzName
@@ -200,7 +200,7 @@ char_name_pointers		.block
 	.word	<>char_names._FriegeName
 	.word	<>char_names._FriegeName
 
-	.word	<>char_names._RilkeName		; Unused
+	.word	<>char_names._BeatriceName		; Unused
 
 	.word	<>char_names._MunsterName
 
@@ -244,7 +244,7 @@ char_name_pointers		.block
 	.word	<>char_names._MagiName
 	.word	<>char_names._MagiName
 
-	.word	<>char_names._DracoriderName	; Unused
+	.word	<>char_names._OrvisName	; Unused
 	.word	<>char_names._BishopName		; Unused
 	.word	<>char_names._DvorakName
 
@@ -426,7 +426,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._MunsterName
 
-	.word	<>char_names._NancyName
+	.word	<>char_names._SpeerName
 
 	.word	<>char_names._MunsterName
 	.word	<>char_names._MunsterName
@@ -990,8 +990,8 @@ _DancerName
 	.text "Thrall"
 	.word $0000
 
-_ClericName
-	.text "Cleric"
+_RilkeName
+	.text "Rilke "
 	.word $0000
 
 _MannheimName
@@ -1026,8 +1026,8 @@ _FadenName
 	.text "Verden"
 	.word $0000
 
-_NancyName
-	.text "+Nancy"
+_SpeerName
+	.text "Speer "
 	.word $0000
 
 _TahraName
@@ -1038,7 +1038,7 @@ _FriegeName
 	.text "Friege"
 	.word $0000
 
-_RilkeName
+_BeatriceName
 	.text "Beatrice"
 	.word $0000
 
@@ -1150,8 +1150,8 @@ _PorcusName
 	.text "Porcus"
 	.word $0000
 
-_DracoriderName
-	.text "Dracorider"
+_OrvisName
+	.text "Orvis "
 	.word $0000
 
 _PirateName

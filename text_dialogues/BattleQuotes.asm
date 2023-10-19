@@ -518,7 +518,9 @@ dvorakboss
 .byte EndText
 
 mccloyboss
-.text "Fear the Dracoknights of Thracia!"
+.text "Fear the wyvern knights"
+.byte NewLine
+.text "of Thracia!"
 .byte WaitForA
 .byte EndText
 
@@ -600,5 +602,46 @@ bovisboss
 .text "AWAY FROM HERE..."
 .byte NewLine
 .text "I'LL CATCH UP..."
+.byte WaitForA
+.byte EndText
+
+speerboss
+.text "You're more skilled than"
+.byte NewLine
+.text "I first imagined..."
+.byte NewLine
+.text "But all your struggling ends here!"
+.byte WaitForA
+.byte EndText
+
+rilkeboss
+.text "Don't fool yourself—"
+.byte NewLine
+.text "you can never take me alive!"
+.byte WaitForA
+.byte EndText
+
+orvisboss
+.text "Leonster laggards..."
+.byte NewLine
+.text "By His Excellency's command,"
+.byte NewLine
+.text "you shall come no further!"
+.byte WaitForA
+.byte EndText
+
+travantboss
+.text "Remember well the name of Travant—"
+.byte NewLine
+.text "he who will see you swallowed"
+.byte NewLine
+.text "by the afterlife!"
+.byte WaitForA
+.byte EndText
+
+arionboss
+.text "Fate has willed this..."
+.byte NewLine
+.text "Now perish!"
 .byte WaitForA
 .byte EndText

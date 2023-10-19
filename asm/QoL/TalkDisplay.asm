@@ -672,6 +672,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 	  ZQOL_TALK_ENTRY GunterDialogue, [Asbel]
 	  ZQOL_TALK_ENTRY Miranda, [Linoan]
 	  ZQOL_TALK_ENTRY Dalsin, [Misha]
+	  ZQOL_TALK_ENTRY Safy, [Shiva]
           ZQOL_TALK_ENTRY Civilian9, [XavierArmor1]
           ZQOL_TALK_ENTRY Civilian10, [XavierArmor2]
           ZQOL_TALK_ENTRY Civilian11, [XavierArmor3]

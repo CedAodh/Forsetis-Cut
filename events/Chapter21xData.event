@@ -136,7 +136,7 @@ eventChapter21xData ; B1/8862
 		.byte 14, 14
 
 	_Chest1Item ; B1/8C85
-		.word MasterSeal
+		.word BargainManual
 
 	_Chest1Events ; B1/8C87
 		STORE_WORD wEventEngineXCoordinate, 14

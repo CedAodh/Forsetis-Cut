@@ -5,61 +5,61 @@ eventChapter20Data ; B1/9194
 		.byte 14, 25
 
 		UNIT Bharat, Enemy, [13, 30], [13, 30], Bharat, [MasterSword, MasterBow, Bolganone, Fortify, ThrudsScroll, Vulnerary], 19, True, [$01, $03, $00, $80]
-		UNIT FriegeGeneral1, Enemy, [13, 29], [13, 29], Bharat, [MasterLance, SleepEdge, Vulnerary], 18, False, [$01, $03, $00, $00]
-		UNIT FriegeGeneral1, Enemy, [12, 30], [12, 30], Bharat, [MasterLance, SleepEdge, Vulnerary], 18, False, [$01, $03, $00, $00]
-		UNIT FriegeGeneral1, Enemy, [14, 30], [14, 30], Bharat, [MasterLance, SleepEdge, Vulnerary], 18, False, [$01, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [28, 1], [28, 1], Bharat, [KillingEdge, Vulnerary], 10, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [29, 2], [29, 2], Bharat, [KillingEdge, Vulnerary], 10, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [30, 4], [30, 4], Bharat, [KillingEdge, Vulnerary], 10, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [28, 4], [28, 4], Bharat, [KillingEdge, Vulnerary], 10, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [29, 3], [29, 3], Bharat, [KillingEdge, Vulnerary], 10, False, [$00, $10, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [13, 29], [13, 29], Bharat, [MasterAxe, Ridersbane, Vulnerary], 17, False, [$01, $03, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [12, 30], [12, 30], Bharat, [MasterLance, Poleax, Vulnerary], 18, False, [$01, $03, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [14, 30], [14, 30], Bharat, [MasterLance, Hammer, Vulnerary], 17, False, [$01, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [28, 1], [28, 1], Bharat, [KillingEdge, Vulnerary], 15, False, [$00, $10, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [29, 2], [29, 2], Bharat, [KillingEdge, Vulnerary], 16, False, [$00, $10, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [30, 4], [30, 4], Bharat, [KillingEdge, Vulnerary], 14, False, [$00, $10, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [28, 4], [28, 4], Bharat, [KillingEdge, Vulnerary], 17, False, [$00, $10, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [29, 3], [29, 3], Bharat, [KillingEdge, Vulnerary], 15, False, [$00, $10, $00, $00]
 	UNIT
 
 	_PrepGroup2 ; B1/924C
 		.byte 14, 24
 
-		UNIT FriegeArmoredLance1, Enemy, [12, 27], [12, 27], Bharat, [KillerLance, DoorKey], 14, False, [$03, $24, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [12, 23], [12, 23], Bharat, [KillerLance, DoorKey], 14, False, [$03, $24, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [13, 18], [13, 18], Bharat, [KillerAxe, DoorKey], 14, False, [$03, $24, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [14, 23], [14, 23], Bharat, [KillerAxe, DoorKey], 14, False, [$03, $24, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [14, 27], [14, 27], Bharat, [KillerLance, DoorKey], 14, False, [$03, $24, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [28, 20], [28, 20], Bharat, [KillerLance, DoorKey], 14, False, [$03, $24, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [2, 29], [2, 29], Bharat, [KillerAxe, DoorKey], 14, False, [$16, $00, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [3, 28], [3, 28], Bharat, [KillerAxe, DoorKey], 14, False, [$16, $00, $00, $00]
-		UNIT FriegeBallista1, Enemy, [3, 29], [3, 29], Bharat, [Ballista], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [4, 29], [4, 29], Bharat, [KillerLance, DoorKey], 14, False, [$16, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [27, 29], [27, 29], Bharat, [KillerLance, DoorKey], 14, False, [$16, $00, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [28, 28], [28, 28], Bharat, [KillerAxe, DoorKey], 14, False, [$16, $00, $00, $00]
-		UNIT FriegeBallista1, Enemy, [28, 29], [28, 29], Bharat, [Ballista], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [29, 29], [29, 29], Bharat, [KillerAxe, DoorKey], 14, False, [$16, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [12, 19], [12, 19], Bharat, [KillerLance, DoorKey], 14, False, [$00, $24, $00, $00]
-		UNIT FriegeBallista1, Enemy, [13, 19], [13, 19], Bharat, [Ballista], 12, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [14, 19], [14, 19], Bharat, [KillerLance, DoorKey], 14, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [13, 20], [13, 20], Bharat, [KillerAxe, DoorKey], 14, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [12, 27], [12, 27], Bharat, [Javelin, DoorKey], 18, False, [$03, $24, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [12, 23], [12, 23], Bharat, [KillerLance, DoorKey], 16, False, [$03, $24, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [13, 18], [13, 18], Bharat, [KillerAxe, DoorKey], 16, False, [$03, $24, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [14, 23], [14, 23], Bharat, [HandAxe, DoorKey], 17, False, [$03, $24, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [14, 27], [14, 27], Bharat, [Javelin, DoorKey], 17, False, [$03, $24, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [28, 20], [28, 20], Bharat, [KillerLance, DoorKey], 15, False, [$03, $24, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [2, 29], [2, 29], Bharat, [BattleAxe, DoorKey], 17, False, [$16, $00, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [3, 28], [3, 28], Bharat, [KillerAxe, DoorKey], 16, False, [$16, $00, $00, $00]
+		UNIT FriegeBallista1, Enemy, [3, 29], [3, 29], Bharat, [Ballista], 17, False, [$16, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [4, 29], [4, 29], Bharat, [Greatlance, DoorKey], 16, False, [$16, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [27, 29], [27, 29], Bharat, [KillerLance, DoorKey], 17, False, [$16, $00, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [28, 28], [28, 28], Bharat, [BattleAxe, DoorKey], 18, False, [$16, $00, $00, $00]
+		UNIT FriegeBallista1, Enemy, [28, 29], [28, 29], Bharat, [Ballista], 15, False, [$16, $00, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [29, 29], [29, 29], Bharat, [Hammer, DoorKey], 15, False, [$16, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [12, 19], [12, 19], Bharat, [KillerLance, DoorKey], 15, False, [$00, $24, $00, $00]
+		UNIT FriegeBallista1, Enemy, [13, 19], [13, 19], Bharat, [Ballista], 15, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [14, 19], [14, 19], Bharat, [Greatlance, DoorKey], 17, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [13, 20], [13, 20], Bharat, [HandAxe, DoorKey], 16, False, [$00, $24, $00, $00]
 	UNIT
 
 	_Turn3ReinforcementsCameraCoordinates ; B1/9354
 		.byte 14, 24
 
 	_Turn3ReinforcementsGroup ; B1/9356
-		UNIT FriegeBishop3, Enemy, [21, 30], [21, 30], Bharat, [Fortify, Unlock, Thunder], 12, False, [$01, $03, $00, $00]
-		UNIT FriegeBishop3, Enemy, [6, 30], [6, 30], Bharat, [Fortify, Unlock, Thunder], 12, False, [$01, $03, $00, $00]
+		UNIT FriegeBishop3, Enemy, [21, 30], [21, 30], Bharat, [Fortify, Unlock, Thunder], 14, False, [$01, $03, $00, $00]
+		UNIT FriegeBishop3, Enemy, [6, 30], [6, 30], Bharat, [Fortify, Unlock, Thunder], 13, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredSword2, Enemy, [1, 30], [1, 30], Bharat, [Greatsword], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [3, 30], [3, 30], Bharat, [Greatsword], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredLance2, Enemy, [5, 30], [5, 30], Bharat, [Greatlance], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredLance2, Enemy, [7, 30], [7, 30], Bharat, [Greatlance], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredBow2, Enemy, [9, 30], [9, 30], Bharat, [Greatbow], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredBow2, Enemy, [11, 30], [11, 30], Bharat, [Greatbow], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [16, 30], [16, 30], Bharat, [Greatsword], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [18, 30], [18, 30], Bharat, [Greatsword], 16, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [3, 30], [3, 30], Bharat, [Greatsword], 17, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredLance2, Enemy, [5, 30], [5, 30], Bharat, [Greatlance], 18, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredLance2, Enemy, [7, 30], [7, 30], Bharat, [Greatlance], 17, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredBow2, Enemy, [9, 30], [9, 30], Bharat, [Greatbow], 18, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredBow2, Enemy, [11, 30], [11, 30], Bharat, [Greatbow], 18, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [16, 30], [16, 30], Bharat, [Greatsword], 15, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [18, 30], [18, 30], Bharat, [Greatsword], 17, False, [$00, $24, $00, $00]
 		UNIT FriegeArmoredLance2, Enemy, [20, 30], [20, 30], Bharat, [Greatlance], 16, False, [$00, $24, $00, $00]
 		UNIT FriegeArmoredLance2, Enemy, [22, 30], [22, 30], Bharat, [Greatlance], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredBow2, Enemy, [24, 30], [24, 30], Bharat, [Greatbow], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeArmoredBow2, Enemy, [26, 30], [26, 30], Bharat, [Greatbow], 16, False, [$00, $24, $00, $00]
-		UNIT FriegeGeneral1, Enemy, [28, 30], [28, 30], Bharat, [Greatsword, Greatlance, Greatbow, Vulnerary], 12, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredBow2, Enemy, [24, 30], [24, 30], Bharat, [Greatbow], 17, False, [$00, $24, $00, $00]
+		UNIT FriegeArmoredBow2, Enemy, [26, 30], [26, 30], Bharat, [Greatbow], 17, False, [$00, $24, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [28, 30], [28, 30], Bharat, [Greatsword, Greatlance, Greatbow, Vulnerary], 15, False, [$00, $24, $00, $00]
 		UNIT FriegePriest2, Enemy, [23, 30], [23, 30], Bharat, [Mend, Restore], 12, False, [$03, $07, $00, $00]
-		UNIT FriegePriest2, Enemy, [25, 30], [25, 30], Bharat, [Physic], 12, False, [$03, $07, $00, $00]
-		UNIT FriegePriest2, Enemy, [2, 30], [2, 30], Bharat, [Physic], 12, False, [$03, $07, $00, $00]
+		UNIT FriegePriest2, Enemy, [25, 30], [25, 30], Bharat, [Physic], 13, False, [$03, $07, $00, $00]
+		UNIT FriegePriest2, Enemy, [2, 30], [2, 30], Bharat, [Physic], 14, False, [$03, $07, $00, $00]
 		UNIT FriegePriest2, Enemy, [4, 30], [4, 30], Bharat, [Mend, Restore], 12, False, [$03, $07, $00, $00]
 	UNIT
 
@@ -67,19 +67,19 @@ eventChapter20Data ; B1/9194
 		.byte 14, 24
 
 	_Turn5ReinforcementsGroup ; B1/94D6
-		UNIT FriegeMage2, Enemy, [5, 30], [5, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [1, 30], [1, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [3, 30], [3, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [7, 30], [7, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [9, 30], [9, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeSage, Enemy, [11, 30], [13, 30], Bharat, [Thunder, DoorKey], 8, False, [$16, $00, $00, $00]
-		UNIT FriegeSage, Enemy, [15, 30], [16, 30], Bharat, [Thunder, DoorKey], 8, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [18, 30], [18, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [20, 30], [20, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [22, 30], [22, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [24, 30], [24, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [26, 30], [26, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
-		UNIT FriegeMage2, Enemy, [28, 30], [28, 30], Bharat, [Thunder, DoorKey], 12, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [5, 30], [5, 30], Bharat, [Thunder, DoorKey], 19, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [1, 30], [1, 30], Bharat, [Thunder, DoorKey], 17, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [3, 30], [3, 30], Bharat, [Thunder, DoorKey], 18, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [7, 30], [7, 30], Bharat, [Fire, DoorKey], 17, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [9, 30], [9, 30], Bharat, [Fire, DoorKey], 18, False, [$16, $00, $00, $00]
+		UNIT FriegeSage, Enemy, [11, 30], [13, 30], Bharat, [Fire, DoorKey], 11, False, [$16, $00, $00, $00]
+		UNIT FriegeSage, Enemy, [15, 30], [16, 30], Bharat, [Thunder, DoorKey], 10, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [18, 30], [18, 30], Bharat, [Fire, DoorKey], 18, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [20, 30], [20, 30], Bharat, [Fire, DoorKey], 18, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [22, 30], [22, 30], Bharat, [Fire, DoorKey], 16, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [24, 30], [24, 30], Bharat, [Thunder, DoorKey], 17, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [26, 30], [26, 30], Bharat, [Thunder, DoorKey], 19, False, [$16, $00, $00, $00]
+		UNIT FriegeMage2, Enemy, [28, 30], [28, 30], Bharat, [Thunder, DoorKey], 20, False, [$16, $00, $00, $00]
 	UNIT
 
 	_Turn7ReinforcementsCameraCoordinates ; B1/95DC
@@ -122,7 +122,7 @@ eventChapter20Data ; B1/9194
 		.byte 14, 24
 
 	_Turn13ReinforcementsGroup ; B1/96B2
-		UNIT FriegeSage, Enemy, [23, 30], [23, 30], Bharat, [Bolganone, Meteor], 8, False, [$00, $00, $00, $00]
+		UNIT Speer, Enemy, [13, 31], [13, 28], Bharat, [Bolganone, Greatsword, Blizzard, Vulnerary], 17, True, [$00, $00, $00, $00]
 		UNIT FriegeSage, Enemy, [25, 30], [25, 30], Bharat, [Bolganone, Meteor], 8, False, [$00, $00, $00, $00]
 		UNIT FriegeSage, Enemy, [3, 30], [3, 30], Bharat, [Bolganone, Meteor], 8, False, [$00, $00, $00, $00]
 		UNIT FriegeSage, Enemy, [1, 30], [1, 30], Bharat, [Bolganone, Meteor], 8, False, [$00, $00, $00, $00]
@@ -163,7 +163,7 @@ eventChapter20Data ; B1/9194
 	UNIT
 	
 	_WolfeGroup
-		UNIT Wolfe, Enemy, [28, 3], [28, 3], Bharat, [MasterSword, Vulnerary], 20, True, [$00, $00, $00, $00]
+		UNIT Wolfe, Enemy, [28, 3], [28, 3], Bharat, [MasterSword, Vulnerary], 16, True, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/9824

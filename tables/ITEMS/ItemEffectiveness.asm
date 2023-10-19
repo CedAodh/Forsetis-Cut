@@ -99,5 +99,12 @@ aMagicEffectiveness ; B0/8096
 	.byte Emperor
 	.byte 0
 
+aBallisticianEffectiveness
+	.byte Ballistician
+	.byte IronBallistician
+	.byte KillerBallistician
+	.byte VeninBallistician
+	.byte 0
+
 aNoEffectiveness ; B0/80AA
 	.byte 0

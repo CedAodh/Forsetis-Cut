@@ -135,6 +135,9 @@ eventChapter22Events ; 8C/F611
 		EVENT $07, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Reinhardt
 		END_DEFINITION
+		EVENT $13, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Rilke
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; 8C/F785

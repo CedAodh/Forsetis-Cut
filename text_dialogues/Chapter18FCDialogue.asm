@@ -174,7 +174,7 @@ gunnarasbel
 .byte NewLine
 .text "I know we can overcome any challenge"
 .byte NewLine
-.text "that dares to face us!"
+.text "that dares face us!"
 .byte WaitForA
 
 .byte left_slot
@@ -237,9 +237,9 @@ gunnarasbel
 .byte ScrollText
 .text "You are her only remaining blood family, Asbel."
 .byte NewLine
-.text "I think you owe it to her"
+.text "I think you owe it to her to at least"
 .byte NewLine
-.text "to at least just poke your head around."
+.text "just poke your head around."
 .byte WaitForA
 
 .byte right_slot
@@ -256,9 +256,11 @@ gunnarasbel
 .text "and then just up and disappear again?"
 .byte WaitForA
 .byte ScrollText
-.text "Something about that just...doesn't feel right to me."
+.text "Something about that just..."
 .byte NewLine
-.text "It feels...deceiving."
+.text "doesn't feel right to me."
+.byte NewLine
+.text "It feels...misleading and deceiving."
 .byte WaitForA
 
 .byte left_slot
@@ -307,20 +309,20 @@ gunnarasbel
 .byte NewLine
 .text "other families and helping those she holds dear."
 .byte WaitForA
+.byte ScrollText
+.text "Familiarity is a funny thing, is it not?"
+.byte NewLine
+.text "The way it brings both grief and comfort."
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Ah, I should have expected that."
+.text "Indeed."
 .byte NewLine
-.text "She's been a busybody"
-.byte NewLine
-.text "for as long as I can remember."
+.text "I'm glad she still has things to cling to."
 .byte WaitForA
 
 .byte left_slot
-.byte ScrollText
-.text "And that's putting it lightly, heh heh."
-.byte NewLine
 .text "You obviously miss her, Asbel,"
 .byte NewLine
 .text "so don't put this off any longer than necessary."
@@ -587,7 +589,7 @@ dalsinmisha
 .byte ScrollText
 .text "Yep! I— What?"
 .byte NewLine
-.text "You're not surprised?"
+.text "You're...not surprised?"
 .byte WaitForA
 
 .byte right_slot
@@ -672,7 +674,7 @@ dalsinmisha
 .byte NewLine
 .text "I didn't know a good way to say it,"
 .byte NewLine
-.text "but I still wanted to get that off my chest."
+.text "but I still wanted to get it off my chest."
 .byte WaitForA
 .byte ScrollText
 .text "Back when I was with the empire,"
@@ -766,3 +768,303 @@ dalsinmisha
 .byte WaitForA
 
 .byte EndText
+
+safyshiva
+
+.byte right_slot
+.word LoadPortrait
+.word shiva_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word safie_portrait
+.text "There."
+.byte NewLine
+.text "Try bending and raising your arm."
+.byte WaitForA
+
+.byte right_slot
+.text "...All better."
+.byte NewLine
+.text "Thank you, Sister. I owe you once more."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Not at all, not all."
+.byte NewLine
+.text "'Tis merely my allotted role in this life."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I-I apologize."
+.byte NewLine
+.text "That sounded rather unwarming, didn't it?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Shiva."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You don't...talk about yourself very often,"
+.byte NewLine
+.text "I've come to realize."
+.byte WaitForA
+.byte ScrollText
+.text "All I know about you are two names:"
+.byte NewLine
+.text "yours, and that of your hometown."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Do you want to know more?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes, please!"
+.byte NewLine
+.text "...Er, that is to say, yes,"
+.byte NewLine
+.text "if you yourself feel willing to share."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Okay."
+.byte WaitForA
+.byte ScrollText
+.text "Sabhain is—was—a village near"
+.byte NewLine
+.text "the eastern coast of Connaught."
+.byte NewLine
+.text "I had lived there since I was little."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What happened?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Bandits happened."
+.byte NewLine
+.text "Between me, my parents, and...a girl whom I"
+.byte NewLine
+.text "cherished deeply, only I made it out alive."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You and she would have been quite alike."
+.byte NewLine
+.text "I must say you are her spitting image,"
+.byte NewLine
+.text "barring the garb of your faith."
+.byte WaitForA
+.byte ScrollText
+.text "She was quite naïve, too."
+.byte NewLine
+.text "...Even as she gave her last breath in my arms,"
+.byte NewLine
+.text "she remained ever optimistic."
+.byte WaitForA
+.byte ScrollText
+.text "Sudden and terrible as her death was,"
+.byte NewLine
+.text "she could tell herself it was a “noble” effort"
+.byte NewLine
+.text "because it protected me."
+.byte WaitForA
+.byte ScrollText
+.text "She...really was tougher than I"
+.byte NewLine
+.text "gave her credit for..."
+
+.byte left_slot
+.byte ScrollText
+.text "...For her to have done something like that..."
+.byte NewLine
+.text "She... She must have truly cherished you as well."
+.byte WaitForA
+.byte NewLine
+.text "To want for you to press on even"
+.byte NewLine
+.text "in the event that she couldn't."
+.byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "You must have felt no small amount of hatred"
+.byte NewLine
+.text "toward the men who took her from you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Of course I did."
+.byte NewLine
+.text "But even before them, my grudge"
+.byte NewLine
+.text "was with the local knights."
+.byte WaitForA
+.byte ScrollText
+.text "The bandits' plans were leaked"
+.byte NewLine
+.text "and we knew the attack was coming;"
+.byte NewLine
+.text "we begged the knights to protect Sabhain."
+.byte WaitForA
+.byte ScrollText
+.text "They weaseled their way out of accepting,"
+.byte NewLine
+.text "claiming they already had other"
+.byte NewLine
+.text "citizen's requests to attend to."
+.byte WaitForA
+.byte ScrollText
+.text "But we found that was a lie, and quite quickly."
+.byte WaitForA
+.byte NewLine
+.text "They were looking to be the ones to"
+.byte NewLine
+.text "lead a defensive against South Thracia—"
+.byte NewLine
+.text "and in so doing, bring glory to their names."
+.byte WaitForA
+.byte ScrollText
+.text "Glory..."
+.byte NewLine
+.text "It's all they were ever concerned with."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But how could that be?"
+.byte NewLine
+.text "I had heard Connaught allied with the South."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, not immediately."
+.byte WaitForA
+.byte NewLine
+.text "Raydrik had to feign some loyalty to the North"
+.byte NewLine
+.text "in order for his plan of treachery to work."
+.byte NewLine
+.text "He knew what he was doing."
+.byte WaitForA
+.byte ScrollText
+.text "Still, they were utter fools."
+.byte NewLine
+.text "They had the chance to let it be someone else,"
+.byte NewLine
+.text "but they just rushed to their own deaths."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Those words... You've..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...It's different in this case."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...?"
+.byte NewLine
+.text "Sister, what do you think you're..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Shiva, you stayed close to me and..."
+.byte NewLine
+.text "gave me true comfort when I was"
+.byte NewLine
+.text "held captive on the Corsair Isles."
+.byte WaitForA
+.byte ScrollText
+.text "It was a time of true hardship for me."
+.byte NewLine
+.text "I was just hoping to be able to"
+.byte NewLine
+.text "bring you some of that same comfort."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Kalisha..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hm?!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I'm sorry, Shiva."
+.byte NewLine
+.text "My name is Safy."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Enough of this."
+.byte NewLine
+.text "Let's get back to work."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "R-right..."
+.byte WaitForA
+
+.byte EndText
+

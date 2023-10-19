@@ -73,6 +73,7 @@ aVeninBallistaWeaponLock ; B0/9A1C
 aIronBallistaWeaponLock ; B0/9A22
 	.word LeonsterBallista
 	.word FriegeBallista5
+	.word Rilke
 	.word 0
 
 aThiefStaffWeaponLock ; B0/9A28
@@ -150,6 +151,7 @@ aRecurveBowWeaponLock
 	.word FriegeSniper
 	.word SniperEnemy
 	.word Draco
+	.word Orvis
 	.word 0
 
 aBrokenMagicWeaponLock ; B0/9A78

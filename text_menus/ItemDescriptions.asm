@@ -244,6 +244,8 @@ _BoltingDesc
 .word $0000
 .text "to attack fro[m afar"
 .word $0000
+.text "Anti{dash}Ballisticians "
+.word $0000
 .word $0000
 
 
@@ -281,36 +283,36 @@ _FenrirDesc
 
 
 _HammerDesc
-.text "An axe effective"
+.text "An axe feared by"
 .word $0000
-.text "against ar[mor units"
+.text "ar[mored units"
 .word $0000
 .text "Anti{dash}Ar[mor"
 .word $0000
 .word $0000
 
 _ArmorslayerDesc
-.text "A s]word effective"
+.text "A s]word feared by"
 .word $0000
-.text "against ar[mor units"
+.text "ar[mored units"
 .word $0000
 .text "Anti{dash}Ar[mor"
 .word $0000
 .word $0000
 
 _RidersbaneDesc
-.text "A lance effective "
+.text "A lance feared by "
 .word $0000
-.text "against cavalry "
+.text "cavalry units "
 .word $0000
 .text "Anti{dash}Cavalry "
 .word $0000
 .word $0000
 
 _PoleaxDesc
-.text "An axe effective"
+.text "An axe feared by"
 .word $0000
-.text "against cavalry "
+.text "cavalry units "
 .word $0000
 .text "Anti{dash}Cavalry "
 .word $0000
@@ -421,16 +423,16 @@ _BraveBowDesc
 .word $0000
 
 _JavelinDesc
-.text "A lance capable "
+.text "A lance capable of"
 .word $0000
-.text "of indirect attacks "
+.text "indirect attacks"
 .word $0000
 .word $0000
 
 _HandAxeDesc
-.text "An axe capable"
+.text "An axe capable of "
 .word $0000
-.text "of indirect attacks "
+.text "indirect attacks"
 .word $0000
 .word $0000
 
@@ -465,14 +467,22 @@ _MasterBowDesc
 
 
 _BallistaDesc
-.text "Long{dash}range "
+.text "Fixed attack po]wer "
+.word $0000
+.text "Halves ene[my's "
+.word $0000
+.text "defense "
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
 .word $0000
 
 _IronBallistaDesc
-.text "Super long range"
+.text "Fixed attack po]wer "
+.word $0000
+.text "Halves ene[my's "
+.word $0000
+.text "defense "
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -517,7 +527,7 @@ _WindSwordDesc
 _VeninEdgeDesc
 _VeninLanceDesc
 _VeninAxeDesc
-.text "Poisons the target"
+.text "Inflicts Poison "
 .word $0000
 .text "on hit"
 .word $0000
@@ -539,13 +549,13 @@ _VeninBowDesc
 .word $0000
 
 _VeninBallistaDesc
-.text "Long{dash}range "
+.text "Fixed attack po]wer "
+.word $0000
+.text "Halves ene[my Def "
+.word $0000
+.text "Applies Poison"
 .word $0000
 .text "Anti{dash}Fliers"
-.word $0000
-.text "Poisons the target"
-.word $0000
-.text "on hit"
 .word $0000
 .word $0000
 
@@ -562,13 +572,13 @@ _VeninDesc
 
 
 _PetrifyDesc
-.text "Long{dash}range dark"
+.text "{Lock}Veld"
 .word $0000
-.text "[magic, Petrifies on"
+.text "Illicit dark [magic "
 .word $0000
-.text "hit, Turns into "
+.text "that turns its"
 .word $0000
-.text "Fenrir if stolen"
+.text "vict{im} to stone "
 .word $0000
 .word $0000
 
@@ -884,7 +894,7 @@ _BeoBladeDesc
 .word $0000
 
 _BlessedSwordDesc
-.text "{Lock}Ol]wen, High crit "
+.text "{Lock}Ol]wen, Fred"
 .word $0000
 .text "Anti{dash}Cavalry "
 .word $0000
@@ -912,7 +922,7 @@ _LoptrianFangDesc
 .word $0000
 .text "attack po]wer "
 .word $0000
-.text "Gives {+}{2}{0} (Mag "
+.text "(Mag{+}{2}{0}"
 .word $0000
 .word $0000
 
@@ -920,16 +930,22 @@ _LoptrianFangDesc
 _BraveLanceDesc
 .text "{Lock}Lance Knights "
 .word $0000
-.text "{BRA1}{BRA2}"
+.text "A prized lance"
 .word $0000
-.text "Gives {+}{1}{0} Lck"
+.text "belonging to Finn "
+.word $0000
+.text "Lck {+}{1}{0}, {BRA1}{BRA2}"
 .word $0000
 .word $0000
 
 _DragonpikeDesc
-.text "{Lock}Dean, Altena"
+.text "{Lock}Dean, Eda "
 .word $0000
-.text "{BRA1}{BRA2}, Gives Vantage "
+.text "A gift fro[m Arion"
+.word $0000
+.text "Gives Vantage "
+.word $0000
+.text "{BRA1}{BRA2}"
 .word $0000
 .word $0000
 
@@ -937,9 +953,9 @@ _DragonpikeDesc
 _VougeDesc
 .text "{Lock}Osian "
 .word $0000
-.text "Can attack at range "
+.text "A highly versatile"
 .word $0000
-.text "High critical rate"
+.text "axe "
 .word $0000
 .word $0000
 
@@ -953,7 +969,7 @@ _HammerneDesc
 .word $0000
 .text "staff or ]weapon to "
 .word $0000
-.text "pristine condition"
+.text "full uses "
 .word $0000
 .word $0000
 
@@ -994,7 +1010,11 @@ _KiaDesc
 
 
 _DireThunderDesc
-.text "{Lock}Ol]wen, Reinhardt "
+.text "{Lock}Ol]wen"
+.word $0000
+.text "Thunder [magic that "
+.word $0000
+.text "casts dual bolts"
 .word $0000
 .text "{BRA1}{BRA2}"
 .word $0000
@@ -1004,7 +1024,9 @@ _DireThunderDesc
 _GrafcaliburDesc
 .text "{Lock}Asbel, Gunnar "
 .word $0000
-.text "High critical rate"
+.text ")Wind [magic kno]wn "
+.word $0000
+.text "for its precision "
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -1038,9 +1060,9 @@ _ForsetiInfiniteDesc
 ; Rings
 
 _LifeRingDesc
-.text "Increases "
+.text "Increases {H}{P}"
 .word $0000
-.text "{H}{P} by {7}"
+.text "per[manently by {7}"
 .word $0000
 .text "  "
 .word $0000
@@ -1049,9 +1071,9 @@ _LifeRingDesc
 .word $0000
 
 _MagicRingDesc
-.text "Increases "
+.text "Increases (Magic"
 .word $0000
-.text "(Magic by {2}"
+.text "per[manently by {2}"
 .word $0000
 .text "  "
 .word $0000
@@ -1060,9 +1082,9 @@ _MagicRingDesc
 .word $0000
 
 _StrengthRingDesc
-.text "Increases "
+.text "Increases Strength"
 .word $0000
-.text "Strength by {3}"
+.text "per[manently by {3}"
 .word $0000
 .text "  "
 .word $0000
@@ -1071,9 +1093,9 @@ _StrengthRingDesc
 .word $0000
 
 _SkillRingDesc
-.text "Increases "
+.text "Increases Skill "
 .word $0000
-.text "Skill by  {3}"
+.text "per[manently by {3}"
 .word $0000
 .text "  "
 .word $0000
@@ -1082,9 +1104,9 @@ _SkillRingDesc
 .word $0000
 
 _SpeedRingDesc
-.text "Increases "
+.text "Increases Speed "
 .word $0000
-.text "Speed by  {3}"
+.text "per[manently by {3}"
 .word $0000
 .text "  "
 .word $0000
@@ -1093,9 +1115,9 @@ _SpeedRingDesc
 .word $0000
 
 _LuckRingDesc
-.text "Increases "
+.text "Increases Luck"
 .word $0000
-.text "Luck by {3}"
+.text "per[manently by {3}"
 .word $0000
 .text "  "
 .word $0000
@@ -1104,9 +1126,9 @@ _LuckRingDesc
 .word $0000
 
 _ShieldRingDesc
-.text "Increases "
+.text "Increases Defense "
 .word $0000
-.text "Defense by  {2}"
+.text "per[manently by {2}"
 .word $0000
 .text "  "
 .word $0000
@@ -1117,7 +1139,9 @@ _ShieldRingDesc
 _BodyRingDesc
 .text "Increases "
 .word $0000
-.text "Constitution by {3}"
+.text "Constitution"
+.word $0000
+.text "per[manently by {3}"
 .word $0000
 .text "  "
 .word $0000
@@ -1126,9 +1150,9 @@ _BodyRingDesc
 .word $0000
 
 _LegRingDesc
-.text "Increases "
+.text "Increases (Move[ment"
 .word $0000
-.text "(Move[ment by {2}"
+.text "per[manently by {2}"
 .word $0000
 .text "  "
 .word $0000
@@ -1172,41 +1196,55 @@ _LockpickDesc
 
 
 _VulneraryDesc
-.text "Restore all {H}{P}"
+.text "A [medicinal"
 .word $0000
-.text "to the user "
+.text "solution used to"
+.word $0000
+.text "restore all {H}{P}"
 .word $0000
 .word $0000
 
 _AntitoxinDesc
-.text "Re[moves Poison "
+.text "A tincture used to"
 .word $0000
-.text "status"
+.text "re[move an afflicted"
+.word $0000
+.text "Poison status "
 .word $0000
 .word $0000
 
 _StaminaDrinkDesc
-.text "Re[moves Fatigue"
+.text "A peppy concoction"
 .word $0000
-.text "or allo]ws a"
+.text "Use to reset Fatigue"
 .word $0000
-.text "fatigued unit "
+.text "or put in inventory "
 .word $0000
-.text "to be deployed"
+.text "of a Fatigued unit"
+.word $0000
+.text "during preparations "
+.word $0000
+.text "to allo]w the[m to"
+.word $0000
+.text "be deployed "
 .word $0000
 .word $0000
 
 
 _MasterSealDesc
-.text "Pro[motes [most "
+.text "A [medal of valor "
+.word $0000
+.text "a]warded to [most "
 .word $0000
 .text "base class units"
 .word $0000
-.text "that are at least "
+.text "]who have reached "
 .word $0000
-.text "Level {1}{0} to "
+.text "{L}{V}{1}{0} in order to"
 .word $0000
-.text "an advanced class "
+.text "pro[mote to an"
+.word $0000
+.text "advanced class"
 .word $0000
 .word $0000
 
@@ -1526,9 +1564,11 @@ _GungnirDesc
 
 
 _KillerBallistaDesc
-.text "Long{dash}range "
+.text "Fixed attack po]wer "
 .word $0000
-.text "High critical rate"
+.text "Halves ene[my's "
+.word $0000
+.text "defense "
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -1597,7 +1637,13 @@ _MjolnirDesc
 
 
 _LoptousDesc
-.text "+No special effect"
+.text "{Lock}Veld"
+.word $0000
+.text "Inscrutable dark"
+.word $0000
+.text "[magic"
+.word $0000
+.text "(Mag{+}{2}{0}"
 .word $0000
 .word $0000
 
@@ -1614,7 +1660,7 @@ _TathlumDesc
 .word $0000
 
 _BargainManualDesc
-.text "Teaches Bargain "
+.text "Teaches Pavise"
 .word $0000
 .text "  "
 .word $0000

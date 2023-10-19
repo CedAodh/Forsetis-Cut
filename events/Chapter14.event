@@ -202,6 +202,12 @@ eventChapter14Events ; FD/9790
 		EVENT $09, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Baldach
 		END_DEFINITION
+		EVENT $0E, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Travant
+		END_DEFINITION
+		EVENT $0F, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Arion
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; FD/9A4B

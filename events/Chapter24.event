@@ -141,6 +141,9 @@ eventChapter24Events ; B9/B000
 		EVENT $06, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Galzus
 		END_DEFINITION
+		EVENT $17, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Orvis
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; B9/B148
@@ -609,7 +612,17 @@ eventChapter24Events ; B9/B000
 	END2
 	
 	_GalzusVsRaydrik
-		macroDialogueHouse leifvsraydrik
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [10, 14], 4
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE galzusraydrik
+		YIELD
 	END2
 	
 	_RaydrikSkillIssue

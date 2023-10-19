@@ -511,3 +511,17 @@ bovisrel
 .text "I HAVE TO FIND HER..."
 .byte WaitForA
 .byte EndText
+
+speerrel
+.text "I didn't plan on giving up my life today."
+.byte NewLine
+.text "So you...you have my gratitude."
+.byte WaitForA
+.byte EndText
+
+orvisrel
+.text "Perplexing..."
+.byte NewLine
+.text "Where can I even go after this...?"
+.byte WaitForA
+.byte EndText

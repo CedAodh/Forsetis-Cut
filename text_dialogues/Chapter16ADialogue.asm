@@ -176,9 +176,9 @@ ch16Ailioskarin
 .text "to have made it into House Friege's army!"
 .byte WaitForA
 .byte ScrollText
-.text "I mean, a commoner in House Friege is like"
+.text "I mean, a commoner in House Friege is like a"
 .byte NewLine
-.text "a pegasus flying with Thracia's dracoknights!"
+.text "pegasus flying with Thracia's wyvern knights!"
 .byte WaitForA
 
 .byte Right_slot

@@ -128,7 +128,9 @@ McCloyDeathQuote,McCloy,AnyChapter,None,mccloydeath
 EichnerDeathQuote,Eichner,AnyChapter,None,eichnerdeath
 BeatriceDeathQuote,Beatrice,AnyChapter,None,beatricedeath
 PierreDeathQuote,Pierre,AnyChapter,None,pierredeath
-LeonsterLanceKnightDeathQuote,LeonsterLanceKnight,AnyChapter,None,None
+SpeerDeathQuote,Speer,AnyChapter,None,speerdeath
+RilkeDeathQuote,Rilke,AnyChapter,None,rilkedeath
+OrvisDeathQuote,Orvis,AnyChapter,None,orvisdeath
 UlsterCavalier2Chapter16ADeathQuote,UlsterCavalier2,Chapter16A,$0E,None
 LeonsterSoldierChapter18DeathQuote,LeonsterSoldier,Chapter18,$9 ,None
 DancerEnemyChapter12xDeathQuote,DancerEnemy,Chapter12x,$0E,None

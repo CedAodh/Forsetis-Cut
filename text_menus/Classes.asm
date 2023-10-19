@@ -236,21 +236,21 @@ _Dracorider_data
 _DracoriderF_data
 _DracoriderDismounted_data
 _DracoriderFDismounted_data
-	.text "Dracorider"
+	.text ")Wyvern Rider "
 	.word $0000
 
 _Dracoknight_data
 _DracoknightF_data
 _DracoknightDismounted_data
 _DracoknightFDismounted_data
-	.text "Dracoknight "
+	.text ")Wyvern Knight"
 	.word $0000
 
 _Dragonmaster_data				; Unused
 _DragonmasterF_data				; Unused
 _DragonmasterDismounted_data	; Unused
 _DragonmasterFDismounted_data	; Unused
-	.text "Dragon[master "
+	.text ")Wyvern Lord"
 	.word $0000
 
 _Archer_data

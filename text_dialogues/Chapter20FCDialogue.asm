@@ -572,3 +572,60 @@ wolfefurious
 .byte WaitForA
 
 .byte EndText
+
+speerspawna
+
+.byte right_slot
+.word LoadPortrait
+.word bharat_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word CoulterPortrait
+.text "Lord Baráth, what is going on?!"
+.byte NewLine
+.text "How is it that these rebels are"
+.byte NewLine
+.text "still holding out?"
+.byte WaitForA
+
+.byte right_slot
+.text "You tell me, Speer!"
+.byte WaitForA
+.byte NewLine
+.text "We haven't a minute more to lose!"
+.byte NewLine
+.text "Have your squad rain carnage upon"
+.byte NewLine
+.text "the damned ingrates right away!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "At once, my lord!"
+.byte NewLine
+.text "It's what we've always done best!"
+.byte WaitForA
+
+.byte EndText
+
+speerspawnb
+
+.byte right_slot
+.word LoadPortrait
+.word CoulterPortrait
+.text "Th-this can't be..."
+.byte NewLine
+.text "Lord Baráth has perished in battle?!"
+.byte NewLine
+.text "Where did the rebels gain this second wind...?"
+.byte WaitForA
+.byte ScrollText
+.text "Rrgh... It makes no difference!"
+.byte NewLine
+.text "No matter what you do, my knights and I"
+.byte NewLine
+.text "will still cast you all into oblivion!"
+.byte WaitForA
+
+.byte EndText

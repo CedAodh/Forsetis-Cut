@@ -627,7 +627,7 @@ ch8leifrumaigh
 .byte NewLine
 .text "If I accepted mercy from an enemy,"
 .byte NewLine
-.text "I'd bring shame to the dracoknights!"
+.text "I'd bring shame to the wyvern knights!"
 .byte WaitForA
 
 .byte Right_slot
