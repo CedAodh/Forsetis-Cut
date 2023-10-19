@@ -74,7 +74,7 @@ eventChapter17BEvents ; FD/C4D0
 		EVENT $1A, _HalvanMareetaTalk
 			CHECK_CHARS2 Halvan, Mareeta
 		END_DEFINITION
-		EVENT $1B, _KarinIliosTalk
+        EVENT $1B, _KarinIliosTalk
 			CHECK_CHARS2 Karin, Ilios
 			RUN_ASM rlCheckOlwenDeadOrUnrecruited
 			TEST_FLAG_UNSET $1D
@@ -390,8 +390,8 @@ eventChapter17BEvents ; FD/C4D0
 		DIALOGUE halvanmareetaAB
 		YIELD
 	END2
-	
-	_LeifIliosTalk
+
+        _LeifIliosTalk
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
@@ -436,7 +436,7 @@ eventChapter17BEvents ; FD/C4D0
 		STORE_WORD wEventEngineParameter2, 0
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
-		SET_FLAG $07
+		SET_FLAG $1F
 	END2
 	
 	_LeifIliosRecruitment
@@ -468,7 +468,7 @@ eventChapter17BEvents ; FD/C4D0
 		STORE_WORD wEventEngineParameter2, 0
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
-		SET_FLAG $07
+		SET_FLAG $1F
 	END2
 	
 	_GateHouse ; FD/C85B
