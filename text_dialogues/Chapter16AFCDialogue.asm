@@ -455,16 +455,21 @@ leifrecruitsilios
 
 .byte right_slot
 .byte ScrollText
-.text "I'm sure there's thousands of other commoners who"
+.text "I'm sure there's thousands of"
 .byte NewLine
-.text "dream of rising through the hierarchy like I do."
+.text "other commoners who dream of rising through the hierarchy"
+.byte NewLine
+.text "like I do."
 .byte WaitForA
 .byte ScrollText
 .text "You have to make an example out of me!"
+.byte WaitForA
 .byte NewLine
-.text "Not only will me and my old man's dreams be realized,"
+.text "Not only will me and my old man's dreams"
 .byte NewLine
-.text "but your reputation as a prince'll really go up there!"
+.text "be realized, but your reputation as a prince"
+.byte NewLine
+.text "will really go up there!"
 .byte WaitForA
 .byte ScrollText
 .text "People will look to you, realizing that great things"

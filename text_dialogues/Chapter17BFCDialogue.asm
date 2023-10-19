@@ -528,7 +528,7 @@ Ch17Bopening2FC
 
 .byte Right_slot
 .byte ScrollText
-.text "Chin up, Ilios."
+.text "Chin up, Sir Ilios."
 .byte NewLine
 .text "I'm sure you'll earn them back someday."
 .byte WaitForA
@@ -645,246 +645,242 @@ safysalemAB
 .byte right_slot
 .word LoadPortrait
 .word salem_portrait
-.text "......"
-.byte WaitForA
 
 .byte left_slot
 .word LoadPortrait
 .word safie_portrait
 .text "Good day, Sir Salem."
+.byte NewLine
+.text "May I have a word?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Hm?"
-.byte NewLine
-.text "Ah, greetings."
-.byte NewLine
-.text "You're...Safy, correct?"
+.text "Of course, Sister."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I am! I'm surprised you know my name."
+.text "I... I really wished to apologize"
 .byte NewLine
-.text "I don't believe we've spoken before."
+.text "for my words when we first met."
+.byte WaitForA
+.byte ScrollText
+.text "I was extremely worried about my dear"
+.byte NewLine
+.text "sister, to say the least, and when I saw"
+.byte NewLine
+.text "a men of your station, I... I panicked."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "We haven't."
+.text "You've got nothing to blame yourself for."
 .byte NewLine
-.text "I merely do my best to be"
+.text "You couldn't have known I had deserted"
 .byte NewLine
-.text "mindful of my surroundings."
+.text "the Loptr Church from my looks alone."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Then...might you also already know"
+.text "I suppose that's true,"
 .byte NewLine
-.text "why I wish to speak with you?"
+.text "which reminds me of something"
+.byte NewLine
+.text "I wished to ask you about."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "No, as a matter of fact."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "I've heard that you are a former priest"
+.text "Oh?"
 .byte NewLine
-.text "of the Loptr Church. Is this true?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "It is."
+.text "What do you wish to know?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I see..."
+.text "Well, I don't even know where to start!"
+.byte NewLine
+.text "As a former Loptrian, I'm sure there is"
+.byte NewLine
+.text "a lot of insight that you could provide!"
+.byte WaitForA
+.byte ScrollText
+.text "I do not wish to overwhelm you, so..."
+.byte NewLine
+.text "I'd like to start with something simple."
+.byte NewLine
+.text "What was your childhood like?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "......"
+.byte NewLine
+.text "Are you certain you wish to know this?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Could you tell me about your"
+.text "I have braced myself for it,"
 .byte NewLine
-.text "experiences during that time?"
+.text "assuming you feel comfortable"
+.byte NewLine
+.text "enough to share it, of course."
 .byte WaitForA
 .byte ScrollText
-.text "As a worshipper of Saint Heim,"
+.text "I wish to understand all of the"
 .byte NewLine
-.text "I think it beneficial to broaden my perspective"
+.text "peoples of Jugdral, to know how..."
 .byte NewLine
-.text "on the various faiths across Jugdral."
+.text "how things could've gone so wrong..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "...Very well."
+.byte WaitForA
+.byte ScrollText
+.text "I have little to no memory of my parents,"
 .byte NewLine
-.text "What exactly do you wish to know?"
+.text "but I sure know what happened to them."
+.byte WaitForA
+.byte ScrollText
+.text "They had long wanted to live on the surface."
+.byte NewLine
+.text "To walk among other people, living normal"
+.byte NewLine
+.text "lives without fear of lynching or execution."
+.byte WaitForA
+.byte ScrollText
+.text "They wanted such a future for their only child,"
+.byte NewLine
+.text "but the clergy would warn them at every turn..."
+.byte NewLine
+.text "Needless to say, their warnings were correct."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I have...seen firsthand how forcibly"
+.text "......"
 .byte NewLine
-.text "the Loptr Church places its beliefs and"
-.byte NewLine
-.text "standards onto another person's way of living." 
-.byte WaitForA
-.byte ScrollText
-.text "I'm not privy to the inner workings, but..."
-.byte NewLine
-.text "I do have a single question:"
-.byte WaitForA
-.byte NewLine
-.text "What made you choose to be affiliated"
-.byte NewLine
-.text "with such a ruthless religion?"
+.text "I..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Ruthless, you say..."
-.byte NewLine
-.text "Many have described the church as far worse."
-.byte WaitForA
-.byte ScrollText
-.text "Bishop Gair was its founder, and it is common"
-.byte NewLine
-.text "belief that everyone who follows his teachings"
-.byte NewLine
-.text "wishes to submerge the world into despair."
-.byte WaitForA
-.byte ScrollText
-.text "And yet...there is more to it than that."
+.text "...Now I wish you heeded my own warning."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
+.text "...No, it's alright."
+.byte NewLine
+.text "I brought this knowledge upon myself,"
+.byte NewLine
+.text "and I will not let it deter me in any way." 
+.byte WaitForA
+.byte ScrollText
+.text "If anything, this has only bolstered"
+.byte NewLine
+.text "my resolve to keep pushing onwards."
+.byte WaitForA
+.byte ScrollText
+.text "For a world where such atrocities are"
+.byte NewLine
+.text "never allowed to happen to anyone,"
+.byte NewLine
+.text "regardless of their background."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "If you say so."
+.byte NewLine
+.text "You have really impressed me,"
+.byte NewLine
+.text "I must say."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Pardon?"
+.byte NewLine
 .text "What do you mean?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "These concepts were brought to me when"
+.text "For someone with such resilience,"
 .byte NewLine
-.text "I had nothing... They were things that I,"
+.text "it's no wonder that you're able to"
 .byte NewLine
-.text "and many others, could truly believe in."
-.byte WaitForA
-.byte ScrollText
-.text "It had meant finding a means of escaping"
-.byte NewLine
-.text "the suffering we had known all our lives."
+.text "reel in someone like young Tina."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "My gods..."
+.text "You think so? *chuckle*"
 .byte NewLine
-.text "Then...the Child Hunts..."
+.text "From what I hear, it appears"
+.byte NewLine
+.text "you also have such a skill."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Yes..."
-.byte WaitForA
-.byte ScrollText
-.text "That is what happens to the innocent children"
-.byte NewLine
-.text "who are taken away from their homes and"
-.byte NewLine
-.text "from everything they ever loved."
-.byte WaitForA
-.byte ScrollText
-.text "They cry, they beg to be with their loved ones"
-.byte NewLine
-.text "again, but their calls are never answered."
-.byte NewLine
-.text "Their hearts grow numb to all kindness."
-.byte WaitForA
-.byte ScrollText
-.text "From that point on, all they have left"
-.byte NewLine
-.text "are the Loptr Church's teachings, and..."
-.byte NewLine
-.text "they willingly choose to embrace them."
+.text "Oh, do I?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I... I cannot believe it..."
+.text "Of course!"
 .byte NewLine
-.text "I was obviously never hopeful, but I couldn't"
+.text "My sister speaks fondly of you, in fact,"
 .byte NewLine
-.text "have imagined it to be that abhorrent."
+.text "she considers you a most valuable friend."
+.byte WaitForA
+.byte ScrollText
+.text "As such, I only hope that I can gain your"
+.byte NewLine
+.text "trust the same way you have earned mine."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "It is beyond sinful."
+.text "I... I truly have no words, other than"
 .byte NewLine
-.text "The sight of the bishops making"
-.byte NewLine
-.text "those children suffer the same way..."
-.byte WaitForA
-.byte ScrollText
-.text "I could no longer stand with them."
-.byte NewLine
-.text "I've concluded that I now owe it to the world"
-.byte NewLine
-.text "to do everything I can to put an end to this."
+.text "to thank you for such kindness, Sister."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I understand..."
-.byte NewLine
-.text "I'm sorry to hear of your past, Salem."
-.byte WaitForA
-.byte NewLine
-.text "However, you've clearly proven that"
-.byte NewLine
-.text "you are a man worthy of redemption."
-.byte WaitForA
-.byte ScrollText
-.text "After all, it is in part thanks to you"
-.byte NewLine
-.text "that I was able to reunite with my little sister."
+.text "Salem... Just 'Safy' is fine."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "So she told you, huh?"
+.text "If you say so."
+.byte WaitForA
+.byte ScrollText
+.text "It's been a pleasure to speak with you,"
+.byte NewLine
+.text "but it might be best to continue this"
+.byte NewLine
+.text "conversation some other time."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "That, she did. And there are"
+.text "I concur."
 .byte NewLine
-.text "no words to express my gratitude."
-.byte WaitForA
-.byte ScrollText
-.text "If you're ever in need of anything,"
-.byte NewLine
-.text "Salem, do not hesitate to ask for help."
+.text "Do take care, Salem."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "...I will bear that in mind."
-.text "Thank you, Sister Safy."
+.text "You as well... Safy."
 .byte WaitForA
 
 .byte EndText
@@ -1253,19 +1249,30 @@ halvanmareetaAB
 .byte NewLine
 .text "I suppose so, yeah."
 .byte NewLine
-.text "Just trying to clear my head, is all."
+.text "I'm just trying to clear my head, is all."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Can't stop thinking about Eyvel, huh?"
+.text "Can't stop thinking about your mother, huh?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "How could I?"
+.text "... Is it that obvious?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "If you'd forgive my bluntness, yes."
 .byte NewLine
-.text "Those wretched fiends took"
+.text "Not that I can blame you, for I too"
+.byte NewLine
+.text "share a similar feeling..."
+.byte WaitForA
+
+.byte NewLine
+.text "I wish I knew how to deal with these feelings..."
 .byte NewLine
 .text "my mother away from me..."
 .byte WaitForA
