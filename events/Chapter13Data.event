@@ -103,6 +103,19 @@ eventChapter13Data ; B1/BFCE
 	_NPCDeanGroup
 		UNIT Dean, NPC, [9, 9], [9, 9], Dean, [SilverLance], 3, False, [$00, $03, $00, $80]
 	UNIT
+
+        _McCroyCameraCoordinates ; B1/C3B6
+		.byte 23, 15
+		
+	_McCroyGroup
+		UNIT McCloy, Enemy, [23, 23], [23, 19], Merloch, [SilverLance, Ridersbane, Rapier, Vulnerary], 6, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [24, 23], [24, 20], Merloch, [SteelLance, Vulnerary], 8, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [22, 23], [22, 20], Merloch, [SteelLance, Vulnerary], 8, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [25, 23], [25, 21], Merloch, [SteelLance, Vulnerary], 8, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [21, 23], [21, 21], Merloch, [SteelLance, Vulnerary], 8, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [26, 23], [26, 22], Merloch, [SteelLance, Vulnerary], 8, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [20, 23], [20, 22], Merloch, [SteelLance, Vulnerary], 8, False, [$00, $0C, $00, $30]
+	UNIT
 	
 	_StartingPositions ; B1/C3E6
 		.byte 30, 20
