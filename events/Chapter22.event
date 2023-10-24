@@ -43,11 +43,9 @@ eventChapter22Events ; 8C/F611
 
 	_TalkEventDefinitions ; 8C/F68D
 		EVENT $0B, _OlwenReinhardtTalk
-			CHECK_CHARS2 Ilios, Reinhardt
-		END_DEFINITION
-		EVENT $0C, _IliosReinhardtTalk
 			CHECK_CHARS2 Olwen, Reinhardt
 		END_DEFINITION
+		;EVENT $0C is now available
 		EVENT $0D, _AsbelTinaTalk
 			CHECK_CHARS2 Asbel, Tina
 		END_DEFINITION
@@ -740,18 +738,6 @@ eventChapter22Events ; 8C/F611
 		YIELD
 	END2
 	
-	_IliosReinhardtTalk
-		PLAY_SOUND_WORD $00E0
-		PAUSE_SKIPPABLE 32
-		YIELD
-
-		SET_MUSIC $33
-		YIELD
-		
-		DIALOGUE iliosreinhardt
-		YIELD
-	END2
-	
 	_ShivaAsaelloTalk
 		PAUSE_SKIPPABLE 32
 		YIELD
@@ -995,16 +981,21 @@ eventChapter22Events ; 8C/F611
 		
 		macroDialogueHouse juliusreinhardt1
 		
-		SET_MUSIC $3E
-		YIELD
-		
 		LOAD1 eventChapter22Data._JuliusGroup
 		WAIT_MOVE
 		YIELD
 		
+		
+        MOVE_UNIT Reinhardt, [18, 16], [24, 22], 1, None
 		YIELD_UNK
-
 		WAIT_MOVE
+		YIELD
+		
+		SCROLL_CAMERA_CHAR Reinhardt
+		SET_CAMERA_SPEED 4
+		YIELD
+		
+		SET_MUSIC $3E
 		YIELD
 		
 		macroDialogueHouse juliusreinhardt2
@@ -1016,10 +1007,10 @@ eventChapter22Events ; 8C/F611
 
 		STORE_WORD wEventEngineParameter1, DireThunder
 		STORE_WORD wEventEngineParameter2, Meteor
-		STORE_WORD wEventEngineXCoordinate, 18
-		STORE_WORD wEventEngineYCoordinate, 16
-		STORE_WORD wEventEngineXCoordinateAlt, 18
-		STORE_WORD wEventEngineYCoordinateAlt, 18
+		STORE_WORD wEventEngineXCoordinate, 24
+		STORE_WORD wEventEngineYCoordinate, 22
+		STORE_WORD wEventEngineXCoordinateAlt, 25
+		STORE_WORD wEventEngineYCoordinateAlt, 23
 		CALL_ASM_SKIPPABLE $9A8E50, $0000
 
 		CALL_ASM_SKIPPABLE $84B719, $0000
@@ -1035,7 +1026,7 @@ eventChapter22Events ; 8C/F611
 		STORE_WORD wEventEngineCharacterTarget, Reinhardt
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 		
-		MOVE_UNIT Julius, [0, 0], [18, 17], 1, None
+		MOVE_UNIT Julius, [0, 0], [24, 23], 1, None
 		YIELD
 		
 		WAIT_MOVE
