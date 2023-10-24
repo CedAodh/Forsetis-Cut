@@ -42,6 +42,10 @@ eventChapter13Events ; 99/E392
 			CMP_WORD wCurrentTurn, 4
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
+                EVENT $00, _McCroySpawn
+			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/E42B
@@ -670,6 +674,29 @@ eventChapter13Events ; 99/E392
 		YIELD
 
 		DIALOGUE ch13opening4
+		YIELD
+	END2
+
+        _McCroySpawn ; FD/C70C
+		PLAY_SOUND_WORD $E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $3D
+		YIELD
+
+		SCROLL_CAMERA_ADDRESS eventChapter13Data._McCroyCameraCoordinates
+		YIELD
+
+		LOAD1 eventChapter13Data._McCroyGroup
+		WAIT_MOVE
+		YIELD
+		
+		SCROLL_CAMERA_CHAR McCloy
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE mccroyspawn
 		YIELD
 	END2
 
