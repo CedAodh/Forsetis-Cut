@@ -510,3 +510,31 @@ epichouse
 .byte WaitForA
 
 .byte EndText
+
+mccroyspawn
+
+.byte Right_slot
+.word LoadPortrait
+.word mccloy_portrait
+.text "So we arrive at last..."
+.byte NewLine
+.text "What a most horrific sight, this is."
+.byte NewLine
+.text "None of my missions could even compare."
+.byte WaitForA
+.byte ScrollText
+.text "Come on, men! Do not forget His Majesty's orders!"
+.byte NewLine
+.text "We have the honor of being the King's vanguard,"
+.byte NewLine
+.text "and we're to show the Empire our support!"
+.byte WaitForA
+.byte ScrollText
+.text "Once they think we're on their side..."
+.byte NewLine
+.text "Well, let us hold out until His Majesty arrives."
+.byte NewLine
+.text "Until then, we have a duty to carry out! Charge!"
+.byte WaitForA
+
+.byte EndText
