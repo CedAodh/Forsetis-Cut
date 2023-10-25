@@ -1076,9 +1076,12 @@ callionmiranda
 .byte left_slot
 .word $3A00
 .word miranda_portrait	
-.text "Huh? Who's—" 
+.text "Huh?" 
 .byte NewLine
-.text "What do you think you're doing?"
+.text "What do you think you're doing,"
+.byte NewLine
+.text "addressing me in such a casual manner?"
+.byte WaitForA
 .byte NewLine
 .text "State your name and business with me!"
 .byte WaitForA
@@ -1087,7 +1090,7 @@ callionmiranda
 .byte ScrollText
 .text "My apologies, Princess."
 .byte NewLine
-.text "I don't mean to offend you"
+.text "I did not mean to offend you,"
 .byte NewLine
 .text "nor to take up much of your time."
 .byte WaitForA
@@ -1134,7 +1137,7 @@ callionmiranda
 .byte ScrollText
 .text "I simply wanted to tell you"
 .byte NewLine
-.text "that your brooch fell off."
+.text "that your tome fell off."
 .byte WaitForA
 
 .byte left_slot
@@ -1143,7 +1146,7 @@ callionmiranda
 .byte NewLine
 .text "Are you daft?!"
 .byte NewLine
-.text "My brooch is pinned right he—"
+.text "My tome is stored right here in my ba—"
 .byte WaitForA
 .byte ScrollText
 .text "......"
@@ -1177,7 +1180,7 @@ callionmiranda
 .byte NewLine
 .text "You'd better give it back this instant!"
 .byte NewLine
-.text "Or else I will inform Prince Leif of this-"
+.text "Or else I will inform Prince Leif of th-"
 .byte WaitForA
 
 .byte right_slot
@@ -1192,11 +1195,11 @@ callionmiranda
 
 .byte right_slot
 .byte ScrollText
-.text "I saw it fall from your cape"
+.text "I saw it fall from your bag as we were"
 .byte NewLine
-.text "as you were walking just a little while ago."
+.text "strolling out of Millefeuille Forest."
 .byte NewLine
-.text "I merely wanted to give it back."
+.text "I just wanted to give it back."
 .byte WaitForA
 
 .byte left_slot
@@ -1241,11 +1244,9 @@ callionmiranda
 .text "I can't even feel mad at her."
 .byte WaitForA
 .byte ScrollText
-.text "If anything, it makes me happy to see"
+.text "If anything, I'm happy to know"
 .byte NewLine
-.text "that I could do something as simple"
-.byte NewLine
-.text "as that to brighten her day a little."
+.text "I could do something for her."
 .byte WaitForA
 .byte ScrollText
 .word $3A00
@@ -1253,8 +1254,33 @@ callionmiranda
 .text "Oh, how could I have been so foolish?!"
 .byte NewLine
 .text "I almost could've lost it for good!"
+.byte WaitForA
+.byte ScrollText
+.text "That guy... Callion, was it?"
 .byte NewLine
-.text "Oh, dear mother..."
+.text "I'll... I'll need to write him an apology."
+.byte NewLine
+.text "T-There's no way I could confront him...!"
+.byte WaitForA
+.byte ScrollText
+.text "...Ugh. Stop talking to yourself, Miranda."
+.byte NewLine
+.text "You're no longer in that forsaken temple."
+.byte NewLine
+.text "But still, what should I do...?"
+.byte WaitForA
+
+.byte left_slot
+.word $3A00
+.word callion_portrait
+.text "If it bothers you so, Princess,"
+.byte NewLine
+.text "correspondence would be fine."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "AAHH!"
 .byte WaitForA
 
 .byte EndText
