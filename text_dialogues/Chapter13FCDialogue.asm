@@ -510,3 +510,93 @@ epichouse
 .byte WaitForA
 
 .byte EndText
+
+
+selphinabegs
+
+.byte right_slot
+.word LoadPortrait
+.word selphina_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte right_slot
+.text "Lord Leif!"
+.byte NewLine
+.text "Do you have a moment?"
+.byte WaitForA
+
+.byte left_slot
+.text "Of course."
+.byte NewLine
+.text "What's the matter, Selphina?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "We're moving ever closer to Tarrah..."
+.byte NewLine
+.text "I can only hope my husband is all right."
+.byte NewLine
+.text "It's been so long since his last letter arrived..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I understand how you feel."
+.byte WaitForA
+.byte ScrollText
+.text "Do not fret, Selphina, for I am certain that"
+.byte NewLine
+.text "Glade still lives, if the stories that Finn"
+.byte NewLine
+.text "has told of him are anyhing to go by."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I hope you're right..."
+.byte NewLine
+.text "But that is why I came to you, milord."
+.byte NewLine
+.text "I would like to make a rather selfish request."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You wish to join the vanguard in hopes"
+.byte NewLine
+.text "of seeing him, is that correct?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes!"
+.byte NewLine
+.text "Would you allow me to?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, if you're prepared to enter the fray"
+.byte NewLine
+.text "before the rest of our army arrives, then..."
+.byte NewLine
+.text "Consider your request granted."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, thank you!"
+.byte NewLine
+.text "I shall ready myself to depart"
+.byte NewLine
+.text "with the rest of the vanguard then."
+.byte WaitForA
+.byte ScrollText
+.text "I'll see you there, milord!"
+.byte WaitForA
+
+.byte EndText
