@@ -49,6 +49,7 @@ eventChapter22Data ; B1/8425
 		UNIT Gelbenritter, Enemy, [27, 6], [27, 6], Cohen, [Thoron, Vulnerary], 18, False, [$00, $03, $00, $00]
 		UNIT Gelbenritter, Enemy, [29, 6], [29, 6], Cohen, [Thoron, Vulnerary], 18, False, [$00, $03, $00, $00]
 		UNIT Gelbenritter, Enemy, [27, 8], [27, 8], Cohen, [Thoron, Vulnerary], 18, False, [$00, $03, $00, $00]
+                UNIT Rilke, Enemy, [4, 27], [4, 27], Cohen, [IronBallista], 14, False, [$01, $03, $00, $00]
 	UNIT
 
 	_ReinforcementsCameraCoordinates ; B1/8799
