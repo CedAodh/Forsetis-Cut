@@ -214,6 +214,11 @@ eventChapter14xEvents ; FD/A1BC
 		EVENT $00, _EndingEvent
 			TEST_FLAG_SET $0C
 		END_DEFINITION
+                EVENT $0E, _LewynEvent
+		macroEventConditionCheckCoords [3, 1]
+			CMP_WORD aSelectedCharacterBuffer.Character, Karin
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; FD/A4D5
@@ -606,6 +611,23 @@ eventChapter14xEvents ; FD/A1BC
 		DIALOGUE ch14xopening2
 		YIELD
 	END2
+
+        _LewynEvent
+	    PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		DIALOGUE leavenow
+		YIELD
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		macroGiveItemToActiveUnit LuckRing
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
+	END1
 
 	_EndingEvent ; FD/A749
 		PLAY_SOUND_WORD $00E0
