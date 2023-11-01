@@ -591,3 +591,108 @@ galzusraydrik
 .byte WaitForA
 
 .byte EndText
+
+
+mareetaslays
+
+.byte right_slot
+.word LoadPortrait
+.word mareeta_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte right_slot
+.text "Leif!"
+.byte NewLine
+.text "Thank goodness I found you!"
+.byte WaitForA
+
+.byte left_slot
+.text "Mareeta? What's the matter?"
+.byte NewLine
+.text "You look as if something"
+.byte NewLine
+.text "is bothering you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "There is."
+.byte WaitForA
+.byte ScrollText
+.byte NewLine
+.text "I hope you don't mind me asking, but..."
+.byte NewLine
+.text "I was hoping to go with your group"
+.byte NewLine
+.text "for the upcoming battle."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I certainly understand."
+.byte NewLine
+.text "You wish for us to face Raydrik"
+.byte NewLine
+.text "together, isn't that right?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Of course!"
+.byte NewLine
+.text "I'm sure Nanna feels the same way, too,"
+.byte NewLine
+.text "even if she doesn't say it outright."
+.byte WaitForA
+.byte ScrollText
+.text "What he's done is unforgivable..."
+.byte NewLine
+.text "We're gonna make him regret ever"
+.byte NewLine
+.text "messing with the Fiana Freeblades."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Certainly."
+.byte NewLine
+.text "Come, Mareeta, and let us stand together as"
+.byte NewLine
+.text "we put an end to that nefarious nincompoop."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "... I'm sorry, could we do a double take?"
+.byte NewLine
+.text "I-I can't take that seriously... *giggle*"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Y-Yeah, I was rifling through this"
+.byte NewLine
+.text "'Jugdral Dictionary - 776 Edition'"
+.byte NewLine
+.text "and this is the best I could come up with."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word ClearPortrait
+.word LoadPortrait
+.word Raydrik2Portrait
+.text "Hey!"
+.byte NewLine
+.text "Who forgot to pay the internet bill?!"
+.byte NewLine
+.text "My afternoon gaming binge is ruined!"
+.byte WaitForA
+
+.byte EndText
