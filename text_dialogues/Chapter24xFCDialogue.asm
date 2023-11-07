@@ -170,170 +170,128 @@ pernesalem24x
 
 .byte EndText
 
+
 galzussara
 
 .byte right_slot
 .word LoadPortrait
 .word sarah_portrait
-.text "Mmhm, hm-hm~”"
+.text "Mmhm, hm-hm~"
 
 .byte left_slot
 .word LoadPortrait
 .word galzus_portrait
 .text "......"
-.byte NewLine
-.text "...What the...!"
+.byte WaitForA
+.byte ScrollText
+.text "You need something from me, kid?"
 .byte WaitForA
 
 .byte right_slot
+.byte ScrollText
 .text "...Hm?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "What are you doing, walking around like that?!"
+.text "You've been following me from the moment"
 .byte NewLine
-.text "I almost slashed right through you—"
+.text "we set foot in this place."
 .byte NewLine
-.text "I thought you were an enemy!"
+.text "I'd advise you to stop."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Oh... Don't worry, I wasn't scared at all."
+.text "Oh..."
+.byte NewLine
+.text "Don't worry, I'm not scared of you at all."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Well, you have more guts"
+.text "Amusing, but that doesn't make"
 .byte NewLine
-.text "than any kid I've seen in this army."
+.text "this place is any less dangerous."
 .byte NewLine
-.text "What is a kid like you doing here anyway?"
+.text "You're a vital part of this mission."
+.byte WaitForA
+.byte ScrollText
+.text "You should just stay behind me for now."
+.byte NewLine
+.text "It'll be a cold day in hell when I"
+.byte NewLine
+.text "fail to protect someone ever again."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "Teehee."
 .byte NewLine
-.text "The same thing that you're doing, silly!"
+.text "You're every bit as fun as I thought you were!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Huh?"
-.byte NewLine
-.text "You mean... slaying Prince Leif's enemies?"
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "You really are a strange one."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Nu-uh!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Whatever do you mean, then?"
+.text "Am I?"
 .byte NewLine
-.text "Gods, you're a strange one..."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "And you're every bit as strange as me, Galzus."
+.text "I don't think I'm any more strange"
+.byte NewLine
+.text "than yourself, Prince Galzus."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "...!"
 .byte NewLine
-.text "How do you know my name?!"
+.text "Alright, that's enough."
+.byte NewLine
+.text "Do not ever call me that again."
+.byte WaitForA
+.byte ScrollText
+.text "I completely forgot just who you were."
+.byte NewLine
+.text "Of course your kin are well-aware of who I am."
+.byte NewLine
+.text "After all, my father fell pray to that accursed—"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I know all there is to know about you."
-.byte NewLine
-.text "You said you were scared before,"
-.byte NewLine
-.text "but I know that's not true."
-.byte WaitForA
-.byte ScrollText
-.text "I can see there was a time long ago"
-.byte NewLine
-.text "where you were really, really scared."
-.byte WaitForA
-.byte ScrollText
-.text "I know that you're secretly a prince"
-.byte NewLine
-.text "but hate the thought of being called that."
-.byte WaitForA
-.byte ScrollText
-.text "Oh! And I also know that your wife"
-.byte NewLine
-.text "was a beautiful woman named—"
+.text "Bishop Asanupa?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "ENOUGH!"
+.text "...Yes."
 .byte NewLine
-.text "Say another word, and I swear I'll—"
+.text "That was his name."
+.byte NewLine
+.text "You might know too much for someone your age."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Kill me? I know you won't do that."
+.text "Hehe."
 .byte NewLine
-.text "Your voice is strong and scary,"
+.text "That was a fun quiz!"
 .byte NewLine
-.text "but it's also filled with sadness..."
-.byte WaitForA
-.byte ScrollText
-.text "You really hate killing people, don't you?"
+.text "I like you, Galzus."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "..."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "You hate the family from you come from,"
+.text "I wish I could tell you the same."
 .byte NewLine
-.text "and can only hope that by joining this army,"
-.byte NewLine
-.text "you atone for their sins even just a little bit..."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "What is your name, kid?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Sara."
-.byte WaitForA
-.byte ScrollText
-.text "...Hm?"
-.byte NewLine
-.text "Oh, can you hear that?"
-.byte NewLine
-.text "Your voice... It sounds more at peace now!"
-.byte WaitForA
-.byte NewLine
-.text "You should try doing that more often, teehee."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "I... I suppose I should be thanking you."
-.byte NewLine
-.text "But I don't think you ever answered"
-.byte NewLine
-.text "my question—"
+.text "I don't think you even—"
 .byte WaitForA
 
 .byte right_slot
@@ -346,10 +304,13 @@ galzussara
 .word RetractBox
 
 .byte right_slot
+.word LoadPortrait
 .word galzus_portrait
 .text "...And she's gone."
 .byte NewLine
-.text "What in the world just happened?"
+.text "To think I can still be surprised at my age."
+.byte NewLine
+.text "I guess I'll keep an eye on her for now."
 .byte WaitForA
 
 .byte EndText
