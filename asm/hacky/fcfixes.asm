@@ -48,7 +48,7 @@
   .byte Heal
   .byte 0
 
-  .byte Vulnerary
+  .byte DoorKey
   .byte 0
 
 .here
