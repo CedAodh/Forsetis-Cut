@@ -469,7 +469,7 @@ _MasterBowDesc
 _BallistaDesc
 .text "Fixed attack po]wer "
 .word $0000
-.text "Halves ene[my's "
+.text "Halves opponent's "
 .word $0000
 .text "defense "
 .word $0000
@@ -480,7 +480,7 @@ _BallistaDesc
 _IronBallistaDesc
 .text "Fixed attack po]wer "
 .word $0000
-.text "Halves ene[my's "
+.text "Halves opponent's "
 .word $0000
 .text "defense "
 .word $0000
@@ -551,9 +551,9 @@ _VeninBowDesc
 _VeninBallistaDesc
 .text "Fixed attack po]wer "
 .word $0000
-.text "Halves ene[my Def "
+.text "Halves opponent's "
 .word $0000
-.text "Applies Poison"
+.text "defense "
 .word $0000
 .text "Anti{dash}Fliers"
 .word $0000
@@ -599,7 +599,7 @@ _SleepEdgeDesc
 .word $0000
 .text "Sleep on hit"
 .word $0000
-.text "Targets on thrones"
+.text "Opponents on thrones"
 .word $0000
 .text "or gates are i{mm}nune"
 .word $0000
@@ -610,7 +610,7 @@ _BerserkEdgeDesc
 .word $0000
 .text "on hit"
 .word $0000
-.text "Targets on thrones"
+.text "Opponents on thrones"
 .word $0000
 .text "or gates are i{mm}nune"
 .word $0000
@@ -730,9 +730,7 @@ _RescueDesc
 .word $0000
 .text "to a traversable"
 .word $0000
-.text "tile next to"
-.word $0000
-.text "the user"
+.text "tile next to user "
 .word $0000
 .word $0000
 
@@ -750,11 +748,11 @@ _WarpDesc
 _RewarpDesc
 .text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Transports the user "
+.text "Transports user to"
 .word $0000
-.text "to any traversable"
+.text "any traversable tile"
 .word $0000
-.text "tile on the [map"
+.text "on the [map "
 .word $0000
 .word $0000
 
@@ -813,11 +811,13 @@ _PureWaterDesc
 ; Unique weapons
 
 _DevilAxeDesc
-.text "{(}{2}{1}{-}Luck{)}{%}"
+.text "{(}{2}{1}{dash}Luck{)}{%}"
 .word $0000
-.text "chance to da[mage "
+.text "chance to backfire"
 .word $0000
-.text "its user instead"
+.text "Gives Accost and"
+.word $0000
+.text ")Wrath"
 .word $0000
 .word $0000
 
@@ -833,18 +833,18 @@ _NosferatuDesc
 _JormungandDesc
 .text "Potent dark [magic"
 .word $0000
-.text "Poisons the target"
-.word $0000
-.text "on hit"
+.text "Applies Poison"
 .word $0000
 .word $0000
 
 _HelDesc
-.text "Reduces target's"
+.text "Corrupt dark [magic "
+.word $0000
+.text "Reduces opponent's"
 .word $0000
 .text "{H}{P} to {1}"
 .word $0000
-.text "Cannot kill "
+.text "{(}{H}{P} cannot reach {0}{)}"
 .word $0000
 .word $0000
 
@@ -874,11 +874,13 @@ _EarthSwordDesc
 
 _ShadowSwordDesc
 _MareetasSwordDesc
-.text "{Lock}(Mareeta, {BRA1}{BRA2}"
+.text "{Lock}(Mareeta"
 .word $0000
-.text "High critical rate"
+.text "A once{dash}evil s]word "
 .word $0000
-.text "Gives +Nihil"
+.text "bested by (Mareeta"
+.word $0000
+.text "Gives +Nihil, {BRA1}{BRA2}"
 .word $0000
 .word $0000
 
@@ -907,7 +909,7 @@ _BlessedSwordDesc
 _BragisBladeDesc
 .text "{Lock}Crusader lineage"
 .word $0000
-.text "Pierces Fang's curse"
+.text "Dispels Fang's curse"
 .word $0000
 .text "Anti{dash}Ar[mor"
 .word $0000
@@ -918,7 +920,7 @@ _BragisBladeDesc
 _LoptrianFangDesc
 .text "{Lock}Raydrik "
 .word $0000
-.text "Halves ene[my's "
+.text "Halves opponent's "
 .word $0000
 .text "attack po]wer "
 .word $0000
@@ -1566,7 +1568,7 @@ _GungnirDesc
 _KillerBallistaDesc
 .text "Fixed attack po]wer "
 .word $0000
-.text "Halves ene[my's "
+.text "Halves opponent's "
 .word $0000
 .text "defense "
 .word $0000
@@ -1590,9 +1592,11 @@ _BaldungDesc
 _FragarachDesc
 .text "{Lock}Cono[mor"
 .word $0000
-.text "A refined ]weapon "
+.text "A defensive blade "
 .word $0000
-.text "Anti{dash}Fliers"
+.text "Gives Pavise and"
+.word $0000
+.text ")Wrath" 
 .word $0000
 .word $0000
 

@@ -215,6 +215,12 @@ eventChapter16AEvents ; FD/B120
 
 		DIALOGUE ch16Aconomorarrive
 		YIELD
+		
+		macroSubtractCharacterByte Conomor, structCharacterDataRAM.MaxHP, 1
+		macroSubtractCharacterByte Conomor, structCharacterDataRAM.CurrentHP, 1
+		macroSubtractCharacterByte Conomor, structCharacterDataRAM.Magic, 1
+		macroSubtractCharacterByte Conomor, structCharacterDataRAM.Skill, 1
+		macroSubtractCharacterByte Conomor, structCharacterDataRAM.Speed, 1
 	END2
 
 	_BottomPirateReinforcements ; FD/B34A

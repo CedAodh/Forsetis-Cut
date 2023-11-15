@@ -1485,3 +1485,160 @@ juliusreinhardt4
 .byte WaitForA
 
 .byte EndText
+
+olwenisready
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+
+.byte left_slot
+.word LoadPortrait
+.word olwen_portrait
+.text "Lord Leif."
+.byte WaitForA
+
+.byte right_slot
+.text "Olwen? You don't normally seek me out."
+.byte NewLine
+.text "What is the occasion?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'm here to ask you to allow me to"
+.byte NewLine
+.text "take part in the coming battle."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Then you must have overheard"
+.byte NewLine
+.text "the scouts' report."
+.byte NewLine
+.text "That Sir Reinhardt and the Gelbenritter await us."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I understand why you tried to keep it from me."
+.byte NewLine
+.text "You thought I would want to avoid confrontation"
+.byte NewLine
+.text "with my brother."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well...don't you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I would be lying if I said no."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Right, and as such, you've earned my leniency."
+.byte NewLine
+.text "I'm more than prepared to help you shoulder the" 
+.byte NewLine
+.text "burden of standing opposite a sibling in this war."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+
+.word PlayMusic
+.byte $43
+
+.text "But Lord Leif, I chose to embark on this path"
+.byte NewLine
+.text "no matter where it should take me."
+.byte WaitForA
+.byte ScrollText
+.text "And when all is said and done, history needs to"
+.byte NewLine
+.text "remember that when House Friege lost its way,"
+.byte NewLine
+.text "it was a Friegan who put things right."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Olwen, you knew this day would come,"
+.byte NewLine
+.text "didn't you?"
+.byte NewLine
+.text "You've thought all about it. Day and night."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "My one goal always was to match Reinhardt's"
+.byte NewLine
+.text "greatness. Everything he had pursued"
+.byte NewLine
+.text "in his younger years, I pursued."
+.byte WaitForA
+.byte ScrollText
+.text "I would boast to Fred and everyone else"
+.byte NewLine
+.text "time and again over how similar we were—"
+.byte WaitForA
+.byte NewLine
+.text "how we each had the same favorite books,"
+.byte NewLine
+.text "how we were equally capable of serving"
+.byte NewLine
+.text "the royal family as mage knights..."
+.byte WaitForA
+.byte ScrollText
+.text "But then eventually...I realized all I was chasing"
+.byte NewLine
+.text "after was a phantom. A ghost. An illusion of the"
+.byte NewLine
+.text "ideals I believed my brother truly encompassed."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Though you've yet to hear his side of things."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "This is true."
+.byte NewLine
+.text "But if our paths were not destined to branch..."
+.byte WaitForA
+.byte ScrollText
+.text "then surely by now Reinhardt would have realized"
+.byte NewLine
+.text "our sins—on his own—as I did on that day,"
+.byte NewLine
+.text "shortly before you and I met."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Then, Olwen... If... If it's what you desire,"
+.byte NewLine
+.text "we'll do all we can to find you"
+.byte NewLine
+.text "a chance to meet with him. And from there..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes."
+.byte NewLine
+.text "If he remains in my way...I will do what I must."
+.byte WaitForA
+
+.byte EndText

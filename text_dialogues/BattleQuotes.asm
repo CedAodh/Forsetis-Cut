@@ -133,8 +133,7 @@ raydrikboss
 .byte ScrollText
 .text "You're all just bodies"
 .byte NewLine
-.text "to be laid in a row."
-.byte WaitForA
+.text "to be laid in a row!"
 .byte EndText
 
 rumaighboss

@@ -763,7 +763,7 @@ ch22wm1
 
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $0A05 ;y then x
 .text "Leif's Liberation Army made its way"
 .byte NewLine

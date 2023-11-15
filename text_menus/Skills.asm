@@ -165,18 +165,16 @@ _BargainName
 skill_desc_text				.block
 
 _WrathDesc
-	.text "If ene[my attacks "
+	.text "Counterattacks that "
 	.word $0000
-	.text "first, the user's "
+	.text "hit are al]ways "
 	.word $0000
-	.text "counterattack ]will "
-	.word $0000
-	.text "be a critical hit "
+	.text "critical hits "
 	.word $0000
 	.word $0000
 
 _AnchorDesc
-	.text "Prevents unit fro[m "
+	.text "Prevents user fro[m "
 	.word $0000
 	.text "being captured"
 	.word $0000
@@ -192,9 +190,9 @@ _AdeptDesc
 .word $0000
 
 _PaviseDesc
-	.text "{L}{V}{%} chance "
+	.text "{L}{V}{%} chance to"
 	.word $0000
-	.text "to negate ene[my's"
+	.text "negate opponent's "
 	.word $0000
 	.text "attack"
 	.word $0000
@@ -205,27 +203,23 @@ _CharmDesc
 	.word $0000
 	.text "Avoid to allies "
 	.word $0000
-	.text "]within {3} tiles"
+	.text "]within {3} tiles of "
 	.word $0000
-	.text "of the user "
+	.text "user"
 	.word $0000
 .word $0000
 
 _NoncombatantDesc
-	.text "Prevents unit fro[m "
+	.text "Prevents user fro[m "
 	.word $0000
 	.text "being attacked"
 	.word $0000
 .word $0000
 
 _NihilDesc
-	.text "+Negates all ene[my "
+	.text "+Negates opponent's "
 	.word $0000
 	.text "co[mbat skills"
-	.word $0000
-	.text "except for"
-	.word $0000
-	.text "+Nihil itself "
 	.word $0000
 .word $0000
 
@@ -254,7 +248,7 @@ _MiraclePlusDesc
 _VantageDesc
 	.text "User attacks first"
 	.word $0000
-	.text "]when the ene[my"
+	.text "]when opponent"
 	.word $0000
 	.text "initiates co[mbat "
 	.word $0000
@@ -263,38 +257,38 @@ _VantageDesc
 _AccostDesc
 	.text "If user attacks and "
 	.word $0000
-	.text "has [more {H}{P} and"
+	.text "has greater {H}{P} and"
 	.word $0000
-	.text "{A}{S} than ene[my, "
+	.text "{A}{S} than opponent, "
 	.word $0000
 	.text "add round of co[mbat"
 	.word $0000
 .word $0000
 
 _AstraDesc
-	.text "Skl {%} chance "
+	.text "Skl {%} chance to"
 	.word $0000
-	.text "to attack five"
+	.text "attack five "
 	.word $0000
 	.text "consecutive ti[mes"
 	.word $0000
 .word $0000
 
 _LunaSkillDesc
-	.text "Skl {%} chance "
+	.text "Skl {%} chance for "
 	.word $0000
-	.text "for attack to ignore"
+	.text "attack to ignore"
 	.word $0000
-	.text "ene[my's defense"
+	.text "opponent's defense"
 	.word $0000
 .word $0000
 
 _SolDesc
-	.text "Skl {%} chance "
+	.text "Skl {%} chance for "
 	.word $0000
-	.text "for attack to heal"
+	.text "attack to heal for"
 	.word $0000
-	.text "for da[mage dealt "
+	.text "da[mage dealt "
 	.word $0000
 .word $0000
 
@@ -310,9 +304,9 @@ _RenewalDesc
 .word $0000
 
 _ParagonDesc
-	.text "Doubles experience"
+	.text "Doubles gained"
 	.word $0000
-	.text "gained by the user"
+	.text "experience points "
 	.word $0000
 .word $0000
 
@@ -321,27 +315,29 @@ _StealDesc
 	.word $0000
 	.text "target, can Steal an"
 	.word $0000
-	.text "ite[m ]with less )Wt"
+	.text "ite[m ]with )Weight "
 	.word $0000
-	.text "than the user's Con "
+	.text "less than user's Con"
 	.word $0000
 .word $0000
 
 _DanceDesc
 	.text "Use Dance co{mm}nand"
 	.word $0000
-	.text "to grant an ally"
+	.text "to grant another"
 	.word $0000
-	.text "another action"
+	.text "action to a single"
+	.word $0000
+	.text "ally next to user "
 	.word $0000
 .word $0000
 
 _BargainDesc
-	.text "Allo]ws user to "
+	.text "Enables user to buy "
 	.word $0000
-	.text "buy fro[m shops "
+	.text "fro[m shops at half "
 	.word $0000
-	.text "at half price "
+	.text "price "
 	.word $0000
 .word $0000
 

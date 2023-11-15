@@ -62,7 +62,7 @@ eventChapter15Events ; FD/A812
 			RUN_ASM rlEventDefinitionCheckMareetaShannamEquippedWeapons
 		END_DEFINITION
 		EVENT $0B, _DaisyAsaelloTalk
-			CHECK_CHARS2 Leif, Asaello
+			CHECK_CHARS2 Daisy, Asaello
 		END_DEFINITION
 		EVENT $0C, _AlbaEdaTalk
 			CHECK_CHARS2 Alba, Eda
@@ -344,6 +344,16 @@ eventChapter15Events ; FD/A812
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill3Immortal << 8
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
+
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.MaxHP, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.CurrentHP, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Strength, 2
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Magic, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Skill, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Speed, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Luck, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Defense, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Movement, 1
 	END2
 	
 	_AsaelloSpawn
@@ -1059,3 +1069,8 @@ eventChapter15Events ; FD/A812
 
 
 
+;get attention
+;topic
+;credibility
+;relevance
+;preview main points

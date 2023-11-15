@@ -12,21 +12,21 @@ eventChapter16BData ; B1/A6FA
 		UNIT LoptrianSorcerer1, Enemy, [9, 10], [9, 10], Reinkoch, [Jormungand, Rewarp], 5, False, [$00, $00, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [10, 10], [10, 10], Reinkoch, [Jormungand, Rewarp], 5, False, [$00, $00, $00, $00]
 		UNIT IllusionLeif, Enemy, [6, 9], [6, 9], Reinkoch, [LightBrand], 20, False, [$00, $03, $00, $00]
-		UNIT IllusionNanna, Enemy, [4, 9], [4, 9], Reinkoch, [EarthSword, Heal], 15, False, [$00, $03, $00, $00]
-		UNIT IllusionMareeta, Enemy, [5, 8], [5, 8], Reinkoch, [ShadowSword], 10, False, [$00, $03, $00, $00]
+		UNIT IllusionLeif, Enemy, [4, 9], [4, 9], Reinkoch, [EarthSword, Heal], 15, False, [$00, $03, $00, $00]
+		UNIT IllusionLeif, Enemy, [5, 8], [5, 8], Reinkoch, [ShadowSword], 10, False, [$00, $03, $00, $00]
 		UNIT MunsterSniper, Enemy, [4, 2], [4, 2], Reinkoch, [Tathlum], 9, False, [$00, $03, $00, $00]
 		UNIT DancerEnemy, Enemy, [4, 1], [4, 1], Reinkoch, [FlameSword], 14, False, [$07, $07, $00, $00]
-		UNIT Hero1, Enemy, [17, 5], [17, 5], Reinkoch, [BraveAxe], 7, False, [$00, $03, $00, $00]
+		UNIT Hero1, Enemy, [17, 5], [17, 5], Reinkoch, [MasterAxe], 7, False, [$00, $03, $00, $00]
 		UNIT Hero1, Enemy, [16, 9], [16, 9], Reinkoch, [Poleax], 7, False, [$00, $03, $00, $00]
 		UNIT MunsterSniper, Enemy, [17, 10], [17, 10], Reinkoch, [ForsetiInfinite], 9, False, [$00, $03, $00, $00]
-		UNIT HeroEnemy, Enemy, [16, 4], [16, 4], Reinkoch, [BraveSword], 7, False, [$00, $03, $00, $00]
+		UNIT HeroEnemy, Enemy, [16, 4], [16, 4], Reinkoch, [MasterSword], 7, False, [$00, $03, $00, $00]
 		UNIT HeroEnemy, Enemy, [18, 4], [18, 4], Reinkoch, [WindSword], 7, False, [$00, $03, $00, $00]
 		UNIT HeroEnemy, Enemy, [10, 2], [10, 2], Reinkoch, [BerserkEdge], 7, False, [$00, $03, $00, $00]
 		UNIT Hero1, Enemy, [7, 4], [7, 4], Reinkoch, [LightningSword], 7, False, [$00, $03, $00, $00]
 		UNIT HeroEnemy, Enemy, [3, 3], [3, 3], Reinkoch, [SleepEdge], 7, False, [$00, $03, $00, $00]
 		UNIT HeroEnemy, Enemy, [2, 2], [2, 2], Reinkoch, [ParagonSword], 7, False, [$00, $03, $00, $00]
 		UNIT SwordmasterEnemy, Enemy, [17, 3], [17, 3], Reinkoch, [SilverSword, LunaManual], 9, False, [$00, $03, $00, $00]
-		UNIT BanditWarrior, Enemy, [17, 16], [17, 16], Reinkoch, [BraveBow], 7, False, [$00, $03, $00, $00]
+		UNIT BanditWarrior, Enemy, [17, 16], [17, 16], Reinkoch, [MasterBow], 7, False, [$00, $03, $00, $00]
 		UNIT BerserkerEnemy2, Enemy, [18, 17], [18, 17], Reinkoch, [Vouge], 7, False, [$00, $03, $00, $00]
 		UNIT LoptrianGeneral, Enemy, [15, 16], [15, 16], Reinkoch, [BraveLance], 7, False, [$00, $03, $00, $00]
 		UNIT BerserkerEnemy1, Enemy, [16, 14], [16, 14], Reinkoch, [DevilAxe], 7, False, [$00, $03, $00, $00]
@@ -57,7 +57,7 @@ eventChapter16BData ; B1/A6FA
 		.byte 8, 7
 
 	_ShannamGroup ; B1/A8D8
-		UNIT Shannam, Enemy, [6, 1], [6, 1], Reinkoch, [IronBlade, StaminaDrink], 1, False, [$00, $03, $00, $00]
+		UNIT Shannam, Enemy, [6, 1], [6, 1], Reinkoch, [IronSword, StaminaDrink], 1, False, [$00, $03, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/A8EE

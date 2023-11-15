@@ -127,6 +127,10 @@
 .include "Chapter12FCDialogue.asm"
 .include "Chapter12xFCDialogue.asm"
 .include "Chapter13FCDialogue.asm"
+.here
+
+* = $4B8000
+.logical lorom($4B8000, 1)
 .include "Chapter14FCDialogue.asm"
 .include "Chapter14xFCDialogue.asm"
 .here
@@ -135,11 +139,11 @@
 .logical lorom($4C8000, 1)
 .include "Chapter15FCDialogue.asm"
 .include "Chapter16AFCDialogue.asm"
-.include "Chapter17AFCDialogue.asm"
 .here
 
 * = $4D0000
 .logical lorom($4D0000, 1)
+.include "Chapter17AFCDialogue.asm"
 .include "Chapter16BFCDialogue.asm"
 .here
 
@@ -161,11 +165,11 @@
 .logical lorom($5E8000, 1)
 .include "Chapter22FCDialogue.asm"
 .include "Chapter23FCDialogue.asm"
-.include "Chapter24FCDialogue.asm"
 .here
 
 * = $5F0000
 .logical lorom($5F0000, 1)
+.include "Chapter24FCDialogue.asm"
 .include "Chapter24xFCDialogue.asm"
 .include "Chapter25FCDialogue.asm"
 .here

@@ -588,27 +588,87 @@ eventChapter24Events ; B9/B000
 	END2
 	
 	_LeifVsRaydrik
-		macroDialogueHouse leifvsraydrik
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [10, 14], 4
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE leifvsraydrik
+		YIELD
 	END2
 	
 	_CedVsRaydrik
-		macroDialogueHouse cedvsraydrik
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [10, 14], 4
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE cedvsraydrik
+		YIELD
 	END2
 	
 	_MareetaVsRaydrik
-		macroDialogueHouse mareetavsraydrik
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [10, 14], 4
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE mareetavsraydrik
+		YIELD
 	END2
 	
 	_SaiasVsRaydrik
-		macroDialogueHouse saiasvsraydrik
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [10, 14], 4
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE saiasvsraydrik
+		YIELD
 	END2
 	
 	_NannaVsRaydrik
-		macroDialogueHouse nannavsraydrik
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [10, 14], 4
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE nannavsraydrik
+		YIELD
 	END2
 	
 	_BrightonVsRaydrik
-		macroDialogueHouse brightonvsraydrik
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_SPEED [10, 14], 4
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		DIALOGUE brightonvsraydrik
+		YIELD
 	END2
 	
 	_GalzusVsRaydrik

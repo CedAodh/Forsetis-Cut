@@ -108,7 +108,7 @@ eventChapter14Data ; B1/B9FF
 		.byte 16, 11
 
 	_DeanGroup ; B1/BF5D
-		UNIT Dean, Player, [16, 11], [16, 11], Dean, [SilverLance, IronBlade, DainnsScroll], 3, False, [$00, $00, $00, $00]
+		UNIT Dean, Player, [16, 11], [16, 11], Dean, [SilverSword, Javelin, DainnsScroll], 3, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates5 ; B1/BF73

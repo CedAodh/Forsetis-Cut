@@ -2187,3 +2187,155 @@ daisyrequest
 .byte WaitForA
 
 .byte EndText
+
+leifjealousoftravant
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "*grumble*"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word dorius_portrait
+.text "Something troubling you, Prince Leif?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hello, Dryas."
+.byte NewLine
+.text "...Yes, I suppose something has been"
+.byte NewLine
+.text "eating at me of late."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It's Tarrah, is it not?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "How did you... Hm."
+.byte NewLine
+.text "I guess there's not really much else"
+.byte NewLine
+.text "one could speculate."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Please, do tell me."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Why did it come to this, Dryas?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Hm?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "We could have held our own against the empire."
+.byte NewLine
+.text "Yet we abandoned the city, and now it's in"
+.byte NewLine
+.text "the hands of the detestable King Travant!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well...let us face it: it's better for Tarrah to"
+.byte NewLine
+.text "become Thracian territory than imperial territory."
+.byte WaitForA
+.byte ScrollText
+.text "Although he has many mercenary contracts"
+.byte NewLine
+.text "with the empire, I've little doubt"
+.byte NewLine
+.text "Travant welcomes them any more than we do."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "There's no refuting that point."
+.byte WaitForA
+.byte NewLine
+.text "I saw as he took to the sky."
+.byte NewLine
+.text "He fought with such ferocity—"
+.byte NewLine
+.text "and with a divine weapon, no less."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Indeed he did."
+.byte NewLine
+.text "The heavenly Gungnir... It's the counterpart"
+.byte NewLine
+.text "to the Gáe Bolg, as you're surely aware."
+.byte WaitForA
+.byte ScrollText
+.text "We should be thankful he prioritized attacking"
+.byte NewLine
+.text "the empire from behind instead of us—there"
+.byte NewLine
+.text "there would have been little hope in defeating him."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I feel so... It makes me feel so powerless."
+.byte WaitForA
+.byte NewLine
+.text "When they have power like that at their disposal,"
+.byte NewLine
+.text "either the empire or Thracia could annihilate us"
+.byte NewLine
+.text "with a flick of a finger. That's all it would take."
+.byte WaitForA
+.byte ScrollText
+.text "Though we may be in a favorable position"
+.byte NewLine
+.text "as of now, I'm fearful of how suddenly"
+.byte NewLine
+.text "that could all change."
+.byte WaitForA
+.byte ScrollText
+.text "...Was the Gáe Bolg truly not uncovered"
+.byte NewLine
+.text "even after all this time?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "There's been no credible rumor."
+.byte NewLine
+.text "For all intents and purposes, House Leonster's"
+.byte NewLine
+.text "birthright has been lost to the Aed Desert."
+.byte WaitForA
+.byte ScrollText
+.text "And obviously, we've no plans to travel"
+.byte NewLine
+.text "in that direction anytime soon."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's a damned shame, all of it."
+.byte NewLine
+.text "Just terrible beyond words."
+.byte NewLine
+.text "My sister..."
+.byte WaitForA
+
+.byte EndText

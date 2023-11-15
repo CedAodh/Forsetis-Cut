@@ -43,7 +43,7 @@ eventChapter13Events ; 99/E392
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
                 EVENT $00, _McCroySpawn
-			CMP_WORD wCurrentTurn, 10
+			CMP_WORD wCurrentTurn, 1
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 	END_DEFINITION_ARRAY

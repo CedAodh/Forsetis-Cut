@@ -1,7 +1,4 @@
 leifvsraydrik
-
-	.word PlayMusic
-	.byte $3B
 	
 	.byte right_slot
 	.word $3A00
@@ -10,16 +7,13 @@ leifvsraydrik
 	.byte left_slot
 	.word $3A00
 	.word leif_portrait2
-	.text "Raydrik..."
+	.text "Raydrik!"
 	.byte WaitForA
 
 	.byte right_slot
 	.text "Well, well!"
-	.byte WaitForA
 	.byte NewLine
-	.text "The pup—"
-	.byte NewLine
-	.text "Excuse me, I mean the mutt,"
+	.text "The pup— Excuse me, I mean the mutt,"
 	.byte NewLine
 	.text "has returned at last!"
 	.byte WaitForA
@@ -31,29 +25,39 @@ leifvsraydrik
 
 	.byte left_slot
 	.byte ScrollText
-	.text "I have no words left for you."
+	.text "Tch."
 	.byte NewLine
-	.text "I just want to kill you."
+	.text "You've no clue what fate awaits you..."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Raydrik, your death will be beyond excruciating."
+	.byte NewLine
+	.text "With my very hands, I'll see that you learn"
+	.byte NewLine
+	.text "true suffering and despair, just as I have."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Heh, attaboy!"
+	.text "So you claim! Come on, now!"
 	.byte NewLine
-	.text "Come on, then!"
-	.byte WaitForA
-	.byte NewLine
-	.text "I'll let you meet your end on my blade,"
+	.text "I'll have you meet your end on my blade,"
 	.byte NewLine
 	.text "just as I did with your grandfather!"
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Grr... No effect, huh?"
+	.byte NewLine
+	.text "Then I'll put words into action!"
+	.byte NewLine
+	.text "Brace yourself for a world of hurt!"
 	.byte WaitForA
 	
 	.byte EndText
 	
 cedvsraydrik
-
-.word PlayMusic
-.byte $3B
 
 .byte right_slot
 .word LoadPortrait
@@ -66,38 +70,36 @@ cedvsraydrik
 .byte WaitForA
 
 .byte right_slot
-.text "Baron Raydrik,"
+.text "It's good to finally meet, Baron Raydrik."
 .byte NewLine
-.text "we meet at last."
-.byte WaitForA
-.byte ScrollText
-.text "You're outmatched."
-.byte WaitForA
+.text "Alas, I believe you are plainly outmatched."
 .byte NewLine
-.text "Give us your unconditional surrender,"
-.byte NewLine
-.text "and you might just be of benefit"
-.byte NewLine
-.text "to the continent for once."
+.text "Make this easier on all of us, and surrender."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Hah!"
+.text "Surrender? Hah!"
 .byte NewLine
-.text "Why would I give in to the demands"
+.text "That's quite a big word for some"
 .byte NewLine
-.text "of some pesky basement rat?"
+.text "small, insignificant pest!"
 .byte WaitForA
 .byte ScrollText
-.text "That said,"
+.text "On second thought, “pest” is too generous!"
 .byte NewLine
-.text "I ought to show you where the rodent"
+.text "I've scraped things far worse than you"
 .byte NewLine
-.text "inhabitants of this castle belong..."
+.text "from my teeth!"
 .byte WaitForA
+
+.byte right_slot
 .byte ScrollText
-.text "Right here, beneath my boot!"
+.text "Hmph. Very well."
+.byte NewLine
+.text "Let us have at it then!"
+.byte NewLine
+.text "This shall be a fight to remember!"
 .byte WaitForA
 
 .byte EndText
@@ -111,11 +113,11 @@ mareetavsraydrik
 .byte left_slot
 .word LoadPortrait
 .word Raydrik2Portrait
-.text "You managed to find"
-.byte NewLine
-.text "your way back, little lass."
+.text "Welcome back, little lass."
 .byte NewLine
 .text "I know, it is a very large castle."
+.byte NewLine
+.text "Easy to lose one's way and whatnot."
 .byte WaitForA
 
 .byte right_slot
@@ -124,21 +126,19 @@ mareetavsraydrik
 
 .byte left_slot
 .byte ScrollText
-.text "Come now,"
+.text "Come now, what do you possibly imagine"
 .byte NewLine
-.text "I would never allow myself"
-.byte NewLine
-.text "to harm such a precious child."
+.text "I'd do to you?"
 .byte WaitForA
 .byte ScrollText
-.text "If you wish,"
+.text "If you wish, you may return"
 .byte NewLine
-.text "you may return the cursed blade to me."
+.text "the cursed blade to me."
 .byte NewLine
 .text "It turns out I should not have given it to you."
 .byte WaitForA
 .byte ScrollText
-.text "After that we can move along"
+.text "After that, we can move along"
 .byte NewLine
 .text "with our tour of the castle."
 .byte WaitForA
@@ -151,14 +151,14 @@ mareetavsraydrik
 .byte WaitForA
 
 .byte right_slot
-.text "......!"
+.text "...!"
 .byte NewLine
 .text "Raydrik, you—"
 .byte NewLine
 .text "Where does it end with you?!"
 .byte WaitForA
 .byte NewLine
-.text "You've fallen below the depths of indignity."
+.text "You've fallen well below the depths of indignity."
 .byte WaitForA
 .byte ScrollText
 .text "My mother was an honorable swordswoman."
@@ -182,8 +182,6 @@ saiasvsraydrik
 .byte left_slot
 .word LoadPortrait
 .word Raydrik2Portrait
-.text "Well, well!"
-.byte NewLine
 .text "I see before me the"
 .byte NewLine
 .text "famed tactician of House Velthomer."
@@ -215,7 +213,7 @@ saiasvsraydrik
 .byte NewLine
 .text "is getting my spit out of your hair"
 .byte NewLine
-.text "after I run you through, traitor!"
+.text "after I run you through, turncoat!"
 .byte WaitForA
 
 .byte EndText

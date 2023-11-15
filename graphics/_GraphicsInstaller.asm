@@ -568,8 +568,8 @@ nintendo_logo
 
 ;.here
 
-* = $4B7A00
-.logical lorom($4B7A00, 1)
+* = $4BF000
+.logical lorom($4BF000, 1)
 
 a16B      .binary "16BMapMain.bin.fe4"
 a16BPalette      .binary "editedforestpalette.bin"
