@@ -117,9 +117,6 @@ eventChapter13Data ; B1/BFCE
 		UNIT ThraciaDracoRider, Enemy, [20, 23], [20, 22], Merloch, [SteelLance, Vulnerary], 8, False, [$00, $0C, $00, $30]
 	UNIT
 	
-	_McCroyCameraCoordinates ; B1/C3B6
-		.byte 23, 15
-	
 	_StartingPositions ; B1/C3E6
 		.byte 30, 20
 		.byte 31, 19
