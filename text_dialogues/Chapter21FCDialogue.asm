@@ -709,154 +709,39 @@ SaraMartyTalk
 
 ConomorMirandaTalk
 
-.byte left_slot
-.word LoadPortrait
-.word miranda_portrait 
-
 .byte right_slot
 .word LoadPortrait
-.word conomor_portrait
-
-.byte left_slot
-.text "Count Conomor!"
-.text "Do you have a minute?"
-.byte WaitForA 
-
-.byte right_slot
-.text "For you, Princess,"
-.byte NewLine
-.text "I have all the time in the world."
-.byte NewLine
-.text "How may I be of help?"
+.word miranda_portrait
+.text "Conomor!"
 .byte WaitForA 
 
 .byte left_slot
-.byte ScrollText
-.text "I... I wanted to ask you some questions."
-.byte NewLine
-.text "And I command you to answer"
-.byte NewLine
-.text "with utmost honesty!"
+.word LoadPortrait
+.word conomor_portrait 
+.text "My princess?"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Oh? But of course, Princess."
+.text "...I've been pondering over something."
 .byte NewLine
-.text "Whatever do you wish to know?"
+.text "Something Count Dryas had told me"
+.byte NewLine
+.text "when I was rescued in the Wayward Forest."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Was... Was my father a bad ruler?"
+.text "Very well."
+.byte NewLine
+.text "Please tell me what it is."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "..."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "I gave you an order, Count."
+.text "I'll state it plain."
 .byte NewLine
-.text "Answer me!"
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "I... *sigh* "
-.byte WaitForA 
-.byte NewLine
-.text "Look, Princess."
-.byte NewLine
-.text "Your father was a good man."
-.byte WaitForA 
-.byte ScrollText
-.text "I still remember when he personally appointed"
-.byte NewLine
-.text "me as the leader of the Ulster Knights, I could"
-.byte NewLine
-.text "not have felt prouder to serve him."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "Go on..."
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "Your father was loved by his people, and it"
-.byte NewLine
-.text "stayed that way...Up until things grew dire."
-.byte WaitForA 
-.byte ScrollText
-.text "When the fate of our nation was at stake,"
-.byte NewLine
-.text "the king grew doubtful."
-.byte WaitForA 
-.byte ScrollText
-.text "Many called him a coward,"
-.byte NewLine
-.text "most do so to this very day,"
-.byte NewLine
-.text "but I'd say he grew overly cautious."
-.byte WaitForA 
-.byte ScrollText
-.text "He refused to send even a single knight to aid"
-.byte NewLine
-.text "Leonster for fear that Thracia would've sent"
-.byte NewLine
-.text "troops to assault our exposed backs."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "But why?! How could he...?"
-.byte WaitForA
-.byte NewLine
-.text "I always thought the best of my father..."
-.byte NewLine
-.text "Why would he refuse to take action?!"
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "Quite simple, really."
-.byte WaitForA
-.byte NewLine
-.text "He didn't want to risk putting you and"
-.byte NewLine
-.text "your mother in danger. Not after the example"
-.byte NewLine
-.text "Travant set with the Aed Massacre."
-.byte WaitForA
-.byte ScrollText
-.text "Knowing full—well that Travant would've slain"
-.byte NewLine
-.text "you both without hesitation..."
-.byte NewLine
-.text "It made his heart tremble."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "... I..."
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "His heart was always in the right place,"
-.byte NewLine
-.text "but that ended up being his undoing."
-.byte WaitForA
-.byte ScrollText
-.text "His lack of action cost King Kalf his life,"
-.byte NewLine
-.text "and with Leonster's fall we could only"
-.byte NewLine
-.text "brace ourselves for the worst."
+.text "Was my father an unjust ruler?"
 .byte WaitForA 
 
 .byte left_slot
@@ -866,116 +751,190 @@ ConomorMirandaTalk
 
 .byte right_slot
 .byte ScrollText
-.text "A thousand apologies, Princess."
+.text "I want to hear it from YOU, Conomor."
 .byte NewLine
-.text "It wasn't my intent to make your"
-.byte NewLine
-.text "Tears flow on the battlefield."
-.byte WaitForA
-.byte ScrollText
-.text "For one so young,"
-.byte NewLine
-.text "knowing this and all the pain such things"
-.byte NewLine
-.text "have caused must be insurmountable."
-.byte WaitForA
-.byte ScrollText
-.text "I can only hope that you can forgive this"
-.byte NewLine
-.text "pathetic excuse of a man who leads"
-.byte NewLine
-.text "what is left of the Ulster Knights."
+.text "Answer my question."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "There is nothing to forgive, Count Conomor."
+.text "Your Highness... *sigh*"
 .byte NewLine
-.text "If anything, I wish to thank you"
+.text "Truthfully, I had hoped to go the rest of"
 .byte NewLine
-.text "for your honesty and resilience."
+.text "my days without having this conversation."
+.byte WaitForA
+.byte ScrollText
+.text "Never would I wish to speak ill of His late"
+.byte NewLine
+.text "Majesty, but that would come directly at odds"
+.byte NewLine
+.text "with...with providing you crucial knowledge."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "I'm ready for anything."
+.byte NewLine
+.text "I would have postponed asking if I weren't."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "As you will."
+.byte WaitForA
+.byte ScrollText
+.text "Like Count Dryas must have told you,"
+.byte NewLine
+.text "your father chose not to act when Leonster"
+.byte NewLine
+.text "was in a state of crisis."
+.byte WaitForA
+.byte NewLine
+.text "His name immediately sank into the mire."
+.byte WaitForA
+.byte ScrollText
+.text "While I do...agree with this assessment,"
+.byte NewLine
+.text "I also came to an understanding with"
+.byte NewLine
+.text "his reasons. His personal circumstances."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "...What do you mean?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "He felt that he had a duty to you and"
+.byte NewLine
+.text "your mother before he did to his country."
+.byte WaitForA 
+.byte ScrollText
+.text "After hearing of the tragedy in the Aed Desert,"
+.byte NewLine
+.text "he grew fearful of the same befalling his family."
+.byte NewLine
+.text "He would not dare give Travant any openings."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "So we were always foremost in his mind..."
+.byte NewLine
+.text "There was no mistaking his kindness."
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "...Be that as it may, such kindness left him"
+.byte NewLine
+.text "without the mantle to effectively govern."
+.byte NewLine
+.text "His vision was simply short-sighted;"
+.byte WaitForA
+.byte ScrollText
+.text "all he truly accomplished was delaying the"
+.byte NewLine
+.text "kingdom's impending doom, while also sullying"
+.byte NewLine
+.text "any good graces the royal line may have had."
+.byte WaitForA 
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "I beg forgiveness, my princess."
+.byte NewLine
+.text "I do not relish telling you this."
+.byte WaitForA
+.byte ScrollText
+.text "What I do relish, however, is being able"
+.byte NewLine
+.text "to recognize these circumstances that led"
+.byte NewLine
+.text "us to where we are today."
+.byte WaitForA
+.byte ScrollText
+.text "I would love nothing more than to be able"
+.byte NewLine
+.text "to act as your advisor, and guide you as"
+.byte NewLine
+.text "you tread forth with the pride of Ulster."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "There is nothing to forgive, Conomor."
+.byte NewLine
+.text "I asked for the truth, and you gave"
+.byte NewLine
+.text "me nothing but the truth."
 .byte WaitForA
 .byte ScrollText
 .text "And for that, I have a most fitting gift."
 .byte WaitForA 
 
+.byte left_slot
+.byte ScrollText
+.text "A gift...?"
+.byte WaitForA 
+
 .byte right_slot
 .byte ScrollText
-.text "A gift? And what could that be?"
+.text "We will be in direct warfare with"
+.byte NewLine
+.text "House Friege from here on."
+.byte NewLine
+.text "I believe it wise to return this to you."
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "The battles ahead will be tougher than"
+.text "...!"
 .byte NewLine
-.text "anything we have faced so far, Count."
-.byte NewLine
-.text "So I thought it wise to return this to you."
+.text "That's..."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Ah! That's...!"
+.text "You are familiar with this sword, are you not?"
 .byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "You know this sword, don't you?"
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "How could I not, milady?"
+.text "Indeed I am, Your Highness."
 .byte NewLine
 .text "But how...?"
-.byte WaitForA 
 .byte NewLine
-.text "How did you get ahold of this?"
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "It was handed to me by Lord Seliph at"
-.byte NewLine
-.text "the war meeting earlier. Seems like it's been"
-.byte NewLine
-.text "safely kept in the Ulster treasury for all this time."
-.byte WaitForA 
-.byte ScrollText
-.text "The blade forged to be wielded"
-.byte NewLine
-.text "by the leader of the Ulster Knights..."
-.byte WaitForA
-.byte NewLine
-.text "Fragarach!"
+.text "How did you get ahold of it?"
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "Ah..."
+.text "You may thank Lord Seliph."
 .byte NewLine
-.text "I thought of it as lost back when Ulster fell..."
+.text "King Bloom was unable to make off with it"
 .byte NewLine
-.text "But to see it shine in all its glory once again..."
-.byte WaitForA
-.byte ScrollText
-.text "By goodness, look at me!"
-.byte NewLine
-.text "now I am the one that's moved to tears..."
+.text "when he had to flee the royal palace."
 .byte WaitForA 
-
-.byte left_slot
 .byte ScrollText
-.text "Take it, Count Conomor."
+.text "Take it, Conomor."
 .byte NewLine
 .text "Wield it as you once did, and let us fight for"
 .byte NewLine
 .text "what my dear mother and father could not!"
 .byte WaitForA 
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
-.text "As you wish, Princess!"
+.text "By your command, Princess Miranda!"
 .byte WaitForA
 .byte EndText
 
@@ -1225,7 +1184,7 @@ fergusdiarmuid
 .byte NewLine
 .text "I'm glad to have someone to converse"
 .byte NewLine
-.text "with besides Prince Leif and my sister."
+.text "with besides Lord Leif and my sister."
 .byte WaitForA
 .byte ScrollText
 .text "I may be a soldier from Lord Seliph's army,"
@@ -1335,7 +1294,7 @@ fergusdiarmuid
 .byte NewLine
 .text "I hear about things like this all the time," 
 .byte NewLine
-.text "yet it never gets any easier to listen to."
+.text "but it never gets any easier to listen to."
 .byte WaitForA
 .byte ScrollText
 .text "No matter how you put it,"
@@ -1347,11 +1306,11 @@ fergusdiarmuid
 
 .byte right_slot
 .byte ScrollText
-.text "Well, be that as it may, I'm proud of"
+.text "Well, regardless, I'm proud of what"
 .byte NewLine
-.text "what I've made myself into—and no absence"
+.text "I've made myself into—and no absence of"
 .byte NewLine
-.text "of family can ever take that away from me."
+.text "family can ever take that away from me."
 .byte WaitForA
 
 .byte left_slot

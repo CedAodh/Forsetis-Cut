@@ -46,7 +46,7 @@ eventChapter20Events ; FD/D942
 		END_DEFINITION
 		EVENT $00, _Turn13Reinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 1
+			CMP_WORD wCurrentTurn, 12
 		END_DEFINITION
 		EVENT $00, _Turn14Reinforcements
 			CMP_WORD wCurrentPhase, NPC

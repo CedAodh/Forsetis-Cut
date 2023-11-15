@@ -33,7 +33,7 @@
 		IronSwordWeaponRank				= RankE
 		IronSwordEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		IronSwordStatBonus				= aNoItemBonuses
-		IronSwordCost					= 2200
+		IronSwordCost					= 2600
 		IronSwordDescription			= <>item_descs._IronSwordDesc
 		IronSwordUseEffect				= None
 		IronSwordWeaponEffect			= None
@@ -92,14 +92,14 @@
 		SlimSwordMight					= 4
 		SlimSwordAccuracy				= 100
 		SlimSwordWeight					= 3
-		SlimSwordDurability				= 30
+		SlimSwordDurability				= 35
 		SlimSwordCritrate				= 5
 		SlimSwordMinRange				= 1
 		SlimSwordMaxRange				= 1
 		SlimSwordWeaponRank				= RankE
 		SlimSwordEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SlimSwordStatBonus				= aNoItemBonuses
-		SlimSwordCost					= 2600
+		SlimSwordCost					= 2300
 		SlimSwordDescription			= <>item_descs._SlimSwordDesc
 		SlimSwordUseEffect				= None
 		SlimSwordWeaponEffect			= None
@@ -121,7 +121,7 @@
 		IronBladeWeaponRank				= RankC
 		IronBladeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		IronBladeStatBonus				= aNoItemBonuses
-		IronBladeCost					= 2000
+		IronBladeCost					= 2900
 		IronBladeDescription			= <>item_descs._IronBladeDesc
 		IronBladeUseEffect				= None
 		IronBladeWeaponEffect			= None
@@ -143,7 +143,7 @@
 		KillingEdgeWeaponRank			= RankC
 		KillingEdgeEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		KillingEdgeStatBonus			= aNoItemBonuses
-		KillingEdgeCost					= 2800
+		KillingEdgeCost					= 3500
 		KillingEdgeDescription			= <>item_descs._KillingEdgeDesc
 		KillingEdgeUseEffect			= None
 		KillingEdgeWeaponEffect			= None
@@ -187,7 +187,7 @@
 		BerserkEdgeWeaponRank			= RankA
 		BerserkEdgeEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		BerserkEdgeStatBonus			= aNoItemBonuses
-		BerserkEdgeCost					= 3200
+		BerserkEdgeCost					= 4000
 		BerserkEdgeDescription			= <>item_descs._BerserkEdgeDesc
 		BerserkEdgeUseEffect			= None
 		BerserkEdgeWeaponEffect			= $C
@@ -209,7 +209,7 @@
 		SleepEdgeWeaponRank				= RankA
 		SleepEdgeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SleepEdgeStatBonus				= aNoItemBonuses
-		SleepEdgeCost					= 2800
+		SleepEdgeCost					= 4000
 		SleepEdgeDescription			= <>item_descs._SleepEdgeDesc
 		SleepEdgeUseEffect				= None
 		SleepEdgeWeaponEffect			= $E
@@ -407,7 +407,7 @@
 		WindSwordWeaponRank				= RankB
 		WindSwordEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		WindSwordStatBonus				= aWindSwordItemBonuses
-		WindSwordCost					= 5800
+		WindSwordCost					= 6600
 		WindSwordDescription			= <>item_descs._WindSwordDesc
 		WindSwordUseEffect				= None
 		WindSwordWeaponEffect			= None
@@ -429,7 +429,7 @@
 		FlameSwordWeaponRank			= RankB
 		FlameSwordEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		FlameSwordStatBonus				= aFlameSwordItemBonuses
-		FlameSwordCost					= 5800
+		FlameSwordCost					= 7000
 		FlameSwordDescription			= <>item_descs._FlameSwordDesc
 		FlameSwordUseEffect				= None
 		FlameSwordWeaponEffect			= None
@@ -451,7 +451,7 @@
 		LightningSwordWeaponRank		= RankB
 		LightningSwordEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		LightningSwordStatBonus			= aLightningSwordItemBonuses
-		LightningSwordCost				= 5800
+		LightningSwordCost				= 6000
 		LightningSwordDescription		= <>item_descs._LightningSwordDesc
 		LightningSwordUseEffect			= None
 		LightningSwordWeaponEffect		= None
@@ -473,7 +473,7 @@
 		ParagonSwordWeaponRank			= RankE
 		ParagonSwordEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		ParagonSwordStatBonus			= aParagonSwordItemBonuses
-		ParagonSwordCost				= 8200
+		ParagonSwordCost				= 8000
 		ParagonSwordDescription			= <>item_descs._ParagonSwordDesc
 		ParagonSwordUseEffect			= None
 		ParagonSwordWeaponEffect		= None
@@ -495,7 +495,7 @@
 		ArmorslayerWeaponRank			= RankB
 		ArmorslayerEffectiveness		= ItemEffectivenesses.aArmorEffectiveness
 		ArmorslayerStatBonus			= aNoItemBonuses
-		ArmorslayerCost					= 2800
+		ArmorslayerCost					= 3200
 		ArmorslayerDescription			= <>item_descs._ArmorslayerDesc
 		ArmorslayerUseEffect			= None
 		ArmorslayerWeaponEffect			= None
@@ -508,7 +508,7 @@
 		RapierType						= TypeSword
 		RapierAlternateType				= None
 		RapierMight						= 5
-		RapierAccuracy					= 90
+		RapierAccuracy					= 95
 		RapierWeight					= 3
 		RapierDurability				= 30
 		RapierCritrate					= 10
@@ -517,7 +517,7 @@
 		RapierWeaponRank				= RankC
 		RapierEffectiveness				= ItemEffectivenesses.aCavalryAndArmorEffectiveness
 		RapierStatBonus					= aNoItemBonuses
-		RapierCost						= 1000
+		RapierCost						= 3000
 		RapierDescription				= <>item_descs._RapierDesc
 		RapierUseEffect					= None
 		RapierWeaponEffect				= None
@@ -605,7 +605,7 @@
 		MasterSwordWeaponRank			= RankA
 		MasterSwordEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		MasterSwordStatBonus			= aNoItemBonuses
-		MasterSwordCost					= 3200
+		MasterSwordCost					= 3800
 		MasterSwordDescription			= <>item_descs._MasterSwordDesc
 		MasterSwordUseEffect			= None
 		MasterSwordWeaponEffect			= None
@@ -693,7 +693,7 @@
 		IronLanceWeaponRank				= RankE
 		IronLanceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		IronLanceStatBonus				= aNoItemBonuses
-		IronLanceCost					= 2200
+		IronLanceCost					= 2400
 		IronLanceDescription			= <>item_descs._IronLanceDesc
 		IronLanceUseEffect				= None
 		IronLanceWeaponEffect			= None
@@ -715,7 +715,7 @@
 		SteelLanceWeaponRank			= RankD
 		SteelLanceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SteelLanceStatBonus				= aNoItemBonuses
-		SteelLanceCost					= 2800
+		SteelLanceCost					= 2600
 		SteelLanceDescription			= <>item_descs._SteelLanceDesc
 		SteelLanceUseEffect				= None
 		SteelLanceWeaponEffect			= None
@@ -737,7 +737,7 @@
 		SilverLanceWeaponRank			= RankB
 		SilverLanceEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		SilverLanceStatBonus			= aNoItemBonuses
-		SilverLanceCost					= 4200
+		SilverLanceCost					= 4000
 		SilverLanceDescription			= <>item_descs._SilverLanceDesc
 		SilverLanceUseEffect			= None
 		SilverLanceWeaponEffect			= None
@@ -752,14 +752,14 @@
 		SlimLanceMight					= 6
 		SlimLanceAccuracy				= 90
 		SlimLanceWeight					= 5
-		SlimLanceDurability				= 30
+		SlimLanceDurability				= 35
 		SlimLanceCritrate				= 5
 		SlimLanceMinRange				= 1
 		SlimLanceMaxRange				= 1
 		SlimLanceWeaponRank				= RankE
 		SlimLanceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SlimLanceStatBonus				= aNoItemBonuses
-		SlimLanceCost					= 2600
+		SlimLanceCost					= 2200
 		SlimLanceDescription			= <>item_descs._SlimLanceDesc
 		SlimLanceUseEffect				= None
 		SlimLanceWeaponEffect			= None
@@ -869,7 +869,7 @@
 		ShortLanceWeaponRank			= RankE
 		ShortLanceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		ShortLanceStatBonus				= aNoItemBonuses
-		ShortLanceCost					= 800
+		ShortLanceCost					= 700
 		ShortLanceDescription			= <>item_descs._ShortLanceDesc
 		ShortLanceUseEffect				= None
 		ShortLanceWeaponEffect			= None
@@ -891,7 +891,7 @@
 		LongLanceWeaponRank				= RankD
 		LongLanceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		LongLanceStatBonus				= aNoItemBonuses
-		LongLanceCost					= 1400
+		LongLanceCost					= 1300
 		LongLanceDescription			= <>item_descs._LongLanceDesc
 		LongLanceUseEffect				= None
 		LongLanceWeaponEffect			= None
@@ -913,7 +913,7 @@
 		GreatlanceWeaponRank			= RankC
 		GreatlanceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		GreatlanceStatBonus				= aNoItemBonuses
-		GreatlanceCost					= 2200
+		GreatlanceCost					= 2100
 		GreatlanceDescription			= <>item_descs._GreatlanceDesc
 		GreatlanceUseEffect				= None
 		GreatlanceWeaponEffect			= None
@@ -935,7 +935,7 @@
 		JavelinWeaponRank				= RankD
 		JavelinEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		JavelinStatBonus				= aNoItemBonuses
-		JavelinCost						= 1600
+		JavelinCost						= 2500
 		JavelinDescription				= <>item_descs._JavelinDesc
 		JavelinUseEffect				= None
 		JavelinWeaponEffect				= None
@@ -957,7 +957,7 @@
 		MasterLanceWeaponRank			= RankA
 		MasterLanceEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		MasterLanceStatBonus			= aNoItemBonuses
-		MasterLanceCost					= 3200
+		MasterLanceCost					= 3600
 		MasterLanceDescription			= <>item_descs._MasterLanceDesc
 		MasterLanceUseEffect			= None
 		MasterLanceWeaponEffect			= None
@@ -979,7 +979,7 @@
 		RidersbaneWeaponRank			= RankB
 		RidersbaneEffectiveness			= ItemEffectivenesses.aCavalryEffectiveness
 		RidersbaneStatBonus				= aNoItemBonuses
-		RidersbaneCost					= 2600
+		RidersbaneCost					= 3000
 		RidersbaneDescription			= <>item_descs._RidersbaneDesc
 		RidersbaneUseEffect				= None
 		RidersbaneWeaponEffect			= None
@@ -1001,7 +1001,7 @@
 		KillerLanceWeaponRank			= RankC
 		KillerLanceEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		KillerLanceStatBonus			= aNoItemBonuses
-		KillerLanceCost					= 2800
+		KillerLanceCost					= 3300
 		KillerLanceDescription			= <>item_descs._KillerLanceDesc
 		KillerLanceUseEffect			= None
 		KillerLanceWeaponEffect			= None
@@ -1089,7 +1089,7 @@
 		IronAxeWeaponRank				= RankE
 		IronAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		IronAxeStatBonus				= aNoItemBonuses
-		IronAxeCost						= 1100
+		IronAxeCost						= 2000
 		IronAxeDescription				= <>item_descs._IronAxeDesc
 		IronAxeUseEffect				= None
 		IronAxeWeaponEffect				= None
@@ -1133,7 +1133,7 @@
 		SteelAxeWeaponRank				= RankD
 		SteelAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SteelAxeStatBonus				= aNoItemBonuses
-		SteelAxeCost					= 1700
+		SteelAxeCost					= 2200
 		SteelAxeDescription				= <>item_descs._SteelAxeDesc
 		SteelAxeUseEffect				= None
 		SteelAxeWeaponEffect			= None
@@ -1155,7 +1155,7 @@
 		SilverAxeWeaponRank				= RankB
 		SilverAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SilverAxeStatBonus				= aNoItemBonuses
-		SilverAxeCost					= 2200
+		SilverAxeCost					= 3600
 		SilverAxeDescription			= <>item_descs._SilverAxeDesc
 		SilverAxeUseEffect				= None
 		SilverAxeWeaponEffect			= None
@@ -1177,7 +1177,7 @@
 		HandAxeWeaponRank				= RankE
 		HandAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		HandAxeStatBonus				= aNoItemBonuses
-		HandAxeCost						= 900
+		HandAxeCost						= 2100
 		HandAxeDescription				= <>item_descs._HandAxeDesc
 		HandAxeUseEffect				= None
 		HandAxeWeaponEffect				= None
@@ -1199,7 +1199,7 @@
 		HammerWeaponRank				= RankC
 		HammerEffectiveness				= ItemEffectivenesses.aArmorEffectiveness
 		HammerStatBonus					= aNoItemBonuses
-		HammerCost						= 1200
+		HammerCost						= 2600
 		HammerDescription				= <>item_descs._HammerDesc
 		HammerUseEffect					= None
 		HammerWeaponEffect				= None
@@ -1221,7 +1221,7 @@
 		KillerAxeWeaponRank				= RankC
 		KillerAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		KillerAxeStatBonus				= aNoItemBonuses
-		KillerAxeCost					= 1900
+		KillerAxeCost					= 2900
 		KillerAxeDescription			= <>item_descs._KillerAxeDesc
 		KillerAxeUseEffect				= None
 		KillerAxeWeaponEffect			= None
@@ -1280,19 +1280,19 @@
 		DevilAxeMight					= 20
 		DevilAxeAccuracy				= 80
 		DevilAxeWeight					= 20
-		DevilAxeDurability				= 30
+		DevilAxeDurability				= 25
 		DevilAxeCritrate				= 0
 		DevilAxeMinRange				= 1
 		DevilAxeMaxRange				= 1
 		DevilAxeWeaponRank				= RankE
 		DevilAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		DevilAxeStatBonus				= aNoItemBonuses
-		DevilAxeCost					= 1400
+		DevilAxeCost					= 3000
 		DevilAxeDescription				= <>item_descs._DevilAxeDesc
 		DevilAxeUseEffect				= None
 		DevilAxeWeaponEffect			= $4
-		DevilAxeSkills2					= None
-		DevilAxeSkills3					= None
+		DevilAxeSkills2					= Skill2Accost
+		DevilAxeSkills3					= Skill3Wrath
 		DevilAxeTraits					= TraitWeapon
 		DevilAxeIcon					= $39
 
@@ -1309,7 +1309,7 @@
 		BattleAxeWeaponRank				= RankC
 		BattleAxeEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		BattleAxeStatBonus				= aNoItemBonuses
-		BattleAxeCost					= 1000
+		BattleAxeCost					= 2000
 		BattleAxeDescription			= <>item_descs._BattleAxeDesc
 		BattleAxeUseEffect				= None
 		BattleAxeWeaponEffect			= None
@@ -1331,7 +1331,7 @@
 		PoleaxWeaponRank				= RankC
 		PoleaxEffectiveness				= ItemEffectivenesses.aCavalryEffectiveness
 		PoleaxStatBonus					= aNoItemBonuses
-		PoleaxCost						= 1200
+		PoleaxCost						= 2600
 		PoleaxDescription				= <>item_descs._PoleaxDesc
 		PoleaxUseEffect					= None
 		PoleaxWeaponEffect				= None
@@ -1419,7 +1419,7 @@
 		SteelBowWeaponRank				= RankD
 		SteelBowEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		SteelBowStatBonus				= aNoItemBonuses
-		SteelBowCost					= 2800
+		SteelBowCost					= 2400
 		SteelBowDescription				= <>item_descs._SteelBowDesc
 		SteelBowUseEffect				= None
 		SteelBowWeaponEffect			= None
@@ -1441,7 +1441,7 @@
 		SilverBowWeaponRank				= RankB
 		SilverBowEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		SilverBowStatBonus				= aNoItemBonuses
-		SilverBowCost					= 4000
+		SilverBowCost					= 3800
 		SilverBowDescription			= <>item_descs._SilverBowDesc
 		SilverBowUseEffect				= None
 		SilverBowWeaponEffect			= None
@@ -1485,7 +1485,7 @@
 		KillerBowWeaponRank				= RankC
 		KillerBowEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		KillerBowStatBonus				= aNoItemBonuses
-		KillerBowCost					= 3200
+		KillerBowCost					= 3100
 		KillerBowDescription			= <>item_descs._KillerBowDesc
 		KillerBowUseEffect				= None
 		KillerBowWeaponEffect			= None
@@ -1529,7 +1529,7 @@
 		ShortbowWeaponRank				= RankE
 		ShortbowEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		ShortbowStatBonus				= aNoItemBonuses
-		ShortbowCost					= 800
+		ShortbowCost					= 600
 		ShortbowDescription				= <>item_descs._ShortbowDesc
 		ShortbowUseEffect				= None
 		ShortbowWeaponEffect			= None
@@ -1551,7 +1551,7 @@
 		LongbowWeaponRank				= RankD
 		LongbowEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		LongbowStatBonus				= aNoItemBonuses
-		LongbowCost						= 1400
+		LongbowCost						= 1200
 		LongbowDescription				= <>item_descs._LongbowDesc
 		LongbowUseEffect				= None
 		LongbowWeaponEffect				= None
@@ -1573,7 +1573,7 @@
 		GreatbowWeaponRank				= RankC
 		GreatbowEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		GreatbowStatBonus				= aNoItemBonuses
-		GreatbowCost					= 2200
+		GreatbowCost					= 2000
 		GreatbowDescription				= <>item_descs._GreatbowDesc
 		GreatbowUseEffect				= None
 		GreatbowWeaponEffect			= None
@@ -1595,7 +1595,7 @@
 		MasterBowWeaponRank				= RankA
 		MasterBowEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		MasterBowStatBonus				= aNoItemBonuses
-		MasterBowCost					= 3200
+		MasterBowCost					= 3400
 		MasterBowDescription			= <>item_descs._MasterBowDesc
 		MasterBowUseEffect				= None
 		MasterBowWeaponEffect			= None
@@ -1617,7 +1617,7 @@
 		BallistaWeaponRank				= WeaponLocks.aBallistaWeaponLock
 		BallistaEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		BallistaStatBonus				= aNoItemBonuses
-		BallistaCost					= 2200
+		BallistaCost					= 5000
 		BallistaDescription				= <>item_descs._BallistaDesc
 		BallistaUseEffect				= None
 		BallistaWeaponEffect			= None
@@ -1639,7 +1639,7 @@
 		IronBallistaWeaponRank			= WeaponLocks.aIronBallistaWeaponLock
 		IronBallistaEffectiveness		= ItemEffectivenesses.aFlyingEffectiveness
 		IronBallistaStatBonus			= aNoItemBonuses
-		IronBallistaCost				= 4200
+		IronBallistaCost				= 10000
 		IronBallistaDescription			= <>item_descs._IronBallistaDesc
 		IronBallistaUseEffect			= None
 		IronBallistaWeaponEffect		= None
@@ -1655,13 +1655,13 @@
 		KillerBallistaAccuracy			= 90
 		KillerBallistaWeight			= 20
 		KillerBallistaDurability		= 10
-		KillerBallistaCritrate			= 30
+		KillerBallistaCritrate			= 10
 		KillerBallistaMinRange			= 3
 		KillerBallistaMaxRange			= 10
 		KillerBallistaWeaponRank		= WeaponLocks.aBallistaWeaponLock
 		KillerBallistaEffectiveness		= ItemEffectivenesses.aFlyingEffectiveness
 		KillerBallistaStatBonus			= aNoItemBonuses
-		KillerBallistaCost				= 3200
+		KillerBallistaCost				= 8000
 		KillerBallistaDescription		= <>item_descs._KillerBallistaDesc
 		KillerBallistaUseEffect			= None
 		KillerBallistaWeaponEffect		= None
@@ -1674,23 +1674,23 @@
 		VeninBallistaType				= TypeBow
 		VeninBallistaAlternateType		= None
 		VeninBallistaMight				= 10
-		VeninBallistaAccuracy			= 75
+		VeninBallistaAccuracy			= 90
 		VeninBallistaWeight				= 20
 		VeninBallistaDurability			= 10
-		VeninBallistaCritrate			= 0
+		VeninBallistaCritrate			= 20
 		VeninBallistaMinRange			= 3
 		VeninBallistaMaxRange			= 10
 		VeninBallistaWeaponRank			= WeaponLocks.aVeninBallistaWeaponLock
 		VeninBallistaEffectiveness		= ItemEffectivenesses.aFlyingEffectiveness
 		VeninBallistaStatBonus			= aNoItemBonuses
-		VeninBallistaCost				= 2200
+		VeninBallistaCost				= 8000
 		VeninBallistaDescription		= <>item_descs._VeninBallistaDesc
 		VeninBallistaUseEffect			= None
-		VeninBallistaWeaponEffect		= $2
+		VeninBallistaWeaponEffect		= None
 		VeninBallistaSkills2			= None
 		VeninBallistaSkills3			= None
 		VeninBallistaTraits				= TraitBallista | TraitWeapon
-		VeninBallistaIcon				= $4B
+		VeninBallistaIcon				= $4A
 
 	BrokenBow							= 77
 		BrokenBowType					= TypeBow
@@ -1727,7 +1727,7 @@
 		FireWeaponRank					= RankE
 		FireEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		FireStatBonus					= aNoItemBonuses
-		FireCost						= 2000
+		FireCost						= 2500
 		FireDescription					= <>item_descs._FireDesc
 		FireUseEffect					= None
 		FireWeaponEffect				= None
@@ -1755,7 +1755,7 @@
 		ElfireWeaponEffect				= None
 		ElfireSkills2					= None
 		ElfireSkills3					= Skill3Paragon
-		ElfireTraits					= TraitWeapon | TraitTome
+		ElfireTraits					= TraitWeapon | TraitTome | TraitUnsellable
 		ElfireIcon						= $4E
 
 	Bolganone							= 80
@@ -1771,7 +1771,7 @@
 		BolganoneWeaponRank				= RankB
 		BolganoneEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		BolganoneStatBonus				= aNoItemBonuses
-		BolganoneCost					= 4200
+		BolganoneCost					= 3720
 		BolganoneDescription			= <>item_descs._BolganoneDesc
 		BolganoneUseEffect				= None
 		BolganoneWeaponEffect			= None
@@ -1793,7 +1793,7 @@
 		TathlumWeaponRank				= WeaponLocks.aTathlumWeaponLock
 		TathlumEffectiveness			= ItemEffectivenesses.aMagicEffectiveness
 		TathlumStatBonus				= aTathlumItemBonuses
-		TathlumCost						= 6200
+		TathlumCost						= 0
 		TathlumDescription				= <>item_descs._TathlumDesc
 		TathlumUseEffect				= None
 		TathlumWeaponEffect				= None
@@ -1815,7 +1815,7 @@
 		ThunderWeaponRank				= RankE
 		ThunderEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		ThunderStatBonus				= aNoItemBonuses
-		ThunderCost						= 2200
+		ThunderCost						= 2650
 		ThunderDescription				= <>item_descs._ThunderDesc
 		ThunderUseEffect				= None
 		ThunderWeaponEffect				= None
@@ -1859,7 +1859,7 @@
 		ThoronWeaponRank				= RankB
 		ThoronEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		ThoronStatBonus					= aNoItemBonuses
-		ThoronCost						= 4200
+		ThoronCost						= 3980
 		ThoronDescription				= <>item_descs._ThoronDesc
 		ThoronUseEffect					= None
 		ThoronWeaponEffect				= None
@@ -1903,7 +1903,7 @@
 		WindWeaponRank					= RankE
 		WindEffectiveness				= ItemEffectivenesses.aFlyingEffectiveness
 		WindStatBonus					= aNoItemBonuses
-		WindCost						= 2200
+		WindCost						= 2720
 		WindDescription					= <>item_descs._WindDesc
 		WindUseEffect					= None
 		WindWeaponEffect				= None
@@ -1947,7 +1947,7 @@
 		TornadoWeaponRank				= RankB
 		TornadoEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		TornadoStatBonus				= aNoItemBonuses
-		TornadoCost						= 4200
+		TornadoCost						= 4100
 		TornadoDescription				= <>item_descs._TornadoDesc
 		TornadoUseEffect				= None
 		TornadoWeaponEffect				= None
@@ -1991,7 +1991,7 @@
 		LightWeaponRank					= RankD
 		LightEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		LightStatBonus					= aNoItemBonuses
-		LightCost						= 2800
+		LightCost						= 3080
 		LightDescription				= <>item_descs._LightDesc
 		LightUseEffect					= None
 		LightWeaponEffect				= None
@@ -2013,7 +2013,7 @@
 		NosferatuWeaponRank				= RankC
 		NosferatuEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		NosferatuStatBonus				= aNoItemBonuses
-		NosferatuCost					= 6400
+		NosferatuCost					= 6800
 		NosferatuDescription			= <>item_descs._NosferatuDesc
 		NosferatuUseEffect				= None
 		NosferatuWeaponEffect			= $6
@@ -2035,7 +2035,7 @@
 		AuraWeaponRank					= RankA
 		AuraEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		AuraStatBonus					= aNoItemBonuses
-		AuraCost						= 5000
+		AuraCost						= 0
 		AuraDescription					= <>item_descs._AuraDesc
 		AuraUseEffect					= None
 		AuraWeaponEffect				= None
@@ -2057,7 +2057,7 @@
 		JormungandWeaponRank			= RankC
 		JormungandEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		JormungandStatBonus				= aNoItemBonuses
-		JormungandCost					= 2800
+		JormungandCost					= 2000
 		JormungandDescription			= <>item_descs._JormungandDesc
 		JormungandUseEffect				= None
 		JormungandWeaponEffect			= $2
@@ -2079,7 +2079,7 @@
 		FenrirWeaponRank				= RankA
 		FenrirEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		FenrirStatBonus					= aNoItemBonuses
-		FenrirCost						= 3400
+		FenrirCost						= 2500
 		FenrirDescription				= <>item_descs._FenrirDesc
 		FenrirUseEffect					= None
 		FenrirWeaponEffect				= None
@@ -2101,7 +2101,7 @@
 		HelWeaponRank					= RankB
 		HelEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		HelStatBonus					= aNoItemBonuses
-		HelCost							= 5000
+		HelCost							= 1100
 		HelDescription					= <>item_descs._HelDesc
 		HelUseEffect					= None
 		HelWeaponEffect					= $A
@@ -2145,7 +2145,7 @@
 		MeteorWeaponRank				= RankA
 		MeteorEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		MeteorStatBonus					= aNoItemBonuses
-		MeteorCost						= 2200
+		MeteorCost						= 4200
 		MeteorDescription				= <>item_descs._MeteorDesc
 		MeteorUseEffect					= None
 		MeteorWeaponEffect				= None
@@ -2167,7 +2167,7 @@
 		BoltingWeaponRank				= RankA
 		BoltingEffectiveness			= ItemEffectivenesses.aBallisticianEffectiveness
 		BoltingStatBonus				= aNoItemBonuses
-		BoltingCost						= 2200
+		BoltingCost						= 4540
 		BoltingDescription				= <>item_descs._BoltingDesc
 		BoltingUseEffect				= None
 		BoltingWeaponEffect				= None
@@ -2189,7 +2189,7 @@
 		BlizzardWeaponRank				= RankA
 		BlizzardEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		BlizzardStatBonus				= aNoItemBonuses
-		BlizzardCost					= 3400
+		BlizzardCost					= 4700
 		BlizzardDescription				= <>item_descs._BlizzardDesc
 		BlizzardUseEffect				= None
 		BlizzardWeaponEffect			= $E
@@ -2211,7 +2211,7 @@
 		VeninWeaponRank					= RankA
 		VeninEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		VeninStatBonus					= aNoItemBonuses
-		VeninCost						= 3400
+		VeninCost						= 2300
 		VeninDescription				= <>item_descs._VeninDesc
 		VeninUseEffect					= None
 		VeninWeaponEffect				= $2
@@ -2239,7 +2239,7 @@
 		PetrifyWeaponEffect				= $8
 		PetrifySkills2					= None
 		PetrifySkills3					= None
-		PetrifyTraits					= TraitWeapon | TraitTome
+		PetrifyTraits					= TraitWeapon | TraitTome | TraitUnsellable
 		PetrifyIcon						= $64
 
 	ForsetiInfinite						= 102
@@ -2255,7 +2255,7 @@
 		ForsetiInfiniteWeaponRank		= WeaponLocks.aRecurveBowWeaponLock
 		ForsetiInfiniteEffectiveness	= ItemEffectivenesses.aFlyingEffectiveness
 		ForsetiInfiniteStatBonus		= aNoItemBonuses
-		ForsetiInfiniteCost				= 3400
+		ForsetiInfiniteCost				= 4000
 		ForsetiInfiniteDescription		= <>item_descs._ForsetiInfiniteDesc
 		ForsetiInfiniteUseEffect		= None
 		ForsetiInfiniteWeaponEffect		= None
@@ -2563,7 +2563,7 @@
 		HammerneWeaponRank				= WeaponLocks.aHammerneWeaponLock
 		HammerneEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		HammerneStatBonus				= aNoItemBonuses
-		HammerneCost					= 0
+		HammerneCost					= 6200
 		HammerneDescription				= <>item_descs._HammerneDesc
 		HammerneUseEffect				= $54
 		HammerneWeaponEffect			= None
@@ -2585,7 +2585,7 @@
 		ThiefStaffWeaponRank			= WeaponLocks.aThiefStaffWeaponLock
 		ThiefStaffEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		ThiefStaffStatBonus				= aNoItemBonuses
-		ThiefStaffCost					= 0
+		ThiefStaffCost					= 6600
 		ThiefStaffDescription			= <>item_descs._ThiefDesc
 		ThiefStaffUseEffect				= $56
 		ThiefStaffWeaponEffect			= None
@@ -2597,15 +2597,15 @@
 	Fragarach							= 118
 		FragarachType					= TypeSword
 		FragarachAlternateType			= None
-		FragarachMight					= 14
-		FragarachAccuracy				= 95
+		FragarachMight					= 15
+		FragarachAccuracy				= 85
 		FragarachWeight					= 12
 		FragarachDurability				= 60
-		FragarachCritrate				= 10
+		FragarachCritrate				= 0
 		FragarachMinRange				= 1
 		FragarachMaxRange				= 1
 		FragarachWeaponRank				= WeaponLocks.aFragarachWeaponLock
-		FragarachEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
+		FragarachEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		FragarachStatBonus				= aNoItemBonuses
 		FragarachCost					= 0
 		FragarachDescription			= <>item_descs._FragarachDesc
@@ -2695,7 +2695,7 @@
 		RewarpWeaponRank				= RankA
 		RewarpEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		RewarpStatBonus					= aNoItemBonuses
-		RewarpCost						= 1200
+		RewarpCost						= 1400
 		RewarpDescription				= <>item_descs._RewarpDesc
 		RewarpUseEffect					= $60
 		RewarpWeaponEffect				= None
@@ -2717,7 +2717,7 @@
 		KiaWeaponRank					= WeaponLocks.aKiaWeaponLock
 		KiaEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		KiaStatBonus					= aNoItemBonuses
-		KiaCost							= 0
+		KiaCost							= 10800
 		KiaDescription					= <>item_descs._KiaDesc
 		KiaUseEffect					= $68
 		KiaWeaponEffect					= None
@@ -3511,7 +3511,7 @@
 		AccostManualStatBonus			= aNoItemBonuses
 		AccostManualCost				= 8200
 		AccostManualDescription			= <>item_descs._AccostManualDesc
-		AccostManualUseEffect			= $3C
+		AccostManualUseEffect			= $2A
 		AccostManualWeaponEffect		= None
 		AccostManualSkills2				= None
 		AccostManualSkills3				= None

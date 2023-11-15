@@ -26,7 +26,7 @@ ch23asbelced
 .byte NewLine
 .text "Because I don't..."
 .byte NewLine
-.text "Well, yes, perhaps I've grown a bit taller, but—"
+.text "Perhaps I've grown a tad taller, but—"
 .byte WaitForA 
 
 .byte left_slot
@@ -204,7 +204,7 @@ ch23mishaced
 .byte NewLine
 .text "We desperately needed gold,"
 .byte NewLine
-.text "and the highest-paying jobs were with the Empire."
+.text "and the highest-paying jobs were with the empire."
 .byte WaitForA
 .byte ScrollText
 .text "...In other words,"
@@ -309,10 +309,10 @@ ch23mishaced
 .text "can't keep up this way forever."
 .byte WaitForA
 .byte ScrollText
-.text "Lend me your strenth and valor, Misha."
+.text "Lend me your strength and valor, Misha."
 .byte WaitForA
 .byte NewLine
-.text "The sooner we liberate North Thracia,"
+.text "The sooner we liberate Thracia,"
 .byte NewLine
 .text "the sooner we can return to Silesse"
 .byte NewLine
@@ -321,29 +321,10 @@ ch23mishaced
 
 .byte left_slot
 .byte ScrollText
-.text "I'm glad to hear you have a plan, my prince."
+.text "By your order, Prince Ced!"
+.byte NewLine
+.text "Lead the way, and I shall follow."
 .byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "Is that..."
-.byte NewLine
-.text "Are you mocking me?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "And what would make you think that?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Fine, I deserve it."
-.byte NewLine
-.text "Now, let's go!"
-.byte NewLine
-.text "I'll lead the way!"
-.byte WaitForA
 
 .byte EndText
 
@@ -358,7 +339,6 @@ ch23hicksdalsin
 .word LoadPortrait
 .word hicks_portrait 
 .text "Well, I'll be!"
-.byte WaitForA 
 .byte NewLine
 .text "I can see good ol' Munster Castle"
 .byte NewLine
@@ -406,7 +386,7 @@ ch23hicksdalsin
 .byte ScrollText
 .text "Fair enough."
 .byte NewLine
-.text "Still...is that OK to you?"
+.text "Still...is that okay to you?"
 
 .byte left_slot
 .byte ScrollText
@@ -433,7 +413,7 @@ ch23hicksdalsin
 .byte NewLine
 .text "But don't take it personally!"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "Knowing you, Dalsin,"
 .byte NewLine
 .text "I think you'd take gettin' rid of the worst"
@@ -446,10 +426,7 @@ ch23hicksdalsin
 .text "Heh, when you put it that way..."
 .byte WaitForA
 .byte ScrollText
-.text "Well, anyway,"
-.byte NewLine
-.text "I feel better now."
-.byte WaitForA
+.text "Well, anyway, I feel better now."
 .byte NewLine
 .text "Besides, why shouldn't I?"
 .byte NewLine
@@ -460,7 +437,7 @@ ch23hicksdalsin
 .byte ScrollText
 .text "That's the whole of it!"
 .byte NewLine
-.text "An' while we're doin' that we can"
+.text "And while we're doing that we can"
 .byte NewLine
 .text "give Raydrik his overdue royal rear kickin'."
 .byte WaitForA
@@ -532,7 +509,7 @@ ch23schroffsaias
 
 .byte right_slot
 .byte ScrollText
-.text "...I am not sure at the moment."
+.text "...I am unsure at the moment."
 .byte NewLine
 .text "I'm here now only because I was tasked with"
 .byte NewLine
@@ -544,6 +521,11 @@ ch23schroffsaias
 .text "but I guarantee you have my support at least"
 .byte NewLine
 .text "until things have settled out here in the streets."
+.byte WaitForA
+.byte ScrollText
+.text "It'd be far too dangerous for me to"
+.byte NewLine
+.text "journey away on my own."
 .byte WaitForA 
 
 .byte left_slot
@@ -578,7 +560,7 @@ ch23schroffsaias
 .byte NewLine
 .text "in a living example of that aphorism..."
 .byte NewLine
-.text "Well said, Father Saias!"
+.text "Well said, Bishop Saias!"
 .byte WaitForA
 
 .byte EndText
@@ -613,12 +595,12 @@ ch23mareetasaias
 .byte NewLine
 .text "I still can't help but harbor doubt at times..."
 .byte NewLine
-.text "but I know that I've gotten stronger."
+.text "but I know that I've become stronger."
 .byte WaitForA
 .byte ScrollText
-.text "Your words have done much for me."
+.text "Your words have done much for me;"
 .byte NewLine
-.text "They've granted the conviction my heart needed."
+.text "they've granted the conviction my heart needed."
 .byte NewLine
 .text "I don't know how to repay you, Bishop Saias."
 .byte WaitForA
@@ -632,9 +614,9 @@ ch23mareetasaias
 .byte ScrollText
 .text "Your talent for the sword is like no other."
 .byte NewLine
-.text "All I expect from you is to not let"
+.text "All I expect from you is to not let such"
 .byte NewLine
-.text "this talent go to waste because of the past."
+.text "talent go to waste because of the past."
 .byte WaitForA
 
 .byte left_slot
@@ -694,7 +676,8 @@ ch23mareetasaias
 .byte left_slot
 .byte ScrollText
 .text "......"
-.byte NewLine
+.byte WaitForA
+.byte ScrollText
 .text "I believe you."
 .byte WaitForA
 
@@ -1107,151 +1090,250 @@ ch23fredolwen
 .word fred_portrait
 .text "Lady Olwen, are you all right?"
 .byte NewLine
-.text "You've been awfully quiet since our last battle."
+.text "You've not spoken a word since our last battle."
 .byte WaitForA
 
 .byte right_slot
-.text "Oh, Fred, don't mind me..."
+.text "Your concern is unnecessary, Fred."
 .byte NewLine
-.text "I still need some time to"
+.text "I've just had much to think about"
 .byte NewLine
-.text "process all of this, that's all."
+.text "and consider all of a sudden."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I cannot imagine how much this"
+.text "I can only try to imagine the way"
 .byte NewLine
-.text "has been weighing on you, milady,"
+.text "all this appears to you, milady."
 .byte NewLine
-.text "but remember that you are not alone in this."
-.byte WaitForA
-.byte ScrollText
-.text "You now have new allies and friends in the"
-.byte NewLine
-.text "Liberation Army, you have Prince Leif,"
-.byte NewLine
-.text "and of course... You have me."
+.text "Whenever you do wish to talk, I am ready."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "Thank you, Fred."
 .byte NewLine
-.text "To be quite honest with you, my mind has"
-.byte NewLine
-.text "been flooded with memories of our past."
+.text "Perhaps that time should be now."
 .byte WaitForA
 .byte ScrollText
-.text "My early childhood with my dear brother,"
+.text "It's just..."
 .byte NewLine
-.text "our first days at the academy,"
+.text "Ever since taking hold of this sword,"
 .byte NewLine
-.text "how you and I first met..."
+.text "far too many memories have come flooding back."
+.byte WaitForA
+.byte ScrollText
+.text "I see the faces of many former friends"
+.byte NewLine
+.text "and allies who now all sleep."
+.byte WaitForA
+.byte ScrollText
+.text "I see you too, Fred."
+.byte NewLine
+.text "But you're there...and here."
+.byte NewLine
+.text "It relieves my spirit."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "W-Well, that is a story I would much rather"
+.text "You see me..."
 .byte NewLine
-.text "have you forget about, milady!"
+.text "What did you see me doing?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "*giggle* Why?"
-.byte NewLine
-.text "It was entirely your fault that"
-.byte NewLine
-.text "you fell asleep during the exam!"
-.byte WaitForA
-.byte ScrollText
-.text "I can't believe you spent the"
-.byte NewLine
-.text "entire previous night studying!"
-.byte NewLine
-.text "You've always worked a bit too hard..."
+.text "You were sleeping."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Well, how could I not?"
-.byte NewLine
-.text "Before we met, I had to do my best just to"
-.byte NewLine
-.text "keep my part as a knight of House Friege." 
-.byte WaitForA
-.byte ScrollText
-.text "However, after we met, and"
-.byte NewLine
-.text "especially after I was assigned under you..."
-.byte NewLine
-.text "I suppose I found a new reason to do so."
+.text "...E-excuse me?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "F-Fred? What's that supposed to mean?"
+.text "Heh, some context would probably be handy."
+.byte WaitForA
+.byte NewLine
+.text "I'm thinking of right after our final exam."
+.byte NewLine
+.text "Seeing the bags under your eyes,"
+.byte NewLine
+.text "you'd clearly been up the entire night studying."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "What I mean is that you're nothing short of"
+.text "...Are you implying that you weren't?"
 .byte NewLine
-.text "admirable, milady. Most people in your shoes"
-.byte NewLine
-.text "would have already faltered long ago, but..."
-.byte WaitForA
-.byte ScrollText
-.text "You've kept going no matter what."
-.byte NewLine
-.text "I couldn't be prouder to fight,"
-.byte NewLine
-.text "by your side, and..."
+.text "That's m-most disgraceful."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "And...?"
+.text "Whatever I did, I most assuredly did not"
+.byte NewLine
+.text "make it as obvious as you!"
+.byte NewLine
+.text "May I continue?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "N-Nevermind that, milady."
-.byte NewLine
-.text "It appears your spirits have been lifted,"
-.byte NewLine
-.text "judging by your ever-lovely smile."
+.text "...Very well."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Oh, Fred..."
+.text "I watched you wander off, saying you needed"
 .byte NewLine
-.text "Thank you."
-.byte WaitForA
-.byte ScrollText
-.text "I really don't know why my heart sunk so low..."
+.text "to sit down and lean back for a moment."
 .byte NewLine
-.text "But with you and my comrades all by my side,"
-.byte NewLine
-.text "I believe I will be able to overcome anything."
-.byte WaitForA
-.byte ScrollText
-.text "Let us return to battle now, but not before you"
-.byte NewLine
-.text "promise that you'll tell me what you meant to"
-.byte NewLine
-.text "say earlier!"
+.text "And then..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "M-Milady!"
+.text "R-right..."
 .byte NewLine
-.text "I... Heh. Fair enough."
+.text "Next thing I knew, I was in my quarters."
+.byte WaitForA
 .byte NewLine
-.text "It's a promise then."
+.text "I woke up to you staring at me like"
+.byte NewLine
+.text "a puppy that was waiting for me"
+.byte NewLine
+.text "to open the door to go outside."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hee hee."
+.byte NewLine
+.text "You always make the silliest comparisons."
+.byte NewLine
+.text "You're the one who slept like a child."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "So that's how you've always seen me."
+.byte NewLine
+.text "Just a mere, defenseless child..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...You know I adore children."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...!"
+.byte NewLine
+.text "You... R-right, er..."
+.byte NewLine
+.text "I-I knew that. Most definitely I did."
+.byte WaitForA
+.byte ScrollText
+.text "But now that I think about it, did you,"
+.byte NewLine
+.text "Lady Olwen..."
+.byte NewLine
+.text "Did you...carry me to my quarters...y-yourself?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well I...I did try, but I was unable to, sadly."
+.byte NewLine
+.text "It was no issue, though."
+.byte NewLine
+.text "All I had to do was call over... C-call over..."
+.byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Lady Olwen..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "No, no—i-it's okay."
+.byte NewLine
+.text "I'm stronger than this."
+.byte NewLine
+.text "This is just the next step forward."
+.byte WaitForA
+.byte ScrollText
+.text "...Fred."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Maybe you could... Would you..."
+.byte NewLine
+.text "Would you be willing to wield this sword"
+.byte NewLine
+.text "in my stead, if it came to it?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "If it's your order."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, it's not."
+.byte NewLine
+.text "It'd be a request."
+.byte WaitForA
+.byte ScrollText
+.text "It's quite the potent weapon, and one I think"
+.byte NewLine
+.text "would suit you well in the event that I...decided"
+.byte NewLine
+.text "I didn't want to look at it so much anymore."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I understand."
+.byte NewLine
+.text "Then I accept."
+.byte WaitForA
+.byte ScrollText
+.text "You may hand it over to me at any time,"
+.byte NewLine
+.text "and know that each swing will be only to bring"
+.byte NewLine
+.text "honor and prestige to your righteous name."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Th...thank you, Fred. *sniff*"
+.byte NewLine
+.text "I'm...beyond glad you've stuck by me all this time."
+.byte NewLine
+.text "I'd have easily lost my way were it not for you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "The feeling is forever mutual, my friend."
 .byte WaitForA
 
 .byte EndText

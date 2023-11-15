@@ -57,7 +57,7 @@ eventChapter15Data ; B1/B3B3
 		.byte 17, 8
 
 	_ShannamGroup ; B1/B609
-		UNIT Shannam, Enemy, [17, 1], [17, 1], Seil, [IronBlade], 1, False, [$02, $2A, $00, $00]
+		UNIT Shannam, Enemy, [17, 1], [17, 1], Seil, [IronSword], 1, False, [$02, $2A, $00, $00]
 	UNIT
 
 	_BrigandHunterThiefCameraCoordinates ; B1/B61F
@@ -80,7 +80,7 @@ eventChapter15Data ; B1/B3B3
 	;	.byte 17, 10
 
 	_RalphAmaldaGroup ; B1/B679
-		UNIT Amalda, NPC, [19, 10], [19, 10], Amalda, [MasterSword, Recover, Vulnerary], 6, False, [$00, $03, $02, $80]
+		UNIT Amalda, NPC, [19, 10], [19, 10], Amalda, [MasterSword, FlameSword, Mend, Vulnerary], 5, False, [$00, $03, $02, $80]
 		UNIT Ralph, NPC, [18, 14], [17, 9], Ralph, [IronBlade, HandAxe], 1, False, [$00, $03, $02, $80]
 	UNIT
 	

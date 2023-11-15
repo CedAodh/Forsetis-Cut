@@ -483,9 +483,9 @@ fctravantarion
 .byte ScrollText
 .text "North Thracia—the land I had gone through so"
 .byte NewLine
-.text "much to finally have as my own—was taken from me"
+.text "much to finally have as my own—was taken from"
 .byte NewLine
-.text "just like that. All those years...for nothing."
+.text "me just like that. All those years...for nothing."
 .byte WaitForA
 .byte ScrollText
 .text "As it stands, it's no exaggeration to say"
@@ -1229,6 +1229,216 @@ ch14wm3
 .text "that stands to forever alter history"
 .byte NewLine
 .text "of the Thracian peninsula..."
+.byte WaitForA
+
+.byte EndText
+
+thefabledwarmeeting
+
+.word PlayMusic
+.byte $32
+
+.byte right_slot
+.word LoadPortrait
+.word cohen_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word eda_portrait
+.text "...Bishop Gunnar, I've nothing to contribute here."
+.byte NewLine
+.text "I shall go see the duchess."
+.byte WaitForA
+
+.byte right_slot
+.text "Of course, Eda. Please do."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.text "I'll await you on the battlefield, Prince Leif."
+.byte NewLine
+.text "It was good to meet you."
+.byte WaitForA
+
+.byte right_slot
+.text "Yes, the same to you, Eda."
+.byte NewLine
+.text "I am most eager to see what a wyvern rider"
+.byte NewLine
+.text "can do for us, if I may speak so bluntly."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, I am still in training..."
+.byte NewLine
+.text "B-but don't worry—I've got some tricks"
+.byte NewLine
+.text "I can already pull off. You'll see!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
+.word LoadPortrait
+.word cohen_portrait
+.text "...Time will be running out soon."
+.byte NewLine
+.text "How can we repel the siege...?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word augustus_portrait
+.text "Hrm..."
+.byte NewLine
+.text "You said that the siege is focusing on just"
+.byte NewLine
+.text "a few narrow gaps between Tarrah's walls."
+.byte WaitForA
+.byte ScrollText
+.text "We could then send our more sturdy soldiers"
+.byte NewLine
+.text "to hold those points for quite a while, no?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'm afraid it's not entirely viable, August."
+.byte NewLine
+.text "Within the past day, the empire's ballistae"
+.byte NewLine
+.text "have been moved closer—"
+.byte WaitForA
+.byte ScrollText
+.text "you'll likely just be in their attack range,"
+.byte NewLine
+.text "making the point quite difficult to hold"
+.byte NewLine
+.text "steady like that."
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word dorius_portrait
+.text "I have to agree."
+.byte NewLine
+.text "And the remainder of our army reported that"
+.byte NewLine
+.text "they saw large battalions of cavalry approaching."
+.byte WaitForA
+.byte ScrollText
+.text "Once the walls are broken, those knights will"
+.byte NewLine
+.text "surely knock us around until one of us breaks."
+.byte NewLine
+.text "And I'm having trouble seeing any end to them."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Then we'll have to make the most of"
+.byte NewLine
+.text "our space within the walls."
+.byte NewLine
+.text "Move around and adjust as necessary."
+.byte WaitForA
+.byte NewLine
+.text "Can we agree on that?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word cohen_portrait
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word dorius_portrait
+.text "...There's no other strategy I can conjure up,"
+.byte NewLine
+.text "I'm afraid."
+.byte WaitForA
+.byte ScrollText
+.text "Very well, August."
+.byte NewLine
+.text "We'll issue the troops your command."
+.byte NewLine
+.text "Did you hear that, Prince Leif?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait
+.text "I did, yes."
+.byte NewLine
+.text "Whatever it takes, we will defend Tarrah!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word cohen_portrait
+.text "Oh ho! Hear, hear, Prince Leif!"
+.byte NewLine
+.text "Come with me, please—"
+.byte NewLine
+.text "I shall accompany you to the battleground."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I will do just that."
+.byte NewLine
+.text "Thank you, Bishop Gunnar."
+.byte WaitForA
+.byte ScrollText
+.text "Dryas!"
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word dorius_portrait
+
+.byte right_slot
+.byte NewLine
+.text "August!"
+
+.byte left_slot
+.word LoadPortrait
+.word augustus_portrait
+
+.byte right_slot
+.byte NewLine
+.text "Alert everyone!"
+.byte WaitForA
+.byte ScrollText
+.text "It's time for us to rise"
+.byte NewLine
+.text "and overcome this challenge!"
+.byte WaitForA
+
+.byte left_slot
+.text "As you will, sire."
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word dorius_portrait
+.text "Indubitably!"
+.byte NewLine
+.text "Best of luck, my prince!"
 .byte WaitForA
 
 .byte EndText

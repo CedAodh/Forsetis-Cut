@@ -692,6 +692,12 @@ eventChapter17BEvents ; FD/C4D0
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter17BData._AmaldaGroup
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK
+		
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Strength, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Skill, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Speed, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Defense, 1
+		macroSubtractCharacterByte Amalda, structCharacterDataRAM.Movement, 1
 
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32

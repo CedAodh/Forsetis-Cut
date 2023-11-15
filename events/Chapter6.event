@@ -44,9 +44,11 @@ eventChapter6Events ; 99/A346
 
 	_TalkEventDefinitions ; 99/A3D4
                 EVENT $1A, _AsbelLeifTalk
+                        RUN_ASM _rlChapter4xCheck
 			CHECK_CHARS2 Asbel, Leif
 		END_DEFINITION
 		EVENT $1B, _LeifAsbelTalk
+                        RUN_ASM _rlChapter4xCheck
 			CHECK_CHARS2 Leif, Asbel
 		END_DEFINITION
 		EVENT $1C, _KarinCedTalk

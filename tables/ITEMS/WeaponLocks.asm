@@ -5,7 +5,7 @@ aGaeBolgWeaponLock ; B0/99D6
 
 aEarthSwordWeaponLock ; B0/99DA
 	.word Nanna
-	.word IllusionNanna
+	.word IllusionLeif
 	.word 0
 
 aGrafcaliburWeaponLock ; B0/99DE
@@ -57,6 +57,7 @@ aBallistaWeaponLock ; B0/9A0E
 	.word FriegeBallista2
 	.word FriegeBallista3
 	.word FriegeBallista4
+	.word LeonsterBallista
 	.word 0
 
 aTathlumWeaponLock ; B0/9A1A
@@ -71,7 +72,6 @@ aVeninBallistaWeaponLock ; B0/9A1C
 	.word 0
 
 aIronBallistaWeaponLock ; B0/9A22
-	.word LeonsterBallista
 	.word FriegeBallista5
 	.word Rilke
 	.word 0
@@ -121,7 +121,7 @@ aGungnirWeaponLock
 
 aMareetaWeaponLock ; B0/9A4E
 	.word Mareeta
-	.word IllusionMareeta
+	.word IllusionLeif
 	.word 0
 
 aOlwenReinhardtWeaponLock ; B0/9A52

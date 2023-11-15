@@ -491,7 +491,7 @@ _KillerBallista_name
 	.word $0000
 
 _VeninBallista_name
-	.text "Venin Ballista"
+	.text "Killer Ballista "
 	.word $0000
 
 _BrokenBow_name

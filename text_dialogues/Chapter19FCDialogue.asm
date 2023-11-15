@@ -423,3 +423,196 @@ leifconomor
 .byte WaitForA
 
 .byte EndText
+
+
+schroffsgf
+
+.byte Right_slot
+.word LoadPortrait
+.word schroff_portrait
+
+.byte Left_slot
+.word LoadPortrait
+.word collar_portrait
+.text "Father Schroff!"
+.byte NewLine
+.text "Thank goodness you're here!"
+.byte WaitForA
+
+.byte right_slot
+.text "Yes?"
+.byte NewLine
+.text "You're one of our scouts, correct?"
+.byte NewLine
+.text "What do you require of me, good sir?"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "There's not much time before the Empire's"
+.byte NewLine
+.text "forces arrive in full, and I'm afraid we won't"
+.byte NewLine
+.text "be able to ensure your safety if you stay here."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Is that so?"
+.byte NewLine
+.text "I understand your orders, but..."
+.byte NewLine
+.text "How have things grown so dire?"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "It seems like House Friege's 10th Division"
+.byte NewLine
+.text "had arrived in Ulster to help quell their"
+.byte NewLine
+.text "rebellion, and are now headed this way."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "The 10th Division, you say?"
+.byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "I'd recommend you heed my advice, Father,"
+.byte NewLine
+.text "but if you'd rather stay, then I won't stop you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I shall make my decision momentarily,"
+.byte NewLine
+.text "and I thank you for your understanding."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte right_slot
+.byte ScrollText
+.text "The 10th Division... "
+.byte NewLine
+.text "That would be Dame Amalda's battalion."
+.byte NewLine
+.text "This must be a mistake, she wouldn't..."
+.byte WaitForA
+.byte ScrollText
+.text "No."
+.byte NewLine
+.text "I can't let her continue down this path."
+.byte NewLine
+.text "If the gods will it, I must meet with her."
+.byte WaitForA
+
+.byte EndText
+
+
+mirandaangry
+
+.byte Right_slot
+.word LoadPortrait
+.word miranda_portrait
+
+.byte Left_slot
+.word LoadPortrait
+.word collar_portrait
+.text "Excuse me, young lady,"
+.byte NewLine
+.text "could you perhaps be"
+.byte NewLine
+.text "Princess Miranda?"
+.byte WaitForA
+
+.byte right_slot
+.text "Pardon?"
+.byte NewLine
+.text "What kind of question is that?"
+.byte NewLine
+.text "Is my royal mien not apparent to you?!"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Um... My apologies, Princess."
+.byte NewLine
+.text "I was here to bring an urgent message"
+.byte NewLine
+.text "from the front lines. If I'm allowed to."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, if its that urgent..."
+.byte NewLine
+.text "Shouldn't you be saying it already?!"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Y-yes ma'am!"
+.byte WaitForA
+.byte ScrollText
+.text "We've received word that Count Conomor"
+.byte NewLine
+.text "and the Knights of Ulster took part in"
+.byte NewLine
+.text "quelling the civilian uprising."
+.byte WaitForA
+.byte ScrollText
+.text "Scouts say that they are headed here"
+.byte NewLine
+.text "to reinforce the Friegan army,"
+.byte NewLine
+.text "and will arrive soon."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "WHAT?!"
+.byte NewLine
+.text "Conomor... That old fool!"
+.byte NewLine
+.text "Just what is he thinking?!"
+.byte WaitForA
+.byte ScrollText
+.text "Ugh! I cannot allow this madness"
+.byte NewLine
+.text "to go on a second longer!"
+.byte NewLine
+.text "I must speak with him!"
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "That's all well and good, Princess, but..."
+.byte NewLine
+.text "How are you planning to do that, exactly?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Huh?"
+.byte NewLine
+.text "You say something?!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "N-no..."
+.byte NewLine
+.text "If you'll excuse me."
+.byte WaitForA
+
+.byte EndText

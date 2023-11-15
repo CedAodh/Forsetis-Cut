@@ -43,6 +43,40 @@ eventChapter24WorldMapEvents ; E7/F5FA
 	FADE_OUT $02
 	YIELD
 
-	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
+        CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
+
+	STORE_WORD wEventEngineCharacterTarget, Mareeta
+	CALL_ASM_LOOP rlASMCCheckUnitExists, $0000
+	JUMP_FALSE +
+	macroCheckTurnStatusSet Mareeta, TurnStatusCaptured
+	JUMP_TRUE +
+	
+	EVENT_TEST_FLAG_SET $A3
+	JUMP_TRUE +
+	
+	FADE_OUT $02
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	macroDialogueWithBackground mareetaslays, 1
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	SET_MUSIC $2D
+	YIELD
+	
+	+
 END1

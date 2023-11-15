@@ -709,7 +709,7 @@ ch23leifced
 .byte ScrollText
 .text "How fitting that this fiend will meet his end"
 .byte NewLine
-.text "at the hands of the Prince of Leonster..."
+.text "at the hands of the prince of Leonster..."
 .byte NewLine
 .text "Gods be with you, Prince Leif!"
 .byte WaitForA
