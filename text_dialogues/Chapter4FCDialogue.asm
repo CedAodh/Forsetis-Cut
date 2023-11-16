@@ -1039,7 +1039,7 @@ ch4op1weisedition
 
 .byte right_slot
 .byte ScrollText
-.text "I've been replaced by Bandole of all people,"
+.text "I've been replaced by Bondol of all people,"
 .byte NewLine
 .text "as if my luck couldn't get any worse..."
 .byte NewLine
