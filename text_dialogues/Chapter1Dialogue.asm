@@ -259,22 +259,22 @@ ch1op3
 	.byte EndText
 
 ch1op4
-
-	.byte Left_slot
-    .word LoadPortrait
-    .word eyvel_portrait
 	
     .byte Right_Slot
     .word LoadPortrait
     .word halvan_portrait
-	.byte $09 ; font 9(always use font 9)	
+	
+	.byte Left_slot
+    .word LoadPortrait
+    .word eyvel_portrait
+	
+	.byte Right_Slot
 	.text "Commander, Fiana is packed to the brim"
 	.byte NewLine
 	.text "with imperial troops!"
 	.byte NewLine
 	.text "They...must have struck while we were away."
 	.byte WaitForA
-	.byte ScrollText
 	
 	.byte Left_Slot
 	.word LoadPortrait
@@ -284,13 +284,13 @@ ch1op4
 	.text "of our home! "
 	
 	.byte Right_Slot
+	.byte ScrollText
 	.word LoadPortrait
 	.word eyvel_portrait
 	
 	.byte Left_Slot	
 	.text " Commander, let's move in!"
 	.byte WaitForA
-	.byte ScrollText
 	
 	.byte Right_Slot
 	.word LoadPortrait
@@ -308,7 +308,6 @@ ch1op4
 	.byte NewLine
 	.text "rounded up and jailed!"
 	.byte WaitForA
-	.byte ScrollText
 	
 	.byte Right_Slot
 	.byte ScrollText
@@ -328,11 +327,12 @@ ch1op4
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "Looks like this is goodbye, Little Leif. I'm sorry."
+	.text "It looks like this is goodbye, Lord Leif."
+	.byte NewLine
+	.text "I'm sorry."
 	.byte WaitForA
 	
 	.byte Left_Slot
-	.word ClearPortrait
 	.word LoadPortrait
 	.word finn_portrait
 	
@@ -355,7 +355,7 @@ ch1op4
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "I'll get her back. Don't worry."
+	.text "I'll get her back—don't worry."
 	.byte WaitForA
 	
 	.byte Left_Slot
@@ -369,7 +369,7 @@ ch1op4
 	
 	.byte Right_slot
 	.byte ScrollText
-	.text "...Finn, you wanna weigh in here?"
+	.text "...Finn, weigh in here, would you?"
 	
 	.byte Left_Slot
 	.byte ScrollText
@@ -378,9 +378,9 @@ ch1op4
 	
 	.byte Right_Slot
 	.byte NewLine
-	.text "You going to let the Little Lord throw himself"
+	.text "Are you going to let Lord Leif throw"
 	.byte NewLine
-	.text "into harm's way like this?"
+	.text "himself into harm's way like this?"
 	.byte WaitForA
 	
 	.byte Left_Slot
@@ -395,16 +395,15 @@ ch1op4
 	.byte ScrollText
 	.text "Has it been that long already?"
 	.byte NewLine
-	.text "Hmph, I suppose I let Little Leif come with us"
+	.text "Hmph, I suppose I did let him come with us"
 	.byte NewLine 
 	.text "to fight off those pirates, myself..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Guess I made up my own mind when I did that."
+	.text "Perhaps I made up my own mind when I did that."
 	.byte NewLine
 	.text "If Finn's all right with it, so am I."
 	.byte WaitForA
-	.byte ScrollText
 	
 	.byte Left_Slot
 	.byte ScrollText
@@ -423,14 +422,14 @@ ch1op4
 	.byte ScrollText
 	.text "All right, get ready to move in. But stay sharp:"
 	.byte NewLine
-	.text "most foot-soldiers are just regular folk,"
+	.text "most foot soldiers are just regular folk,"
 	.byte NewLine
 	.text "forced into the imperial army against their will."
 	.byte WaitForA
 	.byte ScrollText
 	.text "If they surrender, just take their weapons"
 	.byte NewLine
-	.text "and let them go. Are we clear?"
+	.text "and cut them loose. Are we clear?"
 	.byte WaitForA
 	
 	.byte Left_Slot
@@ -449,7 +448,7 @@ ch1op4
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "Knock 'em around if you have to, sure,"
+	.text "Knock them around if you have to, sure,"
 	.byte NewLine
 	.text "but don't overdo it.  "
 	.byte WaitForA
@@ -463,7 +462,6 @@ ch1op4
 	.byte WaitForA
 	
 	.byte Left_Slot
-	.byte ScrollText
 	.text "Hey, c'mon, gimme some credit, Commander!"
 	.byte WaitForA
 	
@@ -473,7 +471,7 @@ ch1op4
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "Okay, enough chatter! Let's give the empire"
+	.text "Okay, enough prattle! Let's give the empire"
 	.byte NewLine
 	.text "a battle worthy of our names as Freeblades!"
 	.byte WaitForA
@@ -745,12 +743,12 @@ ch1halvanhousehalvan
 	.byte ScrollText
 	.text "She gave it to me, then vanished, quick"
 	.byte NewLine
-	.text "as you can blink! I been keepin' it for you,"
+	.text "as you can blink! I've been keepin' it for you,"
 	.byte NewLine
-	.text "and takin' real good care of it."
+	.text "and taking real good care of it."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Now go put it to use, an' make me proud!"
+	.text "Now go put it to use, and make me proud!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -763,7 +761,7 @@ ch1halvanhouseother
 	.byte $09 ; font 9(always use font 9)	
 	.text "Hey, hey, have you seen my big brother,"
 	.byte NewLine
-	.text "Halvan? He's got me awful scared..."
+	.text "Halvan? He's got me awfully scared..."
 	.byte NewLine
 	.text "I hope he's all right..."
 	.byte WaitForA
@@ -784,9 +782,9 @@ ch1ending
 	.byte Left_slot
     .word LoadPortrait
     .word eyvel_portrait
-	.text "Little Nan, Mareeta..."
+	.text "Lady Nanna, Mareeta..."
 	.byte NewLine
-	.text "Raydrik must've taken 'em."
+	.text "Raydrik must've gotten ahold of them."
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -816,7 +814,7 @@ ch1ending
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Now look here, Little Leif—" ;interrupt
+	.text "Now look here, Lord Leif—" ;interrupt
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -842,7 +840,7 @@ ch1ending
 	.byte ScrollText
 	.text "...I understand. We leave at dawn, then."
 	.byte NewLine
-	.text "I won't lie, Lord Leif: this is gonna get rough."
+	.text "I won't lie, Lord Leif: this will be a long road."
 	.byte NewLine
 	.text "Get some rest while you can."
 	.byte WaitForA
@@ -1083,7 +1081,7 @@ ch1dagdareyveltalk
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Yeah. The Little Lord, Leif, he's..."
+	.text "Yeah. Lord Leif, he's..."
 	.byte NewLine
 	.text "He's not just some nobleman."
 	.byte NewLine

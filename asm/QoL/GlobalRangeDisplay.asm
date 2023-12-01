@@ -277,6 +277,15 @@ rlDrawGlobalAttackRange
 	jmp _3To15Range
 
 	+
+
+	lda aItemDataBuffer.Range,b
+	and #$00FF
+	cmp # 2 | (3 << 4)
+	bne +
+
+	jmp _2To3Range
+
+	+
 	and #$000F
 	tax
 	inc wR15,x
@@ -387,6 +396,13 @@ rlDrawGlobalAttackRange
 
 	_3To15Range
 	lda #3 | (15 << 4)
+	sta wR17
+	jsr rsDrawAttackRangeGlobalByMinMax
+	jsl $848B72
+	rtl
+
+	_2To3Range
+	lda #2 | (3 << 4)
 	sta wR17
 	jsr rsDrawAttackRangeGlobalByMinMax
 	jsl $848B72

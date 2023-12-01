@@ -493,131 +493,292 @@ ch4daisyturn1
 
 brightonmacha
 
-	.byte right_slot
-	.word $3A00
-	.word macha_portrait
-	.text "*sigh*"
-	.byte WaitForA
-	.byte ScrollText
-	.text "......"
-	.byte WaitForA
+.byte right_slot
+.word LoadPortrait
+.word macha_portrait
 
-	.byte left_slot
-	.word $3A00
-	.word brighton_portrait
-	.text "Macha, my sweet."
-	.byte NewLine
-	.text "Is there something wrong?"
-	.byte WaitForA
+.byte left_slot
+.word LoadPortrait
+.word brighton_portrait
+.text "Macha, everything all right?"
+.byte WaitForA
 
-	.byte right_slot
-	.byte ScrollText
-	.text "Oh, Brighton."
-	.byte NewLine
-	.text "...It's nothing new."
-	.byte WaitForA
-	.byte ScrollText
-	.text "My feelings in a place like this..."
-	.byte NewLine
-	.text "They're overwhelming."
-	.byte NewLine
-	.text "Please tell me this isn't Munster."
-	.byte WaitForA
+.byte right_slot
+.text "Everything is sublime, dearest."
+.byte WaitForA
 
-	.byte left_slot
-	.byte ScrollText
-	.text "...I'm sorry, Macha."
-	.byte NewLine
-	.text "I...I don't know what to say."
-	.byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Hm. I suppose maybe I don't need"
+.byte NewLine
+.text "to be asking as often as I am."
+.byte NewLine
+.text "You do always find your way easily."
+.byte WaitForA
 
-	.byte right_slot
-	.byte ScrollText
-	.text "It's all right."
-	.byte NewLine
-	.text "There wouldn't..."
-	.byte NewLine
-	.text "There wouldn't even be any point."
-	.byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "Hee hee."
+.byte WaitForA
 
-	.byte left_slot
-	.byte ScrollText
-	.text "It just means that we have to start"
-	.byte NewLine
-	.text "thinking about the future now."
-	.byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "We should definitely work together on"
+.byte NewLine
+.text "this one, though. One never knows if we're"
+.byte NewLine
+.text "about to get swarmed by a patrol of guards."
+.byte WaitForA
 
-	.byte right_slot
-	.byte ScrollText
-	.text "The future..."
-	.byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "It's worth considering."
+.byte NewLine
+.text "There's no point in rushing if we each"
+.byte NewLine
+.text "just corner ourselves with no way out."
+.byte WaitForA
+.byte NewLine
+.text "Not that I'm expecting you'll lose to anyone."
+.byte WaitForA
 
-	.byte left_slot
-	.byte ScrollText
-	.text "That's right!"
-	.byte NewLine
-	.text "And we've already gotten a start on it:"
-	.byte NewLine
-	.text "the Magi Squad."
-	.byte WaitForA
-	
-	.byte right_slot
-	.byte ScrollText
-	.text "The Magi were barely getting by recently."
-	.byte NewLine
-	.text "If Lord Ced hadn't taken over, I can only"
-	.byte NewLine
-	.text "wonder how you'd be acting right now."
-	.byte WaitForA
-	
-	.byte left_slot
-	.byte ScrollText
-	.text "Th-that's a bit beside the point..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Either way, I did what I thought was right."
-	.byte NewLine
-	.text "I could never have followed the path"
-	.byte NewLine
-	.text "Father set for me."
-	.byte WaitForA
-	.byte ScrollText
-	.text "A knight exists to protect his subjects."
-	.byte NewLine
-	.text "Once the Knights of Munster stopped"
-	.byte NewLine
-	.text "doing that, I had no reason to stay."
-	.byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Of course not. Never!"
+.byte WaitForA
 
-	.byte right_slot
-	.byte ScrollText
-	.text "Well, I'm glad you left."
-	.byte NewLine
-	.text "Because it means I now have a"
-	.byte NewLine
-	.text "handsome knight all to myself."
-	.byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "...Brighton."
+.byte WaitForA
 
-	.byte left_slot
-	.byte ScrollText
-	.text "As you say, my lady."
-	.byte WaitForA
-	.byte ScrollText
-	.text "And there's the smile I was looking for!"
-	.byte NewLine
-	.text "It's a very nice smile, I'll remind you."
-	.byte WaitForA
-	
-	.byte right_slot
-	.byte ScrollText
-	.text "Haha... You got me this time."
-	.byte NewLine
-	.text "Thank you, Brighton."
-	.byte NewLine
-	.text "Now, let's get back to it."
-	.byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "What is it?"
+.byte WaitForA
 
-	.byte EndText
+.byte right_slot
+.byte ScrollText
+.text "A few days ago, I..."
+.byte NewLine
+.text "I heard some of our new recruits talking."
+.byte WaitForA
+.byte NewLine
+.text "That pair of former knights, specifically."
+.byte NewLine
+.text "You know the ones I'm referring to?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Mm... Yes."
+.byte NewLine
+.text "What were they talking about?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "They said they... That they recognized you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...And?"
+.byte WaitForA
+.byte NewLine
+.text "I mean...what is the confusion?"
+.byte NewLine
+.text "I was the founder of the Magi and our"
+.byte NewLine
+.text "leader before Lord Ced stepped in."
+.byte WaitForA
+.byte ScrollText
+.text "Would it not make sense for some"
+.byte NewLine
+.text "to know who I am?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "No, no. I mean...they recognized you from"
+.byte NewLine
+.text "the Knights of Munster. That's what Lord Ced"
+.byte NewLine
+.text "and I heard when we happened by them."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oh, I...I see."
+.byte NewLine
+.text "That would be more clear."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Brighton, why? Why would you withhold"
+.byte NewLine
+.text "something like that from me?"
+.byte NewLine
+.text "You...you were...serving the empire?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Macha, I..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...All right."
+.byte WaitForA
+.byte ScrollText
+.text "Up until not too long ago, I was a knight."
+.byte NewLine
+.text "A knight who...served under Raydrik,"
+.byte NewLine
+.text "like my father once did before me."
+.byte WaitForA
+.byte ScrollText
+.text "...For the record, I've never come up with"
+.byte NewLine
+.text "any reason to bring this to light."
+.byte WaitForA
+.byte ScrollText
+.text "I figured the less among the Magi who knew"
+.byte NewLine
+.text "about my past misdeeds, the easier it would"
+.byte NewLine
+.text "be to band together everyone's morale and trust."
+.byte WaitForA
+.byte ScrollText
+.text "I wanted my fellow compatriots to be able"
+.byte NewLine
+.text "to look at me and not think of any ties"
+.byte NewLine
+.text "I may have to our enemy."
+.byte WaitForA
+.byte ScrollText
+.text "I'm aware that in a resistance such as ours,"
+.byte NewLine
+.text "the slightest wrong move in that area"
+.byte NewLine
+.text "could have far-reaching consequences."
+.byte WaitForA
+.byte ScrollText
+.text "...And above all else, I was paranoid to my"
+.byte NewLine
+.text "very core that knowing such a state of affairs"
+.byte NewLine
+.text "would cause you to forever resent me."
+.byte WaitForA
+.byte ScrollText
+.text "“How could you ever love someone who was at" 
+.byte NewLine
+.text "one point against everything you knew and held"
+.byte NewLine
+.text "dear?” That's the sort of thing I kept thinking."
+.byte WaitForA
+.byte ScrollText
+.text "But now, I..."
+.byte NewLine
+.text "I'm...I'm so sorry, Macha."
+.byte NewLine
+.text "Please, please forgive me."
+.byte WaitForA
+.byte NewLine
+.text "I never should have thought to conceal"
+.byte NewLine
+.text "this truth from you."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "It's... It's okay, Brighton. I think the torture"
+.byte NewLine
+.text "your conscience underwent is punishment enough."
+.byte NewLine
+.text "Because...that must have been for..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Long enough!"
+.byte NewLine
+.text "But please, don't let something like"
+.byte NewLine
+.text "this happen again."
+.byte WaitForA
+.byte ScrollText
+.text "Look, I trust you, okay?"
+.byte NewLine
+.text "I always did before, and I want to still."
+.byte WaitForA
+.byte ScrollText
+.text "I understand the temptation to keep secrets,"
+.byte WaitForA
+.byte NewLine
+.text "but I really want to get it across"
+.byte NewLine
+.text "to you that no matter what it is,"
+.byte NewLine
+.text "it's better for you to just tell me."
+.byte WaitForA
+.byte ScrollText
+.text "Promise me?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I could do no less, my love."
+.byte NewLine
+.text "I'll never make such a fatal blunder again."
+.byte WaitForA
+.byte ScrollText
+.text "On my honor as a knight;"
+.byte NewLine
+.text "my loyalty is to you and to our"
+.byte NewLine
+.text "eternal bond first and foremost."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...No matter how dark our world gets, you..."
+.byte NewLine
+.text "Brighton, you just..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Just what?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Just a few words from you leaves me with"
+.byte NewLine
+.text "a smile for all remaining hours of the day."
+.byte NewLine
+.text "...Please don't ever let up on that."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Heh, then it's as I just said: I could do no less."
+.byte WaitForA
+
+.byte EndText
 	
 	ch4daisycellopened
 

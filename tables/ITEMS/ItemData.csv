@@ -103,17 +103,17 @@ Venin,TypeDark,None,12,80,20,5,0,3,10,RankA,ItemEffectivenesses.aNoEffectiveness
 Petrify,TypeDark,None,5,100,20,1,0,3,10,WeaponLocks.aThokkWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._PetrifyDesc,None,$8,None,None,TraitWeapon | TraitTome | TraitUnsellable,$64
 ForsetiInfinite,TypeBow,None,10,80,8,30,5,2,3,WeaponLocks.aRecurveBowWeaponLock,ItemEffectivenesses.aFlyingEffectiveness,aNoItemBonuses,4000,<>item_descs._ForsetiInfiniteDesc,None,None,None,None,TraitWeapon,$86
 BrokenTome,TypeItem,None,0,0,0,-1,0,1,1,WeaponLocks.aBrokenMagicWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenTomeDesc,None,None,None,None,TraitUnbreakable | TraitBroken,$66
-Heal,TypeStaff,None,30,80,4,20,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._HealDesc,$3C,None,None,None,TraitStaff,$67
-Mend,TypeStaff,None,20,80,6,15,0,1,1,RankD,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2300,<>item_descs._MendDesc,$3E,None,None,None,TraitStaff,$68
+Heal,TypeStaff,None,30,80,4,20,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3000,<>item_descs._HealDesc,$3C,None,None,None,TraitStaff,$67
+Mend,TypeStaff,None,20,80,6,14,0,1,1,RankD,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3560,<>item_descs._MendDesc,$3E,None,None,None,TraitStaff,$68
 Recover,TypeStaff,None,20,80,8,10,0,1,1,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2400,<>item_descs._RecoverDesc,$40,None,None,None,TraitStaff,$69
 Physic,TypeStaff,None,10,80,8,6,0,1,10,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1700,<>item_descs._PhysicDesc,$42,None,None,None,TraitStaff,$6A
 Fortify,TypeStaff,None,5,80,9,3,0,1,10,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1700,<>item_descs._FortifyDesc,$44,None,None,None,TraitStaff,$6B
 Rescue,TypeStaff,None,5,80,7,5,0,1,10,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2000,<>item_descs._RescueDesc,$46,None,None,None,TraitStaff,$6C
 Warp,TypeStaff,None,16,80,8,3,0,1,1,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2000,<>item_descs._WarpDesc,$48,None,None,None,TraitStaff,$6D
-Restore,TypeStaff,None,5,80,8,5,0,1,10,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._RestoreDesc,$4A,None,None,None,TraitStaff,$6E
+Restore,TypeStaff,None,5,80,8,7,0,1,10,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,3200,<>item_descs._RestoreDesc,$4A,None,None,None,TraitStaff,$6E
 Silence,TypeStaff,None,5,80,8,3,0,1,10,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1400,<>item_descs._SilenceDesc,$4C,None,None,None,TraitStaff,$6F
 Sleep,TypeStaff,None,10,80,9,3,0,1,10,RankB,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1700,<>item_descs._SleepDesc,$4E,None,None,None,TraitStaff,$70
-TorchStaff,TypeStaff,None,3,80,6,5,0,1,1,RankD,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1400,<>item_descs._TorchStaffDesc,$50,None,None,None,TraitStaff,$71
+TorchStaff,TypeStaff,None,3,80,6,8,0,1,1,RankD,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1400,<>item_descs._TorchStaffDesc,$50,None,None,None,TraitStaff,$71
 Baldung,TypeSword,None,13,80,15,60,0,1,1,WeaponLocks.aBaldungWeaponLock,ItemEffectivenesses.aMyrmidonEffectiveness,aFragarachItemBonuses,0,<>item_descs._BaldungDesc,None,None,Skill2Adept,None,TraitWeapon | TraitUnsellable,$72
 Hammerne,TypeStaff,None,4,80,6,5,0,1,1,WeaponLocks.aHammerneWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,6200,<>item_descs._HammerneDesc,$54,None,None,None,TraitStaff | TraitUnsellable,$73
 ThiefStaff,TypeStaff,None,4,80,5,4,0,1,10,WeaponLocks.aThiefStaffWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,6600,<>item_descs._ThiefDesc,$56,None,None,None,TraitStaff | TraitUnsellable,$74

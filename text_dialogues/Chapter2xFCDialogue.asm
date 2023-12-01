@@ -39,3 +39,14 @@ chp2xwm3
 
 .byte EndText
 
+shivarevenge
+
+.byte right_slot
+.word LoadPortrait
+.word shiva_portrait
+.text "...Guess it's time I finally got going."
+.byte NewLine
+.text "Let's see what you lot are made of..."
+.byte WaitForA
+
+.byte EndText

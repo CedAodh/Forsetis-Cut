@@ -33,7 +33,7 @@ eventChapter3Events ; 8C/E435
 			CMP_WORD_RANGE wCurrentTurn, 10, 16
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 50
-			TEST_FLAG_UNSET $02
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

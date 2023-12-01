@@ -8,9 +8,13 @@ eventChapter4xEvents ; FD/85C5
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/85D2
+		EVENT FlagAlwaysZero, _KantEvilPlan
+			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentTurn, 2
+		END_DEFINITION
 		EVENT FlagAlwaysZero, _SoldierLeftReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 8, 24
-			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentPhase, NPC 
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherLeftReinforcements
@@ -197,6 +201,22 @@ eventChapter4xEvents ; FD/85C5
 	_MyrmidonRightReinforcements ; FD/8836
 		LOAD2 eventChapter4xData._MyrmidonRightGroup
 		WAIT_MOVE
+		YIELD
+	END2
+	
+	_KantEvilPlan
+		;PLAY_SOUND_WORD $00E0
+		;PAUSE_SKIPPABLE 32
+		;YIELD
+
+		SET_MUSIC $0A
+		YIELD
+
+		SCROLL_CAMERA_CHAR Kant
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE kantplan
 		YIELD
 	END2
 

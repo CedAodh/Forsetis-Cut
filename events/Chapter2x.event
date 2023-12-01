@@ -12,8 +12,8 @@ eventChapter2xEvents ; 97/805A
 			CHECK_DEAD Lifis
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ShivaAIChange
-			CMP_WORD wCurrentTurn, 19
-			CHECK_NUM_UNITS_GTE Shiva, 1
+			CMP_WORD wCurrentTurn, 1
+			CHECK_NUM_UNITS_GTE Shiva, 19
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
@@ -32,7 +32,7 @@ eventChapter2xEvents ; 97/805A
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _LowerRightIslandReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 14, 17
+			CMP_WORD_RANGE wCurrentTurn, 12, 16
 			ROLL_RNG 80
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
@@ -105,6 +105,13 @@ eventChapter2xEvents ; 97/805A
 	END2
 
 	_ShivaAIChange ; 97/81A5
+		SCROLL_CAMERA_CHAR Shiva
+		SET_CAMERA_SPEED 4
+		YIELD
+
+		DIALOGUE shivarevenge
+		YIELD
+		
 		macroSetCharacterByte Shiva, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte Shiva, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Shiva, structCharacterDataRAM.AI2, $00

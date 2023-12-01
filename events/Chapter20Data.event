@@ -5,7 +5,7 @@ eventChapter20Data ; B1/9194
 		.byte 14, 25
 
 		UNIT Bharat, Enemy, [13, 30], [13, 30], Bharat, [MasterSword, MasterBow, Fortify, ThrudsScroll, Vulnerary], 19, True, [$01, $03, $00, $80]
-		UNIT FriegeGeneral1, Enemy, [13, 29], [13, 29], Bharat, [MasterAxe, Ridersbane, Vulnerary], 17, False, [$01, $03, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [12, 29], [12, 29], Bharat, [MasterAxe, Ridersbane, Vulnerary], 17, False, [$01, $03, $00, $00]
 		UNIT FriegeGeneral1, Enemy, [12, 30], [12, 30], Bharat, [MasterLance, Poleax, Vulnerary], 18, False, [$01, $03, $00, $00]
 		UNIT FriegeGeneral1, Enemy, [14, 30], [14, 30], Bharat, [MasterLance, Hammer, Vulnerary], 17, False, [$01, $03, $00, $00]
 		UNIT FriegeArmoredSword2, Enemy, [28, 1], [28, 1], Bharat, [KillingEdge, Vulnerary], 15, False, [$00, $10, $00, $00]

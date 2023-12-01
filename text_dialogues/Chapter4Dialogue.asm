@@ -28,7 +28,6 @@ ch4op1
 
 .byte ScrollText
 .word ClearPortrait
-.word RetractBox
 
 .byte Right_slot
 .byte ScrollText
@@ -63,7 +62,7 @@ ch4op1
 .byte ScrollText
 .text "Other girls?"
 .byte NewLine
-.text "You mean...Mareeta and Nanna?"
+.text "You're referring to...Mareeta and Nanna?"
 .byte WaitForA
 
 .byte Right_slot
@@ -77,7 +76,7 @@ ch4op1
 
 .byte Left_slot
 .byte ScrollText
-.text "...Are you really gonna let me see them?"
+.text "...You'll really let me see them?"
 .byte WaitForA
 
 .byte Right_slot
@@ -87,7 +86,9 @@ ch4op1
 
 .byte Left_slot
 .byte ScrollText
-.text "...Fine. Lead the way."
+.text "...Fine."
+.byte NewLine
+.text "Lead the way, please."
 .byte WaitForA
 
 .byte Right_slot
@@ -126,7 +127,7 @@ ch4op2
 .byte WaitForA
 
 .byte Left_slot
-.text "Yessir! Once we've released these poor souls,"
+.text "Yes, sir! Once we've released these poor souls,"
 .byte NewLine
 .text "we'll rendezvous with you."
 .byte WaitForA
@@ -178,7 +179,7 @@ ch4op3
 .byte ScrollText
 .word LoadPortrait
 .word macha_portrait
-.text "Then be glad me an' Brighton are here, eh?"
+.text "Then be glad me and Brighton are here, eh?"
 .byte NewLine
 .text "C'mon, let's go!"
 .byte WaitForA
@@ -193,23 +194,23 @@ ch4dalshinconvo
 
 .text "Wh-what?!"
 .byte NewLine
-.text "The empire tried to take me own kin"
+.text "The empire tried to take my own kin"
 .byte NewLine
 .text "in their damned child hunts?!"
 .byte WaitForA
 .byte ScrollText
-.text "I was... I was only goin' along with 'em"
+.text "I was... I was only goin' along with them"
 .byte NewLine
 .text "'cause they promised my family would"
 .byte NewLine
 .text "be spared!"
 .byte WaitForA
 .byte ScrollText
-.text "Tch...! Damn Raydrik and damn the empire!"
+.text "Tch...! Damn Raydrik AND the empire!"
 .byte NewLine
-.text "I've no love left fer any of 'em!"
+.text "I've no love left for any of them!"
 .byte NewLine
-.text "I defect! Me life is in yer hands!"
+.text "I defect! My life is in your hands!"
 .byte WaitForA
 
 .byte EndText
@@ -387,7 +388,7 @@ ch4leifturn2
 .byte ScrollText
 .text "Saw a bunch of soldiers makin' trouble for a"
 .byte NewLine
-.text "young lass, so I stepped in. Got arrested for "
+.text "young lass, so I stepped in. Got arrested for"
 .byte NewLine
 .text "the effort. Terrible story, really."
 .byte WaitForA
@@ -414,21 +415,21 @@ ch4leifturn2
 
 .byte Left_slot
 .byte ScrollText
-.text "Wait just a darn minute—"
+.text "Wait just a minute—"
 .byte NewLine
 .text "you were the one who started it!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Yeah, and they arrested me 'cause they thought"
+.text "Yeah, and they arrested me because they"
 .byte NewLine
-.text "I helped you nearly kill that guy!"
+.text "thought I helped you nearly kill that guy!"
 .byte WaitForA
 .byte ScrollText
 .text "This is on you, not me!"
 .byte NewLine
-.text "So what're you gonna do about it?!"
+.text "So what are you gonna do about it?!"
 .byte WaitForA
 
 .byte Left_slot
@@ -455,7 +456,9 @@ ch4leifturn2
 
 .byte Right_slot
 .byte ScrollText
-.text "Oh, uh, sorry. I'm Karin, by the way."
+.text "Oh, uh, sorry."
+.byte NewLine
+.text "I'm Karin, by the way."
 .byte WaitForA
 
 .byte Left_slot
@@ -464,7 +467,7 @@ ch4leifturn2
 
 .byte Right_slot
 .byte ScrollText
-.text "That's 'cause I'm not Thracian—I'm from Silesse."
+.text "That would be because I'm from Silesse."
 .byte NewLine
 .text "I'd just gotten into town when I got in trouble"
 .byte NewLine
@@ -544,7 +547,7 @@ ch4leifturn2
 .byte ScrollText
 .text "His name's Hermes, and he's just the cutest thing"
 .byte NewLine
-.text "you ever saw, with a brain to match!"
+.text "you've ever seen, with a brain to match!"
 .byte WaitForA
 .byte ScrollText
 .text "He's probably the one dancing through the skies"
@@ -565,7 +568,7 @@ ch4leifturn2
 .byte NewLine
 .text "The prince wanted to go look for the king,"
 .byte NewLine
-.text "but the king's somethin' of a flake himself."
+.text "but the king's something of a flake himself."
 .byte WaitForA
 .byte ScrollText
 .text "He also left Silesse years ago,"
@@ -583,9 +586,11 @@ ch4leifturn2
 .text "and take the throne."
 .byte WaitForA
 .byte ScrollText
-.text "I was sent here to find him,"
+.text "I was sent here in search of him,"
 .byte NewLine
-.text "but ended up jailed 'cause of this muttonhead."
+.text "but ended up behind bars—all because"
+.byte NewLine
+.text "of this muttonhead."
 .byte WaitForA
 
 .byte Left_slot
@@ -602,9 +607,11 @@ ch4leifturn2
 .text "Can't you keep it down until then, at least?"
 .byte WaitForA
 .byte ScrollText
-.text "This is a prison, fer cryin' out loud! It's not like"
+.text "This is a prison, for cryin' out loud!"
 .byte NewLine
-.text "anyone can escape all yer yammerin'!"
+.text "It's not like anyone can escape"
+.byte NewLine
+.text "all your yammering!"
 .byte WaitForA
 
 .byte Right_slot
@@ -653,7 +660,7 @@ ch4leifturn2
 .byte ScrollText
 .text "What's eatin' you, lad? You look awful upset."
 .byte NewLine
-.text "Might as well speak yer mind, eh?"
+.text "Might as well speak your mind, eh?"
 .byte NewLine
 .text "Not like it could do any harm, now."
 .byte WaitForA
@@ -791,7 +798,7 @@ ch4leifcellopened
 .byte ScrollText
 .text "Does it matter? Save those questions"
 .byte NewLine
-.text "fer when we're far, far away from here."
+.text "for when we're far, far away from here."
 .byte WaitForA
 .byte ScrollText
 .text "Look, there's a stairway to the north"
@@ -810,9 +817,9 @@ ch4leifcellopened
 .byte ScrollText
 .text "Mm, I expect I'll get caught an' thrown in here"
 .byte NewLine
-.text "again—or worse. Don't matter to me none"
+.text "again—or worse. Doesn't matter to me though if"
 .byte NewLine
-.text "if I can do some good 'fore I get grabbed."
+.text "I can do some good before they've done me in."
 .byte WaitForA
 
 .byte Right_slot
@@ -824,16 +831,16 @@ ch4leifcellopened
 
 .byte Left_slot
 .byte ScrollText
-.text "Hah! Yer gonna make me cry, junior. Suppose I"
+.text "Hah! You're gonna make me cry, junior. Suppose I"
 .byte NewLine
-.text "can keep you company fer a time, if'n you need"
+.text "can keep you company for a time, if you need"
 .byte NewLine
-.text "someone to hold yer hand that bad."
+.text "someone to hold your hand that bad."
 .byte WaitForA
 .byte ScrollText
 .text "...Aw, who am I kiddin'?"
 .byte NewLine
-.text "After hearin' yer story, I'm invested!"
+.text "After hearin' your story, I'm invested!"
 .byte WaitForA
 
 .byte Right_slot
@@ -863,12 +870,12 @@ ch4leifcellopened
 .byte ScrollText
 .text "All right, all right, lay off. But have you made"
 .byte NewLine
-.text "up yer own mind about escapin'? The Magi's"
+.text "up your own mind about escapin'? The Magi's"
 .byte NewLine
 .text "head honcho is a fella by the name of Ced."
 .byte WaitForA
 .byte ScrollText
-.text "Same name as the prince yer after, right?"
+.text "Same name as the prince you're after, right?"
 .byte WaitForA
 
 .byte Right_slot

@@ -552,3 +552,32 @@ daisyced
 .byte WaitForA
 
 .byte EndText
+
+kantplan
+
+.byte right_slot
+.word LoadPortrait
+.word KantPortrait
+.text "That ruckus must be the Magi."
+.byte NewLine
+.text "How should one deal with this...?"
+.byte WaitForA
+.byte ScrollText
+.text "...Ah, I've got just the idea."
+.byte NewLine
+.text "We ought to hold our spots right here."
+.byte WaitForA
+.byte ScrollText
+.text "Once they've released the prisoners and"
+.byte NewLine
+.text "think they might be in the clear,"
+.byte WaitForA
+.byte NewLine
+.text "they'll make their escape through this corridor,"
+.byte NewLine
+.text "and then WE will be here to slam their"
+.byte NewLine
+.text "incessant meddling right into the ground!"
+.byte WaitForA
+
+.byte EndText

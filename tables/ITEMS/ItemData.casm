@@ -2299,7 +2299,7 @@
 		HealWeaponRank					= RankE
 		HealEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		HealStatBonus					= aNoItemBonuses
-		HealCost						= 2200
+		HealCost						= 3000
 		HealDescription					= <>item_descs._HealDesc
 		HealUseEffect					= $3C
 		HealWeaponEffect				= None
@@ -2314,14 +2314,14 @@
 		MendMight						= 20
 		MendAccuracy					= 80
 		MendWeight						= 6
-		MendDurability					= 15
+		MendDurability					= 14
 		MendCritrate					= 0
 		MendMinRange					= 1
 		MendMaxRange					= 1
 		MendWeaponRank					= RankD
 		MendEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		MendStatBonus					= aNoItemBonuses
-		MendCost						= 2300
+		MendCost						= 3560
 		MendDescription					= <>item_descs._MendDesc
 		MendUseEffect					= $3E
 		MendWeaponEffect				= None
@@ -2446,7 +2446,7 @@
 		RestoreMight					= 5
 		RestoreAccuracy					= 80
 		RestoreWeight					= 8
-		RestoreDurability				= 5
+		RestoreDurability				= 7
 		RestoreCritrate					= 0
 		RestoreMinRange					= 1
 		RestoreMaxRange					= 10
@@ -2512,7 +2512,7 @@
 		TorchStaffMight					= 3
 		TorchStaffAccuracy				= 80
 		TorchStaffWeight				= 6
-		TorchStaffDurability			= 5
+		TorchStaffDurability			= 8
 		TorchStaffCritrate				= 0
 		TorchStaffMinRange				= 1
 		TorchStaffMaxRange				= 1

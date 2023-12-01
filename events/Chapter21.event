@@ -388,11 +388,7 @@ eventChapter21Events ; FD/E42D
 	END2
 	
 	_DagdarRalphTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE DagdarRalphTalk
-		YIELD
+		macroDialogueHouse DagdarRalphTalk
 	END2
 	
 	_EdaLinoanTalk

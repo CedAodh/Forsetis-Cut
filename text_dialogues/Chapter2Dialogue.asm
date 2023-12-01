@@ -124,11 +124,11 @@ ch2op2
 .byte WaitForA
 
 .byte Right_slot
-.text "Hmm... That's Lifis' crew, by the look of it."
+.text "Hmm... The Lifis Pirates, by the look of it."
 .byte NewLine
 .text "They've been quiet as a mouse for a while,"
 .byte NewLine
-.text "but I guess they move fast."
+.text "but I guess it was time they bounced back."
 .byte WaitForA
 
 .byte Left_Slot

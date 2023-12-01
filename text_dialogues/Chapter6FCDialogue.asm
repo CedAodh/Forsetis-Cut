@@ -47,10 +47,53 @@ money
 .word NPCMan1Portrait
 .text "Money is important!"
 .byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Hahahahaha!"
+.byte NewLine
+.text "Said no one ever!"
+.byte WaitForA
 
 .byte EndText
 
-FCM
+weaponweight
+
+.byte right_slot
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "Bigger and harder hitting weapons are"
+.byte NewLine
+.text "probably heavier weapons, right?"
+.byte NewLine
+.text "I associate heavy with slow, personally."
+.byte WaitForA
+.byte ScrollText
+.text "But if you've got yerself a nice big frame,"
+.byte NewLine
+.text "then you can wield the heaviest sword"
+.byte NewLine
+.text "like yer holdin' a mere pen!"
+.byte WaitForA
+.byte ScrollText
+.text "But tomes... Eh, magic's somethin' else."
+.byte NewLine
+.text "You'd think a book wouldn't slow down"
+.byte NewLine
+.text "no one, but it ain't the case, somehow."
+.byte WaitForA
+.byte ScrollText
+.text "Maybe them spirits from the book induce"
+.byte NewLine
+.text "some sort of MAGIC hold that not even"
+.byte NewLine
+.text "the realm's largest mage can shake off!"
+.byte WaitForA
+
+.byte EndText 
+
+fcm
 
 .byte right_slot
 .word LoadPortrait
@@ -88,7 +131,7 @@ FCM
 
 .byte EndText
 
-Canto
+canto
 
 .byte right_slot
 .word LoadPortrait
@@ -115,6 +158,13 @@ Canto
 .text "At least without her, I don't have to"
 .byte NewLine
 .text "worry about a ridersbane anymore."
+.byte WaitForA
+.byte ScrollText
+.text "If you're ever worried about bein' on"
+.byte NewLine
+.text "the receivin' end of such a weapon,"
+.byte NewLine
+.text "just dismount an' get the hell off."
 .byte WaitForA
 
 .byte EndText
@@ -153,7 +203,7 @@ stavescanmiss
 .byte right_slot
 .word LoadPortrait
 .word NPCMan1Portrait
-.text "Just because a man or woman'a the cloth"
+.text "Just because a man or woman o' the cloth"
 .byte NewLine
 .text "rarely gets into scraps doesn't mean that"
 .byte NewLine
@@ -243,7 +293,7 @@ deadunititems
 .byte right_slot
 .word LoadPortrait
 .word NPCMan1Portrait
-.text "It's a damned shame when one'a yer"
+.text "It's a damned shame when one o' yer"
 .byte NewLine
 .text "friends gets killed in action, huh?"
 .byte WaitForA
@@ -281,7 +331,7 @@ weapontriangle
 .byte NewLine
 .text "*sigh*"
 .byte NewLine
-.text "'scuse me, I'm...outta breath now."
+.text "'Scuse me, I'm...outta breath now."
 .byte WaitForA
 .byte ScrollText
 .text "Now, repeat the magic part back t'me!"
@@ -355,7 +405,7 @@ instantcapture
 .byte NewLine
 .text "How 'bout next time, you let someone play"
 .byte NewLine
-.text "the bait, then instantly swarm the sorry"
+.text "the bait, then just totally swarm the sorry"
 .byte NewLine
 .text "dullard who thinks he just got some leverage?"
 .byte WaitForA
@@ -371,6 +421,7 @@ secretshop
 .byte NewLine
 .text "Sorry, I had a long day at work today."
 .byte WaitForA
+.byte ScrollText
 .text "...No, it wasn't strenuous or anything—"
 .byte NewLine
 .text "just simply a long day at work."
@@ -389,10 +440,10 @@ secretshop
 .byte NewLine
 .text "get a card just like that. Uh-huh, I know!"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "Looking at my records...my most recent"
 .byte NewLine
-.text "applicant is said to live in Leonster."
+.text "applicant is said to reside in Leonster."
 .byte NewLine
 .text "As per our policy, their name is kept a secret!"
 .byte WaitForA
@@ -406,104 +457,149 @@ secretshop
 
 .byte EndText
 
-
-leifbrightonch6
+bond
 
 .byte right_slot
-	.word $3A00
-	.word brighton_portrait	
+.word LoadPortrait
+.word NPCMan1Portrait
+.text "Human connection sure is a treasure, right?"
+.byte NewLine
+.text "And it can be pretty darn relevant on"
+.byte NewLine
+.text "the battlefield, if I may be so bold."
+.byte WaitForA
+.byte ScrollText
+.text "When the right people are fightin' together,"
+.byte NewLine
+.text "you might notice a boost in performance."
+.byte WaitForA
+.byte ScrollText
+.text "'Cause remember, these people, when they've"
+.byte NewLine
+.text "known each other for a while, probably know"
+.byte NewLine
+.text "how to get their combat styles in sync."
+.byte WaitForA
+.byte NewLine
+.text "...They probably wanna impress, too."
+.byte WaitForA
+.byte ScrollText
+.text "I wager Prince Leif has a whole bunch"
+.byte NewLine
+.text "o' guys who look up to him and wanna"
+.byte NewLine
+.text "make sure they pull their fair load."
+.byte WaitForA
+.byte ScrollText
+.text "Though I doubt it goes the other way."
+.byte WaitForA
+.byte NewLine
+.text "I mean, if I were the leader, my brain'd"
+.byte NewLine
+.text "explode if I had to keep thinkin' about"
+.byte NewLine
+.text "each and every one of ya all the time."
+.byte WaitForA
 
-	.byte left_slot
-	.word $3A00
-	.word leif_portrait
-	.text "Brighton, do you have a moment?"
-	.byte WaitForA
+.byte EndText
+ 
+; leifbrightonch6
 
-	.byte right_slot
-	.text "Given our priority is to escape the city,"
-	.byte NewLine
-	.text "I'm afraid we don't have much time."
-	.byte NewLine
-	.text "What do you need, milord?"
-	.byte WaitForA
+; .byte right_slot
+	; .word $3A00
+	; .word brighton_portrait	
+
+	; .byte left_slot
+	; .word $3A00
+	; .word leif_portrait
+	; .text "Brighton, do you have a moment?"
+	; .byte WaitForA
+
+	; .byte right_slot
+	; .text "Given our priority is to escape the city,"
+	; .byte NewLine
+	; .text "I'm afraid we don't have much time."
+	; .byte NewLine
+	; .text "What do you need, milord?"
+	; .byte WaitForA
 	
-	.byte left_slot
-	.byte ScrollText
-	.text "I just wanted to thank you for everything."
-	.byte NewLine
-	.text "Your help and advice has been invaluable."
-	.byte NewLine
-	.text "I owe you a debt I could never pay."
-	.byte WaitForA
+	; .byte left_slot
+	; .byte ScrollText
+	; .text "I just wanted to thank you for everything."
+	; .byte NewLine
+	; .text "Your help and advice have been invaluable."
+	; .byte NewLine
+	; .text "I owe you a debt I could never repay."
+	; .byte WaitForA
 	
-	.byte right_slot
-	.byte ScrollText
-	.text "I've only done my sworn duty."
-	.byte NewLine
-	.text "Nothing more, nothing less."
-	.byte WaitForA
-	.byte ScrollText
-	.text "With that being said, where do you"
-	.byte NewLine
-	.text "plan to go once we're out of here?"
-	.byte WaitForA
+	; .byte right_slot
+	; .byte ScrollText
+	; .text "I've only done my sworn duty."
+	; .byte NewLine
+	; .text "Nothing more, nothing less."
+	; .byte WaitForA
+	; .byte ScrollText
+	; .text "With that being said, where do you"
+	; .byte NewLine
+	; .text "plan to go once we're out of here?"
+	; .byte WaitForA
 	
-	.byte left_slot
-	.byte ScrollText
-	.text "I'm heading to Tarrah."
-	.byte WaitForA
+	; .byte left_slot
+	; .byte ScrollText
+	; .text "I'm heading to Tarrah."
+	; .byte WaitForA
 	
-	.byte right_slot
-	.byte ScrollText
-	.text "Is that so?"
-	.byte NewLine
-	.text "Well then, I guess that will be our next stop!"
-	.byte WaitForA
+	; .byte right_slot
+	; .byte ScrollText
+	; .text "Is that so?"
+	; .byte NewLine
+	; .text "Well then, I guess that will be our next stop!"
+	; .byte WaitForA
 	
-	.byte left_slot
-	.byte ScrollText
-	.text "I beg your pardon?"
-	.byte WaitForA
+	; .byte left_slot
+	; .byte ScrollText
+	; .text "I beg your pardon?"
+	; .byte WaitForA
 	
-	.byte right_slot
-	.byte ScrollText
-	.text "What, you thought we'd just abandon"
-	.byte NewLine
-	.text "you once we were clear of the castle?"
-	.byte WaitForA
-	.byte ScrollText
-	.text "Lord Ced's orders were clear—"
-	.byte NewLine
-	.text "We are to help you be free from Raydrik's"
-	.byte NewLine
-	.text "clutches, and join you in all future endeavors."
-	.byte WaitForA
+	; .byte right_slot
+	; .byte ScrollText
+	; .text "What, you thought we'd just abandon"
+	; .byte NewLine
+	; .text "you once we were clear of the castle?"
+	; .byte WaitForA
+	; .byte ScrollText
+	; .text "Lord Ced's orders were clear—"
+	; .byte NewLine
+	; .text "we are to help you be free from Raydrik's"
+	; .byte NewLine
+	; .text "clutches, and join you in all future endeavors."
+	; .byte WaitForA
 	
-	.byte left_slot
-	.byte ScrollText
-	.text "Is that so?"
-	.byte NewLine
-	.text "I must thank you yet again, Brigton."
-	.byte NewLine
-	.text "My debt to you all grows ever larger."
-	.byte WaitForA
+	; .byte left_slot
+	; .byte ScrollText
+	; .text "Is that so?"
+	; .byte NewLine
+	; .text "I must thank you yet again, Brighton."
+	; .byte NewLine
+	; .text "My debt to you all grows ever larger."
+	; .byte WaitForA
 	
-	.byte right_slot
-	.byte ScrollText
-	.text "And we'll only accept one thing as payment—"
-	.byte NewLine
-	.text "the liberation of Northern Thracia!"
-	.byte NewLine
-	.text "So don't go dying on us, you hear?"
-	.byte WaitForA
+	; .byte right_slot
+	; .byte ScrollText
+	; .text "And we'll only accept one thing as payment:"
+	; .byte NewLine
+	; .text "the liberation of Northern Thracia!"
+	; .byte NewLine
+	; .text "So don't go dying on us, you hear?"
+	; .byte WaitForA
 	
-	.byte left_slot
-	.byte ScrollText
-	.text "Hahah."
-	.byte NewLine
-	.text "Fair enough, then."
-	.byte NewLine
-	.text "It is a promise."
-	.byte WaitForA
+	; .byte left_slot
+	; .byte ScrollText
+	; .text "Ha ha."
+	; .byte NewLine
+	; .text "Fair enough, then."
+	; .byte NewLine
+	; .text "It is a promise."
+	; .byte WaitForA
 	
-	.byte EndText
+	; .byte EndText

@@ -331,233 +331,284 @@ MirandaLeifTalk
 
 DagdarRalphTalk
 
-.byte left_slot
-.word LoadPortrait
-.word dagdar_portrait 
-
 .byte right_slot
+.word LoadPortrait
+.word dagdar_portrait
+.text "HEY, RALF!"
+.byte WaitForA
+
+.byte left_slot
 .word LoadPortrait
 .word ralph_portrait
-
-.byte left_slot
-.text "So you're Ralf, eh?"
+.text "Yeah!"
 .byte NewLine
-.text "I've heard an awful lot about you"
+.text "What do ya—"
 .byte NewLine
-.text "ever since ya joined this army."
-.byte WaitForA 
-
-.byte right_slot
-.text "Have you, now?"
-.byte NewLine
-.text "Well, color me surprised."
-.byte WaitForA 
-.byte NewLine
-.text "Here I thought I was as bland as they come."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "Oh, don't ye go say that!"
-.byte WaitForA 
-.byte NewLine
-.text "Someone with yer strength is mighty unusual"
-.byte NewLine
-.text "'round these parts. I could've sworn you'd be"
-.byte NewLine
-.text "a mighty warrior from afar, but nay!"
-.byte WaitForA 
-.byte ScrollText
-.text "To be a farmer in these lands is a most heavy"
-.byte NewLine
-.text "curse, lemme tell ya. No wonder you ended up"
-.byte NewLine
-.text "selling your sword arm for coin."
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "All true."
-.byte WaitForA 
-.byte ScrollText
-.text "As if growing crops wasn't hard enough,"
-.byte NewLine
-
-.text "once those Friegans started stirring up chaos,"
-.byte NewLine
-.text "my only option was to leave that life behind."
-.byte WaitForA 
-.byte ScrollText
-.text "I'm technically a mercenary, but a good chunk"
-.byte NewLine
-.text "of the work I do is free of charge. I just can't"
-.byte NewLine
-.text "stand taking advantage of villagers in need."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "Mm. I get what you're saying."
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "Do you, know?"
-.byte NewLine
-.text "Well then, I feel like it's time"
-.byte NewLine
-.text "for us to backtrack a little."
-.byte WaitForA 
-.byte ScrollText
-.text "Who are you, again?"
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "Bahaha! That's true! I almost forgot!"
-.byte WaitForA 
-.byte NewLine
-.text "Please excuse this old man"
-.byte NewLine
-.text "for getting too carried away."
-.byte WaitForA 
-.byte ScrollText
-.text "The name's Dagdar!"
-.byte NewLine
-.text "Leader of the Mount Violdrake Bandits."
-.byte NewLine
-.text "... Er, Ex—Bandits, I should say."
-.byte WaitForA 
-.byte ScrollText
-.text "Me and my men were in a rough spot too,"
-.byte NewLine
-.text "but we all choose the wrong side of the coin"
-.byte NewLine
-.text "and ended up turning to banditry."
+.text "Oh crap."
 .byte WaitForA
 .byte ScrollText
-.text "By a stroke of luck, someone who's now"
+.text "...Well played, Dagdar."
 .byte NewLine
-.text "dear to me could smack some sense into my"
-.byte NewLine
-.text "skull and we've been working our backs to farm!"
-.byte WaitForA 
+.text "I oughta have remembered your loud voice."
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Well, that's not a story you hear every day."
-.byte NewLine
-.text "Heh."
-.byte WaitForA 
-.byte ScrollText
-.text "So, what made you wanna talk to me?"
-.byte WaitForA 
- 
+.text "Heh heh, finally, I gotcha."
+.byte WaitForA
+
 .byte left_slot
 .byte ScrollText
-.text "Well, I had my doubts at the start,"
+.text "Yeah, and?"
 .byte NewLine
-.text "but now I see that I've struck gold!"
-.byte WaitForA 
-.byte ScrollText
-.text "I know not what you're plannin' to do"
-.byte NewLine
-.text "once this whole mess is over with,"
-.byte NewLine
-.text "but I wanted to make a proposal."
-.byte WaitForA 
+.text "What's it gonna be?"
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Well, you've got my interest."
-.byte WaitForA 
+.text "C'mon, Ralf."
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Me and my men got into a big fight"
+.text "I told you I wanted nothin' to do"
 .byte NewLine
-.text "not too long ago, since this whole farming"
+.text "with you anymore. If you're here for"
 .byte NewLine
-.text "thing hasn't worked out very well."
-.byte WaitForA 
+.text "poaching, go find some other chumps."
+.byte WaitForA
+
+.byte right_slot
 .byte ScrollText
-.text "They're breaking their backs with close to"
-.byte NewLine
-.text "no food in return, and there ain't no one in"
-.byte NewLine
-.text "the village with experience in that stuff."
-.byte WaitForA 
+.text "......"
+.byte WaitForA
+
+.byte left_slot
 .byte ScrollText
-.text "So..."
+.text "That's right. So keep walkin'."
+.byte NewLine
+.text "Beat it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ralf, look. Things..."
+.byte NewLine
+.text "Things've changed. For the better."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Uh-huh."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I ain't the guy I used to be."
+.byte NewLine
+.text "I just wanna apologize—that's it."
+.byte WaitForA
+.byte ScrollText
+.text "Y'know, I woulda done it a while ago,"
+.byte NewLine
+.text "but yer always lookin' and movin' the"
+.byte NewLine
+.text "other way whenever I tried to talk."
 .byte WaitForA
 .byte NewLine
-.text "How about going with me to our lil' village?"
-.byte NewLine
-.text "You've got as big a heart as you have muscle."
-.byte NewLine
-.text "I could very well make you my right—hand man."
+.text "Ya always saw me first."
 .byte WaitForA
-.byte NewLine
-.text "I'm sure someone with yer knowledge of"
-.byte NewLine
-.text "farming could work miracles in our barren land."
-.byte WaitForA 
-.byte ScrollText
-.text "So, uh... Whaddya say?"
-.byte WaitForA 
-
-.byte right_slot
-.byte ScrollText
-.text "Well, it sounds like a good offer, but..."
-.byte NewLine
-.text "I've always preferred being on my own."
-.byte WaitForA 
 
 .byte left_slot
 .byte ScrollText
-.text "Oh... I see..."
-.byte WaitForA 
+.text "So then it's MY fault?"
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "But..."
-.byte WaitForA 
+.text "That... Whatever!"
 .byte NewLine
-.text "I said I'm one who likes to help, did I not?"
+.text "It don't matter!"
+.byte WaitForA
+.byte ScrollText
+.text "Look, I told ya, I'm just here to say"
 .byte NewLine
-.text "So, while I may not stay there forever..."
-.byte WaitForA 
+.text "sorry for our rough times from before."
 .byte NewLine
-.text "I'd love to give you all a visit"
+.text "I ain't pickin' a fight."
+.byte WaitForA
+.byte ScrollText
+.text "Besides, looking at yer flair with a blade now,"
 .byte NewLine
-.text "to teach you everything I can."
-.byte WaitForA 
+.text "I don't think I can win anymore."
+.byte NewLine
+.text "'Specially not since that other time..."
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Truly?!"
+.text "Other time?"
 .byte NewLine
-.text "Hahaha!"
-.byte NewLine
-.text "We got a deal then!"
-.byte WaitForA 
-.byte ScrollText
-.text "It's been nice meetin' ya, Ralf,"
-.byte NewLine
-.text "There are no big enough words to thank ye!"
-.byte WaitForA 
+.text "What other time?"
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "No need to, friend."
+.text "What?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I said, “What other time?”"
 .byte NewLine
-.text "Sounds like you people really need the help."
+.text "Tell me what that's about."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "That gonna make us even?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I promise it won't make us worse."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Gah, all right."
+.byte WaitForA
+.byte ScrollText
+.text "Eyvel of Fiana and I, er..."
+.byte NewLine
+.text "We...we went at it once."
+.byte WaitForA
+.byte ScrollText
+.text "She was fixin' to put a stop to my banditry."
+.byte NewLine
+.text "After you walked on out."
+.byte NewLine
+.text "And well, she..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ran circles around you?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*sigh*"
+.byte NewLine
+.text "Yep. I couldn't get her even once."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Oof."
+.byte WaitForA
+.byte ScrollText
+.text "...Hrm, I guess somethin' like that"
+.byte NewLine
+.text "would change a lot about a man."
+.byte NewLine
+.text "Maybe... Maybe you are tellin' the truth."
+.byte WaitForA
+.byte ScrollText
+.text "Did you say her name was Eyvel?"
+.byte NewLine
+.text "That the same friend o' Prince Leif's"
+.byte NewLine
+.text "who got stuck in Munster?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah, that's her."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Then how about we..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Huh?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, I think I'd like to hear more to this story."
+.byte NewLine
+.text "From her, that is."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You sure about that?"
+.byte NewLine
+.text "Th-there ain't really a lot to..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Howzabout we just find out?"
 .byte WaitForA
 .byte NewLine
-.text "That and... Well, I think I have a knack for"
+.text "If that's the reward in question..."
 .byte NewLine
-.text "being in the right place at the right time."
-.byte WaitForA 
+.text "then yeah, I think maybe..."
+.byte NewLine
+.text "Maybe we could start things up again, Dagdar."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ralf, you really gotta..."
+.byte WaitForA
+.byte ScrollText
+.text "Bah, what am I complainin' about?"
+.byte NewLine
+.text "Glad to have ya back!"
+.byte NewLine
+.text "I missed you. I really did."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I didn't say anythin' for certain."
+.byte NewLine
+.text "Hell, I said “maybe” like 3 times."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...You'll come around."
+.byte NewLine
+.text "I'm sure of it."
+.byte WaitForA
+.byte ScrollText
+.text "I know you, Ralf—ya can't fool me into"
+.byte NewLine
+.text "believin' you prefer a mercenary's gig."
+.byte NewLine
+.text "Ya like havin' a place to belong."
+.byte WaitForA
+.byte ScrollText
+.text "Now that my pitch went on through,"
+.byte NewLine
+.text "'tis just a matter o' time."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Whatever helps ya sleep at night, I guess."
+.byte WaitForA
+
 .byte EndText
 
 SaraMartyTalk

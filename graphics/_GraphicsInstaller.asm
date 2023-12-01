@@ -568,6 +568,13 @@ nintendo_logo
 
 ;.here
 
+* = $27ECDB
+.logical lorom($27ECDB, 1)
+
+.binary "StaSprite_Player_Mounted_Body.4bpp.fe4"
+
+.here
+
 * = $4BF000
 .logical lorom($4BF000, 1)
 

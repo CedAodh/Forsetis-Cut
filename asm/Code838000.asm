@@ -7924,7 +7924,7 @@ rlRollRandomBases ; 83/AA35
 	sta aSelectedCharacterBuffer.Strength,b
 	rep #$30
 
-	lda #4
+	lda #1
 	jsl rlUnknown80B0E6
 
 	sep #$20
@@ -7945,28 +7945,28 @@ rlRollRandomBases ; 83/AA35
 	sta aSelectedCharacterBuffer.Speed,b
 	rep #$30
 
-	lda #4
+	lda #3
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Defense,b
 	rep #$30
 
-	lda #4
+	lda #2
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Constitution,b
 	rep #$30
 
-	lda #4
+	lda #6
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Luck,b
 	rep #$30
 
-	lda #4
+	lda #5
 	jsl rlUnknown80B0E6
 
 	sep #$20

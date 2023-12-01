@@ -314,7 +314,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._HiredSwordName		; Unused
 
-	.word	<>char_names._IllusionName	
+	.word	<>char_names._BharatName	
 
 	.word	<>char_names._IllusionName	
 
@@ -345,7 +345,7 @@ char_name_pointers		.block
 	.word	<>char_names._FriegeName
 
 	.word	<>char_names._ResistanceName
-	.word	<>char_names._BharatName
+	.word	<>char_names._IllusionName
 
 	.word	<>char_names._FriegeName
 	.word	<>char_names._FriegeName
@@ -420,9 +420,9 @@ char_name_pointers		.block
 	.word	<>char_names._DracoName
 
 	.word	<>char_names._LoptrianName
-	.word	<>char_names._LoptrianName
-	.word	<>char_names._LoptrianName
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._LoptrName
+	.word	<>char_names._LoptrName
+	.word	<>char_names._LoptrName
 
 	.word	<>char_names._MunsterName
 
@@ -1094,8 +1094,8 @@ _IliosName
 	.text "Ilios "
 	.word $0000
 
-_PaladinName
-	.text "Paladin "
+_LoptrName
+	.text "Loptr "
 	.word $0000
 
 _BowKnightName

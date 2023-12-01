@@ -92,6 +92,8 @@
 	_BaronShields .block
 	  .structBattleAnimationShieldEntry	RaydrikChp24,	Shield_Baron,		BA_ShieldPalette_Unknown0F
 	  .structBattleAnimationShieldEntry	Gustav,	Shield_Baron,		BA_ShieldPalette_Unknown1C
+	  .structBattleAnimationShieldEntry	Bharat,	Shield_Baron,		BA_ShieldPalette_KnightLord
+	  .structBattleAnimationShieldEntry	Cohen,	Shield_Emperor,		BA_ShieldPalette_KnightLord
 	  	  .structBattleAnimationShieldEntry	-1,		Shield_Baron,		BA_ShieldPalette_Baron_Emperor
         .endblock
 

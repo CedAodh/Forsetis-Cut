@@ -361,14 +361,14 @@ ch3end2
 .text "Well, two can play at that game."
 .byte WaitForA
 .byte ScrollText
-.text "I'm goin' in and waving the white flag—"
+.text "I'm going in and waving the white flag—"
 .byte NewLine
 .text "no doubt they'll arrest me too. I'll do what"
 .byte NewLine
 .text "I can to protect him from the inside."
 .byte WaitForA
 .byte ScrollText
-.text "The rest of you, hightail it outta here"
+.text "The rest of you, book it out of here"
 .byte NewLine
 .text "and make ready to rescue him!"
 .byte WaitForA

@@ -34,11 +34,12 @@ eventChapter6Events ; 99/A346
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $0D, _KnightReinforcements
-			CMP_WORD_FALSE $7E4F9A, $0000
+			TEST_FLAG_SET $07
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $07, _TolmanGroupCharge
 			CMP_WORD_FALSE $7E4F9A, $0000
+			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -60,9 +61,9 @@ eventChapter6Events ; 99/A346
 		EVENT $1E, _MachaCedTalk
 			CHECK_CHARS2 Macha, CedChp4x
 		END_DEFINITION
-		EVENT $1F, _LeifBrightonTalk
-			CHECK_CHARS2 Leif, Brighton
-		END_DEFINITION
+		;EVENT $1F, _LeifBrightonTalk
+		;	CHECK_CHARS2 Leif, Brighton
+		;END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/A3D6
@@ -96,8 +97,60 @@ eventChapter6Events ; 99/A346
 			macroEventConditionCheckCoords [2, 24]
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
-		EVENT $00, _MoneyHouse
+		EVENT $00, _ScrollHouse
 			macroEventConditionCheckCoords [21, 15]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _AnnaHouse
+			macroEventConditionCheckCoords [2, 21]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _SupportHouse
+			macroEventConditionCheckCoords [15, 15]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _MageHouse
+			macroEventConditionCheckCoords [15, 18]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _AuthorityHouse
+			macroEventConditionCheckCoords [13, 18]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _VigorHouse
+			macroEventConditionCheckCoords [15, 21]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _MoneyHouse
+			macroEventConditionCheckCoords [19, 18]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _CavHouse
+			macroEventConditionCheckCoords [21, 18]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _WeaponTriangleHouse
+			macroEventConditionCheckCoords [21, 21]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _CaptureHouse
+			macroEventConditionCheckCoords [19, 21]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _DeadUnitConvoyHouse
+			macroEventConditionCheckCoords [19, 24]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _MissingStaffHouse
+			macroEventConditionCheckCoords [15, 24]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _FuccHouse
+			macroEventConditionCheckCoords [13, 24]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _WeightHouse
+			macroEventConditionCheckCoords [2, 15]
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -368,6 +421,58 @@ eventChapter6Events ; 99/A346
 	_MoneyHouse
 		macroDialogueHouse money
 	END1
+	
+	_WeightHouse
+		macroDialogueHouse weaponweight
+	END1
+	
+	_FuccHouse
+		macroDialogueHouse fcm
+	END1
+	
+	_CavHouse
+		macroDialogueHouse canto
+	END1
+	
+	_ScrollHouse
+		macroDialogueHouse crusader
+	END1
+	
+	_MissingStaffHouse
+		macroDialogueHouse stavescanmiss
+	END1
+	
+	_AnnaHouse
+		macroDialogueHouse secretshop
+	END1
+	
+	_AuthorityHouse
+		macroDialogueHouse authority
+	END1
+	
+	_VigorHouse
+		macroDialogueHouse vigor
+	END1
+	
+	_DeadUnitConvoyHouse
+		macroDialogueHouse deadunititems
+	END1
+	
+	_WeaponTriangleHouse
+		macroDialogueHouse weapontriangle
+	END1
+	
+	_MageHouse
+		macroDialogueHouse mages
+	END1
+	
+	_CaptureHouse
+		macroDialogueHouse instantcapture
+	END1
+	
+	_SupportHouse
+		macroDialogueHouse bond
+	END1
 
 	_Door1 ; 99/AAB0
 		macroOpenDoorByTileChangeID 6
@@ -587,7 +692,7 @@ eventChapter6Events ; 99/A346
 	END2
 	
 	_LeifBrightonTalk
-		macroDialogueHouse leifbrightonch6
+		;macroDialogueHouse leifbrightonch6
 	END2
 	
 	_DaisyCedTalk
