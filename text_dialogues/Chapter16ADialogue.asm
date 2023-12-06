@@ -11,7 +11,7 @@ ch16Aconomorarrive
 .byte Left_slot
 .word LoadPortrait
 .word dvorak_portrait
-.text "Lord Conomor, are you sure about this?"
+.text "Count Conomor, are you sure about this?"
 .byte WaitForA
 .byte ScrollText
 .text "Win or lose, the motherland is already forfeit."
@@ -110,7 +110,7 @@ ch16Ailioskarin
 
 .byte Left_slot
 .byte ScrollText
-.text "Should I take that as a “no,” then?"
+.text "Should I take that as a no, then?"
 .byte WaitForA
 .byte ScrollText
 .text "Oh, I should've known"
@@ -145,7 +145,7 @@ ch16Ailioskarin
 .byte ScrollText
 .text "Really?"
 .byte NewLine
-.text "Well, now we're gettin' somewhere!"
+.text "Well, now we're getting somewhere!"
 .byte NewLine
 .text "All right, what is it you want?"
 .byte WaitForA
@@ -230,9 +230,9 @@ ch16Ailioskarin
 .byte ScrollText
 .text "That's an awfully noble-sounding name..."
 .byte NewLine
-.text "Y'know, the kind a stuffy aristocrat has to"
+.text "Well, you know, the kind a stuffy aristocrat"
 .byte NewLine
-.text "practice pronouncing."
+.text "has to practice pronouncing, at least."
 .byte WaitForA
 .byte NewLine
 .text "Is “Ilios” even your real name?"
@@ -283,7 +283,9 @@ ch16Ailioskarin
 .text "You look more like a..."
 .byte WaitForA
 .byte NewLine
-.text "Troy! Oh, that's perfect!"
+.text "Troy!"
+.byte NewLine
+.text "Oh, that's perfect!"
 .byte NewLine
 .text "That fits you much better, don't you think?"
 .byte WaitForA
@@ -496,7 +498,7 @@ ch16Aschroffleif
 .byte Left_slot
 .word LoadPortrait
 .word schroff_portrait
-.text "Ah, you must be Lord Leif!"
+.text "Ah, you must be Prince Leif!"
 .byte WaitForA
 
 .byte Right_slot
@@ -599,7 +601,7 @@ ch16Abridgekeyhouse
 .byte ScrollText
 .text "Now, I can't even leave my home"
 .byte NewLine
-.text "for fear of getting a knife between my ribs."
+.text "for fear of getting a knife between the ribs."
 .byte WaitForA
 .byte ScrollText
 .text "I doubt I'll ever need this key again,"
@@ -681,7 +683,7 @@ ch16Aschroffintro
 .byte Right_slot
 .text "Very well. Loath as I am to impose upon"
 .byte NewLine
-.text "your kindness, I suppose I don't have"
+.text "your kindness, I suppose I haven't"
 .byte NewLine
 .text "much of a choice..."
 .byte WaitForA
@@ -866,7 +868,7 @@ ch16Aopening2
 .byte WaitForA
 
 .byte Right_slot
-.text "Hm... The perimeter of Ford Norden is"
+.text "Hm... The perimeter of Fort Norden is"
 .byte NewLine
 .text "protected by ballistae..."
 .byte WaitForA
@@ -1016,7 +1018,7 @@ ch16Aclosing2
 
 .byte Left_slot
 .byte ScrollText
-.text "“That night?”"
+.text "“That night”?"
 .byte NewLine
 .text "What do you remember, milord?"
 .byte WaitForA

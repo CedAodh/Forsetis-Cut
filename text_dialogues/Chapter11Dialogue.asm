@@ -92,7 +92,7 @@ ch11leiffred
 .byte NewLine
 .text "conducted itself!"
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "It seems I was mistaken!"
 .byte WaitForA
 
@@ -227,7 +227,7 @@ ch11opening1
 .text "but who exactly were they?"
 .byte WaitForA
 .byte ScrollText
-.text "Remind me: what was your assignment again?"
+.text "Remind me—what was your assignment again?"
 .byte NewLine
 .text "I'm just a lowly general of House Friege,"
 .byte NewLine
@@ -423,7 +423,6 @@ ch11opening1
 .byte NewLine
 .text "You feeble-minded wench!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -431,6 +430,7 @@ ch11opening1
 .word guard_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Men! Seize Olwen and throw her"
 .byte NewLine
 .text "in the dungeon for this act of rebellion!"
@@ -439,7 +439,6 @@ ch11opening1
 .byte Left_slot
 .text "Yes, General!"
 .byte WaitForA
-
 .byte ScrollText
 .word LoadPortrait
 .word olwen_portrait
@@ -462,9 +461,6 @@ ch11opening1
 .byte NewLine
 .text "How contemptible..."
 .byte WaitForA
-.word ClearPortrait
-.word RetractBox
-
 .byte EndText
 
 
@@ -534,7 +530,7 @@ ch11opening3
 
 .byte Right_slot
 .byte ScrollText
-.text "“Personal grudge?” Nonsense!"
+.text "“Personal grudge”? Nonsense!"
 .byte WaitForA
 .byte ScrollText
 .text "Right where you're standing,"

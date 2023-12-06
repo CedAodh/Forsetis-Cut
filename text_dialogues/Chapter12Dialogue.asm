@@ -1,9 +1,5 @@
 ch12magicringhouseolwen
 
-.byte Left_slot
-.word LoadPortrait
-.word younglady_portrait
-
 .byte Right_slot
 .word LoadPortrait
 .word girl_portrait
@@ -11,8 +7,14 @@ ch12magicringhouseolwen
 .byte NewLine
 .text "I was hopin' I'd get to see you again."
 .byte WaitForA
+
+.byte Left_slot
+.word LoadPortrait
+.word younglady_portrait
+
+.byte Right_slot
 .byte ScrollText
-.text "This here's my Big Sis."
+.text "This here's my big sis."
 .byte NewLine
 .text "Sis, this is the lady I told you about!"
 .byte WaitForA
@@ -24,9 +26,9 @@ ch12magicringhouseolwen
 .text "I forgot to give it to you before you left."
 .byte WaitForA
 .byte ScrollText
-.text "Awful sorry about that..."
+.text "I'm sorry about that..."
 .byte NewLine
-.text "But, uh, better late than never, right? "
+.text "But...better late than never, right?"
 .byte WaitForA
 
 .byte EndText
@@ -53,9 +55,9 @@ ch12magicringhousenotolwen
 .text "showin' up in droves to attack Tarrah..."
 .byte WaitForA
 .byte ScrollText
-.text "If you plan on makin' trouble fer them,"
+.text "If you plan on makin' trouble for them,"
 .byte NewLine
-.text "yer a friend of mine. Take this, an' use it to"
+.text "you're a friend o' mine. Take this, an' use it to"
 .byte NewLine
 .text "patch yerself up if you get hurt. Hope it helps."
 .byte WaitForA
@@ -85,29 +87,29 @@ ch12heimscrollhousesaved
 .word oldlady_portrait
 .text "Billowin' Bragi!"
 .byte NewLine
-.text "Yer the ones that helped me grandkid, ain'tcha?"
+.text "You're the ones that helped my grandson, right?"
 .byte WaitForA
 .byte ScrollText
-.text "You've me deepest gratitude, you do."
+.text "You've my deepest gratitude, you do."
 .byte NewLine
 .text "In all my years, I've never—"
 .byte WaitForA
 .byte ScrollText
-.text "Bah, what am I doin'?!"
+.text "Bah, what's gotten into me?!"
 .byte NewLine
-.text "Heroes like you ain't got time to stand around"
+.text "Heroes like you don't got the time to stand"
 .byte NewLine
-.text "listenin' to me yammer on!"
+.text "around listenin' to me yammer on an' on!"
 .byte WaitForA
 .byte ScrollText
 .text "Take a gander. This scroll is a family heirloom,"
 .byte NewLine
-.text "but a family heirloom don't mean much without"
+.text "but a family heirloom can't mean much without"
 .byte NewLine
 .text "a family, an' you gave mine back to me."
 .byte WaitForA
 .byte ScrollText
-.text "I'd like you to have it, I would."
+.text "Now it's time fer me to give somethin' to you."
 .byte NewLine
 .text "Won't take no for an answer!"
 .byte WaitForA
@@ -137,20 +139,31 @@ ch12silencehousesaved
 .byte NewLine
 .text "the Liberation Army was comin' this way!"
 .byte NewLine
-.text "Me boy told me all about what happened."
+.text "My boy told me all about what happened."
 .byte WaitForA
 .byte NewLine
-.text "We're mighty indebted to you, we are."
+.text "We're indebted to you big time, so we are."
 .byte WaitForA
 .byte ScrollText
 .text "Take this staff as my way of sayin' thanks."
 .byte NewLine
-.text "It can quiet down anyone you point it at."
+.text "It's 'parently got the power to just"
+.byte NewLine
+.text "turn off people's voices!"
 .byte WaitForA
+.byte ScrollText
+.text "I tried wavin' it around fer fun once—"
 .byte NewLine
-.text "If you ever have kids of your own, it's awful"
+.text "then I saw a buncha flashin' lights,"
 .byte NewLine
-.text "handy fer shuttin' them up when it's naptime."
+.text "and I thought I lost my voicebox!"
+.byte WaitForA
+.byte ScrollText
+.text "Took me a few days to recover..."
+.byte NewLine
+.text "Now, I just want that harrowin'"
+.byte NewLine
+.text "doohickey gone and outta 'ere!"
 .byte WaitForA
 
 .byte EndText
@@ -247,7 +260,7 @@ ch12salemtina
 .byte NewLine
 .text "your hair like that, anyway?—and let you"
 .byte NewLine
-.text "get back to lookout or whatever."
+.text "get back to the night shift!"
 .byte WaitForA
 .byte NewLine
 .text "Nighty-night, Salem!"
@@ -311,7 +324,7 @@ ch12mareetadialogue
 .byte WaitForA
 
 .byte Right_slot
-.text "The villages 'round here are bein' raided"
+.text "The villages around here are bein' raided"
 .byte NewLine
 .text "by bandits, that's what! Everyone's"
 .byte NewLine
@@ -327,21 +340,21 @@ ch12mareetadialogue
 
 .byte Right_slot
 .byte ScrollText
-.text "No, no, no—that's the Dandelion yer thinkin' of,"
+.text "No, no, no—that's the Dandelion Bandits you're"
 .byte NewLine
-.text "an' they would never stoop to plunderin'"
+.text "thinking of, an' they would never stoop to"
 .byte NewLine
-.text "a village like this!"
+.text "plunderin' a village like this!"
 .byte WaitForA
 .byte ScrollText
 .text "Matter of fact, they've even helped us"
 .byte NewLine
 .text "when we needed it!"
 .byte NewLine
-.text "Can't be the Dandelion—I'd bet me life on it!"
+.text "Can't be the Dandelions—I'd bet my life on it!"
 .byte WaitForA
 .byte ScrollText
-.text "It must be them rough types"
+.text "It must be those rough types"
 .byte NewLine
 .text "that turned up here not too long ago..."
 .byte WaitForA
@@ -358,9 +371,9 @@ ch12mareetadialogue
 .text "What in blazes are you thinkin'?!"
 .byte WaitForA
 .byte NewLine
-.text "You...look an awful lot like me daughter,"
+.text "You...look an awful lot like my daughter,"
 .byte NewLine
-.text "y'know. A pretty little thing like you"
+.text "you know. A pretty little thing like you"
 .byte NewLine
 .text "can't expect to go toe-to-toe with bandits!"
 .byte WaitForA
@@ -374,7 +387,7 @@ ch12mareetadialogue
 .text "I'm the daughter of Eyvel of Fiana!"
 .byte WaitForA
 .byte ScrollText
-.text "No mere bandit could defeat me!"
+.text "No mere bandit could ever defeat me!"
 .byte WaitForA
 
 .byte EndText
@@ -437,14 +450,14 @@ ch12opening1
 .text "the church, that's all."
 .byte WaitForA
 .byte ScrollText
-.text "It ain't right to kill a man"
+.text "It ain't right to kill a man just because"
 .byte NewLine
-.text "just because he wants to go his own way."
+.text "he wants to go his own way."
 .byte WaitForA
 .byte ScrollText
-.text "...But I gotta ask you,"
+.text "...But I gotta ask, why'd you want"
 .byte NewLine
-.text "why'd you want to leave in the first place?"
+.text "to leave in the first place?"
 .byte WaitForA
 .byte ScrollText
 .text "I hear the Loptrian bishops have even more"
@@ -468,7 +481,7 @@ ch12opening1
 .text "Hmm... Simple as that, huh?"
 .byte WaitForA
 .byte ScrollText
-.text "I like the cut of your jib, kid."
+.text "Y'know, I like the cut of your jib, kid."
 .byte NewLine
 .text "How about you join up with me and my crew?"
 .byte NewLine
@@ -599,11 +612,11 @@ ch12opening2
 .byte WaitForA
 
 .byte Right_slot
-.text "Yer more'n welcome, Bishop."
+.text "You're more'n welcome, Bishop."
 .byte NewLine
 .text "Just leave everything to me, and don't you fret"
 .byte NewLine
-.text "about it fer one moment longer."
+.text "about it for one moment longer."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait

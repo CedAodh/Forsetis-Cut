@@ -68,7 +68,7 @@ ch14homernanna
 .byte NewLine
 .text "All the people of the city, young and old,"
 .byte NewLine
-.text "are fighting tooth-and-nail for Tarrah!"
+.text "are fighting tooth and nail for Tarrah!"
 .byte WaitForA
 .byte ScrollText
 .text "But here you are, already halfway"
@@ -81,7 +81,8 @@ ch14homernanna
 .byte Left_slot
 .byte ScrollText
 .text "Well, first, it is past noon, second—"
-.byte NewLine
+.byte WaitForA
+.byte ScrollText
 .text "H-hey, sweetheart, don't get that pretty face"
 .byte NewLine
 .text "all wet with tears..."
@@ -157,7 +158,7 @@ ch14villager4
 .byte Right_slot ; HOUSE SOUTH WEST
 .word LoadPortrait
 .word younglady_portrait
-.text "My Ma and Pa were both killed..."
+.text "My ma and pa were both killed..."
 .byte NewLine
 .text "Tarrah has already lost, just like"
 .byte NewLine
@@ -207,7 +208,7 @@ ch14homermen
 .word homer_portrait
 .text "Hmm... A man, huh?"
 .byte NewLine
-.text "I'm not quite in the mood for that today,"
+.text "I'm not quite in the mood for that today;"
 .byte NewLine
 .text "but please, do come see me another time."
 .byte WaitForA
@@ -224,7 +225,7 @@ ch14nosferatuhouse
 .byte NewLine
 .text "I'm terribly sorry to bother you, but I have"
 .byte NewLine
-.text "a book that I'm to give to Lady Linoan."
+.text "a book that I'm to give to Duchess Linoan."
 .byte WaitForA
 .byte ScrollText
 .text "Her father, the late duke, entrusted it to me,"
@@ -334,7 +335,7 @@ ch14dragonpikehousedean
 .byte ScrollText
 .text "...Besides, if you won't accept his gift willingly,"
 .byte NewLine
-.text "then as Princess of Thracia,"
+.text "then as princess of Thracia,"
 .byte NewLine
 .text "I'll just order you to accept it."
 .byte WaitForA
@@ -369,7 +370,7 @@ ch14dragonpikehousedean
 .byte NewLine
 .text "Make sure nothing happens to her."
 .byte NewLine
-.text "Linoan and Brother are betrothed, after all..."
+.text "Linoan and Arion are betrothed, after all..."
 .byte WaitForA
 .byte ScrollText
 .text "He wanted to come here and defend Linoan"
@@ -526,7 +527,7 @@ ch14shannamleave
 
 .byte Left_slot
 .byte ScrollText
-.text "Uh-huh. Yeah, if you're the Prince of Isaach,"
+.text "Uh-huh. Yeah, if you're the prince of Isaach,"
 .byte NewLine
 .text "I'm Saint Heim. I can see right through you."
 .byte WaitForA
@@ -821,7 +822,7 @@ ch14opening2
 .byte NewLine
 .text "sent by the empire interrogated me"
 .byte NewLine
-.text "about Prince Leif's location."
+.text "about Lord Leif's location."
 .byte WaitForA
 .byte ScrollText
 .text "To this day, just the thought of that disgusting"
@@ -1266,7 +1267,6 @@ ch14ending2
 .byte Left_slot
 .byte ScrollText
 .word ClearPortrait
-.word RetractBox
 
 .byte Right_slot
 .byte ScrollText

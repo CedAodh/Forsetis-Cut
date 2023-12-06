@@ -421,7 +421,7 @@ ch9villagestaminasrink
 .byte NewLine
 .text "If you like it—an' I'm sure you will—see about"
 .byte NewLine
-.text "buyin' more at the Vendor next door, eh?"
+.text "buyin' more at the vendor next door, eh?"
 .byte WaitForA
 .byte ScrollText
 .text "Oh, but best stock up while you can!"

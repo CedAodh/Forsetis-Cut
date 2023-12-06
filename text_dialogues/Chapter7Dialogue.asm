@@ -1222,7 +1222,7 @@ ch7purewaterhouse
 .byte NewLine
 .text "whether yer usin' it or defendin' against it—"
 .byte NewLine
-.text "use this afore you go inside."
+.text "use this 'fore you go inside."
 .byte WaitForA
 
 .byte EndText
@@ -1232,14 +1232,14 @@ ch7antitoxinhouse
 .byte Right_slot
 .word LoadPortrait
 .word beardedman_portrait
-.text "Yer headed fer Tarrah?"
+.text "Yer headed for Tarrah?"
 .byte NewLine
 .text "Best take this antitoxin with you, then."
 .byte WaitForA
 .byte ScrollText
 .text "If you get stuck with one o' them"
 .byte NewLine
-.text "Venin weapons, just pour that over yer wound"
+.text "venin weapons, jus' pour that over yer wound"
 .byte NewLine
 .text "and it'll clear right up."
 .byte WaitForA
@@ -1248,7 +1248,7 @@ ch7antitoxinhouse
 .byte NewLine
 .text "poisons... One dose o' the stuff an' you'll be in"
 .byte NewLine
-.text "fer a bad time, so keep that antitoxin handy."
+.text "for a bad time, so keep that antitoxin handy."
 .byte WaitForA
 
 .byte EndText
@@ -1277,7 +1277,7 @@ ch7mastersealhouse
 .text "Hoo, what a relief..."
 .byte WaitForA
 .byte ScrollText
-.text "Look, how about a little exchange:"
+.text "...Look, how about a little exchange:"
 .byte NewLine
 .text "I give you this, and you keep quiet"
 .byte NewLine

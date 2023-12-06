@@ -246,7 +246,7 @@ ch2villageronan
 .word oldlady_portrait
 .text "B-but you've never been in a real fight like this"
 .byte NewLine
-.text "before...! You that eager to leave yer mother"
+.text "before...! You that eager to leave your mother"
 .byte NewLine
 .text "alone in this world?!"
 .byte WaitForA
@@ -271,7 +271,7 @@ ch2villageronanattacked
 .word LoadPortrait
 .word braidedgirl_portrait
 .byte $09 ; font 9(always use font 9)
-.text "There was a ship here that could've made"
+.text "There was a ship here that coulda made"
 .byte NewLine
 .text "its way to the Corsair Isles,"
 .byte NewLine
@@ -295,7 +295,7 @@ ch2villagespeedring
 .byte ScrollText
 .text "They'll make one big, bloody example"
 .byte NewLine
-.text "outta us! What are we supposed to do?!"
+.text "outta us! What're we supposed to do?!"
 .byte WaitForA
 	
 .byte Left_Slot
@@ -305,7 +305,7 @@ ch2villagespeedring
 .byte NewLine
 .text "These people are puttin' their lives on the line"
 .byte NewLine
-.text "fer us, and you've got the nerve to complain?!"
+.text "for us, and you've got the nerve to complain?!"
 .byte WaitForA
 
 .byte Right_Slot
@@ -333,7 +333,7 @@ ch2villagespeedring
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "...I'm sorry 'bout my brother."
+.text "...I'm sorry about my brother."
 .byte NewLine
 .text "He wasn't always like this."
 .byte WaitForA

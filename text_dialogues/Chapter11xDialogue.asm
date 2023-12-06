@@ -461,14 +461,14 @@ ch11xopening2
 .byte Left_slot
 .word LoadPortrait
 .word boy_portrait
-.text "Y-yer an imperial soldier...!"
+.text "Y-you're an imperial soldier...!"
 .byte WaitForA
 .byte NewLine
 .text "You witch! All you do is go around"
 .byte NewLine
-.text "spreadin' misery to other folk!"
+.text "spreadin' misery to good people!"
 .byte NewLine
-.text "An' now yer here to kill us, ain'tcha?!"
+.text "An' now you're here to kill us!"
 .byte WaitForA
 
 .byte Right_slot
@@ -483,7 +483,7 @@ ch11xopening2
 .byte ScrollText
 .word LoadPortrait
 .word girl2_portrait
-.text "S-soldiers were raidin' our village..."
+.text "S-soldiers were raiding our home..."
 .byte NewLine
 .text "They took me an' brought me here,"
 .byte NewLine
@@ -497,9 +497,7 @@ ch11xopening2
 .byte ScrollText
 .word LoadPortrait
 .word boy_portrait
-.text "Yer talkin' like they ain't already decided"
-.byte NewLine
-.text "what to do with us!"
+.text "You're talkin' they haven't decided yet!"
 .byte NewLine
 .text "They're gonna sacrifice us to Loptous!"
 .byte WaitForA
@@ -530,7 +528,6 @@ ch11xopening2
 .word ClearPortrait
 
 .byte Right_slot
-.byte ScrollText
 .text "It can't be..."
 .byte NewLine
 .text "Has the empire really been conducting"
@@ -562,7 +559,7 @@ ch11xopening2
 .word girl_portrait
 .text "Please, ma'am, help us!"
 .byte NewLine
-.text "Take us back home!"
+.text "Help us get back home!"
 .byte WaitForA
 
 .byte Right_slot

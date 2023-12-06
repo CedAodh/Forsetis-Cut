@@ -2,16 +2,16 @@
 
 ch5op1
 
-.byte Left_slot
-.word LoadPortrait
-.word eyvel_portrait
-
 .byte Right_slot
 .word LoadPortrait
 .word nanna_portrait
 
 .byte Left_slot
-.text "Lady Nanna! You're a sight for sore eyes!"
+.word LoadPortrait
+.word eyvel_portrait
+.text "Lady Nanna!"
+.byte NewLine
+.text "You're a sight for sore eyes!"
 .byte WaitForA
 
 .byte Right_slot
@@ -20,9 +20,9 @@ ch5op1
 
 .byte Left_slot
 .byte ScrollText
-.text "I can't tell you how glad I am that you're safe,"
+.text "I can't tell you how glad I am that you're safe."
 .byte NewLine
-.text "Little Nan. Did that maggot Raydrik hurt you?"
+.text "Did that maggot Raydrik hurt you?"
 .byte WaitForA
 
 .byte Right_slot
@@ -32,14 +32,18 @@ ch5op1
 
 .byte Left_slot
 .byte ScrollText
-.text "Mareeta?! What's happened to my Mareeta?!"
+.text "Mareeta?!"
+.byte NewLine
+.text "What's happened to my Mareeta?!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I don't know if she's even alive... We were"
+.text "I...I don't know..."
 .byte NewLine
-.text "separated as soon as we got to the castle."
+.text "We were separated as soon as"
+.byte NewLine
+.text "we got to the castle."
 .byte WaitForA
 .byte ScrollText
 
@@ -141,9 +145,11 @@ ch5op2
 .byte WaitForA
 
 .byte Left_slot
-.text "...Lady Nanna, this is gonna get real dangerous,"
+.text "...Lady Nanna, this is about to get"
 .byte NewLine
-.text "real quick. Stay clear and keep your head down."
+.text "real dangerous, real quick."
+.byte NewLine
+.text "Stay clear and keep your head down."
 .byte WaitForA
 
 .byte EndText
@@ -202,7 +208,7 @@ ch5raydrikveldturn1
 .byte ScrollText
 .text "Well, it's all in her hands now..."
 .byte NewLine
-.text "That “Swordmaster” better live up to her name."
+.text "That “swordmaster” better live up to her name."
 .byte WaitForA
 .byte ScrollText
 .text "Ah, and now the star takes center stage!"
@@ -231,12 +237,14 @@ ch5mareetaloaded1
 .byte WaitForA
 
 .byte Right_slot
-.text "What're you scheming?!"
+.text "What are you scheming?!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Heh... Bring the girl out!"
+.text "Heh..."
+.byte NewLine
+.text "Bring the girl out!"
 .byte WaitForA
 
 .byte EndText
@@ -258,9 +266,8 @@ ch5mareetaloaded2
 .byte Left_slot
 .text "......"
 .byte WaitForA
-.byte ScrollText
 
-.byte Right_slot
+.byte Right_Slot
 .byte ScrollText
 
 .byte EndText
@@ -270,15 +277,18 @@ ch5mareetaloaded3
 .byte Right_slot
 .word LoadPortrait
 .word nanna_portrait
-.text "Mareeta, Mareeta! Oh, you're safe after all!"
+.text "Mareeta, Mareeta!"
+.byte NewLine
+.text "Oh, you're safe after all!"
 .byte NewLine
 .text "I can't tell you how worried I—" ; interrupt
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .word LoadPortrait
 .word eyvel_portrait
-.text "Little Nan, don't move a muscle!"
+.text "Hold, Lady Nanna!"
 .byte WaitForA
 
 .byte Right_slot
@@ -292,7 +302,6 @@ ch5mareetaloaded3
 .word mareeta_portrait
 .text "......"
 .byte WaitForA
-.byte ScrollText
 
 .byte Right_slot
 .byte ScrollText
@@ -303,11 +312,14 @@ ch5mareetaloaded3
 
 ch5mareetaloaded4
 
-.byte Right_slot
-.text "Mareeta! Talk to me...!"
+.byte right_slot
+.text "Mareeta!"
+.byte NewLine
+.text "Talk to me...!"
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "...K-kill..."
 .byte WaitForA
 
@@ -357,8 +369,7 @@ ch5mareetaloaded4
 .text "It's an exceptional blade, straight from"
 .byte NewLine
 .text "the treasure vault inside this very castle."
-.byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "...The Shadow Sword, I believe it's called."
 .byte WaitForA
 
@@ -380,9 +391,9 @@ ch5mareetaloaded4
 
 .byte Right_slot
 .byte ScrollText
-.text "I'll rip that lying tongue right out of your"
+.text "I'll rip that lying tongue from your mouth!"
 .byte NewLine
-.text "mouth! How... How dare you do this to Mar—" ; interrupt
+.text "How... How dare you do this to Mar—" ; interrupt
 .byte WaitForA
 
 .byte Left_slot
@@ -394,16 +405,15 @@ ch5mareetaloaded4
 .byte ScrollText
 .text "The Shadow Sword bears incredible power—"
 .byte NewLine
-.text "an exceptional gift for an exceptional woman!"
+.text "how well shall an incredible swordswoman"
 .byte NewLine
-.text "Ahahaha...!"
+.text "fare against it? Ahahaha...!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Raydrik...!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -411,7 +421,10 @@ ch5mareetaloaded4
 .word mareeta_portrait
 
 .byte Right_slot
-.text "Mareeta, look at me! Snap out of it!"
+.byte ScrollText
+.text "Mareeta, look at me!"
+.byte NewLine
+.text "Snap out of it!"
 .byte WaitForA
 
 .byte Left_slot
@@ -470,15 +483,13 @@ ch5mareetaresist
 
 ch5mareetacaptured
 
-.byte Left_slot
-.word LoadPortrait
-.word mareeta_portrait
-
 .byte Right_slot
 .word LoadPortrait
 .word eyvel_portrait
 
 .byte Left_slot
+.word LoadPortrait
+.word mareeta_portrait
 .text "Agh...!"
 .byte NewLine
 .text "Let go..."
@@ -487,20 +498,14 @@ ch5mareetacaptured
 .byte WaitForA
 
 .byte Right_slot
-.text "...Sorry about this, Mareeta."
+.text "...Forgive me, Mareeta."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Ugh...!"
 .byte WaitForA
-.word ClearPortrait
 .byte ScrollText
-
-.byte Right_slot
-.byte ScrollText
-
-.byte Left_slot
 .word LoadPortrait
 .word raydrik_portrait
 .text "What...?! She's been knocked out cold..."
@@ -515,18 +520,13 @@ ch5mareetacaptured
 .byte ScrollText
 .text "As long as my heart beats,"
 .byte NewLine
-.text "I'll never forgive you..."
+.text "you will never know forgiveness..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Th-the woman's a beast...!"
 .byte WaitForA
-.byte ScrollText
-
-.byte Right_slot
-.byte ScrollText
-.word ClearPortrait
 
 .byte EndText
 
@@ -535,7 +535,11 @@ ch5mareetakilled
 .byte Right_slot
 .word LoadPortrait
 .word eyvel_portrait
-.text "...Mareeta... I'm sorry... I'm so sorry..."
+.text "...Mareeta... I'm sorry..."
+.byte NewLine
+.text "*sniff*"
+.byte NewLine
+.text "I'm so sorry..."
 .byte WaitForA
 
 .byte Left_slot
@@ -553,26 +557,17 @@ ch5mareetakilled
 .byte ScrollText
 .text "As long as my heart beats,"
 .byte NewLine
-.text "I'll never forgive you..."
+.text "you will never know forgiveness..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Th-the woman's a beast...!"
 .byte WaitForA
-.byte ScrollText
-
-.byte Right_slot
-.byte ScrollText
-.word ClearPortrait
 
 .byte EndText
 
 ch5raydrikpanicsA
-
-.byte Left_slot
-.word ClearPortrait
-.word RetractBox
 
 .byte Right_slot
 .word LoadPortrait
@@ -589,15 +584,14 @@ ch5raydrikpanicsA
 .text "with her blood!"
 .byte WaitForA
 
-.word PlayMusic
-.word $3E
-
 .byte Left_slot
 .word LoadPortrait
 .word veld_portrait
+.word PlayMusic
+.byte $3E
 .text "Panicking already, Raydrik?"
 .byte NewLine
-.text "Fear not. I'll clean up your mess for you."
+.text "Fear not; I'll clean up your mess for you."
 .byte WaitForA
 
 .byte Right_slot
@@ -614,7 +608,6 @@ ch5eyvelcaptured
 .byte Right_slot
 .word LoadPortrait
 .word raydrik_portrait
-
 .text "Tch..."
 .byte NewLine
 .text "In the end, she was a shadow"
@@ -628,7 +621,6 @@ ch5eyvelcaptured
 .text "What do you want done with her, milord?"
 .byte WaitForA
 .byte ScrollText
-
 .word LoadPortrait
 .word veld_portrait
 .text "Don't kill her, Raydrik."
@@ -640,34 +632,37 @@ ch5eyvelcaptured
 .byte ScrollText
 .word LoadPortrait
 .word eyvel_portrait
-.text "Wh-what...?"
+.text "H-huh...?"
 .byte WaitForA
 
 .byte EndText
 
 ch5eyvelstone
 
-.byte Left_slot
+.byte Right_slot
 .word LoadPortrait
 .word raydrik_portrait
+.text "G-gods' breath..."
+.byte WaitForA
 
-.byte Right_slot
+.byte left_slot
 .word LoadPortrait
 .word veld_portrait
 
-.byte Left_slot
-.text "G-gods' breath... Your spellcraft is truly"
+.byte right_slot
 .byte NewLine
-.text "a sight to behold, Your Eminence. Not even"
+.text "Your spellcraft is truly a sight to behold,"
 .byte NewLine
-.text "the wildest fable could compare to this..."
+.text "Your Eminence. Not even the wildest fable"
+.byte NewLine
+.text "could compare to this..."
 .byte WaitForA
 
-.byte Right_slot
+.byte left_slot
 .text "Heh, heh, heh..."
 .byte WaitForA
 
-.byte Left_slot
+.byte right_slot
 .byte ScrollText
 .text "A-and now I have a perfect statue of the proud"
 .byte NewLine
@@ -675,29 +670,20 @@ ch5eyvelstone
 .byte NewLine
 .text "to the price of defiance! Ahahaha!"
 .byte WaitForA
-.byte ScrollText
-
-.byte Right_slot
-.byte ScrollText
 
 .byte EndText
 
 ch5nannaleftalone
 
 .byte Left_slot
-.word ClearPortrait
-
-.byte Right_slot
-.word LoadPortrait
-.word raydrik_portrait
-
-.byte Left_slot
+.byte ScrollText
 .word LoadPortrait
 .word guard_portrait
 .text "...What about Finn's little brat?"
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Hmm... Leave the girl be. That fragile little"
 .byte NewLine
 .text "thing couldn't escape the castle."
@@ -712,13 +698,12 @@ ch5nannaleftalone
 .byte ScrollText
 .text "As you wish, Your Excellency."
 .byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
 
-.byte Right_slot
-.byte ScrollText
-.word ClearPortrait
+.byte EndText
+
+ch5nannaleftalone2
+
+.byte right_slot
 .word LoadPortrait
 .word nanna_portrait
 .text "...Eyvel..."
@@ -748,7 +733,6 @@ ch5arenaopeneyvelnanna
 .byte ScrollText
 .text "Leave it to us—but stay behind me, Nanna!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -756,14 +740,14 @@ ch5arenaopeneyvelnanna
 .word eyvel_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Commander, are you all right?"
 .byte WaitForA
 
 .byte Left_slot
-.byte ScrollText
-.text "Lord Leif! Everyone!"
+.text "Lord Leif! And others!"
 .byte NewLine
-.text "Heh, good to see you all made it!"
+.text "Heh, good to see you made it!"
 .byte WaitForA
 
 .byte Right_slot
@@ -845,7 +829,7 @@ ch5arenaopennannadead
 .byte Left_slot
 .text "Leif... I'm so sorry..."
 .byte NewLine
-.text "Nanna was here, she was right here"
+.text "Nanna was here; she was right here"
 .byte NewLine
 .text "with me, and I couldn't... I couldn't..."
 .byte WaitForA
@@ -854,6 +838,13 @@ ch5arenaopennannadead
 .byte ScrollText
 .text "No... Gods, NO! Th-that's not possible!"
 .byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
 .byte ScrollText
 .text "Oh, Nanna... After everything"
 .byte NewLine
@@ -882,21 +873,19 @@ ch5raydrikpanicsB1
 .byte NewLine
 .text "and stain the ground with their blood!"
 .byte WaitForA
-.byte ScrollText
 
 .byte EndText
 
 ch5raydrikpanicsB2
 
-.word PlayMusic
-.word $3E
-
 .byte Left_slot
 .word LoadPortrait
 .word veld_portrait
+.word PlayMusic
+.byte $3E
 .text "Panicking already, Raydrik?"
 .byte NewLine
-.text "Fear not. I'll clean up your mess for you."
+.text "Fear not; I'll clean up your mess for you."
 .byte WaitForA
 
 .byte Right_slot
@@ -912,12 +901,12 @@ ch5raydrikpanicsB2
 ch5raydriktauntsleif
 
 .byte Left_slot
+.byte ScrollText
 .word ClearPortrait
 .word RetractBox
 
 .byte Right_Slot
-.word LoadPortrait
-.word raydrik_portrait
+.byte ScrollText
 .text "We've nothing to fear now!"
 .byte NewLine
 .text "There's no rescuing a block of stone!"
@@ -965,9 +954,6 @@ ch5arenaopennannaalone
 .word ClearPortrait
 .word RetractBox
 
-.byte Right_slot
-.byte ScrollText
-
 .byte EndText
 
 ch5arenaopenbothgone
@@ -984,12 +970,13 @@ ch5arenaopenbothgone
 .byte ScrollText
 .text "Ah! Th-that's...!"
 .byte WaitForA
-.byte ScrollText
 
 .byte EndText
 
 ch5arenaopenafterstone
 
+.byte right_slot
+.byte ScrollText
 .text "No! Gods, NO!"
 .byte NewLine
 .text "Commander! Commander Eyvel!"

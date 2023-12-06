@@ -722,7 +722,7 @@ MachaHouseMacha1
 .word macha_portrait
 
 .byte right_slot
-.text "Macha, my darling! Is it really you?"
+.text "Machyua, my darling! Is it really you?"
 .byte WaitForA
 
 .byte Left_Slot
@@ -858,7 +858,7 @@ MachaHouseOther
 .word oldlady_portrait
 .text "Good day to you."
 .byte NewLine
-.text "Say, is my dear Macha with you?"
+.text "Say, is my dear Machyua with you?"
 .byte WaitForA
 .byte NewLine
 .text "If she is, then tell her it's very rude to come"

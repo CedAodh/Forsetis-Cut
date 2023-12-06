@@ -541,7 +541,7 @@ _AsbelName
 	.word $0000
 
 _MachaName
-	.text "(Macha"
+	.text "(Machyua"
 	.word $0000
 
 _HicksName

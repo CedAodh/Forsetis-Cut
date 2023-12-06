@@ -27,7 +27,7 @@ ch15ralphamaldaspawn
 .text "my final years to raising these children."
 .byte WaitForA
 .byte ScrollText
-.text "But what of you, Lady Amalda?"
+.text "But what of you, Dame Amalda?"
 .byte NewLine
 .text "Will you be all right?"
 .byte WaitForA
@@ -180,7 +180,7 @@ ch15ralphamaldaspawn
 .byte NewLine
 .text "the gods have charged you with."
 .byte NewLine
-.text "Worry not, I'll care for the children."
+.text "Worry not; I'll care for the children."
 .byte WaitForA
 
 .byte Right_slot
@@ -192,24 +192,20 @@ ch15ralphamaldaspawn
 .text "I'm deeply sorry I cannot stay..."
 .byte WaitForA
 .byte ScrollText
-.word LoadPortrait
-.word ralph_portrait
-
-.byte Left_slot
-.byte ScrollText
-
+.word ClearPortrait
 .word PlayMusic
 .byte $31
-
-.byte Right_slot
+.word LoadPortrait
+.word ralph_portrait
 .text "Bishop?"
 .byte NewLine
 .text "We got a big problem on our hands."
 .byte NewLine
-.text "A pack of bandits are closing in on the village."
+.text "A pack of bandits are closin' in on the village."
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "H-how can that be?!"
 .byte NewLine
 .text "We have nothing of value!"
@@ -344,9 +340,9 @@ ch15ullurscroll
 .byte Right_slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "Ye wouldn't happen to have any idea"
+.text "You wouldn't happen to have any idea"
 .byte NewLine
-.text "what this parchment is, would ye?"
+.text "what this parchment is, wouldja?"
 .byte WaitForA
 .byte ScrollText
 .text "I found it just layin' in the middle of the road"
@@ -377,9 +373,9 @@ ch15ullurscroll
 .byte ScrollText
 .text "Eh? Come again?"
 .byte NewLine
-.text "Ye... Ye want it, do ye?"
+.text "You'll... You'll take it off my hands?"
 .byte NewLine
-.text "Well, ye don't need to ask me twice! Take it!"
+.text "Well, you don't need to ask me twice!"
 .byte WaitForA
 
 .byte EndText
@@ -428,7 +424,7 @@ ch15ralphrecruitment
 .byte ScrollText
 .text "Not that it's any of your business, ya little brat."
 .byte NewLine
-.text "Just who are you supposed to be, anyway?"
+.text "Just who are you s'posed to be, anyway?"
 .byte WaitForA
 
 .byte Left_slot
@@ -544,7 +540,7 @@ ch15mareetashannam1
 .word mareeta_portrait
 .text "Hold! Who are you?!"
 .byte NewLine
-.text "Another one of the empire's lapdogs?!"
+.text "Another imperial lapdog?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -576,7 +572,7 @@ ch15mareetashannam1
 .byte ScrollText
 .text "Correct."
 .byte NewLine
-.text "It is I, Prince Shannan of Isaach."
+.text "'Tis I, Prince Shannan of Isaach."
 .byte WaitForA
 .byte ScrollText
 .text "But I've been forced to hide my identity,"
@@ -644,7 +640,6 @@ ch15mareetashannam1
 .text "Oh, I'd be in your debt!"
 .byte WaitForA
 .byte ScrollText
-
 .word ClearPortrait
 .word RetractBox
 
@@ -681,7 +676,6 @@ ch15mareetashannam1
 .byte WaitForA
 
 .byte Left_slot
-.byte ScrollText
 .text "My body and my mind...?"
 .byte WaitForA
 
@@ -727,7 +721,6 @@ ch15mareetashannam1
 .byte ScrollText
 .text "Yeah, that sounded good..."
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .word LoadPortrait
@@ -737,7 +730,7 @@ ch15mareetashannam1
 .text "All right. I'll just try something, then."
 .byte WaitForA
 .byte ScrollText
-.text "Hee-yah!"
+.text "Hyah!"
 .byte WaitForA
 
 .byte Right_slot
@@ -777,7 +770,6 @@ ch15mareetashannam1
 .byte ScrollText
 .text "I have no idea what I'm saying."
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .word LoadPortrait
@@ -846,7 +838,6 @@ ch15mareetashannam2
 .byte ScrollText
 .text "Thank you for everything, Prince Shannan!"
 .byte WaitForA
-
 .byte ScrollText
 .word ClearPortrait
 .word RetractBox
@@ -1158,11 +1149,11 @@ ch15bishopnoleif
 
 ch15bishopleif
 
-.byte Left_slot
+.byte Right_slot
 .word LoadPortrait
 .word leif_portrait
 
-.byte Right_slot
+.byte Left_slot
 .word LoadPortrait
 .word jeanne_portrait
 .text "My goodness, we owe you and your forces"
@@ -1230,7 +1221,7 @@ ch15closing
 .text "I can teleport you to one of two places:"
 .byte WaitForA
 .byte NewLine
-.text "The first is Millefeuille Forest, which is"
+.text "the first is Millefeuille Forest, which is"
 .byte NewLine
 .text "to the south of Leonster. Be warned: there's"
 .byte NewLine
@@ -1254,6 +1245,7 @@ ch15bishopyesno
 .byte Right_slot
 .word LoadPortrait
 .word leif_portrait
+
 .byte Left_slot
 .word LoadPortrait
 .word jeanne_portrait

@@ -7,16 +7,16 @@ eventChapter4Data ; B1/EF95
 	_PlayerGroup1 ; B1/EF97
 		UNIT CedChp4x, NPC, [17, 18], [17, 18], CedChp23, [Light, Forseti], 1, False, [$00, $00, $00, $30]
 		UNIT Asbel, NPC, [16, 17], [16, 17], CedChp23, [Wind, Fire, DoorKey], 1, False, [$00, $00, $00, $30]
-		UNIT Brighton, Player, [18, 17], [18, 17], CedChp23, [SteelSword, SteelAxe, IronSword], 1, False, [$00, $00, $00, $30]
-		UNIT Macha, Player, [19, 18], [19, 18], CedChp23, [IronSword, Vulnerary, Shortsword, ChestKey], 3, False, [$00, $00, $00, $30]
-		UNIT Lara, Player, [20, 17], [20, 17], CedChp23, [Lockpick, SlimSword], 2, False, [$00, $00, $00, $30]
+		UNIT Brighton, Player, [18, 17], [18, 17], CedChp23, [IronSword, SteelAxe, ShortSword], 1, False, [$00, $00, $00, $30]
+		UNIT Macha, Player, [19, 18], [19, 18], CedChp23, [IronSword, SteelSword, Vulnerary, ChestKey], 3, False, [$00, $00, $00, $30]
+		UNIT Lara, Player, [20, 17], [20, 17], CedChp23, [Lockpick, SlimSword], 1, False, [$00, $00, $00, $30]
 	UNIT
 
 	_PlayerGroup2CameraCoordinates ; B1/EFFD
 	.byte 8, 7
 
 	_PlayerGroup2 ; B1/EFFF
-		UNIT Fergus, Player, [6, 26], [6, 26], Finn, [], 5, False, [$00, $00, $00, $30]
+		UNIT Fergus, Player, [6, 26], [6, 26], Finn, [], 4, False, [$00, $00, $00, $30]
 		UNIT Karin, Player, [8, 28], [8, 28], Finn, [], 1, False, [$00, $00, $00, $00]
 	UNIT
 
@@ -93,9 +93,9 @@ eventChapter4Data ; B1/EF95
 	;	.byte 8, 7
 
 	_LifisBrigands ; B1/F1FF
-		UNIT BanditBrigand1, NPC, [15, 26], [15, 26], Seil, [IronAxe], 4, False, [$00, $00, $00, $00]
-		UNIT BanditBrigand1, NPC, [17, 26], [17, 26], Seil, [IronAxe], 4, False, [$00, $00, $00, $00]
-		UNIT BanditBrigand1, NPC, [16, 27], [16, 27], Seil, [IronAxe], 4, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, NPC, [15, 26], [15, 26], Seil, [HandAxe], 4, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, NPC, [17, 26], [17, 26], Seil, [IronAxe], 5, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, NPC, [16, 27], [16, 27], Seil, [SteelAxe], 7, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates5 ; B1/F23D

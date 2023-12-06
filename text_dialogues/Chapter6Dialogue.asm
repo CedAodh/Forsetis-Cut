@@ -49,18 +49,17 @@ ch6op1
 .text "committing untold evil at their behest!"
 .byte WaitForA
 .byte ScrollText
-.text "August, show me how to wage war against"
+.text "August, show me how to wage war against them!"
 .byte NewLine
-.text "them! I'll... I'll do anything to get her back!"
+.text "I'll... I'll do anything to get her back!"
 .byte NewLine
 .text "Just tell me what I need to do!"
 .byte WaitForA
 
-.word PlayMusic
-.byte $43
-
 .byte Left_slot
 .byte ScrollText
+.word PlayMusic
+.byte $43
 .text "...Lady Eyvel was turned to stone by some"
 .byte NewLine
 .text "foul magic, you say? If that is indeed the case,"
@@ -96,7 +95,9 @@ ch6op1
 
 .byte Right_slot
 .byte ScrollText
-.text "Manfroy's bloodline... So then..."
+.text "Manfroy's bloodline..."
+.byte NewLine
+.text "So then..."
 .byte WaitForA
 
 .byte Left_slot
@@ -129,7 +130,9 @@ ch6op1
 
 .byte Right_slot
 .byte ScrollText
-.text "That... That's nonsense! Utter nonsense!"
+.text "That... That's nonsense!"
+.byte NewLine
+.text "Utter nonsense!"
 .byte WaitForA
 
 .byte Left_slot
@@ -348,11 +351,10 @@ ch6op1
 
 ch6op2
 
-.word PlayMusic
-.byte $31	;In-Battle ~ Danger / Amidst the Battle ~ Crisis
-
 .byte Left_slot
 .byte ScrollText
+.word PlayMusic
+.byte $31	;In-Battle ~ Danger / Amidst the Battle ~ Crisis
 .word LoadPortrait
 .word karin_portrait
 .text "If you want to avoid going through the town,"
@@ -879,7 +881,9 @@ ch6emilydead
 .byte Right_slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "Oh, Emily... Wh-where have you gone off to...?"
+.text "Oh, Emily..."
+.byte NewLine
+.text "Wh-where have you gone off to...?"
 .byte WaitForA
 
 .byte EndText
@@ -889,7 +893,7 @@ ch6emilysaved
 .byte Right_slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "Y-yer the ones what saved me daughter, Emily!"
+.text "Y-you're the ones that saved my daughter, Emily!"
 .byte NewLine
 .text "Oh, I gotta find some way to thank ya proper..."
 .byte NewLine
@@ -898,19 +902,19 @@ ch6emilysaved
 .byte ScrollText
 .text "Take a look at this:"
 .byte NewLine
-.text "it's a medal fer chivalry an' knightly valor."
+.text "it's a medal for chivalry an' knightly valor."
 .byte WaitForA
 .byte ScrollText
-.text "Been an heirloom in the family fer generations,"
+.text "It's been an heirloom in the family"
 .byte NewLine
-.text "but it can be replaced."
+.text "for generations, but it can be replaced."
 .byte NewLine
 .text "My Emily sure can't be, though!"
 .byte WaitForA
 .byte ScrollText
-.text "I'd like y'all to have it."
+.text "I'd like for it to go to one o' you guys."
 .byte NewLine
-.text "If you ain't worthy of this medal, nobody is."
+.text "If you aren't worthy of this medal, nobody is."
 .byte WaitForA
 
 .byte EndText
@@ -923,11 +927,13 @@ ch6hicksmurphydead
 .text "Go back where ya came from,"
 .byte NewLine
 .text "ya useless sacks of manure!"
+.byte NewLine
+.text "You'll find no welcome here!"
 .byte WaitForA
 .byte ScrollText
-.text "Prince of Leonster, my eye! Y'all “liberators”"
+.text "Prince of Leonster, my arse! Y'all “liberators”"
 .byte NewLine
-.text "couldn't even liberate one little ol' child!"
+.text "couldn't even liberate one little kid!"
 .byte WaitForA
 
 .byte EndText
@@ -937,9 +943,11 @@ ch6hicksmurphysaved
 .byte Right_slot
 .word LoadPortrait
 .word hicks_portrait
-.text "Thunderin' Thrud! I been waitin' fer you folks!"
+.text "Thunderin' Thrud!"
 .byte NewLine
-.text "Yer the ones what helped my son, Murphy!"
+.text "I've been waitin' for you folks!"
+.byte NewLine
+.text "You're the ones that helped my son, Murphy!"
 .byte WaitForA
 .byte ScrollText
 .text "Soon as he came home, I spirited him an' the"
@@ -947,9 +955,11 @@ ch6hicksmurphysaved
 .text "other village kids away to someplace real safe."
 .byte WaitForA
 .byte ScrollText
-.text "I got y'all to thank fer even bein' able to see him"
+.text "I got you all to thank for even"
 .byte NewLine
-.text "again... Shucks, but I'm bein' awful impolite!"
+.text "bein' able to see him again..."
+.byte NewLine
+.text "Shucks, but I'm bein' awful impolite!"
 .byte WaitForA
 .byte ScrollText
 .text "I'm Hicks, proud axe knight of Munster!"
@@ -959,7 +969,7 @@ ch6hicksmurphysaved
 .text "he's sure worn out his hospitality!"
 .byte WaitForA
 .byte ScrollText
-.text "Whaddaya say I team up with you"
+.text "What say I team up with you"
 .byte NewLine
 .text "an' we teach him some manners?!"
 .byte WaitForA
@@ -973,10 +983,10 @@ ch6cliffdead
 .word black_mustache_portrait
 .text "Well, I guess there's no helpin' it..."
 .byte NewLine
-.text "Me grandson Cliff is never comin' home..."
+.text "Cliff is never comin' home..."
 .byte WaitForA
 .byte ScrollText
-.text "I was a fool, gettin' me hopes up"
+.text "I was a fool, gettin' my hopes up"
 .byte NewLine
 .text "when y'all busted outta the castle."
 .byte NewLine
@@ -995,16 +1005,16 @@ ch6cliffsaved
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "Yer the folk that helped me grandson Cliff,"
+.text "Yer the folk that helped my grandson Cliff,"
 .byte NewLine
-.text "ain't ya? I'm mighty thankful that Lord Ced"
+.text "ain't ya?"
 .byte NewLine
-.text "has friends like y'all to rely on."
+.text "Lord Ced sure found 'imself in good company."
 .byte WaitForA
 .byte ScrollText
 .text "If anybody asks, ya didn't get this from me,"
 .byte NewLine
-.text "but...I'd like ya to have this here Rapier."
+.text "but...I'd like ya to have this here rapier."
 .byte NewLine
 .text "Don't be modest, now. Take it."
 .byte WaitForA
@@ -1021,9 +1031,11 @@ ch6bowiedead
 .text "Bowie was never comin' home."
 .byte WaitForA
 .byte ScrollText
-.text "Wasn't nuthin' anybody could've done."
+.text "There was nothin' anybody could've done."
 .byte NewLine
-.text "It ain't on y'all. It ain't. I'd tell ya if it was..."
+.text "You guys aren't to blame. Nope."
+.byte NewLine
+.text "I'd tell ya if you were..."
 .byte WaitForA
 
 .byte EndText
@@ -1033,32 +1045,30 @@ ch6bowiesaved
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "The Magi helped me kid brother, Bowie, escape"
+.text "The Magi helped my little brother Bowie"
 .byte NewLine
-.text "to another village. Y'all wouldn't know anythin'"
+.text "escape to another village. But I wonder—"
 .byte NewLine
-.text "about that, wouldja...?"
+.text "*gasp* YOU lot set him free, didn't you?"
 .byte WaitForA
 .byte ScrollText
-.text "Listen, I don't know how I can ever thank ya."
+.text "I-I didn't expect to meet you so quickly!"
 .byte NewLine
-.text "Not a day'll go by when I don't remember"
+.text "How do I even..."
 .byte NewLine
-.text "yer kindness. But words are wind, right?"
+.text "Oh, I got just the thing!"
 .byte WaitForA
 .byte ScrollText
-.text "Look, this here is a set of writings"
+.text "This here is a magical book my family"
 .byte NewLine
-.text "that's been handed down in me family"
-.byte NewLine
-.text "fer as long as there've been stars in the sky."
+.text "came across 'bout a decade ago."
 .byte WaitForA
-.byte ScrollText
-.text "Folk who read 'em get some kinda strange"
 .byte NewLine
-.text "power, but shoot, we can hardly read, anyhow!"
+.text "I say magical because we discovered that"
 .byte NewLine
-.text "It'll help you more'n it'll ever help us."
+.text "there's magical effects had on its readers."
+.byte NewLine
+.text "So take it and make good use of it!"
 .byte WaitForA
 
 .byte EndText
@@ -1068,12 +1078,14 @@ ch6belladead
 .byte Right_slot
 .word LoadPortrait
 .word younglady_portrait
-.text "Bella... Yer never comin' home..."
+.text "Bella..."
+.byte NewLine
+.text "You're...you're never comin' home..."
 .byte WaitForA
 .byte ScrollText
-.text "Bah, away with ye...!"
+.text "Bah, get away from me...!"
 .byte NewLine
-.text "I don't know why I expected better from ye..."
+.text "I don't know why I ever expected anything..."
 .byte WaitForA
 
 .byte EndText
@@ -1083,21 +1095,23 @@ ch6bellasaved
 .byte Right_slot
 .word LoadPortrait
 .word younglady_portrait
-.text "Me little sis, Bella, told me yer the ones"
+.text "My little sis, Bella, told me"
 .byte NewLine
-.text "who helped her. Thanks be to ye!"
+.text "you're the ones who helped her."
 .byte WaitForA
 .byte ScrollText
-.text "We're poorer'n dirt, so there ain't much I can"
+.text "We're poorer'n dirt, so there's not real much"
 .byte NewLine
-.text "give ye, but I do got somethin' I can part with."
+.text "I have to give you as thanks. But maybe..."
+.byte NewLine
+.text "Ah, maybe this!"
 .byte WaitForA
 .byte ScrollText
-.text "If it please ye, good folk, this here is"
+.text "It's a flask o' pure water—"
 .byte NewLine
-.text "a flask of pure water. There's enough"
+.text "you can use it to ripen up your"
 .byte NewLine
-.text "in there fer ye to get a few uses outta it."
+.text "magic senses when the need strikes!"
 .byte WaitForA
 
 .byte EndText
@@ -1109,16 +1123,16 @@ ch6leenadead
 .word youngman2_portrait
 .text "Some freedom fighters y'all turned out to be!"
 .byte NewLine
-.text "You busted outta that castle, but me kin,"
+.text "You busted outta that castle, yet my kin,"
 .byte NewLine
 .text "Leena, is still wearin' chains inside!"
 .byte WaitForA
 .byte ScrollText
 .text "If you ain't up to the task of rescuin'"
 .byte NewLine
-.text "one little girl, what hope d'you have"
+.text "one little girl, what hope do you ever"
 .byte NewLine
-.text "of changin' anything?!"
+.text "have on makin' a difference?!"
 .byte WaitForA
 
 .byte EndText
@@ -1128,14 +1142,14 @@ ch6leenasaved
 .byte Right_slot
 .word LoadPortrait
 .word youngman2_portrait
-.text "Oh, I been waitin' fer ya!"
+.text "Oh, I've been waitin' fer ya!"
 .byte NewLine
-.text "Bless you fer helpin' me little sis, Leena!"
+.text "Bless you for helpin' my little sis, Leena!"
 .byte WaitForA
 .byte ScrollText
 .text "...Oh, I know! Take this! I found it"
 .byte NewLine
-.text "tryin' to uproot a tree from me backyard..."
+.text "tryin' to uproot a tree in my backyard..."
 .byte WaitForA
 .byte ScrollText
 .text "Gods know how long it's been buried there,"
@@ -1147,7 +1161,7 @@ ch6leenasaved
 .byte ScrollText
 .text "I figure it's gotta be somethin' good,"
 .byte NewLine
-.text "but there's no way I deserve it more'n y'all!"
+.text "but there's no way I deserve it more'n you!"
 .byte WaitForA
 
 .byte EndText

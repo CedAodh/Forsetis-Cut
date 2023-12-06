@@ -696,7 +696,7 @@ ch4npcturn3
 .byte NewLine
 .text "much time left on this earth, anyhow."
 .byte NewLine
-.text "It's me grandchildren I'm worried about..."
+.text "It's my grandchildren I worry for..."
 .byte WaitForA
 .byte ScrollText
 .text "*cough* Ack! *wheeze*"
@@ -740,19 +740,19 @@ ch4npcturn3
 .byte NewLine
 .text "a chance, right? An' if they've got a chance,"
 .byte NewLine
-.text "we've gotta believe in 'em."
+.text "we gotta believe in 'em."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Their leader, Lord Ced..."
 .byte NewLine
-.text "They call 'im the “Hero on the Wind.”"
+.text "They call him the “Hero on the Wind.”"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Yeah, an' he's earned that name."
+.text "Yeah, an' he's totally earned that name."
 .byte NewLine
 .text "'Fore he showed up, the Magi had been"
 .byte NewLine
@@ -1137,9 +1137,9 @@ ch4villagerescape
 .byte Right_slot
 .word LoadPortrait
 .word youngman_portrait
-.text "Somebody's come fer us!"
+.text "Somebody's come for us!"
 .byte NewLine
-.text "We've got ourselves a real chance, now!"
+.text "We've got ourselves a real chance now!"
 .byte WaitForA
 .byte ScrollText
 .text "If I 'member right, there's a passage"
@@ -1155,9 +1155,9 @@ ch4villagerescape2
 .byte Right_slot
 .word LoadPortrait
 .word elder_portrait
-.text "A thousand thanks upon ye, Magi! Everybody,"
+.text "A thousand thanks upon y'all, Magi! Everybody,"
 .byte NewLine
-.text "make a break fer the stairway east of here!"
+.text "make a break for the stairway east of here!"
 .byte WaitForA
 
 .byte EndText

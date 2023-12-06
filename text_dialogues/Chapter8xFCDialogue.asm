@@ -210,24 +210,23 @@ ronantanya8x
 ch8xclosing2
 
 .byte left_slot
+.byte ScrollText
 .word LoadPortrait
-.word augustus_potrait
-.byte right_slot
-.word $3A00
 .word dagdar_portrait
 
-.byte left_slot
+.byte right_slot
+.byte ScrollText
 .text "...Dagdar, there appears to be some noise"
 .byte NewLine
 .text "coming from below the main floor."
 .byte WaitForA
 
-.byte right_slot
+.byte left_slot
 .text "Aye, I hear it too."
 .byte NewLine
 .text "Let's go take a look."
 .byte NewLine
-.text "I suggest standin' back, priest."
+.text "I suggest standin' back, mister priest."
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
@@ -247,7 +246,7 @@ ch8xclosing2
 .word bucks_potrait
 .text "Boss! Yer alive?!"
 .byte NewLine
-.text "Someone pinch me,"
+.text "Somebody pinch me,"
 .byte NewLine
 .text "'cause I think I'm seein' gho—"
 .byte WaitForA
@@ -327,7 +326,7 @@ ch8xclosing2
 .byte ScrollText
 .text "*sniffle*"
 .byte NewLine
-.text "I'm so proud'a you boys."
+.text "I'm so proud o' you boys."
 .byte WaitForA
 .byte ScrollText
 .text "Now, I gotta go with the prince and make"

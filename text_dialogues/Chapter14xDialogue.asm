@@ -8,7 +8,7 @@ ch14xvillager1
 .text "outta the fire back there."
 .byte WaitForA
 .byte ScrollText
-.text "I brought this Stamina Drink along as"
+.text "I brought this stamina drink along as"
 .byte NewLine
 .text "a little taste of home for the road, but I figure"
 .byte NewLine
@@ -23,7 +23,7 @@ ch14xvillager2
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "I made this Stamina Drink while we were"
+.text "I made this stamina drink while we were"
 .byte NewLine
 .text "on the road! Here, you can have it!"
 .byte WaitForA
@@ -51,7 +51,7 @@ ch14xvillager3
 .text "Hoo-boy, was that a fright and a half!"
 .byte WaitForA
 .byte ScrollText
-.text "Here, you can take this Stamina Drink."
+.text "Here, you can take this stamina drink."
 .byte NewLine
 .text "I got way too much adrenaline pumping now"
 .byte NewLine
@@ -71,7 +71,7 @@ ch14xvillager4
 .text "didn't we...?"
 .byte WaitForA
 .byte ScrollText
-.text "Maybe this Stamina Drink will help make up"
+.text "Maybe this stamina drink will help make up"
 .byte NewLine
 .text "for all the effort you had to put in to save us"
 .byte NewLine
@@ -88,7 +88,7 @@ ch14xvillager5
 .word black_mustache_portrait
 .text "Flamin' Fjalar! We actually made it!"
 .byte NewLine
-.text "Here, take this Stamina Drink,"
+.text "Here, take this stamina drink,"
 .byte NewLine
 .text "and toast to your heroics today!"
 .byte WaitForA
@@ -103,14 +103,14 @@ ch14xvillager6
 .word youngman2_portrait
 .text "We made it out alive! Why, I was afraid the"
 .byte NewLine
-.text "long line of Tarrah's esteemed Stamina Drink"
+.text "long line of Tarrah's esteemed stamina drink"
 .byte NewLine
 .text "vintners would die in this forlorn valley!"
 .byte WaitForA
 .byte ScrollText
 .text "What's that?"
 .byte NewLine
-.text "All Stamina Drinks taste the same to you?"
+.text "All stamina drinks taste the same to you?"
 .byte NewLine
 .text "Well, you simply have an uncultured palate!"
 .byte WaitForA
@@ -126,7 +126,7 @@ ch14xvillager6
 .byte NewLine
 .text "That tart yet sweet aftertaste!"
 .byte NewLine
-.text "You'll never look at Stamina Drinks the same!"
+.text "You'll never look at stamina drinks the same!"
 .byte WaitForA
 
 .byte EndText
@@ -192,7 +192,7 @@ ch14xopening1
 .byte NewLine
 .text "We can't possibly escort them"
 .byte NewLine
-.text "all the way to North Thracia!"
+.text "all the way to safety!"
 .byte WaitForA
 
 .byte Left_slot
@@ -452,7 +452,6 @@ ch14xclosing
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
-.word RetractBox
 
 .byte Right_slot
 .byte ScrollText
@@ -484,7 +483,7 @@ linoandeathdean
 
 .byte Left_slot
 .byte ScrollText
-.text "I hope we can meet again..."
+.text "I pray we meet again..."
 .byte WaitForA
 
 .byte Right_slot

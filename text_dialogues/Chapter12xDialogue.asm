@@ -330,7 +330,7 @@ ch12xpanlara
 .byte ScrollText
 .text "I still remember you comin' to see me perform,"
 .byte NewLine
-.text "watchin' me like I was the only thing"
+.text "watching me like I was the only thing"
 .byte NewLine
 .text "in the world..."
 .byte WaitForA
@@ -372,7 +372,7 @@ ch12xpanlara
 .byte ScrollText
 .text "So... If you want me to, Perne,"
 .byte NewLine
-.text "I can go back to doin' it for you."
+.text "I can go back to doing it for you."
 .byte WaitForA
 
 .byte Left_slot
@@ -396,7 +396,7 @@ ch12xpanlara
 
 .byte Right_slot
 .byte ScrollText
-.text "Prince Leif an' the whole North Thracian"
+.text "Prince Leif and the whole North Thracian"
 .byte NewLine
 .text "Liberation Army! That's who I'm here with,"
 .byte NewLine
@@ -480,7 +480,7 @@ ch12xpantrude
 .text "fer them to be imperial troops."
 .byte WaitForA
 .byte ScrollText
-.text "So yer joinin' up with 'em, huh?"
+.text "So you're joinin' up with them, huh?"
 .byte NewLine
 .text "Looks fun enough, I s'pose."
 .byte WaitForA
@@ -531,7 +531,7 @@ ch12xtinasafie
 .word tina_portrait
 .text "Oh, Big Sis!"
 .byte NewLine
-.text "*sniffle*"
+.text "*sniff*"
 .byte WaitForA
 
 .byte Right_slot
@@ -550,21 +550,21 @@ ch12xtinasafie
 .byte ScrollText
 .text "I w-wanted to help you!"
 .byte NewLine
-.text "*sniffle*"
+.text "*sniff*"
 .byte WaitForA
 .byte ScrollText
-.text "Just thinkin' of you out there, all on your"
+.text "Just thinking of you out there, all on your"
 .byte NewLine
-.text "lonesome... Well, I just couldn't stand"
+.text "lonesome... Well, I just couldn't stand the"
 .byte NewLine
-.text "the thought of it! So I left the city!"
+.text "thought of it anymore! So I left the city!"
 .byte WaitForA
 .byte ScrollText
 .text "But then that big bully Perne caught hold of me!"
 .byte NewLine
-.text "He's a thief, an' he's been treatin' me"
+.text "He's a thief, and he's been treatin' me"
 .byte NewLine
-.text "as his personal slave!"
+.text "like his personal slave!"
 .byte WaitForA
 
 .byte Right_slot
@@ -628,7 +628,7 @@ ch12xtinasafie
 
 .byte Left_slot
 .byte ScrollText
-.text "*sniffle* *sniffle*"
+.text "*sniff* *sniff*"
 .byte WaitForA
 .byte ScrollText
 .text "H-he... He'd take a big, hairy caterpillar"
@@ -640,7 +640,7 @@ ch12xtinasafie
 .byte ScrollText
 .text "It was so gross and icky..."
 .byte NewLine
-.text "I thought I'd die right then and there!"
+.text "I thought I was gonna die!"
 .byte WaitForA
 
 .byte Right_slot
@@ -654,7 +654,7 @@ ch12xtinasafie
 .byte NewLine
 .text "Oh, Big Sis, it was so awful!"
 .byte NewLine
-.text "I'm gettin' shivers just tellin' you about it now!"
+.text "I'm getting shivers just tellin' you about it now!"
 .byte WaitForA
 
 .byte Right_slot
@@ -685,16 +685,16 @@ ch12xtinasafie
 .text "I'm sorry, Big Sis."
 .byte WaitForA
 .byte ScrollText
-.text "Say, I saw that Lord Leif fella fightin' earlier..."
+.text "Say, I saw that Prince Leif guy fighting earlier..."
 .byte NewLine
-.text "He's awful cute, isn't he? Aw, somebody"
+.text "He's super cute, isn't he? Aw, somebody"
 .byte NewLine
-.text "like him would be my dream guy!"
+.text "like him would be my dream boyfriend!"
 .byte WaitForA
 .byte ScrollText
-.text "Hmm... But he couldn't just have good looks,"
+.text "Hmm... But he can't just have good looks;"
 .byte NewLine
-.text "he'd have to be a prince, too..."
+.text "he'd have to be a prince too..."
 .byte NewLine
 .text "What do you think, Big Sis?"
 .byte WaitForA
@@ -710,7 +710,7 @@ ch12xtinasafie
 
 .byte Left_slot
 .byte ScrollText
-.text "Okie-dokie, Big Sis!"
+.text "Okie-dokie!"
 .byte WaitForA
 
 .byte EndText
@@ -757,12 +757,12 @@ ch12xopening1
 .word tina_portrait
 .text "Hey, what's got you guys in such a fuss?"
 .byte NewLine
-.text "Ya look more uptight than my sister"
+.text "You all look more uptight than my sister"
 .byte NewLine
 .text "after a week of fasting!"
 .byte WaitForA
 .byte ScrollText
-.text "Has... Has somethin' happened?"
+.text "Has... Has something happened?"
 .byte WaitForA
 
 .byte Left_slot
@@ -798,7 +798,7 @@ ch12xopening1
 .byte ScrollText
 .text "B-but why...?"
 .byte NewLine
-.text "Why you gotta be so cruel to me all the time?"
+.text "Why can't you just lighten up on me?"
 .byte NewLine
 .text "L-look, I wasn't thinkin' anything funny!"
 .byte WaitForA
@@ -817,7 +817,7 @@ ch12xopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Eeek! No, no, not another punishment!"
+.text "Eeek! No, no, not again!"
 .byte NewLine
 .text "I'm sorry! I'll be good, I promise!"
 .byte WaitForA
@@ -828,7 +828,7 @@ ch12xopening1
 .byte NewLine
 .text "Now be a good girl and go help Trude with"
 .byte NewLine
-.text "that Thief staff of yours. Get a move on, runt!"
+.text "that thief staff o' yours. Get a move on, runt!"
 .byte WaitForA
 
 .byte EndText
@@ -985,7 +985,7 @@ ch12xopening4lara
 .byte ScrollText
 .text "I'd been sold to them as a child."
 .byte NewLine
-.text "Perne rescued me from that, an' set me free."
+.text "Perne rescued me from that, and set me free."
 .byte WaitForA
 
 .byte Right_slot
@@ -1002,9 +1002,9 @@ ch12xopening4lara
 .byte ScrollText
 .text "Lord Leif, please, you've got to let me"
 .byte NewLine
-.text "talk to him. I just... I just need to see Perne,"
+.text "talk to him. I just... I need to see Perne,"
 .byte NewLine
-.text "an' talk this whole thing out!"
+.text "and then we can talk this whole thing out!"
 .byte WaitForA
 
 .byte EndText

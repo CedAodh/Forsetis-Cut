@@ -14,7 +14,7 @@ ch13mastersealhouse
 .byte NewLine
 .text "about you lot. I'm givin' you my old"
 .byte NewLine
-.text "Master Seal, in recognition of all you've done."
+.text "master seal, in recognition of all you've done."
 .byte WaitForA
 .byte ScrollText
 .text "You'll always be welcome in my home,"
@@ -39,9 +39,9 @@ ch13armorslayerhouse
 .byte ScrollText
 .text "Take this blade with you, and never let go of it."
 .byte NewLine
-.text "It's an Armorslayer, and it'll cut through 'em"
+.text "It's an armorslayer, and it'll cut through 'em"
 .byte NewLine
-.text "like butter."
+.text "like melted butter."
 .byte WaitForA
 
 .byte EndText
@@ -61,12 +61,12 @@ ch13hammerhouse
 .byte ScrollText
 .text "Just in case you're runnin' low on weapons,"
 .byte NewLine
-.text "I want you to take this here Hammer with you."
+.text "I want you to take this here hammer with you."
 .byte WaitForA
 .byte ScrollText
 .text "I'd consider it a personal favor if you used it"
 .byte NewLine
-.text "to smash open some imperial skulls!"
+.text "to smash in some imperial skulls!"
 .byte WaitForA
 
 .byte EndText
@@ -267,7 +267,7 @@ ch13gladeselphinaA
 .text "Ah! How did you...?!"
 .byte WaitForA
 .byte ScrollText
-.text "A Brave Bow!"
+.text "A brave bow!"
 .byte NewLine
 .text "Just like the ones in the legends!"
 .byte WaitForA
@@ -334,7 +334,7 @@ ch13gladeselphinaB
 .byte ScrollText
 .text "We parted a decade ago, at Ulster,"
 .byte NewLine
-.text "and now he's already a boy of 15..."
+.text "and now he's already a boy of 15 years..."
 .byte WaitForA
 
 .byte Left_slot
@@ -496,7 +496,7 @@ ch13gladeselphinaB
 .text "Ah! How did you...?!"
 .byte WaitForA
 .byte ScrollText
-.text "A Brave Bow!"
+.text "A brave bow!"
 .byte NewLine
 .text "Just like the ones in the legends!"
 .byte WaitForA
@@ -629,7 +629,7 @@ ch13gladeleif
 .byte NewLine
 .text "We sworn men of Leonster would follow you"
 .byte NewLine
-.text "through the gates of Hell!"
+.text "through the gates of hell!"
 .byte WaitForA
 
 .byte EndText
@@ -799,11 +799,11 @@ ch13opening3
 .text "Tch... That pompous little dastard?"
 .byte WaitForA
 .byte ScrollText
-.text "He doesn't give a damn about the common"
+.text "He doesn't give a damn about the common folk."
 .byte NewLine
-.text "folk. Our battles don't concern him."
+.text "Our battles don't concern him."
 .byte NewLine
-.text "I just don't understand that guy..."
+.text "I just don't understand what he's on about."
 .byte WaitForA
 
 .byte Left_slot
@@ -897,7 +897,6 @@ ch13opening4
 .byte NewLine
 .text "our war will be lost before it's even begun!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -905,6 +904,7 @@ ch13opening4
 .word augustus_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Are you in agreement, August?"
 .byte WaitForA
 
@@ -954,7 +954,7 @@ ch13closing
 
 .byte Right_slot
 .byte ScrollText
-.text "...Duchess Linoan, you have my apologies."
+.text "...Linoan, you have my apologies."
 .byte NewLine
 .text "I should have come here sooner."
 .byte WaitForA
@@ -1018,11 +1018,11 @@ ch13closing
 
 .byte Right_slot
 .byte ScrollText
-.text "Dry your eyes, Duchess Linoan. Fear not."
+.text "Dry your eyes, Linoan. Fear not."
 .byte NewLine
-.text "I swear upon my sword"
+.text "I swear upon my sword that I'll protect"
 .byte NewLine
-.text "that I'll protect both you and the city of Tarrah!"
+.text "both you and the city of Tarrah!"
 .byte WaitForA
 
 .byte EndText

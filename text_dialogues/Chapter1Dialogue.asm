@@ -617,7 +617,7 @@ ch1liferinghouse
 	.byte NewLine
 	.text "and Lady Nanna—just snatched 'em right up"
 	.byte NewLine
-	.text "like they was cattle!"
+	.text "like they were cattle!"
 	.byte WaitForA
 	.byte ScrollText
 	.text "You're not gonna let 'em get away with that,"
@@ -648,7 +648,7 @@ ch1vulneraryhouse
     .word oldlady3_portrait
 	.byte $09 ; font 9(always use font 9)
 	
-	.text "Y'all made it back! What a relief..."
+	.text "You all made it back! What a relief..."
 	.byte WaitForA
 	.byte ScrollText
 	.text "But look, there's no Fiana Freeblades without"
@@ -658,7 +658,7 @@ ch1vulneraryhouse
 	.text "pirates—drive the empire from our village, too!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "...Not to imply that I ain't grateful, a' course."
+	.text "...Not to imply that I ain't grateful, of course."
 	.byte NewLine
 	.text "Take this with you. Use it if you get scraped up."
 	.byte WaitForA
@@ -667,7 +667,7 @@ ch1vulneraryhouse
 	.byte NewLine
 	.text "but it's the least we can do after everythin'"
 	.byte NewLine
-	.text "the commander's done fer us."
+	.text "the commander's done for us."
 	.byte WaitForA
 	
 	.byte EndText
@@ -734,16 +734,16 @@ ch1halvanhousehalvan
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Darnedest thing... I was walkin' past the lake"
+	.text "It was the weirdest thing... I was walking past"
 	.byte NewLine
-	.text "up on the mountain, when this strange ol' crone"
+	.text "the lake up on the mountain, when this strange"
 	.byte NewLine
-	.text "just floated outta the water!"
+	.text "old lady just floated outta the water!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "She gave it to me, then vanished, quick"
+	.text "She gave it to me, then vanished, quick as"
 	.byte NewLine
-	.text "as you can blink! I've been keepin' it for you,"
+	.text "you can blink! I've been keepin' it for you,"
 	.byte NewLine
 	.text "and taking real good care of it."
 	.byte WaitForA
@@ -868,9 +868,9 @@ ch1endingnoeyvel
 	.text "I...wish I had better news fer you."
 	.byte WaitForA
 	.byte ScrollText
-	.text "They came fer Lady Nanna, they did,"
+	.text "They came for Lady Nanna, they did,"
 	.byte NewLine
-	.text "and we couldn't do nuthin' to stop 'em!"
+	.text "and we couldn't do nothin' to stop 'em!"
 	.byte WaitForA
 	
 	.byte Right_slot
@@ -901,7 +901,7 @@ ch1endingnoeyvel
 	.byte NewLine
 	.text "soldiers said somethin' about headin' back"
 	.byte NewLine
-	.text "to Munster, but nuthin' more specific'n that."
+	.text "to Munster, but nothin' more specific'n that."
 	.byte WaitForA
 	
 	.byte Right_slot

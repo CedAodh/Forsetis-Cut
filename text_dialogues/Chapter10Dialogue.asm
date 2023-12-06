@@ -128,7 +128,6 @@ ch10olwenfredarrive
 .byte ScrollText
 .text "Thank you, General!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -136,6 +135,7 @@ ch10olwenfredarrive
 .word fred_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Fred, let's move out!"
 .byte WaitForA
 
@@ -237,13 +237,6 @@ ch10ensorcelhouse
 .text "tall... Heh, it turns out pure water actually"
 .byte NewLine
 .text "isn't very good for plants."
-.byte WaitForA
-.byte ScrollText
-.text "Yeah... Probably should've checked"
-.byte NewLine
-.text "that before I spent months"
-.byte NewLine
-.text "on the whole experiment..."
 .byte WaitForA
 
 .byte EndText

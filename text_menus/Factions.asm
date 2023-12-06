@@ -132,16 +132,16 @@ leader_sets				.block
 .word <>leader_text._WelkenrosenLeader
 
 .word $0074
-.word <>leader_text._WelkenrosenLeader
+.word <>leader_text._LoptrChurch
 
 .word $0081
-.word <>leader_text._WelkenrosenLeader
+.word <>leader_text._LoptrChurch
 
 .word $0083
-.word <>leader_text._WelkenrosenLeader
+.word <>leader_text._LoptrChurch
 
 .word $008E
-.word <>leader_text._WelkenrosenLeader
+.word <>leader_text._LoptrChurch
 
 .word $0054
 .word <>leader_text._WelkenrosenLeader
@@ -355,5 +355,8 @@ _FianaFreeblades
 _LeifsRetinue
 	.text "Leif's Entourage"
 .word $0000
+
+_LoptrChurch
+	.text "Loptr Church"
 .bend
 .here

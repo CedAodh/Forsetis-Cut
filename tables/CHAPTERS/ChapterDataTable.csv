@@ -9,7 +9,7 @@ Chapter5ChapterData,$F8A3D6,$FB9ABD,$F68600,$FBED88,$FCEEB7,eventChapter5Data._S
 Chapter6ChapterData,$F8A3D6,$FB9ABD,$F68700,$FBF0A8,$FCEF06,eventChapter6Data._StartingPositions,$978012,None,None,10,20,$2,$4,$4,$3,$4,$A,$4,None,None
 Chapter7ChapterData,$F6E885,$FAEB21,$F68800,$FBF54F,None,eventChapter7Data._StartingPositions,$97801D,None,None,12,16,$2,$4,$4,$3,$4,$A,$4,$FAAE20,aTilesetAnimation8487CE
 Chapter8ChapterData,$F6A500,$FAD82F,$F68900,$FBFA39,$FCEF5E,eventChapter8Data._StartingPositions,None,None,$2,6,8,$2,$4,$4,$3,$1,$9,$1,None,aTilesetAnimation848831
-Chapter8xChapterData,$F8A3D6,$FB9ABD,$F68A00,$FBFE79,$FCEFB4,eventChapter8xData._StartingPositions,None,3,$2,4,6,$2,$4,$4,$3,$7,$D,$1,None,None
+Chapter8xChapterData,$F8A3D6,$FB9ABD,$F68A00,$FBFE79,$FCEFB4,eventChapter8xData._StartingPositions,None,3,$2,4,6,$2,$4,$4,$3,$7,$D,$7,None,None
 Chapter9ChapterData,$F6E885,$FAEB21,$F68B00,$FC8031,None,eventChapter9Data._StartingPositions,$978022,None,$2,6,8,$2,$4,$4,$3,$1,$A,$1,$FAB831,aTilesetAnimation8487CE
 Chapter10ChapterData,$F6E885,$FAEB21,$F68C00,$FC8627,$FCF027,eventChapter10Data._StartingPositions,None,None,$2,8,14,$2,$4,$4,$3,$2,$A,$2,None,aTilesetAnimation8487CE
 Chapter11ChapterData,$F7AC25,$FB8059,$F68D00,$FC8A5F,$FCF04D,eventChapter11Data._StartingPositions,None,None,$2,8,14,$2,$4,$4,$3,$2,$A,$2,None,None
@@ -30,9 +30,9 @@ Chapter20ChapterData,$F7AC25,$FB8059,$F69B00,$FCC52D,$FCF31A,eventChapter20Data.
 Chapter21ChapterData,$F6E885,$FAEB21,$F69C00,$FCC8E6,$FCF497,eventChapter21Data._StartingPositions,None,None,$2,8,16,$2,$4,$4,$3,$1,$A,$1,None,aTilesetAnimation8487CE
 Chapter21xChapterData,$F7AC25,$FB8059,$F69D00,$FCCE92,$FCF4AF,eventChapter21xData._StartingPositions,$978047,None,$2,8,8,$2,$4,$4,$3,$1,$A,$1,None,None
 Chapter22ChapterData,$F6E885,$FAEB21,$F69E00,$FCD183,$FCF50C,eventChapter22Data._StartingPositions,None,None,$2,8,16,$2,$4,$4,$3,$3,$B,$3,None,aTilesetAnimation8487CE
-Chapter23ChapterData,$F6E885,$FAEB21,$F69F00,$FCD685,$FCF54B,eventChapter23Data._StartingPositions,None,None,$2,8,16,$2,$4,$4,$3,$3,$B,$8,$FAAE20,aTilesetAnimation8487CE
+Chapter23ChapterData,$F6E885,$FAEB21,$F69F00,$FCD685,$FCF54B,eventChapter23Data._StartingPositions,None,None,$2,8,16,$2,$4,$4,$3,$3,$B,$3,$FAAE20,aTilesetAnimation8487CE
 Chapter24ChapterData,$F8A3D6,$FB9ABD,$F6A000,$FCDC2D,$FCF570,eventChapter24Data._StartingPositions,None,None,$2,10,18,$2,$4,$4,$3,$3,$B,$3,None,None
 Chapter24xChapterData,$F9AE74,$FBBDDF,$F6A100,$FCDF8D,$FCF66E,eventChapter24xData._StartingPositions,$978055,3,$2,8,16,$2,$4,$4,$3,$3,$C,$3,None,aTilesetAnimation8488C7
 ChapterFinalChapterData,$F9AE74,$FBBDDF,$F6A200,$FCE2C2,$FCF6B0,eventChapterFinalData._StartingPositions,None,None,$2,6,18,$2,$4,$4,$3,$8,$E,$8,None,aTilesetAnimation8488C7
-ChapterUnknownChapterData,$F9AE74,$FBBDDF,$F6A300,$FCE57D,$FCF724,None,None,None,$2,8,16,$2,$4,$4,$3,$8,$E,$7,None,aTilesetAnimation8488C7
+ChapterUnknownChapterData,$F9AE74,$FBBDDF,$F6A300,$FCE57D,$FCF724,None,None,None,$2,8,16,$2,$4,$4,$3,$8,$E,$8,None,aTilesetAnimation8488C7
 WorldMapChapterData,$F9E117,$FBCA18,$F6A400,$FCE828,None,None,None,None,$2,10,20,$2,$4,$4,$1,$1,$9,$1,None,None

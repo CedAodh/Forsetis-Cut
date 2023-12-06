@@ -96,7 +96,6 @@ ch8xopening
 .byte ScrollText
 .text "I... I know I wouldn't be much help, but—"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -110,6 +109,7 @@ ch8xopening
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word dagdar_portrait
 .text "Listen up, Gomez!"
@@ -374,10 +374,5 @@ ch8xclosing
 .byte NewLine
 .text "to not repeat your father's mistake..."
 .byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.byte Left_slot
-.byte ScrollText
 
-.byte EndText
 .byte EndText

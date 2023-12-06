@@ -114,7 +114,7 @@ machaced4x
 	.byte WaitForA
 
 	.byte right_slot
-	.text "Macha?"
+	.text "Machyua?"
 	.byte NewLine
 	.text "I'm glad to see you safe."
 	.byte WaitForA
@@ -207,7 +207,7 @@ machaced4x
 
 	.byte right_slot
 	.byte ScrollText
-	.text "You have my eternal thanks, Macha."
+	.text "You have my eternal thanks, Machyua."
 	.byte NewLine
 	.text "Until next time!"
 	.byte WaitForA

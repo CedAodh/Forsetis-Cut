@@ -96,7 +96,7 @@ asbeltitle
 
 machatitle
 .byte $09
-.text "Macha — Blade of Gales"
+.text "Machyua — Blade of Gales"
 .byte $05
 .byte EndText
 

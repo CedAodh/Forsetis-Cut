@@ -172,7 +172,7 @@ ch4xop2
 .byte Left_slot
 .word LoadPortrait
 .word boy_portrait
-.text "C'mon, knock off the waterworks..."
+.text "C'mon, enough cryin' already..."
 .byte WaitForA
 
 .byte Right_slot
@@ -184,7 +184,7 @@ ch4xop2
 
 .byte Left_slot
 .byte ScrollText
-.text "Don't make them soldiers mad at us again."
+.text "Don't make the soldiers mad at us again."
 .byte NewLine
 .text "They'll just tell us to “Quit yer bellyachin'!”"
 .byte NewLine
@@ -198,7 +198,7 @@ ch4xop2
 .byte ScrollText
 .text "If I get caught cryin', an' they get angry..."
 .byte NewLine
-.text "Maybe they'll jus' send me home..."
+.text "maybe they'll jus' send me home..."
 .byte WaitForA
 .byte ScrollText
 .text "I jus' wanna go home..."
@@ -409,12 +409,14 @@ ch4xcedkarintalk
 .byte NewLine
 .text "I... I regret to inform you that"
 .byte NewLine
-.text "Her Majesty the Queen has... She, um..."
+.text "Her Majesty the queen has... She, um..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Mother?! No, she can't have...!"
+.text "Mother?!"
+.byte NewLine
+.text "No, she can't have...!"
 .byte WaitForA
 
 .byte Left_slot
@@ -570,7 +572,7 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "...You're fixin' to overthrow that creep, huh?"
+.text "...You're fixing to overthrow that creep, huh?"
 .byte NewLine
 .text "Now that's a plan I can get behind!"
 .byte NewLine
@@ -590,9 +592,12 @@ ch4xcedkarintalk
 .byte ScrollText
 .text "...That's a diplomatic way of saying"
 .byte NewLine
-.text "I would be a burden. But you're right:"
+.text "I would be a burden."
+.byte WaitForA
+.byte ScrollText
+.text "We all have to start somewhere, you know!"
 .byte NewLine
-.text "I would just slow you down."
+.text "But if you really insist..."
 .byte WaitForA
 .byte ScrollText
 .text "All right, I'll make my way back to Silesse—"
@@ -611,7 +616,9 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "Er, what is it? A used handkerchief?"
+.text "Er, what is it?"
+.byte NewLine
+.text "It looks like a used handkerchief."
 .byte WaitForA
 
 .byte Right_slot

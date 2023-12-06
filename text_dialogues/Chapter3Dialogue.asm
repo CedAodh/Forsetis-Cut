@@ -277,13 +277,11 @@ ch3end1
 .text "but we've taken control of Kerberos' Gate."
 .byte WaitForA
 
-.byte ScrollText
-.word PlayMusic
-.byte $3B
-
 .byte Right_slot
 .word LoadPortrait
 .word raydrik_portrait
+.word PlayMusic
+.byte $3B
 .text "Nicely done. I'm impressed, truly." 
 .byte NewLine
 .text "Such a shame to spoil your moment,"
@@ -301,18 +299,18 @@ ch3end1
 .word nanna_portrait
 
 .byte Left_slot
+.byte ScrollText
 .text "Nanna?!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Right_slot
 .word LoadPortrait
 .word raydrik_portrait
 
 .byte Left_slot
+.byte ScrollText
 .text "...Raydrik, you soulless parasite..."
 .byte WaitForA
-.byte ScrollText
 
 .byte Right_slot
 .word LoadPortrait
@@ -323,9 +321,9 @@ ch3end1
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "Damn...!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Right_slot
 .byte ScrollText
@@ -333,6 +331,7 @@ ch3end1
 .word raydrik_portrait
 
 .byte Left_slot
+.byte ScrollText
 .text "Fine... Fine, I said!"
 .byte NewLine
 .text "I'm putting my weapons down,"
@@ -381,7 +380,7 @@ ch3end3
 .word LoadPortrait
 .word finn_portrait
 
-.text "I suppose this was inevitable..."
+.text "Perhaps this was inevitable..."
 .byte NewLine
 .text "We...have no choice but to retreat..."
 .byte WaitForA
@@ -504,32 +503,30 @@ ch3lucciavillageluccia
 .word LoadPortrait
 .word oldlady3_portrait
 
-.text "Luccia! Oh, me own girl, hale and hardy!"
+.text "Luccia! My own dear, hale and hardy!"
 .byte NewLine
-.text "Thought me heart would give out from worry,"
-.byte NewLine
-.text "it would!"
+.text "My heart was about to give out from worry!"
 .byte WaitForA
 .byte ScrollText
-.text "I can't begin to say how grateful I am"
+.text "I can't begin to express how much I'm"
 .byte NewLine
-.text "to ye, stranger."
+.text "indebted to you, stranger."
 .byte NewLine
-.text "Don't have much in the way of thanks, but..."
+.text "Though I don't exactly have much, either..."
 .byte WaitForA
 .byte ScrollText
-.text "Mayhap this old parchment could be of some"
+.text "Oh, I know! Here—take this ancient manuscript!"
 .byte NewLine
-.text "good to you? We been puzzlin' over it fer years,"
+.text "We've held on to it for quite some time,"
 .byte NewLine
-.text "but what it does is beyond our ken."
+.text "but we've never been able to figure it out."
 .byte WaitForA
 .byte ScrollText
-.text "All we know is that merely holdin' it fills ye"
+.text "All I got is that just bein' in possession of"
 .byte NewLine
-.text "with tremendous vim and vigor, amongst"
+.text "it gives you some sort of zeal, as it were."
 .byte NewLine
-.text "other things. Hope it helps ye, I surely do."
+.text "So no matter what you do, it oughta help!"
 .byte WaitForA
 
 .byte EndText
@@ -540,11 +537,14 @@ ch3lucciavillageother
 .word LoadPortrait
 .word oldlady3_portrait
 
-.text "Me... Me daughter..."
+.text "My...my little girl..."
+.byte WaitForA
+.byte ScrollText
+.text "Good folk! You're all armed up, aren't you?"
 .byte NewLine
-.text "Please, good folk! Yer armed and fit fer battle!"
+.text "My daughter Luccia's in there!"
 .byte NewLine
-.text "Bring me girl, Luccia, back! I beg of ye!"
+.text "Please, you must save her!"
 .byte WaitForA
 
 .byte EndText
@@ -555,28 +555,30 @@ ch3jubelvillagejubel
 .word LoadPortrait
 .word younglady_portrait
 
-.text "Holy Heim! Jubel, yer safe!"
+.text "Holy Heim—Jubel!"
 .byte NewLine
-.text "You...gave me a real scare there..."
+.text "You're safe!"
 .byte NewLine
-.text "I'm so glad to see you again."
+.text "You gave me a real scare there..."
 .byte WaitForA
 .byte ScrollText
-.text "Whatever yer reasons, stranger,"
+.text "Whatever your reasons were, stranger,"
 .byte NewLine
-.text "thank you fer helpin'. Truly."
+.text "thank you for helping us out. Truly."
 .byte WaitForA
 .byte ScrollText
-.text "Now listen, me older brother is an imperial"
+.text "Now listen, my older brother is an imperial"
 .byte NewLine
-.text "soldier, but if'n you ever meet him, tell him"
+.text "soldier, but if you ever meet him, just tell"
 .byte NewLine
-.text "what the empire done to our youngest kin."
+.text "him what the empire's done to Jubel."
 .byte WaitForA
 .byte ScrollText
-.text "His name's Dalsin. Ain't a doubt in me mind"
+.text "His name's Dalsin."
 .byte NewLine
-.text "he'd help you, so don't go forgettin' it!"
+.text "Not a single doubt in my mind he'll switch"
+.byte NewLine
+.text "sides, so don't go forgettin' that!"
 .byte WaitForA
 
 .byte EndText
@@ -587,16 +589,16 @@ ch3jubelvillageother
 .word LoadPortrait
 .word younglady_portrait
 
-.text "Me kid brother, Jubel,"
+.text "Those imperials just swooped in and took"
 .byte NewLine
-.text "was taken to Kerberos' Gate..."
+.text "my little brother to Kerberos' Gate..."
 .byte WaitForA
 .byte ScrollText
-.text "Please, stranger! He's just a wee lad,"
+.text "Please, stranger!"
 .byte NewLine
-.text "and you've the arms an' army to give"
+.text "Save Jubel!"
 .byte NewLine
-.text "them imperial dastards what-for!"
+.text "Bring him back to me, please!"
 .byte WaitForA
 
 .byte EndText
@@ -607,21 +609,19 @@ ch3romeovillageromeo
 .word LoadPortrait
 .word oldlady_portrait
 
-.text "Hm? Oh, it can't be! Romeo, safe and sound..."
+.text "Are my eyes playin' tricks on me?!"
 .byte NewLine
-.text "From the depths of me heart, I thank ye."
+.text "Romeo, safe and sound...!"
 .byte WaitForA
 .byte ScrollText
-.text "Fer bringing me boy back single-handed,"
-.byte NewLine
-.text "I'd like ye to have this."
+.text "Please, take this as token of my thanks."
 .byte WaitForA
-.byte ScrollText
-.text "This here ring's been handed down"
 .byte NewLine
-.text "in me family fer as long as I can remember."
+.text "It's been passed down through our family"
 .byte NewLine
-.text "It's enchanted, it is. Take it, I insist."
+.text "for as long as I can remember, but I"
+.byte NewLine
+.text "really think you should have it instead."
 .byte WaitForA
 
 .byte EndText
@@ -632,9 +632,11 @@ ch3romeovillageother
 .word LoadPortrait
 .word oldlady_portrait
 
-.text "Please, I beseech ye! Save me boy, Romeo,"
+.text "Please, please, I beseech you!"
 .byte NewLine
-.text "from that gods-forsaken fort!"
+.text "My son Romeo was taken to that fort!"
+.byte NewLine
+.text "You have to save him! Please!"
 .byte WaitForA
 
 .byte EndText

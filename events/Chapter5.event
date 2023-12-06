@@ -50,11 +50,12 @@ eventChapter5Events ; 99/9246
 			TEST_FLAG_SET $0B
 		END_DEFINITION
 		EVENT $13, _MareetaDialogue
-			CMP_BYTE $7E4976, 2
+			;CMP_BYTE $7E4976, 2
 			CHECK_NUM_UNITS_GTE Mareeta, 1
 			CMP_STATUS_UNSET Mareeta, TurnStatusRescued
 			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $08
+			TEST_FLAG_SET $15
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -100,6 +101,9 @@ eventChapter5Events ; 99/9246
 	_BattleEventDefinitions ; 99/93F1
 		EVENT $14, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Bandole
+		END_DEFINITION
+		EVENT $15, eventBattleQuoteDummyEvent
+			CHECK_SINGLE Mareeta
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -211,6 +215,10 @@ eventChapter5Events ; 99/9246
 
 		SET_MUSIC $50
 		YIELD
+		
+		SCROLL_CAMERA_CHAR Raydrik
+		SET_CAMERA_SPEED 4
+		YIELD
 
 		DIALOGUE ch5mareetaresist
 		YIELD
@@ -229,8 +237,13 @@ eventChapter5Events ; 99/9246
 
 		SET_MUSIC $50
 		YIELD
+		
+		SCROLL_CAMERA_CHAR Eyvel
+		SET_CAMERA_SPEED 4
+		YIELD
 
 		DIALOGUE ch5mareetacaptured
+		YIELD
 		JUMP +
 
 	_MareetaKilled ; 99/9580
@@ -240,12 +253,21 @@ eventChapter5Events ; 99/9246
 
 		SET_MUSIC $50
 		YIELD
+		
+		SCROLL_CAMERA_CHAR Eyvel
+		SET_CAMERA_SPEED 4
+		YIELD
 
 		DIALOGUE ch5mareetakilled
+		YIELD
 
 		+
-		STORE_LONG lEventEngineLongParameter, ch5raydrikpanicsA
-		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		SCROLL_CAMERA_CHAR Raydrik
+		SET_CAMERA_SPEED 4
+		YIELD
+		
+		DIALOGUE ch5raydrikpanicsA
 		YIELD
 
 		CALL_ASM_LONG_SKIPPABLE rlASMCChangeMapMusic, $3E
@@ -288,6 +310,13 @@ eventChapter5Events ; 99/9246
 
 		STORE_LONG lEventEngineLongParameter, ch5nannaleftalone
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		YIELD
+		
+		SCROLL_CAMERA_CHAR Nanna
+		SET_CAMERA_SPEED 4
+		YIELD
+		
+		DIALOGUE ch5nannaleftalone2
 
 		+
 		YIELD
@@ -493,6 +522,10 @@ eventChapter5Events ; 99/9246
 
 		SET_MUSIC $3E
 		YIELD
+		
+		SCROLL_CAMERA_CHAR Raydrik
+		SET_CAMERA_SPEED 4
+		YIELD
 
 		DIALOGUE ch5eyvelcaptured
 		YIELD
@@ -536,6 +569,13 @@ eventChapter5Events ; 99/9246
 
 		STORE_LONG lEventEngineLongParameter, ch5nannaleftalone
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		YIELD
+		
+		SCROLL_CAMERA_CHAR Nanna
+		SET_CAMERA_SPEED 4
+		YIELD
+		
+		DIALOGUE ch5nannaleftalone2
 
 		+
 		YIELD

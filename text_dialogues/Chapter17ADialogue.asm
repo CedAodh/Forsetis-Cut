@@ -60,9 +60,9 @@ ch17Amullerspawn
 
 .byte Right_slot
 .byte ScrollText
-.text "Still, this IS going to make things harder on"
+.text "Still, this IS going to make things"
 .byte NewLine
-.text "us..."
+.text "harder on us..."
 .byte WaitForA
 
 .byte EndText
@@ -228,7 +228,7 @@ ch17Asaiasleif
 .byte WaitForA
 
 .byte Right_slot
-.text "My greatest fear..."
+.text "Njörun save us..."
 .byte NewLine
 .text "Prince Leif, we cannot hesitate for even"
 .byte NewLine
@@ -308,15 +308,27 @@ ch17Asaiasishtar
 
 .byte Right_slot
 .text "Hm? Princess Ishtar?"
+
+.byte Left_slot
+.byte ScrollText
+.word LoadPortrait
+.word reinhardt_portrait
+
+.byte Right_slot
 .byte NewLine
 .text "And Commander Reinhardt, too?"
+
+.byte Left_slot
+.word LoadPortrait
+.word ishtar_portrait
+
+.byte Right_slot
 .byte NewLine
 .text "Whatever is the matter? You look panicked!"
 .byte WaitForA
 
 .byte Left_slot
-.byte ScrollText
-.text "It's Prince Julius... He's fallen terribly ill!"
+.text "It's Lord Julius... He's fallen terribly ill!"
 .byte NewLine
 .text "He's running a high fever,"
 .byte NewLine
@@ -506,28 +518,31 @@ ch17Asarah
 
 .byte Right_slot
 .word LoadPortrait
-.word jeanne_portrait
-
-.byte Left_slot
-.word LoadPortrait
 .word sarah_portrait
 .text "......"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
+.word LoadPortrait
+.word jeanne_portrait
 .text "Ah, Sara, where do you think you're going?"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "......"
 .byte WaitForA
+.byte ScrollText
+.word ClearPortrait
 
+.byte Left_slot
 .byte ScrollText
 .word ClearPortrait
 .word RetractBox
 
 .byte Right_slot
+.word LoadPortrait
+.word jeanne_portrait
 .byte ScrollText
 .text "Oh, are you with the Liberation Army?"
 .byte NewLine
@@ -706,7 +721,7 @@ ch17Aopening1
 .byte ScrollText
 .text "In light of this, I'll shore up our defenses"
 .byte NewLine
-.text "for the time being. Once the Lord Tactician"
+.text "for the time being. Once the lord tactician"
 .byte NewLine
 .text "arrives, we'll launch our assault immediately."
 .byte WaitForA
@@ -933,7 +948,6 @@ ch17Amishajoin
 .byte NewLine
 .text "I want to have a look at her."
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -941,13 +955,13 @@ ch17Amishajoin
 .word misha_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Is it true you're the commander"
 .byte NewLine
 .text "of the Silessian forces?"
 .byte WaitForA
 
 .byte Left_slot
-.byte ScrollText
 .text "This is a waste of time..."
 .byte NewLine
 .text "I don't expect mercy from you."
@@ -959,7 +973,7 @@ ch17Amishajoin
 .word dorius_portrait
 .text "This isn't going to work, Prince."
 .byte NewLine
-.text "The Pegasus Knights of Silesse value honor"
+.text "The pegasus knights of Silesse value honor"
 .byte NewLine
 .text "above all."
 .byte WaitForA
@@ -982,17 +996,16 @@ ch17Amishajoin
 .word karin_portrait
 .text "Count Dryas, don't say something so stupid!"
 .byte WaitForA
-.byte ScrollText
-
-.word PlayMusic
-.byte $44	; Chapter End – August Speaks B
 
 .byte Left_slot
 .byte ScrollText
+.word PlayMusic
+.byte $44	; Chapter End – August Speaks B
 .word LoadPortrait
 .word misha_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Captain Misha, you have something"
 .byte NewLine
 .text "to protect, don't you?"

@@ -500,7 +500,7 @@ brightonmacha
 .byte left_slot
 .word LoadPortrait
 .word brighton_portrait
-.text "Macha, everything all right?"
+.text "Machyua, everything all right?"
 .byte WaitForA
 
 .byte right_slot
@@ -625,7 +625,7 @@ brightonmacha
 
 .byte left_slot
 .byte ScrollText
-.text "...Macha, I..."
+.text "...Machyua, I..."
 .byte WaitForA
 
 .byte right_slot
@@ -687,7 +687,7 @@ brightonmacha
 .byte ScrollText
 .text "But now, I..."
 .byte NewLine
-.text "I'm...I'm so sorry, Macha."
+.text "I'm...I'm so sorry, Machyua."
 .byte NewLine
 .text "Please, please forgive me."
 .byte WaitForA

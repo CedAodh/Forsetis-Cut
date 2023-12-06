@@ -130,7 +130,13 @@ eventChapter12Events ; 99/DBD6
 	END1
 
 	_Drawbridge2 ; 99/DDBC
-		macroOpenDrawbridgeByTileChangeID 1
+		PLAY_SOUND_BYTE $6E
+		
+		STORE_WORD wEventEngineXCoordinate, 11
+		STORE_WORD wEventEngineYCoordinate, 18
+		STORE_WORD wEventEngineParameter1, $000C
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		YIELD_UNK
 	END1
 
 	_RosaHouseDestroy ; 99/DDE7

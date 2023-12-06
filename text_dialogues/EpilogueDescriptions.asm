@@ -1096,7 +1096,7 @@ machaepi
 .byte $09
 .word $1200
 .byte $04
-.text "Macha returned"
+.text "Machyua returned"
 .byte NewLine
 .text "to Munster, where none"
 .byte NewLine

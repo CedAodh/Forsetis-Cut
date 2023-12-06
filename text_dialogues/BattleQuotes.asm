@@ -644,3 +644,10 @@ arionboss
 .text "Now perish!"
 .byte WaitForA
 .byte EndText
+
+mareetaboss
+.text "M-my head..."
+.byte NewLine
+.text "My head...hurts..."
+.byte WaitForA
+.byte EndText

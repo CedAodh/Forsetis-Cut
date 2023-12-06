@@ -19,9 +19,7 @@ tanyaronan1
 	.byte left_slot
 	.text "Hm?"
 	.byte NewLine
-	.text "Oh!"
-	.byte NewLine
-	.text "Y-yeah, I..."
+	.text "Oh! Y-yeah, I..."
 	.byte WaitForA
 
 	.byte right_slot
@@ -305,7 +303,146 @@ leifmutter
 .byte NewLine
 .text "We'll have to continue on to Munster"
 .byte NewLine
-.text "immediately after things have calmed down."
+.text "immediately once things have calmed down."
+.byte WaitForA
+
+.byte EndText
+
+leifandfinn
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word finn_portrait
+.text "Milord, we'll soon be making our way"
+.byte NewLine
+.text "through the village of Iz."
+.byte WaitForA
+
+.byte right_slot
+.text "I see."
+.byte NewLine
+.text "Thank you for the notice, Finn."
+.byte WaitForA
+.byte ScrollText
+.text "...Hm."
+.byte NewLine
+.text "Our expedition hasn't been"
+.byte NewLine
+.text "all that eventful as of yet."
+.byte WaitForA
+.byte ScrollText
+.text "I expected there to be at least"
+.byte NewLine
+.text "some small amount of trouble by now."
+.byte NewLine
+.text "No run-ins or...anything."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "As did I."
+.byte NewLine
+.text "But let us not squander such luck—"
+.byte NewLine
+.text "we'd best maintain our steady pace."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You're absolutely right."
+.byte NewLine
+.text "Although..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What is it, Lord Leif?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Finn, I..."
+.byte NewLine
+.text "Well, I'm not entirely sure how to properly"
+.byte NewLine
+.text "voice my concern about this, but..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I'm listening."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Am I making...a mistake by coming along"
+.byte NewLine
+.text "with you and the commander?"
+.byte WaitForA
+.byte ScrollText
+.text "Am I... Am I truly ready for the struggles"
+.byte NewLine
+.text "ahead that await me? Perhaps I let myself"
+.byte NewLine
+.text "get caught up in the heat of the moment..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I heard well your resolve over"
+.byte NewLine
+.text "the last day, milord."
+.byte WaitForA
+.byte NewLine
+.text "I myself believe you've grown stronger—"
+.byte NewLine
+.text "strong enough to hold your own"
+.byte NewLine
+.text "against the Grannvale Empire."
+.byte WaitForA
+.byte ScrollText
+.text "Between Eyvel, Mareeta, and I, we made certain"
+.byte NewLine
+.text "to do an utmost job in training you"
+.byte NewLine
+.text "in the ways of the sword and combat;"
+.byte WaitForA
+.byte ScrollText
+.text "bestowing you the tools you will need"
+.byte NewLine
+.text "to prevail in the journey to come."
+.byte WaitForA
+.byte ScrollText
+.text "The circumstances we find ourselves in"
+.byte NewLine
+.text "were merely your inevitable call to arms."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mmm..."
+.byte NewLine
+.text "That could just be it, couldn't it?"
+.byte WaitForA
+.byte ScrollText
+.text "Very well! I accept this destiny."
+.byte NewLine
+.text "Whatever it takes, I shall press on—"
+.byte NewLine
+.text "and I won't stop before my own body breaks!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Now there's the conviction I idolize!"
+.byte NewLine
+.text "Never let up on that, Lord Leif."
+.byte NewLine
+.text "Recognize such virtues, and you'll lead us well."
 .byte WaitForA
 
 .byte EndText

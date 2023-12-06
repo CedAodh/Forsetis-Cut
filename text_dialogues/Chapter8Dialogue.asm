@@ -3,16 +3,16 @@ ch8rumaighmount
 .byte Right_slot
 .word LoadPortrait
 .word rumaigh_portrait
-.text "Ugh, I didn't know Gomez an' his boys"
+.text "Ugh, I didn't know Gomez and his crew"
 .byte NewLine
 .text "were gonna take forever and a day!"
 .byte WaitForA
 .byte ScrollText
-.text "Hmm... This ain't worth it."
+.text "Hmm... This isn't worth it."
 .byte NewLine
-.text "Can't get caught up in this whole scene"
+.text "I can't afford to linger and give"
 .byte NewLine
-.text "an' have someone recognize me..."
+.text "anybody the chance to recognize me..."
 .byte WaitForA
 
 .byte EndText
@@ -240,7 +240,7 @@ ch8rumaighgomez
 .word rumaigh_portrait
 .text "All right, pay up. Your crew might be happy"
 .byte NewLine
-.text "spendin' all day stickin' up farmers,"
+.text "spending all day stickin' up farmers,"
 .byte NewLine
 .text "but I got an actual army to get back to."
 .byte WaitForA
@@ -281,7 +281,7 @@ ch8mastersealhouse
 .byte NewLine
 .text "the Freeblades, Gomez came along"
 .byte NewLine
-.text "an' started riling up the bandits."
+.text "an' started rilin' up the bandits."
 .byte WaitForA
 .byte ScrollText
 .text "His mind's about as sharp as a broken javelin,"
@@ -604,7 +604,7 @@ ch8leifrumaigh
 .byte WaitForA
 
 .byte Left_slot
-.text "It's no business of yours, junior."
+.text "It's no business of yours, little guy."
 .byte NewLine
 .text "Just take my head and be done with it."
 .byte WaitForA
@@ -686,21 +686,18 @@ ch8leifrumaigh
 .byte NewLine
 .text "Gomez, the one who hired me,"
 .byte NewLine
-.text "he's makin' his move on 'em."
+.text "he's makin' his move on them."
 .byte WaitForA
 .byte ScrollText
-.text "Didn't say exactly what his plans were,"
+.text "He didn't say exactly what his plans were..."
 .byte NewLine
-.text "but he didn't have to."
-.byte NewLine
-.text "I could tell he was fixin' to kill 'em both."
+.text "but the message got across all the same."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "I see... Thank you."
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -708,6 +705,7 @@ ch8leifrumaigh
 .word augustus_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "August, see that this man"
 .byte NewLine
 .text "and his dragon mount are freed at once."
@@ -934,7 +932,7 @@ ch8leiftanya
 .byte ScrollText
 .text "Yeah... Yeah, this is just what I need!"
 .byte NewLine
-.text "You bet your Light Brand I'll come with you!"
+.text "You bet your light brand I'll come with you!"
 .byte NewLine
 .text "Th-thank you!"
 .byte WaitForA
