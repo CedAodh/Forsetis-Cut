@@ -167,6 +167,11 @@ Canis
 Draco
 (Mus
 Tigris
+Anguilla
+Lepus 
+Equus
+Si[mia
+Ovis
 Veld
 
 Ro[meo

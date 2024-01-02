@@ -39,9 +39,9 @@ ch24xkaiaeyvelleif
 .byte ScrollText
 .text "Ah! Lord Leif!"
 .byte NewLine
-.text "What are you doing here?!"
+.text "Wh-what are you doing here?!"
 .byte NewLine
-.text "You gotta break out of here, and fast!"
+.text "You have to break out of here, and fast!"
 .byte WaitForA
 
 .byte Right_slot
@@ -102,7 +102,7 @@ ch24xkaiaeyvelleif
 .byte NewLine
 .text "“Commander,” I see."
 .byte NewLine
-.text "A lot must have happened..."
+.text "Truly a lot must have happened..."
 .byte WaitForA
 .byte ScrollText
 .text "All right, we'll talk later."
@@ -180,7 +180,7 @@ ch24xkaiaeyvelmareeta
 .byte ScrollText
 .text "Good, you're back to your senses..."
 .byte NewLine
-.text "Now c'mon, we gotta get out of here before—"
+.text "Look, we have to get out of here before—"
 .byte WaitForA
 .byte ScrollText
 .text "Huh?"
@@ -197,37 +197,40 @@ ch24xkaiaeyvelmareeta
 
 .byte Left_slot
 .byte ScrollText
-.text "'Course I am! What, you thought Raydrik's"
+.text "...?"
 .byte NewLine
-.text "goons would be able to do me in?"
-.byte NewLine
-.text "Give your old mom some credit!"
+.text "I am, yes."
 .byte WaitForA
 .byte ScrollText
-.text "Speaking of him, just where did that dastard"
+.text "But how'd we end up here?"
 .byte NewLine
-.text "run off to? And how'd we end up here...?"
+.text "And where's Raydrik?"
+.byte NewLine
+.text "Where did he scurry off to?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Raydrik, he's... He's already dead."
 .byte NewLine
-.text "We killed him."
+.text "We finally took him down."
 .byte WaitForA
 .byte ScrollText
-.text "Oh, Mother, so much has happened..."
+.text "Oh, Mother... So much has happened..."
 .byte NewLine
-.text "One of the Loptrian bishops working for"
+.text "One of the Loptrian bishops working with"
 .byte NewLine
 .text "Raydrik had...turned you to stone..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Loptrian bishop...?"
+.text "What?"
 .byte NewLine
-.text "That's right! That bald guy in the robe!"
+.text "Turned me to stone...?"
+.byte WaitForA
+.byte ScrollText
+.text "Wait, you must be right!"
 .byte NewLine
 .text "I only saw him for a second, and then..."
 .byte WaitForA
@@ -260,11 +263,16 @@ ch24xkaiaeyvelmareeta
 .text "I'll always have your back, no matter what!"
 .byte WaitForA
 .byte ScrollText
-.text "Still... Not to bring down the mood,"
+.text "Still... Not to dwell on the subject,"
 .byte NewLine
-.text "but I'm sorry for everything."
+.text "but I'm deeply sorry for everything."
+.byte WaitForA
+.byte ScrollText
+.text "I can tell your conscience had been"
 .byte NewLine
-.text "I can tell I must've put you kids through a lot..."
+.text "plagued for quite some time."
+.byte NewLine
+.text "Please find in yourself to forgive me..."
 .byte WaitForA
 
 .byte Right_slot
@@ -406,9 +414,9 @@ ch24xeyvelleif
 .text "since that day in the arena?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah, Lord Leif..."
+.text "Leif..."
 .byte NewLine
-.text "Well, I guess you're not so little anymore."
+.text "You've grown so much in that time."
 .byte NewLine
 .text "You're a man now—and a real prince, at that."
 .byte WaitForA
@@ -475,19 +483,17 @@ ch24xeyvelleif
 
 .byte Right_slot
 .byte ScrollText
-.text "Oh, Little Leif..."
-.byte NewLine
-.text "I still remember the day you entered my life."
+.text "I remember well back when it all began."
 .byte WaitForA
 .byte ScrollText
-.text "You and Little Nan wandered into the village"
+.text "You and Lady Nanna wandered into the village"
 .byte NewLine
 .text "with Finn, who was hurt so badly he could"
 .byte NewLine
 .text "hardly manage to stay atop his horse."
 .byte WaitForA
 .byte ScrollText
-.text "Little Nan was begging me to save her father,"
+.text "Lady Nanna was begging me to save her father,"
 .byte NewLine
 .text "her cute eyes turned red with tears,"
 .byte NewLine
@@ -508,11 +514,11 @@ ch24xeyvelleif
 .text "and said: “I'll give you this if you help him.”"
 .byte WaitForA
 .byte ScrollText
-.text "Wasn't till later that I realized how much"
+.text "You also added on how it was an heirloom of"
 .byte NewLine
-.text "it meant to you. I heard the blade was"
+.text "your mother's—to get across how important"
 .byte NewLine
-.text "an heirloom—belonged to your mother, right?"
+.text "it was that I did something to help Finn."
 .byte WaitForA
 .byte ScrollText
 .text "But I remember wondering, “Just what kind"
@@ -522,7 +528,7 @@ ch24xeyvelleif
 .text "to make this little boy so calm right now?”"
 .byte WaitForA
 .byte ScrollText
-.text "...I can't remember my own childhood,"
+.text "...I have no recollection of my own childhood,"
 .byte NewLine
 .text "Lord Leif."
 .byte WaitForA
@@ -538,14 +544,14 @@ ch24xeyvelleif
 .byte NewLine
 .text "Did I have a husband? Kids?"
 .byte NewLine
-.text "I don't have the slightest idea."
+.text "I have not the slightest idea."
 .byte WaitForA
 .byte ScrollText
-.text "But when I first met you two, I realized"
+.text "But when I first met you two,"
 .byte NewLine
-.text "something real bad must've happened to me"
+.text "it just hit me that something very similar"
 .byte NewLine
-.text "in my own youth, too."
+.text "must have happened in my own youth, too."
 .byte WaitForA
 .byte ScrollText
 .text "So I figured, if I couldn't remember my own"
@@ -557,7 +563,7 @@ ch24xeyvelleif
 .byte ScrollText
 .text "Never imagined you would turn out to be"
 .byte NewLine
-.text "the Prince of Leonster, though..."
+.text "the prince of Leonster, though..."
 .byte WaitForA
 
 .byte EndText
@@ -566,7 +572,6 @@ ch24xeyvelleif
 ch24xeyvelnanna
 
 .byte Right_slot
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -584,9 +589,9 @@ ch24xeyvelnanna
 .text "I cried about that more times than I can count."
 .byte WaitForA
 .byte ScrollText
-.text "But I never realized I did have a mother"
+.text "But little did I realize that you still"
 .byte NewLine
-.text "all along: you, Eyvel."
+.text "filled that role for me anyway."
 .byte WaitForA
 .byte ScrollText
 .text "You found a way to love all of us equally,"
@@ -597,9 +602,10 @@ ch24xeyvelnanna
 .byte WaitForA
 
 .byte Right_slot
-.text "Oh, Little Nan..."
+.byte ScrollText
+.text "Oh, Nanna..."
 .byte NewLine
-.text "C'mon, you're the Princess of Nordion!"
+.text "Look, you're the princess of Nordion!"
 .byte NewLine
 .text "The blood of Hoðr runs in your veins!"
 .byte WaitForA
@@ -609,12 +615,21 @@ ch24xeyvelnanna
 .text "your mother is out there somewhere, alive."
 .byte WaitForA
 .byte ScrollText
-.text "I mean, look what happened to me!"
+.text "Use your strength and station alike"
+.byte NewLine
+.text "to gather all the intel and resources"
+.byte NewLine
+.text "within your grasp in search of her."
+.byte WaitForA
+.byte ScrollText
+.text "After all, look what happened to me!"
 .byte NewLine
 .text "Stranger things have happened."
 .byte WaitForA
 .byte ScrollText
-.text "You just keep watching out for Lord Leif."
+.text "You just keep on on as you are,"
+.byte NewLine
+.text "watching out for Lord Leif."
 .byte NewLine
 .text "Never give up. You'll find her again someday..."
 .byte WaitForA
@@ -625,7 +640,6 @@ ch24xeyvelnanna
 ch24xeyveldagdar
 
 .byte Right_slot
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -639,6 +653,7 @@ ch24xeyveldagdar
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "You don't give yourself enough credit, Dagdar."
 .byte WaitForA
 .byte NewLine
@@ -661,9 +676,6 @@ ch24xeyveldagdar
 
 ch24xeyveltanya
 
-.byte Right_slot
-.byte ScrollText
-
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
@@ -674,6 +686,7 @@ ch24xeyveltanya
 .byte WaitForA
 
 .byte right_slot
+.byte ScrollText
 .text "Nice to see you too, Tanya."
 .byte NewLine
 .text "Been keeping an eye out for your father?"
@@ -722,7 +735,7 @@ ch24xeyveltanya
 .byte ScrollText
 .text "O-oh, that's... You're right, I guess."
 .byte NewLine
-.text "*sniffle* Thank you...Eyvel."
+.text "*sniff* Thank you...Eyvel."
 .byte NewLine
 .text "Dammit. Now I'm the one getting all mushy."
 .byte WaitForA
@@ -731,9 +744,6 @@ ch24xeyveltanya
 
 
 ch24xeyvelhalvan
-
-.byte Right_slot
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -757,6 +767,7 @@ ch24xeyvelhalvan
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Halvan..."
 .byte NewLine
 .text "I'm sorry for everything I've put you through."
@@ -773,9 +784,6 @@ ch24xeyvelhalvan
 
 
 ch24xeyvelosian
-
-.byte Right_slot
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -796,6 +804,7 @@ ch24xeyvelosian
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "I'm happy to hear you say that, you big lug."
 .byte NewLine
 .text "You've got it better than"
@@ -813,15 +822,13 @@ ch24xeyvelosian
 
 ch24xeyvelmareeta
 
-.byte Right_slot
-.byte ScrollText
-
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word mareeta_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Mareeta? What's wrong?"
 .byte NewLine
 .text "What are you doing over here by yourself?"
@@ -833,7 +840,7 @@ ch24xeyvelmareeta
 
 .byte Right_slot
 .byte ScrollText
-.text "C'mon, you're a beautiful woman now,"
+.text "Come on, you're a beautiful woman now,"
 .byte NewLine
 .text "so don't go making a mess of your face"
 .byte NewLine
@@ -853,7 +860,7 @@ ch24xeyvelmareeta
 .byte NewLine
 .text "I'm okay now, see?"
 .byte NewLine
-.text "Everything's gonna be all right..."
+.text "Everything will be all right..."
 .byte WaitForA
 
 .byte EndText
@@ -861,15 +868,13 @@ ch24xeyvelmareeta
 
 ch24xeyvelgalzus
 
-.byte Right_slot
-.byte ScrollText
-
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word galzus_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "...Who are you?"
 .byte WaitForA
 
@@ -879,9 +884,7 @@ ch24xeyvelgalzus
 .text "I figure I owe you some words."
 .byte WaitForA
 .byte ScrollText
-.text "My daughter..."
-.byte NewLine
-.text "How you've raised her;"
+.text "My daughter... How you've raised her;"
 .byte NewLine
 .text "what you've made of her... Thank you."
 .byte WaitForA
@@ -924,9 +927,9 @@ ch24xeyvelgalzus
 .text "When I saw her, I just lost it..."
 .byte WaitForA
 .byte NewLine
-.text "Killed every last slaver—and the bodyguards"
+.text "I killed every last slaver—and the bodyguards"
 .byte NewLine
-.text "they had with 'em, too. I'd have done anything"
+.text "they had with them, too. I'd have done anything"
 .byte NewLine
 .text "just to get those damned chains off her."
 .byte WaitForA
@@ -968,9 +971,9 @@ ch24xeyvelgalzus
 .byte ScrollText
 .text "I agree. Mareeta is my daughter now—"
 .byte NewLine
-.text "has been for years. I wouldn't let you take her"
+.text "has been for years. I wouldn't hand her"
 .byte NewLine
-.text "away from me even if you wanted to."
+.text "back to you even if you asked."
 .byte WaitForA
 
 .byte Left_slot
@@ -1018,9 +1021,6 @@ ch24xeyvelgalzus
 
 ch24xeyvelfinn
 
-.byte Right_slot
-.byte ScrollText
-
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
@@ -1033,6 +1033,7 @@ ch24xeyvelfinn
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "And I'm grateful to you, Finn, for everything"
 .byte NewLine
 .text "you've done for Fiana over the years."
@@ -1058,12 +1059,14 @@ ch24xeyvelfinn
 .byte ScrollText
 .text "Just like me...?"
 .byte NewLine
-.text "Are you sure you're not just confused, Finn?"
+.text "Are you sure you're not just"
+.byte NewLine
+.text "misremembering things?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "No, I'm certain."
+.text "I am certain."
 .byte WaitForA
 .byte NewLine
 .text "When Lord Quan fought in Lord Sigurd's"
@@ -1111,9 +1114,9 @@ ch24xeyvelfinn
 .text "I never took you for a romantic, Finn."
 .byte WaitForA
 .byte ScrollText
-.text "If I had holy blood, I'd have a Brand"
+.text "If I were of crusader lineage, I'd have a"
 .byte NewLine
-.text "somewhere on my body, but I don't."
+.text "Brand somewhere on my body, but I don't."
 .byte WaitForA
 .byte ScrollText
 .text "You've got the wrong person, Finn."

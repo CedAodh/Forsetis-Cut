@@ -30,8 +30,6 @@ ch3op1
 .byte Left_slot
 .word LoadPortrait
 .word raydrik_portrait
-.byte $09 ; font 9(always use font 9)
-
 .text "Are the cattle being collected on schedule,"
 .byte NewLine
 .text "Erebos?"
@@ -277,11 +275,12 @@ ch3end1
 .text "but we've taken control of Kerberos' Gate."
 .byte WaitForA
 
+.word PlayMusic
+.byte $3B
+
 .byte Right_slot
 .word LoadPortrait
 .word raydrik_portrait
-.word PlayMusic
-.byte $3B
 .text "Nicely done. I'm impressed, truly." 
 .byte NewLine
 .text "Such a shame to spoil your moment,"

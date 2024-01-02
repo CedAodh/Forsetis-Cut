@@ -194,12 +194,16 @@ ch23altenaleave
 .text "Coulter, wait! Coulter!"
 .byte WaitForA
 
+.byte Right_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte Left_slot
 .byte ScrollText
 .word ClearPortrait
 .word RetractBox
 
 .byte Right_slot
-.byte ScrollText
 .word LoadPortrait
 .word altena_portrait
 .text "No..."
@@ -286,7 +290,7 @@ ch23vulneraryhouse
 .text "Please, save our city from the empire!"
 .byte WaitForA
 .byte ScrollText
-.text "This Vulnerary is all I can spare,"
+.text "This vulnerary is all I can spare,"
 .byte NewLine
 .text "but I hope it helps you folks..."
 .byte WaitForA
@@ -462,11 +466,11 @@ ch23leifced
 
 .byte Left_slot
 .byte ScrollText
-.text "Sorry to have kept you waiting."
+.text "Sorry to have kept you waiting, Prince Ced."
 .byte NewLine
 .text "I never did get a chance to thank you"
 .byte NewLine
-.text "for rescuing me, Prince Ced..."
+.text "for rescuing me..."
 .byte WaitForA
 
 .byte Right_slot
@@ -514,7 +518,7 @@ ch23leifced
 .byte NewLine
 .text "of the city and its people, but not even my"
 .byte NewLine
-.text "holy weapon, the Tome of Forseti,"
+.text "divine weapon, the Tome of Forseti,"
 .byte WaitForA
 .byte NewLine
 .text "could overcome the power of Raydrik's"
@@ -567,7 +571,7 @@ ch23leifced
 .text "happening to inherit the right kind of blood."
 .byte WaitForA
 .byte ScrollText
-.text "For centuries, Jugdral was ruled by"
+.text "For several centuries, Jugdral was ruled by"
 .byte NewLine
 .text "the Loptr Church and its empire—the crusaders"
 .byte NewLine
@@ -598,14 +602,14 @@ ch23leifced
 .text "to call ourselves better than you."
 .byte WaitForA
 .byte ScrollText
-.text "You're the youngest of us."
+.text "Remember, you're the youngest of us."
 .byte NewLine
 .text "You spent your childhood being hunted."
 .byte NewLine
 .text "And you've never stopped fighting!"
 .byte WaitForA
 .byte ScrollText
-.text "In fact, you've been fighting"
+.text "Matter of fact, you've been fighting"
 .byte NewLine
 .text "for longer than any of us have!"
 .byte NewLine
@@ -642,12 +646,14 @@ ch23leifced
 .text "Like a sickly child standing beside giants."
 .byte WaitForA
 .byte ScrollText
-.text "Heh. Perhaps I am still a child, in many ways."
+.text "Heh."
+.byte NewLine
+.text "Perhaps I am still a child, in many ways."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Then that would mean I, holy weapon and all,"
+.text "Then that would mean I, divine weapon and all,"
 .byte NewLine
 .text "needed to be rescued by a child."
 .byte NewLine
@@ -663,7 +669,7 @@ ch23leifced
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! I was only joking, Prince Leif."
+.text "Hah! I was merely joking, Prince Leif."
 .byte NewLine
 .text "Though this is hardly the time to fool around..."
 .byte NewLine
@@ -799,7 +805,7 @@ ch23leifsaias
 .byte ScrollText
 .text "It's a sacred blade that can only be wielded"
 .byte NewLine
-.text "by someone of holy blood—but Lord Ced"
+.text "by someone of crusader lineage—but Lord Ced"
 .byte NewLine
 .text "knows little of swordplay himself, you see."
 .byte WaitForA
@@ -808,7 +814,7 @@ ch23leifsaias
 .byte ScrollText
 .text "A sacred blade..."
 .byte NewLine
-.text "The holy weapon of Bragi himself...!"
+.text "The divine weapon of Bragi himself...!"
 .byte WaitForA
 .byte ScrollText
 .text "The gods themselves must have sent"
@@ -837,7 +843,7 @@ ch23leifsaias
 .text "the enchantment which protects him."
 .byte WaitForA
 .byte ScrollText
-.text "May we meet again, Lord Leif."
+.text "May we meet again, Prince Leif."
 .byte WaitForA
 
 .byte EndText
@@ -870,9 +876,9 @@ ch23opening1
 .text "our rebellion without a leader."
 .byte WaitForA
 .byte ScrollText
-.text "There just isn't anyone up to the task"
+.text "There just isn't anyone up to the task of"
 .byte NewLine
-.text "of getting the children to safety on their own..."
+.text "getting the children to safety on their own..."
 .byte WaitForA
 
 .byte Left_slot
@@ -911,12 +917,12 @@ ch23opening1
 .byte NewLine
 .text "I sense your heart is enveloped"
 .byte NewLine
-.text "in a gentle wind."
+.text "in a gentle breeze."
 .byte WaitForA
 .byte ScrollText
 .text "You don't seem to mean us harm."
 .byte NewLine
-.text "Just who are you, exactly?"
+.text "But just who are you, exactly?"
 .byte NewLine
 .text "You wear the robes of the royal priesthood..."
 .byte WaitForA
@@ -997,7 +1003,7 @@ ch23opening1
 .byte ScrollText
 .text "The blade can only be wielded by"
 .byte NewLine
-.text "a swordsman of holy blood."
+.text "a swordsman of crusader lineage."
 .byte WaitForA
 .byte ScrollText
 .text "A rebel leader, Prince Leif, is marching"
@@ -1019,7 +1025,7 @@ ch23opening1
 .text "You've my gratitude."
 .byte WaitForA
 .byte ScrollText
-.text "Oh, Sir Priest!"
+.text "Oh, sir priest!"
 .byte NewLine
 .text "You must give me your name, at least..."
 .byte WaitForA
@@ -1028,7 +1034,9 @@ ch23opening1
 .byte ScrollText
 .text "Ah, forgive my rudeness."
 .byte NewLine
-.text "I am... I am Saias of House Velthomer."
+.text "I... I hail from Velthomer."
+.byte NewLine
+.text "My name is Saias."
 .byte WaitForA
 
 .byte EndText
@@ -1143,9 +1151,9 @@ ch23opening3
 .text "Things have escalated since last we were here."
 .byte WaitForA
 .byte ScrollText
-.text "The knights seem weaker than before,"
+.text "Though the knights seem weaker than before,"
 .byte NewLine
-.text "but they're still a force to be reckoned with."
+.text "they're likely still a force to be reckoned with."
 .byte WaitForA
 .byte NewLine
 .text "Without the Magi's aid, I fear seizing Munster"
@@ -1203,12 +1211,13 @@ ch23closing1
 .byte Left_slot
 .byte ScrollText
 .text "Then we have our work cut out for us..."
-.byte NewLine
+.byte WaitForA
+.byte ScrollText
 .text "Ah, there's something you should be aware of,"
 .byte NewLine
 .text "my prince."
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "I have intelligence stating that Raydrik's blade,"
 .byte NewLine
 .text "the Loptrian Fang, is enchanted with"
@@ -1293,9 +1302,6 @@ ch23hasblade
 
 ch23saiasblade
 
-.byte Right_slot
-.byte ScrollText
-
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
@@ -1305,14 +1311,15 @@ ch23saiasblade
 .text "been handled for you."
 .byte WaitForA
 .byte ScrollText
-.text "Lord Ced bade me deliver this blade to you—"
+.text "Lord Ced bade me deliver this blade to you."
 .byte NewLine
-.text "as crusader blood runs in your veins,"
+.text "As crusader blood runs in your veins,"
 .byte NewLine
 .text "Prince Leif, you should be able to wield it."
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "I'm not sure I follow."
 .byte NewLine
 .text "What does this sword have to do with"
@@ -1336,7 +1343,7 @@ ch23saiasblade
 .byte ScrollText
 .text "A sacred blade..."
 .byte NewLine
-.text "The holy weapon of Bragi himself...!"
+.text "The divine weapon of Bragi himself...!"
 .byte WaitForA
 .byte ScrollText
 .text "The gods themselves must have sent"
@@ -1346,7 +1353,7 @@ ch23saiasblade
 .text "I'll see that it meets Raydrik's neck before long."
 .byte WaitForA
 .byte ScrollText
-.text "Thank you for everything, Father Saias."
+.text "Thank you for everything, Father."
 .byte WaitForA
 
 .byte Left_slot
@@ -1362,7 +1369,11 @@ ch23saiasblade
 .byte NewLine
 .text "I'll remember his role in this, as well."
 .byte WaitForA
+
+.byte Right_slot
 .byte ScrollText
+.text "What will you do now, Father?"
+.byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
@@ -1372,24 +1383,23 @@ ch23saiasblade
 
 ch23saiasload
 
-.byte Right_slot
-.byte ScrollText
-
-.byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word saias_portrait
 
 .byte EndText
 
-
 ch23saiasbranch
 
 .byte Right_slot
+.byte ScrollText
 .text "What will you do now, Father?"
 .byte WaitForA
 
 .byte Left_slot
+
+ch23saiasbranch2
+
 .text "I have nowhere to return to."
 .byte NewLine
 .text "There's only one thing I can do now: I shall go"
@@ -1458,7 +1468,7 @@ ch23saiasno
 .byte NewLine
 .text "your good fortune from the Tower of Bragi."
 .byte NewLine
-.text "Be well, Lord Leif."
+.text "Be well, Prince Leif."
 .byte WaitForA
 
 .byte EndText
@@ -1543,7 +1553,7 @@ ch23fall
 .word leif_portrait2
 .text "How can this be?!"
 .byte NewLine
-.text "The Magi were...wiped out?!"
+.text "The Magi were...routed?!"
 .byte WaitForA
 
 .byte Right_slot

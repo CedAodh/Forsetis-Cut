@@ -56,7 +56,7 @@ EyvelVsVeld
 .text "How is this possible?!"
 .byte WaitForA
 .byte ScrollText
-.text "Bishop Manfroy, you did not—"
+.text "Archbishop Manfroy, you did not—"
 .byte NewLine
 .text "No..."
 .byte WaitForA
@@ -92,7 +92,7 @@ SaraVsVeld
 .text "So this is where you disappeared to..."
 .byte WaitForA
 .byte ScrollText
-.text "I'll have to beg Bishop Manfroy's"
+.text "I'll have to beg Archbishop Manfroy's"
 .byte NewLine
 .text "forgiveness for what I must do now."
 .byte WaitForA
@@ -101,7 +101,7 @@ SaraVsVeld
 .text "What...?"
 .byte WaitForA
 .byte ScrollText
-.text "Why do you care so much about Grandfather?"
+.text "Why do you care so much about my grandfather?"
 .byte NewLine
 .text "Just when I thought you couldn't be"
 .byte NewLine
@@ -229,6 +229,7 @@ chfinalwm3
 leifasbel
 
 .byte right_slot
+.byte ScrollText
 .word LoadPortrait
 .word asbel_portrait
 .text "Lord Leif!"
@@ -249,6 +250,7 @@ leifasbel
 .byte WaitForA
 
 .byte left_slot
+.byte ScrollText
 .text "Asbel, I'd say I speak for the entire Liberation"
 .byte NewLine
 .text "Army when I say we never would have made it"
@@ -353,22 +355,20 @@ leifasbel
 .byte NewLine
 .text "be there to pool my strength with yours!"
 .byte WaitForA
-.byte ScrollText
-
-.byte left_slot
-.byte ScrollText
 
 .byte EndText
 
 leifselphina
 
 .byte right_slot
+.byte ScrollText
 .word LoadPortrait
 .word selphina_portrait
 .text "Prince Leif!"
 .byte WaitForA
 
 .byte left_slot
+.byte ScrollText
 .text "Oh! Selphina..."
 .byte WaitForA
 
@@ -426,17 +426,12 @@ leifselphina
 .text "trying the glass half full approach on this one."
 .byte WaitForA
 
-.byte right_slot
-.byte ScrollText
-
-.byte left_slot
-.byte ScrollText
-
 .byte EndText
 
 gladetryingtoohard
 
 .byte right_slot
+.byte ScrollText
 .word LoadPortrait
 .word glade_portrait
 .text "Well put, sire."
@@ -450,6 +445,7 @@ gladetryingtoohard
 .byte WaitForA
 
 .byte left_slot
+.byte ScrollText
 .text "Glade! That's a terrible thing to say!"
 .byte NewLine
 .text "And to say it in front of Selphina of all people...!"
@@ -569,21 +565,17 @@ gladetryingtoohard
 .text "Leave it to me, then."
 .byte WaitForA
 
-.byte right_slot
-.byte ScrollText
-
-.byte left_slot
-.byte ScrollText
-
 .byte EndText
 
 leifsara
 
 .byte right_slot
+.byte ScrollText
 .word LoadPortrait
 .word sarah_portrait
 
 .byte left_slot
+.byte ScrollText
 .text "Sara!"
 .byte NewLine
 .text "You're all secluded in the corner there."
@@ -688,22 +680,20 @@ leifsara
 .byte ScrollText
 .text "Okay..."
 .byte WaitForA
-.byte ScrollText
-
-.byte left_slot
-.byte ScrollText
 
 .byte EndText
 
 leifced
 
 .byte right_slot
+.byte ScrollText
 .word LoadPortrait
 .word ced_portrait
 .text "Ho, Prince Leif!"
 .byte WaitForA
 
 .byte left_slot
+.byte ScrollText
 .text "Prince Ced!"
 .byte NewLine
 .text "How goes the fighting in the city streets?"
@@ -839,9 +829,5 @@ leifced
 .byte NewLine
 .text "Let us speak again soon, Prince Leif!"
 .byte WaitForA
-.byte ScrollText
-
-.byte left_slot
-.byte ScrollText
 
 .byte EndText

@@ -73,7 +73,7 @@ ch22villagerwarpstaff
 .byte Right_slot
 .word LoadPortrait
 .word oldman_portrait
-.text "By Nimble Njörun, the River Thracia"
+.text "Nimble Njörun, the River Thracia"
 .byte NewLine
 .text "sure is wide, ain't it?"
 .byte WaitForA
@@ -120,7 +120,7 @@ ch22villagerrescuestaff
 .byte Right_slot
 .word LoadPortrait
 .word beardedman_portrait
-.text "By Dapper Dáinn, the River Thracia"
+.text "Dapper Dáinn, the River Thracia"
 .byte NewLine
 .text "sure is wide, ain't it?"
 .byte WaitForA
@@ -135,13 +135,6 @@ ch22villagerrescuestaff
 .text "makin' your assault on the castle, just use this"
 .byte NewLine
 .text "rescue staff to pull your folks outta trouble!"
-.byte WaitForA
-.byte ScrollText
-.text "Truth be told, I've just been usin' it to zap"
-.byte NewLine
-.text "my chickens back to me when they get loose."
-.byte NewLine
-.text "I reckon you need it more than me."
 .byte WaitForA
 
 .byte EndText
@@ -253,9 +246,9 @@ ch22reinhardtolwen
 .byte ScrollText
 .text "I can't show my face there until I right"
 .byte NewLine
-.text "the wrongs I helped commit,"
+.text "the wrongs I helped commit, and rescue"
 .byte NewLine
-.text "and rescue the children taken by the Loptrians."
+.text "the children taken by the Loptr Church."
 .byte WaitForA
 .byte ScrollText
 .text "Don't try to argue—"
@@ -284,7 +277,7 @@ ch22reinhardtolwen
 .text "after thinking it over on my own."
 .byte WaitForA
 .byte ScrollText
-.text "I know what it means for me. I've prepared"
+.text "I know what it means for me; I've prepared"
 .byte NewLine
 .text "myself for the anguish it will bring."
 .byte WaitForA
@@ -444,7 +437,7 @@ ch22saiascohen
 .text "while withstanding his relentless threats."
 .byte WaitForA
 .byte ScrollText
-.text "The influence he carries indeed took its toll—"
+.text "The influence he carries took its toll—"
 .byte NewLine
 .text "Manfroy's own scheming is what has led to my"
 .byte NewLine
@@ -591,9 +584,9 @@ ch22saiasrein2
 
 .byte Right_slot
 .byte ScrollText
-.text "Mm... I know that you'll always see her"
+.text "Mm... I know that you'll always see her as"
 .byte NewLine
-.text "as your little sister, but she's not quite so little"
+.text "your little sister, but she's not quite so little"
 .byte NewLine
 .text "anymore. She's a grown adult, Commander."
 .byte WaitForA

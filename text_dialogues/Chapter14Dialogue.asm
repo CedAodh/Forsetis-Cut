@@ -403,7 +403,7 @@ ch14dragonpikehousedean
 .byte ScrollText
 .text "Now don't you worry another minute about"
 .byte NewLine
-.text "Duchess Linoan! I'll guard her with my life!"
+.text "Her Grace! I'll guard her with my life!"
 .byte WaitForA
 
 .byte EndText
@@ -724,7 +724,7 @@ ch14opening2
 .byte Left_slot
 .word LoadPortrait
 .word eda_portrait
-.text "...It's started, Lady Linoan."
+.text "...It has begun, Duchess Linoan."
 .byte WaitForA
 
 .byte Right_slot
@@ -787,7 +787,7 @@ ch14opening2
 
 .byte Left_slot
 .byte ScrollText
-.text "I...think you've been misled, Lady Linoan."
+.text "I...think you've been misled, Your Grace."
 .byte NewLine
 .text "My brother is not the exemplar among men"
 .byte NewLine
@@ -901,7 +901,7 @@ ch14opening2
 .text "openly so—during the whole ordeal."
 .byte WaitForA
 .byte ScrollText
-.text "But fear not, Lady Linoan. Dáinn and Njörun"
+.text "But fear not, Your Grace. Dáinn and Njörun"
 .byte NewLine
 .text "have bore witness to your compassion"
 .byte NewLine

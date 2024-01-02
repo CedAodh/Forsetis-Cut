@@ -450,7 +450,7 @@ eventChapter4Events ; 99/8778
 		YIELD
 
 		macroConvertToPlayerAllegiance Dalsin
-		macroSetCharacterWord Dalsin, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Dalsin, structCharacterDataRAM.Leader, Diarmuid
 
 		SET_FLAG $09
 	END2
@@ -823,9 +823,9 @@ eventChapter4Events ; 99/8778
 		DIALOGUE ch4ending
 		YIELD
 
-		macroSetCharacterWord Macha, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Lara, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Brighton, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Macha, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Lara, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Brighton, structCharacterDataRAM.Leader, Diarmuid
 
 		EVENT_TEST_FLAG_SET FlagChp4Civilian2Saved
 		JUMP_FALSE +

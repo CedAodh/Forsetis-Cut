@@ -55,12 +55,12 @@ ch5op1
 .word LoadPortrait
 .word eyvel_portrait
 
+.word PlayMusic
+.byte $3B
+
 .byte Left_slot
 .word LoadPortrait
 .word raydrik_portrait
-
-.word PlayMusic
-.byte $3B
 
 .byte Right_slot
 .text "Raydrik! This your idea of a joke?! You gave"
@@ -80,7 +80,6 @@ ch5op1
 .byte WaitForA
 
 .byte Right_slot
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -95,13 +94,17 @@ ch5op1
 
 ch5op2
 
-.byte Left_slot
-.word LoadPortrait
-.word raydrik_portrait
-
 .byte Right_slot
 .word LoadPortrait
 .word eyvel_portrait
+
+.byte Left_slot
+.word LoadPortrait
+.word raydrik_portrait
+.text "Now then..."
+.byte WaitForA
+
+.byte Right_slot
 .text "Tch!"
 .byte WaitForA
 
@@ -158,19 +161,17 @@ ch5raydrikveldturn1
 
 .byte Right_slot
 .word LoadPortrait
-.word raydrik_portrait
+.word veld_portrait
 
 .byte Left_slot
 .word LoadPortrait
-.word veld_portrait
-
-.byte Right_slot
+.word raydrik_portrait
 .text "A thousand apologies to have kept you waiting,"
 .byte NewLine
 .text "Bishop Veld."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .text "Raydrik, you could not make one apology"
 .byte NewLine
 .text "and mean it, much less a thousand."
@@ -188,14 +189,14 @@ ch5raydrikveldturn1
 .text "you would spend your resources on."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "I am...certain Your Eminence will enjoy"
 .byte NewLine
 .text "the spectacle I've prepared."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "*sigh*"
 .byte NewLine
@@ -204,7 +205,7 @@ ch5raydrikveldturn1
 .text "I could do with a moment's diversion."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Well, it's all in her hands now..."
 .byte NewLine
@@ -220,15 +221,13 @@ ch5raydrikveldturn1
 
 ch5mareetaloaded1
 
-.byte Left_slot
-.word LoadPortrait
-.word raydrik_portrait
-
 .byte Right_slot
 .word LoadPortrait
 .word eyvel_portrait
 
 .byte Left_slot
+.word LoadPortrait
+.word raydrik_portrait
 .text "She's even more skilled than I'd hoped...!"
 .byte NewLine
 .text "How delightful! Here, a reward"
@@ -258,16 +257,13 @@ ch5mareetaloaded2
 .byte Left_slot
 .word LoadPortrait
 .word mareeta_portrait
+.text "......"
+.byte WaitForA
 
 .byte Right_slot
 .text "M-Mareeta...?"
 .byte WaitForA
 
-.byte Left_slot
-.text "......"
-.byte WaitForA
-
-.byte Right_Slot
 .byte ScrollText
 
 .byte EndText
@@ -312,7 +308,6 @@ ch5mareetaloaded3
 
 ch5mareetaloaded4
 
-.byte right_slot
 .text "Mareeta!"
 .byte NewLine
 .text "Talk to me...!"
@@ -584,11 +579,12 @@ ch5raydrikpanicsA
 .text "with her blood!"
 .byte WaitForA
 
+.word PlayMusic
+.byte $3E
+
 .byte Left_slot
 .word LoadPortrait
 .word veld_portrait
-.word PlayMusic
-.byte $3E
 .text "Panicking already, Raydrik?"
 .byte NewLine
 .text "Fear not; I'll clean up your mess for you."
@@ -878,11 +874,11 @@ ch5raydrikpanicsB1
 
 ch5raydrikpanicsB2
 
+.word PlayMusic
+.byte $3E
 .byte Left_slot
 .word LoadPortrait
 .word veld_portrait
-.word PlayMusic
-.byte $3E
 .text "Panicking already, Raydrik?"
 .byte NewLine
 .text "Fear not; I'll clean up your mess for you."

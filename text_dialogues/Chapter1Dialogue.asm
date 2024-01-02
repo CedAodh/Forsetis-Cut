@@ -22,16 +22,14 @@ PauseDialogue = $1D00
 
 ch1op1
 
-    .byte Left_slot ; Left slot
-    .word LoadPortrait    ; load portrait
-    .word raydrik_portrait
-
     .byte Right_Slot ; Right slot
     .word LoadPortrait
     .word weissman_portrait
 	
-	.byte Left_slot
-	.byte $09 ; font 9(always use font 9)	
+	.byte Left_slot ; Left slot
+    .word LoadPortrait    ; load portrait
+    .word raydrik_portrait
+	;.byte $09 font 9(always use font 9)	
 	.text "Have you found that whelp of a prince yet?"
 	.byte WaitForA	
 	
@@ -102,7 +100,7 @@ ch1op1
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Hmm... She may be a problem."
+	.text "Hmm... She may pose a problem."
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -146,6 +144,7 @@ ch1op1
 	.text "Your trust in me is well placed, Your Excellency."
 	
 	.byte Left_slot
+	.byte ScrollText
 	.word ClearPortrait
 	.word RetractBox
 	
@@ -158,16 +157,13 @@ ch1op1
 	
 ch1op2
 
-	.byte Left_slot
-    .word LoadPortrait
-    .word raydrik_portrait
-
     .byte Right_Slot
     .word LoadPortrait
     .word mareeta_portrait
 	
 	.byte Left_slot
-	.byte $09
+    .word LoadPortrait
+    .word raydrik_portrait
 	.text "What's your name, lass?"
 	.byte WaitForA
 	
@@ -211,7 +207,6 @@ ch1op2
 	.byte Right_slot
 	.text "......"
 	.byte WaitForA
-	.byte ScrollText
 	
 	.byte Left_slot
 	.byte ScrollText
@@ -221,6 +216,7 @@ ch1op2
 	.byte WaitForA
 	
 	.byte Right_Slot
+	.byte ScrollText
 	.word LoadPortrait
 	.word weissman_portrait
 	
@@ -242,7 +238,6 @@ ch1op3
 	.byte Right_slot
     .word LoadPortrait
     .word eyvel_portrait
-	.byte $09	
 	.text "What's that commotion in the village?"
 	.byte NewLine
 	.text "Something's rotten here..."
@@ -263,15 +258,15 @@ ch1op4
     .byte Right_Slot
     .word LoadPortrait
     .word halvan_portrait
+	.text "Commander!"
 	
 	.byte Left_slot
     .word LoadPortrait
     .word eyvel_portrait
 	
 	.byte Right_Slot
-	.text "Commander, Fiana is packed to the brim"
 	.byte NewLine
-	.text "with imperial troops!"
+	.text "Fiana is packed to the brim with imperial troops!"
 	.byte NewLine
 	.text "They...must have struck while we were away."
 	.byte WaitForA
@@ -399,14 +394,21 @@ ch1op4
 	.byte NewLine 
 	.text "to fight off those pirates, myself..."
 	.byte WaitForA
-	.byte ScrollText
-	.text "Perhaps I made up my own mind when I did that."
 	.byte NewLine
-	.text "If Finn's all right with it, so am I."
+	.text "Perhaps I made up my own mind when I did that."
 	.byte WaitForA
 	
 	.byte Left_Slot
 	.byte ScrollText
+	.word LoadPortrait
+	.word leif_portrait2
+	
+	.byte Right_Slot
+	.byte ScrollText
+	.text "If Finn's all right with it, then so am I."
+	.byte WaitForA
+	
+	.byte Left_Slot
 	.word LoadPortrait
 	.word osian_portrait
 	.text "Then what's the hold-up? If we're done arguing,"
@@ -414,9 +416,9 @@ ch1op4
 	.text "there's an invasion happening over that ridge!"
 	.byte WaitForA
 	
+	.byte ScrollText
 	.word ClearPortrait
 	.word RetractBox
-	.byte ScrollText
 	
 	.byte Right_Slot
 	.byte ScrollText
@@ -510,8 +512,7 @@ ch1martyarrive
 	.byte Right_slot
     .word LoadPortrait
     .word marty_portrait
-	.byte $09 ; font 9(always use font 9)
-	.text "Oh, fer cryin' out loud!"
+	.text "Oh, for cryin' out loud!"
 	.byte NewLine
 	.text "Not again..."
 	.byte WaitForA
@@ -527,7 +528,6 @@ ch1osianhouseosian
 	.byte Left_slot
     .word LoadPortrait
     .word oldman_portrait
-	.byte $09 ; font 9(always use font 9)
 	.text "You pullin' your weight in the Freeblades, boy?"
 	.byte NewLine
 	.text "Last thing Commander Eyvel needs"
@@ -597,7 +597,6 @@ ch1osianhouseother
 	.byte Right_slot
     .word LoadPortrait
     .word oldman_portrait
-	.byte $09 ; font 9(always use font 9)	
 	.text "Where has that fool boy of mine gone off to"
 	.byte NewLine
 	.text "in this fracas? I swear, my Osian's gonna get"
@@ -612,7 +611,6 @@ ch1liferinghouse
 	.byte Right_slot
     .word LoadPortrait
     .word oldlady_portrait
-	.byte $09 ; font 9(always use font 9)
 	.text "Those imperial dogs took Dame Mareeta"
 	.byte NewLine
 	.text "and Lady Nanna—just snatched 'em right up"
@@ -646,8 +644,6 @@ ch1vulneraryhouse
 	.byte Right_slot
     .word LoadPortrait
     .word oldlady3_portrait
-	.byte $09 ; font 9(always use font 9)
-	
 	.text "You all made it back! What a relief..."
 	.byte WaitForA
 	.byte ScrollText
@@ -677,7 +673,6 @@ ch1ironswordhouse
 	.byte Right_slot
     .word LoadPortrait
     .word moustache_portrait
-	.byte $09 ; font 9(always use font 9)	
 	.text "Weapons can be mighty expensive, can't they?" 
 	.byte NewLine
 	.text "Most folk here gotta make do by nicking"
@@ -718,7 +713,6 @@ ch1halvanhousehalvan
 	.byte Left_slot
     .word LoadPortrait
     .word younglady_portrait
-	.byte $09 ; font 9(always use font 9)	
 	.text "Big brother!"
 	.byte NewLine
 	.text "I've got something real special for you!"
@@ -758,7 +752,6 @@ ch1halvanhouseother
 	.byte Right_slot
     .word LoadPortrait
     .word younglady_portrait
-	.byte $09 ; font 9(always use font 9)	
 	.text "Hey, hey, have you seen my big brother,"
 	.byte NewLine
 	.text "Halvan? He's got me awfully scared..."
@@ -773,7 +766,6 @@ ch1ending
 	.byte Right_slot
     .word LoadPortrait
     .word leif_portrait2
-	.byte $09 ; font 9(always use font 9)
 	.text "Nanna! Mareeta! Where are you?!"
 	.byte NewLine
 	.text "Please, answer me!"
@@ -851,8 +843,7 @@ ch1endingnoeyvel
 
 	.byte Right_Slot
     .word LoadPortrait
-    .word leif_portrait2
-	.byte $09 ; font 9(always use font 9)	
+    .word leif_portrait2	
 	.text "Nanna! Mareeta! Where are you?!"
 	.byte NewLine
 	.text "Please, answer me!"
@@ -1061,8 +1052,9 @@ ch1dagdareyveltalk
 	.byte Left_slot
 	.word LoadPortrait
     .word eyvel_portrait
-	.byte $09 ; font 9(always use font 9)	
-	.text "Dagdar?! You...came down to fight with us?"
+	.text "Dagdar?!"
+	.byte NewLine
+	.text "You...came down to fight with us?"
 	.byte WaitForA
 	
 	.byte Right_slot

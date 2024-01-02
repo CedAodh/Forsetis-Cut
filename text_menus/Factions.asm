@@ -104,7 +104,7 @@ leader_sets				.block
 .word $0084
 .word <>leader_text._Friege16thLeader
 
-.word $0002
+.word $0030
 .word <>leader_text._LeifsRetinue
 
 .word $006C
@@ -207,9 +207,9 @@ _LeifLeader
 _NoneLeader
 	.text "{-}{-}{-}{-}{-}{-}"
 .word $0000
-	.text "Leonster's Ar[my"
+	.text "Leonster Ar[my"
 _LeonsterLeader
-	.text "Leonster34Ar[my "
+	.text "Leonster Ar[my"
 .word $0000
 
 _RaydrikLeader
@@ -221,15 +221,15 @@ _MysteryLeader
 .word $0000
 
 _TahraLeader
-	.text "Tarrah's Ar[my"
+	.text "Linoan's Guard"
 .word $0000
 
 _MansterLeader
-	.text "(Munster34Ar[my "
+	.text "(Munster Ar[my"
 .word $0000
 
 _ThraciaLeader
-	.text "Thracia's Ar[my "
+	.text "Thracian Ar[my"
 .word $0000
 
 _CiviliansLeader
@@ -237,71 +237,71 @@ _CiviliansLeader
 .word $0000
 
 _FriegeLeader
-	.text "Friege's Ar[my"
+	.text "Friegan Ar[my "
 .word $0000
 
 _Friege2ndLeader
-	.text "{2}{nd} Division "
+	.text "{2}nd Division "
 .word $0000
 
 _Friege3rdLeader
-	.text "{3}{rd} Division "
+	.text "{3}rd Division "
 .word $0000
 
 _Friege4thLeader
-	.text "{4}{th} Division "
+	.text "{4}th Division "
 .word $0000
 
 _Friege5thLeader
-	.text "{5}{th} Division "
+	.text "{5}th Division "
 .word $0000
 
 _Friege7thLeader
-	.text "{7}{th} Division "
+	.text "{7}th Division "
 .word $0000
 
 _Friege8thLeader
-	.text "{8}{th} Division "
+	.text "{8}th Division "
 .word $0000
 
 _Friege10thLeader
-	.text "{1}{0}{th} Division "
+	.text "{1}{0}th Division "
 .word $0000
 
 _Friege12thLeader
-	.text "{1}{2}{th} Division "
+	.text "{1}{2}th Division "
 .word $0000
 
 _Friege15thLeader
-	.text "{1}{5}{th} Division "
+	.text "{1}{5}th Division "
 .word $0000
 
 _Friege16thLeader
-	.text "{1}{6}{th} Division "
+	.text "{1}{6}th Division "
 .word $0000
 
 _Friege17thLeader
-	.text "{1}{7}{th} Division "
+	.text "{1}{7}th Division "
 .word $0000
 
 _Friege20thLeader
-	.text "{2}{0}{th} Division "
+	.text "{2}{0}th Division "
 .word $0000
 
 _Friege22ndLeader
-	.text "{2}{2}{nd} Division "
+	.text "{2}{2}nd Division "
 .word $0000
 
 _Friege26thLeader
-	.text "{2}{6}{th} Division "
+	.text "{2}{6}th Division "
 .word $0000
 
 _Friege27thLeader
-	.text "{2}{7}{th} Division "
+	.text "{2}{7}th Division "
 .word $0000
 
 _Friege30thLeader
-	.text "{3}{0}{th} Division "
+	.text "{3}{0}th Division "
 .word $0000
 
 _GelbenritterLeader
@@ -309,7 +309,7 @@ _GelbenritterLeader
 .word $0000
 
 _UlsterLeader
-	.text "Ulster's Ar[my"
+	.text "Ulster Ar[my"
 .word $0000
 
 _WelkenrosenLeader
@@ -345,7 +345,7 @@ _DandelionLeader
 .word $0000
 
 _MercenaryLeader
-	.text "Sells]words "
+	.text "(Mercenaries"
 .word $0000
 
 _FianaFreeblades
@@ -353,7 +353,7 @@ _FianaFreeblades
 .word $0000
 
 _LeifsRetinue
-	.text "Leif's Entourage"
+	.text "Leif's Retinue"
 .word $0000
 
 _LoptrChurch

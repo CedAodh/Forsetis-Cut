@@ -118,7 +118,7 @@ eventChapter4xData ; B1/EB48
 		.byte 3, 3
 
 	_Chest2Item
-		.word Wind
+		.word SilverAxe
 
 	_Chest2Events ; B1/EECD
 		STORE_WORD wEventEngineXCoordinate, 3

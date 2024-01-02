@@ -1048,17 +1048,19 @@ ch4op1weisedition
 .text "my position in Munster and beyond."
 .byte WaitForA
 
+.byte Right_slot
+.byte ScrollText
+.text "Dalsin!"
+
 .byte Left_slot
 .word LoadPortrait
 .word dalsin_portrait
 
 .byte Right_slot
-.byte ScrollText
-.text "Dalsin! See that the brat doesn't so much as"
 .byte NewLine
-.text "blink before the Knights of Connaught come"
+.text "See that the brat doesn't so much as blink before"
 .byte NewLine
-.text "to claim him!"
+.text "the Knights of Connaught come to claim him!"
 .byte WaitForA
 
 .byte Left_slot
@@ -1067,7 +1069,6 @@ ch4op1weisedition
 
 .byte ScrollText
 .word ClearPortrait
-.word RetractBox
 
 .byte Right_slot
 .byte ScrollText
@@ -1093,30 +1094,30 @@ ch4op1weisedition
 
 .byte Right_slot
 .byte ScrollText
-.text "I assumed you would want to see the other"
+.text "I assumed you would want to see the other girls."
 .byte NewLine
-.text "girls. But if you wish to spit on my generosity..."
+.text "But if you wish to spit on my generosity..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Other girls?"
 .byte NewLine
-.text "You mean...Mareeta and Nanna?"
+.text "You're referring to...Mareeta and Nanna?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "I believe those are their names, yes."
 .byte NewLine
-.text "Never fear—I haven't laid a finger on them."
+.text "Never fear—I've not laid a finger on them."
 .byte NewLine
 .text "I've been keeping them quite comfortable."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "...Are you really gonna let me see them?"
+.text "...You'll really let me see them?"
 .byte WaitForA
 
 .byte Right_slot
@@ -1126,7 +1127,9 @@ ch4op1weisedition
 
 .byte Left_slot
 .byte ScrollText
-.text "...Fine. Lead the way."
+.text "...Fine."
+.byte NewLine
+.text "Lead the way, please."
 .byte WaitForA
 
 .byte Right_slot
@@ -1178,10 +1181,9 @@ ch4op1weisedition
 .text "......"
 .byte WaitForA
 
-
 .byte Left_slot
 .byte ScrollText
-.text "Damn, that's... rather scuffed."
+.text "Damn, that's...rather scuffed."
 .byte NewLine
 .text "I'm sorry, sir."
 .byte WaitForA
@@ -1225,3 +1227,135 @@ ch4op1weisedition
 .byte WaitForA
 
 .byte EndText
+
+leifrecruitsdalsin
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word dalsin_portrait
+.text "I'm sorry, but I gotta take you guys down."
+.byte NewLine
+.text "This is for my family's sake!"
+.byte WaitForA
+
+.byte right_slot
+.text "Well, I believe we were prepared"
+.byte NewLine
+.text "for this inevitability..."
+.byte WaitForA
+.byte ScrollText
+.text "...Wait a moment."
+.byte NewLine
+.text "Your voice... Could you be..."
+.byte WaitForA
+.byte ScrollText
+.text "Wait, wait!"
+.byte NewLine
+.text "Sir knight, would your name happen to be Dalsin?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...That is my name, yes."
+.byte NewLine
+.text "What do you care?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I had the chance of making the"
+.byte NewLine
+.text "acquaintance of your sister, Diana,"
+.byte NewLine
+.text "shortly before I was imprisoned."
+.byte WaitForA
+.byte ScrollText
+.text "That's because we'd saved your younger brother,"
+.byte NewLine
+.text "Jubel, from the dungeon in Kerberos' Gate."
+.byte WaitForA
+.byte ScrollText
+.text "Once we got him back home to her safely,"
+.byte NewLine
+.text "Diana gave us your name and said"
+.byte NewLine
+.text "to keep an eye out for you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What?!"
+.byte NewLine
+.text "A-are you saying other imperial soldiers"
+.byte NewLine
+.text "came and took him in?!"
+.byte WaitForA
+.byte ScrollText
+.text "I resigned myself to serving the empire"
+.byte NewLine
+.text "on the one condition that Jubel would be"
+.byte NewLine
+.text "exempt from the child hunts!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You're taking me at my word."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Should I not?"
+.byte NewLine
+.text "I don't see how you'd know all three"
+.byte NewLine
+.text "of our names otherwise."
+.byte WaitForA
+.byte ScrollText
+.text "But dammit, what the hell?!"
+.byte NewLine
+.text "There's so much wrong with this..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You have my sympathies."
+.byte NewLine
+.text "I can only imagine how difficult it is to wrap"
+.byte NewLine
+.text "one's head around a turn of events like this."
+.byte WaitForA
+.byte ScrollText
+.text "But please, for the sake of other victims just"
+.byte NewLine
+.text "like Jubel, I must ask that you step aside."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Heh, you're real firm, aren't you, Prince Leif?"
+.byte NewLine
+.text "But I'll do you one better:"
+.byte NewLine
+.text "I'll help you escape the castle."
+.byte WaitForA
+.byte ScrollText
+.text "I owe you a debt, and I have no reason to stay"
+.byte NewLine
+.text "contained within these castle walls anymore."
+.byte NewLine
+.text "I'd say it only makes sense to leave together."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Your aid would be most welcome, then."
+.byte NewLine
+.text "You have my thanks, Sir Dalsin!"
+.byte WaitForA
+
+.byte EndText 

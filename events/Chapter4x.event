@@ -372,7 +372,7 @@ eventChapter4xEvents ; FD/85C5
 		DIALOGUE ch4xasbelleiftalk
 		YIELD
 		
-		STORE_BYTE aSelectedCharacterBuffer.Leader, Finn
+		STORE_BYTE aSelectedCharacterBuffer.Leader, Diarmuid
 
 		CALL_ASM_SKIPPABLE $83A3BF, $0000
 	END2
@@ -390,7 +390,7 @@ eventChapter4xEvents ; FD/85C5
 
 		macroConvertToPlayerAllegiance Asbel
 
-		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Diarmuid
 	END2
 
 	_KarinCedTalk ; FD/8E18
@@ -568,7 +568,7 @@ eventChapter4xEvents ; FD/85C5
 		PAUSE_SKIPPABLE 16
 		YIELD
 		
-		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Diarmuid
 
 		CALL_ASM_LOOP rlASMCSaveActiveUnitDataChapterEnd, $0000
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000

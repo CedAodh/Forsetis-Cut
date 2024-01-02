@@ -2723,7 +2723,7 @@
 		KiaWeaponEffect					= None
 		KiaSkills2						= None
 		KiaSkills3						= None
-		KiaTraits						= TraitStaff | TraitUnsellable
+		KiaTraits						= TraitStaff | TraitUnbreakable | TraitUnsellable
 		KiaIcon							= $7A
 
 	BrokenStaff							= 124
@@ -3228,7 +3228,7 @@
 		OdsScrollUseEffect				= None
 		OdsScrollWeaponEffect			= None
 		OdsScrollSkills2				= None
-		OdsScrollSkills3				= Skill3Scroll
+		OdsScrollSkills3				= None
 		OdsScrollTraits					= TraitUnbreakable | TraitUnsellable
 		OdsScrollIcon					= $91
 
@@ -3250,7 +3250,7 @@
 		BaldrsScrollUseEffect			= None
 		BaldrsScrollWeaponEffect		= None
 		BaldrsScrollSkills2				= None
-		BaldrsScrollSkills3				= Skill3Scroll
+		BaldrsScrollSkills3				= None
 		BaldrsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		BaldrsScrollIcon				= $92
 
@@ -3272,7 +3272,7 @@
 		HezulsScrollUseEffect			= None
 		HezulsScrollWeaponEffect		= None
 		HezulsScrollSkills2				= None
-		HezulsScrollSkills3				= Skill3Scroll
+		HezulsScrollSkills3				= None
 		HezulsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		HezulsScrollIcon				= $93
 
@@ -3338,7 +3338,7 @@
 		NalsScrollUseEffect				= None
 		NalsScrollWeaponEffect			= None
 		NalsScrollSkills2				= None
-		NalsScrollSkills3				= Skill3Scroll
+		NalsScrollSkills3				= None
 		NalsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		NalsScrollIcon					= $96
 
@@ -3360,7 +3360,7 @@
 		UllursScrollUseEffect			= None
 		UllursScrollWeaponEffect		= None
 		UllursScrollSkills2				= None
-		UllursScrollSkills3				= Skill3Scroll
+		UllursScrollSkills3				= None
 		UllursScrollTraits				= TraitUnbreakable | TraitUnsellable
 		UllursScrollIcon				= $97
 
@@ -3382,7 +3382,7 @@
 		ThrudsScrollUseEffect			= None
 		ThrudsScrollWeaponEffect		= None
 		ThrudsScrollSkills2				= None
-		ThrudsScrollSkills3				= Skill3Scroll
+		ThrudsScrollSkills3				= None
 		ThrudsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		ThrudsScrollIcon				= $98
 
@@ -3404,7 +3404,7 @@
 		FjalarsScrollUseEffect			= None
 		FjalarsScrollWeaponEffect		= None
 		FjalarsScrollSkills2			= None
-		FjalarsScrollSkills3			= Skill3Scroll
+		FjalarsScrollSkills3			= None
 		FjalarsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		FjalarsScrollIcon				= $99
 
@@ -3426,7 +3426,7 @@
 		CedsScrollUseEffect				= None
 		CedsScrollWeaponEffect			= None
 		CedsScrollSkills2				= None
-		CedsScrollSkills3				= Skill3Scroll
+		CedsScrollSkills3				= None
 		CedsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		CedsScrollIcon					= $9A
 
@@ -3448,7 +3448,7 @@
 		BragisScrollUseEffect			= None
 		BragisScrollWeaponEffect		= None
 		BragisScrollSkills2				= None
-		BragisScrollSkills3				= Skill3Scroll
+		BragisScrollSkills3				= None
 		BragisScrollTraits				= TraitUnbreakable | TraitUnsellable
 		BragisScrollIcon				= $9B
 
@@ -3470,7 +3470,7 @@
 		HeimsScrollUseEffect			= None
 		HeimsScrollWeaponEffect			= None
 		HeimsScrollSkills2				= None
-		HeimsScrollSkills3				= Skill3Scroll
+		HeimsScrollSkills3				= None
 		HeimsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		HeimsScrollIcon					= $9C
 

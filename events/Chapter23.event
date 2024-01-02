@@ -1104,9 +1104,12 @@ _MachaHouseVisit ; FD/F5F5
 
 		STORE_LONG lEventEngineLongParameter, ch23saiasblade
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		STORE_LONG lEventEngineLongParameter, ch23saiasbranch2
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		SET_FLAG $0E
-		JUMP_FALSE ++
+		JUMP_FALSE +++
 
 		+
 		STORE_LONG lEventEngineLongParameter, ch23hasblade
@@ -1118,6 +1121,8 @@ _MachaHouseVisit ; FD/F5F5
 		+
 		STORE_LONG lEventEngineLongParameter, ch23saiasbranch
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		+
 
 		CALL_ASM_LOOP _rlNPCCheck, $0000
 		JUMP_FALSE ++

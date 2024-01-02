@@ -937,7 +937,7 @@ ch13closing
 .byte Right_slot
 .word LoadPortrait
 .word leif_portrait
-.text "Duchess Linoan!"
+.text "Linoan!"
 .byte NewLine
 .text "Good, I made it in time... Just barely..."
 .byte WaitForA

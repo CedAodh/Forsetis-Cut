@@ -640,7 +640,7 @@ albaeda2
 .byte ScrollText
 .text "Eda, I vow before you now to fight"
 .byte NewLine
-.text "my utmost for Duchess Linoan."
+.text "my utmost for Her Grace."
 .byte NewLine
 .text "My life is hers...and yours."
 .byte WaitForA
@@ -1001,230 +1001,196 @@ leifasaello
 
 .byte EndText
 
-; safylinoan
-
-; Safy! There you are! I've been looking all over for you!
-
-; For me, my lady?
-
-; Yes! I'm sorry we had to cut our last conversation short. Just… So many things sprang at me all at once, and they all needed immediate attention.
-
-; I understand, Lady Linoan. Such are your priorities.
-
-; Safy, you sound…distant. I'm truly sorry…
-
-; I can't think of anything you need apologize for.
-
-; But that's simply not true. You're my close friend, Safy, and I wish to apologize for dismissing you like I did. Can you forgive me?
-
-; …Absolutely. I accept your apology, Lady Linoan.
-
-; Now I may be at ease. …Safy.
-
-; Yes?
-
-; You've no idea how glad I am that you returned safely to us. I've tried to retain the air of formality between my people and I all this time, but I… I'm just so indebted to you. You and your father, and little Tina… You each helped me tremendously to fill my father's shoes once he was no more. While you stood steadfast by my side, your father was my lead instructor on how to rule, and Tina… Every time I saw a smile on her face as she ran around, it was always a friendly reminder of all the people I help guide and thrive at the end of the day.
-
-; Indeed… Though we were practically surrounded by creeping darkness, we really did find some true solace in those days. Though what astounds me the most is how much it's amounted to here and now. You've done well, Lady Linoan.
-; You say that, and yet, had Sir Glade and Prince Leif not intervened when they did, everything would have crumpled. The empire would have had us squashed much sooner, and Lord Arion would not have gotten his chance to secure the city and allow us all to slip away. I am not the one who will live on in song.
-
-; Preposterous. Was it not you, my lady, who insisted on openly taking a stand against the empire? Yes, the others played crucial roles, but they were all granted their own spots to hide away in. Did you receive that? Certainly not. But no matter how it tortured you, you would always get up and dust yourself off, and continue your eternal stand. Never in my existence could I… Could I be more proud to have someone to think of as my best friend.
-
-; gasp Safy…! Th…thank you…
-
-; Never give up, Linoan. I, and beyond countless others, are depending on you.
-
 safylinoan
 
 .byte right_slot
-.word $3A00
-.word linoan_portrait
-	
-.byte left_slot
-.word $3A00
+.word LoadPortrait
 .word safie_portrait
-.text "Lady Linoan!"
+
+.byte left_slot
+.word LoadPortrait
+.word linoan_portrait
+.text "Safy! There you are!"
 .byte NewLine
-.text "You're safe!"
+.text "I've been looking all over for you!"
 .byte WaitForA
 
 .byte right_slot
-.text "Safy? Can it truly be...?"
-.byte NewLine
-.text "It's you! It's really you!"
-.byte WaitForA
-.byte NewLine
-.text "I'm the one who should be glad!"
-.byte NewLine
-.text "There are no words to thank you for making"
-.byte NewLine
-.text "such a perilous journey just for Tarrah's sake."
+.text "For me, Your Grace?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I merely did what was best for our city;"
+.text "Yes!"
 .byte NewLine
-.text "all in the name of our freedom."
+.text "I apologize that we had to cut"
+.byte NewLine
+.text "our last conversation short."
 .byte WaitForA
 .byte ScrollText
-.text "I traveled far and wide across the lands"
+.text "Just..."
 .byte NewLine
-.text "to search for those who would help us."
-.byte WaitForA
-.byte ScrollText
-.text "Once I met with Lord Leif and"
+.text "So many things sprang at me all at once,"
 .byte NewLine
-.text "informed him of our circumstances,"
-.byte NewLine
-.text "I was glad to know that I had done my part."
+.text "and they all required immediate attention."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "So that's what had caused him to"
+.text "I understand, Lady Linoan."
 .byte NewLine
-.text "venture over this way..."
-.byte WaitForA
-.byte ScrollText
-.text "If it wasn't for you, Safy,"
-.byte WaitForA
-.byte NewLine
-.text "I genuinely question whether we would have"
-.byte NewLine
-.text "had the means of holding the city"
-.byte NewLine
-.text "and protecting the people like we did."
-.byte WaitForA
-.byte NewLine
-.text "You have my heartfelt gratitude."
-.byte WaitForA
-.byte ScrollText
-.text "But..."
-.byte NewLine
-.text "you were gone for so long..."
-.byte WaitForA
-.byte ScrollText
-.text "Forgive me, but I have to ask:"
-.byte NewLine
-.text "did you not come across any danger"
-.byte NewLine
-.text "while you sought out aid?"
-.byte WaitForA
-.byte ScrollText
-.text "Please,"
-.byte NewLine
-.text "please tell me the truth."
+.text "Such are your priorities."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "......"
+.text "...Safy, you sound...distant."
+.byte NewLine
+.text "I'm truly sorry..."
 .byte WaitForA
-	
-	.byte right_slot
-	.byte ScrollText
-	.text "Safy...?"
-	.byte WaitForA
-	
-	.byte left_slot
-	.byte ScrollText
-	.text "...Very well."
-	.byte WaitForA
-	.byte ScrollText
-	.text "As I neared the eastern coast,"
-	.byte NewLine
-	.text "I was taken hostage by"
-	.byte NewLine
-	.text "a group of barbaric pirates."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Their leader, Lifis, he was..."
-	.byte NewLine
-	.text "intent on having his way with me,"
-	.byte WaitForA
-	.byte NewLine
-	.text "in exchange for being the one to"
-	.byte NewLine
-	.text "help Tarrah in her hour of need."
-	.byte WaitForA
-	.byte ScrollText
-	.text "For the future of our city,"
-	.byte NewLine
-	.text "I was prepared to do anything..."
-	.byte WaitForA
 
-	.byte right_slot
-	.byte ScrollText
-	.text "My gods...!"
-	.byte NewLine
-	.text "Safy, what happened?!"
-	.byte NewLine
-	.text "Did he hurt you?!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "Ohhh..."
-	.byte NewLine
-	.text "Why would you put yourself"
-	.byte NewLine
-	.text "at risk like that for me...?"
-	.byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "I do...?"
+.byte NewLine
+.text "If so, then I promise it was inadverdent."
+.byte WaitForA
 
-	.byte left_slot
-	.byte ScrollText
-	.text "It is all right, Lady Linoan."
-	.byte NewLine
-	.text "Lord Leif had come to my rescue"
-	.byte NewLine
-	.text "before anything adverse had befallen me."
-	.byte WaitForA
-	.byte ScrollText
-	.text "It is because of him that"
-	.byte NewLine
-	.text "I stand here with you today, unscathed."
-	.byte WaitForA
-	.byte ScrollText
-	.text "So worry not."
-	.byte NewLine
-	.text "Please."
-	.byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Regardless, I ask forgiveness for the"
+.byte NewLine
+.text "disservice I've done you."
+.byte WaitForA
 
-	.byte right_slot
-	.byte ScrollText
-	.text "That's..."
-	.byte NewLine
-	.text "Oh, I'm so glad...!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "But please, Safy..."
-	.byte NewLine
-	.text "I know how much Tarrah and I mean to you."
-	.byte WaitForA
-	.byte NewLine
-	.text "But you must promise me that you'll never"
-	.byte NewLine
-	.text "put yourself in danger like that again."
-	.byte WaitForA
-	.byte ScrollText
-	.text "I...I wouldn't ever be able to forgive myself"
-	.byte NewLine
-	.text "if something happened to you..."
-	.byte WaitForA
+.byte right_slot
+.byte ScrollText
+.text "Of course."
+.byte NewLine
+.text "I accept your apology, Lady Linoan."
+.byte WaitForA
 
-	.byte left_slot
-	.byte ScrollText
-	.text "Lady Linoan,"
-	.byte NewLine
-	.text "I..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "I understand."
-	.byte NewLine
-	.text "A promise it is."
-	.byte WaitForA
+.byte left_slot
+.byte ScrollText
+.text "Now I may be at ease."
+.byte WaitForA
+.byte ScrollText
+.text "...Safy."
+.byte WaitForA
 
-	.byte EndText
-	
+.byte right_slot
+.byte ScrollText
+.text "Yes?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You've no idea how glad I am that you"
+.byte NewLine
+.text "returned safely to us."
+.byte WaitForA
+.byte ScrollText
+.text "I've tried to retain the air of formality"
+.byte NewLine
+.text "between my people and myself all this time,"
+.byte NewLine
+.text "but I... I'm just so indebted to you."
+.byte WaitForA
+.byte ScrollText
+.text "You and your father, and little Tina..."
+.byte NewLine
+.text "Your family helped me tremendously to fill"
+.byte NewLine
+.text "my father's shoes once he was no more."
+.byte WaitForA
+.byte ScrollText
+.text "While you stood steadfast by my side,"
+.byte NewLine
+.text "your father was my lead instructor on"
+.byte NewLine
+.text "how to rule, and Tina..."
+.byte WaitForA
+.byte ScrollText
+.text "Every time I saw a smile on her face as she ran"
+.byte NewLine
+.text "around, it was always a lovely reminder of all"
+.byte NewLine
+.text "those I helped thrive at the end of the day."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Indeed..."
+.byte NewLine
+.text "Though we were surrounded by creeping darkness,"
+.byte NewLine
+.text "we did find some true solace in those days."
+.byte WaitForA
+.byte ScrollText
+.text "Though what astounds me the most is how much"
+.byte NewLine
+.text "it's amounted to here and now."
+.byte NewLine
+.text "You've done well, Your Grace."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You say that, and yet, had Sir Glade and"
+.byte NewLine
+.text "Prince Leif—and then Lord Arion—not intervened"
+.byte NewLine
+.text "when they did, everything would have crumbled."
+.byte WaitForA
+.byte ScrollText
+.text "I am not the one who will live on in song."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Preposterous!"
+.byte NewLine
+.text "Was it not you, my lady, who insisted on"
+.byte NewLine
+.text "taking so open a stand against the empire?"
+.byte WaitForA
+.byte ScrollText
+.text "Yes, the others played crucial roles, but they"
+.byte NewLine
+.text "were all granted their own spots to hide away in."
+.byte NewLine
+.text "Did you receive anything of the like? Certainly not."
+.byte WaitForA
+.byte ScrollText
+.text "But no matter how it tortured you, you would"
+.byte NewLine
+.text "always get up and dust yourself off,"
+.byte NewLine
+.text "and continue your eternal stand."
+.byte WaitForA
+.byte ScrollText
+.text "Never in my existence could I..."
+.byte NewLine
+.text "Could I be more proud to have someone"
+.byte NewLine
+.text "to think of as my best friend."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Safy..."
+.byte NewLine
+.text "Thank you..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Never give up, Linoan. You can do it."
+.byte NewLine
+.text "I, and countless others, look to you."
+.byte NewLine
+.text "I know your name will be made immortal."
+.byte WaitForA
 
 gladeperne
 

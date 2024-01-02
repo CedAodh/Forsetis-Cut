@@ -9,17 +9,19 @@ ch4op1
 .text "my position in Munster and beyond."
 .byte WaitForA
 
+.byte Right_slot
+.byte ScrollText
+.text "Dalsin!"
+
 .byte Left_slot
 .word LoadPortrait
 .word dalsin_portrait
 
 .byte Right_slot
-.byte ScrollText
-.text "Dalsin! See that the brat doesn't so much as"
 .byte NewLine
-.text "blink before the Knights of Connaught come"
+.text "See that the brat doesn't so much as blink"
 .byte NewLine
-.text "to claim him!"
+.text "before the Knights of Connaught come claim him!"
 .byte WaitForA
 
 .byte Left_slot
@@ -53,9 +55,9 @@ ch4op1
 
 .byte Right_slot
 .byte ScrollText
-.text "I assumed you would want to see the other"
+.text "I assumed you would want to see the other girls."
 .byte NewLine
-.text "girls. But if you wish to spit on my generosity..."
+.text "But if you wish to spit on my generosity..."
 .byte WaitForA
 
 .byte Left_slot
@@ -69,7 +71,7 @@ ch4op1
 .byte ScrollText
 .text "I believe those are their names, yes."
 .byte NewLine
-.text "Never fear—I haven't laid a finger on them."
+.text "Never fear—I've not laid a finger on them."
 .byte NewLine
 .text "I've been keeping them quite comfortable."
 .byte WaitForA
@@ -220,7 +222,6 @@ ch4lithisturn1
 .byte Right_slot
 .word LoadPortrait
 .word lifis_portrait
-
 .text "Dammit..."
 .byte NewLine
 .text "Ah, Lady Luck is so fickle..."
@@ -229,7 +230,6 @@ ch4lithisturn1
 .byte Left_slot
 .word LoadPortrait
 .word bandit1_portrait
-
 .text "Hey, hold on... Yer that Lifis fella, ain'tcha?"
 .byte NewLine
 .text "Weren't ya boss of a whole crew of pirates"
@@ -259,7 +259,6 @@ ch4lithisturn1
 .byte NewLine
 .text "Hmm... Maybe I can make use of these idiots..."
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .word LoadPortrait
@@ -270,6 +269,7 @@ ch4lithisturn1
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Truth be told, I'm fixin' to bust my way"
 .byte NewLine
 .text "outta here."
@@ -305,7 +305,7 @@ ch4lithisturn1
 .byte ScrollText
 .text "...Really?"
 .byte NewLine
-.text "Th-then you gotta take me with you, Boss!"
+.text "Th-then you gotta take me with you, boss!"
 .byte WaitForA
 
 .byte Right_slot
@@ -317,15 +317,12 @@ ch4lithisturn1
 
 .byte Left_slot
 .byte ScrollText
-.text "You mean it, Boss?! Leave it to me!"
+.text "You mean it, boss?! Leave it to me!"
 .byte NewLine
 .text "Ain't no soldier gonna stand in our way,"
 .byte NewLine
 .text "that's fer sure!"
 .byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -347,6 +344,7 @@ ch4lithisturn1
 .word RetractBox
 
 .byte Right_slot
+.byte ScrollText
 .text "Heheh... Played like a fiddle, all three of 'em!"
 .byte NewLine
 .text "After we're busted out, I'll have a whole new"
@@ -395,17 +393,8 @@ ch4leifturn2
 
 .byte Left_slot
 .byte ScrollText
-
-.byte Right_slot
-.byte ScrollText
 .word LoadPortrait
 .word karin_portrait
-
-.byte Left_slot
-.word LoadPortrait
-.word fergus_portrait
-
-.byte Right_slot
 .text "Oh, please! You didn't just try to stop them,"
 .byte NewLine
 .text "you beat one of them half to death!"
@@ -413,14 +402,14 @@ ch4leifturn2
 .text "That's the terrible story, here."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Wait just a minute—"
 .byte NewLine
 .text "you were the one who started it!"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Yeah, and they arrested me because they"
 .byte NewLine
@@ -432,7 +421,7 @@ ch4leifturn2
 .text "So what are you gonna do about it?!"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "I'm gonna take a nap, that's what. Hey,"
 .byte NewLine
@@ -442,39 +431,33 @@ ch4leifturn2
 .byte WaitForA
 
 .byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte Right_slot
-.byte ScrollText
-.text "Ugh, I don't even care anymore..."
-.byte WaitForA
-
-.byte Left_slot
 .word LoadPortrait
 .word leif_portrait
 
-.byte Right_slot
+.byte Left_slot
+.byte ScrollText
+.text "Ugh, I don't even care anymore..."
+.byte WaitForA
 .byte ScrollText
 .text "Oh, uh, sorry."
 .byte NewLine
 .text "I'm Karin, by the way."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .text "Karin? That's an unusual name for a Thracian."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
-.text "That would be because I'm from Silesse."
+.text "That'd be because I'm from Silesse!"
 .byte NewLine
 .text "I'd just gotten into town when I got in trouble"
 .byte NewLine
 .text "thanks to this dimwit."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Silesse..."
 .byte NewLine
@@ -483,7 +466,7 @@ ch4leifturn2
 .text "Why come all the way here from Silesse?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Our prince up and left the country, that's why."
 .byte WaitForA
@@ -500,7 +483,7 @@ ch4leifturn2
 .text "our little runaway prince."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "I'd heard that the Kingdom of Silesse"
 .byte NewLine
@@ -509,7 +492,7 @@ ch4leifturn2
 .text "How is it the royal family is still alive?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "The rebels have been keeping them safe."
 .byte WaitForA
@@ -526,14 +509,14 @@ ch4leifturn2
 .text "and lend them my lance."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Impressive. If you become a pegasus knight,"
 .byte NewLine
 .text "you'll be able to dance through the skies."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Well, I can fly already, but I won't be doing"
 .byte NewLine
@@ -555,14 +538,14 @@ ch4leifturn2
 .text "right now—looking for me, that is."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "So why did the prince leave Silesse"
 .byte NewLine
 .text "in the first place?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "It's a long story."
 .byte NewLine
@@ -592,8 +575,6 @@ ch4leifturn2
 .byte NewLine
 .text "of this muttonhead."
 .byte WaitForA
-
-.byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word fergus_portrait
@@ -601,6 +582,13 @@ ch4leifturn2
 .byte NewLine
 .text "Is it mealtime already?"
 .byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.word LoadPortrait
+.word karin_portrait
+
+.byte Left_slot
 .byte ScrollText
 .text "...Oh. Guess not."
 .byte NewLine
@@ -615,7 +603,6 @@ ch4leifturn2
 .byte WaitForA
 
 .byte Right_slot
-.byte ScrollText
 .text "And it's not like anyone can escape"
 .byte NewLine
 .text "your loud snoring, either!"
@@ -625,7 +612,6 @@ ch4leifturn2
 .byte NewLine
 .text "You are the most boorish, insensitive—"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -643,21 +629,21 @@ ch4leifturn2
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Tch..."
 .byte WaitForA
 
-.byte Left_Slot
-.byte ScrollText
-
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word leif_portrait
 .text "......"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
+.word LoadPortrait
+.word fergus_portrait
 .text "What's eatin' you, lad? You look awful upset."
 .byte NewLine
 .text "Might as well speak your mind, eh?"
@@ -665,7 +651,7 @@ ch4leifturn2
 .text "Not like it could do any harm, now."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "...You're right."
 .byte NewLine
@@ -708,7 +694,6 @@ ch4npcturn3
 .byte NewLine
 .text "Look, just lie down, all right?"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -720,6 +705,7 @@ ch4npcturn3
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Looks like it..."
 .byte NewLine
 .text "How long are they gonna get to throw their"
@@ -729,7 +715,7 @@ ch4npcturn3
 
 .byte Left_slot
 .byte ScrollText
-.text "You reckon them Magi folk have a chance"
+.text "You reckon those Magi folk have a chance"
 .byte NewLine
 .text "of takin' the empire down?"
 .byte WaitForA
@@ -928,7 +914,7 @@ ch4lifiscellopened
 .byte Left_slot
 .word LoadPortrait
 .word bandit1_portrait
-.text "Boss, Boss! The door's open!"
+.text "Boss, boss! The door's open!"
 .byte NewLine
 .text "It happened just like you said it would!"
 .byte WaitForA
@@ -941,7 +927,7 @@ ch4lifiscellopened
 .byte ScrollText
 .text "What's the matter?"
 .byte NewLine
-.text "Yer crew came for ya, don't that perk ya up?"
+.text "Yer crew came for ya; don't that perk ya up?"
 .byte WaitForA
 
 .byte ScrollText
@@ -1001,7 +987,7 @@ ch4ending
 
 .byte Right_slot
 .byte ScrollText
-.text "It would be done, Your Eminence,"
+.text "It would be done, Your Holiness,"
 .byte NewLine
 .text "but the generals of House Friege"
 .byte NewLine

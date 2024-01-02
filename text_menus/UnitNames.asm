@@ -146,7 +146,7 @@ char_name_pointers		.block
 	.word	<>char_names._CivilianName	; Unused
 	.word	<>char_names._BrigandName
 
-	.word	<>char_names._SniperName
+	.word	<>char_names._HiredSwordName
 
 	.word	<>char_names._HiredSwordName	; Unused
 
@@ -285,7 +285,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._FriegeName	; Unused
 	.word	<>char_names._FriegeName
-	.word	<>char_names._BowKnightName	; Unused
+	.word	<>char_names._MunsterName	; Unused
 
 	.word	<>char_names._ArmoredSwordName	; Unused
 
@@ -409,15 +409,15 @@ char_name_pointers		.block
 
 	.word	<>char_names._MusName
 	.word	<>char_names._TigrisName
-	.word	<>char_names._TigrisName
+	.word	<>char_names._EquusName
 	.word	<>char_names._CanisName
-	.word	<>char_names._CanisName
+	.word	<>char_names._OvisName
 	.word	<>char_names._BovisName
-	.word	<>char_names._BovisName
+	.word	<>char_names._SimiaName
 	.word	<>char_names._PorcusName
-	.word	<>char_names._PorcusName
+	.word	<>char_names._LepusName
 	.word	<>char_names._DracoName
-	.word	<>char_names._DracoName
+	.word	<>char_names._AnguillaName
 
 	.word	<>char_names._LoptrianName
 	.word	<>char_names._LoptrName
@@ -701,7 +701,7 @@ _JabalName
 	.word $0000
 
 _LifisCrewName
-	.text "Lifis Pirates "
+	.text "Pirate"
 	.word $0000
 
 _LobosName
@@ -934,8 +934,8 @@ _Civilian8Name
 	.text "Isabel"
 	.word $0000
 
-_ThiefName
-	.text "Thief "
+_LepusName
+	.text "Lepus "
 	.word $0000
 
 _PriestName
@@ -1074,8 +1074,8 @@ _DandelionName
 	.text "Dandelion "
 	.word $0000
 
-_BallisticianName
-	.text "Ballistician"
+_OvisName
+	.text "Ovis"
 	.word $0000
 
 _EichnerName
@@ -1098,12 +1098,12 @@ _LoptrName
 	.text "Loptr "
 	.word $0000
 
-_BowKnightName
-	.text "Bo]w Knight "
+_SimiaName
+	.text "Si[mia"
 	.word $0000
 
-_BerserkerName
-	.text "Berserker "
+_AnguillaName
+	.text "Anguilla"
 	.word $0000
 
 _XavierName
@@ -1126,8 +1126,8 @@ _GelbenritterName
 	.text "Gelbenritter"
 	.word $0000
 
-_SniperName
-	.text "Sniper"
+_EquusName
+	.text "Equus "
 	.word $0000
 
 _MusName
@@ -1185,6 +1185,8 @@ _GeraldName
 _IllusionName
 	.text "Illusion"
 	.word $0000
+
+
 	
 .bend
 .here

@@ -33,7 +33,9 @@ ch13baldackboss		; Unused, but it's the same as his ch14 one
 ch16Aconomorboss
 .text "I pray you don't hold a grudge,"
 .byte NewLine
-.text "but this is fate. Forgive me!"
+.text "but this is fate."
+.byte NewLine
+.text "Forgive me!"
 .byte WaitForA
 .byte EndText
 
@@ -66,9 +68,9 @@ weismannboss
 .byte EndText
 
 bucksboss
-.text "You have any idea who "
+.text "Ye have any idea who yer"
 .byte NewLine
-.text "yer dealin' with? I'm THE Bucks,"
+.text "dealin' with? I'm THE Bucks,"
 .byte NewLine
 .text "a beast born from a life at sea!"
 .byte WaitForA
@@ -103,7 +105,7 @@ lobosboss
 dalsinboss
 .text "I take no pleasure in this..."
 .byte NewLine
-.text "You lot shoulda stayed in yer cells!"
+.text "You lot shoulda stayed in your cells!"
 .byte WaitForA
 .byte EndText
 
@@ -117,9 +119,9 @@ galzusboss
 .byte EndText
 
 eisenauboss
-.text "You stubborn idiots"
+.text "You stubborn idiots think"
 .byte NewLine
-.text "think you can defeat me?"
+.text "you can defeat me?"
 .byte WaitForA
 .byte EndText
 
@@ -139,7 +141,7 @@ raydrikboss
 rumaighboss
 .text "Sorry for your luck, but I need"
 .byte NewLine
-.text "the coin. I got no illusions—"
+.text "the coin. I've got no illusions—"
 .byte NewLine
 .text "I know this is wrong."
 .byte WaitForA
@@ -180,7 +182,9 @@ largoboss
 fredboss
 .text "You'd turn your blade on me"
 .byte NewLine
-.text "in this situation?! What idiocy!"
+.text "in THIS situation?!"
+.byte NewLine
+.text "What complete idiocy!"
 .byte WaitForA
 .byte EndText
 
@@ -227,14 +231,16 @@ trudeboss
 tinaboss
 .text "Oh, Big Sis... If you're out there,"
 .byte NewLine
-.text "I could use your help"
+.text "I-I could use your help"
 .byte NewLine
 .text "right about now...!"
 .byte WaitForA
 .byte EndText
 
 lisztboss
-.text "D-damn! I can't believe this!"
+.text "D-damn!"
+.byte NewLine
+.text "I can't believe this!"
 .byte WaitForA
 .byte EndText
 
@@ -244,7 +250,9 @@ paulusboss
 .byte EndText
 
 baldachboss
-.text "Funny. You little rats think"
+.text "Laughable."
+.byte NewLine
+.text "You little rats think"
 .byte NewLine
 .text "you can actually beat me!"
 .byte WaitForA
@@ -278,10 +286,7 @@ brookboss
 iliosboss
 .text "What, you're really going"
 .byte NewLine
-.text "to fight me?"
-.byte WaitForA
-.byte ScrollText
-.text "How amusing!"
+.text "to fight me? How amusing!"
 .byte NewLine
 .text "You think you can best Sir Ilios!"
 .byte WaitForA
@@ -426,7 +431,7 @@ reinhardtboss
 .byte EndText
 
 coulterboss
-.text "Heh, heh, heh..."
+.text "Meh heh heh..."
 .byte NewLine
 .text "You've only got yourself to blame!"
 .byte NewLine
@@ -442,9 +447,9 @@ alphandboss
 .byte EndText
 
 fadenboss
-.text "Witness the fury"
+.text "Witness the fury of"
 .byte NewLine
-.text "of the Knights of Munster,"
+.text "the Knights of Munster,"
 .byte NewLine
 .text "you damned rebels!"
 .byte WaitForA

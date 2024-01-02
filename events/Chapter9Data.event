@@ -54,16 +54,16 @@ eventChapter9Data ; B1/D508
 	;	.byte 10, 8
 
 	_SelphinaKaneGroup ; B1/D782
-		UNIT Selphina, Player, [6, 5], [7, 6], Leif, [KillerBow, MasterSeal], 1, False, [$00, $00, $00, $00]
-		UNIT Kane, Player, [6, 5], [8, 5], Leif, [IronSword, IronLance], 2, False, [$00, $00, $00, $00]
+		UNIT Selphina, Player, [6, 5], [7, 6], Diarmuid, [KillerBow, MasterSeal], 1, False, [$00, $00, $00, $00]
+		UNIT Kane, Player, [6, 5], [8, 5], Diarmuid, [Javelin, IronSword], 2, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/D7AC
 	;	.byte 8, 7
 
 	_AlbaRobertGroup ; B1/D7AE
-		UNIT Alba, Player, [6, 5], [7, 5], Leif, [IronSword, IronLance], 2, False, [$00, $00, $00, $00]
-		UNIT Robert, Player, [6, 5], [6, 5], Leif, [IronBow, Vulnerary], 1, False, [$00, $00, $00, $00]
+		UNIT Alba, Player, [6, 5], [7, 5], Diarmuid, [IronLance, SteelSword], 2, False, [$00, $00, $00, $00]
+		UNIT Robert, Player, [6, 5], [6, 5], Diarmuid, [IronBow, Vulnerary], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	_PrepGroup3 ; B1/D7D8
