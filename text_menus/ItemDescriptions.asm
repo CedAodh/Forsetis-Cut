@@ -637,9 +637,9 @@ _BerserkDesc
 .word $0000
 .text "lo]wer (Mag target"
 .word $0000
-.text "Ene[mies on thrones "
+.text "Player cannot target"
 .word $0000
-.text "or gates are i{mm}nune"
+.text "Gates or Thrones"
 .word $0000
 .word $0000
 
@@ -650,9 +650,9 @@ _SilenceDesc
 .word $0000
 .text "lo]wer (Mag target"
 .word $0000
-.text "Ene[mies on thrones "
+.text "Player cannot target"
 .word $0000
-.text "or gates are i{mm}nune"
+.text "Gates or Thrones"
 .word $0000
 .word $0000
 
@@ -843,8 +843,6 @@ _HelDesc
 .text "Reduces opponent's"
 .word $0000
 .text "{H}{P} to {1}"
-.word $0000
-.text "{(}{H}{P} cannot reach {0}{)}"
 .word $0000
 .word $0000
 
@@ -1305,8 +1303,6 @@ _HezulsScrollDesc
 .word $0000
 
 _NjorunsScrollDesc
-.text "+Negates criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "Strength    {+}{3}{0}{%}"
@@ -1318,8 +1314,6 @@ _NjorunsScrollDesc
 .word $0000
 
 _DainnsScrollDesc
-.text "+Negates criticals"
-.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}          {+}{5}{%}"

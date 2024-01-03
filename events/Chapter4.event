@@ -230,6 +230,12 @@ eventChapter4Events ; 99/8778
 	END2
 	
 	_DaisySpawn
+		STORE_WORD wEventEngineCharacterTarget, Safy
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, Lifis
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
 		STORE_LONG lEventEngineUnitGroupPointer, eventChapter4Data._DaisyGroup
 		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
 		YIELD_UNK

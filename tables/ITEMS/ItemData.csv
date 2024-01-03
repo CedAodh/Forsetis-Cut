@@ -145,18 +145,18 @@ PureWater,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness
 Torch,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,700,<>item_descs._TorchDesc,$24,None,None,None,None,$8E
 Antitoxin,TypeItem,None,0,0,0,3,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,500,<>item_descs._AntitoxinDesc,$26,None,None,None,None,$8F
 MemberCard,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._MemberCardDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$90
-OdsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._OdsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$91
-BaldrsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BaldrsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$92
-HezulsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HezulsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$93
+OdsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._OdsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$91
+BaldrsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BaldrsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$92
+HezulsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HezulsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$93
 DainnsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._DainnsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$94
 NjorunsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._NjorunsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$95
-NalsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._NalsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$96
-UllursScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._UllursScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$97
-ThrudsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._ThrudsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$98
-FjalarsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._FjalarsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$99
-CedsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._CedsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$9A
-BragisScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BragisScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$9B
-HeimsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HeimsScrollDesc,None,None,None,None,TraitUnbreakable | TraitUnsellable,$9C
+NalsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._NalsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$96
+UllursScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._UllursScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$97
+ThrudsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._ThrudsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$98
+FjalarsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._FjalarsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$99
+CedsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._CedsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9A
+BragisScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._BragisScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9B
+HeimsScroll,TypeItem,None,0,0,0,-1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,0,<>item_descs._HeimsScrollDesc,None,None,None,Skill3Scroll,TraitUnbreakable | TraitUnsellable,$9C
 ParagonManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._ParagonManualDesc,$28,None,None,None,None,$9D
 AccostManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._AccostManualDesc,$2A,None,None,None,None,$9E
 BargainManual,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._BargainManualDesc,$2C,None,None,None,None,$9F

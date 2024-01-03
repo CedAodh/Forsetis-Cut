@@ -310,7 +310,7 @@ ch23purewaterhouse
 .byte ScrollText
 .text "The city's crawling with Loptrian bishops,"
 .byte NewLine
-.text "so I never leave home without a vial of this"
+.text "so I never leave home without a vial o' this"
 .byte NewLine
 .text "in my back pocket."
 .byte WaitForA

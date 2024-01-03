@@ -176,7 +176,7 @@ eventChapter23Events ; FD/F056
 		EVENT FlagAlwaysZero, _MachaHouseOther
 			TEST_FLAG_UNSET $23
 			macroEventConditionCheckCoords [28, 4]
-                        CMP_WORD wCurrentPhase, Player
+            CMP_WORD wCurrentPhase, Player
 		END_DEFINITION	
 		EVENT $28, _VulneraryHouseDestroy
 			CMP_BYTE wCursorXCoord, 28
@@ -190,7 +190,7 @@ eventChapter23Events ; FD/F056
 		EVENT FlagAlwaysZero, _DalsinHouseOther
 			TEST_FLAG_UNSET $24
 			macroEventConditionCheckCoords [29, 5]
-                        CMP_WORD wCurrentPhase, Player
+            CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $29, _PureWaterHouseDestroy
 			CMP_BYTE wCursorXCoord, 29
@@ -204,7 +204,7 @@ eventChapter23Events ; FD/F056
 		EVENT FlagAlwaysZero, _HicksHouseOther
 			TEST_FLAG_UNSET $25
 			macroEventConditionCheckCoords [30, 4]
-                        CMP_WORD wCurrentPhase, Player
+            CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 		EVENT $2A, _PhysicHouseDestroy
 			CMP_BYTE wCursorXCoord, 30
@@ -546,21 +546,21 @@ eventChapter23Events ; FD/F056
 		YIELD_UNK
 	END2
 
-_MachaHouseVisit ; FD/F5F5
+	_MachaHouseVisit ; FD/F5F5
 		PLAY_SOUND_WORD $00F7
-                DIALOGUE MachaHouseMacha1
+        DIALOGUE MachaHouseMacha1
         
-                STORE_WORD wEventEngineCharacterTarget, Brighton
-                CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-                JUMP_FALSE +
+        STORE_WORD wEventEngineCharacterTarget, Brighton
+        CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+        JUMP_FALSE +
         
-                STORE_LONG lEventEngineLongParameter, MachaHouseMacha2
-                CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+        STORE_LONG lEventEngineLongParameter, MachaHouseMacha2
+        CALL_ASM_LOOP rlASMCDialogueContinue, $0000
         
-                +
-                STORE_LONG lEventEngineLongParameter, MachaHouseMacha3
-                CALL_ASM_LOOP rlASMCDialogueContinue, $0000
-               YIELD
+        +
+        STORE_LONG lEventEngineLongParameter, MachaHouseMacha3
+        CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+        YIELD
 
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
@@ -588,12 +588,22 @@ _MachaHouseVisit ; FD/F5F5
 	END2
 	
 	_MachaHouseOther ; FD/9CCF
-		PLAY_SOUND_WORD $00F7
-		DIALOGUE MachaHouseOther
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Macha
+		CALL_ASM_LOOP rlASMCCountPlayerUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		macroDialogueHouse MachaHouseOther
+		JUMP ++
+		
+		+
+		
+		macroItemHouse ch23vulneraryhouse, Vulnerary, [28, 4], $0021
+		SET_FLAG $23
+		
+		+
 	END2
 
-		_DalsinHouseVisit ; FD/F658
+	_DalsinHouseVisit ; FD/F658
 		PLAY_SOUND_WORD $00F7
 		DIALOGUE DalsinHouseDalsin
 		YIELD
@@ -624,9 +634,19 @@ _MachaHouseVisit ; FD/F5F5
 	END2
 	
 	_DalsinHouseOther ; FD/9CCF
-		PLAY_SOUND_WORD $00F7
-		DIALOGUE DalsinHouseOther
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Dalsin
+		CALL_ASM_LOOP rlASMCCountPlayerUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		macroDialogueHouse DalsinHouseOther
+		JUMP ++
+		
+		+
+		
+		macroItemHouse ch23physichouse, Physic, [29, 5], $0021
+		SET_FLAG $24
+		
+		+
 	END2	
 
 	_HicksHouseVisit ; FD/F6BB
@@ -660,9 +680,19 @@ _MachaHouseVisit ; FD/F5F5
 	END2
 	
 	_HicksHouseOther ; FD/9CCF
-		PLAY_SOUND_WORD $00F7
-		DIALOGUE HicksHouseOther
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Hicks
+		CALL_ASM_LOOP rlASMCCountPlayerUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		macroDialogueHouse HicksHouseOther
+		JUMP ++
+		
+		+
+		
+		macroItemHouse ch23purewaterhouse, PureWater, [30, 4], $0021
+		SET_FLAG $25
+		
+		+
 	END2
 
 	_ItemlessHouse1Destroy ; FD/F71E
@@ -900,12 +930,6 @@ _MachaHouseVisit ; FD/F5F5
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill2Charm
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
-		
-		STORE_WORD wEventEngineCharacterTarget, Safy
-		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
-		
-		STORE_WORD wEventEngineCharacterTarget, Lifis
-		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		FADE_IN $02
 
