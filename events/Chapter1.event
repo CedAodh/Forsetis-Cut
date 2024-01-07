@@ -200,7 +200,7 @@ eventChapter1Events ; FD/8000
 		WAIT_MOVE
 		YIELD
 
-		DIALOGUE leifrecruitsdalsin
+		DIALOGUE ch1op1
 		YIELD
 
 		SCROLL_CAMERA_ADDRESS eventChapter1Data._Opening2CameraCoordinates
