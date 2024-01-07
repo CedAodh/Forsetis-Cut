@@ -817,11 +817,11 @@ ch4leifcellopened
 
 .byte Left_slot
 .byte ScrollText
-.text "Hah! You're gonna make me cry, junior. Suppose I"
+.text "Hah! You're gonna make me cry, junior."
 .byte NewLine
-.text "can keep you company for a time, if you need"
+.text "Suppose I can keep you company for a time,"
 .byte NewLine
-.text "someone to hold your hand that bad."
+.text "if you need someone to hold your hand that bad."
 .byte WaitForA
 .byte ScrollText
 .text "...Aw, who am I kiddin'?"
