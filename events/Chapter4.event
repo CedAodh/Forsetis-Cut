@@ -72,11 +72,11 @@ eventChapter4Events ; 99/8778
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/8848
-		EVENT $06, _DalsinRecruitment
+		EVENT $06, _LeifDalsinRecruitment
 			TEST_FLAG_SET FlagJubelSaved
 			CHECK_CHARS2 Leif, Dalsin
 		END_DEFINITION
-		EVENT $06, _DalsinRecruitment
+		EVENT $06, _LifisDalsinRecruitment
 			TEST_FLAG_SET FlagJubelSaved
 			CHECK_CHARS2 Lifis, Dalsin
 		END_DEFINITION
@@ -330,11 +330,12 @@ eventChapter4Events ; 99/8778
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI2, $07
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.Unknown3E, $00
-
+		
 		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI2, $07
 		macroSetCharacterByte Weissmann, structCharacterDataRAM.Unknown3E, $00
+
 
 		macroSetCharacterByte Dalsin, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte Dalsin, structCharacterDataRAM.AI4, $00
@@ -446,10 +447,7 @@ eventChapter4Events ; 99/8778
 		STORE_WORD $7FAA14, $0000
 	END1
 
-	_DalsinRecruitment ; 99/8ECD
-		PAUSE_SKIPPABLE 64
-		YIELD
-
+	_LeifDalsinRecruitment ; 99/8ECD
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
@@ -457,7 +455,24 @@ eventChapter4Events ; 99/8778
 		SET_MUSIC $4A
 		YIELD
 
-		DIALOGUE ch4dalshinconvo
+		DIALOGUE leifrecruitsdalsin
+		YIELD
+
+		macroConvertToPlayerAllegiance Dalsin
+		macroSetCharacterWord Dalsin, structCharacterDataRAM.Leader, Diarmuid
+
+		SET_FLAG $09
+	END2
+	
+	_LifisDalsinRecruitment
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+
+		DIALOGUE lifisrecruitsdalsin
 		YIELD
 
 		macroConvertToPlayerAllegiance Dalsin

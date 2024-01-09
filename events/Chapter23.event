@@ -930,6 +930,12 @@ eventChapter23Events ; FD/F056
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill2Charm
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, Alphand
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, Faden
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		FADE_IN $02
 

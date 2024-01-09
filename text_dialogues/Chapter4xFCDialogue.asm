@@ -581,3 +581,30 @@ kantplan
 .byte WaitForA
 
 .byte EndText
+
+ch4xwm
+
+.text "Unshackled then joined by newfound companions,"
+.byte WaitForA
+.byte NewLine
+.text "Leif scavenged the underground prison"
+.byte NewLine
+.text "of Castle Munster."
+.byte WaitForA
+.byte ScrollText
+.text "The Magi were now under a new leader:"
+.byte NewLine
+.text "a gifted wind mage named Ced."
+.byte WaitForA
+.byte ScrollText
+.text "Through his merits, the group regained morale and"
+.byte NewLine
+.text "the direction needed to continue their fight."
+.byte WaitForA
+.byte ScrollText
+.text "Leif followed as those behind his rescue went"
+.byte NewLine
+.text "to meet with Ced at a rendezvous point..."
+.byte WaitForA
+
+.byte EndText

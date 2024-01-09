@@ -20,15 +20,15 @@ eventChapter9Data ; B1/D508
 	_PrepGroup2 ; B1/D574
 		.byte 17, 23
 
-		UNIT ThraciaSoldier, Enemy, [13, 26], [13, 26], Merloch, [Javelin], 12, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [14, 26], [14, 26], Merloch, [IronLance], 8, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [15, 26], [15, 26], Merloch, [Javelin], 12, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [13, 25], [13, 25], Merloch, [IronLance], 10, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [14, 25], [14, 25], Merloch, [IronLance], 11, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [15, 25], [15, 25], Merloch, [IronLance], 10, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [14, 24], [14, 24], Merloch, [IronLance], 9, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [15, 24], [15, 24], Merloch, [IronLance], 12, False, [$00, $0F, $00, $00]
-		UNIT ThraciaSoldier, Enemy, [13, 24], [13, 24], Merloch, [SteelLance], 14, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [13, 26], [13, 26], Merloch, [Javelin], 9, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [14, 26], [14, 26], Merloch, [IronLance], 6, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [15, 26], [15, 26], Merloch, [Javelin], 9, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [13, 25], [13, 25], Merloch, [IronLance], 7, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [14, 25], [14, 25], Merloch, [IronLance], 8, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [15, 25], [15, 25], Merloch, [IronLance], 7, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [14, 24], [14, 24], Merloch, [IronLance], 6, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [15, 24], [15, 24], Merloch, [IronLance], 9, False, [$00, $0F, $00, $00]
+		UNIT ThraciaSoldier, Enemy, [13, 24], [13, 24], Merloch, [SteelLance], 10, False, [$00, $0F, $00, $00]
 		UNIT ThraciaArmoredLance, Enemy, [11, 30], [11, 30], Merloch, [SteelLance], 6, False, [$00, $0F, $00, $00]
 		UNIT ThraciaFighter, Enemy, [21, 24], [21, 24], Merloch, [SteelAxe, HandAxe], 10, False, [$00, $03, $00, $00]
 		UNIT ThraciaBishop, Enemy, [21, 25], [21, 25], Merloch, [Heal, Physic, Wind, Meteor], 7, False, [$01, $03, $00, $00]
@@ -41,12 +41,12 @@ eventChapter9Data ; B1/D508
 		UNIT ThraciaArmoredLance, Enemy, [14, 30], [14, 30], Merloch, [SteelLance], 6, False, [$00, $0F, $00, $00]
 		UNIT ThraciaArmoredLance, Enemy, [12, 29], [12, 29], Merloch, [SteelLance], 7, False, [$00, $0F, $00, $00]
 		UNIT ThraciaArmoredLance, Enemy, [13, 29], [13, 29], Merloch, [SteelLance], 7, False, [$00, $0F, $00, $00]
-		UNIT ThraciaArcher, Enemy, [12, 28], [12, 28], Merloch, [IronBow], 7, False, [$00, $0F, $00, $00]
-		UNIT ThraciaArcher, Enemy, [13, 28], [13, 28], Merloch, [IronBow], 10, False, [$00, $0F, $00, $00]
-		UNIT ThraciaArcher, Enemy, [14, 28], [14, 28], Merloch, [IronBow], 8, False, [$00, $0F, $00, $00]
-		UNIT ThraciaArcher, Enemy, [12, 27], [12, 27], Merloch, [IronBow], 11, False, [$00, $0F, $00, $00]
-		UNIT ThraciaArcher, Enemy, [13, 27], [13, 27], Merloch, [IronBow], 9, False, [$00, $0F, $00, $00]
-		UNIT ThraciaArcher, Enemy, [14, 27], [14, 27], Merloch, [IronBow], 12, False, [$00, $0F, $00, $00]
+		UNIT ThraciaArcher, Enemy, [12, 28], [12, 28], Merloch, [IronBow], 6, False, [$00, $0F, $00, $00]
+		UNIT ThraciaArcher, Enemy, [13, 28], [13, 28], Merloch, [IronBow], 9, False, [$00, $0F, $00, $00]
+		UNIT ThraciaArcher, Enemy, [14, 28], [14, 28], Merloch, [IronBow], 6, False, [$00, $0F, $00, $00]
+		UNIT ThraciaArcher, Enemy, [12, 27], [12, 27], Merloch, [IronBow], 9, False, [$00, $0F, $00, $00]
+		UNIT ThraciaArcher, Enemy, [13, 27], [13, 27], Merloch, [IronBow], 7, False, [$00, $0F, $00, $00]
+		UNIT ThraciaArcher, Enemy, [14, 27], [14, 27], Merloch, [IronBow], 8, False, [$00, $0F, $00, $00]
 		
 	UNIT
 
@@ -69,12 +69,12 @@ eventChapter9Data ; B1/D508
 	_PrepGroup3 ; B1/D7D8
 		.byte 10, 8
 	
-		UNIT BanditBrigand1, Enemy, [22, 9], [22, 9], Gomez, [SteelAxe, Vulnerary], 10, False, [$01, $00, $00, $00]
-		UNIT BanditBrigand1, Enemy, [19, 8], [19, 8], Gomez, [HandAxe, Vulnerary], 10, False, [$01, $00, $00, $00]
-		UNIT BanditBrigand1, Enemy, [15, 6], [15, 6], Gomez, [VeninAxe, Antitoxin], 8, False, [$01, $00, $00, $00]
-		UNIT BanditBrigand1, Enemy, [17, 4], [17, 4], Gomez, [KillerAxe, Vulnerary], 12, False, [$01, $00, $00, $00]
-		UNIT BanditHunter, Enemy, [21, 6], [21, 6], Gomez, [VeninBow, Antitoxin], 8, False, [$01, $00, $00, $00]
-		UNIT BanditHunter, Enemy, [13, 7], [13, 7], Gomez, [SteelBow, Vulnerary], 10, False, [$01, $00, $00, $00]
+		UNIT BanditBrigand1, Enemy, [22, 9], [22, 9], Gomez, [SteelAxe, Vulnerary], 10, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, Enemy, [19, 8], [19, 8], Gomez, [HandAxe, Vulnerary], 10, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, Enemy, [15, 6], [15, 6], Gomez, [VeninAxe, Antitoxin], 8, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand1, Enemy, [17, 4], [17, 4], Gomez, [KillerAxe, Vulnerary], 12, False, [$00, $00, $00, $00]
+		UNIT BanditHunter, Enemy, [21, 6], [21, 6], Gomez, [VeninBow, Antitoxin], 8, False, [$00, $00, $00, $00]
+		UNIT BanditHunter, Enemy, [13, 7], [13, 7], Gomez, [SteelBow, Vulnerary], 10, False, [$00, $00, $00, $00]
 	UNIT	
 
 	_AltenaTravantGroup ; B1/D7DA

@@ -60,13 +60,13 @@ mirandatitle
 
 safiyatitle
 .byte $09
-.text "Safy — Divine Servant"
+.text "Safy — Font of Piety"
 .byte $05
 .byte EndText
 
 laratitle
 .byte $09
-.text "Lara — Innocent Thief"
+.text "Lara — Lively Thief"
 .byte $05
 .byte EndText
 
@@ -132,13 +132,13 @@ calliontitle
 
 shivatitle
 .byte $09
-.text "Shiva — Sellsword of Saban"
+.text "Shiva — Sellsword of Sabhain"
 .byte $05
 .byte EndText
 
 pantitle
 .byte $09
-.text "Perne — Bandit of Dacia"
+.text "Perne — Dacian Scoundrel"
 .byte $05
 .byte EndText
 
@@ -210,7 +210,7 @@ shanamtitle
 
 trudetitle
 .byte $09
-.text "Trude — Death Incarnate"
+.text "Troude — Death Incarnate"
 .byte $05
 .byte EndText
 
@@ -252,7 +252,7 @@ mareetatitle
 
 tinatitle
 .byte $09
-.text "Tina — Capricious Little One"
+.text "Tina — Playful Scamp"
 .byte $05
 .byte EndText
 

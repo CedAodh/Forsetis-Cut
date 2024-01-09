@@ -337,7 +337,7 @@ _MischaLeader
 .word $0000
 
 _KolkhoLeader
-	.text "Colho's Boys"
+	.text "Cullough's Boys "
 .word $0000
 
 _DandelionLeader

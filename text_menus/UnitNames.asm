@@ -617,7 +617,7 @@ _ShannamName
 	.word $0000
 
 _TrudeName
-	.text "Trude "
+	.text "Troude"
 	.word $0000
 
 _TanyaName
@@ -1171,7 +1171,7 @@ _DracoName
 	.word $0000
 
 _ColhoName
-	.text "Colho "
+	.text "Cullough"
 	.word $0000
 	
 _PierreName

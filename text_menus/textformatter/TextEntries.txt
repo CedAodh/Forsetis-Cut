@@ -97,7 +97,7 @@ Ol]wen
 //Salem
   Sale
 Perne
-Trude
+Troude
 Tina
 Glade
 Dean
@@ -133,7 +133,7 @@ Dvorak
 Largo
 Ke[mpf
 Ortov
-Colho
+Cullough
 Liszt
 Bartok
 Paulus
@@ -214,12 +214,12 @@ Pitfighter
 Leonster Troop
 Loptrian
 (Magi Fighter 
-(Munster Troop
+(Munster
 (Mercenary
 Resistance
 Silesse
 Tarrah
-Thracia Troop 
+Thracia  
 
 //-Archer
 //-Ballistician
@@ -275,7 +275,7 @@ Lifis Pirates
 Bandits
 Resistance
 Pegasus Corps
-Colho's Boys
+Cullough's Boys 
 Dandelion
 Sells]words
 Fiana Freeblades
@@ -622,7 +622,7 @@ Silence
 Sleep
 Torch
 //Hammerne
-  Hanerne
+Repair
 Thief
 Berserk
 Unlock

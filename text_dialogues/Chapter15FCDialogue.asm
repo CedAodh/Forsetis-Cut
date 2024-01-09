@@ -1803,7 +1803,7 @@ asaellotrude
 .byte left_slot
 .word $3A00
 .word asaello_portrait
-.text "Hey, it's Trude."
+.text "Hey, it's Troude."
 .byte WaitForA
 
 .byte right_slot
@@ -1927,7 +1927,7 @@ asaellotrude
 .byte ScrollText
 .text "Meh."
 .byte NewLine
-.text "See ya later, Trude."
+.text "See ya later, Troude."
 .byte WaitForA
 
 .byte ScrollText

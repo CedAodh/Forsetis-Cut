@@ -11,21 +11,15 @@ ch12xpansalem
 .word pan_portrait
 .text "Salem?!"
 .byte NewLine
-.text "The hell you doin' fightin' with the enemy?"
+.text "What are you doing with the enemy?!"
 .byte NewLine
-.text "What, have you sold us out already?"
-.byte WaitForA
-.byte NewLine
-.text "How much is the empire payin' you for this?"
+.text "...Have you sold us out already?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "You've got it all wrong, you idiot."
+.text "You have it all wrong, you idiot."
 .byte NewLine
-.text "These people aren't with the empire."
-.byte WaitForA
-.byte ScrollText
 .text "This is Prince Leif's Liberation Army,"
 .byte NewLine
 .text "and they're no enemy of ours."
@@ -54,25 +48,25 @@ ch12xpansalem
 
 .byte Left_slot
 .byte ScrollText
-.text "Hmm... Clearly, there's a bigger picture here"
+.text "Hmm..."
 .byte NewLine
-.text "I'm not seein'. You just want us to stop fightin'"
+.text "You want us to just stop fighting and move"
 .byte NewLine
-.text "and hash this thing out peaceful-like, right?"
+.text "right along to discussing terms and conditions?"
 .byte WaitForA
 .byte ScrollText
-.text "...Well, if this is comin' from YOU,"
+.text "...Well, if this is coming from YOU,"
 .byte NewLine
 .text "I expect you've thought through"
 .byte NewLine
 .text "all the angles already."
 .byte WaitForA
 .byte ScrollText
-.text "Oh, Salem, that's no fair!"
+.text "All right, we'll do things your way."
 .byte NewLine
-.text "You know I've got a soft spot for you!"
+.text "Still, Salem, you know I've got"
 .byte NewLine
-.text "All right, all right, we'll do things your way."
+.text "a soft spot for you!"
 .byte WaitForA
 
 .byte EndText
@@ -102,42 +96,42 @@ ch12xpanlithis
 .byte ScrollText
 .text "Y-yeah, uh, I've been gone a while..."
 .byte NewLine
-.text "Er, Perne...sir..."
+.text "Er, Perne."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Hah! You haven't changed a bit, kiddo!"
+.text "Hah! You haven't changed a bit, pal!"
 .byte NewLine
-.text "You at least learn to stop wetting the bed,"
+.text "Hey, am I still gonna see puddles"
 .byte NewLine
-.text "junior?"
+.text "when I take a look under you?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "H-hey, gimme some credit, wouldja?"
+.text "H-hey, come on, Perne..."
 .byte NewLine
-.text "Let's not talk too much about ancient history!"
+.text "Let's not talk too much about ancient history..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Really? 'Cause I remember you bein'"
+.text "Really? Because I remember you being"
 .byte NewLine
-.text "the biggest crybaby in the village,"
-.byte NewLine
-.text "an' we're just talkin' here, right?"
+.text "the biggest crybaby in the village."
 .byte WaitForA
+.byte ScrollText
+.text "And we're just talking here, right?"
 .byte NewLine
 .text "Not gonna cry about it, are you?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah, seems like it was just yesterday that"
+.text "Ah, seems like it was just yesterday that all"
 .byte NewLine
-.text "all the kids would chase you 'round the village"
+.text "the guys would chase you 'round the village,"
 .byte NewLine
-.text "an' beat you somethin' fierce..."
+.text "just taking it to you."
 .byte WaitForA
 
 .byte Right_slot
@@ -151,9 +145,9 @@ ch12xpanlithis
 
 .byte Left_slot
 .byte ScrollText
-.text "Hm?"
+.text "What?"
 .byte NewLine
-.text "You say somethin', kiddo?"
+.text "Got something to say?"
 .byte WaitForA
 
 .byte Right_slot
@@ -167,19 +161,19 @@ ch12xpanlithis
 .byte NewLine
 .text "with this “Liberation Army,” right?"
 .byte NewLine
-.text "Been hearin' rumors about 'em."
+.text "I've been hearing rumors about 'em."
 .byte WaitForA
 .byte ScrollText
 .text "Looks like they keep you pretty busy, huh?"
 .byte NewLine
-.text "Seems mighty interestin'."
+.text "Sounds like fun to me."
 .byte WaitForA
 .byte ScrollText
-.text "Well, Li'l Lifis, looks like it's your lucky day!"
+.text "Lifis, you have to show me to whoever's"
 .byte NewLine
-.text "I'm in the mood to join up with 'em an' keep"
+.text "in charge. Where's your leader at?"
 .byte NewLine
-.text "an eye on you. Where's your leader at?"
+.text "Tell him I want to come along."
 .byte WaitForA
 
 .byte Right_slot
@@ -189,19 +183,21 @@ ch12xpanlithis
 
 .byte Left_slot
 .byte ScrollText
-.text "Hey, you got a problem with that?!"
+.text "“What?!”"
 .byte NewLine
-.text "I'm all ears, Li'l Lifis!"
+.text "What, is there a problem?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "...No, there's no problem..."
+.text "...N-no, no problem..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "It'll be just like the old days! You'll see!"
+.text "It'll be just like the good ol' days!"
+.byte NewLine
+.text "Right?"
 .byte WaitForA
 
 .byte ScrollText
@@ -212,22 +208,20 @@ ch12xpanlithis
 .byte ScrollText
 .text "Ugh... It's happening all over again..."
 .byte NewLine
-.text "I'm stuck with the bumpkin"
-.byte NewLine
-.text "born from Loptous' own bosom..."
+.text "I'm stuck with this jackass..."
 .byte WaitForA
 
 .byte Left_slot
 .word LoadPortrait
 .word pan_portrait
-.text "Hey, you feelin' good there, little buddy?"
+.text "Hey, you feelin' good there, pal?"
 .byte NewLine
-.text "You're lookin' pretty pale."
+.text "You look pale."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Huh? Oh, uh, I am?"
+.text "Huh? Oh, uh, I do?"
 .byte NewLine
 .text "Uh, I must've...caught a cold. Just now."
 .byte NewLine
@@ -236,7 +230,7 @@ ch12xpanlithis
 
 .byte Left_slot
 .byte ScrollText
-.text "Huh...?"
+.text "...Uh..."
 .byte WaitForA
 
 .byte EndText
@@ -250,14 +244,14 @@ ch12xpanlithis2
 .byte NewLine
 .text "mood, could you do something about"
 .byte NewLine
-.text "that mercenary? He's givin' my people trouble."
+.text "that mercenary? He's giving my people trouble."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Hm? Oh, you mean Trude?"
+.text "Hm? Oh, you mean Troude?"
 .byte NewLine
-.text "Leave it to me! Trude is one of my best men."
+.text "Leave it to me! Troude's one of my best men."
 .byte NewLine
 .text "I'll talk to him before he gets himself killed."
 .byte WaitForA
@@ -283,11 +277,11 @@ ch12xpanlara
 .text "What're you doing here?"
 .byte WaitForA
 .byte ScrollText
-.text "Wait, don't tell me!"
+.text "Wait, don't even tell me."
 .byte NewLine
 .text "You just missed me so much you couldn't help"
 .byte NewLine
-.text "but come runnin' back into my arms, right?"
+.text "but come running back into my arms, right?"
 .byte WaitForA
 
 .byte Right_slot
@@ -299,23 +293,21 @@ ch12xpanlara
 
 .byte Left_slot
 .byte ScrollText
-.text "H-hey, what's got you so serious?"
+.text "H-hey, what's gotten you so serious?"
 .byte NewLine
-.text "Yer face is all scrunched up"
-.byte NewLine
-.text "like ya just swallowed a whole lemon."
+.text "I just thought I might try a joke."
 .byte WaitForA
 .byte ScrollText
-.text "C'mon, now. Get real."
+.text "C'mon, now, get with it."
 .byte NewLine
-.text "What would I want with some little kid runnin'"
+.text "It's not like I need a little kid"
 .byte NewLine
-.text "around me, gettin' all up in my business?"
+.text "running all amok and up in my business."
 .byte WaitForA
 .byte ScrollText
-.text "Turn 'round and get yerself back to Munster,"
+.text "You belong over in Munster."
 .byte NewLine
-.text "kiddo."
+.text "That's where I say you'll be. Got it?"
 .byte WaitForA
 
 .byte Right_slot
@@ -328,35 +320,33 @@ ch12xpanlara
 .text "I at least thought you liked it when I danced."
 .byte WaitForA
 .byte ScrollText
-.text "I still remember you comin' to see me perform,"
+.text "I still remember you coming to see me perform,"
 .byte NewLine
-.text "watching me like I was the only thing"
+.text "watching me so intently, like I was"
 .byte NewLine
-.text "in the world..."
+.text "the only thing in the world..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "W-well, yeah, but that was before I realized"
+.text "You know, though, that was before I realized"
 .byte NewLine
 .text "you were just a kid."
 .byte WaitForA
 .byte ScrollText
 .text "*sigh*"
 .byte NewLine
-.text "Look, if it means that much to ya..."
+.text "But...to give you a proper response..."
 .byte NewLine
-.text "Yeah, I did like watchin' you dance."
+.text "Yeah, I did like watching you dance."
 .byte WaitForA
 .byte ScrollText
-.text "An' it was more'n, like, attraction or whatever."
+.text "It made me feel...alive and energized."
 .byte NewLine
-.text "It just made me feel...alive."
-.byte NewLine
-.text "Like... I was invigorated, y'know?"
+.text "You know what I'm talking about."
 .byte WaitForA
 .byte ScrollText
-.text "But ya hated it, right?"
+.text "But you hated it, didn't you?"
 .byte NewLine
 .text "So it's for the best that you quit."
 .byte WaitForA
@@ -377,12 +367,12 @@ ch12xpanlara
 
 .byte Left_slot
 .byte ScrollText
-.text "Look, don't be stupid..."
+.text "Look, think before you speak..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Not JUST for you, I mean! For everybody!"
+.text "Not JUST for you, I mean! For everyone!"
 .byte NewLine
 .text "Maybe I could make everyone feel"
 .byte NewLine
@@ -391,30 +381,28 @@ ch12xpanlara
 
 .byte Left_slot
 .byte ScrollText
-.text "Huh? Who's “everybody”?"
+.text "Huh? Who's “everyone”?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Prince Leif and the whole North Thracian"
 .byte NewLine
-.text "Liberation Army! That's who I'm here with,"
+.text "Liberation Army! That's who I'm here with!"
 .byte NewLine
-.text "y'know! Not that I'm much help, myself..."
+.text "N-not that I'm much help, myself..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Oh-ho! So that's what got all this ruckus"
-.byte NewLine
-.text "started, huh?"
+.text "...Oh, now I see what you're getting at."
 .byte WaitForA
 .byte ScrollText
-.text "All right, Lara, I'll tell ya what:"
+.text "All right, Lara, then here's our deal:"
 .byte NewLine
-.text "you go back to dancin', an' I'll come along"
+.text "you go back to dancing, and I'll come along"
 .byte NewLine
-.text "with you an' the Liberation Army."
+.text "to help out both you and the Liberation Army."
 .byte WaitForA
 
 .byte Right_slot
@@ -426,14 +414,16 @@ ch12xpanlara
 
 .byte Left_slot
 .byte ScrollText
-.text "Good! I wasn't keen on holin' up in Dacia"
+.text "Good! I wasn't keen on holing up in Dacia"
 .byte NewLine
-.text "Forest an' robbin' people forever, anyhow."
+.text "and doing this forever, you know."
 .byte WaitForA
 .byte ScrollText
 .text "Liberating North Thracia, huh...?"
 .byte NewLine
-.text "Oh, this is gonna be SO much fun!"
+.text "Now THIS will be something worthwhile"
+.byte NewLine
+.text "in the long run of things."
 .byte WaitForA
 
 .byte EndText
@@ -448,7 +438,7 @@ ch12xpantrude
 .byte Left_slot
 .word LoadPortrait
 .word pan_portrait
-.text "Hey, Trude, sheathe your sword!"
+.text "Hey, Troude, sheathe your sword!"
 .byte NewLine
 .text "There's no need to fight anymore."
 .byte WaitForA
@@ -456,54 +446,48 @@ ch12xpantrude
 .byte Right_slot
 .text "Huh? But...why?"
 .byte NewLine
-.text "What's goin' on?"
+.text "What's going on?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "These folks are with the Liberation Army,"
+.text "These well-to-do folks are with the"
 .byte NewLine
-.text "an' I'm throwin' my lot in with 'em. You're"
+.text "Liberation Army, and I'm joining them."
 .byte NewLine
-.text "more'n welcome to come along, if it suits you."
+.text "I want you to come with me."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah, I get it... So THESE folks are"
+.text "Ah, I see... The Liberation Army, you said?"
 .byte NewLine
-.text "the liberators I've been hearin' so much about."
-.byte WaitForA
-.byte ScrollText
 .text "I thought their morale was too high"
 .byte NewLine
-.text "fer them to be imperial troops."
+.text "for them to be imperial troops."
 .byte WaitForA
 .byte ScrollText
-.text "So you're joinin' up with them, huh?"
+.text "Sure, I'll tag along."
 .byte NewLine
-.text "Looks fun enough, I s'pose."
-.byte WaitForA
-.byte ScrollText
-.text "Then sure, I'll come with you."
+.text "After all, we men of the Dandelions"
 .byte NewLine
-.text "We men of the Dandelions"
-.byte NewLine
-.text "gotta stick together, right?"
+.text "are to stick together, right?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Hey, that's the spirit!"
+.text "That's exactly right."
 .byte NewLine
-.text "I tell ya, you've had my back for so long,"
+.text "You've had my back for so long;"
 .byte NewLine
 .text "I'd hate for things to go south now."
 .byte WaitForA
 .byte ScrollText
-.text "I'll be countin' on ya now more than ever,"
+.text "I really appreciate it, my friend."
 .byte NewLine
-.text "Trude. You'd better be up for it!"
+.text "I'll be counting on you now more than ever—"
+.byte NewLine
+.text "you'd better be up for it!"
 .byte WaitForA
 
 .byte Right_slot
@@ -725,9 +709,9 @@ ch12xopening1
 .byte Left_slot
 .word LoadPortrait
 .word pan_portrait
-.text "Something's fishy..."
+.text "I don't like what I'm hearing..."
 .byte NewLine
-.text "What's goin' on outside?"
+.text "What's going on outside?"
 .byte WaitForA
 
 .byte Right_slot
@@ -767,47 +751,49 @@ ch12xopening1
 
 .byte Left_slot
 .byte ScrollText
-.text "The imperial army's come to bring the"
+.text "An army's come to bring the hammer"
 .byte NewLine
-.text "hammer down on us, that's what."
+.text "down on us, that's what."
 .byte WaitForA
 .byte ScrollText
-.text "Argh, a pox on 'em all! Those entitled louts..."
+.text "Argh, a pox on 'em all!"
+.byte NewLine
+.text "Those entitled louts..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Th-the empire's here...?"
+.text "An army...?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "You got an awful funny look on your face,"
 .byte NewLine
-.text "kiddo. Don't tell me you were thinkin'"
+.text "kiddo. Don't tell me you were thinking"
 .byte NewLine
-.text "of runnin' off while the army's got us busy!"
+.text "of running off while they've got us busy!"
 .byte WaitForA
 .byte ScrollText
-.text "Don't be stupid, young'un. I'd never let"
+.text "Don't fool yourself—I'd never let such"
 .byte NewLine
-.text "such a useful little moppet just slip away!"
+.text "a useful little moppet just slip away!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "B-but why...?"
 .byte NewLine
-.text "Why can't you just lighten up on me?"
+.text "Why can't you lighten up on me?"
 .byte NewLine
-.text "L-look, I wasn't thinkin' anything funny!"
+.text "Please just let me go... Please..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Nuh-uh, you ain't gettin' off that easy."
+.text "Already told you, not gonna happen."
 .byte NewLine
-.text "If you keep gettin' stupid ideas about runnin'"
+.text "If you keep getting stupid ideas about running"
 .byte NewLine
 .text "away, I won't hesitate to punish you again."
 .byte WaitForA
@@ -826,7 +812,7 @@ ch12xopening1
 .byte ScrollText
 .text "Well, we'll just see about that, won't we?"
 .byte NewLine
-.text "Now be a good girl and go help Trude with"
+.text "Now be a good girl and go help Troude with"
 .byte NewLine
 .text "that thief staff o' yours. Get a move on, runt!"
 .byte WaitForA
@@ -1037,14 +1023,14 @@ ch12xending2
 .word pan_portrait
 .text "Well, I'll be damned! You actually got the"
 .byte NewLine
-.text "better of ol' Trude, eh? Listen, cut him loose."
+.text "better of ol' Troude, eh? Listen, cut him loose."
 .byte WaitForA
 .byte ScrollText
-.text "Trude's had my back for a long time, now."
+.text "Troude's had my back for a long time, now."
 .byte NewLine
 .text "No question in my mind he'll come along"
 .byte NewLine
-.text "an' help the Liberation Army, too."
+.text "and help the Liberation Army."
 .byte WaitForA
 
 .byte EndText
@@ -1073,7 +1059,7 @@ ch12xending3
 .text "who that snake really is..."
 .byte WaitForA
 .byte ScrollText
-.text "Ah, dammit all..."
+.text "Ah, damn it all..."
 .byte WaitForA
 
 .byte EndText

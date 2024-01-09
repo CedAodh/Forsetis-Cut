@@ -1359,3 +1359,157 @@ leifrecruitsdalsin
 .byte WaitForA
 
 .byte EndText 
+
+lifisrecruitsdalsin
+
+.byte right_slot
+.word LoadPortrait
+.word lifis_portrait
+.text "Ack! Am I trapped?!"
+.byte NewLine
+.text "I can't..."
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word dalsin_portrait
+
+.byte right_slot
+.byte ScrollText
+.text "Hey, look over there!"
+.byte NewLine
+.text "Hey, you definitely don't want to let"
+.byte NewLine
+.text "THAT guy keep roamin' free!"
+.byte WaitForA
+
+.byte left_slot
+.text "There's no second thoughts about beating in"
+.byte NewLine
+.text "a swine like you."
+.byte WaitForA
+.byte ScrollText
+.text "I normally put up with it all for Jubel, but this..."
+.byte NewLine
+.text "Well, I'm going to enjoy this."
+.byte NewLine
+.text "And that's puttin' it lightly!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Aah! No! Please!"
+.byte NewLine
+.text "You gotta—!"
+.byte WaitForA
+.byte ScrollText
+.text "Wait, Jubel..."
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte NewLine
+.text "Jubel, Jubel, Jubel..."
+.byte NewLine
+.text "I heard that name before...!"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word dalsin_portrait
+
+.byte right_slot
+.byte ScrollText
+.text "Hey! Hey!"
+.byte NewLine
+.text "You don't wanna do what you're about to do!"
+.byte WaitForA
+
+.byte left_slot
+.text "You've got about 10 seconds—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Jubel—he's your bro, right?"
+.byte NewLine
+.text "Little bro, that is."
+.byte WaitForA
+.byte ScrollText
+.text "Brown hair and eyes? About...yea high?"
+.byte NewLine
+.text "Nowhere near as chunky as you?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...!"
+.byte NewLine
+.text "What do you know?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I...know that Princey and I saved him from"
+.byte NewLine
+.text "little kid jail over in Kerberos' Gate."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "A scoundrel like you...up and saved..."
+.byte NewLine
+.text "Why was he even there to begin with?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, I think it's something about the whole"
+.byte NewLine
+.text "child sacrificing thing going on recently?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Wh-what?!"
+.byte NewLine
+.text "The empire took in Jubel for"
+.byte NewLine
+.text "the damned child hunts?!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah! That's exactly it!"
+.byte NewLine
+.text "S-so you believe me, right?"
+.byte NewLine
+.text "I'm good to go?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Uh, buddy?"
+.byte NewLine
+.text "Yoo-hoo... Yoo-hoo!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "...Catch ya later, then!"
+.byte WaitForA
+
+.byte EndText

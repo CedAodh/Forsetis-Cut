@@ -783,6 +783,12 @@ eventChapter22Events ; 8C/F611
 	.word $0000
 
 	_OpeningEvent ; 8C/FE55
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, Cohen
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
 
 		PLAY_SOUND_WORD $00E0

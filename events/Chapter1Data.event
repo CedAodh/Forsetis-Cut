@@ -48,6 +48,8 @@ eventChapter1Data ; B1/FB37
 		UNIT MunsterSoldier2, Enemy, [8, 12], [10, 12], Lobos, [Javelin, Vulnerary], 5, False, [$02, $08, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [18, 10], [18, 10], Lobos, [ShortLance], 3, False, [$01, $03, $03, $00]
 		UNIT MunsterSoldier2, Enemy, [8, 5], [8, 5], Lobos, [ShortLance], 2, False, [$01, $03, $03, $00]
+		UNIT FriegeMyrmidon, Enemy, [6, 14], [6, 14], Lobos, [SilverSword], 1, False, [$02, $08, $00, $00]
+		UNIT FriegeMyrmidon, Enemy, [7, 14], [7, 14], Lobos, [SilverSword], 1, False, [$02, $08, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [8, 14], [8, 14], Lobos, [ShortLance], 1, False, [$02, $08, $00, $00]
 		UNIT MunsterArcher, Enemy, [11, 12], [11, 12], Lobos, [Shortbow], 1, False, [$02, $08, $00, $05]
 		UNIT MunsterSoldier2, Enemy, [12, 6], [12, 6], Lobos, [ShortLance], 2, False, [$06, $03, $03, $00]
