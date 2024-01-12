@@ -666,7 +666,7 @@ eventChapter6Events ; 99/A346
 		DIALOGUE ch4xasbelleiftalk
 		YIELD
 		
-		STORE_BYTE aSelectedCharacterBuffer.Leader, Finn
+		STORE_BYTE aSelectedCharacterBuffer.Leader, Diarmuid
 
 		CALL_ASM_SKIPPABLE $83A3BF, $0000
 	END2
@@ -684,7 +684,7 @@ eventChapter6Events ; 99/A346
 
 		macroConvertToPlayerAllegiance Asbel
 
-		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Asbel, structCharacterDataRAM.Leader, Diarmuid
 	END2
 	
 	_LaraAsbelTalk
@@ -780,12 +780,12 @@ eventChapter6Events ; 99/A346
 		+
 		YIELD
 
-		MOVE_UNIT FriegeBishop2, [0, 0], [30, 10], 1, _AugustusMovestring
+		MOVE_UNIT Kant, [0, 0], [30, 10], 1, _AugustusMovestring
 		YIELD_UNK
 		WAIT_MOVE
 		YIELD
 
-		macroRemoveUnit FriegeBishop2
+		macroRemoveUnit Kant
 		
 		SET_MUSIC $39
 		YIELD

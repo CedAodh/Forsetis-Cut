@@ -26,8 +26,8 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word MartyPortrait
 	.word Marty
 
-	.word RonanPortrait
-	.word Ronan
+	.word NPCMan7Portrait
+	.word Civilian2
 
 	.word MirandaPortrait
 	.word Miranda
@@ -53,17 +53,17 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word MachaPortrait
 	.word Macha
 
-	.word HicksPortrait
-	.word Hicks
+	.word NPCGirl1Portrait
+	.word Bella
 
 	.word NannaPortrait
 	.word Nanna
 
-	.word SelphinaPortrait
-	.word Selphina
+	.word NPCWoman2Portrait
+	.word Civilian3
 
-	.word DalsinPortrait
-	.word Dalsin
+	.word NPCGirl2Portrait
+	.word Civilian4
 
 	.word CallionPortrait
 	.word Callion
@@ -74,17 +74,17 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word PernePortrait
 	.word Perne
 
-	.word GladePortrait
-	.word Glade
+	.word NPCBoy1Portrait
+	.word Cliff
 
-	.word KanePortrait
-	.word Kane
+	.word dorius_portrait
+	.word LifisCrewWarrior
 
-	.word AlbaPortrait
-	.word Alba
+	.word DvorakPortrait
+	.word Dvorak
 
-	.word RobertPortrait
-	.word Robert
+	.word EichnerPortrait
+	.word Eichner
 
 	.word FredPortrait
 	.word Fred
@@ -162,7 +162,7 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word Arion
 
 	.word JuliusPortrait
-	.word JuliusPortrait
+	.word Julius
 
 	.word IshtarPortrait
 	.word Ishtar
@@ -254,8 +254,8 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word LargoPortrait
 	.word Nicolov
 
-	.word AugustPortrait
-	.word FriegeBishop2
+	.word ManfroyPortrait
+	.word Manfroy
 
 	.word MullerPortrait
 	.word Muller
@@ -264,7 +264,7 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word Reinkoch
 
 	.word AugustPortrait
-	.word ThraciaBishop
+	.word Kant
 
 	.word KantPortrait			;<<
 	.word Kant

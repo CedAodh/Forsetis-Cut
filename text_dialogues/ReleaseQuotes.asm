@@ -139,7 +139,7 @@ truderel
 tinarel
 .text "Th-thank you for saving me!"
 .byte NewLine
-.text "I'm off to find my Big Sis, Safy, now."
+.text "I'm off to find my big sis, Safy, now."
 .byte WaitForA
 .byte EndText
 

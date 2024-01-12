@@ -41,7 +41,7 @@ eventChapter15Events ; FD/A812
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 1
 		END_DEFINITION
-		EVENT $13, _AsaelloSpawn
+		EVENT $14, _AsaelloSpawnAlternate
 			RUN_ASM _rlCheckSafyDeadOrUnrecruited
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 1
@@ -362,6 +362,23 @@ eventChapter15Events ; FD/A812
 		YIELD
 	END2
 	
+	_AsaelloSpawnAlternate
+		EVENT_TEST_FLAG_SET $13
+		JUMP_TRUE +
+		
+		LOAD1 eventChapter15Data._AsaelloGroup
+		WAIT_MOVE
+		YIELD
+		
+		JUMP ++
+		
+		+
+		
+		UNSET_FLAG $14
+		
+		+
+	END2
+	
 	_ArmorslayerHouseVisit ; FD/AA97
 		PLAY_SOUND_WORD $00F7
 
@@ -516,6 +533,21 @@ eventChapter15Events ; FD/A812
 
 		DIALOGUE ch15daisyasaello
 		YIELD
+		
+		EVENT_TEST_FLAG_SET $14
+		JUMP_TRUE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Lifis
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		JUMP ++
+		
+		+
+		
+		STORE_WORD wEventEngineCharacterTarget, Safy
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		+
 
 		STORE_WORD wEventEngineCharacterTarget, Asaello
 		CALL_ASM_LOOP rlASMCChangeAllegianceToPlayer, $0000

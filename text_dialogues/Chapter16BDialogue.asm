@@ -342,9 +342,9 @@ ch16Bhomershannam
 
 .byte Left_slot
 .byte ScrollText
-.text "You're not like the real prince at all."
-.byte NewLine
 .text "Ugh..."
+.byte NewLine
+.text "You act nothing like the real prince."
 .byte WaitForA
 
 .byte EndText
@@ -756,7 +756,7 @@ ch16Bopening2
 .text "...Hm?"
 .byte WaitForA
 .byte ScrollText
-.text "Well, well. Right on cue."
+.text "Well, well. Right on cue..."
 .byte WaitForA
 
 .byte left_slot
@@ -854,14 +854,14 @@ ch16Bopening2
 
 .byte Left_slot
 .byte ScrollText
-.text "...But that's boring."
+.text "But that's boring."
 .byte NewLine
-.text "What's Grandfather doing?"
+.text "What's my grandfather doing?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Archbishop Manfroy is in Connaught"
+.text "His Holiness is in Connaught"
 .byte NewLine
 .text "with His Highness Prince Julius."
 .byte NewLine

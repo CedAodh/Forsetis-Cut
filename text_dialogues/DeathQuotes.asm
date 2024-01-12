@@ -53,7 +53,7 @@ ch16Aconomordeath
 .byte EndText
 
 ch17Bsarahdeath
-.text "I feel so...alone..."
+.text "I'm...lonely..."
 .byte WaitForA
 .byte EndText
 
@@ -104,14 +104,16 @@ finndeath
 .byte EndText
 
 osiandeath
-.text "D-dammit...! There's no"
+.text "D-dammit...!"
 .byte NewLine
-.text "patching over...this mistake..."
+.text "Guess I've...really done it"
+.byte NewLine
+.text "this time..."
 .byte WaitForA
 .byte EndText
 
 halvandeath
-.text "Ma... Pa... I'm sorry..."
+.text "Mom... Dad... I'm sorry..."
 .byte NewLine
 .text "I...lasted as long as I could..."
 .byte WaitForA
@@ -140,7 +142,7 @@ martydeath
 .byte NewLine
 .text "Wh-why me...?"
 .byte NewLine
-.text "What'd I do...?"
+.text "Urgh..."
 .byte WaitForA
 .byte EndText
 
@@ -161,7 +163,7 @@ mirandadeath
 .byte EndText
 
 safiedeath
-.text "...Gods above, return your light..."
+.text "...Lords above, return your light..."
 .byte NewLine
 .text "to this world..."
 .byte WaitForA
@@ -175,26 +177,25 @@ laradeath
 .byte EndText
 
 brightondeath
-.text "Ugh! I... I just wanted things"
+.text "Hah... I knew it was..."
 .byte NewLine
-.text "to go back...the way they were..."
+.text "just a matter of time..."
+.byte NewLine
+.text "My sweet Machyua..."
 .byte WaitForA
 .byte EndText
 
 fergusdeath
-.text "Ugh... L-like hell am I dyin' here..."
+.text "Ugh... A guy can't win 'em all..."
 .byte NewLine
-.text "I still got so much...to..."
+.text "Guess it was...time I finally lost..."
 .byte WaitForA
 .byte EndText
 
 edadeath
 .text "Kate, my faithful dragon..."
 .byte NewLine
-.text "Thank you."
-.byte WaitForA
-.byte ScrollText
-.text "You've done enough..."
+.text "Thank you. You've done enough..."
 .byte NewLine
 .text "Go home...to...Thracia..."
 .byte WaitForA
@@ -208,56 +209,60 @@ asbeldeath
 .byte EndText
 
 machadeath
-.text "I...wanted to see Munster become..."
+.text "I...wanted to see a peaceful"
 .byte NewLine
-.text "the beautiful land it once was..."
+.text "Munster...just once more..."
+.byte NewLine
+.text "Brighton..."
 .byte WaitForA
 .byte EndText
 
 hicksdeath
-.text "Murphy... Keep yerself safe..."
+.text "Murphy... Stay safe..."
 .byte NewLine
-.text "An' grow up far away from all this..."
+.text "Grow up...far away from all this..."
 .byte WaitForA
 .byte EndText
 
 nannadeath
-.text "Lord Leif... Don't you dare lose..."
+.text "Lord Leif..."
+.byte NewLine
+.text "Don't you dare lose..."
 .byte WaitForA
 .byte EndText
 
 selphinadeath
-.text "*huff* *huff*"
-.byte NewLine
 .text "I...made it this far..."
 .byte NewLine
-.text "Please forgive me, Glade..."
+.text "Please forgive me...Glade..."
 .byte WaitForA
 .byte EndText
 
 dalsindeath
-.text "D-damn! Jubel..."
+.text "D-damn!"
 .byte NewLine
-.text "Live a long and happy life"
+.text "Jubel... I'm all done for..."
 .byte NewLine
-.text "with yer sister..."
+.text "Take care of your sister..."
 .byte WaitForA
 .byte EndText
 
 calliondeath
-.text "L-Leonster will...rise again..."
+.text "Long...live...Leonster...!"
 .byte WaitForA
 .byte EndText
 
 lithisdeath
-.text "Ugh...! S-Safy, I...need..."
+.text "Ugh...!"
+.byte NewLine
+.text "S-Safy, it...it hurts..."
 .byte WaitForA
 .byte EndText
 
 karindeath
-.text "Queen Erinys... Prince Ced..."
+.text "Queen Erinys... I'm sorry..."
 .byte NewLine
-.text "I'm sorry..."
+.text "Prince Ced..."
 .byte WaitForA
 .byte EndText
 
@@ -285,9 +290,9 @@ galzusdeath
 .byte EndText
 
 shivadeath
-.text "How...careless."
+.text "Not bad..."
 .byte NewLine
-.text "All this way, just to die...here..."
+.text "I should've...been more careful..."
 .byte WaitForA
 .byte EndText
 
@@ -301,30 +306,32 @@ kanedeath
 albadeath
 .text "May the banner of Njörun..."
 .byte NewLine
-.text "fly forever..."
+.text "fly high and forever..."
 .byte WaitForA
 .byte EndText
 
 robertdeath
 .text "Lady Selphina..."
 .byte NewLine
-.text "I wanted to be more useful to you."
+.text "I wish...I could have done more..."
 .byte NewLine
-.text "I wanted to...stand...beside..."
+.text "I...wanted to...stand beside..."
 .byte WaitForA
 .byte EndText
 
 weismanndeath
-.text "D-damn... You'll...live to regret"
+.text "D-damn..."
 .byte NewLine
-.text "this, all of you..."
+.text "You'll...live to regret this,"
+.byte NewLine
+.text "all of you..."
 .byte WaitForA
 .byte EndText
 
 bucksdeath
-.text "Ugh... You'll regret this someday..."
+.text "Ugh... Ye'll regret this someday..."
 .byte NewLine
-.text "I...deserved to die at sea..."
+.text "I...deserved t' die at sea..."
 .byte WaitForA
 .byte EndText
 
@@ -345,7 +352,7 @@ eisenaudeath
 rumaighdeath
 .text "Elaine... Mahal... Min... I'm sorry..."
 .byte NewLine
-.text "P-Papa isn't comin' home..."
+.text "P-Papa isn't coming home..."
 .byte WaitForA
 .byte EndText
 
@@ -366,7 +373,9 @@ merlochdeath
 .byte EndText
 
 largodeath
-.text "Argh...! So... This is how it ends..."
+.text "Argh...!"
+.byte NewLine
+.text "So... This is how it ends..."
 .byte WaitForA
 .byte EndText
 
@@ -392,7 +401,7 @@ freddeath
 olwendeath
 .text "N-not here...like this..."
 .byte NewLine
-.text "B-Brother..."
+.text "R-Reinhardt..."
 .byte WaitForA
 .byte EndText
 
@@ -443,14 +452,14 @@ lisztdeath
 homerdeath
 .text "Ugh!"
 .byte NewLine
-.text "I-I'm done for..."
+.text "I...I wasn't ready for this..."
 .byte WaitForA
 .byte EndText
 
 deandeath
 .text "D-damn!"
 .byte NewLine
-.text "Linoan..."
+.text "Duchess Linoan..."
 .byte NewLine
 .text "I'm...sorry..."
 .byte WaitForA
@@ -493,14 +502,14 @@ ralphdeath
 .byte NewLine
 .text "Looks like this is it...for me..."
 .byte NewLine
-.text "I'll leave the rest...to you folks..."
+.text "Guess I won't see this war's end..."
 .byte WaitForA
 .byte EndText
 
 shannamdeath
 .text "Hrk..."
 .byte NewLine
-.text "F-forgive me, Leif..."
+.text "Leif... Forgive me..."
 .byte WaitForA
 .byte EndText
 
@@ -542,11 +551,11 @@ iliosdeath
 .byte EndText
 
 schroffdeath
-.text "Agh...!"
+.text "Agh...! Father Claud..."
 .byte NewLine
-.text "Father Claud..."
+.text "I cannot do your will..."
 .byte NewLine
-.text "I cannot do your will... I'm...sorry..."
+.text "I'm...sorry..."
 .byte WaitForA
 .byte EndText
 
@@ -594,7 +603,7 @@ reinkochdeath
 .byte EndText
 
 sarahdeath
-.text "I feel so...alone..."
+.text "I'm...lonely..."
 .byte WaitForA
 .byte EndText
 
@@ -606,7 +615,7 @@ shannamdeath1
 .byte EndText
 
 beatricedeath
-.text "Your majesty..."
+.text "Your Majesty..."
 .byte NewLine
 .text "I'm sorry..."
 .byte WaitForA
@@ -643,9 +652,9 @@ bharatdeath
 dermottdeath
 .text "L-Lord Leif..."
 .byte NewLine
-.text "Take care of Nanna..."
+.text "Please take care of Nanna..."
 .byte NewLine
-.text "My...dear sister..."
+.text "my...dear sister..."
 .byte WaitForA
 .byte EndText
 
@@ -718,11 +727,8 @@ ceddeath
 .text "So this is it..."
 .byte NewLine
 .text "Mother..."
-.byte WaitForA
-.byte ScrollText
-.text "Fee..."
 .byte NewLine
-.text "Silesse...is in...your..."
+.text "Fee... Silesse...is in...your..."
 .byte WaitForA
 .byte EndText
 
@@ -757,7 +763,7 @@ velddeath
 ; Unused
 
 gunterdeath
-.text "Oof..."
+.text "Guh..."
 .byte NewLine
 .text "I suppose I've lived long enough..."
 .byte NewLine
@@ -798,14 +804,14 @@ bandoledeath
 tolmandeath
 .text "Urgh...!"
 .byte NewLine
-.text "Baron Raydrik..."
+.text "Forgive me...Your Excellency..."
 .byte WaitForA
 .byte EndText
 
 jabaldeath
 .text "D-damn you!"
 .byte NewLine
-.text "How did you... Gah!"
+.text "How did you...gah...!"
 .byte WaitForA
 .byte EndText
 
@@ -840,9 +846,7 @@ ishtardeath
 .byte EndText
 
 pierredeath
-.text "May Loptous' blessings..."
-.byte NewLine
-.text "be upon us..."
+.text "Forgive me...Bishop Veld..."
 .byte WaitForA
 .byte EndText
 

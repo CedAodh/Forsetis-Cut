@@ -51,7 +51,7 @@ ch25opening1
 .byte ScrollText
 .text "Archbishop Manfroy!"
 .byte NewLine
-.text "Wh-when did you get here, Your Eminence?"
+.text "Wh-when did you get here, Your Holiness?"
 .byte WaitForA
 
 .byte Left_slot
@@ -70,7 +70,7 @@ ch25opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm deeply sorry, Your Eminence."
+.text "I'm deeply sorry, Your Holiness."
 .byte NewLine
 .text "I'll claim Prince Leif's head"
 .byte NewLine
@@ -133,7 +133,7 @@ ch25opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm honored by your words, Your Eminence..."
+.text "I'm honored by your words, Your Holiness..."
 .byte WaitForA
 
 .byte Left_slot
@@ -161,18 +161,18 @@ ch25opening1
 .text "together in one, organized revolt..."
 .byte WaitForA
 .byte ScrollText
-.text "But if we strike them down now, when they"
+.text "But if we strike them down now, when they all"
 .byte NewLine
-.text "all act as one and their morale is at its highest,"
+.text "act as one and their morale is at its highest,"
 .byte NewLine
-.text "their spirits will be broken."
+.text "their spirits will be shattered."
 .byte WaitForA
 .byte ScrollText
 .text "And in my defense, the boy has done us"
 .byte NewLine
 .text "a great service by defeating so many"
 .byte NewLine
-.text "of House Friege's divisions."
+.text "of the divisions under House Friege."
 .byte WaitForA
 .byte ScrollText
 .text "Without realizing it, he's eliminated"
@@ -207,12 +207,12 @@ ch25opening1
 .byte NewLine
 .text "and as a token of my favor, I bestow upon you"
 .byte NewLine
-.text "five of my finest creations, the Deadlords."
+.text "five of my finest creations, the deadlords."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm most grateful, Your Eminence."
+.text "I'm most grateful, Your Holiness."
 .byte WaitForA
 .byte ScrollText
 .text "Combined with the one I just finished crafting,"
@@ -228,12 +228,12 @@ ch25opening1
 .byte NewLine
 .text "I trust you'll be along shortly"
 .byte NewLine
-.text "to bring me the good news..."
+.text "as the bearer of good tidings..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I won't fail you, Your Eminence."
+.text "I won't fail you, Your Holiness."
 .byte WaitForA
 
 .byte EndText
@@ -247,7 +247,7 @@ ch25opening2
 
 .byte Left_slot
 .word LoadPortrait
-.word leif_portrait
+.word leif_portrait2
 .text "Is everyone ready, August?"
 .byte WaitForA
 
@@ -452,10 +452,6 @@ ch25ending1augustus
 .byte NewLine
 .text "As you wish it, my prince, so shall it be."
 .byte WaitForA
-.byte ScrollText
-
-.byte Left_slot
-.byte ScrollText
 
 .byte EndText
 
@@ -463,6 +459,7 @@ ch25ending1augustus
 ch25ending2finn
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word finn_portrait
 .text "Lord Leif!"
@@ -473,6 +470,7 @@ ch25ending2finn
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "Huh? Connaught has already fallen?!"
 .byte NewLine
 .text "What of Lord Seliph...?"
@@ -637,10 +635,6 @@ ch25ending2finn
 .byte ScrollText
 .text "It's...all I could have dreamed of, Lord Leif."
 .byte WaitForA
-.byte ScrollText
-
-.byte Left_slot
-.byte ScrollText
 
 .byte EndText
 
@@ -648,6 +642,7 @@ ch25ending2finn
 ch25ending3eyvel
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word eyvel_portrait
 .text "Guess that's the end of this whole mess..."
@@ -665,6 +660,7 @@ ch25ending3eyvel
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "What?! You're not coming with me, Eyvel?!"
 .byte NewLine
 .text "Why would you do that?"
@@ -733,10 +729,6 @@ ch25ending3eyvel
 .byte NewLine
 .text "to have you for an enemy!"
 .byte WaitForA
-.byte ScrollText
-
-.byte Left_slot
-.byte ScrollText
 
 .byte EndText
 
@@ -744,6 +736,7 @@ ch25ending3eyvel
 ch25ending4miranda
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word miranda_portrait
 .text "Prince Leif, something's been on my mind"
@@ -752,6 +745,7 @@ ch25ending4miranda
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "Princess Miranda?"
 .byte NewLine
 .text "What's wrong?"
@@ -857,10 +851,6 @@ ch25ending4miranda
 .byte NewLine
 .text "consider my offer of marriage withdrawn!"
 .byte WaitForA
-.byte ScrollText
-
-.byte Left_slot
-.byte ScrollText
 
 .byte EndText
 
@@ -868,12 +858,14 @@ ch25ending4miranda
 ch25ending5linoan
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word linoan_portrait
 .text "Lord Leif..."
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "Linoan!"
 .byte NewLine
 .text "Ah... I imagine this must be very bittersweet"
@@ -897,16 +889,14 @@ ch25ending5linoan
 .byte ScrollText
 .text "Of course I will, Lord Leif!"
 .byte WaitForA
-.byte ScrollText
-
-.byte Left_slot
-.byte ScrollText
 
 .byte EndText
 
 
 ch25ending6dean
 
+.byte Left_slot
+.byte ScrollText
 .word LoadPortrait
 .word dean_portrait
 .text "Duchess Linoan, though it pains me to say it,"
@@ -915,6 +905,7 @@ ch25ending6dean
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "How can that be, Dean?"
 .byte NewLine
 .text "Why can't you?!"
@@ -974,13 +965,30 @@ ch25ending6dean
 .text "I have to avoid that, no matter what it takes..."
 .byte WaitForA
 
-.byte Right_slot
-.byte ScrollText
-
-.byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word leif_portrait
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Linoan, I know you've much to consider."
+.byte NewLine
+.text "So please, take all the time you need"
+.byte NewLine
+.text "for a decision like this. I insist."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "...Thank you, Lord Leif."
+.byte NewLine
+.text "Forgive my outburst just now."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "Pay it no mind."
+.byte WaitForA
 
 .byte EndText
 
@@ -988,6 +996,7 @@ ch25ending6dean
 ch25ending7mareeta
 						; LN > NM > LM > NM > LN
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word nanna_portrait
 .text "......"
@@ -998,11 +1007,12 @@ ch25ending7mareeta
 .word mareeta_portrait
 
 .byte Left_slot
+.byte ScrollText
 .word LoadPortrait
 .word nanna_portrait
 
 .byte Right_slot
-.text "Now look here, Little Lady!"
+.text "Now look here, Nanna!"
 .byte NewLine
 .text "You've just got to say it! Right now!"
 .byte WaitForA
@@ -1057,31 +1067,36 @@ ch25ending7mareeta
 .byte NewLine
 .text "You can do it!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
+.text "C-come again?"
+.byte NewLine
+.text "Mareeta, I did not hear a thing you—"
+.byte WaitForA
 
 .byte EndText
 
 ch25ending8nanna
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word nanna_portrait
 .text "L-Lord Leif..."
 .byte WaitForA
 
 .byte Left_slot
-.text "Oh, Nanna! There hasn't been a chance"
+.byte ScrollText
+.text "Oh, Nanna! I know, there hasn't been"
 .byte NewLine
-.text "for just the two of us to talk."
+.text "a chance for just the two of us to talk."
 .byte WaitForA
 .byte ScrollText
-.text "I wanted to thank you. You've been just as big"
+.text "I want to thank you. You've been just as big"
 .byte NewLine
-.text "a help as anyone, and I wanted to make sure"
+.text "a help as anyone, and I want to make sure"
 .byte NewLine
 .text "you knew how grateful I am."
 .byte WaitForA
@@ -1144,10 +1159,6 @@ ch25ending8nanna
 .byte NewLine
 .text "I'm honored, Lord Leif..."
 .byte WaitForA
-.byte ScrollText
-
-.byte Left_slot
-.byte ScrollText
 
 .byte EndText
 
@@ -1155,6 +1166,7 @@ ch25ending8nanna
 ch25finale
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word augustus_portrait
 .text "Prince Leif, Lord Seliph is here to see you."
@@ -1168,6 +1180,7 @@ ch25finale
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "Lord Seliph!"
 .byte NewLine
 .text "We're only here because you intervened"

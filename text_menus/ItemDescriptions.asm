@@ -624,9 +624,9 @@ _SleepDesc
 .word $0000
 .text "lo]wer (Mag target"
 .word $0000
-.text "Ene[mies on thrones "
+.text "Player cannot target"
 .word $0000
-.text "or gates are i{mm}nune"
+.text "Gates or Thrones"
 .word $0000
 .word $0000
 
@@ -637,9 +637,9 @@ _BerserkDesc
 .word $0000
 .text "lo]wer (Mag target"
 .word $0000
-.text "Ene[mies on thrones "
+.text "Player cannot target"
 .word $0000
-.text "or gates are i{mm}nune"
+.text "Gates or Thrones"
 .word $0000
 .word $0000
 
@@ -650,9 +650,9 @@ _SilenceDesc
 .word $0000
 .text "lo]wer (Mag target"
 .word $0000
-.text "Ene[mies on thrones "
+.text "Player cannot target"
 .word $0000
-.text "or gates are i{mm}nune"
+.text "Gates or Thrones"
 .word $0000
 .word $0000
 
@@ -843,8 +843,6 @@ _HelDesc
 .text "Reduces opponent's"
 .word $0000
 .text "{H}{P} to {1}"
-.word $0000
-.text "{(}{H}{P} cannot reach {0}{)}"
 .word $0000
 .word $0000
 

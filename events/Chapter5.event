@@ -63,7 +63,7 @@ eventChapter5Events ; 99/9246
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/92FC
-		macroDoorDefinition $21, [21, 3], eventChapter5Events._Door1
+		macroDoorDefinition $21, [25, 27], eventChapter5Events._Door1
 		macroDoorDefinition $22, [1, 11], eventChapter5Events._Door2
 		macroDoorDefinition $23, [1, 15], eventChapter5Events._Door3
 		macroDoorDefinition $24, [23, 12], eventChapter5Events._Door4
@@ -131,7 +131,18 @@ eventChapter5Events ; 99/9246
 		rtl
 
 	_Door1 ; 99/9408
-		macroOpenDoorByTileChangeID 0
+		PLAY_SOUND_BYTE $6B
+		
+		STORE_WORD wEventEngineXCoordinate, 25
+		STORE_WORD wEventEngineYCoordinate, 27
+		STORE_WORD wEventEngineParameter1, $006F
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 25
+		STORE_WORD wEventEngineYCoordinate, 28
+		STORE_WORD wEventEngineParameter1, $0010
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		YIELD_UNK
 	END1
 
 	_Door2 ; 99/9433

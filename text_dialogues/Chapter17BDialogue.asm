@@ -20,7 +20,7 @@ ch17Bopengate1
 .word colho_portrait
 .text "Oh-ho, so you're attackin' Castle Leonster?"
 .byte NewLine
-.text "Well, lemme bend yer ear for a second..."
+.text "Well, lemme bend yer ear for a sec..."
 .byte WaitForA
 .byte ScrollText
 .text "See, it just so happens that I've cooked up"
@@ -36,7 +36,7 @@ ch17Bopengate1
 .text "So, how 'bout it? Feel like taking a shortcut?"
 .byte WaitForA
 .byte ScrollText
-.text "Won't be free, a' course. Nothin' is."
+.text "Won't be free, o' course. Nothin' is."
 .byte NewLine
 .text "But you pile up an even 20000 gold"
 .byte NewLine
@@ -77,9 +77,9 @@ ch17Bopengatenomoney
 .byte Right_slot
 .word LoadPortrait
 .word colho_portrait
-.text "What kind of conqueror doesn't have"
+.text "What kinda conqueror doesn't have"
 .byte NewLine
-.text "a full wallet? Ugh, just see yourself out."
+.text "a full wallet? Ugh, just see yerself out."
 .byte WaitForA
 
 .byte EndText
@@ -92,7 +92,7 @@ ch17Bhouseother
 .word elder_portrait
 .text "You're with the Leonster army, aren't you?"
 .byte NewLine
-.text "Where's Lord Leif?"
+.text "Where's Prince Leif?"
 .byte WaitForA
 
 .byte EndText
@@ -107,7 +107,7 @@ ch17Belder1
 .byte Left_slot
 .word LoadPortrait
 .word elder_portrait
-.text "Ah, Lord Leif..."
+.text "Ah, Prince Leif..."
 .byte NewLine
 .text "Welcome home."
 .byte WaitForA
@@ -224,16 +224,16 @@ ch17Belder1
 
 .byte Left_slot
 .byte ScrollText
-.text "Lord Leif..."
+.text "Prince Leif..."
 .byte NewLine
 .text "Do you have any idea just how much pain"
 .byte NewLine
 .text "we've endured over these past ten years?"
 .byte WaitForA
 .byte ScrollText
-.text "Marquess Gustav took our women."
+.text "Marquess Gustav took our women;"
 .byte NewLine
-.text "The Loptr Church took our children."
+.text "the Loptr Church took our children."
 .byte WaitForA
 .byte ScrollText
 .text "The few who tried to resist were killed in the"
@@ -510,7 +510,7 @@ ch17Bopening2
 
 .byte Left_slot
 .byte ScrollText
-.text "Now, now, Lady Amalda."
+.text "Now, now, Dame Amalda."
 .byte NewLine
 .text "Just take a breath."
 .byte WaitForA
@@ -781,12 +781,12 @@ ch17Bclosing2
 .byte NewLine
 .text "The people of my village bade me"
 .byte NewLine
-.text "give this to you, Lord Leif."
+.text "give this to you, Prince Leif."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Is this...a Master Seal?"
+.text "Is this...a master seal?"
 .byte NewLine
 .text "They were awarded only"
 .byte NewLine

@@ -66,7 +66,7 @@ ch21churchlinoan
 .byte ScrollText
 .text "Blood of the crusaders?"
 .byte NewLine
-.text "You don't mean...I have holy blood?"
+.text "You don't mean...I share their lineage?"
 .byte WaitForA
 
 .byte Left_slot
@@ -76,7 +76,7 @@ ch21churchlinoan
 .text "Your father didn't tell you?"
 .byte WaitForA
 .byte ScrollText
-.text "The Ducal House of Tarrah is descended from"
+.text "The ducal house of Tarrah is descended from"
 .byte NewLine
 .text "Saint Heim, the first of the Grannvale kings."
 .byte WaitForA
@@ -190,7 +190,6 @@ ch21opening1
 .byte Right_slot
 .text "Ah, Lewyn, are we out of time already?"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -198,6 +197,7 @@ ch21opening1
 .word leif_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "I wish we could keep talking, Prince Leif,"
 .byte NewLine
 .text "but I must be going."
@@ -247,7 +247,7 @@ ch21opening1
 .byte ScrollText
 .text "I've heard it was built to receive the prayers"
 .byte NewLine
-.text "of the Ducal Family of Tarrah..."
+.text "of the ducal family of Tarrah..."
 .byte WaitForA
 
 .byte Left_slot
@@ -381,23 +381,20 @@ ch21opening2
 
 ch21opening3dermott
 
-.byte Right_Slot
-.byte ScrollText
-
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word dermott_portrait
-.text "The army stands ready, Prince Leif."
+.text "The army stands ready, Lord Leif."
 .byte NewLine
 .text "We await your command."
 .byte WaitForA
-
 .byte ScrollText
-.word LoadPortrait
-.word augustus_portrait
+.word ClearPortrait
+.word RetractBox
 
 .byte Right_slot
+.byte ScrollText
 .text "Then there's no time to lose!"
 .byte NewLine
 .text "We storm Fort Danzig!"

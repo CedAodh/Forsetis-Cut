@@ -122,7 +122,7 @@ Berserk,TypeStaff,None,4,80,10,3,0,1,10,RankA,ItemEffectivenesses.aNoEffectivene
 Unlock,TypeStaff,None,10,80,7,3,0,1,10,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1400,<>item_descs._UnlockDesc,$5C,None,None,None,TraitStaff,$77
 Ensorcel,TypeStaff,None,5,80,8,5,0,1,10,RankC,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,2200,<>item_descs._EnsorcelDesc,$5E,None,None,None,TraitStaff,$78
 Rewarp,TypeStaff,None,5,80,6,4,0,1,10,RankA,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,1400,<>item_descs._RewarpDesc,$60,None,None,None,TraitStaff,$79
-Kia,TypeStaff,None,5,80,7,6,0,1,10,WeaponLocks.aKiaWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,10800,<>item_descs._KiaDesc,$68,None,None,None,TraitStaff | TraitUnsellable,$7A
+Kia,TypeStaff,None,5,80,7,6,0,1,10,WeaponLocks.aKiaWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,10800,<>item_descs._KiaDesc,$68,None,None,None,TraitStaff | TraitUnbreakable | TraitUnsellable,$7A
 BrokenStaff,TypeItem,None,0,0,0,-1,0,1,1,WeaponLocks.aBrokenMagicWeaponLock,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,400,<>item_descs._BrokenStaffDesc,None,None,None,None,TraitUnbreakable | TraitBroken,$7B
 LuckRing,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._LuckRingDesc,$2,None,None,None,None,$7C
 LifeRing,TypeItem,None,0,0,0,1,0,1,1,RankE,ItemEffectivenesses.aNoEffectiveness,aNoItemBonuses,8200,<>item_descs._LifeRingDesc,$4,None,None,None,None,$7D

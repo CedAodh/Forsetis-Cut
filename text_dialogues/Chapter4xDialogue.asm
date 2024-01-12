@@ -1,14 +1,12 @@
 ch4xop1
 
-.byte Left_slot
-.word LoadPortrait
-.word asbel_portrait
-
 .byte Right_slot
 .word LoadPortrait
 .word ced_portrait
 
 .byte Left_slot
+.word LoadPortrait
+.word asbel_portrait
 .text "Lord Ced, do you think the kids are safe?"
 .byte WaitForA
 
@@ -41,7 +39,7 @@ ch4xop1
 
 .byte Left_slot
 .byte ScrollText
-.text "Yessir."
+.text "Right, right..."
 .byte WaitForA
 
 .byte Right_slot
@@ -154,7 +152,9 @@ ch4xop1
 
 .byte Left_slot
 .byte ScrollText
-.text "Munster...? R-right! Munster it is!"
+.text "Hmm..."
+.byte NewLine
+.text "Then all right. Munster it is!"
 .byte NewLine
 .text "Don't you forget it, Lord Ced!"
 .byte WaitForA
@@ -186,9 +186,7 @@ ch4xop2
 .byte ScrollText
 .text "Don't make the soldiers mad at us again."
 .byte NewLine
-.text "They'll just tell us to “Quit yer bellyachin'!”"
-.byte NewLine
-.text "like last time..."
+.text "They'll yell at us to shut up like last time..."
 .byte WaitForA
 
 .byte Right_slot
@@ -196,7 +194,7 @@ ch4xop2
 .text "I don't care if they get mad!"
 .byte WaitForA
 .byte ScrollText
-.text "If I get caught cryin', an' they get angry..."
+.text "If I get caught crying, an' they get angry..."
 .byte NewLine
 .text "maybe they'll jus' send me home..."
 .byte WaitForA
@@ -292,8 +290,11 @@ ch4xasbelleiftalk
 .text "All right, enough of this blather, Lord Leif!"
 .byte NewLine
 .text "We swore to live and die together, didn't we?"
+.byte WaitForA
 .byte NewLine
-.text "Or was that whole oath just to pass the time?"
+.text "Or do you mean to imply that that promise"
+.byte NewLine
+.text "was nothing more than the fancy of a child?"
 .byte WaitForA
 .byte ScrollText
 .text "I've spent all these years with those words"
@@ -319,14 +320,16 @@ ch4xasbelleiftalk
 
 .byte Left_slot
 .byte ScrollText
-.text "I will, Asbel. Without fail."
+.text "Of course, Asbel."
 .byte NewLine
-.text "Thank you...so much for believing in me."
+.text "I'll do whatever is necessary to not have"
+.byte NewLine
+.text "your faith in me misplaced."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Always."
+.text "I know you will."
 .byte NewLine
 .text "Now, back to my magic, allow me to introduce"
 .byte NewLine
@@ -337,15 +340,13 @@ ch4xasbelleiftalk
 
 ch4xcedkarintalk
 
-.byte Left_slot
-.word LoadPortrait
-.word karin_portrait
-
 .byte Right_slot
 .word LoadPortrait
 .word ced_portrait
 
 .byte Left_slot
+.word LoadPortrait
+.word karin_portrait
 .text "Lord Ced!"
 .byte NewLine
 .text "Oh, Lord Ced, after all this time..."

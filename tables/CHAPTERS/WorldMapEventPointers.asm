@@ -5,7 +5,7 @@ aWorldMapEventPointers ; 8C/D99B
 	.long eventChapter2xWorldMapEvents ; Chapter2x
 	.long eventChapter3WorldMapEvents
 	.long eventChapter4WorldMapEvents
-	.long None ; Chapter4x
+	.long eventChapter4xWorldMapEvents ; Chapter4x
 	.long None ; Chapter5
 	.long None ; Chapter6
 	.long eventChapter7WorldMapEvents

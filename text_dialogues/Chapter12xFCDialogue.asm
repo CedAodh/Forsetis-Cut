@@ -3,7 +3,7 @@ salemtrude
 .byte right_slot
 .word $3A00
 .word salem_portrait
-.text "Trude! Lower your sword!"
+.text "Troude! Lower your sword!"
 .byte NewLine
 .text "It's me, Salem!"
 .byte WaitForA
@@ -81,7 +81,7 @@ salemtrudealternate
 .byte right_slot
 .word LoadPortrait
 .word salem_portrait
-.text "Trude! Lower your sword!"
+.text "Troude! Lower your sword!"
 .byte NewLine
 .text "It's me, Salem!"
 .byte WaitForA
@@ -114,7 +114,7 @@ salemtrudealternate
 
 .byte right_slot
 .byte ScrollText
-.text "I understand your apprehension, Trude—"
+.text "I understand your apprehension, Troude—"
 .byte NewLine
 .text "but I assure you, I speak the truth."
 .byte WaitForA

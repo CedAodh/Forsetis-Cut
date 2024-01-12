@@ -5,7 +5,7 @@ ch24door1
 .word boy_portrait
 .text "Huh?"
 .byte NewLine
-.text "This door sure is strange, ain't it?"
+.text "What's going on with this door?"
 .byte WaitForA
 
 .byte EndText
@@ -14,7 +14,6 @@ ch24door1
 ch24door2
 
 .byte Right_slot
-.byte ScrollText
 .word LoadPortrait
 .word boy_portrait
 .text "Oh! Uh... I guess it's busted..."
@@ -43,11 +42,9 @@ ch24mareetagalzus
 .byte WaitForA
 
 .byte Right_slot
-.text "Why did you come back?"
+.text "...Why did you come back?"
 .byte NewLine
-.text "A sword isn't a little girl's toy,"
-.byte NewLine
-.text "you know!"
+.text "A sword isn't a little girl's toy, you know."
 .byte WaitForA
 
 .byte Left_slot
@@ -289,7 +286,6 @@ ch24ced
 .byte NewLine
 .text "to stage such a diversion..."
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -297,6 +293,7 @@ ch24ced
 .word augustus_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "August, why did you insist on"
 .byte NewLine
 .text "splitting our army in three?"
@@ -361,9 +358,9 @@ ch24ced
 .text "Prince Leif..."
 .byte WaitForA
 .byte ScrollText
-.text "Leave the weaker foes to me."
+.text "Leave the weaker foes to me—"
 .byte NewLine
-.text "You just focus on Raydrik!"
+.text "you just focus on Raydrik!"
 .byte WaitForA
 
 .byte Right_slot
@@ -409,9 +406,9 @@ ch24saias
 
 .byte Left_slot
 .byte ScrollText
-.text "I can't guarantee this, but if you still have"
+.text "I cannot guarantee this...but if we've that"
 .byte NewLine
-.text "that young woman Mareeta with you, we may"
+.text "swordswoman Mareeta among our ranks, we may"
 .byte NewLine
 .text "be able to avoid fighting him altogether."
 .byte WaitForA
@@ -423,9 +420,8 @@ ch24saias
 
 .byte Right_slot
 .byte ScrollText
-.text "Then Mareeta could be..."
+.text "You said Mareeta...?"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .byte ScrollText
@@ -433,6 +429,7 @@ ch24saias
 .word augustus_portrait
 
 .byte Right_slot
+.byte ScrollText
 .text "Wait! August, why did you insist on"
 .byte NewLine
 .text "splitting our army in three?"

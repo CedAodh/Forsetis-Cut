@@ -1,14 +1,12 @@
 leifdagdar
 
-	.byte Left_slot
-	.word $3A00
-	.word leif_portrait
-
 	.byte Right_Slot
 	.word $3A00
 	.word dagdar_portrait
 
 	.byte Left_slot
+	.word $3A00
+	.word leif_portrait
 	.text "Dagdar?"
 	.byte WaitForA
 

@@ -2072,7 +2072,7 @@ trudeepi
 .byte $04
 .text "Immediately after the"
 .byte NewLine
-.text "war's end, Trude slipped"
+.text "war's end, Troude slipped"
 .byte NewLine
 .text "away in all the confusion."
 .byte NewLine

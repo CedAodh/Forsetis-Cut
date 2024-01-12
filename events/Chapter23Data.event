@@ -25,6 +25,8 @@ eventChapter23Data ; B1/8000
 		UNIT Civilian21, NPC, [10, 16], [10, 16], Ishtar, [], 1, False, [$02, $0B, $00, $00]
 		UNIT Civilian22, NPC, [11, 16], [11, 16], Ishtar, [], 1, False, [$02, $0B, $00, $00]
 		UNIT Civilian18, NPC, [10, 14], [10, 14], Ishtar, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Alphand, Enemy, [15, 15], [15, 15], Alphand, [Jormungand, Silence, Hel], 13, True, [$01, $03, $00, $80]
+		UNIT Faden, Enemy, [16, 17], [16, 17], Faden, [FlameSword, MasterLance, Vulnerary], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	_ThiefReinforcementsCameraCoordinates ; B1/81A8
@@ -146,8 +148,8 @@ eventChapter23Data ; B1/8000
 	;	.byte 8, 7
 
 	_AlphandFadenGroup ; B1/83DA
-		UNIT Alphand, Enemy, [15, 15], [15, 15], Alphand, [Jormungand, Silence, Hel], 13, True, [$01, $03, $00, $80]
 		UNIT Faden, Enemy, [15, 15], [16, 17], Faden, [FlameSword, MasterLance, Vulnerary], 20, False, [$00, $00, $00, $00]
+		UNIT Alphand, Enemy, [15, 15], [15, 15], Alphand, [Jormungand, Silence, Hel], 13, True, [$01, $03, $00, $80]
 	UNIT
 
 	_StartingPositions ; B1/8404

@@ -12,7 +12,7 @@ eventChapter2Data ; B1/F91C
 		.byte 10, 7
 
 	_HunterGroup ; B1/F936
-		UNIT LifisCrewHunter, Enemy, [9, 3], [10, 4], Bucks, [IronBow, Vulnerary], 3, False, [$02, $08, $00, $00]
+		UNIT LifisCrewHunter, Enemy, [9, 3], [10, 4], Bucks, [IronBow, Vulnerary], 4, False, [$02, $08, $00, $00]
 		UNIT LifisCrewHunter, Enemy, [9, 3], [11, 4], Bucks, [IronBow], 3, False, [$02, $08, $00, $00]
 	UNIT
 
@@ -21,8 +21,8 @@ eventChapter2Data ; B1/F91C
 
 	_TopPirateReinforcementsGroup ; B1/F962
 		UNIT LifisCrewPirate, Enemy, [22, 7], [21, 7], Bucks, [HandAxe], 2, False, [$00, $00, $00, $00]
-		UNIT LifisCrewPirate, Enemy, [22, 6], [21, 6], Bucks, [IronAxe], 2, False, [$00, $00, $00, $00]
-		UNIT LifisCrewPirate, Enemy, [22, 8], [21, 8], Bucks, [SteelAxe, Vulnerary], 10, False, [$02, $09, $00, $01]
+		UNIT LifisCrewPirate, Enemy, [22, 6], [21, 6], Bucks, [IronAxe], 4, False, [$00, $00, $00, $00]
+		UNIT LifisCrewPirate, Enemy, [22, 8], [21, 8], Bucks, [SteelAxe, Vulnerary], 8, False, [$02, $09, $00, $01]
 	UNIT
 
 	_MiddlePirateReinforcementsCameraCoordinates ; B1/F9A0
@@ -87,7 +87,7 @@ eventChapter2Data ; B1/F91C
 		.byte 8, 7
 
 	_BishopGroup ; B1/FAFE
-		UNIT FriegeBishop2, Enemy, [9, 3], [9, 3], Bucks, [], 1, False, [$00, $00, $00, $00]
+		UNIT Kant, Enemy, [9, 3], [9, 3], Bucks, [], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/FB14

@@ -436,9 +436,9 @@ secretshop
 .byte ScrollText
 .text "If you want to apply for one, you're outta luck!"
 .byte NewLine
-.text "It wouldn't much of a secret if everyone could"
+.text "It wouldn't be much of a secret if everyone"
 .byte NewLine
-.text "get a card just like that. Uh-huh, I know!"
+.text "could get a card just like that. Uh-huh, I know!"
 .byte WaitForA
 .byte ScrollText
 .text "Looking at my records...my most recent"

@@ -51,7 +51,7 @@ ch21xopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Clear as a vial of pure water, sir."
+.text "Clear as the waters of the River Thracia."
 .byte WaitForA
 
 .byte EndText
@@ -191,7 +191,7 @@ ch21xclosing
 
 .byte Left_slot
 .byte ScrollText
-.text "You know, Miletos' climate is quite pleasant"
+.text "You know, Miletos's climate is quite pleasant"
 .byte NewLine
 .text "this time of year. I think it would be an ideal"
 .byte NewLine

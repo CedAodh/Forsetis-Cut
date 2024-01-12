@@ -124,7 +124,7 @@ ch18xavierrecruitment
 .byte NewLine
 .text "they're yours."
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "To fight against the empire is all I could want!"
 .byte WaitForA
 
@@ -507,19 +507,17 @@ ch18opening2
 
 .byte Right_slot
 .word LoadPortrait
-.word leif_portrait
+.word augustus_portrait
 
 .byte Left_slot
 .word LoadPortrait
-.word augustus_portrait
-
-.byte Right_slot
+.word leif_portrait2
 .text "August, are you certain this is a good idea,"
 .byte NewLine
 .text "splitting our forces in two like this?"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .text "It's a necessary maneuver if we wish"
 .byte NewLine
 .text "to protect the castle's treasure."
@@ -530,21 +528,21 @@ ch18opening2
 .text "two teams working in tandem."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "And how do we talk down General Xavier?"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "With great difficulty, I imagine."
 .byte WaitForA
 .byte ScrollText
 .text "If you're determined to save him, however,"
 .byte NewLine
-.text "I'd try having the hostages speak with"
+.text "I'd try having the hostages speak with the"
 .byte NewLine
-.text "the eight adjutants. Perhaps they'll see reason."
+.text "eight adjutants. Perhaps they'll see reason."
 .byte WaitForA
 .byte ScrollText
 .text "Just take care that they're not spotted by"
@@ -554,9 +552,14 @@ ch18opening2
 .text "of an escaped hostage, the plan is ruined."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Understood."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.word ClearPortrait
 
 .byte Left_slot
 .byte ScrollText
@@ -564,8 +567,12 @@ ch18opening2
 .word RetractBox
 
 .byte Right_slot
+.word LoadPortrait
+.word leif_portrait
 .byte NewLine
-.text "All right, everyone! Take breaching positions!"
+.text "All right, everyone!"
+.byte NewLine
+.text "Take breaching positions!"
 .byte WaitForA
 .byte ScrollText
 .text "By day's end, the flag of the Gáe Bolg"
@@ -580,7 +587,7 @@ ch18closing1
 
 .byte Right_slot
 .word LoadPortrait
-.word leif_portrait
+.word leif_portrait2
 
 .byte Left_slot
 .word LoadPortrait
@@ -648,9 +655,6 @@ ch18closing3miranda
 .word LoadPortrait
 .word miranda_portrait
 
-.byte Right_slot
-.byte ScrollText
-
 .byte Left_slot
 .text "Prince!"
 .byte NewLine
@@ -660,6 +664,7 @@ ch18closing3miranda
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Princess Miranda? Ah, I haven't"
 .byte NewLine
 .text "forgotten—the liberation of Ulster."
@@ -705,9 +710,6 @@ ch18closing4
 .word LoadPortrait
 .word augustus_portrait
 
-.byte Right_slot
-.byte ScrollText
-
 .byte Left_slot
 .text "I apologize for disturbing you, Prince,"
 .byte NewLine
@@ -729,6 +731,7 @@ ch18closing4
 .byte WaitForA
 
 .byte Right_slot
+.byte ScrollText
 .text "Ulster? What are you talking about?"
 .byte NewLine
 .text "Calm down, and explain everything"
@@ -787,7 +790,7 @@ ch18closing4
 .byte ScrollText
 .text "Our city faces its darkest hour!"
 .byte NewLine
-.text "Lord Leif, you're the only hope for our people!"
+.text "Prince Leif, you're our only hope!"
 .byte WaitForA
 
 .byte EndText
@@ -820,7 +823,7 @@ ch18closing5
 .byte ScrollText
 .word LoadPortrait
 .word augustus_portrait
-.text "I agree with Count Dryas' assessment."
+.text "I agree with Count Dryas's assessment."
 .byte WaitForA
 .byte ScrollText
 .text "A frontal assault against the empire"
@@ -936,7 +939,7 @@ ch18closing5
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
-.word leif_portrait2
+.word leif_portrait
 .text "Why not bring the whole army, Dryas?"
 .byte NewLine
 .text "I'll go with you. We can get a head start"
@@ -1056,7 +1059,7 @@ ch18closing5
 .byte ScrollText
 .text "Mm..."
 .byte NewLine
-.text "I've tarried long enough."
+.text "I've tarried long enough;"
 .byte NewLine
 .text "I must be off."
 .byte WaitForA

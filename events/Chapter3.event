@@ -521,18 +521,16 @@ eventChapter3Events ; 8C/E435
 		
 		YIELD
 
-		MOVE_UNIT ThraciaBishop, [11, 28], [1, 27], 1, None
+		MOVE_UNIT Kant, [11, 28], [1, 27], 1, None
 		YIELD_UNK
 
 		WAIT_MOVE
 		YIELD
 
-		macroRemoveUnit ThraciaBishop
+		;MOVE_UNIT Kant, [11, 28], [11, 27], 1, _BishopMovestring
+		;YIELD_UNK
 
-		MOVE_UNIT ThraciaBishop, [11, 28], [11, 27], 1, _BishopMovestring
-		YIELD_UNK
-
-		macroRemoveUnit ThraciaBishop
+		macroRemoveUnit Kant
 	END2
 
 	_BishopMovestring ; 8C/EC70
@@ -778,16 +776,16 @@ eventChapter3Events ; 8C/E435
 		
 		macroAddCharacterByte Halvan, structCharacterDataRAM.LeadershipStars, 1
 		
-		macroSetCharacterWord Leif, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Finn, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Osian, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Halvan, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Tanya, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Dagdar, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Ronan, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Safy, structCharacterDataRAM.Leader, Finn
-		macroSetCharacterWord Lifis, structCharacterDataRAM.Leader, Finn
+		macroSetCharacterWord Leif, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Finn, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Osian, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Halvan, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Tanya, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Dagdar, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Ronan, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Safy, structCharacterDataRAM.Leader, Diarmuid
+		macroSetCharacterWord Lifis, structCharacterDataRAM.Leader, Diarmuid
 		
 		FADE_OUT $01
 		YIELD

@@ -653,7 +653,7 @@ _Return_name
 	.word $0000
 
 _Hammerne_name
-	.text "Ha{mm}nerne "
+	.text "Repair"
 	.word $0000
 
 _Thief_name

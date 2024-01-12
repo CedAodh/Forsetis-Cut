@@ -5,25 +5,24 @@ ch2op1
 .byte Right_slot
 .word LoadPortrait
 .word augustus_potrait
+.text "Bucks."
 
 .byte Left_slot
 .word LoadPortrait
 .word bucks_potrait
 
-.byte Right_slot
-.byte $09 ; font 9(always use font 9)	
-.text "Bucks, is this kind of body count"
+.byte Right_slot	
 .byte NewLine
-.text "really necessary?"
+.text "Is this kind of body count really necessary?"
 .byte WaitForA
-.byte ScrollText	
+.byte NewLine	
 .text "We're here to make coin,"
 .byte NewLine
 .text "not gut everything that moves."
 .byte WaitForA
 
 .byte Left_slot
-.text "Look 'ere, smart-aleck."
+.text "Look 'ere, smart aleck."
 .byte NewLine
 .text "We got us a nice division of labor goin'."
 .byte WaitForA
@@ -35,7 +34,7 @@ ch2op1
 .text "'ow to go about plunderin'."
 .byte WaitForA
 .byte ScrollText
-.text "Oh, and if it's them Freeblade folk"
+.text "Oh, and if it be them Freeblade folk"
 .byte NewLine
 .text "yer worried about, we already saw to them."
 .byte WaitForA
@@ -56,7 +55,7 @@ ch2op1
 
 .byte Left_slot
 .byte ScrollText
-.text "Sure am. The boss grabbed one of the village"
+.text "Sure am. The boss grabbed one o' the village"
 .byte NewLine
 .text "folk an' used his talents with a knife"
 .byte NewLine
@@ -65,7 +64,7 @@ ch2op1
 .byte ScrollText
 .text "Stubborn fella, though—"
 .byte NewLine
-.text "mighta survived if he'd talked sooner."
+.text "mighta survived if he talked sooner."
 .byte WaitForA
 
 .byte Right_slot
@@ -106,7 +105,8 @@ ch2op1
 .text "Well, before anything else,"
 .byte NewLine
 .text "I must alert my benefactor..."
-.byte WaitForA, EndText
+.byte WaitForA
+.byte EndText
 	
 ch2op2
 
@@ -117,7 +117,6 @@ ch2op2
 .byte Left_Slot
 .word LoadPortrait
 .word leif_portrait2
-.byte $09 ; font 9(always use font 9)
 .text "Commander, over here!"
 .byte NewLine
 .text "That village is being raided!"
@@ -133,7 +132,7 @@ ch2op2
 
 .byte Left_Slot
 .byte ScrollText
-.text "And we have to move faster!"
+.text "It's also time that we step in!"
 .byte NewLine
 .text "We cannot stand by and allow this to happen!"
 .byte WaitForA
@@ -149,7 +148,6 @@ ch2op3
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait2
-.byte $09 ; font 9(always use font 9)
 .text "Finn, look here! That village is being raided!"
 .byte WaitForA
 
@@ -177,13 +175,12 @@ ch2op4
 .byte Right_slot
 .word LoadPortrait; load portrait
 .word leif_portrait2
-.byte $09 ; font 9(always use font 9)
 .text "Is that... No! Another pirate raid?!"
 .byte NewLine
 .text "Is no place safe anymore?"
 .byte WaitForA
 .byte ScrollText
-.text "Wait, those are the colors that Lifis' gang"
+.text "Wait, those are the colors that Lifis's gang"
 .byte NewLine
 .text "once wore..."
 .byte WaitForA
@@ -205,8 +202,7 @@ ch2villageronan
 
 .byte Left_slot
 .word LoadPortrait
-.word oldlady_portrait
-.byte $09 ; font 9(always use font 9)	
+.word oldlady_portrait	
 .text "Ronan, stop!"
 .byte NewLine
 .text "Ronan!"
@@ -270,7 +266,6 @@ ch2villageronanattacked
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.byte $09 ; font 9(always use font 9)
 .text "There was a ship here that coulda made"
 .byte NewLine
 .text "its way to the Corsair Isles,"
@@ -285,7 +280,6 @@ ch2villagespeedring
 .byte Right_Slot
 .word LoadPortrait
 .word teenageboy_portrait
-.byte $09 ; font 9(always use font 9)
 .text "You lot just had to play hero, didn't you?"
 .byte NewLine
 .text "Now this whole village will be razed"
@@ -359,7 +353,6 @@ ch2villagespeedringattacked
 .byte Right_slot
 .word LoadPortrait
 .word beardedman_portrait
-.byte $09 ; font 9(always use font 9)
 .text "A ship to take you to the Corsair Isles?"
 .byte NewLine
 .text "Sure, just use mine—it's about five hundred feet"
@@ -369,7 +362,7 @@ ch2villagespeedringattacked
 .byte ScrollText
 .text "Sorry, chum, but every sea-worthy vessel"
 .byte NewLine
-.text "was sunk in all this fighting."
+.text "was sunk in all this fightin'."
 .byte WaitForA
 
 .byte EndText
@@ -380,7 +373,6 @@ ch2villagevulnerary
 .byte Right_slot
 .word LoadPortrait
 .word beardedman_portrait
-.byte $09 ; font 9(always use font 9)
 .text "These pirates grow bolder by the day!"
 .byte NewLine
 .text "Just recently, I heard that a cleric"
@@ -401,7 +393,6 @@ ch2villagevulneraryattacked
 .byte Right_slot
 .word LoadPortrait
 .word oldman2_portrait
-.byte $09 ; font 9(always use font 9)
 .text "What precious few ships we had 'ave been sunk"
 .byte NewLine
 .text "in all this fighting. There's no way to get to the"
@@ -476,7 +467,6 @@ ch2endinggaiden
 .byte Left_slot
 .word LoadPortrait
 .word augustus_potrait
-.byte $09 ; font 9(always use font 9)
 .text "Lord Leif, I presume?"
 .byte WaitForA
 
@@ -555,7 +545,6 @@ ch2endingreg
 .byte Left_slot
 .word LoadPortrait
 .word augustus_potrait
-.byte $09 ; font 9(always use font 9)
 .text "Lord Leif, I presume?"
 .byte WaitForA
 

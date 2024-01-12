@@ -2723,7 +2723,7 @@
 		KiaWeaponEffect					= None
 		KiaSkills2						= None
 		KiaSkills3						= None
-		KiaTraits						= TraitStaff | TraitUnsellable
+		KiaTraits						= TraitStaff | TraitUnbreakable | TraitUnsellable
 		KiaIcon							= $7A
 
 	BrokenStaff							= 124

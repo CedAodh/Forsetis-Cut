@@ -72,7 +72,7 @@ eventChapter6Data ; B1/E22A
 	;	.byte 8, 7
 
 	_HicksGroup ; B1/E4B0
-		UNIT Hicks, Player, [14, 15], [14, 15], Finn, [Poleax, IronSword, Vulnerary], 8, False, [$00, $00, $00, $00]
+		UNIT Hicks, Player, [14, 15], [14, 15], Diarmuid, [Poleax, IronSword, Vulnerary], 8, False, [$00, $00, $00, $00]
 	UNIT
 
 	_KnightReinforcementsCameraCoordinates2 ; B1/E4C6
@@ -90,7 +90,7 @@ eventChapter6Data ; B1/E22A
 
 	_CedGroup ; B1/E51C
 		UNIT CedChp4x, NPC, [24, 0], [24, 1], CedChp4x, [Forseti, Light, Mend, Vulnerary], 5, False, [$00, $00, $00, $00]
-                UNIT Asbel, NPC, [23, 0], [23, 4], CedChp4x, [Grafcalibur, DoorKey, Vulnerary], 1, False, [$0E, $11, $02, $80]
+        UNIT Asbel, NPC, [23, 0], [23, 4], CedChp4x, [Grafcalibur, Wind, BodyRing, Vulnerary], 1, False, [$0E, $11, $02, $80]
 		UNIT MagiSquadMyrmidon2, NPC, [23, 0], [24, 5], CedChp4x, [KillingEdge], 7, False, [$00, $00, $00, $00]
 		UNIT MagiSquadMyrmidon1, NPC, [23, 0], [23, 6], CedChp4x, [IronSword], 4, False, [$00, $00, $00, $00]
 		UNIT MagiSquadFighter, NPC, [23, 0], [22, 5], CedChp4x, [KillerAxe], 7, False, [$00, $00, $00, $00]
@@ -115,7 +115,7 @@ eventChapter6Data ; B1/E22A
 	;	.byte 8, 7
 
 	_BishopGroup ; B1/E628
-		UNIT FriegeBishop2, NPC, [26, 11], [22, 6], Finn, [], 2, False, [$00, $00, $00, $00]
+		UNIT Kant, NPC, [26, 11], [22, 6], Diarmuid, [], 2, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/E63E

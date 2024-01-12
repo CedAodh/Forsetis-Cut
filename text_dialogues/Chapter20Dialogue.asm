@@ -271,10 +271,10 @@ ch20opening3
 .text "have sacrificed themselves to get us this far."
 .byte WaitForA
 .byte ScrollText
-.text "Don't forget the bigger picture."
+.text "Don't forget the bigger picture:"
 .byte WaitForA
 .byte NewLine
-.text "We're keeping the bulk of the enemy's forces"
+.text "we're keeping the bulk of the enemy's forces"
 .byte NewLine
 .text "busy here, which frees Seliph's army to march"
 .byte NewLine
@@ -607,7 +607,6 @@ ch20closing3
 .byte NewLine
 .text "So...don't cry anymore, okay?"
 .byte WaitForA
-.byte ScrollText
 
 .byte Right_slot
 .byte ScrollText
@@ -615,6 +614,7 @@ ch20closing3
 .word leif_portrait
 
 .byte Left_slot
+.byte ScrollText
 .text "Prince Leif, I have a request, if I may."
 .byte NewLine
 .text "Would you permit me"

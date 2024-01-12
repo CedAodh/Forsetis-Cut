@@ -7916,7 +7916,7 @@ rlRollRandomBases ; 83/AA35
 	.al
 	.autsiz
 	.databank `aClassDataBuffer
-
+	
 	lda #4
 	jsl rlUnknown80B0E6
 

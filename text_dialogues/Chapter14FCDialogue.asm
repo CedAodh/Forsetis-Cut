@@ -1066,7 +1066,7 @@ leifmeetsarion
 .byte left_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "Duchess Linoan!"
+.text "Linoan!"
 .byte NewLine
 .text "Are you all right?!"
 .byte NewLine
@@ -1228,7 +1228,7 @@ ch14wm3
 .byte NewLine
 .text "that stands to forever alter history"
 .byte NewLine
-.text "of the Thracian peninsula..."
+.text "of the Thracian Peninsula..."
 .byte WaitForA
 
 .byte EndText

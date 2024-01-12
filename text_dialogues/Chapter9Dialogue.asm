@@ -400,12 +400,16 @@ ch9villagestaminasrink
 .byte Right_slot
 .word LoadPortrait
 .word oldman_portrait
-.text "What's the matter, chum? You're lookin'"
+.text "What's the matter, chum?"
 .byte NewLine
-.text "a mite pale, there. Been workin' too hard?"
+.text "You're lookin' a mite pale, there."
+.byte NewLine
+.text "Been workin' too hard?"
 .byte WaitForA
 .byte ScrollText
-.text "Hey, I know the feeling. Got just the thing!"
+.text "Hey, I know the feeling."
+.byte NewLine
+.text "Got just the thing!"
 .byte NewLine
 .text "It's called a Stamina Drink."
 .byte WaitForA

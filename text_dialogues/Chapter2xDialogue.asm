@@ -1,15 +1,11 @@
 ch2xop1
-	.byte Left_slot ; Left slot
-    .word LoadPortrait    ; load portrait
-    .word shiva_portrait
-
     .byte Right_Slot ; Right slot
     .word LoadPortrait    ; load portrait
     .word lifis_portrait
 	
-	.byte Left_slot ; opentext left
-	.byte $09 ; font 9(always use font 9)
-	
+	.byte Left_slot ; Left slot
+    .word LoadPortrait    ; load portrait
+    .word shiva_portrait
 	.text "I shouldn't have to say this, Lifis,"
 	.byte NewLine
 	.text "but don't you dare lay a hand on the cleric."
@@ -19,14 +15,10 @@ ch2xop1
 	.text "Oh, uh... R-right. Got it."
 	.byte WaitForA
 	.byte ScrollText
-	
-	.byte Left_slot
-	.byte ScrollText
-	
-	.byte Right_Slot
 	.word ClearPortrait
 	
-	.byte Left_slot
+	.byte Left_Slot
+	.byte ScrollText
 	.word ClearPortrait
     .word LoadPortrait    ; load portrait
     .word lifis_portrait
@@ -40,7 +32,7 @@ ch2xop1
 	.byte NewLine
 	.text "Safy. We both know I could get"
 	.byte NewLine
-	.text "anything you want."
+	.text "anythin' you want."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Just go along with me, yeah?"
@@ -110,7 +102,7 @@ ch2xop1
 	.text "Well... I..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Look, you're out to fulfill your Lady's hopes,"
+	.text "Look, you're out to fulfill your lady's hopes,"
 	.byte NewLine
 	.text "right? If I say yes, will you fulfill"
 	.byte NewLine
@@ -124,7 +116,7 @@ ch2xop1
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "It's a deal. I'll talk to my boys,"
+	.text "It's a deal. I'll talk to the boys,"
 	.byte NewLine
 	.text "make sure everybody is on board."
 	.byte NewLine
@@ -141,8 +133,7 @@ ch2xop1
 ch2xop2
 	.byte Right_Slot
     .word LoadPortrait
-    .word leif_portrait
-	.byte $09 ; font 9(always use font 9)
+    .word leif_portrait2
 	.text "Of all the rotten luck...!"
 	.byte NewLine
 	.text "We just had to land right as it was getting dark."
@@ -187,18 +178,14 @@ ch2xop2
 	.byte EndText
 	
 ch2xturn2
-	.byte Left_slot ; Left slot
-    .word LoadPortrait    ; load portrait
-    .word bandit_portrait
-
     .byte Right_Slot ; Right slot
     .word LoadPortrait    ; load portrait
     .word lifis_portrait
 	
-	.byte Left_slot ; opentext left
-	.byte $09 ; font 9(always use font 9)
-	
-	.text "Boss, you really mean to make for Tarrah?"
+	.byte Left_slot ; Left slot
+    .word LoadPortrait    ; load portrait
+    .word bandit_portrait
+	.text "Boss, you really mean t' make fer Tarrah?"
 	.byte NewLine
 	.text "I'm goin' pale jus' thinkin' about fightin'"
 	.byte NewLine
@@ -211,7 +198,7 @@ ch2xturn2
 	.byte WaitForA
 	
 	.byte Right_Slot
-	.text "I know, I know, I'm just leading her on!"
+	.text "I know, I know—I'm just leading her on!"
 	.byte NewLine
 	.text "Gotta get my foot in the door with that lass."
 	.byte WaitForA
@@ -228,17 +215,19 @@ ch2xturn2
 	.word LoadPortrait    ; load portrait
     .word bandit1_portrait
 	
-	.text "Hey Boss, we got a couple do-gooders"
+	.text "Hey, boss, we got a couple do-gooders"
 	.byte NewLine
 	.text "scurryin' in from the west!"
 	.byte WaitForA
 	
 	.byte Right_slot
 	.byte ScrollText
-	.text "What? Here? You gotta be joking!"
+	.text "What? Here?"
+	.byte NewLine
+	.text "You gotta be joking!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "...All right boys, let's go say hello!"
+	.text "...All right, boys, how 'bout we say hello!"
 	.byte NewLine
 	.text "The sharks are gonna be well-fed tonight!"
 	.byte WaitForA
@@ -246,15 +235,14 @@ ch2xturn2
 	.byte EndText
 	
 ch2xeyvelLeif
-	.byte Left_slot
-	.word LoadPortrait
-	.word leif_portrait
 	
 	.byte Right_slot
 	.word LoadPortrait
 	.word eyvel_portrait
 	
 	.byte Left_slot
+	.word LoadPortrait
+	.word leif_portrait
 	.text "The pirates seem to have greater numbers..."
 	.byte NewLine
 	.text "Can we make it through this, Commander?"
@@ -263,7 +251,7 @@ ch2xeyvelLeif
 	.byte Right_slot
 	.text "Numbers aren't everything."
 	.byte NewLine
-	.text "We keep our heads about us,"
+	.text "As long as we keep our heads about us,"
 	.byte NewLine
 	.text "we'll make it through just fine."
 	.byte WaitForA
@@ -281,12 +269,14 @@ ch2xeyvelLeif
 	.byte ScrollText
 	.text "Hah! “Thug” is too generous for Lifis."
 	.byte NewLine
-	.text "He's small-time—ain't even worth killing."
+	.text "He's a small-time crook—it's not even worth the"
+	.byte NewLine
+	.text "damage on a cheap imperial lance to gut him."
 	.byte WaitForA
 	.byte ScrollText
-	.text "When we get our hands on him, take him alive,"
+	.text "Once he's in sight, take him alive, and make"
 	.byte NewLine
-	.text "and don't let him go after the fighting's done."
+	.text "certain everyone knows not to [Release] him."
 	.byte WaitForA
 	.byte ScrollText
 	.text "We'll bring him back to Iz and see that he gets"
@@ -300,7 +290,6 @@ ch2xend1
 	.byte Left_slot
 	.word LoadPortrait
 	.word leif_portrait
-	
 	.text "The pirates seem to have escaped,"
 	.byte NewLine
 	.text "but never mind that—is the cleric safe?"
@@ -313,14 +302,8 @@ ch2xend1
 	.byte WaitForA
 	.byte ScrollText
 	
-	.byte Left_slot
-	.byte ScrollText
-	
-	.byte Right_slot
-	.word ClearPortrait
 	.word LoadPortrait
 	.word safie_portrait
-	
 	.text "Thank you, kind folk. I owe you my—"
 	.byte WaitForA
 	.byte ScrollText
@@ -484,22 +467,19 @@ ch2xend1
 	
 ch2xend2
 
-.word PlayMusic
-.byte $41
-
-.byte Left_slot
-.byte ScrollText
-
 .byte Right_Slot
 .byte ScrollText
+.word PlayMusic
+.byte $41
 .word LoadPortrait
 .word lifis_portrait
 .text "Well, don't keep me in suspense."
 .byte NewLine
-.text "What are you gonna do with me?"
+.text "What're you gonna do with me?"
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "That's up to the villagers of Iz. We're taking"
 .byte NewLine
 .text "you back there to answer for your crimes."
@@ -523,13 +503,13 @@ ch2xend2
 .byte NewLine
 .text "I said I'd go to Tarrah with you!"
 .byte WaitForA
-.byte ScrollText
 
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
 
 .byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word safie_portrait
 .text "...Lord Leif, Lifis is not an evil man."
@@ -559,10 +539,8 @@ ch2xend2
 
 .byte ScrollText
 .word ClearPortrait
-.word RetractBox
 
 .byte Right_slot
-.byte ScrollText
 .text "Hah, I've cheated death once again!"
 .byte NewLine
 .text "Just gotta wait for the right opening,"

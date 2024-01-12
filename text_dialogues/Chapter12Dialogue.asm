@@ -410,9 +410,7 @@ ch12opening1
 .byte Right_slot
 .text "It's already past dusk, Salem."
 .byte NewLine
-.text "How can you be this energetic now,"
-.byte NewLine
-.text "especially with how bad you were roughed up?"
+.text "And what about your injuries?"
 .byte WaitForA
 
 .byte Left_slot
@@ -424,11 +422,11 @@ ch12opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Still, those Loptrian lunatics are a sadistic"
+.text "Still, I'd say those Loptr lunatics are the"
 .byte NewLine
-.text "bunch, ain't they? If we hadn't happened to"
+.text "definition of sadistic. If we hadn't happened"
 .byte NewLine
-.text "pass by, you'd have been a goner for sure."
+.text "to pass by, you'd have been a goner for sure."
 .byte WaitForA
 
 .byte Left_slot
@@ -443,26 +441,26 @@ ch12opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "“Betrayal” is a bit of a stretch, ain't it?"
+.text "“Betrayal” is a bit of a stretch, right?"
 .byte NewLine
 .text "I mean, you just said you wanted to leave"
 .byte NewLine
-.text "the church, that's all."
+.text "the church. You didn't act against them."
 .byte WaitForA
 .byte ScrollText
-.text "It ain't right to kill a man just because"
+.text "It's not right to kill a man just because"
 .byte NewLine
 .text "he wants to go his own way."
 .byte WaitForA
 .byte ScrollText
-.text "...But I gotta ask, why'd you want"
+.text "...Though now I have to ask—why'd you want"
 .byte NewLine
 .text "to leave in the first place?"
 .byte WaitForA
 .byte ScrollText
-.text "I hear the Loptrian bishops have even more"
+.text "I hear a priest of Loptr carries even more"
 .byte NewLine
-.text "power than the emperor now. That's an awful"
+.text "power than the emperor now. That's an awfully"
 .byte NewLine
 .text "luxurious position to just walk away from."
 .byte WaitForA
@@ -481,13 +479,13 @@ ch12opening1
 .text "Hmm... Simple as that, huh?"
 .byte WaitForA
 .byte ScrollText
-.text "Y'know, I like the cut of your jib, kid."
+.text "Well, whatever it is, it doesn't affect us."
 .byte NewLine
-.text "How about you join up with me and my crew?"
+.text "How about you join up with me and my band?"
 .byte NewLine
 .text "We could use someone like you."
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "If you're up for it, that is."
 .byte WaitForA
 
@@ -510,23 +508,23 @@ ch12opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm not in the hobby of murder, myself—"
+.text "Well, we are thieves, not murderers."
 .byte NewLine
-.text "but our crew has swelled in number lately,"
+.text "That said, our numbers are growing,"
 .byte NewLine
-.text "and I can't say the same for the new folks."
+.text "and some...disagree with me."
 .byte WaitForA
 .byte ScrollText
-.text "Especially this one hothead, Colho. Him and"
+.text "Particularly this one hothead, Cullough."
 .byte NewLine
-.text "his lackeys are gettin' antsy about how"
+.text "He and his goons are getting antsy about how"
 .byte NewLine
 .text "I won't let them drop any bodies during a heist."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "It's more than that. Colho and his followers"
+.text "It's more than that. Cullough and his followers"
 .byte NewLine
 .text "are truly wicked men—they've been attacking"
 .byte NewLine
@@ -535,19 +533,21 @@ ch12opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah... So you already heard about them, huh?"
+.text "Ah... So you've already heard about them."
 .byte WaitForA
 .byte ScrollText
-.text "I'll get right to the point, then: I'm plannin' on"
+.text "I'll get right to the point, then: I plan on"
 .byte NewLine
-.text "cuttin' ties with the lot of them. Long as Trude"
+.text "cutting ties with the lot of them. As long as"
 .byte NewLine
-.text "comes with me, I can manage just fine."
+.text "Troude comes with me, I can manage just fine."
 .byte WaitForA
 .byte ScrollText
-.text "Of course, I'm hoping you'll also come along,"
+.text "Of course, I'm hoping I can bring"
 .byte NewLine
-.text "Salem."
+.text "you along as well, Salem."
+.byte NewLine
+.text "I like you, and I want you to stick around."
 .byte WaitForA
 
 .byte Left_slot
@@ -563,14 +563,7 @@ ch12opening1
 .byte ScrollText
 .text "Hah... All right, all right."
 .byte NewLine
-.text "Anyhow, I'm headed back inside."
-.byte WaitForA
-.byte ScrollText
-.text "Looks like you get your wish,"
-.byte NewLine
-.text "'cause I'm trusting you with guard duty."
-.byte NewLine
-.text "Don't say I never did anything for you."
+.text "I'm headed back inside."
 .byte WaitForA
 .byte ScrollText
 .text "Just be on the lookout for the imperial army."

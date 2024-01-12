@@ -113,7 +113,7 @@ ch19amaldarecruit
 .byte Left_slot
 .word LoadPortrait
 .word schroff_portrait
-.text "Lady Amalda, lower your sword!"
+.text "Dame Amalda, lower your sword!"
 .byte NewLine
 .text "It's me, Schroff!"
 .byte WaitForA
@@ -147,7 +147,7 @@ ch19amaldarecruit
 
 .byte Left_slot
 .byte ScrollText
-.text "Lady Amalda, a country isn't the plaything"
+.text "Dame Amalda, a country isn't the plaything"
 .byte NewLine
 .text "of a king or nobleman. If a country has lost"
 .byte NewLine
@@ -351,7 +351,7 @@ ch19silverswordhouse
 .byte ScrollText
 .text "Oh, yer a knight of Leonster, right?"
 .byte NewLine
-.text "Here, I'll lend ya my old Silver Sword."
+.text "Here, I'll lend ya my old silver sword."
 .byte WaitForA
 .byte ScrollText
 .text "Might make the difference"
@@ -381,7 +381,7 @@ ch19killerlancehouse
 .byte ScrollText
 .text "But I reckon fightin' will be a lot easier with"
 .byte NewLine
-.text "good weapons, so take this here Killer Lance."
+.text "good weapons, so take this here killer lance."
 .byte WaitForA
 .byte ScrollText
 .text "It's mighty easy-to-use, so lop off a few"
@@ -404,7 +404,7 @@ ch19speedringhouse
 .text "a tenth of our crops."
 .byte WaitForA
 .byte ScrollText
-.text "This Speed Ring is what lets me"
+.text "This speed ring is what lets me"
 .byte NewLine
 .text "smuggle the supplies so quickly!"
 .byte NewLine
@@ -559,7 +559,7 @@ ch19opening1
 .byte NewLine
 .text "It seems someone has come to the castle..."
 .byte NewLine
-.text "One of Dryas' men, I believe."
+.text "One of Dryas's men, I believe."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -742,7 +742,7 @@ ch19closing1
 .byte WaitForA
 
 .byte Right_slot
-.text "August, this is all my fault..."
+.text "August, this is...all my fault..."
 .byte NewLine
 .text "It's like I killed Dryas myself..."
 .byte WaitForA
@@ -805,7 +805,7 @@ ch19closing1
 .text "his people..."
 .byte WaitForA
 .byte ScrollText
-.text "In short, he's a far greater man than I..."
+.text "In short, he's a far greater man than I."
 .byte WaitForA
 
 .byte Left_slot
@@ -961,11 +961,11 @@ ch19closing1
 .text "why he did that?"
 .byte WaitForA
 .byte ScrollText
-.text "Why do so many people"
+.text "Why do so many people keep"
 .byte NewLine
-.text "keep sacrificing themselves for you?"
+.text "sacrificing themselves for you?"
 .byte NewLine
-.text "Why do so many hail you as a hero?"
+.text "Why do so many hail you as a hero at all?"
 .byte WaitForA
 .byte ScrollText
 .text "Think on that, and think well..."
@@ -1000,7 +1000,7 @@ ch19closing2
 .byte ScrollText
 .text "We just wanted to give the prince"
 .byte NewLine
-.text "this Master Seal, as a way of sayin' thanks."
+.text "this master seal, as a way of sayin' thanks."
 .byte WaitForA
 
 .byte Left_slot

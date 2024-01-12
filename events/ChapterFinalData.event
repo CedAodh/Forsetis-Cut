@@ -49,7 +49,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_TigrisGroup ; 99/FD8E
-		UNIT Tigris, Enemy, [27, 22], [27, 22], Veld, [MasterAxe], 20, False, [$00, $03, $00, $00]
+		UNIT Tigris, Enemy, [27, 22], [27, 22], Veld, [Bolganone, Sleep], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_TigrisDagdarCameraCoordinates ; 99/FDA4
@@ -70,7 +70,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_CanisGroup ; 99/FDD6
-		UNIT Canis, Enemy, [27, 5], [27, 5], Veld, [Aura, Berserk], 20, False, [$00, $03, $00, $00]
+		UNIT Canis, Enemy, [27, 5], [27, 5], Veld, [Tornado], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_BovisGalzusCameraCoordinates ; 99/FDEC
@@ -84,7 +84,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_BovisGroup ; 99/FE06
-		UNIT Bovis, Enemy, [16, 2], [16, 2], Veld, [WindSword, KillerAxe], 20, False, [$00, $03, $00, $00]
+		UNIT Bovis, Enemy, [16, 2], [16, 2], Veld, [WindSword], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_PorcusLifisCameraCoordinates ; 99/FE1C
@@ -98,7 +98,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_PorcusGroup ; 99/FE36
-		UNIT Porcus, Enemy, [5, 5], [5, 5], Veld, [BerserkEdge, SleepEdge, VeninEdge], 20, False, [$00, $03, $00, $00]
+		UNIT Porcus, Enemy, [5, 5], [5, 5], Veld, [Aura, Unlock], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_DracoEyvelCameraCoordinates ; 99/FE4C
@@ -112,7 +112,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_DracoGroup ; 99/FE66
-		UNIT Draco, Enemy, [5, 22], [5, 22], Veld, [ForsetiInfinite], 20, False, [$00, $03, $00, $00]
+		UNIT Draco, Enemy, [5, 22], [5, 22], Veld, [Thoron], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_ReinforcementsCameraCoordinates2 ; 99/FE7C

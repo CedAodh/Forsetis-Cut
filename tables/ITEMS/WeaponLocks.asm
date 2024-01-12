@@ -146,12 +146,29 @@ aRecurveBowWeaponLock
 	.word Selphina
 	.word Robert
 	.word Asaello
+	.word MunsterBowKnight
+	.word LeonsterBowKnight
+	.word MagiSquadArcher
+	.word ArcherEnemy
+	.word ArchKnightEnemy
+	.word FriegeBowKnight1
+	.word ArcherEnemy2
+	.word FriegeArchKnight1
+	.word UlsterBowKnight
+	.word UlsterArchKnight
+	.word FriegeArchKnight2
+	.word FriegeBowKnight2
+	.word MunsterArchKnight
 	.word FriegeArcher
 	.word MunsterSniper
 	.word FriegeSniper
 	.word SniperEnemy
-	.word Draco
+	.word DracoEyvel
 	.word Orvis
+	.word LoptrianSniper
+	.word ThraciaArcher
+	.word ResistanceArcher1
+	.word ResistanceArcher2
 	.word 0
 
 aBrokenMagicWeaponLock ; B0/9A78

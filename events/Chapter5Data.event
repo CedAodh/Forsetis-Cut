@@ -13,7 +13,7 @@ eventChapter5Data ; B1/E685
 		.byte 14, 17
 
 	_NannaGroup ; B1/E6B3
-		UNIT Nanna, Player, [20, 16], [15, 16], Finn, [EarthSword, Heal], 1, False, [$00, $00, $00, $00]
+		UNIT Nanna, Player, [20, 16], [15, 16], Diarmuid, [EarthSword, Heal], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 
@@ -66,7 +66,7 @@ eventChapter5Data ; B1/E685
 		UNIT MunsterSoldier2, Enemy, [22, 8], [22, 8], Bandole, [ShortLance, Vulnerary], 10, False, [$00, $03, $00, $00]
 		UNIT MunsterArmoredBow, Enemy, [28, 2], [28, 2], Bandole, [Longbow, Vulnerary], 10, False, [$00, $00, $00, $00]
 		UNIT MunsterArmoredBow, Enemy, [2, 2], [2, 2], Bandole, [Longbow, Vulnerary], 12, False, [$00, $00, $00, $00]
- 		UNIT Hero3, Enemy, [23, 29], [23, 29], Bandole, [KillingEdge, Vulnerary], 4, False, [$01, $03, $00, $80]
+ 		UNIT Hero3, Enemy, [25, 26], [25, 26], Bandole, [SilverSword, Vulnerary], 3, False, [$01, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates7 ; B1/E859
