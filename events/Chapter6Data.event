@@ -5,8 +5,8 @@ eventChapter6Data ; B1/E22A
 		.byte 9, 8
 
 	_RaydrikGroup ; B1E22C
-		UNIT Raydrik, Enemy, [2, 0], [2, 3], Raydrik, [LoptrianFang, Warp], 8, False, [$01, $03, $00, $00]
-		UNIT MunsterPriest1, Enemy, [0, 3], [2, 4], Tolman, [Physic], 5, False, [$03, $03, $00, $00]
+		UNIT Raydrik, Enemy, [2, 0], [2, 3], Raydrik, [LoptrianFang], 15, False, [$01, $03, $00, $00]
+		UNIT MunsterPriest1, Enemy, [0, 3], [2, 4], Tolman, [Physic, Warp], 5, False, [$01, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/E242
@@ -89,7 +89,7 @@ eventChapter6Data ; B1/E22A
 		.byte 19, 8
 
 	_CedGroup ; B1/E51C
-		UNIT CedChp4x, NPC, [24, 0], [24, 1], CedChp4x, [Forseti, Light, Mend, Vulnerary], 5, False, [$00, $00, $00, $00]
+		UNIT CedChp4x, NPC, [24, 0], [24, 1], CedChp4x, [Forseti, Light, Mend, Vulnerary], 5, False, [$00, $00, $00, $80]
         UNIT Asbel, NPC, [23, 0], [23, 4], CedChp4x, [Grafcalibur, Wind, BodyRing, Vulnerary], 1, False, [$0E, $11, $02, $80]
 		UNIT MagiSquadMyrmidon2, NPC, [23, 0], [24, 5], CedChp4x, [KillingEdge], 7, False, [$00, $00, $00, $00]
 		UNIT MagiSquadMyrmidon1, NPC, [23, 0], [23, 6], CedChp4x, [IronSword], 4, False, [$00, $00, $00, $00]
@@ -108,7 +108,7 @@ eventChapter6Data ; B1/E22A
 	_GalzusMareetaSaiasGroup ; B1/E5E8
 		UNIT Galzus, Enemy, [30, 3], [30, 3], Galzus, [], 1, False, [$00, $00, $00, $00]
 		UNIT Mareeta, NPC, [30, 2], [30, 2], Mareeta, [], 2, False, [$00, $00, $00, $00]
-		UNIT Saias, Enemy, [30, 1], [30, 1], Saias, [], 2, False, [$00, $00, $00, $00]
+		UNIT Saias, NPC, [30, 1], [30, 1], Saias, [], 2, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates4 ; B1/E626

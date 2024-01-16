@@ -456,7 +456,6 @@ ch6saiasgalzus2
 .byte Right_slot
 .word LoadPortrait
 .word galzus_portrait
-.byte ScrollText
 .text "I didn't think I'd ever see you again..."
 .byte NewLine
 .text "I barely recognized you..."

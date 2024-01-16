@@ -26,6 +26,7 @@ eventChapter12xEvents ; FD/8F98
 		END_DEFINITION
 		EVENT $0D, _BeginFleeing
 			TEST_FLAG_SET FlagBossDeath
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArcherLeftReinforcements
 			CMP_WORD_RANGE wCurrentTurn, 9, 19

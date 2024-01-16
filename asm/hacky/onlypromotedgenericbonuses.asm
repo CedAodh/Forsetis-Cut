@@ -30,7 +30,7 @@ rlRollRandomBasesReplacement
 	sta aSelectedCharacterBuffer.Strength,b
 	rep #$30
 
-	lda #1
+	lda #3
 	jsl rlUnknown80B0E6
 
 	sep #$20
@@ -72,7 +72,7 @@ rlRollRandomBasesReplacement
 	sta aSelectedCharacterBuffer.Luck,b
 	rep #$30
 
-	lda #10
+	lda #6
 	jsl rlUnknown80B0E6
 
 	sep #$20

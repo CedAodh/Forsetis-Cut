@@ -1,13 +1,119 @@
-ch24xfc
+whatdideyvelcut
 
 .byte right_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "This conversation currently cannot be viewed."
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "August."
+.byte WaitForA
+
+.byte right_slot
+.text "Yes, sire?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I only just recalled a crucial piece"
 .byte NewLine
-.text "If you wish to view the conversation,"
+.text "of information..."
+.byte WaitForA
+.byte ScrollText
+.text "Didn't you say long ago that those"
 .byte NewLine
-.text "you must purchase the Talk Convos DLC pack."
+.text "who are turned to stone are transported"
+.byte NewLine
+.text "to the shrine within the Aed Desert?"
+.byte WaitForA
+.byte ScrollText
+.text "Why would Eyvel still remain here?"
+.byte NewLine
+.text "I never did question it..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, I did say that was mere rumor."
+.byte NewLine
+.text "Truth be told, I have no idea what"
+.byte NewLine
+.text "their intentions with her would be."
+.byte WaitForA
+.byte ScrollText
+.text "Perhaps they anticipated us acquiring"
+.byte NewLine
+.text "the Staff of Kia—and now they intend to"
+.byte NewLine
+.text "use her to lure us to areas undesirable."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But then they already had the better part"
+.byte NewLine
+.text "of a year to transport her."
+.byte WaitForA
+.byte ScrollText
+.text "Hmm..."
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word sarah_portrait
+
+.byte left_slot
+.byte NewLine
+.text "Sara, do you know anything?"
+.byte WaitForA
+
+.byte right_slot
+.text "...I can't make out what the voice says."
+.byte NewLine
+.text "But it's...trembling. It's sinister."
+.byte WaitForA
+.byte ScrollText
+.text "Leif, if we don't rescue her soon..."
+.byte NewLine
+.text "something worse will happen to her."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "“Something worse”?!"
+.byte NewLine
+.text "Wh-what could that even mean...?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I don't know... I'm sorry."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word augustus_portrait
+.text "...Perhaps this is peculiar to point out..."
+.byte NewLine
+.text "but I don't believe that this girl"
+.byte NewLine
+.text "is capable of telling a lie."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I know; I believe her too."
+.byte NewLine
+.text "Then we just have to keep searching until"
+.byte NewLine
+.text "we find Eyvel!"
 .byte WaitForA
 
 .byte EndText

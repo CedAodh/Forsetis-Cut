@@ -12,6 +12,11 @@ eventChapter15Events ; FD/A812
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 1, 9
 		END_DEFINITION
+		EVENT $00, _LinoanHammerne
+			CMP_WORD wCurrentPhase, Player
+			RUN_ASM _Chapter2xCheck
+			CMP_WORD wCurrentTurn, 1
+		END_DEFINITION
 		EVENT $00, _ShannamSpawn
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 10
@@ -944,6 +949,32 @@ eventChapter15Events ; FD/A812
 		DIALOGUE ch15bishopnoleif
 		YIELD
 	END2
+	
+	_LinoanHammerne
+		STORE_WORD wEventEngineCharacterTarget, Linoan
+		STORE_WORD wEventEngineParameter1, Hammerne
+		CALL_ASM_LOOP rlASMCGiveUnitItemSilent, $0000
+	END2
+	
+	_Chapter2xCheck ; 9993F5
+
+		.al
+		.xl
+		.autsiz
+		.databank ?
+
+		lda #Chapter2x
+		sta wEventEngineParameter1,b
+		jsl rlASMCGetChapterTurncount
+		lda wEventEngineParameter1,b
+		beq +
+
+		clc
+		rtl
+
+		+
+		sec
+		rtl
 
 	_EndingEvent
 		PLAY_SOUND_WORD $00E0

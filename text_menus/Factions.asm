@@ -74,7 +74,7 @@ leader_sets				.block
 .word $0080
 .word <>leader_text._Friege3rdLeader
 
-.word $0102
+.word $00EB
 .word <>leader_text._Friege4thLeader
 
 .word $0156
@@ -153,7 +153,7 @@ leader_sets				.block
 .word <>leader_text._LifisCrewLeader
 
 .word $0039
-.word <>leader_text._LifisCrewLeader
+.word <>leader_text._BanditLeader
 
 .word $001F
 .word <>leader_text._MagiSquadLeader

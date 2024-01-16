@@ -224,19 +224,23 @@ leifshiva
 
 .byte right_slot
 .word LoadPortrait
-.word shiva_portrait
+.word leif_portrait
 
 .byte left_slot
 .word LoadPortrait
-.word leif_portrait
-.text "Who are you?"
+.word shiva_portrait
+.text "......"
 .byte WaitForA
 
 .byte right_slot
-.text "Shiva."
+.text "...Who are you?"
 .byte WaitForA
 
 .byte left_slot
+.text "Shiva."
+.byte WaitForA
+
+.byte right_slot
 .byte ScrollText
 .text "Hmm..."
 .byte NewLine
@@ -245,43 +249,43 @@ leifshiva
 .text "You were working for the Lifis Pirates, no?"
 .byte WaitForA
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
 .text "That's right."
 .byte WaitForA
 
-.byte left_slot
+.byte right_slot
 .byte ScrollText
 .text "Ah, just as I thought."
 .byte WaitForA
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
 .text "...Did you have a point?"
 .byte WaitForA
 
-.byte left_slot
+.byte right_slot
 .byte ScrollText
 .text "Hm?"
 .byte NewLine
 .text "Well...no, not really, I suppose."
 .byte WaitForA
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
 .text "I see..."
 .byte WaitForA
 
-.byte left_slot
+.byte right_slot
 .byte ScrollText
 .text "Allow me to introduce myself."
 .byte NewLine
 .text "I am—"
 .byte WaitForA
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
-.text "That won't be necessary."
+.text "That's not be necessary."
 .byte NewLine
 .text "Everybody in the merc business knows"
 .byte NewLine
@@ -295,12 +299,12 @@ leifshiva
 .text "Though it seems...that may have been a mistake."
 .byte WaitForA
 
-.byte left_slot
+.byte right_slot
 .byte ScrollText
 .text "What do you mean?"
 .byte WaitForA
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
 .text "......"
 .byte WaitForA
@@ -331,8 +335,6 @@ finnkarin
 	.word RetractBox
 	.word $3A00
 	.word karin_portrait
-	.text "Hmhm~"
-	.byte NewLine
 	.text "...Huh?"
 	.byte WaitForA
 	

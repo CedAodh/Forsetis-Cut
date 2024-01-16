@@ -109,6 +109,7 @@ ch5op2
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "These are my terms: defeat my prized"
 .byte NewLine
 .text "pitfighters, and you can see your daughter."
@@ -121,7 +122,7 @@ ch5op2
 
 .byte Left_slot
 .byte ScrollText
-.text "Ah, here they come now."
+.text "Ah, here they come."
 .byte WaitForA
 .byte ScrollText
 .text "Pitfighters, meet Eyvel. Eyvel, pitfighters."

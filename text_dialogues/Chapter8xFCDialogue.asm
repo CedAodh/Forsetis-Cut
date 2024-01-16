@@ -58,8 +58,6 @@ ronantanya8x
 	.byte left_slot
 	.word $3A00
 	.word ronan_portrait
-	
-	.byte left_slot
 	.text "Tanya!"
 	.byte NewLine
 	.text "Oh, I'm so glad to see you're all right!"
@@ -231,6 +229,10 @@ ch8xclosing2
 .byte ScrollText
 .word ClearPortrait
 
+.byte right_slot
+.byte ScrollText
+.word ClearPortrait
+
 .byte Left_slot
 .byte ScrollText
 .word ClearPortrait
@@ -265,7 +267,7 @@ ch8xclosing2
 .byte ScrollText
 .text "W-we're sorry, boss!"
 .byte NewLine
-.text "We wanted t'help ya, but Gomez jus' threw"
+.text "We wanted t' help ya, but Gomez jus' threw"
 .byte NewLine
 .text "us in 'ere like we was some useless scraps!"
 .byte WaitForA
@@ -298,7 +300,7 @@ ch8xclosing2
 .text "an'...an' I'm sorry I did that."
 .byte WaitForA
 .byte ScrollText
-.text "I was so desperate t'do the right thing,"
+.text "I was so desperate to do the right thing,"
 .byte NewLine
 .text "I didn't think twice 'bout a backup plan"
 .byte NewLine
@@ -394,7 +396,7 @@ ronanrequest
 .text "but I really want to make sure Tanya's safe."
 .byte WaitForA
 .byte ScrollText
-.text "She was so nice to me when I was just"
+.text "She was so kind to me when I was just"
 .byte NewLine
 .text "a novice to you all, and...and I want"
 .byte NewLine

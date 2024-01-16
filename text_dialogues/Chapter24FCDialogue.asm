@@ -595,102 +595,77 @@ mareetaslays
 
 .byte right_slot
 .word LoadPortrait
+.word leif_portrait2
+
+.byte left_slot
+.word LoadPortrait
 .word mareeta_portrait
-
-.byte left_slot
-.word LoadPortrait
-.word leif_portrait
-
-.byte right_slot
-.text "Leif!"
-.byte NewLine
-.text "Thank goodness I found you!"
-.byte WaitForA
-
-.byte left_slot
-.text "Mareeta? What's the matter?"
-.byte NewLine
-.text "You look as if something"
-.byte NewLine
-.text "is bothering you."
+.text "Leif, do you have a moment?"
 .byte WaitForA
 
 .byte right_slot
-.byte ScrollText
-.text "There is."
+.text "Oh, Mareeta."
+.byte NewLine
+.text "We're about to have broken down"
+.byte NewLine
+.text "the doors to the castle interior."
 .byte WaitForA
 .byte ScrollText
+.text "I say time is of the essence."
 .byte NewLine
-.text "I hope you don't mind me asking, but..."
-.byte NewLine
-.text "I was hoping to go with your group"
-.byte NewLine
-.text "for the upcoming battle."
+.text "What do you need?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I certainly understand."
+.text "Leif..."
 .byte NewLine
-.text "You wish for us to face Raydrik"
-.byte NewLine
-.text "together, isn't that right?"
+.text "You mean to face Raydrik yourself, right?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Of course!"
-.byte NewLine
-.text "I'm sure Nanna feels the same way, too,"
-.byte NewLine
-.text "even if she doesn't say it outright."
+.text "Of course. Without a shadow of a doubt."
 .byte WaitForA
-.byte ScrollText
-.text "What he's done is unforgivable..."
 .byte NewLine
-.text "We're gonna make him regret ever"
+.text "It's my responsibility to see that"
 .byte NewLine
-.text "messing with the Fiana Freeblades."
+.text "this swine is justly punished,"
+.byte NewLine
+.text "and I'll let nothing stand in my way."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Certainly."
-.byte NewLine
-.text "Come, Mareeta, and let us stand together as"
-.byte NewLine
-.text "we put an end to that nefarious nincompoop."
+.text "Then I want in on it too."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "......"
-.byte WaitForA
-.byte ScrollText
-.text "... I'm sorry, could we do a double take?"
+.text "...!"
 .byte NewLine
-.text "I-I can't take that seriously... *giggle*"
+.text "You're... You're right. I'm sorry, Mareeta."
+.byte NewLine
+.text "I should have considered you as well."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Y-Yeah, I was rifling through this"
-.byte NewLine
-.text "'Jugdral Dictionary - 776 Edition'"
-.byte NewLine
-.text "and this is the best I could come up with."
+.text "That's absolutely correct."
 .byte WaitForA
-
-.byte right_slot
+.byte NewLine
+.text "He stole something from the both of us."
+.byte NewLine
+.text "I say it's only poetic that, in turn,"
+.byte NewLine
+.text "the both of us take him down together."
+.byte WaitForA
 .byte ScrollText
-.word ClearPortrait
-.word LoadPortrait
-.word Raydrik2Portrait
-.text "Hey!"
+.text "We already discussed this in Dacia, didn't we?"
 .byte NewLine
-.text "Who forgot to pay the internet bill?!"
+.text "For this fight, I don't want to be anywhere else"
 .byte NewLine
-.text "My afternoon gaming binge is ruined!"
+.text "but at your side, Leif! I'll never accept it!"
 .byte WaitForA
 
 .byte EndText

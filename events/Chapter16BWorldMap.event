@@ -75,6 +75,10 @@ eventChapter16BWorldMapEvents ; E7/EE72
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
 	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+
 	STORE_WORD wEventEngineCharacterTarget, Homer
 	CALL_ASM_LOOP rlASMCCheckUnitExists, $0000
 	JUMP_FALSE +
@@ -87,21 +91,30 @@ eventChapter16BWorldMapEvents ; E7/EE72
 	FADE_OUT $02
 	YIELD
 	
-	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
+	SET_MUSIC $58
 	YIELD
+	
+	;PLAY_SOUND_WORD $00E0
+	;PAUSE_SKIPPABLE 32
+	;YIELD
 	
 	macroDialogueWithBackground homerseesshannam, 3
 	
-	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
-	YIELD
+	;LOAD1 eventChapter16BData._ShannamGroup
+	;WAIT_MOVE
+	;YIELD
 	
 	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD
 	
+	FADE_OUT $02
+	YIELD
+	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	FADE_IN $01
 	YIELD
 	
 	SET_MUSIC $2D
@@ -109,3 +122,27 @@ eventChapter16BWorldMapEvents ; E7/EE72
 	
 	+
 END1
+
+rlASMCResetEventStatusBits
+
+        .al
+        .xl
+        .autsiz
+        .databank ?
+
+        ; This unsets bits in wEventEngineStatus
+        ; that are common in wEventEngineParameter1.
+        ; Use with CALL_ASM_LOOP.
+
+        ; Inputs:
+        ; wEventEngineParameter1: status bits word
+
+        pha
+
+        lda wEventEngineParameter1,b
+        trb wEventEngineStatus,b
+
+        pla
+
+        clc
+        rtl

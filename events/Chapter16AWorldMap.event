@@ -74,4 +74,8 @@ eventChapter16AWorldMapEvents ; E7/ECFB
 
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
+
+	STORE_WORD wEventEngineCharacterTarget, Kempf
+	CALL_ASM_LOOP rlASMCMount, $0000
+	YIELD
 END1

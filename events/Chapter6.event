@@ -545,8 +545,10 @@ eventChapter6Events ; 99/A346
 		DIALOGUE ch6cedleave
 		YIELD
 
+		macroSetCharacterByte CedChp4x, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte CedChp4x, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte CedChp4x, structCharacterDataRAM.Unknown3E, $00
+		macroUnsetCharacterBitsWord CedChp4x, structCharacterDataRAM.Unknown3F, $0080
 
 		macroSetCharacterByte MagiSquadMyrmidon2, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte MagiSquadMyrmidon2, structCharacterDataRAM.Unknown3E, $00
@@ -822,6 +824,8 @@ eventChapter6Events ; 99/A346
 
 		DIALOGUE tolmanplan
 		YIELD
+		
+		macroSubtractCharacterByte Tolman, structCharacterDataRAM.CurrentHP, 1
 	END2
 
 	_AugustusMovestring ; 99/AF6B
