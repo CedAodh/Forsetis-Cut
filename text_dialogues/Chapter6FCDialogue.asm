@@ -124,9 +124,16 @@ fcm
 .byte NewLine
 .text "Though for whatever reason, everybody calls it"
 .byte NewLine
-.text "somethin' different—whether they're from Friege,"
+.text "somethin' different—so I don't bother anymore."
+.byte ScrollText
+.text "My pick? 'Aggression', of course!"
+.byte WaitForA
 .byte NewLine
-.text "Connaught, or Munster—so I don't bother anymore."
+.text "Seems like it just always works with folks"
+.byte NewLine
+.text "who're always raring for a fight, or have"
+.byte NewLine
+.text "somethin' real importan to fight for."
 .byte WaitForA
 
 .byte EndText
@@ -136,9 +143,11 @@ canto
 .byte right_slot
 .word LoadPortrait
 .word whitecloak_portrait
-.text "With a mount, you can always use up the entirety"
+.text "With a mount, you can always use up"
 .byte NewLine
-.text "of your movement when taking an action."
+.text "the entirety of your movement"
+.byte NewLine
+.text "when taking an action.
 .byte WaitForA
 .byte ScrollText
 .text "Having a mount also allows you to"
@@ -343,9 +352,9 @@ weapontriangle
 .byte ScrollText
 .text "...You don't have time for this?"
 .byte NewLine
-.text "Pah, fine—go liberate the peninsula, or..."
+.text "Pah, fine—go liberate the peninsula,"
 .byte NewLine
-.text "whatever it is ya gotta do."
+.text "or... whatever it is ya gotta do."
 .byte WaitForA
 .byte NewLine
 .text "I'll just stay here...being IGNORED."
@@ -409,6 +418,8 @@ instantcapture
 .byte NewLine
 .text "dullard who thinks he just got some leverage?"
 .byte WaitForA
+
+.byte EndText
 
 secretshop
 
