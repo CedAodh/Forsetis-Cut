@@ -125,6 +125,7 @@ fcm
 .text "Though for whatever reason, everybody calls it"
 .byte NewLine
 .text "somethin' different—so I don't bother anymore."
+.byte WaitForA
 .byte ScrollText
 .text "My pick? 'Aggression', of course!"
 .byte WaitForA
@@ -133,7 +134,7 @@ fcm
 .byte NewLine
 .text "who're always raring for a fight, or have"
 .byte NewLine
-.text "somethin' real importan to fight for."
+.text "somethin' real important to fight for."
 .byte WaitForA
 
 .byte EndText
@@ -145,9 +146,9 @@ canto
 .word whitecloak_portrait
 .text "With a mount, you can always use up"
 .byte NewLine
-.text "the entirety of your movement"
+.text "the entirety of your movement when"
 .byte NewLine
-.text "when taking an action."
+.text "taking an action."
 .byte WaitForA
 .byte ScrollText
 .text "Having a mount also allows you to"
