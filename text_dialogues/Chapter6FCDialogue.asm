@@ -44,7 +44,7 @@ money
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word oldman_orange_portrait
 .text "Money is important!"
 .byte WaitForA
 .byte ScrollText
@@ -62,7 +62,7 @@ weaponweight
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word beardedman_portrait
 .text "Bigger and harder hitting weapons are"
 .byte NewLine
 .text "probably heavier weapons, right?"
@@ -97,7 +97,7 @@ fcm
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word youngman2_portrait
 .text "So you know about follow-up attacks, right?"
 .byte NewLine
 .text "When you're considerably faster than your"
@@ -135,7 +135,7 @@ canto
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word whitecloak_portrait
 .text "With a mount, you can always use up the entirety"
 .byte NewLine
 .text "of your movement when taking an action."
@@ -173,7 +173,7 @@ crusader
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word moustache_portrait
 .text "One of the neighboring houses here owns"
 .byte NewLine
 .text "what they call a “crusader scroll.”"
@@ -202,7 +202,7 @@ stavescanmiss
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word oldlady3_portrait
 .text "Just because a man or woman o' the cloth"
 .byte NewLine
 .text "rarely gets into scraps doesn't mean that"
@@ -223,7 +223,7 @@ authority
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word jeanne_portrait
 .text "You'll find that army leaders do more"
 .byte NewLine
 .text "than just give orders—their mere presence"
@@ -254,7 +254,7 @@ vigor
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word black_mustache_portrait
 .text "You lot are looking pretty upbeat, I'd say."
 .byte NewLine
 .text "Sometimes you just get that extra burst"
@@ -292,7 +292,7 @@ deadunititems
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word elder_portrait
 .text "It's a damned shame when one o' yer"
 .byte NewLine
 .text "friends gets killed in action, huh?"
@@ -316,7 +316,7 @@ weapontriangle
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word blond_portrait
 .text "Y'all know of the weapon triangle, right?"
 .byte WaitForA
 .byte NewLine
@@ -357,7 +357,7 @@ mages
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word $009A ; yellow village girl
 .text "Don't ya find that mages pack"
 .byte NewLine
 .text "some real good offensive power?"
@@ -383,7 +383,7 @@ instantcapture
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word colho_portrait
 .text "Somethin' you maybe didn't realize yet is"
 .byte NewLine
 .text "that when you don't have a weapon t'fight"
@@ -461,7 +461,7 @@ bond
 
 .byte right_slot
 .word LoadPortrait
-.word NPCMan1Portrait
+.word oldlady_portrait
 .text "Human connection sure is a treasure, right?"
 .byte NewLine
 .text "And it can be pretty darn relevant on"
