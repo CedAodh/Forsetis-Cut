@@ -147,7 +147,7 @@ canto
 .byte NewLine
 .text "the entirety of your movement"
 .byte NewLine
-.text "when taking an action.
+.text "when taking an action."
 .byte WaitForA
 .byte ScrollText
 .text "Having a mount also allows you to"
