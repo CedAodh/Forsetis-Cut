@@ -152,9 +152,9 @@ canto
 .byte ScrollText
 .text "Having a mount also allows you to"
 .byte NewLine
-.text "capture an enemy or carry an ally to safety"
+.text "capture an enemy or carry an ally"
 .byte NewLine
-.text "regardless of their build."
+.text "to safety regardless of their build."
 .byte WaitForA
 .byte ScrollText
 .text "...Really makes me wish my horse"
