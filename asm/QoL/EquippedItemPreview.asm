@@ -211,7 +211,7 @@ GUARD_ZQOL_EQUIPPED_ITEM_PREVIEW :?= false
         jsr rsGetBurstWindowPosition
         jsr rsGetBurstWindowCharacterName
         jsr rsDrawBurstWindowHPIfNotStatus
-        jsr rsDrawBurstWindowTilemap
+		jsr rsDrawBurstWindowTilemap
 
           ; Overwriting this jsl with a hook
           ; to our proc creating routine.
@@ -377,8 +377,8 @@ GUARD_ZQOL_EQUIPPED_ITEM_PREVIEW :?= false
     .logical $84A346
 
       rsDrawBurstWindowTilemap ; 84/A346
-
-        .al
+	
+		.al
         .autsiz
         .databank `aOptions
 
@@ -765,8 +765,8 @@ GUARD_ZQOL_EQUIPPED_ITEM_PREVIEW :?= false
     .send ProcEquippedItemPreviewSection
 
     .section DMAEquippedItemIconSection
-
-      rlDMAEquippedItemIcon
+	
+	rlDMAEquippedItemIcon
 
         .al
         .autsiz

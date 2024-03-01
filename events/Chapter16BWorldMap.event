@@ -78,49 +78,147 @@ eventChapter16BWorldMapEvents ; E7/EE72
 	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
 	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
 	YIELD
-
-	STORE_WORD wEventEngineCharacterTarget, Homer
-	CALL_ASM_LOOP rlASMCCheckUnitExists, $0000
-	JUMP_FALSE +
-	macroCheckTurnStatusSet Homer, TurnStatusCaptured
-	JUMP_TRUE +
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
 	EVENT_TEST_FLAG_SET $A3
 	JUMP_TRUE +
 	
-	FADE_OUT $02
+	LOAD1 eventChapter16BData._ShannamGroup
+	YIELD
+	
+	STORE_WORD wEventEngineCharacterTarget, Homer
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 16
 	YIELD
 	
 	SET_MUSIC $58
 	YIELD
 	
-	;PLAY_SOUND_WORD $00E0
-	;PAUSE_SKIPPABLE 32
-	;YIELD
-	
 	macroDialogueWithBackground homerseesshannam, 3
-	
-	;LOAD1 eventChapter16BData._ShannamGroup
-	;WAIT_MOVE
-	;YIELD
 	
 	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD
 	
-	FADE_OUT $02
+	+
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
 	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 32
 	YIELD
 	
-	FADE_IN $01
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 16 | (9 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Miracle
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 16 | (4 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Pavise
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 18 | (4 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Adept
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 4 | (1 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.MovementStars
+	STORE_WORD wEventEngineParameter2, 5 * 5
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 17 | (16 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Accost
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 17 | (5 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.MovementStars
+	STORE_WORD wEventEngineParameter2, 3 * 5
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 17 | (10 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills3
+	STORE_WORD wEventEngineParameter2, Skill3Sol
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+		
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 10 | (2 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Nihil
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 7 | (4 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill3Wrath << 8
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 3 | (3 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Vantage
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+		
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 2 | (2 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills1
+	STORE_WORD wEventEngineParameter2, Skill1Renewal
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Finn
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fergus
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Karin
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Brighton
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Nanna
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Hicks
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Callion
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Selphina
+	CALL_ASM_LOOP rlASMCMount, $0000
 	YIELD
+	STORE_WORD wEventEngineCharacterTarget, Kane
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Alba
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Robert
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Olwen
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fred
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Glade
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Dean
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Eda
+	CALL_ASM_LOOP rlASMCMount, $0000
+	
+	FADE_IN $02
 	
 	SET_MUSIC $2D
 	YIELD
-	
-	+
 END1
 
 rlASMCResetEventStatusBits

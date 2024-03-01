@@ -284,7 +284,6 @@ ch7ending1
 .byte NewLine
 .text "Don't let your guard down."
 .byte WaitForA
-.byte ScrollText
 
 .byte EndText
 
@@ -300,9 +299,9 @@ ch7ending2
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
 .text "Ah, of course."
 .byte WaitForA
-.byte ScrollText
 
 .byte Right_slot
 .byte ScrollText
@@ -310,6 +309,7 @@ ch7ending2
 .word wolfe_portrait
 
 .byte Left_slot
+.byte ScrollText
 .text "Men, bring them to the prisoners,"
 .byte NewLine
 .text "on the double!"
@@ -374,7 +374,6 @@ ch7ending5ronan
 
 ch7hannibalportrait
 
-.byte Left_slot
 .word LoadPortrait
 .word hannibal_portrait
 
@@ -386,7 +385,10 @@ ch7ending6hannibal
 .byte NewLine
 .text "There is something else."
 .byte WaitForA
-.byte ScrollText
+
+.byte right_slot
+.text "Huh?"
+.byte WaitForA
 
 .byte EndText
 
@@ -398,6 +400,7 @@ ch7ending7callion
 .word callion_portrait
 
 .byte Left_slot
+.byte ScrollText
 .text "Good folk, let me introduce you to Callion."
 .byte WaitForA
 .byte ScrollText
@@ -451,32 +454,25 @@ ch7ending7callion
 .text "Think nothing of it!"
 .byte WaitForA
 
-.byte Right_slot
-.word ClearPortrait
-.byte ScrollText
-
-.byte Left_slot
-.byte ScrollText
-.word LoadPortrait
-.word leif_portrait
-
 .byte EndText
 
 ch7ending8cairpre
 
-.byte Right_slot
+.byte Left_slot
+.byte ScrollText
 .word LoadPortrait
 .word cairpre_portrait
 .text "Good day, sir!"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
+.byte ScrollText
 .text "Oh, you were one of the children imprisoned"
 .byte NewLine
 .text "at Kerberos' Gate... What are you doing here?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "General Hannibal is my lord father, you see."
 .byte WaitForA
@@ -488,14 +484,10 @@ ch7ending8cairpre
 .text "a very powerful staff imbued with warp magic."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Thank you! This is most generous...!"
 .byte WaitForA
-.byte ScrollText
-
-.byte Right_slot
-.byte ScrollText
 
 .byte EndText
 

@@ -416,7 +416,7 @@ schroffesc
 .byte Right_slot
 .word LoadPortrait
 .word schroff_portrait
-.text "The holy spirit of Bragi shall always"
+.text "The divine spirit of Bragi shall always"
 .byte NewLine
 .text "watch over you, Prince Leif!"
 .byte NewLine

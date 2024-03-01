@@ -1,0 +1,102 @@
+
+eventChapter8xWorldMapEvents ; E7/E75C
+
+	SCROLL_CAMERA_SPEED [16, 16], 4
+	SET_ACTIVE_COORDS
+	YIELD
+
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+
+	SET_MUSIC $29
+	YIELD
+
+	FADE_IN $01
+	YIELD
+
+	STORE_WORD $7EA93B, $0000
+	STORE_WORD $7EA93F, $00C0
+	CALL_ASM_SKIPPABLE $91CB0D, $0000
+
+	STORE_WORD $7EA93D, $0000
+	STORE_WORD $7EA937, 120
+	STORE_WORD $7EA939, 80
+	STORE_WORD $7EA93B, $000D
+	STORE_WORD $7EA93F, $0001
+	CALL_ASM_SKIPPABLE $91CA46, $0000
+
+	STORE_LONG lEventEngineLongParameter, ch8xwm
+	CALL_ASM_SKIPPABLE rlASMCWorldMapDialogue, $0000
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+
+	STORE_WORD $7EA93F, $00C0
+	CALL_ASM_SKIPPABLE $91CB46, $0000
+
+	STORE_WORD $7EA93D, $0000
+	CALL_ASM_SKIPPABLE $91CD81, $0000
+
+	PAUSE_SKIPPABLE 1
+	YIELD
+	
+	FADE_OUT $02
+	YIELD
+
+	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Ronan
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 16
+	YIELD
+	
+	SET_MUSIC $58
+	YIELD
+	
+	macroDialogueWithBackground ronanrequest, 4
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	+
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	STORE_WORD wEventEngineCharacterTarget, Finn
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fergus
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Karin
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Brighton
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Nanna
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Hicks
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Callion
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	
+	FADE_IN $02
+	
+	SET_MUSIC $2D
+	YIELD
+END1

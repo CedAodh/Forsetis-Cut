@@ -178,15 +178,13 @@ _UnitOption
 .word <>options_text._UnitName
 .word <>options_text._UnitChoices
 .word <>options_text._UnitSubtext
-.word <>options_text._AnimationTerrainUnitAutocursorGetter
-.word <>options_text._AnimationTerrainUnitAutocursorSaver
+.word <>options_text._AudioBGMVolumeGetter
+.word <>options_text._AudioBGMVolumeSaver
 .word $38A4	;  Option icon 
-.word $0003	;  Number of options
+.word $0002	;  Number of options
 .word $0000	;  Position 1
-.word $0003	;  Tiles to highlight
-.word $0005	;  Position 2
-.word $0004	;  Tiles to highlight
-.word $000B	;  Position 3 
+.word $0001	;  Tiles to highlight
+.word $0003	;  Position 2
 .word $0002	;  Tiles to highlight
 
 _AutocursorOption
@@ -376,7 +374,6 @@ _TerrainSubtext
 .word $0000
 
 _TerrainChoices
-_UnitChoices
 .text "Detail"
 .word $2020
 .word $2020
@@ -392,7 +389,7 @@ _UnitName
 .word $0000
 
 _UnitSubtext
-.text "Set the unit ]windo]w's level of detail "
+.text "Turn unit ]windo]ws on or off "
 .word $0000
 
 
@@ -406,6 +403,7 @@ _AutocursorSubtext
 
 _AutocursorChoices
 _BGMChoices
+_UnitChoices
 .text "On"
 .word $2020
 .word $2020
@@ -745,28 +743,28 @@ DefaultSettingName
 .logical lorom($0295E5, 1)
 
 Setting1
+.word 20
 .word 18
-.word 15
-.word 12
-.word 19
-.word 19
-.word 15
+.word 20
+.word 20
+.word 18
+.word 20
 
 Setting2
-.word 00
-.word 00
-.word 00
-.word 15
-.word 15
-.word 15
+.word 12
+.word 22
+.word 21
+.word 17
+.word 22
+.word 21
 
 Setting3
-.word 04
-.word 08
+.word 23
+.word 11
 .word 14
-.word 15
-.word 20
-.word 24
+.word 17
+.word 12
+.word 12
 
 Setting4
 .word 23
@@ -777,11 +775,11 @@ Setting4
 .word 08
 
 Setting5
-.word 00
 .word 08
-.word 04
-.word 06
-.word 00
-.word 11
+.word 17
+.word 09
+.word 09
+.word 17
+.word 08
 
 .here

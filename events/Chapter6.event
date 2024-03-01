@@ -37,19 +37,23 @@ eventChapter6Events ; 99/A346
 			TEST_FLAG_SET $07
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
+		EVENT $0D, _KnightReinforcements
+			CMP_WORD wCurrentTurn, 11
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
 		EVENT $07, _TolmanGroupCharge
 			CMP_WORD_FALSE $7E4F9A, $0000
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/A3D4
-                EVENT $1A, _AsbelLeifTalk
-                        RUN_ASM _rlChapter4xCheck
+        EVENT $1A, _AsbelLeifTalk
+            RUN_ASM _rlChapter4xCheck
 			CHECK_CHARS2 Asbel, Leif
 		END_DEFINITION
-		EVENT $1B, _LeifAsbelTalk
-                        RUN_ASM _rlChapter4xCheck
+		EVENT $1A, _LeifAsbelTalk
+            RUN_ASM _rlChapter4xCheck
 			CHECK_CHARS2 Leif, Asbel
 		END_DEFINITION
 		EVENT $1C, _KarinCedTalk
@@ -212,6 +216,11 @@ eventChapter6Events ; 99/A346
 		macroSetCharacterByte MunsterThunderMage, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterThunderMage, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterThunderMage, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI1, $12
+		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.AI2, $03
+		macroSetCharacterByte MunsterBishop1, structCharacterDataRAM.Unknown3E, $00
 	END1
 
 	_MasterSealHouse ; 99/A6B2
@@ -824,8 +833,6 @@ eventChapter6Events ; 99/A346
 
 		DIALOGUE tolmanplan
 		YIELD
-		
-		macroSubtractCharacterByte Tolman, structCharacterDataRAM.CurrentHP, 1
 	END2
 
 	_AugustusMovestring ; 99/AF6B

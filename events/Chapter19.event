@@ -159,12 +159,12 @@ eventChapter19Events ; FD/CBB9
 		EVENT $0A, _AmaldaCaptured
 			CMP_WORD aSelectedCharacterBuffer.Character, Amalda
 			CMP_BITS $7E4F98, $0008
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $09, _ConomorCaptured
 			CMP_WORD aSelectedCharacterBuffer.Character, Conomor
 			CMP_BITS $7E4F98, $0008
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $00, _NPCCheck
 			CMP_WORD wCurrentPhase, NPC
@@ -1044,20 +1044,13 @@ eventChapter19Events ; FD/CBB9
 		EVENT_TEST_FLAG_SET $A4
 		JUMP_TRUE +
 
-		LOAD1 eventChapter19Data._ConomorGroup
-		WAIT_MOVE
-		YIELD
-
 		DIALOGUE ch19opening3conomor
 		YIELD
 
 		+
+		
 		EVENT_TEST_FLAG_SET $A2
 		JUMP_TRUE +
-
-		LOAD1 eventChapter19Data._AmaldaGroup
-		WAIT_MOVE
-		YIELD
 
 		DIALOGUE ch19opening3amalda
 		YIELD

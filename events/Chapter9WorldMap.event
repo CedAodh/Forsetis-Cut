@@ -71,34 +71,57 @@ eventChapter9WorldMapEvents ; E7/E75C
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
 	
-	STORE_WORD wEventEngineCharacterTarget, Callion
-	CALL_ASM_LOOP rlASMCCheckUnitExists, $0000
-	JUMP_FALSE +
-	macroCheckTurnStatusSet Callion, TurnStatusCaptured
-	JUMP_TRUE +
-	
-	FADE_OUT $02
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
 	YIELD
 	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Callion
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
 	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
+	PAUSE_SKIPPABLE 16
+	YIELD
+	
+	SET_MUSIC $32
 	YIELD
 	
 	macroDialogueWithBackground callionrequest, 3
 	
-	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
-	YIELD
-	
 	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD
 	
+	+
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 32
 	YIELD
 	
+	STORE_WORD wEventEngineCharacterTarget, Finn
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fergus
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Karin
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Brighton
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Nanna
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Hicks
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Callion
+	CALL_ASM_LOOP rlASMCMount, $0000
+	
+	FADE_IN $02
+	
 	SET_MUSIC $2D
 	YIELD
-	
-	+
 END1

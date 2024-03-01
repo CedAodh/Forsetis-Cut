@@ -405,7 +405,7 @@
 		WindSwordMinRange				= 1
 		WindSwordMaxRange				= 2
 		WindSwordWeaponRank				= RankB
-		WindSwordEffectiveness			= ItemEffectivenesses.aNoEffectiveness
+		WindSwordEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		WindSwordStatBonus				= aWindSwordItemBonuses
 		WindSwordCost					= 6600
 		WindSwordDescription			= <>item_descs._WindSwordDesc
@@ -846,7 +846,7 @@
 		BraveLanceMaxRange				= 1
 		BraveLanceWeaponRank			= WeaponLocks.aBraveLanceWeaponLock
 		BraveLanceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
-		BraveLanceStatBonus				= aBraveLanceItemBonuses
+		BraveLanceStatBonus				= aLightBrandItemBonuses
 		BraveLanceCost					= 0
 		BraveLanceDescription			= <>item_descs._BraveLanceDesc
 		BraveLanceUseEffect				= None
@@ -2034,12 +2034,12 @@
 		AuraMaxRange					= 2
 		AuraWeaponRank					= RankA
 		AuraEffectiveness				= ItemEffectivenesses.aNoEffectiveness
-		AuraStatBonus					= aNoItemBonuses
+		AuraStatBonus					= aBraveLanceItemBonuses
 		AuraCost						= 0
 		AuraDescription					= <>item_descs._AuraDesc
 		AuraUseEffect					= None
 		AuraWeaponEffect				= None
-		AuraSkills2						= Skill2Miracle | Skill2Nihil
+		AuraSkills2						= Skill2Miracle
 		AuraSkills3						= None
 		AuraTraits						= TraitWeapon | TraitTome | TraitUnsellable
 		AuraIcon						= $5B
@@ -2605,7 +2605,7 @@
 		FragarachMinRange				= 1
 		FragarachMaxRange				= 1
 		FragarachWeaponRank				= WeaponLocks.aFragarachWeaponLock
-		FragarachEffectiveness			= ItemEffectivenesses.aNoEffectiveness
+		FragarachEffectiveness			= ItemEffectivenesses.aFlyingEffectiveness
 		FragarachStatBonus				= aNoItemBonuses
 		FragarachCost					= 0
 		FragarachDescription			= <>item_descs._FragarachDesc

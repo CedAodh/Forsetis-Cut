@@ -613,9 +613,6 @@ kanealbarobert
 
 callionrequest
 
-.word PlayMusic
-.byte $32
-
 .byte right_slot
 .word LoadPortrait
 .word leif_portrait
@@ -641,7 +638,7 @@ callionrequest
 .byte ScrollText
 .text "Remember Selphina?"
 .byte NewLine
-.text "Of course I do—she's Count Dryas' daughter!"
+.text "Of course I do—she's Count Dryas's daughter!"
 .byte NewLine
 .text "I could never forget her."
 .byte WaitForA

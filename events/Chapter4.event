@@ -326,7 +326,7 @@ eventChapter4Events ; 99/8778
 		macroSetCharacterByte MunsterMage1, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterMage1, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI1, $12
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI2, $07
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.Unknown3E, $00

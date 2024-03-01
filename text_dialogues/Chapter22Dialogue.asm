@@ -482,7 +482,7 @@ ch22saiascohen
 .byte NewLine
 .text "of House Velthomer, you must live on"
 .byte NewLine
-.text "to preserve that holy bloodline."
+.text "and preserve your bloodline."
 .byte WaitForA
 .byte ScrollText
 .text "That is why you cannot die here—why"

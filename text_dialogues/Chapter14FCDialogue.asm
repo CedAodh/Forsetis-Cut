@@ -1235,9 +1235,6 @@ ch14wm3
 
 thefabledwarmeeting
 
-.word PlayMusic
-.byte $32
-
 .byte right_slot
 .word LoadPortrait
 .word cohen_portrait

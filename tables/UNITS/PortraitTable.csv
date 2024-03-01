@@ -173,7 +173,7 @@ Knight4Portrait,g4bppcPortraitEF9DCD,$92
 Knight5Portrait,g4bppcPortraitEF9DCD,$92
 Knight6Portrait,g4bppcPortraitEF9DCD,$93
 Knight7Portrait,g4bppcPortraitEF9DCD,$93
-BowKnight2Portrait,g4bppcPortraitEFA1F5,$94
+BowKnight2Portrait,g4bppcPortraitEFA1F5,$92
 MagicKnight3Portrait,g4bppcPortraitEFAA5D,$90
 MagicKnight4Portrait,g4bppcPortraitEFAA5D,$95
 AxeKnight2Portrait,g4bppcPortraitEFA64C,$B0
@@ -195,7 +195,7 @@ Armor2Portrait,g4bppcPortraitEFCB8F,$A0
 Armor3Portrait,g4bppcPortraitEFCB8F,$A1
 Armor4Portrait,g4bppcPortraitEFCB8F,$A2
 Brigand1Portrait,g4bppcPortraitEFCFD4,$A3
-Brigand2Portrait,g4bppcPortraitEFCFD4,$B1
+Brigand2Portrait,g4bppcPortraitEFC7D1,$9E
 MareetaIllusionPortrait,g4bppcPortraitEC8C0D,$BC
 Fighter1Portrait,g4bppcPortraitEFC7D1,$9B
 Archer3Portrait,g4bppcPortraitEFB75D,$A3
@@ -215,7 +215,7 @@ Mage7Portrait,g4bppcPortraitEFDC2E,$AD
 Priest3Portrait,g4bppcPortraitEFD772,$AD
 Thief1Portrait,g4bppcPortraitEFE801,$A6
 Myrmidon4Portrait,g4bppcPortraitEFBB1D,$9E
-Priestess1Portrait,g4bppcPortraitBeatrice,$AE
+Priestess1Portrait,g4bppcPortraitEC9117,$AE
 Ballistician1Portrait,g4bppcPortraitEFE47D,$A2
 Ballistician2Portrait,g4bppcPortraitEFE47D,$A0
 Ballistician3Portrait,g4bppcPortraitEFE47D,$B8
@@ -237,7 +237,7 @@ Priest4Portrait,g4bppcPortraitEFD772,$AB
 Veld2Portrait,g4bppcPortraitEEC477,$BE
 Myrmidon5Portrait,g4bppcPortraitEFBB1D,$9A
 Myrmidon6Portrait,g4bppcPortraitEFBB1D,$9B
-Myrmidon7Portrait,g4bppcPortraitEFBB1D,$9B
+Myrmidon7Portrait,g4bppcPortraitEFBB1D,$AD
 Archer4Portrait,g4bppcPortraitEFB75D,$9A
 Archer5Portrait,g4bppcPortraitEFB75D,$9B
 Thief2Portrait,g4bppcPortraitEFE801,$B6

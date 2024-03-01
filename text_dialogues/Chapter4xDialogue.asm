@@ -482,7 +482,7 @@ ch4xcedkarintalk
 .text "Silesse onto her."
 .byte WaitForA
 .byte ScrollText
-.text "That holy blood in your veins"
+.text "This heroic image you've painted of yourself"
 .byte NewLine
 .text "has gone to your head!"
 .byte WaitForA

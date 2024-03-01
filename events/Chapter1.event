@@ -336,7 +336,6 @@ eventChapter1Events ; FD/8000
 
 		macroSetCharacterByte Eyvel, structCharacterDataRAM.LeadershipStars, 1
 		macroSetCharacterByte Finn, structCharacterDataRAM.LeadershipStars, 1
-
 	END3
 
 	_HalvanMove3 ; FD/851A
@@ -396,11 +395,11 @@ eventChapter1Events ; FD/8000
 		macroCheckTurnStatusSet Eyvel, TurnStatusCaptured
 		JUMP_TRUE +
 
-		macroDialogueWithBackground ch1ending, 1
+		macroDialogueWithBackground ch1ending, 4
 		JUMP ++
 
 		+
-		macroDialogueWithBackground ch1endingnoeyvel, 1
+		macroDialogueWithBackground ch1endingnoeyvel, 4
 
 		+
 		YIELD

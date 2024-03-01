@@ -831,3 +831,137 @@ leifced
 .byte WaitForA
 
 .byte EndText
+
+leifseesmus
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word eyvel_portrait
+.text "Leif, everyone's reporting to their stations."
+.byte WaitForA
+
+.byte right_slot
+.text "Good. Thanks, Eyvel."
+.byte NewLine
+.text "Already, you're lifting my load again for me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Heh. If you say so."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Please, it's the truth."
+.byte NewLine
+.text "I'll always look up to you. You're..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I'm..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Eyvel, look."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait2
+.text "It's...Raydrik?"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.word PlayMusic
+.byte $3C
+
+.byte right_slot
+.word LoadPortrait
+.word mus_portrait
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word eyvel_portrait
+.text "Hmm..."
+.byte WaitForA
+.byte ScrollText
+.text "...!"
+.byte NewLine
+.text "Leif, get back."
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait2
+
+.byte left_slot
+.byte NewLine
+.text "Don't let him see you."
+.byte WaitForA
+
+.byte right_slot
+.text "...Why not? I don't fear him."
+.byte NewLine
+.text "That is Raydrik. I knew it wasn't over!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "It's definitely not over, but that's not..."
+.byte NewLine
+.text "Leif, just look at his face—that's not Raydrik."
+.byte NewLine
+.text "At least, not as we once knew him."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I don't understand."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.word LoadPortrait
+.word leif_portrait2
+.text "What do you..."
+
+.byte right_slot
+.word LoadPortrait
+.word mus_portrait
+
+.byte left_slot
+.byte NewLine
+.text "...Huh?! What...what's happened to him?"
+.byte WaitForA
+
+.byte right_slot
+.word LoadPortrait
+.word eyvel_portrait
+.text "I...couldn't tell you."
+.byte NewLine
+.text "But he... It... It must be destroyed."
+.byte WaitForA
+.byte ScrollText
+.text "The way it's moving... Though it resembles"
+.byte NewLine
+.text "a man we all despise...watching it..."
+.byte NewLine
+.text "I can hardly muster the strength to bear witness."
+.byte WaitForA
+
+.byte EndText

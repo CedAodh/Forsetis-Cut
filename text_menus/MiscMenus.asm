@@ -36,9 +36,9 @@
 itemstatlabels
 	.text "Type"		; Character limit: 6
 	.word $0000
-	.text "Hit "        ; Character limit: 6
+	.text "(Might"        ; Character limit: 6
 	.word $0000
-	.text "(Might"      ; Character limit: 8
+	.text "Hit "      ; Character limit: 8
 	.word $0000
 	.text "Crit"        ; Character limit: 8
 	.word $0000
@@ -59,8 +59,11 @@ staffstatlabels
 
 ;	Supply item stat labels
 
-* = $03A728
-.logical lorom($03A728, 1)
+;* = $03A728
+;.logical lorom($03A728, 1)
+
+* = $01FDF0
+.logical lorom($01FDF0, 1)
 
 .text "Type    "        ; Character COUNT: 8
 .word $0000             
@@ -71,6 +74,10 @@ staffstatlabels
 .text "Crit    "        ; Character COUNT: 8
 .word $0000             
 .text "Avo   "          ; Character COUNT: 6
+;.word $0000
+;.text "Rng   "
+.word $0000
+.text "{A}{S}    "
 .word $0000             
 .word $0000
 

@@ -365,14 +365,16 @@ ronanrequest
 
 .byte left_slot
 .byte ScrollText
-.text "So, er... Dagdar AND Tanya are both"
+.text "So... Dagdar AND Tanya are both"
 .byte NewLine
 .text "trapped in the manor, are they not?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "That's what we've heard."
+.text "Indeed—and I can't imagine we have"
+.byte NewLine
+.text "much time left."
 .byte WaitForA
 
 .byte left_slot
@@ -382,9 +384,9 @@ ronanrequest
 
 .byte right_slot
 .byte ScrollText
-.text "I'm glad that you're so eager,"
+.text "I'm glad that you're so eager, Ronan,"
 .byte NewLine
-.text "but...what's in it for you?"
+.text "but what's in it for you?"
 .byte WaitForA
 
 .byte left_slot
@@ -406,4 +408,90 @@ ronanrequest
 .text "Please, Lord Leif!"
 .byte WaitForA
 
+.byte EndText
+
+ch8xwm
+
+.text "Leif's latest news on Dagdar's whereabouts"
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $0206
+.word $0307
+.byte NewLine
+.text "came as no small surprise."
+.byte WaitForA
+.byte ScrollText
+.text "Dagdar's trusted subordinate, Gomez,"
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word gomez_portrait
+.word $0B05 ;y then x
+.byte WaitForA
+.byte NewLine
+.text "organized a revolt during his brief absence—"
+.byte NewLine
+.text "and made Dagdar's elimination his first priority."
+.byte WaitForA
+.word ClearPortraitalt
+.long $82937A
+.word $0000
+.byte ScrollText
+.text "Many years back, the Violdrake Bandits"
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $0008
+.word $0B05 ;y then x
+.byte NewLine
+.text "had made ends meet by means of plunder."
+.byte WaitForA
+.byte ScrollText
+.text "The Fiana Freeblades"
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $0305
+.word $0312 ;y then x
+.text " chose to intervene and"
+.byte NewLine
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $0104
+.word $0B14 ;y then x
+.text "confront Dagdar on his barbaric methods."
+.byte WaitForA
+.word ClearPortraitalt
+.long $82937A
+.word $0000
+.byte ScrollText
+.word ClearPortraitalt
+.long $82937A
+.word $0001
+.text "Following a thorough exchange with Eyvel,"
+.byte NewLine
+.text "Dagdar had a change of heart,"
+.byte WaitForA
+.byte ScrollText
+.text "and swore never again to let his livelihood"
+.byte NewLine
+.text "come at another's expense."
+.byte WaitForA
+.byte ScrollText
+.text "Since then, the village of Fiana and the"
+.byte NewLine
+.text "Violdrake region maintained close relations."
+.byte WaitForA
+.word ClearPortraitalt
+.long $82937A
+.word $0003
+.byte ScrollText
+.word ClearPortraitalt
+.long $82937A
+.word $0002
+.text "Leif took it upon himself to discover the"
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $013F
+.word $0713 ;y then x
+.byte NewLine
+.text "root cause behind this uprising..."
+.byte WaitForA
 .byte EndText

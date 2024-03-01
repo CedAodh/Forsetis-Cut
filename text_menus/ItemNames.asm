@@ -730,7 +730,7 @@ _MasterSeal_name
 	.word $0000
 
 _MasterCrown_name
-	.text "Tathlu[m"
+	.text "Ag"
 	.word $0000
 
 _ChestKey_name

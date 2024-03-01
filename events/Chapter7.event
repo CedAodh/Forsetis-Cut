@@ -11,10 +11,6 @@ eventChapter7Events ; 99/B023
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
-		EVENT FlagAlwaysZero, _EisenhauSpawn
-			CMP_WORD wCurrentTurn, 2
-			CMP_WORD wCurrentPhase, NPC
-		END_DEFINITION
 		EVENT FlagAlwaysZero, _HannibalGroupAIChange
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
@@ -24,11 +20,15 @@ eventChapter7Events ; 99/B023
 			TEST_FLAG_UNSET $0A
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _FinnSafyAppear
-			CMP_WORD wCurrentTurn, 2
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 1
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, _EisenhauSpawn
+			CMP_WORD wCurrentTurn, 1
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _CavalierReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 2, 5
+			CMP_WORD_RANGE wCurrentTurn, 1, 5
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $0A
 		END_DEFINITION
@@ -103,7 +103,7 @@ eventChapter7Events ; 99/B023
 
 	_AfterActionEventDefinitions ; 99/B193
 		EVENT $06, _HannibalAppearCheck
-			macroEventConditionCheckCoords [10, 48]
+			macroEventConditionCheckCoordRanges [0, 46], [15, 51]
 			CMP_WORD wCurrentPhase, Player
 			RUN_ASM _rlEnemyCheck
 			TEST_FLAG_UNSET $14
@@ -213,6 +213,7 @@ eventChapter7Events ; 99/B023
 
 		macroSetUnitPosition Finn, [1, 35]
 		macroSetCharacterByte Finn, structCharacterDataRAM.Fatigue, 0
+		macroMountUnit Finn
 
 		+
 		macroCheckTurnStatusSet Safy, TurnStatusInvisible
@@ -403,13 +404,6 @@ eventChapter7Events ; 99/B023
 	END2
 
 	_HannibalAppearCheck ; 99/B43C
-		EVENT_CMP_WORD_AT_EQ aSelectedCharacterBuffer.Character, Leif
-		JUMP_FALSE +
-
-		UNSET_FLAG $06
-		JUMP ++
-
-		+
 		SCROLL_CAMERA_SPEED [10, 48], 4
 		YIELD
 
@@ -423,12 +417,12 @@ eventChapter7Events ; 99/B023
 		DIALOGUE ch7hannibalappear
 		YIELD
 
-		SCROLL_CAMERA_ADDRESS eventChapter7Data._HannibalCameraCoordinates
-		YIELD
+		;SCROLL_CAMERA_ADDRESS eventChapter7Data._HannibalCameraCoordinates
+		;YIELD
 
-		LOAD1 eventChapter7Data._HannibalGroup
-		WAIT_MOVE
-		YIELD
+		;LOAD1 eventChapter7Data._HannibalGroup
+		;WAIT_MOVE
+		;YIELD
 
 		SCROLL_CAMERA_ADDRESS eventChapter7Data._HannibalArmorCameraCoordinates
 		YIELD
@@ -436,8 +430,6 @@ eventChapter7Events ; 99/B023
 		LOAD1 eventChapter7Data._HannibalArmorGroup
 		WAIT_MOVE
 		YIELD
-
-		+
 	END2
 
 	_RaydrikDialogue ; 99/B475
@@ -454,6 +446,7 @@ eventChapter7Events ; 99/B023
 		SET_FLAG $0A
 
 		macroSetCharacterByte Eisenhau, structCharacterDataRAM.Unknown3F, $1000
+		macroSetCharacterByte Galzus, structCharacterDataRAM.Unknown3F, $1000
 		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.Unknown3F, $1000
 		macroSetCharacterByte MunsterBowKnight, structCharacterDataRAM.Unknown3F, $1000
 		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.Unknown3F, $1000
@@ -463,6 +456,11 @@ eventChapter7Events ; 99/B023
 		macroSetCharacterByte Eisenhau, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Eisenhau, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte Eisenhau, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte Galzus, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte Galzus, structCharacterDataRAM.AI4, $80
+		macroSetCharacterByte Galzus, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte Galzus, structCharacterDataRAM.Unknown3E, $00
 
 		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.AI1, $02
 		macroSetCharacterByte MunsterCavalier, structCharacterDataRAM.AI4, $00
@@ -652,12 +650,16 @@ eventChapter7Events ; 99/B023
 		CALL_ASM_LOOP rlASMCLoadPlayerUnitsByStartingPositions, $0000
 		CALL_ASM_SKIPPABLE rlUpdateVisibilityMap, $0000
 		CALL_ASM_SKIPPABLE rlUpdateUnitMapsAndFog, $0000
+		
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED 4
+		YIELD
 
 		DIALOGUE ch7op1
 		YIELD
 
-		SCROLL_CAMERA_ADDRESS eventChapter7Data._BanditCameraCoordinates
-		YIELD
+		;SCROLL_CAMERA_ADDRESS eventChapter7Data._BanditCameraCoordinates
+		;YIELD
 
 		LOAD1 eventChapter7Data._BanditGroup
 		WAIT_MOVE
@@ -666,8 +668,8 @@ eventChapter7Events ; 99/B023
 		EVENT_TEST_FLAG_SET FlagShivaDiedInChp2x
 		JUMP_TRUE +
 
-		SCROLL_CAMERA_ADDRESS eventChapter7Data._ShivaCameraCoordinates
-		YIELD
+		;SCROLL_CAMERA_ADDRESS eventChapter7Data._ShivaCameraCoordinates
+		;YIELD
 
 		LOAD1 eventChapter7Data._ShivaGroup
 		WAIT_MOVE

@@ -135,7 +135,7 @@
 * := $0DB639
   .logical $9BB639
 
-.byte $A0
+.byte $AD
 
 .here
 
@@ -154,5 +154,29 @@
   .logical $84EEC5
 
 .byte $3A, $B6, $A4, $AC, $BA, $A4, $BB, $BE, $A4, $3A, $B6, $A4, $F6, $CB, $A4, $0F, $C3, $A4, $4E, $C7, $A4, $F6, $CB, $A4, $15, $CA, $AD, $9D, $D0, $AD
+
+.here
+
+;Points to the correct map sprite movement frames
+;for F!Sage, F!Bow Knight, and F!Arch Knight
+
+* := $051FD6
+  .logical $8A9FD6
+
+.byte $40, $A9, $8A
+
+.here
+
+* := $05204D
+  .logical $8AA04D
+
+.byte $D6, $A0, $8A
+
+.here
+
+* := $052054
+  .logical $8AA054
+
+.byte $D6, $A0, $8A
 
 .here

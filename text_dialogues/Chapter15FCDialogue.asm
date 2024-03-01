@@ -1990,10 +1990,6 @@ asaellotrude
 
 daisyrequest
 
-
-.word PlayMusic
-.byte $4C
-
 .byte right_slot
 .word LoadPortrait
 .word daisy_portrait
@@ -2203,7 +2199,7 @@ leifjealousoftravant
 
 .byte left_slot
 .byte ScrollText
-.text "Hm?"
+.text "What do you mean?"
 .byte WaitForA
 
 .byte right_slot
@@ -2254,7 +2250,7 @@ leifjealousoftravant
 .byte NewLine
 .text "the empire from behind instead of us—there"
 .byte NewLine
-.text "there would have been little hope in defeating him."
+.text "would have been little hope in defeating him."
 .byte WaitForA
 
 .byte right_slot

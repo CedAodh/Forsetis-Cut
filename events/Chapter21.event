@@ -32,6 +32,10 @@ eventChapter21Events ; FD/E42D
 			CMP_WORD_RANGE wCurrentTurn, 7, 10
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
+		EVENT $13, _Reinforcing
+			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_SET $12
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/E499
@@ -55,6 +59,12 @@ eventChapter21Events ; FD/E42D
 		END_DEFINITION
 		EVENT $11, _FergusDiarmuidTalk
 			CHECK_CHARS2 Fergus, Diarmuid
+		END_DEFINITION
+		EVENT $12, _LeifXavierReinforce
+			CHECK_CHARS2 Leif, Xavier
+		END_DEFINITION
+		EVENT $12, _LeifXavierReinforce
+			CHECK_CHARS2 Xavier, Leif
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -413,6 +423,27 @@ eventChapter21Events ; FD/E42D
 		
 		DIALOGUE fergusdiarmuid
 		YIELD
+	END2
+	
+	_LeifXavierReinforce
+		macroDialogueHouse reinforce
+		
+		JUMP_TRUE +
+		
+		UNSET_FLAG $12
+		
+		+
+	END2
+	
+	_Reinforcing
+		SCROLL_CAMERA_ADDRESS eventChapter21Data._LeonsterGroupCameraCoordinates
+		YIELD
+		
+		LOAD1 eventChapter21Data._LeonsterGroup
+		WAIT_MOVE
+		YIELD
+		
+		YIELD_UNK
 	END2
 	
 	_ConomorMirandaTalk

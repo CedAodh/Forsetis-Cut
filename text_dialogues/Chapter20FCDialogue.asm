@@ -195,131 +195,214 @@ olwenbharat
 .byte EndText
 
 martyosian
-.byte left_slot
-.word LoadPortrait
-.word marty_portrait 
-
-.byte left_slot
-.text "M-man...I gotta get outta here...this stinks..."
-.byte NewLine
-.text "Is that... Osian?"
-.byte WaitForA 
-.byte ScrollText
-.text "Oh, anyone but him..."
-.byte WaitForA 
 
 .byte right_slot
+.word LoadPortrait
+.word marty_portrait
+.text "Man, I gotta get outta here at some point..."
+.byte NewLine
+.text "I r-really don't belong here."
+.byte WaitForA
+
+.byte left_slot
 .word LoadPortrait
 .word osian_portrait
 
 .byte right_slot
-.text "Marty!"
-.byte WaitForA 
+.byte ScrollText
+.text "Oh crud, Osian."
 
 .byte left_slot
-.byte ScrollText
-.text "*gulp* H-hey, Osian! What brings you here?"
-.byte WaitForA 
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte NewLine
+.text "I'll jus' try to, uh..."
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word osian_portrait
+.text "Hey! Marty!"
+.byte NewLine
+.text "Get yourself over here, loafer!"
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I jus' don't get it. You're the tallest man on" 
+.text "What?! I-I mean, er..."
 .byte NewLine
-.text "the battlefield, yet you insist on slurking "
-.byte NewLine
-.text "around like a lowly pickpocket?"
-.byte WaitForA 
-
-.byte ScrollText
-.text "What's that all about?"
+.text "Uh, Osian, what do ya need me for?"
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I dunno, jus' never been a fan of confrontation."
+.text "I need you to stop standing back here"
 .byte NewLine
-.text "People tend to get the jump on me in a fight."
+.text "like you're trying to be a pillar!"
+.byte WaitForA
 .byte NewLine
-.text "Best thing to do is avoid that, right?"
-.byte WaitForA 
+.text "Go do it out in front of the enemies if you"
+.byte NewLine
+.text "want—but over here, you're just takin' up space!"
+.byte WaitForA
+.byte ScrollText
+.text "Don't you get that?! This has been going on"
+.byte NewLine
+.text "the entire time—how many more times do we"
+.byte NewLine
+.text "need to have this conversation?!"
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Marty, we've been under siege for months now!"
+.text "I-I-I'm sorry, Osian! It's just— I-I dunno!"
 .byte NewLine
-.text "Could you at least act like you're concerned?!"
-.byte WaitForA 
+.text "I hate all o' this! It's not fair!"
+.byte NewLine
+.text "You keep pickin' on me 'cause of how big I am!"
+.byte WaitForA
+.byte ScrollText
+.text "Can't you just pretend I'm somebody else?"
+.byte NewLine
+.text "Some guy you don't know?"
+.byte NewLine
+.text "Please...!"
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Uhuh, I'm plenty concerned! What do ya suppose"
+.text "What? No, no, no—no way."
 .byte NewLine
-.text "I do 'bout that?"
-.byte WaitForA 
+.text "What kind of stupid, selfish question is that?"
+.byte NewLine
+.text "I swear to gods..."
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Stand with your head tall! Don't let your"
+.text "...O-Osian..."
 .byte NewLine
-.text "enemies push you around! Show some spine when"
+.text "What're you doin' with your axe?"
 .byte NewLine
-.text "you're out in the thick of it!"
-.byte WaitForA 
-.byte ScrollText
-.text "...I'll give you an example. Pretend I'm about"
-.byte NewLine
-.text "to cleave your head off. Whatcha gonna do in"
-.byte NewLine
-.text "this life or death scenario, huh? HUH?!"
-.byte WaitForA 
+.text "There somebody behind me?"
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I... I uhh..."
+.text "Uh... Nope."
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "C'MON, MARTY! HIT ME! QUIT BEING DENSE!"
-.byte NewLine
-.text "YOU DON'T WANNA BE DAGDAR'S ERRAND BOY" 
-.byte NewLine
-.text "FOREVER, DO YA? "
-.byte WaitForA 
+.text "Th-then why're you..."
+.byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "GRAAAH!"
+.text "Pretend I'm about to swing at you!"
+.byte NewLine
+.text "Whatcha gonna do to make me stop?"
+.byte NewLine
+.text "It's life or death, Marty!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Eh? C'mon, Marty!"
+.byte NewLine
+.text "If I'm giving you such a hard time,"
+.byte NewLine
+.text "how 'bout you step it up, you big idiot!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "GR...GRAAAH!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...!"
+.byte NewLine
+.text "What the—!"
+.byte WaitForA
 
 .byte EndText
 
 martyosian2
-					
+
+.byte right_slot
+.word LoadPortrait
+.word osian_portrait
+.text "...Phew."
+.byte NewLine
+.text "Just a strand of my hair came off..."
+.byte WaitForA
+
 .byte left_slot
 .word LoadPortrait
 .word marty_portrait
 
 .byte right_slot
-.word LoadPortrait
-.word osian_portrait
-
-.byte right_slot
-.text "Whoa... If I didn't dodge that, I'd"
+.byte ScrollText
+.text "Marty!"
 .byte NewLine
-.text "be a pile of guts right about now."
+.text "You were this close to killing me just now!"
+.byte WaitForA
+.byte NewLine
+.text "Maybe be a little more considerate with"
+.byte NewLine
+.text "your swinging next time, huh?!"
 .byte WaitForA
 
 .byte left_slot
-.text "...I've had my fill 'o being knocked"
-.byte NewLine
-.text "around. This was an eye-opening moment"
-.byte NewLine
-.text "for me. T-thanks, Osian."
+.byte ScrollText
+.text "Rrgh..."
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Hey, no problem! Now make the empire"
-.byte NewLine 
-.text "face your wrath!"
+.text "*gulp* Hey, hey."
 .byte WaitForA
+.byte ScrollText
+.text "D-don't give ME that look."
+.byte WaitForA
+.byte ScrollText
+.text "The empire—the guys over there—they're"
+.byte NewLine
+.text "the reason any of what I did happened."
+.byte NewLine
+.text "If you're angry...take it out on them!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...Yeah. Yeah, that's right."
+.byte NewLine
+.text "That's what I oughta do!"
+.byte NewLine
+.text "Thanks, Osian!"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.word RetractBox
+
+.byte right_slot
+.byte ScrollText
+.text "...All right."
+.byte NewLine
+.text "Apparently, even Marty has his limits."
+.byte NewLine
+.text "That's... Yeah, that's good to know."
+.byte WaitForA
+
 .byte EndText
 
 ch20opening4

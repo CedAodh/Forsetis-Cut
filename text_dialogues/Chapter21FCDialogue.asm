@@ -1843,3 +1843,26 @@ linoanwantstopromote
 .byte WaitForA
 
 .byte EndText
+
+reinforce
+
+.word $2E00
+.long $8CBBBC
+.byte Right_slot
+.word LoadPortrait
+.word leif_portrait
+.byte Left_slot
+.word LoadPortrait
+.word xavier_portrait
+.text "Shall I call for reinforcements, sire?"
+
+.byte Right_slot
+.text "Hmm..."
+.byte NewLine
+.text "     Yes, please do."
+.byte NewLine
+.text "     On second thought, it's not necessary."
+.word $2E00
+.long $8CBBCC
+
+.byte EndText

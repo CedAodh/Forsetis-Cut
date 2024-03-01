@@ -490,11 +490,9 @@ ch8opening
 .text "of the fallen families of Leonster."
 .byte WaitForA
 .byte ScrollText
-.text "There, under the protection"
+.text "There, under the protection of General Hannibal,"
 .byte NewLine
-.text "of General Hannibal, Count Dryas trains us"
-.byte NewLine
-.text "in the ways of knighthood."
+.text "Count Dryas trains us in the ways of knighthood."
 .byte WaitForA
 
 .byte Right_slot

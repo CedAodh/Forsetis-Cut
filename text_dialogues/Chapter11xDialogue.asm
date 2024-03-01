@@ -497,7 +497,7 @@ ch11xopening2
 .byte ScrollText
 .word LoadPortrait
 .word boy_portrait
-.text "You're talkin' they haven't decided yet!"
+.text "You're talkin' like they didn't decide yet!"
 .byte NewLine
 .text "They're gonna sacrifice us to Loptous!"
 .byte WaitForA

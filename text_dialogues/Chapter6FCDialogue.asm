@@ -344,7 +344,7 @@ weapontriangle
 .text "'Scuse me, I'm...outta breath now."
 .byte WaitForA
 .byte ScrollText
-.text "Now, repeat the magic part back t'me!"
+.text "Now, repeat the magic part back t' me!"
 .byte NewLine
 .text "That's yer little quiz."
 .byte NewLine
@@ -355,7 +355,7 @@ weapontriangle
 .byte NewLine
 .text "Pah, fine—go liberate the peninsula,"
 .byte NewLine
-.text "or... whatever it is ya gotta do."
+.text "or...whatever it is ya gotta do."
 .byte WaitForA
 .byte NewLine
 .text "I'll just stay here...being IGNORED."
@@ -396,12 +396,12 @@ instantcapture
 .word colho_portrait
 .text "Somethin' you maybe didn't realize yet is"
 .byte NewLine
-.text "that when you don't have a weapon t'fight"
+.text "that when you don't have a weapon t' fight"
 .byte NewLine
 .text "back with, an enemy can just yoink ya."
 .byte WaitForA
 .byte ScrollText
-.text "Makes sense t'me, since there's really no"
+.text "Makes sense t' me, since there's really no"
 .byte NewLine
 .text "winnin' disarmed against an armed guy."
 .byte NewLine
@@ -457,7 +457,7 @@ secretshop
 .byte NewLine
 .text "applicant is said to reside in Leonster."
 .byte NewLine
-.text "As per our policy, their name is kept a secret!"
+.text "...Their name? Sorry, that's classified."
 .byte WaitForA
 .byte ScrollText
 .text "It's been nice talking, but I gotta"
@@ -496,9 +496,9 @@ bond
 .text "...They probably wanna impress, too."
 .byte WaitForA
 .byte ScrollText
-.text "I wager Prince Leif has a whole bunch"
+.text "I wager Prince Leif has a whole buncha"
 .byte NewLine
-.text "o' guys who look up to him and wanna"
+.text "guys who look up to him and wanna"
 .byte NewLine
 .text "make sure they pull their fair load."
 .byte WaitForA

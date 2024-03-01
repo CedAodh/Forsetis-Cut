@@ -208,11 +208,11 @@ sort_type_pointers			.block
 sort_type_text				.block
 
 _TypeOrder
-.text "{SEL1}{SEL2}Type    "
+.text "{SEL1}{SEL2}Table   "
 .word $0000
 
 _KanaOrder
-.text "{SEL1}{SEL2}Alphabet"
+.text "{SEL1}{SEL2}Type    "
 .word $0000
 
 _PossessionOrder

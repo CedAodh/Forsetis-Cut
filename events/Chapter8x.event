@@ -42,6 +42,7 @@ eventChapter8xEvents ; 97/844D
 		macroChestDefinition $2B, eventChapter8xData._Chest4Events, eventChapter8xData._Chest4Coordinates
 		macroChestDefinition $2C, eventChapter8xData._Chest5Events, eventChapter8xData._Chest5Coordinates
 		macroChestDefinition $2D, eventChapter8xData._Chest6Events, eventChapter8xData._Chest6Coordinates
+		macroDoorDefinition $2E, [6, 3], eventChapter8xEvents._Door7
 		EVENT FlagAlwaysZero, _EndingEvent
 			macroEventConditionCheckCoords [10, 2]
 			CMP_WORD wCurrentPhase, Player
@@ -63,7 +64,6 @@ eventChapter8xEvents ; 97/844D
 	END_DEFINITION_ARRAY
 
 	_Door1 ; 97/8591
-		macroOpenDoorByTileChangeID 0
 		macroOpenDoorByTileChangeID 1
 	END1
 
@@ -86,7 +86,11 @@ eventChapter8xEvents ; 97/844D
 	_Door6 ; 97/8692
 		macroOpenDoorByTileChangeID 6
 	END1
-
+	
+	_Door7
+		macroOpenDoorByTileChangeID 0
+	END1
+	
 	_TanyaRemoveImmortality ; 97/86BD
 		macroUnsetCharacterBitsWord Tanya, structCharacterDataRAM.Skills2, (Skill2Anchor | (Skill3Immortal << 8))
 	END2
@@ -177,7 +181,7 @@ eventChapter8xEvents ; 97/844D
 
 		macroChapterTitlePopup ch8xtitlename
 
-		macroDialogueWithBackground ch8xopening, 1
+		macroDialogueWithBackground ch8xopening, 4
 
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD
@@ -221,7 +225,7 @@ eventChapter8xEvents ; 97/844D
 
 		macroUnsetCharacterBitsWord Tanya, structCharacterDataRAM.Skills2, (Skill2Anchor | (Skill3Immortal << 8))
 
-		macroDialogueWithBackground ch8xclosing, 1
+		macroDialogueWithBackground ch8xclosing, 4
 
 		YIELD
 		

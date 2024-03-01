@@ -12,9 +12,9 @@ eventChapter7Data ; B1/DE9B
 		.byte 8, 8
 
 	_CavalierReinforcementsGroup ; B1/DEB5
-		UNIT MunsterCavalier, Enemy, [10, 1], [10, 1], Eisenhau, [Longsword, ShortLance], 8, False, [$00, $00, $00, $00]
-		UNIT MunsterCavalier, Enemy, [9, 1], [9, 1], Eisenhau, [LongLance, Rapier], 10, False, [$00, $00, $00, $00]
-		UNIT MunsterCavalier, Enemy, [8, 1], [8, 1], Eisenhau, [Ridersbane, Shortsword], 6, False, [$00, $00, $00, $00]
+		UNIT MunsterCavalier, Enemy, [10, 1], [10, 1], Eisenhau, [Rapier, Javelin], 9, False, [$00, $00, $00, $00]
+		UNIT MunsterBowKnight, Enemy, [9, 1], [9, 1], Eisenhau, [Longbow], 10, False, [$00, $00, $00, $00]
+		UNIT MunsterCavalier, Enemy, [8, 1], [8, 1], Eisenhau, [Rapier, LongLance], 9, False, [$00, $00, $00, $00]
 	UNIT
 
 	_MageBishopReinforcementsCameraCoordinates ; B1/DEF3
@@ -23,7 +23,7 @@ eventChapter7Data ; B1/DE9B
 	_MageBishopReinforcementsGroup ; B1/DEF5
 		UNIT MunsterThunderMage, Enemy, [8, 1], [8, 1], Eisenhau, [Fire], 7, False, [$00, $00, $00, $00]
 		UNIT MunsterThunderMage, Enemy, [10, 1], [10, 1], Eisenhau, [Thunder], 7, False, [$00, $00, $00, $00]
-		UNIT MunsterBishop1, Enemy, [9, 1], [9, 1], Eisenhau, [Meteor, Heal], 3, False, [$00, $00, $00, $00]
+		UNIT MunsterBishop1, Enemy, [9, 1], [9, 1], Eisenhau, [Meteor, Heal], 3, False, [$12, $00, $00, $00]
 	UNIT
 
 	_SoldierArmorReinforcementsCameraCoordinates ; B1/DF33
@@ -32,7 +32,7 @@ eventChapter7Data ; B1/DE9B
 	_SoldierArmorReinforcementsGroup ; B1/DF35
 		UNIT MunsterSoldier2, Enemy, [8, 1], [8, 1], Eisenhau, [Javelin], 10, False, [$00, $00, $00, $00]
 		UNIT MunsterSoldier2, Enemy, [10, 1], [10, 1], Eisenhau, [Javelin], 10, False, [$00, $00, $00, $00]
-		UNIT MunsterArmoredSword, Enemy, [9, 1], [9, 1], Eisenhau, [Longsword], 8, False, [$00, $00, $00, $00]
+		UNIT MunsterArmoredSword, Enemy, [9, 1], [9, 1], Eisenhau, [Longsword], 9, False, [$00, $00, $00, $00]
 	UNIT
 
 	_HannibalCameraCoordinates ; B1/DF73
@@ -46,15 +46,16 @@ eventChapter7Data ; B1/DE9B
 		.byte 8, 46
 
 	_HannibalArmorGroup ; B1/DF8D
-		UNIT ThraciaArmoredLance, NPC, [8, 45], [8, 45], Hannibal, [Ridersbane], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredSword, NPC, [9, 45], [9, 45], Hannibal, [SilverSword], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredSword, NPC, [11, 45], [11, 45], Hannibal, [SilverSword], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredLance, NPC, [12, 45], [12, 45], Hannibal, [Ridersbane], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredLance, NPC, [12, 46], [12, 46], Hannibal, [SilverLance], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredSword, NPC, [11, 46], [11, 46], Hannibal, [Armorslayer], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredSword, NPC, [10, 46], [10, 46], Hannibal, [SilverSword], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredSword, NPC, [9, 46], [9, 46], Hannibal, [Armorslayer], 15, False, [$00, $01, $00, $00]
-		UNIT ThraciaArmoredLance, NPC, [8, 46], [8, 46], Hannibal, [SilverLance], 15, False, [$00, $01, $00, $00]
+		UNIT Hannibal, NPC, [10, 46], [10, 45], Hannibal, [SilverSword, SilverLance, SilverAxe, SilverBow], 20, False, [$00, $03, $00, $80]
+		UNIT ThraciaArmoredLance, NPC, [10, 46], [8, 45], Hannibal, [SilverLance], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredLance, NPC, [10, 46], [12, 45], Hannibal, [SilverLance], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredSword, NPC, [10, 46], [9, 45], Hannibal, [SilverSword], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredSword, NPC, [10, 46], [11, 45], Hannibal, [SilverSword], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredSword, NPC, [10, 46], [10, 46], Hannibal, [Rapier], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredLance, NPC, [10, 46], [8, 46], Hannibal, [Ridersbane], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredLance, NPC, [10, 46], [12, 46], Hannibal, [Ridersbane], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredSword, NPC, [10, 46], [11, 46], Hannibal, [Armorslayer], 20, False, [$00, $01, $00, $00]
+		UNIT ThraciaArmoredSword, NPC, [10, 46], [9, 46], Hannibal, [Armorslayer], 20, False, [$00, $01, $00, $00]
 	UNIT
 
 	_RaydrikCameraCoordinates ; B1/E043

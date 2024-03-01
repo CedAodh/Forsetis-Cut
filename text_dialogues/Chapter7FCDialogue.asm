@@ -675,7 +675,8 @@ ch7safylifis
 	
 ch7ending9FC
 
-.byte Right_slot
+.byte left_slot
+.byte ScrollText
 .word LoadPortrait
 .word hannibal_portrait
 .text "Sir Lugh, you'd best be setting out."
@@ -683,7 +684,8 @@ ch7ending9FC
 .text "It'll be dark before long."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
+.byte ScrollText
 .text "Of course."
 .byte NewLine
 .text "Many thanks for your help, General Hannibal."
@@ -691,11 +693,11 @@ ch7ending9FC
 .text "I won't forget the kindness you've done us!"
 .byte WaitForA
 
-.byte right_slot
+.byte left_slot
 .byte ScrollText
 .word ClearPortrait
 
-.byte left_slot
+.byte right_slot
 .byte ScrollText
 .word ClearPortrait
 
@@ -712,11 +714,9 @@ ch7ending9FC
 .byte left_slot
 .word LoadPortrait
 .word wolfe_portrait
-.text "General Hannibal,"
+.text "General Hannibal, Baron Raydrik of Munster"
 .byte NewLine
-.text "Baron Raydrik of Munster requests"
-.byte NewLine
-.text "an audience with you."
+.text "requests an audience with you."
 .byte WaitForA
 
 .byte right_slot
@@ -735,14 +735,14 @@ ch7ending9FC
 
 .byte right_slot
 .byte ScrollText
-.text "Why do you come, traitor?"
+.text "Why do you come here, traitor?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Pleasantries are spit upon, I see."
 .byte NewLine
-.text "I'll get right to it then."
+.text "I'll get right to it, then."
 .byte WaitForA
 .byte ScrollText
 .text "Some loose ends of mine seem to have"
@@ -759,9 +759,9 @@ ch7ending9FC
 .byte ScrollText
 .text "Prince Leif of Leonster...?"
 .byte NewLine
-.text "I regret to inform you that"
+.text "I regret to inform you there is no one"
 .byte NewLine
-.text "there is no one here by that name."
+.text "here by that name."
 .byte WaitForA
 
 .byte left_slot
@@ -784,7 +784,7 @@ ch7ending9FC
 .byte NewLine
 .text "I understand that this may be a"
 .byte NewLine
-.text "foreign practice to the empire."
+.text "practice foreign to the empire."
 .byte WaitForA
 
 .byte left_slot
@@ -801,9 +801,9 @@ ch7ending9FC
 .text "I don't know what you're talking about, Raydrik."
 .byte WaitForA
 .byte ScrollText
-.text "It seems I'm going to have to falsify your claim"
+.text "It seems I'll have to falsify your claim"
 .byte NewLine
-.text "and demand that you turn around and head back"
+.text "and demand you turn around and head back"
 .byte NewLine
 .text "to your own territory."
 .byte WaitForA
@@ -832,14 +832,12 @@ leifhannibal
 .text "Your banner..."
 .byte NewLine
 .text "Are you soldiers from Meath?"
-.byte NewLine
-.text "The Panzerritter?"
 .byte WaitForA
 
 .byte right_slot
 .text "Indeed."
 .byte NewLine
-.text "There seemed to be quite the commotion;"
+.text "There appeared to be quite the commotion;"
 .byte NewLine
 .text "we marched out at once to address it."
 .byte WaitForA
@@ -867,11 +865,11 @@ leifhannibal
 
 .byte right_slot
 .byte ScrollText
-.text "That is how my kingdom acknowledges me, yes."
+.text "That is how His Majesty acknowledges me, yes."
 .byte NewLine
 .text "But let us speak more in my castle—first,"
 .byte NewLine
-.text "we're going to send this stampede scurrying."
+.text "we'll send this stampede scurrying."
 .byte WaitForA
 
 .byte left_slot

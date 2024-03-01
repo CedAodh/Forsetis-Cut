@@ -881,8 +881,7 @@ ch15opening1
 .byte NewLine
 .text "up ahead to reach the road to Norden Way."
 .byte WaitForA
-
-.byte Left_slot
+.byte ScrollText
 .word LoadPortrait
 .word augustus_portrait
 .text "And it is on this matter that Count Dryas"
@@ -899,8 +898,9 @@ ch15opening1
 .text "are sure to be weaker."
 .byte WaitForA
 
-.byte Right_slot
-.byte ScrollText
+.byte Left_slot
+.word LoadPortrait
+.word dorias_portrait
 .text "Clearly you aren't well-acquainted"
 .byte NewLine
 .text "with the area. If you were, you'd know that"
@@ -915,7 +915,7 @@ ch15opening1
 .text "Hell, the locals call it the “Wayward Forest!”"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Don't patronize me."
 .byte WaitForA
@@ -934,7 +934,7 @@ ch15opening1
 .text "That's just basic tactics!"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "I must strenuously object!"
 .byte NewLine
@@ -962,7 +962,7 @@ ch15opening1
 .text "held high!"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Such a spectacle would indeed be glorious—"
 .byte NewLine
@@ -974,7 +974,7 @@ ch15opening1
 .text "Our casualties would be enormous."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Some of our own would perish, true,"
 .byte NewLine
@@ -983,7 +983,7 @@ ch15opening1
 .text "worthy of a knight of Leonster."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Don't presume to speak for all of us,"
 .byte NewLine
@@ -1002,7 +1002,7 @@ ch15opening1
 .text "by projecting your own values onto them."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Th-that's uncalled for, August!"
 .byte NewLine
@@ -1021,7 +1021,7 @@ ch15opening1
 .text "The decision rests with Prince Leif now."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "...Indeed it does."
 .byte NewLine
@@ -1040,7 +1040,7 @@ ch15opening2
 .byte Left_slot
 .word LoadPortrait
 .word merc_portrait
-.text "Boss, Boss! I gots a great idea!"
+.text "Boss, boss! I gots a great idea!"
 .byte NewLine
 .text "Let's hit up that there village today!"
 .byte WaitForA

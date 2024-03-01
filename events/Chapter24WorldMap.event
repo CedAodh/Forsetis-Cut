@@ -45,38 +45,95 @@ eventChapter24WorldMapEvents ; E7/F5FA
 
     CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
-
-	STORE_WORD wEventEngineCharacterTarget, Mareeta
-	CALL_ASM_LOOP rlASMCCheckUnitExists, $0000
-	JUMP_FALSE +
-	macroCheckTurnStatusSet Mareeta, TurnStatusCaptured
-	JUMP_TRUE +
 	
-	EVENT_TEST_FLAG_SET $A3
-	JUMP_TRUE +
-	
-	FADE_OUT $02
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
 	YIELD
 	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	EVENT_TEST_FLAG_SET $A6
+	JUMP_TRUE +
+	
+	LOAD1 eventChapter24Data._GalzusGroup
+	YIELD
+
+	STORE_WORD wEventEngineCharacterTarget, Mareeta
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
 	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
+	PAUSE_SKIPPABLE 16
+	YIELD
+	
+	SET_MUSIC $58
 	YIELD
 	
 	macroDialogueWithBackground mareetaslays, 1
 	
-	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
-	YIELD
-	
 	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD
 	
+	+
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 32
 	YIELD
 	
+	STORE_WORD wEventEngineCharacterTarget, Finn
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fergus
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Karin
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Brighton
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Nanna
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Hicks
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Callion
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Selphina
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Kane
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Alba
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Robert
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	YIELD
+	STORE_WORD wEventEngineCharacterTarget, Olwen
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fred
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Glade
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Dean
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Eda
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Ilios
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Misha
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Miranda
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Amalda
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Conomor
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Diarmuid
+	CALL_ASM_LOOP rlASMCDismount, $0000
+	
+	FADE_IN $02
+	
 	SET_MUSIC $2D
 	YIELD
-	
-	+
 END1

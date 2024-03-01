@@ -40,14 +40,14 @@ eventChapter19Data ; B1/989B
 		.byte 10, 61
 
 	_AmaldaGroup ; B1/9AF9
-		UNIT Amalda, Enemy, [1, 56], [7, 57], Amalda, [MasterSword, Recover], 7, False, [$17, $00, $02, $80]
+		UNIT Amalda, Enemy, [7, 57], [7, 57], Amalda, [MasterSword, Recover], 7, False, [$17, $00, $02, $80]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/9B0F
 	;	.byte 8, 7
 
 	_ConomorGroup ; B1/9B11
-		UNIT Conomor, Enemy, [22, 57], [14, 56], Conomor, [MasterLance, KillingEdge, Vulnerary], 9, False, [$17, $00, $00, $80]
+		UNIT Conomor, Enemy, [14, 56], [14, 56], Conomor, [MasterLance, KillingEdge, Vulnerary], 9, False, [$17, $00, $00, $80]
 	UNIT
 
 	_BrigandReinforcementsCameraCoordinates ; B1/9B27

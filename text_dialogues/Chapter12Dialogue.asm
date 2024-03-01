@@ -694,7 +694,7 @@ ch12opening2
 .text "to understand weapons in a different light."
 .byte WaitForA
 .byte ScrollText
-.text "Just as holy blades shine from their"
+.text "Just as divine blades shine from their"
 .byte NewLine
 .text "bearer's righteous deeds, no cursed blade"
 .byte NewLine

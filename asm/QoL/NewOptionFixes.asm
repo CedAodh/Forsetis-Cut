@@ -677,7 +677,7 @@ rlNewDefaultSaveFileOptions
 
 	lda #$0010 	; set terrain window to simple
 	sta <>aOptions.wAnimationOption,b
-	lda #$1101 ; set preps to 1, hidden info to 1 and message speed to normal
+	lda #$2102 ; set preps to 1, hidden info to 1 and message speed to normal
 	sta <>aOptions.wTerrainWindowOption,b
 	stz <>aOptions.wBurstWindowOption,b
 	stz <>aOptions.wTextSpeedOption,b

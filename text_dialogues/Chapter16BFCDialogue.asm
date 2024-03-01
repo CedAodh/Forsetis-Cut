@@ -479,7 +479,7 @@ LeifShannamTalk
 .byte ScrollText
 .text "Indeed! However, Prince, I must warn you:"
 .byte NewLine
-.text "my blade, the holy Balmung, is a very"
+.text "my blade, the divine Balmung, is a very"
 .byte NewLine
 .text "expensive weapon to maintain."
 .byte WaitForA

@@ -75,7 +75,54 @@ eventChapter16AWorldMapEvents ; E7/ECFB
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
 
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	STORE_WORD wEventEngineCharacterTarget, Finn
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fergus
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Karin
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Brighton
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Nanna
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Hicks
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Callion
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Selphina
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Kane
+	CALL_ASM_LOOP rlASMCMount, $0000
+	YIELD
+	STORE_WORD wEventEngineCharacterTarget, Alba
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Robert
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Olwen
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Fred
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Glade
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Dean
+	CALL_ASM_LOOP rlASMCMount, $0000
+	STORE_WORD wEventEngineCharacterTarget, Eda
+	CALL_ASM_LOOP rlASMCMount, $0000
 	STORE_WORD wEventEngineCharacterTarget, Kempf
 	CALL_ASM_LOOP rlASMCMount, $0000
+	
+	FADE_IN $02
+	
+	SET_MUSIC $2D
 	YIELD
 END1

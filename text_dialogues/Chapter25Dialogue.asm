@@ -182,11 +182,11 @@ ch25opening1
 .text "that could've threatened our rule."
 .byte WaitForA
 .byte ScrollText
-.text "Besides, while he may be Leonster's heir,"
+.text "Though for his bloodline and all his exploits,"
 .byte NewLine
-.text "he's a mere child without enough holy blood"
+.text "he is still one unable to so much as"
 .byte NewLine
-.text "to so much as lift the Gáe Bolg himself."
+.text "lift the Gáe Bolg himself."
 .byte WaitForA
 .byte ScrollText
 .text "He's a posturing rebel who's deluded himself"

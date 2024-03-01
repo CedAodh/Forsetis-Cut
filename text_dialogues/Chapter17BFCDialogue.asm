@@ -91,7 +91,7 @@ daisyshannam
 	.byte NewLine
 	.text "lest you wish to know"
 	.byte NewLine
-	.text "the wrath of my holy blade!"
+	.text "the wrath of my divine blade!"
 	.byte WaitForA
 
 	.byte left_slot

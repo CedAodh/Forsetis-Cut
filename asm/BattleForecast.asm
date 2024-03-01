@@ -18,16 +18,25 @@ rlSetBattleForecastWindowShading ; 81/BF0E
 	.databank ?
 
 	jsl $8591F0
-	lda #$0008
+
+	; HDMA y coord
+	lda #6
 	sta wR0
-	lda #$0010
+
+	; HDMA height
+	lda #16
 	sta wR1
+
 	jsl $859219
 	jsl $859205
-	lda #$0040
+
+	; allegiance color y coord
+	lda #48
 	sta wR1
-	lda #$0080
+
+	lda #128
 	sta wR2
+
 	jsl $85946B
 	rtl
 
@@ -105,9 +114,9 @@ rsBuildBattleForecastWindowTilemap ; 81/BF86
 
 	; Tilemap
 
-	lda #<>$F4F9C0
+	lda #<>aBattleForecastBG1TopTilemap ; $F4F9C0
 	sta lR18
-	lda #>`$F4F9C0
+	lda #>`aBattleForecastBG1TopTilemap ; $F4F9C0
 	sta lR18+1
 
 	; Width
@@ -124,37 +133,43 @@ rsBuildBattleForecastWindowTilemap ; 81/BF86
 
 	ldx wR17
 	lda aBattleForecastWindowTilemapSegmentOffsets,x
-	sta wR19
+	sta lR19
 	jsl $84A3FF
 
 	; Middle tilemap segment
 
-	lda #<>$F4F9D6
+	lda #<>aBattleForecastBG1MiddleTilemap ; $F4F9D6
 	sta lR18
-	lda #>`$F4F9D6
+	lda #>`aBattleForecastBG1MiddleTilemap ; $F4F9D6
 	sta lR18+1
+
 	lda #10
 	sta wR0
+
 	lda #9
 	sta wR1
+
 	ldx wR17
 	lda aBattleForecastWindowTilemapSegmentOffsets+4,x
-	sta wR19
+	sta lR19
 	jsl $84A3FF
 
 	; Lower tilemap segment
 
-	lda #<>$F4F9EC
+	lda #<>aBattleForecastBG1BottomTilemap ; $F4F9EC
 	sta lR18
-	lda #>`$F4F9EC
+	lda #>`aBattleForecastBG1BottomTilemap ; $F4F9EC
 	sta lR18+1
+
 	lda #10
 	sta wR0
+
 	lda #8
 	sta wR1
+
 	ldx wR17
 	lda aBattleForecastWindowTilemapSegmentOffsets+8,x
-	sta wR19
+	sta lR19
 	jsl $84A3FF
 
 	; Now for the BG3 tiles
@@ -165,13 +180,16 @@ rsBuildBattleForecastWindowTilemap ; 81/BF86
 	sta lR18
 	lda #>`$F1FA80
 	sta lR18+1
+
 	lda #11
 	sta wR0
+
 	lda #14
 	sta wR1
+
 	ldx wR17
 	lda aBattleForecastWindowTilemapSegmentOffsets+12,x
-	sta wR19
+	sta lR19
 	jsl $84A3FF
 
 	; Lower segment
@@ -180,13 +198,16 @@ rsBuildBattleForecastWindowTilemap ; 81/BF86
 	sta lR18
 	lda #>`$F1FA96
 	sta lR18+1
+
 	lda #11
 	sta wR0
+
 	lda #14
 	sta wR1
+
 	ldx wR17
 	lda aBattleForecastWindowTilemapSegmentOffsets+16,x
-	sta wR19
+	sta lR19
 	jsl $84A3FF
 
 	rts
@@ -215,67 +236,10 @@ rsDrawBattleForecastUnitText ; 81/C03E
 	.autsiz
 	.databank `aBG1TilemapBuffer
 
-	; Fetch side
-
-	ldx wR17
-	lda aBattleForecastUnitInfoSideTable,x
-	sta wR16
-
-	; Text info
-
-	lda #<>$83C0F6
-	sta lUnknown000DDE,b
-	lda #>`$83C0F6
-	sta lUnknown000DDE+1,b
-	lda #$2180
-	sta wUnknown000DE7,b
-
-	; Draw labels
-
-	lda aActionStructUnit2.Character
-	jsl $839334
-
-	lda #1 | (1 << 8) ; X | (Y << 8)
-	clc
-	adc wR16
-	tax
-	jsl $87E728
-
-	lda aActionStructUnit2.Class
-	jsl $839351
-	lda #1 | (3 << 8)
-	clc
-	adc wR16
-	tax
-	jsl $87E728
-
-	sep #$20
-	lda aActionStructUnit2.EquippedItemMaxDurability
-	xba
-	lda aActionStructUnit2.EquippedItemID1
-	rep #$30
-	jsl rlCopyItemDataToBuffer
-	jsl $83931A
-	lda #1 | (5 << 8)
-	clc
-	adc wR16
-	tax
-	jsl $87E728
-
-	lda aActionStructUnit1.Character
-	jsl $839334
-	jsl $87E873
-
-	sta wR0
-	lda #9 | (23 << 8)
-	sec
-	sbc wR0
-	clc
-	adc wR16
-	tax
-	jsl $87E728
-
+	jsl rlNewDrawBattleForecastUnitText
 	rts
+
+	.fill $81C0B6 - *, $FF
 
 aBattleForecastUnitInfoSideTable ; 81/C0B6
 
@@ -381,59 +345,59 @@ aBattleForecastNumberInfo ; 81/C128
 
 	.word None
 	.word <>aActionStructUnit2.StartingLevel
-	.byte 2, 8
+	.byte 2, 6
 
 	.word None
 	.word <>aActionStructUnit2.StartingCurrentHP
-	.byte 2, 10
+	.byte 2, 8
 
 	.word <>aActionStructUnit2.EquippedItemID2
 	.word <>aActionStructUnit2.BattleMight
-	.byte 2, 12
+	.byte 2, 10
 
 	.word None
 	.word <>aActionStructUnit2.BattleDefense
-	.byte 2, 14
+	.byte 2, 12
 
 	.word <>aActionStructUnit2.EquippedItemID2
 	.word <>aActionStructUnit2.BattleAdjustedHit
-	.byte 2, 16
+	.byte 2, 14
 
 	.word <>aActionStructUnit2.EquippedItemID2
 	.word <>aActionStructUnit2.BattleAdjustedCrit
-	.byte 2, 18
+	.byte 2, 16
 
 	.word None
 	.word <>aActionStructUnit2.BattleAttackSpeed
-	.byte 2, 20
+	.byte 2, 18
 
 	.word None
 	.word <>aActionStructUnit1.StartingLevel
-	.byte 8, 8
+	.byte 8, 6
 
 	.word None
 	.word <>aActionStructUnit1.StartingCurrentHP
-	.byte 8, 10
+	.byte 8, 8
 
 	.word None
 	.word <>aActionStructUnit1.BattleMight
-	.byte 8, 12
+	.byte 8, 10
 
 	.word None
 	.word <>aActionStructUnit1.BattleDefense
-	.byte 8, 14
+	.byte 8, 12
 
 	.word None
 	.word <>aActionStructUnit1.BattleAdjustedHit
-	.byte 8, 16
+	.byte 8, 14
 
 	.word None
 	.word <>aActionStructUnit1.BattleAdjustedCrit
-	.byte 8, 18
+	.byte 8, 16
 
 	.word None
 	.word <>aActionStructUnit1.BattleAttackSpeed
-	.byte 8, 20
+	.byte 8, 18
 
 	.sint -1
 
@@ -461,11 +425,11 @@ rsColorBattleForecastWindowCenter ; 81/C17E
 	lda wR17
 	beq _Left
 
-	ldx #(24 * 2) | (8 * $40)
+	ldx #(24 * 2) | (6 * $40)
 	bra +
 
 	_Left
-	ldx #(4 * 2) | (8 * $40)
+	ldx #(4 * 2) | (6 * $40)
 
 	+
 	jsl $87D4DD

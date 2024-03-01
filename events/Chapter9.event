@@ -222,6 +222,8 @@ eventChapter9Events ; 8C/F011
 	.word $0000
 
 	_OpeningEvent ; 8C/F478
+		macroRemoveUnit Merloch
+		
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
 
 		PLAY_SOUND_WORD $00E0
@@ -283,7 +285,7 @@ eventChapter9Events ; 8C/F011
 		SCROLL_CAMERA_SPEED [6, 4], 4
 		YIELD
 
-		macroDialogueWithBackground ch9opening2, 1
+		macroDialogueWithBackground ch9opening2, 4
 		
 		STORE_LONG lEventEngineLongParameter, kanealbarobert
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
@@ -328,7 +330,7 @@ eventChapter9Events ; 8C/F011
 
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000
 
-		macroDialogueWithBackground ch9closing1, 1
+		macroDialogueWithBackground ch9closing1, 4
 
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD

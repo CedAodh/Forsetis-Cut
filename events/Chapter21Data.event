@@ -78,7 +78,15 @@ eventChapter21Data ; B1/8D4F
 		UNIT LoptrianSorcerer1, Enemy, [14, 10], [14, 10], Codha, [Jormungand, Rewarp], 8, False, [$00, $03, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [15, 9], [15, 9], Codha, [Jormungand, Rewarp], 8, False, [$00, $03, $00, $00]
 	UNIT
-
+	
+	_LeonsterGroupCameraCoordinates
+		.byte 8, 7
+		
+	_LeonsterGroup
+		UNIT CedChp4x, NPC, [0, 1], [2, 2], CedChp4x, [Forseti, Forseti, Forseti, Vulnerary], 5, False, [$00, $13, $00, $80]
+		UNIT XavierArmor5, NPC, [0, 1], [1, 3], Xavier, [SilverAxe, Vulnerary], 18, False, [$0F, $0D, $00, $00]
+	UNIT
+	
 	_DiarmuidCameraCoordinates ; B1/9137
 		.byte 9, 8
 

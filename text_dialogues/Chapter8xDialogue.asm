@@ -358,9 +358,9 @@ ch8xclosing
 .byte ScrollText
 .text "It all returns to the Tragedy of the Gáe Bolg,"
 .byte NewLine
-.text "to the misfortune that seems to befall"
+.text "to the misfortune that seems to befall all"
 .byte NewLine
-.text "all those who wield either of the holy lances."
+.text "those who wield either of the divine lances."
 .byte WaitForA
 .byte ScrollText
 .text "North Thracia has been plagued by selfish"

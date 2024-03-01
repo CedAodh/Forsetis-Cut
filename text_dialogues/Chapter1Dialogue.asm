@@ -199,9 +199,9 @@ ch1op2
 	.byte ScrollText
 	.text "You certainly don't lack for grace, despite living"
 	.byte NewLine
-	.text "in this backwater hovel—holy blood doesn't run"
+	.text "in this backwater hovel—crusader lineage doesn't"
 	.byte NewLine
-	.text "thin even in squalor, I see."
+	.text "run thin even in squalor, I see."
 	.byte WaitForA
 
 	.byte Right_slot

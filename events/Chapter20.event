@@ -204,6 +204,10 @@ eventChapter20Events ; FD/D942
 		EVENT $0A, _MartyPromotion
 			TEST_FLAG_SET $09
 		END_DEFINITION
+		EVENT $0C, _MartyOsianSecondTalk
+			TEST_FLAG_SET $09
+			TEST_FLAG_SET $0A
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_BattleEventDefinitions ; FD/DC06
@@ -763,6 +767,7 @@ eventChapter20Events ; FD/D942
 	END2
 	
 	_MartyOsianTalk
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
 		
@@ -774,7 +779,6 @@ eventChapter20Events ; FD/D942
 	END1
 	
 	_MartyPromotion
-
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
@@ -809,6 +813,18 @@ eventChapter20Events ; FD/D942
 		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
 		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
 	END2
+	
+	_MartyOsianSecondTalk
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SET_MUSIC $3F
+		YIELD
+		
+		DIALOGUE martyosian2
+		YIELD
+	END1
 
 	_BharatCharge ; FD/E13C
 		STORE_WORD wEventEngineCharacterTarget, Bharat

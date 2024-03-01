@@ -97,7 +97,11 @@
 
 ;	.include "PROCS/Unknown81BDA3.asm"
 ;	.include "PROCS/Unknown81BE18.asm"
-;	.include "BattleForecast.asm"
+
+* = $00BF00
+.logical $81BF00
+	.include "BattleForecast.asm"
+.here
 
 * = $00C213
 .logical $81C213
@@ -239,6 +243,24 @@
         .dsection NewSecretShopCodeSection
 
 .here
+
+* = $02209B
+.logical $84A09B
+
+	segmentStart
+	.include "BurstWindow.asm"
+	segmentEnd
+
+.here
+
+* = $4A5F00
+.logical lorom($4A5F00, 1)
+aBattleForecastBG1BottomTilemap .binary "hacky/BattleForecastBG1BottomTilemap.bin"
+aBattleForecastBG1MiddleTilemap .binary "hacky/BattleForecastBG1MiddleTilemap.bin"
+aBattleForecastBG1TopTilemap .binary "hacky/BattleForecastBG1TopTilemap.bin"
+.include "hacky/NewBattleForecast.asm"
+.here
+
 ; Hacky LM fixes
 .include "hacky/convoystuff.asm"
 .include "hacky/hostagec.asm"
@@ -264,7 +286,7 @@
 .include "hacky/rs_85AC1C (1).asm"
 .include "hacky/changebargainmanualtogivepavise.asm"
 .include "hacky/onlypromotedgenericbonuses.asm"
-
+.include "hacky/attackspeedonequip.asm"
 
 
 

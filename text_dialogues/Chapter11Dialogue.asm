@@ -81,7 +81,7 @@ ch11leiffred
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
-.text "Do the holy-blooded knights of House Friege"
+.text "Do the noble-blooded knights of House Friege"
 .byte NewLine
 .text "fight using such underhanded tactics?!"
 .byte WaitForA

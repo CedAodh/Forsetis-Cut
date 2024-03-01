@@ -583,3 +583,10 @@ a16BPalette      .binary "editedforestpalette.bin"
 a16BFadedPalette	.binary "editedforestpalettefaded.bin"
 
 .here
+
+* = $38A880
+.logical lorom($38A880, 1)
+
+.binary "PirateIdleFormatted.4bpp"
+
+.here

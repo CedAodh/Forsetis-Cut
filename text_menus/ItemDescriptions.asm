@@ -496,7 +496,7 @@ _FlameSwordDesc
 .word $0000
 .text "[magic at range "
 .word $0000
-.text "Gives {+}{5} (Mag "
+.text "(Mag{+}{5}"
 .word $0000
 .word $0000
 
@@ -507,7 +507,7 @@ _LightningSwordDesc
 .word $0000
 .text "[magic at range "
 .word $0000
-.text "Gives {+}{5} Skl"
+.text "Skl {+}{5}"
 .word $0000
 .word $0000
 
@@ -518,7 +518,7 @@ _WindSwordDesc
 .word $0000
 .text "[magic at range "
 .word $0000
-.text "Gives {+}{5} Spd"
+.text "Spd {+}{5}"
 .word $0000
 .word $0000
 
@@ -1048,9 +1048,9 @@ _ForsetiInfiniteDesc
 .word $0000
 .text "Knights "
 .word $0000
-.text "A tailored bo12 "
+.text "Greater attack range"
 .word $0000
-.text "]with enhanced range"
+.text "Anti{dash}Fliers"
 .word $0000
 .word $0000
 
@@ -1590,7 +1590,7 @@ _BaldungDesc
 _FragarachDesc
 .text "{Lock}Cono[mor"
 .word $0000
-.text "A defensive blade "
+.text "Anti{dash}Fliers"
 .word $0000
 .text "Gives Pavise and"
 .word $0000
@@ -1604,9 +1604,9 @@ _AuraDesc
 .word $0000
 .text "[magic"
 .word $0000
-.text "Gives (Miracle and"
+.text "Gives (Miracle"
 .word $0000
-.text "+Nihil"
+.text "Lck {+}{5}"
 .word $0000
 .word $0000
 

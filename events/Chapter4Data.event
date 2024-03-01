@@ -51,7 +51,7 @@ eventChapter4Data ; B1/EF95
 	UNIT
 
 	_WeismannGroup ; B1/F0D5
-		UNIT Weissmann, Enemy, [15, 4], [15, 4], Bandole, [Longsword, Vulnerary], 5, True, [$02, $03, $00, $00]
+		UNIT Weissmann, Enemy, [15, 4], [15, 4], Bandole, [Longsword, Vulnerary], 7, True, [$02, $03, $00, $00]
 	UNIT
 
 	_EnemyGroup2 ; B1/F0D7

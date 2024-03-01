@@ -21,7 +21,7 @@ GUARD_ZQOL_INSTALLER :?= false
     .include "GuardAI.asm"
     .include "MovementSpeedup.asm"
     .include "SwapAnimationMode.asm"
-    .include "EquippedItemPreview.asm"
+    ;.include "EquippedItemPreview.asm"
     .include "TalkDisplay.asm"
     .include "HPBars.asm"
 

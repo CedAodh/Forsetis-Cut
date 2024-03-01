@@ -860,6 +860,13 @@ ch18closing5
 .byte NewLine
 .text "that kept me alive!"
 .byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.word LoadPortrait
+.word dorius_portrait
+
+.byte Right_slot
 .byte ScrollText
 .text "Father would never forgive me"
 .byte NewLine
@@ -872,7 +879,8 @@ ch18closing5
 .byte WaitForA
 
 .byte Left_slot
-.byte ScrollText
+.word LoadPortrait
+.word augustus_portrait
 .text "How disappointing..."
 .byte NewLine
 .text "I'd hoped you'd grown into a man,"
@@ -891,7 +899,6 @@ ch18closing5
 .byte NewLine
 .text "the other half on the morrow, Prince."
 .byte WaitForA
-.byte ScrollText
 
 .byte Right_slot
 .byte ScrollText
@@ -899,11 +906,12 @@ ch18closing5
 .word augustus_portrait
 
 .byte Left_slot
+.byte ScrollText
 .text "Are we in agreement, August?"
 .byte WaitForA
 
 .byte Right_slot
-.text "Ah..."
+.text "...Ah..."
 .byte NewLine
 .text "Is this how...?"
 .byte WaitForA
@@ -987,9 +995,9 @@ ch18closing5
 .byte ScrollText
 .text "Ah, the motherland has provided"
 .byte NewLine
-.text "that answer as well. Leonster's liberation"
+.text "that answer as well."
 .byte NewLine
-.text "will yield many able hands."
+.text "Leonster's liberation will yield many able hands."
 .byte WaitForA
 .byte ScrollText
 .text "Many who fought for the empire"
@@ -1059,9 +1067,7 @@ ch18closing5
 .byte ScrollText
 .text "Mm..."
 .byte NewLine
-.text "I've tarried long enough;"
-.byte NewLine
-.text "I must be off."
+.text "I've tarried long enough; I must be off."
 .byte WaitForA
 .byte ScrollText
 .text "May the gods bless and keep you"

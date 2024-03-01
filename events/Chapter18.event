@@ -894,7 +894,7 @@ eventChapter18Events ; E7/8000
 
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000
 
-		STORE_WORD wEventEngineParameter1, 1
+		STORE_WORD wEventEngineParameter1, 2
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
@@ -974,7 +974,7 @@ eventChapter18Events ; E7/8000
 		SET_MUSIC $45
 		YIELD
 
-		STORE_WORD wEventEngineParameter1, 3
+		STORE_WORD wEventEngineParameter1, 2
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009

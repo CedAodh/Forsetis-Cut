@@ -82,6 +82,10 @@ eventChapter2WorldMapEvents ; E7/E225
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
 	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
 	STORE_WORD wEventEngineCharacterTarget, Finn
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +
@@ -97,11 +101,10 @@ eventChapter2WorldMapEvents ; E7/E225
 	PAUSE_SKIPPABLE 32
 	YIELD
 	
-	macroDialogueWithBackground leifandfinn, 3
-	
-	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
+	SET_MUSIC $58
 	YIELD
+	
+	macroDialogueWithBackground leifandfinn, 3
 	
 	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD

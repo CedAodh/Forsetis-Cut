@@ -93,7 +93,7 @@ ch21churchlinoan
 .text "you bore the power of Naga herself...?"
 .byte WaitForA
 .byte ScrollText
-.text "Follow me. I can awaken the holy blood"
+.text "Follow me. I can awaken the blood"
 .byte NewLine
 .text "that lay dormant in your veins."
 .byte WaitForA

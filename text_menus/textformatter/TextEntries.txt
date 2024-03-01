@@ -28,7 +28,8 @@ Status
 Traveler
 Skills
 
-Objective
+
+Objective 
 Captures
 )Wins
 Turn
@@ -58,6 +59,7 @@ Discard
 
 //"Status" kept for sanity
 Cond
+Agr 
 
 //Combat forecast
 
@@ -427,8 +429,8 @@ Visit Supply
 Discard ite[ms
 Visit the shop
 
+Table 
 Type
-Alphabet
 Holder
 
 Discard ite[m?
@@ -1017,6 +1019,7 @@ Leif, Casts light
 Increases Lck
 Use to heal all
 
+Panzerritter
 Lanzenritter
 A gift fro[m an 
 Increases Lck

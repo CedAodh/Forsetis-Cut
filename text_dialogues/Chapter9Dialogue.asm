@@ -122,7 +122,7 @@ ch9finnselphina1
 
 .byte Left_slot
 .byte ScrollText
-.text "Selphina? Count Dryas' daughter?!"
+.text "Selphina? Count Dryas's daughter?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -726,7 +726,7 @@ ch9opening3
 .byte Right_slot
 .text "Is something amiss? Those soldiers"
 .byte NewLine
-.text "moving about, are they Count Dryas' troops?"
+.text "moving about, are they Count Dryas's troops?"
 .byte WaitForA
 
 .byte Left_slot

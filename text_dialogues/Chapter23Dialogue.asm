@@ -542,11 +542,11 @@ ch23leifced
 .text "and they're not wrong."
 .byte WaitForA
 .byte ScrollText
-.text "You're everything that I'm not: holy blood"
+.text "You're everything that I'm not: the crusaders'"
 .byte NewLine
-.text "runs strong in your veins, and you can wield"
+.text "blood runs strong in your veins, and you can"
 .byte NewLine
-.text "the very weapon your namesake once used."
+.text "wield the very weapon your namesake once used."
 .byte WaitForA
 .byte ScrollText
 .text "And I... I have nothing."
@@ -1276,7 +1276,7 @@ ch23hasblade
 .text "that fled Munster with the children."
 .byte WaitForA
 .byte ScrollText
-.text "It's a holy weapon that's every bit the equal"
+.text "It's a divine weapon that's every bit the equal"
 .byte NewLine
 .text "of Raydrik's blade—and more importantly,"
 .byte NewLine

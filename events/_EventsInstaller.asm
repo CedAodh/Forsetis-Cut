@@ -199,6 +199,7 @@
 	.include "Chapter2Data.event"
 	.include "Chapter2xWorldMap.event"
 	.include "Chapter4xWorldMap.event"
+	.include "Chapter8xWorldMap.event"
 	.include "Chapter14WorldMap.event"
 	.include "Chapter14xWorldMap.event"
 	.include "Chapter16AWorldMap.event"

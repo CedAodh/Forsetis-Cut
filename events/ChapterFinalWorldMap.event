@@ -103,4 +103,142 @@ eventChapter25WorldMapEvents
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
 	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 16
+	YIELD
+	
+	SET_MUSIC $58
+	YIELD
+	
+	macroDialogueWithBackground leifseesmus, 1
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 32
+	YIELD
+	
+	SET_MUSIC $58
+	YIELD
+	
+	STORE_WORD wEventEngineCharacterTarget, Lifis
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_TRUE +
+
+	LOAD1 eventChapterFinalData._PorcusLifisGroup
+	;WAIT_MOVE
+	YIELD
+
+	JUMP ++
+
+	+
+
+	LOAD1 eventChapterFinalData._PorcusGroup
+	;WAIT_MOVE
+	YIELD
+
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Dagdar
+	STORE_WORD wEventEngineParameter1, TurnStatusInvisible
+	CALL_ASM_LOOP rlASMCCheckUnitTurnStatusSet, $0000
+	JUMP_TRUE +
+
+	STORE_WORD wEventEngineCharacterTarget, Dagdar
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_TRUE ++
+
+	+
+
+	LOAD1 eventChapterFinalData._TigrisDagdarGroup
+	;WAIT_MOVE
+	YIELD
+
+	JUMP ++
+
+	+
+
+	LOAD1 eventChapterFinalData._TigrisGroup
+	;WAIT_MOVE
+	YIELD
+
+	+
+	STORE_WORD wEventEngineCharacterTarget, Sara
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_TRUE +
+
+	LOAD1 eventChapterFinalData._CanisSaraGroup
+	;WAIT_MOVE
+	YIELD
+
+	JUMP ++
+
+	+
+
+	LOAD1 eventChapterFinalData._CanisGroup
+	;WAIT_MOVE
+	YIELD
+
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Galzus
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_TRUE +
+
+	LOAD1 eventChapterFinalData._BovisGalzusGroup
+	;WAIT_MOVE
+	YIELD
+
+	JUMP ++
+
+	+
+
+	LOAD1 eventChapterFinalData._BovisGroup
+	;WAIT_MOVE
+	YIELD
+
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Eyvel
+	STORE_WORD wEventEngineParameter1, TurnStatusInvisible
+	CALL_ASM_LOOP rlASMCCheckUnitTurnStatusSet, $0000
+	JUMP_TRUE +
+
+	STORE_WORD wEventEngineCharacterTarget, Eyvel
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_TRUE ++
+
+	+
+
+	LOAD1 eventChapterFinalData._DracoEyvelGroup
+	;WAIT_MOVE
+	YIELD
+
+	JUMP ++
+
+	+
+
+	LOAD1 eventChapterFinalData._DracoGroup
+	;WAIT_MOVE
+	YIELD
+
+	+
+	
+	FADE_IN $02
+	
+	SET_MUSIC $2D
+	YIELD
 END1

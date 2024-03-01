@@ -40,6 +40,7 @@ eventChapter8Data ; B1/DD06
 		UNIT BanditBrigand1, Enemy, [18, 16], [18, 16], Gomez, [VeninAxe], 7, False, [$01, $03, $00, $00]
 		UNIT BanditBrigand1, Enemy, [13, 14], [13, 14], Gomez, [VeninAxe], 10, False, [$01, $03, $00, $00]
 		UNIT BanditBrigand1, Enemy, [16, 8], [16, 8], Gomez, [VeninAxe], 10, False, [$01, $03, $00, $00]
+		UNIT Rumaigh, Enemy, [2, 9], [2, 9], Rumaigh, [Ridersbane, SteelLance, SlimSword, Vulnerary, MasterSeal], 5, True, [$01, $03, $02, $80]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/DE1E

@@ -1,13 +1,13 @@
 
-rlDrawBurstWindow ; 84/A09B
+rlUpdateBurstWindow ; 84/A09B
 
 	.al
-	.autsiz
-	.databank `aOptions.wBurstWindowOption
+        .autsiz
+        .databank `aOptions
 
-	lda aOptions.wBurstWindowOption
-	cmp #$0001
-	beq _BurstDisabled
+        lda aOptions.wAnimationOption ; wBurstWindow
+        bit #$0100
+        bne _BurstDisabled
 
 	lda wBurstWindowDrawn
 	bne _Drawn

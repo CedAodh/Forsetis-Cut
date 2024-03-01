@@ -423,10 +423,10 @@ rsProcItemInfoDrawWeaponStatNumbers ; 81/F73D
 		; stat short pointer
 		; coordinate bytes
 
-		.word aItemDataBuffer.Accuracy
+		.word aItemDataBuffer.Might
 		.byte 6, 2
 
-		.word aItemDataBuffer.Might
+		.word aItemDataBuffer.Accuracy
 		.byte 6, 4
 
 		.word aItemDataBuffer.Critrate

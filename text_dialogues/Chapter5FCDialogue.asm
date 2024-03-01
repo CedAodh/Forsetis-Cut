@@ -256,7 +256,7 @@ velddislikesraydrik
 .byte NewLine
 .text "It is known as the Loptrian Fang—a blade"
 .byte NewLine
-.text "imbued with Loptous' own magic and protection"
+.text "imbued with Loptous's own magic and protection"
 .byte NewLine
 .text "during the reign of the Loptrian Empire."
 .byte WaitForA

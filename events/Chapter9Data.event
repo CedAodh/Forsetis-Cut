@@ -15,6 +15,7 @@ eventChapter9Data ; B1/D508
 		UNIT ThraciaDracorider, Enemy, [16, 29], [16, 29], Merloch, [IronLance], 7, False, [$02, $14, $00, $30]
 		UNIT ThraciaDracorider, Enemy, [18, 27], [18, 27], Merloch, [SteelLance], 9, False, [$02, $14, $00, $10]
 		UNIT ThraciaDracorider, Enemy, [18, 29], [18, 29], Merloch, [SteelLance], 9, False, [$02, $14, $00, $40]
+		UNIT Merloch, Enemy, [17, 28], [17, 28], Merloch, [KillerLance, Javelin, Vulnerary], 5, True, [$02, $14, $00, $A0]
 	UNIT
 
 	_PrepGroup2 ; B1/D574

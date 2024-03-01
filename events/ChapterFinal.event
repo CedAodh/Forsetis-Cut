@@ -338,128 +338,6 @@ eventChapterFinalEvents ; B9/BA0E
 	_OpeningEvent ; B9/BC99
 		CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 
-		STORE_WORD wEventEngineCharacterTarget, Dagdar
-		STORE_WORD wEventEngineParameter1, TurnStatusInvisible
-		CALL_ASM_LOOP rlASMCCheckUnitTurnStatusSet, $0000
-		JUMP_TRUE +
-
-		STORE_WORD wEventEngineCharacterTarget, Dagdar
-		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-		JUMP_TRUE ++
-
-		+
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._TigrisDagdarCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._TigrisDagdarGroup
-		WAIT_MOVE
-		YIELD
-
-		JUMP ++
-
-		+
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._TigrisCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._TigrisGroup
-		WAIT_MOVE
-		YIELD
-
-		+
-		STORE_WORD wEventEngineCharacterTarget, Sara
-		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-		JUMP_TRUE +
-
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._CanisSaraCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._CanisSaraGroup
-		WAIT_MOVE
-		YIELD
-
-		JUMP ++
-
-		+
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._CanisCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._CanisGroup
-		WAIT_MOVE
-		YIELD
-
-		+
-		STORE_WORD wEventEngineCharacterTarget, Galzus
-		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-		JUMP_TRUE +
-
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._BovisGalzusCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._BovisGalzusGroup
-		WAIT_MOVE
-		YIELD
-
-		JUMP ++
-
-		+
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._BovisCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._BovisGroup
-		WAIT_MOVE
-		YIELD
-
-		+
-		STORE_WORD wEventEngineCharacterTarget, Lifis
-		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-		JUMP_TRUE +
-
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._PorcusLifisCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._PorcusLifisGroup
-		WAIT_MOVE
-		YIELD
-
-		JUMP ++
-
-		+
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._PorcusCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._PorcusGroup
-		WAIT_MOVE
-		YIELD
-
-		+
-		STORE_WORD wEventEngineCharacterTarget, Eyvel
-		STORE_WORD wEventEngineParameter1, TurnStatusInvisible
-		CALL_ASM_LOOP rlASMCCheckUnitTurnStatusSet, $0000
-		JUMP_TRUE +
-
-		STORE_WORD wEventEngineCharacterTarget, Eyvel
-		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-		JUMP_TRUE ++
-
-		+
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._DracoEyvelCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._DracoEyvelGroup
-		WAIT_MOVE
-		YIELD
-
-		JUMP ++
-
-		+
-		SCROLL_CAMERA_ADDRESS eventChapterFinalData._DracoCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapterFinalData._DracoGroup
-		WAIT_MOVE
-		YIELD
-
-		+
 		FADE_IN $02
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
@@ -486,7 +364,7 @@ eventChapterFinalEvents ; B9/BA0E
 		SET_CAMERA_SPEED 4
 		YIELD
 
-		STORE_WORD wEventEngineParameter1, 1
+		STORE_WORD wEventEngineParameter1, 2
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
@@ -555,7 +433,7 @@ eventChapterFinalEvents ; B9/BA0E
 		SET_CAMERA_SPEED 4
 		YIELD
 
-		STORE_WORD wEventEngineParameter1, 1
+		STORE_WORD wEventEngineParameter1, 2
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009

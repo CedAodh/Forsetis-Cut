@@ -1088,7 +1088,7 @@ ch24xeyvelfinn
 .byte ScrollText
 .text "She was the eldest lady of House Yngvi,"
 .byte NewLine
-.text "and inheritor of the holy bow Yewfelle..."
+.text "and inheritor of the divine bow Yewfelle..."
 .byte NewLine
 .text "Her name was Brigid."
 .byte WaitForA

@@ -59,5 +59,5 @@ rlProcBattleForecastCenterShadingHBoundsOnCycle2 ; 81/C1CC
 	rtl
 
 aBattleForecastWindowCenterShadingBounds ; 81/C1DF
-	.byte  32,  64
+	.byte 32,  64
 	.byte 192, 224

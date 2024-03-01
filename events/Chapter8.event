@@ -27,7 +27,7 @@ eventChapter8Events ; 99/BE7D
 			ROLL_RNG 70
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-		EVENT FlagAlwaysZero, _RumaighAIChange
+		EVENT $0C, _RumaighAIChange
 			CMP_WORD wCurrentTurn, 15
 			CHECK_NUM_UNITS_GTE Rumaigh, 1
 			CMP_STATUS_UNSET Rumaigh, TurnStatusRescued
@@ -309,17 +309,17 @@ eventChapter8Events ; 99/BE7D
 		STORE_WORD wEventEngineYCoordinate, 12
 		SET_ACTIVE_COORDS
 
-		STORE_LONG lEventEngineUnitGroupPointer, eventChapter8Data._RumaighGroup
-		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
-		YIELD_UNK
+		;STORE_LONG lEventEngineUnitGroupPointer, eventChapter8Data._RumaighGroup
+		;CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
+		;YIELD_UNK
 
-		macroDismountUnit Rumaigh
+		;macroDismountUnit Rumaigh
 
-		MOVE_UNIT Rumaigh, [0, 0], [2, 9], 1, None
-		YIELD_UNK
+		;MOVE_UNIT Rumaigh, [0, 0], [2, 9], 1, None
+		;YIELD_UNK
 
-		WAIT_MOVE
-		YIELD
+		;WAIT_MOVE
+		;YIELD
 
 		SCROLL_CAMERA_CHAR Leif
 		SET_CAMERA_SPEED 4
@@ -348,14 +348,36 @@ eventChapter8Events ; 99/BE7D
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000
 
 		macroCheckAlive Dagdar
-		JUMP_FALSE ++
-
-		macroCheckAlive Tanya
 		JUMP_FALSE +
 
-		macroCheckIfRescued Rumaigh
-		JUMP_FALSE +++
+		macroCheckAlive Tanya
+		JUMP_FALSE ++
 
+		;macroCheckIfRescued Rumaigh
+		;JUMP_TRUE +
+		
+		;PLAY_SOUND_WORD $00E0
+		;PAUSE_SKIPPABLE 32
+		;YIELD
+
+		;SET_MUSIC $41
+		;YIELD
+
+		;macroDialogueWithBackground ch8leifrumaigh, 4
+
+		;YIELD
+		;HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+		;FADE_OUT $01
+		;YIELD
+
+		;CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+		;STORE_BYTE bBuf_INIDISP, INIDISP_Setting(False, 0)
+
+		;JUMP ++
+		
+		;+
+		
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
@@ -363,13 +385,17 @@ eventChapter8Events ; 99/BE7D
 		SET_MUSIC $41
 		YIELD
 
-		macroDialogueWithBackground ch8leifrumaigh, 1
+		macroDialogueWithBackground chp8fcending, 4
 
-		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+		FADE_OUT $01
 		YIELD
 
-		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
+		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
 
+		STORE_BYTE bBuf_INIDISP, INIDISP_Setting(False, 0)
+		
 		JUMP _End
 
 		+
@@ -382,12 +408,16 @@ eventChapter8Events ; 99/BE7D
 
 		macroUnsetCharacterTurnStatus Dagdar, TurnStatusInvisible
 
-		macroDialogueWithBackground leifdagdarreunite, 1
+		macroDialogueWithBackground leifdagdarreunite, 4
 
-		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+		FADE_OUT $01
 		YIELD
 
-		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
+		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+		STORE_BYTE bBuf_INIDISP, INIDISP_Setting(False, 0)
 
 		JUMP +++
 
@@ -404,12 +434,16 @@ eventChapter8Events ; 99/BE7D
 
 		macroUnsetCharacterTurnStatus Tanya, TurnStatusInvisible
 
-		macroDialogueWithBackground ch8leiftanya, 1
+		macroDialogueWithBackground ch8leiftanya, 4
 
-		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+		FADE_OUT $01
 		YIELD
 
-		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
+		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+		STORE_BYTE bBuf_INIDISP, INIDISP_Setting(False, 0)
 		JUMP ++
 
 		+
@@ -417,16 +451,19 @@ eventChapter8Events ; 99/BE7D
 		PAUSE_SKIPPABLE 32
 		YIELD
 
-		SET_MUSIC $41
+		SET_MUSIC $42
 		YIELD
 
-		macroDialogueWithBackground ch8closing, 1
-
-		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		macroDialogueWithBackground ch8closing, 4
+		
+		YIELD
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+		FADE_OUT $01
 		YIELD
 
-		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
-		YIELD
+		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+		STORE_BYTE bBuf_INIDISP, INIDISP_Setting(False, 0)
 
 		+
 		ADD_WORD wCurrentChapter, Chapter9 - Chapter8 - 1

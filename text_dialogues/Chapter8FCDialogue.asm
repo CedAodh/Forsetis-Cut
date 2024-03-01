@@ -321,3 +321,155 @@ introtopreps
 .byte WaitForA
 
 .byte EndText
+
+chp8fcending
+
+.byte right_slot
+.word LoadPortrait
+.word augustus_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "It appears things have calmed down outside."
+.byte WaitForA
+
+.byte right_slot
+.text "Yes, thankfully."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "And now, we can finally meet with Dagdar."
+.byte NewLine
+.text "He'll be relieved to hear we were able to"
+.byte NewLine
+.text "get all this straightened out for him."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "My prince, you're certain that he wasn't"
+.byte NewLine
+.text "behind this sudden wave of pillaging?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "August, of course not."
+.byte NewLine
+.text "Dagdar journeyed with us to Kerberos' Gate."
+.byte NewLine
+.text "He has both my and the commander's full faith."
+.byte WaitForA
+.byte NewLine
+.text "I would have hoped he earned yours, too."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Look—there's someone on watch over there."
+.byte NewLine
+.text "If we ask him, he'll take us to Dagdar."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word colho_portrait
+
+.byte left_slot
+.byte ScrollText
+.text "Excuse me."
+.byte WaitForA
+
+.word PlayMusic
+.byte $3A
+
+.byte right_slot
+.text "...Eh? Whadda you want?"
+.byte NewLine
+.text "Tryna take a nap 'ere."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I-I'm terribly sorry..."
+.byte NewLine
+.text "I'm here to see Dagdar, the lord of this manor."
+.byte NewLine
+.text "I was hoping you could take me to him."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "You said Dagdar?"
+.byte NewLine
+.text "*hic* ...He ain't here no more."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "He's not..."
+.byte NewLine
+.text "Well, where is he?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Look, kid... *hic*"
+.byte NewLine
+.text "How many questions you gonna ask me?"
+.byte NewLine
+.text "Shove off already."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...But I really need to—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Zzz..."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.text "Well then."
+.byte WaitForA
+
+.byte right_slot
+.word LoadPortrait
+.word augustus_portrait
+.text "Even within his stupor, it was clear"
+.byte NewLine
+.text "that he was trying to hide something."
+.byte NewLine
+.text "The way he kept turning away..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Dagdar must be in there, then, right?"
+.byte NewLine
+.text "And Tanya too—we haven't seen her yet either."
+.byte NewLine
+.text "...I have a feeling they might be in trouble."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I agree."
+.byte NewLine
+.text "We should secure the interior at once."
+.byte WaitForA
+
+.byte EndText

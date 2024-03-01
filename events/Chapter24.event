@@ -771,14 +771,6 @@ eventChapter24Events ; B9/B000
 	_OpeningEvent ; B9/B6B7
 		CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 
-		EVENT_TEST_FLAG_SET $A6
-		JUMP_TRUE +
-
-		LOAD1 eventChapter24Data._GalzusGroup
-		WAIT_MOVE
-		YIELD
-
-		+
 		STORE_WORD wEventEngineCharacterTarget, CedChp23
 		STORE_WORD wEventEngineParameter1, TurnStatusInvisible
 		CALL_ASM_LOOP rlASMCCheckUnitTurnStatusSet, $0000
@@ -963,7 +955,7 @@ eventChapter24Events ; B9/B000
 		SET_MUSIC $3C
 		YIELD
 
-		STORE_WORD wEventEngineParameter1, 1
+		STORE_WORD wEventEngineParameter1, 2
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
@@ -986,7 +978,7 @@ eventChapter24Events ; B9/B000
 		SET_MUSIC $43
 		YIELD
 
-		STORE_WORD wEventEngineParameter1, 1
+		STORE_WORD wEventEngineParameter1, 2
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009

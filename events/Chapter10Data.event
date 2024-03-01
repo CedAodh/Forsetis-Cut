@@ -18,6 +18,7 @@ eventChapter10Data ; B1/D1EF
 		UNIT FriegeArcher, Enemy, [27, 3], [27, 3], Largo, [Greatbow], 12, False, [$01, $01, $00, $00]
 		UNIT FriegeArmoredBow1, Enemy, [14, 9], [14, 9], Largo, [Longbow], 8, False, [$01, $03, $02, $00]
 		UNIT FriegeBallista1, Enemy, [17, 10], [17, 10], Largo, [Ballista], 3, False, [$01, $03, $00, $00]
+		UNIT Largo, Enemy, [4, 12], [4, 12], Largo, [Greatlance, Greatbow, Ridersbane, MasterSeal], 8, True, [$01, $03, $00, $80]
 	UNIT
 
 	_PrepGroup2 ; B1/D297

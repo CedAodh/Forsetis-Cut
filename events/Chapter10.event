@@ -206,6 +206,8 @@ eventChapter10Events ; 99/C559
 	END2
 
 	_OpeningEvent ; 99/CA1F
+		macroRemoveUnit Largo
+		
 		SET_CAMERA [8, 12]
 
 		STORE_WORD wEventEngineXCoordinate, 8
