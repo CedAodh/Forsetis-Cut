@@ -208,14 +208,14 @@ Ada[m
 Lidia 
 Isabel
 
-Ulster Troop
+Ulster
 Lifis Pirates
-Friege Troop
-Gelbenritter
+Friege
+Gelbritter
 Pitfighter
-Leonster Troop
+Leonster
 Loptrian
-(Magi Fighter 
+(Magi  
 (Munster
 (Mercenary
 Resistance
@@ -269,7 +269,7 @@ Thracia's Ar[my
 Civilians
 Friege's Ar[my
  Division
-Gelbenritter
+Gelbritter
 Ulster's Ar[my
 Bergrosen 
 Lifis Pirates
@@ -923,7 +923,10 @@ Casts thunder [magic
 Casts ]wind [magic
 at range
 
-Increases
+Raises level for all
+usable ]weapon types
+by one grade
+
 Teaches
 A thro]wing axe 
 capable of

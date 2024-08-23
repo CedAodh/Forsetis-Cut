@@ -16,9 +16,9 @@ ch2op1
 .text "Is this kind of body count really necessary?"
 .byte WaitForA
 .byte NewLine	
-.text "We're here to make coin,"
+.text "We're here to make coin, not gut"
 .byte NewLine
-.text "not gut everything that moves."
+.text "everything that moves."
 .byte WaitForA
 
 .byte Left_slot
@@ -34,14 +34,14 @@ ch2op1
 .text "'ow to go about plunderin'."
 .byte WaitForA
 .byte ScrollText
-.text "Oh, and if it be them Freeblade folk"
+.text "Oh, and if it be them Freeblade folk yer"
 .byte NewLine
-.text "yer worried about, we already saw to them."
+.text "worried about, we already saw to them."
 .byte WaitForA
 .byte ScrollText
-.text "The boss tipped off the empire"
+.text "The boss tipped off the empire that the"
 .byte NewLine
-.text "that the Leonster boy was hidin' with 'em."
+.text "Leonster boy was hidin' with 'em."
 .byte WaitForA
 
 .byte Right_slot
@@ -62,9 +62,9 @@ ch2op1
 .text "to loosen 'is tongue."
 .byte WaitForA
 .byte ScrollText
-.text "Stubborn fella, though—"
+.text "Stubborn fella, though—mighta survived"
 .byte NewLine
-.text "mighta survived if he talked sooner."
+.text "if he talked sooner."
 .byte WaitForA
 
 .byte Right_slot
@@ -79,12 +79,12 @@ ch2op1
 .byte ScrollText
 .text "Boss says yer the one who taught 'im everythin'"
 .byte NewLine
-.text "he knows about interrogatin'! There's a reason"
+.text "he knows about interrogatin'! There be a reason"
 .byte NewLine
 .text "you ain't with the church no more, mate."
 .byte WaitForA
 
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -217,7 +217,7 @@ ch2villageronan
 .byte WaitForA
 	
 .byte Left_slot
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 	
@@ -230,9 +230,9 @@ ch2villageronan
 .text "Please, let me fight alongside you!"
 .byte WaitForA
 .byte ScrollText
-.text "I trust my skills with a bow,"
+.text "I trust my skills with a bow, and I"
 .byte NewLine
-.text "and I can get around pretty fast."
+.text "can get around pretty fast."
 .byte NewLine
 .text "I promise I won't slow you down!"
 .byte WaitForA
@@ -254,9 +254,9 @@ ch2villageronan
 .text "We have to DO something for once!"
 .byte WaitForA
 .byte NewLine
-.text "Otherwise, we're always going to live"
+.text "Otherwise, we're always going to"
 .byte NewLine
-.text "in fear at the whims of these pirates!"
+.text "live in fear at Lifis's whims!"
 .byte WaitForA
 
 .byte EndText
@@ -268,9 +268,9 @@ ch2villageronanattacked
 .word braidedgirl_portrait
 .text "There was a ship here that coulda made"
 .byte NewLine
-.text "its way to the Corsair Isles,"
+.text "its way to the Corsair Isles, but it's"
 .byte NewLine
-.text "but it's been wrecked like everything else..."
+.text "been wrecked like everything else..."
 .byte WaitForA
 
 .byte EndText
@@ -320,7 +320,7 @@ ch2villagespeedring
 .word ClearPortrait
 
 .byte Left_Slot
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 	
@@ -334,9 +334,9 @@ ch2villagespeedring
 .byte ScrollText
 .text "By way of apology, take this magic trinket."
 .byte NewLine
-.text "Not sure what it does, but maybe it'll be of use"
+.text "Not sure what it does, but maybe it'll be"
 .byte NewLine
-.text "to you."
+.text "of use to you."
 .byte WaitForA
 .byte ScrollText
 .text "It's about time somebody showed those pirates"
@@ -375,9 +375,9 @@ ch2villagevulnerary
 .word beardedman_portrait
 .text "These pirates grow bolder by the day!"
 .byte NewLine
-.text "Just recently, I heard that a cleric"
+.text "Just recently, I heard that a cleric fleeing"
 .byte NewLine
-.text "fleeing Tarrah was taken prisoner by 'em!"
+.text "Tarrah was taken prisoner by 'em!"
 .byte WaitForA
 .byte ScrollText
 .text "Mayhap you can help the poor dear, eh?"
@@ -511,9 +511,9 @@ ch2endinggaiden
 
 .byte Left_slot
 .byte ScrollText
-.text "I see. In that case, allow me to be"
+.text "I see. In that case, allow me to be your"
 .byte NewLine
-.text "your navigator. I can guide you to the isles."
+.text "navigator. I can guide you to the isles."
 .byte WaitForA
 
 .byte Right_slot

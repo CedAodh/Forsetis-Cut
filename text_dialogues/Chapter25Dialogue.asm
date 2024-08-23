@@ -12,9 +12,9 @@ ch25throneopened
 .byte ScrollText
 .text "Ngh... Leif, you heathen..."
 .byte NewLine
-.text "You're an impudent brat"
+.text "You're an impudent brat standing in the way of"
 .byte NewLine
-.text "standing in the way of the divine!"
+.text "the divine!"
 .byte WaitForA
 .byte ScrollText
 .text "I'll send you to oblivion to meet your parents—"
@@ -32,11 +32,11 @@ ch25opening1
 .byte Right_slot
 .word LoadPortrait
 .word veld_portrait
-.text "Raydrik proved to be even more useless"
+.text "Raydrik proved to be even more useless than I"
 .byte NewLine
-.text "than I thought... Well, if you want something"
+.text "thought..."
 .byte NewLine
-.text "done right, best do it yourself."
+.text "Now, how shall I deal with them..."
 .byte WaitForA
 
 .byte Left_slot
@@ -51,30 +51,30 @@ ch25opening1
 .byte ScrollText
 .text "Archbishop Manfroy!"
 .byte NewLine
-.text "Wh-when did you get here, Your Holiness?"
+.text "Wh-when did you arrive, Your Holiness?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Spare me your sniveling formalities."
 .byte NewLine
-.text "Why is killing one person—a child,"
+.text "Why is killing one person—a child, need I remind"
 .byte NewLine
-.text "need I remind you—so difficult for you?"
+.text "you—so difficult for you?"
 .byte WaitForA
 .byte ScrollText
-.text "The Leonster heir has humiliated you"
+.text "The Leonster heir has humiliated you at every"
 .byte NewLine
-.text "at every turn!"
+.text "turn!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "I'm deeply sorry, Your Holiness."
 .byte NewLine
-.text "I'll claim Prince Leif's head"
+.text "I'll claim Prince Leif's head ere the day is out,"
 .byte NewLine
-.text "before the day is over, I assure you."
+.text "I assure you."
 .byte WaitForA
 
 .byte Left_slot
@@ -84,25 +84,25 @@ ch25opening1
 .text "that hangs from the castle gates."
 .byte WaitForA
 .byte ScrollText
-.text "More than just this battle is riding on"
+.text "More than just this battle is riding on the boy's"
 .byte NewLine
-.text "the boy's death..."
+.text "death..."
 .byte WaitForA
 .byte ScrollText
-.text "If he lives, all our efforts"
+.text "If he lives, all our efforts to incite war in"
 .byte NewLine
-.text "to incite war in Thracia and assassinate"
+.text "Thracia and assassinate Prince Quan will be for"
 .byte NewLine
-.text "Prince Quan will be for nothing."
+.text "nothing."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "I'm amazed the ruse has held for this long,"
 .byte NewLine
-.text "frankly. The fools still think Travant"
+.text "frankly. The fools still think Travant was behind"
 .byte NewLine
-.text "was behind it all."
+.text "it all."
 .byte WaitForA
 
 .byte Left_slot
@@ -112,23 +112,21 @@ ch25opening1
 .text "in the depths of their ignorance..."
 .byte WaitForA
 .byte ScrollText
-.text "Did it never occur to them that Travant"
+.text "Did it never occur to them that Travant had no"
 .byte NewLine
-.text "had no way of knowing when Quan's forces"
+.text "way of knowing when Quan's forces would march,"
 .byte NewLine
-.text "would march, or what route they would take?"
+.text "or what route they would take?"
 .byte WaitForA
 .byte ScrollText
-.text "Capitalizing on Travant's ambitions"
+.text "Capitalizing on Travant's ambitions to make North"
 .byte NewLine
-.text "to make North and South Thracia"
-.byte NewLine
-.text "tear each other apart..."
+.text "and South Thracia tear each other apart..."
 .byte WaitForA
 .byte ScrollText
-.text "Everything happened exactly"
+.text "Everything happened exactly as you predicted it"
 .byte NewLine
-.text "as you predicted it would."
+.text "would."
 .byte WaitForA
 
 .byte Right_slot
@@ -138,11 +136,9 @@ ch25opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "But it's simply given way to a new problem:"
+.text "But it's simply given way to a new problem: you"
 .byte NewLine
-.text "you underestimated the Leonster heir,"
-.byte NewLine
-.text "did you not?"
+.text "underestimated the Leonster heir, did you not?"
 .byte WaitForA
 .byte ScrollText
 .text "It would have been best to nip him in the bud"
@@ -154,11 +150,11 @@ ch25opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "It is true that Prince Leif has brought"
+.text "It is true that Prince Leif has brought all the"
 .byte NewLine
-.text "all the rebellious children of North Thracia"
+.text "rebellious children of North Thracia together in"
 .byte NewLine
-.text "together in one, organized revolt..."
+.text "one, organized revolt..."
 .byte WaitForA
 .byte ScrollText
 .text "But if we strike them down now, when they all"
@@ -168,30 +164,30 @@ ch25opening1
 .text "their spirits will be shattered."
 .byte WaitForA
 .byte ScrollText
-.text "And in my defense, the boy has done us"
+.text "And in my defense, the boy has done us a great"
 .byte NewLine
-.text "a great service by defeating so many"
+.text "service by defeating so many of the divisions"
 .byte NewLine
-.text "of the divisions under House Friege."
+.text "under House Friege."
 .byte WaitForA
 .byte ScrollText
-.text "Without realizing it, he's eliminated"
+.text "Without realizing it, he's eliminated one of the"
 .byte NewLine
-.text "one of the few military powers"
+.text "few military powers that stood to threaten our"
 .byte NewLine
-.text "that could've threatened our rule."
+.text "rule."
 .byte WaitForA
 .byte ScrollText
 .text "Though for his bloodline and all his exploits,"
 .byte NewLine
-.text "he is still one unable to so much as"
+.text "he is still one unable to so much as life the"
 .byte NewLine
-.text "lift the Gáe Bolg himself."
+.text "Gáe Bolg himself."
 .byte WaitForA
 .byte ScrollText
-.text "He's a posturing rebel who's deluded himself"
+.text "He's a posturing rebel who's deluded himself into"
 .byte NewLine
-.text "into thinking he's a real prince."
+.text "thinking he's a real prince."
 .byte NewLine
 .text "He cannot hope to triumph against me."
 .byte WaitForA
@@ -207,7 +203,7 @@ ch25opening1
 .byte NewLine
 .text "and as a token of my favor, I bestow upon you"
 .byte NewLine
-.text "five of my finest creations, the deadlords."
+.text "five of my finest creations, the Deadlords."
 .byte WaitForA
 
 .byte Right_slot
@@ -219,21 +215,21 @@ ch25opening1
 .byte NewLine
 .text "that makes for a total of six..."
 .byte NewLine
-.text "Now the barrier will be impenetrable!"
+.text "Now the barrier will be impenetrable."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Then I'll leave you to it, Veld."
 .byte NewLine
-.text "I trust you'll be along shortly"
+.text "I trust you'll be along shortly as the bearer of"
 .byte NewLine
-.text "as the bearer of good tidings..."
+.text "good tidings..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I won't fail you, Your Holiness."
+.text "I will not fail you, Your Holiness."
 .byte WaitForA
 
 .byte EndText
@@ -259,16 +255,16 @@ ch25opening2
 .text "in front of every altar."
 .byte WaitForA
 .byte ScrollText
-.text "Let us hope they're all capable of defeating"
+.text "Let us hope they're all capable of defeating the"
 .byte NewLine
-.text "the horrors that lurk within..."
+.text "horrors that lurk within..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I know they are. Everyone is aware of what's"
+.text "I know they are. Everyone is aware of what's at"
 .byte NewLine
-.text "at stake: the seals inside each of the six altars"
+.text "stake: the seals inside each of the six altars"
 .byte NewLine
 .text "have to be broken to open the way to Veld."
 .byte WaitForA
@@ -277,28 +273,28 @@ ch25opening2
 .byte ScrollText
 .text "It's more complicated than that, my prince."
 .byte NewLine
-.text "One of our men must stand upon the center"
+.text "One of our men must stand upon the center of"
 .byte NewLine
-.text "of an altar to break its seal."
+.text "an altar to break its seal."
 .byte WaitForA
 .byte ScrollText
 .text "Each of the six altars must have one of our"
 .byte NewLine
-.text "soldiers standing on its center all at once"
+.text "soldiers standing on its center all at once for"
 .byte NewLine
-.text "for the barrier to be dispelled."
+.text "the barrier to be dispelled."
 .byte WaitForA
 .byte ScrollText
-.text "Hrm... I fear reinforcements will arrive"
+.text "And chances are reinforcements will arrive if we"
 .byte NewLine
-.text "if we take too long to coordinate this."
+.text "take too long to coordinate this."
 .byte WaitForA
 .byte ScrollText
-.text "You need to prepare yourself"
+.text "You need to prepare yourself to sacrifice some"
 .byte NewLine
-.text "to sacrifice some of our troops if it means"
+.text "of our troops if it means getting rid of the"
 .byte NewLine
-.text "getting rid of the barrier more quickly."
+.text "barrier more quickly."
 .byte WaitForA
 
 .byte Left_slot
@@ -328,28 +324,26 @@ ch25ending1augustus
 .byte WaitForA
 
 .byte Right_slot
-.text "It is. Breathe easy, my prince—"
+.text "It is. Breathe easy, my prince—your long fight"
 .byte NewLine
-.text "your long fight has at last come to an end."
+.text "has at last come to an end."
 .byte WaitForA
 .byte ScrollText
-.text "With your victory today,"
+.text "With your victory today, the Loptr Church's"
 .byte NewLine
-.text "the Loptrians' influence in North Thracia"
-.byte NewLine
-.text "has been eradicated."
+.text "influence in North Thracia has been eradicated."
 .byte WaitForA
 .byte ScrollText
-.text "At long last, the Thracian people"
+.text "At long last, the Thracian people have been"
 .byte NewLine
-.text "have been liberated from the tyranny"
+.text "liberated from the tyranny of Loptous and his"
 .byte NewLine
-.text "of Loptous and his mortal servants."
+.text "mortal servants."
 .byte WaitForA
 .byte ScrollText
-.text "This is all because of your perseverance"
+.text "This is all because of your perseverance and"
 .byte NewLine
-.text "and strength, my prince. You never gave up."
+.text "strength, my prince. You never gave up."
 .byte WaitForA
 
 .byte Left_slot
@@ -359,9 +353,9 @@ ch25ending1augustus
 .text "The people have you to thank as well."
 .byte WaitForA
 .byte ScrollText
-.text "Without your guidance,"
+.text "Without your guidance, I never would've made it"
 .byte NewLine
-.text "I never would've made it this far."
+.text "this far."
 .byte WaitForA
 .byte ScrollText
 .text "I started this journey knowing nothing,"
@@ -385,16 +379,16 @@ ch25ending1augustus
 .byte ScrollText
 .text "I need to tell you something, my prince."
 .byte NewLine
-.text "I would be a poor teacher if I continued"
+.text "I would be a poor teacher if I continued to keep"
 .byte NewLine
-.text "to keep secrets from you now..."
+.text "secrets from you now..."
 .byte WaitForA
 .byte ScrollText
 .text "It was not by chance that our lives intersected."
 .byte NewLine
-.text "In fact, I only became your tactician because"
+.text "In fact, I only became your tactician because I"
 .byte NewLine
-.text "I was ordered to do so by my benefactor."
+.text "was ordered to do so by my benefactor."
 .byte WaitForA
 .byte ScrollText
 .text "Truth be told, at the outset I thought liberating"
@@ -402,48 +396,48 @@ ch25ending1augustus
 .text "North Thracia was an impossible task."
 .byte WaitForA
 .byte ScrollText
-.text "But as I spent more time by your side,"
+.text "But as I spent more time by your side, as I saw"
 .byte NewLine
-.text "as I saw how focused you were on freeing"
+.text "how focused you were on freeing your"
 .byte NewLine
-.text "your motherland, how earnestly you wanted it..."
+.text "motherland, how earnestly you wanted it..."
 .byte WaitForA
 .byte ScrollText
-.text "Before I knew it, I had genuinely begun"
+.text "Before I knew it, I had genuinely begun to"
 .byte NewLine
-.text "to believe in you. I hope you can forgive me"
+.text "believe in you. I hope you can forgive me for all"
 .byte NewLine
-.text "for all the times I doubted you."
+.text "the times I doubted you."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I'll not lie, August... The times"
+.text "I'll not lie, August..."
 .byte NewLine
-.text "when you voiced skepticism of my abilities"
+.text "The times when you voiced skepticism of my"
 .byte NewLine
-.text "did always weigh heavily on my heart."
+.text "abilities did always weigh heavily on my heart."
 .byte WaitForA
 .byte ScrollText
-.text "Yet you also taught me how to expand"
+.text "Yet you also taught me how to expand my"
 .byte NewLine
-.text "my perspective: to realize the depth"
+.text "perspective: to realize the depth of everyone's"
 .byte NewLine
-.text "of everyone's suffering and sorrow."
+.text "suffering and grief."
 .byte WaitForA
 .byte ScrollText
 .text "My upbringing, strange and sheltered as it was,"
 .byte NewLine
-.text "left me lacking the tools to understand"
+.text "left me lacking the tools to understand the lives"
 .byte NewLine
-.text "the lives of my subjects."
+.text "of my subjects."
 .byte WaitForA
 .byte ScrollText
 .text "And I think I still have even more to learn..."
 .byte NewLine
-.text "I need you, August. I'd be honored if you"
+.text "I need you, August. I'd be honored if you stayed"
 .byte NewLine
-.text "stayed by my side and continued to teach me."
+.text "by my side and continued to teach me."
 .byte WaitForA
 
 .byte Right_slot
@@ -453,7 +447,7 @@ ch25ending1augustus
 .text "As you wish it, my prince, so shall it be."
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch25ending2finn
@@ -480,16 +474,16 @@ ch25ending2finn
 .byte ScrollText
 .text "He's alive and well, milord—fear not."
 .byte NewLine
-.text "The message said that he rides for Munster"
+.text "The message said that he rides for Munster as"
 .byte NewLine
-.text "as we speak to help us capture the city."
+.text "we speak to help us capture the city."
 .byte WaitForA
 .byte ScrollText
-.text "I imagine word has not yet reached him"
+.text "I imagine word has not yet reached him of our"
 .byte NewLine
-.text "of our victory. He should be in for a most"
+.text "victory. He should be in for a most welcome"
 .byte NewLine
-.text "welcome surprise when he arrives."
+.text "surprise when he arrives."
 .byte WaitForA
 
 .byte Left_slot
@@ -501,9 +495,9 @@ ch25ending2finn
 .text "fortress as Castle Connaught in a single day..."
 .byte WaitForA
 .byte ScrollText
-.text "My only regret is that I couldn't kill"
+.text "My only regret is that I couldn't kill King Bloom"
 .byte NewLine
-.text "King Bloom with my own hands."
+.text "with my own hands."
 .byte WaitForA
 
 .byte Right_slot
@@ -522,40 +516,40 @@ ch25ending2finn
 .text "of the Liberation Army."
 .byte WaitForA
 .byte ScrollText
-.text "The people cheer your name—"
+.text "The people cheer your name—they shout that"
 .byte NewLine
-.text "they shout that Thracia has been liberated"
+.text "Thracia has been liberated by the son of the"
 .byte NewLine
-.text "by the son of the late hero Quan."
+.text "late hero Quan."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Finn... We've been through so many"
+.text "Finn... We've been through so many long and"
 .byte NewLine
-.text "long and painful days, haven't we?"
+.text "painful days, haven't we?"
 .byte WaitForA
 .byte ScrollText
-.text "But however hard I had it, you had it"
+.text "But however hard I had it, you had it so much"
 .byte NewLine
-.text "so much worse... You possess more patience"
+.text "worse... You possess more patience and"
 .byte NewLine
-.text "and endurance than anyone I've ever known."
+.text "endurance than anyone I've ever known."
 .byte WaitForA
 .byte ScrollText
 .text "You've been there for me my whole life."
 .byte NewLine
-.text "Whenever I felt overwhelmed,"
+.text "Whenever I felt overwhelmed, I knew I could"
 .byte NewLine
-.text "I knew I could always rely on you, Finn."
+.text "always rely on you, Finn."
 .byte WaitForA
 .byte NewLine
 .text "You sacrificed everything to raise me."
 .byte WaitForA
 .byte ScrollText
-.text "It's like I spent my whole childhood"
+.text "It's like I spent my whole childhood sitting on"
 .byte NewLine
-.text "sitting on your lap..."
+.text "your lap..."
 .byte NewLine
 .text "How can I ever repay you?"
 .byte WaitForA
@@ -572,32 +566,28 @@ ch25ending2finn
 .text "none save Leonster have a surviving male heir."
 .byte WaitForA
 .byte ScrollText
-.text "Hence, the people want to be united"
+.text "Hence, the people want to be united under your"
 .byte NewLine
-.text "under your rule."
-.byte NewLine
-.text "No others remain who could take the throne."
+.text "rule. No others remain who could take the throne."
 .byte WaitForA
 .byte ScrollText
-.text "Lord Leif..."
-.byte NewLine
-.text "Please, fulfill their hopes."
+.text "Lord Leif... Please, fulfill their hopes."
 .byte NewLine
 .text "Be the answer to their prayers."
 .byte WaitForA
 .byte ScrollText
 .text "The tragedy of Thracia is that these small"
 .byte NewLine
-.text "kingdoms have been doomed to repeat"
+.text "kingdoms have been doomed to repeat their"
 .byte NewLine
-.text "their petty civil wars, time and time again."
+.text "petty civil wars, time and time again."
 .byte WaitForA
 .byte ScrollText
-.text "Unify Thracia and build a single,"
+.text "Unify Thracia and build a single, prosperous"
 .byte NewLine
-.text "prosperous kingdom, as the land once was"
+.text "kingdom, as the land once was in the days of"
 .byte NewLine
-.text "in the days of Dáinn and Njörun."
+.text "Dáinn and Njörun."
 .byte WaitForA
 .byte ScrollText
 .text "Doing so was the dream of your late father,"
@@ -609,9 +599,9 @@ ch25ending2finn
 
 .byte Left_slot
 .byte ScrollText
-.text "I would move the heavens themselves"
+.text "I would move the heavens themselves for you,"
 .byte NewLine
-.text "for you, Finn. Of course I'll do as you ask!"
+.text "Finn. Of course I'll do as you ask!"
 .byte NewLine
 .text "I've come this far—I won't start running now."
 .byte WaitForA
@@ -619,14 +609,14 @@ ch25ending2finn
 .text "I have a duty to protect North Thracia."
 .byte WaitForA
 .byte ScrollText
-.text "Unifying all of Thracia will depend on the will"
+.text "Unifying all of Thracia will depend on the will of"
 .byte NewLine
-.text "of King Travant, but I'll do everything"
+.text "King Travant, but I'll do everything in my power"
 .byte NewLine
-.text "in my power to make it happen."
+.text "to make it happen."
 .byte WaitForA
 .byte ScrollText
-.text "I know that's not ideal, but..."
+.text "I know that falls short of ideal, but..."
 .byte NewLine
 .text "Would that be enough to repay you, Finn?"
 .byte WaitForA
@@ -636,7 +626,7 @@ ch25ending2finn
 .text "It's...all I could have dreamed of, Lord Leif."
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch25ending3eyvel
@@ -645,41 +635,41 @@ ch25ending3eyvel
 .byte ScrollText
 .word LoadPortrait
 .word eyvel_portrait
-.text "Guess that's the end of this whole mess..."
+.text "It seems our ordeal is finally at an end..."
 .byte NewLine
 .text "Hard to believe this all started with Raydrik"
 .byte NewLine
-.text "kidnapping Little Nan and Mareeta, huh?"
+.text "kidnapping Lady Nanna and Mareeta, huh?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah, Lord Leif... It breaks my heart"
+.text "Ah, Lord Leif... I hate to have to say it,"
 .byte NewLine
-.text "to do this, but me and some of the others"
-.byte NewLine
-.text "have got to head back to Fiana."
+.text "but we're quite overdue to return to Fiana."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "What?! You're not coming with me, Eyvel?!"
+.text "What?!"
 .byte NewLine
-.text "Why would you do that?"
+.text "You mean you're not coming with me, Eyvel?"
+.byte NewLine
+.text "Wh-why not?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "We may have kicked the Loptrians out,"
+.text "Even though we're now rid of the Loptr Church,"
 .byte NewLine
-.text "but there's still lots of pirates around. I can't"
+.text "that's to say nothing of the usual roaming"
 .byte NewLine
-.text "just leave Fiana and Iz to fend for themselves."
+.text "pirates. It's my duty to defend the east coast."
 .byte WaitForA
 .byte ScrollText
-.text "Besides, how useful do you think we'd be?"
+.text "Besides, what do we amount to these days?"
 .byte NewLine
-.text "You've got a whole army of knights and"
+.text "You've got a whole army of knights and mages"
 .byte NewLine
-.text "mages and priests now—you don't need us."
+.text "and priests now—you don't need us."
 .byte WaitForA
 
 .byte Left_slot
@@ -689,16 +679,16 @@ ch25ending3eyvel
 
 .byte Right_slot
 .byte ScrollText
-.text "Lord Leif, I'll be looking forward to the day"
+.text "Lord Leif, I'll be looking forward to the day when"
 .byte NewLine
-.text "when you beat the empire for good"
+.text "you beat the empire for good and come back to"
 .byte NewLine
-.text "and come back to Leonster."
+.text "Leonster."
 .byte WaitForA
 .byte ScrollText
-.text "When that day comes—not if, but WHEN—"
+.text "When that day comes—not if, but WHEN—I'll bring"
 .byte NewLine
-.text "I'll bring everybody to Leonster to celebrate."
+.text "everyone to Leonster to celebrate."
 .byte WaitForA
 
 .byte Left_slot
@@ -706,31 +696,33 @@ ch25ending3eyvel
 .text "...I'd like that."
 .byte WaitForA
 .byte ScrollText
-.text "All right, Eyvel, it's a deal:"
+.text "All right, Eyvel, it's a deal: I promise I'll come"
 .byte NewLine
-.text "I promise I'll come back, and you promise"
+.text "back, and you promise to have everyone ready"
 .byte NewLine
-.text "to have everyone ready to celebrate."
+.text "to celebrate."
 .byte WaitForA
 .byte ScrollText
 .text "But you might be waiting for a while,"
 .byte NewLine
-.text "so please be patient with me..."
+.text "so I ask for your patience..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I don't think we'll be waiting for long, actually."
+.text "“A while”?"
+.byte NewLine
+.text "I find myself doubting that, actually."
 .byte WaitForA
 .byte ScrollText
-.text "I believe in you, Little Leif."
+.text "I believe in you, Lord Leif."
 .byte NewLine
-.text "Go show the empire what it's like"
+.text "Go show the empire what it's like to have you"
 .byte NewLine
-.text "to have you for an enemy!"
+.text "for an enemy!"
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch25ending4miranda
@@ -739,9 +731,9 @@ ch25ending4miranda
 .byte ScrollText
 .word LoadPortrait
 .word miranda_portrait
-.text "Prince Leif, something's been on my mind"
+.text "Prince Leif, something's been on my mind for a"
 .byte NewLine
-.text "for a little while."
+.text "little while."
 .byte WaitForA
 
 .byte Left_slot
@@ -758,18 +750,18 @@ ch25ending4miranda
 
 .byte Left_slot
 .byte ScrollText
-.text "If this is about Dryas, what happened"
+.text "If this is about Dryas, what happened was my"
 .byte NewLine
-.text "was my fault. You're not to blame for it,"
+.text "fault. You're not to blame for it,"
 .byte NewLine
 .text "Princess Miranda."
 .byte WaitForA
 .byte ScrollText
-.text "And if you haven't heard, Ulster was liberated"
+.text "And if you haven't heard, Ulster was liberated by"
 .byte NewLine
-.text "by Lord Seliph's army. I'm sure your people"
+.text "Lord Seliph's army. I'm sure your people will be"
 .byte NewLine
-.text "will be glad to know you're alive and well."
+.text "glad to know you're alive and well."
 .byte WaitForA
 
 .byte Right_slot
@@ -781,30 +773,26 @@ ch25ending4miranda
 .text "me again. They want to unify with Leonster."
 .byte WaitForA
 .byte ScrollText
-.text "My senior vassals and statesmen are all"
+.text "My senior vassals and statesmen are all advising"
 .byte NewLine
-.text "advising that I wed you. They've been nagging"
+.text "that I wed you. They've been nagging me about"
 .byte NewLine
-.text "me about it for quite some time, actually."
+.text "it for quite some time, actually."
 .byte WaitForA
 .byte ScrollText
-.text "Those bloviating imbeciles think they can"
+.text "Those bloviating imbeciles think they can order"
 .byte NewLine
-.text "boss me around just because I'm a woman..."
+.text "me around just because I'm a woman..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Well, out of the royal families"
+.text "Well, out of the royal families of North Thracia's"
 .byte NewLine
-.text "of North Thracia's four kingdoms,"
-.byte NewLine
-.text "you and I are the only survivors."
+.text "four kingdoms, you and I are the only survivors."
 .byte WaitForA
 .byte ScrollText
-.text "They can't be the only people"
-.byte NewLine
-.text "thinking this way."
+.text "They can't be the only people thinking this way."
 .byte NewLine
 .text "But even so, I still..."
 .byte WaitForA
@@ -820,19 +808,19 @@ ch25ending4miranda
 .byte ScrollText
 .text "No, it's not that simple. I just..."
 .byte NewLine
-.text "I've still got things left to do."
+.text "I still have things left to do."
 .byte WaitForA
 .byte ScrollText
-.text "The battle to unify Thracia has just begun,"
+.text "The battle to unify Thracia has just begun, the"
 .byte NewLine
-.text "the Loptr Church and Grannvale Empire are still"
+.text "Loptr Church and Grannvale Empire are still at"
 .byte NewLine
-.text "threats, and North Thracia needs protecting."
+.text "large, and North Thracia needs protecting."
 .byte WaitForA
 .byte ScrollText
-.text "Right now, I just don't have the time"
+.text "Right now, I just don't have the time to"
 .byte NewLine
-.text "to figure out if I truly love someone or not..."
+.text "contemplate whether I love someone or not..."
 .byte WaitForA
 
 .byte Right_slot
@@ -840,19 +828,19 @@ ch25ending4miranda
 .text "......"
 .byte WaitForA
 .byte ScrollText
-.text "Then I shall return to Ulster"
+.text "Then I shall return to Ulster to await your"
 .byte NewLine
-.text "to await your answer."
+.text "answer."
 .byte WaitForA
 .byte ScrollText
-.text "But if you don't manage to defeat"
+.text "But if you don't manage to defeat Travant and"
 .byte NewLine
-.text "Travant and South Thracia,"
+.text "South Thracia, consider my offer of marriage"
 .byte NewLine
-.text "consider my offer of marriage withdrawn!"
+.text "withdrawn, Prince!"
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch25ending5linoan
@@ -866,9 +854,7 @@ ch25ending5linoan
 
 .byte Left_slot
 .byte ScrollText
-.text "Linoan!"
-.byte NewLine
-.text "Ah... I imagine this must be very bittersweet"
+.text "Linoan! I imagine this must be very bittersweet"
 .byte NewLine
 .text "for you..."
 .byte WaitForA
@@ -878,11 +864,11 @@ ch25ending5linoan
 .text "hands, but Tarrah remains in Thracia's clutches."
 .byte WaitForA
 .byte ScrollText
-.text "You know I'll stop at nothing to recapture"
+.text "You know I'll stop at nothing to recapture the"
 .byte NewLine
-.text "the city, so won't you travel with me"
+.text "city, so won't you travel with me for a while"
 .byte NewLine
-.text "for a while longer?"
+.text "longer?"
 .byte WaitForA
 
 .byte Right_slot
@@ -890,7 +876,7 @@ ch25ending5linoan
 .text "Of course I will, Lord Leif!"
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch25ending6dean
@@ -906,6 +892,8 @@ ch25ending6dean
 
 .byte Right_slot
 .byte ScrollText
+.text "...!"
+.byte NewLine
 .text "How can that be, Dean?"
 .byte NewLine
 .text "Why can't you?!"
@@ -913,11 +901,11 @@ ch25ending6dean
 
 .byte Left_slot
 .byte ScrollText
-.text "Thracia is my motherland."
+.text "Thracia is my fatherland."
 .byte NewLine
-.text "North and South shall soon face each other"
+.text "North and South shall soon face each other in"
 .byte NewLine
-.text "in battle, and I cannot fight against my home."
+.text "battle, and I cannot fight against my home."
 .byte WaitForA
 .byte ScrollText
 .text "You should stay with the prince, Linoan."
@@ -941,9 +929,9 @@ ch25ending6dean
 
 .byte Right_slot
 .byte ScrollText
-.text "I will abandon my plans to retake Tarrah"
+.text "I will abandon my plans to retake Tarrah if it"
 .byte NewLine
-.text "if it means you would stay, Dean."
+.text "means you would stay, Dean."
 .byte NewLine
 .text "So please, remain at my side..."
 .byte WaitForA
@@ -952,14 +940,14 @@ ch25ending6dean
 .byte ScrollText
 .text "Don't say something so stupid, Linoan!"
 .byte NewLine
-.text "This isn't like you at all!"
+.text "That's not like you at all!"
 .byte WaitForA
 .byte ScrollText
 .text "Ah, dammit... Now that I think about it, I'd be"
 .byte NewLine
-.text "hurting both Prince Leif and my sworn lord"
+.text "hurting both Prince Leif and my sworn lord if I"
 .byte NewLine
-.text "if I left with things the way they are now."
+.text "left with things the way they are now."
 .byte WaitForA
 .byte ScrollText
 .text "I have to avoid that, no matter what it takes..."
@@ -973,9 +961,9 @@ ch25ending6dean
 .byte ScrollText
 .text "Linoan, I know you've much to consider."
 .byte NewLine
-.text "So please, take all the time you need"
+.text "So please, take all the time you need for a"
 .byte NewLine
-.text "for a decision like this. I insist."
+.text "decision like this. I insist."
 .byte WaitForA
 
 .byte Right_slot
@@ -987,10 +975,10 @@ ch25ending6dean
 
 .byte Left_slot
 .byte ScrollText
-.text "Pay it no mind."
+.text "Of course."
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch25ending7mareeta
@@ -1025,14 +1013,14 @@ ch25ending7mareeta
 .byte ScrollText
 .text "If you don't say it now, you'll only regret it!"
 .byte NewLine
-.text "Or are you comfortable with staying"
+.text "Or are you comfortable with staying the"
 .byte NewLine
-.text "the “cute little sister” forever?"
+.text "“cute little sister” forever?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "But Mareeta—"
+.text "But, Mareeta—"
 .byte WaitForA
 
 .byte Right_slot
@@ -1076,7 +1064,7 @@ ch25ending7mareeta
 .text "Mareeta, I did not hear a thing you—"
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 ch25ending8nanna
 
@@ -1089,16 +1077,16 @@ ch25ending8nanna
 
 .byte Left_slot
 .byte ScrollText
-.text "Oh, Nanna! I know, there hasn't been"
+.text "Oh, Nanna! I know, there hasn't been a chance"
 .byte NewLine
-.text "a chance for just the two of us to talk."
+.text "for just the two of us to talk."
 .byte WaitForA
 .byte ScrollText
-.text "I want to thank you. You've been just as big"
+.text "I want to thank you. You've been just as big a"
 .byte NewLine
-.text "a help as anyone, and I want to make sure"
+.text "help as anyone, and I want to make sure you"
 .byte NewLine
-.text "you knew how grateful I am."
+.text "knew how grateful I am."
 .byte WaitForA
 
 .byte Right_slot
@@ -1112,24 +1100,24 @@ ch25ending8nanna
 .byte ScrollText
 .text "I think not!"
 .byte NewLine
-.text "We were raised like siblings,"
+.text "We were raised like siblings, and you've always"
 .byte NewLine
-.text "and you've always been there for me, Nanna."
+.text "been there for me, Nanna."
 .byte WaitForA
 .byte ScrollText
 .text "You were always there to support me,"
 .byte NewLine
 .text "to comfort me when I needed it,"
 .byte WaitForA
+.byte ScrollText
+.text "and I wouldn't have fought half as well if I didn't"
 .byte NewLine
-.text "and I wouldn't have fought half as well"
-.byte NewLine
-.text "if I didn't have you to keep my spirits up."
+.text "have you to keep my spirits up."
 .byte WaitForA
 .byte ScrollText
 .text "When this is all over, I'll go looking for"
 .byte NewLine
-.text "Lachesis—and if I find her, I'll tell her,"
+.text "Lachesis—and if I find her, I'll tell her, promptly:"
 .byte WaitForA
 .byte NewLine
 .text "“I've fallen in love with your daughter, Nanna."
@@ -1146,11 +1134,11 @@ ch25ending8nanna
 
 .byte Left_slot
 .byte ScrollText
-.text "I know we have a long way to go"
+.text "I know we have a long way to go before our"
 .byte NewLine
-.text "before our battle is over, but I hope"
+.text "battle is over, but I hope you'll stay by my side,"
 .byte NewLine
-.text "you'll stay by my side, Nanna."
+.text "Nanna. I, uh... W-will you?"
 .byte WaitForA
 
 .byte Right_slot
@@ -1160,13 +1148,16 @@ ch25ending8nanna
 .text "I'm honored, Lord Leif..."
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch25finale
 
 .byte Right_slot
 .byte ScrollText
+
+ch25finalenannamareetadead
+
 .word LoadPortrait
 .word augustus_portrait
 .text "Prince Leif, Lord Seliph is here to see you."
@@ -1183,47 +1174,47 @@ ch25finale
 .byte ScrollText
 .text "Lord Seliph!"
 .byte NewLine
-.text "We're only here because you intervened"
+.text "We're only here because you intervened at"
 .byte NewLine
-.text "at Leonster. The credit for this victory is yours."
+.text "Leonster. The credit for this victory is yours."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "No, North Thracia was liberated by you,"
+.text "No, North Thracia was liberated by you, Prince,"
 .byte NewLine
-.text "Prince, with your own strength—I merely"
+.text "with your own strength."
 .byte NewLine
-.text "played a momentary role, nothing more."
+.text "I merely played a momentary role, nothing more."
 .byte WaitForA
 .byte ScrollText
-.text "All of North Thracia is agreed on uniting"
+.text "All of North Thracia is agreed on uniting under"
 .byte NewLine
-.text "under your rule, it seems."
+.text "your rule, it seems."
 .byte WaitForA
 .byte ScrollText
 .text "If a country that vast and wealthy were to join"
 .byte NewLine
-.text "the fight against the empire, my Liberation"
+.text "the fight against the empire, my Liberation Army"
 .byte NewLine
-.text "Army would have cause for celebration."
+.text "would have cause for celebration."
 .byte WaitForA
 .byte ScrollText
-.text "Prince Leif, will you continue"
+.text "Prince Leif, will you continue to fight alongside"
 .byte NewLine
-.text "to fight alongside me?"
+.text "me?"
 .byte WaitForA
 .byte ScrollText
-.text "There's still much left to be done,"
+.text "There's still much left to be done, but if we were"
 .byte NewLine
-.text "but if we were to join forces, I know we could"
+.text "to join forces, I know we could overcome any"
 .byte NewLine
-.text "overcome any challenge in our way."
+.text "challenge in our way."
 .byte WaitForA
 .byte ScrollText
-.text "If you would accept it, I offer you a vow"
+.text "If you would accept it, I offer you a vow of"
 .byte NewLine
-.text "of eternal friendship—to live and die as one,"
+.text "eternal friendship—to live and die as one,"
 .byte NewLine
 .text "just as our fathers vowed before us."
 .byte WaitForA
@@ -1232,16 +1223,16 @@ ch25finale
 .byte ScrollText
 .text "I'm honored to accept your oath!"
 .byte NewLine
-.text "After all we've been through, I think of you"
+.text "After all we've been through, I think of you less"
 .byte NewLine
-.text "less as a cousin and more as an older brother."
+.text "as a cousin and more as a brother."
 .byte WaitForA
 .byte ScrollText
-.text "Nothing could make me happier"
+.text "Nothing could make me happier than the idea of"
 .byte NewLine
-.text "than the idea of pooling our strength"
+.text "pooling our strength to create a brighter future"
 .byte NewLine
-.text "to create a brighter future for everyone!"
+.text "for everyone!"
 .byte WaitForA
 
 .byte Right_slot
@@ -1253,20 +1244,20 @@ ch25finale
 .text "but we shall die as one!"
 .byte WaitForA
 .byte ScrollText
-.text "As your friend, as your sworn brother,"
+.text "As your friend, as your sworn brother, we shall"
 .byte NewLine
-.text "we shall join hands and deliver Jugdral"
+.text "join hands and deliver Jugdral from this evil!"
 .byte NewLine
-.text "from this evil! This I vow to you!"
+.text "This I vow to you!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "And I vow just the same to you—"
+.text "And I vow the same to you—an undying oath,"
 .byte NewLine
-.text "an undying oath, and may the stars themselves"
+.text "and may the stars themselves perish before it is"
 .byte NewLine
-.text "perish before it is broken!"
+.text "broken!"
 .byte WaitForA
 
 .byte EndText

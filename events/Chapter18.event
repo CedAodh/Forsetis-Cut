@@ -173,10 +173,13 @@ eventChapter18Events ; E7/8000
 		EVENT $0A, _LeifVsGustav
 			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 			macroEventConditionCheckCoordRanges [18, 3], [24, 8]
+			CHECK_NUM_UNITS_GTE Gustav, 1
 		END_DEFINITION
 		EVENT $0B, _XavierVsGustav
 			CMP_WORD aSelectedCharacterBuffer.Character, Xavier
 			macroEventConditionCheckCoordRanges [18, 3], [24, 8]
+			TEST_FLAG_SET $07
+			CHECK_NUM_UNITS_GTE Gustav, 1
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 

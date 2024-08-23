@@ -20,25 +20,23 @@ ch19conomorrecruit
 
 .byte Left_slot
 .byte ScrollText
-.text "I was rescued by Prince Leif, and at my"
+.text "I was rescued by Prince Leif, and at my urging,"
 .byte NewLine
-.text "urging, he commanded his army to come to"
-.byte NewLine
-.text "Ulster's aid."
+.text "he commanded his army to come to Ulster's aid."
 .byte WaitForA
 .byte ScrollText
-.text "It cost him countless soldiers"
+.text "It cost him countless soldiers and one of his"
 .byte NewLine
-.text "and one of his closest advisors—"
+.text "closest advisors—and what have YOU done for"
 .byte NewLine
-.text "and what have YOU done for me?!"
+.text "me?!"
 .byte WaitForA
 .byte ScrollText
 .text "Just what is all this?!"
 .byte NewLine
-.text "What idiocy compelled you to make"
+.text "What idiocy compelled you to make Ulster's finest"
 .byte NewLine
-.text "Ulster's finest knights into imperial lapdogs?!"
+.text "knights into imperial lapdogs?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -50,19 +48,16 @@ ch19conomorrecruit
 
 .byte Left_slot
 .byte ScrollText
-.text "The enemy isn't Leonster, you fool!"
+.text "The enemy isn't Leonster—it's the empire!"
 .byte NewLine
-.text "The enemy is the empire!"
+.text "Command the Knights of Ulster to aid in"
+.byte NewLine
+.text "Leonster's retreat!"
 .byte WaitForA
 .byte ScrollText
-.text "Command the Knights of Ulster"
+.text "As ruler, I hereby declare that the entirety of"
 .byte NewLine
-.text "to aid in Leonster's retreat!"
-.byte WaitForA
-.byte ScrollText
-.text "As ruler, I hereby declare that all of Ulster"
-.byte NewLine
-.text "is part of Prince Leif's Liberation Army!"
+.text "Ulster is part of Prince Leif's Liberation Army!"
 .byte NewLine
 .text "Their mission is now our own!"
 .byte WaitForA
@@ -73,7 +68,7 @@ ch19conomorrecruit
 .byte WaitForA
 
 .byte Left_slot
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -81,19 +76,17 @@ ch19conomorrecruit
 .byte ScrollText
 .text "Knights of Ulster!"
 .byte NewLine
-.text "From this moment onward, we are part"
+.text "From this moment onward, we are part of the"
 .byte NewLine
-.text "of the North Thracian Liberation Army!"
+.text "North Thracian Liberation Army!"
 .byte WaitForA
 .byte NewLine
 .text "Serve Prince Leif as you would serve me!"
 .byte WaitForA
 .byte ScrollText
-.text "We'll take sanctuary in Castle Leonster,"
+.text "We'll take sanctuary in Castle Leonster, and plot"
 .byte NewLine
-.text "and plot the recapture of our motherland"
-.byte NewLine
-.text "from there!"
+.text "the recapture of our motherland from there!"
 .byte WaitForA
 .byte ScrollText
 .text "So orders Her Highness Princess Miranda,"
@@ -128,9 +121,9 @@ ch19amaldarecruit
 .byte ScrollText
 .text "I came to meet with you."
 .byte NewLine
-.text "Prince Leif of the Liberation Army"
+.text "Prince Leif's Liberation Army has been waiting"
 .byte NewLine
-.text "has been waiting for you."
+.text "for you."
 .byte WaitForA
 
 .byte Right_slot
@@ -140,57 +133,57 @@ ch19amaldarecruit
 .byte ScrollText
 .text "That's not even in the realm of possibility,"
 .byte NewLine
-.text "Father Schroff. If it was, I... I wouldn't"
+.text "Father Schroff. If it were, I...I wouldn't be"
 .byte NewLine
-.text "be living in such torment."
+.text "living in such torment."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Dame Amalda, a country isn't the plaything"
+.text "Dame Amalda, a country isn't the plaything of a"
 .byte NewLine
-.text "of a king or nobleman. If a country has lost"
+.text "king or nobleman. If a country has lost its way,"
 .byte NewLine
-.text "its way, it's a knight's duty to lead it back."
+.text "it's a knight's duty to lead it back."
 .byte WaitForA
 .byte ScrollText
-.text "Will you stand idly by and allow evil"
+.text "Will you stand idly by and allow evil to consume"
 .byte NewLine
-.text "to consume your home, all out of the fear"
+.text "your home, all out of fear for being branded a"
 .byte NewLine
-.text "of being called a traitor?"
+.text "traitor?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "It's not that simple!"
 .byte NewLine
-.text "I have to consider what will become"
+.text "I have to consider what will become of my"
 .byte NewLine
-.text "of my troops if I defect!"
+.text "troops if I defect!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "They can decide for themselves."
+.text "They are capable of following their own hearts—"
 .byte NewLine
-.text "But your foremost duty is to your country—"
-.byte NewLine
-.text "follow your heart."
+.text "just as I suggest you do."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Mm... I understand."
+.text "...Mm... I understand, then."
 .byte NewLine
-.text "Father Schroff, I shall fight"
+.text "Father Schroff, I shall fight with the"
 .byte NewLine
-.text "with the Liberation Army."
+.text "Liberation Army."
 .byte WaitForA
 .byte ScrollText
-.text "I know what I must do:"
+.text "Together, we will rescue the children stolen by"
 .byte NewLine
-.text "rescue the children stolen by the empire!"
+.text "the empire—that is what my heart desires above"
+.byte NewLine
+.text "all else!"
 .byte WaitForA
 
 .byte EndText
@@ -344,19 +337,19 @@ ch19silverswordhouse
 .byte Right_slot
 .word LoadPortrait
 .word moustache_portrait
-.text "Hornswogglin' Hoðr! This place"
+.text "Hornswogglin' Hoðr!"
 .byte NewLine
-.text "has turned into a damned warzone...!"
+.text "This place has turned into a damned warzone...!"
 .byte WaitForA
 .byte ScrollText
 .text "Oh, yer a knight of Leonster, right?"
 .byte NewLine
 .text "Here, I'll lend ya my old silver sword."
 .byte WaitForA
-.byte ScrollText
-.text "Might make the difference"
 .byte NewLine
-.text "between life and death!"
+.text "Might make the difference between life and"
+.byte NewLine
+.text "death!"
 .byte WaitForA
 
 .byte EndText
@@ -374,9 +367,9 @@ ch19killerlancehouse
 .byte ScrollText
 .text "I mean, you folks are here, so that means"
 .byte NewLine
-.text "there's still more knights of Leonster"
+.text "there's still more knights of Leonster to fight"
 .byte NewLine
-.text "to fight for our motherland!"
+.text "for our motherland!"
 .byte WaitForA
 .byte ScrollText
 .text "But I reckon fightin' will be a lot easier with"
@@ -384,9 +377,9 @@ ch19killerlancehouse
 .text "good weapons, so take this here killer lance."
 .byte WaitForA
 .byte ScrollText
-.text "It's mighty easy-to-use, so lop off a few"
+.text "It's mighty easy-to-use, so lop off a few imperial"
 .byte NewLine
-.text "imperial heads with it for me!"
+.text "heads with it for me!"
 .byte WaitForA
 
 .byte EndText
@@ -397,25 +390,18 @@ ch19speedringhouse
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "I've been saving the nearby Thracians"
+.text "What is it with you guys?"
 .byte NewLine
-.text "from starving by giving them"
+.text "You're fighting to save Thracia, but no offense,"
 .byte NewLine
-.text "a tenth of our crops."
+.text "you seem way too slow for the job."
 .byte WaitForA
 .byte ScrollText
-.text "This speed ring is what lets me"
+.text "How about we fix that and I give you this speed"
 .byte NewLine
-.text "smuggle the supplies so quickly!"
+.text "ring? This way, you'll really disorient the"
 .byte NewLine
-.text "The others are shocked by how fast I am!"
-.byte WaitForA
-.byte ScrollText
-.text "But with the empire here now, it looks like"
-.byte NewLine
-.text "I won't be able to sneak food over for a while."
-.byte NewLine
-.text "Why don't you hang on to it for the time being?"
+.text "imperials! Make them dizzy, even!"
 .byte WaitForA
 
 .byte EndText
@@ -428,21 +414,21 @@ ch19purewaterhouse2
 .word beardedman_portrait
 .text "Hey, are you the ones fighting to free Thracia?"
 .byte NewLine
-.text "Ah, you have such a noble spirit!"
+.text "Ah, you have such a noble, endearing spirit!"
 .byte NewLine
 .text "I'm so glad to have met you!"
 .byte WaitForA
 .byte ScrollText
-.text "Here, take this pure water"
+.text "Here, take this pure water to match the purity"
 .byte NewLine
-.text "to match the purity of your heart!"
+.text "of your heart!"
 .byte WaitForA
 .byte ScrollText
-.text "Best drink it, even if you don't use magic"
+.text "Best drink, it even if you don't use magic"
 .byte NewLine
-.text "yourself—lots of folks in the imperial army"
+.text "yourself—lots of folks in the imperial army use"
 .byte NewLine
-.text "use spells."
+.text "spells."
 .byte WaitForA
 
 .byte EndText
@@ -453,14 +439,12 @@ ch19healhouse
 .byte Right_slot
 .word LoadPortrait
 .word youngman_portrait
-.text "So the imperial army has come"
+.text "So the imperial army has come to bring down the"
 .byte NewLine
-.text "to bring down the hammer..."
+.text "hammer..."
 .byte WaitForA
 .byte ScrollText
-.text "Surely you have comrades"
-.byte NewLine
-.text "who've been injured."
+.text "Surely you have comrades who've been injured."
 .byte NewLine
 .text "Use this—it's a heal staff."
 .byte WaitForA
@@ -473,25 +457,16 @@ ch19ensorcelhouse
 .byte Right_slot
 .word LoadPortrait
 .word younglady_portrait
-.text "The imperial army looks to be"
+.text "The imperial army looks to be awfully strong..."
 .byte NewLine
-.text "awfully strong..."
-.byte NewLine
-.text "You can't lose now!"
+.text "But you can't lose now! You're all we've got!"
 .byte WaitForA
 .byte ScrollText
-.text "Please, you're our only hope!"
-.byte NewLine
-.text "Uh, here! Take this staff!"
+.text "So, uh...here! Take this staff!"
 .byte NewLine
 .text "It makes your magical senses stronger, I think."
-.byte WaitForA
-.byte ScrollText
-.text "That tiny staff is all that's left of my garden"
 .byte NewLine
-.text "after my idiot brother tried to water my plants"
-.byte NewLine
-.text "with pure water..."
+.text "That could be advantageous, right?"
 .byte WaitForA
 
 .byte EndText
@@ -502,9 +477,9 @@ ch19healhouse2
 .byte Right_slot
 .word LoadPortrait
 .word oldman_portrait
-.text "Cyclin' Ced! The other knights"
+.text "Cyclin' Ced! The other knights have been hurt"
 .byte NewLine
-.text "have been hurt pretty bad, right?!"
+.text "pretty bad, right?!"
 .byte WaitForA
 .byte ScrollText
 .text "Take this heal staff, an' help them!"
@@ -527,11 +502,11 @@ ch19windhouse
 .text "I'm fairly certain it's enchanted..."
 .byte WaitForA
 .byte ScrollText
-.text "I've tried reading from it, and it summons"
+.text "I think it's just called Wind.."
 .byte NewLine
-.text "the most terrible storm—strong gusts"
+.text "...But we could probably all use a second wind"
 .byte NewLine
-.text "that sweep up anything that isn't nailed down."
+.text "right about now, huh? Here's yours."
 .byte WaitForA
 .byte ScrollText
 .text "So, uh..."
@@ -559,7 +534,7 @@ ch19opening1
 .byte NewLine
 .text "It seems someone has come to the castle..."
 .byte NewLine
-.text "One of Dryas's men, I believe."
+.text "Likely a messenger from Dryas."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -571,7 +546,7 @@ ch19opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Sorry for what?"
+.text "Hm? Sorry for what?"
 .byte NewLine
 .text "What's happened?"
 .byte WaitForA
@@ -634,7 +609,7 @@ ch19opening1
 .word augustus_portrait
 .text "Prince Leif, time is of the essence."
 .byte NewLine
-.text "We must withdraw all of our troops at once,"
+.text "We must come to our allies' rescue at once,"
 .byte NewLine
 .text "before our entire army is massacred."
 .byte WaitForA
@@ -653,14 +628,11 @@ ch19opening1
 .text "Snap out of it!"
 .byte WaitForA
 .byte ScrollText
-.text "If we lose our troops now,"
+.text "If we lose those troops now, Count Dryas will"
 .byte NewLine
-.text "Count Dryas will have died for nothing!"
-.byte WaitForA
-.byte ScrollText
-.text "We owe it to him to save"
+.text "have died for nothing!"
 .byte NewLine
-.text "as many of our people as we can!"
+.text "We owe it to him to save as many as we can!"
 .byte WaitForA
 
 .byte EndText
@@ -675,9 +647,9 @@ ch19opening2
 .byte Left_slot
 .word LoadPortrait
 .word blume_portrait
-.text "...Now the maggots understand"
+.text "...Now the maggots understand what the empire"
 .byte NewLine
-.text "what the empire is capable of."
+.text "is capable of."
 .byte WaitForA
 .byte ScrollText
 .text "I'll leave the rest to you, Wolfe."
@@ -714,7 +686,7 @@ ch19opening3amalda
 .word amalda_portrait
 .text "I have a duty to protect my troops, but..."
 .byte NewLine
-.text "Is this truly right?"
+.text "Is this truly how I must do it?"
 .byte WaitForA
 .byte ScrollText
 .text "Ah, Father Schroff..."
@@ -749,24 +721,24 @@ ch19closing1
 
 .byte Left_slot
 .byte ScrollText
-.text "You don't have the luxury"
+.text "You don't have the luxury of wallowing in"
 .byte NewLine
-.text "of wallowing in regret—not now."
+.text "regret—not now."
 .byte WaitForA
 .byte ScrollText
-.text "There will be time to atone to Count Dryas"
+.text "There will be time to atone to Count Dryas after"
 .byte NewLine
-.text "after you've defended Leonster."
+.text "you've defended Leonster."
 .byte WaitForA
 .byte ScrollText
-.text "Summon all your patience and discipline—"
+.text "Summon all your patience and discipline;"
 .byte NewLine
 .text "you'll need it for what lies ahead."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "...You're right."
+.text "...I know. You're right."
 .byte WaitForA
 
 .byte Left_slot
@@ -774,35 +746,30 @@ ch19closing1
 .text "Come now, I do bring some good news."
 .byte WaitForA
 .byte ScrollText
-.text "I've heard multiple reports"
+.text "I've heard multiple reports that a large rebellion"
 .byte NewLine
-.text "that a large rebellion is taking place"
-.byte NewLine
-.text "in the eastern reaches of Isaach."
+.text "is taking place in the eastern reaches of Isaach."
 .byte WaitForA
 .byte ScrollText
-.text "They seem to be putting up a good fight"
+.text "They seem to be putting up a good fight against"
 .byte NewLine
-.text "against the empire, by all accounts."
+.text "the empire, by all accounts."
 .byte NewLine
 .text "Do you know who their leader is?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "If the rebellion is in Isaach,"
+.text "If the rebellion is in Isaach, then you would"
 .byte NewLine
-.text "couldn't it be Prince Shannan?"
+.text "have to mean Prince Shannan, correct?"
 .byte WaitForA
 .byte ScrollText
 .text "Finn told me about him..."
-.byte WaitForA
 .byte NewLine
-.text "He has the most gifted sword-arm"
+.text "He has the most gifted sword-arm in all the"
 .byte NewLine
-.text "in all the world, and he's beloved by"
-.byte NewLine
-.text "his people..."
+.text "world, and he's beloved by his people..."
 .byte WaitForA
 .byte ScrollText
 .text "In short, he's a far greater man than I."
@@ -824,9 +791,9 @@ ch19closing1
 .byte ScrollText
 .text "Lord Seliph of House Chalphy."
 .byte NewLine
-.text "The people of Isaach and Grannvale alike"
+.text "The people of Isaach and Grannvale alike hail him"
 .byte NewLine
-.text "hail him as the “Scion of Light.”"
+.text "as the “Scion of Light.”"
 .byte WaitForA
 
 .byte Right_slot
@@ -838,55 +805,54 @@ ch19closing1
 
 .byte Left_slot
 .byte ScrollText
-.text "I believe it is—and his father, Lord Sigurd,"
+.text "It is."
 .byte NewLine
-.text "was your uncle."
+.text "And his father, Lord Sigurd, was your uncle."
 .byte WaitForA
 .byte ScrollText
-.text "The crusader Sigurd..."
+.text "Sigurd the holy knight..."
 .byte WaitForA
 .byte NewLine
-.text "As recently as a decade ago,"
+.text "As recently as a decade ago, he was reviled as"
 .byte NewLine
-.text "he was reviled as a traitor,"
+.text "a traitor and renegade, but nowadays he's a"
 .byte NewLine
-.text "but nowadays he's a popular folk hero."
-.byte WaitForA
-.byte ScrollText
-.text "He saw through the emperor's schemes"
-.byte NewLine
-.text "from the beginning, and died trying"
-.byte NewLine
-.text "to protect the world from his machinations."
+.text "popular folk hero."
 .byte WaitForA
 .byte ScrollText
-.text "Bards spread his tale across the land, and"
+.text "He saw through the emperor's schemes from the"
 .byte NewLine
-.text "it captivated the hearts of every man, woman,"
+.text "beginning, and died trying to protect the world"
+.byte NewLine
+.text "from his machinations."
+.byte WaitForA
+.byte ScrollText
+.text "Bards spread his tale across the land, and it"
+.byte NewLine
+.text "captivated the hearts of every man, woman,"
 .byte NewLine
 .text "and child suffering under the empire's rule..."
 .byte WaitForA
-.byte NewLine
-.text "And so he's become more legend than man."
-.byte WaitForA
 .byte ScrollText
-.text "Now, the child of that legend"
+.text "And so he's become more legend than man."
 .byte NewLine
-.text "is fighting to realize his father's dream..."
+.text "Now, the child of that legend is fighting to"
+.byte NewLine
+.text "realize his father's dream..."
 .byte WaitForA
 .byte ScrollText
 .text "The people feel hope once again."
 .byte NewLine
-.text "And blinded by that hope,"
+.text "And blinded by that hope, they wouldn't hesitate"
 .byte NewLine
-.text "they wouldn't hesitate to die for his cause..."
+.text "to die for his cause..."
 .byte WaitForA
 .byte ScrollText
 .text "This is a bounty from the gods."
 .byte NewLine
-.text "We couldn't have crafted"
+.text "We couldn't have crafted a more perfect"
 .byte NewLine
-.text "a more perfect opportunity ourselves."
+.text "opportunity ourselves."
 .byte WaitForA
 
 .byte Right_slot
@@ -899,25 +865,25 @@ ch19closing1
 
 .byte Left_slot
 .byte ScrollText
-.text "I'm saying there's a reason so many people"
+.text "I'm saying there's a reason so many people are"
 .byte NewLine
-.text "are ready to die for Lord Seliph."
+.text "ready to die for Lord Seliph."
 .byte NewLine
 .text "It's not just because he's a strong warrior."
 .byte WaitForA
 .byte ScrollText
 .text "Our era demands a hero."
 .byte NewLine
-.text "The people clamor for one, and so...someone"
+.text "The people clamor for one, and so...someone has"
 .byte NewLine
-.text "has crafted Lord Seliph to be their hero."
+.text "crafted Lord Seliph to be their hero."
 .byte WaitForA
 .byte ScrollText
 .text "Forged him, if you will, in much the same way"
 .byte NewLine
-.text "one forges metal into a blade—taking a man"
+.text "one forges metal into a blade—taking a man and"
 .byte NewLine
-.text "and sculpting him into what the people need."
+.text "sculpting him into what the people need."
 .byte WaitForA
 .byte ScrollText
 .text "Do you understand?"
@@ -925,47 +891,44 @@ ch19closing1
 .byte ScrollText
 .text "No one chooses to become a hero."
 .byte NewLine
-.text "They're willed into a hero by the people"
+.text "They're willed into a hero by the people around"
 .byte NewLine
-.text "around them, shaped by the needs of others."
+.text "them, shaped by the needs of others."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "August..."
 .byte NewLine
-.text "Does that mean...the people in my life"
+.text "Does that mean...the people in my life crafted me"
 .byte NewLine
-.text "crafted me to be what they needed, too?"
+.text "to be what they needed, too? People like you?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Mm... You'll have to come to your own"
+.text "You'll have to come to your own conclusions on"
 .byte NewLine
-.text "conclusions on the matter."
+.text "the matter."
 .byte WaitForA
 .byte ScrollText
 .text "Though I will say this..."
-.byte WaitForA
 .byte NewLine
-.text "Recall that Count Dryas lost an arm"
+.text "Recall that Count Dryas lost an arm protecting"
 .byte NewLine
-.text "protecting you—and now he's traded"
-.byte NewLine
-.text "his life for yours."
+.text "you—and now he's traded his life for yours."
 .byte WaitForA
 .byte ScrollText
-.text "Have you ever stopped to wonder"
+.text "Have you ever stopped to wonder why he did"
 .byte NewLine
-.text "why he did that?"
+.text "that?"
 .byte WaitForA
 .byte ScrollText
-.text "Why do so many people keep"
+.text "Why do so many people keep sacrificing"
 .byte NewLine
-.text "sacrificing themselves for you?"
+.text "themselves for you? Why does them getting"
 .byte NewLine
-.text "Why do so many hail you as a hero at all?"
+.text "killed for you result in you being called a hero?"
 .byte WaitForA
 .byte ScrollText
 .text "Think on that, and think well..."
@@ -983,9 +946,9 @@ ch19closing2
 .byte Left_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "The prince has ordered that he not"
+.text "The prince has ordered that he not be"
 .byte NewLine
-.text "be disturbed, for the time being."
+.text "disturbed, for the time being."
 .byte NewLine
 .text "You may state your business to me instead."
 .byte WaitForA
@@ -993,14 +956,14 @@ ch19closing2
 .byte Right_slot
 .text "Oh, well, uh... We fled from Ulster, y'see."
 .byte NewLine
-.text "The imperials were hot on our trail"
+.text "The empire was hot on our trail when your army"
 .byte NewLine
-.text "when your army showed up to help us!"
+.text "showed up to help us!"
 .byte WaitForA
 .byte ScrollText
-.text "We just wanted to give the prince"
+.text "We just wanted to give him this master seal,"
 .byte NewLine
-.text "this master seal, as a way of sayin' thanks."
+.text "as a way of sayin' thanks."
 .byte WaitForA
 
 .byte Left_slot

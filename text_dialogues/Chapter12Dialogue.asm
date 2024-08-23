@@ -18,12 +18,18 @@ ch12magicringhouseolwen
 .byte NewLine
 .text "Sis, this is the lady I told you about!"
 .byte WaitForA
+
+.byte Left_slot
+.word ClearPortrait
+.word RetractBox 
+
+.byte Right_slot
 .byte ScrollText
 .text "I wanted to give you this to say thanks."
 .byte NewLine
-.text "I found it in the fort, but I was so shook up"
+.text "I found it in the fort, but I was so shook up I"
 .byte NewLine
-.text "I forgot to give it to you before you left."
+.text "forgot to give it to you before you left."
 .byte WaitForA
 .byte ScrollText
 .text "I'm sorry about that..."
@@ -39,15 +45,11 @@ ch12magicringhousenotolwen
 .byte Right_slot
 .word LoadPortrait
 .word oldlady3_portrait
-.text "We thought the children of our village"
+.text "We thought the children of our village would be"
 .byte NewLine
-.text "would be safe from the empire, "
-.byte WaitForA
-.text "long as"
+.text "safe from the empire, since they'd be shielded"
 .byte NewLine
-.text "the bandits stayed here an' made it"
-.byte NewLine
-.text "too dangerous to be worth the trouble."
+.text "by all the local bandits' mayhem and whatnot."
 .byte WaitForA
 .byte ScrollText
 .text "That was before the imperial army started"
@@ -55,11 +57,11 @@ ch12magicringhousenotolwen
 .text "showin' up in droves to attack Tarrah..."
 .byte WaitForA
 .byte ScrollText
-.text "If you plan on makin' trouble for them,"
+.text "If you plan on makin' trouble for them, you're a"
 .byte NewLine
-.text "you're a friend o' mine. Take this, an' use it to"
+.text "friend o' mine. Take this, an' use it to patch"
 .byte NewLine
-.text "patch yerself up if you get hurt. Hope it helps."
+.text "yerself up if you get hurt. Hope it helps."
 .byte WaitForA
 
 .byte EndText
@@ -106,10 +108,10 @@ ch12heimscrollhousesaved
 .byte NewLine
 .text "but a family heirloom can't mean much without"
 .byte NewLine
-.text "a family, an' you gave mine back to me."
+.text "family, an' you gave mine back to me."
 .byte WaitForA
 .byte ScrollText
-.text "Now it's time fer me to give somethin' to you."
+.text "Now it's time for me to give somethin' to you."
 .byte NewLine
 .text "Won't take no for an answer!"
 .byte WaitForA
@@ -135,9 +137,9 @@ ch12silencehousesaved
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "I been waitin' fer you since I heard"
+.text "I been waitin' fer you since I heard the"
 .byte NewLine
-.text "the Liberation Army was comin' this way!"
+.text "Liberation Army was comin' this way!"
 .byte NewLine
 .text "My boy told me all about what happened."
 .byte WaitForA
@@ -147,9 +149,9 @@ ch12silencehousesaved
 .byte ScrollText
 .text "Take this staff as my way of sayin' thanks."
 .byte NewLine
-.text "It's 'parently got the power to just"
+.text "It's 'parently got the power to just turn off"
 .byte NewLine
-.text "turn off people's voices!"
+.text "people's voices!"
 .byte WaitForA
 .byte ScrollText
 .text "I tried wavin' it around fer fun once—"
@@ -161,9 +163,9 @@ ch12silencehousesaved
 .byte ScrollText
 .text "Took me a few days to recover..."
 .byte NewLine
-.text "Now, I just want that harrowin'"
+.text "Now, I just want that harrowin' doohickey gone"
 .byte NewLine
-.text "doohickey gone and outta 'ere!"
+.text "and outta 'ere!"
 .byte WaitForA
 
 .byte EndText
@@ -204,23 +206,23 @@ ch12salemtina
 .byte ScrollText
 .text "I brought you a midnight snack!"
 .byte NewLine
-.text "What with it being so cold out,"
+.text "What with it being so cold out, I figured you"
 .byte NewLine
-.text "I figured you could use a nice, hot meal!"
+.text "could use a nice, hot meal!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "That's very kind of you, Tina,"
+.text "That's very kind of you, Tina, but it gets"
 .byte NewLine
-.text "but it gets dangerous out here at night."
+.text "dangerous out here at night."
 .byte NewLine
 .text "I don't want you getting hurt."
 .byte WaitForA
 .byte ScrollText
 .text "You should stay inside and get your rest."
 .byte NewLine
-.text "Ladies need their beauty sleep, or so I'm told."
+.text "It's in your own best interest."
 .byte WaitForA
 
 .byte Left_slot
@@ -230,9 +232,9 @@ ch12salemtina
 
 .byte Right_slot
 .byte ScrollText
-.text "...Wait. You're worried about your sister,"
+.text "...You're worried about your sister, aren't you?"
 .byte NewLine
-.text "aren't you? Is that what's keeping you awake?"
+.text "Is that what's keeping you awake?"
 .byte NewLine
 .text "You said her name was Safy, right?"
 .byte WaitForA
@@ -258,11 +260,11 @@ ch12salemtina
 .byte ScrollText
 .text "Well, I'll get out of your hair—how DO you get"
 .byte NewLine
-.text "your hair like that, anyway?—and let you"
+.text "your hair like that, anyway?—and let you get"
 .byte NewLine
-.text "get back to the night shift!"
+.text "back to the night shift!"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "Nighty-night, Salem!"
 .byte WaitForA
 .byte ScrollText
@@ -277,23 +279,21 @@ ch12colho
 .byte Right_slot
 .word LoadPortrait
 .word colho_portrait
-.text "Look alive, lads! Seems some fresh game"
+.text "Look alive, lads!"
 .byte NewLine
-.text "'ave wandered our way!"
+.text "Seems some fresh game 'ave wandered our way!"
 .byte WaitForA
 .byte ScrollText
 .text "Keep quiet an' move in close, then do 'em in."
 .byte NewLine
-.text "Whatever valuables they got,"
-.byte NewLine
-.text "we all split equally."
+.text "Whatever valuables they got, we all split equally."
 .byte WaitForA
 .byte ScrollText
-.text "...What? Oh, don't tell me you lot"
+.text "...What? Oh, don't tell me you lot are worried"
 .byte NewLine
-.text "are worried about what Perne will say! Look,"
+.text "about what Perne will say!"
 .byte NewLine
-.text "don't go thinkin' we need his permission!"
+.text "Look, don't go thinkin' we need his permission!"
 .byte WaitForA
 .byte ScrollText
 .text "I'll take care of Perne myself."
@@ -301,11 +301,11 @@ ch12colho
 .text "He won't be a problem no more."
 .byte WaitForA
 .byte ScrollText
-.text "The rest of you, while you're dealin' with"
+.text "The rest of you, while you're dealin' with those"
 .byte NewLine
-.text "those travelers, go after the villages"
+.text "travelers, go after the villages an' take"
 .byte NewLine
-.text "an' take anything worth carryin'!"
+.text "anything worth carryin'!"
 .byte WaitForA
 
 .byte EndText
@@ -324,18 +324,18 @@ ch12mareetadialogue
 .byte WaitForA
 
 .byte Right_slot
-.text "The villages around here are bein' raided"
+.text "The villages around here are bein' raided by"
 .byte NewLine
-.text "by bandits, that's what! Everyone's"
+.text "bandits, that's what! Everyone's scared to death"
 .byte NewLine
-.text "scared to death that they'll come here next!"
+.text "that they'll come here next!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Are they the local bandit group"
+.text "Are they the local bandit group I've heard the"
 .byte NewLine
-.text "I've heard the villagers mention?"
+.text "villagers mention?"
 .byte WaitForA
 
 .byte Right_slot
@@ -347,23 +347,23 @@ ch12mareetadialogue
 .text "plunderin' a village like this!"
 .byte WaitForA
 .byte ScrollText
-.text "Matter of fact, they've even helped us"
+.text "Matter of fact, they've even helped us when we"
 .byte NewLine
-.text "when we needed it!"
+.text "needed it!"
 .byte NewLine
 .text "Can't be the Dandelions—I'd bet my life on it!"
 .byte WaitForA
 .byte ScrollText
-.text "It must be those rough types"
+.text "It must be those rough types that turned up"
 .byte NewLine
-.text "that turned up here not too long ago..."
+.text "here not too long ago..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Well, whoever they are, you don't need to"
+.text "Well, whoever they are, you don't need to worry."
 .byte NewLine
-.text "worry. I'll protect every last one of you!"
+.text "I'll protect every last one of you!"
 .byte WaitForA
 
 .byte Right_slot
@@ -373,9 +373,9 @@ ch12mareetadialogue
 .byte NewLine
 .text "You...look an awful lot like my daughter,"
 .byte NewLine
-.text "you know. A pretty little thing like you"
+.text "you know. A pretty little thing like you can't"
 .byte NewLine
-.text "can't expect to go toe-to-toe with bandits!"
+.text "expect to go toe-to-toe with bandits!"
 .byte WaitForA
 
 .byte Left_slot
@@ -415,18 +415,18 @@ ch12opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Come now, it was all thanks to you"
+.text "Come now, it was all thanks to you that I"
 .byte NewLine
-.text "that I managed to survive. I'll be fine."
+.text "managed to survive. I'll be fine."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Still, I'd say those Loptr lunatics are the"
 .byte NewLine
-.text "definition of sadistic. If we hadn't happened"
+.text "definition of sadistic. If we hadn't happened to"
 .byte NewLine
-.text "to pass by, you'd have been a goner for sure."
+.text "pass by, you'd have been a goner for sure."
 .byte WaitForA
 
 .byte Left_slot
@@ -443,19 +443,19 @@ ch12opening1
 .byte ScrollText
 .text "“Betrayal” is a bit of a stretch, right?"
 .byte NewLine
-.text "I mean, you just said you wanted to leave"
+.text "I mean, you just said you wanted to leave the"
 .byte NewLine
-.text "the church. You didn't act against them."
+.text "church. You didn't act against them."
 .byte WaitForA
 .byte ScrollText
-.text "It's not right to kill a man just because"
+.text "It's not right to kill a man just because he"
 .byte NewLine
-.text "he wants to go his own way."
+.text "wants to go his own way."
 .byte WaitForA
 .byte ScrollText
-.text "...Though now I have to ask—why'd you want"
+.text "...Though now I have to ask—why'd you want to"
 .byte NewLine
-.text "to leave in the first place?"
+.text "leave in the first place?"
 .byte WaitForA
 .byte ScrollText
 .text "I hear a priest of Loptr carries even more"
@@ -469,9 +469,7 @@ ch12opening1
 .byte ScrollText
 .text "I...no longer understood the church."
 .byte NewLine
-.text "That was my reason—nothing more,"
-.byte NewLine
-.text "nothing less."
+.text "That was my reason—nothing more, nothing less."
 .byte WaitForA
 
 .byte Right_slot
@@ -491,9 +489,9 @@ ch12opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "I admit, your...unusual sense of ethics"
+.text "I admit, your...unusual sense of ethics hasn't"
 .byte NewLine
-.text "hasn't gone unnoticed by me."
+.text "gone unnoticed by me."
 .byte WaitForA
 .byte ScrollText
 .text "You're bandits, true, but you do not kill,"
@@ -517,9 +515,9 @@ ch12opening1
 .byte ScrollText
 .text "Particularly this one hothead, Cullough."
 .byte NewLine
-.text "He and his goons are getting antsy about how"
+.text "He and his goons are getting antsy about how I"
 .byte NewLine
-.text "I won't let them drop any bodies during a heist."
+.text "won't let them drop any bodies during a heist."
 .byte WaitForA
 
 .byte Left_slot
@@ -533,30 +531,30 @@ ch12opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah... So you've already heard about them."
+.text "Ah... So you already know about them."
 .byte WaitForA
 .byte ScrollText
-.text "I'll get right to the point, then: I plan on"
+.text "I'll get right to the point, then: I plan on cutting"
 .byte NewLine
-.text "cutting ties with the lot of them. As long as"
+.text "ties with the lot of them. As long as Troude"
 .byte NewLine
-.text "Troude comes with me, I can manage just fine."
+.text "comes with me, I can manage just fine."
 .byte WaitForA
 .byte ScrollText
-.text "Of course, I'm hoping I can bring"
+.text "Of course, I'm hoping I can bring you along too,"
 .byte NewLine
-.text "you along as well, Salem."
+.text "Salem. I like you, and I want you to stick"
 .byte NewLine
-.text "I like you, and I want you to stick around."
+.text "around."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Don't forget about Tina. See that you're"
+.text "Don't forget about Tina. See that you're mindful"
 .byte NewLine
-.text "mindful of her feelings, and don't be too"
+.text "of her feelings, and don't be too harsh with"
 .byte NewLine
-.text "harsh with her—she's little more than a child."
+.text "her—she's little more than a child."
 .byte WaitForA
 
 .byte Right_slot
@@ -578,11 +576,9 @@ ch12opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "Not to worry. If anyone draws near,"
+.text "Not to worry. If anyone draws near, I'll use my"
 .byte NewLine
-.text "I'll use my sleep staff to send them"
-.byte NewLine
-.text "into a deep slumber."
+.text "sleep staff to send them into a deep slumber."
 .byte WaitForA
 
 .byte EndText
@@ -599,9 +595,9 @@ ch12opening2
 .word saias_portrait
 .text "...Well, I must be off."
 .byte NewLine
-.text "I do apologize for burdening you so,"
+.text "I do apologize for burdening you so, but please,"
 .byte NewLine
-.text "but please, for my sake, watch over the child."
+.text "for my sake, watch over the child."
 .byte WaitForA
 
 .byte Right_slot
@@ -614,14 +610,12 @@ ch12opening2
 .byte ScrollText
 .word LoadPortrait
 .word mareeta_portrait
-.text "Bishop Saias..."
-.byte NewLine
-.text "Are you leaving already?"
+.text "Bishop Saias... Are you leaving already?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I'm afraid so—I must return to Grannvale."
+.text "I'm afraid so—I must return to my own land."
 .byte WaitForA
 .byte ScrollText
 .text "I regret having to leave you behind like this,"
@@ -647,87 +641,85 @@ ch12opening2
 .text "your face—is marred by regret."
 .byte WaitForA
 .byte ScrollText
-.text "However, you'd do well"
+.text "However, you'd do well to put the memory behind"
 .byte NewLine
-.text "to put the memory behind you."
+.text "you."
 .byte WaitForA
 .byte ScrollText
-.text "What happened was unavoidable—your will"
+.text "What happened was unavoidable—your will was"
 .byte NewLine
-.text "was pitted against darkness itself, and the"
+.text "pitted against darkness itself, and the Shadow"
 .byte NewLine
-.text "Shadow Sword's influence was strong indeed."
+.text "Sword's influence was strong indeed."
 .byte WaitForA
 .byte ScrollText
-.text "But if my words alone cannot convince you,"
+.text "But if my words alone cannot convince you..."
 .byte NewLine
-.text "I offer the sword itself as proof:"
+.text "I offer the sword itself as proof: I've dispelled"
 .byte NewLine
-.text "I've dispelled the curse placed upon the blade."
+.text "the curse placed upon the blade."
 .byte WaitForA
 .byte ScrollText
-.text "Now I offer it to you, as a symbol"
+.text "Now I offer it to you, as a symbol that no"
 .byte NewLine
-.text "that no darkness is impenetrable,"
+.text "darkness is impenetrable, and no regret is"
 .byte NewLine
-.text "and no regret is irredeemable."
+.text "irredeemable."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Y-you want me to use that damned sword?!"
+.text "Y-you would have me use that damned sword?!"
 .byte NewLine
-.text "I'm not laying a finger on that foul thing"
+.text "I'm not laying a finger on that foul thing ever"
 .byte NewLine
-.text "ever again!"
+.text "again!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "You wish to carry on your mother's legacy"
+.text "You wish to carry on your mother's legacy and"
 .byte NewLine
-.text "and become a swordmaster, do you not?"
+.text "become a swordmaster, do you not?"
 .byte WaitForA
 .byte ScrollText
-.text "If that's your goal, you must learn"
+.text "If that's your goal, you must learn to"
 .byte NewLine
-.text "to understand weapons in a different light."
+.text "understand weapons in a different light."
 .byte WaitForA
 .byte ScrollText
-.text "Just as divine blades shine from their"
+.text "Just as divine blades shine from their bearer's"
 .byte NewLine
-.text "bearer's righteous deeds, no cursed blade"
+.text "righteous deeds, no cursed blade will ever be"
 .byte NewLine
-.text "will ever be more wicked than its wielder."
+.text "more wicked than its wielder."
 .byte WaitForA
 .byte ScrollText
-.text "The legacy of the Shadow Sword"
+.text "The legacy of the Shadow Sword does not have"
 .byte NewLine
-.text "does not have to remain mired in evil."
+.text "to remain mired in evil."
 .byte WaitForA
 .byte ScrollText
-.text "You can choose to alter its course,"
+.text "You can choose to alter its course, by asserting"
 .byte NewLine
-.text "by asserting your will over"
-.byte NewLine
-.text "that which once robbed you of it."
+.text "your will over that which once robbed you of it."
 .byte WaitForA
 .byte ScrollText
 .text "And so, you must learn to cherish all blades,"
 .byte WaitForA
 .byte NewLine
-.text "for they are the tools that allow you"
+.text "for they are the tools that allow you to"
 .byte NewLine
-.text "to unshackle yourself from the past,"
+.text "unshackle yourself from the past,"
 .byte NewLine
 .text "and carve your own fate."
 .byte WaitForA
 .byte ScrollText
-.text "Any sword can be used for your purpose,"
+.text "Any sword can be used for your purpose, and if"
 .byte NewLine
-.text "and if you believe otherwise,"
+.text "you believe otherwise, then you won't ever truly"
 .byte NewLine
-.text "then you won't ever truly be a swordmaster."
+.text "be a swordmaster."
 .byte WaitForA
 
 .byte Right_slot
@@ -735,20 +727,20 @@ ch12opening2
 .text "I...think I understand."
 .byte WaitForA
 .byte ScrollText
-.text "I'll wield the sword, and cherish it"
+.text "I'll wield the sword, and cherish it as a symbol"
 .byte NewLine
-.text "as a symbol of how not even the foulest magic"
+.text "of how not even the foulest magic could"
 .byte NewLine
-.text "could overcome my mother's love for me."
+.text "overcome my mother's love for me."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Very good. If you have the resolve to keep"
+.text "Very good. If you have the resolve to keep that"
 .byte NewLine
-.text "that sword in hand, I've a feeling that the gods"
+.text "sword in hand, I've a feeling that the gods may"
 .byte NewLine
-.text "may reunite you with your mother someday."
+.text "reunite you with your mother someday."
 .byte WaitForA
 .byte ScrollText
 .text "With that, I'm afraid I must be going."
@@ -764,9 +756,8 @@ ch12opening2
 .byte Right_slot
 .byte ScrollText
 .text "The same to you, Bishop Saias. Be well."
-.byte WaitForA
-.byte ScrollText
-.text "...Thank you for everything."
+.byte NewLine
+.text "Thank you for everything."
 .byte WaitForA
 
 .byte EndText
@@ -781,11 +772,11 @@ ch12closingfailedgaiden
 .byte Left_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "I can hardly believe it myself, but it seems"
+.text "I can hardly believe it myself, but it seems the"
 .byte NewLine
-.text "the bandits of this forest only target nobles"
+.text "bandits of this forest only target nobles who've"
 .byte NewLine
-.text "who've aligned themselves with the empire."
+.text "aligned themselves with the empire."
 .byte WaitForA
 .byte ScrollText
 .text "They steal coin and goods from them,"
@@ -793,11 +784,11 @@ ch12closingfailedgaiden
 .text "and give much of it to the poor."
 .byte WaitForA
 .byte ScrollText
-.text "The villagers tell me their leader"
+.text "The villagers tell me their leader is a young man"
 .byte NewLine
-.text "is a young man named Perne,"
+.text "named Perne, and that he follows a strict code"
 .byte NewLine
-.text "and say that he follows a strict code of honor."
+.text "of honor."
 .byte WaitForA
 
 .byte Right_slot
@@ -810,9 +801,9 @@ ch12closingfailedgaiden
 
 .byte Left_slot
 .byte ScrollText
-.text "Then we're in agreement, sire. We should"
+.text "Then we're in agreement, sire. We should march"
 .byte NewLine
-.text "march with all haste—we're nearly to Tarrah."
+.text "with all haste—we're nearly to Tarrah."
 .byte WaitForA
 
 .byte EndText
@@ -834,9 +825,9 @@ ch12closingtogaiden
 .byte ScrollText
 .text "The night is still young."
 .byte NewLine
-.text "I advise that we seize this opportunity"
+.text "I advise that we seize this opportunity to purge"
 .byte NewLine
-.text "to purge Tarrah's borders of these vermin."
+.text "Tarrah's borders of these vermin."
 .byte WaitForA
 
 .byte Right_slot
@@ -847,27 +838,27 @@ ch12closingtogaiden
 
 .byte Left_slot
 .byte ScrollText
-.text "I'm afraid so. Between the long march"
+.text "I'm afraid so. Between the long march from"
 .byte NewLine
-.text "from Fort Dundrum and the skirmish here,"
+.text "Fort Dundrum and the skirmish here,"
 .byte NewLine
 .text "our forces have little strength left."
 .byte WaitForA
 .byte ScrollText
-.text "At most, we could only spare a small"
+.text "At most, we could only spare a small strike team"
 .byte NewLine
-.text "strike team of five soldiers to accompany you."
+.text "of five soldiers to accompany you."
 .byte NewLine
 .text "The decision is yours, milord."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "...I'll do it. If we rout these bandits"
+.text "...I'll do it. If we rout these bandits once and"
 .byte NewLine
-.text "once and for all, the villagers here"
+.text "for all, the villagers here will finally be able to"
 .byte NewLine
-.text "will finally be able to breathe easy."
+.text "breathe easy."
 .byte WaitForA
 
 .byte EndText
@@ -892,30 +883,28 @@ ch12ending2mareetaleif
 .byte NewLine
 .text "Mareeta, it really is you!"
 .byte NewLine
-.text "How... How did you wind up here?"
+.text "How... How are you here?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "I'm just as surprised as you are!"
 .byte NewLine
-.text "I never expected I'd see you"
+.text "I never expected I'd see you and everyone from"
 .byte NewLine
-.text "and everyone from Fiana again so soon!"
+.text "Fiana again so soon!"
 .byte WaitForA
 .byte ScrollText
-.text "Hah... I'm halfway convinced"
-.byte NewLine
-.text "this is just a dream."
+.text "I'm halfway convinced this is just a dream..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Mareeta, I... I beg your forgiveness"
+.text "Mareeta, I... I beg your forgiveness for what"
 .byte NewLine
-.text "for what happened to your mother. It was"
+.text "happened to your mother. It was my fault that"
 .byte NewLine
-.text "my fault that the commander... That she..."
+.text "the commander... That she..."
 .byte WaitForA
 
 .byte Left_slot
@@ -932,9 +921,9 @@ ch12ending2mareetaleif
 
 .byte Right_slot
 .byte ScrollText
-.text "...Mareeta, this I swear to you:"
+.text "...Mareeta, this I swear to you: I'll get the"
 .byte NewLine
-.text "I'll get the commander back, whatever it takes!"
+.text "commander back, whatever it takes!"
 .byte WaitForA
 
 .byte Left_slot
@@ -958,28 +947,26 @@ ch12ending2mareetaleif
 .byte ScrollText
 .text "Though as much as it pains me, it's not feasible"
 .byte NewLine
-.text "for our army to return to Munster"
+.text "for our army to return to Munster with things"
 .byte NewLine
-.text "with things the way they are right now..."
+.text "the way they are right now..."
 .byte WaitForA
 .byte ScrollText
-.text "But someday, we'll be able to go back"
+.text "But someday, we'll be able to go back for the"
 .byte NewLine
-.text "for the commander. You can count on that."
+.text "commander. You can count on that."
 .byte WaitForA
 .byte ScrollText
-.text "And when that day comes, there's no force"
+.text "And when that day comes, there's no force in all"
 .byte NewLine
-.text "in all the heavens that can keep the two of us"
+.text "the heavens that can keep the two of us from"
 .byte NewLine
-.text "from getting her back!"
+.text "getting her back!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Couldn't have said it better myself,"
-.byte NewLine
-.text "Lord Leif!"
+.text "I couldn't have said it better myself, Lord Leif!"
 .byte WaitForA
 
 .byte EndText

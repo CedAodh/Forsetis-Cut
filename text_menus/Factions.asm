@@ -305,7 +305,7 @@ _Friege30thLeader
 .word $0000
 
 _GelbenritterLeader
-	.text "Gelbenritter"
+	.text "Gelbritter"
 .word $0000
 
 _UlsterLeader

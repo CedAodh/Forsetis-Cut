@@ -339,7 +339,7 @@ catfight3
 .byte NewLine
 .text "the walls of Tarrah have nearly collapsed."
 .byte NewLine
-.text "Commander Paulus awaits further orders."
+.text "Colonel Paulus awaits further orders."
 .byte WaitForA
 
 .byte right_slot
@@ -352,7 +352,7 @@ catfight3
 
 .byte left_slot
 .byte ScrollText
-.text "That includes the Gelbenritter?"
+.text "That includes the Gelbritter?"
 .byte WaitForA
 
 .byte right_slot
@@ -364,7 +364,7 @@ catfight3
 .byte NewLine
 .text "There's been word of a potential uprising."
 .byte NewLine
-.text "Deploy the Gelbenritter there and take care of it."
+.text "Deploy the Gelbritter there and take care of it."
 .byte WaitForA
 
 .byte left_slot
@@ -465,7 +465,7 @@ catfight4
 .byte NewLine
 .text "with Tarrah to come to this."
 .byte NewLine
-.text "But Emperor Arvis' edict states it must fall."
+.text "But Emperor Arvis's edict states it must fall."
 .byte WaitForA
 .byte ScrollText
 .text "If I am not here to bear witness,"
@@ -515,87 +515,99 @@ selphinabegs
 
 .byte right_slot
 .word LoadPortrait
-.word selphina_portrait
+.word leif_portrait
 
 .byte left_slot
 .word LoadPortrait
-.word leif_portrait
-
-.byte right_slot
-.text "Lord Leif!"
-.byte NewLine
-.text "Do you have a moment?"
-.byte WaitForA
-
-.byte left_slot
-.text "Of course."
-.byte NewLine
-.text "What's the matter, Selphina?"
+.word selphina_portrait
+.text "Prince Leif, a word, please."
 .byte WaitForA
 
 .byte right_slot
-.byte ScrollText
-.text "We're moving ever closer to Tarrah..."
+.text "Selphina!"
 .byte NewLine
-.text "I can only hope my husband is all right."
-.byte NewLine
-.text "It's been so long since his last letter arrived..."
+.text "What can I do for you?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I understand how you feel."
+.text "Well, as we move ever closer to Tarrah,"
+.byte NewLine
+.text "I can only hope my husband remains safe."
+.byte NewLine
+.text "It has been over a month since his last letter..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Mm, I understand your feelings."
+.byte NewLine
+.text "The empire is as fierce an enemy as they come."
 .byte WaitForA
 .byte ScrollText
-.text "Do not fret, Selphina, for I am certain that"
+.text "But do not fret, Selphina, for I am certain"
 .byte NewLine
 .text "Glade still lives, if the stories that Finn"
 .byte NewLine
-.text "has told of him are anyhing to go by."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "I hope you're right..."
-.byte NewLine
-.text "But that is why I came to you, milord."
-.byte NewLine
-.text "I would like to make a rather selfish request."
+.text "has told of him are anything to go by."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "You wish to join the vanguard in hopes"
+.text "I could not disagree, but...I also cannot"
 .byte NewLine
-.text "of seeing him, is that correct?"
+.text "shake my fear of the worst."
+.byte NewLine
+.text "As such, I ask to be placed in the vanguard."
+.byte WaitForA
+.byte ScrollText
+.text "My father gave my request a firm refusal since"
+.byte NewLine
+.text "I, an archer, should remain safely behind as we"
+.byte NewLine
+.text "begin to expose ourselves to imperial fire."
+.byte WaitForA
+.byte ScrollText
+.text "I was hoping you'd think differently on"
+.byte NewLine
+.text "the matter, milord."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Yes!"
+.text "An archer you may be, but you're also mounted."
 .byte NewLine
-.text "Would you allow me to?"
+.text "Would that not serve more to our advantage?"
+.byte NewLine
+.text "Or perhaps Dryas is... Well..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Well, if you're prepared to enter the fray"
+.text "...Yes. He wishes for his daughter's protection."
 .byte NewLine
-.text "before the rest of our army arrives, then..."
+.text "But you are our leader—what say YOU?"
 .byte NewLine
-.text "Consider your request granted."
+.text "Please, I must see Glade as soon as possible."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Oh, thank you!"
+.text "I want to say yes, but..."
 .byte NewLine
-.text "I shall ready myself to depart"
-.byte NewLine
-.text "with the rest of the vanguard then."
+.text "*sigh*"
 .byte WaitForA
 .byte ScrollText
-.text "I'll see you there, milord!"
+.text "Selphina, I shall consult with Dryas myself,"
+.byte NewLine
+.text "and then I'll have reached a decision. You must"
+.byte NewLine
+.text "understand that I can't not do at least that."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Very well, then, I suppose."
 .byte WaitForA
 
 .byte EndText

@@ -3,7 +3,7 @@ ch12opening3
 .byte right_slot
 .word LoadPortrait
 .word leif_portrait
-.text "Dorius?"
+.text "Dryas?"
 .byte NewLine
 .text "Are you over here?"
 .byte WaitForA
@@ -44,9 +44,7 @@ ch12opening3
 .byte ScrollText
 .text "Sound plan."
 .byte NewLine
-.text "If there's nothing else,"
-.byte NewLine
-.text "let us resume the march."
+.text "If there's nothing else, let us resume the march."
 .byte WaitForA
 
 .byte EndText

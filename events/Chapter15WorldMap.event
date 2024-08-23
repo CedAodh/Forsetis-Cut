@@ -106,7 +106,7 @@ eventChapter15WorldMapEvents ; E7/EC0F
 	SET_MUSIC $58
 	YIELD
 	
-	macroDialogueWithBackground leifjealousoftravant, 4
+	macroDialogueWithBackground crisisofpurpose, 4
 	
 	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD

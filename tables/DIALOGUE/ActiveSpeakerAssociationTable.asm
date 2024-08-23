@@ -215,7 +215,7 @@ aActiveSpeakerAssociationTable ; 8C/C842
 	.word MerlochPortrait
 	.word Merloch
 
-	.word LargoPortrait
+	.word NicolovPortrait
 	.word Nicolov
 
 	.word KempfPortrait

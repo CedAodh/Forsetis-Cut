@@ -70,7 +70,7 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_CanisGroup ; 99/FDD6
-		UNIT Canis, Enemy, [27, 5], [27, 5], Veld, [Tornado], 20, False, [$00, $03, $00, $00]
+		UNIT Canis, Enemy, [27, 5], [27, 5], Veld, [Tornado, Silence], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_BovisGalzusCameraCoordinates ; 99/FDEC
@@ -98,21 +98,21 @@ eventChapterFinalData ; 99/FAF0
 		.byte 8, 7
 
 	_PorcusGroup ; 99/FE36
-		UNIT Porcus, Enemy, [5, 5], [5, 5], Veld, [Aura, Unlock], 20, False, [$00, $03, $00, $00]
+		UNIT Porcus, Enemy, [5, 5], [5, 5], Veld, [Light, Unlock], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_DracoEyvelCameraCoordinates ; 99/FE4C
 		.byte 8, 7
 
 	_DracoEyvelGroup ; 99/FE4E
-		UNIT DracoEyvel, Enemy, [5, 22], [5, 22], Veld, [BraveBow], 20, False, [$00, $03, $00, $00]
+		UNIT DracoEyvel, Enemy, [5, 22], [5, 22], Veld, [ForsetiInfinite], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_DracoCameraCoordinates ; 99/FE64
 		.byte 8, 7
 
 	_DracoGroup ; 99/FE66
-		UNIT Draco, Enemy, [5, 22], [5, 22], Veld, [Thoron], 20, False, [$00, $03, $00, $00]
+		UNIT Draco, Enemy, [5, 22], [5, 22], Veld, [Thoron, MasterSword], 20, False, [$00, $03, $00, $00]
 	UNIT
 
 	_ReinforcementsCameraCoordinates2 ; 99/FE7C

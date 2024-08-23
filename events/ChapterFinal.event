@@ -21,7 +21,7 @@ eventChapterFinalEvents ; B9/BA0E
 		END_DEFINITION
 		EVENT $24, _OpenThroneRoom
 			RUN_ASM _rlOpenThroneCheck
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -74,19 +74,22 @@ eventChapterFinalEvents ; B9/BA0E
 			TEST_FLAG_SET $06
 		END_DEFINITION
 		EVENT $07, _LeifVsVeld
-			TEST_FLAG_SET $24
 			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
+			TEST_FLAG_SET $24
+			CHECK_NUM_UNITS_GTE Veld, 1
 		END_DEFINITION
 		EVENT $08, _EyvelVsVeld
-			TEST_FLAG_SET $24
 			CMP_WORD aSelectedCharacterBuffer.Character, Eyvel
 			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
+			TEST_FLAG_SET $24
+			CHECK_NUM_UNITS_GTE Veld, 1
 		END_DEFINITION
 		EVENT $09, _SaraVsVeld
-			TEST_FLAG_SET $24
 			CMP_WORD aSelectedCharacterBuffer.Character, Sara
 			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
+			TEST_FLAG_SET $24
+			CHECK_NUM_UNITS_GTE Veld, 1
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -545,15 +548,37 @@ eventChapterFinalEvents ; B9/BA0E
 		STORE_LONG lEventEngineLongParameter, ch25ending7mareeta
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
-		JUMP +
-
 		+
+		
 		STORE_LONG lEventEngineLongParameter, ch25ending8nanna
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
-
+		JUMP ++++
+		
 		+
+		
+		STORE_WORD wEventEngineCharacterTarget, Mareeta
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_LONG lEventEngineLongParameter, leifmareetanannagone
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		JUMP ++
+		
+		+
+		
+		STORE_LONG lEventEngineLongParameter, leifnannagone
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		STORE_LONG lEventEngineLongParameter, ch25finalenannamareetadead
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		JUMP ++
+		
+		+
+		
 		STORE_LONG lEventEngineLongParameter, ch25finale
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		+
 
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD

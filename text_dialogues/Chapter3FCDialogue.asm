@@ -177,17 +177,23 @@ ronanlifis
 	.byte NewLine
 	.text "See ya!"
 	.byte WaitForA
-	.byte ScrollText
+	
+	.byte left_slot
+	.byte $03
+	.word ClearPortrait
+	
+	.byte right_slot
 	.word ClearPortrait
 	
 	.byte left_slot
-	.byte ScrollText
-	.word ClearPortrait
 	.word RetractBox
 	
 	.byte right_slot
+	.word RetractBox
+	
 	.word $3A00
 	.word ronan_portrait
+	.byte $03
 	.text "...Unbelievable."
 	.byte NewLine
 	.text "Where does it end with him?!"

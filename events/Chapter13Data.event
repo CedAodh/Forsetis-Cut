@@ -60,7 +60,7 @@ eventChapter13Data ; B1/BFCE
 		.byte 9, 7
 
 	_GladeGroup ; B1/C348
-		UNIT Glade, Player, [9, 6], [9, 6], Leif, [SilverLance, SteelSword, NjorunsScroll], 2, False, [$00, $00, $00, $00]
+		UNIT Glade, Player, [9, 6], [9, 6], Glade, [SilverLance, SteelSword, NjorunsScroll], 2, False, [$00, $00, $00, $00]
 	UNIT
 
 	_BowKnightReinforcementsCameraCoordinates ; B1/C35E

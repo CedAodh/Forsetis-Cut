@@ -598,7 +598,7 @@
 		MasterSwordMight				= 13
 		MasterSwordAccuracy				= 80
 		MasterSwordWeight				= 12
-		MasterSwordDurability			= 20
+		MasterSwordDurability			= 30
 		MasterSwordCritrate				= 10
 		MasterSwordMinRange				= 1
 		MasterSwordMaxRange				= 1
@@ -925,9 +925,9 @@
 	Javelin								= 42
 		JavelinType						= TypeLance
 		JavelinAlternateType			= None
-		JavelinMight					= 6
+		JavelinMight					= 7
 		JavelinAccuracy					= 65
-		JavelinWeight					= 12
+		JavelinWeight					= 11
 		JavelinDurability				= 20
 		JavelinCritrate					= 0
 		JavelinMinRange					= 1
@@ -950,7 +950,7 @@
 		MasterLanceMight				= 15
 		MasterLanceAccuracy				= 70
 		MasterLanceWeight				= 14
-		MasterLanceDurability			= 20
+		MasterLanceDurability			= 30
 		MasterLanceCritrate				= 0
 		MasterLanceMinRange				= 1
 		MasterLanceMaxRange				= 2
@@ -1167,9 +1167,9 @@
 	HandAxe								= 53
 		HandAxeType						= TypeAxe
 		HandAxeAlternateType			= None
-		HandAxeMight					= 7
+		HandAxeMight					= 8
 		HandAxeAccuracy					= 60
-		HandAxeWeight					= 13
+		HandAxeWeight					= 12
 		HandAxeDurability				= 20
 		HandAxeCritrate					= 0
 		HandAxeMinRange					= 1
@@ -1346,7 +1346,7 @@
 		MasterAxeMight					= 16
 		MasterAxeAccuracy				= 60
 		MasterAxeWeight					= 15
-		MasterAxeDurability				= 20
+		MasterAxeDurability				= 30
 		MasterAxeCritrate				= 0
 		MasterAxeMinRange				= 1
 		MasterAxeMaxRange				= 2
@@ -1588,7 +1588,7 @@
 		MasterBowMight					= 14
 		MasterBowAccuracy				= 75
 		MasterBowWeight					= 13
-		MasterBowDurability				= 20
+		MasterBowDurability				= 30
 		MasterBowCritrate				= 10
 		MasterBowMinRange				= 2
 		MasterBowMaxRange				= 2
@@ -1649,26 +1649,26 @@
 		IronBallistaIcon				= $49
 
 	KillerBallista						= 75
-		KillerBallistaType				= TypeBow
+		KillerBallistaType				= TypeItem
 		KillerBallistaAlternateType		= None
-		KillerBallistaMight				= 12
-		KillerBallistaAccuracy			= 90
-		KillerBallistaWeight			= 20
-		KillerBallistaDurability		= 10
-		KillerBallistaCritrate			= 10
-		KillerBallistaMinRange			= 3
-		KillerBallistaMaxRange			= 10
-		KillerBallistaWeaponRank		= WeaponLocks.aBallistaWeaponLock
-		KillerBallistaEffectiveness		= ItemEffectivenesses.aFlyingEffectiveness
+		KillerBallistaMight				= 0
+		KillerBallistaAccuracy			= 0
+		KillerBallistaWeight			= 0
+		KillerBallistaDurability		= 1
+		KillerBallistaCritrate			= 6
+		KillerBallistaMinRange			= 1
+		KillerBallistaMaxRange			= 1
+		KillerBallistaWeaponRank		= RankE
+		KillerBallistaEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		KillerBallistaStatBonus			= aNoItemBonuses
-		KillerBallistaCost				= 8000
-		KillerBallistaDescription		= <>item_descs._KillerBallistaDesc
+		KillerBallistaCost				= 8200
+		KillerBallistaDescription		= <>item_descs._KnightRingDesc
 		KillerBallistaUseEffect			= None
 		KillerBallistaWeaponEffect		= None
 		KillerBallistaSkills2			= None
 		KillerBallistaSkills3			= None
-		KillerBallistaTraits			= TraitBallista | TraitWeapon
-		KillerBallistaIcon				= $4A
+		KillerBallistaTraits			= TraitUnbreakable | TraitUnsellable
+		KillerBallistaIcon				= $4B
 
 	VeninBallista						= 76
 		VeninBallistaType				= TypeBow
@@ -2321,7 +2321,7 @@
 		MendWeaponRank					= RankD
 		MendEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		MendStatBonus					= aNoItemBonuses
-		MendCost						= 3560
+		MendCost						= 3290
 		MendDescription					= <>item_descs._MendDesc
 		MendUseEffect					= $3E
 		MendWeaponEffect				= None
@@ -2343,7 +2343,7 @@
 		RecoverWeaponRank				= RankC
 		RecoverEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		RecoverStatBonus				= aNoItemBonuses
-		RecoverCost						= 2400
+		RecoverCost						= 3750
 		RecoverDescription				= <>item_descs._RecoverDesc
 		RecoverUseEffect				= $40
 		RecoverWeaponEffect				= None
@@ -2365,7 +2365,7 @@
 		PhysicWeaponRank				= RankC
 		PhysicEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		PhysicStatBonus					= aNoItemBonuses
-		PhysicCost						= 1700
+		PhysicCost						= 2600
 		PhysicDescription				= <>item_descs._PhysicDesc
 		PhysicUseEffect					= $42
 		PhysicWeaponEffect				= None
@@ -2409,7 +2409,7 @@
 		RescueWeaponRank				= RankB
 		RescueEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		RescueStatBonus					= aNoItemBonuses
-		RescueCost						= 2000
+		RescueCost						= 2700
 		RescueDescription				= <>item_descs._RescueDesc
 		RescueUseEffect					= $46
 		RescueWeaponEffect				= None
@@ -2424,14 +2424,14 @@
 		WarpMight						= 16
 		WarpAccuracy					= 80
 		WarpWeight						= 8
-		WarpDurability					= 3
+		WarpDurability					= 2
 		WarpCritrate					= 0
 		WarpMinRange					= 1
 		WarpMaxRange					= 1
 		WarpWeaponRank					= RankA
 		WarpEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		WarpStatBonus					= aNoItemBonuses
-		WarpCost						= 2000
+		WarpCost						= 1280
 		WarpDescription					= <>item_descs._WarpDesc
 		WarpUseEffect					= $48
 		WarpWeaponEffect				= None
@@ -2453,7 +2453,7 @@
 		RestoreWeaponRank				= RankC
 		RestoreEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		RestoreStatBonus				= aNoItemBonuses
-		RestoreCost						= 3200
+		RestoreCost						= 3150
 		RestoreDescription				= <>item_descs._RestoreDesc
 		RestoreUseEffect				= $4A
 		RestoreWeaponEffect				= None
@@ -2475,7 +2475,7 @@
 		SilenceWeaponRank				= RankC
 		SilenceEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		SilenceStatBonus				= aNoItemBonuses
-		SilenceCost						= 1400
+		SilenceCost						= 1500
 		SilenceDescription				= <>item_descs._SilenceDesc
 		SilenceUseEffect				= $4C
 		SilenceWeaponEffect				= None
@@ -2490,14 +2490,14 @@
 		SleepMight						= 10
 		SleepAccuracy					= 80
 		SleepWeight						= 9
-		SleepDurability					= 3
+		SleepDurability					= 2
 		SleepCritrate					= 0
 		SleepMinRange					= 1
 		SleepMaxRange					= 10
 		SleepWeaponRank					= RankB
 		SleepEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		SleepStatBonus					= aNoItemBonuses
-		SleepCost						= 1700
+		SleepCost						= 1400
 		SleepDescription				= <>item_descs._SleepDesc
 		SleepUseEffect					= $4E
 		SleepWeaponEffect				= None
@@ -2519,7 +2519,7 @@
 		TorchStaffWeaponRank			= RankD
 		TorchStaffEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		TorchStaffStatBonus				= aNoItemBonuses
-		TorchStaffCost					= 1400
+		TorchStaffCost					= 2000
 		TorchStaffDescription			= <>item_descs._TorchStaffDesc
 		TorchStaffUseEffect				= $50
 		TorchStaffWeaponEffect			= None
@@ -2629,7 +2629,7 @@
 		BerserkWeaponRank				= RankA
 		BerserkEffectiveness			= ItemEffectivenesses.aNoEffectiveness
 		BerserkStatBonus				= aNoItemBonuses
-		BerserkCost						= 2000
+		BerserkCost						= 2550
 		BerserkDescription				= <>item_descs._BerserkDesc
 		BerserkUseEffect				= $5A
 		BerserkWeaponEffect				= None
@@ -2688,14 +2688,14 @@
 		RewarpMight						= 5
 		RewarpAccuracy					= 80
 		RewarpWeight					= 6
-		RewarpDurability				= 4
+		RewarpDurability				= 3
 		RewarpCritrate					= 0
 		RewarpMinRange					= 1
 		RewarpMaxRange					= 10
 		RewarpWeaponRank				= RankA
 		RewarpEffectiveness				= ItemEffectivenesses.aNoEffectiveness
 		RewarpStatBonus					= aNoItemBonuses
-		RewarpCost						= 1400
+		RewarpCost						= 1050
 		RewarpDescription				= <>item_descs._RewarpDesc
 		RewarpUseEffect					= $60
 		RewarpWeaponEffect				= None
@@ -2975,20 +2975,20 @@
 		MasterCrownAccuracy				= 0
 		MasterCrownWeight				= 0
 		MasterCrownDurability			= 1
-		MasterCrownCritrate				= 6
+		MasterCrownCritrate				= 0
 		MasterCrownMinRange				= 1
-		MasterCrownMaxRange				= 1
+		MasterCrownMaxRange				= 11
 		MasterCrownWeaponRank			= RankE
 		MasterCrownEffectiveness		= ItemEffectivenesses.aNoEffectiveness
 		MasterCrownStatBonus			= aNoItemBonuses
 		MasterCrownCost					= 8200
-		MasterCrownDescription			= <>item_descs._MasterSealDesc
+		MasterCrownDescription			= <>item_descs._KillerBallistaDesc
 		MasterCrownUseEffect			= $16
 		MasterCrownWeaponEffect			= None
 		MasterCrownSkills2				= None
 		MasterCrownSkills3				= None
 		MasterCrownTraits				= None
-		MasterCrownIcon					= $85
+		MasterCrownIcon					= $5F
 
 	ChestKey							= 136
 		ChestKeyType					= TypeItem
@@ -3228,7 +3228,7 @@
 		OdsScrollUseEffect				= None
 		OdsScrollWeaponEffect			= None
 		OdsScrollSkills2				= None
-		OdsScrollSkills3				= Skill3Scroll
+		OdsScrollSkills3				= None
 		OdsScrollTraits					= TraitUnbreakable | TraitUnsellable
 		OdsScrollIcon					= $91
 
@@ -3250,7 +3250,7 @@
 		BaldrsScrollUseEffect			= None
 		BaldrsScrollWeaponEffect		= None
 		BaldrsScrollSkills2				= None
-		BaldrsScrollSkills3				= Skill3Scroll
+		BaldrsScrollSkills3				= None
 		BaldrsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		BaldrsScrollIcon				= $92
 
@@ -3272,7 +3272,7 @@
 		HezulsScrollUseEffect			= None
 		HezulsScrollWeaponEffect		= None
 		HezulsScrollSkills2				= None
-		HezulsScrollSkills3				= Skill3Scroll
+		HezulsScrollSkills3				= None
 		HezulsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		HezulsScrollIcon				= $93
 
@@ -3338,7 +3338,7 @@
 		NalsScrollUseEffect				= None
 		NalsScrollWeaponEffect			= None
 		NalsScrollSkills2				= None
-		NalsScrollSkills3				= Skill3Scroll
+		NalsScrollSkills3				= None
 		NalsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		NalsScrollIcon					= $96
 
@@ -3360,7 +3360,7 @@
 		UllursScrollUseEffect			= None
 		UllursScrollWeaponEffect		= None
 		UllursScrollSkills2				= None
-		UllursScrollSkills3				= Skill3Scroll
+		UllursScrollSkills3				= None
 		UllursScrollTraits				= TraitUnbreakable | TraitUnsellable
 		UllursScrollIcon				= $97
 
@@ -3382,7 +3382,7 @@
 		ThrudsScrollUseEffect			= None
 		ThrudsScrollWeaponEffect		= None
 		ThrudsScrollSkills2				= None
-		ThrudsScrollSkills3				= Skill3Scroll
+		ThrudsScrollSkills3				= None
 		ThrudsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		ThrudsScrollIcon				= $98
 
@@ -3404,7 +3404,7 @@
 		FjalarsScrollUseEffect			= None
 		FjalarsScrollWeaponEffect		= None
 		FjalarsScrollSkills2			= None
-		FjalarsScrollSkills3			= Skill3Scroll
+		FjalarsScrollSkills3			= None
 		FjalarsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		FjalarsScrollIcon				= $99
 
@@ -3426,7 +3426,7 @@
 		CedsScrollUseEffect				= None
 		CedsScrollWeaponEffect			= None
 		CedsScrollSkills2				= None
-		CedsScrollSkills3				= Skill3Scroll
+		CedsScrollSkills3				= None
 		CedsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		CedsScrollIcon					= $9A
 
@@ -3448,7 +3448,7 @@
 		BragisScrollUseEffect			= None
 		BragisScrollWeaponEffect		= None
 		BragisScrollSkills2				= None
-		BragisScrollSkills3				= Skill3Scroll
+		BragisScrollSkills3				= None
 		BragisScrollTraits				= TraitUnbreakable | TraitUnsellable
 		BragisScrollIcon				= $9B
 
@@ -3470,7 +3470,7 @@
 		HeimsScrollUseEffect			= None
 		HeimsScrollWeaponEffect			= None
 		HeimsScrollSkills2				= None
-		HeimsScrollSkills3				= Skill3Scroll
+		HeimsScrollSkills3				= None
 		HeimsScrollTraits				= TraitUnbreakable | TraitUnsellable
 		HeimsScrollIcon					= $9C
 

@@ -297,7 +297,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._CivilianName	; Unused
 
-	.word	<>char_names._IllusionName
+	.word	<>char_names._HiredSwordName
 
 	.word	<>char_names._HiredSwordName
 
@@ -316,7 +316,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._BharatName	
 
-	.word	<>char_names._IllusionName	
+	.word	<>char_names._HiredSwordName	
 
 	.word	<>char_names._XavierName
 
@@ -345,7 +345,7 @@ char_name_pointers		.block
 	.word	<>char_names._FriegeName
 
 	.word	<>char_names._ResistanceName
-	.word	<>char_names._IllusionName
+	.word	<>char_names._HiredSwordName
 
 	.word	<>char_names._FriegeName
 	.word	<>char_names._FriegeName
@@ -1123,7 +1123,7 @@ _UlsterName
 	.word $0000
 
 _GelbenritterName
-	.text "Gelbenritter"
+	.text "Gelbritter"
 	.word $0000
 
 _EquusName
@@ -1180,10 +1180,6 @@ _PierreName
 	
 _GeraldName
 	.text "Gerald"
-	.word $0000
-	
-_IllusionName
-	.text "Illusion"
 	.word $0000
 
 

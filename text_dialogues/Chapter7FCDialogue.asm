@@ -376,7 +376,7 @@ finnkarin
 	.byte NewLine
 	.text "reminded me of a woman I once"
 	.byte NewLine
-	.text "fought alongside with, long ago."
+	.text "fought alongside, long ago."
 	.byte WaitForA
 
 	.byte right_slot

@@ -86,15 +86,15 @@ ch10olwenfredarrive
 .word largo_portrait
 .text "Lady Olwen, the valley is under attack!"
 .byte NewLine
-.text "You must ride for Fort Dundrum at once"
+.text "You must ride for Fort Dundrum at once and"
 .byte NewLine
-.text "and warn them—I'll keep the enemy at bay."
+.text "warn them—I'll keep the enemy at bay."
 .byte WaitForA
 
 .byte Right_slot
-.text "If you'll permit it, General, I would rather"
+.text "If you'll permit it, General, I would rather remain"
 .byte NewLine
-.text "remain here and fight alongside you!"
+.text "here and fight alongside you!"
 .byte WaitForA
 
 .byte Left_slot
@@ -110,18 +110,18 @@ ch10olwenfredarrive
 .byte ScrollText
 .text "I can't just leave you here!"
 .byte NewLine
-.text "You must allow me to help you defend"
+.text "You must allow me to help you defend the valley,"
 .byte NewLine
-.text "the valley, if only for a little while...!"
+.text "if only for a little while...!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "...Very well—provided that you swear to leave"
 .byte NewLine
-.text "the battlefield and ride for Fort Dundrum"
+.text "the battlefield and ride for Fort Dundrum in short"
 .byte NewLine
-.text "in short order."
+.text "order."
 .byte WaitForA
 
 .byte Right_slot
@@ -153,14 +153,12 @@ ch10olwenfredleave
 .word olwen_portrait
 .text "I can delay no longer..."
 .byte NewLine
-.text "Fort Dundrum must be warned"
-.byte NewLine
-.text "of this invasion."
+.text "Fort Dundrum must be warned of this invasion."
 .byte WaitForA
 .byte ScrollText
-.text "General Largo, I'll return with"
+.text "General Largo, I'll return with every able-bodied"
 .byte NewLine
-.text "every able-bodied soldier I can find!"
+.text "soldier I can find!"
 .byte NewLine
 .text "You have my word...!"
 .byte WaitForA
@@ -178,18 +176,18 @@ ch10rescuehouse
 .text "You folks are with the Liberation Army, right?"
 .byte WaitForA
 .byte ScrollText
-.text "Well, you be sure to show the empire"
+.text "Well, you be sure to show the empire some of"
 .byte NewLine
-.text "some of our famous Thracian hospitality!"
+.text "our famous Thracian hospitality!"
 .byte NewLine
 .text "Drive the lot of 'em outta our valley!"
 .byte WaitForA
 .byte ScrollText
-.text "Oh, an' take this with you. I've just been"
+.text "Oh, an' take this with you. I've just been usin' it"
 .byte NewLine
-.text "usin' it as a walking stick for years,"
+.text "as a walking stick for years, but I think it's"
 .byte NewLine
-.text "but I think it's enchanted. Maybe it'll help!"
+.text "enchanted. Maybe it'll help!"
 .byte WaitForA
 
 .byte EndText
@@ -200,24 +198,24 @@ ch10ensorcelhouse
 .byte Right_slot
 .word LoadPortrait
 .word youngman_portrait
-.text "Don't tell me! You're the Liberation Army,"
+.text "Don't tell me! You're the Liberation Army, right?"
 .byte NewLine
-.text "right? Well, have I got a surprise for you!"
+.text "Well, have I got a surprise for you!"
 .byte WaitForA
 .byte ScrollText
-.text "See, I fancy myself a botanist,"
+.text "See, I fancy myself a botanist, and a few"
 .byte NewLine
-.text "and a few months ago I started an experiment."
+.text "months ago I started an experiment."
 .byte WaitForA
 .byte ScrollText
-.text "I wanted to see what would happen"
+.text "I wanted to see what would happen if I watered"
 .byte NewLine
-.text "if I watered a tree using only pure water."
+.text "a tree using only pure water."
 .byte WaitForA
 .byte ScrollText
-.text "I won't keep you in suspense—this here staff"
+.text "I won't keep you in suspense—this here staff is"
 .byte NewLine
-.text "is what resulted from the whole thing!"
+.text "what resulted from the whole thing!"
 .byte WaitForA
 .byte ScrollText
 .text "Use it, and it'll fortify your magic, same as if"
@@ -227,16 +225,16 @@ ch10ensorcelhouse
 .byte ScrollText
 .text "Hm? Where's the rest of the tree, you ask?"
 .byte NewLine
-.text "Uh... You're looking at it."
+.text "Uh...you're looking at it."
 .byte NewLine
 .text "That staff WAS the whole tree."
 .byte WaitForA
 .byte ScrollText
 .text "Poor thing never grew bigger than three feet"
 .byte NewLine
-.text "tall... Heh, it turns out pure water actually"
+.text "tall... Heh, it turns out pure water actually isn't"
 .byte NewLine
-.text "isn't very good for plants."
+.text "very good for plants."
 .byte WaitForA
 
 .byte EndText
@@ -244,23 +242,23 @@ ch10ensorcelhouse
 
 ch10opening1
 
-.byte Left_slot
+.byte Right_slot
 .word LoadPortrait
 .word olwen_portrait
 .text "Has there been any change, General Largo?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .word LoadPortrait
 .word largo_portrait
 .text "Hm? You're doing reconnaissance again today,"
 .byte NewLine
-.text "Lady Olwen? I admire your fortitude,"
+.text "Lady Olwen? I admire your fortitude, coming this"
 .byte NewLine
-.text "coming this far into the mountains every morn."
+.text "far into the mountains every morn."
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .word LoadPortrait
 .word fred_portrait
@@ -269,118 +267,116 @@ ch10opening1
 .text "of General Kempf."
 .byte WaitForA
 .byte ScrollText
-.text "There's no doubt he's out to harass her,"
+.text "There's no doubt he's out to harass her, having"
 .byte NewLine
-.text "having her make such a back-breaking trek"
-.byte NewLine
-.text "each day..."
-.byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
-.word LoadPortrait
-.word olwen_portrait
-.text "Truth be told, Fred, I'd rather be out here"
-.byte NewLine
-.text "than cooped up in Fort Dundrum, having to"
-.byte NewLine
-.text "look at Kempf's face every hour of the day."
+.text "her make such a back-breaking trek each day..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
-.word largo_portrait
-.text "Oh ho ho! Scathing words, but General"
+.word olwen_portrait
+.text "Truth be told, Fred, I'd rather be out here than"
 .byte NewLine
-.text "Kempf is...quite an embarrassment, really."
+.text "cooped up in Fort Dundrum, having to look at"
+.byte NewLine
+.text "Kempf's face every hour of the day."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.word LoadPortrait
+.word largo_portrait
+.text "Oh ho ho! Scathing words, but General Kempf"
+.byte NewLine
+.text "is...quite an embarrassment, really."
 .byte WaitForA
 .byte ScrollText
 .text "A highborn noble, his impudence and pettiness"
 .byte NewLine
-.text "undermine his stature, and he behaves closer"
+.text "undermine his stature, and he behaves closer to"
 .byte NewLine
-.text "to a boy than a man."
+.text "a boy than a man."
 .byte WaitForA
 .byte ScrollText
-.text "Perhaps it's natural to be a little insecure"
+.text "Perhaps it's natural to be a little insecure when"
 .byte NewLine
-.text "when Commander Reinhardt's fame"
+.text "Commander Reinhardt's fame has so thoroughly"
 .byte NewLine
-.text "has so thoroughly eclipsed his own,"
+.text "eclipsed his own,"
 .byte WaitForA
 .byte ScrollText
-.text "but to be so vindictive about it as to"
+.text "but to be so vindictive about it as to take it"
 .byte NewLine
-.text "take it out on the commander's only sister?"
+.text "out on the commander's only sister?"
 .byte WaitForA
 .byte ScrollText
-.text "You'd scarcely believe there was"
+.text "You'd scarcely believe there was any noble blood"
 .byte NewLine
-.text "any noble blood in him at all."
-.byte NewLine
-.text "He's a disgrace to his uniform."
-.byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
-.text "General Kempf is utterly convinced that"
-.byte NewLine
-.text "my lord brother is somehow his competition."
-.byte WaitForA
-.byte ScrollText
-.text "He doesn't understand the solidarity that"
-.byte NewLine
-.text "comes with military service."
+.text "in him at all. He's a disgrace to his uniform."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "They're both close in age, were both"
+.text "General Kempf is utterly convinced that my lord"
 .byte NewLine
-.text "promoted to General very young... It's easy"
+.text "brother is somehow his competition."
+.byte WaitForA
+.byte ScrollText
+.text "He doesn't understand the solidarity that comes"
 .byte NewLine
-.text "to see how such a vile mindset took root."
+.text "with military service."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "But my lord brother certainly doesn't feel"
+.text "They're both close in age, were both promoted"
 .byte NewLine
-.text "the same way about him."
+.text "to general very young... It's easy to see how"
+.byte NewLine
+.text "such a vile mindset took root."
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
+.text "But my lord brother certainly doesn't feel the"
+.byte NewLine
+.text "same way about him."
+.byte WaitForA
+
+.byte Right_slot
 .byte ScrollText
 .text "Then that's all the more reason for General"
 .byte NewLine
 .text "Kempf to hate him, wouldn't you say?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
-.text "What? Why? If the hatred's not mutual,"
+.text "What? Why?"
 .byte NewLine
-.text "there should be no reason for it to continue!"
+.text "If the hatred's not mutual, there should be no"
+.byte NewLine
+.text "reason for it to continue!"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Hah! You don't get it? I envy your innocence."
 .byte NewLine
-.text "It's Kempf's way of thinking that ensures"
+.text "It's Kempf's way of thinking that ensures North"
 .byte NewLine
-.text "North and South Thracia will never be as one."
-.byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
-.text "I don't follow... What's that got to do"
-.byte NewLine
-.text "with the North and South?"
+.text "and South Thracia will never be as one."
 .byte WaitForA
 
 .byte Left_slot
+.byte ScrollText
+.text "I don't follow... What's that got to do with the"
+.byte NewLine
+.text "North and South?"
+.byte WaitForA
+
+.byte Right_slot
 .byte ScrollText
 .text "...Ah, I've bent your ear for too long, though"
 .byte NewLine
@@ -389,7 +385,7 @@ ch10opening1
 .text "you stay a spell and catch your breath?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "I will. Thank you."
 .byte NewLine
@@ -408,17 +404,17 @@ ch10opening2
 .byte Left_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "Prince Leif, just across the valley"
+.text "Prince Leif, just across the valley is Fort"
 .byte NewLine
-.text "is Fort Nowell, which guards the border"
+.text "Nowell, which guards the border between Thracia"
 .byte NewLine
-.text "between Thracia and the empire."
+.text "and the empire."
 .byte WaitForA
 
 .byte Right_slot
-.text "We'll finally be able to strike"
+.text "We'll finally be able to strike at the enemy's own"
 .byte NewLine
-.text "at the enemy's own territory for a change..."
+.text "territory for a change..."
 .byte NewLine
 .text "Have we any idea of their numbers?"
 .byte WaitForA
@@ -430,9 +426,9 @@ ch10opening2
 .text "but they make up for it with force of arms:"
 .byte WaitForA
 .byte NewLine
-.text "the fort is guarded with ballistae—a sort of"
+.text "the fort is guarded with ballistae—a sort of giant"
 .byte NewLine
-.text "giant bow that can fire across great distances."
+.text "bow that can fire across great distances."
 .byte WaitForA
 .byte ScrollText
 .text "They're tremendously powerful—we'll have to"
@@ -454,9 +450,9 @@ ch10opening2
 .text "to draw the enemy out of ballista range."
 .byte WaitForA
 .byte ScrollText
-.text "Then, we send a small force to deal with"
+.text "Then, we send a small force to deal with the"
 .byte NewLine
-.text "the ballistae while they're occupied."
+.text "ballistae while they're occupied."
 .byte NewLine
 .text "Simple, but effective."
 .byte WaitForA
@@ -475,22 +471,18 @@ ch10opening2
 .byte ScrollText
 .text "They both have their own crucial downsides..."
 .byte NewLine
-.text "What's the best course of action?"
+.text "And what is the third way?"
+.byte NewLine
+.text "Would that be our optimal strategy?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "That would be the third way."
-.byte WaitForA
-.byte ScrollText
-.text "Since you've caught on that both plans"
+.text "Since you've caught on that both plans involving"
 .byte NewLine
-.text "involving direct confrontation are inadvisable,"
-.byte WaitForA
+.text "direct confrontation are inadvisable, I believe"
 .byte NewLine
-.text "I'm sure you don't need it spelled out for you,"
-.byte NewLine
-.text "Prince Leif!"
+.text "you already have that figured out, Prince Leif."
 .byte WaitForA
 
 .byte EndText
@@ -507,24 +499,24 @@ ch10endlargoalive
 .word dorias_portrait
 .text "General Largo..."
 .byte NewLine
-.text "The man was every bit the soldier"
+.text "The man was every bit the soldier he was made"
 .byte NewLine
-.text "he was made out to be."
+.text "out to be."
 .byte WaitForA
 
 .byte Right_slot
-.text "This was our first time fighting the troops"
+.text "This was our first time fighting the troops of"
 .byte NewLine
-.text "of House Friege... Now that the battle is over,"
+.text "House Friege... Now that the battle is over,"
 .byte NewLine
 .text "I can almost admire how well they fought."
 .byte WaitForA
 .byte ScrollText
-.text "If this was the might of a skeleton crew"
+.text "If this was the might of a skeleton crew manning"
 .byte NewLine
-.text "manning a small border outpost, I worry"
+.text "a small border outpost, I worry how fierce their"
 .byte NewLine
-.text "how fierce their full army will prove to be..."
+.text "full army will prove to be..."
 .byte WaitForA
 
 .byte Left_slot
@@ -548,9 +540,9 @@ ch10endlargoalive
 .text "will reflect this rigid discipline."
 .byte WaitForA
 .byte ScrollText
-.text "They're a formidable enemy, no doubt—but"
+.text "They're a formidable enemy, no doubt—but you"
 .byte NewLine
-.text "you fought with the best of them, Prince Leif."
+.text "fought with the best of them, Prince Leif."
 .byte NewLine
 .text "Your leadership this day was most admirable."
 .byte WaitForA
@@ -566,9 +558,9 @@ ch10endlargoalive
 .byte ScrollText
 .text "Indeed. This holy war must be fought to the"
 .byte NewLine
-.text "bitter end—but fighting it with such mercy"
+.text "bitter end—but fighting it with such mercy is"
 .byte NewLine
-.text "is what the late Prince Quan would have done."
+.text "what the late Prince Quan would have done."
 .byte WaitForA
 .byte ScrollText
 .text "I pray that you remain this just and forthright"
@@ -580,11 +572,11 @@ ch10endlargoalive
 
 .byte Right_slot
 .byte ScrollText
-.text "Knightly pride... Huh. I didn't really think of it"
+.text "Knightly pride, you say... Hm."
 .byte NewLine
-.text "in those terms—I merely wanted to avoid"
+.text "Well, I'd sought to minimize bloodshed of my own"
 .byte NewLine
-.text "a needless slaughter if I could."
+.text "volition—not because it's another's expectation."
 .byte WaitForA
 
 .byte EndText
@@ -599,9 +591,9 @@ ch10endlargodead
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
-.text "August, did you see the mage knight"
+.text "August, did you see the mage knight that fled"
 .byte NewLine
-.text "that fled midway through the battle?"
+.text "midway through the battle?"
 .byte WaitForA
 
 .byte Right_slot
@@ -619,9 +611,9 @@ ch10endlargodead
 .byte ScrollText
 .text "I didn't recognize her, but there's little doubt"
 .byte NewLine
-.text "she rode for Fort Dundrum to bring word"
+.text "she rode for Fort Dundrum to bring word of our"
 .byte NewLine
-.text "of our incursion."
+.text "incursion."
 .byte WaitForA
 
 .byte Left_slot
@@ -638,18 +630,18 @@ ch10endlargodead
 .text "even a permanent fixture of the region."
 .byte WaitForA
 .byte ScrollText
-.text "Combine that with the advance warning"
+.text "Combine that with the advance warning we've"
 .byte NewLine
-.text "we've given them, and they'll have plenty of"
+.text "given them, and they'll have plenty of time to"
 .byte NewLine
-.text "time to shore up their defenses even further."
+.text "shore up their defenses even further."
 .byte WaitForA
 .byte ScrollText
-.text "The fort's commander is surely no slouch—"
+.text "The fort's commander is surely no slouch—he's"
 .byte NewLine
-.text "he's certain to make the most of the extra time"
+.text "certain to make the most of the extra time to"
 .byte NewLine
-.text "to prepare."
+.text "prepare."
 .byte WaitForA
 .byte ScrollText
 .text "Indeed, I fear we'll have a most difficult time"
@@ -659,32 +651,32 @@ ch10endlargodead
 
 .byte Left_slot
 .byte ScrollText
-.text "I see... Still, there's no other route"
+.text "I see... Still, there's no other route that would"
 .byte NewLine
-.text "that would allow us to cross the mountains."
+.text "allow us to cross the mountains."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "That seems to be the hand we've been dealt,"
+.text "It seems to be the hand dealt to us, my prince."
 .byte NewLine
-.text "my prince. If we're to arrive at Tarrah"
+.text "If we're to arrive at Tarrah in time to act,"
 .byte NewLine
-.text "in time to act, we must take Fort Dundrum."
+.text "we must take Fort Dundrum."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Then there's little point standing around"
+.text "Then there's little point standing around and"
 .byte NewLine
-.text "and complaining about it. The longer we wait,"
+.text "complaining about it. The longer we wait,"
 .byte NewLine
 .text "the stronger the fort's defenses will be."
 .byte WaitForA
 .byte ScrollText
-.text "This is our only chance,"
+.text "This is our only chance, and we'll make the most"
 .byte NewLine
-.text "and we'll make the most of it!"
+.text "of it!"
 .byte WaitForA
 
 .byte EndText

@@ -1220,7 +1220,7 @@ gladeperne
 	.byte ScrollText
 	.text "I should have introduced myself first."
 	.byte NewLine
-	.text "I am Glade, member of the Lanzenritter."
+	.text "I am Glade, member of the Lanzritter."
 	.byte WaitForA
 	
 	.byte left_slot
@@ -2146,6 +2146,182 @@ daisyrequest
 .text "So again, I wanna be able to stop by the village."
 .byte NewLine
 .text "Please, Prince Leif."
+.byte WaitForA
+
+.byte EndText
+
+crisisofpurpose
+
+.byte right_slot
+.word LoadPortrait
+.word augustus_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait
+.text "So, it's been decided we'll go to Leonster first."
+.byte WaitForA
+
+.byte right_slot
+.text "That is correct."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I have to admit, even I am somewhat"
+.byte NewLine
+.text "surprised we came to a consensus."
+.byte NewLine
+.text "How exactly did you do that, August?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, the issue was that fear and hesitation were"
+.byte NewLine
+.text "stemming from our defeat—everyone's ideas and"
+.byte NewLine
+.text "beliefs were on the very verge of splitting."
+.byte WaitForA
+.byte ScrollText
+.text "I did away with this by having them all realize"
+.byte NewLine
+.text "that we did, in fact, achieve our goal in Tarrah:"
+.byte NewLine
+.text "the city is not subject to imperial occupation."
+.byte WaitForA
+.byte ScrollText
+.text "This makes our aforementioned defeat essentially"
+.byte NewLine
+.text "negligible."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...I can't believe I did not think of that."
+.byte WaitForA
+.byte ScrollText
+.text "You have my eternal gratitude, then, August."
+.byte NewLine
+.text "It's thanks to you that we can press onward"
+.byte NewLine
+.text "at this point."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I will always do what I am able, my prince."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+
+.word PlayMusic
+.byte $32
+
+.text "Though, do tell me: why shouldn't we"
+.byte NewLine
+.text "consider making for Ulster first?"
+.byte NewLine
+.text "It is the closest from here, after all."
+.byte WaitForA
+.byte ScrollText
+.text "I mean, I know you said we'd be short of"
+.byte NewLine
+.text "manpower, but could you please elaborate?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, we'd have to contend with the renowned"
+.byte NewLine
+.text "Knights of Ulster, and they are backed by"
+.byte NewLine
+.text "the Gelbritter, last I've heard."
+.byte WaitForA
+.byte ScrollText
+.text "On top of that, they both act under"
+.byte NewLine
+.text "Lord Baráth, the sitting ruler of Ulster."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Lord Baráth?"
+.byte NewLine
+.text "What is special about him?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Though he sits on Ulster's throne, his military"
+.byte NewLine
+.text "prowess is not to be taken lightly; he earned"
+.byte NewLine
+.text "his way there through the path of a warrior."
+.byte WaitForA
+.byte ScrollText
+.text "Count Dryas and I agreed he has all the tools"
+.byte NewLine
+.text "to ward off an offensive from us with ease."
+.byte WaitForA
+.byte NewLine
+.text "Even with the diversion Thracia has granted"
+.byte NewLine
+.text "not far south."
+.byte WaitForA
+.byte ScrollText
+.text "This time, we need select a more vulnerable"
+.byte NewLine
+.text "opponent, and one who will have more than"
+.byte NewLine
+.text "just us to deal with."
+.byte WaitForA
+.byte ScrollText
+.text "In Leonster, we will have your people supporting"
+.byte NewLine
+.text "us in your return; and in Munster, Lord Ced"
+.byte NewLine
+.text "and his Magi would be most pivotal."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That would be ideal. But..."
+.byte NewLine
+.text "Well, we don't even know that the Magi have"
+.byte NewLine
+.text "still been able to sustain their internal war."
+.byte WaitForA
+.byte ScrollText
+.text "Though they have to be, right?"
+.byte NewLine
+.text "Lord Ced would never outright lose."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "As you just said, my prince, we do not know."
+.byte NewLine
+.text "That uncertainty is why we've decided on"
+.byte NewLine
+.text "making for Leonster."
+.byte WaitForA
+.byte ScrollText
+.text "The last thing we would want is to arrive in"
+.byte NewLine
+.text "Munster, only to discover the Magi were routed,"
+.byte NewLine
+.text "and find ourselves surrounded with no support."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I fully understand. We'll decide on our next move"
+.byte NewLine
+.text "once we've retaken Leonster, then."
+.byte NewLine
+.text "For now, the Liberation Army shall march!"
 .byte WaitForA
 
 .byte EndText

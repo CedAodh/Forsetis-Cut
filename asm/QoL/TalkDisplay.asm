@@ -627,6 +627,7 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		  ZQOL_TALK_ENTRY Asaello, [Trude]
 		  ZQOL_TALK_ENTRY Leif, [Asaello]
 		  ZQOL_TALK_ENTRY Tanya, [Mareeta]
+		  ZQOL_TALK_ENTRY Shiva, [Asaello]
         ZQOL_END_TALK_CHAPTER
 
         aChapter16ATalkTargetTable

@@ -157,41 +157,46 @@
 
 rlNewProcItemViewInit
 	
-    .byte $08, $8B, $E2, $20, $A9, $7E, $48, $C2, $20, $AB, $22, $3E, $85, $85, $48, $22, $B5, $81, $85, $20, $80, $E8, $18, $69, $0C, $00, $85, $0F, $A9, $13, $00, $85, $0B, $A9, $09, $00, $85, $0D, $A9, $10, $00, $85, $11, $22, $5C, $80, $85, $9D, $1D, $06, $8D, $57, $4F, $22, $7A, $82, $85, $68, $22, $7A, $82, $85, $DA, $A9, $6F, $0E, $85, $0B, $A9, $B3, $0E, $85, $0D, $22, $5C, $90, $83, $A9, $B3, $0E, $85, $0D, $22, $05, $97, $83, $AD, $52, $0F, $29, $FF, $00, $F0, $34, $8D, $D2, $0E, $A9, $B3, $0E, $85, $0B, $64, $2D, $22, $64, $CE, $83
-	;$AD, $33, $A5, $29, $FF, $00, $8D, $D4, $51, $AD, $36, $A5, $29, $FF, $00, $8D, $D6, $51, $AD, $37, $A5, $29, $FF, $00, $8D, $D8, $51, $AD, $39, $A5, $29, $FF, $00, $8D, $DA, $51, $AD, $35, $A5, $29, $FF, $00, $8D, $D4, $51, $80, $10, $E2, $20, $A9, $FE, $8D, $D4, $51, $8D, $D6, $51, $8D, $D8, $51, $8D, $DA, $51, $8D, $DC, $51
-		lda aActionStructUnit1.BattleMight
-        and #$00FF
-        sta $51D4,b
-        lda aActionStructUnit1.BattleHit
-        and #$00FF
-        sta $51D6,b
-        lda aActionStructUnit1.BattleAvoid
-        and #$00FF
-        sta $51D8,b
-        lda aActionStructUnit1.BattleCrit
-        and #$00FF
-        sta $51DA,b
-		lda aActionStructUnit1.BattleAttackSpeed
-        and #$00FF
-        sta $51DC,b
-        bra ++
+    .byte $08, $8B, $E2, $20, $A9, $7E, $48, $C2, $20, $AB, $22, $3E, $85, $85, $48, $22, $B5, $81, $85, $20, $80, $E8, $18, $69, $0C, $00, $85, $0F, $A9, $13, $00, $85, $0B, $A9, $09, $00, $85, $0D, $A9, $10, $00, $85, $11, $22, $5C, $80, $85, $9D, $1D, $06, $8D, $57, $4F, $22, $7A, $82, $85, $68, $22, $7A, $82, $85, $DA, $A9, $6F, $0E, $85, $0B, $A9, $B3, $0E, $85, $0D, $22, $5C, $90, $83, $A9, $B3, $0E, $85, $0D, $22, $05, $97, $83
+	lda aItemDataBuffer.Traits,b
+    bit #TraitWeapon
+	.byte $F0, $34
+    .byte $AD, $52, $0F, $29, $FF, $00, $F0, $34, $8D, $D2, $0E, $A9, $B3, $0E, $85, $0B, $64, $2D, $22, $64, $CE, $83
+	.byte $AD, $33, $A5, $29, $FF, $00, $8D, $D4, $51, $AD, $36, $A5, $29, $FF, $00, $8D, $D6, $51, $AD, $37, $A5, $29, $FF, $00, $8D, $D8, $51, $AD, $39, $A5, $29, $FF, $00, $8D, $DA, $51, $AD, $35, $A5, $29, $FF, $00, $8D, $DC, $51
+	.byte $80, $10, $E2, $20, $A9, $FE, $8D, $D4, $51, $8D, $D6, $51, $8D, $D8, $51, $8D, $DA, $51, $8D, $DC, $51
+		; lda aActionStructUnit1.BattleMight
+        ; and #$00FF
+        ; sta $51D4,b
+        ; lda aActionStructUnit1.BattleHit
+        ; and #$00FF
+        ; sta $51D6,b
+        ; lda aActionStructUnit1.BattleAvoid
+        ; and #$00FF
+        ; sta $51D8,b
+        ; lda aActionStructUnit1.BattleCrit
+        ; and #$00FF
+        ; sta $51DA,b
+		; lda aActionStructUnit1.BattleAttackSpeed
+        ; and #$00FF
+        ; sta $51DC,b
+        ; bra ++
 
-        +
-        sep #$20
-        lda #$FE
-        sta $51D4,b
-        sta $51D6,b
-        sta $51D8,b
-        sta $51DA,b
-		sta $51DC,b
+        ; +
+        ; sep #$20
+        ; lda #$FE
+        ; sta $51D4,b
+        ; sta $51D6,b
+        ; sta $51D8,b
+        ; sta $51DA,b
+		; sta $51DC,b
 		
-		+
-        .as
+		; +
+        ; .as
 
-        plx
-        lda #3
+        ; plx
+        ; lda #3
 		
-	;.byte $FA, $A9, $03,
+	.byte $FA, $A9, $03
 	.byte $85, $E2, $A9, $FF, $9D, $BD, $06, $AB, $28, $6B
 
 .endlogical

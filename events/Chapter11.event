@@ -23,7 +23,11 @@ eventChapter11Events ; 99/CB04
 			CHECK_NUM_UNITS_GTE Kempf, 1
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
-	END_DEFINITION ; Missing a byte?
+		EVENT $07, _BallistaeSpawn
+			TEST_FLAG_SET $06
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+	END_DEFINITION_ARRAY ; Missing a byte? I guess not anymore
 
 	_TalkEventDefinitions ; 99/CB53
 	END_DEFINITION_ARRAY
@@ -81,15 +85,31 @@ eventChapter11Events ; 99/CB04
 		YIELD
 
 		PLAY_SOUND_WORD $00F7
+		
+		SCROLL_CAMERA_CHAR Kempf
+		SET_CAMERA_SPEED 4
+		YIELD
 
 		DIALOGUE ch11kempfleave
 		YIELD
 
-		macroScriptedRewarpStaff Kempf, [-1, -1]
+		FADE_OUT $02
+		
+		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(True, 0)
 
+		STORE_BYTE bBuf_INIDISP, INIDISP_Setting(False, 0)
+
+		PAUSE_SKIPPABLE 64
+		YIELD
+		
 		macroRemoveUnit Kempf
 
-		CALL_ASM_SKIPPABLE rlUpdateUnitMaps, $0000
+		CALL_ASM_LOOP rlUpdateVisibilityMap, $0000
+		CALL_ASM_LOOP rlUpdateUnitMapsAndFog, $0000
+		
+		FADE_IN $02
+		
+		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
 	END2
 
 	_KempfDialogue ; 99/CCE1
@@ -176,10 +196,6 @@ eventChapter11Events ; 99/CB04
 
 		SCROLL_CAMERA_CHAR Leif
 		SET_CAMERA_SPEED 4
-		YIELD
-
-		LOAD2 eventChapter11Data._BallistaGroup
-		WAIT_MOVE
 		YIELD
 
 		PLAY_SOUND_BYTE $6C
@@ -338,6 +354,15 @@ eventChapter11Events ; 99/CB04
 
 		_EndChange
 	END2
+	
+	_BallistaeSpawn
+		SET_CAMERA [8, 12]
+		YIELD
+		
+		LOAD2 eventChapter11Data._BallistaGroup
+		WAIT_MOVE
+		YIELD
+	_END1
 
 	_NPCRetreat ; 99/D1B6
 		EVENT_CMP_BYTE_AT_EQ $7E402E, $05

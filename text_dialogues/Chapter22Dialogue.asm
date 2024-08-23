@@ -53,16 +53,16 @@ ch22villagerpurewater
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "Hey, listen up! The empire's got a whole"
+.text "Hey, listen up! The empire's got a whole bunch"
 .byte NewLine
-.text "bunch of troops waitin' across the river,"
+.text "of troops waitin' across the river,"
 .byte NewLine
 .text "an' some of 'em even know magic!"
 .byte WaitForA
 .byte ScrollText
-.text "It's a death wish to head over there"
+.text "It's a death wish to head over there without"
 .byte NewLine
-.text "without bein' prepared, so take this with you."
+.text "bein' prepared, so take this with you."
 .byte WaitForA
 
 .byte EndText
@@ -73,9 +73,9 @@ ch22villagerwarpstaff
 .byte Right_slot
 .word LoadPortrait
 .word oldman_portrait
-.text "Nimble Njörun, the River Thracia"
+.text "Nimble Njörun, the River Thracia sure is wide,"
 .byte NewLine
-.text "sure is wide, ain't it?"
+.text "ain't it?"
 .byte WaitForA
 .byte ScrollText
 .text "Now look, if you just storm in from the front,"
@@ -85,31 +85,11 @@ ch22villagerwarpstaff
 .text "are done crossin' the river!"
 .byte WaitForA
 .byte ScrollText
-.text "What you oughta do instead is use a"
+.text "What you oughta do instead is use a warp"
 .byte NewLine
-.text "warp staff to attack the imperials from behind!"
-.byte WaitForA
-.byte ScrollText
-.text "If you don't have one handy, it just so happens"
+.text "staff—like this one I'm about to hand over—"
 .byte NewLine
-.text "that I have one here... I'd be willing to part"
-.byte NewLine
-.text "with it for a measly 35000 gold."
-.byte WaitForA
-.byte ScrollText
-.text "......"
-.byte WaitForA
-.byte ScrollText
-.text "Naw, I'm just kidding!"
-.byte NewLine
-.text "I hate the empire as much as the next guy,"
-.byte NewLine
-.text "so the staff is yours, free of charge."
-.byte WaitForA
-.byte ScrollText
-.text "...You shoulda seen the look on your face,"
-.byte NewLine
-.text "though! Heheheh!"
+.text "to attack the imperials from behind!"
 .byte WaitForA
 
 .byte EndText
@@ -120,21 +100,23 @@ ch22villagerrescuestaff
 .byte Right_slot
 .word LoadPortrait
 .word beardedman_portrait
-.text "Dapper Dáinn, the River Thracia"
+.text "Dapper Dáinn, the River Thracia sure is wide,"
 .byte NewLine
-.text "sure is wide, ain't it?"
+.text "ain't it?"
 .byte WaitForA
 .byte ScrollText
-.text "But you're already across, so you'd best"
+.text "But you're already across, so you'd best press"
 .byte NewLine
-.text "press your advantage while you can!"
+.text "your advantage while you can."
+.byte NewLine
+.text "Just stay in formation together!"
 .byte WaitForA
 .byte ScrollText
-.text "If things start to go wrong while you're"
+.text "If things start to go wrong and you guys're"
 .byte NewLine
-.text "makin' your assault on the castle, just use this"
+.text "gettin' separated and whatnot, you can use this"
 .byte NewLine
-.text "rescue staff to pull your folks outta trouble!"
+.text "rescue staff to pull yourselves outta trouble!"
 .byte WaitForA
 
 .byte EndText
@@ -149,7 +131,7 @@ ch22saiasbridge
 .byte NewLine
 .text "Collapse the bridge!"
 .byte NewLine
-.text "Tell the Gelbenritter to charge!"
+.text "Tell the Gelbritter to charge!"
 .byte WaitForA
 
 .byte EndText
@@ -173,9 +155,9 @@ ch22reinhardtbridge
 .byte Right_slot
 .word LoadPortrait
 .word reinhardt_portrait
-.text "The enemy has finally gotten close enough!"
+.text "The enemy finally approaches..."
 .byte NewLine
-.text "In the name of the Gelbenritter, don't let them"
+.text "In the name of the Gelbritter, don't let them"
 .byte NewLine
 .text "take one more step toward the castle!"
 .byte WaitForA
@@ -191,17 +173,17 @@ ch22reinhardtolwen
 .byte Left_slot
 .word LoadPortrait
 .word olwen_portrait
-.text "Brother...!"
+.text "Reinhardt...!"
 .byte NewLine
-.text "As soon as I saw the Gelbenritter were here,"
+.text "As soon as I heard the Gelbritter were here,"
 .byte NewLine
 .text "I knew you couldn't be far, my lord brother..."
 .byte WaitForA
 
 .byte Right_slot
-.text "It feels like a lifetime"
+.text "It feels like a lifetime since we last saw each"
 .byte NewLine
-.text "since we last saw each other..."
+.text "other, Olwen..."
 .byte NewLine
 .text "Thank the gods we were able to meet again."
 .byte WaitForA
@@ -215,19 +197,19 @@ ch22reinhardtolwen
 
 .byte Right_slot
 .byte ScrollText
-.text "Come now, there will be time to tell me"
+.text "Come now, there will be time to tell me about all"
 .byte NewLine
-.text "about all that's happened once you're safe."
+.text "that's happened later on."
+.byte NewLine
+.text "Your safety is all that concerns me at present."
 .byte WaitForA
 .byte ScrollText
-.text "Everyone will be so glad to see you again—"
+.text "Everyone will be so glad to see you again."
 .byte NewLine
-.text "every Friege worth a damn"
-.byte NewLine
-.text "has been worried sick about you."
+.text "They were all very anxiously worried..."
 .byte WaitForA
 .byte ScrollText
-.text "Heh, I'm sure you have plenty of good stories"
+.text "Heh, I'm sure you have plenty of enticing stories"
 .byte NewLine
 .text "to regale them with."
 .byte WaitForA
@@ -242,25 +224,25 @@ ch22reinhardtolwen
 .text "Home..."
 .byte NewLine
 .text "No, I cannot go back to Castle Friege."
+.byte NewLine
+.text "Not yet."
 .byte WaitForA
 .byte ScrollText
-.text "I can't show my face there until I right"
+.text "I can't show my face there until I right the"
 .byte NewLine
-.text "the wrongs I helped commit, and rescue"
+.text "wrongs I helped commit, and rescue the children"
 .byte NewLine
-.text "the children taken by the Loptr Church."
+.text "taken by the Loptr Church."
 .byte WaitForA
 .byte ScrollText
-.text "Don't try to argue—"
-.byte NewLine
-.text "I've already made up my mind."
+.text "Don't try to argue—this decision is already final."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Olwen, listen to what you're saying!"
+.text "Olwen, please, you must listen to me."
 .byte NewLine
-.text "We're family! You're my darling little sister!"
+.text "You're my darling little sister!"
 .byte NewLine
 .text "I couldn't bear to lose you!"
 .byte WaitForA
@@ -269,12 +251,12 @@ ch22reinhardtolwen
 .byte ScrollText
 .text "I'm more than just your little sister!"
 .byte NewLine
-.text "I'm my own woman!"
+.text "I'm my own woman! An entirely separate being!"
 .byte WaitForA
 .byte ScrollText
-.text "This is the decision I came to"
+.text "This is the decision I came to after thinking it"
 .byte NewLine
-.text "after thinking it over on my own."
+.text "over as such."
 .byte WaitForA
 .byte ScrollText
 .text "I know what it means for me; I've prepared"
@@ -282,9 +264,9 @@ ch22reinhardtolwen
 .text "myself for the anguish it will bring."
 .byte WaitForA
 .byte ScrollText
-.text "Not even the words of my own brother"
+.text "And not even the words of my own brother could"
 .byte NewLine
-.text "could sway my mind now."
+.text "sway my mind now."
 .byte WaitForA
 
 .byte Right_slot
@@ -294,14 +276,14 @@ ch22reinhardtolwen
 .text "Then that makes us enemies."
 .byte WaitForA
 .byte ScrollText
-.text "Do you have it in you to raise your blade"
+.text "Do you have it in you to raise your blade against"
 .byte NewLine
-.text "against me, Olwen?"
+.text "me, Olwen?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "If you stand in our way, Brother, then..."
+.text "If you should stand in our way, Brother, then..."
 .byte NewLine
 .text "I have no choice."
 .byte WaitForA
@@ -310,7 +292,7 @@ ch22reinhardtolwen
 .byte ScrollText
 .text "I see..."
 .byte NewLine
-.text "So you really are serious about this..."
+.text "You really are serious about this..."
 .byte NewLine
 .text "It's exactly as Bishop Saias said."
 .byte WaitForA
@@ -332,15 +314,18 @@ ch22reinhardtolwen2
 
 .byte Right_slot
 .byte ScrollText
-.text "This is the last time I'll be able to treat you"
+.text "This is the last time I'll be able to treat you as"
 .byte NewLine
-.text "as my little sister, and not as my enemy."
+.text "my little sister, and not as my enemy."
 .byte WaitForA
 .byte ScrollText
-.text "So, as your older brother,"
+.text "So, as your elder brother, I have one last gift"
 .byte NewLine
-.text "I have one last gift for you."
+.text "for you."
 .byte WaitForA
+
+.word PauseDialogue
+.byte $3C
 
 .byte Left_slot
 .byte ScrollText
@@ -356,9 +341,9 @@ ch22reinhardtolwen2
 .text "A token of better days..."
 .byte WaitForA
 .byte NewLine
-.text "Princess Ishtar gave me that sacred blade,"
+.text "Princess Ishtar bestowed upon me that sacred"
 .byte NewLine
-.text "but I've no need for it now."
+.text "blade, but I've no need for it now."
 .byte NewLine
 .text "You can put it to better use."
 .byte WaitForA
@@ -368,15 +353,15 @@ ch22reinhardtolwen2
 .text "But why?"
 .byte NewLine
 .text "I know how important it is to you."
+.byte NewLine
+.text "You looked after and maintained it like no other."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "That's..."
+.text "There's nothing more to say."
 .byte NewLine
-.text "That's none of your concern!"
-.byte NewLine
-.text "Now ride back to your army, Olwen!"
+.text "Now ride back to your own army, Olwen!"
 .byte WaitForA
 .byte ScrollText
 .text "The next time we meet on the battlefield,"
@@ -404,7 +389,7 @@ ch22saiascohen
 .byte WaitForA
 
 .byte Right_slot
-.text "I shall do no such thing!"
+.text "I shall do no such thing."
 .byte NewLine
 .text "I'll stay at your side until the end, Count!"
 .byte WaitForA
@@ -416,49 +401,49 @@ ch22saiascohen
 .text "be silent and listen!"
 .byte WaitForA
 .byte ScrollText
-.text "Have you already forgotten how"
+.text "Have you already forgotten how my only"
 .byte NewLine
-.text "my only daughter, my Aida, gave her life "
+.text "daughter, my Aida, gave her life to protect you"
 .byte NewLine
-.text "to protect you from that fiend Manfroy?"
+.text "from that fiend Manfroy?"
 .byte WaitForA
 .byte ScrollText
 .text "Surely your lonely childhood in that isolated"
 .byte NewLine
-.text "monastery cannot have left your memory"
+.text "monastery cannot have left your memory so"
 .byte NewLine
-.text "so easily..."
+.text "easily..."
 .byte WaitForA
 .byte ScrollText
-.text "Yet hiding you in such a remote place"
+.text "Yet hiding you in such a remote place was all I"
 .byte NewLine
-.text "was all I could do to shield you from him"
+.text "could do to shield you from him while"
 .byte NewLine
-.text "while withstanding his relentless threats."
+.text "withstanding his relentless threats."
 .byte WaitForA
 .byte ScrollText
-.text "The influence he carries took its toll—"
+.text "The influence he carries took its toll—Manfroy's"
 .byte NewLine
-.text "Manfroy's own scheming is what has led to my"
+.text "own scheming is what led to my becoming the"
 .byte NewLine
-.text "becoming the military officer before you now."
+.text "military officer before you now."
 .byte WaitForA
 .byte ScrollText
 .text "Fortunately, as I was immersed in this new role,"
 .byte NewLine
-.text "your talents came to the fore and you rose to"
+.text "your talents came to the fore, and you rose to"
 .byte NewLine
 .text "the position of royal bishop of House Velthomer."
 .byte WaitForA
 .byte ScrollText
-.text "And for a brief time, you were so trusted"
+.text "And for a brief time, you were so trusted by"
 .byte NewLine
-.text "by Emperor Arvis that Manfroy couldn't dare"
+.text "Emperor Arvis that Manfroy couldn't dare harm"
 .byte NewLine
-.text "harm you, and I was able to rest easy."
+.text "you, and I was able to rest easy."
 .byte WaitForA
 .byte ScrollText
-.text "But that sanctuary has come to an end:"
+.text "Alas, that sanctuary has come to an end:"
 .byte WaitForA
 .byte NewLine
 .text "with the power of Prince Julius behind them,"
@@ -478,18 +463,18 @@ ch22saiascohen
 .text "That is why Manfroy fears you so."
 .byte WaitForA
 .byte ScrollText
-.text "For the sake of Fjalar, for the sake"
+.text "For the sake of Fjalar, for the sake of"
 .byte NewLine
-.text "of House Velthomer, you must live on"
+.text "House Velthomer, you must live on and"
 .byte NewLine
-.text "and preserve your bloodline."
+.text "preserve your bloodline."
 .byte WaitForA
 .byte ScrollText
-.text "That is why you cannot die here—why"
+.text "That is why you cannot die here—why you must"
 .byte NewLine
-.text "you must hide, and hone your true strength."
+.text "hide, and hone your true strength."
 .byte NewLine
-.text "More than just my life is at stake here!"
+.text "Much more than just my life is at stake here!"
 .byte WaitForA
 
 .byte EndText
@@ -512,12 +497,12 @@ ch22saiasrein
 .byte Right_slot
 .text "Commander Reinhardt!"
 .byte NewLine
-.text "What are you doing here, milord?"
+.text "What are you doing here, sir?"
 .byte WaitForA
 .byte ScrollText
-.text "I'd heard Princess Ishtar had returned"
+.text "I'd heard Princess Ishtar had returned to"
 .byte NewLine
-.text "to Miletos—weren't you with her?"
+.text "Miletos—weren't you with her?"
 .byte WaitForA
 
 .byte Left_slot
@@ -527,23 +512,23 @@ ch22saiasrein
 .text "I've stayed behind to see to her safety."
 .byte WaitForA
 .byte ScrollText
-.text "Besides, Lady Ishtar has no need of me"
+.text "Additionally, Lady Ishtar has no need of me any"
 .byte NewLine
-.text "any longer."
+.text "longer."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "...Did the princess really tell you that?"
+.text "...The princess herself said that?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "She did. With a man as powerful as"
+.text "She did. With a man as powerful as Prince Julius"
 .byte NewLine
-.text "Prince Julius with her, she says,"
+.text "by her side, she says, there's no reason for me"
 .byte NewLine
-.text "there's no reason for me to escort her as well."
+.text "to escort her as well."
 .byte WaitForA
 
 .byte Right_slot
@@ -551,18 +536,18 @@ ch22saiasrein
 .text "......"
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch22saiasrein2
 
 .byte Right_slot
 .byte ScrollText
-.text "Commander, this is difficult for me to ask,"
+.text "Commander, this is difficult for me to ask, but..."
 .byte NewLine
-.text "but... I've heard that Lady Olwen has"
+.text "I've heard that Lady Olwen has defected to the"
 .byte NewLine
-.text "defected to the rebels. Is this true?"
+.text "rebels. Is this true?"
 .byte WaitForA
 
 .byte Left_slot
@@ -572,51 +557,51 @@ ch22saiasrein2
 .byte ScrollText
 .text "But she's little more than a child."
 .byte NewLine
-.text "I'm certain she's being deceived"
+.text "I'm certain she's being deceived by the enemy,"
 .byte NewLine
-.text "by the enemy, somehow..."
+.text "in whatever way..."
 .byte WaitForA
 .byte ScrollText
-.text "If I can just speak with her,"
+.text "If I can just speak with her, I know I can bring"
 .byte NewLine
-.text "I know I can bring her back to her senses."
+.text "her back to her senses."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Mm... I know that you'll always see her as"
+.text "Mm... I know that you'll always see her as your"
 .byte NewLine
-.text "your little sister, but she's not quite so little"
+.text "little sister, but she's not quite so little anymore."
 .byte NewLine
-.text "anymore. She's a grown adult, Commander."
+.text "She's a grown adult, Commander."
 .byte WaitForA
 .byte ScrollText
-.text "She wasn't going to be the little girl"
+.text "She wasn't going to be the little girl chasing her"
 .byte NewLine
-.text "chasing her big brother's coattails forever."
+.text "big brother's coattails forever."
 .byte WaitForA
 .byte ScrollText
 .text "How she lives her life is her choice to make."
 .byte NewLine
-.text "You must accept that."
+.text "You should acknowledge that."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "How Olwen lives her life..."
+.text "How she lives her life..."
 .byte NewLine
-.text "Bishop, do you mean to say that"
+.text "Bishop, do you mean to say that her path has..."
 .byte NewLine
-.text "her path has split apart from mine?"
+.text "split apart from mine?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Indeed..."
+.text "It has, yes..."
 .byte NewLine
 .text "Though I do agree you should speak with her,"
 .byte NewLine
-.text "if the gods give you a chance to do so."
+.text "if the gods grant you a chance to do so."
 .byte WaitForA
 
 .byte EndText
@@ -634,11 +619,13 @@ ch22leifintro
 .text "The River Thracia..."
 .byte NewLine
 .text "It's stunning just how vast it is."
+.byte NewLine
+.text "Every time I lay eyes upon it..."
 .byte WaitForA
 .byte ScrollText
-.text "Its clean, shimmering waters are surely"
+.text "Its clean, shimmering waters are surely the"
 .byte NewLine
-.text "the blessing of Earth Mother Ethniu herself."
+.text "blessing of Earth Mother Ethniu herself."
 .byte WaitForA
 
 .byte Right_slot
@@ -647,18 +634,18 @@ ch22leifintro
 .text "I see only a river stained red with blood."
 .byte WaitForA
 .byte ScrollText
-.text "True, the river has granted this land"
+.text "True, the river has granted this land many"
 .byte NewLine
-.text "many blessings, but it also stirs greed"
+.text "blessings, but it's those blessings that then stir"
 .byte NewLine
-.text "in the hearts of men."
+.text "insatiable greed in the hearts of men."
 .byte WaitForA
 .byte ScrollText
-.text "Countless battles have been fought"
+.text "Countless battles have been fought for control"
 .byte NewLine
-.text "for control of this river—and now"
+.text "of this river—and now we find ourselves about"
 .byte NewLine
-.text "we find ourselves about to fight another."
+.text "to fight another."
 .byte WaitForA
 .byte ScrollText
 .text "Take heed, my prince."
@@ -672,9 +659,7 @@ ch22leifintro
 .byte ScrollText
 .text "That's right..."
 .byte NewLine
-.text "My lord grandfather met his end"
-.byte NewLine
-.text "on this bridge..."
+.text "My lord grandfather met his end on this bridge..."
 .byte WaitForA
 
 .byte Right_slot
@@ -686,11 +671,11 @@ ch22leifintro
 .text "much further downstream."
 .byte WaitForA
 .byte ScrollText
-.text "He fell in battle when the Knights of"
+.text "He fell in battle when the Knights of Connaught—"
 .byte NewLine
-.text "Connaught—Raydrik's men—suddenly turned"
+.text "Raydrik's men—suddenly turned against his army,"
 .byte NewLine
-.text "against his army, shattering their formation."
+.text "shattering their formation."
 .byte WaitForA
 .byte ScrollText
 .text "Now, bear in mind that the river is notoriously"
@@ -698,14 +683,14 @@ ch22leifintro
 .text "easy to defend, but near impossible to attack."
 .byte WaitForA
 .byte ScrollText
-.text "The enemy has likely stationed"
+.text "The enemy has likely stationed powerful"
 .byte NewLine
-.text "powerful battalions here to halt our advance."
+.text "battalions here to halt our advance."
 .byte WaitForA
 .byte ScrollText
-.text "I expect this battle will be"
+.text "I expect this battle will be our most difficult"
 .byte NewLine
-.text "our most difficult yet, Prince Leif."
+.text "yet, Prince Leif."
 .byte NewLine
 .text "Steel yourself for what lies ahead..."
 .byte WaitForA
@@ -735,18 +720,18 @@ ch22leifclosing
 
 .byte Left_slot
 .byte ScrollText
-.text "...Blood that has been spilled can never be"
+.text "...Once blood is spilled, it cannot return to its"
 .byte NewLine
-.text "returned. Wise men accept this, and see to it"
+.text "source. What comes after that is what's crucial."
 .byte NewLine
-.text "that blood is only spilled for a worthy cause."
+.text "Make that sacrifice worth something."
 .byte WaitForA
 .byte ScrollText
-.text "Bah, enough of my ruminations."
+.text "Bah, but enough of my ruminations."
 .byte NewLine
-.text "Come along, Prince Leif—"
+.text "Come along, Prince Leif—we must hurry to"
 .byte NewLine
-.text "we must hurry to Munster."
+.text "Munster."
 .byte WaitForA
 
 .byte EndText

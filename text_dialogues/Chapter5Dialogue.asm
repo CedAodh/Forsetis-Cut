@@ -39,11 +39,9 @@ ch5op1
 
 .byte Right_slot
 .byte ScrollText
-.text "I...I don't know..."
+.text "I...I don't know... We were separated"
 .byte NewLine
-.text "We were separated as soon as"
-.byte NewLine
-.text "we got to the castle."
+.text "as soon as we got to the castle."
 .byte WaitForA
 .byte ScrollText
 
@@ -74,9 +72,9 @@ ch5op1
 .byte WaitForA
 
 .byte Left_slot
-.text "I never lied. Of course you can see"
+.text "I never lied. Of course you can see your"
 .byte NewLine
-.text "your daughter. I just made a small...omission."
+.text "daughter. I just made a small...omission."
 .byte WaitForA
 
 .byte Right_slot
@@ -122,14 +120,14 @@ ch5op2
 
 .byte Left_slot
 .byte ScrollText
-.text "Ah, here they come."
+.text "Ah, here they are."
 .byte WaitForA
 .byte ScrollText
 .text "Pitfighters, meet Eyvel. Eyvel, pitfighters."
 .byte NewLine
-.text "You've had your introductions—"
+.text "You've had your introductions—let it never"
 .byte NewLine
-.text "let it never be said that I'm a poor host."
+.text "be said that I'm a poor host."
 .byte WaitForA
 
 .byte ScrollText
@@ -231,9 +229,9 @@ ch5mareetaloaded1
 .word raydrik_portrait
 .text "She's even more skilled than I'd hoped...!"
 .byte NewLine
-.text "How delightful! Here, a reward"
+.text "How delightful!"
 .byte NewLine
-.text "befitting a magnificent performer!"
+.text "Here, a reward befitting a magnificent performer!"
 .byte WaitForA
 
 .byte Right_slot
@@ -362,9 +360,9 @@ ch5mareetaloaded4
 .text "that sword to grant her a fighting chance."
 .byte WaitForA
 .byte ScrollText
-.text "It's an exceptional blade, straight from"
+.text "It's an exceptional blade, straight from the"
 .byte NewLine
-.text "the treasure vault inside this very castle."
+.text "treasure vault inside this very castle."
 .byte NewLine
 .text "...The Shadow Sword, I believe it's called."
 .byte WaitForA
@@ -373,9 +371,9 @@ ch5mareetaloaded4
 .byte ScrollText
 .text "The Shadow Sword, a cursed blade..."
 .byte NewLine
-.text "You trying to turn my Mareeta into one of"
+.text "You trying to turn my Mareeta into one of your"
 .byte NewLine
-.text "your damned pitfighters with your little gift?"
+.text "damned pitfighters with your little gift?"
 .byte WaitForA
 
 .byte Left_slot
@@ -436,9 +434,9 @@ ch5mareetaresist
 .word raydrik_portrait
 .text "What's the meaning of this?"
 .byte NewLine
-.text "The girl wields the Shadow Sword,"
+.text "The girl wields the Shadow Sword, yet she"
 .byte NewLine
-.text "yet she struggles to finish the job!"
+.text "struggles to finish the job!"
 .byte WaitForA
 
 .byte Left_slot
@@ -463,16 +461,16 @@ ch5mareetaresist
 .text "and hesitate."
 .byte WaitForA
 .byte ScrollText
-.text "Her emotions dull the sword's strength"
+.text "Her emotions dull the sword's strength the"
 .byte NewLine
-.text "the same as running its edge across stone."
+.text "same as running its edge across stone."
 .byte WaitForA
 .byte ScrollText
 .text "She's like a caged animal, desperately throwing"
 .byte NewLine
-.text "herself against her binds. Or have you not even"
+.text "herself against her binds. Or have you not"
 .byte NewLine
-.text "noticed her tears, you imbecile?"
+.text "even noticed her tears, you imbecile?"
 .byte WaitForA
 
 .byte EndText
@@ -514,9 +512,9 @@ ch5mareetacaptured
 .text "...Raydrik, you hellspawn..."
 .byte WaitForA
 .byte ScrollText
-.text "As long as my heart beats,"
+.text "As long as my heart beats, you will"
 .byte NewLine
-.text "you will never know forgiveness..."
+.text "never know forgiveness..."
 .byte WaitForA
 
 .byte Left_slot
@@ -551,9 +549,9 @@ ch5mareetakilled
 .text "...Raydrik, you hellspawn..."
 .byte WaitForA
 .byte ScrollText
-.text "As long as my heart beats,"
+.text "As long as my heart beats, you will"
 .byte NewLine
-.text "you will never know forgiveness..."
+.text "never know forgiveness..."
 .byte WaitForA
 
 .byte Left_slot
@@ -570,9 +568,7 @@ ch5raydrikpanicsA
 .word raydrik_portrait
 .text "F-fine, the girl wasn't enough for you?!"
 .byte NewLine
-.text "Let's see how you do"
-.byte NewLine
-.text "against my entire garrison!"
+.text "Let's see how you do against my entire garrison!"
 .byte WaitForA
 .byte ScrollText
 .text "All hands, enter the arena and stain the ground"
@@ -607,9 +603,9 @@ ch5eyvelcaptured
 .word raydrik_portrait
 .text "Tch..."
 .byte NewLine
-.text "In the end, she was a shadow"
+.text "In the end, she was a shadow of what"
 .byte NewLine
-.text "of what the rumors made her out to be."
+.text "the rumors made her out to be."
 .byte WaitForA
 
 .byte Left_slot
@@ -686,9 +682,9 @@ ch5nannaleftalone
 .text "thing couldn't escape the castle."
 .byte WaitForA
 .byte ScrollText
-.text "After this, I'm sure she'll serve"
+.text "After this, I'm sure she'll serve as"
 .byte NewLine
-.text "as a most entertaining diversion!"
+.text "a most entertaining diversion!"
 .byte WaitForA
 
 .byte Left_slot
@@ -794,7 +790,9 @@ ch5arenaopennannacaptured
 .byte ScrollText
 .text "Nanna... No, as long as she's still alive,"
 .byte NewLine
-.text "we can always rescue her! This isn't over!"
+.text "we can always rescue her!"
+.byte NewLine
+.text "This isn't over!"
 .byte WaitForA
 
 .byte Left_slot
@@ -826,28 +824,30 @@ ch5arenaopennannadead
 .byte Left_slot
 .text "Leif... I'm so sorry..."
 .byte NewLine
-.text "Nanna was here; she was right here"
+.text "Nanna was here; she was right here with me,"
 .byte NewLine
-.text "with me, and I couldn't... I couldn't..."
+.text "and I couldn't... I couldn't..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "No... Gods, NO! Th-that's not possible!"
+.text "No... Gods, NO!"
+.byte NewLine
+.text "Th-that's not possible!"
 .byte WaitForA
 
 .byte left_slot
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
 .byte right_slot
 .byte ScrollText
-.text "Oh, Nanna... After everything"
+.text "Oh, Nanna..."
 .byte NewLine
-.text "we've been through together... What a waste..."
+.text "After everything we've been through together..."
 .byte NewLine
-.text "What a senseless waste..."
+.text "What a waste... What a senseless waste..."
 .byte WaitForA
 
 .byte EndText
@@ -859,16 +859,16 @@ ch5raydrikpanicsB1
 .word raydrik_portrait
 .text "H-how did you escape from the dungeon?!"
 .byte NewLine
-.text "Men, seize them! No, wait, kill them!"
+.text "Men, seize them!"
 .byte NewLine
-.text "Kill all of them!"
+.text "No, wait, kill them! Kill all of them!"
 .byte WaitForA
 .byte ScrollText
-.text "If that whelp gets free of the castle,"
+.text "If that whelp gets free of the castle, it'll be"
 .byte NewLine
-.text "it'll be on my head! All hands, enter the arena"
+.text "on my head! All hands, enter the arena and"
 .byte NewLine
-.text "and stain the ground with their blood!"
+.text "stain the ground with their blood!"
 .byte WaitForA
 
 .byte EndText
@@ -898,7 +898,7 @@ ch5raydrikpanicsB2
 ch5raydriktauntsleif
 
 .byte Left_slot
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -947,7 +947,7 @@ ch5arenaopennannaalone
 .byte ScrollText
 .text "Eyvel, she... She..."
 .byte WaitForA
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -965,7 +965,7 @@ ch5arenaopenbothgone
 .text "Was our information incorrect?"
 .byte WaitForA
 .byte ScrollText
-.text "Ah! Th-that's...!"
+.text "...Ah! Th-that's...!"
 .byte WaitForA
 
 .byte EndText

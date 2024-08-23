@@ -103,7 +103,8 @@ eventChapter23Events ; FD/F056
 		EVENT $0B, _CedAppear
 			CMP_WORD wCurrentPhase, NPC
 			RUN_ASM rlEventDefinitionCheckAlphand
-			TEST_FLAG_SET $08
+			RUN_ASM _rlEnemyPhaseRangeCheck
+			;TEST_FLAG_SET $08
 		END_DEFINITION
 		EVENT $09, _AltenaLeave
 			CMP_WORD wCurrentPhase, NPC
@@ -1367,6 +1368,57 @@ eventChapter23Events ; FD/F056
 		.word Civilian22
 	.word $0000
 
+_rlEnemyPhaseRangeCheck
+	
+	.al
+	.xl
+	.autsiz
+	.databank ?
+		
+	lda #$0E
+	sta wR2
+	lda #$18
+	sta wR3
+	lda #$0C
+	sta wR1
+	lda #$13
+	sta wR4
+	;assuming these are free to use at this time. there's a bunch of these registers, surely some are good to use?
 
+	lda wR2
+	sta wR0 ;x coord parameter for rlCheckTileOccupied
+	bra +
+
+	-
+	lda wR0 
+	cmp wR3 ;compare to end of x range
+	beq incy ;if x is at its max branch to incrementing y
+	inc a
+	sta wR0 ;otherwise increment x and test again
+	bra +
+
+	incy ;
+	lda wR1 ;the actual y coord last checked
+	cmp wR4 ;compare to max of y range
+	beq ++ ;go to failure if so
+	inc a
+	sta wR1
+	lda wR2
+	sta wR0 ;otherwise increment y coord by 1 and set x coord to initial
+
+	+
+	jsl rlCheckTileOccupied
+	bcc -
+
+	and #Player | Enemy | NPC
+	cmp #Player
+	bne -
+
+	sec
+	rtl
+
+	+
+	clc
+	rtl
 
 

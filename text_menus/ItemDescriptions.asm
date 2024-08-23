@@ -1248,6 +1248,23 @@ _MasterSealDesc
 .word $0000
 .word $0000
 
+_KnightRingDesc
+.text "An accessory that "
+.word $0000
+.text "enables its holder"
+.word $0000
+.text "to use any unused "
+.word $0000
+.text "[move[ment after an "
+.word $0000
+.text "action"
+.word $0000
+.text "+No effect after a"
+.word $0000
+.text "[mounting co{mm}nand"
+.word $0000
+.word $0000
+
 
 _MemberCardDesc
 .text "If so[meone ]with "
@@ -1303,6 +1320,8 @@ _HezulsScrollDesc
 .word $0000
 
 _NjorunsScrollDesc
+.text "+Negates criticals"
+.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "Strength    {+}{3}{0}{%}"
@@ -1314,6 +1333,8 @@ _NjorunsScrollDesc
 .word $0000
 
 _DainnsScrollDesc
+.text "+Negates criticals"
+.word $0000
 .text "(Modifies gro]wths"
 .word $0000
 .text "{H}{P}          {+}{5}{%}"
@@ -1564,13 +1585,15 @@ _GungnirDesc
 
 
 _KillerBallistaDesc
-.text "Fixed attack po]wer "
+.text "Raises level for all"
 .word $0000
-.text "Halves opponent's "
+.text "usable ]weapon types"
 .word $0000
-.text "defense "
+.text "by one grade"
 .word $0000
-.text "Anti{dash}Fliers"
+.text "  "
+.word $0000
+.text "Vanishes after use"
 .word $0000
 .word $0000
 

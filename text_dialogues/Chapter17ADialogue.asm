@@ -4,9 +4,9 @@ ch17Amullerspawn
 .byte Right_slot
 .word LoadPortrait
 .word muller_portrait
-.text "Damn... I didn't think it would take this long"
+.text "Damn... I didn't think it would take this long to"
 .byte NewLine
-.text "to get here. There's no time to waste—"
+.text "get here. There's no time to waste—"
 .byte NewLine
 .text "order the whole army to charge!"
 .byte WaitForA
@@ -24,27 +24,27 @@ ch17Amullerspawn
 .text "He's left for Connaught with Princess Ishtar."
 .byte WaitForA
 .byte ScrollText
-.text "I'm not privy to the details,"
+.text "I'm not privy to the details, but Her Highness"
 .byte NewLine
-.text "but Her Highness was acting strangely..."
+.text "was acting strangely..."
 .byte NewLine
 .text "I'd imagine he was worried about her."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "He left to babysit the princess instead of"
+.text "He left to babysit the princess instead of coming"
 .byte NewLine
-.text "coming to battle? What kind of soldier is he?!"
+.text "to battle? What kind of soldier is he?!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "A better one than you'll ever be!"
 .byte NewLine
-.text "Now shut your mouth—"
+.text "Now shut your mouth—you're insulting the chain"
 .byte NewLine
-.text "you're insulting the chain of command!"
+.text "of command!"
 .byte WaitForA
 
 .byte Left_slot
@@ -54,15 +54,15 @@ ch17Amullerspawn
 .text "F-forgive me, General, I meant nothing by it!"
 .byte WaitForA
 
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
 .byte Right_slot
 .byte ScrollText
-.text "Still, this IS going to make things"
+.text "Still, this IS going to make things harder on"
 .byte NewLine
-.text "harder on us..."
+.text "us..."
 .byte WaitForA
 
 .byte EndText
@@ -72,7 +72,7 @@ ch17Asaiasnicolov
 
 .byte Right_slot
 .word LoadPortrait
-.word nicolov_portrait
+.word NicolovPortrait
 
 .byte Left_slot
 .word LoadPortrait
@@ -95,42 +95,39 @@ ch17Asaiasnicolov
 
 .byte Right_slot
 .byte ScrollText
-.text "The enemy fights with an...unexpected"
+.text "The enemy fights with an...unexpected ferocity."
 .byte NewLine
-.text "ferocity. We're having some slight difficulties."
+.text "We're having some slight difficulties."
 .byte WaitForA
 .byte ScrollText
 .text "Ah, but having the Bishop of Flame at our side"
 .byte NewLine
 .text "is sure to boost morale!"
-.byte WaitForA
-.byte ScrollText
-.text "Why, I can already see a"
 .byte NewLine
-.text "marked improvement!"
+.text "Why, I can already see a marked improvement!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Have Commander Reinhardt"
+.text "Have Commander Reinhardt and the Gelbritter"
 .byte NewLine
-.text "and the Gelbenritter arrived yet?"
+.text "arrived yet?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "I expect them to be here any moment—"
 .byte NewLine
-.text "they'll descend upon the enemy's rear guard"
+.text "they'll descend upon the enemy's rear"
 .byte NewLine
-.text "like vultures to carrion."
+.text "guard like vultures to carrion."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Then now is the perfect time"
+.text "Then now is the perfect time to launch a"
 .byte NewLine
-.text "to launch a full-frontal assault."
+.text "full-frontal assault."
 .byte NewLine
 .text "Send word to the Silessian mercenaries."
 .byte WaitForA
@@ -159,9 +156,9 @@ ch17Asaiassoldier
 .text "Oh, you're Bishop Saias!"
 .byte WaitForA
 .byte ScrollText
-.text "W-well, sir, we didn't expect the enemy"
+.text "W-well, sir, we didn't expect the enemy to"
 .byte NewLine
-.text "to attack with such...viciousness."
+.text "attack with such...viciousness."
 .byte NewLine
 .text "Colonel Nicolov has, uh... He's already..."
 .byte WaitForA
@@ -173,41 +170,39 @@ ch17Asaiassoldier
 
 .byte Right_slot
 .byte ScrollText
-.text "B-but you're here now!"
+.text "B-but you're here now! Seeing the Bishop of"
 .byte NewLine
-.text "Seeing the Bishop of Flame in the flesh"
-.byte NewLine
-.text "is sure to raise morale!"
+.text "Flame in the flesh is sure to raise morale!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Have Commander Reinhardt"
+.text "Have Commander Reinhardt and the Gelbritter"
 .byte NewLine
-.text "and the Gelbenritter arrived yet?"
+.text "arrived yet?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "They should be here any minute!"
 .byte NewLine
-.text "Oh, they'll slice through the enemy's"
+.text "Oh, they'll slice through the enemy's rear guard"
 .byte NewLine
-.text "rear guard like butter, so they will!"
+.text "like butter, so they will!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Then now is the perfect time"
+.text "Then now is the perfect time to launch a"
 .byte NewLine
-.text "to launch a full-frontal assault."
+.text "full-frontal assault."
 .byte NewLine
 .text "Send word to the Silessian mercenaries."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Of course, sir!"
+.text "At once, sir!"
 .byte WaitForA
 
 .byte EndText
@@ -230,9 +225,9 @@ ch17Asaiasleif
 .byte Right_slot
 .text "Njörun save us..."
 .byte NewLine
-.text "Prince Leif, we cannot hesitate for even"
+.text "Prince Leif, we cannot hesitate for even a"
 .byte NewLine
-.text "a moment—we must order a retreat at once!"
+.text "moment—we must order a retreat at once!"
 .byte WaitForA
 
 .byte Left_slot
@@ -244,9 +239,9 @@ ch17Asaiasleif
 
 .byte Right_slot
 .byte ScrollText
-.text "Saias, the Royal Bishop of House Velthomer"
+.text "Saias, the royal bishop of House Velthomer and"
 .byte NewLine
-.text "and a military genius, has taken the field."
+.text "a military genius, has taken the field."
 .byte WaitForA
 .byte ScrollText
 .text "As long as he commands the enemy,"
@@ -256,9 +251,9 @@ ch17Asaiasleif
 
 .byte Left_slot
 .byte ScrollText
-.text "There's been such a person in the empire"
+.text "There's been such a person in the empire all"
 .byte NewLine
-.text "all along?"
+.text "along?"
 .byte WaitForA
 
 .byte Right_slot
@@ -267,16 +262,16 @@ ch17Asaiasleif
 .word augustus_portrait
 .text "Ah... I'll give you the short version: he's the"
 .byte NewLine
-.text "son of the late General Aida, who was a close"
+.text "son of the late General Aida, the most trusted"
 .byte NewLine
-.text "friend and confidante of Emperor Arvis."
+.text "advisor and confidante of Emperor Arvis."
 .byte WaitForA
 .byte ScrollText
-.text "After she passed away—under most puzzling"
+.text "After she passed away—under most perplexing"
 .byte NewLine
-.text "circumstances, I might add—he was raised"
+.text "circumstances, I might add—he was raised in a"
 .byte NewLine
-.text "in a Bragian monastery."
+.text "Bragi monastery."
 .byte WaitForA
 
 .byte Left_slot
@@ -316,23 +311,27 @@ ch17Asaiasishtar
 
 .byte Right_slot
 .byte NewLine
-.text "And Commander Reinhardt, too?"
+.text "And Commander Reinhardt too?"
+.byte WaitForA
 
 .byte Left_slot
+.text "My lord."
+.byte WaitForA
+.byte ScrollText
 .word LoadPortrait
 .word ishtar_portrait
 
 .byte Right_slot
-.byte NewLine
+.byte ScrollText
 .text "Whatever is the matter? You look panicked!"
 .byte WaitForA
 
 .byte Left_slot
 .text "It's Lord Julius... He's fallen terribly ill!"
 .byte NewLine
-.text "He's running a high fever,"
+.text "He's running a high fever, and seems to be in"
 .byte NewLine
-.text "and seems to be in great pain..."
+.text "great pain..."
 .byte WaitForA
 
 .byte Right_slot
@@ -342,23 +341,21 @@ ch17Asaiasishtar
 .text "but his health has been declining as of late..."
 .byte WaitForA
 .byte ScrollText
-.text "What of the Loptrian bishops?"
+.text "What of the Loptr bishops?"
 .byte NewLine
 .text "Can they do anything?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I won't allow it!"
-.byte NewLine
-.text "As long as I draw breath,"
+.text "I'll never allow it! As long as I draw breath,"
 .byte NewLine
 .text "they'll not come near him!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Even Archbishop Manfroy?!"
+.text "Not even Archbishop Manfroy?!"
 .byte NewLine
 .text "Why?"
 .byte WaitForA
@@ -389,9 +386,9 @@ ch17Asaiasishtar
 
 .byte Right_slot
 .byte ScrollText
-.text "Very well..."
+.text "I see..."
 .byte NewLine
-.text "Let us be off, Princess Ishtar!"
+.text "In that case, let us be off, Princess Ishtar."
 .byte WaitForA
 
 .byte EndText
@@ -409,15 +406,15 @@ ch17Amishakarin
 .text "Captain Misha?!"
 .byte WaitForA
 .byte ScrollText
-.text "Hey, last I checked, Silesse wasn't"
+.text "Hey, last I checked, Silesse had nothing to do"
 .byte NewLine
-.text "all buddy-buddy with the empire!"
+.text "with the empire!"
 .byte NewLine
 .text "Why are you on their side?!"
 .byte WaitForA
 
 .byte Right_slot
-.text "I have something to protect."
+.text "I have something I must protect."
 .byte NewLine
 .text "Simple as that."
 .byte WaitForA
@@ -430,8 +427,9 @@ ch17Amishakarin
 .byte Right_slot
 .byte ScrollText
 .text "None of your damn business, that's what."
-.byte NewLine
-.text "Off with you, now!"
+.byte WaitForA
+.byte ScrollText
+.text "Away with you, now!"
 .byte NewLine
 .text "This battle is just getting started!"
 .byte WaitForA
@@ -444,9 +442,9 @@ ch17Amagicringhouse
 .byte Right_slot
 .word LoadPortrait
 .word youngman2_portrait
-.text "A-are you trying to attack Castle Leonster"
+.text "A-are you trying to attack Castle Leonster with"
 .byte NewLine
-.text "with that kind of gear?"
+.text "that kind of gear?"
 .byte NewLine
 .text "Do you really think you can do it?"
 .byte WaitForA
@@ -464,11 +462,11 @@ ch17Apurewaterhouse
 .byte Right_slot
 .word LoadPortrait
 .word beardedman_portrait
-.text "Castle Leonster has lots of those Loptrian"
+.text "Castle Leonster has a lotta those Loptr lunatics"
 .byte NewLine
-.text "lunatics inside, but this pure water oughta"
+.text "inside, but this pure water oughta ruin their day."
 .byte NewLine
-.text "ruin their day. Take it, with my thanks!"
+.text "Take it, with my thanks!"
 .byte WaitForA
 
 .byte EndText
@@ -479,16 +477,16 @@ ch17Arescuehouse
 .byte Right_slot
 .word LoadPortrait
 .word youngman_portrait
-.text "Castle Leonster makes for a nice, isolated"
+.text "Castle Leonster has quite the large interior."
 .byte NewLine
-.text "stronghold... It's plenty spacious, and"
+.text "I say this 'cause if you guys get all scattered,"
 .byte NewLine
-.text "the soldiers are scattered about everywhere."
+.text "that could be a huge problem."
 .byte WaitForA
 .byte ScrollText
-.text "...I'd be worried. But mayhap this rescue staff"
+.text "But mayhap this rescue staff can help your"
 .byte NewLine
-.text "can help your chances."
+.text "chances."
 .byte WaitForA
 
 .byte EndText
@@ -499,9 +497,9 @@ ch17Awarphouse
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "Finally, we can break free of the empire's"
+.text "Finally, we can break free of the empire's rule!"
 .byte NewLine
-.text "rule! It's what I've always dreamed of..."
+.text "It's what I've always dreamed of..."
 .byte NewLine
 .text "Gods be with you!"
 .byte WaitForA
@@ -532,30 +530,32 @@ ch17Asarah
 .byte ScrollText
 .text "......"
 .byte WaitForA
-.byte ScrollText
+
+.byte Left_slot
+.byte $03
+.word ClearPortrait
+
+.byte Right_slot
 .word ClearPortrait
 
 .byte Left_slot
-.byte ScrollText
-.word ClearPortrait
 .word RetractBox
 
 .byte Right_slot
+.word RetractBox
 .word LoadPortrait
 .word jeanne_portrait
-.byte ScrollText
+.byte $03
 .text "Oh, are you with the Liberation Army?"
 .byte NewLine
-.text "Did this young woman say something to you?"
+.text "Did that young woman say something to you?"
 .byte NewLine
 .text "Please, don't put too much stock into it."
 .byte WaitForA
 .byte ScrollText
-.text "The girl sometimes blurts out"
+.text "The girl sometimes mumbles the strangest"
 .byte NewLine
-.text "the strangest nonsense..."
-.byte NewLine
-.text "She can be most mysterious."
+.text "things... She can be most mysterious."
 .byte WaitForA
 
 .byte Left_slot
@@ -566,7 +566,9 @@ ch17Asarah
 
 .byte Right_slot
 .byte ScrollText
-.text "Go? Go where?"
+.text "Go?"
+.byte NewLine
+.text "Go where?"
 .byte WaitForA
 
 .byte Left_slot
@@ -582,7 +584,7 @@ ch17Asarah
 .byte WaitForA
 
 .byte Left_slot
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -591,9 +593,11 @@ ch17Asarah
 .text "Ah, Sara, wait!"
 .byte WaitForA
 
-.byte ScrollText
+.word ClearPortrait
+.word RetractBox
 .word LoadPortrait
 .word sarah_portrait
+.byte $03
 .text "Take me with you..."
 .byte NewLine
 .text "You have to take me with you..."
@@ -606,7 +610,7 @@ ch17Aopening1
 
 .byte Right_slot
 .word LoadPortrait
-.word nicolov_portrait
+.word NicolovPortrait
 
 .byte Left_slot
 .word LoadPortrait
@@ -619,25 +623,23 @@ ch17Aopening1
 .byte Right_slot
 .text "Ah..."
 .byte NewLine
-.text "Kempf's bravado got the better of him,"
+.text "Kempf's bravado got the better of him, and he"
 .byte NewLine
-.text "and he broke rank for his own personal glory."
+.text "broke rank for his own personal glory."
 .byte WaitForA
 .byte ScrollText
-.text "He ruined our chance to halt"
+.text "He ruined our chance to halt the rebels'"
 .byte NewLine
-.text "the rebels' advance..."
-.byte NewLine
-.text "You have my sincerest apologies!"
+.text "advance... You have my sincerest apologies!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Dammit, Kempf!"
 .byte NewLine
-.text "I give him a second chance"
+.text "I give him a second chance and this is how he"
 .byte NewLine
-.text "and this is how he repays me?!"
+.text "repays me?!"
 .byte WaitForA
 .byte ScrollText
 .text "I should've sent him back to Castle Friege,"
@@ -647,9 +649,7 @@ ch17Aopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "No, sir, it was me"
-.byte NewLine
-.text "that was too lenient with him..."
+.text "No, sir, it was me who was too lenient with him..."
 .byte WaitForA
 .byte ScrollText
 .text "But despite Kempf's failure, I'm not worried."
@@ -657,19 +657,19 @@ ch17Aopening1
 .byte ScrollText
 .text "I've stationed my squad of heavily-armored"
 .byte NewLine
-.text "knights in front of the castle. Bishop Moore"
+.text "knights in front of the castle. Bishop Moore and"
 .byte NewLine
-.text "and his team of mages are also present."
+.text "his team of mages are also present."
 .byte WaitForA
 .byte ScrollText
-.text "Next, we have Reinhardt and the Gelbenritter"
+.text "Next, we have Reinhardt and the Gelbritter"
 .byte NewLine
 .text "already approaching the enemy from behind."
 .byte WaitForA
 .byte ScrollText
-.text "And if that wasn't enough, we have"
+.text "And if that weren't enough, we have the"
 .byte NewLine
-.text "the Pegasus Corps of Silesse on stand-by,"
+.text "Pegasus Corps of Silesse on standby,"
 .byte NewLine
 .text "ready to assist us if things go south."
 .byte WaitForA
@@ -688,14 +688,14 @@ ch17Aopening1
 .byte ScrollText
 .text "Ah, one other thing."
 .byte NewLine
-.text "I forgot to mention it, but Bishop Saias"
+.text "I forgot to mention it, but Bishop Saias will be"
 .byte NewLine
-.text "will be gracing us with his presence."
+.text "gracing us with his presence."
 .byte WaitForA
 .byte ScrollText
-.text "He happened to be traveling nearby,"
+.text "He is attending to his own affairs, but he agreed"
 .byte NewLine
-.text "and graciously offered to lend us his power."
+.text "to lend us his power for a time."
 .byte WaitForA
 
 .byte Right_slot
@@ -709,26 +709,24 @@ ch17Aopening1
 .byte ScrollText
 .text "The one and only!"
 .byte NewLine
-.text "His missive said he'd be arriving"
-.byte NewLine
-.text "in a few hours."
+.text "His missive said he'd be arriving in a few hours."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! This just isn't the rebels' lucky day, is it?"
+.text "Ha! This just isn't the rebels' lucky day, is it?"
 .byte WaitForA
 .byte ScrollText
-.text "In light of this, I'll shore up our defenses"
+.text "In light of this, I'll shore up our defenses for"
 .byte NewLine
-.text "for the time being. Once the lord tactician"
+.text "the time being. Once the lord tactician arrives,"
 .byte NewLine
-.text "arrives, we'll launch our assault immediately."
+.text "we'll launch our assault immediately."
 .byte WaitForA
 .byte ScrollText
-.text "Marquess Gustav, I bid you remain"
+.text "Marquess Gustav, I bid you remain in the castle"
 .byte NewLine
-.text "in the castle and await word of our victory."
+.text "and await word of our victory."
 .byte WaitForA
 
 .byte Left_slot
@@ -749,7 +747,7 @@ ch17Aopening2
 
 .byte Left_slot
 .word LoadPortrait
-.word nicolov_portrait
+.word NicolovPortrait
 .text "Do you understand the plan, Captain Misha?"
 .byte WaitForA
 
@@ -785,23 +783,21 @@ ch17Aopening2
 
 .byte Left_slot
 .byte ScrollText
-.text "Ah. I take it that's why you became"
+.text "Ah. I take it that's why you became a mercenary"
 .byte NewLine
-.text "a mercenary fighting on behalf of the empire?"
+.text "fighting on behalf of the empire?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "This isn't about my mother."
+.text "It has nothing to do with my mother."
 .byte NewLine
-.text "Back home, we've got lots of starving"
+.text "Back home, we have lots of starving children."
 .byte NewLine
-.text "children. We're doing this for them."
+.text "We're doing this for them."
 .byte WaitForA
-.byte ScrollText
-.text "All we want is enough coin"
 .byte NewLine
-.text "to buy bread and milk..."
+.text "All we're after is coin to buy bread and milk..."
 .byte WaitForA
 
 .byte Left_slot
@@ -815,7 +811,7 @@ ch17Aopening2
 
 .byte Right_slot
 .byte ScrollText
-.text "...Then I'll be taking my leave."
+.text "...Then do excuse me."
 .byte WaitForA
 
 .byte EndText
@@ -830,9 +826,9 @@ ch17Aopening3
 .byte Left_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "I'll not lie to you, my prince:"
+.text "I'll not lie to you, my prince: the enemy's"
 .byte NewLine
-.text "the enemy's formation is nearly flawless."
+.text "formation is nearly flawless."
 .byte WaitForA
 
 .byte Right_slot
@@ -843,7 +839,7 @@ ch17Aopening3
 .byte ScrollText
 .text "The main problem is the band of Silessian"
 .byte NewLine
-.text "mercenaries positioned in the northwest."
+.text "mercenaries positioned directly north of us."
 .byte WaitForA
 .byte ScrollText
 .text "If we advance toward the castle,"
@@ -853,21 +849,18 @@ ch17Aopening3
 
 .byte Right_slot
 .byte ScrollText
-.text "Why not divide our forces"
+.text "Why not divide our forces and send a team to"
 .byte NewLine
-.text "and send a team to attack them first?"
+.text "attack them first?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "We don't have the men to spare."
-.byte WaitForA
-.byte ScrollText
-.text "Half our troops were left behind"
+.text "We don't have the men to spare. Half our troops"
 .byte NewLine
-.text "to defend against Reinhardt"
+.text "were left behind to defend against Reinhardt and"
 .byte NewLine
-.text "and his army striking from the rear."
+.text "his army striking from the rear."
 .byte WaitForA
 
 .byte Right_slot
@@ -902,16 +895,16 @@ ch17Aclosing
 .byte WaitForA
 
 .byte Right_slot
-.text "Then we've little choice but to eliminate them"
+.text "Then we've little choice but to eliminate them all"
 .byte NewLine
-.text "all at once, excessive though it may seem."
+.text "at once, excessive though it may seem."
 .byte WaitForA
 .byte ScrollText
-.text "The man inside, Marquess Gustav,"
+.text "The man inside, Marquess Gustav, is King Bloom's"
 .byte NewLine
-.text "is King Bloom's right-hand man—"
+.text "right-hand man—and he's been ruling Leonster"
 .byte NewLine
-.text "and he's been ruling Leonster with an iron fist."
+.text "with an iron fist."
 .byte WaitForA
 .byte ScrollText
 .text "How many people have died at his whim...?"
@@ -921,14 +914,14 @@ ch17Aclosing
 .byte ScrollText
 .word LoadPortrait
 .word augustus_portrait
-.text "Kill Gustav and hang his head from"
+.text "Kill Gustav and hang his head from the castle"
 .byte NewLine
-.text "the castle gates. Don't waste your mercy"
+.text "gates. Do not waste your mercy on him—"
 .byte NewLine
-.text "on him—you must fulfill your duty as ruler!"
+.text "you must fulfill your duty as ruler!"
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch17Amishajoin
@@ -937,9 +930,9 @@ ch17Amishajoin
 .byte ScrollText
 .word LoadPortrait
 .word dorius_portrait
-.text "Prince Leif, we've captured the commander"
+.text "Prince Leif, we've captured the commander of"
 .byte NewLine
-.text "of the Silessians. What shall we do with her?"
+.text "the Silessians. What shall we do with her?"
 .byte WaitForA
 
 .byte Right_slot
@@ -956,9 +949,9 @@ ch17Amishajoin
 
 .byte Right_slot
 .byte ScrollText
-.text "Is it true you're the commander"
+.text "Is it true you're the commander of the Silessian"
 .byte NewLine
-.text "of the Silessian forces?"
+.text "forces?"
 .byte WaitForA
 
 .byte Left_slot
@@ -966,7 +959,7 @@ ch17Amishajoin
 .byte NewLine
 .text "I don't expect mercy from you."
 .byte NewLine
-.text "Just kill me and get it over with!"
+.text "Just kill me and be done with it!"
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -994,7 +987,7 @@ ch17Amishajoin
 .byte ScrollText
 .word LoadPortrait
 .word karin_portrait
-.text "Count Dryas, don't say something so stupid!"
+.text "Count Dryas, don't say things like that!"
 .byte WaitForA
 
 .byte Left_slot
@@ -1006,48 +999,44 @@ ch17Amishajoin
 
 .byte Right_slot
 .byte ScrollText
-.text "Captain Misha, you have something"
+.text "Captain Misha, you have something to protect,"
 .byte NewLine
-.text "to protect, don't you?"
-.byte NewLine
-.text "How will you do that if you die here?!"
+.text "don't you? How will you do that if you die here?!"
 .byte WaitForA
 .byte ScrollText
-.text "Those poor kids in Silesse are depending"
+.text "Those children in Silesse are depending on you!"
 .byte NewLine
-.text "on you! You haven't thought about them!"
+.text "You haven't thought about them!"
 .byte WaitForA
 
 .byte Left_slot
-.text "Ah!"
+.text "...!"
 .byte NewLine
-.text "...How do you know about that?"
+.text "Why do you know about that?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I asked one of your troops. I saw her lying"
+.text "I asked one of your squad members. I saw her"
 .byte NewLine
-.text "on the battlefield and tried to help..."
+.text "lying on the battlefield and tried to help..."
 .byte NewLine
 .text "That was when she told me."
 .byte WaitForA
 .byte ScrollText
-.text "I didn't know how many people were going"
+.text "I...I didn't know."
 .byte NewLine
-.text "hungry in the places where the empire is still"
+.text "I didn't know so many were starving in places"
 .byte NewLine
-.text "in charge..."
+.text "where the empire is still in charge..."
 .byte WaitForA
 .byte ScrollText
-.text "So many children, thin as a blade of grass..."
-.byte NewLine
-.text "Just wasting away..."
+.text "So many children just...dying because of it."
 .byte WaitForA
 .byte ScrollText
-.text "She told me she'd hired on with the empire"
+.text "She told me she'd hired on with the empire just"
 .byte NewLine
-.text "just to buy food."
+.text "to buy food."
 .byte WaitForA
 
 .byte Left_slot
@@ -1064,18 +1053,18 @@ ch17Amishajoin
 .text "It's almost funny, in a macabre way."
 .byte WaitForA
 .byte ScrollText
-.text "By helping the empire, you're sacrificing"
+.text "By helping the empire, you're sacrificing the"
 .byte NewLine
-.text "the children of another country to save"
+.text "children of another country to save the children"
 .byte NewLine
-.text "the children of your own country."
+.text "of your own country."
 .byte WaitForA
 .byte ScrollText
-.text "The empire is conducting child hunts"
+.text "The empire is conducting child hunts in Thracia—"
 .byte NewLine
-.text "in Thracia—and it won't be long"
+.text "and it won't be long until they do the same in"
 .byte NewLine
-.text "until they do the same in Silesse."
+.text "Silesse."
 .byte WaitForA
 .byte ScrollText
 .text "Who will protect Silesse's children then?"
@@ -1085,7 +1074,7 @@ ch17Amishajoin
 .byte ScrollText
 .text "Child hunts...?"
 .byte NewLine
-.text "What in blazes are you talking about?"
+.text "What are you talking about?"
 .byte WaitForA
 
 .byte Right_slot
@@ -1094,14 +1083,14 @@ ch17Amishajoin
 .word leif_portrait2
 .text "So you don't know..."
 .byte NewLine
-.text "Then I want you to live a little longer"
+.text "Then I want you to live a little longer and see"
 .byte NewLine
-.text "and see the truth for yourself."
+.text "the truth for yourself."
 .byte WaitForA
 .byte ScrollText
-.text "I sentence you to live—to bear witness"
+.text "I sentence you to live—to bear witness to our"
 .byte NewLine
-.text "to our pain and suffering!"
+.text "pain and suffering!"
 .byte WaitForA
 
 .byte Left_slot
@@ -1132,15 +1121,15 @@ ch17Awm1
 .text "Yet their fight was far"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0179 ;nicolov largo
+.word $01F2 ;nicolov largo
 .word $0816 ;y then x
-.text " from over: a battalion"
+.text " from over: a battalion of"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0327 ;misha
 .word $0013 ;y then x
 .byte NewLine
-.text "of imperial troops, "
+.text "imperial troops, "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0267 ;moore

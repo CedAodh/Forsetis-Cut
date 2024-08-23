@@ -141,17 +141,15 @@ ch14xopening1
 .byte Left_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "Escaping Tarrah may be difficult"
+.text "Escaping Tarrah may be difficult with all these"
 .byte NewLine
-.text "with all these civilians in tow..."
+.text "civilians in tow..."
 .byte WaitForA
 
 .byte Right_slot
-.text "Civilians?"
+.text "Civilians? You mean townsfolk from Tarrah are"
 .byte NewLine
-.text "You mean townsfolk from Tarrah"
-.byte NewLine
-.text "are following us?"
+.text "following us?"
 .byte WaitForA
 
 .byte Left_slot
@@ -161,11 +159,11 @@ ch14xopening1
 .text "I'm deeply sorry, Lord Leif..."
 .byte WaitForA
 .byte ScrollText
-.text "I tried to convince them"
+.text "I tried to convince them that accompanying us"
 .byte NewLine
-.text "that accompanying us was too dangerous,"
+.text "was too dangerous, but nothing I said could"
 .byte NewLine
-.text "but nothing I said could sway them."
+.text "sway them."
 .byte WaitForA
 
 .byte Right_slot
@@ -181,41 +179,37 @@ ch14xopening1
 .byte ScrollText
 .word LoadPortrait
 .word dorias_portrait
-.text "About 600, and they're following us"
+.text "A few hundred, and they're following us in"
 .byte NewLine
-.text "in disorganized groups."
+.text "disorganized groups."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "That many?"
+.text "That many? We can't possibly escort them all the"
 .byte NewLine
-.text "We can't possibly escort them"
-.byte NewLine
-.text "all the way to safety!"
+.text "way to safety!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I concur."
+.text "I concur. We're busy enough fighting for our own"
 .byte NewLine
-.text "We're busy enough fighting for our own lives"
-.byte NewLine
-.text "to spare any manpower to babysit them."
+.text "lives to spare any manpower to babysit them."
 .byte WaitForA
 .byte ScrollText
-.text "In honesty, ensuring their safe passage"
+.text "In all honesty, ensuring their safe passage out"
 .byte NewLine
-.text "out of just this valley may prove to be difficult."
+.text "of just this valley may prove to be difficult."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "But we can't turn a blind eye to them, either."
 .byte NewLine
-.text "At the very least, we have to defend them"
+.text "At the very least, we have to defend them until"
 .byte NewLine
-.text "until they can escape the valley."
+.text "they can escape the valley."
 .byte WaitForA
 .byte ScrollText
 .text "Instruct our forces to focus on protecting the"
@@ -242,17 +236,17 @@ ch14xopening2
 .byte Left_slot
 .word LoadPortrait
 .word codha_portrait
-.text "I take it the Pegasus Corps are prepared"
+.text "I take it the Pegasus Corps are prepared for"
 .byte NewLine
-.text "for battle, Captain Misha?"
+.text "battle, Captain Misha?"
 .byte WaitForA
 
 .byte Right_slot
-.text "You won't be disappointed. I've brought"
+.text "You won't be disappointed. I've brought half of"
 .byte NewLine
-.text "half of our whole mercenary company along—"
+.text "our whole mercenary company along—they'll be"
 .byte NewLine
-.text "they'll be ready to take to the sky shortly."
+.text "ready to take to the sky shortly."
 .byte WaitForA
 
 .byte Left_slot
@@ -261,53 +255,47 @@ ch14xopening2
 .byte NewLine
 .text "You may return to Leonster now—"
 .byte NewLine
-.text "I've no more use for you."
+.text "I've no further need of you."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "No. I'm not about to let you steal command"
+.text "No. I'm not about to let you steal command of my"
 .byte NewLine
-.text "of my squad right out from under me."
+.text "squad right out from under me."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Oh, come now, Captain."
+.text "You know, Captain, we are only here to wipe out"
 .byte NewLine
-.text "We're only here to mop up what's left"
-.byte NewLine
-.text "of the Liberation Army as they retreat."
+.text "the remnants as they turn tail and run."
 .byte WaitForA
 .byte ScrollText
-.text "Picking at a dead carcass is hardly a task"
+.text "Picking at a dead carcass is hardly a task suited"
 .byte NewLine
-.text "suited to an esteemed pegasus knight"
+.text "to an esteemed pegasus knight such as yourself,"
 .byte NewLine
-.text "such as yourself, wouldn't you agree?"
+.text "wouldn't you agree?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I said no."
-.byte NewLine
-.text "My squad is—"
+.text "I said no. My squad is—"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "You have me mistaken for a man who"
+.text "You have me mistaken for a man who repeats"
 .byte NewLine
-.text "repeats himself. This is an order, Captain."
+.text "himself. This is an order, Captain."
+.byte NewLine
+.text "Return to Leonster!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I..."
-.byte NewLine
-.text "All right, I get it."
-.byte NewLine
-.text "I'm going..."
+.text "...So be it, then."
 .byte WaitForA
 
 .byte EndText
@@ -319,18 +307,16 @@ ch14xclosing
 .word LoadPortrait
 .word dorias_portrait
 .text "It seems we've cheated death yet again."
-.byte NewLine
-.text "Our forces are all clear of the valley, sire."
 .byte WaitForA
 
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
+
+.byte Left_slot
 .text "Gods' breath, what a relief!"
 .byte NewLine
-.text "Now, what should be"
-.byte NewLine
-.text "our next course of action?"
+.text "Now, what should be our next course of action?"
 .byte WaitForA
 
 .byte Right_slot
@@ -344,9 +330,9 @@ ch14xclosing
 .byte ScrollText
 .text "Norden Way?"
 .byte NewLine
-.text "So you propose that we make our way"
+.text "So you propose that we make our way to"
 .byte NewLine
-.text "to Leonster along the coast?"
+.text "Leonster along the coast?"
 .byte WaitForA
 
 .byte Right_slot
@@ -362,11 +348,17 @@ ch14xclosing
 .byte NewLine
 .text "We should make haste, Prince Leif."
 .byte WaitForA
-.byte ScrollText
-.word ClearPortrait
 
 .byte Left_slot
 .byte ScrollText
+
+.byte Right_slot
+.byte ScrollText
+
+.byte Left_slot
+.word ClearPortrait
+
+.byte Right_slot
 .word ClearPortrait
 
 .word PauseDialogue
@@ -375,7 +367,6 @@ ch14xclosing
 .word PlayMusic
 .byte $4B
 
-.byte Right_slot
 .word LoadPortrait
 .word augustus_portrait
 
@@ -388,9 +379,9 @@ ch14xclosing
 .byte Right_slot
 .text "L-Lord Lewyn?!"
 .byte NewLine
-.text "How... How were you able to find me"
+.text "How... How were you able to find me so quickly,"
 .byte NewLine
-.text "so quickly, Your Highness?"
+.text "Your Highness?"
 .byte WaitForA
 
 .byte Left_slot
@@ -400,16 +391,16 @@ ch14xclosing
 .text "I know how you think."
 .byte WaitForA
 .byte ScrollText
-.text "When I heard Tarrah had fallen,"
+.text "When I heard Tarrah had fallen, I anticipated"
 .byte NewLine
-.text "I anticipated this would be the route you'd take"
+.text "this would be the route you'd take to escape the"
 .byte NewLine
-.text "to escape the city. It seems I was correct."
+.text "city. It seems I was correct."
 .byte WaitForA
 .byte ScrollText
-.text "And with their defeat,"
+.text "And with their defeat, Leif's army now faces a"
 .byte NewLine
-.text "Leif's army now faces a crisis of purpose..."
+.text "crisis of purpose..."
 .byte NewLine
 .text "You certainly have your work cut out for you."
 .byte WaitForA
@@ -418,21 +409,21 @@ ch14xclosing
 .byte ScrollText
 .text "It...seems I was not up to the task."
 .byte NewLine
-.text "I'm sorry for disappointing you, Your Highness."
+.text "Forgive me, please."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Oh, don't kid yourself. Tarrah's capitulation"
+.text "Oh, don't kid yourself. Tarrah's capitulation was"
 .byte NewLine
-.text "was inevitable—we both knew this."
+.text "inevitable—we both knew this."
 .byte NewLine
 .text "You've been doing a fine job."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "If you say so, Your Highness..."
+.text "Very well. As you say, Your Highness."
 .byte WaitForA
 
 .byte Left_slot
@@ -444,11 +435,11 @@ ch14xclosing
 .text "the Orgahil region before returning to Isaach."
 .byte WaitForA
 .byte ScrollText
-.text "It will likely be another year before"
+.text "It will likely be another year before we're able to"
 .byte NewLine
-.text "we're able to meet like this again. Until then,"
+.text "meet like this again. Until then, I leave things in"
 .byte NewLine
-.text "I leave things in your capable hands, August."
+.text "your capable hands, August."
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait

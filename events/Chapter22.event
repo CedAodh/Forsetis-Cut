@@ -973,6 +973,8 @@ eventChapter22Events ; 8C/F611
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
+
+		macroSetAllCharacterTurnStatus (TurnStatusUnknown1 | TurnStatusHidden)
 		
 		LOAD1 eventChapter22Data._ReinhardtGroup
 		WAIT_MOVE

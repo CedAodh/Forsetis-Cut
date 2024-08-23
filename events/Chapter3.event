@@ -406,9 +406,6 @@ eventChapter3Events ; 8C/E435
 
 		macroChapterTitlePopup ch3titlename
 
-		SCROLL_CAMERA_SPEED [8, 7], 4
-		YIELD
-
 		MOVE_UNIT Raydrik, [0, 0], [12, 12], 1, None
 		YIELD_UNK
 

@@ -14,11 +14,11 @@ ch11xoltophflees
 
 .byte Right_slot
 .byte ScrollText
-.text "I must be off. I'll report how dire"
+.text "I must be off. I'll report how dire our situation"
 .byte NewLine
-.text "our situation is to the general—or to whatever"
+.text "is to the general—or to whatever commanding"
 .byte NewLine
-.text "commanding officer still remains here."
+.text "officer still remains here."
 .byte WaitForA
 
 .byte Left_slot
@@ -50,20 +50,16 @@ ch11xfredarrives
 .word LoadPortrait
 .word fred_portrait
 .text "Lady Olwen! Are you down here?!"
-.byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-
-.byte Left_slot
-.word LoadPortrait
-.word fred_portrait
+.byte NewLine
 .text "Please, say something!"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .word LoadPortrait
 .word olwen_portrait
-.text "Fred?! You came back for me..."
+.text "Fred?!"
+.byte NewLine
+.text "He came back for me..."
 .byte WaitForA
 .byte ScrollText
 .text "I'm over here!"
@@ -88,9 +84,9 @@ ch11xleifolwen
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait
-.text "I can see you protected those children"
+.text "I can see you protected those children during"
 .byte NewLine
-.text "during the battle... May I ask who you are?"
+.text "the battle... May I ask who you are?"
 .byte WaitForA
 
 .byte Right_slot
@@ -111,9 +107,9 @@ ch11xleifolwen
 .text "are you not?"
 .byte WaitForA
 .byte ScrollText
-.text "I... I am Olwen, mage knight"
+.text "I... I am Olwen, mage knight of House Friege,"
 .byte NewLine
-.text "of House Friege, at your service."
+.text "at your service."
 .byte WaitForA
 
 .byte Left_slot
@@ -130,23 +126,23 @@ ch11xleifolwen
 .text "It's quite the long story..."
 .byte WaitForA
 .byte ScrollText
-.text "I've...come to learn a number"
+.text "I've...come to learn a number of terrible truths"
 .byte NewLine
-.text "of terrible truths in a very short time,"
+.text "in a very short time, and my mind is in"
 .byte NewLine
-.text "and my mind is in disarray..."
+.text "disarray..."
 .byte WaitForA
 .byte ScrollText
-.text "Prince Leif, if you can forgive"
+.text "Prince Leif, if you can forgive my choice of"
 .byte NewLine
-.text "my choice of allegiance, I would ask"
+.text "allegiance, I would ask to stay in your company"
 .byte NewLine
-.text "to stay in your company for a time."
+.text "for a time."
 .byte WaitForA
 .byte ScrollText
-.text "Just while I come to terms"
+.text "Just while I come to terms with what I've"
 .byte NewLine
-.text "with what I've learned, I assure you."
+.text "learned, I assure you."
 .byte WaitForA
 
 .byte Left_slot
@@ -193,11 +189,11 @@ ch11xolwenfred
 
 .byte Left_slot
 .byte ScrollText
-.text "Think nothing of it, milady. I'm just glad"
+.text "Think nothing of it, milady."
 .byte NewLine
-.text "you're safe. Now, we must move quickly"
+.text "I'm just glad you're safe."
 .byte NewLine
-.text "if we're to escape..."
+.text "Now, we must move quickly if we're to escape..."
 .byte WaitForA
 .byte ScrollText
 .text "Hm? What's come over you?"
@@ -207,9 +203,7 @@ ch11xolwenfred
 
 .byte Right_slot
 .byte ScrollText
-.text "Fred..."
-.byte NewLine
-.text "What have we really been fighting for?"
+.text "Fred... What have we really been fighting for?"
 .byte WaitForA
 
 .byte Left_slot
@@ -221,14 +215,14 @@ ch11xolwenfred
 .byte ScrollText
 .text "What exactly have I accomplished?"
 .byte NewLine
-.text "How many children have been stolen"
+.text "How many children have been stolen from their"
 .byte NewLine
-.text "from their families under my watch?"
+.text "families under my watch?"
 .byte WaitForA
 .byte ScrollText
-.text "How many caravans of children"
+.text "How many caravans of children have I helped"
 .byte NewLine
-.text "have I helped send to Belhalla?"
+.text "send to Belhalla?"
 .byte WaitForA
 .byte ScrollText
 .text "How many... How many sacrifices to Loptous"
@@ -248,11 +242,11 @@ ch11xolwenfred
 .text "about what I've done."
 .byte WaitForA
 .byte ScrollText
-.text "I believed that as long as I followed"
+.text "I believed that as long as I followed my brother,"
 .byte NewLine
-.text "my brother, there could be no questioning"
+.text "there could be no questioning the righteousness"
 .byte NewLine
-.text "the righteousness of my path."
+.text "of my path."
 .byte WaitForA
 .byte ScrollText
 .text "But now... Now I'm as blind as a newborn!"
@@ -267,16 +261,16 @@ ch11xolwenfred
 
 .byte Left_slot
 .byte ScrollText
-.text "...Lady Olwen, I can tell you only one thing"
+.text "...Lady Olwen, I can tell you only one thing for"
 .byte NewLine
-.text "for certain: your place isn't with the empire"
+.text "certain: your place isn't with the empire and its"
 .byte NewLine
-.text "and its army. Not anymore."
+.text "army. Not anymore."
 .byte WaitForA
 .byte ScrollText
-.text "But perhaps there could be a place for us"
+.text "But perhaps there could be a place for us in"
 .byte NewLine
-.text "in Prince Leif's army."
+.text "Prince Leif's army."
 .byte WaitForA
 
 .byte Right_slot
@@ -288,16 +282,16 @@ ch11xolwenfred
 
 .byte Left_slot
 .byte ScrollText
-.text "...I met Prince Leif, albeit briefly. Just from"
+.text "...I met Prince Leif, albeit briefly."
 .byte NewLine
-.text "what little I saw, his values are far more in line"
+.text "Just from what little I saw, his values are far"
 .byte NewLine
-.text "with ours than the empire's are."
+.text "more in line with ours than the empire's are."
 .byte WaitForA
 .byte ScrollText
-.text "Whatever it is you've lost sight of,"
+.text "Whatever it is you've lost sight of, Lady Olwen,"
 .byte NewLine
-.text "Lady Olwen, we can find it again in his army!"
+.text "we can find it again in his army!"
 .byte WaitForA
 
 .byte Right_slot
@@ -319,63 +313,63 @@ ch11xopening1
 .byte Left_slot
 .word LoadPortrait
 .word kempf_portrait
-.text "Bishop Ortov, listen closely:"
+.text "Bishop Ortov, listen closely: these attackers are"
 .byte NewLine
-.text "these attackers are none other than"
+.text "none other than the motley survivors of"
 .byte NewLine
-.text "the motley survivors of House Leonster."
+.text "House Leonster."
 .byte WaitForA
 .byte ScrollText
 .text "They seem to be led by Leif, the rebel prince"
 .byte NewLine
-.text "who caused a stir when he escaped"
+.text "who caused a stir when he escaped from the"
 .byte NewLine
-.text "from the dungeons of Castle Munster."
+.text "dungeons of Castle Munster."
 .byte WaitForA
 .byte ScrollText
-.text "This has escalated beyond a mere"
+.text "This has escalated beyond a mere border"
 .byte NewLine
-.text "border skirmish. I must ride out at once"
+.text "skirmish. I must ride out at once and alert the"
 .byte NewLine
-.text "and alert the imperial army's high command."
+.text "imperial army's high command."
 .byte WaitForA
 .byte ScrollText
-.text "Not to imply that this relieves you"
+.text "Not to imply that this relieves you of your"
 .byte NewLine
-.text "of your duties, of course. I still have orders"
+.text "duties, of course. I still have orders for you"
 .byte NewLine
-.text "for you and your men."
+.text "and your men."
 .byte WaitForA
 .byte ScrollText
-.text "Your platoon is to barricade itself inside"
+.text "Your platoon is to barricade itself inside this"
 .byte NewLine
-.text "this wing of the fortress, and stall the rebels"
+.text "wing of the fortress, and stall the rebels for as"
 .byte NewLine
-.text "for as long as possible. Buy me time."
+.text "long as possible. Buy me time."
 .byte WaitForA
 
 .byte Right_slot
-.text "B-but General, the enemy has already"
+.text "B-but, General, the enemy has already breached"
 .byte NewLine
-.text "breached the fort's interior! My men and I"
+.text "the fort's interior! My men and I cannot possibly"
 .byte NewLine
-.text "cannot possibly withstand a prolonged siege!"
+.text "withstand a prolonged siege!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Nonsense! You still have one final"
+.text "Nonsense! You still have one final means of"
 .byte NewLine
-.text "means of defense in the southern corridor."
+.text "defense in the southern corridor."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "...Are you implying we are to huddle"
+.text "...Are you implying we are to huddle behind the"
 .byte NewLine
-.text "behind the gaps in the corridor's walls"
+.text "gaps in the corridor's walls and take potshots at"
 .byte NewLine
-.text "and take potshots at the invaders?!"
+.text "the invaders?!"
 .byte WaitForA
 .byte ScrollText
 .text "Y-you're asking us to die...!"
@@ -385,23 +379,23 @@ ch11xopening1
 
 .byte Left_slot
 .byte ScrollText
-.text "No, I'm ordering you to kill the invaders"
+.text "No, I'm ordering you to kill the invaders before"
 .byte NewLine
-.text "before they kill you."
-.byte NewLine
-.text "There's a tremendous difference."
+.text "they kill you. There's a tremendous difference."
 .byte WaitForA
 .byte ScrollText
-.text "Mind you, no part of my orders"
+.text "Mind you, no part of my orders requires you to"
 .byte NewLine
-.text "require you to die. In fact, if you die,"
+.text "die. In fact, if you die, you have only yourself"
 .byte NewLine
-.text "you have only yourself to blame."
+.text "to blame."
 .byte WaitForA
 .byte ScrollText
 .text "Oh, and I'm not “asking” anything."
 .byte NewLine
-.text "You used that word, not I. These are orders."
+.text "You used that word, not I."
+.byte NewLine
+.text "These are orders."
 .byte WaitForA
 
 .byte Right_slot
@@ -418,14 +412,14 @@ ch11xopening1
 .byte NewLine
 .text "Take your own advice and follow my orders—"
 .byte NewLine
-.text "otherwise, you'll be keeping Olwen company"
+.text "otherwise, you'll be keeping Olwen company in the"
 .byte NewLine
-.text "in the dungeon."
+.text "dungeon."
 .byte WaitForA
 .byte ScrollText
-.text "Ah, speaking of which, you mustn't forget"
+.text "Ah, speaking of which, you mustn't forget to"
 .byte NewLine
-.text "to dispose of the prisoners. They'll only cause"
+.text "dispose of the prisoners. They'll only cause"
 .byte NewLine
 .text "trouble if they manage to survive all this."
 .byte WaitForA
@@ -464,9 +458,9 @@ ch11xopening2
 .text "Y-you're an imperial soldier...!"
 .byte WaitForA
 .byte NewLine
-.text "You witch! All you do is go around"
+.text "You witch! All you do is go around spreadin'"
 .byte NewLine
-.text "spreadin' misery to good people!"
+.text "misery to good people!"
 .byte NewLine
 .text "An' now you're here to kill us!"
 .byte WaitForA
@@ -502,11 +496,11 @@ ch11xopening2
 .text "They're gonna sacrifice us to Loptous!"
 .byte WaitForA
 .byte ScrollText
-.text "They're gonna send us to Belhalla an' kill"
+.text "They're gonna send us to Belhalla an' kill every"
 .byte NewLine
-.text "every last one of us... I know 'cause my sister"
+.text "last one of us... I know 'cause my sister got"
 .byte NewLine
-.text "got taken there an' she never came back!"
+.text "taken there an' she never came back!"
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -523,16 +517,14 @@ ch11xopening2
 .text "I jus' wanna see Mama and Papa again...!"
 .byte WaitForA
 
-.byte ScrollText
-.word RetractBox
+.byte $03
 .word ClearPortrait
+.word RetractBox
 
 .byte Right_slot
-.text "It can't be..."
+.text "It can't be... Has the empire really been"
 .byte NewLine
-.text "Has the empire really been conducting"
-.byte NewLine
-.text "child hunts?"
+.text "conducting child hunts?"
 .byte WaitForA
 .byte ScrollText
 .text "I'd heard rumors, but..."
@@ -542,16 +534,9 @@ ch11xopening2
 .text "I never even considered that it could be true..."
 .byte WaitForA
 .byte ScrollText
-.text "For the empire to be doing"
+.text "For the empire—House Friege!—to be doing"
 .byte NewLine
 .text "something so heinous... This is inexcusable!"
-.byte WaitForA
-.byte ScrollText
-.text "I believed in the empire,"
-.byte NewLine
-.text "I trusted in House Friege..."
-.byte NewLine
-.text "and this is what they've been doing all along?!"
 .byte WaitForA
 
 .byte Left_slot
@@ -571,9 +556,9 @@ ch11xopening2
 .text "They won't lay a finger on you ever again."
 .byte WaitForA
 .byte ScrollText
-.text "On my honor, I'll protect each and every one"
+.text "On my honor, I'll protect each and every one of"
 .byte NewLine
-.text "of you! Even if it costs me my life...!"
+.text "you! Even if it costs me my life...!"
 .byte WaitForA
 
 .byte EndText
@@ -581,22 +566,22 @@ ch11xopening2
 
 ch11xclosing1
 
-.byte Left_slot
+.byte Right_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "Yet more children caged... It's easy to see"
+.text "Yet more children caged... It's easy to see why"
 .byte NewLine
-.text "why the people of Tarrah rebelled."
+.text "the people of Tarrah rebelled."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .word LoadPortrait
 .word dorias_portrait
 .text "Indeed. But that makes the empire all the more"
 .byte NewLine
-.text "desperate to make an example of Tarrah"
+.text "desperate to make an example of Tarrah and"
 .byte NewLine
-.text "and stamp out their uprising."
+.text "stamp out their uprising."
 .byte WaitForA
 .byte ScrollText
 .text "Supposing they allowed Tarrah to defy them,"
@@ -604,76 +589,71 @@ ch11xclosing1
 .text "countless cities would follow suit."
 .byte WaitForA
 .byte ScrollText
-.text "It's for this very reason that the empire"
+.text "It's for this very reason that the empire has"
 .byte NewLine
-.text "has summoned troops from across Jugdral"
+.text "summoned troops from across Jugdral just to"
 .byte NewLine
-.text "just to attack one city: "
-.byte WaitForA
-.text "they move to crush"
-.byte NewLine
-.text "both Tarrah and its hopes all at once."
+.text "attack one city:"
 .byte WaitForA
 .byte ScrollText
-.text "I've even heard tell that the Gelbenritter"
+.text "they move to crush both Tarrah and its hopes"
 .byte NewLine
-.text "have been recalled from Belhalla"
-.byte NewLine
-.text "to join in the assault."
+.text "all at once."
 .byte WaitForA
-
-.byte Left_slot
 .byte ScrollText
-.text "The Gelbenritter... That's House Friege's"
+.text "I've even heard tell that the Gelbritter have"
 .byte NewLine
-.text "elite battalion of knights, correct?"
+.text "been recalled from Belhalla to join in the assault."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Indeed, but they are no mere knights."
-.byte WaitForA
+.text "The Gelbritter... They're House Friege's elite"
 .byte NewLine
-.text "They're mage knights, each of them"
-.byte NewLine
-.text "handpicked for the job, and each of them"
-.byte NewLine
-.text "a noble from House Friege's inner circle."
-.byte WaitForA
-.byte ScrollText
-.text "They're one of the strongest, if not"
-.byte NewLine
-.text "THE strongest, battalion of knights"
-.byte NewLine
-.text "on the continent."
-.byte WaitForA
-.byte ScrollText
-.text "To make matters worse, they're led"
-.byte NewLine
-.text "by none other than Princess Ishtar—the woman"
-.byte NewLine
-.text "widely feared as the Goddess of Thunder."
-.byte WaitForA
-.byte ScrollText
-.text "And her adjutant, Sir Reinhardt,"
-.byte NewLine
-.text "is a damned fine warrior in his own right."
-.byte WaitForA
-.byte ScrollText
-.text "Some even believe him to be"
-.byte NewLine
-.text "the reincarnation of the crusader Thrud."
+.text "battalion of knights, correct?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
+.text "Indeed, but they are no mere knights."
+.byte WaitForA
+.byte NewLine
+.text "They're mage knights, each of them handpicked"
+.byte NewLine
+.text "for the job, and each of them a noble from"
+.byte NewLine
+.text "House Friege's inner circle."
+.byte WaitForA
+.byte ScrollText
+.text "They're one of the strongest, if not THE"
+.byte NewLine
+.text "strongest, battalion of knights on the continent."
+.byte WaitForA
+.byte ScrollText
+.text "To make matters worse, they're led by none"
+.byte NewLine
+.text "other than Princess Ishtar—the woman widely"
+.byte NewLine
+.text "feared as the Goddess of Thunder."
+.byte WaitForA
+.byte ScrollText
+.text "And her adjutant, Sir Reinhardt, is a damned"
+.byte NewLine
+.text "fine warrior in his own right."
+.byte WaitForA
+.byte ScrollText
+.text "Some even believe him to be the reincarnation of"
+.byte NewLine
+.text "the crusader Thrud."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
 .word LoadPortrait
 .word augustus_portrait
-.text "A man who readily lends his hand"
+.text "A man who readily lends his hand to child hunting"
 .byte NewLine
-.text "to child hunting is what you call"
-.byte NewLine
-.text "a “damned fine warrior”?"
+.text "is what you call a “damned fine warrior”?"
 .byte WaitForA
 .byte ScrollText
 .text "How typical... Knights are so hopeless."
@@ -681,7 +661,7 @@ ch11xclosing1
 .text "You've lost sight of reality!"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "August! You insult me, speaking so brashly!"
 .byte NewLine
@@ -690,7 +670,7 @@ ch11xclosing1
 .text "Please, do tell!"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Need I spell it out?"
 .byte NewLine
@@ -699,18 +679,16 @@ ch11xclosing1
 .text "Ishtar is the betrothed of Crown Prince Julius."
 .byte WaitForA
 .byte ScrollText
-.text "Julius—the very same man the people call"
+.text "Julius—the very same man the people call the"
 .byte NewLine
-.text "the “Scion of Darkness,” need I remind you—"
+.text "“Scion of Darkness,” need I remind you—"
 .byte NewLine
 .text "is the vessel of the dark god Loptous!"
 .byte WaitForA
 .byte ScrollText
-.text "Ultimately, anyone who serves Julius"
+.text "Ultimately, anyone who serves Julius in any way"
 .byte NewLine
-.text "in any way is ushering the world"
-.byte NewLine
-.text "closer to destruction!"
+.text "is ushering the world closer to destruction!"
 .byte WaitForA
 
 .byte EndText
@@ -718,7 +696,7 @@ ch11xclosing1
 
 ch11xclosing2
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word olwen_portrait
@@ -729,12 +707,12 @@ ch11xclosing2
 .text "is no servant of Loptous!"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "...And who might you be?"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Olwen, sister of Sir Reinhardt."
 .byte WaitForA
@@ -752,7 +730,7 @@ ch11xclosing2
 .word LoadPortrait
 .word olwen_portrait
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "...I see. If that's the case, Olwen, take a good,"
 .byte NewLine

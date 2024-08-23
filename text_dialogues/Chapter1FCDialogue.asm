@@ -18,7 +18,7 @@ leifdagdar
 	.byte ScrollText
 	.text "...“Prince”?"
 	.byte NewLine
-	.text "Does...that mean...?"
+	.text "So... So then..."
 	.byte WaitForA
 
 	.byte Right_Slot

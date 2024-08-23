@@ -249,7 +249,7 @@ ch4lithisturn1
 .text "in all them wanted posters."
 .byte WaitForA
 
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -289,16 +289,16 @@ ch4lithisturn1
 .text "whaddaya think they'll do?"
 .byte WaitForA
 .byte ScrollText
-.text "Not waltz up and ask nice for the empire"
+.text "Not waltz up and ask nice for the empire to"
 .byte NewLine
-.text "to let me go, that's for sure. In fact, I'll bet"
+.text "let me go, that's for sure. In fact, I'll bet"
 .byte NewLine
 .text "my boys are scopin' this place out right now."
 .byte WaitForA
 .byte ScrollText
-.text "So since I'll be sayin' goodbye to the rest of you"
+.text "So since I'll be sayin' goodbye to the rest of"
 .byte NewLine
-.text "before long, let's make nice for now, eh?"
+.text "you before long, let's make nice for now, eh?"
 .byte WaitForA
 
 .byte Left_slot
@@ -330,7 +330,7 @@ ch4lithisturn1
 .word bandit_portrait
 .text "Lifis? Er, sir?"
 .byte NewLine
-.text "If'n all that's true, let me come along, too!"
+.text "If'n all that's true, let me come along too!"
 .byte WaitForA
 .byte ScrollText
 
@@ -339,7 +339,7 @@ ch4lithisturn1
 .text "Me three!"
 .byte WaitForA
 
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -404,9 +404,9 @@ ch4leifturn2
 
 .byte Right_slot
 .byte ScrollText
-.text "Wait just a minute—"
+.text "Wait just a minute—you were"
 .byte NewLine
-.text "you were the one who started it!"
+.text "the one who started it!"
 .byte WaitForA
 
 .byte Left_slot
@@ -418,16 +418,16 @@ ch4leifturn2
 .byte ScrollText
 .text "This is on you, not me!"
 .byte NewLine
-.text "So what are you gonna do about it?!"
+.text "Now what am I doing to do..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm gonna take a nap, that's what. Hey,"
+.text "Well, I'M just gonna nap it off."
 .byte NewLine
-.text "you gotta learn to take the good with the bad,"
+.text "Gotta take the good with the bad, you know?"
 .byte NewLine
-.text "you know? Just wake me when it's mealtime."
+.text "Just wake me when it's mealtime, if you would."
 .byte WaitForA
 
 .byte ScrollText
@@ -471,16 +471,16 @@ ch4leifturn2
 .text "Our prince up and left the country, that's why."
 .byte WaitForA
 .byte ScrollText
-.text "The queen passed away, and the princess"
+.text "The queen passed away, and the princess is"
 .byte NewLine
-.text "is too young to take the throne,"
+.text "too young to take the throne, so people"
 .byte NewLine
-.text "so people don't know who to turn to."
+.text "don't know who to turn to."
 .byte WaitForA
 .byte ScrollText
-.text "I came here to look for"
+.text "I came here to look for our"
 .byte NewLine
-.text "our little runaway prince."
+.text "little runaway prince."
 .byte WaitForA
 
 .byte Right_slot
@@ -504,7 +504,7 @@ ch4leifturn2
 .text "around the royal family."
 .byte WaitForA
 .byte ScrollText
-.text "Me, I'm gonna become a pegasus knight"
+.text "Me, I'm going to become a pegasus knight"
 .byte NewLine
 .text "and lend them my lance."
 .byte WaitForA
@@ -554,9 +554,9 @@ ch4leifturn2
 .text "but the king's something of a flake himself."
 .byte WaitForA
 .byte ScrollText
-.text "He also left Silesse years ago,"
+.text "He also left Silesse years ago, abandoning"
 .byte NewLine
-.text "abandoning his kingdom and family both."
+.text "his kingdom and family both."
 .byte WaitForA
 .byte ScrollText
 .text "Everybody feels betrayed, and nobody expects"
@@ -571,9 +571,9 @@ ch4leifturn2
 .byte ScrollText
 .text "I was sent here in search of him,"
 .byte NewLine
-.text "but ended up behind bars—all because"
+.text "but ended up behind bars—all"
 .byte NewLine
-.text "of this muttonhead."
+.text "because of this muttonhead."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -605,7 +605,7 @@ ch4leifturn2
 .byte Right_slot
 .text "And it's not like anyone can escape"
 .byte NewLine
-.text "your loud snoring, either!"
+.text "your loud snoring either!"
 .byte WaitForA
 .byte ScrollText
 .text "Honestly, how can you sleep at a time like this?"
@@ -644,7 +644,7 @@ ch4leifturn2
 .byte ScrollText
 .word LoadPortrait
 .word fergus_portrait
-.text "What's eatin' you, lad? You look awful upset."
+.text "What's eatin' you, lad? You look rather upset."
 .byte NewLine
 .text "Might as well speak your mind, eh?"
 .byte NewLine
@@ -722,9 +722,9 @@ ch4npcturn3
 
 .byte Right_slot
 .byte ScrollText
-.text "I dunno. Maybe. I mean, they've gotta have"
+.text "I dunno. Maybe. I mean, they've gotta have a"
 .byte NewLine
-.text "a chance, right? An' if they've got a chance,"
+.text "chance, right? An' if they've got a chance,"
 .byte NewLine
 .text "we gotta believe in 'em."
 .byte WaitForA
@@ -782,14 +782,14 @@ ch4leifcellopened
 
 .byte Left_slot
 .byte ScrollText
-.text "Does it matter? Save those questions"
+.text "Does it matter? Save those questions for"
 .byte NewLine
-.text "for when we're far, far away from here."
+.text "when we're far, far away from here."
 .byte WaitForA
 .byte ScrollText
-.text "Look, there's a stairway to the north"
+.text "Look, there's a stairway to the north that"
 .byte NewLine
-.text "that leads outta here. You go ahead—I'll give"
+.text "leads outta here. You go ahead—I'll give"
 .byte NewLine
 .text "them soldiers what-for if they try to follow."
 .byte WaitForA
@@ -819,9 +819,9 @@ ch4leifcellopened
 .byte ScrollText
 .text "Hah! You're gonna make me cry, junior."
 .byte NewLine
-.text "Suppose I can keep you company for a time,"
+.text "Suppose I can keep you company for a time if"
 .byte NewLine
-.text "if you need someone to hold your hand that bad."
+.text "you need someone to hold your hand that bad."
 .byte WaitForA
 .byte ScrollText
 .text "...Aw, who am I kiddin'?"
@@ -876,9 +876,9 @@ ch4leifcellopened
 .text "women as hostages. That's unforgivable."
 .byte WaitForA
 .byte ScrollText
-.text "Any plan that gives me the chance"
+.text "Any plan that gives me the chance to"
 .byte NewLine
-.text "to smash his face in is fine by me."
+.text "smash his face in is fine by me."
 .byte WaitForA
 
 .byte Left_slot
@@ -927,10 +927,10 @@ ch4lifiscellopened
 .byte ScrollText
 .text "What's the matter?"
 .byte NewLine
-.text "Yer crew came for ya; don't that perk ya up?"
+.text "Yer crew came for ya—don't that perk ya up?"
 .byte WaitForA
 
-.byte ScrollText
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
@@ -941,9 +941,9 @@ ch4lifiscellopened
 .text "Somebody actually did come...!"
 .byte WaitForA
 .byte ScrollText
-.text "Well, let it never be said"
+.text "Well, let it never be said that lying"
 .byte NewLine
-.text "that lyin' through your teeth doesn't work!"
+.text "through your teeth doesn't work!"
 .byte WaitForA
 
 .byte EndText
@@ -961,18 +961,18 @@ ch4ending
 .byte WaitForA
 
 .byte Right_slot
-.text "Smoothly, Archbishop Manfroy. Some of"
+.text "Smoothly, Archbishop Manfroy."
 .byte NewLine
-.text "the citizens mount a meager resistance,"
+.text "Some of the citizens mount a meager resistance,"
 .byte NewLine
 .text "but their children are harvested all the same."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Splendid! Then Tarrah is the only city"
+.text "Splendid!"
 .byte NewLine
-.text "not under our influence."
+.text "Then that leaves us with only Tarrah."
 .byte WaitForA
 .byte ScrollText
 .text "If they remain disagreeable, make an example"
@@ -980,21 +980,23 @@ ch4ending
 .text "of them: burn the city and its people."
 .byte WaitForA
 .byte ScrollText
-.text "Show Munster that the empire"
+.text "Show the province that the empire"
 .byte NewLine
 .text "does not tolerate resistance."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "It would be done, Your Holiness,"
+.text "It would be done, Your Holiness, but the"
 .byte NewLine
-.text "but the generals of House Friege"
+.text "generals of House Friege seem to have"
 .byte NewLine
-.text "seem to have lost their nerve."
+.text "lost their nerve."
 .byte WaitForA
 .byte ScrollText
-.text "They've surrounded the city, but have yet to act."
+.text "They've surrounded the city,"
+.byte NewLine
+.text "but have yet to act."
 .byte WaitForA
 
 .byte ScrollText
@@ -1014,14 +1016,12 @@ ch4ending
 .byte WaitForA
 
 .byte Right_slot
-.text "My father has been placed"
-.byte NewLine
-.text "in a difficult position."
+.text "My father finds himself in a difficult position."
 .byte WaitForA
 .byte ScrollText
-.text "Many of our own, as well as the clergy,"
+.text "Many of our own, as well as the clergy, are"
 .byte NewLine
-.text "are vehemently opposed to the practice of..."
+.text "vehemently opposed to the practice of..."
 .byte NewLine
 .text "child hunts."
 .byte WaitForA
@@ -1033,44 +1033,42 @@ ch4ending
 .byte ScrollText
 .text "Archbishop Manfroy, on behalf of my family,"
 .byte NewLine
-.text "I must ask that you stop this savagery!"
+.text "I must ask that you put a stop to this"
+.byte NewLine
+.text "fanatical agenda of yours!"
 .byte WaitForA
 .byte ScrollText
 .text "Abducting children too young to lift a sword?"
 .byte NewLine
 .text "Separating them from their families?"
 .byte NewLine
-.text "It's simply unconscionable!"
+.text "It's simply depraved!"
 .byte WaitForA
 .byte ScrollText
-.text "But you don't stop there, do you? No..."
+.text "And if that weren't enough, you then make"
 .byte NewLine
-.text "You take these innocent souls and sacrifice"
+.text "offerings of these innocent souls to Loptous!"
 .byte NewLine
-.text "them to your dark god! Have you no shame?!"
+.text "Have you no shame in this...this bestiality?!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .word LoadPortrait
 .word julius_portrait
-.text "Ishtar, my beloved,"
+.text "Ishtar, my beloved, there's been"
 .byte NewLine
-.text "there's been a terrible misunderstanding."
+.text "a terrible misunderstanding."
 .byte WaitForA
 .byte ScrollText
-.text "Never would I condone the slaughter"
+.text "Never would I condone the slaughter of children!"
 .byte NewLine
-.text "of children! Do you truly believe me capable"
-.byte NewLine
-.text "of such a thing?"
+.text "Do you truly believe me capable of such a thing?"
 .byte WaitForA
 .byte ScrollText
 .text "I merely want them to be trained and educated—"
 .byte NewLine
-.text "sculpted into adults worthy to inhabit"
-.byte NewLine
-.text "the empire."
+.text "sculpted into adults worthy to inhabit the empire."
 .byte WaitForA
 .byte ScrollText
 .text "The ones who survive our rigorous training will"
@@ -1096,7 +1094,7 @@ ch4ending
 .text "without their families..."
 .byte WaitForA
 .byte ScrollText
-.text "You dare call that happiness?"
+.text "You would dare call that happiness?"
 .byte WaitForA
 
 .byte Left_slot

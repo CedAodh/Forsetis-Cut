@@ -603,7 +603,7 @@ eventChapter12xEvents ; FD/8F98
 
 		macroSetCharacterTurnStatus Leif, TurnStatusHidden
 
-		DIALOGUE ch12xending1
+		macroDialogueWithBackground ch12xending1, 4
 
 		EVENT_TEST_FLAG_SET $07
 		JUMP_TRUE ++
@@ -637,9 +637,14 @@ eventChapter12xEvents ; FD/8F98
 		+
 		YIELD
 
-		PLAY_SOUND_WORD $00E7
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+
 		FADE_OUT $01
 		YIELD
+
+		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+		STORE_BYTE bBuf_INIDISP, INIDISP_Setting(False, 0)
 
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1

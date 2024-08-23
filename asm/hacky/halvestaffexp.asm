@@ -19,7 +19,7 @@ l_exp_calc_upper_class
 
 	lda $25
 	clc
-    adc #$000a
+    adc #$0008
     
 	pha
     lda aClassDataBuffer.Tier1Class

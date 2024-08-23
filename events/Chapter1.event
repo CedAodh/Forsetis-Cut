@@ -79,7 +79,7 @@ eventChapter1Events ; FD/8000
 	_ShopEventDefinitions ; FD/80F3
 		macroShopDefinition eventChapter1Data._Vendor
 	END_DEFINITION_ARRAY
-
+	
 	_OsianHouseOsian ; FD/8108
 		macroItemHouse ch1osianhouseosian, Vouge, [13, 16], $03F0
 	END2
@@ -188,7 +188,7 @@ eventChapter1Events ; FD/8000
 		PAUSE_SKIPPABLE 32
 		YIELD
 
-		SET_MUSIC $39
+		SET_MUSIC $46
 		YIELD
 
 		macroChapterTitlePopup ch1titlename 
@@ -200,7 +200,7 @@ eventChapter1Events ; FD/8000
 		WAIT_MOVE
 		YIELD
 
-		DIALOGUE ch1op1
+		DIALOGUE ch25ending1augustus
 		YIELD
 
 		SCROLL_CAMERA_ADDRESS eventChapter1Data._Opening2CameraCoordinates
@@ -230,7 +230,7 @@ eventChapter1Events ; FD/8000
 		WAIT_MOVE
 		YIELD
 
-		DIALOGUE ch1op2
+		DIALOGUE ch25opening2
 		YIELD
 
 		MOVE_UNIT Raydrik, [0, 0], [0, 0], 1, _RaydrikMove1
@@ -416,4 +416,3 @@ eventChapter1Events ; FD/8000
 
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1
-

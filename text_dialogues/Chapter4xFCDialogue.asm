@@ -401,14 +401,14 @@ laraasbel4x
 
 	.byte left_slot
 	.byte ScrollText
-	.text "OK then, Mr. Full-of-it Mage."
+	.text "Okay then, Mr. Full-of-it Mage."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Just remember that you're my friend."
 	.byte NewLine
 	.text "Idolize Lord Ced all you want,"
 	.byte NewLine
-	.text "but don't overdo it, OK?"
+	.text "but don't overdo it, okay?"
 	.byte WaitForA
 
 	.byte right_slot
@@ -498,12 +498,12 @@ daisyced
 .byte NewLine
 .text "Who— Who are you calling a little girl?!"
 .byte NewLine
-.text "You think calling me that helps ANYTHING?!"
+.text "You think calling me that helps anything?!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I'm truly sorry for having said that."
+.text "...I'm truly sorry for having said that."
 .byte NewLine
 .text "But it really is dangerous to stay here."
 .byte NewLine
@@ -512,7 +512,7 @@ daisyced
 
 .byte left_slot
 .byte ScrollText
-.text "O-OK..."
+.text "O-okay..."
 .byte NewLine
 .text "I'm sorry too."
 .byte NewLine
@@ -548,7 +548,7 @@ daisyced
 .byte NewLine
 .text "Wh-whoa! All right..."
 .byte NewLine
-.text "Let's avoid breaking this thing so quickly..."
+.text "Let's not break this thing so quickly..."
 .byte WaitForA
 
 .byte EndText

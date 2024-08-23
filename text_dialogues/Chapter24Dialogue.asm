@@ -16,7 +16,7 @@ ch24door2
 .byte Right_slot
 .word LoadPortrait
 .word boy_portrait
-.text "Oh! Uh... I guess it's busted..."
+.text "Oh! Uh... I guess it's just busted..."
 .byte WaitForA
 .byte ScrollText
 .text "Heeey, guys! Wait for meee!"
@@ -94,9 +94,9 @@ ch24mareetagalzus
 .byte ScrollText
 .text "I'm the one to blame..."
 .byte NewLine
-.text "Those slavers only caught hold of me"
+.text "Those slavers only caught hold of me because I"
 .byte NewLine
-.text "because I didn't listen to you."
+.text "didn't listen to you."
 .byte WaitForA
 .byte ScrollText
 .text "Besides, I wasn't their prisoner for very long."
@@ -111,7 +111,7 @@ ch24mareetagalzus
 .byte ScrollText
 .text "...I'm sorry."
 .byte NewLine
-.text "I searched for a long, long time,"
+.text "I searched for a long, long time."
 .byte NewLine
 .text "but you never turned up..."
 .byte WaitForA
@@ -125,7 +125,7 @@ ch24mareetagalzus
 
 .byte Left_slot
 .byte ScrollText
-.text "Just like that...?!"
+.text "Just...just like that...?!"
 .byte NewLine
 .text "It doesn't matter what's happened since then!"
 .byte NewLine
@@ -137,16 +137,16 @@ ch24mareetagalzus
 .text "......"
 .byte WaitForA
 .byte ScrollText
-.text "The woman who rescued you, and has raised"
+.text "The woman who rescued you, and has raised you"
 .byte NewLine
-.text "you all this time—is she the swordswoman"
+.text "all this time—is she the swordswoman who was"
 .byte NewLine
-.text "who was turned to stone?"
+.text "turned to stone?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "That's right..."
+.text "Yes..."
 .byte WaitForA
 
 .byte Right_slot
@@ -171,9 +171,9 @@ ch24opening
 .byte Left_slot
 .word LoadPortrait
 .word veld_portrait
-.text "Raydrik, do I hear correctly that you've"
+.text "Raydrik, do I hear correctly that you've allowed"
 .byte NewLine
-.text "allowed those rebels to invade the castle?"
+.text "those rebels to invade the castle?"
 .byte WaitForA
 
 .byte Right_slot
@@ -188,9 +188,9 @@ ch24opening
 .byte ScrollText
 .text "Don't promise more than you're capable of."
 .byte NewLine
-.text "It's obvious to anyone with eyes that the"
+.text "It's obvious to anyone with eyes that the rebels"
 .byte NewLine
-.text "rebels have the overwhelming advantage."
+.text "have the overwhelming advantage."
 .byte WaitForA
 
 .byte Right_slot
@@ -202,9 +202,9 @@ ch24opening
 .byte ScrollText
 .text "Even for you, this is pathetic."
 .byte NewLine
-.text "I thought you'd at least be more useful"
+.text "I thought you'd at least be more useful than"
 .byte NewLine
-.text "than this, but it seems I overestimated you."
+.text "this, but it seems I simply overestimated you."
 .byte WaitForA
 .byte ScrollText
 .text "I wash my hands of you, Raydrik."
@@ -229,9 +229,9 @@ ch24opening
 .text "I'll consider this a dead man's last request."
 .byte WaitForA
 .byte ScrollText
-.text "I shall spare you a battalion of sorcerers"
+.text "I shall spare you a battalion of sorcerers from"
 .byte NewLine
-.text "from the esteemed Bergrosen."
+.text "the esteemed Bergrosen."
 .byte WaitForA
 
 .byte EndText
@@ -251,40 +251,38 @@ ch24ced
 .byte ScrollText
 .text "There aren't many of Raydrik's men left,"
 .byte NewLine
-.text "but he's made up the difference"
+.text "but he's made up the difference by"
 .byte NewLine
-.text "by hiring a slew of sellswords."
+.text "hiring a slew of sellswords."
 .byte WaitForA
 .byte ScrollText
-.text "The most dangerous of them all"
+.text "The most dangerous of them all is a swordsman"
 .byte NewLine
-.text "is a swordsman by the name of Galzus."
+.text "by the name of Galzus."
 .byte NewLine
 .text "Challenging him directly is suicide."
 .byte WaitForA
 
 .byte Right_slot
-.text "Galzus, you say?"
+.text "Galzus..."
 .byte NewLine
-.text "Hmm..."
-.byte NewLine
-.text "What should we do about him, then?"
+.text "So what should we do about him, then?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Our only option is to lure him close enough for"
+.text "Our only viable option is to lure him out for me"
 .byte NewLine
-.text "me to ambush him with the Tome of Forseti."
+.text "to ambush him with the Tome of Forseti."
 .byte NewLine
 .text "Yet even I don't know if that will defeat him..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "We barely have enough troops"
+.text "We barely have enough troops to stage such a"
 .byte NewLine
-.text "to stage such a diversion..."
+.text "diversion..."
 .byte WaitForA
 
 .byte Left_slot
@@ -294,9 +292,9 @@ ch24ced
 
 .byte Right_slot
 .byte ScrollText
-.text "August, why did you insist on"
+.text "August, why did you insist on splitting our army"
 .byte NewLine
-.text "splitting our army in three?"
+.text "in three?"
 .byte WaitForA
 
 .byte Left_slot
@@ -304,28 +302,26 @@ ch24ced
 .byte NewLine
 .text "The second group is to rescue the children,"
 .byte NewLine
-.text "and the third will arrest the Loptrian bishops."
+.text "and the third will arrest the Loptr bishops."
 .byte WaitForA
 .byte ScrollText
-.text "As their tasks are a race against time,"
+.text "As their tasks are a race against time, that was"
 .byte NewLine
-.text "that was all the more reason"
-.byte NewLine
-.text "to send them in ahead of us."
+.text "all the more reason to send them in ahead of us."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Rescuing the children goes without saying,"
 .byte NewLine
-.text "but why bother with the Loptrian bishops?"
+.text "but why bother with the Loptr bishops?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "There's a place of worship in the east wing"
+.text "There's a place of worship in the east wing of"
 .byte NewLine
-.text "of the castle where the Loptrians congregate."
+.text "the castle where the Loptr Church congregates."
 .byte WaitForA
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
@@ -337,18 +333,16 @@ ch24ced
 .byte ScrollText
 .text "I see..."
 .byte NewLine
-.text "So the task of defeating Raydrik"
+.text "So the task of defeating Raydrik falls solely to"
 .byte NewLine
-.text "falls solely to our group, then?"
+.text "our group, then?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Indeed."
+.text "Indeed. There won't be time for the others to"
 .byte NewLine
-.text "There won't be time for the others"
-.byte NewLine
-.text "to circle back around and rejoin us."
+.text "circle back around and rejoin us."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -358,14 +352,14 @@ ch24ced
 .text "Prince Leif..."
 .byte WaitForA
 .byte ScrollText
-.text "Leave the weaker foes to me—"
+.text "Leave it to me to deal with their front line—"
 .byte NewLine
 .text "you just focus on Raydrik!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Understood!"
+.text "Got it, Prince Ced!"
 .byte NewLine
 .text "No matter what it takes, I'll cut him down!"
 .byte WaitForA
@@ -384,24 +378,22 @@ ch24saias
 .word saias_portrait
 .text "Raydrik has few soldiers left, Prince,"
 .byte NewLine
-.text "but stay alert: more sellswords yet await us"
+.text "but stay alert: more sellswords yet"
 .byte NewLine
-.text "in the castle's halls."
+.text "await us in the castle's halls."
 .byte WaitForA
 .byte ScrollText
-.text "The most dangerous of them all"
+.text "The particularly noteworthy one among them is a"
 .byte NewLine
-.text "is a swordsman by the name of Galzus."
+.text "swordsman named Galzus. To challenge him"
 .byte NewLine
-.text "Challenging him directly is suicide."
+.text "head-on is simply the worst thing you can do."
 .byte WaitForA
 
 .byte Right_slot
-.text "Galzus, you say?"
+.text "Galzus..."
 .byte NewLine
-.text "Hmm..."
-.byte NewLine
-.text "What should we do about him, then?"
+.text "So what should we do about him, then?"
 .byte WaitForA
 
 .byte Left_slot
@@ -413,15 +405,17 @@ ch24saias
 .text "be able to avoid fighting him altogether."
 .byte WaitForA
 .byte ScrollText
-.text "Galzus appears to have some sort"
+.text "It would seem Galzus has some sort of deep"
 .byte NewLine
-.text "of deep bond with the girl..."
+.text "bond with her..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "You said Mareeta...?"
 .byte WaitForA
+.byte ScrollText
+.text "Wait!"
 
 .byte Left_slot
 .byte ScrollText
@@ -429,10 +423,10 @@ ch24saias
 .word augustus_portrait
 
 .byte Right_slot
-.byte ScrollText
-.text "Wait! August, why did you insist on"
 .byte NewLine
-.text "splitting our army in three?"
+.text "August, why did you insist on splitting our army"
+.byte NewLine
+.text "in three?"
 .byte WaitForA
 
 .byte Left_slot
@@ -440,28 +434,26 @@ ch24saias
 .byte NewLine
 .text "The second group is to rescue the children,"
 .byte NewLine
-.text "and the third will arrest the Loptrian bishops."
+.text "and the third will arrest the Loptr bishops."
 .byte WaitForA
 .byte ScrollText
-.text "As their tasks are a race against time,"
+.text "As their tasks are a race against time, that was"
 .byte NewLine
-.text "that was all the more reason"
-.byte NewLine
-.text "to send them in ahead of us."
+.text "all the more reason to send them in ahead of us."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Rescuing the children goes without saying,"
 .byte NewLine
-.text "but why bother with the Loptrian bishops?"
+.text "but why bother with the Loptr bishops?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "There's a place of worship in the east wing"
+.text "There's a place of worship in the east wing of"
 .byte NewLine
-.text "of the castle where the Loptrians congregate."
+.text "the castle where the Loptr Church congregates."
 .byte WaitForA
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
@@ -473,18 +465,16 @@ ch24saias
 .byte ScrollText
 .text "I see..."
 .byte NewLine
-.text "So the task of defeating Raydrik"
+.text "So the task of defeating Raydrik falls solely to"
 .byte NewLine
-.text "falls solely to our group, then?"
+.text "our group, then?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Indeed."
+.text "Indeed. There won't be time for the others to"
 .byte NewLine
-.text "There won't be time for the others"
-.byte NewLine
-.text "to circle back around and rejoin us."
+.text "circle back around and rejoin us."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -498,12 +488,12 @@ ch24saias
 .byte ScrollText
 .text "I'll do everything in my power to help—"
 .byte NewLine
-.text "you just focus on Raydrik!"
+.text "use that to focus yourself on Raydrik!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Understood!"
+.text "I understand!"
 .byte NewLine
 .text "No matter what it takes, I'll cut him down!"
 .byte WaitForA
@@ -522,9 +512,9 @@ ch24augustus
 .word augustus_portrait
 .text "Raydrik has nearly run out of men, my prince,"
 .byte NewLine
-.text "but take heed: countless sellswords"
+.text "but take heed: countless sellswords yet await"
 .byte NewLine
-.text "yet await us in the castle's halls."
+.text "us in the castle's halls."
 .byte WaitForA
 .byte ScrollText
 .text "Among them is a swordsman of some renown,"
@@ -533,30 +523,28 @@ ch24augustus
 .byte WaitForA
 
 .byte Right_slot
-.text "Galzus, you say?"
+.text "Galzus..."
 .byte NewLine
 .text "So what should we do about him, August?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Our only option is to lure him close to us"
+.text "Our only option is to lure him close to us and"
 .byte NewLine
-.text "and ambush him with our every soldier."
+.text "ambush him with our every soldier."
 .byte WaitForA
 .byte ScrollText
-.text "Still, even that might not be enough"
+.text "Still, it's very possible that won't be enough to"
 .byte NewLine
-.text "to defeat him..."
+.text "defeat him..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "If we need so many troops to ambush him,"
+.text "If we need so many troops to ambush him, why"
 .byte NewLine
-.text "why did you insist on splitting our army"
-.byte NewLine
-.text "in three?"
+.text "did you insist on splitting our army in three?"
 .byte WaitForA
 
 .byte Left_slot
@@ -565,28 +553,26 @@ ch24augustus
 .byte NewLine
 .text "The second group is to rescue the children,"
 .byte NewLine
-.text "and the third will arrest the Loptrian bishops."
+.text "and the third will arrest the Loptr bishops."
 .byte WaitForA
 .byte ScrollText
-.text "As their tasks are a race against time,"
+.text "As their tasks are a race against time, that was"
 .byte NewLine
-.text "that was all the more reason"
-.byte NewLine
-.text "to send them in ahead of us."
+.text "all the more reason to send them in ahead of us."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Rescuing the children goes without saying,"
 .byte NewLine
-.text "but why bother with the Loptrian bishops?"
+.text "but why bother with the Loptr bishops?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "There's a place of worship in the east wing"
+.text "There's a place of worship in the east wing of"
 .byte NewLine
-.text "of the castle where the Loptrians congregate."
+.text "the castle where the Loptr Church congregates."
 .byte WaitForA
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
@@ -598,23 +584,21 @@ ch24augustus
 .byte ScrollText
 .text "I see..."
 .byte NewLine
-.text "So the task of defeating Raydrik"
+.text "So the task of defeating Raydrik falls solely to"
 .byte NewLine
-.text "falls solely to our group, then?"
+.text "our group, then?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Indeed."
+.text "Indeed. There won't be time for the others to"
 .byte NewLine
-.text "There won't be time for the others"
-.byte NewLine
-.text "to circle back around and rejoin us."
+.text "circle back around and rejoin us."
 .byte WaitForA
 .byte ScrollText
-.text "We're certainly in for a difficult battle,"
+.text "This battle stands to be more difficult than most"
 .byte NewLine
-.text "my prince, but we've been in worse situations."
+.text "others, my prince, but take heart."
 .byte NewLine
 .text "I know you have the strength to prevail!"
 .byte WaitForA
@@ -623,9 +607,7 @@ ch24augustus
 .byte ScrollText
 .text "I do!"
 .byte NewLine
-.text "No matter what it takes,"
-.byte NewLine
-.text "I'll cut Raydrik down!"
+.text "No matter what it takes, I'll cut Raydrik down!"
 .byte WaitForA
 
 .byte EndText
@@ -642,17 +624,15 @@ ch24nogalzus
 .word augustus_portrait
 .text "Raydrik has nearly run out of men, my prince,"
 .byte NewLine
-.text "but take heed: countless sellswords"
+.text "but take heed: countless sellswords yet await"
 .byte NewLine
 .text "yet await us in the castle's halls."
 .byte WaitForA
 
 .byte Right_slot
-.text "If Raydrik still has so many troops,"
+.text "If that's the case, why did you insist on splitting"
 .byte NewLine
-.text "why did you insist on splitting our army"
-.byte NewLine
-.text "in three?"
+.text "our army in three?"
 .byte WaitForA
 
 .byte Left_slot
@@ -661,28 +641,26 @@ ch24nogalzus
 .byte NewLine
 .text "The second group is to rescue the children,"
 .byte NewLine
-.text "and the third will arrest the Loptrian bishops."
+.text "and the third will arrest the Loptr bishops."
 .byte WaitForA
 .byte ScrollText
-.text "As their tasks are a race against time,"
+.text "As their tasks are a race against time, that was"
 .byte NewLine
-.text "that was all the more reason"
-.byte NewLine
-.text "to send them in ahead of us."
+.text "all the more reason to send them in ahead of us."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Rescuing the children goes without saying,"
 .byte NewLine
-.text "but why bother with the Loptrian bishops?"
+.text "but why bother with the Loptr bishops?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "There's a place of worship in the east wing"
+.text "There's a place of worship in the east wing of"
 .byte NewLine
-.text "of the castle where the Loptrians congregate."
+.text "the castle where the Loptr Church congregates."
 .byte WaitForA
 .byte ScrollText
 .text "The bishops there pose a grave threat to our"
@@ -694,23 +672,21 @@ ch24nogalzus
 .byte ScrollText
 .text "I see..."
 .byte NewLine
-.text "So the task of defeating Raydrik"
+.text "So the task of defeating Raydrik falls solely to"
 .byte NewLine
-.text "falls solely to our group, then?"
+.text "our group, then?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Indeed."
+.text "Indeed. There won't be time for the others to"
 .byte NewLine
-.text "There won't be time for the others"
-.byte NewLine
-.text "to circle back around and rejoin us."
+.text "circle back around and rejoin us."
 .byte WaitForA
 .byte ScrollText
-.text "We're certainly in for a difficult battle,"
+.text "This battle stands to be more difficult than most"
 .byte NewLine
-.text "my prince, but we've been in worse situations."
+.text "others, my prince, but take heart."
 .byte NewLine
 .text "I know you have the strength to prevail!"
 .byte WaitForA
@@ -719,9 +695,7 @@ ch24nogalzus
 .byte ScrollText
 .text "I do!"
 .byte NewLine
-.text "No matter what it takes,"
-.byte NewLine
-.text "I'll cut Raydrik down!"
+.text "No matter what it takes, I'll cut Raydrik down!"
 .byte WaitForA
 
 .byte EndText
@@ -736,9 +710,9 @@ ch24closing
 .byte Left_slot
 .word LoadPortrait
 .word augustus_portrait
-.text "We fought for every inch,"
+.text "We fought for every inch, but Castle Munster is"
 .byte NewLine
-.text "but Castle Munster is ours."
+.text "ours. You did well this day, Prince Leif."
 .byte NewLine
 .text "Bards will sing of this battle for years to come."
 .byte WaitForA
@@ -748,23 +722,23 @@ ch24closing
 .byte NewLine
 .text "After the finishing blow was dealt,"
 .byte NewLine
-.text "his body just vanished."
+.text "his body just...vanished."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Some wicked force is at work here,"
 .byte NewLine
-.text "of that I have no doubt. The whole castle"
+.text "of that I have no doubt."
 .byte NewLine
-.text "is enveloped in a foul energy..."
+.text "The whole castle is enveloped in a foul energy..."
 .byte WaitForA
 .byte ScrollText
-.text "I suspect it's connected to the secret temple"
+.text "I suspect it's connected to the secret temple of"
 .byte NewLine
-.text "of the Loptr Church, which lies underneath"
+.text "the Loptr Church, which lies underneath this"
 .byte NewLine
-.text "this very castle."
+.text "very castle."
 .byte WaitForA
 .byte ScrollText
 .text "Until that vile place is reduced to rubble,"
@@ -776,16 +750,16 @@ ch24closing
 .byte ScrollText
 .text "A secret temple..."
 .byte NewLine
-.text "So this is the Loptrians' stronghold in Thracia."
+.text "So we've discovered their stronghold in Thracia."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Indeed. The man in charge of the temple"
+.text "Indeed. The man in charge of the temple is a"
 .byte NewLine
-.text "is a bishop named Veld—he's a close friend"
+.text "bishop named Veld—he's a close friend and"
 .byte NewLine
-.text "and confidant to Manfroy himself."
+.text "confidant to Manfroy himself."
 .byte WaitForA
 
 .byte Right_slot
@@ -797,33 +771,31 @@ ch24closing
 
 .byte Left_slot
 .byte ScrollText
-.text "He leads the parish of Loptrians"
+.text "He leads the parish of Loptr that infests Thracia"
 .byte NewLine
-.text "that infest Thracia with their presence."
+.text "with its presence."
 .byte WaitForA
 .byte ScrollText
-.text "It is his responsibility to oversee"
+.text "He took it upon himself to oversee the region's"
 .byte NewLine
-.text "the region's child hunts—and to sic"
+.text "child hunts—and to sic the Bergrosen on any"
 .byte NewLine
-.text "the Bergrosen on any villages who resist."
+.text "villages who resist."
 .byte WaitForA
 .byte ScrollText
 .text "Raydrik was little more than Veld's pawn."
 .byte WaitForA
 .byte ScrollText
-.text "And according to the prisoners"
+.text "And according to the prisoners we've rescued,"
 .byte NewLine
-.text "we've rescued since, it was he who turned"
-.byte NewLine
-.text "Lady Eyvel to stone."
+.text "it was he who turned Lady Eyvel to stone."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Wh-what?!"
+.text "Wh-what?! That too was his doing?!"
 .byte NewLine
-.text "That's...that's unforgivable!"
+.text "He'll never get forgiveness from me!"
 .byte WaitForA
 .byte ScrollText
 .text "This man, Veld..."
@@ -838,27 +810,23 @@ ch24closingkaia
 
 .byte Right_slot
 .byte ScrollText
-.text "Speaking of which, August..."
+.text "...Yet even still, Eyvel comes first."
 .byte NewLine
-.text "Now that Eyvel's rescue is within our grasp,"
-.byte NewLine
-.text "what can we do to cure her?"
+.text "August, what can we do to cure her?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "As I mentioned before, the Staff of Kia"
+.text "As I mentioned before, the Staff of Kia could"
 .byte NewLine
-.text "could free her, but only those of Manfroy's"
+.text "free her, but only those of Manfroy's bloodline"
 .byte NewLine
-.text "bloodline can wield it."
+.text "can wield it."
 .byte WaitForA
 .byte ScrollText
-.text "We're no closer to finding a solution"
+.text "We're no closer to finding a solution to that"
 .byte NewLine
-.text "to that dilemma than when we first fled"
-.byte NewLine
-.text "Castle Munster..."
+.text "dilemma than when we first fled Castle Munster..."
 .byte WaitForA
 
 .byte Right_slot
@@ -870,7 +838,7 @@ ch24closingkaia
 .byte ScrollText
 .text "Argh..."
 .byte NewLine
-.text "Was all this just a waste?!"
+.text "Was all this just a waste?! Everything?!"
 .byte WaitForA
 
 .byte Left_slot
@@ -889,7 +857,7 @@ ch24closingkaia
 
 .byte Right_slot
 .byte ScrollText
-.text "Sara...?!"
+.text "Sara...?"
 .byte NewLine
 .text "You'll... What?"
 .byte NewLine
@@ -898,9 +866,9 @@ ch24closingkaia
 
 .byte Left_slot
 .byte ScrollText
-.text "Because I know how the seal works—"
+.text "Because I know how the seal works—it was done"
 .byte NewLine
-.text "it was done by my grandfather, after all."
+.text "by my grandfather, after all."
 .byte WaitForA
 
 .byte Right_slot
@@ -914,18 +882,16 @@ ch24closingkaia
 
 .byte Left_slot
 .byte ScrollText
-.text "I do not wish to speak of"
+.text "I do not wish to speak of my grandfather any"
 .byte NewLine
-.text "my grandfather any more."
-.byte NewLine
-.text "I despise him."
+.text "more. I despise him."
 .byte WaitForA
 .byte ScrollText
 .text "Let's just hurry along and save your friend."
 .byte NewLine
-.text "And when we go, Leif, don't forget"
+.text "And when we go, Leif, don't forget to bring the"
 .byte NewLine
-.text "to bring the staff!"
+.text "staff."
 .byte WaitForA
 
 .byte EndText
@@ -935,9 +901,9 @@ ch24closingnokaia
 
 .byte Right_slot
 .byte ScrollText
-.text "August, do you know how to get to this"
+.text "August, do you know how to get to this secret"
 .byte NewLine
-.text "secret temple?"
+.text "temple?"
 .byte WaitForA
 
 .byte Left_slot
@@ -947,23 +913,23 @@ ch24closingnokaia
 .byte ScrollText
 .text "But seizing the temple will be no easy task—"
 .byte NewLine
-.text "Bishop Veld has sealed himself inside"
+.text "Veld has sealed himself inside with a large"
 .byte NewLine
-.text "with a large battalion of sorcerers."
+.text "battalion of sorcerers."
 .byte WaitForA
 .byte ScrollText
-.text "Of course, we could just wait"
+.text "Granted, we could just hold off on our attack"
 .byte NewLine
-.text "until Lord Seliph's army arrives, but"
+.text "until Lord Seliph's army arrives, but we'll then"
 .byte NewLine
-.text "we risk Veld slipping away in the meantime."
+.text "risk Veld slipping away in the meantime."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "The suffering wrought upon Thracia"
+.text "The suffering wrought upon Thracia is that"
 .byte NewLine
-.text "is that man's doing, not Raydrik's..."
+.text "man's doing, not Raydrik's..."
 .byte WaitForA
 .byte ScrollText
 .text "We can't risk letting Veld escape justice!"

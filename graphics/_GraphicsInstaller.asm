@@ -590,3 +590,45 @@ a16BFadedPalette	.binary "editedforestpalettefaded.bin"
 .binary "PirateIdleFormatted.4bpp"
 
 .here
+
+* = $2C72B9
+.logical lorom($2C72B9, 1)
+
+.binary "NewTroubadourSprite.4bpp.fe4"
+
+.here
+
+* = $23FCAB
+.logical lorom($23FCAB, 1)
+
+.binary "DismountedFPaladinSprite.4bpp.fe4"
+
+.here
+
+;* = $2BA82A
+;.logical lorom($2BA82A, 1)
+
+;.binary "DismountedWyvernPegasusKnightSprite.4bpp.fe4"
+
+;.here
+
+;* = $241679
+;.logical lorom($241679, 1)
+
+;.binary "DismountedFPaladinStaffSprite.4bpp.fe4"
+
+;.here
+
+;* = $2C848A
+;.logical lorom($2C848A, 1)
+
+;.binary "DismountedTroubadourStaffSprite.4bpp.fe4"
+
+;.here
+
+;* = $2B9630
+;.logical lorom($2B9630, 1)
+
+;.binary "DismountedWyvernPegasusRiderSprite.4bpp.fe4"
+
+;.here

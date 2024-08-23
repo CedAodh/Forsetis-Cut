@@ -82,6 +82,24 @@ eventChapter10WorldMapEvents ; E7/E844
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
 	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 16
+	YIELD
+	
+	SET_MUSIC $32
+	YIELD
+	
+	macroDialogueWithBackground shouldleifmaketherounds, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 32
 	YIELD
 	

@@ -30,9 +30,9 @@ ch7op1
 .text "and seek refuge in Castle Meath."
 .byte WaitForA
 .byte ScrollText
-.text "In either case, it will be necessary"
+.text "In either case, it will be necessary to"
 .byte NewLine
-.text "to petition Thracia for aid immediately."
+.text "petition Thracia for aid immediately."
 .byte WaitForA
 
 .byte Right_slot
@@ -42,9 +42,9 @@ ch7op1
 .byte ScrollText
 .text "Those damnable cowards took everything from"
 .byte NewLine
-.text "me: my kingdom, my mother, my father... I'll"
+.text "me: my kingdom, my mother, my father..."
 .byte NewLine
-.text "not come crawling to them with cup in hand!"
+.text "I'll not come crawling to them with cup in hand!"
 .byte WaitForA
 
 .byte Left_slot
@@ -61,11 +61,11 @@ ch7op1
 .text "North Thracia from the tyranny of the empire."
 .byte WaitForA
 .byte ScrollText
-.text "You yourself said that there was"
+.text "You yourself said that there was “no hardship"
 .byte NewLine
-.text "“no hardship you would be unwilling to endure”"
+.text "you would be unwilling to endure” to accomplish"
 .byte NewLine
-.text "to accomplish this."
+.text "this."
 .byte WaitForA
 .byte ScrollText
 .text "Did you think the only kind of hardship"
@@ -75,9 +75,9 @@ ch7op1
 
 .byte Right_slot
 .byte ScrollText
-.text "...Even supposing I did agree,"
+.text "...Even supposing I did agree, what makes"
 .byte NewLine
-.text "what makes you think we can trust Thracia?"
+.text "you think we can trust Thracia?"
 .byte NewLine
 .text "They're allies of the empire!"
 .byte WaitForA
@@ -89,9 +89,9 @@ ch7op1
 .text "they'll respond with force all the same."
 .byte WaitForA
 .byte ScrollText
-.text "I imagine the retaliation from General"
+.text "I imagine the retaliation from General Hannibal"
 .byte NewLine
-.text "Hannibal of Meath would be especially great."
+.text "of Meath would be especially great."
 .byte WaitForA
 .byte ScrollText
 .text "He's a famed military leader that the people"
@@ -106,21 +106,23 @@ ch7op1
 
 .byte Right_slot
 .byte ScrollText
-.text "...I understand. We'll take refuge in"
+.text "...I understand."
 .byte NewLine
-.text "Castle Meath, and head for Tarrah afterward."
+.text "We'll take refuge in Castle Meath,"
+.byte NewLine
+.text "and head for Tarrah afterward."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "You want to make for Tarrah...? As in,"
+.text "You want to make for Tarrah...? As in, the city"
 .byte NewLine
-.text "the city refusing to take part in child hunts?"
+.text "refusing to take part in child hunts?"
 .byte WaitForA
 .byte ScrollText
-.text "The same city being besieged"
+.text "The same city being besieged by the"
 .byte NewLine
-.text "by the imperial army for their rebellion?"
+.text "imperial army for their rebellion?"
 .byte WaitForA
 .byte ScrollText
 .text "Going there with the small force we have now"
@@ -132,11 +134,11 @@ ch7op1
 
 .byte Right_slot
 .byte ScrollText
-.text "Tarrah is...my home away from home,"
+.text "Tarrah is...my home away from home, you could"
 .byte NewLine
-.text "you could say. The duke of Tarrah sheltered me"
+.text "say. The duke of Tarrah sheltered me for years"
 .byte NewLine
-.text "for years and was killed by the empire for it."
+.text "and was killed by the empire for it."
 .byte WaitForA
 .byte ScrollText
 .text "I have many friends there, August."
@@ -210,21 +212,23 @@ ch7ending1
 .byte Right_slot
 .text "Most of us lived in a village on the eastern"
 .byte NewLine
-.text "shore. I was...captured while freeing"
+.text "shore. I was...captured while freeing several"
 .byte NewLine
-.text "several children from an imperial prison."
+.text "children from an imperial prison."
 .byte WaitForA
 .byte ScrollText
-.text "The Magi, the local resistance, later rescued"
+.text "The Magi, the local resistance, later rescued me,"
 .byte NewLine
-.text "me, and we fled the province together."
+.text "and we fled the province together."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Hmm... For one so young, you don't seem"
+.text "Hmm..."
 .byte NewLine
-.text "to bend easily. What's your name, lad?"
+.text "For one so young, you don't seem to"
+.byte NewLine
+.text "bend easily. What's your name, lad?"
 .byte WaitForA
 
 .byte Right_slot
@@ -253,18 +257,16 @@ ch7ending1
 
 .byte Right_slot
 .byte ScrollText
-.text "We'll head to Tarrah to fend off"
+.text "We'll head to Tarrah to fend off the empire's"
 .byte NewLine
-.text "the empire's siege."
-.byte NewLine
-.text "I've many friends there in need of help."
+.text "siege. I've many friends there in need of help."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Are you planning a route"
+.text "Are you planning a route through"
 .byte NewLine
-.text "through the central mountains?"
+.text "the central mountains?"
 .byte WaitForA
 
 .byte Right_slot
@@ -278,11 +280,9 @@ ch7ending1
 
 .byte Left_slot
 .byte ScrollText
-.text "Is that so? Then be warned:"
+.text "Is that so? Then be warned: many bandits make"
 .byte NewLine
-.text "many bandits make their home there."
-.byte NewLine
-.text "Don't let your guard down."
+.text "their home there. Don't let your guard down."
 .byte WaitForA
 
 .byte EndText
@@ -291,11 +291,11 @@ ch7ending2
 
 .byte Right_slot
 .byte ScrollText
-.text "Thank you, General. Now, would you release"
+.text "Thank you, General."
 .byte NewLine
-.text "the men you captured earlier?"
+.text "Now, would you release the men you captured"
 .byte NewLine
-.text "They're good friends of mine."
+.text "earlier? They're good friends of mine."
 .byte WaitForA
 
 .byte Left_slot
@@ -310,9 +310,7 @@ ch7ending2
 
 .byte Left_slot
 .byte ScrollText
-.text "Men, bring them to the prisoners,"
-.byte NewLine
-.text "on the double!"
+.text "Men, bring them to the prisoners, on the double!"
 .byte WaitForA
 
 .byte Right_slot
@@ -349,7 +347,7 @@ ch7ending4osian
 .byte Left_slot
 .word LoadPortrait
 .word osian_portrait
-.text "Damned Thracians!"
+.text "Damned Thracians..."
 .byte NewLine
 .text "You're not off the hook for this!"
 .byte NewLine
@@ -404,11 +402,11 @@ ch7ending7callion
 .text "Good folk, let me introduce you to Callion."
 .byte WaitForA
 .byte ScrollText
-.text "There are many perils in the central"
+.text "There are many perils in the central mountains—"
 .byte NewLine
-.text "mountains—not the least of which is a massive"
+.text "not the least of which is a massive hunt"
 .byte NewLine
-.text "hunt for bandits around Mount Violdrake."
+.text "for bandits around Mount Violdrake."
 .byte WaitForA
 .byte ScrollText
 .text "If you're mistaken for these bandits, you could"
@@ -444,9 +442,9 @@ ch7ending7callion
 
 .byte Right_slot
 .byte ScrollText
-.text "...If you insist,"
+.text "...If you insist, I certainly would appreciate"
 .byte NewLine
-.text "I certainly would appreciate your help."
+.text "your help."
 .byte WaitForA
 
 .byte Left_slot
@@ -467,9 +465,9 @@ ch7ending8cairpre
 
 .byte Right_slot
 .byte ScrollText
-.text "Oh, you were one of the children imprisoned"
+.text "Oh, you were one of the children imprisoned at"
 .byte NewLine
-.text "at Kerberos' Gate... What are you doing here?"
+.text "Kerberos' Gate... What are you doing here?"
 .byte WaitForA
 
 .byte Left_slot
@@ -477,11 +475,11 @@ ch7ending8cairpre
 .text "General Hannibal is my lord father, you see."
 .byte WaitForA
 .byte ScrollText
-.text "On the off chance we met again, I prepared"
+.text "On the off chance we met again, I prepared you"
 .byte NewLine
-.text "you a token of my gratitude. Here you are. It's"
+.text "a token of my gratitude. Here you are. It's a"
 .byte NewLine
-.text "a very powerful staff imbued with warp magic."
+.text "very powerful staff imbued with warp magic."
 .byte WaitForA
 
 .byte Right_slot
@@ -540,23 +538,25 @@ ch7finnsafie1
 .text "so we saw fit to arrest them."
 .byte WaitForA
 .byte ScrollText
-.text "I reckon they're bandits"
+.text "I reckon they're bandits from the"
 .byte NewLine
-.text "from the eastern frontier."
+.text "eastern frontier."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Hmm... What have they to say for themselves?"
+.text "Hmm..."
+.byte NewLine
+.text "What have they to say for themselves?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "“We're just villagers!” and other obvious tripe."
 .byte NewLine
-.text "What kind of villagers trek"
+.text "What kind of villagers trek through"
 .byte NewLine
-.text "through the Thracian mountains?"
+.text "the Thracian mountains?"
 .byte WaitForA
 .byte ScrollText
 .text "They must be up to something—"
@@ -583,9 +583,9 @@ ch7finnsafie3
 
 .byte Right_slot
 .byte ScrollText
-.text "Understood. I'll go have a word with"
+.text "Understood. I'll go have a word with the"
 .byte NewLine
-.text "the prisoners myself. In the meantime, there's"
+.text "prisoners myself. In the meantime, there's"
 .byte NewLine
 .text "some sort of commotion over in Munster."
 .byte WaitForA
@@ -633,11 +633,11 @@ ch7finnsafie5
 
 .byte Right_slot
 .byte ScrollText
-.text "Not at all. Your presence has been most"
+.text "Not at all."
 .byte NewLine
-.text "heartening—but where I go, I'm not certain"
+.text "Your presence has been most heartening—but"
 .byte NewLine
-.text "I could protect you."
+.text "where I go, I'm not certain I could protect you."
 .byte WaitForA
 
 .byte Left_slot
@@ -684,7 +684,9 @@ ch7safieshiva
 .byte Left_slot
 .word LoadPortrait
 .word safie_portrait
-.text "Hm? Oh, you're..."
+.text "Hm?"
+.byte NewLine
+.text "Oh, you're..."
 .byte WaitForA
 
 .byte Right_slot
@@ -706,8 +708,6 @@ ch7safieshiva
 .byte WaitForA
 .byte ScrollText
 .text "...Time for you to leave, Sister."
-.byte NewLine
-.text "I'm trouble to be around."
 .byte WaitForA
 
 .byte Left_slot
@@ -717,9 +717,9 @@ ch7safieshiva
 
 .byte Right_slot
 .byte ScrollText
-.text "...You really willing to risk everything"
+.text "...You really willing to risk everything for"
 .byte NewLine
-.text "for that little boy?"
+.text "that little boy?"
 .byte WaitForA
 
 .byte Left_slot
@@ -738,9 +738,9 @@ ch7safieshiva
 .byte ScrollText
 .text "Losing Prince Leif, losing what he represents,"
 .byte NewLine
-.text "would be an irreplaceable loss"
+.text "would be an irreplaceable loss to"
 .byte NewLine
-.text "to the entire Thracian Peninsula."
+.text "the entire Thracian Peninsula."
 .byte WaitForA
 .byte ScrollText
 .text "If I needed to give my life to save his,"
@@ -765,16 +765,16 @@ ch7safieshiva
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah, this is getting absurd... But yes,"
+.text "Ah, this is getting absurd..."
 .byte NewLine
-.text "I suppose I will. Just one thing: don't talk"
+.text "But yes, I suppose I will. Just one thing: don't"
 .byte NewLine
-.text "so lightly about throwing your life away."
+.text "talk so lightly about throwing your life away."
 .byte WaitForA
 .byte ScrollText
-.text "There's nothing more loathsome"
+.text "There's nothing more loathsome than people"
 .byte NewLine
-.text "than people rushing toward their own death."
+.text "rushing toward their own death."
 .byte WaitForA
 
 .byte Left_slot
@@ -807,11 +807,9 @@ ch7safieshiva
 .text "Well, I already said you were quite the fool."
 .byte WaitForA
 .byte ScrollText
-.text "...You know, I don't think I even know"
+.text "...You know, I don't think I learned your name."
 .byte NewLine
-.text "your name. I'm Shiva of Sabhain, by the way."
-.byte NewLine
-.text "What do you go by?"
+.text "I'm Shiva of Sabhain. What do you go by?"
 .byte WaitForA
 
 .byte Left_slot
@@ -839,7 +837,7 @@ ch7finnleif
 
 .byte Left_slot
 .byte ScrollText
-.text "Worried? Of... Of course not! I never doubted"
+.text "Worried? Of...of course not! I never doubted"
 .byte NewLine
 .text "you'd be able to keep yourself safe."
 .byte NewLine
@@ -871,11 +869,11 @@ ch7finnleif
 
 .byte Left_slot
 .byte ScrollText
-.text "Their loyalty to you is most important"
+.text "Their loyalty to you is most important above all."
 .byte NewLine
-.text "above all. If they've promised you as much,"
+.text "If they've promised you as much, their personal"
 .byte NewLine
-.text "their personal details are none of my concern."
+.text "details are none of my concern."
 .byte WaitForA
 .byte ScrollText
 .text "Though now that I get a look at everyone..."
@@ -889,9 +887,9 @@ ch7finnleif
 .byte ScrollText
 .text "The commander is still in Munster..."
 .byte NewLine
-.text "She... She was turned to stone"
+.text "She... She was turned to stone by"
 .byte NewLine
-.text "by the fell magic of a Loptrian bishop."
+.text "the fell magic of a Loptrian bishop."
 .byte WaitForA
 .byte ScrollText
 .text "There's...nothing I can do for her now..."
@@ -899,9 +897,11 @@ ch7finnleif
 
 .byte Left_slot
 .byte ScrollText
-.text "Gods' breath! Th-that can't be...! Lord Leif..."
+.text "Gods' breath! Th-that can't be...!"
 .byte NewLine
-.text "I'm sorry. I... I don't know what to say..."
+.text "Lord Leif... I'm sorry."
+.byte NewLine
+.text "I... I don't know what to say..."
 .byte WaitForA
 
 .byte Right_slot
@@ -927,9 +927,9 @@ ch7finnleif
 
 .byte Left_slot
 .byte ScrollText
-.text "Gladly, milord! On my honor, never again"
+.text "Gladly, milord! On my honor, never again shall"
 .byte NewLine
-.text "shall you and I be parted! I'll be at your side,"
+.text "you and I be parted! I'll be at your side,"
 .byte NewLine
 .text "Brave Lance in hand, until the very end!"
 .byte WaitForA
@@ -948,12 +948,12 @@ ch7finnleif
 .byte ScrollText
 .text "They were captured by General Hannibal's"
 .byte NewLine
-.text "Panzerritter, and imprisoned in Castle Meath."
+.text "soldiers, and imprisoned in Castle Meath."
 .byte WaitForA
 .byte ScrollText
-.text "I...considered rescuing them, but my duty"
+.text "I...considered rescuing them, but my duty to"
 .byte NewLine
-.text "to you comes first, so I set out without them."
+.text "you comes first, so I set out without them."
 .byte WaitForA
 
 .byte Right_slot
@@ -1007,9 +1007,9 @@ ch7finnnanna
 .byte ScrollText
 .text "That is good."
 .byte NewLine
-.text "If something were to happen to you,"
+.text "If something were to happen to you, I couldn't"
 .byte NewLine
-.text "I couldn't bear to break the news to your..."
+.text "bear to break the news to your..."
 .byte WaitForA
 .byte ScrollText
 .text "Ah, but never mind that."
@@ -1026,7 +1026,9 @@ ch7finnnanna
 
 .byte Right_slot
 .byte ScrollText
-.text "Yes? What's wrong?"
+.text "Yes?"
+.byte NewLine
+.text "What's wrong?"
 .byte WaitForA
 
 .byte Left_slot
@@ -1036,16 +1038,16 @@ ch7finnnanna
 
 .byte Right_slot
 .byte ScrollText
-.text "All right, all right,"
+.text "All right, all right, I know better than"
 .byte NewLine
-.text "I know better than to press the issue with you."
+.text "to press the issue with you."
 .byte NewLine
 .text "Ah... It's good to see you again, child."
 .byte WaitForA
 .byte ScrollText
-.text "Now, try to stay focused—"
+.text "Now, try to stay focused—there's no"
 .byte NewLine
-.text "there's no shortage of danger here."
+.text "shortage of danger here."
 .byte NewLine
 .text "I want you to stay to the rear as we fight."
 .byte WaitForA
@@ -1069,16 +1071,16 @@ ch7hannibalappear
 .byte Right_slot
 .word LoadPortrait
 .word hannibal_portrait
-.text "The Knights of Munster dare to cross"
+.text "The Knights of Munster dare to cross the"
 .byte NewLine
-.text "the border?! Raydrik, do you hold me"
+.text "border?! Raydrik, do you hold me in such"
 .byte NewLine
-.text "in such contempt as to attack so brazenly?!"
+.text "contempt as to attack so brazenly?!"
 .byte WaitForA
 .byte ScrollText
-.text "Men of the Panzerritter, sortie and engage the"
+.text "Armored corps, sortie and engage the knights!"
 .byte NewLine
-.text "knights! We'll show them the wrath of Meath!"
+.text "We'll show them the wrath of Meath!"
 .byte WaitForA
 
 .byte EndText
@@ -1115,14 +1117,12 @@ ch7eisenauspawn
 .word eisenau_portrait
 
 .byte Right_slot
-.text " Eisenhau, chase them down"
-.byte NewLine
-.text "with your knights and eliminate them."
-.byte WaitForA
 .byte ScrollText
-.text "Don't allow them to set even one foot"
+.text "Eisenhau, chase them down with your knights"
 .byte NewLine
-.text "on Castle Meath's soil."
+.text "and eliminate them. Don't allow them to set"
+.byte NewLine
+.text "even one foot on Castle Meath's soil."
 .byte WaitForA
 
 .byte Left_slot
@@ -1138,11 +1138,11 @@ ch7eisenauspawn
 .text "can mix no better than oil and water."
 .byte WaitForA
 .byte ScrollText
-.text "We may be allies, but we're certainly"
+.text "We may be allies, but we're certainly not friends."
 .byte NewLine
-.text "not friends. If the rebels have any sense,"
+.text "If the rebels have any sense, they'll use that"
 .byte NewLine
-.text "they'll use that to their advantage."
+.text "to their advantage."
 .byte WaitForA
 
 .byte Left_slot
@@ -1152,21 +1152,21 @@ ch7eisenauspawn
 
 .byte Right_slot
 .byte ScrollText
-.text "Perhaps I'm overestimating them,"
+.text "Perhaps I'm overestimating them, but I'll not"
 .byte NewLine
-.text "but I'll not be made a fool of twice."
+.text "be made a fool of twice."
 .byte WaitForA
 .byte ScrollText
-.text "Still, we can't overplay our hand:"
+.text "Still, we can't overplay our hand: Hannibal's"
 .byte NewLine
-.text "Hannibal's elite knights, the Panzerritter,"
+.text "elite armored battalion likely surrounds"
 .byte NewLine
-.text "lie in wait inside the castle."
+.text "the perimeter of the castle."
 .byte WaitForA
 .byte ScrollText
-.text "Attacking them would be tantamount to"
+.text "Attacking them would be tantamount to a"
 .byte NewLine
-.text "a declaration of war. If they take the field, you"
+.text "declaration of war. If they take the field, you"
 .byte NewLine
 .text "must not lay a hand on them, no matter what!"
 .byte WaitForA
@@ -1189,25 +1189,23 @@ ch7purewaterhouse
 .text "just south o' here?"
 .byte WaitForA
 .byte ScrollText
-.text "If you compete there an' win,"
+.text "If you compete there an' win, you'll make out"
 .byte NewLine
-.text "you'll make out with a pouch o' coin"
-.byte NewLine
-.text "an' a fair bit of experience!"
+.text "with a pouch o' coin an' a fair bit of experience!"
 .byte WaitForA
 .byte ScrollText
-.text "Oh, but all fights are to the death,"
+.text "Oh, but all fights are to the death, so don't"
 .byte NewLine
-.text "so don't hesitate to yield by [pressing the"
+.text "hesitate to yield by [pressing the B Button]"
 .byte NewLine
-.text "B Button] if things start goin' south!"
+.text "if things start goin' south!"
 .byte WaitForA
 .byte ScrollText
-.text "An' don't feel like you gotta clear out"
+.text "You gotta be careful not to overdo it,"
 .byte NewLine
-.text "everybody inside, neither! Pacing yerself is"
+.text "'specially because goin' in is completely"
 .byte NewLine
-.text "more important than winnin' first place!"
+.text "your choice, when you think about it."
 .byte WaitForA
 .byte ScrollText
 .text "Oh, an' if yer magic needs an extra edge—"
@@ -1229,9 +1227,9 @@ ch7antitoxinhouse
 .text "Best take this antitoxin with you, then."
 .byte WaitForA
 .byte ScrollText
-.text "If you get stuck with one o' them"
+.text "If you get stuck with one o' them venin"
 .byte NewLine
-.text "venin weapons, jus' pour that over yer wound"
+.text "weapons, jus' pour that over yer wound"
 .byte NewLine
 .text "and it'll clear right up."
 .byte WaitForA
@@ -1252,14 +1250,10 @@ ch7mastersealhouse
 .word oldman_orange_portrait
 .text "Oh, no, no..."
 .byte NewLine
-.text "I-it's not what it looks like!"
-.byte NewLine
-.text "I can explain it all!"
+.text "I-it's not what it looks like! I can explain it all!"
 .byte WaitForA
 .byte ScrollText
-.text "Just don't take me in..."
-.byte NewLine
-.text "I beg you!"
+.text "Just don't take me in... I beg you!"
 .byte NewLine
 .text "Please...!"
 .byte WaitForA

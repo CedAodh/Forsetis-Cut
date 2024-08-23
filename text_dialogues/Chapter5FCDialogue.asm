@@ -326,3 +326,93 @@ velddislikesraydrik
 .byte WaitForA
 
 .byte EndText
+
+nannaconsolesleif
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+
+.byte left_slot
+.word LoadPortrait
+.word nanna_portrait
+.text "Lord Leif..."
+.byte WaitForA
+
+.byte right_slot
+.text "...Yes, Nanna, what is it?"
+.byte NewLine
+.text "Are you okay?"
+.byte WaitForA
+
+.byte left_slot
+.word ScrollText
+.text "Th-that's what I wanted to ask YOU."
+.byte NewLine
+.text "Even I have never seen you look so...verklempt."
+.byte NewLine
+.text "I... Is there anything I can do?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I don't know, Nanna."
+.byte NewLine
+.text "I came here with the best of intentions,"
+.byte NewLine
+.text "and...just what do I have to show for it...?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You saved me, and I'm eternally grateful."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yes, I know. I know that, Nanna."
+.byte NewLine
+.text "But it's not enough."
+.byte NewLine
+.text "It's supposed to be better than this."
+.byte WaitForA
+.byte ScrollText
+.text "The commander was supposed to come back with me,"
+.byte NewLine
+.text "and I have next to no idea what even became of her."
+.byte NewLine
+.text "What, am I to just carry on now?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's not what I meant..."
+.byte WaitForA
+.byte NewLine
+.text "Leif, you asked what you have to show for"
+.byte NewLine
+.text "everything, and I'm telling you I'm now here."
+.byte NewLine
+.text "Because of your actions."
+.byte WaitForA
+.byte ScrollText
+.text "Though that...may be all I can say."
+.byte NewLine
+.text "I'm sorry."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.text "*sigh*"
+.byte NewLine
+.text "Lord Leif... You ask too much of yourself..."
+.byte WaitForA
+
+.byte EndText

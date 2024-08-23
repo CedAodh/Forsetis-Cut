@@ -135,7 +135,7 @@
 * := $0DB639
   .logical $9BB639
 
-.byte $AD
+.byte $9D
 
 .here
 
@@ -178,5 +178,106 @@
   .logical $8AA054
 
 .byte $D6, $A0, $8A
+
+.here
+
+; Reduces the length of a significant pause
+; in Tornado's in-battle animation
+* = $0B15B9
+.logical lorom($0B15B9, 1)
+
+.byte $16, $28, $54
+
+.here
+
+; Reduces the length of a significant pause
+; in Nosferatu's in-battle animation
+
+* = $0B1794
+.logical lorom($0B1794, 1)
+
+.byte $3C
+
+.here
+
+; Makes the screen pan during Lightning's
+; in-battle animation notably faster
+
+* = $0B16F8
+.logical lorom($0B16F8, 1)
+
+.byte $09
+
+.here
+
+; Makes authority count between units
+; that are different colors
+
+* = $01E40E
+.logical lorom($01E40E, 1)
+
+.byte $61, $98, $83
+
+.here
+
+;Enables the player to use most staves on NPCs
+
+; Physic, Fortify
+
+* = $03B8BA
+.logical lorom($03B8BA, 1)
+
+.byte $77, $98, $83
+
+.here
+
+; Ensorcel
+
+* = $03BA9B
+.logical lorom($03BA9B, 1)
+
+.byte $4F, $B3, $83
+
+.here
+
+; Heal, Mend, Recover
+
+* = $03B871
+.logical lorom($03B871, 1)
+
+.byte $4F, $B3, $83
+
+.here
+
+; Restore
+
+* = $03B9EF
+.logical lorom($03B9EF, 1)
+
+.byte $4F, $B3, $83
+
+.here
+
+; Allows players to use the Give
+; and Take commands with NPCs
+
+* = $039E4D
+.logical lorom($039E4D, 1)
+
+.byte $4F, $B3, $83
+
+.here
+
+* = $03A0A3
+.logical lorom($03A0A3, 1)
+
+.byte $4F, $B3, $83
+
+.here
+
+* = $03845F
+.logical lorom($03845F, 1)
+
+.byte $38
 
 .here

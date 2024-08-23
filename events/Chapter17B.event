@@ -415,7 +415,7 @@ eventChapter17BEvents ; FD/C4D0
 		SET_MUSIC $4A
 		YIELD
 
-		STORE_WORD wEventEngineCharacterTarget, Olwen
+		STORE_WORD wEventEngineCharacterTarget, Ralph
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		CALL_ASM_LOOP rlASMCClearOlwenWinsLosses, $0000
@@ -447,7 +447,7 @@ eventChapter17BEvents ; FD/C4D0
 		SET_MUSIC $4A
 		YIELD
 
-		STORE_WORD wEventEngineCharacterTarget, Olwen
+		STORE_WORD wEventEngineCharacterTarget, Ralph
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		CALL_ASM_LOOP rlASMCClearOlwenWinsLosses, $0000

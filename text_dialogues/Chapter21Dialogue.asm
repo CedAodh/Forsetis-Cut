@@ -20,32 +20,30 @@ ch21churchlinoan
 
 .byte Left_slot
 .byte ScrollText
-.text "I grew up with your father. He and I didn't"
+.text "I grew up with your father. He and I didn't know"
 .byte NewLine
-.text "know each other particularly well, but I was"
+.text "each other particularly well, but I was also good"
 .byte NewLine
-.text "also good friends with your late mother."
+.text "friends with your late mother."
 .byte WaitForA
 .byte ScrollText
-.text "I nearly mistook you for her when"
+.text "I nearly mistook you for her when you walked"
 .byte NewLine
-.text "you walked in—the resemblance is uncanny."
+.text "in—the resemblance is uncanny."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Oh..."
-.byte NewLine
-.text "Is that so...?"
+.text "I see..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Oh, heavens! I didn't mean to upset you."
+.text "I take it you're with Prince Leif?"
 .byte NewLine
-.text "Er... I take it you're with Prince Leif?"
+.text "I saw you fighting together outside,"
 .byte NewLine
-.text "I saw you fighting together outside."
+.text "in addition to what word has it."
 .byte WaitForA
 
 .byte Right_slot
@@ -66,14 +64,14 @@ ch21churchlinoan
 .byte ScrollText
 .text "Blood of the crusaders?"
 .byte NewLine
-.text "You don't mean...I share their lineage?"
+.text "You mean to say...I'm of their lineage?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Eh?"
 .byte NewLine
-.text "Your father didn't tell you?"
+.text "Your father never mentioned anything?"
 .byte WaitForA
 .byte ScrollText
 .text "The ducal house of Tarrah is descended from"
@@ -88,14 +86,14 @@ ch21churchlinoan
 
 .byte Left_slot
 .byte ScrollText
-.text "You mean to say you never realized"
+.text "Even now you still do not realize what you"
 .byte NewLine
-.text "you bore the power of Naga herself...?"
+.text "possess: the power of Naga herself..."
 .byte WaitForA
 .byte ScrollText
-.text "Follow me. I can awaken the blood"
+.text "Then please come with me. I can awaken the"
 .byte NewLine
-.text "that lay dormant in your veins."
+.text "blood that lay dormant in your veins."
 .byte WaitForA
 
 .byte Right_slot
@@ -111,16 +109,14 @@ ch21churchother
 .byte Right_slot
 .word LoadPortrait
 .word jeanne_portrait
-.text "The fighting will only become more intense"
+.text "The fighting will only become more intense as you"
 .byte NewLine
-.text "as you draw closer to the imperial base"
-.byte NewLine
-.text "to the east."
+.text "draw closer to the imperial base to the east."
 .byte WaitForA
 .byte ScrollText
 .text "Keep hold of this pure water."
 .byte NewLine
-.text "I'm sure it will come in handy."
+.text "I'm sure it will prove useful."
 .byte WaitForA
 
 .byte EndText
@@ -131,21 +127,21 @@ ch21purewaterhouse
 .byte Right_slot
 .word LoadPortrait
 .word elder_portrait
-.text "Ever since the empire took over,"
+.text "Ever since the empire took over, this whole"
 .byte NewLine
-.text "this whole place has gone to hell..."
+.text "place has gone to hell... Nobody's around."
 .byte NewLine
-.text "Bah, I wish I could go back to the old days..."
+.text "I'd like to go back to the old days..."
 .byte WaitForA
 .byte ScrollText
-.text "So I don't care what you do,"
+.text "So, all I can tell you is please drive the empire"
 .byte NewLine
-.text "just drive the empire outta here!"
+.text "outta here!"
 .byte WaitForA
 .byte ScrollText
 .text "I know this little vial seems worthless now,"
 .byte NewLine
-.text "but just be patient!"
+.text "but just be patient."
 .byte NewLine
 .text "I'm sure it'll be a lifesaver someday!"
 .byte WaitForA
@@ -167,9 +163,9 @@ ch21silverswordhouse
 .byte ScrollText
 .text "Here, I'll give you my favorite sword."
 .byte NewLine
-.text "Mayhap if you use it, I'll still be fighting"
+.text "Mayhap if you use it, I'll still be fighting in some"
 .byte NewLine
-.text "in some small way..."
+.text "small way..."
 .byte WaitForA
 
 .byte EndText
@@ -219,9 +215,9 @@ ch21opening1
 .text "I understand your feelings perfectly."
 .byte WaitForA
 .byte ScrollText
-.text "You can head to Munster with"
+.text "You can head to Munster with a clean"
 .byte NewLine
-.text "a clean conscience—I'll see you soon."
+.text "conscience—I'll see you soon."
 .byte WaitForA
 
 .byte Left_slot
@@ -236,18 +232,6 @@ ch21opening1
 .word LoadPortrait
 .word julia_portrait
 .text "I'll be praying for your health, Lord Leif..."
-.byte WaitForA
-.byte ScrollText
-.text "If your fortune begins to wane, perhaps one of"
-.byte NewLine
-.text "your own clerics could appeal to the gods."
-.byte NewLine
-.text "I believe there's a church on your route..."
-.byte WaitForA
-.byte ScrollText
-.text "I've heard it was built to receive the prayers"
-.byte NewLine
-.text "of the ducal family of Tarrah..."
 .byte WaitForA
 
 .byte Left_slot
@@ -285,11 +269,11 @@ ch21opening2
 .text "Indeed."
 .byte WaitForA
 .byte NewLine
-.text "He commands an army ten times the size"
+.text "He commands an army ten times the size of ours,"
 .byte NewLine
-.text "of ours, and he was able to lead them"
+.text "and he was able to lead them across the"
 .byte NewLine
-.text "across the Aed Desert."
+.text "Aed Desert."
 .byte WaitForA
 .byte ScrollText
 .text "He's certainly not your ordinary youth..."
@@ -297,18 +281,18 @@ ch21opening2
 
 .byte Right_slot
 .byte ScrollText
-.text "But you said before that he was “made”"
+.text "But you said before that he was “made” into a"
 .byte NewLine
-.text "into a hero, did you not?"
+.text "hero, did you not?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "I did say that, yes—and in one sense, it's true."
 .byte NewLine
-.text "But I'm not discounting that Lord Seliph"
+.text "But I'm not discounting that Lord Seliph himself"
 .byte NewLine
-.text "himself possesses outstanding talent."
+.text "possesses outstanding talent."
 .byte WaitForA
 .byte ScrollText
 .text "I suspect he'll eclipse the legend of his father,"
@@ -318,9 +302,9 @@ ch21opening2
 
 .byte Right_slot
 .byte ScrollText
-.text "And meanwhile, I'm still just"
+.text "And for me...suffice to say I have a lot of"
 .byte NewLine
-.text "an embarrassment to Leonster..."
+.text "growing up to do. It's ignominious."
 .byte WaitForA
 
 .byte Left_slot
@@ -341,18 +325,16 @@ ch21opening2
 
 .byte Right_slot
 .byte ScrollText
-.text "Lord Seliph's main forces will go east"
+.text "Lord Seliph's main forces will go east along the"
 .byte NewLine
-.text "along the shore to seize Connaught,"
-.byte NewLine
-.text "as planned."
+.text "shore to seize Connaught, as planned."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Which frees our army"
+.text "Which frees our army to head for Fort Danzig,"
 .byte NewLine
-.text "to head for Fort Danzig, correct?"
+.text "correct?"
 .byte WaitForA
 
 .byte Right_slot
@@ -362,7 +344,7 @@ ch21opening2
 .text "Lord Seliph readily granted my request."
 .byte WaitForA
 .byte ScrollText
-.text "Leaving Connaught to Seliph means we can"
+.text "Leaving Connaught to Lord Seliph means we can"
 .byte NewLine
 .text "focus all our energy on seizing Munster—"
 .byte NewLine
@@ -376,7 +358,7 @@ ch21opening2
 .text "it controls the inland route to Munster."
 .byte WaitForA
 
-.byte EndText
+;.byte EndText
 
 
 ch21opening3dermott
@@ -389,9 +371,6 @@ ch21opening3dermott
 .byte NewLine
 .text "We await your command."
 .byte WaitForA
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
 
 .byte Right_slot
 .byte ScrollText
@@ -410,9 +389,9 @@ ch21opening4
 .word seimetz_portrait
 .text "Everybody remembers we fight for pay, right?"
 .byte NewLine
-.text "So don't be a hero! Wait for the enemy to"
+.text "So don't be a hero! Wait for the enemy to break"
 .byte NewLine
-.text "break up their forces, THEN swoop in!"
+.text "up their forces, THEN swoop in!"
 .byte WaitForA
 .byte NewLine
 .text "Until then, nobody leave their post!"
@@ -438,40 +417,36 @@ ch21noprisoners
 .byte NewLine
 .text "The fort is completely vacant."
 .byte NewLine
-.text "Seems to be deserted."
+.text "Deserted, it seems."
 .byte WaitForA
 .byte ScrollText
-.text "By the look of it, this place was once"
+.text "By the look of it, this place was once a prison"
 .byte NewLine
-.text "a prison camp, but it's not in use anymore."
+.text "camp, but it is no longer in use."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I see. Then if there's nothing requiring"
+.text "I see."
 .byte NewLine
-.text "our attention, we should hurry ahead"
+.text "Then if there's nothing requiring our attention,"
 .byte NewLine
-.text "to the River Thracia."
+.text "we should hurry ahead to the River Thracia."
 .byte WaitForA
-.byte ScrollText
-.text "Once we cross it,"
 .byte NewLine
-.text "we'll be at Munster's doorstep."
+.text "Once we cross it, we'll be at Munster's doorstep."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah..."
-.byte NewLine
-.text "Easier said than done, my prince."
+.text "Well, easier said than done, my prince."
 .byte WaitForA
 .byte ScrollText
 .text "I've no doubt the enemy is waiting for us—"
 .byte NewLine
-.text "they likely have established a defensive line"
+.text "they've likely established a defensive line"
 .byte NewLine
-.text "at the river."
+.text "at that very area."
 .byte WaitForA
 .byte ScrollText
 .text "We still have some way to go before our goal."
@@ -491,9 +466,7 @@ ch21prisoners
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "August!"
-.byte NewLine
-.text "This can't be an ordinary fort—"
+.text "August! This can't be an ordinary fort—"
 .byte NewLine
 .text "there are too many guards for that!"
 .byte WaitForA
@@ -519,9 +492,9 @@ ch21prisoners
 .byte ScrollText
 .text "Our forces are already exhausting themselves,"
 .byte NewLine
-.text "Prince Leif. Besides, we have intelligence that"
+.text "Prince Leif. Besides, we have intelligence that a"
 .byte NewLine
-.text "a battalion of Loptrian mages are en route."
+.text "battalion of Loptr mages is en route."
 .byte WaitForA
 .byte ScrollText
 .text "Please, we need to withdraw while we can!"
@@ -529,13 +502,11 @@ ch21prisoners
 
 .byte Left_slot
 .byte ScrollText
-.text "No, August! I won't!"
+.text "No, August! I won't! I will not abandon my"
 .byte NewLine
-.text "I'll not abandon my comrades-in-arms"
-.byte NewLine
-.text "to the enemy's clutches!"
+.text "comrades-in-arms to the enemy's clutches!"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "I'll free them alone if I have to!"
 .byte WaitForA
 
@@ -546,9 +517,9 @@ ch21prisoners
 .text "I suppose this is unavoidable..."
 .byte WaitForA
 .byte ScrollText
-.text "At least limit yourself to a small handful"
+.text "At least limit yourself to a small handful of"
 .byte NewLine
-.text "of troops, and let the others rest."
+.text "troops, and let the others rest."
 .byte WaitForA
 
 .byte EndText

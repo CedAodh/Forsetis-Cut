@@ -11875,7 +11875,7 @@ rlCheckOlwenDeadOrUnrecruited ; 8C/B6C6
 	.autsiz
 	.databank ?
 
-	lda #Olwen
+	lda #Ralph
 	sta wR0
 	bra +
 
@@ -15419,11 +15419,11 @@ rlUpdateTwoPositionDialogueArrow ; 8C/CB6A
 	bra rlUpdateDialogueArrow
 
 	_aArrowCoordinateTable ; 8C/CB83
-		.word 120
-		.word 64
+		.word 229
+		.word 61
 
-		.word 120
-		.word 216
+		.word 229
+		.word 213
 
 rlUpdateDialogueArrow ; 8C/CB8B
 
@@ -15897,7 +15897,7 @@ rlASMCClearOlwenWinsLosses ; 8C/CD87
 	.databank ?
 
 	php
-	lda #Olwen
+	lda #Ralph
 	jsl rlGetCharacterWinLossTableOffset
 	bcs +
 

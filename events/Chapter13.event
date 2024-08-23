@@ -651,9 +651,6 @@ eventChapter13Events ; 99/E392
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
 		YIELD
 
-		SCROLL_CAMERA_ADDRESS eventChapter13Data._GladeCameraCoordinates
-		YIELD
-
 		LOAD1 eventChapter13Data._GladeGroup
 		WAIT_MOVE
 		YIELD
@@ -756,6 +753,8 @@ eventChapter13Events ; 99/E392
 
 		STORE_WORD wEventEngineCharacterTarget, LeonsterLanceKnight
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		macroSetCharacterWord Glade, structCharacterDataRAM.Leader, Leif
 
 		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
 

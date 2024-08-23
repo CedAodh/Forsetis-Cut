@@ -6,9 +6,9 @@ ch2xop1
 	.byte Left_slot ; Left slot
     .word LoadPortrait    ; load portrait
     .word shiva_portrait
-	.text "I shouldn't have to say this, Lifis,"
+	.text "I shouldn't have to say this, Lifis, but"
 	.byte NewLine
-	.text "but don't you dare lay a hand on the cleric."
+	.text "don't you dare lay a hand on the cleric."
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -32,7 +32,7 @@ ch2xop1
 	.byte NewLine
 	.text "Safy. We both know I could get"
 	.byte NewLine
-	.text "anythin' you want."
+	.text "anything you want."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Just go along with me, yeah?"
@@ -52,21 +52,21 @@ ch2xop1
 	.byte NewLine
 	.text "May as well stand on the shore"
 	.byte NewLine
-	.text "an' try to push the tide back!"
+	.text "and try to push the tide back!"
 	.byte WaitForA
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "Perhaps it sounds impossible,"
+	.text "Perhaps it sounds impossible, but the"
 	.byte NewLine
-	.text "but the alternative is to do nothing"
+	.text "alternative is to do nothing as innocent"
 	.byte NewLine
-	.text "as innocent children are ritually slaughtered."
+	.text "children are ritually slaughtered."
 	.byte WaitForA
 	.byte ScrollText
-	.text "No matter the cost, no one with"
+	.text "No matter the cost, no one with a"
 	.byte NewLine
-	.text "a drop of humanity could stand by"
+	.text "drop of humanity could stand by"
 	.byte NewLine
 	.text "and allow this to continue."
 	.byte WaitForA
@@ -142,11 +142,11 @@ ch2xop2
 	.byte Left_slot
     .word LoadPortrait    ; load portrait
     .word augustus_portrait
-	.text "The timing isn't ideal, granted,"
+	.text "The timing isn't ideal, granted, but with"
 	.byte NewLine
-	.text "but with a torch in hand,"
+	.text "a torch in hand, your me will be able"
 	.byte NewLine
-	.text "your men will be able to see a ways ahead."
+	.text "to see a ways ahead."
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -160,7 +160,7 @@ ch2xop2
 	.byte ScrollText
 	.text "Your men won't be totally blind, but they'll"
 	.byte NewLine
-	.text "barely be able to see in front of them."
+	.text "hardly be able to see in front of them."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Still, I imagine you can find a spare torch"
@@ -170,9 +170,7 @@ ch2xop2
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "Then let's get moving."
-	.byte NewLine
-	.text "There's no time to waste!"
+	.text "Then let's get moving. There's no time to waste!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -192,9 +190,9 @@ ch2xturn2
 	.text "the empire..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I mean, we might as well jus' jab a knife in our"
+	.text "I mean, we might as well jus' jab a knife in"
 	.byte NewLine
-	.text "necks now an' save everybody some time!"
+	.text "our necks now an' save everybody some time!"
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -203,9 +201,9 @@ ch2xturn2
 	.text "Gotta get my foot in the door with that lass."
 	.byte WaitForA
 	.byte ScrollText
-	.text "An' just who does Shiva think he is, talking to"
+	.text "And just who does Shiva think he is, talking to"
 	.byte NewLine
-	.text "me like that? Did that cutthroat sellsword"
+	.text "me like that?! Did that cutthroat sellsword"
 	.byte NewLine
 	.text "grow a conscience when nobody was looking?"
 	.byte WaitForA
@@ -227,7 +225,7 @@ ch2xturn2
 	.text "You gotta be joking!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "...All right, boys, how 'bout we say hello!"
+	.text "...All right, boys, how about we say hello!"
 	.byte NewLine
 	.text "The sharks are gonna be well-fed tonight!"
 	.byte WaitForA
@@ -279,33 +277,39 @@ ch2xeyvelLeif
 	.text "certain everyone knows not to [Release] him."
 	.byte WaitForA
 	.byte ScrollText
-	.text "We'll bring him back to Iz and see that he gets"
+	.text "We'll bring him back to Iz and see that he"
 	.byte NewLine
-	.text "justice for his crimes."
+	.text "gets justice for his crimes."
 	.byte WaitForA
 	
 	.byte EndText
 	
 ch2xend1
-	.byte Left_slot
+	.byte Right_slot
 	.word LoadPortrait
-	.word leif_portrait
-	.text "The pirates seem to have escaped,"
+	.word leif_portrait2
+	.text "The pirates seem to have escaped, but"
 	.byte NewLine
-	.text "but never mind that—is the cleric safe?"
+	.text "never mind that—is the cleric safe?"
 	.byte WaitForA
 
-	.byte Right_slot
+	.byte Left_slot
 	.word LoadPortrait
 	.word augustus_potrait
 	.text "Ahem. I've found her, sire."
 	.byte WaitForA
 	.byte ScrollText
 	
+	.byte Right_slot
 	.word LoadPortrait
 	.word safie_portrait
 	.text "Thank you, kind folk. I owe you my—"
 	.byte WaitForA
+	
+	.byte Left_slot
+	.byte ScrollText
+	.word LoadPortrait
+	.word leif_portrait
 	.byte ScrollText
 	.text "Hm? Is that...?"
 	.byte WaitForA
@@ -328,9 +332,9 @@ ch2xend1
 
 	.byte Left_slot
 	.byte ScrollText
-	.text "Safy, you say? I knew a young woman"
+	.text "Safy, you say? I knew a young woman at"
 	.byte NewLine
-	.text "at the monastery in Tarrah by that name."
+	.text "the monastery in Tarrah by that name."
 	.byte WaitForA
 
 	.byte Right_slot
@@ -344,9 +348,9 @@ ch2xend1
 	.byte ScrollText
 	.text "Still, you left an impression on me all the same."
 	.byte NewLine
-	.text "When you departed the city, it was I"
+	.text "When you departed the city, it was I who"
 	.byte NewLine
-	.text "who wiped Lady Linoan's face of tears."
+	.text "wiped Lady Linoan's face of tears."
 	.byte WaitForA
 
 	.byte Left_slot
@@ -376,16 +380,16 @@ ch2xend1
 
 	.byte Right_slot
 	.byte ScrollText
-	.text "You mean to say you don't know"
+	.text "You mean to say you don't know what's"
 	.byte NewLine
-	.text "what's happened to Tarrah since you left?"
+	.text "happened to Tarrah since you left?"
 	.byte NewLine
 	.text "Ah... Let me start from the beginning."
 	.byte WaitForA
 	.byte ScrollText
-	.text "After the duke passed away,"
+	.text "After the duke passed away, the empire"
 	.byte NewLine
-	.text "the empire installed their own governor."
+	.text "installed their own governor."
 	.byte WaitForA
 	.byte ScrollText
 	.text "The man proved to be a walking pox, inflicting"
@@ -404,14 +408,14 @@ ch2xend1
 	.byte ScrollText
 	.text "That proved to be the breaking point."
 	.byte NewLine
-	.text "The people of Tarrah revolted,"
+	.text "The people of Tarrah revolted, installing"
 	.byte NewLine
-	.text "installing Lady Linoan as rightful duchess."
+	.text "Lady Linoan as rightful duchess."
 	.byte WaitForA
 	.byte ScrollText
-	.text "They hired any sellsword who could stand"
+	.text "They hired any sellsword who could stand upright,"
 	.byte NewLine
-	.text "upright, and then sent offerings of gold and"
+	.text "and then sent offerings of gold and gemstones"
 	.byte NewLine
 	.text "gemstones to the empire's leading noblemen."
 	.byte WaitForA
@@ -475,21 +479,21 @@ ch2xend2
 .word lifis_portrait
 .text "Well, don't keep me in suspense."
 .byte NewLine
-.text "What're you gonna do with me?"
+.text "What's your plan with me?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "That's up to the villagers of Iz. We're taking"
+.text "That is up to the villagers of Iz. We're taking"
 .byte NewLine
 .text "you back there to answer for your crimes."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "We both know what'll happen! You handin' me"
+.text "Hey, we both know what that means! You handing me"
 .byte NewLine
-.text "over to them is as good as killin' me yourself!"
+.text "over to them is as good as killing me yourself!"
 .byte WaitForA
 
 .byte Left_slot ; Left slot
@@ -499,9 +503,9 @@ ch2xend2
 
 .byte Right_slot
 .byte ScrollText
-.text "Safy, c'mon, we had a deal—"
+.text "Safy, c-come on, we had a deal—I said"
 .byte NewLine
-.text "I said I'd go to Tarrah with you!"
+.text "I'd go to Tarrah with you!"
 .byte WaitForA
 
 .byte Left_slot
@@ -515,9 +519,9 @@ ch2xend2
 .text "...Lord Leif, Lifis is not an evil man."
 .byte WaitForA
 .byte ScrollText
-.text "He's committed many foul acts as a pirate, yes,"
+.text "He's committed many foul acts as a pirate,"
 .byte NewLine
-.text "but he seemed genuinely repentant"
+.text "yes, but he seemed genuinely repentant"
 .byte NewLine
 .text "when we spoke earlier."
 .byte WaitForA
@@ -527,14 +531,20 @@ ch2xend2
 .text "in the eyes of the gods."
 .byte WaitForA
 
+.byte Left_slot
+.text "...All right."
+.byte WaitForA
+
+.byte Right_slot
 .byte ScrollText
-.word LoadPortrait; load portrait
+.word LoadPortrait
 .word lifis_portrait
 
 .byte Left_slot
-.text "...All right. If Safy believes in you,"
+.byte ScrollText
+.text "If Safy believes in you, I can give you"
 .byte NewLine
-.text "I can give you a chance for the time being."
+.text "a chance for the time being."
 .byte WaitForA
 
 .byte ScrollText
@@ -557,9 +567,9 @@ ch2xend2
 .byte ScrollText
 .text "It's worth mulling over, at least."
 .byte NewLine
-.text "Either way, it'll have to wait until after Safy"
+.text "Either way, it'll have to wait until after"
 .byte NewLine
-.text "has given in to my many charms!"
+.text "Safy has given in to my many charms!"
 .byte WaitForA
 
 .byte EndText

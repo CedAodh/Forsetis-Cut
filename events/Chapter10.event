@@ -52,6 +52,14 @@ eventChapter10Events ; 99/C559
 			macroEventConditionCheckCoords [17, 17]
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
+		EVENT $27, _BallistaHouseVisit
+			macroEventConditionCheckCoords [25, 6]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $28, _FortHouseVisit
+			macroEventConditionCheckCoords [27, 17]
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagAlwaysZero, _EndingEvent
 			macroEventConditionCheckCoords [4, 12]
 			CMP_WORD wCurrentPhase, Player
@@ -178,6 +186,66 @@ eventChapter10Events ; 99/C559
 		macroSetCharacterBitsWord Fred, structCharacterDataRAM.Unknown3F, $1000
 
 		+
+	END2
+	
+	_BallistaHouseVisit
+		PLAY_SOUND_WORD $00F7
+		DIALOGUE ballisticianhouse
+		YIELD
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		STORE_WORD wEventEngineParameter1, SteelBow
+		PAUSE_SKIPPABLE 10
+		YIELD
+
+		CALL_ASM_LOOP rlASMCSetPopupGivenItemWithMaxDurability, $0000
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCSetupGiveItemPopup, $0000
+		CALL_ASM_LOOP rlASMCWaitWhileGiveItemPopup, $0000
+		CALL_ASM_LOOP rlASMCSetupGiveToConvoyIfInventoryFull, $0000
+		CALL_ASM_LOOP rlASMCWaitWhileGiveToConvoyIfInventoryFull, $0000
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
+
+		STORE_WORD wEventEngineXCoordinate, 25
+		STORE_WORD wEventEngineYCoordinate, 6
+		STORE_WORD wEventEngineParameter1, $0021
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		YIELD_UNK
+	END2
+	
+	_FortHouseVisit
+		PLAY_SOUND_WORD $00F7
+		DIALOGUE forthouse
+		YIELD
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		STORE_WORD wEventEngineParameter1, Vulnerary
+		PAUSE_SKIPPABLE 10
+		YIELD
+
+		CALL_ASM_LOOP rlASMCSetPopupGivenItemWithMaxDurability, $0000
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCSetupGiveItemPopup, $0000
+		CALL_ASM_LOOP rlASMCWaitWhileGiveItemPopup, $0000
+		CALL_ASM_LOOP rlASMCSetupGiveToConvoyIfInventoryFull, $0000
+		CALL_ASM_LOOP rlASMCWaitWhileGiveToConvoyIfInventoryFull, $0000
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
+
+		STORE_WORD wEventEngineXCoordinate, 27
+		STORE_WORD wEventEngineYCoordinate, 17
+		STORE_WORD wEventEngineParameter1, $0021
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		YIELD_UNK
 	END2
 
 	_RescueHouseVisit ; 99/C8F3

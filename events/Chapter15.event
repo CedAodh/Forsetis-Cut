@@ -92,6 +92,9 @@ eventChapter15Events ; FD/A812
 		EVENT $12, _TanyaMareetaTalk
 			CHECK_CHARS2 Tanya, Mareeta
 		END_DEFINITION
+		EVENT $0B, _DaisyAsaelloTalk
+			CHECK_CHARS2 Shiva, Asaello
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; FD/A8CB

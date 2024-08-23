@@ -487,7 +487,7 @@ _IronBallista_name
 	.word $0000
 
 _KillerBallista_name
-	.text "Killer Ballista "
+	.text "Knight Ring "
 	.word $0000
 
 _VeninBallista_name
@@ -730,7 +730,7 @@ _MasterSeal_name
 	.word $0000
 
 _MasterCrown_name
-	.text "Ag"
+	.text "Ar[ms Scroll"
 	.word $0000
 
 _ChestKey_name

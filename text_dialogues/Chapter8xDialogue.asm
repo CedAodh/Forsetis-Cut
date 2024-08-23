@@ -22,30 +22,30 @@ ch8xosiantanya
 .byte ScrollText
 .text "Would it kill you to show a little gratitude?"
 .byte NewLine
-.text "If we'd showed up any later,"
+.text "If we'd showed up any later, you'd just be a"
 .byte NewLine
-.text "you'd just be a stain on the floor!"
+.text "stain on the floor!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "What?! You're the one who started"
+.text "What?! You're the one who just started this!"
 .byte NewLine
-.text "this argument! I hadn't said one word to you"
+.text "I hadn't said one word to you when you started"
 .byte NewLine
-.text "when you started yelling at me!"
+.text "calling me names!"
 .byte WaitForA
 .byte ScrollText
-.text "Ugh, you're always like this! Gloomy little"
+.text "Ugh, you're always like this! Gloomy little Osian,"
 .byte NewLine
-.text "Osian, always ready to kill the mood..."
+.text "always ready to kill the mood..."
 .byte WaitForA
 .byte ScrollText
-.text "Whatever I lack for gratitude,"
+.text "Whatever I lack for gratitude, you lack for"
 .byte NewLine
-.text "you lack for manners! Just this once,"
+.text "manners! Just this once, you could stand to be"
 .byte NewLine
-.text "you could stand to be even a little friendly..."
+.text "even a little friendly..."
 .byte WaitForA
 
 .byte Left_slot
@@ -74,9 +74,9 @@ ch8xopening
 .word dagdar_portrait
 .text "...Tanya, it's time fer you to go."
 .byte NewLine
-.text "Make a break fer it on yer own—"
+.text "Make a break fer it on yer own—I'll keep any of"
 .byte NewLine
-.text "I'll keep any of 'em from followin' ya."
+.text "'em from followin' ya."
 .byte WaitForA
 
 .byte Right_slot
@@ -87,9 +87,9 @@ ch8xopening
 .byte ScrollText
 .text "You stick around here, you'll just be a burden."
 .byte NewLine
-.text "Now just listen to yer old man"
+.text "Now just listen to yer old man and don't give me"
 .byte NewLine
-.text "and don't give me lip!"
+.text "lip!"
 .byte WaitForA
 
 .byte Right_slot
@@ -101,9 +101,9 @@ ch8xopening
 .byte ScrollText
 .word LoadPortrait
 .word gomez_portrait
-.text "Aw, don't tell me you were thinkin' of leavin'"
+.text "Aw, don't tell me you were thinkin' of leavin' the"
 .byte NewLine
-.text "the party already. Nope, the only way you two"
+.text "party already. Nope, the only way you two are"
 .byte NewLine
 .text "are gettin' out of here is in a casket."
 .byte WaitForA
@@ -121,16 +121,14 @@ ch8xopening
 
 .byte Left_slot
 .byte ScrollText
-.text "Naw, it's too late fer you"
+.text "Naw, it's too late fer you to be makin' excuses,"
 .byte NewLine
-.text "to be makin' excuses, Dagdar!"
+.text "Dagdar!"
 .byte WaitForA
 .byte ScrollText
-.text "The soil itself don't want us here!"
+.text "The soil itself don't want us here! Nothin' grows!"
 .byte NewLine
-.text "Nothin' grows! Tryin' to till a field"
-.byte NewLine
-.text "is like sawing through rock!"
+.text "Tryin' to till a field is like sawing through rock!"
 .byte WaitForA
 .byte ScrollText
 .text "All I wanted was a full belly, but you let that"
@@ -140,9 +138,9 @@ ch8xopening
 .text "She's got you wrapped around her little finger!"
 .byte WaitForA
 .byte ScrollText
-.text "You so desperate that you'd let"
+.text "You so desperate that you'd let everybody"
 .byte NewLine
-.text "everybody starve just to get lucky?"
+.text "starve just to get lucky?"
 .byte NewLine
 .text "Shame on you, old man!"
 .byte WaitForA
@@ -166,9 +164,9 @@ ch8xopening
 .text "trust you with my laundry, junior!"
 .byte WaitForA
 .byte ScrollText
-.text "Fine! You want yerself a fight so bad,"
+.text "Fine!"
 .byte NewLine
-.text "you got one!"
+.text "You want yerself a fight so bad, you got one!"
 .byte WaitForA
 
 .byte EndText
@@ -185,9 +183,9 @@ ch8xclosing
 .word leif_portrait2
 .text "I pity Dagdar and his men, truly, but..."
 .byte NewLine
-.text "Why couldn't they just earn their food"
+.text "Why couldn't they just earn their food through"
 .byte NewLine
-.text "through honest labor?"
+.text "honest labor?"
 .byte WaitForA
 
 .byte Right_slot
@@ -196,11 +194,11 @@ ch8xclosing
 .text "Their very land was infertile."
 .byte WaitForA
 .byte ScrollText
-.text "Many of these men were children of"
+.text "Many of these men were children of Thracian"
 .byte NewLine
-.text "Thracian farmers. Abandoned by their parents,"
+.text "farmers. Abandoned by their parents, they"
 .byte NewLine
-.text "they turned to banditry out of sheer necessity."
+.text "turned to banditry out of sheer necessity."
 .byte WaitForA
 .byte ScrollText
 .text "Their choice was simple: steal or starve."
@@ -215,18 +213,18 @@ ch8xclosing
 
 .byte Right_slot
 .byte ScrollText
-.text "And how would you know? You've been"
+.text "And how would you know?"
 .byte NewLine
-.text "on the run for your whole life, true,"
+.text "You've been on the run for your whole life, true,"
 .byte NewLine
 .text "but you've never known the pains of hunger."
 .byte WaitForA
 .byte ScrollText
 .text "Just where do you think your food came from"
 .byte NewLine
-.text "during all those days you were fleeing"
+.text "during all those days you were fleeing from the"
 .byte NewLine
-.text "from the empire?"
+.text "empire?"
 .byte WaitForA
 
 .byte Left_slot
@@ -238,27 +236,26 @@ ch8xclosing
 
 .byte Right_slot
 .byte ScrollText
-.text "Then you were fortunate to have had such"
+.text "Then you were fortunate to have had such loyal"
 .byte NewLine
-.text "loyal allies and retainers, "
-.byte WaitForA
-.text "but it has left you"
-.byte NewLine
-.text "lacking the perspective to truly understand"
-.byte NewLine
-.text "how the common folk suffer."
+.text "allies and retainers;"
 .byte WaitForA
 .byte ScrollText
-.text "South Thracia is a land dominated by"
+.text "but it has left you lacking the perspective to"
 .byte NewLine
-.text "mountains—steep, imposing crags dot the"
-.byte NewLine
-.text "landscape, and a cliff lies around every corner."
+.text "truly understand how the common folk suffer."
 .byte WaitForA
 .byte ScrollText
-.text "By nature, the land demands severity"
+.text "South Thracia is a land dominated by mountains—"
 .byte NewLine
-.text "and discipline from all who live in it."
+.text "steep, imposing crags dot the landscape,"
+.byte NewLine
+.text "and a cliff lies around every corner."
+.byte WaitForA
+.byte ScrollText
+.text "By nature, the land demands severity and"
+.byte NewLine
+.text "discipline from all who live in it."
 .byte WaitForA
 .byte ScrollText
 .text "Farmers work themselves to the bone to"
@@ -284,20 +281,20 @@ ch8xclosing
 
 .byte Left_slot
 .byte ScrollText
-.text "Th-then they should just import food"
+.text "Th-then they should just import food from"
 .byte NewLine
-.text "from elsewhere! In North Thracia, cities had"
+.text "elsewhere! In North Thracia, cities had an"
 .byte NewLine
-.text "an abundance of crops—buy their excess!"
+.text "abundance of crops—buy their excess!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah, but the whole of North Thracia—"
+.text "Ah, but the whole of North Thracia—the old"
 .byte NewLine
-.text "the old coalition of Munster—resolved long ago"
+.text "coalition of Munster—resolved long ago to"
 .byte NewLine
-.text "to prohibit trade with South Thracia."
+.text "prohibit trade with South Thracia."
 .byte WaitForA
 .byte ScrollText
 .text "Food, especially, was closely guarded."
@@ -310,13 +307,12 @@ ch8xclosing
 
 .byte Right_slot
 .byte ScrollText
-.text "Historically? Recall the war between Njörun"
+.text "Historically? Recall the war between Njörun and"
 .byte NewLine
-.text "and Dáinn's children, 100 years ago, "
+.text "Dáinn's children, 100 years ago,"
 .byte WaitForA
-.text "that led to"
 .byte NewLine
-.text "the province of Munster declaring"
+.text "that led to the province of Munster declaring"
 .byte NewLine
 .text "independence from the rest of Thracia."
 .byte WaitForA
@@ -330,49 +326,49 @@ ch8xclosing
 .byte ScrollText
 .text "The noble houses of Munster, in particular,"
 .byte NewLine
-.text "remained stubborn and selfish"
+.text "remained stubborn and selfish for a century"
 .byte NewLine
-.text "for a century afterward."
+.text "afterward."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I...had been told that Thracia"
+.text "I...had been told that Thracia was all but a"
 .byte NewLine
-.text "was all but a military state,"
+.text "military state, that is was an infamously"
 .byte NewLine
-.text "that it was an infamously belligerent kingdom."
+.text "belligerent kingdom."
 .byte WaitForA
 .byte ScrollText
-.text "But if they are merely the product"
+.text "But if they are merely the product of such"
 .byte NewLine
-.text "of such wretched conditions..."
+.text "wretched conditions..."
 .byte WaitForA
 .byte ScrollText
-.text "How did things all go so wrong? The North"
+.text "How did things all go so wrong? The North and"
 .byte NewLine
-.text "and South were a single kingdom once..."
+.text "South were a single kingdom once..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "It all returns to the Tragedy of the Gáe Bolg,"
 .byte NewLine
-.text "to the misfortune that seems to befall all"
+.text "to the misfortune that seems to befall all those"
 .byte NewLine
-.text "those who wield either of the divine lances."
+.text "who wield either of the divine lances."
 .byte WaitForA
 .byte ScrollText
-.text "North Thracia has been plagued by selfish"
+.text "North Thracia has been plagued by selfish and"
 .byte NewLine
-.text "and short-sighted rulers. You must learn"
+.text "short-sighted rulers. You must learn from their"
 .byte NewLine
-.text "from their example—learn how not to govern."
+.text "example—learn how not to govern."
 .byte WaitForA
 .byte ScrollText
-.text "If nothing else, you must learn enough"
+.text "If nothing else, you must learn enough to not"
 .byte NewLine
-.text "to not repeat your father's mistake..."
+.text "repeat your father's mistake..."
 .byte WaitForA
 
 .byte EndText

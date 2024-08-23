@@ -529,7 +529,7 @@ amaldaolwen
 
 .byte right_slot
 .byte ScrollText
-.text "Once I heard the Gelbenritter were"
+.text "Once I heard the Gelbritter were"
 .byte NewLine
 .text "stationed at the fort, my mind began"
 .byte NewLine
@@ -570,7 +570,7 @@ amaldaolwen
 .text "...I do, but I just wish there was another way."
 .byte WaitForA 
 .byte ScrollText
-.text "The Gelbenritter will be a most ferocious"
+.text "The Gelbritter will be a most ferocious"
 .byte NewLine
 .text "enemy. We must prepare ourselves to give"
 .byte NewLine
@@ -882,40 +882,27 @@ juliusreinhardt1
 .byte right_slot
 .word LoadPortrait
 .word reinhardt_portrait
-.text "So the battle is over..."
+.text "So I live on..."
 .byte WaitForA
 .byte ScrollText
-.text "How did this even happen?"
+.text "Forgive me, Olwen."
+.byte WaitForA
 .byte NewLine
-.text "I am the enemy; I was meant to"
+.text "While the righteousness of my path is to"
 .byte NewLine
-.text "meet my end upon defeat."
+.text "be questioned, it is still the path of a"
+.byte NewLine
+.text "knight of Friege. My selected one of many."
 .byte WaitForA
 .byte ScrollText
-.text "...Regardless, Olwen, you—and the"
-.byte NewLine
-.text "honorable Prince Leif, I should add..."
-.byte NewLine
-.text "You have made quite the impression."
+.text "I cannot make the choice to answer your plea."
 .byte WaitForA
 .byte ScrollText
-.text "I cannot grasp the meaning behind this"
+.text "However, I can spread word of it...in hopes"
 .byte NewLine
-.text "childlike mindset you carry."
-.byte WaitForA
-.byte ScrollText
-.text "However..."
+.text "that it reaches someone who can and will"
 .byte NewLine
-.text "I do believe it to be in my best interest"
-.byte NewLine
-.text "to lend you my support."
-.byte WaitForA
-.byte ScrollText
-.text "I would join you, but I must first"
-.byte NewLine
-.text "report of this to Lady Ishtar."
-.byte NewLine
-.text "Then I will be seen off properly..."
+.text "make that decision."
 .byte WaitForA
 
 .byte EndText
@@ -1360,11 +1347,11 @@ juliusreinhardt2
 .word julius_portrait
 .text "Reinhardt..."
 .byte NewLine
-.text "You're still alive."
+.text "You're still...alive."
 .byte WaitForA
 
 .byte right_slot
-.text "Lord Julius...!"
+.text "Lord Julius...?"
 .byte WaitForA
 
 .byte left_slot
@@ -1376,9 +1363,9 @@ juliusreinhardt2
 
 .byte right_slot
 .byte ScrollText
-.text "Beg pardon, milord."
+.text "...Beg pardon, milord."
 .byte NewLine
-.text "I merely wished to—"
+.text "I was merely—"
 .byte WaitForA
 
 .byte left_slot
@@ -1386,11 +1373,15 @@ juliusreinhardt2
 .text "Enough of that."
 .byte WaitForA
 .byte ScrollText
-.text "Reinhardt, I have come across...an issue."
+.text "Reinhardt, I've come across...an issue."
+.byte NewLine
+.text "One that threatens me and all that I cherish."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
+.text "Please, do tell me."
+.byte NewLine
 .text "How might I be of service?"
 .byte WaitForA
 
@@ -1398,9 +1389,9 @@ juliusreinhardt2
 .byte ScrollText
 .text "You see, I gave Ishtar some very sad news."
 .byte NewLine
-.text "I told her there was a report that you"
+.text "I told her of a report that you valiantly"
 .byte NewLine
-.text "valiantly perished in battle on this day."
+.text "perished in battle on this past day."
 .byte WaitForA
 
 .byte right_slot
@@ -1410,11 +1401,11 @@ juliusreinhardt2
 
 .byte left_slot
 .byte ScrollText
-.text "But inconceivably,"
+.text "But inconceivably, I see you stand"
 .byte NewLine
-.text "you stand before me now, alive."
+.text "before me now, alive."
 .byte NewLine
-.text "Do you see the problem?"
+.text "Do you see the problem, Reinhardt?"
 .byte WaitForA
 
 .byte right_slot
@@ -1424,7 +1415,7 @@ juliusreinhardt2
 
 .byte left_slot
 .byte ScrollText
-.text "Ah, but I am."
+.text "Intuition serves you well!"
 .byte WaitForA
 .byte ScrollText
 .text "I'm most certain you understand, though—"
@@ -1434,9 +1425,7 @@ juliusreinhardt2
 .text "in the face of my beloved Ishtar."
 .byte WaitForA
 .byte ScrollText
-.text "It's time for you to die, Reinhardt."
-.byte NewLine
-.text "Your hope is gone."
+.text "Die well, knight of Friege."
 .byte WaitForA
 
 .byte EndText
@@ -1451,14 +1440,14 @@ juliusreinhardt3
 .text "Had you remained still, I would have"
 .byte NewLine
 .text "wrapped things up nice and quickly here."
-.byte WaitForA
+.byte WaitForA 
 .byte ScrollText
 .text "But instead you'll lie here in agony,"
 .byte NewLine
-.text "whilst knowing your life's work was for naught."
+.text "acknowledging your life's work being for naught."
 .byte WaitForA
 .byte ScrollText
-.text "Hmph."
+.text "Tch."
 .byte NewLine
 .text "What a fitting end for an obsequious wretch."
 .byte WaitForA
@@ -1472,16 +1461,16 @@ juliusreinhardt4
 .word reinhardt_portrait
 .text "Nngh..."
 .byte NewLine
-.text "Lady...Ishtar, I..."
+.text "Lady Ishtar... I regret...that I couldn't"
 .byte NewLine
-.text "...Perhaps it's...better this way..."
+.text "meet my end...by your side..."
 .byte WaitForA
 .byte ScrollText
 .text "Olwen... My sister..."
 .byte NewLine
 .text "Keep steady...and focused..."
 .byte NewLine
-.text "Forgive me..."
+.text "Do...what...I could not..."
 .byte WaitForA
 
 .byte EndText
@@ -1517,7 +1506,7 @@ olwenisready
 .byte NewLine
 .text "the scouts' report."
 .byte NewLine
-.text "That Sir Reinhardt and the Gelbenritter await us."
+.text "That Sir Reinhardt and the Gelbritter await us."
 .byte WaitForA
 
 .byte left_slot

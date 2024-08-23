@@ -287,15 +287,5 @@ aBattleForecastBG1TopTilemap .binary "hacky/BattleForecastBG1TopTilemap.bin"
 .include "hacky/changebargainmanualtogivepavise.asm"
 .include "hacky/onlypromotedgenericbonuses.asm"
 .include "hacky/attackspeedonequip.asm"
-
-
-
-
-
-
-
-
-
-
-
-
+.include "hacky/knightring.asm"
+.include "hacky/Armsscroll.asm"

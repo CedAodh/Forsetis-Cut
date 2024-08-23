@@ -226,6 +226,125 @@ chfinalwm3
 
 .byte EndText
 
+leifmareetanannagone
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word mareeta_portrait
+.text "Leif! We've finally done it!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "That's right, Mareeta... We have."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Leif, I'm sorry about Nanna..."
+.byte WaitForA
+.byte ScrollText
+.text "I failed to protect her when Fiana was attacked,"
+.byte NewLine
+.text "and...and I never got strong enough to save her"
+.byte NewLine
+.text "even after that..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Mareeta, you don't have to—"
+.byte NewLine
+.text "...It's all right."
+.byte WaitForA
+.byte NewLine
+.text "Nanna's safety was solely my responsibility, and"
+.byte NewLine
+.text "yet I still let my own weakness get in the way..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "But you're—! You're not weak, Leif."
+.byte NewLine
+.text "In fact, I've been...envious of you at times."
+.byte WaitForA
+.byte NewLine
+.text "The way you were able to accept loss,"
+.byte NewLine
+.text "but just pick yourself up and keep going."
+.byte WaitForA
+.byte ScrollText
+.text "I know it wasn't easy."
+.byte NewLine
+.text "I'm truly indebted to you for having done it"
+.byte NewLine
+.text "for us all this time."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Now it's time for me to return the favor!"
+.byte NewLine
+.text "I've come this far with you—you're not losing"
+.byte NewLine
+.text "any fight as long as I'm by your side!"
+.byte WaitForA 
+
+.byte left_slot
+.byte ScrollText
+.text "Thanks, Mareeta."
+.byte NewLine
+.text "I... I think I feel a little better."
+.byte WaitForA
+.byte ScrollText
+.text "Let us see this conflict through to the end."
+.byte NewLine
+.text "For each other...and for Nanna."
+.byte WaitForA
+
+.byte EndText
+
+leifnannagone
+
+.byte right_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte left_slot
+.byte ScrollText
+.text "Nanna...our struggle is finally over."
+.byte NewLine
+.text "I know that without you and your compassion,"
+.byte NewLine
+.text "I would have been lost to Thracia long ago."
+.byte WaitForA
+.byte ScrollText
+.text "I'm...sorry that I couldn't keep you safe,"
+.byte NewLine
+.text "and...with me."
+.byte WaitForA
+.byte ScrollText
+.text "...But I promise I'll become worthy of"
+.byte NewLine
+.text "your forgiveness. I'll never give up."
+.byte WaitForA
+.byte ScrollText
+.text "I'll keep fighting until I've built a world"
+.byte NewLine
+.text "that we're able to look back on and smile."
+.byte NewLine
+.text "Whatever it takes to see it through."
+.byte WaitForA
+
+.byte EndText
+
 leifasbel
 
 .byte right_slot
@@ -532,7 +651,7 @@ gladetryingtoohard
 .text "Selphina, Glade..."
 .byte WaitForA
 .byte NewLine
-.text "I hope you'll continue with me as Dryas'"
+.text "I hope you'll continue with me as Dryas's"
 .byte NewLine
 .text "wisdom and strength. Work together to"
 .byte NewLine

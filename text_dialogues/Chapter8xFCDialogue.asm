@@ -42,9 +42,7 @@ ch8xopening2
 .byte ScrollText
 .text "I understand."
 .byte NewLine
-.text "I promise I'll save both of you,"
-.byte NewLine
-.text "so just hold on!"
+.text "I promise I'll save both of you, so just hold on!"
 .byte WaitForA
 
 .byte EndText
