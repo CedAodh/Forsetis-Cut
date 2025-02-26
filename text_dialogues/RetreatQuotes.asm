@@ -5,11 +5,11 @@ ch5leifesc
 .text "I'll come back for you, Commander!"
 .byte WaitForA
 .byte ScrollText
-.text "I'll... I'll grow strong enough to storm"
+.text "I'll... I'll grow strong enough to storm this whole"
 .byte NewLine
-.text "this whole city if I have to! No force in"
+.text "city if I have to! No force in all the heavens"
 .byte NewLine
-.text "all the heavens can stop me! So just... Just..."
+.text "can stop me! So just... Just..."
 .byte WaitForA
 .byte ScrollText
 .text "......"
@@ -68,7 +68,7 @@ dagdaresc
 .byte Right_slot
 .word LoadPortrait
 .word dagdar_portrait
-.text "Prince Leif, there's nothin' more you can do!"
+.text "Prince, there's nothin' more you can do!"
 .byte NewLine
 .text "Hightail it outta there!"
 .byte WaitForA
@@ -100,7 +100,7 @@ ronanesc
 .word ronan_portrait
 .text "Wh-what a rush..."
 .byte NewLine
-.text "Everybody all right?"
+.text "Is everyone all right?"
 .byte WaitForA
 .byte EndText
 
@@ -128,7 +128,7 @@ brightonesc
 .byte Right_slot
 .word LoadPortrait
 .word brighton_portrait
-.text "This is damned shameful of me."
+.text "This is damned shameful of me..."
 .byte NewLine
 .text "I should be the last to make it out."
 .byte WaitForA
@@ -138,7 +138,7 @@ fergusesc
 .byte Right_slot
 .word LoadPortrait
 .word fergus_portrait
-.text "Well this sure worked out."
+.text "Well, this sure worked out."
 .byte NewLine
 .text "C'mon, guys! Time to play catch-up!"
 .byte WaitForA
@@ -168,7 +168,7 @@ hicksesc
 .byte Right_slot
 .word LoadPortrait
 .word hicks_portrait
-.text "Murphy, your old man's doin' his very best..."
+.text "Murphy, Dad's doin' his very best..."
 .byte WaitForA
 .byte EndText
 
@@ -212,7 +212,7 @@ lithisesc
 .byte Right_slot
 .word LoadPortrait
 .word lifis_portrait
-.text "Heh, heh, heh... Another clean getaway!"
+.text "Heh heh... Another clean getaway!"
 .byte NewLine
 .text "My regards, gentlemen!"
 .byte WaitForA
@@ -222,11 +222,9 @@ karinesc
 .byte Right_slot
 .word LoadPortrait
 .word karin_portrait
-.text "For a little bit, I wasn't sure how"
+.text "For a little bit, I wasn't sure how this was going"
 .byte NewLine
-.text "this was going to play out."
-.byte NewLine
-.text "I think it's time I made my exit!"
+.text "to play out. I think it's time I made my exit!"
 .byte WaitForA
 .byte EndText
 
@@ -244,9 +242,9 @@ mareetaesc
 .byte Right_slot
 .word LoadPortrait
 .word mareeta_portrait
-.text "Mother, I know you must be watching"
+.text "Mother, I know you must be watching over me..."
 .byte NewLine
-.text "over me..."
+.text "One day, I will definitely..."
 .byte WaitForA
 .byte EndText
 
@@ -254,7 +252,7 @@ shivaesc
 .byte Right_slot
 .word LoadPortrait
 .word shiva_portrait
-.text "...I'm sorry..."
+.text "...Sorry..."
 .byte WaitForA
 .byte EndText
 
@@ -272,7 +270,7 @@ kaneesc
 .byte Right_slot
 .word LoadPortrait
 .word kane_portrait
-.text "I'll ride ahead, Prince!"
+.text "I'll ride ahead, sire!"
 .byte NewLine
 .text "Do take caution!"
 .byte WaitForA
@@ -292,7 +290,7 @@ robertesc
 .byte Right_slot
 .word LoadPortrait
 .word robert_portrait
-.text "Next time, THEY'LL be the ones retreating...!"
+.text "Next time, THEY'LL be the ones retreating..."
 .byte WaitForA
 .byte EndText
 
@@ -328,7 +326,7 @@ perneesc
 .word pan_portrait
 .text "This isn't over yet!"
 .byte NewLine
-.text "I'm goin' on ahead, Prince!"
+.text "I'm going on ahead, Prince!"
 .byte WaitForA
 .byte EndText
 
@@ -344,11 +342,9 @@ tinaesc
 .byte Right_slot
 .word LoadPortrait
 .word tina_portrait
-.text "Fighting, fighting, and...what's this?"
+.text "We can't spend all our time fighting!"
 .byte NewLine
-.text "Oh, more fighting!"
-.byte NewLine
-.text "I can't keep putting up with this..."
+.text "Ugh, this is making me upset!"
 .byte WaitForA
 .byte EndText
 
@@ -366,9 +362,9 @@ homeresc
 .byte Right_slot
 .word LoadPortrait
 .word homer_portrait
-.text "Good gods, life is too short"
+.text "Good gods, life is too short to be spendin' it like"
 .byte NewLine
-.text "to be spendin' it like this..."
+.text "this..."
 .byte WaitForA
 .byte EndText
 
@@ -376,7 +372,7 @@ deanesc
 .byte Right_slot
 .word LoadPortrait
 .word dean_portrait
-.text "I'll be going on ahead..."
+.text "...I'll be going on ahead..."
 .byte WaitForA
 .byte EndText
 
@@ -384,7 +380,7 @@ edaesc
 .byte Right_slot
 .word LoadPortrait
 .word eda_portrait
-.text "I'll be an even greater asset in the next battle!"
+.text "I'll be an even greater help in the next battle!"
 .byte NewLine
 .text "You'll see—all of you!"
 .byte WaitForA
@@ -416,11 +412,9 @@ schroffesc
 .byte Right_slot
 .word LoadPortrait
 .word schroff_portrait
-.text "The divine spirit of Bragi shall always"
+.text "The divine spirit of Bragi shall always watch"
 .byte NewLine
-.text "watch over you, Prince Leif!"
-.byte NewLine
-.text "Remain ever zealous!"
+.text "over you, Prince Leif! Remain ever zealous!"
 .byte WaitForA
 .byte EndText
 
@@ -440,7 +434,7 @@ shannamesc
 .word shannam_portrait
 .text "...Huh."
 .byte NewLine
-.text "I dunno how I pulled that off."
+.text "Dunno how I pulled that off."
 .byte WaitForA
 .byte EndText
 
@@ -484,7 +478,7 @@ conomoresc
 .word conomor_portrait
 .text "Forgive me for leaving your side, Prince Leif!"
 .byte NewLine
-.text "I'll ride ahead!"
+.text "I'll secure the area ahead!"
 .byte WaitForA
 .byte EndText
 
@@ -542,7 +536,7 @@ asaelloesc
 .word asaello_portrait
 .text "Guys... I know you're waiting for me."
 .byte NewLine
-.text "I promise I'll bring back lots of good stuff..."
+.text "I promise I'll bring back lots of good stuff."
 .byte WaitForA
 .byte EndText
 
@@ -552,10 +546,10 @@ gunteresc
 .byte Right_slot
 .word LoadPortrait
 .word cohen_portrait
-.text "An old man like me is only"
+.text "An old man like me is only slowing you down..."
 .byte NewLine
-.text "slowing you down..."
+.text "At that same time, please come quickly,"
 .byte NewLine
-.text "Please come quickly, Lord Leif."
+.text "Prince Leif!"
 .byte WaitForA
 .byte EndText

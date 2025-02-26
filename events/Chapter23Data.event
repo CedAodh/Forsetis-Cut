@@ -4,12 +4,11 @@ eventChapter23Data ; B1/8000
 	_PrepGroup ; B1/8000
 		.byte 19, 10
 
-		UNIT Civilian17, NPC, [11, 13], [11, 13], Ishtar, [], 1, False, [$02, $0B, $00, $00]
 		UNIT LoptrianSorcerer1, Enemy, [18, 15], [18, 15], Alphand, [Jormungand, Sleep], 16, False, [$0B, $07, $00, $00]
-		UNIT LoptrianSorcerer, Enemy, [19, 15], [19, 15], Alphand, [Jormungand, ThiefStaff], 18, False, [$0B, $07, $00, $00]
-		UNIT MunsterVeninBallista, Enemy, [18, 9], [18, 9], Faden, [VeninBallista], 18, False, [$01, $03, $00, $00]
+		UNIT LoptrianSorcerer1, Enemy, [19, 15], [19, 15], Alphand, [Jormungand, Fortify], 18, False, [$12, $07, $00, $00]
+		UNIT MunsterBallista, Enemy, [18, 9], [18, 9], Faden, [VeninBallista], 18, False, [$01, $03, $00, $00]
 		UNIT MunsterVeninBallista, Enemy, [19, 9], [19, 9], Faden, [VeninBallista], 20, False, [$01, $03, $00, $00]
-		UNIT MunsterVeninBallista, Enemy, [20, 9], [20, 9], Faden, [VeninBallista], 18, False, [$01, $03, $00, $00]
+		UNIT MunsterBallista, Enemy, [20, 9], [20, 9], Faden, [VeninBallista], 18, False, [$01, $03, $00, $00]
 		UNIT MunsterGeneral, Enemy, [19, 10], [19, 10], Faden, [Hammer, Poleax, VeninAxe, KillerAxe, MasterAxe, Vulnerary], 20, False, [$00, $03, $00, $00]
 		UNIT MunsterGreatKnight, Enemy, [17, 17], [17, 17], Faden, [KillerAxe, Poleax, Vulnerary], 17, False, [$00, $00, $00, $00]
 		UNIT MunsterDukeKnight, Enemy, [20, 16], [20, 16], Faden, [KillerLance, Ridersbane, Vulnerary], 17, False, [$00, $00, $00, $00]
@@ -20,17 +19,21 @@ eventChapter23Data ; B1/8000
 		UNIT MunsterArchKnight, Enemy, [18, 17], [18, 17], Faden, [KillerBow, ForsetiInfinite, Vulnerary], 18, False, [$00, $00, $00, $00]
 		UNIT MunsterGreatKnight, Enemy, [17, 16], [17, 16], Faden, [KillerAxe, Hammer, Vulnerary], 16, False, [$00, $00, $00, $00]
 		UNIT MunsterGreatKnight, Enemy, [16, 16], [16, 16], Faden, [MasterAxe, Vulnerary], 19, False, [$00, $00, $00, $00]
-		UNIT Civilian19, NPC, [11, 15], [11, 15], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian20, NPC, [10, 15], [10, 15], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian21, NPC, [10, 16], [10, 16], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian22, NPC, [11, 16], [11, 16], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian18, NPC, [10, 14], [10, 14], Ishtar, [], 1, False, [$02, $0B, $00, $00]
 		UNIT Alphand, Enemy, [15, 15], [15, 15], Alphand, [Jormungand, Silence, Hel], 13, True, [$01, $03, $00, $80]
 		UNIT Faden, Enemy, [16, 17], [16, 17], Faden, [FlameSword, MasterLance, Vulnerary], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	_ThiefReinforcementsCameraCoordinates ; B1/81A8
 		.byte 23, 8
+		
+	_CiviliansGroup
+		UNIT Civilian17, NPC, [11, 13], [11, 13], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian19, NPC, [11, 15], [11, 15], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian20, NPC, [10, 15], [10, 15], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian21, NPC, [10, 16], [10, 16], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian22, NPC, [11, 16], [11, 16], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian18, NPC, [10, 14], [10, 14], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+	UNIT
 
 	_ThiefReinforcementsGroup ; B1/81AA
 		UNIT ThiefEnemy1, Enemy, [30, 1], [30, 1], Seil, [SilverSword, Lockpick], 5, False, [$02, $05, $00, $00]
@@ -118,7 +121,7 @@ eventChapter23Data ; B1/8000
 	;	.byte 8, 7
 
 	_SaiasGroup ; B1/82DE
-		UNIT Saias, Player, [15, 15], [15, 15], Leif, [Light, Warp, Silence, Recover, PureWater, DoorKey], 12, False, [$00, $00, $00, $00]
+		UNIT Saias, Player, [15, 15], [15, 15], Rumaigh, [Light, Warp, Silence, Recover, PureWater, DoorKey], 12, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCameraCoordinates2 ; B1/82F4
@@ -139,7 +142,7 @@ eventChapter23Data ; B1/8000
 		UNIT ThraciaDracoknight3, Enemy, [31, 24], [30, 24], Coulter, [SilverLance, Ridersbane], 12, False, [$01, $03, $00, $00]
 		UNIT ThraciaDracoknight3, Enemy, [31, 21], [30, 21], Coulter, [SilverLance, Ridersbane], 12, False, [$01, $03, $00, $00]
 		UNIT ThraciaDracoknight3, Enemy, [31, 20], [30, 20], Coulter, [SilverLance, Ridersbane], 12, False, [$01, $03, $00, $00]
-		UNIT Altena, Enemy, [31, 22], [29, 22], Coulter, [GaeBolg, SilverSword, Vulnerary], 3, False, [$02, $03, $00, $00]
+		UNIT Altena, Enemy, [31, 22], [29, 22], Coulter, [GaeBolg, SilverSword, Vulnerary], 15, False, [$02, $03, $00, $00]
 		UNIT ThraciaDracoknight3, Enemy, [31, 22], [28, 22], Coulter, [SilverLance, Ridersbane], 12, False, [$01, $03, $00, $00]
 		UNIT ThraciaDracoknight3, Enemy, [31, 21], [29, 21], Coulter, [SilverLance, Ridersbane], 12, False, [$01, $03, $00, $00]
 	UNIT
@@ -150,6 +153,16 @@ eventChapter23Data ; B1/8000
 	_AlphandFadenGroup ; B1/83DA
 		UNIT Faden, Enemy, [15, 15], [16, 17], Faden, [FlameSword, MasterLance, Vulnerary], 20, False, [$00, $00, $00, $00]
 		UNIT Alphand, Enemy, [15, 15], [15, 15], Alphand, [Jormungand, Silence, Hel], 13, True, [$01, $03, $00, $80]
+	UNIT
+	
+	_LeonsterKnight23Group
+		UNIT LeonsterDukeKnight, NPC, [7, 0], [1, 4], Leif, [SilverLance, Ridersbane, Vulnerary], 14, False, [$00, $00, $00, $00]
+		UNIT LeonsterArchKnight, NPC, [7, 0], [1, 2], Leif, [KillerBow, Vulnerary], 14, False, [$00, $00, $00, $00]
+	_Leonster23Group
+		UNIT LeonsterDukeKnight, NPC, [7, 0], [3, 2], Leif, [SilverLance, Javelin, Vulnerary], 13, False, [$00, $00, $00, $00]
+		UNIT LeonsterArchKnight, NPC, [7, 0], [2, 3], Leif, [SilverBow, Vulnerary], 12, False, [$00, $00, $00, $00]
+		UNIT XavierArmor5, NPC, [7, 0], [2, 2], Leif, [SilverSword, Javelin, Vulnerary], 16, False, [$00, $04, $00, $00]
+		UNIT XavierArmor6, NPC, [7, 0], [1, 3], Leif, [SilverBow, Poleax, Vulnerary], 16, False, [$00, $04, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/8404

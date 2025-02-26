@@ -912,7 +912,7 @@ ch23opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "I'm afraid I simply cannot say."
+.text "I'm afraid I can't discuss the topic of my lineage."
 .byte NewLine
 .text "However, if you do place your trust in me,"
 .byte NewLine
@@ -1111,9 +1111,9 @@ ch23opening3
 .byte Right_slot
 .text "...It appears the fighting between the Magi and"
 .byte NewLine
-.text "the Knights of Munster has broken out into"
+.text "the Knights of Munster has broken out into the"
 .byte NewLine
-.text "the streets."
+.text "streets."
 .byte WaitForA
 .byte ScrollText
 .text "Things have escalated since last we were here."
@@ -1439,27 +1439,15 @@ ch23saiasno
 
 ch23wm1
 
+.text "Leaving the troubled waters of the River Thracia"
+.byte NewLine
+.text "behind him, "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $0303 ;y then x
-.text "Leaving the troubled waters"
-.byte NewLine
-.text "of the River Thracia behind him,"
+.text "Leif approached Munster."
 .byte WaitForA
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0178 ;raydrik
-.word $020D ;y then x
-.byte NewLine
-.text "Leif approached Raydrik's stronghold,"
-.byte NewLine
-.text "Castle Munster."
-.byte WaitForA
-.word ClearPortraitalt
-.long $82937A
-.word $0001
-.byte ScrollText
 .word ClearPortraitalt
 .long $82937A
 .word $0000
@@ -1475,31 +1463,34 @@ ch23wm2
 .text "the citizens seized the opportunity to flee."
 .byte WaitForA
 .byte ScrollText
-.text "However, they were caught in the crossfire"
+.text "However, they were caught in the crossfire of two"
 .byte NewLine
-.text "of two forces: "
+.text "forces:"
 .byte WaitForA
+.byte ScrollText
+.text "the Magi, led by "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $001F ;ced
 .word $0706 ;y then x
-.text "the Magi, led by Ced,"
+.text "Ced, who were trying to defend"
 .byte NewLine
-.text "who were trying to defend the civilians,"
+.text "the civilians,"
 .byte WaitForA
+.byte ScrollText
+.text "and the "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0178 ;ced
 .word $0713 ;y then x
+.text "Knights of Munster, who were determined"
 .byte NewLine
-.text "and the Knights of Munster,"
-.byte NewLine
-.text "who were determined to stop them."
+.text "to stop them."
 .byte WaitForA
 .byte ScrollText
-.text "The region had become a war zone,"
+.text "The region had become a war zone, and the"
 .byte NewLine
-.text "and the fighting grew worse with each day..."
+.text "fighting grew worse with each day..."
 .byte WaitForA
 
 .byte EndText

@@ -294,6 +294,8 @@ graphics_naga_square_tilemap	.binary "unused/NagaSquareTilemap.bin.fe4"
 
 .here
 
+; Mjolnir
+
 * = $0819B3
 .logical lorom($0819B3, 1)
 
@@ -506,12 +508,12 @@ nintendo_logo
 
 .here
 
-* = $25E8C4
-.logical lorom($25E8C4, 1)
+;* = $25E8C4
+;.logical lorom($25E8C4, 1)
 
-.binary "brunter.4bpp.fe4"
+;.binary "brunter.4bpp.fe4"
 
-.here
+;.here
 
 * = $1C93D0
 .logical lorom($1C93D0, 1)
@@ -605,30 +607,86 @@ a16BFadedPalette	.binary "editedforestpalettefaded.bin"
 
 .here
 
-;* = $2BA82A
-;.logical lorom($2BA82A, 1)
+* = $2BA82A
+.logical lorom($2BA82A, 1)
 
-;.binary "DismountedWyvernPegasusKnightSprite.4bpp.fe4"
+.binary "DismountedWyvernPegasusKnightSprite.4bpp.fe4"
 
-;.here
+.here
 
-;* = $241679
-;.logical lorom($241679, 1)
+* = $241679
+.logical lorom($241679, 1)
 
-;.binary "DismountedFPaladinStaffSprite.4bpp.fe4"
+.binary "DismountedFPaladinStaffSprite.4bpp.fe4"
 
-;.here
+.here
 
-;* = $2C848A
-;.logical lorom($2C848A, 1)
+* = $2C848A
+.logical lorom($2C848A, 1)
 
-;.binary "DismountedTroubadourStaffSprite.4bpp.fe4"
+.binary "DismountedTroubadourStaffSprite.4bpp.fe4"
 
-;.here
+.here
 
-;* = $2B9630
-;.logical lorom($2B9630, 1)
+* = $2B9630
+.logical lorom($2B9630, 1)
 
-;.binary "DismountedWyvernPegasusRiderSprite.4bpp.fe4"
+.binary "DismountedWyvernPegasusRiderSprite.4bpp.fe4"
 
-;.here
+.here
+
+* = $12C59D
+.logical lorom($12C59D, 1)
+
+.binary "FE45_SwordmasterMapBattleUpperLeft.out.fe4"
+
+.here
+
+* = $12BEAD
+.logical lorom($12BEAD, 1)
+
+.binary "FE45_SwordmasterMapBattleRight.out.fe4"
+
+.here
+
+* = $12C277
+.logical lorom($12C277, 1)
+
+.binary "FE45_SwordmasterMapBattleUp.out.fe4"
+
+.here
+
+* = $12CD51
+.logical lorom($12CD51, 1)
+
+.binary "FE45_SwordmasterMapBattleLeft.out.fe4"
+
+.here
+
+* = $12C77E
+.logical lorom($12C77E, 1)
+
+.binary "FE45_SwordmasterMapBattleDownRight.out.fe4"
+
+.here
+
+* = $12C99F
+.logical lorom($12C99F, 1)
+
+.binary "FE45_SwordmasterMapBattleDown.out.fe4"
+
+.here
+
+* = $38AE80
+.logical lorom($38AE80, 1)
+
+.binary "SwordmasterFIdleFormatted.4bpp"
+
+.here
+
+* = $1AD8F1
+.logical lorom($1AD8F1, 1)
+
+.binary "FE45_SwordmasterFMovingFormatted.4bpp.fe4"
+
+.here

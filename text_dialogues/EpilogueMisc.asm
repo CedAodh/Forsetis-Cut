@@ -43,9 +43,9 @@ captureddeathtext
 .byte $09
 .word $1200
 .byte $04
-.text "Missing in action"
+.text "Missing in action as of"
 .byte NewLine
-.text "as of the above mission."
+.text "the above mission."
 .word PauseDialogue
 .byte $5A
 .byte $0F
@@ -61,9 +61,9 @@ killeddeathtext
 .byte $09
 .word $1200
 .byte $04
-.text "Killed in action"
+.text "Killed in action during"
 .byte NewLine
-.text "during the above mission."
+.text "the above mission."
 .word PauseDialogue
 .byte $5A
 .byte $0F

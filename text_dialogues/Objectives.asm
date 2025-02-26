@@ -4,11 +4,11 @@ objectivech1
 
 
 objectivech2
-	.text "Seize the gate (Protect the 3 remaining"
+	.text "Seize the gate (within 15 turns"
 .byte EndTextNoPortraitFade
 
 objectivech2_2
-	.text "villages and seize within 15 turns)"
+	.text "and protect the remaining 3 houses)"
 .byte EndTextNoPortraitFade
 
 
@@ -52,11 +52,11 @@ objectivech7
 
 
 objectivech8
-	.text "Seize the gate (Capture Lemay; Dagdar"
+	.text "Seize the gate (Dagdar AND Tanya"
 .byte EndTextNoPortraitFade
 
 objectivech8_2
-	.text "and Tanya are not dead or captured)"
+	.text "are not dead or captured)"
 .byte EndTextNoPortraitFade
 
 
@@ -66,7 +66,7 @@ objectivech8x
 
 
 objectivech9
-	.text "Have Leif escape"
+	.text "Have Leif arrive at the exit point"
 .byte EndTextNoPortraitFade
 
 objectivech9_2
@@ -211,7 +211,7 @@ objectivech24
 .byte EndTextNoPortraitFade
 
 objectivech24_2
-	.text "the Kia Staff in the party when seizing)"
+	.text "the Kia Staff in the party)"
 .byte EndTextNoPortraitFade
 
 
@@ -221,9 +221,9 @@ objectivech24x
 
 
 objectivech25
-	.text "Have 6 allied units simultaneously stand"
+	.text "Have 6 allied units simultaneously wait"
 .byte EndTextNoPortraitFade
 
 objectivech25_2
-	.text "on the 6 seals THEN seize the throne"
+	.text "on the 6 sigils THEN seize the throne"
 .byte EndTextNoPortraitFade

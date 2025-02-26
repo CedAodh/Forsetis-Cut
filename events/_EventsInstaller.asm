@@ -123,10 +123,6 @@
 	;.include "Chapter18WorldMap.event"
 	;.include "Chapter19WorldMap.event"
 	.include "Chapter20WorldMap.event"
-	.include "Chapter21WorldMap.event"
-	.include "Chapter22WorldMap.event"
-	.include "Chapter23WorldMap.event"
-	.include "Chapter24WorldMap.event"
 
 .here
 	
@@ -169,7 +165,6 @@
 ;	.include "Chapter15.event"
 ;	.include "Chapter16A.event"
 ;	.include "Chapter17A.event"
-	.include "Chapter16B.event"
 ;	.include "Chapter17B.event"
 ;	.include "Chapter18.event"
 ;	.include "Chapter19.event"
@@ -180,6 +175,11 @@
 ;	.include "Chapter23.event"
 ;	.include "Chapter24.event"
 ;	.include "Chapter24x.event"
+.here
+
+* = $518000
+.logical lorom($518000, 1)
+	.include "Chapter16B.event"
 .here
 
 * = $500000
@@ -200,6 +200,7 @@
 	.include "Chapter2xWorldMap.event"
 	.include "Chapter4xWorldMap.event"
 	.include "Chapter8xWorldMap.event"
+	.include "Chapter12xWorldMap.event"
 	.include "Chapter14WorldMap.event"
 	.include "Chapter14xWorldMap.event"
 	.include "Chapter16AWorldMap.event"
@@ -208,10 +209,14 @@
 	.include "Chapter17BWorldMap.event"
 	.include "Chapter18WorldMap.event"
 	.include "Chapter19WorldMap.event"
+	.include "Chapter23WorldMap.event"
+	.include "Chapter24WorldMap.event"
 .here
 
 * = $520000
 .logical lorom($520000, 1)
+	.include "Chapter21WorldMap.event"
+	.include "Chapter22WorldMap.event"
 	.include "Chapter23.event"
 	.include "Chapter23Data.event"
 .here

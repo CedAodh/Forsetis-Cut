@@ -54,7 +54,7 @@ eventChapter16AData ; B1/AE46
 		UNIT UlsterCavalier2, Enemy, [2, 13], [2, 13], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [3, 13], [3, 13], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [4, 13], [4, 13], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
-		UNIT Conomor, Enemy, [1, 12], [1, 12], Conomor, [MasterLance, KillingEdge, NihilManual], 8, False, [$00, $00, $00, $00]
+		UNIT Conomor, Enemy, [1, 12], [1, 12], Conomor, [MasterLance, KillingEdge, AccostManual], 8, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [2, 12], [2, 12], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [3, 12], [3, 12], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
 		UNIT UlsterCavalier2, Enemy, [1, 11], [1, 11], Conomor, [Rapier, Javelin], 15, False, [$00, $00, $00, $00]
@@ -73,14 +73,14 @@ eventChapter16AData ; B1/AE46
 		.byte 36, 14
 
 	_PegasusReinforcementsGroup ; B1/B278
-		UNIT SilessePegasusRider1, Enemy, [32, 20], [32, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [33, 20], [33, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [34, 20], [34, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [35, 20], [35, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [36, 20], [36, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [37, 20], [37, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [38, 20], [38, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
-		UNIT SilessePegasusRider1, Enemy, [39, 20], [39, 20], Misha, [SlimLance, Ridersbane], 6, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [32, 20], [32, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [33, 20], [33, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [34, 20], [34, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [35, 20], [35, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [36, 20], [36, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [37, 20], [37, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [38, 20], [38, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
+		UNIT SilessePegasusRider1, Enemy, [39, 20], [39, 20], Misha, [SlimLance, Ridersbane], 14, False, [$00, $0C, $00, $40]
 	UNIT
 
 	_BottomPirateReinforcements1CameraCoordinates ; B1/B31A
@@ -137,7 +137,7 @@ eventChapter16AData ; B1/AE46
 	.byte $FF
 	
 	_BishopGroup
-		UNIT FriegeBishop2, Enemy, [47, 12], [47, 12], Brook, [Physic, Meteor], 6, False, [$00, $03, $00, $00]
+		UNIT FriegeBishop2, Enemy, [47, 12], [47, 12], Brook, [Physic, Meteor], 6, False, [$12, $03, $00, $00]
 		UNIT FriegeArmoredSword2, Enemy, [46, 13], [46, 13], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredSword2, Enemy, [47, 14], [47, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredSword2, Enemy, [45, 14], [45, 14], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
@@ -145,7 +145,7 @@ eventChapter16AData ; B1/AE46
 	UNIT
 	
 	_OltophGroup
-		UNIT Oltoph, Enemy, [47, 12], [47, 12], Brook, [Bolganone, Meteor, Thoron, Bolting, Physic, Vulnerary], 8, False, [$00, $03, $00, $00]
+		UNIT Oltoph, Enemy, [47, 12], [47, 12], Brook, [Bolganone, Meteor, Thoron, Bolting, Physic, Vulnerary], 8, False, [$12, $03, $00, $00]
 		UNIT FriegeArmoredSword3, Enemy, [46, 13], [46, 13], Brook, [Greatsword], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredLance2, Enemy, [47, 14], [47, 14], Brook, [Greatlance], 10, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredAxe2, Enemy, [45, 14], [45, 14], Brook, [Poleax], 10, False, [$00, $03, $00, $00]

@@ -8,8 +8,18 @@ eventChapter12Events ; 99/DBD6
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/DBE3
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Colho
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
@@ -22,7 +32,7 @@ eventChapter12Events ; 99/DBD6
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _SalemDialogue
-			CMP_WORD wCurrentTurn, 3
+			CMP_WORD wCurrentTurn, 4
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $05, _GaidenFail
@@ -52,16 +62,18 @@ eventChapter12Events ; 99/DBD6
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-                EVENT $0B, _SalemAIChange
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 4, 12
+			TEST_FLAG_UNSET FlagBossDeath
+		END_DEFINITION
+        EVENT $0B, _SalemAIChange
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $0A
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/DC94
-		EVENT $08, _DagdarTanyaTalk
-			CHECK_CHARS2 Dagdar, Tanya
-		END_DEFINITION
 		EVENT $09, _NannaMareetaTalk
 			CHECK_CHARS2 Nanna, Mareeta
 		END_DEFINITION
@@ -259,26 +271,28 @@ eventChapter12Events ; 99/DBD6
 	END2
 
 	_BrigandLeftReinforcements ; 99/E0DC
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12Data._BrigandLeftReinforcementsGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_BrigandMiddleReinforcements ; 99/E0E3
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12Data._BrigandMiddleReinforcements
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_BrigandRightReinforcements ; 99/E0EA
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12Data._BrigandRightReinforcements
 		WAIT_MOVE
 		YIELD
-	END2
-
-	_DagdarTanyaTalk
-		macroDialogueHouse dagdartanyach12
-	END2
+	END1
 	
 	_NannaMareetaTalk
 		macroDialogueHouse nannamareetach12

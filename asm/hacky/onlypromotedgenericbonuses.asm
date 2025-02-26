@@ -23,49 +23,49 @@ rlRollRandomBasesReplacement
 	and #$00ff
 	beq _Unpromoted1
 	
-	lda #4
+	lda #5
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Strength,b
 	rep #$30
 
-	lda #3
+	lda #4
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Magic,b
 	rep #$30
 
-	lda #4
+	lda #5
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Skill,b
 	rep #$30
 
-	lda #4
+	lda #5
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Speed,b
 	rep #$30
 
-	lda #3
+	lda #4
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Defense,b
 	rep #$30
 
-	lda #2
+	lda #4
 	jsl rlUnknown80B0E6
 
 	sep #$20
 	sta aSelectedCharacterBuffer.Constitution,b
 	rep #$30
 
-	lda #6
+	lda #8
 	jsl rlUnknown80B0E6
 
 	sep #$20
@@ -147,7 +147,7 @@ rlRollRandomBasesReplacement
 	sta aSelectedCharacterBuffer.Luck,b
 	rep #$30
 
-	lda #4
+	lda #3
 	jsl rlUnknown80B0E6
 
 	sep #$20

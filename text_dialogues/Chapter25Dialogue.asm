@@ -36,7 +36,7 @@ ch25opening1
 .byte NewLine
 .text "thought..."
 .byte NewLine
-.text "Now, how shall I deal with them..."
+.text "Now, how shall I deal with those blights..."
 .byte WaitForA
 
 .byte Left_slot
@@ -180,7 +180,7 @@ ch25opening1
 .byte ScrollText
 .text "Though for his bloodline and all his exploits,"
 .byte NewLine
-.text "he is still one unable to so much as life the"
+.text "he is still one unable to so much as lift the"
 .byte NewLine
 .text "Gáe Bolg himself."
 .byte WaitForA
@@ -264,7 +264,7 @@ ch25opening2
 .byte ScrollText
 .text "I know they are. Everyone is aware of what's at"
 .byte NewLine
-.text "stake: the seals inside each of the six altars"
+.text "stake: the sigils inside each of the six altars"
 .byte NewLine
 .text "have to be broken to open the way to Veld."
 .byte WaitForA
@@ -275,7 +275,7 @@ ch25opening2
 .byte NewLine
 .text "One of our men must stand upon the center of"
 .byte NewLine
-.text "an altar to break its seal."
+.text "an altar to break its sigil."
 .byte WaitForA
 .byte ScrollText
 .text "Each of the six altars must have one of our"
@@ -301,7 +301,7 @@ ch25opening2
 .byte ScrollText
 .text "I understand..."
 .byte NewLine
-.text "But let's hope that won't be necessary."
+.text "But let's hope it won't come to that."
 .byte NewLine
 .text "Come on! Let's end this!"
 .byte WaitForA
@@ -447,7 +447,7 @@ ch25ending1augustus
 .text "As you wish it, my prince, so shall it be."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch25ending2finn
@@ -626,7 +626,7 @@ ch25ending2finn
 .text "It's...all I could have dreamed of, Lord Leif."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch25ending3eyvel
@@ -722,7 +722,7 @@ ch25ending3eyvel
 .text "for an enemy!"
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch25ending4miranda
@@ -840,7 +840,7 @@ ch25ending4miranda
 .text "withdrawn, Prince!"
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch25ending5linoan
@@ -876,7 +876,7 @@ ch25ending5linoan
 .text "Of course I will, Lord Leif!"
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch25ending6dean
@@ -978,7 +978,7 @@ ch25ending6dean
 .text "Of course."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch25ending7mareeta
@@ -1064,7 +1064,7 @@ ch25ending7mareeta
 .text "Mareeta, I did not hear a thing you—"
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 ch25ending8nanna
 
@@ -1148,7 +1148,7 @@ ch25ending8nanna
 .text "I'm honored, Lord Leif..."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch25finale

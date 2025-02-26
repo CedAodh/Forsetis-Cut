@@ -1,9 +1,7 @@
 ch11kemphdeath
-.text "Ugh... What a joke...!"
+.text "I-is this...a joke?"
 .byte NewLine
-.text "I must flee this place,"
-.byte NewLine
-.text "at least for the time being..."
+.text "How could I...be bested...by them?"
 .byte WaitForA
 .byte EndText
 
@@ -29,14 +27,16 @@ ch12Xpernedeath
 .byte EndText
 
 ch12Xtrudedeath
-.text "Tch..."
+.text "Damn..."
 .byte NewLine
-.text "Was I...not good enough?"
+.text "Was I just...not good enough?"
 .byte WaitForA
 .byte EndText
 
 ch12Xtinadeath
-.text "B-Big Sis... I'm...sorry..."
+.text "S-Safy..."
+.byte NewLine
+.text "I'm...sorry..."
 .byte WaitForA
 .byte EndText
 
@@ -53,7 +53,7 @@ ch16Aconomordeath
 .byte EndText
 
 ch17Bsarahdeath
-.text "I'm...lonely..."
+.text "...I'm...lonely..."
 .byte WaitForA
 .byte EndText
 
@@ -95,25 +95,23 @@ leifdeath
 .byte EndText
 
 finndeath
-.text "Lord Leif..."
+.text "Lord Leif... Y-you must...fulfill your"
 .byte NewLine
-.text "Y-you must...fulfill"
-.byte NewLine
-.text "your lord father's dying wish..."
+.text "lord father's dying wish..."
 .byte WaitForA
 .byte EndText
 
 osiandeath
-.text "D-dammit...!"
+.text "D-dammit...! Guess I've..."
 .byte NewLine
-.text "Guess I've...really done it"
-.byte NewLine
-.text "this time..."
+.text "really done it this time..."
 .byte WaitForA
 .byte EndText
 
 halvandeath
-.text "Mom... Dad... I'm sorry..."
+.text "Mom... Dad..."
+.byte NewLine
+.text "I'm sorry..."
 .byte NewLine
 .text "I...lasted as long as I could..."
 .byte WaitForA
@@ -140,9 +138,7 @@ dagdardeath
 martydeath
 .text "Th-that's an awful lotta blood..."
 .byte NewLine
-.text "Wh-why me...?"
-.byte NewLine
-.text "Urgh..."
+.text "Wh-why me...? Urgh..."
 .byte WaitForA
 .byte EndText
 
@@ -163,9 +159,9 @@ mirandadeath
 .byte EndText
 
 safiedeath
-.text "...Lords above, return your light..."
+.text "...Lords above...!"
 .byte NewLine
-.text "to this world..."
+.text "Return your light...to this world..."
 .byte WaitForA
 .byte EndText
 
@@ -177,9 +173,9 @@ laradeath
 .byte EndText
 
 brightondeath
-.text "Hah... I knew it was..."
+.text "Hah..."
 .byte NewLine
-.text "just a matter of time..."
+.text "I knew it was...a matter of time..."
 .byte NewLine
 .text "My sweet Machyua..."
 .byte WaitForA
@@ -232,6 +228,8 @@ nannadeath
 .byte EndText
 
 selphinadeath
+.text "*huff...*"
+.byte NewLine
 .text "I...made it this far..."
 .byte NewLine
 .text "Please forgive me...Glade..."
@@ -241,9 +239,9 @@ selphinadeath
 dalsindeath
 .text "D-damn!"
 .byte NewLine
-.text "Jubel... I'm all done for..."
+.text "Jubel... I'm all done for... You and"
 .byte NewLine
-.text "Take care of your sister..."
+.text "Diana look after each other..."
 .byte WaitForA
 .byte EndText
 
@@ -281,9 +279,7 @@ mareetadeath
 .byte EndText
 
 galzusdeath
-.text "Hah...!"
-.byte NewLine
-.text "Finally...I come across..."
+.text "Hah...! Finally...I come across..."
 .byte NewLine
 .text "someone...amusing..."
 .byte WaitForA
@@ -297,7 +293,7 @@ shivadeath
 .byte EndText
 
 kanedeath
-.text "N-not yet..."
+.text "I-it's too soon..."
 .byte NewLine
 .text "My dream... I still...need to..."
 .byte WaitForA
@@ -320,9 +316,7 @@ robertdeath
 .byte EndText
 
 weismanndeath
-.text "D-damn..."
-.byte NewLine
-.text "You'll...live to regret this,"
+.text "D-damn... You'll...live to regret this,"
 .byte NewLine
 .text "all of you..."
 .byte WaitForA
@@ -350,7 +344,9 @@ eisenaudeath
 .byte EndText
 
 rumaighdeath
-.text "Elaine... Mahal... Min... I'm sorry..."
+.text "Elaine... Mahal... Min..."
+.byte NewLine
+.text "I'm sorry..."
 .byte NewLine
 .text "P-Papa isn't coming home..."
 .byte WaitForA
@@ -441,9 +437,7 @@ gladedeath
 .byte EndText
 
 lisztdeath
-.text "Ugh..."
-.byte NewLine
-.text "All the glory...the honor..."
+.text "Ugh... All the glory...the honor..."
 .byte NewLine
 .text "that I worked for..."
 .byte WaitForA
@@ -502,7 +496,7 @@ ralphdeath
 .byte NewLine
 .text "Looks like this is it...for me..."
 .byte NewLine
-.text "Guess I won't see this war's end..."
+.text "I'll...leave the rest to you folks..."
 .byte WaitForA
 .byte EndText
 
@@ -516,9 +510,9 @@ shannamdeath
 amaldadeath
 .text "Fitting..."
 .byte NewLine
-.text "A life lived steeped in blood"
+.text "A life lived steeped in blood can"
 .byte NewLine
-.text "can only end with more blood..."
+.text "only end with more blood..."
 .byte WaitForA
 .byte EndText
 
@@ -537,7 +531,7 @@ kempfdeath
 .byte EndText
 
 brookdeath
-.text "Ugh..."
+.text "Rngh..."
 .byte NewLine
 .text "This isn't...the end..."
 .byte WaitForA
@@ -546,7 +540,7 @@ brookdeath
 iliosdeath
 .text "After all this..."
 .byte NewLine
-.text "I still die...a commoner..."
+.text "I'll be remembered as...a commoner...?"
 .byte WaitForA
 .byte EndText
 
@@ -576,16 +570,14 @@ mullerdeath
 .byte EndText
 
 nicolovdeath
-.text "Ugh..."
-.byte NewLine
-.text "Not bad..."
+.text "Hah... A fight well fought..."
 .byte NewLine
 .text "Guess I couldn't do it...after all..."
 .byte WaitForA
 .byte EndText
 
 mishadeath
-.text "Ugh..."
+.text "Heh..."
 .byte NewLine
 .text "Díthorba, my beloved mother..."
 .byte NewLine
@@ -594,16 +586,14 @@ mishadeath
 .byte EndText
 
 reinkochdeath
-.text "O Lord..."
+.text "O Lord God..."
 .byte NewLine
-.text "I beg for your...divine..."
-.byte NewLine
-.text "intervention..."
+.text "I beg for your...divine...intervention..."
 .byte WaitForA
 .byte EndText
 
 sarahdeath
-.text "I'm...lonely..."
+.text "...I'm...lonely..."
 .byte WaitForA
 .byte EndText
 
@@ -627,7 +617,7 @@ palmandeath
 .byte EndText
 
 xavierdeath
-.text "F-forgive me, Lord Leif..."
+.text "F-forgive me, Prince Leif..."
 .byte NewLine
 .text "Glory...to Leonster...!"
 .byte WaitForA
@@ -643,7 +633,7 @@ gustavdeath
 .byte EndText
 
 bharatdeath
-.text "Ugh..."
+.text "Gah..."
 .byte NewLine
 .text "So this is...where..."
 .byte WaitForA
@@ -673,11 +663,9 @@ frausdeath
 .byte EndText
 
 zaundeath
-.text "Gah!"
+.text "Gah...!"
 .byte NewLine
-.text "No..."
-.byte NewLine
-.text "Not...like...this..."
+.text "No... Not...like...this..."
 .byte WaitForA
 .byte EndText
 
@@ -696,12 +684,12 @@ reinhardtdeath
 coulterdeath
 .text "Glory...to...Thracia!"
 .byte NewLine
-.text "Ugh..."
+.text "Grk...!"
 .byte WaitForA
 .byte EndText
 
 alphanddeath
-.text "Ugh..."
+.text "Hngh..."
 .byte NewLine
 .text "Not yet..."
 .byte NewLine
@@ -724,7 +712,7 @@ saiasdeath
 .byte EndText
 
 ceddeath
-.text "So this is it..."
+.text "So this is the end..."
 .byte NewLine
 .text "Mother..."
 .byte NewLine
@@ -737,21 +725,19 @@ velddeath
 .byte NewLine
 .text "This is my...own folly..."
 .byte NewLine
-.text "But...this isn't the end...!"
+.text "But...this changes nothing..."
 .byte WaitForA
 .byte ScrollText
-.text "Even if you kill me,"
+.text "Even if you kill me, Loptous is"
 .byte NewLine
-.text "Loptous is eternal...and"
+.text "eternal...and the rebirth of his"
 .byte NewLine
-.text "the rebirth of his empire is nigh!"
+.text "empire is nigh!"
 .byte WaitForA
 .byte ScrollText
-.text "I may die here..."
+.text "Enjoy your struggling and"
 .byte NewLine
-.text "but you'll struggle and flounder"
-.byte NewLine
-.text "for the rest of your days...!"
+.text "floundering until then..."
 .byte WaitForA
 .byte ScrollText
 .text "Heh, heh, heh..."
@@ -786,18 +772,14 @@ kantdeath
 
 .text "Gah...!"
 .byte NewLine
-.text "You're not just...ordinary..."
-.byte NewLine
-.text "civilians..."
+.text "You're not just...ordinary...civilians..."
 .byte WaitForA
 .byte EndText
 
 bandoledeath
-.text "Bested by...a bunch of"
+.text "Bested by...a bunch of pathetic"
 .byte NewLine
-.text "pathetic worms..."
-.byte NewLine
-.text "Th-there's no..."
+.text "worms... Th-there's no..."
 .byte WaitForA
 .byte EndText
 
@@ -823,18 +805,16 @@ dvorakdeath
 .byte EndText
 
 mccloydeath
-.text "All wyvern knights..."
+.text "All wyvern knights...are destined..."
 .byte NewLine
-.text "are destined...for this..."
+.text "for this..."
 .byte WaitForA
 .byte EndText
 
 eichnerdeath
-.text "Hah..."
+.text "Hah... I should've known..."
 .byte NewLine
-.text "I should've known...it would"
-.byte NewLine
-.text "end like this..."
+.text "it would end like this..."
 .byte WaitForA
 .byte EndText
 

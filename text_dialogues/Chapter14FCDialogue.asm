@@ -133,7 +133,7 @@ deaneda
 	.byte ScrollText
 	.text "And I must thank you for"
 	.byte NewLine
-	.text "bringing Asbel back as well."
+	.text "bringing Asbel back, as well."
 	.byte NewLine
 	.text "I was worried sick, to put it lightly."
 	.byte WaitForA
@@ -144,127 +144,125 @@ deaneda
 	.word asbel_portrait
 	.text "Grandfather..."
 	.byte NewLine
-	.text "I'm sorry for what I did..."
+	.text "It should be me who's saying that!"
+    .byte NewLine
+	.text "I...I can't believe you escaped."
 	.byte WaitForA
-	.byte ScrollText
-	.text "But I— I HAD to do it!"
 	.byte NewLine
-	.text "I made a vow to Lord Leif—"
+	.text "All this time, I thought you were"
 	.byte NewLine
-	.text "he's in need of my strength!"
+	.text "being held captive by the empire..."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "I'm not picking apart your actions, Asbel."
+	.text "Don't let that weigh so heavily on you, Asbel."
 	.byte NewLine
-	.text "The perfect opportunity had arisen for you to"
-	.byte NewLine
-	.text "embark on your own path—who was I to stop you?"
+	.text "I was not in their custody for long."
 	.byte WaitForA
 	.byte ScrollText
-	.text "And now because of this,"
+	.text "Eda swiftly saved me from their clutches,"
 	.byte NewLine
-	.text "I believe your father can rest in peace."
+	.text "under orders which she's not open to discuss."
+	.byte NewLine
+	.text "It's bemusing, but I am still grateful to her."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "...Father..."
+	.text "I...I see... I'll have to thank her later."
+	.byte NewLine
+	.text "But still, the fact that I could just stand"
+	.byte NewLine
+	.text "and watch them take you away in chains..."
+	.byte WaitForA
+	.byte ScrollText
+        .text "First Lord Leif left us behind,"
+	.byte NewLine
+	.text "and then the empire took you away..."
+	.byte NewLine
+	.text "I couldn't think of anything but fleeing the city."
+	.byte WaitForA
+	.byte ScrollText
+	.text "Could you ever forgive me?"
+        .byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "We all did what we could, and your decision"
+	.byte NewLine
+	.text "to leave Tarrah was certainly for the best."
+	.byte WaitForA
+	.byte ScrollText
+        .text "You're on your way to become an exemplary"
+	.byte NewLine
+	.text "mage now, and your help has been invaluable"
+	.byte NewLine
+	.text "to Lord Leif's efforts, or so I'm told."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "I've only done my utmost to uphold"
+	.byte NewLine
+	.text "both yours and Father's legacy."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "And you've done spectacularly."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I'm sure your father would be proud,"
+	.byte NewLine
+	.text "if he we were here with us. But alas,"
+	.byte NewLine
+	.text "the people of Hrest still need him."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "...Thank you, Grandfather."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I know you've heard of my exploits within Leif's"
+	.byte NewLine
+	.text "army, so I better prepare to show you just how"
+	.byte NewLine
+	.text "far I've come! I'll see you in a bit, you two!"
 	.byte WaitForA
 	.byte ScrollText
 	.word ClearPortrait
-	
-	.byte right_slot
-	.byte ScrollText
-	.word LoadPortrait
-	.word asbel_portrait
-	
-	.byte left_slot
+        .byte left_slot
 	.word LoadPortrait
 	.word leif_portrait
-	.text "Asbel..."
+	.text "I can't remember the last time"
 	.byte NewLine
-	.text "How could you keep that from me?"
+	.text "I saw Asbel be in such high spirits."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I'm sorry, Bishop Gunnar, I really wish"
 	.byte NewLine
-	.text "I...I never knew..."
+	.text "I could give you more time to catch up..."
+	.byte NewLine
+	.text "but we're all preparing for the assault."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "...I-I'm sorry, Lord Leif. It..."
+	.text "Ah, to see the both of you together, again..."
 	.byte NewLine
-	.text "It was never my intention, I promise. Just..."
-	.byte NewLine
-	.text "There was never a proper time to mourn."
+	.text "It's about enough to bring a tear to my eye..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I thought that maybe once I'd done right"
+	.text "But it's just like you said, Lord Leif."
 	.byte NewLine
-	.text "by you, the people of Tarrah...then I"
-	.byte NewLine
-	.text "could take a moment to process everything."
+	.text "We have more pressing matters to attend to."
 	.byte WaitForA
-	.byte NewLine
-	.text "Give it all the time it deserves."
-	.byte WaitForA
-	
-	.byte left_slot
+
+	ch14openingnoasbel
+
 	.byte ScrollText
-	.text "......"
-	.byte WaitForA
-	
-	.byte right_slot
-	.byte ScrollText
-	.text "...Don't you see the problem?"
-	.byte NewLine
-	.text "We're getting into all this right"
-	.byte NewLine
-	.text "as our walls are being broken down!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "Right now, I'm rushing out to push back"
-	.byte NewLine
-	.text "these invaders—I guess you'll join in"
-	.byte NewLine
-	.text "whenever your grieving time is over."
-	.byte WaitForA
-	.byte ScrollText
-	.word ClearPortrait
-	
-	.byte left_slot
-	.byte ScrollText
-	.text "What in the..."
-	.byte WaitForA
-	
-	.byte right_slot
-	.word LoadPortrait
-	.word cohen_portrait
-	.text "It's nothing to worry about."
-	.byte NewLine
-	.text "Asbel's just...very persistent about"
-	.byte NewLine
-	.text "his way at times."
-	.byte WaitForA
-	
-	.byte left_slot
-	.byte ScrollText
-	.text "Yes, I'm...definitely realizing that."
-	.byte NewLine
-	.text "Come to think of it, he acted in a similar"
-	.byte NewLine
-	.text "manner back when we crossed paths in Munster."
-	.byte WaitForA
-	.byte ScrollText
-	.text "...But enough of this talk."
-	.byte NewLine
-	.text "Let us concern ourselves with Tarrah's defense."
-	.byte WaitForA
-	
-	.byte right_slot
-	.byte ScrollText
-	.text "Very good."
-	.byte NewLine
 	.text "I trust my magic and staff will"
 	.byte NewLine
 	.text "prove a most worthwhile asset."
@@ -274,37 +272,7 @@ deaneda
 	.byte ScrollText
 	.text "Oh, I've no doubt about that!"
 	.byte WaitForA
-	
-	.byte EndText
 
-	.byte left_slot
-	.byte ScrollText
-	.text "Asbel..."
-	.byte NewLine
-	.text "You're right."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Right now,"
-	.byte NewLine
-	.text "it is up to us to defend the people of Tarrah,"
-	.byte NewLine
-	.text "and we will not fail!"
-	.byte WaitForA
-	
-	.byte right_slot
-	.byte ScrollText
-	.word LoadPortrait
-	.word cohen_portrait
-	.text "I'm glad to see the two of you together again."
-	.byte NewLine
-	.text "It's about enough to bring a tear to my eyes..."
-	.byte WaitForA
-	.byte ScrollText
-	.text "But like you said,"
-	.byte NewLine
-	.text "there's no time for that."
-	.byte WaitForA
-	
 	.byte EndText
 	
 	ch14opening6
@@ -393,7 +361,7 @@ fctravantarion
 .byte left_slot
 .word LoadPortrait
 .word arion_portrait
-.text "My unit and I have arrived, my lord father."
+.text "My detachment has arrived, my lord father."
 .byte WaitForA
 
 .byte right_slot
@@ -404,9 +372,9 @@ fctravantarion
 
 .byte left_slot
 .byte ScrollText
-.text "Yes. We've led the empire to believe that"
+.text "Yes. We've led the empire to believe that we're"
 .byte NewLine
-.text "we're indeed an ally in their siege of Tarrah."
+.text "indeed an ally in their siege of Tarrah."
 .byte WaitForA
 .byte ScrollText
 .text "Now is the time for us to catch them unawares"
@@ -435,50 +403,49 @@ fctravantarion
 
 .byte left_slot
 .byte ScrollText
-.text "Is this truly our wisest option, Father?"
+.text "Doesn't attacking Tarrah only serve to benefit"
 .byte NewLine
-.text "Taking Tarrah by force?"
+.text "the empire?"
 .byte WaitForA
+.byte ScrollText
+.text "Tarrah's citizens are united in their hatred of"
 .byte NewLine
-.text "Why not come to their aid in this crisis?"
+.text "the empire. If we come to their aid now, it could"
 .byte NewLine
-.text "Surely it would bolster our future relations."
+.text "pave the way for a new alliance between us."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Hah! So what?"
-.byte WaitForA
+.text "Ha! So what?"
 .byte NewLine
 .text "You really think shackling ourselves to Tarrah"
 .byte NewLine
 .text "will do the trick? Help take down the empire?"
 .byte WaitForA
 .byte ScrollText
-.text "Have you already forgotten about"
-.byte NewLine
-.text "our defeat at Mergen?"
+.text "Have you forgotten our defeat at Mergen?"
 .byte WaitForA
 .byte NewLine
-.text "We had all of North and South Thracia"
+.text "We had all of North and South Thracia united"
 .byte NewLine
-.text "united under our rule then,"
+.text "under our rule then, and we were still no match"
 .byte NewLine
-.text "and we were still no match for the empire."
+.text "for the empire."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "...We lost only because Raydrik betrayed us."
+.text "...We lost only because of Raydrik's betrayal."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Perhaps... But the fact remains that"
+.text "Perhaps... But the fact remains that the battle"
 .byte NewLine
-.text "the battle ended with us humiliated,"
+.text "ended with us humiliated, and having to resort to"
 .byte NewLine
-.text "and having to resort to suing for peace."
+.text "suing for peace."
 .byte WaitForA
 .byte ScrollText
 .text "North Thracia—the land I had gone through so"
@@ -488,21 +455,19 @@ fctravantarion
 .text "me just like that. All those years...for nothing."
 .byte WaitForA
 .byte ScrollText
-.text "As it stands, it's no exaggeration to say"
+.text "As it stands, it's no exaggeration to say that"
 .byte NewLine
-.text "that the empire's might exceeds our own"
-.byte NewLine
-.text "by tenfold."
+.text "the empire's might exceeds our own by tenfold."
 .byte WaitForA
 .byte ScrollText
-.text "You still like those odds?"
+.text "You like those odds?"
 .byte NewLine
 .text "You still think you can win?"
 .byte WaitForA
 .byte ScrollText
-.text "Tarrahns, Thracians, imperials—it'll be"
+.text "Tarrahns, Thracians, imperials—it'll be thousands"
 .byte NewLine
-.text "thousands of pointless casualties all around."
+.text "of casualties all around."
 .byte NewLine
 .text "You still want to go through with your plan?"
 .byte WaitForA
@@ -523,14 +488,14 @@ fcarionmusing
 .byte right_slot
 .word LoadPortrait
 .word arion_portrait
-.text "No... This isn't right."
+.text "No... I cannot go along with this."
 .byte NewLine
-.text "If things keep going the way they are,"
+.text "If things keep going this way, countless innocent"
 .byte NewLine
-.text "countless innocent civilians will perish..."
+.text "civilians will be lost to us."
 .byte WaitForA
 .byte NewLine
-.text "I must speak with Linoan..."
+.text "I have to convince Linoan..."
 .byte WaitForA
 
 .byte EndText
@@ -1144,7 +1109,7 @@ leifmeetsarion
 .byte NewLine
 .text "battle soon, whether it be to my father, or to"
 .byte NewLine
-.text "the regiments of imperial soldiers and Loptrians."
+.text "regiments of imperial soldiers and Loptr bishops."
 .byte WaitForA
 .byte ScrollText
 .text "If you wish to avoid this fate, I suggest"

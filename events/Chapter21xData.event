@@ -28,9 +28,9 @@ eventChapter21xData ; B1/8862
 		UNIT FriegeSniper, Enemy, [16, 12], [16, 12], Zaun, [SilverBow], 15, False, [$00, $00, $00, $00]
 		UNIT FriegeMyrmidon, Enemy, [13, 13], [13, 13], Zaun, [SilverSword, HandAxe], 16, False, [$00, $00, $00, $00]
 		UNIT FriegeMyrmidon, Enemy, [17, 13], [17, 13], Zaun, [SilverSword, HandAxe], 16, False, [$00, $00, $00, $00]
-		UNIT FriegePriest1, Enemy, [14, 22], [14, 22], Zaun, [Warp, Physic], 15, False, [$00, $03, $00, $80]
-		UNIT FriegePriest1, Enemy, [15, 22], [15, 22], Zaun, [Warp, Physic], 15, False, [$00, $03, $00, $80]
-		UNIT FriegePriest1, Enemy, [16, 22], [16, 22], Zaun, [Warp, Physic], 15, False, [$00, $03, $00, $80]
+		UNIT FriegePriest1, Enemy, [14, 22], [14, 22], Zaun, [Warp, Physic], 15, False, [$12, $03, $00, $80]
+		UNIT FriegePriest1, Enemy, [15, 22], [15, 22], Zaun, [Warp, Physic], 15, False, [$12, $03, $00, $80]
+		UNIT FriegePriest1, Enemy, [16, 22], [16, 22], Zaun, [Warp, Physic], 15, False, [$12, $03, $00, $80]
 		UNIT FriegeArmoredAxe2, Enemy, [16, 27], [16, 27], Zaun, [BattleAxe, HandAxe, Vulnerary], 18, False, [$00, $03, $02, $00]
 		UNIT FriegeArmoredAxe2, Enemy, [18, 17], [18, 17], Zaun, [BattleAxe, HandAxe, Vulnerary], 18, False, [$00, $03, $02, $00]
 		UNIT FriegeArmoredAxe2, Enemy, [10, 16], [10, 16], Zaun, [BattleAxe, HandAxe, Vulnerary], 18, False, [$00, $03, $02, $00]
@@ -64,11 +64,11 @@ eventChapter21xData ; B1/8862
 		.byte 9, 8
 
 	_SorcererReinforcementsLeftGroup ; B1/8B1C
-		UNIT LoptrianSorcerer1, Enemy, [6, 5], [6, 5], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [4, 5], [4, 5], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [2, 6], [2, 6], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [2, 8], [2, 8], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [2, 10], [2, 10], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [6, 5], [6, 5], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [4, 5], [4, 5], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [2, 6], [2, 6], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [2, 8], [2, 8], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [2, 10], [2, 10], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	_SoldierReinforcementsRightCameraGroup ; B1/8B82
@@ -82,11 +82,11 @@ eventChapter21xData ; B1/8862
 		.byte 21, 8
 
 	_SorcererReinforcementsRightGroup ; B1/8B9C
-		UNIT LoptrianSorcerer1, Enemy, [24, 5], [24, 5], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [26, 5], [26, 5], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [28, 6], [28, 6], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [28, 8], [28, 8], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [28, 10], [28, 10], Codha, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [24, 5], [24, 5], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [26, 5], [26, 5], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [28, 6], [28, 6], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [28, 8], [28, 8], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [28, 10], [28, 10], Veld, [Fenrir, Jormungand, Rewarp], 20, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/8C02

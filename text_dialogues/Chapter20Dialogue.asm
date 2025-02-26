@@ -59,7 +59,7 @@ ch20opening1
 .text "These few halls are the rebels' last refuge."
 .byte WaitForA
 .byte NewLine
-.text "I can't imagine this will take long, now."
+.text "I can't imagine this will take long now."
 .byte WaitForA
 
 .byte Left_slot
@@ -99,7 +99,7 @@ ch20opening1
 .byte NewLine
 .text "The loss of Prince Ishtore at Fort Mergen has"
 .byte NewLine
-.text "has been taking its toll on him..."
+.text "been taking its toll on him..."
 .byte WaitForA
 
 .byte Right_slot
@@ -124,11 +124,11 @@ ch20opening1
 .text "mages, are all moving to intercept them."
 .byte WaitForA
 .byte ScrollText
-.text "Still, this is the opponent that bested"
+.text "Still, this is the foe that bested Lady Liza..."
 .byte NewLine
-.text "Lady Liza... I fear that coming battle"
+.text "I fear that coming battle will be a most arduous"
 .byte NewLine
-.text "will be a most arduous one indeed."
+.text "one indeed."
 .byte WaitForA
 
 .byte Right_slot
@@ -677,35 +677,35 @@ ch20wm1
 .text "...Half a year has passed."
 .byte WaitForA
 .byte ScrollText
-.text "The army of House Friege, led by Baráth, has"
+.text "The army of Friege, led by "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $007E ;TF?rururu
 .word $090B ;y then x
+.text "Baráth, has waged a"
 .byte NewLine
-.text "waged a relentless onslaught against Leonster,"
+.text "relentless onslaught against Leonster,"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "seeking to recapture the castle."
 .byte WaitForA
 .byte ScrollText
+.text "Leif's Liberation "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0013 ;y then x
-.text "Leif's Liberation Army has fought well,"
-.byte NewLine
-.text "but has been gradually worn down"
+.text "Army has fought well,"
 .byte WaitForA
+.byte ScrollText
+.text "but has been gradually worn down and forced into"
 .byte NewLine
-.text "and forced into a small corner of the castle—"
-.byte NewLine
-.text "with no way out."
+.text "a small corner of the castle—with no way out."
 .byte WaitForA
 .byte ScrollText
 .text "Everyone could see it was only a matter of time"
 .byte NewLine
-.text "until Castle Leonster fell..."
+.text "until Leonster fell..."
 .byte WaitForA
 
 .byte EndText

@@ -8,6 +8,15 @@ eventChapter19Events ; FD/CBB9
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/CBC6
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
 		END_DEFINITION
@@ -16,16 +25,16 @@ eventChapter19Events ; FD/CBB9
 			CMP_WORD_RANGE wCurrentTurn, 1, 2
 		END_DEFINITION
 		EVENT $00, _IshtarArrival
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 4
-		END_DEFINITION
-		EVENT $00, _RightReinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 3, 25
+			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentTurn, 1
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 4, 25
+			CMP_WORD_RANGE wCurrentTurn, 8, 25
+		END_DEFINITION
+		EVENT $00, _RightReinforcements
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 6, 25
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -197,34 +206,40 @@ eventChapter19Events ; FD/CBB9
 	END_DEFINITION_ARRAY
 
 	_BrigandReinforcements ; FD/CE3A
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter19Data._BrigandReinforcementsCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter19Data._BrigandReinforcementsGroup
+		LOAD1 eventChapter19Data._BrigandReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
 	END2
 
 	_RightReinforcements ; FD/CE47
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter19Data._RightReinforcementsCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter19Data._RightReinforcementsGroup
+		LOAD1 eventChapter19Data._RightReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
 	END2
 
 	_LeftReinforcements ; FD/CE54
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter19Data._LeftReinforcementsCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter19Data._LeftReinforcementsGroup
+		LOAD1 eventChapter19Data._LeftReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 	
 	_IshtarArrival
 		PLAY_SOUND_WORD $00E0
@@ -259,7 +274,7 @@ eventChapter19Events ; FD/CBB9
 		SET_MUSIC $39
 		YIELD
 
-		DIALOGUE ch19ishtararrival
+		DIALOGUE ch19ishtararrivalalt
 		YIELD
 		
 		+
@@ -421,7 +436,27 @@ eventChapter19Events ; FD/CBB9
 
 		STORE_WORD wEventEngineCharacterTarget, Amalda
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.LeadershipStars
-		STORE_WORD wEventEngineParameter2, 1
+		STORE_WORD wEventEngineParameter2, 0
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, FriegeTroubadour3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
+		STORE_WORD wEventEngineParameter2, $12
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeTroubadour3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeTroubadour3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeTroubadour3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
+		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
 		STORE_WORD wEventEngineCharacterTarget, FriegeTroubadour3
@@ -480,19 +515,11 @@ eventChapter19Events ; FD/CBB9
 	END2
 	
 	_LeifAmaldaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE leifamalda
-		YIELD
+		macroDialogueHouse leifamalda
 	END2
 	
 	_LeifConomorTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE leifconomor
-		YIELD
+		macroDialogueHouse leifconomor
 	END2
 
 	_PureWaterNorthHouseVisit ; FD/D1F3
@@ -1185,55 +1212,57 @@ eventChapter19Events ; FD/CBB9
 		
 		CALL_ASM_SKIPPABLE $888550, $0000
 		
-		PLAY_SOUND_WORD $00E0
-		PAUSE_SKIPPABLE 32
-		YIELD
+		;PLAY_SOUND_WORD $00E0
+		;PAUSE_SKIPPABLE 32
+		;YIELD
 
-		LOAD1 eventChapter19Data._Ishtar2Group
-		WAIT_MOVE
-		YIELD
+		;LOAD1 eventChapter19Data._Ishtar2Group
+		;WAIT_MOVE
+		;YIELD
 		
-		SCROLL_CAMERA_CHAR Ishtar
-		SET_CAMERA_SPEED 4
-		YIELD
+		;SCROLL_CAMERA_CHAR Ishtar
+		;SET_CAMERA_SPEED 4
+		;YIELD
 		
 		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
 		
 		macroSetCharacterBitsWord Leif, structCharacterDataRAM.Skills1, (Skill1Renewal << 0)
 		macroSetAllCharacterByte structCharacterDataRAM.Fatigue, 15
 		
-		FADE_In $01
-		YIELD
+		CALL_ASM_LOOP $83ACEA, $0000
 		
-		LOAD1 eventChapter19Data._ReinhardtGroup
-		WAIT_MOVE
-		YIELD
+		;FADE_In $01
+		;YIELD
 		
-		SET_MUSIC $3C
-		YIELD
+		;LOAD1 eventChapter19Data._ReinhardtGroup
+		;WAIT_MOVE
+		;YIELD
 		
-		DIALOGUE ishtarreinhardt
-		YIELD
+		;SET_MUSIC $3C
+		;YIELD
 		
-		MOVE_UNIT Reinhardt, [0, 0], [13, 29], 1, _ReinhardtMovestring
-		YIELD_UNK
+		;DIALOGUE ishtarreinhardt
+		;YIELD
+		
+		;MOVE_UNIT Reinhardt, [0, 0], [13, 29], 1, _ReinhardtMovestring
+		;YIELD_UNK
 
-		WAIT_MOVE
-		YIELD
+		;WAIT_MOVE
+		;YIELD
 		
-		STORE_WORD wEventEngineCharacterTarget, Ishtar
-		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		;STORE_WORD wEventEngineCharacterTarget, Ishtar
+		;CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 		
-		MOVE_UNIT Reinhardt, [0, 0], [23, 32], 2, None
-		YIELD_UNK
+		;MOVE_UNIT Reinhardt, [0, 0], [23, 32], 2, None
+		;YIELD_UNK
 
-		WAIT_MOVE
-		YIELD
+		;WAIT_MOVE
+		;YIELD
 		
-		+
+		;+
 		
-		FADE_OUT $01
-		YIELD
+		;FADE_OUT $01
+		;YIELD
 		
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1

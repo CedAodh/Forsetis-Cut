@@ -8,15 +8,25 @@ eventChapter8Events ; 99/BE7D
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/BE8A
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Rumaigh
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _GomezAppear
 			CMP_WORD wCurrentTurn, 1
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 3, 24
+			CMP_WORD_RANGE wCurrentTurn, 4, 24
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 			TEST_FLAG_UNSET FlagBossDeath
@@ -27,13 +37,12 @@ eventChapter8Events ; 99/BE7D
 			ROLL_RNG 70
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-		EVENT $0C, _RumaighAIChange
-			CMP_WORD wCurrentTurn, 15
-			CHECK_NUM_UNITS_GTE Rumaigh, 1
-			CMP_STATUS_UNSET Rumaigh, TurnStatusRescued
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
 			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 4, 30
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
+		EVENT $0C, _RumaighAIChange
 			CMP_WORD wCurrentTurn, 15
 			CHECK_NUM_UNITS_GTE Rumaigh, 1
 			CMP_STATUS_UNSET Rumaigh, TurnStatusRescued
@@ -47,12 +56,6 @@ eventChapter8Events ; 99/BE7D
 		END_DEFINITION
 		EVENT $08, _HalvanMartyTalk
 			CHECK_CHARS2 Halvan, Marty
-		END_DEFINITION
-		EVENT $09, _LeifOsianTalk
-			CHECK_CHARS2 Osian, Leif
-		END_DEFINITION
-		EVENT $0B, _LeifHalvanTalk
-			CHECK_CHARS2 Halvan, Leif
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -100,6 +103,8 @@ eventChapter8Events ; 99/BE7D
 	END_DEFINITION_ARRAY
 
 	_RightReinforcements ; 99/BFDA
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter8Data._RightReinforcementsCameraCoordinates1
 		YIELD
 
@@ -117,9 +122,11 @@ eventChapter8Events ; 99/BE7D
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_LeftReinforcements ; 99/BFF3
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter8Data._LeftReinforcementsCameraCoordinates
 		YIELD
 
@@ -128,7 +135,7 @@ eventChapter8Events ; 99/BE7D
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_RumaighAIChange ; 99/C000
 		PLAY_SOUND_WORD $00E0
@@ -186,14 +193,6 @@ eventChapter8Events ; 99/BE7D
 		macroSetCharacterWord Marty, structCharacterDataRAM.Leader, Diarmuid
 
 		SET_FLAG $0A
-	END2
-	
-	_LeifOsianTalk
-		macroDialogueHouse leifosian
-	END2
-	
-	_LeifHalvanTalk
-		macroDialogueHouse ch8leifhalvan
 	END2
 	
 	_MartyCaptured ; 99/C0F0

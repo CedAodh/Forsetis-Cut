@@ -106,8 +106,8 @@
 	FlagJubelSaved			= $83
 	FlagDaisyRecruited		= $84 ; $84 - $88 unused in vanilla
 	FlagNoHelpFromOltoph = $85
-	FlagLifisGoneForGood	= $86
-	FlagSafyGoneForGood	= $87
+	FlagSaiasDead	= $86
+	FlagIshtarDead	= $87
 	FlagWeismannDeath               = $88
 	FlagEmilySaved			= $89
 	FlagMurphySaved			= $8A

@@ -11,47 +11,118 @@ Ch19ishtararrival
 .byte WaitForA
 
 .byte right_slot
-.text "Lady Ishtar!"
+.text "Ah, Lady Ishtar."
 .byte NewLine
-.text "You've arrived sooner than expected."
+.text "You've arrived sooner than anticipated."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Have I?"
+.text "So it would seem."
 .byte NewLine
-.text "There are countless lives at stake as we speak."
+.text "By now I would have expected the rebel army to"
 .byte NewLine
-.text "Quelling this uprising is paramount."
+.text "have been forced back to their new stronghold."
+.byte WaitForA
+.byte ScrollText
+.text "I am here to see you recalled to Ulster."
+.byte NewLine
+.text "Lord Baráth is eagerly awaiting all intelligence"
+.byte NewLine
+.text "you've acquired thus far regarding the enemy."
+.byte WaitForA
+.byte ScrollText
+.text "He and everyone else have already assembled."
+.byte NewLine
+.text "Except for Reinhardt, but he is on his way."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Please forgive my impudence, milady."
-.byte WaitForA
-.byte ScrollText
-.text "With you leading our forces,"
+.text "Very good, Your Highness."
 .byte NewLine
-.text "those pesky rebels will regret thinking they"
+.text "Once we've subdued their resistance out here in"
 .byte NewLine
-.text "could ever match the power of House Friege!"
-.byte WaitForA
-.byte ScrollText
-.text "...Milady, that tome you hold..."
-.byte NewLine
-.text "Is that..."
+.text "the open fields, I will gladly accompany you back."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Indeed."
+.text "Then I suppose I'll remain here and observe."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Hah. And I imagine your presence will only secure"
 .byte NewLine
-.text "This is our family's sacred heirloom, the Mjölnir."
-.byte NewLine
-.text "I carry it because my father shares my feelings."
+.text "and bolster our current efforts."
+.byte WaitForA
+
+.byte EndText
+
+Ch19ishtararrivalalt
+
+.byte right_slot
+.word LoadPortrait
+.word guard_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word ishtar_portrait
+.text "...Where is General Wolfe?"
+.byte WaitForA
+
+.byte right_slot
+.text "Ah, you're— Princess Ishtar?!"
 .byte WaitForA
 .byte ScrollText
-.text "Now, allow me to join the front lines."
+.text "I... General Wolfe was... He was defeated."
+.byte NewLine
+.text "It was because we let our guard down that the"
+.byte NewLine
+.text "rebels could even get to him—please forgive us!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I see. I came here to deliberate with him, to"
+.byte NewLine
+.text "learn of the nature of this enemy for Lord Baráth,"
+.byte NewLine
+.text "yet what you just said already speaks volumes."
+.byte WaitForA
+.byte ScrollText
+.text "I will remain here to see the battle through in"
+.byte NewLine
+.text "his stead. Once we've driven the Leonster army"
+.byte NewLine
+.text "back to their castle, I shall return to Ulster."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "This is an immense honor, Your Highness."
+.byte NewLine
+.text "Thank you!"
+.byte WaitForA
+.byte ScrollText
+.text "Hah, our victory went from all but assured, to"
+.byte NewLine
+.text "very likely, then back to all but assured again!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Then see to it you don't let down your guard"
+.byte NewLine
+.text "again, as well. Relish in the pride and vaunts"
+.byte NewLine
+.text "another day."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Y-yes, milady. I'll cease my braying."
 .byte WaitForA
 
 .byte EndText

@@ -232,7 +232,7 @@ _BlessedSword_name
 	.word $0000
 
 _LoptrianFang_name
-	.text "Loptrian Fang "
+	.text "Loptr Fang"
 	.word $0000
 
 _BragisBlade_name
@@ -333,7 +333,7 @@ _Dragonpike_name
 	.word $0000
 	
 _ShadowSpear_name
-	.text "Shado]w Spear "
+	.text "Glaive"
 	.word $0000
 
 _BraveLance_name
@@ -341,11 +341,11 @@ _BraveLance_name
 	.word $0000
 
 _ShortLance_name
-	.text "Short Lance "
+	.text "Shortlance"
 	.word $0000
 
 _LongLance_name
-	.text "Long Lance"
+	.text "Longlance "
 	.word $0000
 
 _Greatlance_name
@@ -422,7 +422,7 @@ _DevilAxe_name
 	.word $0000
 
 _BattleAxe_name
-	.text "Battle Axe"
+	.text "Battleaxe "
 	.word $0000
 
 _Poleax_name

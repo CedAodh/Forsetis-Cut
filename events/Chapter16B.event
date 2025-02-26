@@ -8,6 +8,15 @@ eventChapter16BEvents ; 99/EC9A
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/ECA7
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 1, 20
@@ -46,12 +55,6 @@ eventChapter16BEvents ; 99/EC9A
 		EVENT $0C, _LeifShannamTalk
 			CHECK_CHARS2 Shannam, Leif
 			TEST_FLAG_SET $09
-		END_DEFINITION
-		EVENT $0D, _TinaAsbelTalk
-			CHECK_CHARS2 Tina, Asbel
-		END_DEFINITION
-		EVENT $10, _DeanLinoanTalk
-			CHECK_CHARS2 Dean, Linoan
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -130,6 +133,8 @@ eventChapter16BEvents ; 99/EC9A
 	END2
 
 	_SorcererReinforcements ; 99/EDDF
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter16BData._SorcererReinforcementsCameraCoordinates
 		YIELD
 
@@ -285,34 +290,35 @@ eventChapter16BEvents ; 99/EC9A
 	END2
 	
 	_LeifShannamTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE LeifShannamTalk
-		YIELD
-	END2
-	
-	_TinaAsbelTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE tinaasbel1
-		YIELD
-	END2
-	
-	_DeanLinoanTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE deanlinoan
-		YIELD
+		macroDialogueHouse LeifShannamTalk
 	END2
 
 	_House ; 99/EEA7
 		PLAY_SOUND_WORD $00F7
 		DIALOGUE ch16Bvillager
+		
+		STORE_LONG lEventEngineLongParameter, ch16Bvillager2
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		YIELD
 
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
+
+		STORE_WORD wEventEngineParameter1, MasterCrown
+		PAUSE_SKIPPABLE 10
+		YIELD
+
+		CALL_ASM_LOOP rlASMCSetPopupGivenItemWithMaxDurability, $0000
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCSetupGiveItemPopup, $0000
+		CALL_ASM_LOOP rlASMCWaitWhileGiveItemPopup, $0000
+		CALL_ASM_LOOP rlASMCSetupGiveToConvoyIfInventoryFull, $0000
+		CALL_ASM_LOOP rlASMCWaitWhileGiveToConvoyIfInventoryFull, $0000
+
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden
+		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
+		
 		STORE_WORD wEventEngineXCoordinate, 2
 		STORE_WORD wEventEngineYCoordinate, 16
 		STORE_WORD wEventEngineParameter1, $0021
@@ -545,8 +551,8 @@ eventChapter16BEvents ; 99/EC9A
 		YIELD_UNK
 		YIELD
 		
-		STORE_LONG lEventEngineLongParameter, ch16Bending2
-		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		;STORE_LONG lEventEngineLongParameter, ch16Bending2
+		;CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
 		FADE_OUT $01

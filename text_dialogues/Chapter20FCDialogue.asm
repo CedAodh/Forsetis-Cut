@@ -537,7 +537,7 @@ conomorxavier
 .text "all I had when we played cards in Connaught."
 .byte WaitForA
 .byte ScrollText
-.text "That old bastard Gustav was letting you"
+.text "That old bastard Gustaf was letting you"
 .byte NewLine
 .text "keep practicing all this time, eh?"
 .byte WaitForA

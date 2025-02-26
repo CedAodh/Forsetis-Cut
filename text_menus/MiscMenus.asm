@@ -109,31 +109,6 @@ Prf_rank
 
 ;	Range strings
 
-* = $029A31
-.logical lorom($029A31, 1)
-
-range_one
-.text "    {1}"
-.word $0000
-
-range_onetwo
-.text "{1}{-}{2}  "
-.word $0000
-
-range_two
-.text "    {2}"
-.word $0000
-
-range_threeten
-.text "{3}{-}{1}{0}"
-.word $0000
-
-range_threefifteen
-.text "{3}{-}{1}{5}"
-.word $0000
-
-.here
-
 ;	Growth display
 
 * = $480500
@@ -191,7 +166,7 @@ GrowthLabels ; 13C341
 .logical lorom($475C50, 1)
 
 nocommander
-.text "+No co{mm}nander on the field "	; Character limit: 28
+.text "+No co{mm}nander present"	; Character limit: 28
 .word $0000
 
 .here

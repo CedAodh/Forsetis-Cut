@@ -33,7 +33,7 @@ ch14homernanna
 .byte Left_slot
 .word LoadPortrait
 .word homer_portrait
-.text "Oh ho ho...! I like what I see!"
+.text "Oh ho ho...! I like what I see."
 .byte NewLine
 .text "I'll clear my whole schedule to make time for you,"
 .byte NewLine
@@ -54,12 +54,16 @@ ch14homernanna
 .byte NewLine
 .text "but alas, I'm only one man—"
 .byte WaitForA
+
+.word PauseDialogue
+.word $3C
+
 .byte ScrollText
-.text "Yowch!"
+.text "OW!"
 .byte NewLine
-.text "Hey, hey, hey!"
+.text "Hey, hey, hey! What'd you just hit me for?!"
 .byte NewLine
-.text "What'd you hit me for?!"
+.text "Was it something I said?!"
 .byte WaitForA
 
 .byte Right_slot
@@ -71,11 +75,11 @@ ch14homernanna
 .text "are fighting tooth and nail for Tarrah!"
 .byte WaitForA
 .byte ScrollText
-.text "But here you are, already halfway through a"
+.text "Yet here you are, already halfway through a"
 .byte NewLine
 .text "bottle of wine before noon!"
 .byte NewLine
-.text "Have you no shame?!"
+.text "...Doesn't that make you feel ashamed?!"
 .byte WaitForA
 
 .byte Left_slot
@@ -92,7 +96,7 @@ ch14homernanna
 .byte NewLine
 .text "All right, all right, I get it."
 .byte NewLine
-.text "I suppose I can lend you a hand..."
+.text "I suppose I can pitch in too..."
 .byte WaitForA
 .byte ScrollText
 .text "Just remember that I'm a lover, not a fighter."
@@ -127,7 +131,7 @@ ch14villager2
 .word braidedgirl_portrait
 .text "I can't take this anymore!"
 .byte NewLine
-.text "I just...I just want to be somewhere far,"
+.text "I just... I just want to be somewhere far,"
 .byte NewLine
 .text "far away from here..."
 .byte WaitForA
@@ -230,9 +234,9 @@ ch14nosferatuhouse
 .byte ScrollText
 .text "Her father, the late duke, entrusted it to me,"
 .byte NewLine
-.text "and gave me strict instructions to only deliver"
+.text "and gave me strict instructions to only deliver it"
 .byte NewLine
-.text "it to her when she faced her darkest hour..."
+.text "to her when she faced her darkest hour..."
 .byte WaitForA
 
 .byte EndText
@@ -249,9 +253,14 @@ ch14dragonpikehousedean
 .word younglady_portrait
 .text "Ah, Sir Dean!"
 .byte NewLine
-.text "Lady Altena has been waiting here for you."
+.text "Lady Altena has been waiting for you."
+.byte NewLine
+.text "Please, this way..."
 .byte WaitForA
 .byte ScrollText
+.word ClearPortrait
+.word PauseDialogue
+.byte $3C
 .word LoadPortrait
 .word altena_portrait
 .text "It's been too long, Dean."
@@ -267,12 +276,10 @@ ch14dragonpikehousedean
 
 .byte Left_slot
 .byte ScrollText
-.text "Heh..."
-.byte NewLine
-.text "You haven't changed a bit, Dean."
+.text "Heh... You haven't changed a bit, Dean."
 .byte WaitForA
 .byte ScrollText
-.text "I've come all this way to give you a gift:"
+.text "I've come all this way to bear you a gift:"
 .byte NewLine
 .text "a spear worthy of your service to Thracia."
 .byte WaitForA
@@ -327,7 +334,7 @@ ch14dragonpikehousedean
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah... You know, technically, I'm not a knight of"
+.text "Ha... You know, technically, I'm not a knight of"
 .byte NewLine
 .text "Thracia anymore, so you actually couldn't order"
 .byte NewLine
@@ -341,7 +348,7 @@ ch14dragonpikehousedean
 .byte ScrollText
 .text "I'll wield the Dragonpike for a time—"
 .byte NewLine
-.text "but I am only borrowing it, is all."
+.text "but I am only borrowing it, that's all."
 .byte WaitForA
 
 .byte Left_slot
@@ -372,9 +379,7 @@ ch14dragonpikehousedean
 .byte ScrollText
 .text "I'm supposed to be a stand-in for His Highness"
 .byte NewLine
-.text "himself? Awfully big shoes he's asking me to"
-.byte NewLine
-.text "fill..."
+.text "himself? Awfully big shoes he's asking me to fill..."
 .byte WaitForA
 .byte ScrollText
 .text "I think you've got the wrong idea, Lady Altena."
@@ -397,7 +402,7 @@ ch14dragonpikehouseother
 .byte Right_slot
 .word LoadPortrait
 .word younglady_portrait
-.text "Oh, dear..."
+.text "Oh dear..."
 .byte NewLine
 .text "Where has Sir Dean gone?"
 .byte WaitForA
@@ -635,9 +640,9 @@ ch14opening1
 .byte ScrollText
 .text "The blame is mine alone. I must make quite a"
 .byte NewLine
-.text "sight: the great Colonel Paulus, reduced to an"
+.text "spectacle: the great Colonel Paulus, reduced to"
 .byte NewLine
-.text "old man whose glory days are long past him."
+.text "an old man whose glory days are long past him."
 .byte WaitForA
 .byte ScrollText
 .text "Go ahead and laugh, Bartok."
@@ -652,7 +657,7 @@ ch14opening1
 .byte ScrollText
 .text "But I cannot allow myself to hesitate for one"
 .byte NewLine
-.text "moment longer. I am a knight of House Friege,"
+.text "moment longer. I am a knight of Friege,"
 .byte NewLine
 .text "and I have a duty to uphold."
 .byte WaitForA
@@ -694,7 +699,7 @@ ch14opening1
 .byte ScrollText
 .text "I'll remain vigilant, Colonel."
 .byte NewLine
-.text "On my honor, Tarrah will fall this day!"
+.text "On my honor, Tarrah will fall!"
 .byte WaitForA
 
 .byte EndText
@@ -824,9 +829,9 @@ ch14opening2
 .text "the empire's assassins—"
 .byte WaitForA
 .byte ScrollText
-.text "and when my grief felt too heavy to bear, he"
+.text "and whenever my grief felt too heavy to bear,"
 .byte NewLine
-.text "was always ready to bring a smile to my face."
+.text "he was always ready to bring a smile to my face."
 .byte WaitForA
 .byte ScrollText
 .text "It was strange..."
@@ -876,9 +881,9 @@ ch14opening2
 .byte ScrollText
 .text "His Highness was caught between a rock and a"
 .byte NewLine
-.text "hard place. He couldn't leave Thracia, but he"
+.text "hard place. He couldn't leave Thracia, and he"
 .byte NewLine
-.text "couldn't sit back and let his own fiancée die."
+.text "couldn't leave you, his own fiancée, to die."
 .byte WaitForA
 .byte ScrollText
 .text "...His Highness seemed deeply tormented—"
@@ -1087,11 +1092,11 @@ ch14ending2
 
 .byte Right_slot
 .byte ScrollText
-.text "There's no time. You must listen to me: tell your"
+.text "There's no time."
 .byte NewLine
-.text "people to lay down their arms and surrender."
+.text "You must listen to me: tell your people to lay"
 .byte NewLine
-.text "Immediately."
+.text "down their arms and surrender. Immediately."
 .byte WaitForA
 .byte ScrollText
 .text "If you keep fighting like this, Tarrah will never"
@@ -1101,9 +1106,7 @@ ch14ending2
 
 .byte Left_slot
 .byte ScrollText
-.text "Why...?"
-.byte NewLine
-.text "Why would I do such a thing?!"
+.text "Why...? Why would I do such a thing?!"
 .byte WaitForA
 .byte ScrollText
 .text "This isn't something I'd ever imagine hearing"
@@ -1134,7 +1137,7 @@ ch14ending2
 .byte ScrollText
 .text "It gets worse. Sorcerers of the Loptr Church"
 .byte NewLine
-.text "are headed here even as we speak."
+.text "are headed here as we speak."
 .byte WaitForA
 .byte ScrollText
 .text "And not just any sorcerers—they've sent the"
@@ -1186,7 +1189,7 @@ ch14ending2
 
 .byte Left_slot
 .byte ScrollText
-.text "What will become of Lord Leif and the other"
+.text "What would become of Lord Leif and the other"
 .byte NewLine
 .text "knights?"
 .byte WaitForA

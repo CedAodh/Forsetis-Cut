@@ -8,21 +8,30 @@ eventChapter21xEvents ; FD/E9EE
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/E9FB
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $00, _MyrmidonReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 4, 14
-		END_DEFINITION
-		EVENT $00, _SoldierReinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 1, 19
 		END_DEFINITION
 		EVENT $00, _MageReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 3, 10
 		END_DEFINITION
+		EVENT $00, _SoldierReinforcements
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 19
+		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 24
+			CMP_WORD wCurrentTurn, 20
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -123,6 +132,8 @@ eventChapter21xEvents ; FD/E9EE
 	END_DEFINITION_ARRAY
 
 	_MyrmidonReinforcements ; FD/EB82
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter21xData._MyrmidonReinforcementsCameraCoordinates
 		YIELD
 
@@ -130,9 +141,11 @@ eventChapter21xEvents ; FD/E9EE
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_SoldierReinforcements ; FD/EB8F
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter21xData._SoldierReinforcementsLeftCameraCoordinates
 		YIELD
 
@@ -151,6 +164,8 @@ eventChapter21xEvents ; FD/E9EE
 	END2
 
 	_MageReinforcements ; FD/EBA8
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter21xData._MageReinforcementsCameraCoordinates
 		YIELD
 
@@ -158,7 +173,7 @@ eventChapter21xEvents ; FD/E9EE
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_SorcererReinforcements ; FD/EBB5
 		SCROLL_CAMERA_SPEED [2, 6], 4
@@ -500,6 +515,9 @@ eventChapter21xEvents ; FD/E9EE
 		STORE_BYTE bBuf_INIDISP, $00
 
 		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindCoordinates, $0000
+		
+		EVENT_TEST_FLAG_SET FlagIshtarDead
+		JUMP_TRUE _IshtarDead
 
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
@@ -582,6 +600,8 @@ eventChapter21xEvents ; FD/E9EE
 
 		STORE_WORD wEventEngineCharacterTarget, Ishtar
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		_IshtarDead
 
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000

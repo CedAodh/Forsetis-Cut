@@ -8,8 +8,18 @@ eventChapter16AEvents ; FD/B120
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/B12D
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Brook
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
@@ -20,6 +30,7 @@ eventChapter16AEvents ; FD/B120
 		EVENT $00, _IliosComplaint
 			CHECK_NUM_UNITS_GTE Ilios, 1
 			TEST_FLAG_UNSET $0A
+			TEST_FLAG_UNSET $17
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
@@ -44,7 +55,7 @@ eventChapter16AEvents ; FD/B120
 		END_DEFINITION
 		EVENT $00, _BottomPirateReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 11
+			CMP_WORD wCurrentTurn, 10
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _PegasusReinforcements
@@ -88,17 +99,6 @@ eventChapter16AEvents ; FD/B120
 			CHECK_CHARS2 Leif, Ilios
 			RUN_ASM rlCheckOlwenDeadOrUnrecruited
 			TEST_FLAG_UNSET $0A
-		END_DEFINITION
-		EVENT $14, _FredIliosTalk
-			CHECK_CHARS2 Ilios, Fred
-			TEST_FLAG_SET $17
-		END_DEFINITION	
-		EVENT $14, _FredIliosTalk
-			CHECK_CHARS2 Ilios, Fred
-			TEST_FLAG_SET $0A	
-		END_DEFINITION
-		EVENT $11, _DeanLinoanTalk
-			CHECK_CHARS2 Dean, Linoan
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -221,9 +221,12 @@ eventChapter16AEvents ; FD/B120
 		macroSubtractCharacterByte Conomor, structCharacterDataRAM.Magic, 1
 		macroSubtractCharacterByte Conomor, structCharacterDataRAM.Skill, 1
 		macroSubtractCharacterByte Conomor, structCharacterDataRAM.Speed, 1
+		macroSubtractCharacterByte Conomor, structCharacterDataRAM.Luck, 1
 	END2
 
 	_BottomPirateReinforcements ; FD/B34A
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter16AData._BottomPirateReinforcements1CameraCoordinates
 		YIELD
 
@@ -240,6 +243,8 @@ eventChapter16AEvents ; FD/B120
 	END2
 
 	_TopPirateReinforcements ; FD/B361
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter16AData._TopPirateReinforcements1CameraCoordinates
 		YIELD
 
@@ -256,6 +261,8 @@ eventChapter16AEvents ; FD/B120
 	END2
 
 	_PegasusReinforcements
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter16AData._PegasusReinforcementsCameraCoordinates
 		YIELD
 
@@ -354,27 +361,7 @@ eventChapter16AEvents ; FD/B120
 	END2
 	
 	_LeifIliosTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE leifilios
-		YIELD
-	END2
-	
-	_FredIliosTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE fredmockilios
-		YIELD
-	END2
-	
-	_DeanLinoanTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE deanlinoanA
-		YIELD
+		macroDialogueHouse leifilios
 	END2
 
 	_KempfCharge ; FD/B404
@@ -814,33 +801,6 @@ eventChapter16AEvents ; FD/B120
 	.word $0000
 
 	_OpeningEvent ; FD/B8FE
-		EVENT_TEST_FLAG_SET FlagNoHelpFromOltoph
-		JUMP_TRUE +
-		
-		LOAD1 eventChapter16AData._OltophGroup
-		WAIT_MOVE
-		YIELD
-		JUMP ++
-		
-		+
-		
-		LOAD1 eventChapter16AData._BishopGroup
-		WAIT_MOVE
-		YIELD
-		
-		+
-		
-		STORE_WORD wEventEngineCharacterTarget, Kempf
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Anchor | (Skill3Immortal << 8)
-		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, Kempf
-		CALL_ASM_LOOP rlASMCMount, $0000
-		YIELD
-
-		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
-
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
@@ -956,7 +916,7 @@ eventChapter16AEvents ; FD/B120
 		CALL_ASM_LOOP rlASMCCheckConomorOnMap, $0000
 		JUMP_TRUE +
 
-		EVENT_CMP_WORD_AT_LT wCurrentTurn, 20
+		EVENT_CMP_WORD_AT_LT wCurrentTurn, 15
 		JUMP_FALSE +
 
 		STORE_LONG lEventEngineLongParameter, ch16Aclosing3

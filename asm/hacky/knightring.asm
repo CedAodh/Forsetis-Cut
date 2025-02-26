@@ -45,21 +45,25 @@
         and #$00FF
         beq _False
 		
-		lda aSelectedCharacterBuffer.Skills1,b
+	lda aSelectedCharacterBuffer.Skills1,b
         bit #Skill1MountMove
         bne _True
 
         ldx #size(structCharacterDataRAM.Items)
 
-        -
-        lda aSelectedCharacterBuffer.Item1ID,b,x
+	dec x
+	dec x
+
+	-
+
+	lda aSelectedCharacterBuffer.Item1ID,b,x
         and #$00FF
         cmp #KillerBallista
         beq _True
 
-          dec x
-          dec x
-          bpl -
+	dec x
+        dec x
+        bpl -
         
         _False
         plx

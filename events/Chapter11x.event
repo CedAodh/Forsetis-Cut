@@ -8,8 +8,18 @@ eventChapter11xEvents ; 99/D51C
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/D529
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Oltoph
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
@@ -135,18 +145,24 @@ eventChapter11xEvents ; 99/D51C
 	END2
 
 	_Left1Reinforcements ; 99/D765
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter11xData._Left1ReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 	END2
 
 	_RightReinforcements ; 99/D76C
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter11xData._RightReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 	END2
 
 	_Left2Reinforcements ; 99/D773
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter11xData._Left2ReinforcementsGroup
 		WAIT_MOVE
 		YIELD
@@ -162,7 +178,7 @@ eventChapter11xEvents ; 99/D51C
 
 		macroDismountUnit Fred
 		macroSetCharacterWord Fred, structCharacterDataRAM.Coordinates, ((0 << 8) | 1)
-		macroUnsetCharacterBitsWord Fred, structCharacterDataRAM.Skills2, (Skill2Anchor | (Skill3Immortal << 8))
+		macroUnsetCharacterBitsWord Fred, structCharacterDataRAM.Skills2, Skill3Immortal << 8
 
 		MOVE_UNIT Fred, [0, 0], [1, 2], 1, None
 		YIELD_UNK
@@ -305,7 +321,7 @@ eventChapter11xEvents ; 99/D51C
 
 		macroSetCharacterBitsWord Olwen, structCharacterDataRAM.Unknown3F, $0080
 		macroSetCharacterBitsWord Olwen, structCharacterDataRAM.Unknown3F, $0080
-		macroUnsetCharacterBitsWord Olwen, structCharacterDataRAM.Skills2, (Skill2Anchor | (Skill3Immortal << 8))
+		macroUnsetCharacterBitsWord Olwen, structCharacterDataRAM.Skills2, Skill3Immortal << 8
 
 		macroDismountUnit Olwen
 

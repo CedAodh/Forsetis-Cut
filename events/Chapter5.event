@@ -8,6 +8,15 @@ eventChapter5Events ; 99/9246
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/9253
+		EVENT $09, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $09
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $07, _EyvelCaptured
 			CMP_STATUS_SET Eyvel, TurnStatusRescued
 			TEST_FLAG_UNSET $08
@@ -17,6 +26,7 @@ eventChapter5Events ; 99/9246
 			CMP_STATUS_SET Nanna, TurnStatusDead
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ArenaEnemyCheck
+			TEST_FLAG_UNSET $08
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _RaydrikDialogue
@@ -310,6 +320,31 @@ eventChapter5Events ; 99/9246
 		macroSetCharacterByte Galzus, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Galzus, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte Galzus, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.Unknown3E, $00
 
 		DIALOGUE ch5eyvelstone
 
@@ -443,9 +478,7 @@ eventChapter5Events ; 99/9246
 		SET_CAMERA_SPEED 4
 		YIELD
 
-		DIALOGUE ch5raydrikpanicsB1
-		STORE_LONG lEventEngineLongParameter, ch5raydrikpanicsB2
-		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		DIALOGUE ch5raydrikpanicsB
 		YIELD
 
 		CALL_ASM_LONG_SKIPPABLE rlASMCChangeMapMusic, $3E
@@ -472,6 +505,31 @@ eventChapter5Events ; 99/9246
 		macroSetCharacterByte Galzus, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Galzus, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte Galzus, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.Unknown3E, $00
 
 		DIALOGUE ch5eyvelstone
 
@@ -569,6 +627,31 @@ eventChapter5Events ; 99/9246
 		macroSetCharacterByte Galzus, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Galzus, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte Galzus, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterHero, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterWarrior, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterGeneral, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterSwordmaster, structCharacterDataRAM.Unknown3E, $00
+		
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI1, $02
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI4, $00
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.AI2, $0B
+		macroSetCharacterByte PitfighterBerserker, structCharacterDataRAM.Unknown3E, $00
 
 		DIALOGUE ch5eyvelstone
 
@@ -819,7 +902,7 @@ eventChapter5Events ; 99/9246
 		MOVE_UNIT Eyvel, [0, 0], [15, 15], 1, None
 		YIELD_UNK
 
-		MOVE_UNIT Nanna, [0, 0], [14, 17], 1, None
+		MOVE_UNIT Nanna, [0, 0], [16, 17], 1, None
 		YIELD_UNK
 
 		WAIT_MOVE

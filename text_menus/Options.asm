@@ -767,12 +767,12 @@ Setting3
 .word 12
 
 Setting4
+.word 15
+.word 18
+.word 24
+.word 15
+.word 18
 .word 23
-.word 23
-.word 23
-.word 08
-.word 08
-.word 08
 
 Setting5
 .word 08

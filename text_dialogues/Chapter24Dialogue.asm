@@ -942,45 +942,40 @@ ch24closingnokaia
 
 ch24wm1
 
-.text "Having overcome countless obstacles,"
+.text "Having overcome countless obstacles, "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $0705 ;y then x
+.text "Leif finally"
 .byte NewLine
-.text "Leif finally stood before the gates"
-.byte WaitForA
-.byte NewLine
-.text "of Castle Munster."
+.text "stood before the gates of Castle Munster."
 .byte WaitForA
 .byte ScrollText
+.text "Better known in recent memory as “the "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0178 ;raydrik
-.word $010D ;y then x
-.text "Better known today as “the Fiend's Lair,”"
+.word $020D ;y then x
+.text "Fiend's"
 .byte NewLine
-.text "the castle towered above the city,"
-.byte WaitForA
-.byte NewLine
-.text "intimidating the Liberation Army"
-.byte NewLine
-.text "with its sheer size."
+.text "Lair,” the castle towered above the city,"
 .byte WaitForA
 .byte ScrollText
-.text "Once, Leif had fled these very walls"
-.byte NewLine
-.text "as a mere fugitive, but now he returned"
-.byte WaitForA
-.byte NewLine
-.text "as a conqueror."
+.text "intimidating the Liberation Army with its sheer size."
 .byte WaitForA
 .byte ScrollText
+.text "Once, Leif had fled these very walls as a mere"
+.byte NewLine
+.text "fugitive, but he now returned as a conqueror."
+.byte WaitForA
+.byte ScrollText
+.text "He stood ready to rescue a lost loved "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0305 ;eyvel
 .word $0516 ;y then x
-.text "He stood ready to rescue a lost loved one—"
+.text "one—"
 .byte NewLine
 .text "and in so doing, usher in a new era..."
 .byte WaitForA

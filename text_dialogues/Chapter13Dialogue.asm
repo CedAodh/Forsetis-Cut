@@ -109,14 +109,14 @@ ch13gladefinn
 
 .byte Left_slot
 .byte ScrollText
-.text "The feeling is mutual, Sir Glade."
+.text "The feeling is mutual, Glade."
 .byte NewLine
-.text "After all, you've been no slouch, yourself—"
+.text "After all, you've been no slouch yourself—"
 .byte WaitForA
+.byte ScrollText
+.text "you rescued Count Dryas, helped him raise the"
 .byte NewLine
-.text "you have helped Count Dryas raise the next"
-.byte NewLine
-.text "generation of the Lanzritter,"
+.text "next generation of the Lanzritter,"
 .byte NewLine
 .text "and kept their name alive."
 .byte WaitForA
@@ -237,7 +237,7 @@ ch13gladeselphinaA
 .byte NewLine
 .text "a knight of Leonster!"
 .byte NewLine
-.text "I'm proud to be your wife!"
+.text "I am proud to be your wife!"
 .byte WaitForA
 .byte ScrollText
 .text "So please, do not be so hard on yourself..."
@@ -245,11 +245,9 @@ ch13gladeselphinaA
 
 .byte Right_slot
 .byte ScrollText
-.text "Thank you, Selphina. Ah, did the gods smile upon"
+.text "Thank you, Selphina."
 .byte NewLine
-.text "me the day that we met...and seeing you again,"
-.byte NewLine
-.text "here, is enough to soothe my very soul."
+.text "Meeting you here does wonders for my spirits."
 .byte WaitForA
 .byte ScrollText
 .text "...Oh, I nearly forgot!"
@@ -275,7 +273,7 @@ ch13gladeselphinaA
 .byte NewLine
 .text "Tarrah. I took the liberty of buying it for you,"
 .byte NewLine
-.text "for when we met again..."
+.text "for when we met again."
 .byte WaitForA
 .byte ScrollText
 .text "Will you use it?"
@@ -530,7 +528,7 @@ ch13gladeleif
 
 .byte Left_slot
 .word LoadPortrait
-.word leif_portrait
+.word leif_portrait2
 .text "Glade...?"
 .byte NewLine
 .text "A-are you the knight Glade, sir?"
@@ -546,7 +544,7 @@ ch13gladeleif
 .byte ScrollText
 .word LoadPortrait
 .word dorias_portrait
-.text "Hah!"
+.text "Ha!"
 .byte NewLine
 .text "Is the mighty Sir Glade surprised so easily?"
 .byte WaitForA
@@ -581,9 +579,9 @@ ch13gladeleif
 .text "the people from the yoke of tyranny!"
 .byte WaitForA
 .byte ScrollText
-.text "We will bear the flag of the Gáe Bolg, and raise"
+.text "We will bear the flag of the Gáe Bolg, and raise it"
 .byte NewLine
-.text "it once more over the land of Njörun!"
+.text "once more over the land of Njörun!"
 .byte WaitForA
 
 .byte Right_slot
@@ -605,20 +603,20 @@ ch13gladeleif
 .text "The hopes of our people now rest with you."
 .byte WaitForA
 .byte ScrollText
-.text "Please, milord, succeed your father and realize"
+.text "Please, sire, succeed your father and realize his"
 .byte NewLine
-.text "his will!"
+.text "will!"
 .byte WaitForA
 
 .byte Left_slot
 .text "I shall!"
 .byte NewLine
-.text "Join me, Glade, and we'll reclaim Leonster!"
+.text "Join me, Glade, and we'll take back Leonster!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! You needn't ask, milord!"
+.text "Ha! You needn't ask, milord!"
 .byte NewLine
 .text "We sworn men of Leonster would follow you"
 .byte NewLine
@@ -707,11 +705,11 @@ ch13opening3
 .byte WaitForA
 
 .byte Left_slot
-.text "...The reality is that we can't match the"
+.text "...The reality is that we can't match the strength"
 .byte NewLine
-.text "strength of their army."
+.text "of their army. All we can do is postpone the"
 .byte NewLine
-.text "All we can do is postpone the inevitable."
+.text "inevitable."
 .byte WaitForA
 
 .byte Right_slot
@@ -722,7 +720,7 @@ ch13opening3
 .byte NewLine
 .text "their front line."
 .byte NewLine
-.text "I reckon that would buy you some time, but—"
+.text "I think that would buy us some time, but—"
 .byte WaitForA
 
 .byte Left_slot
@@ -736,9 +734,9 @@ ch13opening3
 .byte ScrollText
 .text "A wyvern knight's entire way of fighting is to"
 .byte NewLine
-.text "swoop down, strike, and fly away—all in one"
+.text "swoop down, strike, and fly away—all in one swift"
 .byte NewLine
-.text "swift move. That's how you stay alive, Eda."
+.text "move. That's how you stay alive, Eda."
 .byte WaitForA
 .byte NewLine
 .text "Impatience will just get you killed."
@@ -746,9 +744,9 @@ ch13opening3
 
 .byte Right_slot
 .byte ScrollText
-.text "All due respect, Brother, but this isn't the"
+.text "All due respect, Brother, but this isn't the venue"
 .byte NewLine
-.text "venue for a lecture. Time isn't on our side..."
+.text "for a lecture. Time isn't on our side..."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -866,9 +864,9 @@ ch13opening4
 
 .byte Left_slot
 .byte ScrollText
-.text "That will not do, my prince. The main body of"
+.text "That will not do, my prince. The main body of our"
 .byte NewLine
-.text "our army has only just now cleared the forest."
+.text "army has only just now cleared the forest."
 .byte NewLine
 .text "Our vanguard is all that we have here."
 .byte WaitForA
@@ -925,7 +923,7 @@ ch13closing
 .byte Right_slot
 .word LoadPortrait
 .word linoan_portrait
-.text "...L-Lord Leif?!"
+.text "...L-Lord Leif?"
 .byte WaitForA
 
 .byte Left_slot
@@ -1024,17 +1022,18 @@ ch13closing
 
 ch13wm1
 
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0101 ;leify-left
-.word $0C11 ;y then x
 .text "Leading his men out of the bandit-infested"
 .byte NewLine
 .text "Dacia Forest, "
 .byte WaitForA
-.text "Leif found a most welcome"
+.byte ScrollText
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $013F ;leify-left
+.word $0C11 ;y then x
+.text "Leif found a most welcome sign awaiting him and"
 .byte NewLine
-.text "sight awaiting him and his Liberation Army:"
+.text "his Liberation Army:"
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -1052,15 +1051,16 @@ ch13wm2
 .byte WaitForA
 .byte ScrollText
 
-.text "Under the leadership of Duchess Linoan,"
+.text "Under the leadership of Duchess "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0126 ;linoan
 .word $0311 ;y then x
+.text "Linoan,"
 .byte NewLine
 .text "daughter of the late duke of Tarrah,"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "the free city had rebelled against the empire,"
 .byte NewLine
 .text "refusing to be complicit in their many crimes."
@@ -1071,52 +1071,53 @@ ch13wm2
 .byte NewLine
 .text "the city had already been under siege"
 .byte WaitForA
-.byte NewLine
-.text "by the imperial army,"
+.byte ScrollText
+.text "by the imperial army, led by Colonel "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word paulus_portrait
 .word $0B0A ;y then x
-.text " led by Colonel Paulus,"
+.text "Paulus,"
 .byte NewLine
 .text "for some time."
 .byte WaitForA
 .byte ScrollText
 
-.text "Already in dire straits before the empire's"
+.text "Already in dire straits before the empire's attack"
 .byte NewLine
-.text "attack had even begun,"
+.text "had even begun,"
 .byte WaitForA
-.text " Tarrah would now"
-.byte NewLine
-.text "find it exceptionally difficult to recover."
-.byte WaitForA
-.word ClearPortraitalt
-.long $82937A
-.word $0000
 .byte ScrollText
+.text "Tarrah would now find it exceptionally difficult to"
+.byte NewLine
+.text "recover."
+.byte WaitForA
 .word ClearPortraitalt
 .long $82937A
 .word $0001
 .byte ScrollText
+.word ClearPortraitalt
+.long $82937A
+.word $0000
+.byte ScrollText
 
 .text "Initially, the city-state had brokered its freedom"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "by agreeing to not interfere with the"
 .byte NewLine
 .text "Grannvale Empire's conquest of North Thracia."
 .byte WaitForA
 .byte ScrollText
 
-.text "In exchange, Tarrah had been allowed to keep"
+.text "In exchange, Tarrah had been allowed to keep its"
 .byte NewLine
-.text "its autonomy, but even at the time,"
+.text "autonomy, but even at the time,"
 .byte WaitForA
+.byte ScrollText
+.text "that freedom appeared to be as precarious and"
 .byte NewLine
-.text "the city's freedom was thought to be as precarious"
-.byte NewLine
-.text "and fleeting as a candle flickering in the wind..."
+.text "fleeting as a candle flickering in the wind..."
 .byte WaitForA
 
 .byte EndText

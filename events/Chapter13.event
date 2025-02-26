@@ -8,6 +8,15 @@ eventChapter13Events ; 99/E392
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/E39F
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
 		END_DEFINITION
@@ -38,11 +47,15 @@ eventChapter13Events ; 99/E392
 			TEST_FLAG_SET $02
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 32
+		END_DEFINITION
 		EVENT $00, _LisztAIChange
 			CMP_WORD wCurrentTurn, 4
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-                EVENT $00, _McCroySpawn
+            EVENT $00, _McCroySpawn
 			CMP_WORD wCurrentTurn, 10
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
@@ -298,6 +311,8 @@ eventChapter13Events ; 99/E392
 	END2
 
 	_BowKnightReinforcements ; 99/E81F
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter13Data._BowKnightReinforcementsCameraCoordinates
 		YIELD
 
@@ -306,9 +321,11 @@ eventChapter13Events ; 99/E392
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_ArmorReinforcements ; 99/E82C
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter13Data._ArmorReinforcementsCameraCoordinates
 		YIELD
 
@@ -317,9 +334,11 @@ eventChapter13Events ; 99/E392
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_MageReinforcements ; 99/E839
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter13Data._MageReinforcementsCameraCoordinates
 		YIELD
 
@@ -328,7 +347,7 @@ eventChapter13Events ; 99/E392
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_LisztAIChange ; 99/E846
 		STORE_WORD wEventEngineCharacterTarget, FriegeMage1
@@ -674,8 +693,8 @@ eventChapter13Events ; 99/E392
 		YIELD
 	END2
 
-        _McCroySpawn ; FD/C70C
-		PLAY_SOUND_WORD $E0
+    _McCroySpawn ; FD/C70C
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
 

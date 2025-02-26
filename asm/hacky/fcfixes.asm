@@ -236,7 +236,7 @@
 * = $03BA9B
 .logical lorom($03BA9B, 1)
 
-.byte $4F, $B3, $83
+.byte $80, $B3, $83
 
 .here
 
@@ -245,7 +245,7 @@
 * = $03B871
 .logical lorom($03B871, 1)
 
-.byte $4F, $B3, $83
+.byte $80, $B3, $83
 
 .here
 
@@ -254,7 +254,7 @@
 * = $03B9EF
 .logical lorom($03B9EF, 1)
 
-.byte $4F, $B3, $83
+.byte $80, $B3, $83
 
 .here
 
@@ -275,9 +275,110 @@
 
 .here
 
-* = $03845F
-.logical lorom($03845F, 1)
+; Turns the Ddg formula into Luck
+; as opposed to Luck/2
 
-.byte $38
+;* = $01D421
+;.logical lorom($01D421, 1)
+
+;.byte $18, $6D, $99, $A6, $9D, $4B, $00, $C2, $30, $60, $00
+
+;.here
+
+; Creates a Str +5 item bonus entry
+; without having to rework the table
+
+;* = $18007A
+;.logical lorom($18007A, 1)
+
+;.byte $05
+
+;.here
+
+; Stops the automatic screen fade back to
+; the attacker after siege weapon attacks
+
+; Meteor
+
+* = $0B0E8C
+.logical lorom($0B0E8C, 1)
+
+.byte $04, $58, $FE, $FF, $05, $58, $FE, $FF, $05, $0E, $06, $4E, $06, $18, $FE, $FF, $60, $16, $01, $54, $FE, $FF, $51, $04, $12, $56, $FE, $FF, $36, $08, $FF, $FF
+
+.here
+
+; Bolting
+
+* = $0B14F8
+.logical lorom($0B14F8, 1)
+
+.byte $24, $04, $12, $56, $FE, $FF, $36, $08, $FF, $FF
+
+.here
+
+; Blizzard
+
+* = $0B16A6
+.logical lorom($0B16A6, 1)
+
+.byte $FD, $FF, $FC, $FF, $0C, $04, $0A, $54, $FE, $FF, $12, $56, $FE, $FF, $36, $08, $FF, $FF
+
+.here
+
+; Fenrir
+
+* = $0B1932
+.logical lorom($0B1932, 1)
+
+.byte $04, $58, $FE, $FF, $05, $58, $FE, $FF, $05, $4E, $FE, $FF, $06, $4E, $06, $18, $FE, $FF, $FD, $FF, $FC, $FF, $06, $22, $01, $54, $FE, $FF, $61, $04, $12, $56, $FE, $FF, $81, $16, $01, $54, $FE, $FF, $36, $08, $FF, $FF
+
+.here
+
+; Petrify
+
+* = $0B19E0
+.logical lorom($0B19E0, 1)
+
+.byte $04, $58, $FE, $FF, $05, $58, $FE, $FF, $05, $4E, $FE, $FF, $06, $4E, $06, $18, $FE, $FF, $FD, $FF, $FC, $FF, $09, $22, $01, $54, $FE, $FF, $61, $04, $12, $56, $FE, $FF, $81, $16, $01, $54, $FE, $FF, $36, $08, $FF, $FF
+
+.here
+
+; Venin
+
+* = $0B1A94
+.logical lorom($0B1A94, 1)
+
+.byte $04, $58, $FE, $FF, $05, $58, $FE, $FF, $05, $4E, $FE, $FF, $06, $4E, $06, $18, $FE, $FF, $FD, $FF, $FC, $FF, $0B, $22, $01, $54, $FE, $FF, $61, $04, $12, $56, $FE, $FF, $81, $16, $01, $54, $FE, $FF, $36, $08, $FF, $FF
+
+.here
+
+; Ballistae
+
+* = $0B1C04
+.logical lorom($0B1C04, 1)
+
+.byte $04, $18, $FE, $FF, $05, $18, $17, $10, $08, $54, $FE, $FF, $05, $0E, $06, $4E, $06, $18, $FE, $FF, $11, $08, $12, $08, $FE, $FF, $16, $10, $08, $54, $FE, $FF, $18, $08, $FE, $FF, $FF, $FF
+
+.here
+
+; Makes unconditional fast screen
+; panning during gameplay
+
+* = $00B4BA
+.logical lorom($00B4BA, 1)
+
+.byte $00
+
+.here
+
+; Changes Xavier's and his adjutants' unique AI to
+; not target Xavier's adjutants instead of the
+; eight civilians, which is fine since the civilians
+; have Noncombatant and the adjutants can't capture
+
+* = $078B6F
+.logical lorom($078B6F, 1)
+
+.byte $EE, $00, $EF, $00, $F0, 00, $F1, $00, $F2, $00, $F3, $00, $F4, $00, $F5, $00
 
 .here

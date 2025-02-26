@@ -139,6 +139,12 @@ GUARD_ZQOL_GUARD_AI_DISPLAY :?= false
         _Guard
 
         ; check if unit with guard AI is trying to escape with captured unit or if guard AI units has no weapons/items
+
+	lda aSelectedCharacterBuffer.Status,b
+	and #$00FF
+	cmp #StatusBerserk
+	beq _NotGuard
+
         lda aTemporaryActionStruct.Unknown3F
         bit #$1000
         bne _NotGuard 

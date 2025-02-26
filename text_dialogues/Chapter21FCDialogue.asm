@@ -150,15 +150,13 @@ EdaLinoanTalk
 
 MirandaLeifTalk
 
-.byte left_slot
-.word LoadPortrait
-.word eda_portrait 
-
 .byte right_slot
 .word LoadPortrait
-.word linoan_portrait
+.word leif_portrait2
 
 .byte left_slot
+.word LoadPortrait
+.word miranda_portrait
 .text "Prince Leif..."
 .byte WaitForA
 
@@ -835,6 +833,8 @@ ConomorMirandaTalk
 .text "As you will."
 .byte WaitForA
 .byte ScrollText
+.word PlayMusic
+.byte $43
 .text "Like Count Dryas must have told you,"
 .byte NewLine
 .text "your father chose not to act when Leonster"
@@ -1203,9 +1203,9 @@ fergusdiarmuid
 .byte ScrollText
 .text "That would be greatly appreciated."
 .byte NewLine
-.text "But...we are a few dozen miles away"
+.text "But...nearly everyone is ready to set out."
 .byte NewLine
-.text "from the base camp, are we not?"
+.text "Could you not have done this earlier?"
 .byte WaitForA
 
 .byte left_slot

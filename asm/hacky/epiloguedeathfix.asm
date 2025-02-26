@@ -1,6 +1,6 @@
 ; Fixes softlocks for Epilogue slides of dead/captured characters
 
-* = $0A726C
+* = $0A726D
 .logical lorom($0A726D, 1)
 	.as
 	.xl

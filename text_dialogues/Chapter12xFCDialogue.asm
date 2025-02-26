@@ -155,7 +155,7 @@ leiftina
 .byte right_slot
 .text "A priestess?"
 .byte NewLine
-.text "Are you all right, sister?"
+.text "Are you all right, Sister?"
 .byte NewLine
 .text "I imagine it's been rough for you."
 .byte WaitForA
@@ -691,4 +691,77 @@ tinafreakout
 .text "and I'm not afraid to use it!"
 .byte WaitForA
 	
+.byte EndText
+
+ch12xopening2salem2
+
+.byte Left_slot
+.byte ScrollText
+.text "Indeed, we do."
+.byte NewLine
+.text "It seems everyone is alerted to our presence;"
+.byte NewLine
+.text "it's as though we struck in the late morn."
+.byte WaitForA
+.byte ScrollText
+.text "Anything you'd like to warn us about?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "I wager your fighting capabilities greatly"
+.byte NewLine
+.text "outweigh that of the people in Perne's employ,"
+.byte NewLine
+.text "so no need to waste any time on that."
+.byte WaitForA
+.byte ScrollText
+.text "Except for his lead bodyguard, Troude—"
+.byte NewLine
+.text "but I know I can reason with him too."
+.byte WaitForA
+.byte ScrollText
+.text "The other possible concern is the thieves."
+.byte NewLine
+.text "They're the only real avaricious ones here,"
+.byte WaitForA
+.byte NewLine
+.text "and I will assume they mean to take the group's"
+.byte NewLine
+.text "treasure and flee on their own to escape the"
+.byte NewLine
+.text "repercussions they must think they're getting."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "But it sounds like...we can stop them in time,"
+.byte NewLine
+.text "yes?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "I believe so. As I said, they are particularly"
+.byte NewLine
+.text "greedy, so they won't think to leave until every"
+.byte NewLine
+.text "last chest has been cracked open."
+.byte WaitForA
+.byte ScrollText
+.text "Meaning if you can move fast and block off just"
+.byte NewLine
+.text "one chest, we should be able to regain the rest"
+.byte NewLine
+.text "of the treasure."
+.byte WaitForA
+.byte ScrollText
+.text "Perne would certainly be grateful, I know that."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "All right. Let's see what we can do."
+.byte WaitForA
+
 .byte EndText

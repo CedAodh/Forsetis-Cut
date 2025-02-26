@@ -18,7 +18,7 @@ orsintitle
 
 halvantitle
 .byte $09
-.text "Halvan — Quiet Hero"
+.text "Halvan — Unflappable Hero"
 .byte $05
 .byte EndText
 
@@ -30,19 +30,19 @@ eyveltitle
 
 dagdartitle
 .byte $09
-.text "Dagdar — Peak Ex-Bandit"
+.text "Dagdar — Violdrake Revolutionary"
 .byte $05
 .byte EndText
 
 ralphtitle
 .byte $09
-.text "Ralf — Rootless Mercenary"
+.text "Ralf — Wandering Mercenary"
 .byte $05
 .byte EndText
 
 martytitle
 .byte $09
-.text "Marty — Dagdar's Right-Hand"
+.text "Marty — Bonafied Warrior"
 .byte $05
 .byte EndText
 
@@ -78,13 +78,13 @@ brightontitle
 
 fergustitle
 .byte $09
-.text "Fergus — Impromptu Knight"
+.text "Fergus — Free-Spirited Knight"
 .byte $05
 .byte EndText
 
 edatitle
 .byte $09
-.text "Eda — Steadfast Rider"
+.text "Eda — Steadfast Knight"
 .byte $05
 .byte EndText
 
@@ -102,7 +102,7 @@ machatitle
 
 hickstitle
 .byte $09
-.text "Hicks — Father and Axeman"
+.text "Hicks — Doting Axeman"
 .byte $05
 .byte EndText
 
@@ -120,19 +120,19 @@ selphinatitle
 
 dalsintitle
 .byte $09
-.text "Dalsin — Knight of Passion"
+.text "Dalsin — Iron Will"
 .byte $05
 .byte EndText
 
 calliontitle
 .byte $09
-.text "Callion — Leonster's Courtesy"
+.text "Callion — Nobleman of Leonster"
 .byte $05
 .byte EndText
 
 shivatitle
 .byte $09
-.text "Shiva — Sellsword of Sabhain"
+.text "Shiva — Sellsword of Sabang"
 .byte $05
 .byte EndText
 
@@ -144,31 +144,31 @@ pantitle
 
 gladetitle
 .byte $09
-.text "Glade — Knight of Integrity"
+.text "Glade — Lance of Altruism"
 .byte $05
 .byte EndText
 
 kanetitle
 .byte $09
-.text "Kane — Pragmatic Knight"
+.text "Kane — Lance of Leonster"
 .byte $05
 .byte EndText
 
 albatitle
 .byte $09
-.text "Alba — Optimistic Knight"
+.text "Alba — Merry Lance of Leonster"
 .byte $05
 .byte EndText
 
 roberttitle
 .byte $09
-.text "Robert — Bashful Knight"
+.text "Robert — Bowman of Leonster"
 .byte $05
 .byte EndText
 
 fredtitle
 .byte $09
-.text "Fred — Paladin of Friege"
+.text "Fred — Sedulous Knight"
 .byte $05
 .byte EndText
 
@@ -186,7 +186,7 @@ cedtitle
 
 lithistitle
 .byte $09
-.text "Lifis — Shy Thief"
+.text "Lifis — Recreant Thief"
 .byte $05
 .byte EndText
 
@@ -198,7 +198,7 @@ karintitle
 
 deantitle
 .byte $09
-.text "Dean — Hero of the Cerulean"
+.text "Dean — Blue Skies Champion"
 .byte $05
 .byte EndText
 
@@ -222,13 +222,13 @@ tanyatitle
 
 linoantitle
 .byte $09
-.text "Linoan — Tarrah's Lone Flower"
+.text "Linoan — Tarrah's Blossom"
 .byte $05
 .byte EndText
 
 mishatitle
 .byte $09
-.text "Misha — Rider of the Wind"
+.text "Misha — Heavenly Knighted"
 .byte $05
 .byte EndText
 
@@ -258,7 +258,7 @@ tinatitle
 
 amaldatitle
 .byte $09
-.text "Amalda — Retired Knight"
+.text "Amalda — Tormented Knight"
 .byte $05
 .byte EndText
 
@@ -300,12 +300,12 @@ galzustitle
 
 iliostitle
 .byte $09
-.text "Ilios — Aspiring Knight"
+.text "Ilios — Onerous Knight"
 .byte $05
 .byte EndText
 
 xaviertitle
 .byte $09
-.text "Xavier — Loyal Warhorse"
+.text "Xavier — Truehearted Warhorse"
 .byte $05
 .byte EndText

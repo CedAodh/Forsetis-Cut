@@ -37,7 +37,48 @@ menu_command_pointers		.block
 .word    <>menu_commands._Wait_command
 .word    $0000
 
+;.word    <>menu_commands._Seize_command
+;.word    <>menu_commands._Retreat_command
+;.word    <>menu_commands._Arrive_command
+;.word    <>menu_commands._Talk_command
+;.word    <>menu_commands._Attack_command
+;.word    <>menu_commands._Capture_command
+;.word    <>menu_commands._Steal_command
+;.word    <>menu_commands._Visit_command
+;.word    <>menu_commands._Supply_command
+;.word    <>menu_commands._Armory_command
+;.word    <>menu_commands._Vendor_command
+;.word    <>menu_commands._Secret_command
+;.word    <>menu_commands._Arena_command
+;.word    <>menu_commands._Chest_command
+;.word    <>menu_commands._Bridge_command
+;.word    <>menu_commands._Door_command
+;.word    <>menu_commands._Dance_command
+;.word    <>menu_commands._Wait_command
+;.word    <>menu_commands._Staff_command
+;.word    <>menu_commands._Item_command
+;.word    <>menu_commands._Rescue_command
+;.word    <>menu_commands._Drop_command
+;.word    <>menu_commands._Release_command
+;.word    <>menu_commands._Transfer_command
+;.word    <>menu_commands._Transfer2_command
+;.word    <>menu_commands._Trade_command
+;.word    <>menu_commands._Mount_command
+;.word    <>menu_commands._Dismount_command
+;.word    <>menu_commands._Animation_command
+;.word    $0000
+
 .bend
+.here
+
+; Since Lil' Manster changed the order on the unit command menu (removal of "Top Wait"),
+; this makes pressing R on that menu go to the Wait command's new spot
+
+* = $03845F
+.logical lorom($03845F, 1)
+
+.byte $38
+
 .here
 
 ;	Unit action command names
@@ -246,7 +287,7 @@ _Item_command
 	.long lorom($03A90F, 1)
 	.long lorom($03846C, 1)
 	.long $000000
-	.text "  Ite[m "
+	.text "  Ite[ms"
 	.word $0000
 
 _Rescue_command
@@ -504,7 +545,7 @@ _Unit_command
 	.long lorom($0504D4, 1)
 	.long lorom($0504BD, 1)
 	.long $000000
-	.text "  Unit"
+	.text "  Units "
 	.word $0000
 
 _Status_command

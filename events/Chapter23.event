@@ -8,21 +8,26 @@ eventChapter23Events ; FD/F056
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/F063
+		EVENT $15, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $15
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Alphand
 			CHECK_DEAD Faden
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
 		END_DEFINITION
 		EVENT $00, _ThiefReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 3
-			TEST_FLAG_UNSET $02
-		END_DEFINITION
-		EVENT $00, _KnightReinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 3, 10
+			CMP_WORD wCurrentTurn, 5
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _Sorcerer1Reinforcements
@@ -85,6 +90,11 @@ eventChapter23Events ; FD/F056
 			ROLL_RNG 25
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
+		EVENT $00, _KnightReinforcements
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 3, 10
+			TEST_FLAG_UNSET $02
+		END_DEFINITION
 		EVENT $0A, _CoulterSpawn
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 2
@@ -103,8 +113,8 @@ eventChapter23Events ; FD/F056
 		EVENT $0B, _CedAppear
 			CMP_WORD wCurrentPhase, NPC
 			RUN_ASM rlEventDefinitionCheckAlphand
-			RUN_ASM _rlEnemyPhaseRangeCheck
-			;TEST_FLAG_SET $08
+			;RUN_ASM _rlEnemyPhaseRangeCheck
+			TEST_FLAG_SET $08
 		END_DEFINITION
 		EVENT $09, _AltenaLeave
 			CMP_WORD wCurrentPhase, NPC
@@ -118,6 +128,10 @@ eventChapter23Events ; FD/F056
 			TEST_FLAG_SET $0A
 			TEST_FLAG_UNSET $0F
 		END_DEFINITION
+		EVENT $17, _Reinforcing
+			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_SET $16
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/F1E0
@@ -127,25 +141,11 @@ eventChapter23Events ; FD/F056
 		EVENT $0D, _LeifSaiasTalk
 			CHECK_CHARS2 Leif, Saias
 		END_DEFINITION
-		EVENT $10, _HicksDalsinTalk
-			CHECK_CHARS2 Hicks, Dalsin
+		EVENT $16, _LeifXavierReinforce
+			CHECK_CHARS2 Leif, Xavier
 		END_DEFINITION
-		EVENT $11, _AsbelCedTalk
-			TEST_FLAG_SET $0C
-			CHECK_CHARS2 Asbel, CedChp23
-		END_DEFINITION
-		EVENT $12, _MishaCedTalk
-			TEST_FLAG_SET $0C
-			CHECK_CHARS2 Misha, CedChp23
-		END_DEFINITION
-		EVENT $13, _SchroffSaiasTalk
-			CHECK_CHARS2 Schroff, Saias
-		END_DEFINITION
-		EVENT $14, _MareetaSaiasTalk
-			CHECK_CHARS2 Mareeta, Saias
-		END_DEFINITION
-		EVENT $15, _FredOlwenTalk
-			CHECK_CHARS2 Fred, Olwen
+		EVENT $16, _LeifXavierReinforce
+			CHECK_CHARS2 Xavier, Leif
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -250,6 +250,8 @@ eventChapter23Events ; FD/F056
 	END_DEFINITION_ARRAY
 
 	_ThiefReinforcements ; FD/F327
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._ThiefReinforcementsCameraCoordinates
 		YIELD
 
@@ -257,9 +259,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_KnightReinforcements ; FD/F334
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._KnightReinforcementsCameraCoordinates
 		YIELD
 
@@ -270,6 +274,8 @@ eventChapter23Events ; FD/F056
 	END2
 
 	_Sorcerer1Reinforcements ; FD/F341
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer1ReinforcementsCameraCoordinates
 		YIELD
 
@@ -277,9 +283,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer2Reinforcements ; FD/F34E
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer2ReinforcementsCameraCoordinates
 		YIELD
 
@@ -287,9 +295,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer3Reinforcements ; FD/F35B
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer3ReinforcementsCameraCoordinates
 		YIELD
 
@@ -297,9 +307,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer4Reinforcements ; FD/F368
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer4ReinforcementsCameraCoordinates
 		YIELD
 
@@ -307,9 +319,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer5Reinforcements ; FD/F375
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer5ReinforcementsCameraCoordinates
 		YIELD
 
@@ -317,9 +331,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer6Reinforcements ; FD/F382
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer6ReinforcementsCameraCoordinates
 		YIELD
 
@@ -327,9 +343,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer7Reinforcements ; FD/F38F
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer7ReinforcementsCameraCoordinates
 		YIELD
 
@@ -337,9 +355,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer8Reinforcements ; FD/F39C
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer8ReinforcementsCameraCoordinates
 		YIELD
 
@@ -347,9 +367,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer9Reinforcements ; FD/F3A9
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer9ReinforcementsCameraCoordinates
 		YIELD
 
@@ -357,9 +379,11 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_Sorcerer10Reinforcements ; FD/F3B6
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter23Data._Sorcerer10ReinforcementsCameraCoordinates
 		YIELD
 
@@ -367,7 +391,7 @@ eventChapter23Events ; FD/F056
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_CoulterSpawn ; FD/F3C3
 		PLAY_SOUND_WORD $00E0
@@ -389,6 +413,9 @@ eventChapter23Events ; FD/F056
 	END2
 
 	_CedAppear ; FD/F3DE
+		EVENT_TEST_FLAG_SET $10
+		JUMP_TRUE +
+		
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
@@ -441,6 +468,8 @@ eventChapter23Events ; FD/F056
 
 		STORE_WORD wEventEngineCharacterTarget, Alphand
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		+
 	END2
 
 	_AltenaLeave ; FD/F464
@@ -787,13 +816,11 @@ eventChapter23Events ; FD/F056
 	END1
 
 	_AlphandFetch ; FD/F809
-		RESET_PHASE_MUSIC
-		YIELD
-
-		PLAY_SOUND_WORD $00F7
 		SCROLL_CAMERA_CHAR Alphand
 		SET_CAMERA_SPEED 4
 		YIELD
+		
+		PLAY_SOUND_WORD $00F7
 
 		STORE_WORD wEventEngineParameter1, 1
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
@@ -812,13 +839,11 @@ eventChapter23Events ; FD/F056
 	END2
 
 	_AlphandTome ; FD/F83C
-		RESET_PHASE_MUSIC
-		YIELD
-
-		PLAY_SOUND_WORD $00F7
 		SCROLL_CAMERA_CHAR Alphand
 		SET_CAMERA_SPEED 4
 		YIELD
+		
+		PLAY_SOUND_WORD $00F7
 
 		STORE_WORD wEventEngineParameter1, 1
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
@@ -896,28 +921,40 @@ eventChapter23Events ; FD/F056
 		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
 	
-	_HicksDalsinTalk
-		macroDialogueHouse ch23hicksdalsin
+	_LeifXavierReinforce
+		macroDialogueHouse reinforce
+		
+		JUMP_TRUE +
+		
+		UNSET_FLAG $16
+		
+		+
 	END2
 	
-	_AsbelCedTalk
-		macroDialogueHouse ch23asbelced
-	END2
-	
-	_MishaCedTalk
-		macroDialogueHouse ch23mishaced
-	END2
-	
-	_SchroffSaiasTalk
-		macroDialogueHouse ch23schroffsaias
-	END2
-	
-	_MareetaSaiasTalk
-		macroDialogueHouse ch23mareetasaias
-	END2
-	
-	_FredOlwenTalk
-		macroDialogueHouse ch23fredolwen
+	_Reinforcing
+		SCROLL_CAMERA_ADDRESS eventChapter21Data._LeonsterGroupCameraCoordinates
+		YIELD
+		
+		STORE_WORD wEventEngineParameter1, MemberCard
+
+		CALL_ASM_LOOP rlASMCCheckPartyAndConvoyForItem, $0000
+		JUMP_FALSE +
+		
+		LOAD1 eventChapter23Data._LeonsterKnight23Group
+		WAIT_MOVE
+		YIELD
+		
+		Jump ++
+		
+		+
+		
+		LOAD1 eventChapter23Data._Leonster23Group
+		WAIT_MOVE
+		YIELD
+		
+		+
+		
+		YIELD_UNK
 	END2
 	
 	_PrepGroups ; FD/F90E
@@ -926,11 +963,6 @@ eventChapter23Events ; FD/F056
 
 	_OpeningEvent ; FD/F913
 		CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeGeneral2
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Charm
-		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
 		
 		STORE_WORD wEventEngineCharacterTarget, Alphand
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
@@ -956,6 +988,9 @@ eventChapter23Events ; FD/F056
 
 		SCROLL_CAMERA_SPEED [15, 15], 4
 		YIELD
+		
+		EVENT_TEST_FLAG_SET FlagSaiasDead
+		JUMP_TRUE +
 
 		STORE_WORD wEventEngineParameter1, 3
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
@@ -980,12 +1015,10 @@ eventChapter23Events ; FD/F056
 		YIELD_UNK
 		WAIT_MOVE
 		YIELD
-
-		PLAY_SOUND_WORD $00E0
-		PAUSE_SKIPPABLE 32
+		
+		LOAD1 eventChapter23Data._CiviliansGroup
+		WAIT_MOVE
 		YIELD
-
-		SET_MUSIC $3B
 		YIELD
 
 		STORE_WORD wEventEngineCharacterTarget, Saias
@@ -993,20 +1026,27 @@ eventChapter23Events ; FD/F056
 		STORE_WORD wEventEngineParameter2, 5
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
-		STORE_WORD wEventEngineCharacterTarget, Saias
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Anchor | (Skill3Immortal << 8)
-		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
+		;STORE_WORD wEventEngineCharacterTarget, Saias
+		;STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+		;STORE_WORD wEventEngineParameter2, Skill3Immortal << 8
+		;CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
 
 		STORE_WORD wEventEngineCharacterTarget, Saias
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
 		STORE_WORD wEventEngineParameter2, Skill2Charm
 		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
 
-		STORE_WORD wEventEngineCharacterTarget, Saias
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
-		STORE_WORD wEventEngineParameter2, Rumaigh
-		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
+		;STORE_WORD wEventEngineCharacterTarget, Saias
+		;STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		;STORE_WORD wEventEngineParameter2, Rumaigh
+		;CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
+		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
 
 		STORE_WORD wEventEngineParameter1, 1
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
@@ -1021,6 +1061,49 @@ eventChapter23Events ; FD/F056
 		YIELD
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+		
+		JUMP ++
+		
+		+
+		
+		STORE_WORD wEventEngineParameter1, 3
+		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+		CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, ch23opening1nosaias
+		YIELD_UNK
+		YIELD_UNK
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+
+		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+		
+		SET_FLAG $10
+		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $3B
+		YIELD
+		
+		STORE_WORD wEventEngineParameter1, 1
+		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+		CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, ch23opening2nosaias
+		YIELD_UNK
+		YIELD_UNK
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+
+		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+		
+		+
 
 		LOAD1 eventChapter23Data._AlphandFadenGroup
 		WAIT_MOVE
@@ -1233,12 +1316,49 @@ eventChapter23Events ; FD/F056
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		_Continue
+		
+		EVENT_TEST_FLAG_SET $10
+		JUMP_FALSE +
+		
+		STORE_LONG lEventEngineLongParameter, cedbragiblade
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
+		
+		STORE_LONG lEventEngineUnitGroupPointer, eventChapter23Data._CedGroup
+		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
+		YIELD_UNK
+		
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		CALL_ASM_LOOP rlASMCChangeAllegianceToPlayer, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineParameter2, Leif
+		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		CALL_ASM_LOOP rlASMCClearRescue, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed | TurnStatusMovementStar | TurnStatusMoved | TurnStatusUnknown2
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		STORE_WORD wEventEngineParameter1, TurnStatusHidden | TurnStatusInvisible
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
+		
 		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 		YIELD
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+		EVENT_TEST_FLAG_SET $10
+		JUMP_TRUE _CedBragiBlade
+		
 		EVENT_TEST_FLAG_SET $0E
 		JUMP_FALSE ++
+		
+		_CedBragiBlade
 
 		STORE_WORD wEventEngineCharacterTarget, Leif
 		CALL_ASM_LOOP rlASMCCheckUnitExists, $0000

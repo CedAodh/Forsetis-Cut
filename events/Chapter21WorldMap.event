@@ -183,6 +183,180 @@ eventChapter21WorldMapEvents ; E7/F242
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	SET_MUSIC $01
+	YIELD
+
+	STORE_WORD wEventEngineParameter1, 3
+	CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+	CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, shouldleifmaketherounds
+	YIELD_UNK
+	YIELD_UNK
+	YIELD_UNK
+	YIELD
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+
+	FADE_OUT $01
+	YIELD
+
+	CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+	STORE_BYTE bBuf_INIDISP, $00
+	JUMP_FALSE _NoInterim
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Xavier
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Conomor
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground conomorxavier, 1
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Dagdar
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Ralph
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground DagdarRalphTalk, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Eda
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Linoan
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground EdaLinoanTalk, 1
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Sara
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Marty
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground SaraMartyTalk, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Fergus
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Nanna
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground fergusdiarmuid, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	+
+	
+	_NoInterim
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Miranda
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Conomor
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 16
+	YIELD
+	
+	SET_MUSIC $58
+	YIELD
+	
+	macroDialogueWithBackground ConomorMirandaTalk, 2
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineParameter1, Fragarach
+	CALL_ASM_LOOP rlASMCCheckPartyAndConvoyForItem, $0000
+	JUMP_TRUE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Conomor
+	STORE_WORD wEventEngineParameter1, Fragarach
+	CALL_ASM_LOOP rlASMCGiveUnitItemSilent, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 16
 	YIELD

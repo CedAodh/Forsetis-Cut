@@ -536,7 +536,7 @@ ch22saiasrein
 .text "......"
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch22saiasrein2
@@ -739,16 +739,14 @@ ch22leifclosing
 
 ch22wm1
 
+.text "Leif's Liberation "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $003F ;leify-right
 .word $0A05 ;y then x
-.text "Leif's Liberation Army made its way"
+.text "Army made its way to Munster"
 .byte NewLine
-.text "to Munster through the pass"
-.byte WaitForA
-.byte NewLine
-.text "formerly guarded by Fort Danzig."
+.text "through the pass guarded by Fort Danzig."
 .byte WaitForA
 .byte ScrollText
 
@@ -758,10 +756,6 @@ ch22wm1
 ch22wm2
 
 .text "Before them stood the vast River Thracia,"
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $013A ;reinhardt
-.word $0A10 ;y then x
 .byte NewLine
 .text "the largest river in the Thracian Peninsula."
 .byte WaitForA

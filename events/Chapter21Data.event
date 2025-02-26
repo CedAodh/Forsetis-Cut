@@ -4,43 +4,43 @@ eventChapter21Data ; B1/8D4F
 	_PrepGroup1 ; B1/8D4F
 		.byte 23, 23
 
-		UNIT Fraus, Enemy, [23, 24], [23, 24], Fraus, [Bolganone, Thoron, Tornado, Fortify], 19, True, [$01, $03, $00, $80]
-		UNIT ThraciaDracoknight2, Enemy, [14, 26], [14, 26], Seimetz, [Ridersbane, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
-		UNIT ThraciaDracoknight2, Enemy, [13, 27], [13, 27], Seimetz, [Ridersbane, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
+		UNIT Fraus, Enemy, [23, 24], [23, 24], Fraus, [Light, Thoron, Restore, MasterCrown], 19, True, [$01, $03, $00, $80]
+		UNIT ThraciaDracoknight2, Enemy, [14, 26], [14, 26], Seimetz, [ShadowSpear, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
+		UNIT ThraciaDracoknight2, Enemy, [13, 27], [13, 27], Seimetz, [KillingEdge, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
 		UNIT ThraciaDracoknight2, Enemy, [12, 28], [12, 28], Seimetz, [Ridersbane, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
-		UNIT ThraciaDracoknight2, Enemy, [11, 29], [11, 29], Seimetz, [Ridersbane, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
-		UNIT ThraciaDracoknight2, Enemy, [15, 27], [15, 27], Seimetz, [Ridersbane, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
+		UNIT ThraciaDracoknight2, Enemy, [11, 29], [11, 29], Seimetz, [SilverSword, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
+		UNIT ThraciaDracoknight2, Enemy, [15, 27], [15, 27], Seimetz, [KillingEdge, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
 		UNIT ThraciaDracoknight2, Enemy, [16, 28], [16, 28], Seimetz, [Ridersbane, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
-		UNIT ThraciaDracoknight2, Enemy, [17, 29], [17, 29], Seimetz, [Ridersbane, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
+		UNIT ThraciaDracoknight2, Enemy, [17, 29], [17, 29], Seimetz, [SilverSword, Javelin, Vulnerary], 7, False, [$00, $0C, $02, $40]
 		UNIT FriegeArmoredSword2, Enemy, [22, 19], [22, 19], Fraus, [Greatsword], 20, False, [$00, $03, $02, $00]
 		UNIT FriegeArmoredSword2, Enemy, [24, 19], [24, 19], Fraus, [Greatsword], 20, False, [$00, $03, $02, $00]
-		UNIT FriegeArmoredSword2, Enemy, [23, 20], [23, 20], Fraus, [Greatsword], 20, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [23, 20], [23, 20], Fraus, [Armorslayer], 20, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredSword2, Enemy, [22, 21], [22, 21], Fraus, [Greatsword], 20, False, [$00, $03, $00, $00]
 		UNIT FriegeArmoredSword2, Enemy, [24, 21], [24, 21], Fraus, [Greatsword], 20, False, [$00, $03, $00, $00]
-		UNIT FriegeBishop2, Enemy, [22, 25], [22, 25], Fraus, [Meteor, Bolganone, Physic], 10, False, [$01, $03, $00, $00]
-		UNIT FriegeBishop2, Enemy, [24, 25], [24, 25], Fraus, [Blizzard, Tornado, Physic], 10, False, [$01, $03, $00, $00]
-		UNIT FriegeBishop2, Enemy, [23, 26], [23, 26], Fraus, [Bolting, Thoron, Physic], 10, False, [$01, $03, $00, $00]
-		UNIT FriegeBallista1, Enemy, [11, 12], [11, 12], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
+		UNIT FriegeBishop2, Enemy, [22, 25], [22, 25], Fraus, [Bolganone, Physic], 10, False, [$12, $03, $00, $00]
+		UNIT FriegeBishop2, Enemy, [24, 25], [24, 25], Fraus, [Thoron, Physic], 10, False, [$12, $03, $00, $00]
+		UNIT FriegeBishop2, Enemy, [23, 26], [23, 26], Fraus, [Tornado, Blizzard], 12, False, [$01, $03, $00, $00]
+		UNIT FriegeMage1, Enemy, [20, 1], [20, 1], Fraus, [Wind], 20, False, [$02, $15, $00, $00]
 		UNIT FriegeBallista1, Enemy, [15, 10], [15, 10], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
-		UNIT FriegeBallista1, Enemy, [18, 5], [18, 5], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
+		UNIT FriegeMage1, Enemy, [21, 1], [21, 1], Fraus, [Thunder, Meteor], 19, False, [$02, $15, $00, $00]
 		UNIT FriegeBallista1, Enemy, [23, 9], [23, 9], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
-		UNIT FriegeVeninBallista, Enemy, [23, 21], [23, 21], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
-		UNIT FriegeVeninBallista, Enemy, [20, 20], [20, 20], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
-		UNIT FriegeVeninBallista, Enemy, [20, 23], [20, 23], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
+		UNIT FriegeVeninBallista, Enemy, [23, 22], [23, 22], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
+		UNIT FriegeMyrmidon, Enemy, [19, 4], [19, 4], Fraus, [SilverAxe, Vulnerary], 16, False, [$02, $15, $00, $00]
+		UNIT FriegeVeninBallista, Enemy, [20, 24], [20, 24], Fraus, [VeninBallista], 6, False, [$00, $03, $00, $00]
 		UNIT FriegeBallista5, Enemy, [7, 24], [7, 24], Fraus, [IronBallista], 10, False, [$00, $03, $00, $00]
-		UNIT FriegeGeneral1, Enemy, [30, 7], [30, 7], Fraus, [Poleax, Hammer, Vulnerary], 10, False, [$01, $03, $02, $00]
-		UNIT FriegeBallista1, Enemy, [16, 2], [16, 2], Fraus, [Ballista], 12, False, [$00, $03, $00, $00]
-		UNIT FriegeGeneral1, Enemy, [29, 6], [29, 6], Fraus, [Poleax, Hammer, Vulnerary], 10, False, [$01, $03, $02, $00]
+		UNIT FriegeMage1, Enemy, [21, 2], [21, 2], Fraus, [Thunder, Vulnerary], 17, False, [$02, $15, $00, $00]
+		UNIT FriegeSniper, Enemy, [21, 3], [21, 3], Fraus, [ForsetiInfinite], 14, False, [$02, $15, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [9, 20], [9, 20], Fraus, [Poleax, Hammer, Vulnerary], 18, False, [$01, $03, $02, $00]
 		UNIT FriegeArmoredAxe2, Enemy, [22, 8], [22, 8], Fraus, [BattleAxe, Hammer, Vulnerary], 15, False, [$00, $03, $02, $00]
 		UNIT FriegeArmoredAxe2, Enemy, [24, 8], [24, 8], Fraus, [BattleAxe, Hammer, Vulnerary], 15, False, [$00, $03, $02, $00]
 		UNIT FriegeArmoredAxe2, Enemy, [22, 10], [22, 10], Fraus, [BattleAxe, Hammer, Vulnerary], 15, False, [$00, $03, $02, $00]
 		UNIT FriegeArmoredAxe2, Enemy, [24, 10], [24, 10], Fraus, [BattleAxe, Hammer, Vulnerary], 15, False, [$00, $03, $02, $00]
-		UNIT FriegeAxeKnight, Enemy, [2, 18], [2, 18], Fraus, [BattleAxe], 14, False, [$00, $03, $02, $00]
-		UNIT FriegeAxeKnight, Enemy, [3, 18], [3, 18], Fraus, [BattleAxe], 14, False, [$00, $03, $02, $00]
-		UNIT FriegeAxeKnight, Enemy, [5, 18], [5, 18], Fraus, [BattleAxe], 14, False, [$00, $03, $02, $00]
-		UNIT FriegeAxeKnight, Enemy, [6, 18], [6, 18], Fraus, [BattleAxe], 14, False, [$00, $03, $02, $00]
-		UNIT Mannheim, Enemy, [4, 18], [4, 18], Fraus, [MasterAxe, BraveAxe], 18, False, [$00, $03, $02, $00]
-		UNIT FriegeGeneral1, Enemy, [30, 5], [30, 5], Fraus, [Poleax, Hammer, Vulnerary], 10, False, [$01, $03, $02, $00]
+		UNIT FriegeAxeKnight, Enemy, [2, 19], [2, 19], Fraus, [BattleAxe], 17, False, [$02, $15, $00, $00]
+		UNIT FriegeAxeKnight, Enemy, [3, 19], [3, 19], Fraus, [BattleAxe], 17, False, [$02, $15, $00, $00]
+		UNIT FriegeAxeKnight, Enemy, [5, 19], [5, 19], Fraus, [BattleAxe], 17, False, [$02, $15, $00, $00]
+		UNIT FriegeAxeKnight, Enemy, [6, 19], [6, 19], Fraus, [BattleAxe], 17, False, [$02, $15, $00, $00]
+		UNIT Mannheim, Enemy, [4, 19], [4, 19], Fraus, [MasterAxe, Poleax, Vulnerary], 15, False, [$02, $15, $00, $00]
+		UNIT FriegeGeneral1, Enemy, [17, 20], [17, 20], Fraus, [Javelin, BattleAxe, Vulnerary], 14, False, [$01, $03, $02, $00]
 		
 	UNIT
 
@@ -59,7 +59,7 @@ eventChapter21Data ; B1/8D4F
 	_PrepGroup2 ; B1/90B3
 		.byte 23, 24
 
-		UNIT Seimetz, Enemy, [14, 28], [14, 28], Seimetz, [KillerLance, Javelin, Vulnerary], 13, False, [$00, $0C, $02, $40]
+		UNIT Seimetz, Enemy, [14, 28], [14, 28], Seimetz, [SilverLance, Javelin, Vulnerary], 13, False, [$00, $0C, $02, $40]
 		UNIT FriegePriest1, Enemy, [23, 25], [23, 25], Fraus, [Sleep, Fortify], 16, False, [$0D, $03, $00, $00]
 	UNIT
 
@@ -81,10 +81,15 @@ eventChapter21Data ; B1/8D4F
 	
 	_LeonsterGroupCameraCoordinates
 		.byte 8, 7
-		
-	_LeonsterGroup
-		UNIT XavierArmor4, NPC, [0, 1], [2, 2], Leif, [SilverLance, Vulnerary], 19, False, [$0F, $0D, $00, $80]
-		UNIT XavierArmor5, NPC, [0, 1], [1, 3], Leif, [SilverAxe, Vulnerary], 18, False, [$0F, $0D, $00, $00]
+	
+	_Leonster21KnightGroup
+		UNIT LeonsterDukeKnight, NPC, [0, 1], [1, 4], Leif, [SilverLance, Ridersbane, Vulnerary], 10, False, [$00, $00, $00, $00]
+		UNIT LeonsterArchKnight, NPC, [0, 1], [1, 2], Leif, [KillerBow, Vulnerary], 10, False, [$00, $00, $00, $00]
+	_Leonster21Group
+		UNIT LeonsterDukeKnight, NPC, [0, 1], [3, 2], Leif, [SilverLance, Javelin, Vulnerary], 9, False, [$00, $00, $00, $00]
+		UNIT LeonsterArchKnight, NPC, [0, 1], [2, 3], Leif, [SilverBow, Vulnerary], 8, False, [$00, $00, $00, $00]
+		UNIT XavierArmor1, NPC, [0, 1], [2, 2], Leif, [SilverSword, Javelin, Vulnerary], 12, False, [$00, $04, $00, $00]
+		UNIT XavierArmor2, NPC, [0, 1], [1, 3], Leif, [SilverBow, Poleax, Vulnerary], 12, False, [$00, $04, $00, $00]
 	UNIT
 	
 	_DiarmuidCameraCoordinates ; B1/9137
@@ -114,9 +119,9 @@ eventChapter21Data ; B1/8D4F
 	.byte $FF
 
 	_Armory ; B1/9170
-		SHOP [8, 26], [SilverSword, SilverLance, SilverAxe, SilverBow]
+		SHOP [8, 26], [IronBlade, KillingEdge, Rapier, Armorslayer, KillerLance, KillerAxe, KillerBow]
 
 	_Vendor ; B1/9182
-		SHOP [9, 25], [Vulnerary, Antitoxin, Fire, Thunder, Wind, Heal]
+		SHOP [9, 25], [Fire, Thunder, Wind, Light, Mend, Antitoxin, MasterSeal]
 
 

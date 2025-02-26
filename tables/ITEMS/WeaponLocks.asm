@@ -5,7 +5,6 @@ aGaeBolgWeaponLock ; B0/99D6
 
 aEarthSwordWeaponLock ; B0/99DA
 	.word Nanna
-	.word IllusionLeif
 	.word 0
 
 aGrafcaliburWeaponLock ; B0/99DE
@@ -39,7 +38,6 @@ aFailinisWeaponLock ; B0/99F6
 
 aLightBrandWeaponLock ; B0/9A00
 	.word Leif
-	.word IllusionLeif
 	.word 0
 
 aVougeWeaponLock ; B0/9A04
@@ -76,15 +74,12 @@ aIronBallistaWeaponLock ; B0/9A22
 	.word Rilke
 	.word 0
 
+aUnlockWeaponLock ; B0/9A2E
+	.word FriegeBishop3
+	.word Porcus
+
 aThiefStaffWeaponLock ; B0/9A28
 	.word Tina
-	.word LoptrianSorcerer
-	.word 0
-
-aUnlockWeaponLock ; B0/9A2E
-	.word Tina
-	.word FriegeBishop3
-	.word LoptrianSorcerer2
 	.word 0
 
 aHammerneWeaponLock ; B0/9A36
@@ -102,7 +97,6 @@ aBraveLanceWeaponLock ; B0/9A40
 	.word Kane
 	.word Alba
 	.word Glade
-	.word LoptrianGeneral
 	.word 0
 
 aDragonpikeWeaponLock ; B0/9A44
@@ -121,7 +115,6 @@ aGungnirWeaponLock
 
 aMareetaWeaponLock ; B0/9A4E
 	.word Mareeta
-	.word IllusionLeif
 	.word 0
 
 aOlwenReinhardtWeaponLock ; B0/9A52
@@ -165,7 +158,6 @@ aRecurveBowWeaponLock
 	.word SniperEnemy
 	.word DracoEyvel
 	.word Orvis
-	.word LoptrianSniper
 	.word ThraciaArcher
 	.word ResistanceArcher1
 	.word ResistanceArcher2

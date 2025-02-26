@@ -3,168 +3,161 @@ ch4daisyturn1
 	.byte right_slot
 	.word $3A00
 	.word daisy_portrait
-	.text "Oh, rats..."
+	.text "Ohhh, rats..."
 	.byte NewLine
-	.text "How did I get into this mess?"
-	.byte WaitForA
-	.byte ScrollText
-	.text "I was just trying to nab some goodies from"
-	.byte NewLine
-	.text "the scene that those bickering dorks made,"
-	.byte NewLine
-	.text "and then the soldiers think I was involved?!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "Grr..."
-	.byte NewLine
-	.text "Idiots!"
-	.byte NewLine
-	.text "It's so stupid...!"
+	.text "Daisy, how'd you get yourself into this?"
 	.byte WaitForA
 
 	.byte left_slot
 	.word $3A00
 	.word bandit1_portrait
-	.text "Hey, what's up with you, lass?"
+	.text "Yeah, lass—how DID ya wind up in 'ere with us?"
 	.byte NewLine
-	.text "How'd a pretty face like yours end up here?"
+	.text "Not that it's botherin' me."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Ridiculous, right?!"
+	.text "*frown*"
 	.byte NewLine
-	.text "But alas..."
+	.text "...I suppose I oughta share my story."
 	.byte NewLine
-	.text "Such is the life of a thief."
+	.text "To keep you distracted, at any rate."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I guess all my treasures"
+	.text "I'm actually from Connaught, but there's been"
 	.byte NewLine
-	.text "will just have to stay there,"
+	.text "rumor of all sorts of amazing goods tucked away"
 	.byte NewLine
-	.text "unclaimed and unspent..."
+	.text "here in Munster Castle. Right?"
+	.byte WaitForA
+	.byte ScrollText
+	.text "So, I checked it out for myself,"
+	.byte NewLine
+	.text "and—yay!—the rumors rang true."
+	.byte WaitForA
+	.byte ScrollText
+	.text "On my way out through the town, the path splits"
+	.byte NewLine
+	.text "up: one way's swarming with patrols; and the"
+	.byte NewLine
+	.text "other's relatively quiet, with settled dust."
+	.byte WaitForA
+	.byte ScrollText
+	.text "But right as I go the second way, these two"
+	.byte NewLine
+	.text "idiots get into a frenzy OUT OF NOWHERE, and"
+	.byte NewLine
+	.text "someone rams into me and makes me drop it all."
+	.byte WaitForA
+	.byte ScrollText
+	.text "I should've run, but I wanted to still recover"
+	.byte NewLine
+	.text "something. But then their racket's so loud that"
+	.byte NewLine
+	.text "now those patrols were swarming where we were!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "I got caught, and here I am."
+	.byte NewLine
+	.text "*...pout...*"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Treasure?"
+	.text "Uh-huh... That's a damn shame..."
 	.byte NewLine
-	.text "Wh-what kinda treasure?"
+	.text "But why HERE, an' not with the other weaklin's?"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Oh, you know, just your usual stuff."
+	.text "Oh, well, uh..."
 	.byte NewLine
-	.text "Hordes of gold, a few sacks full o' gems;"
+	.text "Because outside of that mishap, I'm a d..."
 	.byte NewLine
-	.text "some nice shoes here and there..."
+	.text "I'm a damned good thief! That's why! Dangerous!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "My other operations include drawing in all manner"
+	.byte NewLine
+	.text "of men with my ravishing good looks...and using"
+	.byte NewLine
+	.text "that to take everything they got and don't!"
+	.byte WaitForA
+	.byte ScrollText
+	.text "So be careful! You may think you have nothing"
+	.byte NewLine
+	.text "to lose in this jail cell, but when it comes to me..."
+	.byte NewLine
+	.text "Oh ho, I'll find SOMETHING."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte $03
+	.word ClearPortrait
+	.word RetractBox
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Is what I'm saying working...?"
+	.byte NewLine
+	.text "Come on, turn your head away just a little bit..."
+	.byte NewLine
+	.text "Show me...something..."
+	.byte WaitForA
+	
+	.byte left_slot
+	.word $3A00
+	.word bandit1_portrait
+	.text "...Glad I asked."
+	.byte NewLine
+	.text "Y-yeah, I'm stayin' away. Woof..."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Good."
+	.byte NewLine
+	.text "Because if you didn't listen to reason, then"
+	.byte NewLine
+	.text "you're getting my brother Asaello involved."
+	.byte WaitForA
+
+	.byte left_slot
+	.byte ScrollText
+	.text "But isn't that the..."
+	.byte NewLine
+	.text "The Hitman's yer BROTHER?!"
+	.byte NewLine
+	.text "Y'already said ye're from Connaught..."
+	.byte WaitForA
+
+	.byte right_slot
+	.byte ScrollText
+	.text "Mm-hmm! Don't forget it! *wink*"
 	.byte WaitForA
 	
 	.byte left_slot
 	.byte ScrollText
-	.text "What..."
+	.word $3A00
+	.word bandit_portrait
+	.text "Damn, you ARE pretty messed up, lass."
 	.byte NewLine
-	.text "Y-you really got your hands on all that?"
-	.byte WaitForA
-
-	.byte right_slot
-	.byte ScrollText
-	.text "I sure do—in fact,"
-	.byte NewLine
-	.text "I'd even be willing to share some of it"
-	.byte NewLine
-	.text "if someone were to help me get outta here."
-	.byte WaitForA
-
-	.byte left_slot
-	.byte ScrollText
-	.text "Really?!"
-	.byte NewLine
-	.text "Don't see no one else standin' around;"
-	.byte NewLine
-	.text "lemme be the one to help ya, Boss!"
+	.text "Thanks fer lettin' us know."
 	.byte WaitForA
     .byte ScrollText
 	.word $3A00
-	.word bandit_portrait
-	.text "Hey, what the hell you talkin' about?!"
-	.byte NewLine
-	.text "I was standin' right next to you!"
-	.byte WaitForA
-	
-	.byte right_slot
-	.byte ScrollText
-	.text "......"
-	.byte WaitForA
-	
-	.byte left_slot
-	.byte ScrollText
-	.text "Er... I-I mean..."
-	.byte NewLine
-	.text "Ma'am, if'n all that's true,"
-	.byte NewLine
-	.text "let me come along, too!"
-	.byte WaitForA
-	.byte ScrollText
-	.word $3A00
 	.word bandit2_portrait
-	.text "Me three!"
+	.text "*shudder*"
 	.byte WaitForA
-
-	.byte right_slot
-	.byte ScrollText
-	.text "Of course! You're all welcome!"
-	.byte NewLine
-	.text "Just a little heads-up, though:"
-	.byte NewLine
-	.text "don't you dare try anything funny with me."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Otherwise, my brother Asaello"
-	.byte NewLine
-	.text "will hunt you to the ends of the continent"
-	.byte NewLine
-	.text "until you cry out for your mommies."
-	.byte WaitForA
-	
-	.byte left_slot
-	.byte ScrollText
-	.word $3A00
-	.word bandit1_portrait
-	.text "Th-the Hitman?!"
-	.byte NewLine
-	.text "All right, all right, we get it!"
-	.byte NewLine
-	.text "We'll play nice!"
-	.byte WaitForA
-	.byte ScrollText
-	.text "Now all we gotta do is"
-	.byte NewLine
-	.text "think o' some way out..."
-	.byte WaitForA
-
-	.byte right_slot
-	.byte ScrollText
-	.text "Good idea!"
-	.byte NewLine
-	.text "I'll leave it in your big, capable hands!"
-	.byte NewLine
-	.text "Teehee!"
-	.byte WaitForA
-	
-	.byte left_slot
+	.byte $03
 	.word ClearPortrait
 	.word RetractBox
-
+	
 	.byte right_slot
 	.byte ScrollText
-	.text "Hmm..."
-	.byte NewLine
-	.text "Maybe I shouldn't have put a label"
-	.byte NewLine
-	.text "on stupidity like that."
+	.text "Immediate physical crisis averted."
 	.byte WaitForA
 	
 	.byte EndText
@@ -378,25 +371,23 @@ ch4daisyturn1
 
 	.byte left_slot
 	.word $3A00
-	.word leif_portrait
+	.word leif_portrait2
 	.text "Lifis?! Is that you?"
 	.byte NewLine
 	.text "What on earth are you doing here?"
 	.byte WaitForA
 
 	.byte right_slot
-	.text "H-huh?"
+	.text "Huh?"
 	.byte NewLine
-	.text "Oh, heeey!"
+	.text "Oh, th-there you are!"
 	.byte NewLine
-	.text "How's it goin', Prince?"
+	.text "How's it going, Prince?"
 	.byte WaitForA
 	.byte ScrollText
-	.text "Man..."
+	.text "Boy...heh..."
 	.byte NewLine
-	.text "I can't believe it took me this long"
-	.byte NewLine
-	.text "to find ya!"
+	.text "I can't believe it took me this long to find you!"
 	.byte WaitForA
 
 	.byte left_slot
@@ -406,87 +397,91 @@ ch4daisyturn1
 	.text "You don't mean..."
 	.byte WaitForA
 	.byte NewLine
-	.text "You allowed yourself to be taken prisoner"
+	.text "You allowed yourself to be taken prisoner just"
 	.byte NewLine
-	.text "just for my sake?"
+	.text "for my sake?"
+	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
 	.text "Bullseye!"
 	.byte NewLine
-	.text "An expert thief like me wouldn't"
+	.text "An expert thief like me wouldn't give himself in"
 	.byte NewLine
-	.text "give himself in without a plan."
+	.text "without a plan."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I was just waiting for the right moment to"
+	.text "I was just waiting for the right moment to bust"
 	.byte NewLine
-	.text "bust out and look for ya."
-	.byte WaitForA
-	.byte NewLine
-	.text "And I even got some of our inmates"
-	.byte NewLine
-	.text "rallied up to fight fer us!"
+	.text "out and look for you."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Lifis, I..."
-	.byte NewLine	
-	.text "I can see now that I've greatly misjudged you."
+	.text "......"
+	.byte WaitForA
+	.byte ScrollText	
+	.text "This smells of deceit."
+	.byte NewLine
+	.text "What's your real angle here, Lifis?"
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "W-well, I..."
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "Yes?"
+	.byte NewLine
+	.text "You're thinking something. Tell me what it is."
+	.byte WaitForA
+	
+	.byte right_slot
+	.byte ScrollText
+	.text "Ugh, fine. I'm still the same crook at heart!"
+	.byte NewLine
+	.text "I just saw this as a situation where I had"
+	.byte NewLine
+	.text "nothing to lose and everything to gain."
+	.byte WaitForA
+	.byte NewLine
+	.text "There. Happy now?"
+	.byte WaitForA
+	
+	.byte left_slot
+	.byte ScrollText
+	.text "*sigh*"
+	.byte NewLine
+	.text "...I should not question help when I am this"
+	.byte NewLine
+	.text "desperately in need of it, so...yes."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I was still skeptical even after what"
+	.text "We'll converse another time, you and I."
 	.byte NewLine
-	.text "Safy had told me on your behalf;"
-	.byte WaitForA
+	.text "For now, stay behind us and assist Lara with all"
 	.byte NewLine
-	.text "but clearly you are nothing short of"
-	.byte NewLine
-	.text "an honorable and reliable ally."
-	.byte NewLine
-	.text "You have my eternal gratitude."
+	.text "things thievery. Understood?"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Aw, dammit, Prince!"
-	.byte NewLine
-	.text "Stop tryin' to make me cry!"
+	.text "Do what I do best. Got it!"
 	.byte WaitForA
-	.byte ScrollText
-	.text "Now that that's out of the way,"
-	.byte NewLine
-	.text "what say we make a run for it and"
-	.byte NewLine
-	.text "kiss this hellhole goodbye?"
-	.byte WaitForA
-
+	
 	.byte left_slot
-	.byte ScrollText
-	.text "That is certainly the goal right now."
-	.byte NewLine
-	.text "Just stay behind us, and we'll"
-	.byte NewLine
-	.text "keep you out of harm's way!"
-	.byte WaitForA
-
-	.byte right_slot
-	.byte ScrollText
-	.text "I like the sound o' that!"
-	.byte WaitForA
-
-	.byte left_slot
+	.byte $03
 	.word ClearPortrait
 	.word RetractBox
+	
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Heh heh..."
+	.text "...Another plausible story, eh?"
 	.byte NewLine
-	.text "Ain't this something."
-	.byte NewLine
-	.text "It just keeps getting better and better for me."
+	.text "I got caught completely on accident."
 	.byte WaitForA
 
 	.byte EndText
@@ -782,60 +777,58 @@ brightonmacha
 	
 	ch4daisycellopened
 
-.byte left_slot
-.word $3A00
-.word bandit1_portrait
 .byte right_slot
 .word $3A00
 .word daisy_portrait
 
 .byte left_slot
-.text "Boss! Boss!"
+.word $3A00
+.word bandit1_portrait
+.text "Hey, lass, look! The door's opened!"
 .byte NewLine
-.text "The door's open!"
-.byte NewLine
-.text "We got a way out now!"
+.text "Let's make a run fer it!"
 .byte WaitForA
 
 .byte right_slot
-.text "Huh?"
-.byte NewLine
-.text "Oh, j-just as I expected!"
-.byte WaitForA
-.byte ScrollText
-.text "Well, what are you waiting for?"
-.byte NewLine
-.text "I do want to get outta here TODAY!"
+.text "Hmm... How curious..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "O-on it, boss!"
+.text "Oh...an' look, uh..."
 .byte NewLine
-.text "C'mon, boys, let's show these"
-.byte NewLine
-.text "imperial wimps what we're made of!"
+.text "We were thinkin' about helpin' you out for a bit."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "So you guys go on ahead!"
-.byte NewLine
-.text "I'll catch up once it's safe!"
+.text "And why would you do that?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
+.text "Ha! Don't worry, we've figured it out."
+.byte NewLine
+.text "We wanted t' give a little thanks for you not"
+.byte NewLine
+.text "usin' yer “powers” on us."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ah... Th-then you saw right through me..."
+.byte WaitForA
+
+.byte left_slot
+.byte $03
 .word ClearPortrait
 .word RetractBox
 
 .byte right_slot
 .byte ScrollText
-.text "All right, that's one thing taken care of."
+.text "...But still lost sight of yourselves, heh."
 .byte NewLine
-.text "Time to go see what these other folks"
-.byte NewLine
-.text "are all about."
+.text "Now these are GOOD idiots."
 .byte WaitForA
 
 .byte EndText
@@ -900,20 +893,20 @@ raydrikloreeee
 .word raydrik_portrait
 .text "We're nearly to your cage, pup."
 .byte NewLine
-.text "Don't let up now."
+.text "You've been the most forthcoming of your entire"
+.byte NewLine
+.text "family line—don't stop now."
 .byte WaitForA
 
 .byte left_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "Ngh..."
+.text "Nngh..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Not so tenacious anymore, eh?"
-.byte NewLine
-.text "A long walk is all it took to do you in."
+.text "Heh. Very good."
 .byte WaitForA
 
 .byte left_slot
@@ -928,11 +921,9 @@ raydrikloreeee
 
 .byte left_slot
 .byte ScrollText
-.text "You were once— Guh...!"
+.text "You were once King Carl's trusted and capable"
 .byte NewLine
-.text "You...you were once King Carl's"
-.byte NewLine
-.text "trusted and capable aide..."
+.text "aide."
 .byte WaitForA
 .byte ScrollText
 .text "Why did you turn against us?"
@@ -942,212 +933,96 @@ raydrikloreeee
 
 .byte right_slot
 .byte ScrollText
-.text "I can see you've put much consideration"
+.text "I suppose indulging this would only be proper"
 .byte NewLine
-.text "into asking me that. I shall do the same"
+.text "following your generous act."
+.byte WaitForA
+.byte ScrollText
+.text "I did my kingdom of Connaught a service."
+.byte WaitForA
 .byte NewLine
-.text "with my response: he was a fool."
+.text "I rid the throne of that idealistic imp who would"
+.byte NewLine
+.text "have secured our demise in a fruitless struggle"
+.byte NewLine
+.text "against the invading force."
+.byte WaitForA
+.byte ScrollText
+.text "But what you fail to realize is that if I did not"
+.byte NewLine
+.text "resort to such measures, someone else would"
+.byte NewLine
+.text "have. All cut from the same cloth."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "A fool..."
+.text "So that's how you justify it."
+.byte NewLine
+.text "You lie flat on your back in submission to"
+.byte NewLine
+.text "another's power, and you would call ME the cur?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "He knew nothing of this world or"
+.text "Well, I retain my position either way;"
 .byte NewLine
-.text "how to plan for the future."
+.text "it matters little to me."
 .byte WaitForA
 .byte ScrollText
-.text "Of course, he was a rather remarkable stepping"
+.text "As for your position, cur, you'll very soon be"
 .byte NewLine
-.text "stone; he had rewarded my efforts at every"
+.text "not in this cell, but before His Majesty"
 .byte NewLine
-.text "turn. But a stepping stone is still just that."
-.byte WaitForA
-.byte ScrollText
-.text "I was prepared to cast away what I was given"
-.byte NewLine
-.text "and was familiar with for something greater,"
-.byte NewLine
-.text "and therefore was granted such."
-.byte WaitForA
-.byte ScrollText
-.text "Try as I may, I can never understand those"
-.byte NewLine
-.text "who cannot see and grasp this truth,"
-.byte NewLine
-.text "for it is so glaringly obvious."
-.byte WaitForA 
-
-.byte left_slot
-.byte ScrollText
-.text "What do you mean by “something greater”?"
-.byte NewLine
-.text "A better-sounding title?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "While we speak, if you would, please redirect"
-.byte NewLine
-.text "your nipping to your new fellow inmates."
+.text "King Bloom's feet in Connaught."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Why not just kill me?"
+.text "My best hope, then, is that you'll help yourself"
 .byte NewLine
-.text "Or has two rounds of regicide"
+.text "to a third round of regicide before that time is"
 .byte NewLine
-.text "perhaps sated your appetite?"
+.text "upon us. Or, perhaps, you draw the line at two?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Ha ha ha..."
-.byte NewLine
-.text "What, do you think me a man who holds grudges?"
-.byte NewLine
-.text "That I wish to gut you right here and now"
-.byte NewLine
-.text "out of personal disdain?"
+.text "Heh, heh, heh..."
 .byte WaitForA
+
+.byte left_slot
 .byte ScrollText
-.text "No... I merely act in whatever way"
+.text "*sigh*"
 .byte NewLine
-.text "I stand to gain the most from."
+.text "I've nothing else to say to you."
 .byte WaitForA
+
+.byte right_slot
 .byte ScrollText
-.text "When considering what the empire has in store"
+.text "Then I shall see you off when the Knights of"
 .byte NewLine
-.text "for me in exchange for a live Leonster prince..."
-.byte NewLine
-.text "I believe killing you myself would be wasteful."
-.byte WaitForA
-.byte ScrollText
-.text "Now, be sure to rest up!"
-.byte NewLine
-.text "I'm certain you have a long day"
-.byte NewLine
-.text "ahead of you on the morrow."
+.text "Connaught arrive, and that will be the last of it."
 .byte WaitForA
 
 .byte EndText
 
 ch4op1weisedition
 
-.byte Right_slot
-.word LoadPortrait
-.word raydrik_portrait
-
-.text "Ahahaha! Without a doubt, this feat will secure"
-.byte NewLine
-.text "my position in Munster and beyond."
-.byte WaitForA
+.byte ScrollText
 
 .byte Right_slot
 .byte ScrollText
-.text "Dalsin!"
 
 .byte Left_slot
-.word LoadPortrait
-.word dalsin_portrait
-
-.byte Right_slot
-.byte NewLine
-.text "See that the brat doesn't so much as blink before"
-.byte NewLine
-.text "the Knights of Connaught come to claim him!"
-.byte WaitForA
-
-.byte Left_slot
-.text "...Aye, milord."
-.byte WaitForA
-
-.byte ScrollText
 .word ClearPortrait
 
 .byte Right_slot
-.byte ScrollText
-.text "It's high time to celebrate"
-.byte NewLine
-.text "with a visit to the arena."
-.byte WaitForA
-
-.byte Left_slot
-.word LoadPortrait
-.word eyvel_portrait
-
-.byte Right_slot
-.byte ScrollText
-.text "You, woman!"
-.byte NewLine
-.text "You'll be accompanying me."
-.byte WaitForA
-
-.byte Left_slot
-.text "Why me...?"
-.byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
-.text "I assumed you would want to see the other girls."
-.byte NewLine
-.text "But if you wish to spit on my generosity..."
-.byte WaitForA
-
-.byte Left_slot
-.byte ScrollText
-.text "Other girls?"
-.byte NewLine
-.text "You're referring to...Mareeta and Nanna?"
-.byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
-.text "I believe those are their names, yes."
-.byte NewLine
-.text "Never fear—I've not laid a finger on them."
-.byte NewLine
-.text "I've been keeping them quite comfortable."
-.byte WaitForA
-
-.byte Left_slot
-.byte ScrollText
-.text "...You'll really let me see them?"
-.byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
-.text "You have my word."
-.byte WaitForA
-
-.byte Left_slot
-.byte ScrollText
-.text "...Fine."
-.byte NewLine
-.text "Lead the way, please."
-.byte WaitForA
-
-.byte Right_slot
-.byte ScrollText
-.text "Ah, how old-fashioned, leading the way"
-.byte NewLine
-.text "for such a fine lady. Heh, heh, heh..."
-.byte WaitForA
-
-.byte Left_slot
-.byte ScrollText
-.text "......"
-.byte WaitForA
-.byte ScrollText
 .word ClearPortrait
-.byte Right_slot
-.byte ScrollText
-.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
 
 .byte Right_slot
 .word LoadPortrait

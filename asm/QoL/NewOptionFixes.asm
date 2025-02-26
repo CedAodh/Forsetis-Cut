@@ -1924,6 +1924,7 @@ aInventorySkillIconTable
 	.word 0, Skill1Dance,			$00C2
 	.word 0, Skill1Steal,			$00C1
 ;	.word 0, Skill1FakeImmortal,	$00B6
+	.word 1, Skill2Anchor,			$00B2
 	.word 0, Skill1Bargain,			$00C3
 	.word 1, Skill2Charm,			$00B5
 	.word 1, Skill2Adept,			$00B3
@@ -1946,6 +1947,7 @@ aInventorySkillIconTableHiddenSkills
 	.word 0, Skill1Dance,			$00C2
 	.word 0, Skill1Steal,			$00C1
 	.word 0, Skill1Noncombatant,	$00B6
+	.word 1, Skill2Anchor,			$00B2
 	.word 0, Skill1Bargain,			$00C3
 	.word 1, Skill2Charm,			$00B5
 	.word 1, Skill2Adept,			$00B3
@@ -1960,7 +1962,6 @@ aInventorySkillIconTableHiddenSkills
 	.word 1, Skill3Sol << 8,		$00BE
 	.word 1, Skill3Paragon << 8,	$00C0
 	.word 0, Skill1Renewal,			$00BF
-	.word 1, Skill2Anchor,			$00B2
 	.word 1, Skill3Immortal << 8,	$00B9
 
 	.sint -1

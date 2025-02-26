@@ -396,7 +396,7 @@ ch16Bending2
 .text "Have you ever thought about that?"
 .byte WaitForA
 .byte ScrollText
-.text "We said it to the Loptrian bishop before:"
+.text "We said it to the Loptr bishop before:"
 .byte NewLine
 .text "we seek to end the cycle of suffering."
 .byte NewLine
@@ -428,6 +428,28 @@ ch16Bending2
 .text "It does not have to be now or soon,"
 .byte NewLine
 .text "but it will a requirement eventually."
+.byte WaitForA
+
+.byte EndText
+
+ch16Bvillager2
+
+.byte ScrollText
+.text "Uh, also... I think one o' their mercenaries left"
+.byte NewLine
+.text "this piece o' paper around my house the other"
+.byte NewLine
+.text "day by mistake."
+.byte WaitForA
+.byte ScrollText
+.text "Seems useful, and I feel like if they find me with"
+.byte NewLine
+.text "it, they'll say I stole it an' then..."
+.byte NewLine
+.text "y-yeah, go from there."
+.byte WaitForA
+.byte ScrollText
+.text "So, you take it, please."
 .byte WaitForA
 
 .byte EndText
@@ -605,194 +627,140 @@ tinaasbel1
 .byte right_slot
 .word LoadPortrait
 .word tina_portrait
-.text "Hum dee dum dee doo~"
+.text "*whimper*"
+.byte WaitForA
+.byte NewLine
+.text "Why did we have to go through this creepy forest?"
 .byte WaitForA
 
 .byte left_slot
 .word LoadPortrait
 .word asbel_portrait
-.text "......"
+.text "It's essential to our battle strategy."
+.byte NewLine
+.text "Though this place is far denser than I expected."
+.byte NewLine
+.text "I see why none of the knights'll give you a ride."
+.byte WaitForA
+.byte ScrollText
+.text "I wonder how their horses will even get through"
+.byte NewLine
+.text "those trees in the first place!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "EEEEEK!"
+.text "Ugh, I know! It's the worst!"
+.byte NewLine
+.text "I begged every single one of them!"
+.byte NewLine
+.text "But no, no can do, so here I am..."
+.byte WaitForA
+.byte ScrollText
+.text "I just hope there aren't any spiders..."
+.byte NewLine
+.text "Or frogs! Or leeches! Or—"
+
+.byte left_slot
+.byte ScrollText
+.text "Calm down."
+.byte NewLine
+.text "There's no lakes or ponds nearby,"
+.byte NewLine
+.text "so most of those wouldn't live there."
+.byte WaitForA
+.byte ScrollText
+.text "You'd know that if you read that zoology"
+.byte NewLine
+.text "textbook I so heavily recommended."
+.byte NewLine
+.text "I told you it even has pictures!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "*grumble*"
+.byte WaitForA
+.byte ScrollText
+.text "All you do is read, read, and read!"
+.byte NewLine
+.text "How about you read a book on"
+.byte NewLine
+.text "how to do something else?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Gah! Wh-what's wrong?!"
+.text "Hrm..."
+.byte NewLine
+.text "That doesn't sound too bad, actually."
+.byte NewLine
+.text "Maybe I could look for some guides on—"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "S-s-s-s-s—"
+.text "ASBEL!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Please, calm down!"
+.text "R-right. Sorry."
 .byte NewLine
-.text "Breathe in, breathe out..."
-.byte WaitForA
-.byte ScrollText
-.text "Now, what happened?"
-.byte NewLine
-.text "Did you see an enemy?"
-.byte NewLine
-.text "Say where, and I'll drive them away!"
+.text "I get your point."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "SPIDER!!! ON YOUR SHOULDER!!!"
+.text "Oh, do ya?"
+.byte NewLine
+.text "How about a little test, then?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "...Huh? On my what?"
+.text "A test, huh?"
+.byte NewLine
+.text "What do you have in mind?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Eeek!!! It's moving!!!"
+.text "Well, we still have some time"
+.byte NewLine
+.text "before we leave this village, so..."
+.byte NewLine
+.text "Let's go play with all the children!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, this little critter?"
+.text "That's...a lovely idea."
 .byte NewLine
-.text "He's not bothering me."
+.text "I can't imagine how terrified they"
 .byte NewLine
-.text "There, I'll put him down. See?"
+.text "must've been before their rescue."
+.byte WaitForA
+.byte NewLine
+.text "I'd love to help cheer them up."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I-it's going away!"
+.text "Well, what are we waiting, for?"
 .byte NewLine
-.text "I can't believe it!"
+.text "Let's go!"
 .byte NewLine
-.text "How did you tame that monster?!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Monster...?"
-.byte NewLine
-.text "Uh, call it a hunch, but something"
-.byte NewLine
-.text "tells me you don't really like spiders."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "I HATE spiders!"
-.byte NewLine
-.text "They're small and yucky!"
-.byte NewLine
-.text "They can totally bite and kill you!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Well, not all of them."
-.byte NewLine
-.text "That one I just let go of wasn't poisonous."
-.byte NewLine
-.text "I've read books on entomology before."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Really? That's so cool!"
-.byte NewLine
-.text "Wait, what did you call it?"
-.byte NewLine
-.text "Entombol...what?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Uh...never mind that."
-.byte NewLine
-.text "By the way, I don't think I know your name."
-.byte NewLine
-.text "I'm Asbel, what's yours?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "I'm Tina! Nice to meet you!"
-.byte NewLine
-.text "You know, I've thought about approaching"
-.byte NewLine
-.text "you before, but you always look so serious!"
-.byte WaitForA
-.byte ScrollText
-.text "When you're not fighting,"
-.byte NewLine
-.text "you're reading all day!"
-.byte NewLine
-.text "Do you eat books for breakfast or something?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Well, I... I'm sorry if I give off that impression." 
-.byte NewLine
-.text "And no, I don't eat books, I promise."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Okie dokie!"
-.byte NewLine
-.text "Now that I know you're not a big weirdo,"
-.byte NewLine
-.text "would you like to be friends?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "M-me? Of course!"
-.byte NewLine
-.text "I don't have many friends,"
-.byte NewLine
-.text "so I always welcome more!"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Yay! Oh, thank you so much, Asbel!"
-.byte NewLine
-.text "I... Wait a minute!"
-.byte WaitForA
-.byte ScrollText
-.text "Ugh, my sister's told me SO many times"
-.byte NewLine
-.text "not to get distracted in battle!"
-.byte WaitForA
-.byte ScrollText
-.text "S-sorry about leaving so suddenly, Asbel!" 
-.byte NewLine
-.text "Let's talk later, okay? See ya!"
+.text "Last one is a rotten egg!"
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
-.word RetractBox
 
 .byte left_slot
 .byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.word $3A00
-.word asbel_portrait
-.text "Phew. Quite the lively spirit, isn't she?"
+.text "Tina! W-wait!"
 .byte NewLine
-.text "No... I need a better word than that."
+.text "How the heck is she so fast?!"
 .byte WaitForA
 
 .byte EndText

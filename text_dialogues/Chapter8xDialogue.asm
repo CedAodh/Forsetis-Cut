@@ -9,7 +9,7 @@ ch8xosiantanya
 .word osian_portrait
 .text "Tanya! You're safe!"
 .byte NewLine
-.text "You...really had me worried there, you moron!"
+.text "You really had me worried there...you moron!"
 .byte WaitForA
 
 .byte Right_slot
@@ -50,14 +50,16 @@ ch8xosiantanya
 
 .byte Left_slot
 .byte ScrollText
-.text "H-hey! Wait, wait, don't cry, okay?"
+.text "G-geez!"
 .byte NewLine
-.text "I... I just... I mean, I was really..."
+.text "There's nothing to cry about, m-moron..."
 .byte WaitForA
 .byte ScrollText
-.text "...I'm glad you're safe."
+.text "...I-I mean— What I mean to say is..."
 .byte NewLine
-.text "Er... So, anyhow... Uh... Yeah."
+.text "I'm glad you're safe."
+.byte NewLine
+.text "Yeah...that's it."
 .byte WaitForA
 
 .byte EndText
@@ -105,7 +107,7 @@ ch8xopening
 .byte NewLine
 .text "party already. Nope, the only way you two are"
 .byte NewLine
-.text "are gettin' out of here is in a casket."
+.text "gettin' out of here is in a casket."
 .byte WaitForA
 
 .byte Right_slot
@@ -116,7 +118,7 @@ ch8xopening
 .byte NewLine
 .text "I got no reason to fight you an' yer boys."
 .byte NewLine
-.text "Think about this afore you do somethin' rash."
+.text "Think about this 'fore you do somethin' rash."
 .byte WaitForA
 
 .byte Left_slot
@@ -133,7 +135,7 @@ ch8xopening
 .byte ScrollText
 .text "All I wanted was a full belly, but you let that"
 .byte NewLine
-.text "wench Eyvel cheat you outta the good land!"
+.text "wench Eyvel cheat ya outta the good land!"
 .byte NewLine
 .text "She's got you wrapped around her little finger!"
 .byte WaitForA
@@ -150,23 +152,18 @@ ch8xopening
 .text "What'd you say?!"
 .byte WaitForA
 .byte ScrollText
-.text "Hmph, you talk big fer a glorified errand-boy!"
+.text "Hmph, you talk big fer a glorified errand boy!"
 .byte NewLine
 .text "You ain't never known real hardship—"
 .byte NewLine
 .text "just my petty chores!"
 .byte WaitForA
 .byte ScrollText
-.text "You know why? 'Cause I knew I could never"
-.byte NewLine
-.text "trust you with more! Fact is, I could barely"
-.byte NewLine
-.text "trust you with my laundry, junior!"
-.byte WaitForA
-.byte ScrollText
 .text "Fine!"
 .byte NewLine
 .text "You want yerself a fight so bad, you got one!"
+.byte NewLine
+.text "Come on—everyone throw himself at me!"
 .byte WaitForA
 
 .byte EndText
@@ -213,18 +210,16 @@ ch8xclosing
 
 .byte Right_slot
 .byte ScrollText
-.text "And how would you know?"
+.text "Come again?"
 .byte NewLine
-.text "You've been on the run for your whole life, true,"
+.text "You've been on the run for your whole life, yet"
 .byte NewLine
-.text "but you've never known the pains of hunger."
+.text "it seems you do not know the pains of hunger?"
 .byte WaitForA
 .byte ScrollText
-.text "Just where do you think your food came from"
+.text "Just where did your food come from during all"
 .byte NewLine
-.text "during all those days you were fleeing from the"
-.byte NewLine
-.text "empire?"
+.text "those days you were fleeing from the empire?"
 .byte WaitForA
 
 .byte Left_slot
@@ -241,7 +236,7 @@ ch8xclosing
 .text "allies and retainers;"
 .byte WaitForA
 .byte ScrollText
-.text "but it has left you lacking the perspective to"
+.text "but that has left you lacking the perspective to"
 .byte NewLine
 .text "truly understand how the common folk suffer."
 .byte WaitForA
@@ -253,6 +248,8 @@ ch8xclosing
 .text "and a cliff lies around every corner."
 .byte WaitForA
 .byte ScrollText
+.text "And to make no mention of the arid climate."
+.byte NewLine
 .text "By nature, the land demands severity and"
 .byte NewLine
 .text "discipline from all who live in it."
@@ -297,7 +294,7 @@ ch8xclosing
 .text "prohibit trade with South Thracia."
 .byte WaitForA
 .byte ScrollText
-.text "Food, especially, was closely guarded."
+.text "Food, especially, is closely guarded."
 .byte WaitForA
 
 .byte Left_slot
@@ -324,11 +321,11 @@ ch8xclosing
 .text "they are mutually unwilling to communicate."
 .byte WaitForA
 .byte ScrollText
-.text "The noble houses of Munster, in particular,"
+.text "The noble houses of the North, in particular,"
 .byte NewLine
-.text "remained stubborn and selfish for a century"
+.text "have remained stubborn and conceited for all"
 .byte NewLine
-.text "afterward."
+.text "this time afterward."
 .byte WaitForA
 
 .byte Left_slot
@@ -352,11 +349,11 @@ ch8xclosing
 
 .byte Right_slot
 .byte ScrollText
-.text "It all returns to the Tragedy of the Gáe Bolg,"
+.text "It all returns to the Tragedy of the Gáe Bolg"
 .byte NewLine
-.text "to the misfortune that seems to befall all those"
+.text "and Gungnir, to the misfortune that seems to"
 .byte NewLine
-.text "who wield either of the divine lances."
+.text "befall all who wield either of the divine lances."
 .byte WaitForA
 .byte ScrollText
 .text "North Thracia has been plagued by selfish and"

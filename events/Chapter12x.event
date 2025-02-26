@@ -8,12 +8,21 @@ eventChapter12xEvents ; FD/8F98
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/8FA5
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Perne
 			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MasterSealDancer
-			CMP_WORD wCurrentTurn, 14
+			CMP_WORD wCurrentTurn, 9
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $0E
 		END_DEFINITION
@@ -21,8 +30,6 @@ eventChapter12xEvents ; FD/8F98
 			CMP_WORD wCurrentTurn, 19
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET $0E
-		END_DEFINITION
-		EVENT FlagAlwaysZero, _PerneCheck
 		END_DEFINITION
 		EVENT $0D, _BeginFleeing
 			TEST_FLAG_SET FlagBossDeath
@@ -64,10 +71,16 @@ eventChapter12xEvents ; FD/8F98
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-            EVENT $1C, _TinaAIChange
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
+			TEST_FLAG_UNSET FlagBossDeath
+		END_DEFINITION
+        EVENT $1C, _TinaAIChange
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $1B
-			TEST_FLAG_UNSET $0D
+			TEST_FLAG_UNSET $08
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -179,40 +192,52 @@ eventChapter12xEvents ; FD/8F98
 		rtl
 
 	_ArcherLeftReinforcements ; FD/919C
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12xData._ArcherLeftGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_ArcherMiddleReinforcements ; FD/91A3
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12xData._ArcherMiddleGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_ArcherRightReinforcements ; FD/91AA
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12xData._ArcherRightGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_MyrmidonMiddleReinforcements ; FD/91B1
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12xData._MyrmidonMiddleGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_MyrmidonBottomReinforcements ; FD/91B8
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12xData._MyrmidonBottomGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_ThiefReinforcements ; FD/91BF
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter12xData._ThiefGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PerneCheck ; FD/91C6
 		macroCheckIfRescued Perne
@@ -246,26 +271,24 @@ eventChapter12xEvents ; FD/8F98
 	END1
 
 	_MasterSealDancer ; FD/9380
-		SCROLL_CAMERA_ADDRESS eventChapter12xData._MasterSealDancerCameraCoordinates
-		YIELD
+		PLAY_SOUND_WORD $00E8
 
 		LOAD2 eventChapter12xData._MasterSealDancerGroup
 		WAIT_MOVE
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_WarpDancer ; FD/938D
-		SCROLL_CAMERA_ADDRESS eventChapter12xData._WarpDancerCameraCoordinates
-		YIELD
+		PLAY_SOUND_WORD $00E8
 
 		LOAD2 eventChapter12xData._WarpDancerGroup
 		WAIT_MOVE
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_Door1 ; FD/939A
 		macroOpenDoorByTileChangeID 0
@@ -290,6 +313,7 @@ eventChapter12xEvents ; FD/8F98
 		macroSetCharacterWord Perne, structCharacterDataRAM.Leader, Leif
 
 		SET_FLAG $0B
+		SET_FLAG FlagBossDeath
 
 		macroSetCharacterByte Perne, structCharacterDataRAM.LeadershipStars, 0
 		
@@ -327,6 +351,7 @@ eventChapter12xEvents ; FD/8F98
 		macroSetCharacterByte Perne, structCharacterDataRAM.LeadershipStars, 0
 
 		SET_FLAG $0B
+		SET_FLAG FlagBossDeath
 		
 		EVENT_TEST_FLAG_SET $0C
 		JUMP_FALSE +
@@ -354,6 +379,7 @@ eventChapter12xEvents ; FD/8F98
 		macroSetCharacterByte Perne, structCharacterDataRAM.LeadershipStars, 0
 
 		SET_FLAG $0B
+		SET_FLAG FlagBossDeath
 		
 		EVENT_TEST_FLAG_SET $0C
 		JUMP_FALSE +
@@ -537,6 +563,9 @@ eventChapter12xEvents ; FD/8F98
 		YIELD
 
 		DIALOGUE ch12xopening2salem
+		
+		STORE_LONG lEventEngineLongParameter, ch12xopening2salem2
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		YIELD
 
 		+
@@ -547,16 +576,6 @@ eventChapter12xEvents ; FD/8F98
 		SET_CAMERA_SPEED $04
 
 		DIALOGUE ch12xopening3lithis
-		YIELD
-
-		+
-		macroCountPlayerUncapturedAliveUnits Lara
-		JUMP_FALSE +
-
-		SCROLL_CAMERA_CHAR Lara
-		SET_CAMERA_SPEED $04
-
-		DIALOGUE ch12xopening4lara
 		YIELD
 
 		+

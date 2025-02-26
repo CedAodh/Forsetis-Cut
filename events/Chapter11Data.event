@@ -22,7 +22,7 @@ eventChapter11Data ; B1/CEFC
 		UNIT FriegeArmoredAxe1, Enemy, [14, 2], [14, 2], Kempf, [VeninAxe], 15, False, [$00, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [6, 3], [6, 3], Kempf, [Javelin], 12, False, [$00, $03, $00, $00]
 		UNIT FriegeMage1, Enemy, [14, 1], [14, 1], Kempf, [Thunder], 12, False, [$01, $03, $00, $00]
-		UNIT FriegeBishop2, Enemy, [13, 3], [13, 3], Kempf, [Thunder, Physic], 10, False, [$00, $00, $00, $00]
+		UNIT FriegeBishop2, Enemy, [13, 3], [13, 3], Kempf, [Thunder, Physic, TorchStaff], 10, False, [$12, $00, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [6, 17], [6, 17], Kempf, [LongLance, KillerLance], 12, False, [$02, $15, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [10, 17], [10, 17], Kempf, [LongLance, KillerLance], 12, False, [$02, $15, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [9, 17], [9, 17], Kempf, [ShortLance], 8, False, [$02, $15, $00, $00]
@@ -41,8 +41,8 @@ eventChapter11Data ; B1/CEFC
 		UNIT Fred, Enemy, [8, 19], [8, 19], Olwen, [LightningSword, Longsword, Vulnerary], 2, False, [$01, $03, $02, $80]
 	UNIT
 
-	;_UnusedCoordinates1 ; B1/D148
-	;	.byte 8, 13
+	_BallisticianReinforcementsCameraCoordinates ; B1/D148
+		.byte 8, 13
 
 	_BallistaGroup ; B1/D14A
 		UNIT FriegeBallista2, Enemy, [3, 12], [3, 12], Kempf, [Ballista], 10, False, [$00, $03, $00, $00]
@@ -78,7 +78,7 @@ eventChapter11Data ; B1/CEFC
 		.byte 1, 2
 
 	_Chest1Item ; B1/D1AA
-		.word TorchStaff
+		.word NihilManual
 
 	_Chest1Events ; B1/D1AF
 		STORE_WORD wEventEngineXCoordinate, 1

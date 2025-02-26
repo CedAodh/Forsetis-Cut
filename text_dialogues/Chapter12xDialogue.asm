@@ -3,7 +3,7 @@ ch12xpansalem
 .byte Right_slot
 .word LoadPortrait
 .word salem_portrait
-.text "That's enough, Perne! No more violence."
+.text "That's enough, Perne!"
 .byte WaitForA
 
 .byte Left_slot
@@ -13,7 +13,7 @@ ch12xpansalem
 .byte NewLine
 .text "What are you doing with the enemy?!"
 .byte NewLine
-.text "...Have you sold us out already?"
+.text "...You didn't sell us out, did you?"
 .byte WaitForA
 
 .byte Right_slot
@@ -92,12 +92,12 @@ ch12xpanlithis
 .byte ScrollText
 .text "Y-yeah, uh, I've been gone awhile..."
 .byte NewLine
-.text "Er, Perne."
+.text "Er, Perne...sir."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Hah! You haven't changed a bit, pal!"
+.text "Ha! You haven't changed a bit, buddy!"
 .byte NewLine
 .text "Hey, am I still gonna see puddles when I take a"
 .byte NewLine
@@ -108,7 +108,7 @@ ch12xpanlithis
 .byte ScrollText
 .text "H-hey, come on, Perne..."
 .byte NewLine
-.text "Let's not talk too much about ancient history..."
+.text "Let's not talk too much about ancient history."
 .byte WaitForA
 
 .byte Left_slot
@@ -118,12 +118,7 @@ ch12xpanlithis
 .text "biggest crybaby in the village."
 .byte WaitForA
 .byte ScrollText
-.text "And hey, we're just talking here, right?"
-.byte NewLine
-.text "Not gonna cry about it, are you?"
-.byte WaitForA
-.byte ScrollText
-.text "Ah, seems like it was just yesterday that all the"
+.text "Seems like it was just yesterday that all the"
 .byte NewLine
 .text "guys would chase you 'round the village,"
 .byte NewLine
@@ -134,7 +129,7 @@ ch12xpanlithis
 .byte ScrollText
 .text "...You were always the ringleader."
 .byte NewLine
-.text "Every time, you were the one that started it,"
+.text "Every time, you were the one who started it,"
 .byte NewLine
 .text "Perne..."
 .byte WaitForA
@@ -169,7 +164,7 @@ ch12xpanlithis
 .byte NewLine
 .text "charge. Where's your leader at?"
 .byte NewLine
-.text "Tell him I want to come along."
+.text "Let's tell him I want to come along."
 .byte WaitForA
 
 .byte Right_slot
@@ -210,7 +205,7 @@ ch12xpanlithis
 .byte Left_slot
 .word LoadPortrait
 .word pan_portrait
-.text "Hey, you feelin' good there, pal?"
+.text "Hey, are you feelin' good there, pal?"
 .byte NewLine
 .text "You look pale."
 .byte WaitForA
@@ -236,11 +231,11 @@ ch12xpanlithis2
 
 .byte Right_slot
 .byte ScrollText
-.text "Oh, Perne? While you're in such a generous"
+.text "Oh, Perne? While you're in such a generous mood,"
 .byte NewLine
-.text "mood, could you do something about that"
+.text "could you do something about that merc?"
 .byte NewLine
-.text "mercenary? He's giving my people trouble."
+.text "He's giving my people trouble."
 .byte WaitForA
 
 .byte Left_slot
@@ -392,16 +387,16 @@ ch12xpanlara
 .text "...Oh, now I see what you're getting at."
 .byte WaitForA
 .byte ScrollText
-.text "All right, Lara, then here's our deal: you go"
+.text "All right, Lara, then here's our deal: you go back"
 .byte NewLine
-.text "back to dancing, and I'll come along to help out"
+.text "to dancing, and I'll come along to help out both"
 .byte NewLine
-.text "both you and the Liberation Army."
+.text "you and the Liberation Army."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "R-really, Perne?!"
+.text "Really, Perne?!"
 .byte NewLine
 .text "All right, it's a deal!"
 .byte WaitForA
@@ -482,9 +477,9 @@ ch12xpantrude
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! “Let the die be cast,” as they say."
+.text "Ha! “Let the die be cast,” as they say."
 .byte NewLine
-.text "Leave everything to me!"
+.text "Leave it all to me!"
 .byte WaitForA
 
 .byte EndText
@@ -503,7 +498,7 @@ ch12xtinasafie
 .byte Left_slot
 .word LoadPortrait
 .word tina_portrait
-.text "Oh, Safy!"
+.text "Oh, Safy! Sister!"
 .byte NewLine
 .text "Waaahh...!"
 .byte WaitForA
@@ -538,7 +533,7 @@ ch12xtinasafie
 .byte NewLine
 .text "He's a thief, and he's been treating me like his"
 .byte NewLine
-.text "personal slave!"
+.text "personal slave..."
 .byte WaitForA
 
 .byte Right_slot
@@ -569,7 +564,7 @@ ch12xtinasafie
 .text "girl scarcely old enough to lift a broom..."
 .byte WaitForA
 .byte NewLine
-.text "Wouldn't he?"
+.text "wouldn't he?"
 .byte WaitForA
 
 .byte Left_slot
@@ -603,14 +598,14 @@ ch12xtinasafie
 .text "*sniffle, sniffle*"
 .byte WaitForA
 .byte ScrollText
-.text "H-he... He'd take a big, hairy caterpillar and"
+.text "H-he... He'd take a big, hairy caterpillar and wave"
 .byte NewLine
-.text "wave it in front of my face!"
+.text "it in front of my face!"
 .byte NewLine
 .text "Or even drop it on top of my head!"
 .byte WaitForA
 .byte ScrollText
-.text "It was so gross...and so icky..."
+.text "It was so gross...and so icky... I was so scared..."
 .byte NewLine
 .text "I thought I was going to die!"
 .byte WaitForA
@@ -624,9 +619,7 @@ ch12xtinasafie
 .byte ScrollText
 .text "Uh-huh... Oh, Safy, it was so awful! Horrifying!"
 .byte NewLine
-.text "Even now I'm getting shivers just thinking about"
-.byte NewLine
-.text "it!"
+.text "Even now I get shivers just thinking about it!"
 .byte WaitForA
 
 .byte Right_slot
@@ -645,7 +638,7 @@ ch12xtinasafie
 .byte NewLine
 .text "until I returned. Promise me you'll do as I say"
 .byte NewLine
-.text "from now on, all right?"
+.text "from now on, all right? Otherwise, this happens."
 .byte WaitForA
 
 .byte Left_slot
@@ -663,8 +656,6 @@ ch12xtinasafie
 .byte WaitForA
 .byte ScrollText
 .text "What do you think, Safy, huh?"
-.byte NewLine
-.text "Maybe this could be it, right?"
 .byte WaitForA
 
 .byte Right_slot
@@ -695,30 +686,28 @@ ch12xopening1
 .word pan_portrait
 .text "I don't like what I'm hearing..."
 .byte NewLine
-.text "What's going on outside?"
+.text "Something going on outside?"
 .byte WaitForA
 
 .byte Right_slot
-.text "Bad news, Perne."
+.text "Somebody's broken into the manor, Perne."
 .byte NewLine
-.text "Somebody's broken into the manor."
-.byte NewLine
-.text "Soldiers, by the look of it."
+.text "It might be the imperial army."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Imperial guardsmen, maybe...?"
+.text "What, as some kind of task force...?"
 .byte NewLine
 .text "Damn... What's happened to Salem?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Didn't see him. He might be dead..."
+.text "I didn't see him. He might be dead..."
 .byte WaitForA
 .byte ScrollText
-.text "I'll go check it out. Wait here."
+.text "I'll go check it out. You wait here."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortrait
@@ -732,7 +721,7 @@ ch12xopening1
 .byte ScrollText
 .text "An army's come to bring the hammer down on us,"
 .byte NewLine
-.text "that's what."
+.text "that's what's happened."
 .byte WaitForA
 .byte ScrollText
 .text "Argh, a pox on all of 'em!"
@@ -873,16 +862,16 @@ ch12xopening3lithis
 .byte ScrollText
 .text "...That's it? Bah, what a petty reason..."
 .byte NewLine
-.text "Report to the front lines at once!"
+.text "Take your position at once!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "C'mon, don't make me beg!"
 .byte NewLine
-.text "Just this once? Please?"
+.text "Just this once? Please? You don't understand"
 .byte NewLine
-.text "Pretty please with sugar on top?"
+.text "what you're making me go through with...!"
 .byte WaitForA
 
 .byte Left_slot
@@ -943,7 +932,7 @@ ch12xopening4lara
 .byte ScrollText
 .text "I'd been sold to them as a child."
 .byte NewLine
-.text "Perne rescued me from that, and set me free."
+.text "...Perne rescued me from that, and set me free."
 .byte WaitForA
 
 .byte Right_slot
@@ -974,10 +963,6 @@ ch12xending1
 
 .byte Right_slot
 .word LoadPortrait
-.word leif_portrait
-
-.byte Left_slot
-.word LoadPortrait
 .word dorias_portrait
 .text "Dawn is breaking, and this battle has allowed the"
 .byte NewLine
@@ -991,18 +976,22 @@ ch12xending1
 
 ch12xending2
 
-.byte Left_slot
 .byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
 .word LoadPortrait
 .word pan_portrait
-.text "Well, I'll be! You actually got the better of ol'"
+.text "Well, I'll be!"
 .byte NewLine
-.text "Troude, eh?"
+.text "You actually got the better of ol' Troude, eh?"
 .byte NewLine
 .text "Listen, cut him loose."
 .byte WaitForA
 .byte ScrollText
-.text "Troude's had my back for a long time, now."
+.text "Troude's had my back for a long time now."
 .byte NewLine
 .text "No question in my mind he'll come along and help"
 .byte NewLine
@@ -1014,25 +1003,34 @@ ch12xending2
 
 ch12xending3
 
-.byte Left_slot
 .byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
 .word LoadPortrait
 .word lithis_portrait
 
-.byte Right_slot
+.byte Left_slot
+.word LoadPortrait
+.word leif_portrait
 .text "Well, Perne proved to be a thoughtful man—"
 .byte NewLine
 .text "and a friend of the Liberation Army, as well."
 .byte WaitForA
 
-.byte ScrollText
-.word ClearPortrait
-
-.byte Left_slot
+.byte Right_slot
 .text "...Prince, you've got no idea who that snake"
 .byte NewLine
 .text "really is—"
 .byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte Right_slot
 .byte ScrollText
 .text "Ah, damn it all..."
 .byte WaitForA

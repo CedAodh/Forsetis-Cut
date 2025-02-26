@@ -1337,3 +1337,65 @@ ch23fredolwen
 .byte WaitForA
 
 .byte EndText
+
+ch23opening1nosaias
+
+.byte Right_slot
+.word LoadPortrait
+.word ced_portrait
+
+.byte Left_slot
+.word LoadPortrait
+.word younglady_portrait
+.text "Lord Ced!"
+.byte NewLine
+.text "Raydrik has found our last safehouse!"
+.byte WaitForA
+.byte ScrollText
+.text "There's nowhere for us to shelter the children"
+.byte NewLine
+.text "now!"
+.byte WaitForA
+
+.byte Right_slot
+.text "Blast! Would that I could escort them out of"
+.byte NewLine
+.text "here myself, but that would leave our rebellion"
+.byte NewLine
+.text "without a leader."
+.byte WaitForA
+.byte ScrollText
+.text "There just isn't anyone up to the task of"
+.byte NewLine
+.text "getting the children to safety on their own..."
+.byte WaitForA
+
+.byte EndText
+
+ch23opening2nosaias
+
+.byte right_slot
+.word LoadPortrait
+.word faden_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word raydrik_portrait
+.text "Keep Leif away."
+.byte WaitForA
+
+.byte right_slot
+.text "Will do."
+.byte WaitForA
+
+.byte EndText
+
+cedbragiblade
+
+.byte ScrollText
+.word LoadPortrait
+.word ced_portrait
+.text "Nope, here it is."
+.byte WaitForA
+
+.byte EndText

@@ -856,9 +856,9 @@ gunnarschroff
 .text "I share your feelings on the matter, of course."
 .byte WaitForA
 .byte ScrollText
-.text "But, as long as you are alive to carry on his work—"
+.text "But, as long as you are alive to carry on his"
 .byte NewLine
-.text "his lifelong aspirations, Father Schroff—"
+.text "work—his lifelong aspirations, Father Schroff—"
 .byte WaitForA
 .byte NewLine
 .text "then Bishop Rodan will surely find peace if"
@@ -1628,6 +1628,24 @@ olwenisready
 .text "Yes."
 .byte NewLine
 .text "If he remains in my way...I will do what I must."
+.byte WaitForA
+
+.byte EndText
+
+cohenreinhardt
+
+.byte right_slot
+.word LoadPortrait
+.word reinhardt_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word CohenPortrait
+.text "My grandson...SAIAS..."
+.byte WaitForA
+
+.byte right_slot
+.text "Indeed..."
 .byte WaitForA
 
 .byte EndText

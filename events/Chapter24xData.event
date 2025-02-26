@@ -4,47 +4,47 @@ eventChapter24xData ; 99/F7B3
 	_PrepGroup ; 99/F7B3
 		.byte 8, 7
 
+		UNIT Bergrosen, Enemy, [12, 37], [12, 37], Pierre, [Warp, Warp, Warp, Physic, Physic, PureWater], 14, False, [$12, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [14, 37], [14, 37], Pierre, [Warp, Warp, Warp, Physic, Physic, PureWater], 14, False, [$12, $03, $00, $00]
 		UNIT Pierre, Enemy, [13, 19], [13, 19], Pierre, [Jormungand, Venin, Berserk], 20, True, [$01, $03, $00, $80]
-		UNIT LoptrianSorcerer1, Enemy, [12, 19], [12, 19], Pierre, [Jormungand, Fenrir, Silence], 20, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [14, 19], [14, 19], Pierre, [Jormungand, Fenrir, Sleep], 20, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [11, 18], [11, 18], Pierre, [Jormungand], 15, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [12, 18], [12, 18], Pierre, [Jormungand], 15, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [13, 18], [13, 18], Pierre, [Jormungand], 15, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [14, 18], [14, 18], Pierre, [Jormungand], 15, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [15, 18], [15, 18], Pierre, [Jormungand], 15, False, [$00, $03, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [13, 8], [13, 8], Pierre, [DevilAxe], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [12, 8], [12, 8], Pierre, [DevilAxe], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [14, 8], [14, 8], Pierre, [DevilAxe], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [11, 8], [11, 8], Pierre, [DevilAxe], 20, False, [$00, $15, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [15, 8], [15, 8], Pierre, [DevilAxe], 20, False, [$00, $15, $00, $00]
-		UNIT LoptrianSoldier, Enemy, [15, 30], [15, 30], Pierre, [ShadowSpear], 20, False, [$00, $03, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [8, 30], [8, 30], Pierre, [SilverAxe, Torch], 20, False, [$00, $03, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [21, 26], [21, 26], Pierre, [Hammer, Torch], 20, False, [$00, $03, $00, $00]
-		UNIT LoptrianSoldier, Enemy, [20, 19], [20, 19], Pierre, [ShadowSpear], 20, False, [$00, $03, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [21, 14], [21, 14], Pierre, [BraveAxe, Torch], 20, False, [$00, $03, $00, $00]
-		UNIT LoptrianSoldier, Enemy, [23, 10], [23, 10], Pierre, [ShadowSpear], 20, False, [$00, $03, $00, $00]
-		UNIT LoptrianSoldier, Enemy, [5, 13], [5, 13], Pierre, [ShadowSpear], 20, False, [$00, $03, $00, $00]
-		UNIT BerserkerEnemy1, Enemy, [4, 25], [4, 25], Pierre, [MasterAxe], 20, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [12, 37], [12, 37], Pierre, [Warp, Warp, Jormungand, Physic, Rescue, PureWater], 14, False, [$00, $03, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [14, 37], [14, 37], Pierre, [Warp, Warp, Jormungand, Physic, Rescue, PureWater], 14, False, [$00, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [12, 19], [12, 19], Pierre, [Jormungand, Fenrir, Silence], 20, False, [$06, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [14, 19], [14, 19], Pierre, [Jormungand, Fenrir, Sleep], 20, False, [$06, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [11, 18], [11, 18], Pierre, [Jormungand], 15, False, [$06, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [12, 18], [12, 18], Pierre, [Jormungand], 15, False, [$06, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [13, 18], [13, 18], Pierre, [Jormungand], 15, False, [$06, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [14, 18], [14, 18], Pierre, [Jormungand], 15, False, [$06, $03, $00, $00]
+		UNIT Bergrosen, Enemy, [15, 18], [15, 18], Pierre, [Jormungand], 15, False, [$06, $03, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [13, 8], [13, 8], Pierre, [DevilAxe], 20, False, [$06, $03, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [12, 8], [12, 8], Pierre, [DevilAxe], 20, False, [$06, $03, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [14, 8], [14, 8], Pierre, [DevilAxe], 20, False, [$06, $03, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [11, 8], [11, 8], Pierre, [DevilAxe], 20, False, [$06, $03, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [15, 8], [15, 8], Pierre, [DevilAxe], 20, False, [$06, $03, $00, $00]
+		UNIT LoptrianSoldier, Enemy, [15, 30], [15, 30], Pierre, [ShadowSpear], 20, False, [$06, $10, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [8, 30], [8, 30], Pierre, [SilverAxe, Torch], 20, False, [$06, $10, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [21, 26], [21, 26], Pierre, [Hammer, Torch], 20, False, [$06, $10, $00, $00]
+		UNIT LoptrianSoldier, Enemy, [20, 19], [20, 19], Pierre, [ShadowSpear], 20, False, [$06, $10, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [21, 14], [21, 14], Pierre, [KillerAxe, Torch], 20, False, [$06, $10, $00, $00]
+		UNIT LoptrianSoldier, Enemy, [23, 10], [23, 10], Pierre, [ShadowSpear], 20, False, [$06, $10, $00, $00]
+		UNIT LoptrianSoldier, Enemy, [5, 13], [5, 13], Pierre, [ShadowSpear], 20, False, [$06, $10, $00, $00]
+		UNIT BerserkerEnemy1, Enemy, [4, 25], [4, 25], Pierre, [MasterAxe], 20, False, [$06, $10, $00, $00]
 	UNIT
 
 	_SorcererReinforcementsCameraCoordinates ; 99/F983
 		.byte 8, 7
 
 	_SorcererReinforcementsGroup ; 99/F985
-		UNIT LoptrianSorcerer1, Enemy, [24, 14], [24, 14], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [24, 17], [24, 17], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [2, 14], [2, 14], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$00, $00, $00, $00]
-		UNIT LoptrianSorcerer1, Enemy, [2, 17], [2, 17], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$00, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [24, 14], [24, 14], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$06, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [24, 17], [24, 17], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$06, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [2, 14], [2, 14], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$06, $00, $00, $00]
+		UNIT Bergrosen, Enemy, [2, 17], [2, 17], Pierre, [Hel, Jormungand, Rewarp], 12, False, [$06, $00, $00, $00]
 	UNIT
 
 	_SniperHeroReinforcementsCameraCoordinates ; 99/F9D7
 		.byte 8, 7
 
 	_SniperHeroReinforcementsGroup ; 99/F9D9
-		UNIT SniperEnemy, Enemy, [11, 37], [11, 37], Pierre, [KillerBow], 20, False, [$00, $00, $00, $00]
-		UNIT Hero3, Enemy, [15, 37], [15, 37], Pierre, [SleepEdge], 20, False, [$00, $00, $00, $00]
+		UNIT SniperEnemy, Enemy, [11, 37], [11, 37], Pierre, [ForsetiInfinite], 20, False, [$06, $00, $00, $00]
+		UNIT Hero3, Enemy, [15, 37], [15, 37], Pierre, [SleepEdge], 20, False, [$06, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; 99/FA03

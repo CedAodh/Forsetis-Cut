@@ -10,13 +10,13 @@ BA_UnknownPalette4A			;good to use												= 74
 BA_UnknownPalette4B			;good to use 												= 75
 		BA_UnknownPalette4BBA_Palette_Index													= BA_Palette70
 
-BA_UnknownPalette4E						;good to use									= 78
+BA_UnknownPalette4E			;Cohen			;good to use									= 78
 		BA_UnknownPalette4EBA_Palette_Index													= BA_PaletteA9
 
-BA_UnknownPalette4F							;good to use								= 79
+BA_UnknownPalette4F		;Marty					;good to use								= 79
 		BA_UnknownPalette4FBA_Palette_Index													= BA_PaletteAA
 
-BA_UnknownPalette50						;good to use									= 80
+BA_UnknownPalette50	;Bharat					;good to use									= 80
 		BA_UnknownPalette50BA_Palette_Index													= BA_PaletteAB
 
 BA_UnknownPalette51	;Gustav					;good to use									= 81

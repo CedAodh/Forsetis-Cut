@@ -8,8 +8,18 @@ eventChapter21Events ; FD/E42D
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/E43A
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Fraus
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
@@ -24,7 +34,7 @@ eventChapter21Events ; FD/E42D
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 1, 6
+			CMP_WORD_RANGE wCurrentTurn, 3, 6
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
@@ -44,21 +54,6 @@ eventChapter21Events ; FD/E42D
 		END_DEFINITION
 		EVENT $0B, _HomerNannaTalk
 			CHECK_CHARS2 Homer, Nanna
-		END_DEFINITION
-		EVENT $0D, _DagdarRalphTalk
-			CHECK_CHARS2 Dagdar, Ralph
-		END_DEFINITION
-		EVENT $0E, _EdaLinoanTalk
-			CHECK_CHARS2 Eda, Linoan
-		END_DEFINITION
-		EVENT $0F, _SaraMartyTalk
-			CHECK_CHARS2 Sara, Marty
-		END_DEFINITION
-		EVENT $10, _ConomorMirandaTalk
-			CHECK_CHARS2 Conomor, Miranda
-		END_DEFINITION
-		EVENT $11, _FergusDiarmuidTalk
-			CHECK_CHARS2 Fergus, Diarmuid
 		END_DEFINITION
 		EVENT $12, _LeifXavierReinforce
 			CHECK_CHARS2 Leif, Xavier
@@ -140,6 +135,8 @@ eventChapter21Events ; FD/E42D
 	END_DEFINITION_ARRAY
 
 	_RightReinforcements ; FD/E57B
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter21Data._RightReinforcementsCameraCoordinates
 		YIELD
 
@@ -148,9 +145,11 @@ eventChapter21Events ; FD/E42D
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_SoldierReinforcements ; FD/E588
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter21Data._SoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -162,6 +161,8 @@ eventChapter21Events ; FD/E42D
 	END2
 
 	_SorcererReinforcements ; FD/E595
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter21Data._SorcererReinforcementsCameraCoordinates
 		YIELD
 
@@ -380,49 +381,13 @@ eventChapter21Events ; FD/E42D
 	END1
 	
 	_MirandaLeifTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE MirandaLeifTalk
-		YIELD
+		macroDialogueHouse MirandaLeifTalk
 	END2
 	
 	_HomerNannaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
+		macroDialogueHouse homernanna2
 		
-		DIALOGUE homernanna2
-		YIELD
-		
-		macroSetCharacterByte Nanna, structCharacterDataRAM.MovementStars, 2
-	END2
-	
-	_DagdarRalphTalk
-		macroDialogueHouse DagdarRalphTalk
-	END2
-	
-	_EdaLinoanTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE EdaLinoanTalk
-		YIELD
-	END2
-	
-	_SaraMartyTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE SaraMartyTalk
-		YIELD
-	END2
-	
-	_FergusDiarmuidTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE fergusdiarmuid
-		YIELD
+		macroSetCharacterByte Nanna, structCharacterDataRAM.MovementStars, 10
 	END2
 	
 	_LeifXavierReinforce
@@ -439,27 +404,38 @@ eventChapter21Events ; FD/E42D
 		SCROLL_CAMERA_ADDRESS eventChapter21Data._LeonsterGroupCameraCoordinates
 		YIELD
 		
-		LOAD1 eventChapter21Data._LeonsterGroup
+		STORE_WORD wEventEngineParameter1, MemberCard
+
+		CALL_ASM_LOOP rlASMCCheckPartyAndConvoyForItem, $0000
+		JUMP_FALSE +
+		
+		LOAD1 eventChapter21Data._Leonster21KnightGroup
 		WAIT_MOVE
 		YIELD
 		
+		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		CALL_ASM_LOOP rlASMCMount, $0000
+		
+		macroAddCharacterByte LeonsterDukeKnight, structCharacterDataRAM.LanceRank, 100
+		
+		Jump ++
+		
+		+
+		
+		LOAD1 eventChapter21Data._Leonster21Group
+		WAIT_MOVE
+		YIELD
+		
+		macroAddCharacterByte LeonsterDukeKnight, structCharacterDataRAM.LanceRank, 100
+		
+		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Leader
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		CALL_ASM_LOOP rlASMCMount, $0000
+		
+		+
+		
 		YIELD_UNK
-	END2
-	
-	_ConomorMirandaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE ConomorMirandaTalk
-		YIELD
-		
-		STORE_WORD wEventEngineParameter1, TurnStatusHidden
-		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
-
-		macroGiveItemToActiveUnit Fragarach
-
-		STORE_WORD wEventEngineParameter1, TurnStatusHidden
-		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
 
 	_PrepGroups ; FD/E82C

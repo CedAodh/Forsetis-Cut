@@ -522,7 +522,7 @@ ch24xeyvelleif
 .text "were the prince of Leonster."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyvelnanna
@@ -590,7 +590,7 @@ ch24xeyvelnanna
 .text "Never give up. You'll find her again someday..."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyveldagdar
@@ -627,7 +627,7 @@ ch24xeyveldagdar
 .text "I, uh, didn't really do much..."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyveltanya
@@ -691,12 +691,12 @@ ch24xeyveltanya
 .byte ScrollText
 .text "O-oh, that's... You're right, I guess."
 .byte NewLine
-.text "*sniff* Thank you...Eyvel."
+.text "*sniffle* Thank you...Eyvel."
 .byte NewLine
 .text "Dammit. Now I'm the one getting all mushy."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyvelhalvan
@@ -736,7 +736,7 @@ ch24xeyvelhalvan
 .text "worries herself half to death over us..."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyvelosian
@@ -771,7 +771,7 @@ ch24xeyvelosian
 .text "make it back to Fiana, got it?"
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyvelmareeta
@@ -817,7 +817,7 @@ ch24xeyvelmareeta
 .text "Everything will be all right..."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyvelgalzus
@@ -966,7 +966,7 @@ ch24xeyvelgalzus
 .text "That's what I will do."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch24xeyvelfinn

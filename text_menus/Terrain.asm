@@ -226,7 +226,7 @@ _Altar_name
 	.word $0000
 
 _Seal_name
-	.text "Seal"
+	.text "Sigil "
 	.word $0000
 
 .bend

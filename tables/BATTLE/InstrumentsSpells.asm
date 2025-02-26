@@ -31,7 +31,7 @@ InstrumentsSilence		    = $25
 .byte $00               		; SleepEdge
 .byte $00               		; BeoBlade			STNosferatu
 .byte $00               		; BlessedSword
-.byte InstrumentsJormungandr	; LoptrianFang		STFire
+.byte $00 				; LoptrianFang		STFire
 .byte $00               		; BragisBlade
 .byte InstrumentsLight			; LightBrand		STJormungandr
 .byte $00               		; BraveSword
@@ -161,7 +161,7 @@ InstrumentsSilence		    = $25
 .byte $00               		; ReturnStaff
 .byte InstrumentsStaves      	; Hammerne			STStaves
 .byte InstrumentsStaves      	; ThiefStaff		STStaves
-.byte InstrumentsStaves      	; Watch
+.byte $00      	; Watch
 .byte InstrumentsStaves      	; Berserk			STStaves
 .byte InstrumentsStaves      	; Unlock			STStaves
 .byte InstrumentsStaves      	; Ensorcel			STStaves
@@ -231,7 +231,7 @@ InstrumentsSilence		    = $25
 .byte $00               		; SleepEdge
 .byte $00               		; BeoBlade
 .byte $00               		; BlessedSword
-.byte InstrumentsJormungandr+1	; LoptrianFang
+.byte $00				; LoptrianFang
 .byte $00               		; BragisBlade
 .byte InstrumentsLight+1     	; LightBrand
 .byte $00               		; BraveSword
@@ -331,7 +331,7 @@ InstrumentsSilence		    = $25
 .byte InstrumentsJormungandr+1 	; Jormungandr
 .byte InstrumentsFenrirs+1   	; Fenrir
 .byte InstrumentsHel+1       	; Hel
-.byte InstrumentsMeteor+1  ; Loptous		vanilla:00
+.byte InstrumentsForseti+1  ; Loptous		vanilla:00
 					    
 ; Siege magic           
 .byte InstrumentsMeteor+1    	; Meteor
@@ -361,7 +361,7 @@ InstrumentsSilence		    = $25
 .byte $00               		; ReturnStaff
 .byte InstrumentsStaves+1    	; Hammerne
 .byte InstrumentsStaves+1    	; ThiefStaff
-.byte InstrumentsStaves+1    	; Watch
+.byte $00    	; Watch
 .byte InstrumentsStaves+1    	; Berserk
 .byte InstrumentsStaves+1    	; Unlock
 .byte InstrumentsStaves+1    	; Ensorcel

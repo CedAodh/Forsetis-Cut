@@ -16,7 +16,7 @@ eventChapter4Data ; B1/EF95
 	.byte 8, 7
 
 	_PlayerGroup2 ; B1/EFFF
-		UNIT Fergus, Player, [6, 26], [6, 26], Diarmuid, [], 4, False, [$00, $00, $00, $30]
+		UNIT Fergus, Player, [6, 26], [6, 26], Diarmuid, [], 4, False, [$00, $00, $00, $00]
 		UNIT Karin, Player, [8, 28], [8, 28], Diarmuid, [], 1, False, [$00, $00, $00, $00]
 	UNIT
 
@@ -28,65 +28,65 @@ eventChapter4Data ; B1/EF95
 	;	.byte 8, 7
 
 	_EnemyGroup1 ; B1/F02B
-		UNIT MunsterArmoredLance, Enemy, [11, 12], [11, 12], Bandole, [ShortLance, Vulnerary], 1, False, [$01, $03, $00, $00]
-		UNIT MunsterArmoredLance, Enemy, [12, 12], [12, 12], Bandole, [ShortLance, DoorKey], 1, False, [$01, $03, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [16, 13], [16, 13], Bandole, [ShortLance, Vulnerary], 1, False, [$02, $0A, $00, $20]
-		UNIT MunsterSoldier2, Enemy, [16, 22], [16, 22], Bandole, [ShortLance, Vulnerary], 1, False, [$02, $0A, $00, $30]
-		UNIT MunsterSoldier2, Enemy, [6, 23], [7, 22], Bandole, [ShortLance], 1, False, [$02, $0A, $00, $10]
-		UNIT MunsterSoldier2, Enemy, [7, 13], [7, 13], Bandole, [ShortLance], 1, False, [$02, $0A, $00, $00]
+		UNIT MunsterArmoredLance, Enemy, [11, 12], [11, 12], Weissmann, [ShortLance, Vulnerary], 1, False, [$01, $03, $00, $00]
+		UNIT MunsterArmoredLance, Enemy, [12, 12], [12, 12], Weissmann, [ShortLance, DoorKey], 1, False, [$01, $03, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [16, 13], [16, 13], Weissmann, [ShortLance, Vulnerary], 1, False, [$02, $0A, $00, $20]
+		UNIT MunsterSoldier2, Enemy, [16, 22], [16, 22], Weissmann, [ShortLance, Vulnerary], 1, False, [$02, $0A, $00, $30]
+		UNIT MunsterSoldier2, Enemy, [6, 23], [7, 22], Weissmann, [ShortLance], 1, False, [$02, $0A, $00, $10]
+		UNIT MunsterSoldier2, Enemy, [7, 13], [7, 13], Weissmann, [ShortLance], 1, False, [$02, $0A, $00, $00]
 	UNIT
 
 	_LeftSoldierReinforcementsCameraCoordinates ; B1/F0A5
 	.byte 9, 18
 
 	_LeftSoldierReinforcementsGroup ; B1/F0A7
-		UNIT MunsterSoldier2, Enemy, [1, 17], [1, 17], Bandole, [ShortLance, Vulnerary], 1, False, [$00, $00, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [1, 17], [1, 17], Weissmann, [ShortLance, Vulnerary], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	_MiddleLeftSoldierReinforcementsCameraCoordinates ; B1/F0BD
 		.byte 12, 22
 
 	_MiddleLeftSoldierReinforcementsGroup ; B1/F0BF
-		UNIT MunsterSoldier2, Enemy, [11, 28], [11, 28], Bandole, [ShortLance, Vulnerary], 3, False, [$00, $00, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [11, 28], [11, 28], Weissmann, [ShortLance, Vulnerary], 3, False, [$00, $00, $00, $00]
 	UNIT
 
 	_WeismannGroup ; B1/F0D5
-		UNIT Weissmann, Enemy, [15, 4], [15, 4], Bandole, [Longsword, Vulnerary], 7, True, [$02, $03, $00, $00]
+		UNIT Weissmann, Enemy, [15, 4], [15, 4], Weissmann, [Longsword, Vulnerary], 7, True, [$02, $03, $00, $00]
 	UNIT
 
 	_EnemyGroup2 ; B1/F0D7
-		UNIT MunsterArmoredLance, Enemy, [8, 3], [8, 3], Bandole, [Javelin], 5, False, [$02, $03, $00, $00]
-		UNIT MunsterMage1, Enemy, [6, 3], [6, 3], Bandole, [Thunder], 3, False, [$02, $03, $00, $00]
-		UNIT MunsterArmoredBow, Enemy, [7, 4], [7, 4], Bandole, [Shortbow], 3, False, [$02, $03, $00, $00]
-		UNIT MunsterPriest1, Enemy, [6, 4], [6, 4], Bandole, [Heal], 4, False, [$02, $03, $00, $00]
-		UNIT MunsterArmoredAxe, Enemy, [7, 3], [7, 3], Bandole, [HandAxe, Vulnerary], 4, False, [$02, $03, $00, $00]
-		UNIT Dalsin, Enemy, [8, 4], [8, 4], Bandole, [BattleAxe, Torch], 9, False, [$02, $03, $00, $00]
+		UNIT MunsterArmoredLance, Enemy, [8, 3], [8, 3], Weissmann, [Javelin], 5, False, [$02, $03, $00, $00]
+		UNIT MunsterMage1, Enemy, [6, 3], [6, 3], Weissmann, [Fire], 3, False, [$02, $03, $00, $00]
+		UNIT MunsterArmoredBow, Enemy, [7, 4], [7, 4], Weissmann, [Shortbow], 3, False, [$02, $03, $00, $00]
+		UNIT MunsterPriest1, Enemy, [6, 4], [6, 4], Weissmann, [Heal], 4, False, [$02, $03, $00, $00]
+		UNIT MunsterArmoredAxe, Enemy, [7, 3], [7, 3], Weissmann, [HandAxe, Vulnerary], 4, False, [$02, $03, $00, $00]
+		UNIT Dalsin, Enemy, [8, 4], [8, 4], Weissmann, [BattleAxe, Torch], 9, False, [$02, $03, $00, $00]
 	UNIT
 
 	_NotWeismannGroup ; B1/F151
-		UNIT MunsterArmoredAxe, Enemy, [15, 4], [15, 4], Bandole, [BattleAxe], 3, False, [$02, $03, $00, $00]
+		UNIT MunsterArmoredSword, Enemy, [15, 4], [15, 4], Weissmann, [ShortSword], 6, False, [$02, $03, $00, $00]
 	UNIT
 
 	_EnemyGroup3 ; B1/F153
-		UNIT MunsterArmoredAxe, Enemy, [16, 3], [16, 3], Bandole, [HandAxe, Vulnerary], 4, False, [$02, $03, $00, $00]
-		UNIT MunsterPriest1, Enemy, [17, 4], [17, 4], Bandole, [Heal], 4, False, [$02, $03, $00, $00]
-		UNIT MunsterMage1, Enemy, [17, 3], [17, 3], Bandole, [Thunder], 3, False, [$02, $03, $00, $00]
-		UNIT MunsterArmoredBow, Enemy, [16, 4], [16, 4], Bandole, [Shortbow], 3, False, [$02, $03, $00, $00]
-		UNIT MunsterArmoredLance, Enemy, [15, 3], [15, 3], Bandole, [Javelin], 5, False, [$02, $03, $00, $00]
+		UNIT MunsterArmoredAxe, Enemy, [16, 3], [16, 3], Weissmann, [HandAxe, Vulnerary], 4, False, [$02, $03, $00, $00]
+		UNIT MunsterPriest1, Enemy, [17, 4], [17, 4], Weissmann, [Heal], 4, False, [$02, $03, $00, $00]
+		UNIT MunsterMage1, Enemy, [17, 3], [17, 3], Weissmann, [Fire], 3, False, [$02, $03, $00, $00]
+		UNIT MunsterArmoredBow, Enemy, [16, 4], [16, 4], Weissmann, [Shortbow], 3, False, [$02, $03, $00, $00]
+		UNIT MunsterArmoredLance, Enemy, [15, 3], [15, 3], Weissmann, [Javelin], 5, False, [$02, $03, $00, $00]
 	UNIT
 
 	_MiddleRightSoldierReinforcementsCameraCoordinates ; B1/F1CD
 		.byte 15, 18
 
 	_MiddleRightSoldierReinforcementsGroup ; B1/F1CF
-		UNIT MunsterSoldier2, Enemy, [22, 18], [22, 18], Bandole, [ShortLance, Vulnerary], 2, False, [$00, $00, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [22, 18], [22, 18], Weissmann, [ShortLance, Vulnerary], 2, False, [$00, $00, $00, $00]
 	UNIT
 
 	_RightSoldierReinforcementsCameraCoordinates ; B1/F1E5
 		.byte 12, 22
 
 	_RightSoldierReinforcementsGroup ; B1/F1E7
-		UNIT MunsterSoldier2, Enemy, [12, 28], [12, 28], Bandole, [Javelin, Vulnerary], 4, False, [$00, $00, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [12, 28], [12, 28], Weissmann, [Javelin, Vulnerary], 4, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates4 ; B1/F1FD
@@ -102,18 +102,18 @@ eventChapter4Data ; B1/EF95
 	;	.byte 8, 7
 
 	_RightCivilianGroup ; B1/F23F
-		UNIT Civilian5, NPC, [15, 8], [15, 8], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian6, NPC, [16, 9], [16, 9], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian7, NPC, [17, 8], [17, 8], Ishtar, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian5, NPC, [15, 8], [15, 8], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian6, NPC, [16, 9], [16, 9], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian7, NPC, [17, 8], [17, 8], Cairpre, [], 1, False, [$02, $0B, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates6 ; B1/F27D
 	;	.byte 12, 18
 
 	_LeftCivilianGroup ; B1/F27F
-		UNIT Civilian2, NPC, [6, 8], [6, 8], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian3, NPC, [7, 9], [7, 9], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Civilian4, NPC, [8, 8], [8, 8], Ishtar, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian2, NPC, [6, 8], [6, 8], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian3, NPC, [7, 9], [7, 9], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Civilian4, NPC, [8, 8], [8, 8], Cairpre, [], 1, False, [$02, $0B, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates7 ; B1/F2BD

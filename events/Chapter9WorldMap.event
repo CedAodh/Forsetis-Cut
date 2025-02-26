@@ -77,6 +77,50 @@ eventChapter9WorldMapEvents ; E7/E75C
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	SET_MUSIC $01
+	YIELD
+
+	STORE_WORD wEventEngineParameter1, 3
+	CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+	CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, shouldleifmaketherounds
+	YIELD_UNK
+	YIELD_UNK
+	YIELD_UNK
+	YIELD
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+
+	FADE_OUT $01
+	YIELD
+
+	CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+	STORE_BYTE bBuf_INIDISP, $00
+	JUMP_FALSE _NoInterim
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Marty
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground leifmarty, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	+
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	_NoInterim
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
 	STORE_WORD wEventEngineCharacterTarget, Callion
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +

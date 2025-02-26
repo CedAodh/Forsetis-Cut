@@ -8,8 +8,18 @@ eventChapter22Events ; 8C/F611
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 8C/F61E
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Cohen
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
@@ -29,7 +39,7 @@ eventChapter22Events ; 8C/F611
 		END_DEFINITION
 		EVENT $28, _SaiasLeave
 			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentTurn, 30
 		END_DEFINITION
 		EVENT $28, _SaiasLeave
 			CMP_WORD wCurrentPhase, Enemy
@@ -39,30 +49,21 @@ eventChapter22Events ; 8C/F611
 			CMP_WORD wCurrentPhase, Enemy
 			TEST_FLAG_SET $02
 		END_DEFINITION
+		EVENT $14, _Reinforcing
+			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_SET $13
+		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 8C/F68D
 		EVENT $0B, _OlwenReinhardtTalk
 			CHECK_CHARS2 Olwen, Reinhardt
 		END_DEFINITION
-		;EVENT $0C is now available
-		EVENT $0D, _AsbelTinaTalk
-			CHECK_CHARS2 Asbel, Tina
+		EVENT $13, _LeifXavierReinforce
+			CHECK_CHARS2 Leif, Xavier
 		END_DEFINITION
-		EVENT $0E, _KarinFergusTalk
-			CHECK_CHARS2 Karin, Fergus
-		END_DEFINITION
-		EVENT $0F, _ShivaAsaelloTalk
-			CHECK_CHARS2 Shiva, Asaello
-		END_DEFINITION
-		EVENT $10, _DiarmuidShannamTalk
-			CHECK_CHARS2 Diarmuid, Shannam
-		END_DEFINITION
-		EVENT $11, _AmaldaOlwenTalk
-			CHECK_CHARS2 Amalda, Olwen
-		END_DEFINITION
-		EVENT $12, _GunnarSchroffTalk
-			CHECK_CHARS2 GunterDialogue, Schroff
+		EVENT $13, _LeifXavierReinforce
+			CHECK_CHARS2 Xavier, Leif
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -133,7 +134,7 @@ eventChapter22Events ; 8C/F611
 		EVENT $07, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Reinhardt
 		END_DEFINITION
-		EVENT $13, eventBattleQuoteDummyEvent
+		EVENT $16, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Rilke
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -175,6 +176,8 @@ eventChapter22Events ; 8C/F611
 		rtl
 
 	_Reinforcements ; 8C/F7C6
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter22Data._ReinforcementsCameraCoordinates
 		YIELD
 
@@ -186,11 +189,15 @@ eventChapter22Events ; 8C/F611
 	END2
 
 	_SaiasLeave ; 8C/F7D3
-		SCROLL_CAMERA_CHAR Saias
-		SET_CAMERA_SPEED 4
-		YIELD
+		;SCROLL_CAMERA_CHAR Saias
+		;SET_CAMERA_SPEED 4
+		;YIELD
 
-		HALT_UNTIL_WORD_SKIPPABLE aUnknown0004BA, $0000
+		;HALT_UNTIL_WORD_SKIPPABLE aUnknown0004BA, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE _Nothing
 
 		RESET_PHASE_MUSIC
 		YIELD
@@ -275,6 +282,8 @@ eventChapter22Events ; 8C/F611
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		+
+		
+		_Nothing
 	END2
 
 	_ReinhardtGroupAIChange ; 8C/F8EC
@@ -290,7 +299,7 @@ eventChapter22Events ; 8C/F611
 
 		STORE_WORD wEventEngineCharacterTarget, Gelbenritter
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
-		STORE_WORD wEventEngineParameter2, $26
+		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
 		STORE_WORD wEventEngineCharacterTarget, Gelbenritter
@@ -730,64 +739,60 @@ eventChapter22Events ; 8C/F611
 		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
 	
-	_AsbelTinaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
+	_LeifXavierReinforce
+		macroDialogueHouse reinforce
 		
-		DIALOGUE ch22tinaasbel
-		YIELD
+		JUMP_TRUE +
+		
+		UNSET_FLAG $13
+		
+		+
 	END2
 	
-	_ShivaAsaelloTalk
-		PAUSE_SKIPPABLE 32
+	_Reinforcing
+		SCROLL_CAMERA_ADDRESS eventChapter21Data._LeonsterGroupCameraCoordinates
 		YIELD
 		
-		DIALOGUE shivaasaello
-		YIELD
-	END2
-	
-	_AmaldaOlwenTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE amaldaolwen
-		YIELD
-	END2
-	
-	_DiarmuidShannamTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE diarmuidshannam
-		YIELD
-	END2
+		STORE_WORD wEventEngineParameter1, MemberCard
 
-	_KarinFergusTalk
-		PAUSE_SKIPPABLE 32
+		CALL_ASM_LOOP rlASMCCheckPartyAndConvoyForItem, $0000
+		JUMP_FALSE +
+		
+		LOAD1 eventChapter22Data._LeonsterKnight22Group
+		WAIT_MOVE
 		YIELD
 		
-		DIALOGUE ch22karinfergus
-		YIELD
-	END2
-
-        _GunnarSchroffTalk
-		PAUSE_SKIPPABLE 32
+		Jump ++
+		
+		+
+		
+		LOAD1 eventChapter22Data._Leonster22Group
+		WAIT_MOVE
 		YIELD
 		
-		DIALOGUE gunnarschroff
-		YIELD
+		+
+		
+		YIELD_UNK
 	END2
 	
 	_PrepGroups ; 8C/FE50
 		.long eventChapter22Data._PrepGroup
 	.word $0000
 
-	_OpeningEvent ; 8C/FE55
+	_OpeningEvent ; 8C/FE55	
 		STORE_WORD wEventEngineCharacterTarget, Saias
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 		
 		STORE_WORD wEventEngineCharacterTarget, Cohen
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		EVENT_TEST_FLAG_SET FlagSaiasDead
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Reinhardt
+		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		+
 		
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
 
@@ -804,14 +809,12 @@ eventChapter22Events ; 8C/F611
 		CALL_ASM_SKIPPABLE rlEventEngineCreateProcAndSetActive, $0000
 		YIELD
 
-		STORE_WORD wEventEngineCharacterTarget, FriegeGeneral1
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Charm
-		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
-
 		SCROLL_CAMERA_SPEED [28, 3], 4
 		YIELD
 
+		EVENT_TEST_FLAG_SET FlagSaiasDead
+		JUMP_TRUE _SaiasDead
+		
 		STORE_WORD wEventEngineParameter1, 1
 		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
 
@@ -826,10 +829,13 @@ eventChapter22Events ; 8C/F611
 		YIELD
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
-
-		LOAD1 eventChapter22Data._SaiasGroup
+		
+		LOAD1 eventChapter22Data._SaiasSecondGroup
 		WAIT_MOVE
 		YIELD
+		
+		EVENT_TEST_FLAG_SET FlagIshtarDead
+		JUMP_TRUE ++
 
 		STORE_WORD wEventEngineCharacterTarget, Olwen
 		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
@@ -860,6 +866,32 @@ eventChapter22Events ; 8C/F611
 		YIELD
 
 		+
+		
+		JUMP +
+		
+		_SaiasDead
+		
+		STORE_WORD wEventEngineParameter1, 1
+		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+
+		CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, cohenreinhardt
+		YIELD_UNK
+		YIELD_UNK
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+
+		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+		
+		LOAD1 eventChapter22Data._ReinhardtSecondGroup
+		WAIT_MOVE
+		YIELD
+		
+		+
+
 		LOAD1 eventChapter22Data._CohenGroup
 		WAIT_MOVE
 		YIELD
@@ -966,9 +998,17 @@ eventChapter22Events ; 8C/F611
 		
 		CALL_ASM_SKIPPABLE $888550, $0000
 		
-		;STORE_WORD wEventEngineCharacterTarget, Reinhardt
-		;CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
-		;JUMP_FALSE +
+		STORE_WORD wEventEngineParameter1, BlessedSword
+
+		EVENT_TEST_FLAG_SET FlagIshtarDead
+		JUMP_TRUE +
+		
+		CALL_ASM_LOOP rlASMCCheckPartyAndConvoyForItem, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Olwen
+		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+		JUMP_FALSE +
 		
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
@@ -977,6 +1017,10 @@ eventChapter22Events ; 8C/F611
 		macroSetAllCharacterTurnStatus (TurnStatusUnknown1 | TurnStatusHidden)
 		
 		LOAD1 eventChapter22Data._ReinhardtGroup
+		WAIT_MOVE
+		YIELD
+		
+		LOAD1 eventChapter22Data._JuliusGroup
 		WAIT_MOVE
 		YIELD
 		
@@ -989,12 +1033,7 @@ eventChapter22Events ; 8C/F611
 		
 		macroDialogueHouse juliusreinhardt1
 		
-		LOAD1 eventChapter22Data._JuliusGroup
-		WAIT_MOVE
-		YIELD
-		
-		
-        MOVE_UNIT Reinhardt, [18, 16], [24, 22], 1, None
+        MOVE_UNIT Reinhardt, [18, 16], [25, 22], 2, None
 		YIELD_UNK
 		WAIT_MOVE
 		YIELD
@@ -1003,10 +1042,20 @@ eventChapter22Events ; 8C/F611
 		SET_CAMERA_SPEED 4
 		YIELD
 		
+		MOVE_UNIT Julius, [18, 16], [27, 22], 1, None
+		YIELD_UNK
+		WAIT_MOVE
+		YIELD
+		
 		SET_MUSIC $3E
 		YIELD
 		
 		macroDialogueHouse juliusreinhardt2
+		
+		MOVE_UNIT Reinhardt, [0, 0], [24, 22], 2, None
+		YIELD_UNK
+		WAIT_MOVE
+		YIELD
 
 		CALL_ASM_SKIPPABLE rlClearHDMAArray, $0000
 
@@ -1017,8 +1066,8 @@ eventChapter22Events ; 8C/F611
 		STORE_WORD wEventEngineParameter2, Meteor
 		STORE_WORD wEventEngineXCoordinate, 24
 		STORE_WORD wEventEngineYCoordinate, 22
-		STORE_WORD wEventEngineXCoordinateAlt, 25
-		STORE_WORD wEventEngineYCoordinateAlt, 23
+		STORE_WORD wEventEngineXCoordinateAlt, 27
+		STORE_WORD wEventEngineYCoordinateAlt, 22
 		CALL_ASM_SKIPPABLE $9A8E50, $0000
 
 		CALL_ASM_SKIPPABLE $84B719, $0000
@@ -1028,15 +1077,78 @@ eventChapter22Events ; 8C/F611
 		CALL_ASM_SKIPPABLE rlUpdateUnitMaps, $0000
 		CALL_ASM_SKIPPABLE rlUpdateVisibilityMap, $0000
 
-		PAUSE_SKIPPABLE 2
+		YIELD
+		
+		STORE_WORD wEventEngineXCoordinate, 23
+		STORE_WORD wEventEngineYCoordinate, 21
+		STORE_WORD wEventEngineParameter1, $0091
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 24
+		STORE_WORD wEventEngineYCoordinate, 21
+		STORE_WORD wEventEngineParameter1, $02BE
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 25
+		STORE_WORD wEventEngineYCoordinate, 21
+		STORE_WORD wEventEngineParameter1, $0092
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 23
+		STORE_WORD wEventEngineYCoordinate, 22
+		STORE_WORD wEventEngineParameter1, $001E
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 24
+		STORE_WORD wEventEngineYCoordinate, 22
+		STORE_WORD wEventEngineParameter1, $029F
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 25
+		STORE_WORD wEventEngineYCoordinate, 22
+		STORE_WORD wEventEngineParameter1, $001D
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 23
+		STORE_WORD wEventEngineYCoordinate, 23
+		STORE_WORD wEventEngineParameter1, $001E
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 24
+		STORE_WORD wEventEngineYCoordinate, 23
+		STORE_WORD wEventEngineParameter1, $029E
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 25
+		STORE_WORD wEventEngineYCoordinate, 23
+		STORE_WORD wEventEngineParameter1, $001D
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 23
+		STORE_WORD wEventEngineYCoordinate, 24
+		STORE_WORD wEventEngineParameter1, $00B3
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 24
+		STORE_WORD wEventEngineYCoordinate, 24
+		STORE_WORD wEventEngineParameter1, $029D
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		STORE_WORD wEventEngineXCoordinate, 25
+		STORE_WORD wEventEngineYCoordinate, 24
+		STORE_WORD wEventEngineParameter1, $0032
+		CALL_ASM_LOOP rlASMCSingleTileChangeByCoords, $0000
+		
+		PLAY_SOUND_BYTE $45
+		
 		YIELD
 		
 		STORE_WORD wEventEngineCharacterTarget, Reinhardt
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
-		
-		MOVE_UNIT Julius, [0, 0], [24, 23], 1, None
 		YIELD
 		
+		MOVE_UNIT Julius, [18, 16], [26, 22], 1, None
+		YIELD_UNK
 		WAIT_MOVE
 		YIELD
 		
@@ -1074,11 +1186,11 @@ eventChapter22Events ; 8C/F611
 	END1
 	
 	_OlwenScriptedBattleRounds ; 9A/E50A
-		.byte $80, $02, $00, $00
+		.byte $02, $00, $02, $28
 		
 		.byte $80, $02, $00, $00
+		
+		.byte $80, $00, $02, $28
 
-		.byte $02, $00, $02, $28
-
-		.byte $02, $00, $02, $28
+		.byte $02, $01, $02, $28
 	.word $FFFF, $FFFF

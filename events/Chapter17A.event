@@ -8,12 +8,26 @@ eventChapter17AEvents ; FD/BAAF
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/BABC
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Nicolov
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $00, _SaiasSpawn
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 9
+		END_DEFINITION
+		EVENT $00, _LeifReaction
+			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentTurn, 10
 		END_DEFINITION
 		EVENT $00, _MullerSpawn
 			CMP_WORD wCurrentPhase, NPC
@@ -21,7 +35,7 @@ eventChapter17AEvents ; FD/BAAF
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 10, 19
+			CMP_WORD_RANGE wCurrentTurn, 12, 19
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _PirateReinforcements
@@ -29,14 +43,14 @@ eventChapter17AEvents ; FD/BAAF
 			CMP_WORD_RANGE wCurrentTurn, 3, 4
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
-		EVENT $00, _SaiasLeave
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 15
-		END_DEFINITION
 		EVENT $0B, _MishaSleep
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 10, 14
 			TEST_FLAG_SET $0A
+		END_DEFINITION
+		EVENT $00, _SaiasLeave
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 14
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -44,20 +58,8 @@ eventChapter17AEvents ; FD/BAAF
 		EVENT $0A, _KarinMishaTalk
 			CHECK_CHARS2 Karin, Misha
 		END_DEFINITION
-		EVENT $0E, _GladeRobertTalk
-			CHECK_CHARS2 Glade, Robert	
-		END_DEFINITION
-		EVENT $0F, _SafySalemTalk
-			CHECK_CHARS2 Safy, Salem
-		END_DEFINITION
-		EVENT $1A, _HalvanMareetaTalk
-			CHECK_CHARS2 Halvan, Mareeta
-		END_DEFINITION
 		EVENT $1B, _SalemSaraTalk
 			CHECK_CHARS2 Salem, Sara
-		END_DEFINITION
-		EVENT $1C, _LeifSaraTalk
-			CHECK_CHARS2 Leif, Sara
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -156,9 +158,6 @@ eventChapter17AEvents ; FD/BAAF
 		EVENT $0D, eventBattleQuoteDummyEvent
 			CHECK_SINGLE Misha
 		END_DEFINITION
-		EVENT $09, eventBattleQuoteDummyEvent
-			CHECK_SINGLE Xavier
-		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_ShopEventDefinitions ; FD/BC76
@@ -173,7 +172,7 @@ eventChapter17AEvents ; FD/BAAF
 	END_DEFINITION_ARRAY
 
 	_MullerSpawn ; FD/BC9E
-		PLAY_SOUND_WORD $E0
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
 
@@ -196,6 +195,8 @@ eventChapter17AEvents ; FD/BAAF
 	END2
 
 	_SorcererReinforcements ; FD/BCBE
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter17AData._SorcererReinforcementsCameraCoordinates
 		YIELD
 
@@ -206,6 +207,8 @@ eventChapter17AEvents ; FD/BAAF
 	END2
 
 	_PirateReinforcements ; FD/BCCB
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter17AData._PirateReinforcementsCameraCoordinates
 		YIELD
 
@@ -221,6 +224,9 @@ eventChapter17AEvents ; FD/BAAF
 		YIELD
 
 		SET_MUSIC $39
+		YIELD
+		
+		SCROLL_CAMERA_ADDRESS eventChapter17AData._SaiasCameraCoordinates
 		YIELD
 
 		SET_FLAG $01
@@ -266,9 +272,10 @@ eventChapter17AEvents ; FD/BAAF
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
 
 		+
-		SCROLL_CAMERA_ADDRESS eventChapter17AData._SaiasCameraCoordinates
-		YIELD
 
+		SCROLL_CAMERA_ADDRESS eventChapter17AData._SaiasSpawnCameraCoordinates
+		YIELD
+		
 		LOAD1 eventChapter17AData._SaiasGroup
 		WAIT_MOVE
 		YIELD
@@ -281,122 +288,130 @@ eventChapter17AEvents ; FD/BAAF
 		PAUSE_SKIPPABLE 32
 		YIELD
 
-		SCROLL_CAMERA_CHAR Leif
-		SET_CAMERA_SPEED 4
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Misha
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Misha
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Misha
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, Misha
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+
+		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
+		STORE_WORD wEventEngineParameter2, $00
+		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		SCROLL_CAMERA_ADDRESS eventChapter17AData._BridgeCoordinates
+		YIELD
+		
+		DIALOGUE lowerbridge
 		YIELD
 
+		JUMP _CenterBridgeLower
+
+	_LeifReaction
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
 
 		SET_MUSIC $31
 		YIELD
+		
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED 4
+		YIELD
 
 		DIALOGUE ch17Asaiasleif
 		YIELD
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredSword1
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredAxe3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, FriegeArmoredLance3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, Misha
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, Misha
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, Misha
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, Misha
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI4
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI2
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, SilessePegasusRider3
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
-		STORE_WORD wEventEngineParameter2, $00
-		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-
-		JUMP _CenterBridgeLower
-
+	END2
+	
 	_SaiasLeave ; FD/BF69
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
@@ -405,26 +420,58 @@ eventChapter17AEvents ; FD/BAAF
 		SET_MUSIC $3C
 		YIELD
 
-		UNSET_FLAG $01
-
-		STORE_WORD wEventEngineCharacterTarget, Saias
-		STORE_WORD wEventEngineParameter1, TurnStatusDead | TurnStatusUnknown1 | TurnStatusInvisible | TurnStatusCaptured
-		CALL_ASM_LOOP rlASMCCheckUnitTurnStatusSet, $0000
+		EVENT_TEST_FLAG_SET $03
 		JUMP_TRUE +
+		
+		UNSET_FLAG $01
+		
+		+
 
 		SCROLL_CAMERA_ADDRESS eventChapter17AData._ReinhardtCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapter17AData._ReinhardtGroup
-		WAIT_MOVE
 		YIELD
 
 		LOAD1 eventChapter17AData._IshtarGroup
 		WAIT_MOVE
 		YIELD
+		
+		LOAD1 eventChapter17AData._ReinhardtGroup
+		WAIT_MOVE
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
 
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		CALL_ASM_LOOP rlASMCIsUnitRescued, $0000
+		JUMP_TRUE +
+		
 		DIALOGUE ch17Asaiasishtar
 		YIELD
+		
+		JUMP +++
+		
+		+
+		
+		EVENT_TEST_FLAG_SET FlagSaiasDead
+		JUMP_TRUE +
+		
+		DIALOGUE ishtarsaiascaptured
+		YIELD
+		
+		JUMP ++
+		
+		+
+		
+		DIALOGUE ishtarsaiasdead
+		YIELD
+		
+		+
+		
+		;STORE_WORD wEventEngineCharacterTarget, Saias
+		;STORE_WORD wEventEngineParameter1, TurnStatusDead | TurnStatusUnknown1 | TurnStatusInvisible | TurnStatusCaptured
+		;CALL_ASM_LOOP rlASMCCheckUnitTurnStatusSet, $0000
+		;JUMP_TRUE +
 
 		MOVE_UNIT Ishtar, [0, 0], [22, 1], 1, _LeaveMovestring
 		YIELD_UNK
@@ -436,6 +483,14 @@ eventChapter17AEvents ; FD/BAAF
 
 		PAUSE_SKIPPABLE 32
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		CALL_ASM_LOOP rlASMCIsUnitRescued, $0000
+		JUMP_TRUE +
 
 		MOVE_UNIT Saias, [0, 0], [23, 1], 1, _LeaveMovestring
 		YIELD_UNK
@@ -447,13 +502,28 @@ eventChapter17AEvents ; FD/BAAF
 
 		PAUSE_SKIPPABLE 32
 		YIELD
+		
+		+
+		
+		MOVE_UNIT Reinhardt, [0, 0], [24, 1], 1, _LeaveMovestring
+		YIELD_UNK
+		WAIT_MOVE
+		YIELD
 
 		STORE_WORD wEventEngineCharacterTarget, Reinhardt
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
 
 		YIELD
+		
+		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SCROLL_CAMERA_ADDRESS eventChapter17AData._BridgeCoordinates
+		YIELD
+		
+		DIALOGUE raisebridge
+		YIELD
 
-		+
 		JUMP _RightBridgeRaise
 
 	_SaiasSpawnMovestring ; FD/BFEC
@@ -473,42 +543,6 @@ eventChapter17AEvents ; FD/BAAF
 		YIELD
 
 		DIALOGUE ch17Amishakarin
-		YIELD
-	END2
-	
-		_GladeRobertTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE robertgladeAB
-		YIELD
-	END2
-	
-	_SafySalemTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE safysalemAB
-		YIELD
-	END2
-	
-	_HalvanMareetaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE halvanmareetaAB
-		YIELD
-	END2
-	
-	_LeifSaraTalk
-		PLAY_SOUND_WORD $00E0
-		PAUSE_SKIPPABLE 32
-		YIELD
-
-		SET_MUSIC $4F
-		YIELD
-
-		DIALOGUE ch16Bsarahleif
 		YIELD
 	END2
 	
@@ -744,6 +778,7 @@ eventChapter17AEvents ; FD/BAAF
 	END2
 
 	_CenterBridgeLower ; FD/C27C
+		PLAY_SOUND_BYTE $6E
 		HALT_UNTIL_BYTE bDecompListFlag, $00
 
 		CALL_ASM_LOOP rlASMCDecompressChapterMapChanges, $0000
@@ -760,6 +795,7 @@ eventChapter17AEvents ; FD/BAAF
 	END1
 
 	_RightBridgeRaise ; FD/C2A8
+		PLAY_SOUND_BYTE $6D
 		HALT_UNTIL_BYTE bDecompListFlag, $00
 
 		CALL_ASM_LOOP rlASMCDecompressChapterMapChanges, $0000
@@ -791,8 +827,6 @@ eventChapter17AEvents ; FD/BAAF
 	END1
 	
 	_MishaSleep
-
-		
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD

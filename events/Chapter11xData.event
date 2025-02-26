@@ -4,78 +4,78 @@ eventChapter11xData ; B1/CA33
 	_PrepGroup3 ; B1/CA33
 		.byte 8, 15
 
-		UNIT FriegeArcher, Enemy, [1, 18], [1, 18], Oltoph, [Shortbow], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeMage1, Enemy, [1, 16], [1, 16], Oltoph, [Thunder], 8, False, [$00, $00, $00, $00]
-		UNIT FriegeArcher, Enemy, [1, 14], [1, 14], Oltoph, [Shortbow], 8, False, [$00, $00, $00, $00]
-		UNIT FriegeMage1, Enemy, [1, 12], [1, 12], Oltoph, [Bolganone], 10, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredBow1, Enemy, [5, 12], [5, 12], Oltoph, [Longbow], 10, False, [$00, $00, $00, $00]
-		UNIT FriegeMage1, Enemy, [5, 14], [5, 14], Oltoph, [Fire], 8, False, [$00, $00, $00, $00]
-		UNIT FriegeArcher, Enemy, [5, 16], [5, 16], Oltoph, [Shortbow], 8, False, [$00, $00, $00, $00]
-		UNIT FriegeMage1, Enemy, [5, 18], [5, 18], Oltoph, [Wind], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeArcher, Enemy, [10, 10], [10, 10], Oltoph, [VeninBow, Antitoxin], 10, False, [$00, $00, $00, $00]
-		UNIT FriegeArcher, Enemy, [12, 10], [12, 10], Oltoph, [VeninBow, Antitoxin], 10, False, [$00, $00, $00, $00]
-		UNIT FriegeArcher, Enemy, [14, 10], [14, 10], Oltoph, [VeninBow, Antitoxin], 10, False, [$00, $00, $00, $00]
-		UNIT Oltoph, Enemy, [12, 14], [12, 14], Oltoph, [Bolting, Meteor, Physic, DoorKey], 8, True, [$01, $03, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [12, 15], [12, 15], Oltoph, [BattleAxe, Vulnerary], 8, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [13, 15], [13, 15], Oltoph, [BattleAxe, Vulnerary], 8, False, [$00, $03, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [5, 5], [5, 5], Oltoph, [Javelin], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [7, 5], [7, 5], Oltoph, [Javelin], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [9, 5], [9, 5], Oltoph, [LongLance], 7, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [11, 5], [11, 5], Oltoph, [ShortLance], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [13, 5], [13, 5], Oltoph, [LongLance], 8, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredBow1, Enemy, [1, 10], [1, 10], Oltoph, [Longbow], 10, False, [$00, $00, $00, $00]
-		UNIT FriegeArcher, Enemy, [5, 20], [5, 20], Oltoph, [ShortBow], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeMage1, Enemy, [5, 10], [5, 10], Oltoph, [Thoron], 10, False, [$00, $00, $00, $00]
-		UNIT FriegeMage1, Enemy, [1, 20], [1, 20], Oltoph, [Thunder], 6, False, [$00, $00, $00, $00]
+		UNIT FriegeArcher, Enemy, [1, 18], [1, 18], Oltoph, [Shortbow], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeMage1, Enemy, [1, 16], [1, 16], Oltoph, [Thunder], 8, False, [$06, $00, $00, $00]
+		UNIT FriegeArcher, Enemy, [1, 14], [1, 14], Oltoph, [Shortbow], 8, False, [$06, $00, $00, $00]
+		UNIT FriegeMage1, Enemy, [1, 12], [1, 12], Oltoph, [Bolganone], 10, False, [$06, $00, $00, $00]
+		UNIT FriegeArmoredBow1, Enemy, [5, 12], [5, 12], Oltoph, [Longbow], 10, False, [$06, $00, $00, $00]
+		UNIT FriegeMage1, Enemy, [5, 14], [5, 14], Oltoph, [Fire], 8, False, [$06, $00, $00, $00]
+		UNIT FriegeArcher, Enemy, [5, 16], [5, 16], Oltoph, [Shortbow], 8, False, [$06, $00, $00, $00]
+		UNIT FriegeMage1, Enemy, [5, 18], [5, 18], Oltoph, [Wind], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeArcher, Enemy, [10, 10], [10, 10], Oltoph, [VeninBow, Antitoxin], 10, False, [$06, $00, $00, $00]
+		UNIT FriegeArcher, Enemy, [12, 10], [12, 10], Oltoph, [VeninBow, Antitoxin], 10, False, [$06, $00, $00, $00]
+		UNIT FriegeArcher, Enemy, [14, 10], [14, 10], Oltoph, [VeninBow, Antitoxin], 10, False, [$06, $00, $00, $00]
+		UNIT Oltoph, Enemy, [12, 14], [12, 14], Oltoph, [Tornado, Physic, DoorKey], 8, True, [$01, $03, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [12, 15], [12, 15], Oltoph, [BattleAxe, Vulnerary], 8, False, [$06, $03, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [13, 15], [13, 15], Oltoph, [BattleAxe, Vulnerary], 8, False, [$06, $03, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [5, 5], [5, 5], Oltoph, [Javelin], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [7, 5], [7, 5], Oltoph, [Javelin], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [9, 5], [9, 5], Oltoph, [LongLance], 7, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [11, 5], [11, 5], Oltoph, [ShortLance], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [13, 5], [13, 5], Oltoph, [LongLance], 8, False, [$06, $00, $00, $00]
+		UNIT FriegeArmoredBow1, Enemy, [1, 10], [1, 10], Oltoph, [Longbow], 10, False, [$06, $00, $00, $00]
+		UNIT FriegeArcher, Enemy, [5, 20], [5, 20], Oltoph, [ShortBow], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeMage1, Enemy, [5, 10], [5, 10], Oltoph, [Thoron], 10, False, [$06, $00, $00, $00]
+		UNIT FriegeMage1, Enemy, [1, 20], [1, 20], Oltoph, [Thunder], 6, False, [$06, $00, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [3, 9], [3, 9],   Oltoph, [Javelin], 10, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [3, 11], [3, 11], Oltoph, [Javelin], 9, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [3, 13], [3, 13], Oltoph, [Javelin], 8, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [3, 15], [3, 15], Oltoph, [Javelin], 7, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [3, 17], [3, 17], Oltoph, [Javelin], 6, False, [$01, $03, $00, $00]
 		UNIT FriegeSoldier2, Enemy, [3, 19], [3, 19], Oltoph, [Javelin], 5, False, [$01, $03, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [8, 12], [8, 12], Oltoph, [IronBlade], 6, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [8, 18], [8, 18], Oltoph, [IronBlade], 6, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [8, 8], [8, 8], Oltoph, [IronBlade], 6, False, [$00, $10, $00, $00]
-		UNIT FriegeArmoredSword2, Enemy, [12, 18], [12, 18], Oltoph, [IronBlade], 6, False, [$00, $10, $00, $00]
-		UNIT FriegeMage1, Enemy, [11, 14], [11, 14], Oltoph, [Wind], 8, False, [$00, $03, $00, $00]
-		UNIT FriegeMage1, Enemy, [13, 14], [13, 14], Oltoph, [Wind], 8, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [11, 15], [11, 15], Oltoph, [BattleAxe], 8, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [8, 12], [8, 12], Oltoph, [IronBlade], 6, False, [$06, $10, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [8, 18], [8, 18], Oltoph, [IronBlade], 6, False, [$06, $10, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [8, 8], [8, 8], Oltoph, [IronBlade], 6, False, [$06, $10, $00, $00]
+		UNIT FriegeArmoredSword2, Enemy, [12, 18], [12, 18], Oltoph, [IronBlade], 6, False, [$06, $10, $00, $00]
+		UNIT FriegeMage1, Enemy, [11, 14], [11, 14], Oltoph, [Wind], 8, False, [$06, $03, $00, $00]
+		UNIT FriegeMage1, Enemy, [13, 14], [13, 14], Oltoph, [Wind], 8, False, [$06, $03, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [11, 15], [11, 15], Oltoph, [BattleAxe], 8, False, [$06, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/CD09
 	;	.byte 8, 16
 
 	_Left1ReinforcementsGroup ; B1/CD09
-		UNIT FriegeSoldier2, Enemy, [2, 4], [2, 4], Oltoph, [ShortLance], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [1, 4], [1, 4], Oltoph, [ShortLance], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [2, 3], [2, 3], Oltoph, [ShortLance], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [1, 3], [1, 3], Oltoph, [Javelin], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [2, 2], [2, 2], Oltoph, [Javelin], 6, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [1, 2], [1, 2], Oltoph, [ShortLance], 6, False, [$00, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [2, 4], [2, 4], Oltoph, [ShortLance], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [1, 4], [1, 4], Oltoph, [ShortLance], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [2, 3], [2, 3], Oltoph, [ShortLance], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [1, 3], [1, 3], Oltoph, [Javelin], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [2, 2], [2, 2], Oltoph, [Javelin], 6, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [1, 2], [1, 2], Oltoph, [ShortLance], 6, False, [$06, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/CD83
 	;	.byte 8, 11
 
 	_RightReinforcementsGroup ; B1/CD85
-		UNIT FriegeSoldier2, Enemy, [14, 5], [14, 5], Oltoph, [Javelin], 3, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [14, 6], [14, 6], Oltoph, [Javelin], 3, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [13, 6], [13, 6], Oltoph, [ShortLance], 3, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [13, 5], [13, 5], Oltoph, [ShortLance], 3, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [12, 6], [12, 6], Oltoph, [ShortLance], 3, False, [$00, $00, $00, $00]
-		UNIT FriegeSoldier2, Enemy, [12, 5], [12, 5], Oltoph, [ShortLance], 3, False, [$00, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [14, 5], [14, 5], Oltoph, [Javelin], 3, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [14, 6], [14, 6], Oltoph, [Javelin], 3, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [13, 6], [13, 6], Oltoph, [ShortLance], 3, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [13, 5], [13, 5], Oltoph, [ShortLance], 3, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [12, 6], [12, 6], Oltoph, [ShortLance], 3, False, [$06, $00, $00, $00]
+		UNIT FriegeSoldier2, Enemy, [12, 5], [12, 5], Oltoph, [ShortLance], 3, False, [$06, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/CDFF
 	;	.byte 8, 7
 
 	_Left2ReinforcementsGroup ; B1/CE01
-		UNIT FriegeArmoredLance1, Enemy, [1, 2], [1, 2], Oltoph, [LongLance], 11, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [2, 2], [2, 2], Oltoph, [Javelin], 11, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [1, 3], [1, 3], Oltoph, [Javelin], 11, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [2, 3], [2, 3], Oltoph, [ShortLance], 11, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [2, 4], [2, 4], Oltoph, [LongLance], 11, False, [$00, $00, $00, $00]
-		UNIT FriegeArmoredLance1, Enemy, [1, 4], [1, 4], Oltoph, [LongLance], 11, False, [$00, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [1, 2], [1, 2], Oltoph, [LongLance], 11, False, [$06, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [2, 2], [2, 2], Oltoph, [Javelin], 11, False, [$06, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [1, 3], [1, 3], Oltoph, [Javelin], 11, False, [$06, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [2, 3], [2, 3], Oltoph, [ShortLance], 11, False, [$06, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [2, 4], [2, 4], Oltoph, [LongLance], 11, False, [$06, $00, $00, $00]
+		UNIT FriegeArmoredLance1, Enemy, [1, 4], [1, 4], Oltoph, [LongLance], 11, False, [$06, $00, $00, $00]
 	UNIT
 
 	_PrepGroup1 ; B1/CE7B
@@ -87,9 +87,9 @@ eventChapter11xData ; B1/CA33
 	_PrepGroup2 ; B1/CE93
 		.byte 8, 7
 
-		UNIT Peter, NPC, [8, 2], [8, 2], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Rosa, NPC, [9, 2], [9, 2], Ishtar, [], 1, False, [$02, $0B, $00, $00]
-		UNIT Sera, NPC, [10, 2], [10, 2], Ishtar, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Peter, NPC, [8, 2], [8, 2], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Rosa, NPC, [9, 2], [9, 2], Cairpre, [], 1, False, [$02, $0B, $00, $00]
+		UNIT Sera, NPC, [10, 2], [10, 2], Cairpre, [], 1, False, [$02, $0B, $00, $00]
 	UNIT
 
 	_FredCameraCoordinates ; B1/CED3

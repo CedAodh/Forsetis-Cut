@@ -5,16 +5,16 @@ chp14xwm1
 .text "in a desperate attempt to shield Tarrah,"
 .byte WaitForA
 .byte ScrollText
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $003F ;leify-left
-.word $060C ;y then x
 
 .byte EndText
 
 chp14xwm2
 
-.text "Leif has no choice but to order a retreat"
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $003F ;leify-left
+.word $060C ;y then x
+.text "Leif had no choice but to order a retreat"
 .byte NewLine
 .text "through a valley north of the walled city."
 .byte WaitForA
@@ -32,201 +32,328 @@ leavenow
 .byte right_slot
 .word LoadPortrait
 .word karin_portrait
-.text "Phew..."
+.text "Okay, time for a brief rest, Hermes."
 .byte NewLine
-.text "This seems like a nice spot to rest."
+.text "It's a good job you did there!"
 .byte NewLine
-.text "You can relax now, Hermes. Easy there."
+.text "We really showed those mercs what's what!"
 .byte WaitForA
 .byte ScrollText
-.text "Huh?"
+.text "...Hey, I think I heard something over there."
 .byte NewLine
-.text "Whatever are you neighing at?"
+.text "Maybe one of the Tarrahn civilians got lost?"
 .byte NewLine
-.text "I-Is someone there?"
+.text "Let's go help them!"
+.byte WaitForA
+.byte ScrollText
+.text "Hey, over here!"
+.byte NewLine
+.text "Come on, everybody's going this way!"
 .byte WaitForA
 
 .byte left_slot
 .word LoadPortrait
 .word lewyn_portrait 
-.text "Sigh..."
+.text "My apologies for the confusion,"
 .byte NewLine
-.text "Guess I've been found."
-.byte NewLine
-.text "Be at ease, young one."
+.text "but I am not part of “everybody.”"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Huh? How can I be at ease?!"
-.byte WaitForA
-.byte ScrollText
-.text "Who are you? And what are you"
+.text "What?"
 .byte NewLine
-.text "doing in such a rugged place,"
-.byte NewLine
-.text "if you don't mind me asking?"
+.text "Wh-who exactly are you, then?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "My name holds no importance."
-.byte NewLine
-.text "I'm nothing but a peddler making my way"
-.byte NewLine
-.text "from Tarrah. I apologize for the fright."
+.text "Someone who's not in need of your assistance."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Okay, then..."
+.text "I..."
 .byte NewLine
-.text "My gut is still telling me"
+.text "Then please back away!"
+.byte WaitForA
 .byte NewLine
-.text "not to trust you, though."
+.text "You're...suspiciously confident"
+.byte NewLine
+.text "in your approach in talking to me."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Quite the cautious girl, you are."
+.text "As you say, I suppose."
 .byte NewLine
-.text "Do you want me on my knees, now?"
-.byte NewLine
-.text "I promise that I mean no harm."
+.text "But I promise you I'm no adversary."
 .byte WaitForA
+.byte ScrollText
+.text "Notice that your pegasus"
 .byte NewLine
-.text "If my word is still not enough, you"
-.byte NewLine
-.text "can just ask your friend over there."
+.text "has not flown you away?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Huh? ...Huh."
+.text "You're only reinforcing my point..."
 .byte NewLine
-.text "Hermes? You're... Not scared?"
+.text "Fine, then."
 .byte NewLine
-.text "How is this possible?"
-.byte WaitForA
-.byte NewLine
-.text "Have you met a Pegasus before, sir?"
+.text "I know Hermes's instincts to be true."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "In my travels, yes."
+.text "Your faith in your companion is a spectacle to"
 .byte NewLine
-.text "That aside, now that I look at you..."
+.text "behold. Speaking of spectacles, may I take"
 .byte NewLine
-.text "That pendant you wear is quite something."
-.byte WaitForA
-.byte NewLine
-.text "Wherever did you get it?"
+.text "a closer look at that pendant of yours?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Oh, no, siree!"
-.byte NewLine
-.text "I know exactly what you're thinking, but I'm"
-.byte NewLine
-.text "not selling this for all the Gold in Jugdral!"
-.byte WaitForA
-.byte ScrollText
-.text "This was a dear present from Princess Fee."
-.byte NewLine
-.text "She gave it to me when I left as a symbol of"
-.byte NewLine
-.text "our friendship, and the success of my mission."
+.text "...Sure thing."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "You're friends with a princess, now?"
+.text "Mmm."
 .byte NewLine
-.text "Well, aren't you the important little lady."
+.text "I feel as though I've seen this exact one before."
+.byte WaitForA
+.byte NewLine
+.text "Even the damage markings seem to line up."
+.byte NewLine
+.text "Two chips perpendicular to each other..."
+.byte WaitForA
+.byte NewLine
+.text "Wherever did you acquire this?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "You're calling me a liar?!"
+.text "You won't convince me"
+.byte NewLine
+.text "that this ever belonged to you."
+.byte WaitForA
+.byte ScrollText
+.text "This was a gift from my dearest friend,"
+.byte NewLine
+.text "Princess Fee of Silesse."
+.byte WaitForA
+.byte ScrollText
+.text "It's a charm of fortune—and I must see my"
+.byte NewLine
+.text "duty through so that I can return it to her"
+.byte NewLine
+.text "one day. That's what I promised her."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Not at all. I believe you."
+.text "How very touching."
 .byte NewLine
-.text "That is top-notch Silessian craftsmanship,"
+.text "And for your princess, no less!"
 .byte NewLine
-.text "no doubt. Because of that, I have an offer."
+.text "Well, thank you kindly for humoring me."
 .byte WaitForA
 .byte NewLine
-.text "Let me treat you with a gift of my own."
+.text "As a recompense, I give this to you."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Really? How nice!"
+.text "...Huh?!"
 .byte NewLine
-.text "...Is what I'd say if I was dumb."
+.text "This...this is a ring..."
 .byte NewLine
-.text "What's the catch here, mister?"
+.text "made out of the exact same material...!"
+.byte WaitForA
+.byte NewLine
+.text "What are you getting at here?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Pft. Please, there's no catch."
+.text "I'm getting at returning the favor, like I said."
 .byte NewLine
-.text "I am giving this to you, of my own volition."
-.byte NewLine
-.text "No tricks, no curses, no favors."
+.text "Now, don't these two look nice together?"
 .byte WaitForA
+.byte ScrollText
+.text "A combination such as this should bestow"
 .byte NewLine
-.text "Just have it, and be on your way."
+.text "you all the luck a girl could ever need."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Oh... I see. Thank you, then!"
+.text "Heh, I sure hope so."
 .byte NewLine
-.text "Wait, did you just tell me off?"
+.text "Thank you so much...er..."
+.byte NewLine
+.text "Well, my name's Karin. "
+.byte WaitForA
+.byte NewLine
+.text "What's yours?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I sure did."
+.text "I've received many names throughout my time;"
 .byte NewLine
-.text "I'm waiting for my business partner,"
-.byte NewLine
-.text "and he will definitely arrive soon."
-.byte WaitForA
-.byte ScrollText
-.text "We'll be talking about trade secrets and"
-.byte NewLine
-.text "other private matters, which means your"
-.byte NewLine
-.text "presence is no longer wanted. Leave."
+.text "I'm not yet sure which I'd like to stick with."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "O...kay then."
+.text "So if you can't tell me who you are..."
 .byte NewLine
-.text "Stay safe out here."
+.text "then could you tell me WHAT you are?"
+.byte WaitForA
+.byte ScrollText
+.text "Surely there's one singular occupation"
+.byte NewLine
+.text "you've been sticking with."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.word ClearPortrait
-.word RetractBox
+.text "Hahaha... A wise one, are you?"
+.byte NewLine
+.text "Very well."
+.byte NewLine
+.text "I'm a meddling peddler, more or less."
+.byte WaitForA
+.byte NewLine
+.text "I'm currently awaiting an associate of mine"
+.byte NewLine
+.text "to do an exchange of information."
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "What a weird man."
+.text "Information?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Yes."
 .byte NewLine
-.text "There's something about him..."
+.text "You do know how valuable"
 .byte NewLine
-.text "Oh well, at least this trinket is nice!"
+.text "information tends to be, correct?"
+.byte WaitForA
+.byte ScrollText
+.text "But I'm afraid I cannot have you poking"
+.byte NewLine
+.text "your nose any further—so at this time,"
+.byte NewLine
+.text "I'll be asking you to leave."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Fair enough."
+.byte NewLine
+.text "Good luck to you, Mr. Peddler the Meddler!"
+.byte WaitForA
+
+.byte EndText
+
+knightringreceived
+
+.byte right_slot
+.word LoadPortrait
+.word ylgreen2_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word dorius_portrait
+.text "Hm...?"
+.byte NewLine
+.text "Beg pardon, miss, did you lose your way?"
+.byte NewLine
+.text "Please, bestride my horse; I shall escort you."
+.byte WaitForA
+
+.byte right_slot
+.text "Oh, no, that's not necessary! But thank you!"
+.byte NewLine
+.text "Actually, I was...looking to give this to you."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "What a magnificent ring."
+.byte NewLine
+.text "However, I fear my heart already belongs to"
+.byte NewLine
+.text "another."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Ugh, darn it!"
+.byte NewLine
+.text "I was betting a coin-flip you weren't going to"
+.byte NewLine
+.text "say that, hee hee."
+.byte WaitForA
+.byte ScrollText
+.text "But, um... This ring belonged to a deceased lover"
+.byte NewLine
+.text "of mine. He was a knight of Ulster, killed in battle"
+.byte NewLine
+.text "when the empire overthrew the king."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I see... I—"
+.byte NewLine
+.text "Bah, that was utterly tactless of me."
+.byte NewLine
+.text "I beg your forgiveness, miss."
+.byte WaitForA
+.byte ScrollText
+.text "You have my sympathies for those dark times,"
+.byte NewLine
+.text "and I graciously accept your gift."
+.byte NewLine
+.text "But, why did you choose us?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Well, my mother and I had moved to Tarrah"
+.byte NewLine
+.text "before things started getting really bad under"
+.byte NewLine
+.text "the empire's rule."
+.byte WaitForA
+.byte ScrollText
+.text "For a time, I...gave up my idealization about"
+.byte NewLine
+.text "knights and chivalry and whatnot. I figured it"
+.byte NewLine
+.text "was easier to live without that heartbreak."
+.byte WaitForA
+.byte ScrollText
+.text "But then, Prince Leif and fine knights like"
+.byte NewLine
+.text "yourself were the ones who came to our aid"
+.byte NewLine
+.text "when we wanted to get out of the not-kingdom."
+.byte WaitForA
+.byte ScrollText
+.text "I don't... I don't think I'll ever again find people"
+.byte NewLine
+.text "so worthy of this “knight ring.”"
+.byte NewLine
+.text "So, take it, and...thank you."
 .byte WaitForA
 
 .byte EndText

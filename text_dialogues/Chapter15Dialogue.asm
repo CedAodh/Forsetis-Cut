@@ -59,7 +59,7 @@ ch15ralphamaldaspawn
 .byte NewLine
 .text "ceaselessly—even to the point of risking"
 .byte NewLine
-.text "punishment for misconduct."
+.text "punishment for dissidence."
 .byte WaitForA
 .byte NewLine
 .text "Yet still, nothing has come of it..."
@@ -109,6 +109,11 @@ ch15ralphamaldaspawn
 .text "I'll do as you advise."
 .byte WaitForA
 .byte ScrollText
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
+
 .word LoadPortrait
 .word jeanne_portrait
 
@@ -120,9 +125,9 @@ ch15ralphamaldaspawn
 .byte WaitForA
 
 .byte Left_slot
-.text "Yet for all that we do, the world is still"
+.text "Yet for all that we do, the world is still crumbling"
 .byte NewLine
-.text "crumbling to pieces all around us."
+.text "to pieces all around us."
 .byte NewLine
 .text "We can do naught but pray as it collapses..."
 .byte WaitForA
@@ -189,6 +194,8 @@ ch15ralphamaldaspawn
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
+.word PauseDialogue
+.byte $3C
 .word PlayMusic
 .byte $31
 .word LoadPortrait
@@ -400,7 +407,7 @@ ch15ralphrecruitment
 
 .byte Left_slot
 .byte ScrollText
-.text "Then why fight on their behalf?"
+.text "But why fight on their behalf, then?"
 .byte WaitForA
 
 .byte Right_slot
@@ -419,9 +426,9 @@ ch15ralphrecruitment
 
 .byte Left_slot
 .byte ScrollText
-.text "Ah, my apologies. I shouldn't have started"
+.text "Ah, my apologies. I shouldn't have started prying"
 .byte NewLine
-.text "prying without introducing myself first."
+.text "without introducing myself first."
 .byte WaitForA
 .byte ScrollText
 .text "I'm Leif of Leonster."
@@ -431,7 +438,7 @@ ch15ralphrecruitment
 .byte ScrollText
 .text "Leif...?"
 .byte NewLine
-.text "H-how—?! Are you THE Leif, the prince?"
+.text "H-how—?! You're THE Leif, the prince?"
 .byte WaitForA
 .byte ScrollText
 .text "Talk about being in the right place at the right"
@@ -451,9 +458,11 @@ ch15ralphrecruitment
 .text "Of course!"
 .byte NewLine
 .text "We could always use more men like you."
+.byte NewLine
+.text "If you didn't ask, I was going to."
 .byte WaitForA
 .byte ScrollText
-.text "Though, if I may, I'd like to ask you something."
+.text "But I'll ask something else instead."
 .byte NewLine
 .text "Why exactly do you want to join my army?"
 .byte NewLine
@@ -466,14 +475,14 @@ ch15ralphrecruitment
 .byte NewLine
 .text "empire's thumb for one moment longer."
 .byte NewLine
-.text "That good enough of a reason?"
+.text "Isn't that good enough of a reason?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "It is indeed."
+.text "Yes, that's good enough."
 .byte NewLine
-.text "That's a very simple and effective way to put it."
+.text "And I admire your candidness."
 .byte WaitForA
 .byte ScrollText
 .text "Ralf, my greatest desire is to free every person"
@@ -498,13 +507,13 @@ ch15amaldaleave
 .byte Right_slot
 .word LoadPortrait
 .word amalda_portrait
-.text "Wonders never cease... That band of soldiers"
+.text "Wonders never cease... That band of soldiers has"
 .byte NewLine
-.text "has come to the village's rescue."
+.text "come to the village's rescue."
+.byte NewLine
+.text "The gods may yet be merciful..."
 .byte WaitForA
 .byte ScrollText
-.text "The gods may yet be merciful..."
-.byte NewLine
 .text "Now, it's high time I returned to my own soldiers."
 .byte WaitForA
 
@@ -520,7 +529,7 @@ ch15mareetashannam1
 .byte Left_slot
 .word LoadPortrait
 .word mareeta_portrait
-.text "Hold! Who are you?!"
+.text "Hold! Who are you?"
 .byte NewLine
 .text "Another imperial lapdog?!"
 .byte WaitForA
@@ -562,7 +571,7 @@ ch15mareetashannam1
 
 .byte Left_slot
 .byte ScrollText
-.text "Prince Shannan!"
+.text "Lord Shannan!"
 .byte NewLine
 .text "I would ask something of you!"
 .byte WaitForA
@@ -597,7 +606,7 @@ ch15mareetashannam1
 
 .byte Left_slot
 .byte ScrollText
-.text "Please, Prince Shannan!"
+.text "Please, Lord Shannan!"
 .byte NewLine
 .text "I want—no, I NEED to become stronger!"
 .byte NewLine
@@ -606,7 +615,7 @@ ch15mareetashannam1
 
 .byte Right_slot
 .byte ScrollText
-.text "W-well, I could take you through the motions,"
+.text "W-well, I...could take you through the motions,"
 .byte NewLine
 .text "I suppose..."
 .byte WaitForA
@@ -660,11 +669,11 @@ ch15mareetashannam1
 
 .byte Right_slot
 .byte ScrollText
-.text "Indeed."
+.text "Right."
 .byte NewLine
-.text "Now, to begin with, make a simple swing with"
+.text "Now, to begin with, make a simple swing with your"
 .byte NewLine
-.text "your sword."
+.text "sword."
 .byte WaitForA
 
 .byte Left_slot
@@ -737,7 +746,7 @@ ch15mareetashannam1
 .byte NewLine
 .text "remember?"
 .byte NewLine
-.text "Your body is working, but your mind isn't in it!"
+.text "...Put your heart into it!"
 .byte WaitForA
 
 .byte Left_slot
@@ -753,9 +762,9 @@ ch15mareetashannam1
 .byte Left_slot
 .word LoadPortrait
 .word mareeta_portrait
-.text "Focus my mind into my body..."
+.text "Put your heart into it..."
 .byte NewLine
-.text "Focus my mind into my body..."
+.text "Put your heart into it..."
 .byte NewLine
 .text "HAAA-YAH!"
 .byte WaitForA
@@ -785,7 +794,7 @@ ch15mareetashannam2
 .byte ScrollText
 .text "No, that can't be it!"
 .byte NewLine
-.text "It isn't really THAT easy, is it, Prince Shannan?"
+.text "It isn't really THAT easy, is it, Lord Shannan?"
 .byte WaitForA
 
 .byte Right_slot
@@ -815,7 +824,7 @@ ch15mareetashannam2
 
 .byte Left_slot
 .byte ScrollText
-.text "Thank you for everything, Prince Shannan!"
+.text "Thank you for everything, Lord Shannan!"
 .byte WaitForA
 .byte $03
 .word ClearPortrait
@@ -839,6 +848,9 @@ ch15mareetashannam2
 
 .word ClearPortrait
 .word RetractBox
+
+.word PauseDialogue
+.byte $3C
 
 .word LoadPortrait
 .word shannam_portrait
@@ -1197,9 +1209,9 @@ ch15closing
 .text "something of a personal journey."
 .byte WaitForA
 .byte ScrollText
-.text "If you happen to cross paths, do send word"
+.text "If you happen to cross paths, I would like for"
 .byte NewLine
-.text "that the lad is all right."
+.text "you to have a dialogue with him, Prince Leif."
 .byte WaitForA
 .byte ScrollText
 .text "That said, I offer to send you partway there"
@@ -1231,13 +1243,15 @@ ch15bishopyesno
 
 .word $2E00
 .long $8CBBBC
+.byte Left_slot
+.word LoadPortrait
+.word jeanne_portrait
+
 .byte Right_slot
 .word LoadPortrait
 .word leif_portrait
 
 .byte Left_slot
-.word LoadPortrait
-.word jeanne_portrait
 .text "Which way shall I send you?"
 
 .byte Right_slot
@@ -1257,9 +1271,9 @@ ch15leftdorias
 .byte Right_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "This path leads to Norden Way, which will take"
+.text "This path leads to Norden Way, which will take us"
 .byte NewLine
-.text "us north along the coast to Leonster."
+.text "north along the coast to Leonster."
 .byte WaitForA
 .byte ScrollText
 .text "Seasoned imperial troops will be on the lookout"
@@ -1292,19 +1306,20 @@ ch15leftdoriasyesno
 
 ch15wm1
 
-.text "Abiding by the armistice"
-.byte NewLine
+.text "Abiding by the armistice brokered by "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0036 ;arion
 .word $0907 ;y then x
-.text "brokered by Arion and Linoan, "
+.text "Arion and"
+.byte NewLine
+.text "Linoan,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0126 ;linoan
 .word $0915 ;y then x
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "the Liberation Army withdrew from Tarrah."
 .byte WaitForA
 .word ClearPortraitalt
@@ -1314,26 +1329,20 @@ ch15wm1
 .word ClearPortraitalt
 .long $82937A
 .word $0001
+.byte ScrollText
 .text "Their next goal was a matter of some debate:"
 .byte WaitForA
+.byte ScrollText
 
 .byte EndText
 
 
 ch15wm2
 
+.text "the Fiana Freeblades and the Magi wished to make"
 .byte NewLine
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0178 ;raydrik
-.word $020F ;y then x
-.text "the Fiana Freeblades and the Magi wished to"
-.byte NewLine
-.text "make for Castle Munster and liberate it first,"
+.text "for Castle Munster and liberate it first,"
 .byte WaitForA
-.word ClearPortraitalt
-.long $82937A
-.word $0001
 .byte ScrollText
 
 .byte EndText
@@ -1341,27 +1350,17 @@ ch15wm2
 
 ch15wm3
 
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0151
-.word $0112 ;y then x
-.text "while the nobles of Leonster"
+.text "while the nobles of Leonster and the sellswords of"
 .byte NewLine
-.text "and the sellswords of Tarrah"
+.text "Tarrah favored liberating Castle Leonster first."
 .byte WaitForA
-.byte NewLine
-.text "favored liberating Castle Leonster first."
-.byte WaitForA
-.word ClearPortraitalt
-.long $82937A
-.word $0001
 .byte ScrollText
 .text "Ultimately, pragmatism prevailed,"
 .byte WaitForA
+.byte ScrollText
+.text "as it was agreed that seizing Leonster first was"
 .byte NewLine
-.text "as it was agreed that seizing Leonster first"
-.byte NewLine
-.text "was more advantageous to the army's mobility."
+.text "more advantageous to the army's mobility."
 .byte WaitForA
 .byte ScrollText
 
@@ -1370,13 +1369,14 @@ ch15wm3
 
 ch15wm4
 
+.text "However, "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $070F ;y then x
-.text "However, Leif would soon have to make"
+.text "Leif would soon have to make another"
 .byte NewLine
-.text "another strategic decision..."
+.text "strategic decision..."
 .byte WaitForA
 
 .byte EndText

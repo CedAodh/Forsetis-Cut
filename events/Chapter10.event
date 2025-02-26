@@ -8,8 +8,18 @@ eventChapter10Events ; 99/C559
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/C566
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Largo
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
@@ -27,9 +37,6 @@ eventChapter10Events ; 99/C559
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; 99/C5A3
-		EVENT $0A, _LeifRonanTalk
-			CHECK_CHARS2 Leif, Ronan
-		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 99/C5A5
@@ -151,17 +158,10 @@ eventChapter10Events ; 99/C559
 	END2
 
 	_OlwenFredLeave ; 99/C7AC
-		PLAY_SOUND_WORD $00E0
-		PAUSE_SKIPPABLE 32
-		YIELD
-
-		SET_MUSIC $0A
-		YIELD
+		macroCountAllUncapturedAliveUnits Largo
+		JUMP_FALSE +
 
 		PLAY_SOUND_WORD $00F7
-
-		macroCountAllUncapturedAliveUnits Olwen
-		JUMP_FALSE +
 
 		SCROLL_CAMERA_CHAR Olwen
 		SET_CAMERA_SPEED 4
@@ -169,6 +169,8 @@ eventChapter10Events ; 99/C559
 
 		DIALOGUE ch10olwenfredleave
 		YIELD
+		
+		+
 
 		macroUnsetCharacterBitsWord Olwen, structCharacterDataRAM.Unknown3F, $80
 		macroUnsetCharacterBitsWord Fred, structCharacterDataRAM.Unknown3F, $80
@@ -184,8 +186,6 @@ eventChapter10Events ; 99/C559
 		macroSetCharacterByte Fred, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte Fred, structCharacterDataRAM.Unknown3E, $00
 		macroSetCharacterBitsWord Fred, structCharacterDataRAM.Unknown3F, $1000
-
-		+
 	END2
 	
 	_BallistaHouseVisit
@@ -196,7 +196,7 @@ eventChapter10Events ; 99/C559
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
 
-		STORE_WORD wEventEngineParameter1, SteelBow
+		STORE_WORD wEventEngineParameter1, MasterCrown
 		PAUSE_SKIPPABLE 10
 		YIELD
 
@@ -268,10 +268,6 @@ eventChapter10Events ; 99/C559
 		.long eventChapter10Data._PrepGroup1
 		.long eventChapter10Data._PrepGroup2
 	.word $0000
-	
-	_LeifRonanTalk
-		macroDialogueHouse leifronan
-	END2
 
 	_OpeningEvent ; 99/CA1F
 		macroRemoveUnit Largo

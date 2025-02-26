@@ -45,6 +45,31 @@ DSizeEnds		:= []
 .binary "asm/hacky/range2.bin"
 .here
 
+;* = $4A4000 ; $029A31
+;.logical lorom($4A4000, 1)
+
+;range_one
+;.text "    {1}"
+;.word $0000
+
+;range_onetwo
+;.text "{1}{-}{2}  "
+;.word $0000
+
+;range_two
+;.text "    {2}"
+;.word $0000
+
+;range_threeten
+;.text "{3}{-}{1}{0}"
+;.word $0000
+
+;range_threefifteen
+;.text "{3}{-}{1}{5}"
+;.word $0000
+
+;.here
+
 ; End of hacky hex edits
 
 * = $600000

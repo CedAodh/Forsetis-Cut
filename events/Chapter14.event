@@ -10,6 +10,7 @@ eventChapter14Events ; FD/9790
 	_TurnEventDefinitions ; FD/979D
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Paulus
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
@@ -19,28 +20,52 @@ eventChapter14Events ; FD/9790
 			CMP_WORD wCurrentPhase, Player
 			TEST_FLAG_UNSET $2B
 		END_DEFINITION
-		EVENT $00, _CounterIncrease
-			CMP_WORD_RANGE wCurrentTurn, 6, 15
-			CMP_WORD wCurrentPhase, Enemy
+		;EVENT $00, _CounterIncrease
+		;	CMP_WORD_RANGE wCurrentTurn, 6, 15
+		;	CMP_WORD wCurrentPhase, Enemy
+		;END_DEFINITION
+		EVENT $00, _LeftReinforcements
+			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
-			CMP_BYTE $7E4976, 0
+			CMP_WORD wCurrentTurn, 4
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT $00, _LeftReinforcements
+			CMP_WORD wCurrentTurn, 6
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT $00, _LeftReinforcements
+			CMP_WORD wCurrentTurn, 8
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _RightReinforcements
-			CMP_BYTE $7E4976, 0
+			CMP_WORD wCurrentTurn, 2
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT $00, _RightReinforcements
+			CMP_WORD wCurrentTurn, 4
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT $00, _RightReinforcements
+			CMP_WORD wCurrentTurn, 6
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT $00, _RightReinforcements
+			CMP_WORD wCurrentTurn, 8
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _WyvernReinforcements
-			CMP_BYTE $7E4976, 3
+			CMP_WORD wCurrentTurn, 7
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
-			CMP_BYTE $7E4976, 4
+			CMP_WORD wCurrentTurn, 9
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _EndingEvent
-			CMP_BYTE $7E4976, 5
+			CMP_WORD wCurrentTurn, 11
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -48,12 +73,6 @@ eventChapter14Events ; FD/9790
 	_TalkEventDefinitions ; FD/982A
 		EVENT $0A, _DeanEdaTalk
 			CHECK_CHARS2 Eda, Dean
-		END_DEFINITION
-		EVENT $0B, _GunnarSafyTalk
-			CHECK_CHARS2 GunterDialogue, Safy
-		END_DEFINITION
-		EVENT $0C, _KaneTinaTalk
-			CHECK_CHARS2 Kane, Tina
 		END_DEFINITION
 		EVENT $0D, _LeifDeanTalk
 			CHECK_CHARS2 Leif, Dean
@@ -703,14 +722,6 @@ eventChapter14Events ; FD/9790
 		macroDialogueHouse deaneda
 	END2
 	
-	_GunnarSafyTalk
-		macroDialogueHouse gunnarsafy
-	END2
-	
-	_KaneTinaTalk
-		macroDialogueHouse kanetina
-	END2
-	
 	_LeifDeanTalk
 		macroDialogueHouse leifdean
 	END2
@@ -750,6 +761,8 @@ eventChapter14Events ; FD/9790
 	MS_END
 
 	_LeftReinforcements ; FD/9F79
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter14Data._LeftReinforcementCameraCoordinates
 		YIELD
 
@@ -758,9 +771,11 @@ eventChapter14Events ; FD/9790
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_RightReinforcements ; FD/9F86
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter14Data._RightReinforcementCameraCoordinates
 		YIELD
 
@@ -772,6 +787,8 @@ eventChapter14Events ; FD/9790
 	END2
 
 	_SorcererReinforcements ; FD/9F93
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter14Data._SorcererReinforcementCameraCoordinates
 		YIELD
 
@@ -868,12 +885,25 @@ eventChapter14Events ; FD/9790
 		.long eventChapter14Data._PrepEnemies
 	.word $0000
 
-	_OpeningEvent ; FD/A007
-		STORE_WORD wEventEngineCharacterTarget, Dean
+	_OpeningEvent ; FD/A007		
+		CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+		
+		SET_CAMERA [11, 20]
+		
+		STORE_WORD wEventEngineCharacterTarget, Baldach
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
-
-		STORE_WORD wEventEngineCharacterTarget, Eda
+		
+		STORE_WORD wEventEngineCharacterTarget, Paulus
 		CALL_ASM_LOOP rlASMCRemoveUnit, $0000
+		
+		LOAD1 eventChapter14Data._DeanGroup
+		;WAIT_MOVE
+		;YIELD
+		
+		PAUSE_SKIPPABLE 16
+		YIELD
+		
+		FADE_IN $02
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
 
@@ -890,25 +920,31 @@ eventChapter14Events ; FD/9790
 		CALL_ASM_SKIPPABLE rlEventEngineCreateProcAndSetActive, $0000
 		YIELD
 
-		SCROLL_CAMERA_ADDRESS eventChapter14Data._Opening1CameraCoordinates
-		YIELD
+		;SCROLL_CAMERA_ADDRESS eventChapter14Data._Opening1CameraCoordinates
+		;YIELD
 
-		LOAD1 eventChapter14Data._DeanGroup
-		WAIT_MOVE
-		YIELD
+		;LOAD1 eventChapter14Data._DeanGroup
+		;WAIT_MOVE
+		;YIELD
 
-		SCROLL_CAMERA_CHAR Paulus
-		SET_CAMERA_SPEED 4
-		YIELD
+		;SCROLL_CAMERA_CHAR Paulus
+		;SET_CAMERA_SPEED 4
+		;YIELD
 
 		DIALOGUE ch14opening1
 		YIELD
-
-		MOVE_UNIT Baldach, [0, 0], [16, 17], 1, None
+		
+		MOVE_UNIT Baldach, [0, 0], [16, 15], 1, None
 		YIELD_UNK
-
-		PAUSE_SKIPPABLE 16
+		
+		MOVE_UNIT Paulus, [0, 0], [8, 20], 1, None
+		YIELD_UNK
+		
+		PAUSE_SKIPPABLE 96
 		YIELD
+		
+		MOVE_UNIT Paulus, [0, 0], [3, 20], 1, _PaulusMove
+		YIELD_UNK
 
 		WAIT_MOVE
 		YIELD
@@ -942,7 +978,19 @@ eventChapter14Events ; FD/9790
 		WAIT_MOVE
 		YIELD
 		
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $4A
+		YIELD
+		
+		LOAD1 eventChapter14Data._GunnarGroup
+		WAIT_MOVE
+		YIELD
+		
 		DIALOGUE ch14opening3
+		
 		STORE_WORD wEventEngineCharacterTarget, Asbel
 		CALL_ASM_LOOP rlASMCCountPlayerUnitUncapturedAlive, $0000
 		JUMP_FALSE +
@@ -950,16 +998,28 @@ eventChapter14Events ; FD/9790
 		STORE_LONG lEventEngineLongParameter, ch14opening4
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
+		JUMP ++
+		
 		+
 		
-		STORE_LONG lEventEngineLongParameter, ch14opening5
+		STORE_LONG lEventEngineLongParameter, ch14openingnoasbel
 		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 		
-		STORE_LONG lEventEngineUnitGroupPointer, eventChapter14Data._GunnarGroup
-		CALL_ASM_LOOP rlASMCLoadUnitGroup, $0000
-		YIELD_UNK
+		+
 		
+		YIELD
 	END2
+	
+	_PaulusMove ; FD/851A
+		MS_FACE_RIGHT 1
+		MS_SET_SPEED 8
+		MS_MOVE_LEFT_KEEP_DIRECTION
+		MS_MOVE_LEFT
+		MS_SET_SPEED 16
+		MS_MOVE_LEFT
+		MS_MOVE_LEFT
+		MS_MOVE_LEFT
+	MS_END
 
 	_Unknown ; FD/A0AE
 	.word $0001

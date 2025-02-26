@@ -8,6 +8,15 @@ eventChapter1Events ; FD/8000
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/800D
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, _FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
@@ -97,7 +106,7 @@ eventChapter1Events ; FD/8000
 	END2
 
 	_IronSwordHouse ; FD/823A
-		macroItemHouse ch1ironswordhouse, IronSword, [13, 10], $03F0
+		macroItemHouse ch1ironswordhouse, Shortsword, [13, 10], $03F0
 	END2
 
 	_Unused1 ; FD/829D
@@ -188,7 +197,7 @@ eventChapter1Events ; FD/8000
 		PAUSE_SKIPPABLE 32
 		YIELD
 
-		SET_MUSIC $46
+		SET_MUSIC $39
 		YIELD
 
 		macroChapterTitlePopup ch1titlename 
@@ -200,7 +209,7 @@ eventChapter1Events ; FD/8000
 		WAIT_MOVE
 		YIELD
 
-		DIALOGUE ch25ending1augustus
+		DIALOGUE ch1op1
 		YIELD
 
 		SCROLL_CAMERA_ADDRESS eventChapter1Data._Opening2CameraCoordinates
@@ -230,7 +239,7 @@ eventChapter1Events ; FD/8000
 		WAIT_MOVE
 		YIELD
 
-		DIALOGUE ch25opening2
+		DIALOGUE ch1op2
 		YIELD
 
 		MOVE_UNIT Raydrik, [0, 0], [0, 0], 1, _RaydrikMove1
@@ -334,8 +343,8 @@ eventChapter1Events ; FD/8000
 		DIALOGUE ch1op4
 		YIELD
 
-		macroSetCharacterByte Eyvel, structCharacterDataRAM.LeadershipStars, 1
-		macroSetCharacterByte Finn, structCharacterDataRAM.LeadershipStars, 1
+		macroDismountUnit Olwen
+		macroDismountUnit Robert
 	END3
 
 	_HalvanMove3 ; FD/851A
@@ -375,7 +384,7 @@ eventChapter1Events ; FD/8000
 	_RaydrikMove2 ; FD/8534
 		MS_MOVE_LEFT
 	MS_END
-
+	
 	_EndingEvent ; FD/8536
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 16
@@ -416,3 +425,102 @@ eventChapter1Events ; FD/8000
 
 		CALL_ASM_LOOP rlASMCChapterEnd, $0000
 	END1
+	
+	_FatigueIncrement
+		STORE_WORD wEventEngineParameter1, StructCharacterDataRAM.Fatigue
+		STORE_WORD wEventEngineParameter2, 1
+		CALL_ASM_LOOP rlIncrementFatigueForAllUnits, $0000
+		
+		CALL_ASM_LOOP $83ACEA, $0000
+	END2
+	
+	rlEliteModeCheckForFatigue
+	
+	.al
+	.xl
+	.autsiz
+	.databank ?
+	
+	lda wParagonModeEnable,b
+    bit #$0001
+    beq +
+	
+	sec
+	rtl
+
+	+
+	clc
+	rtl
+	
+	rlIncrementFatigueForAllUnits
+
+	.al
+	.xl
+	.autsiz
+	.databank ?
+
+	phb
+	php
+
+	sep #$20
+	lda #`aTargetingCharacterBuffer
+	pha
+	rep #$20
+	plb
+
+	.databank `aTargetingCharacterBuffer
+
+	lda #<>rlIncrementFatigueForAllUnitsEffect
+	sta lR25
+	lda #>`rlIncrementFatigueForAllUnitsEffect
+	sta lR25+1
+	jsl rlRunRoutineForAllUnits
+	plp
+	plb
+	clc
+	rtl
+	
+	rlIncrementFatigueForAllUnitsEffect
+
+	.al
+	.xl
+	.autsiz
+	.databank ?
+
+	lda aTargetingCharacterBuffer.Fatigue,b
+	cmp #99
+	beq _Undeployed
+	
+	lda aTargetingCharacterBuffer.TurnStatus,b
+	bit #TurnStatusHidden
+	bne _Hidden
+	
+	bra _Deployed
+	
+	_Hidden
+	
+	lda aTargetingCharacterBuffer.TurnStatus,b
+	bit #TurnStatusRescued | TurnStatusCaptured
+	beq _Undeployed
+	
+	_Deployed
+
+	lda #aTargetingCharacterBuffer
+	clc
+	adc wEventEngineParameter1,b
+	tay
+
+	sep #$20
+	lda wEventEngineParameter2,b
+	clc
+	adc $0000,b,y
+	sta $0000,b,y
+	rep #$20
+
+	lda #aTargetingCharacterBuffer
+	sta wR1
+	jsl $839041
+
+	_Undeployed
+	
+	rtl

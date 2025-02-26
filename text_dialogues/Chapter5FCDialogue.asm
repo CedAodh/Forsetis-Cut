@@ -254,7 +254,7 @@ velddislikesraydrik
 .text "Magnificent indeed..."
 .byte WaitForA
 .byte NewLine
-.text "It is known as the Loptrian Fang—a blade"
+.text "It is known as the Loptr Fang—a blade"
 .byte NewLine
 .text "imbued with Loptous's own magic and protection"
 .byte NewLine
@@ -296,9 +296,9 @@ velddislikesraydrik
 
 .byte left_slot
 .byte ScrollText
-.text "Originally, the Loptrian Fang was to be"
+.text "Originally, the Loptr Fang was to be"
 .byte NewLine
-.text "bestowed upon Marquess Gustav, he who"
+.text "bestowed upon Marquess Gustaf, he who"
 .byte NewLine
 .text "rules over Leonster, as you well know."
 .byte WaitForA

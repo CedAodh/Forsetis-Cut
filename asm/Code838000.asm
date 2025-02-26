@@ -584,16 +584,11 @@ rsGetRenewalHealAmount ; 83/8335
 	rts
 
 	+
-	lda #5    ; the base amount...?
-    sta wR14
-    nop       ; the randomizer is gone,
-    nop       ; so the space is filled with
-    nop       ; those nope instructions
-    nop
-    nop
-    nop
-    nop
-    nop
+	lda #1    ; the variation
+    	jsl rlUnknown80B0E6  ; the randomizer
+    	clc
+    	adc #4    ; added to the base
+    	sta wR14
 
 	lda aTargetingCharacterBuffer.MaxHP,b
 	and #$00FF
@@ -679,7 +674,7 @@ rsGetPoisonDamageAmount ; 83/83AD
 	cmp #StatusPoison
 	bne +
 
-	lda #3
+	lda #7
 	jsl rlUnknown80B0E6
 	sep #$20
 	inc a

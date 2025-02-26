@@ -44,8 +44,6 @@ eventChapter8xData ; B1/D851
 		
 		UNIT BanditHunter, Enemy, [8, 1], [8, 1], Gomez, [SteelBow], 10, False, [$06, $03, $00, $00]
 		UNIT BanditHunter, Enemy, [12, 1], [12, 1], Gomez, [SteelBow], 11, False, [$06, $03, $00, $00]
-		UNIT BanditHunter, Enemy, [16, 2], [16, 2], Gomez, [SteelBow], 13, False, [$06, $03, $00, $00]
-		UNIT BanditHunter, Enemy, [18, 2], [18, 2], Gomez, [SteelBow], 11, False, [$06, $03, $00, $00]
 		UNIT BanditHunter, Enemy, [4, 1], [4, 1], Gomez, [SteelBow], 10, False, [$06, $10, $00, $00]
 		UNIT ThiefEnemy1, Enemy, [13, 1], [13, 1], Gomez, [Lockpick, SlimSword], 7, False, [$00, $06, $02, $00]
 	UNIT

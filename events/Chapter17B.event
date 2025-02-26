@@ -8,6 +8,15 @@ eventChapter17BEvents ; FD/C4D0
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/C4DD
+		EVENT $15, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $15
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
 		END_DEFINITION
@@ -22,36 +31,36 @@ eventChapter17BEvents ; FD/C4D0
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 7
 		END_DEFINITION
-		EVENT $00, _DummyReinforcements2
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 5, 25
-			ROLL_RNG 60
-		END_DEFINITION
-		EVENT $00, _DummyReinforcements3
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 3, 20
-			ROLL_RNG 60
-		END_DEFINITION
-		EVENT $00, _DummyReinforcements4
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 10, 20
-			ROLL_RNG 60
-		END_DEFINITION
-		EVENT $00, _DummyReinforcements5
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 10, 20
-			ROLL_RNG 60
-		END_DEFINITION
-		EVENT $00, _DummyReinforcements6
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 10, 20
-			ROLL_RNG 60
-		END_DEFINITION
-		EVENT $00, _DummyReinforcements7
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD_RANGE wCurrentTurn, 10, 20
-			ROLL_RNG 60
-		END_DEFINITION
+		;EVENT $00, _DummyReinforcements2
+		;	CMP_WORD wCurrentPhase, Enemy
+		;	CMP_WORD_RANGE wCurrentTurn, 5, 25
+		;	ROLL_RNG 60
+		;END_DEFINITION
+		;EVENT $00, _DummyReinforcements3
+		;	CMP_WORD wCurrentPhase, Enemy
+		;	CMP_WORD_RANGE wCurrentTurn, 3, 20
+		;	ROLL_RNG 60
+		;END_DEFINITION
+		;EVENT $00, _DummyReinforcements4
+		;	CMP_WORD wCurrentPhase, Enemy
+		;	CMP_WORD_RANGE wCurrentTurn, 10, 20
+		;	ROLL_RNG 60
+		;END_DEFINITION
+		;EVENT $00, _DummyReinforcements5
+		;	CMP_WORD wCurrentPhase, Enemy
+		;	CMP_WORD_RANGE wCurrentTurn, 10, 20
+		;	ROLL_RNG 60
+		;END_DEFINITION
+		;EVENT $00, _DummyReinforcements6
+		;	CMP_WORD wCurrentPhase, Enemy
+		;	CMP_WORD_RANGE wCurrentTurn, 10, 20
+		;	ROLL_RNG 60
+		;END_DEFINITION
+		;EVENT $00, _DummyReinforcements7
+		;	CMP_WORD wCurrentPhase, Enemy
+		;	CMP_WORD_RANGE wCurrentTurn, 10, 20
+		;	ROLL_RNG 60
+		;END_DEFINITION
 		EVENT $0A, _AmaldaMove
 			TEST_FLAG_SET $09
 			CMP_WORD wCurrentPhase, Enemy
@@ -61,18 +70,6 @@ eventChapter17BEvents ; FD/C4D0
 	_TalkEventDefinitions ; FD/C5A2
 		EVENT $04, _ShannamDaisyTalk
 			CHECK_CHARS2 Shannam, Daisy
-		END_DEFINITION
-		EVENT $0D, _CallionMirandaTalk
-			CHECK_CHARS2 Callion, Miranda
-		END_DEFINITION
-		EVENT $0E, _GladeRobertTalk
-			CHECK_CHARS2 Glade, Robert
-		END_DEFINITION
-		EVENT $0F, _SafySalemTalk
-			CHECK_CHARS2 Safy, Salem
-		END_DEFINITION
-		EVENT $1A, _HalvanMareetaTalk
-			CHECK_CHARS2 Halvan, Mareeta
 		END_DEFINITION
         EVENT $1B, _KarinIliosTalk
 			CHECK_CHARS2 Karin, Ilios
@@ -87,10 +84,6 @@ eventChapter17BEvents ; FD/C4D0
 			CHECK_CHARS2 Leif, Ilios
 			RUN_ASM rlCheckOlwenDeadOrUnrecruited
 			TEST_FLAG_UNSET $1B
-		END_DEFINITION
-		EVENT $1E, _FredIliosTalk
-			CHECK_CHARS2 Ilios, Fred
-			TEST_FLAG_SET $1D
 		END_DEFINITION	
 	END_DEFINITION_ARRAY
 
@@ -200,7 +193,7 @@ eventChapter17BEvents ; FD/C4D0
 	END_DEFINITION_ARRAY
 
 	_BeatriceSpawn ; FD/C70C
-		PLAY_SOUND_WORD $E0
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
 
@@ -358,53 +351,9 @@ eventChapter17BEvents ; FD/C4D0
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
 	END2
-	
-	_CallionMirandaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE callionmiranda
-		YIELD
-	END2
-	
-	_GladeRobertTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE robertgladeAB
-		YIELD
-	END2
-	
-	_SafySalemTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE safysalemAB
-		YIELD
-	END2
 
-	_HalvanMareetaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE halvanmareetaAB
-		YIELD
-	END2
-
-        _LeifIliosTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE leifilios
-		YIELD
-	END2
-	
-	_FredIliosTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE fredmockilios
-		YIELD
+    _LeifIliosTalk
+		macroDialogueHouse leifilios
 	END2
 	
 	_KarinIliosTalk ; FD/B394

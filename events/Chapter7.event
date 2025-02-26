@@ -8,6 +8,15 @@ eventChapter7Events ; 99/B023
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/B030	
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
@@ -170,6 +179,8 @@ eventChapter7Events ; 99/B023
 	.word $0000
 
 	_CavalierReinforcements ; 99/B20D
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter7Data._CavalierReinforcementsCameraCoordinates
 		YIELD
 
@@ -181,6 +192,8 @@ eventChapter7Events ; 99/B023
 	END2
 
 	_MageBishopReinforcements ; 99/B21A
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter7Data._MageBishopReinforcementsCameraCoordinates
 		YIELD
 
@@ -192,6 +205,8 @@ eventChapter7Events ; 99/B023
 	END2
 
 	_SoldierArmorReinforcements ; 99/B227
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter7Data._SoldierArmorReinforcementsCameraCoordinates
 		YIELD
 
@@ -536,7 +551,7 @@ eventChapter7Events ; 99/B023
 		SCROLL_CAMERA_ADDRESS eventChapter7Data._RaydrikCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter7Data._RaydrikGroup
+		LOAD1 eventChapter7Data._RaydrikGroup
 		WAIT_MOVE
 		YIELD
 
@@ -545,7 +560,7 @@ eventChapter7Events ; 99/B023
 		SCROLL_CAMERA_ADDRESS eventChapter7Data._EisenhauCameraCoordinates
 		YIELD
 
-		LOAD2 eventChapter7Data._EisenhauGroup
+		LOAD1 eventChapter7Data._EisenhauGroup
 		WAIT_MOVE
 		YIELD
 

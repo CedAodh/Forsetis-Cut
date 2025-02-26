@@ -8,6 +8,19 @@ eventChapter15Events ; FD/A812
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/A81F
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT $00, _BrigandReinforcements
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 5, 7
+		END_DEFINITION
 		EVENT $00, _BrigandHunterReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 1, 9
@@ -32,10 +45,6 @@ eventChapter15Events ; FD/A812
 		EVENT $00, _BrigandHunterThiefReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD_RANGE wCurrentTurn, 18, 19
-		END_DEFINITION
-		EVENT $00, _BrigandReinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 5, 7
 		END_DEFINITION
 		EVENT $00, _RalphAmaldaSpawn
 			CMP_WORD wCurrentPhase, NPC
@@ -69,30 +78,11 @@ eventChapter15Events ; FD/A812
 		EVENT $0B, _DaisyAsaelloTalk
 			CHECK_CHARS2 Daisy, Asaello
 		END_DEFINITION
-		EVENT $0C, _AlbaEdaTalk
-			CHECK_CHARS2 Alba, Eda
-		END_DEFINITION
-		EVENT $0D, _HomerNannaTalk
-			CHECK_CHARS2 Homer, Nanna
-		END_DEFINITION
-		EVENT $0E, _GladePerneTalk
-			CHECK_CHARS2 Glade, Perne
-		END_DEFINITION
-		EVENT $0F, _LinoanSafyTalk
-			CHECK_CHARS2 Linoan, Safy
-		END_DEFINITION
-		EVENT $10, _AsaelloTrudeTalk
-			CHECK_CHARS2 Asaello, Trude
-			TEST_FLAG_SET $0B
-		END_DEFINITION
 		EVENT $11, _LeifAsaelloTalk
 			CHECK_CHARS2 Leif, Asaello
 			TEST_FLAG_SET $0B
 		END_DEFINITION
-		EVENT $12, _TanyaMareetaTalk
-			CHECK_CHARS2 Tanya, Mareeta
-		END_DEFINITION
-		EVENT $0B, _DaisyAsaelloTalk
+		EVENT $0C, _DaisyAsaelloTalk
 			CHECK_CHARS2 Shiva, Asaello
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -241,6 +231,8 @@ eventChapter15Events ; FD/A812
 		rtl
 
 	_BrigandHunterReinforcements ; FD/A9FF
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter15Data._BrigandHunterCameraCoordinates
 		YIELD
 
@@ -252,6 +244,8 @@ eventChapter15Events ; FD/A812
 	END2
 
 	_ThiefMyrmidonReinforcements ; FD/AA0C
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter15Data._ThiefMyrmidonCameraCoordinates
 		YIELD
 
@@ -263,6 +257,8 @@ eventChapter15Events ; FD/A812
 	END2
 
 	_WarriorReinforcements ; FD/AA19
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter15Data._WarriorCameraCoordinates
 		YIELD
 
@@ -274,6 +270,8 @@ eventChapter15Events ; FD/A812
 	END2
 
 	_ShannamSpawn ; FD/AA26
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter15Data._ShannamCameraCoordinates
 		YIELD
 
@@ -285,6 +283,8 @@ eventChapter15Events ; FD/A812
 	END2
 
 	_BrigandHunterThiefReinforcements ; FD/AA33
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter15Data._BrigandHunterThiefCameraCoordinates
 		YIELD
 
@@ -296,6 +296,8 @@ eventChapter15Events ; FD/A812
 	END2
 
 	_BrigandReinforcements ; FD/AA40
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter15Data._BrigandCameraCoordinates
 		YIELD
 
@@ -304,7 +306,7 @@ eventChapter15Events ; FD/A812
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_RalphAmaldaSpawn ; FD/AA4D
 		SCROLL_CAMERA_SPEED [18, 14], 4
@@ -345,6 +347,7 @@ eventChapter15Events ; FD/A812
 		;+
 		
 		LOAD1 eventChapter15Data._RalphAmaldaGroup
+		CALL_ASM_LONG_SKIPPABLE rlASMCChangeMapMusic, $31
 		WAIT_MOVE
 		YIELD
 
@@ -566,62 +569,8 @@ eventChapter15Events ; FD/A812
 		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 	END2
 	
-	_AlbaEdaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE albaeda
-		STORE_LONG lEventEngineLongParameter, albaeda2
-		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
-		YIELD
-	END2
-	
-	_HomerNannaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE homernanna1
-		YIELD
-	END2
-	
-	_GladePerneTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE gladeperne
-		YIELD
-	END2
-	
-	_LinoanSafyTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE safylinoan
-		YIELD
-	END2
-	
-	_AsaelloTrudeTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE asaellotrude
-		YIELD
-	END2
-	
 	_LeifAsaelloTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE leifasaello
-		YIELD
-	END2
-	
-	_TanyaMareetaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE ch15tanyamareeta
-		YIELD
+		macroDialogueHouse leifasaello
 	END2
 
 	_AmaldaFlee ; FD/AC57
@@ -954,9 +903,15 @@ eventChapter15Events ; FD/A812
 	END2
 	
 	_LinoanHammerne
+		STORE_WORD wEventEngineParameter1, Chapter14x
+		CALL_ASM_LOOP rlASMCGetChapterTurncount, $0000
+		JUMP_TRUE +
+	
 		STORE_WORD wEventEngineCharacterTarget, Linoan
 		STORE_WORD wEventEngineParameter1, Hammerne
 		CALL_ASM_LOOP rlASMCGiveUnitItemSilent, $0000
+		
+		+
 	END2
 	
 	_Chapter2xCheck ; 9993F5

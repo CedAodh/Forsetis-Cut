@@ -1,7 +1,7 @@
 //THESE WORDS ARE BAKED INTO TILEMAPS
 
 List
-Trade
+Trade 
 Ar[mory
 Supply
 Discard
@@ -149,7 +149,7 @@ Brooke
 (Mueller
 Reinkoch
 Pal[man
-Gustav
+Gustaf
 )Wolfe
 Baráth
 //Deimetor
@@ -214,7 +214,7 @@ Friege
 Gelbritter
 Pitfighter
 Leonster
-Loptrian
+Loptr 
 (Magi  
 (Munster
 (Mercenary
@@ -255,37 +255,9 @@ Archers, Bo12
 Travant
 
 
-//FACTIONS-------------------------------------------------
-
-Liberation Ar[my
-Raydrik's Unit
-Unkno]wn Party
-Tarrah's Ar[my
-//Leonster's Ar[my
-  Leonster34Ar[my
-//(Munster's Ar[my
-  (Munster34Ar[my
-Thracia's Ar[my
-Civilians
-Friege's Ar[my
- Division
-Gelbritter
-Ulster's Ar[my
-Bergrosen 
-Lifis Pirates
-(Magi Squad
-Bandits
-Resistance
-Pegasus Corps
-Cullough's Boys 
-Dandelion
-Sells]words
-Fiana Freeblades
-Leif's Entourage
-
-
 //TERRAIN--------------------------------------------------
 
+Dra]wbridge
 Peak
 Thicket
 Cliff
@@ -317,10 +289,37 @@ Door
 Chest
 Exit
 Pillar
-Dra]wbridge
 Secret
 Altar
 Seal
+
+//FACTIONS-------------------------------------------------
+
+Liberation Ar[my
+Raydrik's Unit
+Unkno]wn Party
+Tarrah's Ar[my
+//Leonster's Ar[my
+  Leonster34Ar[my
+//(Munster's Ar[my
+  (Munster34Ar[my
+Thracia's Ar[my
+Civilians
+Friege's Ar[my
+ Division
+Gelbritter
+Ulster's Ar[my
+Bergrosen 
+Lifis Pirates
+(Magi Squad
+Bandits
+Resistance
+Pegasus Corps
+Cullough's Boys 
+Dandelion
+Sells]words
+Fiana Freeblades
+Leif's Entourage
 
 
 //MENU COMMANDS---------------------------------------------
@@ -510,7 +509,7 @@ Dark Prince
 Fighter
 Pegasus Rider
 Soldier
-Loptrian (Mage
+Loptr (Mage 
 (Marauder
 
 //ITEMS-------------------------------------------
@@ -525,7 +524,7 @@ Berserk Edge
 Sleep Edge
 Beo Blade
 Blessed S]word
-Loptrian Fang
+Loptr Fang
 Bragi's Blade
 Light Brand
 Brave S]word
@@ -764,9 +763,9 @@ staves and status
 conditions. Avoids
 all fatal da[mage
 
-User attacks first
-]when the ene[my
-initiates co[mbat
+Attack first [when
+opponent initiates
+co[mbat 
 
 If user's
  and
@@ -802,13 +801,13 @@ ite[m ]with less )Wt
 than the user's Con 
 
 //Use Dance command
-  Use Dance conand
-to grant an ally
-another action
+Can use the Dance 
+conand to grant 
+another action to  
+an adjacent ally
 
-Allo]ws user to
-buy fro[m shops
-at half price
+Buy fro[m shops at
+half price
 
 Class Skill
 Personal Skill
@@ -1022,8 +1021,7 @@ Leif, Casts light
 Increases Lck
 Use to heal all
 
-Panzerritter
-Lanzenritter
+Confers 
 A gift fro[m an 
 Increases Lck
 
@@ -1097,7 +1095,7 @@ Luck
 chance to da[mage
 its user instead
 
-Loptrians
+Loptr 
 Reduces target's
  to
 Cannot kill
@@ -1269,9 +1267,9 @@ Destiny
 Battalion
 Bandits
 Raydrik
-Loptrians
+Loptr 
 Thracia
-Loptrians
+Loptr 
 Battalion
 
 Victory

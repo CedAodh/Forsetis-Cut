@@ -8,18 +8,30 @@ eventChapter9Events ; 8C/F011
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 8C/F01E
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Merloch
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
-		EVENT FlagAlwaysZero, _EnemyAIChange1
+		EVENT $0B, _EnemyAIChange1
 			TEST_FLAG_SET FlagBossDeath
+			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _EnemyAIChange2
 			CMP_WORD wCurrentTurn, 7
 			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -39,9 +51,6 @@ eventChapter9Events ; 8C/F011
 		EVENT $0A, _RobertSelphinaTalk
 			CHECK_CHARS2 Robert, Selphina
 		END_DEFINITION
-		EVENT $0B, _LeifMartyTalk
-			CHECK_CHARS2 Leif, Marty
-		END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_LocationEventDefinitions ; 8C/F077
@@ -56,21 +65,21 @@ eventChapter9Events ; 8C/F011
 	END_DEFINITION_ARRAY
 
 	_BeforeActionEventDefinitions ; 8C/F0A3
-		EVENT $09, _PlayerRetreat
-			CMP_BITS $7E4F98, $0008
-			macroEventConditionCheckCoords [6, 4]
-			CMP_WORD aSelectedCharacterBuffer.Character, Leif
-		END_DEFINITION
-		EVENT $09, _PlayerRetreat
-			CMP_BITS $7E4F98, $0008
-			macroEventConditionCheckCoords [6, 4]
-			CHECK_CARRYING Leif
-		END_DEFINITION
-		EVENT FlagAlwaysZero, _PlayerRetreat
-			CMP_BITS $7E4F98, $0008
-			TEST_FLAG_UNSET $09
-			macroEventConditionCheckCoords [6, 4]
-		END_DEFINITION
+		;EVENT $09, _PlayerRetreat
+		;	CMP_BITS $7E4F98, $0008
+		;	macroEventConditionCheckCoords [6, 4]
+		;	CMP_WORD aSelectedCharacterBuffer.Character, Leif
+		;END_DEFINITION
+		;EVENT $09, _PlayerRetreat
+		;	CMP_BITS $7E4F98, $0008
+		;	macroEventConditionCheckCoords [6, 4]
+		;	CHECK_CARRYING Leif
+		;END_DEFINITION
+		;EVENT FlagAlwaysZero, _PlayerRetreat
+		;	CMP_BITS $7E4F98, $0008
+		;	TEST_FLAG_UNSET $09
+		;	macroEventConditionCheckCoords [6, 4]
+		;END_DEFINITION
 		EVENT FlagAlwaysZero, _PlayerLoss
 			macroEventConditionCheckCoords [6, 4]
 			CMP_WORD wCurrentPhase, Enemy
@@ -78,8 +87,14 @@ eventChapter9Events ; 8C/F011
 	END_DEFINITION_ARRAY
 
 	_AfterActionEventDefinitions ; 8C/F104
-		EVENT FlagAlwaysZero, _EndingEvent
-			TEST_FLAG_SET $09
+		;EVENT FlagAlwaysZero, _EndingEvent
+		;	TEST_FLAG_SET $09
+		;END_DEFINITION
+		EVENT $00, _EndingEvent
+			CMP_BITS $7E4F98, $0008
+			CMP_BYTE wCursorXCoord, 6
+			CMP_BYTE wCursorYCoord, 4
+			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -133,10 +148,6 @@ eventChapter9Events ; 8C/F011
 		macroDialogueHouse robertselphina
 	END2
 	
-	_LeifMartyTalk
-		macroDialogueHouse leifmarty
-	END2
-	
 	_CallionSelphinaTalk ; 8C/F171
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
@@ -158,14 +169,8 @@ eventChapter9Events ; 8C/F011
 	END2
 	
 	_EnemyAIChange1 ; 8C/F1C2
-		macroCountAllUncapturedAliveUnits Merloch
-		JUMP_FALSE +
-
-		SCROLL_CAMERA_CHAR Merloch
-		SET_CAMERA_SPEED 4
-		YIELD
-
-		+
+		PLAY_SOUND_WORD $00E8
+		
 		macroSetCharacterByte ThraciaBishop, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte ThraciaBishop, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte ThraciaBishop, structCharacterDataRAM.AI2, $00
@@ -178,6 +183,8 @@ eventChapter9Events ; 8C/F011
 	END2
 
 	_EnemyAIChange2 ; 8C/F297
+		PLAY_SOUND_WORD $00E8
+		
 		macroCountAllUncapturedAliveUnits Merloch
 		JUMP_FALSE +
 
@@ -218,7 +225,6 @@ eventChapter9Events ; 8C/F011
 	_PrepGroups ; 8C/F470
 		.long eventChapter9Data._PrepGroup1
 		.long eventChapter9Data._PrepGroup2
-		.long eventChapter9Data._PrepGroup3
 	.word $0000
 
 	_OpeningEvent ; 8C/F478
@@ -391,7 +397,7 @@ eventChapter9Events ; 8C/F011
 		FADE_OUT $01
 		YIELD
 
-		CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
+		;CALL_ASM_LOOP rlASMCSetUnitsLeftBehindAsCaptured, $0000
 
 		FADE_OUT $01
 		YIELD

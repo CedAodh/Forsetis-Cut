@@ -8,15 +8,24 @@ eventChapter11Events ; 99/CB04
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/CB11
-		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
-			CHECK_DEAD Kempf
-		END_DEFINITION
-		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
 			CMP_WORD wCurrentTurn, 20
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
+		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
+			CHECK_DEAD Kempf
+			CMP_WORD wCurrentPhase, Enemy
+		END_DEFINITION
 		EVENT $0A, _KempfLeave
 			TEST_FLAG_SET $09
+		END_DEFINITION
+		EVENT $0A, _KempfLeave
+			TEST_FLAG_SET $21
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _KempfDialogue
 			CMP_WORD wCurrentTurn, 1
@@ -65,6 +74,9 @@ eventChapter11Events ; 99/CB04
 		EVENT $06, _FredChange
 			macroEventConditionCheckCoordRanges [5, 8], [11, 11]
 			CHECK_CARRYING Leif
+		END_DEFINITION
+		EVENT $0A, _KempfLeave
+			macroEventConditionCheckCoordRanges [10, 1], [14, 3]
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -356,13 +368,15 @@ eventChapter11Events ; 99/CB04
 	END2
 	
 	_BallistaeSpawn
-		SET_CAMERA [8, 12]
+		PLAY_SOUND_WORD $00E8
+		
+		SCROLL_CAMERA_ADDRESS eventChapter11Data._BallisticianReinforcementsCameraCoordinates
 		YIELD
 		
 		LOAD2 eventChapter11Data._BallistaGroup
 		WAIT_MOVE
 		YIELD
-	_END1
+	END2
 
 	_NPCRetreat ; 99/D1B6
 		EVENT_CMP_BYTE_AT_EQ $7E402E, $05
@@ -489,7 +503,7 @@ eventChapter11Events ; 99/CB04
 		WAIT_MOVE
 		YIELD
 
-		macroUnsetCharacterBitsWord Fred, structCharacterDataRAM.Skills2, (Skill2Anchor | (Skill3Immortal << 8))
+		macroUnsetCharacterBitsWord Fred, structCharacterDataRAM.Skills2, Skill3Immortal << 8
 
 		PLAY_SOUND_BYTE $6C
 
@@ -623,7 +637,7 @@ eventChapter11Events ; 99/CB04
 		EVENT_TEST_FLAG_SET FlagFredSaved
 		JUMP_FALSE +
 
-		EVENT_CMP_WORD_AT_LT wCurrentTurn, 30
+		EVENT_CMP_WORD_AT_LT wCurrentTurn, 21
 		JUMP_FALSE ++
 
 		+

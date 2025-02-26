@@ -179,6 +179,15 @@ r1ActionStructSetSpecialWeaponMightreplacement ; 83/D365
 			  lda structActionStructEntry.BattleDefense,b,x
               lsr a
               sta structActionStructEntry.BattleDefense,b,x
+			  
+		  +  
+		  lda structActionStructEntry.EquippedItemID1,b,y
+          cmp #ShadowSpear
+          bne +
+		  
+			  lda structActionStructEntry.BattleDefense,b,x
+              lsr a
+              sta structActionStructEntry.BattleDefense,b,x
 			 
 		  +	
 		  lda structActionStructEntry.EquippedItemID1,b,y
@@ -193,6 +202,7 @@ r1ActionStructSetSpecialWeaponMightreplacement ; 83/D365
               sta structActionStructEntry.BattleDefense,b,x
 
           +
+		  
           rep #$30
 
           rtl
@@ -357,23 +367,44 @@ r1ActionStructRoundCheckAssailReplacement ; 83/D66E
 
 .endlogical
 
+
+
 * := $01FD60
 .logical lorom ($01FD60, 1)
 
-;AD E4 A4 89 00 02 F0 06
+.al
+.xl
+.autsiz
+.databank ?
 
-.byte $E2, $20, $AD, $35, $A5, $38, $ED, $A6, $A5, $10, $03, $49, $FF, $1A, $C9, $04, $90, $2E, $AD, $35, $A5, $CD, $A6, $A5, $90, $0e
+.byte $E2, $20, $AD, $35, $A5, $38, $ED, $A6, $A5, $10, $03, $49, $FF, $1A, $C9, $04, $90, $39, $AD, $35, $A5, $CD, $A6, $A5, $90, $0e
 
-.byte $A2, $EF, $A4, $A0, $60, $A5, $AD, $E0, $A4, $8D, $E2, $A4, $80, $1C
+.byte $A2, $EF, $A4, $A0, $60, $A5, $AD, $E0, $A4, $8D, $E2, $A4, $80, $27
 
 .byte $9C, $E0, $A4, $AD, $85, $A6
 
 blt +
 
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+
 .byte $A2, $60, $A5, $A0, $EF, $A4, $AD, $E0, $A4, $09, $02, $8D, $E2, $A4, $80, $04
 
 +
 
-.byte $C2, $30, $18, $60, $C2, $30, $A9, $00, $01, $8D, $E4, $A4, $38, $60
+.byte $C2, $30, $18, $60
+
++
+
+.byte $C2, $30, $A9, $00, $01, $8D, $E4, $A4, $38, $60
 
 .endlogical

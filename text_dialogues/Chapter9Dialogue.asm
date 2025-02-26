@@ -30,7 +30,7 @@ ch9leifselphina
 
 .byte Right_slot
 .byte ScrollText
-.text "Oh, Selphina, it's enough to make me cry..."
+.text "Oh, Selphina, it's enough to make ME cry..."
 .byte NewLine
 .text "I had thought you and Count Dryas were killed"
 .byte NewLine
@@ -49,7 +49,7 @@ ch9leifselphina
 .byte ScrollText
 .text "I saw Lachesis as a sort of mother, and you as"
 .byte NewLine
-.text "the older sister I was never able to meet."
+.text "the elder sister I was never able to meet."
 .byte WaitForA
 .byte ScrollText
 .text "Not that I ever showed you much gratitude for"
@@ -59,11 +59,9 @@ ch9leifselphina
 
 .byte Left_slot
 .byte ScrollText
-.text "Oh, it would be terribly improper to ever say"
+.text "Oh, it would be terribly untoward for me to ever"
 .byte NewLine
-.text "such a thing of the prince of Leonster."
-.byte NewLine
-.text "I'll have to take you at your word, milord."
+.text "say such a thing..."
 .byte WaitForA
 .byte ScrollText
 .text "I...take it that Lady Lachesis still has yet to"
@@ -73,18 +71,18 @@ ch9leifselphina
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm afraid so... She...never made it back from"
+.text "I'm afraid so... She...never made it back from her"
 .byte NewLine
-.text "her excursion to Isaach."
+.text "excursion to Isaach."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I see..."
+.text "I see... Well, don't give up hope."
 .byte NewLine
-.text "Well, don't give up hope. It's still possible that"
+.text "This is Lady Lachesis, after all. It's still possible"
 .byte NewLine
-.text "she's alive somewhere—alive and happy."
+.text "that she's alive somewhere—alive and happy."
 .byte WaitForA
 .byte ScrollText
 .text "I'm sure you'll find her someday, Prince Leif."
@@ -108,7 +106,7 @@ ch9finnselphina1
 .byte Left_slot
 .word LoadPortrait
 .word finn_portrait
-.text "Hold! Are you friend or enemy?"
+.text "...It has?"
 .byte WaitForA
 
 .byte Right_slot
@@ -122,7 +120,7 @@ ch9finnselphina1
 .byte ScrollText
 .text "Selphina?"
 .byte NewLine
-.text "Count Dryas's daughter?!"
+.text "Count Dryas's daughter?"
 .byte WaitForA
 
 .byte Right_slot
@@ -139,9 +137,9 @@ ch9finnselphina1
 
 .byte Right_slot
 .byte ScrollText
-.text "I can only hope I'm more of a proper woman now"
+.text "I can only hope I'm more of a decorous woman"
 .byte NewLine
-.text "than I was a decade past."
+.text "now than I was a decade past."
 .byte NewLine
 .text "Glade and I have since been wed, you see."
 .byte WaitForA
@@ -159,9 +157,9 @@ ch9finnselphina1
 .byte ScrollText
 .text "Your reunion will have to wait a little longer,"
 .byte NewLine
-.text "I'm afraid."
+.text "I'm afraid. He's away in Tarrah,"
 .byte NewLine
-.text "He's away in Tarrah, aiding the city's defenders."
+.text "aiding the city's defenders."
 .byte WaitForA
 
 .byte Left_slot
@@ -178,7 +176,7 @@ ch9finnselphina2
 
 .byte Right_slot
 .byte ScrollText
-.text "Hmph. You can barely hide your excitement for"
+.text "Hmph. You can barely hide your titillation for"
 .byte NewLine
 .text "seeing my husband, but you can't scrape"
 .byte NewLine
@@ -217,6 +215,8 @@ ch9finnselphina2
 .text "No, I know you understand, Sir Finn—"
 .byte NewLine
 .text "but you pretend not to!"
+.byte NewLine
+.text "Despicable!"
 .byte WaitForA
 
 .byte Left_slot
@@ -276,16 +276,14 @@ ch9callionselphina
 .text "Would that I could've done more..."
 .byte WaitForA
 .byte ScrollText
-.text "Ah, I must double my training if I'm to become"
+.text "Ah, I must double my training if I'm to become as"
 .byte NewLine
-.text "as strong a knight as Sir Glade sometime in my"
+.text "strong a knight as Sir Glade in time to be of use"
 .byte NewLine
-.text "natural life!"
+.text "to Prince Leif."
 .byte WaitForA
 .byte ScrollText
-.text "I want only to aid Prince Leif, but all I've"
-.byte NewLine
-.text "learned in his service so far is just how"
+.text "All I've learned in his service so far is just how"
 .byte NewLine
 .text "powerless I truly am..."
 .byte WaitForA
@@ -313,7 +311,7 @@ ch9callionselphina
 .byte ScrollText
 .text "Your mother entrusted this to me."
 .byte NewLine
-.text "It's known as the Paragon Sword."
+.text "It's known as a paragon sword."
 .byte WaitForA
 .byte ScrollText
 .text "She bade me give it to you when you had grown"
@@ -409,7 +407,7 @@ ch9villagestaminasrink
 .byte ScrollText
 .text "Hey, I know the feeling."
 .byte NewLine
-.text "Got just the thing! It's called a Stamina Drink."
+.text "Got just the thing! It's called a stamina drink."
 .byte WaitForA
 .byte ScrollText
 .text "When you're just plain worn out, gulp down that"
@@ -445,11 +443,11 @@ ch9opening
 .byte Left_slot
 .word LoadPortrait
 .word travant_portrait
-.text "Is this the area, Merloch?"
+.text "This is the area, Merloch?"
 .byte WaitForA
 
 .byte Right_slot
-.text "That's correct, sire."
+.text "That's correct, sire. There's no mistaking it."
 .byte WaitForA
 
 .byte Left_slot
@@ -467,9 +465,9 @@ ch9opening
 .word altena_portrait
 .text "Exceptionally stupid."
 .byte NewLine
-.text "Even so, my lord father, you didn't need to"
+.text "Even so, my lord father, you didn't need to come"
 .byte NewLine
-.text "come here in person for such a trifle."
+.text "all the way here in person for such a trifle."
 .byte WaitForA
 
 .byte Left_slot
@@ -484,13 +482,15 @@ ch9opening
 .text "Besides, it's been too long since you and I had"
 .byte NewLine
 .text "an outing of our own, Altena."
+.byte NewLine
+.text "We could stand to do this more regularly."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Indeed, Father."
+.text "Agreed, Father."
 .byte NewLine
-.text "I'm glad we were able to spend time together."
+.text "And I'm glad we had even just this opportunity."
 .byte WaitForA
 
 .byte Left_slot
@@ -501,6 +501,9 @@ ch9opening
 .byte NewLine
 .text "the capital to be left unattended in our absence."
 .byte WaitForA
+.byte ScrollText
+.text "Unpresuming as always."
+.byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
@@ -509,11 +512,11 @@ ch9opening
 
 .byte Left_slot
 .byte ScrollText
-.text "Mm. When I was his age, I'd already taken the"
+.text "Mm. Well, when I was his age, I'd already taken"
 .byte NewLine
-.text "throne. Arion needs to keep at it if he wants to"
+.text "the throne. Arion needs to keep at it if he's"
 .byte NewLine
-.text "outpace me."
+.text "looking to outpace me."
 .byte WaitForA
 
 .byte Right_slot
@@ -588,19 +591,19 @@ ch9opening
 .byte WaitForA
 
 .byte Right_slot
-.text "Hah! You insult me by asking, sire!"
+.text "Ha! You insult me by asking, sire!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "All right, then I'm entrusting you with the rest"
 .byte NewLine
-.text "of our soldiers. I won't accept any excuses—"
+.text "of our soldiers. All these men here. I won't"
 .byte NewLine
-.text "wipe out every last bandit."
+.text "accept any excuses—wipe out every last bandit."
 .byte WaitForA
 .byte ScrollText
-.text "Show them what it's like to have made an enemy"
+.text "Show them the reality of having made an enemy"
 .byte NewLine
 .text "of Thracia!"
 .byte WaitForA
@@ -632,7 +635,7 @@ ch9opening2
 .byte NewLine
 .text "A pox on it all! With Glade in Tarrah, there's no"
 .byte NewLine
-.text "one here with any experience in battle..."
+.text "one here with any experience in real combat..."
 .byte WaitForA
 
 .byte Left_slot
@@ -757,21 +760,21 @@ ch9opening3
 .byte ScrollText
 .text "I'll not hear it, August! General Hannibal is a man"
 .byte NewLine
-.text "of honor—he'd not do such a thing!"
+.text "of honor—he would not do such a thing!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "...Be that as it may, we must move to rescue"
 .byte NewLine
-.text "them immediately!"
+.text "them immediately."
 .byte WaitForA
 .byte ScrollText
 .text "If the nobles of Leonster fall with that villa,"
 .byte NewLine
-.text "we'll lose the people's support and any hope of"
+.text "we'll lose any hope of liberating Thracia or"
 .byte NewLine
-.text "liberating Thracia or rebuilding Leonster!"
+.text "rebuilding Leonster!"
 .byte WaitForA
 
 .byte EndText
@@ -820,10 +823,10 @@ ch9closing1
 
 .byte Left_slot
 .byte ScrollText
-.text "...Count Dryas, I think you've earned—"
+.text "...Dryas, I think you've earned—"
 .byte WaitForA
 .byte ScrollText
-.text "Ah! Y-your arm!"
+.text "Ah...! Y-your arm!"
 .byte NewLine
 .text "Don't tell me you..."
 .byte WaitForA
@@ -832,16 +835,16 @@ ch9closing1
 .byte ScrollText
 .text "Oh, this? Bah! It's but a trifle."
 .byte NewLine
-.text "I...grew careless during the battle for Ulster."
+.text "I...grew heedless during the battle for Ulster."
 .byte NewLine
 .text "The disgrace is mine alone to bear."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "At Ulster? Then...it was for the sake of"
+.text "At Ulster? Then...it was for the sake of ensuring"
 .byte NewLine
-.text "ensuring my escape..."
+.text "my escape..."
 .byte WaitForA
 .byte ScrollText
 .text "Dammit!"
@@ -883,11 +886,11 @@ ch9closing1
 .text "I've sent Glade ahead to the city."
 .byte WaitForA
 .byte NewLine
-.text "We've gotten word back from him, and he"
+.text "We've gotten word back from him, and he reports"
 .byte NewLine
-.text "reports that the empire means to mount an"
+.text "that the empire means to mount an all-out"
 .byte NewLine
-.text "all-out assault against Tarrah perilously soon."
+.text "assault against Tarrah perilously soon."
 .byte WaitForA
 .byte ScrollText
 .text "With you and your forces here, every brave soul"
@@ -917,18 +920,18 @@ ch9closing1
 .byte ScrollText
 .word LoadPortrait
 .word leif_portrait2
-.text "Outright suspicious, even."
+.text "Outright dubious, even."
 .byte WaitForA
 
 .byte Left_Slot
 .byte ScrollText
 .word LoadPortrait
 .word dorias_portrait
-.text "I'll start coming up with a plan."
+.text "It's nothing that pondering alone will solve."
 .byte NewLine
-.text "Give me a moment to get a better look at this"
+.text "Allow me a moment to get a better look at this"
 .byte NewLine
-.text "strange state of affairs, Prince Leif."
+.text "anomalous state of affairs, Prince Leif."
 .byte WaitForA
 
 .byte EndText
@@ -943,9 +946,9 @@ ch9closing2
 .word dorias_portrait
 .text "Hmm... Prince Leif's man was right."
 .byte NewLine
-.text "They have indeed called off their attack..."
+.text "They have indeed ceased their attack..."
 .byte NewLine
-.text "But why?"
+.text "But why? Just what has occurred?"
 .byte WaitForA
 .byte ScrollText
 .text "...Who in blazes is that?"
@@ -953,7 +956,7 @@ ch9closing2
 .byte ScrollText
 .text "That wyvern knight—a woman, by the look of it—"
 .byte NewLine
-.text "what's she saying to the Thracian troops?"
+.text "what's she saying to the Thracian army?"
 .byte NewLine
 .text "Some kind of declaration?"
 .byte WaitForA
@@ -982,7 +985,9 @@ ch9closing3
 .text "PROTECT this area from bandits!"
 .byte WaitForA
 .byte ScrollText
-.text "Sheathe your swords! Withdraw at once!"
+.text "There is no reason to continue fighting!"
+.byte NewLine
+.text "Withdraw at once!"
 .byte WaitForA
 
 .byte EndText
@@ -995,7 +1000,7 @@ ch9villafall
 .word augustus_portrait
 .text "Prince Leif, I've dire news!"
 .byte NewLine
-.text "I...I regret to report that the villa...has fallen."
+.text "The villa has fallen!"
 .byte WaitForA
 
 .byte Left_slot
@@ -1010,9 +1015,9 @@ ch9villafall
 .byte ScrollText
 .text "All that remained of Leonster's nobility had taken"
 .byte NewLine
-.text "refuge here..."
+.text "refuge here... Now, they have joined their"
 .byte NewLine
-.text "Now, they have joined their kingdom in oblivion."
+.text "kingdom in oblivion."
 .byte WaitForA
 .byte ScrollText
 .text "Without them, I'm afraid there is...no longer any"
@@ -1025,17 +1030,18 @@ ch9villafall
 
 ch9wm1
 
-.text "Putting down the bandit uprising at Mount"
+.text "Putting down the bandit uprising at"
 .byte NewLine
-.text "Violdrake, "
+.text "Mount Violdrake,"
 .byte WaitForA
+.byte ScrollText
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0411 ;y then x
-.text "Leif's army now sought to join"
+.text "Leif's army now sought to join forces with the"
 .byte NewLine
-.text "forces with the remnants of Leonster's nobility."
+.text "remnants of Leonster's nobility."
 .byte WaitForA
 .byte ScrollText
 
@@ -1044,17 +1050,17 @@ ch9wm1
 
 ch9wm2
 
-.text "Leif set a course for General Hannibal's"
+.text "Leif set a course for General Hannibal's mountain"
 .byte NewLine
-.text "mountain villa, "
+.text "villa,"
 .byte WaitForA
+.byte ScrollText
+.text "where the deposed "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $003C ;dorius
-.word $0306 ;y then x
-.text "where the deposed nobles"
-.byte NewLine
-.text "now lived in hiding..."
+.word $0406 ;y then x
+.text "nobles now lived in hiding..."
 .byte WaitForA
 
 .byte EndText

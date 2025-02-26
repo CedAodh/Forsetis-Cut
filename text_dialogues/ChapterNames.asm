@@ -63,7 +63,7 @@ ch12titlename
 .byte $01
 
 ch12xtitlename
-.text "Chapter 12x: The Dandelion"
+.text "Chapter 12x: The Dandelions"
 .byte $01
 
 ch13titlename
@@ -131,7 +131,7 @@ ch24titlename
 .byte $01
 
 ch24xtitlename
-.text "Chapter 24x: The Loptrian Altar"
+.text "Chapter 24x: The Altar of Loptr"
 .byte $01
 
 ch25titlename

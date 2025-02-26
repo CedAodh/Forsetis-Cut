@@ -3,38 +3,21 @@ ch12magicringhouseolwen
 .byte Right_slot
 .word LoadPortrait
 .word girl_portrait
-.text "Sis, Sis! Come look!"
+.text "Oh, it's you, ma'am!"
 .byte NewLine
-.text "I was hopin' I'd get to see you again."
+.text "I was hoping I'd get to see you again."
 .byte WaitForA
-
-.byte Left_slot
-.word LoadPortrait
-.word younglady_portrait
-
-.byte Right_slot
 .byte ScrollText
-.text "This here's my big sis."
+.text "Look—this ring belongs to you, right?"
 .byte NewLine
-.text "Sis, this is the lady I told you about!"
-.byte WaitForA
-
-.byte Left_slot
-.word ClearPortrait
-.word RetractBox 
-
-.byte Right_slot
-.byte ScrollText
-.text "I wanted to give you this to say thanks."
+.text "I found it in the fort, but we were going so fast"
 .byte NewLine
-.text "I found it in the fort, but I was so shook up I"
-.byte NewLine
-.text "forgot to give it to you before you left."
+.text "I forgot to give it to you before you left."
 .byte WaitForA
 .byte ScrollText
 .text "I'm sorry about that..."
 .byte NewLine
-.text "But...better late than never, right?"
+.text "But you have it now! That's what counts, right?"
 .byte WaitForA
 
 .byte EndText
@@ -47,12 +30,19 @@ ch12magicringhousenotolwen
 .word oldlady3_portrait
 .text "We thought the children of our village would be"
 .byte NewLine
-.text "safe from the empire, since they'd be shielded"
+.text "safe from the empire, since they'd be shielded by"
 .byte NewLine
-.text "by all the local bandits' mayhem and whatnot."
+.text "all the local bandits' mayhem and whatnot."
 .byte WaitForA
 .byte ScrollText
-.text "That was before the imperial army started"
+.text "...Weird way to think about it, but, you know,"
+.byte NewLine
+.text "we've got the Dandelions on our side."
+.byte NewLine
+.text "They can deal with mild threats like that."
+.byte WaitForA
+.byte ScrollText
+.text "But that was before the imperial army started"
 .byte NewLine
 .text "showin' up in droves to attack Tarrah..."
 .byte WaitForA
@@ -61,7 +51,7 @@ ch12magicringhousenotolwen
 .byte NewLine
 .text "friend o' mine. Take this, an' use it to patch"
 .byte NewLine
-.text "yerself up if you get hurt. Hope it helps."
+.text "yourself up if you get hurt. Hope it helps."
 .byte WaitForA
 
 .byte EndText
@@ -72,11 +62,11 @@ ch12heimscrollhousefailed
 .byte Right_slot
 .word LoadPortrait
 .word oldlady_portrait
-.text "*cough* *cough*"
+.text "*cough, cough...*"
 .byte NewLine
-.text "It won't be much longer now, Sera..."
+.text "I don't...have much longer now..."
 .byte NewLine
-.text "I'll see your face again in the next life..."
+.text "I wanted to see you one last time...Sera..."
 .byte WaitForA
 
 .byte EndText
@@ -89,7 +79,7 @@ ch12heimscrollhousesaved
 .word oldlady_portrait
 .text "Billowin' Bragi!"
 .byte NewLine
-.text "You're the ones that helped my grandson, right?"
+.text "You're the ones that helped my grandkid, right?"
 .byte WaitForA
 .byte ScrollText
 .text "You've my deepest gratitude, you do."
@@ -106,7 +96,7 @@ ch12heimscrollhousesaved
 .byte ScrollText
 .text "Take a gander. This scroll is a family heirloom,"
 .byte NewLine
-.text "but a family heirloom can't mean much without"
+.text "but a family heirloom don't mean much without"
 .byte NewLine
 .text "family, an' you gave mine back to me."
 .byte WaitForA
@@ -124,9 +114,9 @@ ch12silencehousefailed
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "Get outta here, you useless sadsacks!"
+.text "We don't need you useless sadsacks meanderin'"
 .byte NewLine
-.text "Went an' left my boy behind, you did!"
+.text "around here! Just go on home!"
 .byte WaitForA
 
 .byte EndText
@@ -137,7 +127,7 @@ ch12silencehousesaved
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "I been waitin' fer you since I heard the"
+.text "I been waitin' for you since I heard the"
 .byte NewLine
 .text "Liberation Army was comin' this way!"
 .byte NewLine
@@ -154,7 +144,7 @@ ch12silencehousesaved
 .text "people's voices!"
 .byte WaitForA
 .byte ScrollText
-.text "I tried wavin' it around fer fun once—"
+.text "I tried wavin' it around for fun once—"
 .byte NewLine
 .text "then I saw a buncha flashin' lights,"
 .byte NewLine
@@ -165,7 +155,7 @@ ch12silencehousesaved
 .byte NewLine
 .text "Now, I just want that harrowin' doohickey gone"
 .byte NewLine
-.text "and outta 'ere!"
+.text "and outta here! I'm sure you can use it better."
 .byte WaitForA
 
 .byte EndText
@@ -204,11 +194,11 @@ ch12salemtina
 
 .byte Left_slot
 .byte ScrollText
-.text "I brought you a midnight snack!"
+.text "I brought you a midnight snack."
 .byte NewLine
 .text "What with it being so cold out, I figured you"
 .byte NewLine
-.text "could use a nice, hot meal!"
+.text "could use a nice, hot meal."
 .byte WaitForA
 
 .byte Right_slot
@@ -243,7 +233,7 @@ ch12salemtina
 .byte NewLine
 .text "You will see her again—I'll make sure of that."
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "Once my wounds have healed,"
 .byte NewLine
 .text "I'll help you find her."
@@ -251,23 +241,20 @@ ch12salemtina
 
 .byte Left_slot
 .byte ScrollText
-.text "D-do you mean it?!"
+.text "D-do you mean it?"
 .byte NewLine
-.text "Oh, thank you, Salem!"
-.byte NewLine
-.text "You're just the best!"
+.text "Oh, thank you, Salem! You're just the best!"
 .byte WaitForA
 .byte ScrollText
 .text "Well, I'll get out of your hair—how DO you get"
 .byte NewLine
 .text "your hair like that, anyway?—and let you get"
 .byte NewLine
-.text "back to the night shift!"
+.text "back to the night shift. Be sure to eat up!"
 .byte WaitForA
 .byte ScrollText
-.text "Nighty-night, Salem!"
-.byte WaitForA
-.byte ScrollText
+.text "Nighty-night, Salem."
+.byte NewLine
 .text "...You better not forget your promise!"
 .byte WaitForA
 
@@ -291,21 +278,21 @@ ch12colho
 .byte ScrollText
 .text "...What? Oh, don't tell me you lot are worried"
 .byte NewLine
-.text "about what Perne will say!"
+.text "about what Perne'll say!"
 .byte NewLine
 .text "Look, don't go thinkin' we need his permission!"
 .byte WaitForA
 .byte ScrollText
-.text "I'll take care of Perne myself."
+.text "I'll take care of Perne m'self."
 .byte NewLine
 .text "He won't be a problem no more."
 .byte WaitForA
 .byte ScrollText
 .text "The rest of you, while you're dealin' with those"
 .byte NewLine
-.text "travelers, go after the villages an' take"
+.text "travelers, go after the villages an' take anything"
 .byte NewLine
-.text "anything worth carryin'!"
+.text "worth carryin'!"
 .byte WaitForA
 
 .byte EndText
@@ -363,12 +350,12 @@ ch12mareetadialogue
 .byte ScrollText
 .text "Well, whoever they are, you don't need to worry."
 .byte NewLine
-.text "I'll protect every last one of you!"
+.text "Leave it to me to protect the village."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "What in blazes are you thinkin'?!"
+.text "What in blazes are you thinking?!"
 .byte WaitForA
 .byte NewLine
 .text "You...look an awful lot like my daughter,"
@@ -382,7 +369,7 @@ ch12mareetadialogue
 .byte ScrollText
 .text "No—I'm a swordswoman, a myrmidon,"
 .byte NewLine
-.text "like my mother before me!"
+.text "like my mother before me."
 .byte NewLine
 .text "I'm the daughter of Eyvel of Fiana!"
 .byte WaitForA
@@ -441,7 +428,7 @@ ch12opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "“Betrayal” is a bit of a stretch, right?"
+.text "“Betrayal” is a bit of a stretch, though, right?"
 .byte NewLine
 .text "I mean, you just said you wanted to leave the"
 .byte NewLine
@@ -475,14 +462,13 @@ ch12opening1
 .byte Right_slot
 .byte ScrollText
 .text "Hmm... Simple as that, huh?"
+.byte NewLine
+.text "Well, whatever it is, it doesn't affect us."
 .byte WaitForA
 .byte ScrollText
-.text "Well, whatever it is, it doesn't affect us."
-.byte NewLine
 .text "How about you join up with me and my band?"
 .byte NewLine
 .text "We could use someone like you."
-.byte WaitForA
 .byte NewLine
 .text "If you're up for it, that is."
 .byte WaitForA
@@ -515,9 +501,9 @@ ch12opening1
 .byte ScrollText
 .text "Particularly this one hothead, Cullough."
 .byte NewLine
-.text "He and his goons are getting antsy about how I"
+.text "Both he and his goons are quite unruly,"
 .byte NewLine
-.text "won't let them drop any bodies during a heist."
+.text "and they'd rather not listen to me at all."
 .byte WaitForA
 
 .byte Left_slot
@@ -610,7 +596,7 @@ ch12opening2
 .byte ScrollText
 .word LoadPortrait
 .word mareeta_portrait
-.text "Bishop Saias... Are you leaving already?"
+.text "Bishop Saias, you're...leaving?"
 .byte WaitForA
 
 .byte Left_slot
@@ -627,9 +613,9 @@ ch12opening2
 
 .byte Right_slot
 .byte ScrollText
-.text "...I don't know how I can ever repay you,"
+.text "...I don't know how I can ever repay you, Bishop."
 .byte NewLine
-.text "Bishop. If not for you, I..."
+.text "If not for you, I..."
 .byte WaitForA
 
 .byte Left_slot
@@ -727,11 +713,11 @@ ch12opening2
 .text "I...think I understand."
 .byte WaitForA
 .byte ScrollText
-.text "I'll wield the sword, and cherish it as a symbol"
+.text "I'll wield the sword, and cherish it as a symbol of"
 .byte NewLine
-.text "of how not even the foulest magic could"
+.text "how not even the foulest magic could overcome"
 .byte NewLine
-.text "overcome my mother's love for me."
+.text "my mother's love for me."
 .byte WaitForA
 
 .byte Left_slot
@@ -743,12 +729,12 @@ ch12opening2
 .text "reunite you with your mother someday."
 .byte WaitForA
 .byte ScrollText
-.text "With that, I'm afraid I must be going."
+.text "With that, I truly must be going."
 .byte NewLine
 .text "I've lingered here much too long."
 .byte WaitForA
 .byte ScrollText
-.text "I doubt that we'll cross paths again,"
+.text "I doubt we'll cross paths again,"
 .byte NewLine
 .text "but I pray you find happiness."
 .byte WaitForA
@@ -823,7 +809,7 @@ ch12closingtogaiden
 .text "Prince Leif."
 .byte WaitForA
 .byte ScrollText
-.text "The night is still young."
+.text "Dawn has yet to break."
 .byte NewLine
 .text "I advise that we seize this opportunity to purge"
 .byte NewLine
@@ -854,9 +840,9 @@ ch12closingtogaiden
 
 .byte Right_slot
 .byte ScrollText
-.text "...I'll do it. If we rout these bandits once and"
+.text "...I'll do it. If we rout these bandits once and for"
 .byte NewLine
-.text "for all, the villagers here will finally be able to"
+.text "all, the villagers here will finally be able to"
 .byte NewLine
 .text "breathe easy."
 .byte WaitForA
@@ -873,7 +859,7 @@ ch12ending2mareetaleif
 .byte Left_slot
 .word LoadPortrait
 .word mareeta_portrait
-.text "L-Leif?!"
+.text "L-Leif...?"
 .byte NewLine
 .text "Lord Leif, is that you?"
 .byte WaitForA
@@ -881,7 +867,7 @@ ch12ending2mareetaleif
 .byte Right_slot
 .text "...Mareeta?!"
 .byte NewLine
-.text "Mareeta, it really is you!"
+.text "Mareeta, it's you!"
 .byte NewLine
 .text "How... How are you here?"
 .byte WaitForA
@@ -892,7 +878,7 @@ ch12ending2mareetaleif
 .byte NewLine
 .text "I never expected I'd see you and everyone from"
 .byte NewLine
-.text "Fiana again so soon!"
+.text "Fiana again so soon."
 .byte WaitForA
 .byte ScrollText
 .text "I'm halfway convinced this is just a dream..."
@@ -924,16 +910,18 @@ ch12ending2mareetaleif
 .text "...Mareeta, this I swear to you: I'll get the"
 .byte NewLine
 .text "commander back, whatever it takes!"
+.byte NewLine
+.text "With both hands!"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "You mean WE!"
+.text "Both of OUR hands, right?"
 .byte NewLine
 .text "We'll get Mother back together!"
 .byte WaitForA
 .byte ScrollText
-.text "Please, Leif, I want to be a part of this!"
+.text "Please, Lord Leif, I want to be a part of this!"
 .byte NewLine
 .text "I'll be stronger than I was before!"
 .byte NewLine
@@ -976,20 +964,18 @@ ch12wm1
 
 .text "Having seized the infamous Fort Dundrum,"
 .byte NewLine
+.text "Leif's Liberation "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0512 ;y then x
-.text "Leif's Liberation Army was keenly aware"
+.text "Army was keenly aware"
 .byte WaitForA
+.byte ScrollText
+.text "just how little time remained before the empire"
 .byte NewLine
-.text "just how little time remained before"
-.byte NewLine
-.text "the empire launched its assault on Tarrah."
+.text "launched its assault on Tarrah."
 .byte WaitForA
-.word ClearPortraitalt
-.long $82937A
-.word $0001
 .byte ScrollText
 
 .byte EndText
@@ -1001,11 +987,14 @@ ch12wm2
 .byte NewLine
 .text "the Liberation Army kept marching"
 .byte WaitForA
+.byte ScrollText
+.text "well into the evening, determined to come to the"
 .byte NewLine
-.text "well into the evening, determined to come"
-.byte NewLine
-.text "to the city's defense before it was too late."
+.text "city's defense before it was too late."
 .byte WaitForA
+.word ClearPortraitalt
+.long $82937A
+.word $0001
 .byte ScrollText
 
 .byte EndText
@@ -1015,28 +1004,26 @@ ch12wm3
 
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0614 ;y then x
-.text "When they finally arrived at the edges"
+.text "When they finally arrived at the edges of"
 .byte NewLine
-.text "of Dacia Forest, which extends around Tarrah's"
-.byte WaitForA
-.byte NewLine
-.text "eastern border, it was the dead of night."
+.text "Dacia Forest,"
 .byte WaitForA
 .byte ScrollText
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0028 ;salem
-.word $0609 ;y then x
-.text "The thick foliage obscured what little"
+.text "which extends around Tarrah's eastern border,"
 .byte NewLine
-.text "moonlight had been illuminating their path,"
+.text "it was the dead of night."
 .byte WaitForA
+.byte ScrollText
+.text "The thick foliage obscured what little moonlight"
 .byte NewLine
-.text "and the forest was now blanketed"
+.text "had been illuminating their path,"
+.byte WaitForA
+.byte ScrollText
+.text "and the forest was now blanketed in a deep,"
 .byte NewLine
-.text "in a deep, foreboding darkness..."
+.text "foreboding darkness..."
 .byte WaitForA
 
 .byte EndText

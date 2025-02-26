@@ -76,7 +76,7 @@ _PrepUnitListOption
 	.long lorom($5070B, 1)
 	.long $000000
 	.word $2020
-	.text "Unit"
+	.text "Units "
 .word $0000
 
 _PrepOptionsOption
@@ -162,28 +162,28 @@ _SpaceText
 .word $0000
 
 _SelectToReturnText
-.text "              {SEL1}{SEL2}Exit [menu"
+.text "{SEL1}{SEL2} to exit [menu"
 .word $0000
 
 _SelectItemFromListText
 _SortAndOwnerText
-.text "Pick ite[ms fro[m a list"
+.text "Select ite[ms fro[m a list"
 .word $0000
 
 _TradeText
-.text "Trade ite[ms a[mong units "
+.text "Exchange ite[ms a[mong units"
 .word $0000
 
 _ShopText
-.text "Visit the shop"
+.text "Buy basic ]weaponry or sell "
 .word $0000
 
 _SupplyText
-.text "Visit the Supply"
+.text "(Manage ite[ms at the Supply"
 .word $0000
 
 _DiscardText
-.text "Discard ite[ms"
+.text "Get rid of unneeded ite[ms"
 .word $0000
 
 .bend

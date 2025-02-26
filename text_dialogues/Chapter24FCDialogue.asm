@@ -316,21 +316,38 @@ getgudraydrik
 .byte right_slot
 .word LoadPortrait
 .word Raydrik2Portrait
-.text "Wh...wh..."
+.text "What...bizarre, senseless approach to combat is"
 .byte NewLine
-.text "What...?!"
+.text "this?"
 .byte WaitForA
 .byte ScrollText
-.text "M-my blade...the Loptrian Fang..."
+.text "Anything you clods may try on me, it can never"
 .byte NewLine
-.text "Wh-wh-where did it go?!"
+.text "contend with the Loptr Fang!"
+.byte WaitForA
+
+.word PauseDialogue
+.byte $3C
+
+.byte ScrollText
+.text "......"
 .byte WaitForA
 .byte ScrollText
-.text "Dammit...!"
+.text "Hm? Did I simply miss—"
 .byte NewLine
-.text "This can't... This can't be happening!"
+.text "...WHAT?! Wh-where did..."
 .byte NewLine
-.text "I'm going to lose everything I have now!"
+.text "The blade, it just... How?!"
+.byte WaitForA
+.byte ScrollText
+.text "N-now I'm... No...I can't..."
+.byte NewLine
+.text "It cannot end like this! It won't!"
+.byte NewLine
+.text "Not after all I've strived for...!"
+.byte WaitForA
+.byte ScrollText
+.text "...Is this...how Kalf felt?"
 .byte WaitForA
 
 .byte EndText

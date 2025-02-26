@@ -3,11 +3,11 @@ ch17Bamaldacharge
 .byte Right_slot
 .word LoadPortrait
 .word amalda_portrait
-.text "The castle is in jeopardy..."
+.text "The castle is under threat..."
 .byte NewLine
 .text "All troops, make for the castle grounds!"
 .byte NewLine
-.text "Don't fall behind the rebels!"
+.text "Don't lag behind the rebels!"
 .byte WaitForA
 
 .byte EndText
@@ -18,7 +18,7 @@ ch17Bopengate1
 .byte Right_slot
 .word LoadPortrait
 .word colho_portrait
-.text "Oh-ho, so you're attackin' Castle Leonster?"
+.text "Oh ho, so you're attackin' Castle Leonster?"
 .byte NewLine
 .text "Well, lemme bend yer ear for a sec..."
 .byte WaitForA
@@ -38,16 +38,16 @@ ch17Bopengate1
 .byte ScrollText
 .text "Won't be free, o' course. Nothin' is."
 .byte NewLine
-.text "But you pile up an even 20000 gold in front of"
+.text "But you pile up an even 6,000 gold in front of"
 .byte NewLine
 .text "me an' we'll call it a deal."
 .byte WaitForA
 .byte ScrollText
 .text "What, does it sound too expensive?"
 .byte NewLine
-.text "Well, we ain't stupid."
+.text "Well, we ain't stupid—we'll be the ones risking our"
 .byte NewLine
-.text "We'll be the ones putting our lives on the line."
+.text "lives. YOU'RE not namin' the price, I'll tell ya that."
 .byte WaitForA
 .byte ScrollText
 
@@ -63,7 +63,7 @@ ch17Bopengate2
 .word colho_portrait
 .text "So... What's it gonna be?"
 .byte NewLine
-.text "     Pay 20,000 gold."
+.text "     Pay 6,000 gold."
 .byte NewLine
 .text "     Save the money and make a frontal assault."
 .word $2E00
@@ -171,11 +171,14 @@ ch17Belder1
 .byte ScrollText
 .word LoadPortrait
 .word dorius_portrait
-.text "With respect, Elder, there are numerous ballistae"
+.text "With respect, Elder, there are numerous"
 .byte NewLine
-.text "positioned in the castle grounds. Your destitute"
+.text "ballisticians positioned in the castle grounds."
+.byte WaitForA
 .byte NewLine
-.text "militia will be easy pickings for them."
+.text "Your poorly-armed militia will be easy pickings for"
+.byte NewLine
+.text "them."
 .byte WaitForA
 
 .byte Left_slot
@@ -190,11 +193,11 @@ ch17Belder1
 .text "but we would do it gladly."
 .byte WaitForA
 .byte ScrollText
-.text "We can attract the ballistae's attention, and lure"
+.text "We can attract the ballisticians' attention and"
 .byte NewLine
-.text "them away from your forces. While we keep them"
+.text "take the shots. While we keep them busy,"
 .byte NewLine
-.text "busy, the prince can breach the—"
+.text "the prince can breach the—"
 .byte WaitForA
 
 .byte Right_slot
@@ -217,10 +220,10 @@ ch17Belder1
 .byte NewLine
 .text "Do you have any idea just how much pain we've"
 .byte NewLine
-.text "endured over these past ten years?"
+.text "endured over the past dozen years?"
 .byte WaitForA
 .byte ScrollText
-.text "Marquess Gustav took our young daughters, and"
+.text "Marquess Gustaf took our young daughters, and"
 .byte NewLine
 .text "the Loptr Church took the rest of our children."
 .byte WaitForA
@@ -234,7 +237,7 @@ ch17Belder1
 .byte ScrollText
 .text "My prince, my sovereign lord..."
 .byte NewLine
-.text "This is the only home we've ever known."
+.text "This country is the only home we've ever known."
 .byte NewLine
 .text "Simple folk like us cannot live without it."
 .byte WaitForA
@@ -276,7 +279,7 @@ ch17Belder1
 .text "even if it's to be accomplished through death..."
 .byte WaitForA
 .byte ScrollText
-.text "To deny their request isn't as simple as you"
+.text "To deny their request is not as simple as you"
 .byte NewLine
 .text "would believe."
 .byte WaitForA
@@ -395,7 +398,7 @@ ch17Bopening1
 .byte NewLine
 .text "I admit, I didn't foresee the enemy preparing so"
 .byte NewLine
-.text "many ballistae."
+.text "many ballisticians."
 .byte WaitForA
 .byte ScrollText
 .text "Yet if we go about things too slowly, we'll lose"
@@ -413,7 +416,7 @@ ch17Bopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Dryas, what would you suggest?"
+.text "Dryas, your thoughts?"
 .byte WaitForA
 
 .byte Left_slot
@@ -438,7 +441,7 @@ ch17Bopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "I understand, but keep thinking."
+.text "I understand, but let's keep thinking."
 .byte NewLine
 .text "There may yet be a better way."
 .byte WaitForA
@@ -455,15 +458,15 @@ ch17Bopening2
 .byte Left_slot
 .word LoadPortrait
 .word palman_portrait
-.text "General Amalda, how is it a fine soldier"
+.text "General Amalda, how is it a fine soldier like you"
 .byte NewLine
-.text "like you got stuck guarding the rear gate?"
+.text "got stuck guarding the rear gate?"
 .byte WaitForA
 
 .byte Right_slot
-.text "Evidently, my comments touched a nerve"
+.text "Evidently, my comments touched a nerve with"
 .byte NewLine
-.text "with Marquess Gustav..."
+.text "Marquess Gustaf..."
 .byte WaitForA
 
 .byte Left_slot
@@ -476,18 +479,18 @@ ch17Bopening2
 .text "It's more than a simple row."
 .byte WaitForA
 .byte ScrollText
-.text "Gustav is seizing children"
+.text "Gustaf is seizing children from the nearby"
 .byte NewLine
-.text "from the nearby villages despite having"
+.text "villages despite having no order from the king to"
 .byte NewLine
-.text "no order from the king to do so."
+.text "do so."
 .byte WaitForA
 .byte ScrollText
-.text "It's obvious he's trying to curry favor"
+.text "It's obvious he's trying to curry favor with the"
 .byte NewLine
-.text "with the Loptr Church—handing over"
+.text "Loptr Church—handing over innocent children like"
 .byte NewLine
-.text "innocent children like little presents."
+.text "little presents."
 .byte WaitForA
 .byte ScrollText
 .text "Could you forgive such a thing,"
@@ -504,16 +507,16 @@ ch17Bopening2
 .byte ScrollText
 .text "I understand how you feel, but remember,"
 .byte NewLine
-.text "the child hunts were instituted"
+.text "the child hunts were instituted by"
 .byte NewLine
-.text "by Emperor Arvis himself."
+.text "Emperor Arvis himself."
 .byte WaitForA
 .byte ScrollText
 .text "So sooner or later, regardless of how vocally"
 .byte NewLine
-.text "you oppose it, all the local children"
+.text "you oppose it, all the local children will be seized"
 .byte NewLine
-.text "will be seized and taken to Belhalla."
+.text "and taken to Belhalla."
 .byte WaitForA
 
 .byte Right_slot
@@ -523,9 +526,9 @@ ch17Bopening2
 .text "Why is all this happening?"
 .byte WaitForA
 .byte ScrollText
-.text "I believed in Emperor Arvis,"
+.text "I believed in Emperor Arvis; I longed to become"
 .byte NewLine
-.text "I longed to become a knight in his service..."
+.text "a knight in his service..."
 .byte NewLine
 .text "How did he go so wrong?"
 .byte WaitForA
@@ -556,16 +559,16 @@ ch17Bclosing1
 .text "Ahem..."
 .byte WaitForA
 .byte ScrollText
-.text "The castle's commander is a man named Gustav,"
+.text "The castle's commander is a man named Gustaf,"
 .byte NewLine
-.text "a close associate of King Bloom."
+.text "a close aide of King Bloom."
 .byte NewLine
 .text "He is...a man of many vices."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Marquess Gustav... For the past decade,"
+.text "Marquess Gustaf... For the past decade,"
 .byte NewLine
 .text "he's ruled Leonster with an iron fist."
 .byte WaitForA
@@ -584,7 +587,7 @@ ch17Bclosing1
 
 .byte Left_slot
 .byte ScrollText
-.text "Anything else we should be aware of?"
+.text "...Anything else we should be aware of?"
 .byte WaitForA
 
 .byte Right_slot
@@ -619,9 +622,9 @@ ch17Bclosing1
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah... As ashamed as I am to admit it, Xavier"
+.text "Ha... As ashamed as I am to admit it, Xavier was"
 .byte NewLine
-.text "was once an esteemed general of Leonster."
+.text "once an esteemed general of Leonster."
 .byte WaitForA
 .byte ScrollText
 .text "He was known for his sense of justice,"
@@ -754,7 +757,7 @@ ch17Bclosing1
 .text "House Leonster, I owe him that much!"
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch17Bclosing2
@@ -822,31 +825,33 @@ ch17Bwm1
 
 .text "Leaving the forest behind them,"
 .byte WaitForA
+.byte ScrollText
+.text "the Liberation "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0100 ;leif
+.word $013F ;leif
 .word $0912 ;y then x
+.text "Army finally reached the southern"
 .byte NewLine
-.text "the Liberation Army finally reached"
-.byte NewLine
-.text "the southern gates of Leonster."
+.text "gates of Leonster."
 .byte WaitForA
 .byte ScrollText
 .text "Yet an arduous task awaited them:"
 .byte WaitForA
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0070 ;paulus
-.word $0109 ;y then x
-.byte NewLine
+.byte ScrollText
 .text "the gates stood atop high cliffs, and were"
 .byte NewLine
-.text "defended by vast numbers of ballistae."
+.text "defended by vast numbers of "
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word Ballistician2portrait ; $0070 paulus
+.word $0109 ;y then x
+.text "ballisticians."
 .byte WaitForA
 .byte ScrollText
-.text "It was painfully clear that seizing the gates"
+.text "It was painfully clear that seizing the gates would"
 .byte NewLine
-.text "would be anything but simple..."
+.text "be anything but simple..."
 .byte WaitForA
 
 .byte EndText

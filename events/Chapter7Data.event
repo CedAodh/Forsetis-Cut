@@ -5,7 +5,7 @@ eventChapter7Data ; B1/DE9B
 		.byte 8, 8
 
 	_EisenhauGroup ; B1/DE9D
-		UNIT Eisenhau, Enemy, [8, 0], [8, 5], Eisenhau, [Greatlance, Javelin, Vulnerary], 6, True, [$01, $03, $02, $00]
+		UNIT Eisenhau, Enemy, [8, 5], [8, 5], Eisenhau, [Greatlance, Javelin, Vulnerary], 6, True, [$01, $03, $02, $00]
 	UNIT
 
 	_CavalierReinforcementsCameraCoordinates ; B1/DEB3
@@ -39,14 +39,14 @@ eventChapter7Data ; B1/DE9B
 		.byte 8, 45
 
 	_HannibalGroup ; B1/DF75
-		UNIT Hannibal, NPC, [10, 44], [10, 45], Hannibal, [SilverSword, SilverLance, SilverBow], 20, False, [$00, $03, $00, $00]
+		UNIT Hannibal, NPC, [10, 44], [10, 45], Hannibal, [SilverAxe, SilverLance, SilverBow], 16, False, [$00, $03, $00, $00]
 	UNIT
 
 	_HannibalArmorCameraCoordinates ; B1/DF8B
 		.byte 8, 46
 
 	_HannibalArmorGroup ; B1/DF8D
-		UNIT Hannibal, NPC, [10, 46], [10, 45], Hannibal, [SilverSword, SilverLance, SilverAxe, SilverBow], 20, False, [$00, $03, $00, $80]
+		UNIT Hannibal, NPC, [10, 46], [10, 45], Hannibal, [SilverAxe, SilverLance, SilverBow], 16, False, [$00, $03, $00, $80]
 		UNIT ThraciaArmoredLance, NPC, [10, 46], [8, 45], Hannibal, [SilverLance], 20, False, [$00, $01, $00, $00]
 		UNIT ThraciaArmoredLance, NPC, [10, 46], [12, 45], Hannibal, [SilverLance], 20, False, [$00, $01, $00, $00]
 		UNIT ThraciaArmoredSword, NPC, [10, 46], [9, 45], Hannibal, [SilverSword], 20, False, [$00, $01, $00, $00]
@@ -82,21 +82,21 @@ eventChapter7Data ; B1/DE9B
 		UNIT BanditBrigand1, Enemy, [2, 25], [2, 25], Jabal, [IronAxe], 8, False, [$01, $03, $00, $00]
 		UNIT BanditBrigand1, Enemy, [2, 26], [2, 26], Jabal, [SteelAxe], 8, False, [$01, $03, $00, $00]
 		UNIT BanditBrigand1, Enemy, [1, 26], [1, 26], Jabal, [SteelAxe], 8, False, [$01, $03, $00, $00]
-		UNIT Jabal, Enemy, [1, 29], [1, 29], Jabal, [SilverAxe, HandAxe, Vulnerary, PureWater], 5, False, [$01, $03, $00, $00]
+		UNIT Jabal, Enemy, [1, 29], [1, 29], Jabal, [SilverAxe, HandAxe, Vulnerary, PureWater], 5, False, [$00, $03, $00, $00]
 	UNIT
 
 	_ShivaCameraCoordinates ; B1/E14F
 		.byte 8, 7
 
 	_ShivaGroup ; B1/E14F
-		UNIT MercenaryMyrmidon2, Enemy, [9, 36], [9, 36], Shiva, [SlimSword], 3, False, [$00, $00, $00, $00]
-		UNIT Shiva, Enemy, [9, 38], [9, 38], Shiva, [KillingEdge], 8, False, [$0F, $00, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [10, 36], [10, 36], Shiva, [IronSword], 5, False, [$00, $00, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [8, 36], [8, 36], Shiva, [Rapier, Vulnerary], 6, False, [$00, $00, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [9, 37], [9, 37], Shiva, [SteelSword], 7, False, [$00, $00, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [10, 38], [10, 38], Shiva, [Armorslayer], 8, False, [$00, $00, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [11, 38], [11, 38], Shiva, [IronBlade], 9, False, [$00, $00, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [8, 37], [8, 37], Shiva, [SilverSword, Vulnerary], 10, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [9, 36], [9, 36], Jabal, [SlimSword], 3, False, [$00, $00, $00, $00]
+		UNIT Shiva, Enemy, [9, 38], [9, 38], Jabal, [KillingEdge], 8, False, [$0F, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [10, 36], [10, 36], Jabal, [IronSword], 5, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [8, 36], [8, 36], Jabal, [Rapier, Vulnerary], 6, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [9, 37], [9, 37], Jabal, [SteelSword], 7, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [10, 38], [10, 38], Jabal, [Armorslayer], 8, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [11, 38], [11, 38], Jabal, [IronBlade], 9, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [8, 37], [8, 37], Jabal, [SilverSword, Vulnerary], 10, False, [$00, $00, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/E1F3
@@ -121,4 +121,4 @@ eventChapter7Data ; B1/DE9B
 	.byte $FF
 
 	_Vendor ; B1/E218
-		SHOP [6, 48], [Heal, DoorKey, Vulnerary, Antitoxin]
+		SHOP [6, 48], [Thunder, Heal, Vulnerary, Antitoxin, DoorKey]

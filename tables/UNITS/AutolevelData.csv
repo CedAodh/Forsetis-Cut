@@ -1,10 +1,10 @@
 structAutolevelScheme 1,HP,STR,MAG,SKL,SPD,DEF,CON,LUK,MOV
-AutolevelScheme1,160,50,10,50,50,40,20,15,0
-AutolevelScheme2,120,5,60,50,50,15,10,15,0
-AutolevelScheme3,160,50,20,50,50,40,25,30,0
-AutolevelScheme4,120,5,50,50,50,20,15,30,0
-AutolevelScheme5,150,50,50,50,50,50,20,40,0
-AutolevelScheme6,130,9,42,34,32,22,15,20,0
+AutolevelScheme1,120,50,10,50,50,40,25,15,0
+AutolevelScheme2,80,3,60,50,50,15,10,15,0
+AutolevelScheme3,120,50,20,50,50,40,30,30,0
+AutolevelScheme4,90,5,50,50,50,20,15,30,0
+AutolevelScheme5,130,50,50,50,50,50,25,40,0
+AutolevelScheme6,150,50,15,50,30,50,30,20,0
 AutolevelScheme7,75,50,30,50,35,35,40,20,0
 AutolevelScheme8,50,30,50,70,70,30,20,50,0
-AutolevelScheme9,80,20,3,16,10,16,5,10,0
+AutolevelScheme9,80,20,3,20,10,5,5,20,0

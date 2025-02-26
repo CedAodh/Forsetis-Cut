@@ -73,107 +73,286 @@ deanlinoanA
 
 .byte right_slot
 .word LoadPortrait
-.word dean_portrait
-.text "Hm?"
-.byte NewLine
-.text "What's wrong, Linoan?"
-.byte WaitForA
-.byte NewLine
-.text "Linoan!"
-.byte WaitForA
+.word linoan_portrait
 
 .byte left_slot
 .word LoadPortrait
+.word leif_portrait2
+.text "Linoan, could you spare me a moment?"
+.byte WaitForA
+
+.byte right_slot
+.text "Certainly, Lord Leif."
+.byte NewLine
+.text "How may I be of assistance?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I would query you something."
+.byte NewLine
+.text "What connection do you have with"
+.byte NewLine
+.text "Prince Arion of Thracia?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...What makes you ask that?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "All right, so you don't even deny there"
+.byte NewLine
+.text "being a connection."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Correct..."
+.byte NewLine
+.text "Allow me a moment to just...pull this back."
+
+.word PauseDialogue
+.byte $3C
+
+.byte NewLine
+.text "Here we are."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "A ring?"
+.byte NewLine
+.text "You mean to tell me y-you're..."
+.byte NewLine
+.text "You're his betrothed? Wh...why—?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Answer me first—why do you wish to know?"
+.byte NewLine
+.text "You are my lord, but I am...unsettled by your"
+.byte NewLine
+.text "abrupt interest in such personal matters."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I understand. Given how things concluded in"
+.byte NewLine
+.text "Tarrah, I believe this matter bears great"
+.byte NewLine
+.text "relevance for our struggles ahead."
+.byte WaitForA
+.byte ScrollText
+.text "I need to know not as a prince or...myself,"
+.byte NewLine
+.text "but as leader of the Liberation Army."
+.byte WaitForA
+.byte ScrollText
+.text "And forgive my initial, offhanded response,"
+.byte NewLine
+.text "but I'm sure you could make sense of my shock."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...You've the right of it. I apologize."
+.byte NewLine
+.text "It's just...also a sensitive matter for me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "You don't even have to tell me now, Linoan,"
+.byte NewLine
+.text "if it's too much trouble."
+.byte NewLine
+.text "You can gather your—"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "No, that is not necessary."
+.byte WaitForA
+.byte ScrollText
+.text "Lord Arion and I were engaged in an attempt"
+.byte NewLine
+.text "mutually benefit Tarrah and South Thracia."
+.byte NewLine
+.text "It was before you and I met, even."
+.byte WaitForA
+.byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
+.text "Dean, I am quite all right."
+.byte NewLine
+.text "Show yourself, please."
+.byte WaitForA
+.byte ScrollText
+.word ClearPortrait
+.text "As you command."
+.byte NewLine
+.word LoadPortrait
+.word dean_portrait
+.text "Prince Leif."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Dean. Greetings."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
 .word linoan_portrait
-.text "Ah!"
+
+.byte left_slot
+.byte ScrollText
+.text "Please, continue."
+.byte NewLine
+.text "So you sought to form an alliance of sorts."
 .byte WaitForA
 .byte NewLine
-.text "Oh, Dean, it's just you..."
+.text "Evidently, that did not happen, or else the"
 .byte NewLine
-.text "I apologize, I was so lost in thought."
-.byte WaitForA
-.byte NewLine
-.text "You scared me!"
+.text "empire wouldn't have had grounds to invade."
 .byte WaitForA
 
 .byte right_slot
-.byte ScrollText
-.text "Then it is I who should apologize."
+.text "Yes; we'd be protected through their treaty."
 .byte NewLine
-.text "I just couldn't help but notice you were"
+.text "I was willing to accept Lord Arion's proposal"
 .byte NewLine
-.text "looking rather downcast. Is everything okay?"
+.text "if it meant securing my people's safety."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, how I wish I could hide things from you..."
-.byte NewLine
-.text "I still feel lingering regret over all of"
-.byte NewLine
-.text "what happened back in Tarrah."
-.byte WaitForA
-.byte ScrollText
-.text "I can't fool myself into thinking this was"
-.byte NewLine
-.text "my choice. We didn't even stand a chance,"
-.byte NewLine
-.text "and all I could do was concede peacefully."
+.text "Then what—or who—stopped it?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Look, Linoan."
-.byte NewLine
-.text "You did all that you could, and your subjects'"
-.byte NewLine
-.text "trust is what even allowed you to come so far."
+.text "...My people, ironically."
 .byte WaitForA
 .byte ScrollText
-.text "You don't need to worry about them."
+.text "The empire hadn't yet shown up in full force,"
 .byte NewLine
-.text "I'm sure they understand this was for the best."
+.text "and so they felt aligning themselves"
+.byte WaitForA
+.byte NewLine
+.text "with South Thracia and having to part with"
+.byte NewLine
+.text "a significant share of their resources was"
+.byte NewLine
+.text "the same as doing so with the empire."
 .byte WaitForA
 .byte ScrollText
-.text "Thracia does not partake in the child hunts,"
+.text "They wouldn't preemptively enter that state."
 .byte NewLine
-.text "and I'm sure they'll appreciate getting to"
+.text "Did I leave anything out, Dean?"
+.byte WaitForA
+
+.byte ScrollText
+.word LoadPortrait
+.word dean_portrait
+.text "Hmm... Well, I should add that King Travant"
 .byte NewLine
-.text "know their duchess's fiancé a little bit more."
+.text "was desperate to find an opening in dealing"
+.byte NewLine
+.text "with the empire. Tarrah's good for that."
+.byte WaitForA
+.byte ScrollText
+.text "So that adds the possibility that the people"
+.byte NewLine
+.text "would then be caught in the midst of conflict."
+.byte NewLine
+.text "I...think they were wise to protest then."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, Dean... You're absolutely right."
+.word LoadPortrait
+.word linoan_portrait
+.text "But surely King Travant would have listened!"
 .byte NewLine
-.text "I'm sorry, it's not like me to doubt myself."
+.text "He wouldn't entrap us in all-out war after"
+.byte NewLine
+.text "the resources he'd have gained because of us."
 .byte WaitForA
 .byte NewLine
-.text "I can't even remember what got me"
-.byte NewLine
-.text "so worked up in the first place!"
+.text "And the empire wouldn't have invaded, either..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Now, there's the smile I was looking for."
+.text "This is the man who suffered to regain the"
+.byte NewLine
+.text "North his whole life, actually did it,"
+.byte NewLine
+.text "then lost it within a half-year."
+.byte WaitForA
+.byte ScrollText
+.text "I don't think it'd play out so nice-like."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Thank you, Dean. For everything."
-.byte WaitForA
-.byte ScrollText
-.text "Please don't allow me to take so much of your"
-.byte NewLine
-.text "time. I'm sure Leif's Army is in need of your" 
-.byte NewLine
-.text "strength elsewhere."
+.word LoadPortrait
+.word leif_portrait
+.text "......"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "As you wish, milady."
+.text "Prince Arion, however, was brilliant."
+.byte WaitForA
+.byte NewLine
+.text "He took the imperial siege as a way to"
+.byte NewLine
+.text "make Thracia's occupation appear as"
+.byte NewLine
+.text "salvation, not oppression."
+.byte WaitForA
+.byte ScrollText
+.text "He is not his father—I know that much."
+.byte WaitForA
+
+.byte ScrollText
+.word LoadPortrait
+.word linoan_portrait
+.text "...So there you have it, Lord Leif."
+.byte NewLine
+.text "I should have been forthright from the start."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "This is a lot to learn..."
+.byte NewLine
+.text "Not necessarily difficult, but just...a lot."
+.byte WaitForA
+.byte ScrollText
+.text "Thank you."
+.byte NewLine
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word dean_portrait
+
+.byte left_slot
+.text "Both of you."
+.byte WaitForA
+
+.byte right_slot
+.text "...You're welcome."
 .byte WaitForA
 
 .byte EndText
@@ -708,23 +887,6 @@ fredmockilios
 .text "how you have high hopes for me,"
 .byte NewLine
 .text "your good friend Sir Ilios."
-.byte WaitForA
-.byte ScrollText
-.text "...It'd be like what they did in the"
-.byte NewLine
-.text "academy sometimes where they pool together"
-.byte NewLine
-.text "answers for “Most likely to...” prompts."
-.byte WaitForA
-.byte ScrollText
-.text "There was “Most likely to get married,”"
-.byte NewLine
-.text "or “Most likely to make friends with a bear.”"
-.byte WaitForA
-.byte ScrollText
-.text "Just pretend this one is...uh, I dunno."
-.byte NewLine
-.text "“Most likely to become a noble of Leonster.”"
 .byte WaitForA
 
 .byte right_slot

@@ -34,13 +34,13 @@ suspend_prompt
 
 suspend_paragraph
 
-	.text "You [may resu[me"
+	.text "Select Resu[me"
 	.word $0000
-	.text "this chapter"
+	.text "Chapter fro[m the "
 	.word $0000
-	.text "fro[m the [main "
+	.text "[main [menu to"
 	.word $0000
-	.text "[menu "
+	.text "pick up fro[m here" 
 	.word $0000
 .word $0000
 

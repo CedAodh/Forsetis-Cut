@@ -8,12 +8,22 @@ eventChapter2xEvents ; 97/805A
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 97/8067
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Lifis
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _ShivaAIChange
-			CMP_WORD wCurrentTurn, 1
-			CHECK_NUM_UNITS_GTE Shiva, 19
+			CMP_WORD wCurrentTurn, 19
+			CHECK_NUM_UNITS_GTE Shiva, 1
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
@@ -41,6 +51,11 @@ eventChapter2xEvents ; 97/805A
 			CMP_WORD_RANGE wCurrentTurn, 15, 18
 			ROLL_RNG 20
 			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_UNSET FlagBossDeath
+		END_DEFINITION
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 9, 18
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -198,6 +213,8 @@ eventChapter2xEvents ; 97/805A
 	END2
 
 	_TopIslandReinforcements ; 97/82F6
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter2xData._TopIslandReinforcementsGroup1
 		WAIT_MOVE
 		YIELD
@@ -209,21 +226,23 @@ eventChapter2xEvents ; 97/805A
 		LOAD2 eventChapter2xData._TopIslandReinforcementsGroup3
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_UnusedReinforcements1 ; 97/8309
 		LOAD2 eventChapter2xData._TopIslandReinforcementsGroup2
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_UnusedReinforcements2 ; 97/8310
 		LOAD2 eventChapter2xData._TopIslandReinforcementsGroup3
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_LowerRightIslandReinforcements ; 97/8317
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter2xData._LowerRightIslandReinforcementsGroup1
 		WAIT_MOVE
 		YIELD
@@ -239,27 +258,29 @@ eventChapter2xEvents ; 97/805A
 		LOAD2 eventChapter2xData._LowerRightIslandReinforcementsGroup4
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_UnusedReinforcements3 ; 97/8330
 		LOAD2 eventChapter2xData._LowerRightIslandReinforcementsGroup2
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_UnusedReinforcements4 ; 97/8337
 		LOAD2 eventChapter2xData._LowerRightIslandReinforcementsGroup3
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_UnusedReinforcements5 ; 97/833E
 		LOAD2 eventChapter2xData._LowerRightIslandReinforcementsGroup4
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_LowerLeftIslandReinforcements ; 97/8345
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter2xData._LowerLeftIslandReinforcementsGroup1
 		WAIT_MOVE
 		YIELD
@@ -267,13 +288,13 @@ eventChapter2xEvents ; 97/805A
 		LOAD2 eventChapter2xData._LowerLeftIslandReinforcementsGroup2
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_UnusedReinforcements6 ; 97/8352
 		LOAD2 eventChapter2xData._LowerLeftIslandReinforcementsGroup2
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_TorchPickup ; 97/8359
 		STORE_WORD wEventEngineParameter1, TurnStatusDead
@@ -321,13 +342,8 @@ eventChapter2xEvents ; 97/805A
 		
 		macroSetCharacterWord Lifis, structCharacterDataRAM.Leader, Eyvel
 		
-		JUMP ++
-		
 		+
 		
-		SET_FLAG FlagLifisGoneForGood
-
-		+
 		YIELD
 
 		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000

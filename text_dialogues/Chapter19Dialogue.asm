@@ -57,9 +57,9 @@ ch19conomorrecruit
 .byte ScrollText
 .text "As ruler, I hereby declare that the entirety of"
 .byte NewLine
-.text "Ulster is part of Prince Leif's Liberation Army!"
+.text "Ulster is part of Prince Leif's North Thracian"
 .byte NewLine
-.text "Their mission is now our own!"
+.text "Liberation Army! Their mission is now our own!"
 .byte WaitForA
 
 .byte Right_slot
@@ -133,9 +133,9 @@ ch19amaldarecruit
 .byte ScrollText
 .text "That's not even in the realm of possibility,"
 .byte NewLine
-.text "Father Schroff. If it were, I...I wouldn't be"
+.text "Father Schroff. If it were, I...I wouldn't be living"
 .byte NewLine
-.text "living in such torment."
+.text "in such torment."
 .byte WaitForA
 
 .byte Left_slot
@@ -149,7 +149,7 @@ ch19amaldarecruit
 .byte ScrollText
 .text "Will you stand idly by and allow evil to consume"
 .byte NewLine
-.text "your home, all out of fear for being branded a"
+.text "your home, all out of fear of being branded a"
 .byte NewLine
 .text "traitor?"
 .byte WaitForA
@@ -502,7 +502,7 @@ ch19windhouse
 .text "I'm fairly certain it's enchanted..."
 .byte WaitForA
 .byte ScrollText
-.text "I think it's just called Wind.."
+.text "I think it's just called Wind..."
 .byte NewLine
 .text "...But we could probably all use a second wind"
 .byte NewLine
@@ -647,9 +647,9 @@ ch19opening2
 .byte Left_slot
 .word LoadPortrait
 .word blume_portrait
-.text "...Now the maggots understand what the empire"
+.text "...Now the maggots understand what the empire is"
 .byte NewLine
-.text "is capable of."
+.text "capable of."
 .byte WaitForA
 .byte ScrollText
 .text "I'll leave the rest to you, Wolfe."
@@ -879,9 +879,9 @@ ch19closing1
 .text "crafted Lord Seliph to be their hero."
 .byte WaitForA
 .byte ScrollText
-.text "Forged him, if you will, in much the same way"
+.text "Forged him, if you will, in much the same way one"
 .byte NewLine
-.text "one forges metal into a blade—taking a man and"
+.text "forges metal into a blade—taking a man and"
 .byte NewLine
 .text "sculpting him into what the people need."
 .byte WaitForA
@@ -983,13 +983,14 @@ ch19closing2
 
 ch19wm1
 
-.text "Already a day behind Dryas,"
+.text "Already a day behind "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $033C ;dorius
 .word $0B0E ;y then x
+.text "Dryas, Leif's forces were"
 .byte NewLine
-.text "Leif's forces were finally rested and ready."
+.text "finally rested and ready."
 .byte WaitForA
 .byte ScrollText
 
@@ -1000,14 +1001,11 @@ ch19wm2
 
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
-.word $0013 ;y then x
-.text "He was just about to march for Ulster"
-.byte WaitForA
+.word $013F ;leify-left
+.word $0213 ;y then x
+.text "He was just about to march for Ulster—when a"
 .byte NewLine
-.text "when a most unexpected message"
-.byte NewLine
-.text "was delivered to him."
+.text "most unexpected message was delivered to him."
 .byte WaitForA
 .byte ScrollText
 
@@ -1016,9 +1014,9 @@ ch19wm2
 
 ch19wm3
 
-.text "It was this moment that marked Leif's"
+.text "It was this moment that marked Leif's beginning"
 .byte NewLine
-.text "beginning down a long road of hardship..."
+.text "down a long road of hardship..."
 .byte WaitForA
 
 .byte EndText

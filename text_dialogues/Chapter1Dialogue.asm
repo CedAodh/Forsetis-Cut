@@ -45,9 +45,9 @@ ch1op1
 	.byte ScrollText
 	.text "Why does such a simple task take you so long?"
 	.byte NewLine
-	.text "There's little doubt that the heir to House"
+	.text "There's little doubt that the heir to"
 	.byte NewLine
-	.text "Leonster is hiding here."
+	.text "House Leonster is hiding here."
 	.byte WaitForA
 	.byte ScrollText
 	.text "You've been too gentle with these villagers—"
@@ -92,9 +92,9 @@ ch1op1
 	.byte ScrollText
 	.text "She claimed the village as her own and founded"
 	.byte NewLine
-	.text "the Freeblades to protect the region from"
+	.text "the Freeblades to protect the region from future"
 	.byte NewLine
-	.text "future attacks."
+	.text "attacks."
 	.byte WaitForA
 	.byte ScrollText
 	.text "She's supposedly quite a wonder with a sword..."
@@ -124,7 +124,9 @@ ch1op1
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Hmph. I admit, you have your uses, Weismann."
+	.text "Hmph."
+	.byte NewLine
+	.text "I admit, you have your uses, Weismann."
 	.byte WaitForA
 	.byte ScrollText
 	.text "The women will accompany me back to Munster."
@@ -210,9 +212,9 @@ ch1op2
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "What a pleasant surprise the two of you"
+	.text "What a pleasant surprise the two of you make"
 	.byte NewLine
-	.text "make for."
+	.text "for."
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -224,7 +226,7 @@ ch1op2
 	.byte ScrollText
 	.text "Weismann, I shall depart for Munster now."
 	.byte NewLine
-	.text "Don't disappoint me."
+	.text "I leave the rest to you."
 	.byte WaitForA
 
 	.byte Right_Slot
@@ -274,9 +276,9 @@ ch1op4
 	.byte Left_Slot
 	.word LoadPortrait
 	.word osian_portrait
-	.text "What? No way is the empire gonna make a mess"
+	.text "What?! Oh, the damn empire picked the wrong"
 	.byte NewLine
-	.text "of our home!"
+	.text "guys to harass this time..."
 	
 	.byte Right_Slot
 	.byte ScrollText
@@ -291,18 +293,18 @@ ch1op4
 	.byte Right_Slot
 	.word LoadPortrait
 	.word halvan_portrait
-	.text "Calm down, Osian. We'll get slaughtered if we"
+	.text "Calm down, Osian."
 	.byte NewLine
-	.text "just charge in blindly."
+	.text "We'll get slaughtered if we just charge in blindly."
 	.byte WaitForA
 	
 	.byte Left_Slot
 	.byte ScrollText
-	.text "Yeah, Halvan, I'm sure the village will appreciate"
+	.text "And how are you so calm right now, Halvan?"
 	.byte NewLine
-	.text "your patient attitude while everyone's being"
+	.text "Our home is under attack—everyone's getting"
 	.byte NewLine
-	.text "rounded up and jailed!"
+	.text "grabbed and jailed every second we waste here!"
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -310,20 +312,20 @@ ch1op4
 	.word LoadPortrait
 	.word eyvel_portrait
 	.text "Peace, Osian. Halvan is right."
-	.byte NewLine
-	.text "Seems we've finally been noticed by the empire."
 	.byte WaitForA
 	
 	.byte Left_Slot
 	.byte ScrollText
 	.word LoadPortrait
-	.word leif_portrait
+	.word leif_portrait2
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "It looks like this is goodbye, Lord Leif."
+	.text "Seems we've finally been noticed by the empire,"
 	.byte NewLine
-	.text "I'm sorry."
+	.text "Lord Leif."
+	.byte NewLine
+	.text "It looks like this is goodbye... I'm sorry."
 	.byte WaitForA
 	
 	.byte Left_Slot
@@ -372,26 +374,26 @@ ch1op4
 	
 	.byte Right_Slot
 	.byte NewLine
-	.text "Are you going to let Lord Leif throw himself"
+	.text "Are you going to let Lord Leif throw himself into"
 	.byte NewLine
-	.text "into harm's way like this?"
+	.text "harm's way like this?"
 	.byte WaitForA
 	
 	.byte Left_Slot
-	.text "Lord Leif has seen the passing of 15 summers,"
+	.text "Lord Leif has already reached the age of 15."
 	.byte NewLine
-	.text "by now. He's old enough to choose for himself—"
+	.text "I believe we've come upon the time where he can"
 	.byte NewLine
-	.text "and as my liege, he has my full faith."
+	.text "choose for himself. He has my full faith, Eyvel."
 	.byte WaitForA
 
 	.byte Right_Slot 
 	.byte ScrollText
 	.text "Has it been that long already?"
 	.byte NewLine
-	.text "Hmph, I suppose I did let him come with us"
+	.text "Hmph, I suppose I did let him come with us to"
 	.byte NewLine 
-	.text "to fight off those pirates, myself..."
+	.text "fight off those pirates, myself..."
 	.byte WaitForA
 	.byte NewLine
 	.text "Perhaps I made up my own mind when I did that."
@@ -410,12 +412,11 @@ ch1op4
 	.byte Left_Slot
 	.word LoadPortrait
 	.word osian_portrait
-	.text "Then what's the hold-up? If we're done arguing,"
+	.text "...I don't really know what's going on, but if it's"
 	.byte NewLine
-	.text "there's an invasion happening over that ridge!"
+	.text "done, how about we maybe finally get going!"
 	.byte WaitForA
 	
-	;.byte ScrollText
 	.byte $03
 	.word ClearPortrait
 	.word RetractBox
@@ -424,22 +425,24 @@ ch1op4
 	.byte ScrollText
 	.text "All right, get ready to move in. But stay sharp:"
 	.byte NewLine
-	.text "most foot soldiers are just regular folk, forced"
+	.text "most foot soldiers are just regular folk,"
 	.byte NewLine
-	.text "into the imperial army against their will."
+	.text "conscripted into the imperial army by force."
 	.byte WaitForA
 	.byte ScrollText
-	.text "If they surrender, just take their weapons"
+	.text "When the opportunity presents itself, capture"
 	.byte NewLine
-	.text "and cut them loose. Are we clear?"
+	.text "rather than kill them, take their weapons,"
+	.byte NewLine
+	.text "then cut them loose. Are we clear?"
 	.byte WaitForA
 	
 	.byte Left_Slot
 	.word LoadPortrait
 	.word osian_portrait
-	.text "But we can still bloody them until they surrender,"
+	.text "But we can bloody them UNTIL they surrender,"
 	.byte NewLine
-	.text "right? I mean, if we can't put up a good fight"
+	.text "right? Because if we can't put up a good fight"
 	.byte NewLine
 	.text "ourselves, we'll be the ones surrendering."
 	.byte WaitForA
@@ -465,7 +468,7 @@ ch1op4
 	.byte WaitForA
 	
 	.byte Left_Slot
-	.text "Hey, c'mon, gimme some credit, Commander!"
+	.text "Ugh, don't you trust me, Commander?"
 	.byte WaitForA
 	
 	.byte $03
@@ -494,14 +497,14 @@ ch1dagdararrive
 	.byte WaitForA
 	
 	.byte Right_Slot
-	.text "Ain't no good way to go about this"
+	.text "Ain't no good way to go about this damned"
 	.byte NewLine
-	.text "damned battle..."
+	.text "battle..."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Don't matter how good Eyvel is, there's only"
+	.text "Don't matter how good Eyvel is, there's only one"
 	.byte NewLine
-	.text "one of her an' over a dozen of them."
+	.text "of her an' over a dozen imperials."
 	.byte NewLine
 	.text "We need to hurry."
 	.byte WaitForA
@@ -513,7 +516,7 @@ ch1martyarrive
 	.byte Right_slot
     .word LoadPortrait
     .word marty_portrait
-	.text "Oh, for cryin' out loud! Not again..."
+	.text "Ugggh... Here we go again..."
 	.byte WaitForA
 	
 	.byte EndText
@@ -529,22 +532,22 @@ ch1osianhouseosian
     .word oldman_portrait
 	.text "You pullin' your weight in the Freeblades, boy?"
 	.byte NewLine
-	.text "Last thing Commander Eyvel needs is"
+	.text "Last thing Commander Eyvel needs is to babysit"
 	.byte NewLine
-	.text "to babysit you."
+	.text "you."
 	.byte WaitForA
 	
 	.byte Right_slot
-	.text "Get outta my face with the lectures, old man."
+	.text "Get outta my face with the sermons, old man."
 	.byte NewLine
-	.text "You think I came here to listen to that crap?"
+	.text "You think I came here to listen to that?"
 	.byte WaitForA
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Not even the empire knockin' down our front door"
+	.text "Not even the empire knockin' down our front"
 	.byte NewLine
-	.text "can stop that fool mouth of yours, I see."
+	.text "door can stop that fool mouth of yours, I see."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Well, no point in draggin' this out."
@@ -556,23 +559,23 @@ ch1osianhouseosian
 	.byte ScrollText
 	.text "For once, you read my mind."
 	.byte NewLine
-	.text "When a fight breaks out, I just feel off"
+	.text "When a fight breaks out, I just feel off without"
 	.byte NewLine
-	.text "without this axe at my side."
+	.text "this axe at my side."
 	.byte WaitForA
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Which don't explain why you forget it at home"
+	.text "Which doesn't explain why you forget it at home"
 	.byte NewLine
 	.text "half the damn time!"
 	.byte WaitForA
 	
 	.byte Right_slot
 	.byte ScrollText
-	.text "Hey, I told you I didn't come here"
+	.text "Hey, I told you I didn't come here to get chewed"
 	.byte NewLine
-	.text "to get chewed out!"
+	.text "out!"
 	.byte WaitForA
 	
 	.byte Left_slot
@@ -598,9 +601,7 @@ ch1osianhouseother
     .word oldman_portrait
 	.text "Where has that fool boy of mine gone off to in"
 	.byte NewLine
-	.text "this fracas? I swear, my Osian's gonna get"
-	.byte NewLine
-	.text "himself killed one of these days..."
+	.text "this fracas? That useless vagabond...!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -617,23 +618,21 @@ ch1liferinghouse
 	.text "they were cattle!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "You're not gonna let 'em get away with that,"
-	.byte NewLine
-	.text "are you?"
+	.text "They're not gonna get away with that, right?"
 	.byte WaitForA
 	.byte ScrollText
-	.text "If you're fixin' to fight the empire,"
+	.text "Then to help, take this with you."
 	.byte NewLine
-	.text "take this with you. This here ring's"
+	.text "This here ring's enchanted with some spell or"
 	.byte NewLine
-	.text "enchanted with some spell or another."
+	.text "another."
 	.byte WaitForA
 	.byte ScrollText
-	.text "But don't just wear it on your finger like"
+	.text "But don't just wear it on your finger like some"
 	.byte NewLine
-	.text "some common bauble! You gotta actually [Use] it"
+	.text "common bauble! You gotta actually [Use] it for it"
 	.byte NewLine
-	.text "for it to do any good!"
+	.text "to have any effect!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -658,11 +657,11 @@ ch1vulneraryhouse
 	.text "Take this with you. Use it if you get scraped up."
 	.byte WaitForA
 	.byte ScrollText
-	.text "We don't have much in the way of medicine, but"
+	.text "We don't have much in the way of medicine,"
 	.byte NewLine
-	.text "it's the least we can do after everythin' the"
+	.text "but it's the least we can do after everythin'"
 	.byte NewLine
-	.text "commander's done for us."
+	.text "the commander's done for us."
 	.byte WaitForA
 	
 	.byte EndText
@@ -676,31 +675,28 @@ ch1ironswordhouse
 	.byte NewLine
 	.text "Most folk here gotta make do by nicking supplies"
 	.byte NewLine
-	.text "from imperial troops."
-	.byte WaitForA
-	.byte ScrollText
-	.text "It's awful risky, but if you can capture an"
-	.byte NewLine
-	.text "enemy alive, you get to help yourself to their"
-	.byte NewLine
-	.text "stuff."
+	.text "from whatever adversaries they come across."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Matter of fact, I got the drop on an imperial"
 	.byte NewLine
-	.text "soldier myself. Heard 'im snoring from three"
+	.text "soldier m'self. Heard 'im snoring from three"
 	.byte NewLine
-	.text "houses away, so I took me a souvenir!"
+	.text "houses away, though, so that one was easy."
 	.byte WaitForA
 	.byte ScrollText
-	.text "...Not that it'll do me much good, though."
+	.text "...It's a sword, unfortunately for me. I always"
 	.byte NewLine
-	.text "Probably better off in your hands, I reckon."
+	.text "fancied myself a wielder of bows, if anything."
+	.byte NewLine
+	.text "So how about you guys take it, then?"
 	.byte WaitForA
 	.byte ScrollText
-	.text "And hey, if you don't need it, you can just"
+	.text "And hey, if you don't need it, you can just bring"
 	.byte NewLine
-	.text "hawk it for somethin' you do need."
+	.text "it to the shop over there and they'll give you a"
+	.byte NewLine
+	.text "little something for it."
 	.byte WaitForA
 	
 	.byte EndText
@@ -714,7 +710,7 @@ ch1halvanhousehalvan
 	.byte Left_slot
     .word LoadPortrait
     .word younglady_portrait
-	.text "Big brother!"
+	.text "Big Brother!"
 	.byte NewLine
 	.text "I've got something real special for you!"
 	.byte NewLine
@@ -722,12 +718,15 @@ ch1halvanhousehalvan
 	.byte WaitForA
 	
 	.byte Right_slot
-	.text "An...axe? Where in the world did you get"
+	.text "An...axe? Where in the world did you get such a"
 	.byte NewLine
-	.text "such a fine weapon?"
+	.text "fine weapon, Patricia?"
 	.byte WaitForA
 	
 	.byte Left_slot
+	.byte ScrollText
+	.text "Heh, I thought you'd react like that."
+	.byte WaitForA
 	.byte ScrollText
 	.text "It was the weirdest thing... I was walking past"
 	.byte NewLine
@@ -736,14 +735,11 @@ ch1halvanhousehalvan
 	.text "old lady just floated outta the water!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "She gave it to me, then vanished, quick as"
+	.text "She gave it to me, then vanished just as quick!"
 	.byte NewLine
-	.text "you can blink! I've been keepin' it for you,"
+	.text "And...well, what can I do with it?"
 	.byte NewLine
-	.text "and taking real good care of it."
-	.byte WaitForA
-	.byte ScrollText
-	.text "Now go put it to use, and make me proud!"
+	.text "I know you'll put it to far better use!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -753,11 +749,11 @@ ch1halvanhouseother
 	.byte Right_slot
     .word LoadPortrait
     .word younglady_portrait
-	.text "Hey, hey, have you seen my big brother,"
+	.text "Hey, hey, have you seen my big brother, Halvan?"
 	.byte NewLine
-	.text "Halvan? He's got me awfully scared..."
+	.text "He's got me awfully scared..."
 	.byte NewLine
-	.text "I hope he's all right..."
+	.text "I'm hoping he's all right..."
 	.byte WaitForA
 	
 	.byte EndText
@@ -775,9 +771,7 @@ ch1ending
 	.byte Left_slot
     .word LoadPortrait
     .word eyvel_portrait
-	.text "Lady Nanna, Mareeta..."
-	.byte NewLine
-	.text "Raydrik must've gotten ahold of them."
+	.text "Baron Raydrik must've gotten ahold of them."
 	.byte WaitForA
 	
 	.byte Right_Slot
@@ -807,35 +801,35 @@ ch1ending
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Now look here, Lord Leif—" ;interrupt
+	.text "Now look, Lord Leif—" ;interrupt
 	.byte WaitForA
 	
 	.byte Right_Slot
 	.byte ScrollText
-	.text "Commander, you yourself said I'm not"
+	.text "Commander, you yourself said I'm not a child"
 	.byte NewLine
-	.text "a child anymore."
+	.text "anymore."
 	.byte WaitForA
 	.byte ScrollText
 	.text "Nanna and Mareeta were taken captive because"
 	.byte NewLine
-	.text "of me—and I refuse to let anyone suffer"
+	.text "of me—and I refuse to let anyone suffer in my"
 	.byte NewLine
-	.text "in my place."
+	.text "place."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I will never again let someone sacrifice their"
+	.text "I will never again let someone sacrifice their life"
 	.byte NewLine
-	.text "life in exchange for mine."
+	.text "in exchange for mine."
 	.byte WaitForA
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "...I understand. We leave at dawn, then."
+	.text "...Very well. We leave at dawn, then."
 	.byte NewLine
 	.text "I won't lie, Lord Leif: this will be a long road."
 	.byte NewLine
-	.text "Get some rest while you can."
+	.text "Make sure you sleep well while you can."
 	.byte WaitForA
 	
 	.byte EndText
@@ -849,13 +843,13 @@ ch1endingnoeyvel
 	.byte NewLine
 	.text "Please, answer me!"
 	.byte WaitForA
-		
+	
 	.byte Left_slot
     .word LoadPortrait
     .word youngman_portrait
 	.text "L-Lord Leif!"
 	.byte NewLine
-	.text "Gods' breath, are you a sight fer sore eyes!"
+	.text "Gods' breath, are you a sight for sore eyes!"
 	.byte NewLine
 	.text "I...wish I had better news fer you."
 	.byte WaitForA
@@ -898,7 +892,7 @@ ch1endingnoeyvel
 	
 	.byte Right_slot
 	.byte ScrollText
-	.text "Munster... Then that's where I'm headed, too."
+	.text "Munster... Then that's where I'm headed too."
 	.byte NewLine
 	.text "I'll bring everyone home: Nanna, Mareeta,"
 	.byte NewLine
@@ -913,18 +907,21 @@ ch1wm1
 	.byte NewLine
 	.text "with his life, "
 	.byte WaitForA
+	.byte ScrollText
 	
+	.text "the young Prince "
 	.word LoadPortraitalt_1
 	.long LoadPortraitalt_2
-	.word $0001 ;leify-right
+	.word $003F ;leify-right
 	.word $0406 ;y then x
-	.text "the young Prince Leif was looked after"
-	.byte NewLine
-	.text "by Finn, his knight and retainer."
+	.text "Leif was looked after by "
 	.word LoadPortraitalt_1
 	.long LoadPortraitalt_2
 	.word $0102 ;finn
 	.word $0C10 ;y then x
+	.text "Finn,"
+	.byte NewLine
+	.text "his knight and retainer."
 	.byte WaitForA
 	.byte ScrollText
 	
@@ -932,16 +929,17 @@ ch1wm1
 	
 ch1wm2
 
-	.text "Together with Nanna, a young noblewoman"
+	.text "Together with "
 	.word LoadPortraitalt_1
 	.long LoadPortraitalt_2
 	.word $0213 ;nanna
 	.word $0C03 ;y then x
+	.text "Nanna, Finn's daughter,"
 	.byte NewLine
-	.text "under Finn's care, the trio fled pursuers"
+	.text "the trio fled pursuers"
 	.byte WaitForA
 	
-	.byte NewLine
+	.byte ScrollText
 	.text "sent by the conquerors of North Thracia:"
 	.byte NewLine
 	.text "the Grannvale Empire, which lay to the west."
@@ -953,15 +951,16 @@ ch1wm2
 	.byte ScrollText
 	.word ClearPortraitalt
 	.long $82937A
-	.word $0001
-	.byte ScrollText
-	.word ClearPortraitalt
-	.long $82937A
 	.word $0002
+	.byte ScrollText
 	
 	.text "Yet Finn proved stronger than those who hunted"
 	.byte NewLine
-	.text "them, and the three made their way to the cities"
+	.text "them, "
+	.word ClearPortraitalt
+	.long $82937A
+	.word $0001
+	.text "and the three made their way to the cities"
 	.byte WaitForA
 	.byte ScrollText
 	
@@ -985,42 +984,47 @@ ch1wm4
 	
 ch1wm5
 
-	.text "Eventually, they drifted into Fiana,"
+	.text "Eventually, they drifted into Fiana, a small village"
 	.byte NewLine
-	.text "a small village on Thracia's eastern coast."
+	.text "on Thracia's eastern coast."
 	.byte WaitForA
 	.byte ScrollText
 	
-	.text "Fiana was an independent community with"
+	.text "Fiana was an independent community with its own"
 	.byte NewLine
-	.text "its own militia, the Fiana Freeblades,"
+	.text "militia, the Fiana Freeblades,"
 	.byte WaitForA
-	.byte NewLine
-	.text "led by the swordswoman Eyvel."
+	.byte ScrollText
+	.text "led by the swordswoman "
 	.word LoadPortraitalt_1
 	.long LoadPortraitalt_2
 	.word $0005 ;eyvel
 	.word $080B ;y then x
+	.text "Eyvel. She and her"
+	.byte NewLine
+	.text "fighters defended the area from pirate attacks."
 	.byte WaitForA
 	.byte ScrollText
 	
-	.text "Eyvel welcomed Leif's group"
-	.byte NewLine
+	.text "Eyvel welcomed Leif's "
 	.word LoadPortraitalt_1
 	.long LoadPortraitalt_2
-	.word $0101 ;leify-left
+	.word $013F ;leify-left
 	.word $0817 ;y then x
-	.text "as if they were her own kin."
+	.text "group as if they were her"
+	.byte NewLine
+	.text "own kin."
 	.byte WaitForA
 	.byte ScrollText
 	
-	.text "Under her watchful eye, the deposed prince"
+	.text "Under her watchful eye, the deposed prince spent"
 	.byte NewLine
-	.text "spent his childhood in Fiana, "
+	.text "his childhood in Fiana, "
 	.byte WaitForA
-	.text "growing into"
+	.byte ScrollText
+	.text "growing into maturity alongside youths of common"
 	.byte NewLine
-	.text "maturity alongside youths of common birth."
+	.text "birth."
 	.byte WaitForA
 	
 	.word ClearPortraitalt
@@ -1061,9 +1065,9 @@ ch1dagdareyveltalk
 	.text "Does me heart good to see you in one piece!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "Listen, ya have any idea why the empire"
+	.text "Listen, ya have any idea why the empire would"
 	.byte NewLine
-	.text "would come all the way out here?"
+	.text "come all the way out here?"
 	.byte WaitForA
 	.byte ScrollText
 	.text "It have anything to do with...the boy?"
@@ -1075,10 +1079,10 @@ ch1dagdareyveltalk
 	.byte NewLine
 	.text "He's not just some nobleman."
 	.byte NewLine
-	.text "He's the heir to House Leonster."
+	.text "He's the heir to the fallen kingdom of Leonster."
 	.byte WaitForA
 	.byte ScrollText
-	.text "I've been helping him hide from the empire."
+	.text "I myself chose to help him hide from the empire."
 	.byte NewLine
 	.text "I'm sorry... I shouldn't have kept it from you."
 	.byte WaitForA
@@ -1116,24 +1120,26 @@ ch1osiantayatalk
 	.byte ScrollText
 	.text "“Help any way you can,” huh?"
 	.byte NewLine
-	.text "In that case, turn tail and march back home."
-	.byte WaitForA
-	.byte ScrollText
-	.text "That's the only way a kid like you could help—"
+	.text "Hmph, we're not in such a bind that even YOU"
 	.byte NewLine
-	.text "you'd just get in the way."
+	.text "could do something to help us."
+	.byte WaitForA
+	.byte NewLine
+	.text "Get yourself back home where you belong, kiddo."
 	.byte WaitForA
 	
 	.byte Right_slot
 	.byte ScrollText
-	.text "You've got some nerve, Osian!"
+	.text "Y-you've got some nerve, Osian!"
 	.byte NewLine
-	.text "You're just a kid yourself, you know!"
+	.text "Between the two of us, YOU'RE the kid!"
 	.byte WaitForA
 	.byte ScrollText
-	.text "You want me gone, I'm gone—not all of us are as"
+	.text "It's not like I need your permission to go"
 	.byte NewLine
-	.text "eager to throw ourselves into danger as you!"
+	.text "anywhere! That said, who would even want to"
+	.byte NewLine
+	.text "throw themselves into something like this?!"
 	.byte WaitForA
 	
 	.byte EndText

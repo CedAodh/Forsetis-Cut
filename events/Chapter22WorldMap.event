@@ -81,16 +81,164 @@ eventChapter22WorldMapEvents ; E7/F412
 	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
 	YIELD
 	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	SET_MUSIC $01
+	YIELD
+
+	STORE_WORD wEventEngineParameter1, 3
+	CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+	CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, shouldleifmaketherounds
+	YIELD_UNK
+	YIELD_UNK
+	YIELD_UNK
+	YIELD
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+
+	FADE_OUT $01
+	YIELD
+
+	CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+	STORE_BYTE bBuf_INIDISP, $00
+	JUMP_FALSE _NoInterim
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Asbel
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Tina
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground ch22tinaasbel, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Shiva
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Asaello
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground shivaasaello, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
 	STORE_WORD wEventEngineCharacterTarget, Olwen
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +
 	
-	FADE_OUT $02
+	STORE_WORD wEventEngineCharacterTarget, Amalda
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground amaldaolwen, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD
 	
-	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 32
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
 	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Diarmuid
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Shannam
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground diarmuidshannam, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Fergus
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Karin
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground ch22karinfergus, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, GunterDialogue
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Schroff
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground gunnarschroff, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	+
+	
+	_NoInterim
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Olwen
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
 	
 	SET_MUSIC $58
 	YIELD
@@ -107,6 +255,24 @@ eventChapter22WorldMapEvents ; E7/F412
 	YIELD
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	EVENT_TEST_FLAG_SET FlagSaiasDead
+	JUMP_TRUE +
+	
+	LOAD1 eventChapter22Data._SaiasGroup
+	
+	JUMP ++
+	
+	+
+	
+	LOAD1 eventChapter22Data._SaiasReplacementGroup
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, FriegeGeneral1
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Charm
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
 	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 32

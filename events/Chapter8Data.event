@@ -76,7 +76,7 @@ eventChapter8Data ; B1/DD06
 	.byte $FF
 
 	_Armory ; B1/DE77
-		SHOP [16, 8], [IronAxe, SteelAxe, HandAxe, KillerAxe, Hammer]
+		SHOP [16, 8], [IronAxe, SteelAxe, HandAxe, Hammer]
 
 	_Vendor ; B1/DE89
 		SHOP [13, 14], [Vulnerary, Antitoxin, Torch, DoorKey]

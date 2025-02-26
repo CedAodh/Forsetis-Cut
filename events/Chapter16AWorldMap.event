@@ -74,6 +74,75 @@ eventChapter16AWorldMapEvents ; E7/ECFB
 
 	CALL_ASM_LOOP rlASMCEndWMEvents, $0000
 	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	SET_MUSIC $01
+	YIELD
+
+	STORE_WORD wEventEngineParameter1, 3
+	CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+	CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, shouldleifmaketherounds
+	YIELD_UNK
+	YIELD_UNK
+	YIELD_UNK
+	YIELD
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+
+	FADE_OUT $01
+	YIELD
+
+	CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+	STORE_BYTE bBuf_INIDISP, $00
+	JUMP_FALSE _NoInterim
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Dean
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Linoan
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground deanlinoanA, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Trude
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Asaello
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground asaellotrude, 3
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	+
+	
+	_NoInterim
 
 	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
 	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
@@ -120,6 +189,23 @@ eventChapter16AWorldMapEvents ; E7/ECFB
 	CALL_ASM_LOOP rlASMCMount, $0000
 	STORE_WORD wEventEngineCharacterTarget, Kempf
 	CALL_ASM_LOOP rlASMCMount, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Kempf
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill3Immortal << 8
+	CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
+	
+	EVENT_TEST_FLAG_SET FlagNoHelpFromOltoph
+	JUMP_TRUE +
+
+	LOAD1 eventChapter16AData._OltophGroup
+	JUMP ++
+	
+	+
+	
+	LOAD1 eventChapter16AData._BishopGroup
+	
+	+
 	
 	FADE_IN $02
 	

@@ -8,6 +8,15 @@ eventChapter6Events ; 99/A346
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/A353
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagAlwaysZero, _CedAppear
 			RUN_ASM _rlChapter4xCheck
 			CMP_WORD wCurrentTurn, 5
@@ -31,10 +40,6 @@ eventChapter6Events ; 99/A346
 		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			CMP_WORD wCurrentTurn, 14
-			CMP_WORD wCurrentPhase, NPC
-		END_DEFINITION
-		EVENT $0D, _KnightReinforcements
-			TEST_FLAG_SET $07
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $0D, _KnightReinforcements
@@ -62,7 +67,7 @@ eventChapter6Events ; 99/A346
 		EVENT $1D, _DaisyCedTalk
 			CHECK_CHARS2 Daisy, CedChp4x
 		END_DEFINITION
-		EVENT $1E, _MachaCedTalk
+		EVENT $1B, _MachaCedTalk
 			CHECK_CHARS2 Macha, CedChp4x
 		END_DEFINITION
 		;EVENT $1F, _LeifBrightonTalk
@@ -643,6 +648,8 @@ eventChapter6Events ; 99/A346
 	END2
 
 	_KnightReinforcements ; 99/AE6D
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter6Data._KnightReinforcementsCameraCoordinates1
 		YIELD
 
@@ -662,7 +669,7 @@ eventChapter6Events ; 99/A346
 		YIELD_UNK
 	END2
 
-        _AsbelRemoveImmortality
+    _AsbelRemoveImmortality
 		macroUnsetCharacterBitsWord Asbel, structCharacterDataRAM.Skills2,(Skill3Immortal << 8)
 	END2
 	

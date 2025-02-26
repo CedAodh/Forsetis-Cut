@@ -1,9 +1,9 @@
 ch10fredboss
 .text "You think you can just stomp"
 .byte NewLine
-.text "around House Friege's backyard"
+.text "around House Friege's backyard and"
 .byte NewLine
-.text "and get away with it?!"
+.text "get away with it?!"
 .byte WaitForA
 .byte EndText
 
@@ -15,16 +15,16 @@ ch10olwenboss
 .byte EndText
 
 ch11kemphboss
-.text "Tch... So much for the"
+.text "Tch... So much for the “impregnable”"
 .byte NewLine
-.text "“impregnable” Fort Dundrum..."
+.text "Fort Dundrum..."
 .byte WaitForA
 .byte EndText
 
 ch13baldackboss		; Unused, but it's the same as his ch14 one
-.text "Funny. You little rats think"
+.text "Laughable. You little rats think you"
 .byte NewLine
-.text "you can actually beat me!"
+.text "can actually beat me!"
 .byte WaitForA
 .byte EndText
 
@@ -52,7 +52,9 @@ ch17Bamaldaboss
 .byte EndText
 
 ch19wolfeboss
-.text "You're just a stain on my blade!"
+.text "You, too, seek to become the prey"
+.byte NewLine
+.text "of my blade?"
 .byte WaitForA
 .byte EndText
 
@@ -68,7 +70,7 @@ bucksboss
 .byte NewLine
 .text "I'm THE Bucks, a beast born from"
 .byte NewLine
-.text "from life on the clear blue!"
+.text "life in the deep blue!"
 .byte WaitForA
 .byte EndText
 
@@ -80,7 +82,7 @@ shivaboss
 lithisboss
 .text "H-hey, wait a minute!"
 .byte NewLine
-.text "I ain't that bad, really!"
+.text "I'm not that bad, really!"
 .byte WaitForA
 .byte ScrollText
 .text "Maybe I did wrong here and there,"
@@ -92,9 +94,9 @@ lithisboss
 lobosboss
 .text "Wh-who do you think you are?!"
 .byte NewLine
-.text "You honestly believe you'll get"
+.text "You honestly believe you'll get away"
 .byte NewLine
-.text "away with this vile act?!"
+.text "with this vile act?!"
 .byte WaitForA
 .byte EndText
 
@@ -106,9 +108,9 @@ dalsinboss
 .byte EndText
 
 galzusboss
-.text "I pity you. Curse your own fate"
+.text "I pity you. Curse your own fate for"
 .byte NewLine
-.text "for leading you here."
+.text "leading you here."
 .byte WaitForA
 .byte EndText
 
@@ -122,7 +124,7 @@ eisenauboss
 raydrikboss
 .text "So, you've come to strike me down?"
 .byte NewLine
-.text "Hah! It will never happen, fool!"
+.text "Ha! It will never happen, fool!"
 .byte WaitForA
 .byte EndText
 
@@ -141,9 +143,9 @@ martyboss
 .byte EndText
 
 gomezboss
-.text "Dammit, you think you can take"
+.text "Dammit, you think you can take on"
 .byte NewLine
-.text "on the Great Gomez and win?!"
+.text "the Great Gomez and win?!"
 .byte NewLine
 .text "I'll shrug off whatever you got!"
 .byte WaitForA
@@ -157,18 +159,18 @@ merlochboss
 .byte EndText
 
 largoboss
-.text "What's the meaning of this?!"
+.text "What is the meaning of this?!"
 .byte NewLine
-.text "What is your goal in trespassing"
+.text "What is your goal in trespassing on"
 .byte NewLine
-.text "on our rightful land?"
+.text "our rightful land?"
 .byte WaitForA
 .byte EndText
 
 fredboss
 .text "What?! You would continue the fight"
 .byte NewLine
-.text "after all you've seen so far?!"
+.text "after what you've seen so far?!"
 .byte NewLine
 .text "What complete idiocy!"
 .byte WaitForA
@@ -177,9 +179,9 @@ fredboss
 oltophboss
 .text "You'll go no further!"
 .byte NewLine
-.text "I... I'll be the one who makes it"
+.text "I... I'll be the one who makes it out"
 .byte NewLine
-.text "out of this! I will!"
+.text "of this! I will!"
 .byte WaitForA
 .byte EndText
 
@@ -217,7 +219,7 @@ tinaboss
 lisztboss
 .text "D-damn!"
 .byte NewLine
-.text "How does this even happen?!"
+.text "I can't believe this!"
 .byte WaitForA
 .byte EndText
 
@@ -227,9 +229,9 @@ paulusboss
 .byte EndText
 
 baldachboss
-.text "Laughable. You little rats think"
+.text "Laughable. You little rats think you"
 .byte NewLine
-.text "you can actually beat me!"
+.text "can actually beat me!"
 .byte WaitForA
 .byte EndText
 
@@ -255,9 +257,9 @@ brookboss
 .byte EndText
 
 iliosboss
-.text "What, you're really choosing a"
+.text "What, you're really choosing a fight"
 .byte NewLine
-.text "fight against me? How amusing!"
+.text "against me? How amusing!"
 .byte NewLine
 .text "You think you can best Sir Ilios!"
 .byte WaitForA
@@ -266,7 +268,7 @@ iliosboss
 nicolovboss
 .text "As if you could defeat me!"
 .byte NewLine
-.text "Tch... Have at you!"
+.text "Tch... Come at me!"
 .byte WaitForA
 .byte EndText
 
@@ -276,9 +278,9 @@ mooreboss
 .byte EndText
 
 mullerboss
-.text "Now you'll understand firsthand"
+.text "Now you'll understand firsthand why"
 .byte NewLine
-.text "why the Gelbritter are so feared!"
+.text "the Gelbritter are so feared!"
 .byte WaitForA
 .byte EndText
 
@@ -290,7 +292,7 @@ saiasboss
 .byte EndText
 
 mishaboss
-.text "Step aside! Out of the way!"
+.text "You think to block my path?"
 .byte WaitForA
 .byte EndText
 
@@ -307,9 +309,9 @@ sarahboss
 .byte EndText
 
 reinkochboss
-.text "You trespass upon land belonging"
+.text "You trespass upon land belonging to"
 .byte NewLine
-.text "to Loptous himself! Fools...!"
+.text "Loptous himself! Fools...!"
 .byte WaitForA
 .byte EndText
 
@@ -323,9 +325,9 @@ beatriceboss
 palmanboss
 .text "You'll never reclaim your castle!"
 .byte NewLine
-.text "Consider it a mercy your bones"
+.text "Consider it a mercy your bones will"
 .byte NewLine
-.text "will rest within its sight!"
+.text "rest within its sight!"
 .byte WaitForA
 .byte EndText
 
@@ -359,6 +361,10 @@ amaldaboss
 
 bharatboss
 .text "You nuisances will cost me my rank!"
+.byte NewLine
+.text "I won't let you stand in my way any"
+.byte NewLine
+.text "longer!"
 .byte WaitForA
 .byte EndText
 
@@ -377,9 +383,9 @@ frausboss
 .byte EndText
 
 zaunboss
-.text "You can still walk away!"
+.text "Ergh..."
 .byte NewLine
-.text "Just go home!"
+.text "Don't think you'll leave here alive!"
 .byte WaitForA
 .byte EndText
 
@@ -426,9 +432,9 @@ veldboss
 .text "Don't you know the power I wield?"
 .byte WaitForA
 .byte ScrollText
-.text "Let me show you just what a"
+.text "Let me show you just what a grave"
 .byte NewLine
-.text "grave mistake you've made!"
+.text "mistake you've made!"
 .byte WaitForA
 .byte EndText
 
@@ -442,18 +448,18 @@ mannheimboss
 ; FC
 
 kantboss
-.text "You must be the rebels! I won't"
+.text "You must be the rebels! I won't let"
 .byte NewLine
-.text "let you escape with the children!"
+.text "you escape with the children!"
 .byte WaitForA
 .byte EndText
 
 bandoleboss
-.text "You have my apologies,"
+.text "You have my sympathies, but an"
 .byte NewLine
-.text "but orders are orders—I shall"
+.text "order is an order—neither will you"
 .byte NewLine
-.text "stain the ground with your blood!"
+.text "leave this castle, today or ever!"
 .byte WaitForA
 .byte EndText
 
@@ -472,9 +478,9 @@ jabalboss
 .byte EndText
 
 dvorakboss
-.text "Such a trudge up here"
+.text "Such a trudge up here must have"
 .byte NewLine
-.text "must have taken its toll."
+.text "taken its toll."
 .byte NewLine
 .text "Allow me to help you back down!"
 .byte WaitForA
@@ -486,24 +492,23 @@ mccloyboss
 .byte EndText
 
 eichnerboss
-.text "Believe me when I say this is just"
+.text "Believe me when I say this is just a"
 .byte NewLine
-.text "a job. It's nothing personal."
+.text "job. It's nothing personal."
 .byte WaitForA
 .byte EndText
 
 ishtarboss
-.text "It appears you've not been taught"
+.text "It seems you've not been taught to"
 .byte NewLine
-.text "to fear the name “Goddess of Thunder.”"
-.byte WaitForA
-.byte ScrollText
+.text "fear the name “Thunder Goddess.”"
+.byte NewLine
 .text "Behold my power!"
 .byte WaitForA
 .byte EndText
 
 pierreboss
-.text "Oh, evil spirits!"
+.text "Oh, darkest spirits!"
 .byte NewLine
 .text "Grant me your greatest power!"
 .byte WaitForA
@@ -545,9 +550,9 @@ porcusboss
 .byte EndText
 
 tigrisboss
-.text "HEY...! SHUT YER LIL' MOUTH"
+.text "HEY...! SHUT YER LIL' MOUTH AN' DO"
 .byte NewLine
-.text "AND DO AS I SAY...! GO...!"
+.text "AS I SAY...! GO...!"
 .byte WaitForA
 .byte EndText
 
@@ -568,9 +573,9 @@ speerboss
 .byte EndText
 
 rilkeboss
-.text "Don't fool yourself—you'll never"
+.text "Don't fool yourself—you'll never be"
 .byte NewLine
-.text "be able to take me alive!"
+.text "able to take me alive!"
 .byte WaitForA
 .byte EndText
 
@@ -584,11 +589,11 @@ orvisboss
 .byte EndText
 
 travantboss
-.text "Remember well the name of Travant—"
+.text "Remember well the name of Travant:"
 .byte NewLine
-.text "he who will see you swallowed"
+.text "he who will see you swallowed by"
 .byte NewLine
-.text "by the afterlife!"
+.text "the afterlife!"
 .byte WaitForA
 .byte EndText
 

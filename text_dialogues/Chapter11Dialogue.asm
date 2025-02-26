@@ -35,11 +35,11 @@ ch11kempfleif
 .text "That must be the wayward Prince Leif!"
 .byte WaitForA
 .byte ScrollText
-.text "First Olwen, and now Prince Leif marches right"
+.text "First Olwen, and now Prince Leif marches right up"
 .byte NewLine
-.text "up to my doorstep! The gods are most generous"
+.text "to my doorstep! The gods are most generous"
 .byte NewLine
-.text "today—this is my chance!"
+.text "today—this is my chance for further stature!"
 .byte WaitForA
 .byte ScrollText
 .text "All hands, hear me:"
@@ -170,7 +170,7 @@ ch11leiffred
 
 .byte Right_slot
 .byte ScrollText
-.text "House Leonster?!"
+.text "House Leonster?"
 .byte NewLine
 .text "I... I see..."
 .byte WaitForA
@@ -192,9 +192,9 @@ ch11opening1
 .byte Left_slot
 .word LoadPortrait
 .word olwen_portrait
-.text "I've already told you, the enemy appeared out"
+.text "I've already told you, the enemy appeared out of"
 .byte NewLine
-.text "of nowhere to attack Fort Nowell!"
+.text "nowhere to attack Fort Nowell!"
 .byte WaitForA
 .byte ScrollText
 .text "If you don't send reinforcements,"
@@ -255,13 +255,15 @@ ch11opening1
 .text "No matter who the enemy is, it won't change the"
 .byte NewLine
 .text "fact that we need more men to deal with them!"
+.byte NewLine
+.text "That's why I decided first to report to you."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "And what if this attack is merely a ploy to lure"
+.text "And what if this “attack” is merely a ploy to"
 .byte NewLine
-.text "us away from the fort?"
+.text "lure us away from the fort?"
 .byte NewLine
 .text "Did you ever consider that?"
 .byte WaitForA
@@ -285,7 +287,7 @@ ch11opening1
 
 .byte Left_slot
 .byte ScrollText
-.text "And what of General Largo?!"
+.text "Then what of General Largo?!"
 .byte NewLine
 .text "Perhaps sending our troops out is a risk, but he"
 .byte NewLine
@@ -301,7 +303,9 @@ ch11opening1
 .text "he really have left, anyway?"
 .byte WaitForA
 .byte ScrollText
-.text "One less thing I have to concern myself with."
+.text "One less thing we'll have to concern ourselves"
+.byte NewLine
+.text "with."
 .byte WaitForA
 
 .byte Left_slot
@@ -317,7 +321,7 @@ ch11opening1
 .byte NewLine
 .text "treasonous on its own—I've had men executed"
 .byte NewLine
-.text "for much less brazen displays of disrespect."
+.text "for much less brazen displays of impertinence."
 .byte WaitForA
 .byte ScrollText
 .text "So before you back up that glare with equally"
@@ -367,11 +371,11 @@ ch11opening1
 .text "understanding as I."
 .byte WaitForA
 .byte ScrollText
-.text "Fret not. I never expected much of you: I know"
+.text "Fret not. I never expected much of you:"
 .byte NewLine
-.text "that your only real weapon is to go begging your"
+.text "I know that your only real weapon is to"
 .byte NewLine
-.text "brother for help."
+.text "go begging your brother for help."
 .byte WaitForA
 
 .byte Left_slot
@@ -399,7 +403,7 @@ ch11opening1
 .byte NewLine
 .text "Then again, Reinhardt's greatest skill is knowing"
 .byte NewLine
-.text "how to lead women on!"
+.text "how to lead women on! Hahaha!"
 .byte WaitForA
 
 .byte Left_slot
@@ -408,6 +412,9 @@ ch11opening1
 .byte NewLine
 .text "dishonor my brother!"
 .byte WaitForA
+
+.word PauseDialogue
+.byte $3C
 
 .byte Right_slot
 .byte ScrollText
@@ -461,7 +468,7 @@ ch11opening2
 .byte Right_slot
 .word LoadPortrait
 .word kempf_portrait
-.text "Hah! That should put the impertinent little girl in"
+.text "Ha! That should put the audacious little girl in"
 .byte NewLine
 .text "her place."
 .byte WaitForA
@@ -525,9 +532,9 @@ ch11opening3
 .text "“Personal grudge”? Nonsense!"
 .byte WaitForA
 .byte ScrollText
-.text "Right where you're standing, Lady Olwen drew"
+.text "Right where you're standing, Lady Olwen drew her"
 .byte NewLine
-.text "her sword against me, her superior officer!"
+.text "sword against me, her superior officer!"
 .byte NewLine
 .text "She meant to kill me!"
 .byte WaitForA
@@ -536,9 +543,7 @@ ch11opening3
 .byte ScrollText
 .text "Wh-what?!"
 .byte NewLine
-.text "That's not possible!"
-.byte NewLine
-.text "She... She would never..."
+.text "That's not possible! She... She would never..."
 .byte WaitForA
 
 .byte Right_slot
@@ -585,7 +590,7 @@ ch11opening3
 
 .byte Left_slot
 .byte ScrollText
-.text "Kempf...! You're shameless!"
+.text "Kempf...! You shameless bastard!"
 .byte WaitForA
 
 .byte Right_slot
@@ -594,7 +599,7 @@ ch11opening3
 .byte NewLine
 .text "Eh, must've just been my imagination."
 .byte NewLine
-.text "Heh, heh, heh..."
+.text "Heh heh..."
 .byte WaitForA
 
 .byte EndText
@@ -604,7 +609,7 @@ ch11endfredsaved
 
 .byte Right_slot
 .word LoadPortrait
-.word leif_portrait2
+.word leif_portrait
 
 .byte Left_slot
 .word LoadPortrait
@@ -620,7 +625,7 @@ ch11endfredsaved
 .byte NewLine
 .text "however. This being an imperial fort, I expect"
 .byte NewLine
-.text "there are children imprisoned here as well."
+.text "there are children imprisoned here, as well."
 .byte WaitForA
 .byte ScrollText
 .text "Let's make the most of our swift victory,"
@@ -640,7 +645,7 @@ ch11endfreddead
 
 .byte Right_slot
 .word LoadPortrait
-.word leif_portrait2
+.word leif_portrait
 
 .byte Left_slot
 .word LoadPortrait
@@ -672,11 +677,19 @@ ch11wm1
 
 .text "Breaking through the enemy's lines, the"
 .byte NewLine
-.text "Liberation Army finally set foot on imperial"
+.text "Liberation "
+.word LoadPortraitalt_1
+.long LoadPortraitalt_2
+.word $013F ;leify-left
+.word $0417 ;y then x
+.text "Army finally set foot on imperial soil."
 .byte WaitForA
-.byte NewLine
-.text "soil. Their invasion could now begin in full."
+.byte ScrollText
+.text "Their invasion could now begin in full."
 .byte WaitForA
+.word ClearPortraitalt
+.long $82937A
+.word $0001
 .byte ScrollText
 
 .byte EndText
@@ -686,24 +699,16 @@ ch11wm2
 
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0513 ;y then x
-.text "However, there was no time to celebrate:"
+.text "But it was no cause to rest on their laurels:"
 .byte WaitForA
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0080 ;IN AMERICA
-.word $0107 ;y then x
-.byte NewLine
+.byte ScrollText
 .text "Fort Dundrum, widely regarded as an impregnable"
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $021E ;olwen
-.word $0A08 ;y then x
 .byte NewLine
 .text "defense against Thracian incursions,"
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "now stood before them."
 .byte WaitForA
 .byte ScrollText

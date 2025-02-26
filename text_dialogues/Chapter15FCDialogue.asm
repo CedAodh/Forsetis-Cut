@@ -477,7 +477,7 @@ albaeda
 .byte NewLine
 .text "blew my cover, and you all saw me for"
 .byte NewLine
-.text "true station, plain as day."
+.text "my true station, plain as day."
 .byte WaitForA
 
 .byte right_slot
@@ -839,8 +839,8 @@ ch15tanyamareeta
 .byte NewLine
 .text "Well, it's fine. No feelings hurt."
 .byte WaitForA
-.byte WaitForA
-.text "I think the others need some help too,"
+.byte ScrollText
+.text "I think the others need some help, too,"
 .byte NewLine
 .text "so I'll go give 'em a hand instead."
 .byte WaitForA
@@ -867,27 +867,6 @@ ch15tanyamareeta
 .text "Good!"
 .byte NewLine
 .text "Then I'll see ya around!"
-.byte WaitForA
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.byte ScrollText
-.text "......"
-.byte WaitForA
-.byte ScrollText
-.text "I'm sorry, Tanya...but I can't"
-.byte NewLine
-.text "burden you with this."
-.byte NewLine
-.text "This is for me to triumph against."
-.byte WaitForA
-.byte ScrollText
-.text "Those despicable thugs..."
-.byte NewLine
-.text "They'll get no redemption or forgiveness"
-.byte NewLine
-.text "so long as I hold this sword."
 .byte WaitForA
 
 .byte EndText
@@ -1120,16 +1099,16 @@ safylinoan
 
 .byte right_slot
 .byte ScrollText
-.text "Indeed..."
+.text "Indeed... Though we were surrounded by"
 .byte NewLine
-.text "Though we were surrounded by creeping darkness,"
+.text "creeping darkness, we did find some true"
 .byte NewLine
-.text "we did find some true solace in those days."
+.text "solace in those days."
 .byte WaitForA
 .byte ScrollText
-.text "Though what astounds me the most is how much"
+.text "What astounds me the most, however, is how"
 .byte NewLine
-.text "it's amounted to here and now."
+.text "much it's amounted to here and now."
 .byte NewLine
 .text "You've done well, Your Grace."
 .byte WaitForA
@@ -1158,15 +1137,18 @@ safylinoan
 .text "Yes, the others played crucial roles, but they"
 .byte NewLine
 .text "were all granted their own spots to hide away in."
+.byte WaitForA
+.byte ScrollText
+.text "Did you receive anything of the like?"
 .byte NewLine
-.text "Did you receive anything of the like? Certainly not."
+.text "Certainly not."
 .byte WaitForA
 .byte ScrollText
 .text "But no matter how it tortured you, you would"
 .byte NewLine
 .text "always get up and dust yourself off,"
 .byte NewLine
-.text "and continue your eternal stand."
+.text "and continue the eternal stand."
 .byte WaitForA
 .byte ScrollText
 .text "Never in my existence could I..."
@@ -1191,6 +1173,8 @@ safylinoan
 .byte NewLine
 .text "I know your name will be made immortal."
 .byte WaitForA
+
+.byte EndText
 
 gladeperne
 
@@ -1607,7 +1591,7 @@ homernanna1
 .byte NewLine
 .text "Sorry, it's just, you reminded me of"
 .byte NewLine
-.text "one'a my old girlfriends."
+.text "one o' my old girlfriends."
 .byte WaitForA
 
 .byte right_slot
@@ -1646,7 +1630,6 @@ homernanna1
 .byte WaitForA
 .byte ScrollText
 .word ClearPortrait
-.word RetractBox
 
 .byte right_slot
 .byte ScrollText
@@ -1673,9 +1656,9 @@ homernanna1
 
 .byte left_slot
 .byte ScrollText
-.text "Now she's gotta be 19 or...20? Yeah, 20."
+.text "Yeah! You should've seen it back THEN!"
 .byte NewLine
-.text "I should probably be glad we parted ways."
+.text "I probably oughta be glad we parted ways."
 .byte WaitForA
 
 .byte right_slot

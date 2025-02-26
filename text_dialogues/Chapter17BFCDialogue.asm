@@ -174,7 +174,7 @@ Ch17Bopening2FC
 .byte WaitForA
 
 .byte right_slot
-.text "Ah, Marquess Gustav. "
+.text "Ah, Marquess Gustaf."
 .byte NewLine
 .text "There has been no news of the rebel army's"
 .byte NewLine
@@ -267,7 +267,7 @@ Ch17Bopening2FC
 .byte NewLine
 .text "Has the operation on the coastal front"
 .byte NewLine
-.text "been that disastrous, Marquess Gustav?"
+.text "been that disastrous, Marquess Gustaf?"
 .byte WaitForA
 
 .byte left_slot
@@ -349,7 +349,7 @@ Ch17Bopening2FC
 .byte Right_slot
 .text "Well, evidently, my comments touched a nerve"
 .byte NewLine
-.text "with Marquess Gustav..."
+.text "with Marquess Gustaf..."
 .byte WaitForA
 
 .byte Left_slot
@@ -362,7 +362,7 @@ Ch17Bopening2FC
 .text "It's more than a simple row."
 .byte WaitForA
 .byte ScrollText
-.text "Gustav is seizing children"
+.text "Gustaf is seizing children"
 .byte NewLine
 .text "from the nearby villages despite having"
 .byte NewLine
@@ -621,7 +621,7 @@ beatricespawn
 .text "I've already got it figured out..."
 .byte WaitForA
 .byte ScrollText
-.text "Gustav has not been able to make contact with"
+.text "Gustaf has not been able to make contact with"
 .byte NewLine
 .text "us since we were assigned scouting duty."
 .byte NewLine
@@ -730,7 +730,7 @@ safysalemAB
 .byte ScrollText
 .text "Well, I don't even know where to start!"
 .byte NewLine
-.text "As a former Loptrian, I'm sure there is"
+.text "As a former Loptr priest, I'm sure there is"
 .byte NewLine
 .text "a lot of insight that you could provide!"
 .byte WaitForA
@@ -1065,222 +1065,207 @@ robertgladeAB
 
 callionmiranda
 
-.byte right_slot
-.word $3A00
+.byte left_slot
+.word LoadPortrait
 .word callion_portrait
-.text "Ho there!"
+.text "Seems like we're almost clear"
 .byte NewLine
-.text "Princess Miranda, I take it?"
+.text "of this dreary forest, Princess."
 .byte WaitForA
 
-.byte left_slot
-.word $3A00
+.byte right_slot
+.word LoadPortrait
 .word miranda_portrait	
-.text "Huh?" 
+.text "About time!"
 .byte NewLine
-.text "What do you think you're doing,"
+.text "I'd like to thank you again for your services,"
 .byte NewLine
-.text "addressing me in such a casual manner?"
-.byte WaitForA
-.byte NewLine
-.text "State your name and business with me!"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "My apologies, Princess."
-.byte NewLine
-.text "I did not mean to offend you,"
-.byte NewLine
-.text "nor to take up much of your time."
-.byte WaitForA
-.byte ScrollText
-.text "My name is Callion, proud knight of Leonster,"
-.byte NewLine
-.text "and I couldn't help but notice that—"
+.text "Sir Callion. Your kindness is truly unmatched."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "All right, I've heard enough."
+.text "Think nothing of it, milady."
 .byte NewLine
-.text "Given your plain introduction, I can safely"
+.text "Lord Leif assigned me to be your escort,"
 .byte NewLine
-.text "assume it was no matter of importance."
-.byte WaitForA
-.byte ScrollText
-.text "So long!"
+.text "and I intend to fulfill that duty."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "But I—"
+.text "Even so!"
+.byte NewLine
+.text "If I had to walk my way out, I..."
+.byte NewLine
+.text "wouldn't have complained too loudly."
+.byte WaitForA
+.byte ScrollText
+.text "But after spending months in that filthy cell,"
+.byte NewLine
+.text "my legs would barely carry me a short way!"
+.byte NewLine
+.text "It's embarrassing, really."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.word ClearPortrait
-.word RetractBox
+.text "Is it?"
+.byte NewLine
+.text "I find it quite understandable, especially"
+.byte NewLine
+.text "with you hauling such a lofty grimoire."
+.byte WaitForA
+.byte ScrollText
+.text "May I ask where it's from?"
+.byte NewLine
+.text "I didn't know House Ulster had"
+.byte NewLine
+.text "any kind of magic division."
+.byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Princess, please, wait!"
+.text "It doesn't."
+.byte NewLine
+.text "This..is an heirloom from my late mother."
+.byte NewLine
+.text "She was an exceptional fire mage, or so I hear."
 .byte WaitForA
 
 .byte left_slot
-.word $3A00
-.word miranda_portrait
-.text "What is it?!"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "I simply wanted to tell you"
-.byte NewLine
-.text "that your tome fell off."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Wh-what?!"
-.byte NewLine
-.text "Are you daft?!"
-.byte NewLine
-.text "My tome is stored right here in my ba—"
-.byte WaitForA
 .byte ScrollText
 .text "......"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Well?"
+.text "I will never forget the last time I saw her."
+.byte NewLine
+.text "She handed me this tome, and told me to never"
+.byte NewLine
+.text "let go of it, for it would save me from all peril."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "...Thief! Scoundrel!"
+.text "You have my apologies, Princess."
 .byte NewLine
-.text "You stole it from me, didn't you?!"
-.byte WaitForA
-.byte NewLine
-.text "Now you're going to ask for"
-.byte NewLine
-.text "something in return from me!"
+.text "I did not mean to open such a delicate subject."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Princess..."
+.text "Never mind it, Sir Callion."
+.byte NewLine
+.text "In fact, you seem far more bothered than I."
+.byte NewLine
+.text "What's the matter?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I'll warn you right now!"
+.text "Your story..."
 .byte NewLine
-.text "You'd better give it back this instant!"
+.text "It's a painful reminder of the world we live in."
+.byte WaitForA
+.byte ScrollText
+.text "A parent's gift to their children should be a symbol"
 .byte NewLine
-.text "Or else I will inform Prince Leif of th-"
+.text "of their love. A dress, an instrument, a pendant..."
+.byte NewLine
+.text "and yet, what many of us get is a weapon."
+.byte WaitForA
+.byte ScrollText
+.text "I used to be proud of my parents' legacy,"
+.byte NewLine
+.text "and to serve House Leonster just like they did."
+.byte WaitForA
+.byte ScrollText
+.text "But with each passing day...every retreat..."
+.byte NewLine
+.text "for every caravan of children we rescue..."
+.byte NewLine
+.text "I can't help but feel it's not enough."
+.byte WaitForA
+.byte ScrollText
+.text "They fought and died valiantly, but it wasn't"
+.byte NewLine
+.text "enough either. Now...the only thing I have to"
+.byte NewLine
+.text "remember them is tainted with rust and blood."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Princess!"
+.text "Is that how you see it?"
+.byte NewLine
+.text "Well, I beg to differ."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "WHAT?!"
+.text "Milady?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I saw it fall from your bag as we were"
-.byte NewLine
-.text "strolling out of Millefeuille Forest."
-.byte NewLine
-.text "I just wanted to give it back."
+.text "All of what you've said is unquestionably true."
 .byte WaitForA
+.byte ScrollText
+.text "In fact, whenever I think of my late father..."
+.byte NewLine
+.text "the thought of me dying in such humiliating"
+.byte NewLine
+.text "circumstances...it terrifies me to no end."
+.byte WaitForA
+.byte ScrollText
+.text "Yet every time those thoughts enter my mind,"
+.byte NewLine
+.text "I find solace in realizing that I still live."
+.byte NewLine
+.text "I remember this gift bestowed by my own mother."
+.byte WaitForA
+.byte ScrollText
+.text "If such weapons are their gifts, they shouldn't"
+.byte NewLine
+.text "be to avenge them, or finishing their deeds..."
+.byte NewLine
+.text "but to fight for our future, when they could not."
+.byte WaitForA
+
 
 .byte left_slot
 .byte ScrollText
-.text "O-oh! ...I...uh..."
+.text "That...was quite beautiful, Princess Miranda."
+.byte NewLine
+.text "I must apologize for for my long tirade."
+.byte NewLine
+.text "It's unbecoming of a knight such as myself."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Princess...?"
+.text "Ha! At least your honesty is still standing."
 .byte NewLine
-.text "Are you—"
+.text "You must be anxious for the upcoming battle,"
 .byte NewLine
-.text "Woah!"
+.text "but I'm afraid self-doubt doesn't win battles."
 .byte WaitForA
+
 
 .byte left_slot
 .byte ScrollText
-.text "Th-thank you so much!"
+.text "*chuckle* I suppose you're right."
 .byte NewLine
-.text "Oh... I'm so sorry!"
+.text "I believe we've dallied long enough."
 .byte NewLine
-.text "Please forgive me!"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.word ClearPortrait
-.word RetractBox
-
-.byte right_slot
-.byte ScrollText
-.text "And off she goes."
-.byte NewLine
-.text "I can see Prince Leif wasn't lying"
-.byte NewLine
-.text "when he said she had quite the temper."
-.byte WaitForA
-.byte ScrollText
-.text "Still, knowing what she's gone through..."
-.byte NewLine
-.text "I can't even feel mad at her."
-.byte WaitForA
-.byte ScrollText
-.text "If anything, I'm happy to know"
-.byte NewLine
-.text "I could do something for her."
-.byte WaitForA
-.byte ScrollText
-.word $3A00
-.word miranda_portrait
-.text "Oh, how could I have been so foolish?!"
-.byte NewLine
-.text "I almost could've lost it for good!"
-.byte WaitForA
-.byte ScrollText
-.text "That guy... Callion, was it?"
-.byte NewLine
-.text "I'll... I'll need to write him an apology."
-.byte NewLine
-.text "T-There's no way I could confront him...!"
-.byte WaitForA
-.byte ScrollText
-.text "...Ugh. Stop talking to yourself, Miranda."
-.byte NewLine
-.text "You're no longer in that forsaken temple."
-.byte NewLine
-.text "But still, what should I do...?"
-.byte WaitForA
-
-.byte left_slot
-.word $3A00
-.word callion_portrait
-.text "If it bothers you so, Princess,"
-.byte NewLine
-.text "correspondence would be fine."
+.text "Shall we continue, Princess Miranda?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "AAHH!"
+.text "After you, Sir Worrywart! *chuckle*"
 .byte WaitForA
 
 .byte EndText
@@ -1294,262 +1279,279 @@ halvanmareetaAB
 .byte left_slot
 .word LoadPortrait
 .word halvan_portrait
-.text "You doing alright, Mareeta?"
+.text "Careful there, Mareeta."
+.byte NewLine
+.text "These logs are quite heavy."
+.byte NewLine
+.text "I really could've done this myself."
 .byte WaitForA
 
 .byte right_slot
-.text "Oh, Halvan!"
+.text "Don't worry about it, Halvan."
 .byte NewLine
-.text "I suppose so, yeah."
+.text "I just grabbed more than I could handle."
+.byte WaitForA
 .byte NewLine
-.text "I'm just trying to clear my head, is all."
+.text "Besides, gathering duty is kind of relaxing,"
+.byte NewLine
+.text "isn't it?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Can't stop thinking about Eyvel, huh?"
+.text "You've got a point there."
+.byte NewLine
+.text "For me, it helps remind me of when we did this"
+.byte NewLine
+.text "back in Fiana...along with the commander."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "... Is it that obvious?"
+.text "Guess that makes two of us."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "If you'd forgive my bluntness, yes."
+.word LoadPortrait
+.word osian_portrait
+.text "Make that three!"
 .byte NewLine
-.text "Not that I can blame you..."
+.text "Though I think I've got it much better now."
+.byte WaitForA
+.byte NewLine
+.text "Least you guys don't pick my brains apart for"
+.byte NewLine
+.text "the pieces being too small or something crazy."
+.byte NewLine
+.text "I gotta keep the axe-arm swinging!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I wish I knew how to deal with these feelings."
+.text "Oh, don't worry, Osian."
 .byte NewLine
-.text "I often have trouble sleeping at night."
+.text "You'll have a much worse scolding when I tell"
 .byte NewLine
-.text "It's like my mind is all cloudy..."
+.text "her of what you said—with Halvan as witness."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Well, I'll be more than glad to help you"
+.text "H-hey! That's not fair!"
 .byte NewLine
-.text "with sorting things out. What is it?" 
+.text "If you do that, then I'll...uh..."
+.byte WaitForA
 .byte NewLine
-.text "Do you have doubts? Fear? Anger?"
+.text "I'll tell Commander Eyvel of all the men"
+.byte NewLine
+.text "that you've surrounded yourself with!"
+.byte NewLine
+.text "She's always hard on you for that!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I'm afraid it's all three."
+.text "What?! She is not! Never was! ...Or would be!"
 .byte NewLine
-.text "I can't forgive the Empire for what they did..."
+.text "And even then, they're my sparring partners,"
+.byte NewLine
+.text "you dimwit!" 
 .byte WaitForA
 .byte ScrollText
-.text "I've braced myself for anything, and I'm more"
+.text "I WOULD spar with you too, Osian, if it weren't"
 .byte NewLine
-.text "than willing to take down anyone who dares"
+.text "for how you always strike back as though you"
 .byte NewLine
-.text "stand in the path to bring my mother back."
+.text "narrowly avoided a fatal blow."
+.byte WaitForA
+.byte NewLine
+.text "I know I always use blunt strikes."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Mareeta?"
+.text "Hey!"
+.byte NewLine
+.text "I keep telling you, I can't help it!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Y-yes?"
+.text "All right, so there you have it."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word halvan_portrait
+.text "...Heh...Osian, y-you really have to—"
+.byte NewLine
+.text "Hahahaha...!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word mareeta_portrait
+.text "Halvan?"
+.byte NewLine
+.text "A-are you okay?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh, good."
+.text "Aw, crud."
 .byte NewLine
-.text "You're still there."
+.text "I think he's finally lost it!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Huh?"
+.word LoadPortrait
+.word halvan_portrait
+.text "Nothing of the sort, j-just... *chuckle*"
 .byte NewLine
-.text "What do you mean?"
+.text "How many years has this been going on?"
+.byte NewLine
+.text "Tell me!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Sorry if that sounded rude of me."
+.text "I...guess it's been a while, yeah."
 .byte NewLine
-.text "There was just this very weird..."
+.text "H-hey! Stop laughing!"
 .byte NewLine
-.text "'thing' going on with you just now."
+.text "You'll make me join in, you butt!"
+.byte WaitForA
+.byte NewLine
+.text "See?! Now she's laughing too!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Really?"
+.word LoadPortrait
+.word mareeta_portrait
+.text "Oh...I-I'm sorry, Osian!"
+.byte NewLine
+.text "I just— I can't remember the last time"
+.byte NewLine
+.text "we've messed around like this! *giggle*"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Yes!"
+.text "Heh. I guess I can't either."
 .byte NewLine
-.text "When you began speaking of taking down"
+.text "We've been away from Fiana for so long..."
+.byte WaitForA
 .byte NewLine
-.text "people, your look changed. Just as if-"
+.text "I wonder if Dad burned down the house yet"
+.byte NewLine
+.text "with the old chimney. -I- always cleaned it,"
+.byte NewLine
+.text "and winter passed us not too long ago."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "As if I was possessed?"
+.text "I'm sure he'll be fine."
+.byte NewLine
+.text "...That's why we have people like Patricia to"
+.byte NewLine
+.text "help out. I remember her being good at that."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Yes, actually."
+.word LoadPortrait
+.word halvan_portrait
+
+.byte right_slot
+.byte ScrollText
+.text "What do you say, Halvan?"
 .byte NewLine
-.text "That is a perfect way of putting it."
+.text "How do you think she is?"
 .byte NewLine
-.text "How did you think of that so quickly?"
+.text "Do you think about her a lot?"
+.byte WaitForA
+
+.byte left_slot
+.text "I know she's doing well."
+.byte NewLine
+.text "I'd told you that we returned to Fiana"
+.byte NewLine
+.text "briefly after the commander was captured."
+.byte WaitForA
+.byte ScrollText
+.text "Patricia was getting along just fine—"
+.byte NewLine
+.text "she even seemed pleased by the prospect"
+.byte NewLine
+.text "of looking after things on her own."
+.byte WaitForA
+.byte ScrollText
+.text "But she's still waiting for us."
+.byte NewLine
+.text "I won't waste any time on that."
+.byte NewLine
+.text "...WE won't. Right?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Nevermind that."
-.byte WaitForA
-.byte ScrollText
-.text "I'm honestly scared of who I might become,"
+.text "Right! But don't forget what's in front of us."
 .byte NewLine
-.text "or worse, maybe I have already become"
+.text "We're still headed to Leonster, so it'll still"
 .byte NewLine
-.text "someone else entirely! What do you say?"
+.text "be a while yet."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "If I may be honest, you do look a bit different."
+.word LoadPortrait
+.word osian_portrait
+.text "Mm-hmm!"
 .byte NewLine
-.text "Your fighting stance, all of your movements,"
+.text "And I don't know about you guys, but that"
 .byte NewLine
-.text "it looks as if you were angry when you fight."
+.text "homeland won't be freed by us yapping here."
 .byte WaitForA
-.byte ScrollText
-.text "I'm not talking 'rough' like Osian would,"
 .byte NewLine
-.text "but flat-out resentful. It's quite unsettling,"
-.byte NewLine
-.text "and your words have all but confirmed it."
+.text "Let's get back to camp!"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "I knew it..."
+.text "Yes! I'm on it!"
 .byte WaitForA
 .byte ScrollText
-.text "I began letting my instincts guide me"
+.word LoadPortrait
+.word halvan_portrait
+.text "Just make sure you don't forget your axe on"
 .byte NewLine
-.text "whenever I face an enemy, but that..."
+.text "the grass back there, Osian."
+.byte WaitForA
+.byte ScrollText
+.text "Don't you go heading to battle unarmed—"
 .byte NewLine
-.text "might not have been the wisest choice."
+.text "that won't free that homeland either!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "It certainly isn't, and to prove it,"
+.text "Hey, I didn't leave my—"
 .byte NewLine
-.text "I would like to provide an example."
-.byte WaitForA
-.byte ScrollText
-.text "Just look at me for a moment."
-.byte NewLine
-.text "Do I seem the tiniest bit resentful to you?"
-.byte NewLine
-.text "Like I'm just fighting to avenge my parents?"
-.byte WaitForA
+.text "What the—? Ugggggh!"
 
 .byte right_slot
 .byte ScrollText
-.text "Not at all."
-.byte NewLine
-.text "In fact, you're probably the most calm"
-.byte NewLine
-.text "and level-headed person that I know!"
-.byte WaitForA
+.word ClearPortrait
 
 .byte left_slot
-.byte ScrollText
-.text "I'm glad to hear that,"
 .byte NewLine
-.text "because that's exactly how it is."
-.byte WaitForA
-.byte ScrollText
-.text "I'm not fighting for hate or for revenge."
-.byte NewLine
-.text "I'm fighting because it's the right thing."
-.byte WaitForA
-.byte ScrollText
-.text "My sister and I have gone through a lot,"
-.byte NewLine
-.text "and I would rather fight to ensure that"
-.byte NewLine
-.text "no child has to go through that as well."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Halvan..."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Lord Leif has given me hope."
-.byte WaitForA
-.byte ScrollText
-.text "Hope that we can win against all odds,"
-.byte NewLine
-.text "to ensure a better world for everyone,"
-.byte NewLine
-.text "and find a way to bring Eyvel back."
-.byte WaitForA
-.byte ScrollText
-.text "For that, I give it my all,"
-.byte NewLine
-.text "and I can only hope you try to see"
-.byte NewLine
-.text "things in a similar manner as well."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Thank you, Halvan..."
-.byte NewLine
-.text "*chuckle*"
-.byte NewLine
-.text "You really do take after mom."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Do I, now?"
-.byte WaitForA
-.byte ScrollText
-.text "I will always believe that is mere flattery,"
-.byte NewLine
-.text "but seeing as you're not the only one to"
-.byte NewLine
-.text "say that makes me happy, regardless."
-.byte WaitForA
-.byte ScrollText
-.text "Just keep your chin up, and never"
-.byte NewLine
-.text "forget what we're fighting for, okay?"
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "You got it!"
+.text "...Well, don't just keep walking without me!"
 .byte WaitForA
 
 .byte EndText

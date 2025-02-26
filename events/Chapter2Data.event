@@ -67,13 +67,13 @@ eventChapter2Data ; B1/F91C
 	UNIT
 
 	_PirateGroup3CameraCoordinates ; B1/FA90
-		.byte 14, 7
+		.byte 15, 7
 
 	_PirateGroup3 ; B1/FA92
-		UNIT LifisCrewPirate, Enemy, [19, 5], [19, 5], Bucks, [IronAxe], 1, False, [$00, $00, $00, $00]
-		UNIT LifisCrewPirate, Enemy, [18, 3], [18, 3], Bucks, [IronAxe, Vulnerary], 3, False, [$02, $09, $00, $00]
-		UNIT LifisCrewPirate, Enemy, [18, 4], [18, 4], Bucks, [IronAxe], 1, False, [$00, $00, $00, $00]
-		UNIT LifisCrewPirate, Enemy, [19, 4], [19, 4], Bucks, [IronAxe], 1, False, [$00, $00, $00, $00]
+		UNIT LifisCrewPirate, Enemy, [22, 5], [22, 5], Bucks, [IronAxe], 1, False, [$00, $00, $00, $00]
+		UNIT LifisCrewPirate, Enemy, [21, 3], [21, 3], Bucks, [IronAxe, Vulnerary], 3, False, [$02, $09, $00, $00]
+		UNIT LifisCrewPirate, Enemy, [21, 4], [21, 4], Bucks, [IronAxe], 1, False, [$00, $00, $00, $00]
+		UNIT LifisCrewPirate, Enemy, [22, 4], [22, 4], Bucks, [IronAxe], 1, False, [$00, $00, $00, $00]
 	UNIT
 
 	;_UnusedCameraCoordinates1 ; B1/FAE4
@@ -102,4 +102,4 @@ eventChapter2Data ; B1/F91C
 	.byte $FF
 
 	_Vendor ; B1/FB25
-		SHOP [3, 6], [Vulnerary]
+		SHOP [3, 6], [Vulnerary, Torch]

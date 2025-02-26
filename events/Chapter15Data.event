@@ -4,35 +4,35 @@ eventChapter15Data ; B1/B3B3
 	_PrepGroup ; B1/B3B3
 		.byte 8, 7
 
-		UNIT MercenaryMyrmidon2, Enemy, [15, 2], [15, 2], Seil, [IronBlade, Vulnerary], 14, False, [$00, $00, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [19, 2], [19, 2], Seil, [IronBlade, Vulnerary], 14, False, [$00, $00, $00, $00]
-		UNIT Seil, Enemy, [17, 2], [17, 2], Seil, [SilverAxe, Poleax, VeninBow, Vulnerary], 18, True, [$00, $03, $00, $80]
+		UNIT MercenaryMyrmidon2, Enemy, [16, 2], [16, 2], Seil, [IronBlade, Vulnerary], 12, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [18, 2], [18, 2], Seil, [SteelSword, Vulnerary], 12, False, [$00, $00, $00, $00]
+		UNIT Seil, Enemy, [17, 2], [17, 2], Seil, [SilverAxe, VeninBow, Vulnerary], 18, True, [$00, $03, $00, $80]
 		UNIT BanditBrigand1, Enemy, [29, 8], [29, 8], Seil, [SteelAxe], 3, False, [$00, $01, $00, $00]
 		UNIT BanditHunter, Enemy, [29, 7], [29, 7], Seil, [SteelBow], 5, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand2, Enemy, [29, 13], [29, 13], Seil, [SteelAxe], 3, False, [$00, $01, $00, $00]
 		UNIT BanditBrigand1, Enemy, [30, 14], [30, 14], Seil, [Hammer], 3, False, [$00, $01, $00, $00]
 		UNIT BanditBrigand1, Enemy, [29, 16], [29, 16], Seil, [IronAxe], 3, False, [$00, $01, $00, $00]
-		UNIT BanditBrigand1, Enemy, [28, 7], [28, 7], Seil, [Poleax, Vulnerary], 3, False, [$00, $01, $00, $00]
+		UNIT BanditBrigand1, Enemy, [28, 7], [28, 7], Seil, [Poleax], 3, False, [$00, $01, $00, $00]
 		UNIT BanditBrigand1, Enemy, [5, 10], [5, 10], Seil, [SteelAxe], 3, False, [$00, $01, $00, $00]
 		UNIT BanditBrigand1, Enemy, [6, 11], [6, 11], Seil, [SteelAxe, Vulnerary], 3, False, [$00, $01, $00, $00]
 		UNIT BanditHunter, Enemy, [5, 11], [5, 11], Seil, [SteelBow], 5, False, [$00, $00, $00, $00]
 		UNIT BanditBrigand1, Enemy, [8, 14], [8, 14], Seil, [SteelAxe], 3, False, [$00, $01, $00, $00]
-		UNIT BanditBrigand1, Enemy, [7, 15], [7, 15], Seil, [Hammer], 3, False, [$00, $01, $00, $00]
-		UNIT BanditBrigand2, Enemy, [8, 16], [8, 16], Seil, [IronAxe], 3, False, [$00, $01, $00, $00]
-		UNIT BanditHunter, Enemy, [16, 2], [16, 2], Seil, [KillerBow], 16, False, [$00, $00, $00, $00]
-		UNIT BanditHunter, Enemy, [18, 2], [18, 2], Seil, [KillerBow], 16, False, [$00, $00, $00, $00]
-		UNIT BanditBrigand2, Enemy, [16, 3], [16, 3], Seil, [KillerAxe], 14, False, [$02, $09, $00, $00]
-		UNIT BanditBrigand2, Enemy, [17, 3], [17, 3], Seil, [KillerAxe], 14, False, [$02, $09, $00, $00]
-		UNIT BanditBrigand2, Enemy, [18, 3], [18, 3], Seil, [KillerAxe], 14, False, [$02, $09, $00, $00]
+		UNIT BanditBrigand1, Enemy, [7, 15], [7, 15], Seil, [Hammer, Vulnerary], 3, False, [$00, $01, $00, $00]
+		UNIT BanditBrigand2, Enemy, [8, 16], [8, 16], Seil, [HandAxe], 3, False, [$00, $01, $00, $00]
+		UNIT BanditHunter, Enemy, [15, 1], [15, 1], Seil, [IronBow], 8, False, [$00, $00, $00, $00]
+		UNIT BanditHunter, Enemy, [19, 1], [19, 1], Seil, [IronBow], 8, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand2, Enemy, [16, 1], [16, 1], Seil, [IronAxe], 9, False, [$02, $09, $00, $00]
+		UNIT BanditBrigand2, Enemy, [17, 1], [17, 1], Seil, [SteelAxe], 10, False, [$02, $09, $00, $00]
+		UNIT BanditBrigand2, Enemy, [18, 1], [18, 1], Seil, [IronAxe], 9, False, [$02, $09, $00, $00]
 	UNIT
 
 	_BrigandHunterCameraCoordinates ; B1/B547
 		.byte 17, 8
 
 	_BrigandHunterGroup ; B1/B549
-		UNIT BanditBrigand1, Enemy, [18, 1], [18, 1], Seil, [IronAxe], 10, False, [$00, $00, $00, $00]
-		UNIT BanditHunter, Enemy, [17, 1], [17, 1], Seil, [IronBow], 10, False, [$00, $00, $00, $00]
-		UNIT BanditBrigand2, Enemy, [16, 1], [16, 1], Seil, [IronAxe], 10, False, [$02, $09, $00, $00]
+		UNIT BanditBrigand1, Enemy, [18, 1], [18, 1], Seil, [IronAxe], 7, False, [$00, $00, $00, $00]
+		UNIT BanditHunter, Enemy, [17, 1], [17, 1], Seil, [IronBow], 7, False, [$00, $00, $00, $00]
+		UNIT BanditBrigand2, Enemy, [16, 1], [16, 1], Seil, [IronAxe], 7, False, [$02, $09, $00, $00]
 	UNIT
 
 	_ThiefMyrmidonCameraCoordinates ; B1/B587
@@ -40,7 +40,7 @@ eventChapter15Data ; B1/B3B3
 
 	_ThiefMyrmidonGroup ; B1/B589
 		UNIT ThiefEnemy1, Enemy, [16, 1], [16, 1], Seil, [VeninEdge], 7, False, [$02, $09, $00, $00]
-		UNIT MercenaryMyrmidon2, Enemy, [17, 1], [17, 1], Seil, [KillingEdge], 14, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [17, 1], [17, 1], Seil, [KillingEdge], 13, False, [$00, $00, $00, $00]
 		UNIT ThiefEnemy1, Enemy, [18, 1], [18, 1], Seil, [VeninEdge], 7, False, [$00, $00, $00, $00]
 	UNIT
 
@@ -48,16 +48,16 @@ eventChapter15Data ; B1/B3B3
 		.byte 17, 8
 
 	_WarriorGroup ; B1/B5C9
-		UNIT BanditWarrior, Enemy, [16, 1], [16, 1], Seil, [KillerAxe, VeninBow], 12, False, [$00, $00, $00, $00]
-		UNIT BanditBerserker, Enemy, [17, 1], [17, 1], Seil, [KillerAxe, HandAxe], 10, False, [$02, $09, $00, $00]
-		UNIT BanditWarrior, Enemy, [18, 1], [18, 1], Seil, [VeninAxe, KillerBow], 12, False, [$00, $00, $00, $00]
+		UNIT BanditWarrior, Enemy, [16, 1], [16, 1], Seil, [HandAxe, Vulnerary], 5, False, [$00, $00, $00, $00]
+		UNIT BanditBerserker, Enemy, [17, 1], [17, 1], Seil, [SteelAxe, Vulnerary], 5, False, [$02, $09, $00, $00]
+		UNIT BanditWarrior, Enemy, [18, 1], [18, 1], Seil, [SteelBow, Vulnerary], 5, False, [$00, $00, $00, $00]
 	UNIT
 
 	_ShannamCameraCoordinates ; B1/B607
 		.byte 17, 8
 
 	_ShannamGroup ; B1/B609
-		UNIT Shannam, Enemy, [17, 1], [17, 1], Seil, [IronSword], 1, False, [$02, $2A, $00, $00]
+		UNIT Shannam, Enemy, [17, 1], [17, 1], Seil, [IronBlade], 1, False, [$02, $2A, $00, $00]
 	UNIT
 
 	_BrigandHunterThiefCameraCoordinates ; B1/B61F
@@ -80,12 +80,12 @@ eventChapter15Data ; B1/B3B3
 	;	.byte 17, 10
 
 	_RalphAmaldaGroup ; B1/B679
-		UNIT Amalda, NPC, [19, 10], [19, 10], Amalda, [MasterSword, FlameSword, Mend, Vulnerary], 5, False, [$00, $03, $02, $80]
-		UNIT Ralph, NPC, [18, 14], [17, 9], Ralph, [IronBlade, HandAxe], 1, False, [$00, $03, $02, $80]
+		UNIT Amalda, NPC, [16, 12], [16, 12], Rumaigh, [MasterSword, FlameSword, Mend, Vulnerary], 5, False, [$12, $03, $02, $80]
+		UNIT Ralph, NPC, [18, 14], [17, 14], Rumaigh, [IronBlade, HandAxe], 1, False, [$00, $03, $02, $80]
 	UNIT
 	
 	_AsaelloGroup ; B1/B679
-		UNIT Asaello, NPC, [18, 14], [18, 14], Ralph, [SilverBow, ForsetiInfinite], 3, False, [$00, $03, $02, $00]
+		UNIT Asaello, NPC, [18, 14], [20, 14], Rumaigh, [SilverBow, ForsetiInfinite], 3, False, [$00, $03, $02, $00]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/B6A3
@@ -118,4 +118,4 @@ eventChapter15Data ; B1/B3B3
 	.byte $FF
 
 	_Vendor ; B1/B6EC
-		SHOP [16, 13], [Heal, Torch, Light, Thunder, Vulnerary, DoorKey]
+		SHOP [16, 13], [Thunder, Light, Heal, Vulnerary, Torch, DoorKey]

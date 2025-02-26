@@ -112,9 +112,9 @@ ch16Bmiranda
 .text "and forfeit his own right to the throne!"
 .byte WaitForA
 .byte ScrollText
-.text "And in the end, he departed this world in a"
+.text "And in the end, he departed this world in a state"
 .byte NewLine
-.text "state of utter misery..."
+.text "of utter misery..."
 .byte WaitForA
 .byte ScrollText
 .text "I cannot forgive you, Prince!"
@@ -195,9 +195,9 @@ ch16Bmiranda
 
 .byte Left_slot
 .byte ScrollText
-.text "You have my apologies as well, Princess Miranda."
+.text "You have my apologies, Princess Miranda."
 .byte NewLine
-.text "I must beg your forgiveness..."
+.text "I beg your forgiveness..."
 .byte WaitForA
 .byte ScrollText
 .text "Had I known you were being held captive here,"
@@ -246,9 +246,9 @@ ch16Bmiranda
 
 .byte Left_slot
 .byte ScrollText
-.text "Ah... Well, even one year is far too long to"
+.text "Ah... Well, even one year is far too long to spend"
 .byte NewLine
-.text "spend in a place like this."
+.text "in a place like this."
 .byte WaitForA
 
 .byte Right_slot
@@ -337,7 +337,7 @@ ch16Bhomershannam
 
 .byte Left_slot
 .byte ScrollText
-.text "Ugh... You act nothing like the real prince."
+.text "Ugh... You sound nothing like him."
 .byte WaitForA
 
 .byte EndText
@@ -403,9 +403,7 @@ ch16Bsarahsalem
 
 .byte Left_slot
 .byte ScrollText
-.text "Uh..."
-.byte NewLine
-.text "I-is that so...?"
+.text "...I-is that so...?"
 .byte WaitForA
 .byte ScrollText
 .text "Wait. If you're Lady Sara, granddaughter of"
@@ -451,36 +449,69 @@ ch16Bsarahleif
 
 .byte Right_slot
 .word LoadPortrait
-.word leif_portrait
+.word sarah_portrait
 
 .byte Left_slot
 .word LoadPortrait
-.word sarah_portrait
-.text "Aah..."
+.word leif_portrait
+.text "Huh?"
 .byte NewLine
-.text "You're perfect, just like I expected."
-.byte NewLine
-.text "I'll help you."
+.text "What's a girl doing in this forest?"
 .byte WaitForA
 
 .byte Right_slot
-.text "Oh, this is...quite the nuisance."
-.byte NewLine
-.text "August, Dryas, where have you two gone?"
-.byte NewLine
-.text "I could use your advice right about now..."
+.text "......"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I'm Sara."
+.text "What's your name?"
+.byte NewLine
+.text "Are you...by yourself?"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Hmm..."
+.byte NewLine
+.text "I've found you already..."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "You've found me...?"
+.byte NewLine
+.text "I'm sorry, could you—"
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "Hee hee..."
+.byte NewLine
+.text "You're just like I expected."
+.byte NewLine
+.text "I'll help you, then."
+.byte WaitForA
+
+.byte Left_slot
+.byte ScrollText
+.text "...I'm confused. And...I am by myself too..."
+.byte NewLine
+.text "August, Dryas, where have either of you gone?"
+.byte NewLine
+.text "I could use your advice right about now..."
+.byte WaitForA
+
+.byte Right_slot
+.byte ScrollText
+.text "My name is Sara."
 .byte NewLine
 .text "I know all there is to know about you."
 .byte WaitForA
 .byte NewLine
 .text "I know you're Leif, the prince of Leonster,"
 .byte NewLine
-.text "son of Quan."
+.text "and your father is Quan."
 .byte WaitForA
 .byte ScrollText
 .text "And I know your mother was a pretty lady named"
@@ -488,12 +519,12 @@ ch16Bsarahleif
 .text "Ethlyn, but she's dead now."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Huh...?!"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Don't look so afraid."
 .byte NewLine
@@ -512,12 +543,12 @@ ch16Bsarahleif
 .text "My mother died soon after."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "......"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "It was you that was calling out to me,"
 .byte NewLine
@@ -529,7 +560,7 @@ ch16Bsarahleif
 .text "you can make do without me!"
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Wait! Please!"
 .byte WaitForA
@@ -543,17 +574,17 @@ ch16Bsarahleif
 .byte ScrollText
 .text "I want to know more about you."
 .byte NewLine
-.text "Will you come with us?"
+.text "Will you come with me?"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "I will, yes."
 .byte NewLine
 .text "Because...I really like your voice, Leif."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Um... Thank you...Sara."
 .byte WaitForA
@@ -578,9 +609,9 @@ ch16Bvillager
 .text "This forest ain't no place for sightseers."
 .byte WaitForA
 .byte NewLine
-.text "Shoot, in some parts, the trees get so thick"
+.text "Shoot, in some parts, the trees get so thick you"
 .byte NewLine
-.text "you can't even move past 'em."
+.text "can't even move past 'em."
 .byte WaitForA
 .byte ScrollText
 .text "Oh, and another thing... Them Loptr mages been"
@@ -602,9 +633,9 @@ ch16Bvillager
 .byte ScrollText
 .text "There's like half a dozen of these teleport traps"
 .byte NewLine
-.text "traps all around the forest—no way to tell"
+.text "all around the forest—no way to tell exactly"
 .byte NewLine
-.text "exactly where."
+.text "where."
 .byte WaitForA
 .byte ScrollText
 .text "Course, the traps work more than once,"
@@ -694,11 +725,11 @@ ch16Bopening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Understood. Tell everyone to exercise extreme"
+.text "Understood."
 .byte NewLine
-.text "caution, and not let their guard down for even a"
+.text "Tell everyone to exercise extreme caution,"
 .byte NewLine
-.text "moment."
+.text "and not let their guard down for even a moment."
 .byte WaitForA
 .byte ScrollText
 .text "Now, let's get this over with."
@@ -811,9 +842,9 @@ ch16Bopening2
 
 .byte Right_slot
 .byte ScrollText
-.text "Eheheheh... Gaze into the crystal ball and have"
+.text "Eheheheh... Gaze into the crystal ball and have a"
 .byte NewLine
-.text "a look for yourself."
+.text "look for yourself."
 .byte NewLine
 .text "It would seem fresh prey have wandered here."
 .byte WaitForA
@@ -829,7 +860,7 @@ ch16Bopening2
 
 .byte Right_slot
 .byte ScrollText
-.text "Bah, not even Conomor is that foolish."
+.text "Bah, Conomor isn't THAT foolish."
 .byte WaitForA
 .byte NewLine
 .text "No, it must be the meager remnants of Leonster,"
@@ -841,9 +872,9 @@ ch16Bopening2
 
 .byte Left_slot
 .byte ScrollText
-.text "Ah, so they must have chosen to go through"
+.text "Ah, so they must have chosen to go through the"
 .byte NewLine
-.text "the forest to avoid our defenses on the western"
+.text "forest to avoid our defenses on the western"
 .byte NewLine
 .text "front... What a colossal blunder."
 .byte WaitForA
@@ -866,9 +897,7 @@ ch16Bopening2
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah!"
-.byte NewLine
-.text "I'll be taking the opportunity to...test this."
+.text "Ha! I'll be taking the opportunity to...test this."
 .byte WaitForA
 
 .byte Left_slot
@@ -961,17 +990,19 @@ ch16Bclosing
 
 ch16Bwm1
 
+.text "Heeding "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $003B ;augustus
 .word $0B0F ;y then x
-.text "Heeding August's advice,"
-.byte NewLine
+.text "August's advice, Leif approached "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0C1A ;y then x
-.text "Leif approached Leonster from the south."
+.text "Leonster"
+.byte NewLine
+.text "from the south."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -987,26 +1018,21 @@ ch16Bwm1
 
 ch16Bwm2
 
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word $0001 ;leify-right
-.word $0A12 ;y then x
-.text "However, this meant crossing through"
+.text "However, this meant crossing through Millefeuille—"
 .byte NewLine
-.text "Millefeuille—the so-called “Wayward Forest.”"
+.text "the so-called “Wayward Forest.”"
 .byte WaitForA
 .byte ScrollText
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0168 ;rinecoch
-.word $0419 ;y then x
-.text "Leif would soon learn first-hand how the area"
+.word $003F ;leify-right
+.word $0A12 ;y then x
+.text "Leif would soon learn firsthand how the area"
 .byte NewLine
-.text "earned such an infamous nickname, "
+.text "earned such an infamous nickname,"
 .byte WaitForA
-.text "and why"
-.byte NewLine
-.text "people went out of their way to avoid it..."
+.byte ScrollText
+.text "and why people went out of their way to avoid it..."
 .byte WaitForA
 
 .byte EndText

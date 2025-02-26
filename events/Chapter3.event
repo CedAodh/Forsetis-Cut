@@ -8,17 +8,27 @@ eventChapter3Events ; 8C/E435
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 8C/E442
+		EVENT $15, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $15
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Lobos
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Brigand1Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 9, 10
+			CMP_WORD_RANGE wCurrentTurn, 9, 11
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 60
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _Brigand2Reinforcements
-			CMP_WORD_RANGE wCurrentTurn, 9, 10
+			CMP_WORD_RANGE wCurrentTurn, 9, 11
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 60
 			TEST_FLAG_UNSET FlagBossDeath
@@ -33,6 +43,11 @@ eventChapter3Events ; 8C/E435
 			CMP_WORD_RANGE wCurrentTurn, 10, 16
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 50
+			TEST_FLAG_UNSET FlagBossDeath
+		END_DEFINITION
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 9, 16
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -139,6 +154,8 @@ eventChapter3Events ; 8C/E435
 	END_DEFINITION_ARRAY
 
 	_Brigand1Reinforcements ; 8C/E6AD
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter3Data._Brigand1ReinforcementsCameraCoordinates
 		YIELD
 
@@ -151,9 +168,11 @@ eventChapter3Events ; 8C/E435
 		LOAD2 eventChapter3Data._Brigand1ReinforcementsGroup2
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_Brigand2Reinforcements ; 8C/E6C0
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter3Data._Brigand2ReinforcementsCameraCoordinates
 		YIELD
 
@@ -166,9 +185,11 @@ eventChapter3Events ; 8C/E435
 		LOAD2 eventChapter3Data._Brigand2ReinforcementsGroup2
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_SoldierReinforcements ; 8C/E6D3
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter3Data._SoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -177,9 +198,11 @@ eventChapter3Events ; 8C/E435
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_ArmorReinforcements ; 8C/E6E0
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter3Data._ArmorReinforcementsCameraCoordinates
 		YIELD
 
@@ -188,7 +211,7 @@ eventChapter3Events ; 8C/E435
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_CairpreHouseOther ; 8C/E6ED
 		macroDialogueHouse ch3cairprevillageother

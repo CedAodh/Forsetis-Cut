@@ -120,7 +120,7 @@ chfinalwm1
 .text " for his crimes at last,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $0505 ;y then x
 .byte WaitForA
 .word ClearPortraitalt
@@ -200,7 +200,7 @@ chfinalwm3
 .text "In preparation for Leif's attack,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $0505 ;y then x
 .byte WaitForA
 .byte NewLine

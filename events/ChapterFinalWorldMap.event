@@ -109,6 +109,10 @@ eventChapter25WorldMapEvents
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	STORE_WORD wEventEngineCharacterTarget, Eyvel
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 16
 	YIELD
@@ -120,6 +124,8 @@ eventChapter25WorldMapEvents
 	
 	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
 	YIELD
+	
+	+
 	
 	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
 	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000

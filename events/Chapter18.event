@@ -8,8 +8,18 @@ eventChapter18Events ; E7/8000
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; E7/800D
+		EVENT $15, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $15
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Gustav
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
 			CMP_WORD wCurrentPhase, NPC
@@ -24,7 +34,7 @@ eventChapter18Events ; E7/8000
 		END_DEFINITION
 		EVENT $00, _MageArmorReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 12, 21
+			CMP_WORD_RANGE wCurrentTurn, 12, 19
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $00, _FenrirSorcererReinforcements
@@ -42,7 +52,13 @@ eventChapter18Events ; E7/8000
 			CMP_WORD_RANGE wCurrentTurn, 6, 15
 			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
+		EVENT $00, _MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 2, 19
+			TEST_FLAG_UNSET FlagBossDeath
+		END_DEFINITION
 		EVENT $08, _XavierAIChange
+			CMP_WORD wCurrentPhase, Enemy
 			CMP_BYTE $7E4976, 8
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -55,40 +71,28 @@ eventChapter18Events ; E7/8000
 			CHECK_CHARS2 Leif, Xavier
 			CMP_BYTE $7E4976, 8
 		END_DEFINITION
-		EVENT $0C, _GunnarAsbelTalk
-			CHECK_CHARS2 GunterDialogue, Asbel
-		END_DEFINITION
-		EVENT $0D, _MirandaLinoanTalk
-			CHECK_CHARS2 Miranda, Linoan
-		END_DEFINITION
-		EVENT $0E, _DalsinMishaTalk
-			CHECK_CHARS2 Dalsin, Misha
-		END_DEFINITION
-		EVENT $0F, _SafyShivaTalk
-			CHECK_CHARS2 Safy, Shiva
-		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue1
+		EVENT $0C, _XavierArmorDialogue1
 			CHECK_CHARS2 Civilian9, XavierArmor1
 		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue2
+		EVENT $0D, _XavierArmorDialogue2
 			CHECK_CHARS2 Civilian10, XavierArmor2
 		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue3
+		EVENT $0E, _XavierArmorDialogue3
 			CHECK_CHARS2 Civilian11, XavierArmor3
 		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue4
+		EVENT $0F, _XavierArmorDialogue4
 			CHECK_CHARS2 Civilian12, XavierArmor4
 		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue5
+		EVENT $10, _XavierArmorDialogue5
 			CHECK_CHARS2 Civilian13, XavierArmor5
 		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue6
+		EVENT $11, _XavierArmorDialogue6
 			CHECK_CHARS2 Civilian14, XavierArmor6
 		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue7
+		EVENT $12, _XavierArmorDialogue7
 			CHECK_CHARS2 Civilian15, XavierArmor7
 		END_DEFINITION
-		EVENT $00, _XavierArmorDialogue8
+		EVENT $13, _XavierArmorDialogue8
 			CHECK_CHARS2 Civilian16, XavierArmor8
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -143,43 +147,43 @@ eventChapter18Events ; E7/8000
 	END_DEFINITION_ARRAY
 
 	_BeforeActionEventDefinitions ; E7/81C8
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor1
-		END_DEFINITION
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor2
-		END_DEFINITION
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor3
-		END_DEFINITION
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor4
-		END_DEFINITION
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor5
-		END_DEFINITION
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor6
-		END_DEFINITION
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor7
-		END_DEFINITION
-		EVENT $00, _XavierArmorDummyEvent
-			CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor8
-		END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor1
+		;END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor2
+		;END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor3
+		;END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor4
+		;END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor5
+		;END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor6
+		;END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor7
+		;END_DEFINITION
+		;EVENT $00, _XavierArmorDummyEvent
+		;	CMP_WORD aSelectedCharacterBuffer.Character, XavierArmor8
+		;END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_AfterActionEventDefinitions ; E7/8222
 		EVENT $0A, _LeifVsGustav
 			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 			macroEventConditionCheckCoordRanges [18, 3], [24, 8]
-			CHECK_NUM_UNITS_GTE Gustav, 1
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 		EVENT $0B, _XavierVsGustav
 			CMP_WORD aSelectedCharacterBuffer.Character, Xavier
 			macroEventConditionCheckCoordRanges [18, 3], [24, 8]
 			TEST_FLAG_SET $07
-			CHECK_NUM_UNITS_GTE Gustav, 1
+			TEST_FLAG_UNSET FlagBossDeath
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -326,17 +330,62 @@ eventChapter18Events ; E7/8000
 	END1
 	
 	_LeifVsGustav
+		
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Gustav
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
+		
+		SCROLL_CAMERA_SPEED [21, 5], 4
+		YIELD
+
 		SET_MUSIC $31
 		YIELD
 		
-		macroDialogueHouse leifvsgustav
+		DIALOGUE leifvsgustav
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_XavierVsGustav
+		STORE_WORD wEventEngineCharacterTarget, Xavier
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Gustav
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Xavier
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
+		
+		SCROLL_CAMERA_SPEED [21, 5], 4
+		YIELD
+
 		SET_MUSIC $31
 		YIELD
 		
-		macroDialogueHouse xaviervsgustav
+		DIALOGUE xaviervsgustav
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Xavier
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 
 	_XavierLeifTalk ; E7/83FA
@@ -384,38 +433,6 @@ eventChapter18Events ; E7/8000
 		SET_FLAG $06
 	END2
 	
-	_GunnarAsbelTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE gunnarasbel
-		YIELD
-	END2
-
-	_MirandaLinoanTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE mirandalinoan
-		YIELD
-	END2
-	
-	_DalsinMishaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE dalsinmisha
-		YIELD
-	END2
-
-	_SafyShivaTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE safyshiva
-		YIELD
-	END2
-	
 	_XavierArmorDialogue1 ; E7/8463
 		PLAY_SOUND_WORD $00F7
 		DIALOGUE ch18villager1
@@ -452,8 +469,6 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor1, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue2 ; E7/84F7
@@ -492,8 +507,6 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor2, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue3 ; E7/858B
@@ -532,8 +545,6 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor3, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue4 ; E7/861F
@@ -572,8 +583,6 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor4, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue5 ; E7/86B3
@@ -612,8 +621,6 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor5, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue6 ; E7/8747
@@ -652,8 +659,6 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor6, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue7 ; E7/87DB
@@ -692,8 +697,6 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor7, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierArmorDialogue8 ; E7/886F
@@ -732,14 +735,12 @@ eventChapter18Events ; E7/8000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Unknown3E
 		STORE_WORD wEventEngineParameter2, $00
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
-		
-		macroSetCharacterBitsWord XavierArmor8, structCharacterDataRAM.Skills2, (Skill1Noncombatant << 8)
 	END2
 
 	_XavierAIChange ; E7/8903
 		STORE_WORD wEventEngineCharacterTarget, Xavier
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.AI1
-		STORE_WORD wEventEngineParameter2, $0E
+		STORE_WORD wEventEngineParameter2, $02
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
 		STORE_WORD wEventEngineCharacterTarget, Xavier
@@ -762,6 +763,8 @@ eventChapter18Events ; E7/8000
 	END2
 
 	_SoldierReinforcements ; E7/8965
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter18Data._SoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -770,9 +773,11 @@ eventChapter18Events ; E7/8000
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_MageArmorReinforcements ; E7/8972
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter18Data._MageArmorReinforcementsCameraCoordinates
 		YIELD
 
@@ -781,9 +786,11 @@ eventChapter18Events ; E7/8000
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_FenrirSorcererReinforcements ; E7/897F
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter18Data._FenrirSorcererReinforcementsCameraCoordinates
 		YIELD
 
@@ -792,9 +799,11 @@ eventChapter18Events ; E7/8000
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_RewarpSorcererReinforcements ; E7/898C
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter18Data._RewarpSorcererReinforcementsCameraCoordinates
 		YIELD
 
@@ -803,9 +812,11 @@ eventChapter18Events ; E7/8000
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_ThiefReinforcements ; E7/8999
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter18Data._ThiefReinforcementsCameraCoordinates
 		YIELD
 
@@ -814,9 +825,11 @@ eventChapter18Events ; E7/8000
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_MageReinforcements ; E7/89A6
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter18Data._MageReinforcementsCameraCoordinates
 		YIELD
 
@@ -825,7 +838,18 @@ eventChapter18Events ; E7/8000
 		YIELD
 
 		YIELD_UNK
+	END1
+	
+	_MusicStopDontAsk
 	END2
+	
+	_GetOutMovestring
+		MS_MOVE_DOWN
+	MS_END
+	
+	_LeifKillsGustafScriptedBattleRounds
+		.byte $02, $00, $02, $50
+	.word $FFFF, $FFFF
 
 	_PrepGroups ; E7/89B3
 		.long eventChapter18Data._PrepGroup
@@ -888,6 +912,73 @@ eventChapter18Events ; E7/8000
 
 		CALL_ASM_LOOP rlASMCSaveActiveUnitDataChapterEnd, $0000
 
+		PLAY_SOUND_WORD $00E0
+		PAUSE_SKIPPABLE 32
+		YIELD
+
+		SET_MUSIC $58
+		YIELD
+		
+		STORE_WORD wEventEngineParameter1, 2
+		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+
+		CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, gustafafterdefeat
+		YIELD_UNK
+		YIELD_UNK
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+
+		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, $0F
+		
+		SCROLL_CAMERA_CHAR Leif
+		SET_CAMERA_SPEED 4
+		YIELD
+		
+		MOVE_UNIT None, [21, 4], [0, 0], 1, _GetOutMovestring
+		YIELD_UNK
+
+		WAIT_MOVE
+		YIELD
+		
+		CALL_ASM_SKIPPABLE rlUpdateUnitMaps, $0000
+		CALL_ASM_SKIPPABLE rlUpdateVisibilityMap, $0000
+		
+		LOAD1 eventChapter18Data._GustafCorpseGroup
+		WAIT_MOVE
+		YIELD
+		
+		DIALOGUE leiffocus
+		YIELD
+		
+		CALL_ASM_SKIPPABLE rlClearHDMAArray, $0000
+
+		STORE_LONG lEventEngineLongParameter, _LeifKillsGustafScriptedBattleRounds
+		CALL_ASM_SKIPPABLE $9A8D0F, $0000
+
+		STORE_WORD wEventEngineParameter1, Thoron
+		STORE_WORD wEventEngineParameter2, LightBrand
+		STORE_WORD wEventEngineXCoordinate, 21
+		STORE_WORD wEventEngineYCoordinate, 4
+		STORE_WORD wEventEngineXCoordinateAlt, 21
+		STORE_WORD wEventEngineYCoordinateAlt, 3
+		CALL_ASM_SKIPPABLE $9A8E50, $0000
+
+		CALL_ASM_SKIPPABLE $84B719, $0000
+
+		HALT_UNTIL_WORD_SKIPPABLE $7FAA14, $0000
+
+		CALL_ASM_SKIPPABLE rlUpdateUnitMaps, $0000
+		CALL_ASM_SKIPPABLE rlUpdateVisibilityMap, $0000
+
+		YIELD
+		
+		DIALOGUE leifdone
+		YIELD
+		
 		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD

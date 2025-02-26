@@ -85,7 +85,7 @@ _WrathName
 .word $0000
 	
 _AnchorName
-	.text "  Anchor"
+	.text "  Resilience"
 .word $0000
 
 _AdeptName
@@ -165,36 +165,48 @@ _BargainName
 skill_desc_text				.block
 
 _WrathDesc
-	.text "Counterattacks that "
+	.text "Al]ways deals a "
 	.word $0000
-	.text "hit are al]ways "
+	.text "critical hit for"
 	.word $0000
-	.text "critical hits "
+	.text "counterattacks"
+	.word $0000
+	.text "that connect"
 	.word $0000
 	.word $0000
 
 _AnchorDesc
-	.text "Prevents user fro[m "
+	.text "Cannot be inflicted "
 	.word $0000
-	.text "being captured"
+	.text "]with status"
+	.word $0000
+	.text "conditions" 
 	.word $0000
 .word $0000
 
 _AdeptDesc
-	.text "{(}{A}{S} x{2}{)}{%}"
+	;.text "Has a {(}{A}{S} x{2}{)}{%}"
+	;.word $0000
+	;.text "chance to do a"
+	;.word $0000
+	;.text "consecutive attack"
+	;.word $0000
+	.text "If unit's {A}{S} is "
 	.word $0000
-	.text "chance to do a"
+	.text "at least opponent's "
 	.word $0000
-	.text "consecutive attack"
+	.text "{X}{1}{.}{5}, adds one"
+	.word $0000
+	.text "attack after first"
 	.word $0000
 .word $0000
 
 _PaviseDesc
-	.text "{L}{V}{%} chance to"
+	.text "Has a {L}{V}{%} chance "
 	.word $0000
-	.text "negate opponent's "
+	.text "to nullify"
 	.word $0000
-	.text "attack"
+	.text "opponent's attack "
 	.word $0000
 .word $0000
 
@@ -203,16 +215,12 @@ _CharmDesc
 	.word $0000
 	.text "Avoid to allies "
 	.word $0000
-	.text "]within {3} tiles of "
-	.word $0000
-	.text "user"
+	.text "]within {3} spaces "
 	.word $0000
 .word $0000
 
 _NoncombatantDesc
-	.text "Prevents user fro[m "
-	.word $0000
-	.text "being attacked"
+	.text "Cannot be attacked"
 	.word $0000
 .word $0000
 
@@ -224,29 +232,37 @@ _NihilDesc
 .word $0000
 
 _MiracleDesc
-	.text "{(}Lck x {3}{)}{%}"
+	.text "Survives fatal"
 	.word $0000
-	.text "chance to avoid all "
+	.text "attacks ]with {1}{H}{P}"
 	.word $0000
-	.text "fatal da[mage for "
+	.text "re[maining ]when"
 	.word $0000
-	.text "the rest of co[mbat "
+	.text "{H}{P} is above {1}"
 	.word $0000
+	;.text "Has a {(}Lck x {3}{)}{%}"
+	;.word $0000
+	;.text "chance to avoid all "
+	;.word $0000
+	;.text "fatal attacks for an"
+	;.word $0000
+	;.text "entire given co[mbat"
+	;.word $0000
 .word $0000
 
 _MiraclePlusDesc
-	.text "+Nullifies ene[my "
+	.text "Cannot be targeted"
 	.word $0000
-	.text "staves and status "
+	.text "by staves or status "
 	.word $0000
-	.text "conditions. Avoids"
+	.text "inflictions, Avoids "
 	.word $0000
-	.text "all fatal da[mage "
+	.text "all fatal attacks "
 	.word $0000
 .word $0000
 
 _VantageDesc
-	.text "User attacks first"
+	.text "Attacks first even"
 	.word $0000
 	.text "]when opponent"
 	.word $0000
@@ -255,89 +271,93 @@ _VantageDesc
 .word $0000
 
 _AccostDesc
-	.text "If user attacks and "
+	.text "If unit's {H}{P} and"
 	.word $0000
-	.text "has greater {H}{P} and"
+	.text "{A}{S} are greater and"
 	.word $0000
-	.text "{A}{S} than opponent, "
+	.text "unit can attack in a"
 	.word $0000
-	.text "add round of co[mbat"
+	.text "co[mbat, add a round"
 	.word $0000
-.word $0000
+	.word $0000
 
 _AstraDesc
-	.text "Skl {%} chance to"
+	.text "Has a Skl {%} chance "
 	.word $0000
-	.text "attack five "
+	.text "to attack five"
 	.word $0000
 	.text "consecutive ti[mes"
+	.word $0000
+	.text "{(}Proc stops Adept{)}"
 	.word $0000
 .word $0000
 
 _LunaSkillDesc
-	.text "Skl {%} chance for "
+	.text "Has a Skl {%} chance "
 	.word $0000
-	.text "attack to ignore"
+	.text "for attack to ignore"
 	.word $0000
-	.text "opponent's defense"
+	.text "opponent's defense, "
+	.word $0000
+	.text "and to ensure hit "
 	.word $0000
 .word $0000
 
 _SolDesc
-	.text "Skl {%} chance for "
+	.text "Has a Skl {%} chance "
 	.word $0000
-	.text "attack to heal for"
+	.text "for attack to heal"
 	.word $0000
-	.text "da[mage dealt "
+	.text "for da[mage dealt,"
+	.word $0000
+	.text "and to ensure hit "
 	.word $0000
 .word $0000
 
 _RenewalDesc
-	.text "Recover {2}{0}{%}"
+	.text "Has a quarter of"
 	.word $0000
-	.text "of [maxi[mu[m {H}{P}"
+	.text "{M}{H}{P} restored at"
 	.word $0000
-	.text "at the start of "
+	.text "the start of each "
 	.word $0000
-	.text "every turn"
+	.text "turn"
 	.word $0000
 .word $0000
 
 _ParagonDesc
-	.text "Doubles gained"
+	.text "{E}{X}{P} gain is"
 	.word $0000
-	.text "experience points "
+	.text "doubled "
 	.word $0000
 .word $0000
 
 _StealDesc
-	.text "If user outspeeds a "
+	.text "If unit outspeeds a "
 	.word $0000
 	.text "target, can Steal an"
 	.word $0000
 	.text "ite[m ]with )Weight "
 	.word $0000
-	.text "less than user's Con"
+	.text "less than unit's Con"
 	.word $0000
 .word $0000
 
 _DanceDesc
-	.text "Use Dance co{mm}nand"
+	.text "Can use the Dance "
 	.word $0000
-	.text "to grant another"
+	.text "co{mm}nand to grant "
 	.word $0000
-	.text "action to a single"
+	.text "another action to "
 	.word $0000
-	.text "ally next to user "
+	.text "an adjacent ally"
 	.word $0000
 .word $0000
 
 _BargainDesc
-	.text "Enables user to buy "
+	.text "Buys fro[m shops at "
 	.word $0000
-	.text "fro[m shops at half "
-	.word $0000
-	.text "price "
+	.text "half price"
 	.word $0000
 .word $0000
 

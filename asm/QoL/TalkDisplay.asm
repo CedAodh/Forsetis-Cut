@@ -697,6 +697,8 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		ZQOL_END_TALK_CHAPTER
 
 		aChapter21TalkTargetTable
+		  ZQOL_TALK_ENTRY Xavier, [Leif]
+          	  ZQOL_TALK_ENTRY Leif, [Xavier]
 		  ZQOL_TALK_ENTRY Sara, [Marty]
 		  ZQOL_TALK_ENTRY Eda, [Linoan]
 		  ZQOL_TALK_ENTRY Miranda, [Leif]
@@ -706,6 +708,8 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
 		ZQOL_END_TALK_CHAPTER
 		
         aChapter22TalkTargetTable
+		  ZQOL_TALK_ENTRY Xavier, [Leif]
+          	  ZQOL_TALK_ENTRY Leif, [Xavier]
 		  ZQOL_TALK_ENTRY Asbel, [Tina]
 		  ZQOL_TALK_ENTRY Karin, [Fergus]
 		  ZQOL_TALK_ENTRY Shiva, [Asaello]
@@ -717,6 +721,8 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
         ZQOL_END_TALK_CHAPTER
 
         aChapter23TalkTargetTable
+	  ZQOL_TALK_ENTRY Xavier, [Leif]
+          ZQOL_TALK_ENTRY Leif, [Xavier]
           ZQOL_TALK_ENTRY Leif, [CedChp23, Saias]
           ZQOL_TALK_ENTRY Mareeta, [Saias]
           ZQOL_TALK_ENTRY Schroff, [Saias]
@@ -727,9 +733,11 @@ GUARD_ZQOL_TALK_DISPLAY :?= false
         ZQOL_END_TALK_CHAPTER
 
         aChapter24TalkTargetTable
+	  ZQOL_TALK_ENTRY Xavier, [Leif]
+          ZQOL_TALK_ENTRY Leif, [Xavier]
           ZQOL_TALK_ENTRY Mareeta, [Galzus]
-		  ZQOL_TALK_ENTRY Galzus, [Saias]
-		  ZQOL_TALK_ENTRY Galzus, [Leif]
+		  ZQOL_TALK_ENTRY Saias, [Galzus]
+		  ZQOL_TALK_ENTRY Leif, [Galzus]
         ZQOL_END_TALK_CHAPTER
 
         aChapter24xTalkTargetTable

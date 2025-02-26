@@ -56,13 +56,13 @@ leader_sets				.block
 .word $0091
 .word <>leader_text._ThraciaLeader
 
-.word $00C3
-.word <>leader_text._ThraciaLeader
+.word $0036
+.word <>leader_text._MansterLeader
 
 .word $0073
 .word <>leader_text._ThraciaLeader
 
-.word $0046
+.word $0044
 .word <>leader_text._CiviliansLeader	;formerly "Ishtar": unnamed
 
 .word $001E
@@ -179,14 +179,14 @@ leader_sets				.block
 .word $0018
 .word <>leader_text._DandelionLeader
 
-.word $0017
-.word <>leader_text._MercenaryLeader
+.word $0062
+.word <>leader_text._ThraciaLeader
 
-.word $00E0
-.word <>leader_text._MischaLeader
+.word $0085
+.word <>leader_text._MansterLeader
 
-.word $0007
-.word <>leader_text._MercenaryLeader
+.word $00A3
+.word <>leader_text._ThraciaLeader
 
 .word $0000
 

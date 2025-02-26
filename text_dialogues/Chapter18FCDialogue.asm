@@ -7,7 +7,7 @@ leifvsgustav
 .byte left_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "It ends here, Gustav!"
+.text "It ends here, Gustaf!"
 .byte NewLine
 .text "Prepare yourself!"
 .byte WaitForA
@@ -113,7 +113,7 @@ xaviervsgustav
 
 .byte right_slot
 .byte ScrollText
-.text "Not until my blade reaches your neck, Gustav!"
+.text "Not until my blade reaches your neck, Gustaf!"
 .byte NewLine
 .text "Come!"
 .byte NewLine
@@ -201,147 +201,6 @@ gunnarasbel
 .byte right_slot
 .byte ScrollText
 .text "I see."
-.byte NewLine
-.text "...Did it concern me?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "...Yes, it does."
-.byte NewLine
-.text "Truthfully, I was debating"
-.byte NewLine
-.text "whether or not to tell you."
-.byte WaitForA
-.byte ScrollText
-.text "When did you last see your mother?"
-.byte NewLine
-.text "You did not visit her when we"
-.byte NewLine
-.text "marched through the outskirts of Hrest."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "......"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "She is...my deceased son's wife."
-.byte NewLine
-.text "I visit her and keep her company when I can,"
-.byte NewLine
-.text "but...I know that is not sufficient."
-.byte WaitForA
-.byte ScrollText
-.text "You are her only remaining blood family, Asbel."
-.byte NewLine
-.text "I think you owe it to her to at least"
-.byte NewLine
-.text "just poke your head around."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "It does weigh heavily on my mind..."
-.byte NewLine
-.text "But, I feel as though I'd be playing with"
-.byte NewLine
-.text "Mother's heartstrings if I did that."
-.byte WaitForA
-.byte NewLine
-.text "I mean, to come back after all this time"
-.byte NewLine
-.text "and then just up and disappear again?"
-.byte WaitForA
-.byte ScrollText
-.text "Something about that just..."
-.byte NewLine
-.text "doesn't feel right to me."
-.byte NewLine
-.text "It feels...misleading and deceiving."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Very well then."
-.byte NewLine
-.text "I was sure you had your reasons."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Are you displeased?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Well, it's not what I would have chosen."
-.byte NewLine
-.text "Though to be fair, I can't claim to know what"
-.byte NewLine
-.text "exactly is at stake for you, so I cannot judge."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Mmm."
-.byte NewLine
-.text "And Mother... How has she been?"
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "She's continued to lead a fulfilling life,"
-.byte NewLine
-.text "all things considered."
-.byte WaitForA
-.byte ScrollText
-.text "She can't be alone in the house for too long"
-.byte NewLine
-.text "without memories getting to her."
-.byte WaitForA
-.byte NewLine
-.text "But she chooses to stay because she's always"
-.byte NewLine
-.text "at her happiest when she's working with the"
-.byte NewLine
-.text "other families and helping those she holds dear."
-.byte WaitForA
-.byte ScrollText
-.text "Familiarity is a funny thing, is it not?"
-.byte NewLine
-.text "The way it brings both grief and comfort."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "Indeed."
-.byte NewLine
-.text "I'm glad she still has things to cling to."
-.byte WaitForA
-
-.byte left_slot
-.text "You obviously miss her, Asbel,"
-.byte NewLine
-.text "so don't put this off any longer than necessary."
-.byte WaitForA
-
-.byte right_slot
-.byte ScrollText
-.text "I understand."
-.byte NewLine
-.text "Thank you, Grandfather,"
-.byte NewLine
-.text "for talking to me about this."
-.byte WaitForA
-
-.byte left_slot
-.byte ScrollText
-.text "Anytime, my grandson."
-.byte NewLine
-.text "That is what I am here for."
 .byte WaitForA
 
 .byte EndText
@@ -409,8 +268,11 @@ mirandalinoan
 .text "That's... Of course."
 .byte NewLine
 .text "Forgive me, Princess Miranda."
+.byte WaitForA
 .byte NewLine
-.text "I've done you a disservice with such negligence."
+.text "I've done you a disservice"
+.byte NewLine
+.text "with such negligence."
 .byte WaitForA
 
 .byte left_slot
@@ -434,19 +296,21 @@ mirandalinoan
 .text "resisting the empire's dreary reach as you did."
 .byte WaitForA
 .byte ScrollText
-.text "You shone where I could not, and it's clear"
+.text "You shone where I could not, and it's clear as"
 .byte NewLine
-.text "as day that your popularity far exceeds my own."
+.text "day that your popularity far exceeds my own."
 .byte WaitForA
 .byte ScrollText
 .text "I look up to you...and with your approval,"
 .byte NewLine
 .text "I would forge a new friendship and receive"
 .byte NewLine
-.text "tutelage to sharpen my scope on kingdoms and ruling."
+.text "tutelage to sharpen my scope on ruling."
 .byte WaitForA
 .byte ScrollText
-.text "May I...count on your assistance in this matter?"
+.text "May I...count on your assistance"
+.byte NewLine
+.text "in this matter?"
 .byte WaitForA
 
 .byte right_slot
@@ -456,16 +320,16 @@ mirandalinoan
 .byte ScrollText
 .text "When one nation thrives more greatly than its"
 .byte NewLine
-.text "neighbors, it is the duty of that nation to lead and"
+.text "neighbors, it is the duty of that nation to lead"
 .byte NewLine
-.text "guide the others back onto the path of salvation."
+.text "and guide the others back to the path of salvation."
 .byte WaitForA
 .byte ScrollText
 .text "With that said, I've no reason of my own"
 .byte NewLine
 .text "to believe I'm one fit to guide you,"
 .byte NewLine
-.text "but I will gladly honor your request nonetheless."
+.text "but I'll gladly honor your request nonetheless."
 .byte WaitForA
 .byte ScrollText
 .text "It would be my greatest delight."
@@ -477,7 +341,9 @@ mirandalinoan
 .byte ScrollText
 .text "Y-yes? What could it be?"
 .byte NewLine
-.text "You may consider it already fulfilled, Duchess Linoan!"
+.text "You may consider it already fulfilled,"
+.byte NewLine
+.text "Duchess Linoan!"
 .byte WaitForA
 
 .byte right_slot
@@ -496,14 +362,14 @@ mirandalinoan
 .byte ScrollText
 .text "Linoan..."
 .byte NewLine
-.text "I shall not ever forget your generosity, Linoan."
+.text "I shall not ever forget your generosity."
 .byte NewLine
 .text "You have my eternal thanks."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Hee hee."
+.text "*chuckle*"
 .byte NewLine
 .text "The pleasure is all mine, Miranda. Truly."
 .byte WaitForA
@@ -573,14 +439,16 @@ dalsinmisha
 .text "Oh, and yeah, my name's Dalsin."
 .byte WaitForA
 .byte ScrollText
-.text "I think you'd be surprised to hear I have a"
+.text "I think you'd be surprised to hear I have a few"
 .byte NewLine
-.text "bear friend waiting for me back home in Munster."
+.text "sheep friends waiting for me back home in"
+.byte NewLine
+.text "Munster."
 .byte WaitForA 
 
 .byte right_slot
 .byte ScrollText
-.text "A bear friend?"
+.text "Sheep friends?"
 .byte NewLine
 .text "I don't think I should be surprised."
 .byte WaitForA
@@ -596,16 +464,18 @@ dalsinmisha
 .byte ScrollText
 .text "Considering you instantly won the affection"
 .byte NewLine
-.text "of Helena, a bear's friendship would then"
+.text "of Helena, even a sincere connection with farm"
 .byte NewLine
-.text "pale in comparison, no?"
+.text "animals would then pale in comparison, no?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "...Yeah, I guess. You're probably right."
 .byte NewLine
-.text "I call her Sue, if you wanted to know her name."
+.text "One's particularly attached to me."
+.byte NewLine
+.text "I call her Sue."
 .byte WaitForA
 
 .byte right_slot
@@ -617,7 +487,7 @@ dalsinmisha
 .byte ScrollText
 .text "Thanks."
 .byte NewLine
-.text "Y-you know, obviously, I came up with it myself."
+.text "You know, obviously, I came up with it myself."
 .byte WaitForA
 .byte ScrollText
 .text "So, Dame Misha..."
@@ -630,11 +500,11 @@ dalsinmisha
 
 .byte left_slot
 .byte ScrollText
-.text "The prince happened to give me a little background"
+.text "The prince happened to give me a little"
 .byte NewLine
-.text "about you. You know, the circumstances that"
+.text "background about you. You know, the"
 .byte NewLine
-.text "had you pitted against us."
+.text "circumstances that had you pitted against us."
 .byte WaitForA
 
 .byte right_slot
@@ -658,9 +528,9 @@ dalsinmisha
 
 .byte left_slot
 .byte ScrollText
-.text "I-I mean that I'm glad that...I'm not"
+.text "I mean that I'm glad that...I'm not"
 .byte NewLine
-.text "the only one who...who made that mistake."
+.text "the only one who...made that mistake."
 .byte WaitForA
 
 .byte right_slot
@@ -670,9 +540,7 @@ dalsinmisha
 
 .byte left_slot
 .byte ScrollText
-.text "I'm sorry."
-.byte NewLine
-.text "I didn't know a good way to say it,"
+.text "I'm sorry. I didn't know a good way to say it,"
 .byte NewLine
 .text "but I still wanted to get it off my chest."
 .byte WaitForA
@@ -680,13 +548,16 @@ dalsinmisha
 .text "Back when I was with the empire,"
 .byte NewLine
 .text "I was going along with whatever they wanted—"
+.byte WaitForA
 .byte NewLine
 .text "like helping them rip away children—because I"
 .byte NewLine
 .text "was told my little brother would then be left out."
 .byte WaitForA
+.byte ScrollText
+.text "And I let myself think I was doing the right"
 .byte NewLine
-.text "And I let myself think I was doing the right thing!"
+.text "thing!"
 .byte WaitForA
 
 .byte right_slot
@@ -696,23 +567,25 @@ dalsinmisha
 
 .byte left_slot
 .byte ScrollText
-.text "After I swore fealty to Prince Leif—because he up"
+.text "After I swore fealty to Prince Leif—'cause he up"
 .byte NewLine
-.text "and saved my brother when I never even knew he was"
+.text "an' saved my kin when -I- never knew he was"
 .byte NewLine
 .text "taken—I really contemplated my whole existence."
 .byte WaitForA
 .byte ScrollText
-.text "“Who else could be this stupid, this shortsighted?”"
+.text "“Who else could be this stupid,"
 .byte NewLine
-.text "So...when I found out you—"
+.text "this shortsighted?”"
+.byte NewLine
+.text "So when I found out you—"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Okay, enough."
+.text "That is enough."
 .byte NewLine
-.text "I get the point."
+.text "I get your point."
 .byte WaitForA
 
 .byte left_slot
@@ -725,46 +598,48 @@ dalsinmisha
 .byte right_slot
 .byte ScrollText
 .text "Consider it payment for looking after Helena"
-.byte WaitForA
+.byte NewLine
 .text "in my absence."
 .byte WaitForA
 .byte ScrollText
-.text "I ought to head back into battle."
+.text "I ought to get back to preparing for battle."
 .byte NewLine
-.text "I owe it to all of you to help right"
+.text "I owe it to all of you to help right the wrongs"
 .byte NewLine
-.text "the wrongs I've done in the name of Silesse."
+.text "I've done in the name of Silesse."
 .byte WaitForA
-.byte NewLine
-.text "Farewell, Sir Dalsin."
+.byte ScrollText
+.text "Be well, Sir Dalsin."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "You as well, Dame Misha..."
+.text "Same to you, Dame Misha..."
 .byte WaitForA
-
-.byte right_slot
-.byte ScrollText
 
 .byte left_slot
 .byte ScrollText
 
 .byte right_slot
-.word ClearPortrait
+.byte ScrollText
 
 .byte left_slot
 .word ClearPortrait
-.word RetractBox
+
+.byte right_slot
+.word ClearPortrait
+
+.word PauseDialogue
+.byte $3C
 
 .byte right_slot
 .word LoadPortrait
 .word dalsin_portrait
-.text "Huh. She wholly acknowledges her wrongdoings, but"
+.text "Huh. She wholly acknowledges her wrongdoings,"
 .byte NewLine
-.text "she still moves about with such poise and confidence."
+.text "but she still moves about with such poise and"
 .byte NewLine
-.text "I'd like to learn to do that."
+.text "confidence. I'd like to learn to do that."
 .byte WaitForA
 
 .byte EndText
@@ -854,7 +729,7 @@ safyshiva
 .text "Okay."
 .byte WaitForA
 .byte ScrollText
-.text "Sabhain is—was—a village near"
+.text "Sabang is—was—a village near"
 .byte NewLine
 .text "the eastern coast of Connaught."
 .byte NewLine
@@ -940,7 +815,7 @@ safyshiva
 .byte NewLine
 .text "and we knew the attack was coming;"
 .byte NewLine
-.text "we begged the knights to protect Sabhain."
+.text "we begged the knights to protect Sabang."
 .byte WaitForA
 .byte ScrollText
 .text "They weaseled their way out of accepting,"
@@ -1068,3 +943,156 @@ safyshiva
 
 .byte EndText
 
+gustafafterdefeat
+
+.byte right_slot
+.word LoadPortrait
+.word gustav_portrait
+.text "Gghhh..."
+.byte WaitForA
+
+.word PlayMusic
+.byte $43
+
+.byte left_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "It's over, Gustaf. Your reign is over."
+.byte NewLine
+.text "Don't strain either of us any further."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "We...both know you have no intention to spare"
+.byte NewLine
+.text "me. Surely you're familiar with the sight of a"
+.byte NewLine
+.text "beaten foe not ready to die yet."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "But even like this, every moment you're still"
+.byte NewLine
+.text "alive keeps my people anxious and trembling."
+.byte WaitForA
+.byte ScrollText
+.text "The best I can do for everyone is separate"
+.byte NewLine
+.text "your head from your body as soon as possible."
+.byte NewLine
+.text "So, again, I ask you cease struggling."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, please... Do not preach to ME, princeling."
+.byte WaitForA
+.byte ScrollText
+.text "Friege usurped this throne from House Leonster"
+.byte NewLine
+.text "out of pure cupidity, I'll say it directly."
+.byte NewLine
+.text "But...you operate no differently from us."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "And why should I listen to a thing an"
+.byte NewLine
+.text "overindulged caitiff like you says?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Call me that, yes... Call me for what I am."
+.byte NewLine
+.text "All I'll say is...do the same for yourself."
+.byte WaitForA
+.byte ScrollText
+.text "Extortion of those beneath you will come soon"
+.byte NewLine
+.text "enough, and naturally. In the history books..."
+.byte NewLine
+.text "your rule will blend right in with the rest."
+.byte WaitForA
+.byte ScrollText
+.text "So don't fool either of us into thinking you'll"
+.byte NewLine
+.text "suddenly discover the way to freely manipulate"
+.byte NewLine
+.text "the world order everyone lives in."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Considering the atrocities you wrought and the"
+.byte NewLine
+.text "fact that your death is imminent, I fail to grasp"
+.byte NewLine
+.text "your concern for the future like this."
+.byte WaitForA
+.byte ScrollText
+.text "Or has the Loptr Church poisoned your mind"
+.byte NewLine
+.text "that thoroughly? That even in the end, you'll"
+.byte NewLine
+.text "do anything to sow seeds of malcontentment?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Pah."
+.byte NewLine
+.text "Fine, then, have it your way..."
+.byte WaitForA
+.word PlayMusic
+.byte $58
+.byte ScrollText
+.text "But since you fancy yourself so altruistic...then"
+.byte NewLine
+.text "pray see to it you do a clean cut—while"
+.byte NewLine
+.text "remembering who I am...and all that I've done."
+.byte WaitForA
+.byte ScrollText
+.text "Grant me a painless death and prove to yourself"
+.byte NewLine
+.text "that this ascension is for more than just your"
+.byte NewLine
+.text "own vanity and satisfaction."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...As you wish."
+.byte WaitForA
+
+.byte EndText
+
+leiffocus
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "......"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word gustav_portrait
+.text "......"
+.byte WaitForA
+
+.byte EndText
+
+leifdone
+
+.byte right_slot
+.word LoadPortrait
+.word leif_portrait2
+.text "...It's done."
+.byte WaitForA
+
+.byte EndText

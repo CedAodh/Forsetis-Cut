@@ -31,7 +31,7 @@ _sell_intro
 
 _continue
 
-	.text "All right, will that be all for you?"
+	.text "Is that everything?"
 .byte EndTextNoPortraitFade
 
 _too_expensive
@@ -66,16 +66,16 @@ _after_buy
 
 _no_items_to_sell
 
-	.text "I can't help you if you don't"
+	.text "I can't help you if you don't have"
 	.byte NewLine
-	.text "have anything to sell."
+	.text "anything to sell."
 .byte EndTextNoPortraitFade
 
 _inventory_full
 
-	.text "You can't carry anything else."
+	.text "You can't carry any more."
 	.byte NewLine
-	.text "That's not very good for business..."
+	.text "Not very good for business."
 .byte EndTextNoPortraitFade
 
 _unsellable

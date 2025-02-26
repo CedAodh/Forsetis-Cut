@@ -8,6 +8,15 @@ eventChapter4Events ; 99/8778
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/8785
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $00, _DaisySpawn
 			RUN_ASM _rlCheckLifisDeadOrUnrecruited
 			RUN_ASM _rlCheckSafyDeadOrUnrecruited
@@ -33,7 +42,7 @@ eventChapter4Events ; 99/8778
 		EVENT FlagAlwaysZero, _MiddleLeftSoldierReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $07
-			CMP_WORD_RANGE wCurrentTurn, 8, 60
+			CMP_WORD_RANGE wCurrentTurn, 8, 20
 			ROLL_RNG 40
 			CHECK_NUM_UNITS_LTE MunsterSoldier2, 12
 		END_DEFINITION
@@ -51,6 +60,10 @@ eventChapter4Events ; 99/8778
 			ROLL_RNG 40
 			CHECK_NUM_UNITS_LTE MunsterSoldier2, 12
 		END_DEFINITION
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 7, 24
+		END_DEFINITION
 		EVENT FlagAlwaysZero, _LifisDialogue
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD wCurrentTurn, 1
@@ -67,7 +80,7 @@ eventChapter4Events ; 99/8778
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BrigandFlee
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 15
+			CMP_WORD wCurrentTurn, 20
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -190,6 +203,8 @@ eventChapter4Events ; 99/8778
 		rtl	
 
 	_LeftSoldierReinforcements ; 99/8980
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter4Data._LeftSoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -197,9 +212,11 @@ eventChapter4Events ; 99/8778
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_MiddleLeftSoldierReinforcements ; 99/898D
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter4Data._MiddleLeftSoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -207,9 +224,11 @@ eventChapter4Events ; 99/8778
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_MiddleRightSoldierReinforcements ; 99/899A
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter4Data._MiddleRightSoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -217,9 +236,11 @@ eventChapter4Events ; 99/8778
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 
 	_RightSoldierReinforcements ; 99/89A7
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter4Data._RightSoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -227,7 +248,7 @@ eventChapter4Events ; 99/8778
 		WAIT_MOVE
 		YIELD
 		YIELD_UNK
-	END2
+	END1
 	
 	_DaisySpawn
 		STORE_WORD wEventEngineCharacterTarget, Safy
@@ -285,6 +306,8 @@ eventChapter4Events ; 99/8778
 		macroSetCharacterByte BanditBrigand1, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte BanditBrigand1, structCharacterDataRAM.AI2, $0B
 		macroSetCharacterByte BanditBrigand1, structCharacterDataRAM.Unknown3E, $00
+
+		SET_FLAG $07
 	END2
 
 	_Door1 ; 99/8A32
@@ -328,18 +351,12 @@ eventChapter4Events ; 99/8778
 
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI1, $12
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI4, $00
-		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI2, $07
+		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterPriest1, structCharacterDataRAM.Unknown3E, $00
-		
-		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI1, $00
-		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI4, $00
-		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI2, $07
-		macroSetCharacterByte Weissmann, structCharacterDataRAM.Unknown3E, $00
-
 
 		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI1, $00
 		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI4, $00
-		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI2, $07
+		macroSetCharacterByte Weissmann, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte Weissmann, structCharacterDataRAM.Unknown3E, $00
 
 		macroSetCharacterByte Dalsin, structCharacterDataRAM.AI1, $00
@@ -742,21 +759,20 @@ eventChapter4Events ; 99/8778
 		YIELD
 
 		macroChapterTitlePopup ch4titlename
-		
+
+        macroDialogueWithBackground ch4op1, 1
+        
 		EVENT_TEST_FLAG_SET FlagWeismannDeath
         JUMP_TRUE +
 
-        macroDialogueWithBackground ch4op1weisedition, 1
-		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
-		YIELD
-        JUMP ++
-
-        +
-		macroDialogueWithBackground ch4op1, 1
-		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
-		YIELD
+		STORE_LONG lEventEngineLongParameter, ch4op1weisedition
+		CALL_ASM_LOOP rlASMCDialogueContinue, $0000
 
 		+
+		
+		CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+		YIELD
+		
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
 
 		SCROLL_CAMERA_ADDRESS eventChapter4Data._PlayerGroup1CameraCoordinates

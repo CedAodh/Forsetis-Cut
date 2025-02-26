@@ -52,6 +52,125 @@ eventChapter24WorldMapEvents ; E7/F5FA
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	SET_MUSIC $01
+	YIELD
+
+	STORE_WORD wEventEngineParameter1, 1
+	CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+	CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, shouldleifmaketherounds
+	YIELD_UNK
+	YIELD_UNK
+	YIELD_UNK
+	YIELD
+
+	HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+
+	FADE_OUT $01
+	YIELD
+
+	CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+	STORE_BYTE bBuf_INIDISP, $00
+	JUMP_FALSE _NoInterim
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, Saias
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Mareeta
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground ch23mareetasaias, 1
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, Saias
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Schroff
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground ch23schroffsaias, 1
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	STORE_WORD wEventEngineCharacterTarget, CedChp23
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Asbel
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground ch23asbelced, 1
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	STORE_WORD wEventEngineCharacterTarget, CedChp23
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	STORE_WORD wEventEngineCharacterTarget, Misha
+	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
+	JUMP_FALSE +
+	
+	macroDialogueWithBackground ch23mishaced, 1
+	
+	CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
+	YIELD
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
+	+
+	
+	_NoInterim
+	
+	STORE_WORD wEventEngineParameter1, $4000 ; This is the skipping bit
+	CALL_ASM_LOOP rlASMCResetEventStatusBits, $0000
+	YIELD
+	
+	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
+	
 	EVENT_TEST_FLAG_SET $A6
 	JUMP_TRUE +
 	
@@ -61,10 +180,6 @@ eventChapter24WorldMapEvents ; E7/F5FA
 	STORE_WORD wEventEngineCharacterTarget, Mareeta
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +
-	
-	PLAY_SOUND_WORD $00E0
-	PAUSE_SKIPPABLE 16
-	YIELD
 	
 	SET_MUSIC $58
 	YIELD

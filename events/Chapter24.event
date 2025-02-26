@@ -8,36 +8,59 @@ eventChapter24Events ; B9/B000
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; B9/B00D
+		EVENT $09, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $09
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
+		END_DEFINITION
+		EVENT $02, eventMapDeathQuoteDummyEvent
+			CHECK_DEAD RaydrikChp24
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $08, _NPCAIChange
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 5
 		END_DEFINITION
 		EVENT $00, _OpenedDoorReinforcements
-			CMP_WORD wCurrentPhase, Enemy
+			CMP_WORD wCurrentPhase, NPC
 			TEST_FLAG_SET $22
 			TEST_FLAG_UNSET $16
 		END_DEFINITION
+		EVENT $15, _ThiefReinforcements
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 3, 19
+			TEST_FLAG_SET $22
+		END_DEFINITION
 		EVENT $00, _SoldierReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 1, 5
-		END_DEFINITION
-		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 9, 19
+			CMP_WORD_RANGE wCurrentTurn, 3, 7
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $00, _UnlockSorcererReinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 8
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
-		EVENT $15, _ThiefReinforcements
+		EVENT $00, _SorcererReinforcements
 			CMP_WORD wCurrentPhase, NPC
-			TEST_FLAG_SET $22
+			CMP_WORD_RANGE wCurrentTurn, 9, 19
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $10, _RaydrikSkillIssue
-			CMP_WORD wCurrentPhase, Player
+			CMP_WORD wCurrentPhase, Enemy
+			TEST_FLAG_SET $05
+			TEST_FLAG_UNSET $02
+		END_DEFINITION
+		EVENT $07, _Reinforcing
+			CMP_WORD wCurrentPhase, NPC
+			TEST_FLAG_SET $04
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -52,6 +75,12 @@ eventChapter24Events ; B9/B000
 		EVENT $0F, _LeifGalzusTalk
 			CHECK_CHARS2 Leif, Galzus
 			TEST_FLAG_SET $0A
+		END_DEFINITION
+		EVENT $04, _LeifXavierReinforce
+			CHECK_CHARS2 Leif, Xavier
+		END_DEFINITION
+		EVENT $04, _LeifXavierReinforce
+			CHECK_CHARS2 Xavier, Leif
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -105,40 +134,39 @@ eventChapter24Events ; B9/B000
 
 	_AfterActionEventDefinitions ; B9/B134
 		EVENT $0B, _LeifVsRaydrik
-			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
-			CHECK_NUM_UNITS_GTE RaydrikChp24, 1
+			CMP_WORD aSelectedCharacterBuffer.Character, Leif
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $0C, _CedVsRaydrik
-			CMP_WORD aSelectedCharacterBuffer.Character, CedChp23
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
-			CHECK_NUM_UNITS_GTE RaydrikChp24, 1
+			CMP_WORD aSelectedCharacterBuffer.Character, CedChp23
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $0D, _MareetaVsRaydrik
-			CMP_WORD aSelectedCharacterBuffer.Character, Mareeta
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
-			CHECK_NUM_UNITS_GTE RaydrikChp24, 1
+			CMP_WORD aSelectedCharacterBuffer.Character, Mareeta
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $11, _SaiasVsRaydrik
-			CMP_WORD aSelectedCharacterBuffer.Character, Saias
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
-			CHECK_NUM_UNITS_GTE RaydrikChp24, 1
+			CMP_WORD aSelectedCharacterBuffer.Character, Saias
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $12, _NannaVsRaydrik
-			CMP_WORD aSelectedCharacterBuffer.Character, Nanna
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
-			CHECK_NUM_UNITS_GTE RaydrikChp24, 1
+			CMP_WORD aSelectedCharacterBuffer.Character, Nanna
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $13, _BrightonVsRaydrik
-			CMP_WORD aSelectedCharacterBuffer.Character, Brighton
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
-			CHECK_NUM_UNITS_GTE RaydrikChp24, 1
+			CMP_WORD aSelectedCharacterBuffer.Character, Brighton
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $14, _GalzusVsRaydrik
-			CMP_WORD aSelectedCharacterBuffer.Character, Galzus
 			macroEventConditionCheckCoordRanges [7, 12], [13, 17]
-			TEST_FLAG_SET $0A
-			CHECK_NUM_UNITS_GTE RaydrikChp24, 1
+			CMP_WORD aSelectedCharacterBuffer.Character, Galzus
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -162,6 +190,8 @@ eventChapter24Events ; B9/B000
 	END_DEFINITION_ARRAY
 
 	_OpenedDoorReinforcements ; B9/B15D
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter24Data._OpenedDoorReinforcementsCameraCoordinates
 		YIELD
 
@@ -178,9 +208,19 @@ eventChapter24Events ; B9/B000
 		SET_FLAG $16
 		
 		+
+		
+		EVENT_CMP_WORD_AT_LT wCurrentTurn, 20
+		JUMP_TRUE +
+		
+	END1
+	
+		+
+		
 	END2
 
 	_SoldierReinforcements ; B9/B16A
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter24Data._SoldierReinforcementsCameraCoordinates
 		YIELD
 
@@ -192,6 +232,8 @@ eventChapter24Events ; B9/B000
 	END2
 
 	_SorcererReinforcements ; B9/B177
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter24Data._SorcererReinforcementsCameraCoordinates
 		YIELD
 
@@ -203,6 +245,8 @@ eventChapter24Events ; B9/B000
 	END2
 
 	_UnlockSorcererReinforcements ; B9/B184
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter24Data._UnlockSorcererReinforcementsCameraCoordinates
 		YIELD
 
@@ -214,6 +258,8 @@ eventChapter24Events ; B9/B000
 	END2
 
 	_ThiefReinforcements ; B9/B191
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter24Data._ThiefReinforcementsCameraCoordinates
 		YIELD
 
@@ -222,7 +268,7 @@ eventChapter24Events ; B9/B000
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_NPCAIChange ; B9/B19E
 		STORE_WORD wEventEngineCharacterTarget, Civilian23
@@ -577,27 +623,77 @@ eventChapter24Events ; B9/B000
 		CALL_ASM_LOOP rlASMCSetCharacterDataWord, $0000
 
 		SET_FLAG $06
+		UNSET_FLAG $14
 	END2
 	
 	_SaiasGalzusTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE galzussaias
-		YIELD
+		macroDialogueHouse galzussaias
 	END2
 	
 	_LeifGalzusTalk
-		PAUSE_SKIPPABLE 32
+		macroDialogueHouse leifgalzus
+	END2
+	
+	_LeifXavierReinforce
+		macroDialogueHouse reinforce
+		
+		JUMP_TRUE +
+		
+		UNSET_FLAG $18
+		
+		+
+	END2
+	
+	_Reinforcing
+		SCROLL_CAMERA_ADDRESS eventChapter24Data._LeonsterIndoorCameraCoordinates
 		YIELD
 		
-		DIALOGUE leifgalzus
+		STORE_WORD wEventEngineParameter1, MemberCard
+
+		CALL_ASM_LOOP rlASMCCheckPartyAndConvoyForItem, $0000
+		JUMP_FALSE +
+		
+		LOAD1 eventChapter24Data._LeonsterKnight24Group
+		WAIT_MOVE
+		STORE_WORD wEventEngineCharacterTarget, LeonsterDukeKnight
+		CALL_ASM_LOOP rlASMCDismount, $0000
+		STORE_WORD wEventEngineCharacterTarget, LeonsterArchKnight
+		CALL_ASM_LOOP rlASMCDismount, $0000
+		STORE_WORD wEventEngineCharacterTarget, LeonsterDukeKnight
+		CALL_ASM_LOOP rlASMCDismount, $0000
+		STORE_WORD wEventEngineCharacterTarget, LeonsterArchKnight
+		CALL_ASM_LOOP rlASMCDismount, $0000
 		YIELD
+		
+		Jump ++
+		
+		+
+		
+		LOAD1 eventChapter24Data._Leonster24Group
+		WAIT_MOVE
+		STORE_WORD wEventEngineCharacterTarget, LeonsterDukeKnight
+		CALL_ASM_LOOP rlASMCDismount, $0000
+		STORE_WORD wEventEngineCharacterTarget, LeonsterArchKnight
+		CALL_ASM_LOOP rlASMCDismount, $0000
+		YIELD
+		
+		+
+		
+		YIELD_UNK
 	END2
 	
 	_LeifVsRaydrik
-		PAUSE_SKIPPABLE 32
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
 		
 		SCROLL_CAMERA_SPEED [10, 14], 4
 		YIELD
@@ -607,11 +703,26 @@ eventChapter24Events ; B9/B000
 		
 		DIALOGUE leifvsraydrik
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_CedVsRaydrik
-		PAUSE_SKIPPABLE 32
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
 		
 		SCROLL_CAMERA_SPEED [10, 14], 4
 		YIELD
@@ -621,11 +732,26 @@ eventChapter24Events ; B9/B000
 		
 		DIALOGUE cedvsraydrik
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, CedChp23
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_MareetaVsRaydrik
-		PAUSE_SKIPPABLE 32
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Mareeta
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Mareeta
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
 		
 		SCROLL_CAMERA_SPEED [10, 14], 4
 		YIELD
@@ -635,11 +761,26 @@ eventChapter24Events ; B9/B000
 		
 		DIALOGUE mareetavsraydrik
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Mareeta
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_SaiasVsRaydrik
-		PAUSE_SKIPPABLE 32
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
 		
 		SCROLL_CAMERA_SPEED [10, 14], 4
 		YIELD
@@ -649,11 +790,26 @@ eventChapter24Events ; B9/B000
 		
 		DIALOGUE saiasvsraydrik
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Saias
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_NannaVsRaydrik
-		PAUSE_SKIPPABLE 32
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Nanna
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Nanna
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
 		
 		SCROLL_CAMERA_SPEED [10, 14], 4
 		YIELD
@@ -663,11 +819,26 @@ eventChapter24Events ; B9/B000
 		
 		DIALOGUE nannavsraydrik
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Nanna
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_BrightonVsRaydrik
-		PAUSE_SKIPPABLE 32
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Brighton
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Brighton
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
 		
 		SCROLL_CAMERA_SPEED [10, 14], 4
 		YIELD
@@ -677,11 +848,26 @@ eventChapter24Events ; B9/B000
 		
 		DIALOGUE brightonvsraydrik
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Brighton
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_GalzusVsRaydrik
-		PAUSE_SKIPPABLE 32
-		YIELD
+		STORE_WORD wEventEngineCharacterTarget, Galzus
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Galzus
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
 		
 		SCROLL_CAMERA_SPEED [10, 14], 4
 		YIELD
@@ -691,6 +877,12 @@ eventChapter24Events ; B9/B000
 		
 		DIALOGUE galzusraydrik
 		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Galzus
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_RaydrikSkillIssue
@@ -797,7 +989,13 @@ eventChapter24Events ; B9/B000
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Fatigue
 		STORE_WORD wEventEngineParameter2, 0
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
+		
+		JUMP ++
 
+		+
+		
+		SET_FLAG $0C
+		
 		+
 		STORE_WORD wEventEngineCharacterTarget, Saias
 		STORE_WORD wEventEngineParameter1, TurnStatusInvisible
@@ -818,6 +1016,12 @@ eventChapter24Events ; B9/B000
 		STORE_WORD wEventEngineParameter2, 0
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 
+		JUMP ++
+
+		+
+		
+		SET_FLAG $11
+		
 		+
 		STORE_WORD wEventEngineCharacterTarget, Hero1
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.MovementStars
@@ -831,8 +1035,9 @@ eventChapter24Events ; B9/B000
 
 		STORE_WORD wEventEngineCharacterTarget, Galzus
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Anchor | (Skill3Immortal << 8)
+		STORE_WORD wEventEngineParameter2, Skill3Immortal << 8
 		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
+		SET_FLAG $14
 
 		STORE_WORD wEventEngineCharacterTarget, RaydrikChp24
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
@@ -936,6 +1141,14 @@ eventChapter24Events ; B9/B000
 		YIELD
 
 		_OpeningEnd
+		
+		STORE_WORD wEventEngineCharacterTarget, Tina
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_TRUE +
+		
+		SET_FLAG $10
+		
+		+
 	END2
 
 	_EndingEvent ; B9/B8CB

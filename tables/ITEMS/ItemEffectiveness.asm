@@ -12,10 +12,19 @@ aArmorEffectiveness ; B0/807A
 aMyrmidonEffectiveness ; B0/8082
 	.byte Myrmidon
 	.byte MyrmidonF
+	.byte Fighter
 	.byte Swordmaster
 	.byte SwordmasterF
 	.byte Hero
 	.byte HeroF
+	.byte Archer
+	.byte ArcherF
+	.byte Sniper
+	.byte SniperF
+	.byte Thief
+	.byte ThiefF
+	.byte Rogue
+	.byte RogueF
 	.byte 0
 
 aFlyingEffectiveness ; B0/8086

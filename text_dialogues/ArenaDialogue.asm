@@ -58,8 +58,7 @@ _draw
 
 
 arenawager
-	.text "You up fer wagerin'"
-	.byte NewLine
+	.text "You up fer wagerin' "
 	.byte $00, $24 ; display number?
 	.text " gold?"
 .byte EndTextNoPortraitFade
@@ -70,8 +69,9 @@ arenayesno
 .byte EndTextNoPortraitFade
 
 arenawin
-	.text "Quite the sight. Here's yer reward:"
+	.text "Quite the sight."
 	.byte NewLine
+	.text "Here's yer reward: "
 	.byte $00, $24 ; display number?
 	.text " gold."
 .byte EndTextNoPortraitFade

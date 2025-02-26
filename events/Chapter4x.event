@@ -8,6 +8,15 @@ eventChapter4xEvents ; FD/85C5
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/85D2
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagAlwaysZero, _KantEvilPlan
 			CMP_WORD wCurrentPhase, Enemy
 			CMP_WORD wCurrentTurn, 2
@@ -33,14 +42,18 @@ eventChapter4xEvents ; FD/85C5
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonLeftReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 32
+			CMP_WORD_RANGE wCurrentTurn, 10, 29
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _MyrmidonRightReinforcements
-			CMP_WORD_RANGE wCurrentTurn, 10, 32
+			CMP_WORD_RANGE wCurrentTurn, 10, 29
 			CMP_WORD wCurrentPhase, NPC
 			ROLL_RNG 40
+		END_DEFINITION
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 8, 29
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _AsbelRemoveImmortality
 			CMP_WORD wCurrentPhase, Player
@@ -169,40 +182,52 @@ eventChapter4xEvents ; FD/85C5
 		rtl
 
 	_SoldierLeftReinforcements ; FD/8813
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter4xData._SoldierLeftGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_ArcherLeftReinforcements ; FD/881A
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter4xData._ArcherLeftGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_SoldierRightReinforcements ; FD/8821
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter4xData._SoldierRightGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_ArcherRightReinforcements ; FD/8828
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter4xData._ArcherRightGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_MyrmidonLeftReinforcements ; FD/882F
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter4xData._MyrmidonLeftGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_MyrmidonRightReinforcements ; FD/8836
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter4xData._MyrmidonRightGroup
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 	
 	_KantEvilPlan
 		;PLAY_SOUND_WORD $00E0
@@ -242,22 +267,22 @@ eventChapter4xEvents ; FD/85C5
 		EVENT_CMP_BYTE_AT_EQ wUnknown001730, $0000
 		JUMP_FALSE +
 
-		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte Kant, structCharacterDataRAM.AI1, $12
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte Kant, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Kant, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte Kant, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.Unknown3E, $00
@@ -271,22 +296,22 @@ eventChapter4xEvents ; FD/85C5
 		EVENT_CMP_BYTE_AT_EQ wUnknown001730, $0000
 		JUMP_FALSE +
 
-		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterArmoredAxe, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte Kant, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte Kant, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte Kant, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte Kant, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte Kant, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterSoldier2, structCharacterDataRAM.Unknown3E, $00
 
-		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI1, $00
+		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI1, $06
 		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI4, $00
 		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.AI2, $00
 		macroSetCharacterByte MunsterMage2, structCharacterDataRAM.Unknown3E, $00
@@ -422,11 +447,7 @@ eventChapter4xEvents ; FD/85C5
 	END2
 	
 	_DaisyCedTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE daisyced
-		YIELD
+		macroDialogueHouse daisyced
 		
 		STORE_WORD wEventEngineParameter1, TurnStatusHidden
 		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000

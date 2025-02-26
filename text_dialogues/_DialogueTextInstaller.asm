@@ -67,10 +67,11 @@
 .logical lorom($450030, 1)
 .include "Chapter18Dialogue.asm"
 .include "Chapter19Dialogue.asm"
-.include "Chapter20Dialogue.asm"
 .here
+
 * = $458040
 .logical lorom($458040, 1)
+.include "Chapter20Dialogue.asm"
 .include "Chapter21Dialogue.asm"
 .include "Chapter21xDialogue.asm"
 .include "Chapter22Dialogue.asm"
@@ -105,6 +106,10 @@
 .include "Chapter2FCDialogue.asm"
 .include "Chapter2xFCDialogue.asm"
 .include "Chapter3FCDialogue.asm"
+.here
+
+* = $508000
+.logical lorom($508000, 1)
 .include "Chapter4FCDialogue.asm"
 .include "Chapter4xFCDialogue.asm"
 .include "Chapter5FCDialogue.asm"
@@ -138,11 +143,11 @@
 * = $4C8000
 .logical lorom($4C8000, 1)
 .include "Chapter15FCDialogue.asm"
-.include "Chapter16AFCDialogue.asm"
 .here
 
 * = $4D0000
 .logical lorom($4D0000, 1)
+.include "Chapter16AFCDialogue.asm"
 .include "Chapter17AFCDialogue.asm"
 .include "Chapter16BFCDialogue.asm"
 .here
@@ -151,11 +156,11 @@
 .logical lorom($4D8000, 1)
 .include "Chapter17BFCDialogue.asm"
 .include "Chapter18FCDialogue.asm"
-.include "Chapter19FCDialogue.asm"
 .here
 
 * = $4E0000
 .logical lorom($4E0000, 1)
+.include "Chapter19FCDialogue.asm"
 .include "Chapter20FCDialogue.asm"
 .include "Chapter21FCDialogue.asm"
 .include "Chapter21xFCDialogue.asm"
@@ -207,10 +212,10 @@ fontwidthtable
 .byte	$04,	$04,	$06,	$06,	$03,	$04,	$02,	$05
 
 ;		'0'		'1'		'2'		'3'		'4'		'5'		'6'		'7'
-.byte	$07,	$07,	$07,	$07,	$08,	$07,	$07,	$07
+.byte	$06,	$06,	$06,	$06,	$07,	$06,	$06,	$06
 
 ;		'8'		'9'		':'		';'		'<'		'='		'>'		'?'
-.byte	$07,	$07,	$02,	$03,	$05,	$04,	$05,	$06
+.byte	$06,	$06,	$02,	$03,	$05,	$04,	$05,	$06
 
 ;		'@'		'A'		'B'		'C'		'D'		'E'		'F'		'G'
 .byte	$06,	$06,	$05,	$05,	$05,	$05,	$05,	$05
@@ -255,10 +260,10 @@ fontwidthtable
 .byte	$03,	$04,	$04,	$05,	$05,	$05,	$05,	$03
 
 ;		''		'0'		'1'		'2'		'3'		'4'		'5'		'6'
-.byte	$04,	$07,	$07,	$07,	$07,	$08,	$07,	$07
+.byte	$04,	$06,	$06,	$06,	$06,	$07,	$06,	$06
 
 ;		'7'		'8'		'9'		':'		';'		'<'		'='		'>'
-.byte	$07,	$07,	$07,	$02,	$03,	$05,	$04,	$05
+.byte	$06,	$06,	$06,	$02,	$03,	$05,	$04,	$05
 
 ;		'ø'		'ǿ'		'ú'		'ù'		'û'		'ü'		'§AAA'	'ý'
 .byte	$06,	$06,	$05,	$05,	$05,	$05,	$0B,	$05

@@ -58,12 +58,12 @@
 ; A §_ is a 1-pixel space.
 
 NewGame
-.text "§_§_New Game"
+.text "§_§_§_New Game"
 .byte EndText
 
 
 ReloadChapter
-.text "Load Game"
+.text "§_Load Game"
 .byte EndText
 
 CopySave
@@ -72,30 +72,30 @@ CopySave
 
 
 DeleteSave
-.text " Delete Save File"
+.text " §_Delete Save File"
 .byte EndText
 
 SaveChapter
-.text "§_Save Chapter"
+.text "§_§_§_Save Chapter"
 .byte EndText
 
 ConfirmCancel
-.text "Confirm      Cancel"
+.text "Confirm      §_Cancel"
 .byte EndText
 
 ParagonMode
-.text "§_Paragon Mode"
+.text "  §_§_§_Elite Mode"
 .byte EndText
 
 ResumeChapter
-.text " §_Resume Chapter"
+.text " §_§_Resume Chapter"
 .byte EndText
 
 .here
 
 * = $8008A
 .logical lorom($8008A,1)
-.text " --NO DATA--"
+.text " §_--NO DATA--"
 .byte EndText
 .here
 

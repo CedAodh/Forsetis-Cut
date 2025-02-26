@@ -161,7 +161,7 @@ _AxeKnightDismounted_data
 
 _SwordKnight_data
 _SwordKnightDismounted_data
-	.text "S]word Knight "
+	.text "Free Knight "
 	.word $0000
 
 _Troubadour_data
@@ -255,13 +255,16 @@ _DragonmasterFDismounted_data	; Unused
 
 _Archer_data
 _ArcherF_data
+	.text "Bo]wfighter "
+	.word $0000
+
 _ArcherEnemy_data
 	.text "Archer"
 	.word $0000
 
 _Myrmidon_data
 _MyrmidonF_data
-	.text "(Myr[midon"
+	.text "S]wordfighter "
 	.word $0000
 
 _Swordmaster_data
@@ -358,7 +361,7 @@ _WindMageF_data
 
 _LoptrianMage_data
 _LoptrianMageF_data		; Unused
-	.text "Loptrian (Mage"
+	.text "Loptr (Mage "
 	.word $0000
 
 _HighPriest_data
@@ -398,7 +401,7 @@ _ThiefF_data
 _Rogue_data
 _RogueF_data
 _ThiefRogue_data		; Unused
-	.text "Rogue "
+	.text "Thief Fighter "
 	.word $0000
 
 _Civilian_data
@@ -417,7 +420,7 @@ _DarkPrince_data			; Unused
 	.word $0000
 
 _Fighter_data
-	.text "Fighter "
+	.text "Axefighter"
 	.word $0000
 	
 _Priestess_data

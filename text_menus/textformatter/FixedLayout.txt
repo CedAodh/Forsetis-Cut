@@ -32,7 +32,7 @@ string	"{>}"						0x3E7C		[(120, 40), False, False, 0]	[(48, 128), False, False,
 fixed	(56, 128)
 
 //Period
-fixed	(64, 128)
+string	"{.}"						0x777C		[(120, 40), True, True, 0]	[(64, 128), False, True, 0];fixed	(64, 128)
 
 //?? black border
 fixed	(72, 128)

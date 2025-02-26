@@ -127,7 +127,7 @@ catfight1
 .byte WaitForA
 
 .byte left_slot
-.text "I cannot say I disagree, Gustav."
+.text "I cannot say I disagree, Gustaf."
 .byte WaitForA
 
 .byte right_slot
@@ -141,9 +141,7 @@ catfight1
 .word raydrik_portrait
 .text "...Y-Your Majesty, perhaps I've no place here."
 .byte NewLine
-.text "I am not a Friege native like"
-.byte NewLine
-.text "all the rest of you..."
+.text "I am not a Friege native like all the rest of you..."
 .byte WaitForA
 
 .byte left_slot
@@ -153,9 +151,9 @@ catfight1
 .text "Oh no, don't think you're getting out of this!"
 .byte WaitForA
 .byte NewLine
-.text "You had THE perfect opportunity to"
+.text "You had THE perfect opportunity to do"
 .byte NewLine
-.text "do away with that “mutt of a prince,”"
+.text "away with that “mutt of a prince,”"
 .byte NewLine
 .text "and then what happened?"
 .byte WaitForA
@@ -177,7 +175,7 @@ catfight1
 
 .byte right_slot
 .byte ScrollText
-.text "I will not be insulted by you, Gustav!"
+.text "I will not be insulted by you, Gustaf!"
 .byte WaitForA
 
 .byte left_slot
@@ -186,16 +184,16 @@ catfight1
 .byte NewLine
 .text "Are you famished, perhaps?"
 .byte NewLine
-.text "Do you desire something to eat, Your Excellency?"
+.text "Would a meal be to your liking, Your Excellency?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Silence! Are you the one who has to"
+.text "Silence! Are you the one who has to constantly"
 .byte NewLine
-.text "constantly keep watch over a divine weapon"
+.text "keep watch over a divine weapon scurrying"
 .byte NewLine
-.text "scurrying rampant throughout your territory?"
+.text "rampant throughout your territory?"
 .byte WaitForA
 .byte ScrollText
 .text "I've much to take care of—I don't need to add"
@@ -209,16 +207,16 @@ catfight1
 .byte NewLine
 .text "It does not even belong to you."
 .byte NewLine
-.text "It was earned by ME."
+.text "It was EARNED by ME."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Please, I'm sure you already have"
+.text "Please, I'm sure you already have hundreds"
 .byte NewLine
-.text "hundreds of backscratchers for"
+.text "of backscratchers for the women"
 .byte NewLine
-.text "the women to use on you, fancy man."
+.text "to use on you, fancy man."
 .byte WaitForA
 
 .byte left_slot
@@ -230,7 +228,9 @@ catfight1
 .byte ScrollText
 .word LoadPortrait
 .word blume_portrait
-.text "Enough of this incessant bickering!"
+.text "Enough of this already! My concerns are"
+.byte NewLine
+.text "far above this self-indulgent twaddle."
 .byte WaitForA
 
 .byte left_slot
@@ -247,15 +247,15 @@ catfight1
 .byte NewLine
 .text "though I pray that the descendant of Ced"
 .byte NewLine
-.text "is somehow being kept in check"
+.text "is somehow being kept in check during"
 .byte NewLine
-.text "during your absence from Munster."
+.text "your absence from Munster."
 .byte WaitForA
 
 .byte left_slot
-.text "Worry not, Your Majesty—"
+.text "Worry not, Your Majesty—Galzus keeps"
 .byte NewLine
-.text "Galzus keeps a firm watch at all times."
+.text "a firm watch at all times."
 .byte NewLine
 .text "He monitors him like a hawk."
 .byte WaitForA
@@ -264,14 +264,14 @@ catfight1
 .byte ScrollText
 .text "Very good, then."
 .byte NewLine
-.text "But Raydrik, Gustav is right:"
+.text "But Raydrik, Gustaf is right:"
 .byte NewLine
 .text "you're starting to slip."
 .byte WaitForA
 .byte ScrollText
 .text "In all brutal honesty, I feel as though I can"
 .byte NewLine
-.text "place a greater deal of trust in King Travant"
+.text "place a greater deal of trust in Travant"
 .byte NewLine
 .text "than I can you."
 .byte WaitForA
@@ -281,9 +281,11 @@ catfight1
 .text "to be a bitter irony."
 .byte WaitForA
 .byte ScrollText
-.text "I order you back to Munster."
+.text "Return to Munster and clean up your mess."
 .byte NewLine
-.text "Clean up your mess or die trying."
+.text "Whether the failings are your own or Galzus's,"
+.byte NewLine
+.text "it is you who will be held accountable."
 .byte WaitForA
 
 .byte left_slot
@@ -310,16 +312,16 @@ catfight2
 .byte WaitForA
 
 .byte right_slot
-.text "Perhaps. But while wicked he may be,"
+.text "Perhaps. But remember, even within all of this,"
 .byte NewLine
 .text "Raydrik still represents the union between"
 .byte NewLine
 .text "us and the defected soldiers of Munster."
 .byte WaitForA
 .byte ScrollText
-.text "I don't need to invoke hostilities with"
+.text "I don't need to invoke hostilities"
 .byte NewLine
-.text "them and spill blood just to prove a point."
+.text "with them just to prove a point."
 .byte NewLine
 .text "And... Ah, Reinhardt approaches."
 .byte WaitForA
@@ -335,19 +337,17 @@ catfight3
 .byte left_slot
 .word LoadPortrait
 .word reinhardt_portrait
-.text "Your Majesty, I bring good tidings:"
+.text "Your Majesty, I bring good tidings: the walls"
 .byte NewLine
-.text "the walls of Tarrah have nearly collapsed."
+.text "of Tarrah have nearly collapsed."
 .byte NewLine
 .text "Colonel Paulus awaits further orders."
 .byte WaitForA
 
 .byte right_slot
-.text "Excellent."
+.text "Excellent. Tell him to continue with the siege."
 .byte NewLine
-.text "Tell him... Tell him to continue with the siege."
-.byte NewLine
-.text "Every standing soldier is to storm the city."
+.text "Every soldier on standby is to storm the city."
 .byte WaitForA
 
 .byte left_slot
@@ -357,20 +357,101 @@ catfight3
 
 .byte right_slot
 .byte ScrollText
-.text "...No, they've done their fair share."
-.byte WaitForA
-.byte ScrollText
-.text "Also, Ishtar has need of you in Ulster."
+.text "That was the plan, originally,"
 .byte NewLine
-.text "There's been word of a potential uprising."
-.byte NewLine
-.text "Deploy the Gelbritter there and take care of it."
+.text "but there has been a change."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Understood, Your Majesty."
+.text "A change?"
 .byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Baráth, if you would."
+.byte WaitForA
+.byte ScrollText
+.word LoadPortrait
+.word bharat_portrait
+.text "Thank you, Your Majesty."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "...What has occurred, Lord Baráth?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "If we can act in time, hopefully nothing."
+.byte WaitForA
+.byte ScrollText
+.text "My spies have given me intel that with the"
+.byte NewLine
+.text "majority of our forces surrounding Tarrah,"
+.byte WaitForA
+.byte NewLine
+.text "Ulster's knights and civilians may well seize"
+.byte NewLine
+.text "this opportunity to stage something."
+.byte WaitForA
+.byte ScrollText
+.text "I ask you and His Majesty to deploy the"
+.byte NewLine
+.text "Gelbritter in Ulster in order to swiftly avert"
+.byte NewLine
+.text "anything Count Conomor is willing to try on us."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I understand."
+.byte NewLine
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word blume_portrait
+
+.byte left_slot
+.text "And Your Majesty?"
+.byte WaitForA
+
+.byte right_slot
+.text "Mmm. You have my approval."
+.byte NewLine
+.text "Ride for Ulster at once and save her"
+.byte NewLine
+.text "people from themselves."
+.byte WaitForA
+.byte ScrollText
+.text "But as soon as your work is finished there,"
+.byte NewLine
+.text "bring the Gelbritter back here to me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Very well. It's clear to me what is at stake."
+.byte NewLine
+.text "We shall dispatch any potential trouble"
+.byte NewLine
+.text "as fast as we are able."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.word LoadPortrait
+.word bharat_portrait
+
+.byte left_slot
+.byte ScrollText
+.text "Ready, Lord Baráth?"
+.byte WaitForA
+
+;.byte right_slot
+;.text "
 
 .byte EndText
 
@@ -632,4 +713,151 @@ mccroyspawn
 .byte NewLine
 .text "Until then, give it all you've got! Charge!"
 .byte WaitForA
+.byte EndText
+
+culloughsdancers
+
+.byte right_slot
+.word LoadPortrait
+.word pan_portrait
+
+.byte left_slot
+.word LoadPortrait
+.word salem_portrait
+.text "Perne, we need to talk."
+.byte WaitForA
+
+.byte right_slot
+.text "Salem, no, don't do this to me..."
+.byte NewLine
+.text "Heh. What is it?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "This is no laughing matter."
+.byte NewLine
+.text "Remember the young girls we looked after in the"
+.byte NewLine
+.text "manor? The dancers?"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah? What about 'em?"
+.byte NewLine
+.text "Nice that we finally got them all freed, isn't it?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Well, more than a few others appear to be"
+.byte NewLine
+.text "horribly, horribly confused on that matter."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...What could you possibly mean?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "They think the dancers were YOURS."
+.byte NewLine
+.text "That their attack on the manor yesternight is"
+.byte NewLine
+.text "the only reason they're free now."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "WHAT?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I know."
+.byte NewLine
+.text "I already started repudiating these falsehoods,"
+.byte NewLine
+.text "but I obviously had to let you know."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "All right, good start—and thanks."
+.byte NewLine
+.text "You were able to tell them what was actually"
+.byte NewLine
+.text "going on, right? It was Cullough!"
+.byte WaitForA
+.byte ScrollText
+.text "The only reason I partnered with him in the first"
+.byte NewLine
+.text "place was because I wanted to help the poor"
+.byte NewLine
+.text "damsels he'd chained up with his crew."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Mm-hmm."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Except there was next to no time for me to set"
+.byte NewLine
+.text "them free myself once I knew he was done in by"
+.byte NewLine
+.text "Prince Leif. Everything happened together."
+.byte WaitForA
+.byte ScrollText
+.text "The manor was just a suitable indoors area I"
+.byte NewLine
+.text "had to keep them warm, at least."
+.byte NewLine
+.text "Cullough couldn't raise an eyebrow at that."
+.byte WaitForA
+.byte ScrollText
+.text "From his view, we were keeping his valuables"
+.byte NewLine
+.text "safeguarded while his guys were workin' for us"
+.byte NewLine
+.text "outdoors."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I presumed something along those lines."
+.byte NewLine
+.text "...But why hadn't you told me before?"
+.byte NewLine
+.text "I could have helped more by now if I knew."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Oh, no, it wasn't you or anything, Salem."
+.byte NewLine
+.text "I just didn't want it to get back to Cullough if"
+.byte NewLine
+.text "the wrong guy overheard me."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Ah, I see."
+.byte NewLine
+.text "Well then, let's start working together on"
+.byte NewLine
+.text "dispelling this odious rumor."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Yeah, seriously!"
+.byte WaitForA
+
 .byte EndText

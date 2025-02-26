@@ -137,9 +137,9 @@ ch16Ailioskarin
 .byte ScrollText
 .text "To answer your question, I, uh..."
 .byte NewLine
-.text "I would...consider defecting if I could be"
+.text "I would...consider defecting if I could be promised"
 .byte NewLine
-.text "promised certain conditions."
+.text "certain conditions."
 .byte WaitForA
 
 .byte Left_slot
@@ -170,7 +170,7 @@ ch16Ailioskarin
 .byte ScrollText
 .text "You must be a real hard worker to have made it"
 .byte NewLine
-.text "into Friege's army! As a magic user, no less!"
+.text "into Friege's army! As a mage knight, no less!"
 .byte WaitForA
 .byte ScrollText
 .text "I mean, I would have felt it more likely to find a"
@@ -186,7 +186,7 @@ ch16Ailioskarin
 .byte NewLine
 .text "I'm finding you can't say that word without"
 .byte NewLine
-.text "making it sound demeaning."
+.text "sounding demeaning."
 .byte WaitForA
 .byte ScrollText
 .text "Yes, I may be a man of common birth,"
@@ -264,7 +264,7 @@ ch16Ailioskarin
 .byte NewLine
 .text "by just...changing your name. You know?"
 .byte NewLine
-.text "It's much more feasible."
+.text "That's much more feasible."
 .byte WaitForA
 .byte ScrollText
 .text "I'll think of something right now, in fact."
@@ -331,7 +331,7 @@ ch16Akempfolwen
 .text "Olwen?!"
 .byte WaitForA
 .byte ScrollText
-.text "Hah! I see your idiocy knows no bounds!"
+.text "Ha! I see your idiocy knows no bounds!"
 .byte NewLine
 .text "Not content with a mutineer's death,"
 .byte NewLine
@@ -364,11 +364,11 @@ ch16Akempfolwen
 .text "How dare you...!"
 .byte WaitForA
 .byte ScrollText
-.text "I may have fled from Fort Dundrum,"
+.text "I may have fled from Fort Dundrum, but what of"
 .byte NewLine
-.text "but what of you? You abandoned"
+.text "you? You abandoned Largo in Nowell Valley,"
 .byte NewLine
-.text "Largo in Nowell Valley, did you not?"
+.text "did you not?"
 .byte WaitForA
 .byte ScrollText
 .text "Bah! You can add “hypocrite” to your litany of"
@@ -531,7 +531,9 @@ ch16Aschroffleif
 
 .byte Right_slot
 .byte ScrollText
-.text "The Tower of Bragi? Twofold Light?"
+.text "The Tower of Bragi?"
+.byte NewLine
+.text "Twofold Light?"
 .byte NewLine
 .text "What in blazes are you talking about?"
 .byte WaitForA
@@ -583,17 +585,17 @@ ch16Abridgekeyhouse
 .text "over this land..."
 .byte WaitForA
 .byte ScrollText
-.text "Back then, I worked away from home, and had"
+.text "Back then, I worked away from home, and had to"
 .byte NewLine
-.text "to travel a long way every morn..."
+.text "travel a long way every morn..."
 .byte WaitForA
 .byte ScrollText
-.text "But the roads were peaceful, and my journeys"
+.text "But the roads were peaceful, and my journeys—"
 .byte NewLine
-.text "were—thankfully—uneventful."
+.text "thankfully—uneventful."
 .byte WaitForA
 .byte ScrollText
-.text "Now, I can't even leave my home for fear of"
+.text "Now, I can't even leave my house for fear of"
 .byte NewLine
 .text "getting a knife between the ribs."
 .byte WaitForA
@@ -669,7 +671,7 @@ ch16Aschroffintro
 .byte ScrollText
 .text "It's too dangerous for a man of the cloth."
 .byte NewLine
-.text "You'd best stay here a while longer."
+.text "You'd best stay here awhile longer."
 .byte NewLine
 .text "It'd be my pleasure to have you, it would."
 .byte WaitForA
@@ -694,9 +696,9 @@ ch16Aopening1
 .byte Left_slot
 .word LoadPortrait
 .word NicolovPortrait
-.text "Kempf, for your sake, I hope you're prepared"
+.text "Kempf, for your sake, I hope you're prepared for"
 .byte NewLine
-.text "for anything."
+.text "anything."
 .byte WaitForA
 
 .byte Right_slot
@@ -783,14 +785,14 @@ ch16Aopening1
 .byte ScrollText
 .text "Now, it may seem like we're on the defensive,"
 .byte NewLine
-.text "but we're just biding our time. The real battle"
+.text "but we're just biding our time. The real battle will"
 .byte NewLine
-.text "will begin when our reinforcements arrive."
+.text "begin when our reinforcements arrive."
 .byte WaitForA
 .byte ScrollText
 .text "When the Knights of Ulster get here, we'll have"
 .byte NewLine
-.text "the rebels surrounded from the front and back."
+.text "the rebels surrounded from front to back."
 .byte WaitForA
 .byte ScrollText
 .text "We'll trap them in a pincer attack and crush the"
@@ -868,11 +870,11 @@ ch16Aopening2
 
 .byte Left_slot
 .byte ScrollText
-.text "Unfortunately, that bridge is the only way"
+.text "Unfortunately, that bridge is the only way across"
 .byte NewLine
-.text "across the river—and it's being defended by a"
+.text "the river—and it's being defended by a battalion"
 .byte NewLine
-.text "battalion of heavily-armored knights."
+.text "of heavily-armored knights."
 .byte WaitForA
 .byte ScrollText
 .text "To make matters worse, attacking the bridge"
@@ -1009,23 +1011,21 @@ ch16Aclosing2
 .byte ScrollText
 .text "The night that Castle Leonster fell..."
 .byte NewLine
-.text "The flames burned so brightly,"
+.text "The flames burned so brightly that the sky was"
 .byte NewLine
-.text "I thought it was already sunrise."
+.text "red; I thought it was already sunrise."
 .byte WaitForA
 .byte ScrollText
-.text "I remember just looking up at the sky from"
+.text "I remember looking up at it from Finn's arms..."
 .byte NewLine
-.text "Finn's arms... At first, I didn't understand what"
-.byte NewLine
-.text "was happening."
+.text "At first, I didn't understand what had happened."
 .byte WaitForA
 .byte ScrollText
-.text "But when I saw the look on Finn's face,"
+.text "But when I saw the look on Finn's face, I knew"
 .byte NewLine
-.text "I knew something terrible had happened,"
+.text "it was something terrible, and I was filled with"
 .byte NewLine
-.text "and I was filled with this...deep sorrow."
+.text "this...deep sorrow."
 .byte WaitForA
 .byte ScrollText
 .text "It was the first time in my life I'd felt such a"
@@ -1063,9 +1063,9 @@ ch16Aclosing2
 .text "anything..."
 .byte WaitForA
 .byte ScrollText
-.text "It's as though he simply forgot how to cry,"
+.text "It's as though he simply forgot how to cry."
 .byte NewLine
-.text "or...or laugh, even."
+.text "...Or laugh, even."
 .byte WaitForA
 
 .byte Left_slot
@@ -1100,7 +1100,7 @@ ch16Aclosing3
 .byte NewLine
 .text "assembled so quickly..."
 .byte NewLine
-.text "Count Conomor is indeed a splendid leader."
+.text "Count Conomor is indeed the splendid leader."
 .byte WaitForA
 
 .byte Right_slot
@@ -1148,17 +1148,18 @@ ch16Aclosing3
 
 ch16Awm1
 
+.text "Acting on the advice of "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $013C ;dorius
 .word $0C18 ;y then x
-.text "Acting on the advice of Dryas,"
+.text "Dryas, Leif made for"
 .byte NewLine
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $090D ;y then x
-.text "Leif made for Leonster by way of the coast."
+.text "Leonster by way of the coast."
 .byte WaitForA
 .byte ScrollText
 .text "However, traveling along such an exposed,"
@@ -1175,26 +1176,28 @@ ch16Awm1
 
 ch16Awm2
 
-.text "the army would have to breach"
+.text "the army would have to breach Fort Norden,"
 .byte NewLine
-.text "Fort Norden, an imperial base."
+.text "an imperial base."
 .byte WaitForA
 .byte ScrollText
+.text "There, Friege had deployed an elite "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0180 ;kempf
+.word $017B ;brooke
 .word $0114 ;y then x
-.text "There, House Friege had deployed an elite"
+.text "battalion of"
 .byte NewLine
+.text "soldiers,"
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0347 ;ilyos
 .word $0B19 ;y then x
-.text "battalion of soldiers, "
 .byte WaitForA
-.text "determined to stop"
+.byte ScrollText
+.text "determined to stop the Liberation Army in its"
 .byte NewLine
-.text "the Liberation Army in its path..."
+.text "path..."
 .byte WaitForA
 
 .byte EndText

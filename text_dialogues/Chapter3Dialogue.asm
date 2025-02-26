@@ -1,24 +1,24 @@
 ch3wm1
 .text "Ridding Iz of the pirates besetting it,"
+.byte NewLine
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2 
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0A17 ;y then x
-.byte NewLine
 .text "Leif hurriedly resumed his course to Munster."
 .byte WaitForA
 .byte ScrollText
 .byte EndText
 
 ch3wm2
-.text "It was not long until he arrived"
-.byte NewLine
-.text "at Kerberos' Gate, "
+.text "It was not long until he arrived at Kerberos' Gate,"
 .byte WaitForA
-.text "a small fortress that guarded"
+.byte ScrollText
+.text "a small fortress that guarded the entrance to the"
 .byte NewLine
-.text "the entrance to the province of Munster..."
+.text "province of Munster..."
 .byte WaitForA
+
 .byte EndText
 
 ch3op1
@@ -36,14 +36,12 @@ ch3op1
 .byte WaitForA
 
 .byte Right_slot
-.text "Ah, Baron Raydrik. We've rounded up all"
+.text "Ah, Baron Raydrik. We've rounded up all the"
 .byte NewLine
-.text "the brats in the area, rest assured."
+.text "brats in the area, rest assured."
 .byte WaitForA
 .byte ScrollText
-.text "For the time being, I've locked them"
-.byte NewLine
-.text "inside the fort's prison."
+.text "For the time being, I've thrown them in the brig."
 .byte NewLine
 .text "What do you want done with them, milord?"
 .byte WaitForA
@@ -53,34 +51,32 @@ ch3op1
 .text "Hmm. Best keep them there until the"
 .byte NewLine
 .text "Loptr Church arrives to claim them."
+.byte NewLine
+.text "Your diligence is appreciated."
 .byte WaitForA
 .byte ScrollText
 .text "The Magi may well try to free the little worms—"
 .byte NewLine 
-.text "see that your men are prepared"
-.byte NewLine
-.text "for an incursion."
+.text "see that your men are prepared for an incursion."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Magi? As in those rebels from Munster?"
+.text "The Magi? As in those rebels from Munster?"
 .byte NewLine
 .text "They're still alive?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "To my great chagrin, yes."
+.text "To my great chagrin, yes. I thought they'd been"
 .byte NewLine
-.text "I thought they'd been wiped out,"
-.byte NewLine
-.text "but they've resurfaced recently."
+.text "wiped out, but they've resurfaced recently."
 .byte WaitForA
 .byte ScrollText
-.text "The little swarm of flies seems to have"
+.text "The little swarm of flies seems to have a new"
 .byte NewLine
-.text "a new man in charge..."
+.text "man in charge..."
 .byte WaitForA
 
 .byte Right_slot
@@ -94,21 +90,19 @@ ch3op1
 
 .byte Left_slot
 .byte ScrollText
-.text "Not immediately. My journey has been most"
+.text "Not immediately. My journey has been most tiring,"
 .byte NewLine
-.text "tiring, and I would rest here while I can."
+.text "and I would rest here while I can."
 .byte WaitForA
 .byte ScrollText
-.text "What better place for a man to catch his"
+.text "What better place for a man to catch his breath"
 .byte NewLine
-.text "breath than the impregnable Kerberos' Gate,"
-.byte NewLine
-.text "eh, Erebos?"
+.text "than the impregnable Kerberos' Gate, eh, Erebos?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! Indeed, Your Excellency."
+.text "Ha! Indeed, Your Excellency."
 .byte WaitForA
 
 .byte EndText
@@ -127,11 +121,11 @@ ch3op2
 .text "guards the road into Munster."
 .byte WaitForA
 .byte ScrollText
-.text "As strongholds go, it's rather small, but don't"
+.text "As strongholds go, it's rather small, but don't let"
 .byte NewLine
-.text "let its size fool you: the people of this area"
+.text "its size fool you: the people of this area say it's"
 .byte NewLine
-.text "say it's more terrible than hell itself."
+.text "more terrible than hell itself."
 .byte WaitForA
 
 .byte Right_slot
@@ -140,9 +134,9 @@ ch3op2
 
 .byte Left_slot
 .byte ScrollText
-.text "The soldiers here no longer watch over"
+.text "The soldiers here no longer watch over the"
 .byte NewLine
-.text "the road—they search for children."
+.text "road—they search for children."
 .byte WaitForA
 .byte ScrollText
 .text "Lord Leif, the fortress now serves as a base"
@@ -178,6 +172,9 @@ ch3op2
 
 .byte Right_slot
 .byte ScrollText
+.text "......"
+.byte WaitForA
+.byte ScrollText
 .text "That's inconceivable."
 .byte NewLine
 .text "What manner of tall tale..."
@@ -190,16 +187,16 @@ ch3op2
 .text "this is no fable—this is the state of Jugdral."
 .byte WaitForA
 .byte ScrollText
-.text "Even now, children languish in captivity"
+.text "Even now, children languish in captivity within"
 .byte NewLine
-.text "within that very fortress you see."
+.text "that very fortress you see."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "...What soldier could willingly take part in such"
+.text "...What soldier could willingly take part in such a"
 .byte NewLine
-.text "a thing? No one with a spark of humanity left,"
+.text "thing? No one with a spark of humanity left,"
 .byte NewLine
 .text "to be sure."
 .byte WaitForA
@@ -227,16 +224,18 @@ ch3op2
 .text "on horseback [Dismount] before entering."
 .byte WaitForA
 .byte ScrollText
-.text "Further, after everything they've seen, I'd wager"
+.text "Further, after everything they've seen,"
 .byte NewLine
-.text "the children are too traumatized to even move."
+.text "I'd wager the children are too"
+.byte NewLine
+.text "traumatized to even move."
 .byte WaitForA
 .byte ScrollText
 .text "Have your men carry them back to the villages,"
 .byte NewLine
-.text "and their families will owe you a debt"
+.text "and their families will owe you a debt they can"
 .byte NewLine
-.text "they can never repay."
+.text "never repay."
 .byte WaitForA
 
 .byte EndText
@@ -246,19 +245,19 @@ ch3op3
 .byte ScrollText
 .text "I shall be off now."
 .byte NewLine
-.text "Fortune be with you, prince of Leonster."
+.text "Fortune be with you, Prince of Leonster."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Hold! This whole time, you've known I was"
+.text "Hold! This whole time, you've known I was the"
 .byte NewLine
-.text "the heir to House Leonster?"
+.text "heir to House Leonster?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "But of course. What's more, I want to see you"
+.text "But of course. What's more, I wish to see you"
 .byte NewLine
 .text "returned to power. Let's arrange to meet in"
 .byte NewLine
@@ -272,9 +271,9 @@ ch3end1
 .byte Right_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "...It was a hard-fought victory, but we've"
+.text "...It was a hard-fought victory, but we've taken"
 .byte NewLine
-.text "taken control of Kerberos' Gate."
+.text "control of Kerberos' Gate."
 .byte WaitForA
 
 .word PlayMusic
@@ -285,17 +284,16 @@ ch3end1
 .word raydrik_portrait
 .text "Nicely done. I'm impressed, truly." 
 .byte NewLine
-.text "Such a shame to spoil your moment, but I"
+.text "Such a shame to spoil your moment, but I must"
 .byte NewLine
-.text "must ask you to drop your weapons."
+.text "ask you to drop your weapons."
 .byte WaitForA
 .byte ScrollText
-.text "Otherwise, I'll have to do something very"
+.text "Otherwise, I'll have to do something very ugly to"
 .byte NewLine
-.text "ugly to this very pretty young woman."
+.text "this very pretty young woman."
 .byte WaitForA
 .byte ScrollText
-
 .word LoadPortrait
 .word nanna_portrait
 
@@ -333,15 +331,21 @@ ch3end1
 
 .byte Right_slot
 .byte ScrollText
-.text "Fine... Fine, I said!"
+.text "Fine..."
 .byte NewLine
-.text "I'm putting my weapons down,"
+.text "Fine, I said! I'm putting my weapons down,"
 .byte NewLine
 .text "so keep your hands off Nanna!"
 .byte WaitForA
 
 .byte Left_slot
 .text "Hah! See, the young pup knows how to heel!"
+
+.byte Right_slot
+.byte ScrollText
+.word ClearPortrait
+
+.byte Left_slot
 .byte NewLine  
 .text "Men, move in and chain the good Prince Leif!"
 .byte NewLine
@@ -361,16 +365,16 @@ ch3end2
 .text "Well, two can play at that game."
 .byte WaitForA
 .byte ScrollText
-.text "I'm going in and waving the white flag—no"
+.text "I'm going in and waving the white flag—"
 .byte NewLine
-.text "doubt they'll arrest me as well. I'll do"
+.text "no doubt they'll arrest me as well."
 .byte NewLine
-.text "what I can to protect him from the inside."
+.text "I'll do what I can to protect him from the inside."
 .byte WaitForA
 .byte ScrollText
-.text "The rest of you, book it out of here"
+.text "The rest of you, book it out of here and make"
 .byte NewLine
-.text "and make ready to rescue him!"
+.text "ready to rescue him!"
 .byte WaitForA
 
 .byte EndText
@@ -417,9 +421,9 @@ ch3end5
 .text "Nothing to be done about it now, I guess."
 .byte WaitForA
 .byte ScrollText
-.text "We're comin' after you, so don't you"
+.text "We're comin' after you, so don't you dare go"
 .byte NewLine
-.text "dare go dying first, you hear?!"
+.text "dying first, you hear?!"
 .byte WaitForA
 
 .byte EndText
@@ -443,14 +447,14 @@ ch3end7
 
 .text "Damn it all, the prince let 'imself be captured?"
 .byte NewLine
-.text "Can't much stand it meself, but fer now, I've no"
+.text "Can't much stand it m'self, but fer now, I've no"
 .byte NewLine
 .text "choice but to head back to Mount Violdrake."
 .byte WaitForA
 .byte ScrollText
-.text "This ain't the end, though: I'll round up"
+.text "This ain't the end, though: I'll round up me whole"
 .byte NewLine
-.text "me whole crew and we'll storm Munster!"
+.text "crew and we'll storm Munster!"
 .byte WaitForA
 
 .byte EndText
@@ -473,9 +477,9 @@ ch3cairprevillagecairpre
 .text "mistaken for one of our own children!"
 .byte WaitForA
 .byte ScrollText
-.text "You have my deepest thanks, but I've"
+.text "You have my deepest thanks,"
 .byte NewLine
-.text "little else to give..."
+.text "but I've little else to give..."
 .byte WaitForA
 .byte ScrollText
 .text "Still, I imagine rescuing a child of Thracian"
@@ -509,9 +513,9 @@ ch3lucciavillageluccia
 .text "My heart was about to give out from worry!"
 .byte WaitForA
 .byte ScrollText
-.text "I can't begin to express how much I'm"
+.text "I can't begin to express how much I'm indebted"
 .byte NewLine
-.text "indebted to you, stranger."
+.text "to you, stranger."
 .byte NewLine
 .text "Though I don't exactly have much, either..."
 .byte WaitForA
@@ -523,9 +527,9 @@ ch3lucciavillageluccia
 .text "but we've never been able to figure it out."
 .byte WaitForA
 .byte ScrollText
-.text "All I got is that just bein' in possession of"
+.text "All I got is that just bein' in possession of it"
 .byte NewLine
-.text "it gives you some sort of zeal, as it were."
+.text "gives you some sort of zeal, as it were."
 .byte NewLine
 .text "So no matter what you do, it oughta help!"
 .byte WaitForA
@@ -568,16 +572,16 @@ ch3jubelvillagejubel
 .byte ScrollText
 .text "Now listen, my older brother is an imperial"
 .byte NewLine
-.text "soldier, but if you ever meet him, just tell"
+.text "soldier, but if you ever meet him, just tell him"
 .byte NewLine
-.text "him what the empire's done to Jubel."
+.text "what the empire's done to Jubel."
 .byte WaitForA
 .byte ScrollText
 .text "His name's Dalsin."
 .byte NewLine
-.text "Not a single doubt in my mind he'll switch"
+.text "Not a single doubt in my mind he'll switch sides,"
 .byte NewLine
-.text "sides, so don't go forgettin' that!"
+.text "so don't go forgettin' that!"
 .byte WaitForA
 
 .byte EndText
@@ -588,14 +592,12 @@ ch3jubelvillageother
 .word LoadPortrait
 .word younglady_portrait
 
-.text "Those imperials just swooped in and took"
+.text "Those imperials just swooped in and took my"
 .byte NewLine
-.text "my little brother to Kerberos' Gate..."
+.text "little brother to Kerberos' Gate..."
 .byte WaitForA
 .byte ScrollText
-.text "Please, stranger!"
-.byte NewLine
-.text "Save Jubel!"
+.text "Please, stranger! Save Jubel!"
 .byte NewLine
 .text "Bring him back to me, please!"
 .byte WaitForA
@@ -616,11 +618,11 @@ ch3romeovillageromeo
 .text "Please, take this as token of my thanks."
 .byte WaitForA
 .byte NewLine
-.text "It's been passed down through our family"
+.text "It's been passed down through our family for as"
 .byte NewLine
-.text "for as long as I can remember, but I"
+.text "long as I can remember, but I really think you"
 .byte NewLine
-.text "really think you should have it instead."
+.text "should have it instead."
 .byte WaitForA
 
 .byte EndText

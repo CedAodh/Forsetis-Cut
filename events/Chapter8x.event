@@ -8,6 +8,15 @@ eventChapter8xEvents ; 97/844D
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 97/845A
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagAlliedDeath, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET FlagPlayerDeath
 		END_DEFINITION
@@ -92,7 +101,7 @@ eventChapter8xEvents ; 97/844D
 	END1
 	
 	_TanyaRemoveImmortality ; 97/86BD
-		macroUnsetCharacterBitsWord Tanya, structCharacterDataRAM.Skills2, (Skill2Anchor | (Skill3Immortal << 8))
+		macroUnsetCharacterBitsWord Tanya, structCharacterDataRAM.Skills2, Skill3Immortal << 8
 	END2
 
 	_OsianTanyaTalk ; 97/86D6
@@ -223,7 +232,7 @@ eventChapter8xEvents ; 97/844D
 
 		CALL_ASM_LOOP rlASMCSaveChapterAndTurncount, $0000
 
-		macroUnsetCharacterBitsWord Tanya, structCharacterDataRAM.Skills2, (Skill2Anchor | (Skill3Immortal << 8))
+		macroUnsetCharacterBitsWord Tanya, structCharacterDataRAM.Skills2, Skill3Immortal << 8
 
 		macroDialogueWithBackground ch8xclosing, 4
 

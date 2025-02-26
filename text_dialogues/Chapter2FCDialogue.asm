@@ -24,28 +24,23 @@ tanyaronan1
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Uh... What is it?"
+	.text "You don't gotta stumble over your words."
 	.byte NewLine
-	.text "Is there something on my face?"
+	.text "I just wanted to help give a warm welcome."
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Oh, no, nothing like that!"
+	.text "Oh, okay. Thank you!"
 	.byte NewLine
-	.text "I'm sorry."
-	.byte WaitForA
-	.byte NewLine
-	.text "I guess I'm just getting used to this."
-	.byte NewLine
-	.text "I didn't expect others to be so welcoming, is all."
+	.text "I apologize for...being like that."
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Well, no need to get flustered!"
+	.text "Yeah, no reason to get all flustered."
 	.byte NewLine
-	.text "We're a pretty small group anyway."
+	.text "We're a pretty small team anyway."
 	.byte WaitForA
 	.byte ScrollText
 	.text "My name's Tanya."
@@ -55,7 +50,7 @@ tanyaronan1
 
 	.byte left_slot
 	.byte ScrollText
-	.text "R-really?"
+	.text "D-do I really?"
 	.byte NewLine
 	.text "I don't think I'm anything special."
 	.byte NewLine
@@ -64,7 +59,7 @@ tanyaronan1
 
 	.byte right_slot
 	.byte ScrollText
-	.text "Hey, it's still something."
+	.text "Hey, it's still something pretty important."
 	.byte WaitForA
 	.byte ScrollText
 	.text "I grew up with my dad's bandit crew up on"
@@ -76,23 +71,23 @@ tanyaronan1
 
 	.byte left_slot
 	.byte ScrollText
-	.text "You?"
+	.text "Huh, really?"
 	.byte NewLine
-	.text "Close combat?"
-	.byte WaitForA
+	.text "I always felt like I'd somehow get myself if I"
 	.byte NewLine
-	.text "I can't even imagine handling a sword"
-	.byte NewLine
-	.text "without losing my hand in the process."
+	.text "were wielding a sword."
 	.byte WaitForA
 	
 	.byte right_slot
 	.byte ScrollText
-	.text "Yeah, I was real earnest about it..."
+	.text "Heh. Yeah, I was real earnest about it..."
+	.byte WaitForA
+	.byte ScrollText
+	.text "My dad never lets me get my hands on an axe."
 	.byte NewLine
-	.text "But my dad's never let me even touch an axe."
+	.text "He always says it's “too dangerous for me”"
 	.byte NewLine
-	.text "He always says it's “too dangerous for me.”"
+	.text "and always has a bow to hand me instead."
 	.byte WaitForA
 	.byte ScrollText
 	.text "He worries too much..."
@@ -100,49 +95,54 @@ tanyaronan1
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Well, that's why he's your father."
+	.text "......"
+	.byte WaitForA
+	.byte ScrollText
+	.text "Well...that's why he's your father."
 	.byte NewLine
-	.text "What's a parent if they don't keep on top"
+	.text "What's a parent if they don't keep on top of"
     .byte NewLine
-    .text "of their child every now and again?"
+    .text "their child every now and again?"
 	.byte WaitForA
 	.byte ScrollText
 	.text "I think you should cherish that, Tanya."
 	.byte NewLine
-	.text "At least a little, right?"
+	.text "Right? At least a little?"
 	.byte WaitForA
 
 	.byte right_slot
 	.byte ScrollText
-	.text "...Huh."
+	.text "Hm, maybe..."
 	.byte NewLine
-	.text "Maybe you're right..."
+	.text "But I don't know why he has to—"
+	.byte NewLine
+	.text "Or... Well... Yeah, you could be right."
 	.byte WaitForA
 	.byte ScrollText
-	.text "Ronan, you're really great to talk to."
+	.text "...You're pretty good to talk to, Ronan."
 	.byte NewLine
-	.text "It's nice to be able to talk to someone"
+	.text "Honestly, it can be typical that I get talked"
 	.byte NewLine
-	.text "like we're equals."
+	.text "down to and then I never get two words in."
 	.byte WaitForA
+	.byte ScrollText
+	.text "As far as I'm concerned, you're already in."
 	.byte NewLine
-	.text "Honestly, I don't experience it too much."
+	.text "Welcome to the team!"
 	.byte WaitForA
 
 	.byte left_slot
 	.byte ScrollText
-	.text "Is...is that so?"
+	.text "Just like that?"
 	.byte NewLine
-	.text "I was just trying to be polite."
+	.text "Thanks, Tanya!"
 	.byte NewLine
-	.text "Well, anyway, I'm glad I could help."
+	.text "And I was just trying to be polite."
 	.byte WaitForA
 	
 	.byte right_slot
 	.byte ScrollText
-	.text "Yeah!"
-	.byte NewLine
-	.text "I do feel better now."
+	.text "Well, it worked!"
 	.byte WaitForA
 	.byte ScrollText
 	.text "I wanna make this a regular thing, Ronan."
@@ -154,7 +154,9 @@ tanyaronan1
 	.byte ScrollText
 	.text "I... Sure!"
 	.byte NewLine
-	.text "I'll... I will be around, I promise!"
+	.text "I'll... I will stick around, I promise!"
+	.byte NewLine
+	.text "You can call on me whenever!"
 	.byte WaitForA
 	
 	.byte EndText
@@ -175,103 +177,144 @@ finneyvel
 .byte WaitForA
 
 .byte right_slot
-.text "You know we're way past the point"
+.text "Finn, we're well past the point of asking"
 .byte NewLine
-.text "of asking permission to talk, Finn."
+.text "permission to talk."
 .byte NewLine
 .text "What is it?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "It occurs to me that I never apologized"
+.text "Well, I felt I should formally apologize for my"
 .byte NewLine
-.text "for putting Fiana and Mareeta in danger."
+.text "selfish actions having put Fiana and Mareeta in"
+.byte NewLine
+.text "such peril."
 .byte WaitForA
 .byte ScrollText
-.text "I always knew something like this"
+.text "I always knew something like this would happen"
 .byte NewLine
-.text "would happen eventually..."
+.text "eventually..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Finn, you don't need to"
+.text "Perish the thought, Finn."
 .byte NewLine
-.text "concern yourself with that."
+.text "You don't need to concern yourself with that."
 .byte WaitForA
 .byte ScrollText
-.text "Seeing what you... Well, the way you looked"
+.text "I knew how serious the stakes were when I took"
 .byte NewLine
-.text "when you first came to Fiana, I knew there'd"
+.text "you three in. My very first look at your condition"
 .byte NewLine
-.text "be serious stakes from taking you in."
+.text "on that day told me quite a lot."
 .byte WaitForA
 .byte ScrollText
-.text "It's nothing we can't handle, and besides,"
+.text "And regardless, I'm at fault as well: I swore to"
 .byte NewLine
-.text "it's my fault too:"
+.text "protect the three of you, and yet Lady Nanna is"
+.byte NewLine
+.text "also caught up in this peril..."
 .byte WaitForA
+.byte ScrollText
+.text "It's me who went against their word."
 .byte NewLine
-.text "I swore to protect the three of you, and I..."
-.byte NewLine
-.text "I let them take Little Nan as well..."
+.text "I'd say that's the bigger issue, if anything."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "I suppose you're right."
+.text "Eyvel, I didn't mean for you to—"
 .byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "I know. But, it is the truth."
 .byte NewLine
+.text "That's how I see it, and now you know."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Very well. I'll say no more."
+.byte WaitForA
+.byte ScrollText
 .text "......"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Something else on your mind?"
+.text "Then is there...something else on your mind?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Something about what's going on right now..."
+.text "...This whole setting I find myself in..."
+.byte WaitForA
 .byte NewLine
-.text "It's reminded me of another time I engaged"
+.text "In our previous skirmish with pirates—where we"
 .byte NewLine
-.text "pirates in battle. Far away from here."
+.text "brought along Lord Leif for the first time—I was"
+.byte NewLine
+.text "just struck by this sense of familiarity."
+.byte WaitForA
+.byte ScrollText
+.text "Only just now did I think to attach it to a time"
+.byte NewLine
+.text "when I was about half the age I am today."
+.byte NewLine
+.text "It was another battle against pirates, far away..."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Pirates, huh?"
+.text "Pirates and far away... So, maybe not Miletos..."
 .byte NewLine
-.text "Are you talking about the Orgahil region?"
+.text "Is it... Do you possibly mean the Orgahil region?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Y-yes, that's right..."
+.text "Y-yes, as a matter of fact."
 .byte NewLine
 .text "Have you been there before?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "No."
+.text "Oh, no. I just know of what could go on there"
 .byte NewLine
-.text "I just know of it from travelers."
+.text "from various travelers who ended up in Fiana."
+.byte NewLine
+.text "Quite the overlong journey, isn't it?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "Oh."
-.byte NewLine
-.text "I see..."
-.byte NewLine
-.text "Never mind, then."
+.text "P...probably."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...Wouldn't you know?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
+.text "An overlong journey, yes. You would be correct."
+.byte WaitForA
+.byte ScrollText
+.text "Please, excuse me—I ought to enter the fray."
+.byte NewLine
+.text "Perhaps my body simply can't allow me to remain"
+.byte NewLine
+.text "so lax in times like these."
+.byte WaitForA
+
+.byte left_slot
+.byte $03
 .word ClearPortrait
 .word RetractBox
 	
@@ -279,14 +322,14 @@ finneyvel
 .byte ScrollText
 .text "Are you sure that's—"
 .byte NewLine
-.text "...And he's gone."
+.text "...And you're gone. Hmm."
 .byte WaitForA
 .byte ScrollText
-.text "Huh."
+.text "There had to have been something more to that."
 .byte NewLine
-.text "I wonder what that was all about."
+.text "He scarcely speaks of his own past like that,"
 .byte NewLine
-.text "He never talks about the past like that..."
+.text "with such fervor. Something was there..."
 .byte WaitForA
 
 .byte EndText
@@ -298,12 +341,12 @@ leifmutter
 .word leif_portrait2
 .text "Rrgh..."
 .byte NewLine
-.text "This is taking longer than I had hoped."
+.text "This is taking much longer than I had hoped."
 .byte WaitForA
 .byte NewLine
-.text "We'll have to continue on to Munster"
+.text "We'll have to continue on to Munster immediately"
 .byte NewLine
-.text "immediately once things have calmed down."
+.text "once things have calmed down."
 .byte WaitForA
 
 .byte EndText
@@ -317,59 +360,57 @@ leifandfinn
 .byte left_slot
 .word LoadPortrait
 .word finn_portrait
-.text "Milord, we'll soon be making our way"
+.text "Milord, we'll soon be making our way through the"
 .byte NewLine
-.text "through the village of Iz."
+.text "village of Iz."
 .byte WaitForA
 
 .byte right_slot
-.text "I see."
+.text "Very good."
 .byte NewLine
 .text "Thank you for the notice, Finn."
 .byte WaitForA
 .byte ScrollText
-.text "...Hm."
-.byte NewLine
-.text "Our expedition hasn't been"
-.byte NewLine
-.text "all that eventful as of yet."
+.text "......"
 .byte WaitForA
 .byte ScrollText
-.text "I expected there to be at least"
+.text "You know, our expedition hasn't been all that"
 .byte NewLine
-.text "some small amount of trouble by now."
+.text "eventful as of yet. I've yet to even see a flock"
 .byte NewLine
-.text "No run-ins or...anything."
+.text "of birds take flight. Peculiar, no?"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "As did I."
+.text "I agree... But it is to our benefit."
 .byte NewLine
-.text "But let us not squander such luck—"
+.text "Let us not squander such luck—we'd best"
 .byte NewLine
-.text "we'd best maintain our steady pace."
+.text "maintain our steady pace."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "You're absolutely right."
+.text "Nothing to do BUT that."
 .byte NewLine
 .text "Although..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "What is it, Lord Leif?"
+.text "Yes?"
+.byte NewLine
+.text "...What is it, Lord Leif?"
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
 .text "Finn, I..."
 .byte NewLine
-.text "Well, I'm not entirely sure how to properly"
+.text "Well, I'm not entirely sure how to properly voice"
 .byte NewLine
-.text "voice my concern about this, but..."
+.text "my concern about this, but..."
 .byte WaitForA
 
 .byte left_slot
@@ -379,68 +420,96 @@ leifandfinn
 
 .byte right_slot
 .byte ScrollText
-.text "Am I making...a mistake by coming along"
+.text "Am I...making a mistake by coming along with you"
 .byte NewLine
-.text "with you and the commander?"
+.text "and the commander?"
 .byte WaitForA
 .byte ScrollText
-.text "Am I... Am I truly ready for the struggles"
+.text "Am I... Am I truly ready for the struggles ahead"
 .byte NewLine
-.text "ahead that await me? Perhaps I let myself"
+.text "that await me? Perhaps I let myself get caught"
 .byte NewLine
-.text "get caught up in the heat of the moment..."
+.text "up in the heat of the moment..."
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
-.text "...I heard well your resolve over"
+.text "...I heard well your resolve over the last day,"
 .byte NewLine
-.text "the last day, milord."
+.text "milord."
 .byte WaitForA
-.byte NewLine
+.byte ScrollText
 .text "I myself believe you've grown stronger—"
 .byte NewLine
-.text "strong enough to hold your own"
+.text "strong enough to hold your own against"
 .byte NewLine
-.text "against the Grannvale Empire."
+.text "the Grannvale Empire."
 .byte WaitForA
 .byte ScrollText
 .text "Between Eyvel, Mareeta, and I, we made certain"
 .byte NewLine
-.text "to do an utmost job in training you"
+.text "to do an utmost job in training you in the ways"
 .byte NewLine
-.text "in the ways of the sword and combat;"
+.text "of the sword and combat;"
 .byte WaitForA
 .byte ScrollText
-.text "bestowing you the tools you will need"
+.text "bestowing you the tools you will need to prevail"
 .byte NewLine
-.text "to prevail in the journey to come."
+.text "in the journey to come."
 .byte WaitForA
 .byte ScrollText
-.text "The circumstances we find ourselves in"
+.text "The circumstances we find ourselves in were"
 .byte NewLine
-.text "were merely your inevitable call to arms."
+.text "merely your inevitable call to arms."
+.byte NewLine
+.text "The time has come—as simple as that."
 .byte WaitForA
 
 .byte right_slot
 .byte ScrollText
-.text "Mmm..."
+.text "Mmm... You're right."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Additionally, it gladdened me to see you take up"
 .byte NewLine
-.text "That could just be it, couldn't it?"
+.text "your sword so eagerly for the sake of your"
+.byte NewLine
+.text "cherished friends."
 .byte WaitForA
 .byte ScrollText
-.text "Very well! I accept this destiny."
+.text "It's just what Lord Quan would have done,"
 .byte NewLine
-.text "Whatever it takes, I shall press on—"
+.text "except that...I'm able to remain at your"
 .byte NewLine
-.text "and I won't stop before my own body breaks!"
+.text "side for it. It's now all enough for me."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "F-Finn..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Then I accept this destiny."
+.byte NewLine
+.text "Whatever it takes, I will press on—and I won't"
+.byte NewLine
+.text "see fit to stop before both our bodies break!"
 .byte WaitForA
 
 .byte left_slot
 .byte ScrollText
 .text "Now there's the conviction I idolize!"
 .byte NewLine
-.text "Never let up on that, Lord Leif."
+.text "Never let up on it, Lord Leif."
 .byte NewLine
 .text "Recognize such virtues, and you'll lead us well."
 .byte WaitForA

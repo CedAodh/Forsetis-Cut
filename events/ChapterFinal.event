@@ -8,15 +8,32 @@ eventChapterFinalEvents ; B9/BA0E
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; B9/BA1B
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 200
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $02, eventMapDeathQuoteDummyEvent
+			TEST_FLAG_SET $24
 			CHECK_DEAD Veld
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
 		END_DEFINITION
 		EVENT $00, _Reinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD_RANGE wCurrentTurn, 5, 64
+			CMP_WORD_RANGE wCurrentTurn, 5, 45
+			CMP_WORD wCurrentPhase, Player
+			TEST_FLAG_UNSET $24
+		END_DEFINITION
+		EVENT $00, _Reinforcements
+			CMP_WORD_RANGE wCurrentTurn, 5, 45
+			CMP_WORD wCurrentPhase, Player
+			TEST_FLAG_SET $24
 			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $24, _OpenThroneRoom
@@ -77,19 +94,19 @@ eventChapterFinalEvents ; B9/BA0E
 			CMP_WORD aSelectedCharacterBuffer.Character, Leif
 			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
 			TEST_FLAG_SET $24
-			CHECK_NUM_UNITS_GTE Veld, 1
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $08, _EyvelVsVeld
 			CMP_WORD aSelectedCharacterBuffer.Character, Eyvel
 			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
 			TEST_FLAG_SET $24
-			CHECK_NUM_UNITS_GTE Veld, 1
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 		EVENT $09, _SaraVsVeld
 			CMP_WORD aSelectedCharacterBuffer.Character, Sara
 			macroEventConditionCheckCoordRanges [14, 12], [18, 17]
 			TEST_FLAG_SET $24
-			CHECK_NUM_UNITS_GTE Veld, 1
+			TEST_FLAG_UNSET $02
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -171,6 +188,8 @@ eventChapterFinalEvents ; B9/BA0E
 	.byte $00
 
 	_Reinforcements ; B9/BB27
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapterFinalData._ReinforcementsCameraCoordinates1
 		YIELD
 
@@ -323,15 +342,90 @@ eventChapterFinalEvents ; B9/BA0E
 	END1
 	
 	_LeifVsVeld
-		macroDialogueHouse LeifVsVeld
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Veld
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
+		
+		SCROLL_CAMERA_SPEED [16, 14], 4
+		YIELD
+
+		SET_MUSIC $3E
+		YIELD
+		
+		DIALOGUE LeifVsVeld
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Leif
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_EyvelVsVeld
-		macroDialogueHouse EyvelVsVeld
+		STORE_WORD wEventEngineCharacterTarget, Eyvel
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Veld
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Eyvel
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
+		
+		SCROLL_CAMERA_SPEED [16, 14], 4
+		YIELD
+
+		SET_MUSIC $3E
+		YIELD
+		
+		DIALOGUE EyvelVsVeld
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Eyvel
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 	
 	_SaraVsVeld
-		macroDialogueHouse SaraVsVeld
+		STORE_WORD wEventEngineCharacterTarget, Sara
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Veld
+		CALL_ASM_LOOP rlASMCCountAllUnitUncapturedAlive, $0000
+		JUMP_FALSE +
+		
+		STORE_WORD wEventEngineCharacterTarget, Sara
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCUnsetUnitTurnStatus, $0000
+		
+		SCROLL_CAMERA_SPEED [16, 14], 4
+		YIELD
+
+		SET_MUSIC $3E
+		YIELD
+		
+		DIALOGUE SaraVsVeld
+		YIELD
+		
+		STORE_WORD wEventEngineCharacterTarget, Sara
+		STORE_WORD wEventEngineParameter1, TurnStatusGrayed
+		CALL_ASM_LOOP rlASMCSetUnitTurnStatus, $0000
+		
+		+
 	END2
 
 	_PrepGroups ; B9/BC94

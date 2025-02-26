@@ -63,6 +63,16 @@ SRStartButton
 
 .here
 
+; Makes sound room available
+; by default
+
+* = $0A584C
+.logical lorom($0A584C, 1)
+
+.byte $00
+
+.here
+
 ;	Categories pointers
 
 * = $07F253
@@ -278,7 +288,7 @@ _track12_data
 _track13_data
 	.byte $01		; Category
 	.byte $07		; Music track number
-	.text "Reconnoissance"
+	.text "Reconnaissance"
 	.word $0000
 
 _track14_data
@@ -314,7 +324,7 @@ _track18_data
 _track19_data
 	.byte $02		; Category
 	.byte $0D		; Music track number
-	.text "Reconnoissance"
+	.text "Reconnaissance"
 	.word $0000
 
 _track20_data
@@ -440,13 +450,13 @@ _track39_data
 _track40_data
 	.byte $04		; Category
 	.byte $3C		; Music track number
-	.text "Loptrians {A}"
+	.text "Loptr {A}"
 	.word $0000
 
 _track41_data
 	.byte $04		; Category
 	.byte $3E		; Music track number
-	.text "Loptrians {B}"
+	.text "Loptr {B}"
 	.word $0000
 
 _track42_data

@@ -38,24 +38,39 @@
 
     lda #1
     cmp wActionStructGeneratedRoundVar1
-    bne +
+    bne ++
+	
+    ;lda wActionStructRoundAttackBitfield
+    ;bit #RoundAttackFlagDouble
+      .byte $AD, $E4, $A4, $89, $00, $01
+      bne ++
 
       lda structActionStructEntry.Skills2,b,x
       bit #Skill2Adept
-      beq +
+      beq ++
+	  
+	  sep #$20
 
-        ; Edited to be AS * 2
-
-        lda structActionStructEntry.BattleAttackSpeed,b,x
-        and #$00FF
-        asl a
-        jsl rlRollRandomNumber0To100
-        bcc +
+	  lda structActionStructEntry.BattleAttackSpeed,b,x
+	  cmp #0
+	  beq ++
+	  
+	  lda structActionStructEntry.BattleAttackSpeed,b,y
+	  lsr a
+	  clc
+	  adc structActionStructEntry.BattleAttackSpeed,b,y
+	  sec
+	  sbc structActionStructEntry.BattleAttackSpeed,b,x
+	  beq +
+	  bpl ++
+	  
+	  +
 
           lda #2
           sta wActionStructGeneratedRoundVar1
 
-    +
+          +
+	  rep #$30
     rtl
 
     .databank 0
@@ -63,3 +78,10 @@
 .endlogical
 
 ; .endsection ActionStructRoundTryProcAdeptReplacementSection
+
+; Edited to be AS * 2
+	 ;lda structActionStructEntry.BattleAttackSpeed,b,x
+      ;   and #$00FF
+       ;  asl a
+        ; jsl rlRollRandomNumber0To100
+         ;bcc +

@@ -80,7 +80,7 @@ char_name_pointers		.block
 	.word	<>char_names._CairpreName
 	.word	<>char_names._CedName
 	.word	<>char_names._IshtarName	; Dialogue-only
-	.word	<>char_names._ReinhardtName	; Unused
+	.word	<>char_names._LeonsterName	; Unused
 
 	.word	<>char_names._LifisCrewName
 
@@ -112,7 +112,7 @@ char_name_pointers		.block
 	.word	<>char_names._MerlochName
 
 	.word	<>char_names._ThraciaName
-	.word	<>char_names._ThraciaName	; Unused
+	.word	<>char_names._LeonsterName	; Unused
 	.word	<>char_names._ThraciaName	; Unused
 
 	.word	<>char_names._AltenaName
@@ -141,7 +141,7 @@ char_name_pointers		.block
 	.word	<>char_names._McCloyName
 	.word	<>char_names._CodhaName
 
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._LoptrName
 
 	.word	<>char_names._CivilianName	; Unused
 	.word	<>char_names._BrigandName
@@ -229,11 +229,11 @@ char_name_pointers		.block
 	.word	<>char_names._MunsterName
 
 	.word	<>char_names._BandoleName
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._LoptrName
 
 	.word	<>char_names._TolmanName
 
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._LoptrName
 
 	.word	<>char_names._BrigandName
 
@@ -297,13 +297,13 @@ char_name_pointers		.block
 
 	.word	<>char_names._CivilianName	; Unused
 
-	.word	<>char_names._HiredSwordName
+	.word	<>char_names._UlsterName
 
 	.word	<>char_names._HiredSwordName
 
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._LoptrName
 
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._LoptrName
 
 	.word	<>char_names._SilesseName
 
@@ -316,7 +316,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._BharatName	
 
-	.word	<>char_names._HiredSwordName	
+	.word	<>char_names._FriegeName	
 
 	.word	<>char_names._XavierName
 
@@ -419,7 +419,7 @@ char_name_pointers		.block
 	.word	<>char_names._DracoName
 	.word	<>char_names._AnguillaName
 
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._BergrosenName
 	.word	<>char_names._LoptrName
 	.word	<>char_names._LoptrName
 	.word	<>char_names._LoptrName
@@ -451,7 +451,7 @@ char_name_pointers		.block
 
 	.word	<>char_names._MunsterName
 
-	.word	<>char_names._LoptrianName
+	.word	<>char_names._LoptrName
 
 	.word	<>char_names._ThraciaName
 
@@ -893,7 +893,7 @@ _CodhaName
 	.text "Codha "
 	.word $0000
 
-_LoptrianName
+_BergrosenName
 	.text "Bergrosen "
 	.word $0000
 
@@ -983,7 +983,7 @@ _KantName
 	.word $0000
 
 _GustavName
-	.text "Gustav"
+	.text "Gustaf"
 	.word $0000
 
 _DancerName

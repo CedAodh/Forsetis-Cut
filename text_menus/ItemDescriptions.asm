@@ -48,7 +48,7 @@ _LongswordDesc
 .word $0000
 
 _GreatswordDesc
-.text "A tre[mendous s]word"
+.text "A colossal s]word "
 .word $0000
 .text "unrivaled in po]wer "
 .word $0000
@@ -112,7 +112,7 @@ _LongLanceDesc
 .word $0000
 
 _GreatlanceDesc
-.text "A tre[mendous lance "
+.text "A colossal lance"
 .word $0000
 .text "unrivaled in po]wer "
 .word $0000
@@ -194,7 +194,7 @@ _LongbowDesc
 .word $0000
 
 _GreatbowDesc
-.text "A tre[mendous bo12"
+.text "A colossal bo12 "
 .word $0000
 .text "unrivaled in po]wer "
 .word $0000
@@ -211,11 +211,11 @@ _FireDesc
 _ElfireDesc
 .text "{Lock}(Miranda"
 .word $0000
-.text "Grants Paragon"
-.word $0000
 .text "Anti{dash}Ar[mor"
 .word $0000
 .text "Anti{dash}Cavalry "
+.word $0000
+.text "Grants Paragon"
 .word $0000
 .word $0000
 
@@ -319,7 +319,7 @@ _PoleaxDesc
 .word $0000
 
 _RapierDesc
-.text "A slender and regal "
+.text "A slender, regal"
 .word $0000
 .text "s]word"
 .word $0000
@@ -335,20 +335,20 @@ _ParagonSwordDesc
 .word $0000
 .text "defensive play"
 .word $0000
-.text "Gives Paragon "
-.word $0000
 .text "Def {+}{5}"
+.word $0000
+.text "Gives Paragon "
 .word $0000
 .word $0000
 
 _KingmakerDesc
-.text "A blade fit for a "
+.text "A blade fit for "
 .word $0000
-.text "true leader "
-.word $0000
-.text "Gives Char{m}"
+.text "a true leader "
 .word $0000
 .text "{BRA1}{BRA2}"
+.word $0000
+.text "Gives Char{m}"
 .word $0000
 .word $0000
 
@@ -477,24 +477,13 @@ _BallistaDesc
 .word $0000
 .word $0000
 
-_IronBallistaDesc
-.text "Fixed attack po]wer "
-.word $0000
-.text "Halves opponent's "
-.word $0000
-.text "defense "
-.word $0000
-.text "Anti{dash}Fliers"
-.word $0000
-.word $0000
-
 
 _FlameSwordDesc
 .text "An enchanted s]word "
 .word $0000
-.text "that casts fire "
+.text "Casts fire [magic "
 .word $0000
-.text "[magic at range "
+.text "at range"
 .word $0000
 .text "(Mag{+}{5}"
 .word $0000
@@ -503,9 +492,9 @@ _FlameSwordDesc
 _LightningSwordDesc
 .text "An enchanted s]word "
 .word $0000
-.text "that casts thunder"
+.text "Casts thunder [magic"
 .word $0000
-.text "[magic at range "
+.text "at range"
 .word $0000
 .text "Skl {+}{5}"
 .word $0000
@@ -514,71 +503,80 @@ _LightningSwordDesc
 _WindSwordDesc
 .text "An enchanted s]word "
 .word $0000
-.text "that casts ]wind"
+.text "Casts ]wind [magic"
 .word $0000
-.text "[magic at range "
+.text "and Anti{dash}Fliers"
 .word $0000
-.text "Spd {+}{5}"
+.text "at range, Spd {+}{5}"
 .word $0000
 .word $0000
 
 ; Status effect weapons
 
 _VeninEdgeDesc
+.text "Inflicts Poison upon"
+.word $0000
+.text "hit "
+.word $0000
+.text "Turns into an Iron"
+.word $0000
+.text "S]word if stolen"
+.word $0000
+.word $0000
+
 _VeninLanceDesc
+.text "Inflicts Poison upon"
+.word $0000
+.text "hit "
+.word $0000
+.text "Turns into an Iron"
+.word $0000
+.text "Lance if stolen "
+.word $0000
+.word $0000
+
 _VeninAxeDesc
-.text "Inflicts Poison "
+.text "Inflicts Poison upon"
 .word $0000
-.text "on hit"
+.text "hit "
 .word $0000
-.text "Turns into an iron"
+.text "Turns into an Iron"
 .word $0000
-.text "]weapon if stolen "
+.text "Axe if stolen "
 .word $0000
 .word $0000
 
 _VeninBowDesc
-.text "Anti{dash}Fliers"
-.word $0000
-.text "Poisons on hit"
-.word $0000
-.text "Turns into an iron"
-.word $0000
-.text "]weapon if stolen "
-.word $0000
-.word $0000
-
-_VeninBallistaDesc
-.text "Fixed attack po]wer "
-.word $0000
-.text "Halves opponent's "
-.word $0000
-.text "defense "
+.text "Inflicts Poison "
 .word $0000
 .text "Anti{dash}Fliers"
+.word $0000
+.text "Turns into an Iron"
+.word $0000
+.text "Bo]w if stolen"
 .word $0000
 .word $0000
 
 _VeninDesc
 .text "Long{dash}range dark"
 .word $0000
-.text "[magic, Poisons on"
+.text "[magic"
 .word $0000
-.text "hit, Turns into "
+.text "Inflicts Poison upon"
 .word $0000
-.text "Fenrir if stolen"
+.text "hit "
 .word $0000
 .word $0000
 
 
 _PetrifyDesc
-.text "{Lock}Veld"
+.text "Fell dark [magic"
 .word $0000
-.text "Illicit dark [magic "
+.text "Inflicts Stone upon "
 .word $0000
-.text "that turns its"
+.text "hit "
 .word $0000
-.text "vict{im} to stone "
+.text "Bypasses Resilience "
 .word $0000
 .word $0000
 
@@ -588,31 +586,31 @@ _BlizzardDesc
 .word $0000
 .text "to attack fro[m afar"
 .word $0000
-.text "Applies Sleep, Gates"
+.text "Inflicts Sleep, not "
 .word $0000
-.text "and Thrones excluded"
+.text "on Gates or Thrones "
 .word $0000
 .word $0000
 
 _SleepEdgeDesc
-.text "Puts the target to"
+.text "Inflicts Sleep upon "
 .word $0000
-.text "Sleep on hit"
+.text "hit "
 .word $0000
-.text "Opponents on thrones"
+.text "Gates and Thrones "
 .word $0000
-.text "or gates are i{mm}nune"
+.text "give i{mm}nunity"
 .word $0000
 .word $0000
 
 _BerserkEdgeDesc
-.text "Berserks the target "
+.text "Inflicts Berserk"
 .word $0000
-.text "on hit"
+.text "upon hit"
 .word $0000
-.text "Opponents on thrones"
+.text "Gates and Thrones "
 .word $0000
-.text "or gates are i{mm}nune"
+.text "give i{mm}nunity"
 .word $0000
 .word $0000
 
@@ -620,9 +618,9 @@ _BerserkEdgeDesc
 _SleepDesc
 .text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Applies Sleep to a"
+.text "Inflicts Sleep on "
 .word $0000
-.text "lo]wer (Mag target"
+.text "a lo]wer (Mag target"
 .word $0000
 .text "Player cannot target"
 .word $0000
@@ -633,9 +631,9 @@ _SleepDesc
 _BerserkDesc
 .text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Applies Berserk to a"
+.text "Inflicts Berserk on "
 .word $0000
-.text "lo]wer (Mag target"
+.text "a lo]wer (Mag target"
 .word $0000
 .text "Player cannot target"
 .word $0000
@@ -646,9 +644,9 @@ _BerserkDesc
 _SilenceDesc
 .text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Applies Silence to a"
+.text "Inflicts Silence on "
 .word $0000
-.text "lo]wer (Mag target"
+.text "a lo]wer (Mag target"
 .word $0000
 .text "Player cannot target"
 .word $0000
@@ -661,9 +659,9 @@ _SilenceDesc
 _HealDesc
 .text "    Range     {blue1}"
 .word $0000
-.text "Restore {1}{0}  {H}{P}"
+.text "Restores user's "
 .word $0000
-.text "{+} user's (Mag"
+.text "(Mag{+}{1}{0}{H}{P}"
 .word $0000
 .text "to an ally"
 .word $0000
@@ -672,9 +670,9 @@ _HealDesc
 _MendDesc
 .text "    Range     {blue1}"
 .word $0000
-.text "Restore {2}{0}  {H}{P}"
+.text "Restores user's "
 .word $0000
-.text "{+} user's (Mag"
+.text "(Mag{+}{2}{0}{H}{P}"
 .word $0000
 .text "to an ally"
 .word $0000
@@ -683,18 +681,18 @@ _MendDesc
 _RecoverDesc
 .text "    Range     {blue1}"
 .word $0000
-.text "Restore all {H}{P}"
+.text "Restores all"
 .word $0000
-.text "to an ally"
+.text "{H}{P} to an ally "
 .word $0000
 .word $0000
 
 _PhysicDesc
 .text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Restore {1}{0}  {H}{P}"
+.text "Restores user's "
 .word $0000
-.text "{+} user's (Mag"
+.text "(Mag{+}{1}{0}{H}{P}"
 .word $0000
 .text "to an ally"
 .word $0000
@@ -703,9 +701,9 @@ _PhysicDesc
 _FortifyDesc
 .text "    Range {blue1}{blue-}{INF1}{INF2}"
 .word $0000
-.text "Restore {1}{0}  {H}{P}"
+.text "Restores user's "
 .word $0000
-.text "{+} user's (Mag"
+.text "(Mag{+}{1}{0}{H}{P}"
 .word $0000
 .text "to all allies "
 .word $0000
@@ -771,13 +769,11 @@ _TorchStaffDesc
 .word $0000
 
 _TorchDesc
-.text "Gives {+}{1}{0}"
+.text "Gives {+}{1}{0} vision "
 .word $0000
-.text "vision in fog of"
+.text "in fog of ]war"
 .word $0000
-.text "]war. Effect"
-.word $0000
-.text "decreases by"
+.text "Effect decreases by "
 .word $0000
 .text "{1} every turn "
 .word $0000
@@ -798,11 +794,11 @@ _EnsorcelDesc
 
 
 _PureWaterDesc
-.text "Gives {+}{7} (Mag to"
+.text "Gives {+}{7} (Mag "
 .word $0000
-.text "the user. Effect"
+.text "to user "
 .word $0000
-.text "decreases by"
+.text "Effect decreases by "
 .word $0000
 .text "{1} every turn "
 .word $0000
@@ -826,14 +822,18 @@ _NosferatuDesc
 .word $0000
 .text "[magic"
 .word $0000
-.text "Drains target's {H}{P}"
+.text "Heals {H}{P} for"
+.word $0000
+.text "da[mage dealt "
 .word $0000
 .word $0000
 
 _JormungandDesc
 .text "Potent dark [magic"
 .word $0000
-.text "Applies Poison"
+.text "Inflicts Poison upon"
+.word $0000
+.text "hit "
 .word $0000
 .word $0000
 
@@ -842,18 +842,20 @@ _HelDesc
 .word $0000
 .text "Reduces opponent's"
 .word $0000
-.text "{H}{P} to {1}"
+.text "{H}{P} to {1}  {(}Cannot"
+.word $0000
+.text "be brought to {0}{)}"
 .word $0000
 .word $0000
 
 ; Prf weapons
 
 _LightBrandDesc
-.text "{Lock}Leif, Casts light "
+.text "{Lock}Leif"
 .word $0000
-.text "[magic at range "
+.text "Casts light [magic"
 .word $0000
-.text "Gives {+}{1}{0} Lck"
+.text "at range, Lck {+}{1}{0}"
 .word $0000
 .text "Use to heal all {H}{P}"
 .word $0000
@@ -862,23 +864,33 @@ _LightBrandDesc
 _EarthSwordDesc
 .text "{Lock}+Nanna"
 .word $0000
-.text "Casts potent light"
+.text "Casts light [magic"
 .word $0000
-.text "[magic at range "
+.text "at range, Heals {H}{P}"
 .word $0000
-.text "Drains target's {H}{P}"
+.text "for da[mage dealt "
 .word $0000
 .word $0000
 
 _ShadowSwordDesc
+.text "A vile s]word that's"
+.word $0000
+.text "corrupting (Mareeta "
+.word $0000
+.text "{BRA1}{BRA2}"
+.word $0000
+.text "Gives +Nihil"
+.word $0000
+.word $0000
+
 _MareetasSwordDesc
 .text "{Lock}(Mareeta"
 .word $0000
-.text "A once{dash}evil s]word "
+.text "A potent s]word "
 .word $0000
-.text "bested by (Mareeta"
+.text "{BRA1}{BRA2}, Skl {+}{1}{0}"
 .word $0000
-.text "Gives +Nihil, {BRA1}{BRA2}"
+.text "Gives +Nihil"
 .word $0000
 .word $0000
 
@@ -898,9 +910,9 @@ _BlessedSwordDesc
 .word $0000
 .text "Anti{dash}Cavalry "
 .word $0000
-.text "Gives (Miracle, {BRA1}{BRA2}"
+.text "{BRA1}{BRA2}, (Mag{+}{1}{0}"
 .word $0000
-.text "(Mag{+}{1}{0}"
+.text "Gives (Miracle"
 .word $0000
 .word $0000
 
@@ -909,14 +921,14 @@ _BragisBladeDesc
 .word $0000
 .text "Dispels Fang's curse"
 .word $0000
-.text "Anti{dash}Ar[mor"
+.text "Anti{dash}(Magic, Str "
 .word $0000
-.text "Gives (Miracle"
+.text "{+}{5}, Gives (Miracle"
 .word $0000
 .word $0000
 
 _LoptrianFangDesc
-.text "{Lock}Raydrik "
+.text "A pagan relic "
 .word $0000
 .text "Halves opponent's "
 .word $0000
@@ -930,11 +942,11 @@ _LoptrianFangDesc
 _BraveLanceDesc
 .text "{Lock}Lance Knights "
 .word $0000
-.text "A prized lance"
+.text "A for[midable lance "
 .word $0000
-.text "belonging to Finn "
+.text "that strikes t]wice "
 .word $0000
-.text "Lck {+}{1}{0}, {BRA1}{BRA2}"
+.text "{BRA1}{BRA2}, Lck {+}{1}{0}"
 .word $0000
 .word $0000
 
@@ -943,9 +955,9 @@ _DragonpikeDesc
 .word $0000
 .text "A gift fro[m Arion"
 .word $0000
-.text "Gives Vantage "
+.text "{BRA1}{BRA2}, Gives Adept "
 .word $0000
-.text "{BRA1}{BRA2}"
+.text "and Vantage "
 .word $0000
 .word $0000
 
@@ -965,7 +977,7 @@ _HammerneDesc
 .word $0000
 .text "{Lock}Safy, Linoan"
 .word $0000
-.text "Restore an ally's "
+.text "Restores an ally's"
 .word $0000
 .text "staff or ]weapon to "
 .word $0000
@@ -978,7 +990,7 @@ _ThiefDesc
 .word $0000
 .text "{Lock}Tina, Steals a"
 .word $0000
-.text "]weapon, staff or "
+.text "]weapon, staff, or"
 .word $0000
 .text "ite[m fro[m a target"
 .word $0000
@@ -1024,18 +1036,18 @@ _DireThunderDesc
 _GrafcaliburDesc
 .text "{Lock}Asbel, Gunnar "
 .word $0000
-.text ")Wind [magic kno]wn "
-.word $0000
-.text "for its precision "
+.text "Precise ]wind [magic"
 .word $0000
 .text "Anti{dash}Fliers"
+.word $0000
+.text "Lck {+}{5}"
 .word $0000
 .word $0000
 
 _ForsetiDesc
 .text "{Lock}Ced "
 .word $0000
-.text "Holy ]wind [magic "
+.text "Divine ]wind [magic "
 .word $0000
 .text "Anti{dash}Fliers, Skl "
 .word $0000
@@ -1044,9 +1056,9 @@ _ForsetiDesc
 .word $0000
 
 _ForsetiInfiniteDesc
-.text "{Lock}Archers, Bo12 "
+.text "{Lock}Bo]wfighters, "
 .word $0000
-.text "Knights "
+.text "Bo]w Knights"
 .word $0000
 .text "Greater attack range"
 .word $0000
@@ -1207,7 +1219,7 @@ _VulneraryDesc
 _AntitoxinDesc
 .text "A tincture used to"
 .word $0000
-.text "re[move an afflicted"
+.text "re[move an inflicted"
 .word $0000
 .text "Poison status "
 .word $0000
@@ -1240,9 +1252,9 @@ _MasterSealDesc
 .word $0000
 .text "]who have reached "
 .word $0000
-.text "{L}{V}{1}{0} in order to"
+.text "{L}{V}{1}{0} in order "
 .word $0000
-.text "pro[mote to an"
+.text "to pro[mote to an "
 .word $0000
 .text "advanced class"
 .word $0000
@@ -1451,7 +1463,9 @@ _HeimsScrollDesc
 ; Manuals
 
 _AccostManualDesc
-.text "Teaches Accost"
+.text "Confers the Accost"
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1460,7 +1474,9 @@ _AccostManualDesc
 .word $0000
 
 _AdeptManualDesc
-.text "Teaches Adept "
+.text "Confers the Adept "
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1469,7 +1485,9 @@ _AdeptManualDesc
 .word $0000
 
 _LunaManualDesc
-.text "Teaches Luna"
+.text "Confers the Luna"
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1478,7 +1496,9 @@ _LunaManualDesc
 .word $0000
 
 _ParagonManualDesc
-.text "Teaches Paragon "
+.text "Confers the Paragon "
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1487,7 +1507,9 @@ _ParagonManualDesc
 .word $0000
 
 _NihilManualDesc
-.text "Teaches +Nihil"
+.text "Confers the +Nihil"
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1496,7 +1518,9 @@ _NihilManualDesc
 .word $0000
 
 _SolManualDesc
-.text "Teaches Sol "
+.text "Confers the Sol "
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1505,7 +1529,9 @@ _SolManualDesc
 .word $0000
 
 _VantageManualDesc
-.text "Teaches Vantage "
+.text "Confers the Vantage "
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1514,7 +1540,9 @@ _VantageManualDesc
 .word $0000
 
 _WrathManualDesc
-.text "Teaches )Wrath"
+.text "Confers the )Wrath"
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1525,20 +1553,38 @@ _WrathManualDesc
 ; Broken items
 
 _BrokenSwordDesc
-_BrokenLanceDesc
-_BrokenAxeDesc
-.text "A broken ]weapon"
+.text "A broken s]word "
 .word $0000
-.text "Al[most unusable"
+.text "(More or less "
+.word $0000
+.text "unusable"
+.word $0000
+.word $0000
+
+_BrokenLanceDesc
+.text "A broken lance"
+.word $0000
+.text "(More or less "
+.word $0000
+.text "unusable"
+.word $0000
+.word $0000
+
+_BrokenAxeDesc
+.text "A broken axe"
+.word $0000
+.text "(More or less "
+.word $0000
+.text "unusable"
 .word $0000
 .word $0000
 
 _BrokenBowDesc
-.text "A broken ]weapon"
+.text "A broken bo12 "
 .word $0000
-.text "Al[most unusable"
+.text "(More or less "
 .word $0000
-.text "Anti{dash}Fliers"
+.text "unusable"
 .word $0000
 .word $0000
 
@@ -1555,16 +1601,18 @@ _BrokenStaffDesc
 ; Unused
 
 _ShadowSpearDesc
-.text "Can attack at range "
+.text "Halves opponent's "
 .word $0000
-.text "Gives +Nihil"
+.text "defense "
+.word $0000
+.text "+Negates opponent's "
+.word $0000
+.text "counterattack "
 .word $0000
 .word $0000
 
 _GaeBolgDesc
-.text "{Lock}Altena"
-.word $0000
-.text "A holy lance"
+.text "A divine lance"
 .word $0000
 .text "Str, Skl, and Def "
 .word $0000
@@ -1573,9 +1621,7 @@ _GaeBolgDesc
 .word $0000
 
 _GungnirDesc
-.text "{Lock}Travant, Arion"
-.word $0000
-.text "A holy lance"
+.text "A divine lance"
 .word $0000
 .text "Str, Spd, and Def "
 .word $0000
@@ -1584,14 +1630,18 @@ _GungnirDesc
 .word $0000
 
 
-_KillerBallistaDesc
+_ArmsScrollDesc
 .text "Raises level for all"
 .word $0000
-.text "usable ]weapon types"
+.text "physical ]weapon"
 .word $0000
-.text "by one grade"
+.text "types by one grade"
 .word $0000
-.text "  "
+.text "and [magical by half"
+.word $0000
+.text "+No effect on staff "
+.word $0000
+.text "level "
 .word $0000
 .text "Vanishes after use"
 .word $0000
@@ -1601,11 +1651,11 @@ _KillerBallistaDesc
 _BaldungDesc
 .text "{Lock}Shanna{m}"
 .word $0000
-.text "Gives Adept "
+.text "Anti{dash}Fighters"
 .word $0000
 .text "Skl {+}{1}, Spd {+}{2}"
 .word $0000
-.text "Anti{dash}(Myr[midons "
+.text "Gives Adept "
 .word $0000
 .word $0000
 
@@ -1617,7 +1667,7 @@ _FragarachDesc
 .word $0000
 .text "Gives Pavise and"
 .word $0000
-.text ")Wrath" 
+.text "+Nihil" 
 .word $0000
 .word $0000
 
@@ -1627,9 +1677,9 @@ _AuraDesc
 .word $0000
 .text "[magic"
 .word $0000
-.text "Gives (Miracle"
-.word $0000
 .text "Lck {+}{5}"
+.word $0000
+.text "Gives (Miracle"
 .word $0000
 .word $0000
 
@@ -1650,9 +1700,9 @@ _ValflameDesc
 
 
 _MjolnirDesc
-.text "{Lock}Ishtar"
+.text "Divine thunder"
 .word $0000
-.text "Holy thunder [magic "
+.text "[magic"
 .word $0000
 .text "Skl {+}{2}{0}, Spd "
 .word $0000
@@ -1662,11 +1712,7 @@ _MjolnirDesc
 
 
 _LoptousDesc
-.text "{Lock}Veld"
-.word $0000
-.text "Inscrutable dark"
-.word $0000
-.text "[magic"
+.text "Involute dark [magic"
 .word $0000
 .text "(Mag{+}{2}{0}"
 .word $0000
@@ -1676,16 +1722,18 @@ _LoptousDesc
 _TathlumDesc
 .text "{Lock}Tanya, Ronan"
 .word $0000
-.text "Anti{dash}(Magic"
+.text "A staunch bo12"
 .word $0000
-.text "Gives +Nihil"
+.text "Anti{dash}(Magic"
 .word $0000
 .text "Spd {+}{1}{0}"
 .word $0000
 .word $0000
 
 _BargainManualDesc
-.text "Teaches Pavise"
+.text "Confers the Pavise"
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000
@@ -1694,7 +1742,9 @@ _BargainManualDesc
 .word $0000
 
 _MiracleManualDesc
-.text "Teaches (Miracle"
+.text "Confers the (Miracle"
+.word $0000
+.text "skill "
 .word $0000
 .text "  "
 .word $0000

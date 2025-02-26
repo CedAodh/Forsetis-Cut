@@ -4,39 +4,29 @@ ch2op1
 
 .byte Right_slot
 .word LoadPortrait
-.word augustus_potrait
-.text "Bucks."
+.word bucks_potrait
 
 .byte Left_slot
 .word LoadPortrait
-.word bucks_potrait
-
-.byte Right_slot	
+.word augustus_potrait
+.text "Bucks, is this kind of body count really"
 .byte NewLine
-.text "Is this kind of body count really necessary?"
-.byte WaitForA
-.byte NewLine	
-.text "We're here to make coin, not gut"
+.text "necessary? We're here to make coin,"
 .byte NewLine
-.text "everything that moves."
+.text "not gut everything that moves."
 .byte WaitForA
 
-.byte Left_slot
-.text "Look 'ere, smart aleck."
+.byte Right_slot
+.text "Shaddup, smart guy. I don't tell you how to plan"
 .byte NewLine
-.text "We got us a nice division of labor goin'."
+.text "your strategies an' whatnot, and you don't tell"
+.byte NewLine
+.text "me 'ow to go about plunderin'."
 .byte WaitForA
 .byte ScrollText
-.text "I don't tell you how to plan your strategies"
+.text "Oh, and if it be them Freeblade folk yer worried"
 .byte NewLine
-.text "and whatnot, and you don't tell me"
-.byte NewLine
-.text "'ow to go about plunderin'."
-.byte WaitForA
-.byte ScrollText
-.text "Oh, and if it be them Freeblade folk yer"
-.byte NewLine
-.text "worried about, we already saw to them."
+.text "about, we already saw to them."
 .byte WaitForA
 .byte ScrollText
 .text "The boss tipped off the empire that the"
@@ -44,55 +34,67 @@ ch2op1
 .text "Leonster boy was hidin' with 'em."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "Leonster boy...?"
 .byte NewLine
-.text "Wait, you mean Leif, the prince?!"
+.text "Hold on, you mean Leif, the prince?!"
 .byte NewLine
 .text "Are you certain of this?"
 .byte WaitForA
 
-.byte Left_slot
+.byte Right_slot
 .byte ScrollText
 .text "Sure am. The boss grabbed one o' the village"
 .byte NewLine
-.text "folk an' used his talents with a knife"
+.text "folk an' used his talents with a knife to loosen"
 .byte NewLine
-.text "to loosen 'is tongue."
+.text "'is tongue."
 .byte WaitForA
 .byte ScrollText
-.text "Stubborn fella, though—mighta survived"
+.text "Stubborn fella, though—mighta survived if he"
 .byte NewLine
-.text "if he talked sooner."
+.text "talked sooner."
 .byte WaitForA
 
-.byte Right_slot
+.byte Left_slot
 .byte ScrollText
 .text "He resorted to torture, did he...?"
 .byte WaitForA
 
-.byte Left_slot
-.byte ScrollText
-.text "Hah, yer one to talk!"
-.byte WaitForA
-.byte ScrollText
-.text "Boss says yer the one who taught 'im everythin'"
-.byte NewLine
-.text "he knows about interrogatin'! There be a reason"
-.byte NewLine
-.text "you ain't with the church no more, mate."
-.byte WaitForA
-
-.byte $03
-.word ClearPortrait
-.word RetractBox
-
 .byte Right_slot
 .byte ScrollText
-.text "Dammit, Lifis... You've become more trouble"
+.text "Ha, yer one to talk!"
 .byte NewLine
-.text "than you're worth. It's time we parted ways."
+.text "Lifis says yer the one who taught 'im everythin'"
+.byte NewLine
+.text "he knows about interrogatin'!"
+.byte WaitForA
+.byte ScrollText
+.text "He was laughin' his arse off when he realized"
+.byte NewLine
+.text "that's why the church dumped you away."
+.byte WaitForA
+
+.byte Left_slot
+.byte $03
+.word ClearPortrait
+	
+.byte right_slot
+.word ClearPortrait
+	
+.byte left_slot
+.word RetractBox
+	
+.byte right_slot
+.word RetractBox
+
+.word LoadPortrait
+.word augustus_potrait
+.byte $03
+.text "Dammit, Lifis... You've become more trouble than"
+.byte NewLine
+.text "you're worth. It's time we parted ways."
 .byte WaitForA
 .byte ScrollText
 .text "I just need to make contact with the Leonster"
@@ -102,9 +104,9 @@ ch2op1
 .byte ScrollText
 .text "Now, how should I go about this...?"
 .byte NewLine
-.text "Well, before anything else,"
+.text "Hm. Before I do anything, I'll need to inform my"
 .byte NewLine
-.text "I must alert my benefactor..."
+.text "benefactor..."
 .byte WaitForA
 .byte EndText
 	
@@ -119,20 +121,20 @@ ch2op2
 .word leif_portrait2
 .text "Commander, over here!"
 .byte NewLine
-.text "That village is being raided!"
+.text "The village is under attack!"
 .byte WaitForA
 
 .byte Right_slot
 .text "Hmm... The Lifis Pirates, by the look of it."
 .byte NewLine
-.text "They've been quiet as a mouse for a while,"
+.text "They've been quiet as a dormouse for a while,"
 .byte NewLine
-.text "but I guess it was time they bounced back."
+.text "but I guess they move fast."
 .byte WaitForA
 
 .byte Left_Slot
 .byte ScrollText
-.text "It's also time that we step in!"
+.text "And we have to move faster!"
 .byte NewLine
 .text "We cannot stand by and allow this to happen!"
 .byte WaitForA
@@ -148,7 +150,9 @@ ch2op3
 .byte Left_slot
 .word LoadPortrait
 .word leif_portrait2
-.text "Finn, look here! That village is being raided!"
+.text "Finn, over here!"
+.byte NewLine
+.text "The village is being raided!"
 .byte WaitForA
 
 .byte Right_slot
@@ -180,9 +184,9 @@ ch2op4
 .text "Is no place safe anymore?"
 .byte WaitForA
 .byte ScrollText
-.text "Wait, those are the colors that Lifis's gang"
+.text "Wait, those are the colors that Lifis's gang once"
 .byte NewLine
-.text "once wore..."
+.text "wore..."
 .byte WaitForA
 .byte ScrollText
 .text "Well, let's give our old friend a proper greeting!"
@@ -209,11 +213,9 @@ ch2villageronan
 .byte WaitForA
 
 .byte Right_Slot
-.text "Mother, I'm sorry, but I've"
+.text "Mother, I'm sorry, but I've already made my"
 .byte NewLine
-.text "already made my decision."
-.byte NewLine
-.text "I'm going to join—"
+.text "decision. I'm going to join—"
 .byte WaitForA
 	
 .byte Left_slot
@@ -230,9 +232,9 @@ ch2villageronan
 .text "Please, let me fight alongside you!"
 .byte WaitForA
 .byte ScrollText
-.text "I trust my skills with a bow, and I"
+.text "I trust my skills with a bow, and I can get"
 .byte NewLine
-.text "can get around pretty fast."
+.text "around pretty fast."
 .byte NewLine
 .text "I promise I won't slow you down!"
 .byte WaitForA
@@ -242,9 +244,7 @@ ch2villageronan
 .word oldlady_portrait
 .text "B-but you've never been in a real fight like this"
 .byte NewLine
-.text "before...! You that eager to leave your mother"
-.byte NewLine
-.text "alone in this world?!"
+.text "before...!"
 .byte WaitForA
 
 .byte Right_Slot
@@ -254,9 +254,9 @@ ch2villageronan
 .text "We have to DO something for once!"
 .byte WaitForA
 .byte NewLine
-.text "Otherwise, we're always going to"
+.text "Otherwise, we're always going to live in fear at"
 .byte NewLine
-.text "live in fear at Lifis's whims!"
+.text "the whims of Lifis!"
 .byte WaitForA
 
 .byte EndText
@@ -266,11 +266,11 @@ ch2villageronanattacked
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "There was a ship here that coulda made"
+.text "There was a ship here that coulda made its way"
 .byte NewLine
-.text "its way to the Corsair Isles, but it's"
+.text "to the Corsair Isles, but it's been wrecked like"
 .byte NewLine
-.text "been wrecked like everything else..."
+.text "everything else..."
 .byte WaitForA
 
 .byte EndText
@@ -279,17 +279,17 @@ ch2villagespeedring
 
 .byte Right_Slot
 .word LoadPortrait
-.word teenageboy_portrait
+.word youngman_portrait
 .text "You lot just had to play hero, didn't you?"
 .byte NewLine
-.text "Now this whole village will be razed"
+.text "Now this whole village will be razed by the"
 .byte NewLine
-.text "by the pirates in revenge!"
+.text "pirates in revenge!"
 .byte WaitForA
 .byte ScrollText
-.text "They'll make one big, bloody example"
+.text "They'll make one big, bloody example outta us!"
 .byte NewLine
-.text "outta us! What're we supposed to do?!"
+.text "What're we supposed to do?!"
 .byte WaitForA
 	
 .byte Left_Slot
@@ -304,27 +304,34 @@ ch2villagespeedring
 
 .byte Right_Slot
 .byte ScrollText
-.text "You're too naïve!"
+.text "Oh, don't be naïve!"
 .byte NewLine
-.text "The pirates would've killed a few of us, sure,"
+.text "Whatever their gallant goal is, there's no point"
 .byte NewLine
-.text "but they had no reason to hunt down everybody!"
-.byte WaitForA
-.byte ScrollText
-.text "Except these idiots couldn't leave well enough"
-.byte NewLine
-.text "alone!"
+.text "WHEN WE ALL GET KILLED."
 .byte WaitForA
 
-.byte ScrollText
-.word ClearPortrait
-
-.byte Left_Slot
+.byte Left_slot
 .byte $03
 .word ClearPortrait
 .word RetractBox
-	
+
 .byte Right_slot
+.byte ScrollText
+.text "I mean it! Get the hell out of here!"
+.byte NewLine
+.text "If you pull out now, maybe the pirates'll make do"
+.byte NewLine
+.text "with killing only some of us!"
+.byte WaitForA
+
+.byte $03
+.word ClearPortrait
+.word RetractBox
+
+.word PauseDialogue
+.byte $3C
+	
 .word LoadPortrait
 .word braidedgirl_portrait
 .text "...I'm sorry about my brother."
@@ -332,18 +339,18 @@ ch2villagespeedring
 .text "He wasn't always like this."
 .byte WaitForA
 .byte ScrollText
-.text "By way of apology, take this magic trinket."
+.text "There was a time when the world beat him"
 .byte NewLine
-.text "Not sure what it does, but maybe it'll be"
+.text "around even in spite of his best efforts,"
 .byte NewLine
-.text "of use to you."
+.text "and it just...made him snap."
 .byte WaitForA
 .byte ScrollText
-.text "It's about time somebody showed those pirates"
+.text "By way of apology, take this magic trinket."
 .byte NewLine
-.text "what it's like to fight for THEIR lives"
+.text "I'll always be in support of you, Freeblades."
 .byte NewLine
-.text "for a change!"
+.text "So please, continue to do YOUR best!"
 .byte WaitForA
 
 .byte EndText
@@ -360,9 +367,9 @@ ch2villagespeedringattacked
 .text "below the harbor."
 .byte WaitForA
 .byte ScrollText
-.text "Sorry, chum, but every sea-worthy vessel"
+.text "Sorry, chum, but every sea-worthy vessel was"
 .byte NewLine
-.text "was sunk in all this fightin'."
+.text "sunk in all this fightin'."
 .byte WaitForA
 
 .byte EndText
@@ -375,9 +382,9 @@ ch2villagevulnerary
 .word beardedman_portrait
 .text "These pirates grow bolder by the day!"
 .byte NewLine
-.text "Just recently, I heard that a cleric fleeing"
+.text "Just recently, I heard that a traveling cleric"
 .byte NewLine
-.text "Tarrah was taken prisoner by 'em!"
+.text "was taken prisoner by 'em!"
 .byte WaitForA
 .byte ScrollText
 .text "Mayhap you can help the poor dear, eh?"
@@ -390,6 +397,7 @@ ch2villagevulnerary
 .byte EndText
 
 ch2villagevulneraryattacked
+
 .byte Right_slot
 .word LoadPortrait
 .word oldman2_portrait
@@ -404,22 +412,22 @@ ch2villagevulneraryattacked
 
 ch2worldmap1
 
+.text "Giving chase to "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0078 ;raydrik
 .word $0207 ;y then x
-.text "Giving chase to Raydrik, Leif set out"
+.text "Raydrik, Leif set out for Munster"
+.byte NewLine
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0313 ;nanna
 .word $0A0B ;y then x
-.byte NewLine
-.text "for Munster to rescue"
+.text "to rescue his companions."
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $012A ;mareeta
 .word $0A04 ;y then x
-.text " his companions."
 .byte WaitForA
 
 .word ClearPortraitalt
@@ -441,17 +449,17 @@ ch2worldmap2
 	
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0001 ;leify-right
+.word $003F ;leify-right
 .word $060B ;y then x
 .text "But while making his way along the shore,"
+.byte WaitForA
+.byte ScrollText
 
 .byte EndText
 	
 ch2worldmap3
 
-.byte NewLine ; this NewLine is after an EndText to exploit a display glitch and avoid using a ScrollText mid-sentence
 .text "he passed near a small settlement:"
-.byte WaitForA
 .byte NewLine
 .text "a coastal village by the name of Iz..."
 .byte WaitForA
@@ -476,9 +484,9 @@ ch2endinggaiden
 
 .byte Left_slot
 .byte ScrollText
-.text "August, at your service."
+.text "My name is August."
 .byte NewLine
-.text "I am a priest of Bragi on pilgrimage."
+.text "I am a traveling priest of Bragi."
 .byte WaitForA
 
 .byte Right_slot
@@ -492,9 +500,9 @@ ch2endinggaiden
 .byte ScrollText
 .text "Neither do I."
 .byte NewLine
-.text "I take it you're headed to the Corsair Isles"
+.text "I take it you're headed to the Corsair Isles to"
 .byte NewLine
-.text "to nip this pirate threat in the bud?"
+.text "nip this pirate threat in the bud?"
 .byte WaitForA
 
 .byte Right_slot
@@ -511,27 +519,27 @@ ch2endinggaiden
 
 .byte Left_slot
 .byte ScrollText
-.text "I see. In that case, allow me to be your"
+.text "I see."
 .byte NewLine
-.text "navigator. I can guide you to the isles."
+.text "In that case, allow me to be your navigator."
+.byte NewLine
+.text "I can guide you to the isles."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "What?"
+.text "What? Why would a priest know the way to the"
 .byte NewLine
-.text "Why would a priest know the way"
-.byte NewLine
-.text "to the Corsair Isles?"
+.text "Corsair Isles?"
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "This old man has many surprises left"
+.text "Learn to attune yourself to such statements."
 .byte NewLine
-.text "in him yet, I'll tell you that much."
+.text "There is nothing I cannot do."
 .byte NewLine
-.text "Still, the decision is yours."
+.text "Leave everything to me."
 .byte WaitForA
 
 .byte EndText
@@ -554,9 +562,9 @@ ch2endingreg
 
 .byte Left_slot
 .byte ScrollText
-.text "August, at your service."
+.text "My name is August."
 .byte NewLine
-.text "I am a priest of Bragi on pilgrimage."
+.text "I am a traveling priest of Bragi."
 .byte WaitForA
 
 .byte Right_slot
@@ -568,11 +576,11 @@ ch2endingreg
 
 .byte Left_slot
 .byte ScrollText
-.text "Neither do I. I'm headed to Munster, but with"
+.text "Neither do I. I'm headed to Munster, but with the"
 .byte NewLine
-.text "the pirates running amok, it's far too dangerous"
+.text "pirates running amok, it's far too dangerous for"
 .byte NewLine
-.text "for a man of the cloth to travel alone."
+.text "a man of the cloth to travel alone."
 .byte WaitForA
 .byte ScrollText
 .text "May I accompany you?"
@@ -580,18 +588,20 @@ ch2endingreg
 
 .byte Right_slot
 .byte ScrollText
-.text "Certainly, it's no trouble."
+.text "Kerberos' Gate is the farthest we'll be going."
 .byte NewLine
-.text "We'll be passing through Kerberos' Gate shortly."
+.text "I'd be glad to escort you, but just bear that in"
+.byte NewLine
+.text "mind."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "I'm in your debt. Along the way, I'm certain"
+.text "Then I'm in your debt. Along the way, I'm certain"
 .byte NewLine
 .text "I'll be able to offer your group much wisdom."
 .byte NewLine
-.text "I'll make myself worth the trouble, I assure you."
+.text "Know that I, August, am here to serve you."
 .byte WaitForA
 
 .byte EndText

@@ -106,15 +106,18 @@ eventChapter19WorldMapEvents ; E7/F06C
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	SET_MUSIC $58
+	YIELD
+	
 	EVENT_TEST_FLAG_SET $A2
 	JUMP_TRUE +
 	
 	LOAD1 eventChapter19Data._AmaldaGroup
-	YIELD
+	;YIELD
 	
 	STORE_WORD wEventEngineCharacterTarget, Schroff
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-	JUMP_FALSE +
+	JUMP_FALSE ++
 	
 	PLAY_SOUND_WORD $00E0
 	PAUSE_SKIPPABLE 16
@@ -128,22 +131,83 @@ eventChapter19WorldMapEvents ; E7/F06C
     CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
     YIELD
 
-    +
+    JUMP ++ 
+	
+	+
+	
+	LOAD1 eventChapter19Data._AmaldaReplacementGroup
+	;YIELD
+	
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.MaxHP, 39
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.CurrentHP, 39
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Strength, 8
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Magic, 11
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Skill, 12
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Speed, 8
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Luck, 15
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Defense, 8
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Constitution, 4
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.Movement, 1
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.LeadershipStars, 2
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.SwordRank, 200
+	macroSetCharacterByte FriegePaladinF, structCharacterDataRAM.StaffRank, 250
+	
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 7 | (57 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Miracle
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
+	
+	+
 	
 	EVENT_TEST_FLAG_SET $A4
 	JUMP_TRUE +
 	
 	LOAD1 eventChapter19Data._ConomorGroup
-	YIELD
+	;YIELD
 
     STORE_WORD wEventEngineCharacterTarget, Miranda
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
-	JUMP_FALSE +
+	JUMP_FALSE ++
+	
+	PLAY_SOUND_WORD $00E0
+	PAUSE_SKIPPABLE 16
+	YIELD
+	
+	SET_MUSIC $58
+	YIELD
     
     macroDialogueWithBackground mirandaangry, 3
     
     CALL_ASM_LOOP rlASMCDialogueWithBGEnd, $0000
     YIELD
+	
+	JUMP ++
+	
+	+
+	
+	LOAD1 eventChapter19Data._ConomorReplacementGroup
+	;YIELD
+	
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.MaxHP, 47
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.CurrentHP, 47
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Strength, 13
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Magic, 4
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Skill, 7
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Speed, 9
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Luck, 10
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Defense, 9
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Constitution, 7
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.Movement, 1
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.LeadershipStars, 3
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.SwordRank, 250
+	macroSetCharacterByte UlsterPaladin, structCharacterDataRAM.LanceRank, 250
+	
+	STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Coordinates
+	STORE_WORD wEventEngineCharacterTarget, 14 | (56 << 8)
+	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	STORE_WORD wEventEngineParameter2, Skill2Vantage
+	CALL_ASM_LOOP rlASMCSetBitsCharacterDataIfWord, $0000
 	
 	+
 	

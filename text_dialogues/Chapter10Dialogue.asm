@@ -1,20 +1,22 @@
 ch10wm1
 
+.text "The forces of the Fiana "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0211 ;y then x
-.text "The forces of the Fiana Freeblades, the Magi,"
+.text "Freeblades, the Magi,"
+.byte NewLine
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $033B ;augustus
 .word $0219 ;y then x
-.byte NewLine
-.text "and the remnants of Leonster's nobility,"
+.text "and the remnants of Leonster's "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $003C ;dorius
 .word $0209 ;y then x
+.text "nobility,"
 .byte WaitForA
 .byte ScrollText
 .text "though but strangers to one another,"
@@ -22,28 +24,30 @@ ch10wm1
 .text "had rallied behind their common cause."
 .byte WaitForA
 .byte ScrollText
-.text "They quickly cohered into a formidable"
+.text "They quickly cohered into a formidable fighting"
 .byte NewLine
-.text "fighting unit, "
+.text "unit,"
 .byte WaitForA
-.word ClearPortraitalt
-.long $82937A
-.word $0000
-.text "and became a new army"
 .word ClearPortraitalt
 .long $82937A
 .word $0003
-.byte NewLine
-.text "all their own: the Liberation Army."
-.byte WaitForA
 .byte ScrollText
-.text "The time was finally right to head for Tarrah"
+.word ClearPortraitalt
+.long $82937A
+.word $0000
+.byte ScrollText
+.text "and became a new army all their own:"
 .byte NewLine
-.text "and break the siege upon the city."
+.text "the North Thracian Liberation Army."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
 .word $0001
+.byte ScrollText
+.text "The time was finally right to head for Tarrah and"
+.byte NewLine
+.text "break the siege upon the city."
+.byte WaitForA
 .byte ScrollText
 
 .byte EndText
@@ -51,25 +55,22 @@ ch10wm1
 
 ch10wm2
 
+.text "The Liberation "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0417 ;y then x
-.text "The Liberation Army made their way to the"
+.text "Army made their way to the"
 .byte NewLine
-.text "imperial-Thracian border, "
+.text "imperial-Thracian border,"
 .byte WaitForA
-.text "which they would"
-.byte NewLine
-.text "cross through Nowell Valley, "
-.word LoadPortraitalt_1
-.long LoadPortraitalt_2
-.word largo_portrait
-.word $40B ;y then x
+.byte ScrollText
+.text "which they would cross through Nowell Valley,"
 .byte WaitForA
-.text "a small gap"
+.byte ScrollText
+.text "a small gap in the otherwise unpassable mountain"
 .byte NewLine
-.text "in the otherwise impassable mountain range..."
+.text "range..."
 .byte WaitForA
 
 .byte EndText
@@ -94,7 +95,7 @@ ch10olwenfredarrive
 .byte Right_slot
 .text "If you'll permit it, General, I would rather remain"
 .byte NewLine
-.text "here and fight alongside you!"
+.text "here and fight alongside you."
 .byte WaitForA
 
 .byte Left_slot
@@ -108,7 +109,7 @@ ch10olwenfredarrive
 
 .byte Right_slot
 .byte ScrollText
-.text "I can't just leave you here!"
+.text "But I can't just leave you here!"
 .byte NewLine
 .text "You must allow me to help you defend the valley,"
 .byte NewLine
@@ -158,9 +159,9 @@ ch10olwenfredleave
 .byte ScrollText
 .text "General Largo, I'll return with every able-bodied"
 .byte NewLine
-.text "soldier I can find!"
+.text "soldier I can find! You have my word!"
 .byte NewLine
-.text "You have my word...!"
+.text "Just please hold out..."
 .byte WaitForA
 
 .byte EndText
@@ -257,19 +258,28 @@ ch10opening1
 .byte NewLine
 .text "far into the mountains every morn."
 .byte WaitForA
+.byte ScrollText
+.text "I hate to bring your perennial efforts to waste,"
+.byte NewLine
+.text "but our border remains stable and secure as"
+.byte NewLine
+.text "always. There is no battle."
+.byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .word LoadPortrait
 .word fred_portrait
-.text "She's been assigned to it on the direct orders"
+.text "She's been assigned to this watch duty on the"
 .byte NewLine
-.text "of General Kempf."
+.text "direct orders of General Kempf."
 .byte WaitForA
 .byte ScrollText
 .text "There's no doubt he's out to harass her, having"
 .byte NewLine
 .text "her make such a back-breaking trek each day..."
+.byte NewLine
+.text "Her, and no one else."
 .byte WaitForA
 
 .byte Left_slot
@@ -287,9 +297,9 @@ ch10opening1
 .byte ScrollText
 .word LoadPortrait
 .word largo_portrait
-.text "Oh ho ho! Scathing words, but General Kempf"
+.text "Oh ho ho! Scathing words, but General Kempf is..."
 .byte NewLine
-.text "is...quite an embarrassment, really."
+.text "quite an embarrassment, really."
 .byte WaitForA
 .byte ScrollText
 .text "A highborn noble, his impudence and pettiness"
@@ -348,7 +358,7 @@ ch10opening1
 .byte ScrollText
 .text "Then that's all the more reason for General"
 .byte NewLine
-.text "Kempf to hate him, wouldn't you say?"
+.text "Kempf to loathe him, wouldn't you say?"
 .byte WaitForA
 
 .byte Left_slot
@@ -362,7 +372,7 @@ ch10opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! You don't get it? I envy your innocence."
+.text "Ha! You don't get it? I envy your innocence."
 .byte NewLine
 .text "It's Kempf's way of thinking that ensures North"
 .byte NewLine
@@ -378,11 +388,11 @@ ch10opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "...Ah, I've bent your ear for too long, though"
+.text "...Ah, I've bent your ear for too long, though it's"
 .byte NewLine
-.text "it's been good to speak so frankly. Why don't"
+.text "been good to speak so frankly. Why don't you"
 .byte NewLine
-.text "you stay a spell and catch your breath?"
+.text "stay a spell and catch your breath?"
 .byte WaitForA
 
 .byte Left_slot
@@ -404,11 +414,11 @@ ch10opening2
 .byte Left_slot
 .word LoadPortrait
 .word dorias_portrait
-.text "Prince Leif, just across the valley is Fort"
+.text "Prince Leif, just across the valley is Fort Nowell,"
 .byte NewLine
-.text "Nowell, which guards the border between Thracia"
+.text "which guards the border between Thracia and"
 .byte NewLine
-.text "and the empire."
+.text "the empire."
 .byte WaitForA
 
 .byte Right_slot
@@ -423,7 +433,7 @@ ch10opening2
 .byte ScrollText
 .text "Our reports say that their garrison is small,"
 .byte NewLine
-.text "but they make up for it with force of arms:"
+.text "but they make up for it with a force of arms:"
 .byte WaitForA
 .byte NewLine
 .text "the fort is guarded with ballistae—a sort of giant"
@@ -530,7 +540,7 @@ ch10endlargoalive
 .byte ScrollText
 .text "To save themselves from any embarrassment,"
 .byte NewLine
-.text "even the most lowly, rank-and-file soldiers are"
+.text "even the most lowly, rank and file soldiers are"
 .byte NewLine
 .text "drilled in the ways of knighthood and honor."
 .byte WaitForA
@@ -549,9 +559,9 @@ ch10endlargoalive
 
 .byte Right_slot
 .byte ScrollText
-.text "Ah... You mean how I had General Largo"
+.text "Ah... You mean how I had General Largo captured"
 .byte NewLine
-.text "captured instead of killed?"
+.text "instead of killed?"
 .byte WaitForA
 
 .byte Left_slot
@@ -590,7 +600,7 @@ ch10endlargodead
 
 .byte Left_slot
 .word LoadPortrait
-.word leif_portrait
+.word leif_portrait2
 .text "August, did you see the mage knight that fled"
 .byte NewLine
 .text "midway through the battle?"
@@ -599,7 +609,7 @@ ch10endlargodead
 .byte Right_slot
 .text "Indeed—a woman knight, at that."
 .byte NewLine
-.text "She was a most difficult adversary."
+.text "She was a most daunting adversary."
 .byte WaitForA
 
 .byte Left_slot
@@ -637,11 +647,11 @@ ch10endlargodead
 .text "shore up their defenses even further."
 .byte WaitForA
 .byte ScrollText
-.text "The fort's commander is surely no slouch—he's"
+.text "The fort's commander is surely no slouch—"
 .byte NewLine
-.text "certain to make the most of the extra time to"
+.text "he's certain to make the most of the extra"
 .byte NewLine
-.text "prepare."
+.text "time to prepare."
 .byte WaitForA
 .byte ScrollText
 .text "Indeed, I fear we'll have a most difficult time"

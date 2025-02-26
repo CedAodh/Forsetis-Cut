@@ -3,16 +3,16 @@ ch14xvillager1
 .byte Right_slot
 .word LoadPortrait
 .word youngman_portrait
-.text "Thanks for pullin' our sorry bums"
+.text "Thanks for pullin' our sorry bums outta the fire"
 .byte NewLine
-.text "outta the fire back there."
+.text "back there."
 .byte WaitForA
 .byte ScrollText
-.text "I brought this stamina drink along as"
+.text "I brought this stamina drink along as a little"
 .byte NewLine
-.text "a little taste of home for the road, but I figure"
+.text "taste of home for the road, but I figure you can"
 .byte NewLine
-.text "you can get way more use outta it than me."
+.text "get way more use outta it than me."
 .byte WaitForA
 
 .byte EndText
@@ -23,9 +23,9 @@ ch14xvillager2
 .byte Right_slot
 .word LoadPortrait
 .word braidedgirl_portrait
-.text "I made this stamina drink while we were"
+.text "I made this stamina drink while we were on the"
 .byte NewLine
-.text "on the road! Here, you can have it!"
+.text "road! Here, you can have it!"
 .byte WaitForA
 .byte ScrollText
 .text "What's that? How's it made?"
@@ -33,11 +33,11 @@ ch14xvillager2
 .text "Well, that's a trade secret, silly!"
 .byte WaitForA
 .byte ScrollText
-.text "I can tell you it involves using a certain part"
+.text "I can tell you it involves using a certain part of"
 .byte NewLine
-.text "of a pegasus, though... Good thing the battle"
+.text "a pegasus, though... Good thing the battle left"
 .byte NewLine
-.text "left lots of dead ones lying around."
+.text "lots of dead ones lying around."
 .byte WaitForA
 
 .byte EndText
@@ -48,14 +48,14 @@ ch14xvillager3
 .byte Right_slot
 .word LoadPortrait
 .word oldlady3_portrait
-.text "Hoo-boy, was that a fright and a half!"
+.text "Hoo boy, was that a fright and a half!"
 .byte WaitForA
 .byte ScrollText
 .text "Here, you can take this stamina drink."
 .byte NewLine
-.text "I got way too much adrenaline pumping now"
+.text "I got way too much adrenaline pumping now to"
 .byte NewLine
-.text "to even think about taking a sip..."
+.text "even think about taking a sip..."
 .byte WaitForA
 
 .byte EndText
@@ -71,11 +71,11 @@ ch14xvillager4
 .text "didn't we...?"
 .byte WaitForA
 .byte ScrollText
-.text "Maybe this stamina drink will help make up"
+.text "Maybe this stamina drink will help make up for all"
 .byte NewLine
-.text "for all the effort you had to put in to save us"
+.text "the effort you had to put in to save us from"
 .byte NewLine
-.text "from our stupid idea..."
+.text "our stupid idea..."
 .byte WaitForA
 
 .byte EndText
@@ -88,9 +88,9 @@ ch14xvillager5
 .word black_mustache_portrait
 .text "Flamin' Fjalar! We actually made it!"
 .byte NewLine
-.text "Here, take this stamina drink,"
+.text "Here, take this stamina drink, and toast to your"
 .byte NewLine
-.text "and toast to your heroics today!"
+.text "heroics today!"
 .byte WaitForA
 
 .byte EndText
@@ -101,11 +101,11 @@ ch14xvillager6
 .byte Right_slot
 .word LoadPortrait
 .word youngman2_portrait
-.text "We made it out alive! Why, I was afraid the"
+.text "We made it out alive! Why, I was afraid the long"
 .byte NewLine
-.text "long line of Tarrah's esteemed stamina drink"
+.text "line of Tarrah's esteemed stamina drink vintners"
 .byte NewLine
-.text "vintners would die in this forlorn valley!"
+.text "would die in this forlorn valley!"
 .byte WaitForA
 .byte ScrollText
 .text "What's that?"
@@ -117,9 +117,9 @@ ch14xvillager6
 .byte ScrollText
 .text "Take this one, for instance!"
 .byte NewLine
-.text "It's called “Silessian Spring,”"
+.text "It's called “Silessian Spring,” and it's brewed at"
 .byte NewLine
-.text "and it's brewed at a vineyard near Tófa!"
+.text "a vineyard near Tófa!"
 .byte WaitForA
 .byte ScrollText
 .text "Savor that heady aroma!"
@@ -158,7 +158,7 @@ ch14xopening1
 .word linoan_portrait
 .text "I'm deeply sorry, Lord Leif..."
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "I tried to convince them that accompanying us"
 .byte NewLine
 .text "was too dangerous, but nothing I said could"
@@ -195,7 +195,7 @@ ch14xopening1
 .byte ScrollText
 .text "I concur. We're busy enough fighting for our own"
 .byte NewLine
-.text "lives to spare any manpower to babysit them."
+.text "lives to spare any manpower to shield them."
 .byte WaitForA
 .byte ScrollText
 .text "In all honesty, ensuring their safe passage out"
@@ -236,7 +236,7 @@ ch14xopening2
 .byte Left_slot
 .word LoadPortrait
 .word codha_portrait
-.text "I take it the Pegasus Corps are prepared for"
+.text "I take it the pegasus corps are prepared for"
 .byte NewLine
 .text "battle, Captain Misha?"
 .byte WaitForA
@@ -344,7 +344,7 @@ ch14xclosing
 .byte ScrollText
 .text "At any rate, we'll have to cross this mountain"
 .byte NewLine
-.text "range regardless of which route we take."
+.text "range regardless of what route we take."
 .byte NewLine
 .text "We should make haste, Prince Leif."
 .byte WaitForA
@@ -446,9 +446,7 @@ ch14xclosing
 
 .byte Right_slot
 .byte ScrollText
-.text "Another whole year..."
-.byte NewLine
-.text "There's still so much left to be done..."
+.text "Then for another year...my role shall continue..."
 .byte WaitForA
 
 .byte EndText
@@ -479,7 +477,7 @@ linoandeathdean
 
 .byte Right_slot
 .byte ScrollText
-.text "If Dáinn wills it, perhaps we will."
+.text "If Dáinn wills it, then perhaps."
 .byte WaitForA
 
 .byte EndText

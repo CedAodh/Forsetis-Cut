@@ -2322,7 +2322,7 @@ salemepi
 .byte NewLine
 .text "into the inner workings"
 .byte NewLine
-.text "of Loptrian society."
+.text "of Loptr society."
 .word PauseDialogue
 .byte $5A
 .byte $0F
@@ -2354,7 +2354,7 @@ schroffepi
 .byte NewLine
 .text "was noticed by other"
 .byte NewLine
-.text "Bragian priests, and his"
+.text "Bragi priests, and his"
 .byte NewLine
 .text "earnest efforts motivated"
 .byte NewLine
@@ -2448,7 +2448,7 @@ tinaepi
 .byte $09
 .word $1200
 .byte $04
-.text "Even after everything she"
+.text "Even after all that she"
 .byte NewLine
 .text "had been through, upon"
 .byte NewLine
@@ -2590,7 +2590,7 @@ homerepi
 .byte ScrollText
 .byte $0F
 .byte $10
-.text "Based on his first-hand"
+.text "Based on his firsthand"
 .byte NewLine
 .text "experience in Leif's army,"
 .byte NewLine

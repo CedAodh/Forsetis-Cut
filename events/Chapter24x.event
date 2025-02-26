@@ -8,12 +8,17 @@ eventChapter24xEvents ; 97/8895
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 97/88A2
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $01, eventMapDeathQuoteDummyEvent
 			TEST_FLAG_SET $03
-		END_DEFINITION
-		EVENT $00, _SorcererReinforcements
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 2
 		END_DEFINITION
 		EVENT $00, _SorcererReinforcements
 			CMP_WORD wCurrentPhase, NPC
@@ -96,9 +101,9 @@ eventChapter24xEvents ; 97/8895
 			RUN_ASM rlEventDefinitionCheckRetreatCoordinates
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
-		EVENT $00, eventChapter16BEvents._WarpTile
-			RUN_ASM rlGetWarpTileTargetCoords
-		END_DEFINITION
+		;EVENT $00, eventChapter16BEvents._WarpTile
+		;	RUN_ASM rlGetWarpTileTargetCoords
+		;END_DEFINITION
 	END_DEFINITION_ARRAY
 
 	_AfterActionEventDefinitions ; 97/89D6
@@ -114,20 +119,17 @@ eventChapter24xEvents ; 97/8895
 	END_DEFINITION_ARRAY
 
 	_SorcererReinforcements ; 97/89E3
-		SCROLL_CAMERA_ADDRESS eventChapter24xData._SorcererReinforcementsCameraCoordinates
-		YIELD
+		PLAY_SOUND_WORD $00E8
 
 		LOAD2 eventChapter24xData._SorcererReinforcementsGroup
 		WAIT_MOVE
 		YIELD
 
 		YIELD_UNK
-	END2
+	END1
 
 	_SniperHeroReinforcements ; 97/89F0
-		SCROLL_CAMERA_ADDRESS eventChapter24xData._SniperHeroReinforcementsCameraCoordinates
-		YIELD
-
+		PLAY_SOUND_WORD $00E8
 		LOAD2 eventChapter24xData._SniperHeroReinforcementsGroup
 		WAIT_MOVE
 		YIELD
@@ -291,19 +293,11 @@ eventChapter24xEvents ; 97/8895
 	END2
 
 	_GalzusSaraTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE galzussara
-		YIELD
+		macroDialogueHouse galzussara
 	END2
 	
 	_PerneSalemTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE pernesalem24x
-		YIELD
+		macroDialogueHouse pernesalem24x
 	END2
 	
 	_PrepGroups ; 97/8BA4
@@ -366,8 +360,13 @@ eventChapter24xEvents ; 97/8895
 
 		STORE_WORD wEventEngineCharacterTarget, Eyvel
 		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Anchor | (Skill3Immortal << 8)
+		STORE_WORD wEventEngineParameter2, Skill3Immortal << 8
 		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
+		
+		STORE_WORD wEventEngineCharacterTarget, Eyvel
+		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+		STORE_WORD wEventEngineParameter2, Skill2Anchor
+		CALL_ASM_LOOP rlASMCSetBitsCharacterDataWord, $0000
 		
 		macroSetCharacterWord Eyvel, structCharacterDataRAM.Leader, Eyvel
 

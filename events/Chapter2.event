@@ -8,8 +8,18 @@ eventChapter2Events ; 99/81B4
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; 99/81C1
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 40
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT FlagBossDeath, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Bucks
+			CMP_WORD wCurrentPhase, Enemy
 		END_DEFINITION
 		EVENT FlagAlwaysZero, _BottomPirateReinforcements
 			CMP_WORD wCurrentTurn, 3
@@ -230,6 +240,8 @@ eventChapter2Events ; 99/81B4
 	END1
 
 	_BottomPirateReinforcements ; 99/85A3
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter2Data._BottomPirateReinforcementsCameraCoordinates
 		YIELD
 
@@ -240,6 +252,8 @@ eventChapter2Events ; 99/81B4
 	END2
 
 	_MiddlePirateReinforcements ; 99/85B0
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter2Data._MiddlePirateReinforcementsCameraCoordinates
 		YIELD
 
@@ -250,6 +264,8 @@ eventChapter2Events ; 99/81B4
 	END2
 
 	_TopPirateReinforcements ; 99/85BD
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter2Data._TopPirateReinforcementsCameraCoordinates
 		YIELD
 
@@ -413,9 +429,6 @@ eventChapter2Events ; 99/81B4
 		JUMP_FALSE +
 
 		macroDialogueWithBackground ch2endingreg, 3
-		
-		SET_FLAG FlagSafyGoneForGood
-		SET_FLAG FlagLifisGoneForGood
 
 		ADD_WORD wCurrentChapter, Chapter3 - Chapter2 - 1
 		YIELD_UNK

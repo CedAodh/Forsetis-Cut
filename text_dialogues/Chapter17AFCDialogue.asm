@@ -6,7 +6,7 @@ mishasleep
 
 .byte left_slot
 .word LoadPortrait
-.word guard_portrait
+.word dvorak_portrait
 .text "Bishop Saias, a report."
 .byte NewLine
 .text "We've sighted the mercenary leader"
@@ -557,6 +557,199 @@ karinseesmisha
 .text "Th-thank you!"
 .byte NewLine
 .text "That's all I ask!"
+.byte WaitForA
+
+.byte EndText
+
+ishtarsaiasdead
+
+.byte right_slot
+.word LoadPortrait
+.word ishtar_portrait
+.text "Bishop Saias...?"
+.byte NewLine
+.text "Where are you?"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word reinhardt_portrait
+.text "Hmm... Surely he would be—"
+.byte WaitForA
+.byte ScrollText
+.text "......!"
+.byte WaitForA
+.byte ScrollText
+.text "M...milady..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "What is it, Reinhardt?"
+.byte WaitForA
+.byte ScrollText
+.text "...Ah...!"
+.byte NewLine
+.text "Bishop Saias...! NO!"
+.byte NewLine
+.text "How could you have...?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Your Highness, I... I am to blame for this!"
+.byte WaitForA
+.byte NewLine
+.text "If I'd properly understood the threat those"
+.byte NewLine
+.text "rebels posed, I would have joined the battle"
+.byte NewLine
+.text "and been able to protect him in an instant."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Your expectations were perfectly reasonable."
+.byte NewLine
+.text "Neither would I have expected them to be the"
+.byte NewLine
+.text "ones to carry out such vacuous brutality!"
+.byte WaitForA
+.byte ScrollText
+.text "And they will be dealt with in kind..."
+.byte NewLine
+.text "Right this instant!"
+.byte NewLine
+.text "With me, Reinhardt!"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "No, Lady Ishtar! I must object!"
+.byte NewLine
+.text "If we resign ourselves to battle now,"
+.byte NewLine
+.text "Lord Julius may as well be lost to us!"
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...But..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "We'll... We'll find another way."
+.byte NewLine
+.text "I promise you this."
+.byte NewLine
+.text "But we must away now."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "...All right."
+.byte NewLine
+.text "Please forgive us, Bishop Saias..."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "......"
+.byte WaitForA
+
+.byte EndText
+
+ishtarsaiascaptured
+
+.byte right_slot
+.word LoadPortrait
+.word ishtar_portrait
+.text "Bishop Saias...?"
+.byte NewLine
+.text "Where are you?"
+.byte WaitForA
+
+.byte left_slot
+.word LoadPortrait
+.word reinhardt_portrait
+.text "Hmm... Surely he would be—"
+.byte WaitForA
+.byte ScrollText
+.text "Well, I see no signs of bloodshed here."
+.byte NewLine
+.text "Could he have been...captured, perhaps?"
+.byte NewLine
+.text "I'd never be able to even picture it, but..."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "Captured?!"
+.byte NewLine
+.text "Reinhardt, are you certain?"
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "Not at all, milady, unfortunately."
+.byte WaitForA
+.byte ScrollText
+.text "But still...what else could it have been?"
+.byte NewLine
+.text "This battle is still well underway; I don't"
+.byte NewLine
+.text "believe he'd just exit the battlefield."
+.byte WaitForA
+
+.byte right_slot
+.byte ScrollText
+.text "So all we can do is keep looking for him."
+.byte WaitForA
+
+.byte left_slot
+.byte ScrollText
+.text "I agree."
+.byte NewLine
+.text "Let's go, Lady Ishtar."
+.byte WaitForA
+
+.byte EndText
+
+lowerbridge
+
+.byte right_slot
+.word LoadPortrait
+.word guard_portrait
+.text "Men, the awaited hour has finally come!"
+.byte NewLine
+.text "Bishop Saias has entered the battlefield!"
+.byte WaitForA
+.byte ScrollText
+.text "And we already have new orders."
+.byte NewLine
+.text "Lower the bridge, and launch a full charge on"
+.byte NewLine
+.text "the enemy's main body!"
+.byte WaitForA
+
+.byte EndText
+
+raisebridge
+
+.byte right_slot
+.word LoadPortrait
+.word guard_portrait
+.text "I heard that Bishop Saias has left the battle?"
+.byte NewLine
+.text "...Well, it was nice while it lasted."
+.byte WaitForA
+.byte ScrollText
+.text "Then we just have to hold them off as best as"
+.byte NewLine
+.text "we can manage. Raise the upper bridge!"
+.byte NewLine
+.text "That should stall them a fair bit...hopefully."
 .byte WaitForA
 
 .byte EndText

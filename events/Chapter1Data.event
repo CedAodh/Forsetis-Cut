@@ -25,7 +25,7 @@ eventChapter1Data ; B1/FB37
 		.byte 12, 7
 
 	_RaydrikUnitGroup ; B1/FBE1
-		UNIT Weissmann, Enemy, [17, 5], [17, 6], Lobos, [Longsword], 7, True, [$01, $03, $00, $80]
+		UNIT Weissmann, Enemy, [17, 5], [17, 6], Weissmann, [Longsword], 7, True, [$01, $03, $00, $80]
 		UNIT Raydrik, Enemy, [17, 5], [17, 5], Raydrik, [], 1, False, [$00, $00, $00, $00]
 	UNIT
 
@@ -33,32 +33,32 @@ eventChapter1Data ; B1/FB37
 		.byte 15, 14
 
 	_EnemyGroup1 ; B1/FC0D
-		UNIT MunsterSoldier2, Enemy, [13, 12], [15, 12], Lobos, [ShortLance], 1, False, [$02, $08, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [13, 12], [15, 12], Weissmann, [ShortLance], 1, False, [$02, $08, $00, $00]
 	UNIT
 
 	_Opening3CameraCoordinates ; B1/FC23
 		.byte 14, 9
 
 	_EnemyGroup2 ; B1/FC25
-		UNIT MunsterSoldier2, Enemy, [13, 10], [13, 10], Lobos, [Javelin], 1, False, [$06, $03, $00, $10]
-		UNIT MunsterArcher, Enemy, [9, 10], [9, 10], Lobos, [Shortbow, Vulnerary], 3, False, [$01, $03, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [13, 16], [13, 16], Lobos, [Javelin], 6, False, [$01, $03, $03, $00]
-		UNIT MunsterSoldier2, Enemy, [11, 2], [10, 8], Lobos, [ShortLance], 5, False, [$02, $08, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [18, 13], [18, 13], Lobos, [Javelin], 4, False, [$02, $08, $03, $00]
-		UNIT MunsterSoldier2, Enemy, [8, 12], [10, 12], Lobos, [Javelin, Vulnerary], 5, False, [$02, $08, $00, $00]
-		UNIT MunsterSoldier2, Enemy, [18, 10], [18, 10], Lobos, [ShortLance], 3, False, [$01, $03, $03, $00]
-		UNIT MunsterSoldier2, Enemy, [8, 5], [8, 5], Lobos, [ShortLance], 2, False, [$01, $03, $03, $00]
-		UNIT MunsterSoldier2, Enemy, [8, 14], [8, 14], Lobos, [ShortLance], 1, False, [$02, $08, $00, $00]
-		UNIT MunsterArcher, Enemy, [11, 12], [11, 12], Lobos, [Shortbow], 1, False, [$02, $08, $00, $05]
-		UNIT MunsterSoldier2, Enemy, [12, 6], [12, 6], Lobos, [ShortLance], 2, False, [$06, $03, $03, $00]
+		UNIT MunsterSoldier2, Enemy, [13, 10], [13, 10], Weissmann, [Javelin], 1, False, [$06, $03, $00, $10]
+		UNIT MunsterArcher, Enemy, [9, 10], [9, 10], Weissmann, [Shortbow, Vulnerary], 3, False, [$01, $03, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [13, 16], [13, 16], Weissmann, [Javelin], 6, False, [$01, $03, $03, $00]
+		UNIT MunsterSoldier2, Enemy, [11, 2], [10, 8], Weissmann, [ShortLance], 5, False, [$02, $08, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [18, 13], [18, 13], Weissmann, [Javelin], 4, False, [$02, $08, $03, $00]
+		UNIT MunsterSoldier2, Enemy, [8, 12], [10, 12], Weissmann, [Javelin, Vulnerary], 5, False, [$02, $08, $00, $00]
+		UNIT MunsterSoldier2, Enemy, [18, 10], [18, 10], Weissmann, [ShortLance], 3, False, [$01, $03, $03, $00]
+		UNIT MunsterSoldier2, Enemy, [8, 5], [8, 5], Weissmann, [ShortLance], 2, False, [$01, $03, $03, $00]
+		UNIT MunsterSoldier2, Enemy, [8, 14], [8, 14], Weissmann, [ShortLance], 1, False, [$02, $08, $00, $00]
+		UNIT MunsterArcher, Enemy, [11, 12], [11, 12], Weissmann, [Shortbow], 1, False, [$02, $08, $00, $05]
+		UNIT MunsterSoldier2, Enemy, [12, 6], [12, 6], Weissmann, [ShortLance], 2, False, [$06, $03, $03, $00]
 	UNIT
 
 	_Opening2CameraCoordinates ; B1/FD03
 		.byte 12, 7
 
 	_PrisonerGuardsGroup ; B1/FD05
-		UNIT MunsterSoldier2, Enemy, [18, 14], [17, 8], Lobos, [ShortLance], 4, False, [$02, $08, $03, $00]
-		UNIT MunsterArcher, Enemy, [17, 14], [16, 8], Lobos, [Shortbow], 5, False, [$02, $08, $00, $05]
+		UNIT MunsterSoldier2, Enemy, [18, 14], [17, 8], Weissmann, [ShortLance], 4, False, [$02, $08, $03, $00]
+		UNIT MunsterArcher, Enemy, [17, 14], [16, 8], Weissmann, [Shortbow], 5, False, [$02, $08, $00, $05]
 	UNIT
 
 	_UnusedCoordinates2 ; B1/FD2F

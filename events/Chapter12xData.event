@@ -4,9 +4,10 @@ eventChapter12xData ; B1/C3F7
 	_PrepEnemies ; B1/C3F7
 		.byte 9, 9
 
-		UNIT Trude, Enemy, [12, 3], [12, 3], Perne, [SilverSword, Vulnerary], 4, False, [$01, $03, $04, $80]
+		UNIT Trude, Enemy, [12, 3], [12, 3], Perne, [SilverSword, Vulnerary], 4, False, [$06, $03, $04, $80]
 		UNIT Perne, Enemy, [8, 10], [8, 10], Perne, [Kingmaker, Lockpick, Vulnerary], 3, True, [$01, $03, $04, $80]
 		UNIT Tina, Enemy, [9, 10], [9, 10], Perne, [ThiefStaff, Unlock, StaminaDrink], 1, False, [$02, $03, $00, $00]
+		UNIT ThiefEnemy2, Enemy, [7, 1], [7, 1], Perne, [SlimSword, Vulnerary], 12, False, [$06, $00, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [7, 1], [7, 1], Perne, [SlimSword, Vulnerary], 12, False, [$00, $00, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [17, 5], [17, 5], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [3, 13], [3, 13], Perne, [SlimSword, Vulnerary], 12, False, [$00, $00, $02, $00]
@@ -14,56 +15,56 @@ eventChapter12xData ; B1/C3F7
 		UNIT ThiefEnemy2, Enemy, [19, 9], [19, 9], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$02, $06, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [7, 7], [7, 7], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
 		UNIT ThiefEnemy2, Enemy, [23, 4], [23, 4], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
-		UNIT ArcherEnemy1, Enemy, [17, 7], [17, 7], Perne, [IronBow], 8, False, [$00, $03, $00, $00]
-		UNIT ArcherEnemy1, Enemy, [9, 5], [9, 5], Perne, [IronBow], 8, False, [$00, $03, $00, $00]
-		UNIT ArcherEnemy1, Enemy, [5, 5], [5, 5], Perne, [IronBow], 8, False, [$00, $03, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [17, 7], [17, 7], Perne, [IronBow], 8, False, [$06, $03, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [9, 5], [9, 5], Perne, [IronBow], 8, False, [$06, $03, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [5, 5], [5, 5], Perne, [IronBow], 8, False, [$06, $03, $00, $00]
 		UNIT DancerEnemy, Enemy, [19, 7], [19, 7], Perne, [SlimSword], 1, False, [$07, $07, $00, $80]
 		UNIT ThiefEnemy2, Enemy, [7, 13], [7, 13], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $06, $02, $00]
 		UNIT DancerEnemy, Enemy, [14, 3], [14, 3], Perne, [SlimSword], 1, False, [$07, $07, $00, $80]
 		UNIT DancerEnemy, Enemy, [7, 10], [7, 10], Perne, [SlimSword], 1, False, [$07, $07, $00, $80]
-		UNIT MercenaryMyrmidon2, Enemy, [1, 2], [1, 2], Perne, [IronBlade], 10, False, [$00, $03, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [1, 2], [1, 2], Perne, [IronBlade], 10, False, [$06, $03, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates1 ; B1/C54F
 	;	.byte 10, 7
 
 	_ArcherLeftGroup ; B1/C551
-		UNIT ArcherEnemy1, Enemy, [3, 5], [3, 5], Perne, [IronBow], 8, False, [$00, $10, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [3, 5], [3, 5], Perne, [IronBow], 8, False, [$06, $10, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates2 ; B1/C567
 	;	.byte 13, 7
 
 	_ArcherMiddleGroup ; B1/C569
-		UNIT ArcherEnemy1, Enemy, [11, 5], [11, 5], Perne, [IronBow], 8, False, [$00, $10, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [11, 5], [11, 5], Perne, [IronBow], 8, False, [$06, $10, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates3 ; B1/C57F
 	;	.byte 17, 8
 
 	_ArcherRightGroup ; B1/C581
-		UNIT ArcherEnemy1, Enemy, [21, 7], [21, 7], Perne, [IronBow], 8, False, [$00, $10, $00, $00]
+		UNIT ArcherEnemy1, Enemy, [21, 7], [21, 7], Perne, [IronBow], 8, False, [$06, $10, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates4 ; B1/C597
 	;	.byte 16, 8
 
 	_MyrmidonMiddleGroup ; B1/C599
-		UNIT MercenaryMyrmidon2, Enemy, [15, 7], [15, 7], Perne, [IronSword], 7, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [15, 7], [15, 7], Perne, [IronSword], 7, False, [$06, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates5 ; B1/C5AF
 	;	.byte 17, 7
 
 	_MyrmidonBottomGroup ; B1/C5B1
-		UNIT MercenaryMyrmidon2, Enemy, [11, 13], [11, 13], Perne, [IronSword], 7, False, [$00, $00, $00, $00]
+		UNIT MercenaryMyrmidon2, Enemy, [11, 13], [11, 13], Perne, [IronSword], 7, False, [$06, $00, $00, $00]
 	UNIT
 
 	;_UnusedCoordinates6 ; B1/C5C7
 	;	.byte 16, 9
 
 	_ThiefGroup ; B1/C5C9
-		UNIT ThiefEnemy2, Enemy, [23, 1], [23, 1], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$00, $05, $02, $00]
+		UNIT ThiefEnemy2, Enemy, [23, 1], [23, 1], Perne, [SlimSword, Vulnerary, ChestKey], 12, False, [$06, $05, $02, $00]
 	UNIT
 
 	_MasterSealDancerCameraCoordinates ; B1/C5DF
@@ -100,7 +101,7 @@ eventChapter12xData ; B1/C3F7
 		.byte 13, 1
 
 	_Chest1Item ; B1/C636
-		.word AccostManual
+		.word VantageManual
 
 	_Chest1Events ; B1/C638
 		STORE_WORD wEventEngineXCoordinate, 13
@@ -172,7 +173,7 @@ eventChapter12xData ; B1/C3F7
 		.byte 18, 11
 
 	_Chest4Item ; B1/C702
-		.word LuckRing
+		.word ForsetiInfinite
 
 	_Chest4Events ; B1/C704
 		STORE_WORD wEventEngineXCoordinate, 18

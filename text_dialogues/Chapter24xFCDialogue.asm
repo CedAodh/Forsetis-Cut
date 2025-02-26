@@ -203,7 +203,7 @@ pernesalem24x
 .byte NewLine
 .text "you're the only one of your kind. There must"
 .byte NewLine
-.text "be other repenting Loptrians out there."
+.text "be other repenting men of Loptr out there."
 .byte WaitForA
 
 

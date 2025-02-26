@@ -89,7 +89,7 @@
         ldx #$0707
         jsr $14E800
 
-		lda aActionStructUnit1.BattleAttackSpeed
+	lda aActionStructUnit1.BattleAttackSpeed
         and #$00FF
         sta wR0
         lda $51DC,b

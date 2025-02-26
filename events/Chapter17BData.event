@@ -60,13 +60,13 @@ eventChapter17BData ; B1/A2A9
 		.byte 14, 22
 		
 	_BeatriceGroup
-		UNIT Beatrice, Enemy, [14, 31], [14, 29], Merloch, [LightningSword, SilverLance, Vulnerary], 12, False, [$00, $0C, $00, $30]
-		UNIT ThraciaDracoRider, Enemy, [13, 31], [13, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
-		UNIT ThraciaDracoRider, Enemy, [15, 31], [15, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
-		UNIT ThraciaDracoRider, Enemy, [12, 31], [12, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
-		UNIT ThraciaDracoRider, Enemy, [16, 31], [16, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
-		UNIT ThraciaDracoRider, Enemy, [11, 31], [11, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
-		UNIT ThraciaDracoRider, Enemy, [17, 31], [17, 29], Merloch, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT Beatrice, Enemy, [14, 31], [14, 29], Beatrice, [LightningSword, ShadowSpear, Vulnerary], 12, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [13, 31], [13, 29], Beatrice, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [15, 31], [15, 29], Beatrice, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [12, 31], [12, 29], Beatrice, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [16, 31], [16, 29], Beatrice, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [11, 31], [11, 29], Beatrice, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
+		UNIT ThraciaDracoRider, Enemy, [17, 31], [17, 29], Beatrice, [KillerLance, Vulnerary], 16, False, [$00, $0C, $00, $30]
 	UNIT
 
 	_AmaldaGroup ; B1/A623
@@ -105,7 +105,7 @@ eventChapter17BData ; B1/A2A9
 	.byte $FF
 
 	_Armory ; B1/A6D6
-		SHOP [9, 28], [IronBow, SteelBow, SilverBow, IronAxe, SteelAxe, SilverAxe]
+		SHOP [9, 28], [IronAxe, SteelAxe, SilverAxe, IronBow, SteelBow, SilverBow]
 
 	_Vendor ; B1/A6E8
 		SHOP [10, 27], [Fire, Bolganone, Meteor, Vulnerary, Antitoxin]

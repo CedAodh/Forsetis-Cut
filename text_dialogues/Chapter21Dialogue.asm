@@ -39,7 +39,7 @@ ch21churchlinoan
 
 .byte Left_slot
 .byte ScrollText
-.text "I take it you're with Prince Leif?"
+.text "...I take it you're with Prince Leif?"
 .byte NewLine
 .text "I saw you fighting together outside,"
 .byte NewLine
@@ -53,11 +53,11 @@ ch21churchlinoan
 
 .byte Left_slot
 .byte ScrollText
-.text "Mm..."
+.text "Hm..."
 .byte NewLine
-.text "It seems the blood of the crusaders"
+.text "It seems one with the blood of the crusaders"
 .byte NewLine
-.text "is drawn to conflict..."
+.text "cannot shroud themselves so easily..."
 .byte WaitForA
 
 .byte Right_slot
@@ -358,7 +358,7 @@ ch21opening2
 .text "it controls the inland route to Munster."
 .byte WaitForA
 
-;.byte EndText
+.byte EndText
 
 
 ch21opening3dermott
@@ -527,13 +527,14 @@ ch21prisoners
 
 ch21wm1
 
+.text "By the time "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $090E ;y then x
-.text "By the time Leif had finished"
+.text "Leif had finished the fighting in"
 .byte NewLine
-.text "fighting in Leonster and departed"
+.text "Leonster and departed"
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -547,7 +548,7 @@ ch21wm2
 
 .text "for Ulster, the city had already fallen to the"
 .byte NewLine
-.text "Isaachian Liberation Army led by Lord Seliph."
+.text "Isaachian Liberation Army led by Seliph."
 .byte WaitForA
 .byte ScrollText
 
@@ -556,13 +557,14 @@ ch21wm2
 
 ch21wm3
 
-.text "However, the head of House Friege,"
+.text "However, the head of House Friege, King "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $017C ;blume
 .word $0407 ;y then x
+.text "Bloom,"
 .byte NewLine
-.text "King Bloom, had escaped to Connaught."
+.text "had escaped to Connaught."
 .byte WaitForA
 .word ClearPortraitalt
 .long $82937A
@@ -574,27 +576,28 @@ ch21wm3
 
 ch21wm4
 
-.text "In the now-liberated Ulster,"
+.text "In the now-liberated Ulster, "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0A12 ;y then x
-.text " Leif finally met"
+.text "Leif finally met his"
 .byte NewLine
-.text "his cousin,"
+.text "cousin,"
 .byte WaitForA
-.text " a man who would be"
+.byte ScrollText
+.text "a man who would be his friend and ally for the"
 .byte NewLine
-.text "his friend and ally for the rest of his days:"
+.text "rest of his days:"
 .byte WaitForA
+.byte ScrollText
+.text "the “Scion of Light” and lord of House Chalphy,"
+.byte NewLine
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $003E ;scerlisph
 .word $0A07 ;y then x
-.byte NewLine
-.text "the “Scion of Light” and"
-.byte NewLine
-.text "lord of House Chalphy, Seliph..."
+.text "Seliph..."
 .byte WaitForA
 
 .byte EndText

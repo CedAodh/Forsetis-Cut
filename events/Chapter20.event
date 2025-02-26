@@ -20,10 +20,10 @@ eventChapter20Events ; FD/D942
 			TEST_FLAG_SET $02
 			CMP_WORD_RANGE wCurrentTurn, 16, $FFFF
 		END_DEFINITION
-		EVENT $00, _BharatRemoveImmortality
-			CMP_WORD wCurrentPhase, NPC
-			CMP_WORD wCurrentTurn, 3
-		END_DEFINITION
+		;EVENT $00, _BharatRemoveImmortality
+		;	CMP_WORD wCurrentPhase, NPC
+		;	CMP_WORD wCurrentTurn, 3
+		;END_DEFINITION
 		EVENT $00, _Turn3Reinforcements
 			CMP_WORD wCurrentPhase, NPC
 			CMP_WORD wCurrentTurn, 2
@@ -70,9 +70,6 @@ eventChapter20Events ; FD/D942
 	END_DEFINITION_ARRAY
 
 	_TalkEventDefinitions ; FD/DA3E
-		EVENT $07, _ConomorXavierTalk
-			CHECK_CHARS2 Conomor, Xavier
-		END_DEFINITION
 		EVENT $08, _OlwenBharatTalk
 			CHECK_CHARS2 Olwen, Bharat
 		END_DEFINITION
@@ -215,7 +212,7 @@ eventChapter20Events ; FD/D942
 			CHECK_SINGLE Bharat
 		END_DEFINITION
 		EVENT $0B, eventBattleQuoteDummyEvent
-			CHECK_SINGLE Orvis
+			CHECK_SINGLE Speer
 		END_DEFINITION
 	END_DEFINITION_ARRAY
 
@@ -647,6 +644,8 @@ eventChapter20Events ; FD/D942
 	END1
 
 	_Turn3Reinforcements ; FD/E0E1
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn3ReinforcementsCameraCoordinates
 		YIELD
 
@@ -658,6 +657,8 @@ eventChapter20Events ; FD/D942
 	END2
 
 	_Turn5Reinforcements ; FD/E0EE
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn5ReinforcementsCameraCoordinates
 		YIELD
 
@@ -669,6 +670,8 @@ eventChapter20Events ; FD/D942
 	END2
 
 	_Turn7Reinforcements ; FD/E0FB
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn7ReinforcementsCameraCoordinates
 		YIELD
 
@@ -680,6 +683,8 @@ eventChapter20Events ; FD/D942
 	END2
 
 	_Turn9Reinforcements ; FD/E108
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn9ReinforcementsCameraCoordinates
 		YIELD
 
@@ -691,6 +696,8 @@ eventChapter20Events ; FD/D942
 	END2
 
 	_Turn11Reinforcements ; FD/E115
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn11ReinforcementsCameraCoordinates
 		YIELD
 
@@ -702,7 +709,7 @@ eventChapter20Events ; FD/D942
 	END2
 
 	_Turn13Reinforcements ; FD/E122
-		PLAY_SOUND_WORD $E0
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
 		YIELD
 
@@ -740,6 +747,8 @@ eventChapter20Events ; FD/D942
 	END2
 
 	_Turn14Reinforcements ; FD/E12F
+		PLAY_SOUND_WORD $00E8
+		
 		SCROLL_CAMERA_ADDRESS eventChapter20Data._Turn14ReinforcementsCameraCoordinates
 		YIELD
 
@@ -750,20 +759,8 @@ eventChapter20Events ; FD/D942
 		YIELD_UNK
 	END2
 	
-	_ConomorXavierTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE conomorxavier
-		YIELD
-	END2
-	
 	_OlwenBharatTalk
-		PAUSE_SKIPPABLE 32
-		YIELD
-		
-		DIALOGUE olwenbharat
-		YIELD
+		macroDialogueHouse olwenbharat
 	END2
 	
 	_MartyOsianTalk
@@ -824,7 +821,7 @@ eventChapter20Events ; FD/D942
 		
 		DIALOGUE martyosian2
 		YIELD
-	END1
+	END2
 
 	_BharatCharge ; FD/E13C
 		STORE_WORD wEventEngineCharacterTarget, Bharat
@@ -868,12 +865,12 @@ eventChapter20Events ; FD/D942
 		CALL_ASM_LOOP rlASMCSetCharacterDataByte, $0000
 	END2
 
-	_BharatRemoveImmortality ; FD/E1FD
-		STORE_WORD wEventEngineCharacterTarget, Bharat
-		STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
-		STORE_WORD wEventEngineParameter2, Skill2Anchor | (Skill3Immortal << 8)
-		CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
-	END2
+	;_BharatRemoveImmortality ; FD/E1FD
+	;	STORE_WORD wEventEngineCharacterTarget, Bharat
+	;	STORE_WORD wEventEngineParameter1, structCharacterDataRAM.Skills2
+	;	STORE_WORD wEventEngineParameter2, Skill3Immortal << 8
+	;	CALL_ASM_LOOP rlASMCUnsetBitsCharacterDataWord, $0000
+	;END2
 
 	_EnemiesFlee ; FD/E216
 		STORE_WORD wEventEngineCharacterStructParameter, structCharacterDataRAM.Leader

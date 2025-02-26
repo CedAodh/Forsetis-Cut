@@ -41,7 +41,7 @@ weaponrankblank
 * = $0364D5
 .logical lorom($0364D5, 1)
 
-.text "Too [many ite[ms. "	; Character limit: 22
+.text "Too [many ite[ms"	; Character limit: 22
 .word $0000
 
 .here
@@ -49,7 +49,7 @@ weaponrankblank
 * = $0364FD
 .logical lorom($0364FD, 1)
 
-.text "Pick an ite[m to"	; Character limit: 24
+.text "Pick an ite[m to send "	; Character limit: 24
 .word $0000
 
 .here
@@ -57,7 +57,7 @@ weaponrankblank
 * = $03652B
 .logical lorom($03652B, 1)
 
-.text "send to Supply"	; Character limit: 16
+.text "to the Supply "	; Character limit: 16
 .word $0000
 
 .here
@@ -118,9 +118,9 @@ enemyesc
 * = $0265DC
 .logical lorom($0265DC, 1)
 
+POPUP_DRAW_TEXT menutextItemObtained
 POPUP_DRAW_ITEM_ICON $7EF79B
 POPUP_DRAW_ITEM_NAME $7EF79B
-POPUP_DRAW_TEXT menutextItemObtained
 POPUP_END
 
 .here
@@ -129,9 +129,9 @@ POPUP_END
 * = $01F7B1
 .logical lorom($01F7B1, 1)
 
+POPUP_DRAW_TEXT menutextItemStolenStealCommand
 POPUP_DRAW_ITEM_ICON $7EF79E
 POPUP_DRAW_ITEM_NAME $7EF79E
-POPUP_DRAW_TEXT menutextItemStolenStealCommand
 POPUP_END
 
 .here
@@ -139,9 +139,9 @@ POPUP_END
 * = $0A164A
 .logical lorom($0A164A, 1)
 
+POPUP_DRAW_TEXT menutextItemStolenThiefStaff
 POPUP_DRAW_ITEM_ICON $7EF79B
 POPUP_DRAW_ITEM_NAME $7EF79B
-POPUP_DRAW_TEXT menutextItemStolenThiefStaff
 POPUP_END
 
 .here
@@ -150,9 +150,9 @@ POPUP_END
 * = $01F8B5
 .logical lorom($01F8B5, 1)
 
+POPUP_DRAW_TEXT menutextItemPurchased
 POPUP_DRAW_ITEM_ICON $7EF79E
 POPUP_DRAW_ITEM_NAME $7EF79E
-POPUP_DRAW_TEXT menutextItemPurchased
 POPUP_END
 
 .here
@@ -185,7 +185,7 @@ POPUP_END
 .logical lorom($0265E9, 1)
 
 menutextItemObtained
-.text " received "
+.text "Got "
 .word $0000
 
 .here
@@ -197,7 +197,7 @@ menutextItemObtained
 .logical lorom($0A1657, 1)
 
 menutextItemStolenStealCommand
-.text " ]was stolen"
+.text "Stole "
 .word $0000
 
 .here
@@ -206,7 +206,7 @@ menutextItemStolenStealCommand
 .logical lorom($01F7BE, 1)
 
 menutextItemStolenThiefStaff
-.text " ]was stolen"
+.text "Stole "
 .word $0000
 
 .here
@@ -218,7 +218,7 @@ menutextItemStolenThiefStaff
 .logical lorom($01F8C2, 1)
 
 menutextItemPurchased
-.text " purchased"
+.text "Purchased "
 .word $0000
 
 .here
@@ -230,7 +230,7 @@ menutextItemPurchased
 .logical lorom($01F86A, 1)
 
 menutextItemExchanged
-.text " ]was taken "
+.text " ]was traded"
 .word $0000
 
 .here
@@ -354,7 +354,7 @@ PureWaterText
 * = $475730
 .logical lorom($475730, 1)
 PoisonText
-.text "Poisoned"
+.text "Poison"
 .word $0000
 
 .here

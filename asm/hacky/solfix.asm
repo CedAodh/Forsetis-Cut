@@ -39,7 +39,7 @@ rlActionStructRoundTryProcSolReplacement
         ; None
 
         lda structActionStructEntry.Skills2,b,x
-        bit #pack([None, Skill3Sol])
+        bit #$0800
         beq _End
 
           lda structActionStructEntry.Skill,b,x
@@ -68,7 +68,15 @@ rlActionStructRoundTryProcSolReplacement
         sta wActionStructRoundAttackBitfield
 
         _End
+		
         rtl
 
         .databank 0
+.endlogical
+
+* := $01D8B2
+.logical $83D8B2
+
+    .byte $EA, $EA, $EA, $EA, $EA, $EA, $EA, $EA ; Stops Sol and Luna from negating Pavise
+	
 .endlogical

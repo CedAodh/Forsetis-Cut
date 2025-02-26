@@ -17,7 +17,7 @@ ShannamChapter15DeathQuote,Shannam,Chapter15,FlagShannamDead,shannamdeath1
 ShannamChapter16BDeathQuote,Shannam,Chapter16B,FlagShannamDead,shannamdeath1
 ConomorChapter16ADeathQuote,Conomor,Chapter16A,FlagConomorDead,ch16Aconomordeath
 AmaldaChapter17BDeathQuote,Amalda,Chapter17B,FlagAmaldaDead,amaldadeath
-SaraChapter17BDeathQuote,Sara,Chapter17B,None,ch17Bsarahdeath
+IshtarDeathQuote,Ishtar,AnyChapter,FlagIshtarDead,ishtardeath
 ConomorChapter19DeathQuote,Conomor,Chapter19,None,ch16Aconomordeath
 AmaldaChapter19DeathQuote,Amalda,Chapter19,None,amaldadeath
 WolfeChapter19DeathQuote,Wolfe,AnyChapter,FlagNoHelpFromOltoph,ch19wolfedeath
@@ -33,7 +33,7 @@ RalphDeathQuote,Ralph,AnyChapter,None,ralphdeath
 MartyDeathQuote,Marty,AnyChapter,None,martydeath
 RonanDeathQuote,Ronan,AnyChapter,None,ronandeath
 MirandaDeathQuote,Miranda,AnyChapter,None,mirandadeath
-SafyDeathQuote,Safy,AnyChapter,FlagSafyGoneForGood,safiedeath
+SafyDeathQuote,Safy,AnyChapter,None,safiedeath
 LaraDeathQuote,Lara,AnyChapter,None,laradeath
 BrightonDeathQuote,Brighton,AnyChapter,None,brightondeath
 FergusDeathQuote,Fergus,AnyChapter,None,fergusdeath
@@ -53,7 +53,7 @@ RobertDeathQuote,Robert,AnyChapter,None,robertdeath
 FredDeathQuote,Fred,AnyChapter,None,freddeath
 OlwenDeathQuote,Olwen,AnyChapter,None,olwendeath
 CedChp23DeathQuote,CedChp23,AnyChapter,None,ceddeath
-LifisDeathQuote1,Lifis,AnyChapter,FlagLifisGoneForGood,lithisdeath
+LifisDeathQuote1,Lifis,AnyChapter,None,lithisdeath
 KarinDeathQuote,Karin,AnyChapter,None,karindeath
 DeanDeathQuote,Dean,AnyChapter,None,deandeath
 ShannamDeathQuote,Shannam,AnyChapter,None,shannamdeath
@@ -71,7 +71,7 @@ ConomorDeathQuote,Conomor,AnyChapter,None,ch16Aconomordeath
 HomerDeathQuote,Homer,AnyChapter,None,homerdeath
 DiarmuidDeathQuote,Diarmuid,AnyChapter,None,dermottdeath
 SaraDeathQuote,Sara,AnyChapter,None,sarahdeath
-SaiasDeathQuote,Saias,AnyChapter,None,saiasdeath
+SaiasDeathQuote,Saias,AnyChapter,FlagSaiasDead,saiasdeath
 GalzusDeathQuote,Galzus,AnyChapter,None,galzusdeath
 ShivaDeathQuote,Shiva,AnyChapter,None,shivadeath
 AsaelloDeathQuote,Asaello,AnyChapter,None,asaellodeath
@@ -84,7 +84,7 @@ EisenhauDeathQuote,Eisenhau,AnyChapter,None,eisenaudeath
 RumaighDeathQuote,Rumaigh,AnyChapter,None,rumaighdeath
 GomezDeathQuote,Gomez,AnyChapter,None,gomezdeath
 MerlochDeathQuote,Merloch,AnyChapter,None,merlochdeath
-LargoDeathQuote,Largo,AnyChapter,$7 ,largodeath
+LargoDeathQuote,Largo,AnyChapter,$07,largodeath
 OltophDeathQuote,Oltoph,AnyChapter,FlagNoHelpFromOltoph,oltophdeath
 ColhoDeathQuote,Colho,AnyChapter,None,colhodeath
 LisztDeathQuote,Liszt,AnyChapter,None,lisztdeath
@@ -132,5 +132,5 @@ SpeerDeathQuote,Speer,AnyChapter,None,speerdeath
 RilkeDeathQuote,Rilke,AnyChapter,None,rilkedeath
 OrvisDeathQuote,Orvis,AnyChapter,None,orvisdeath
 UlsterCavalier2Chapter16ADeathQuote,UlsterCavalier2,Chapter16A,$0E,None
-LeonsterSoldierChapter18DeathQuote,LeonsterSoldier,Chapter18,$9 ,None
+LeonsterSoldierChapter18DeathQuote,LeonsterSoldier,Chapter18,$09,None
 DancerEnemyChapter12xDeathQuote,DancerEnemy,Chapter12x,$0E,None

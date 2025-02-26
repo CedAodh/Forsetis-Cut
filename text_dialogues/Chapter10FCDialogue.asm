@@ -158,11 +158,11 @@ ballisticianhouse
 .text "Course not! They got it set up on a rig!"
 .byte WaitForA
 .byte ScrollText
-.text "Here, I'll give you this to help you fight your"
+.text "And here, take this. I know quite a bit about"
 .byte NewLine
-.text "way over, then you can examine closely an' see"
+.text "ordinary, handheld weapons too. Read up on it,"
 .byte NewLine
-.text "for yourself."
+.text "and it'll surely accelerate your proficiency."
 .byte WaitForA
 
 .byte EndText
@@ -218,7 +218,7 @@ shouldleifmaketherounds
 .byte NewLine
 .text "     Yes, I suppose I do."
 .byte NewLine
-.text "     No, I must focus on making our next move."
+.text "     No, I must focus on our next move."
 .word $2E00
 .long $8CBBCC
 

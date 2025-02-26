@@ -13,40 +13,38 @@ ch4xop1
 .byte Right_slot
 .text "Think of it the way Raydrik would: would you"
 .byte NewLine
-.text "send a convoy all the way to Belhalla with"
+.text "send a convoy all the way to Belhalla with only"
 .byte NewLine
-.text "only three or four children?"
+.text "three or four children?"
 .byte WaitForA
 .byte ScrollText
-.text "Or would you wait until you have"
+.text "Or would you wait until you have plenty to show"
 .byte NewLine
-.text "plenty to show for yourself?"
-.byte NewLine
-.text "There's still time, Asbel."
+.text "for yourself? There's still time, Asbel."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Then we can send them all back home!"
+.text "Then we can get them all back home!"
 .byte NewLine
 .text "Their parents must be so worried."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Focus, Asbel. There's too many guards about"
+.text "I still need you to focus, Asbel. There's too"
 .byte NewLine
-.text "to celebrate just yet."
+.text "many guards about to celebrate just yet."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Right, right..."
+.text "Yes, sir."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Listen closely: after you've rescued the children,"
+.text "Listen closely: after we've rescued the children,"
 .byte NewLine
 .text "I want you to rejoin Brighton and seek out"
 .byte NewLine
@@ -70,40 +68,42 @@ ch4xop1
 
 .byte Left_slot
 .byte ScrollText
-.text "Lord Leif was a dear friend of mine, you see."
+.text "Lord Leif is a very important person to me."
 .byte NewLine
 .text "We got separated in Tarrah, years ago,"
 .byte NewLine
 .text "and I've been looking for him ever since."
 .byte WaitForA
 .byte ScrollText
-.text "For three whole years, I've been searching..."
+.text "It's been three years..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Then look alive—today is the day"
+.text "Then look alive—today is the day you've been"
 .byte NewLine
-.text "you've been waiting for."
+.text "waiting for."
 .byte NewLine
 .text "Find the prince, and escape Munster with him."
 .byte WaitForA
 .byte ScrollText
-.text "I've ordered all Magi outside the castle to"
+.text "I've ordered all Magi to vacate the castle,"
 .byte NewLine
-.text "flee Munster as well. We'll be sitting ducks"
+.text "as well. We'll be sitting ducks if we remain"
 .byte NewLine
-.text "if we stay here much longer..."
+.text "here much longer..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
+.text "What will you do, then, Lord Ced?"
+.byte NewLine
 .text "Are you coming with us?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I...considered it, but I can't."
+.text "I...considered it, but I cannot."
 .byte NewLine
 .text "There's many villagers and townsfolk left in"
 .byte NewLine
@@ -112,9 +112,9 @@ ch4xop1
 
 .byte Left_slot
 .byte ScrollText
-.text "You've spent this whole time teaching me,"
+.text "You've spent all this time teaching me, and I"
 .byte NewLine
-.text "and I can't even help you in return?"
+.text "can't even use it to help you in return?"
 .byte NewLine
 .text "Some apprentice I turned out to be..."
 .byte WaitForA
@@ -126,16 +126,16 @@ ch4xop1
 .text "It's no fault of yours."
 .byte WaitForA
 .byte ScrollText
-.text "Besides, all I've really done for you is help"
+.text "Besides, all I've really done for you is help you"
 .byte NewLine
-.text "you master your family's Grafcalibur spell."
+.text "to master your family's Grafcalibur spell."
 .byte NewLine
 .text "Do us proud, and use it to protect Prince Leif."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Lord Ced, will... Will we see each other again?"
+.text "...Lord Ced, we'll meet again someday, won't we?"
 .byte WaitForA
 
 .byte Right_slot
@@ -147,18 +147,16 @@ ch4xop1
 .text "and Thracia will breathe free again."
 .byte WaitForA
 .byte ScrollText
-.text "...We will see each other again, Asbel."
+.text "...We will meet again, Asbel."
 .byte NewLine
 .text "Right here in Munster."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "Hmm..."
+.text "In Munster..."
 .byte NewLine
-.text "Then all right. Munster it is!"
-.byte NewLine
-.text "Don't you forget it, Lord Ced!"
+.text "Then all right. Don't you forget it, Lord Ced!"
 .byte WaitForA
 
 .byte EndText
@@ -168,13 +166,13 @@ ch4xop2
 .byte Right_slot
 .word LoadPortrait
 .word girl_portrait
-.text "*sniffle* *sniffle*"
+.text "*sniffle, sniffle*"
 .byte WaitForA
 
 .byte Left_slot
 .word LoadPortrait
 .word boy_portrait
-.text "C'mon, enough cryin' already..."
+.text "C'mon, enough crying already..."
 .byte WaitForA
 
 .byte Right_slot
@@ -186,21 +184,20 @@ ch4xop2
 
 .byte Left_slot
 .byte ScrollText
-.text "Don't make the soldiers mad at us again."
+.text "Don't make the soldiers mad at you again."
 .byte NewLine
-.text "They'll yell at us to shut up like last time..."
+.text "They'll yell at you like before..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "I don't care if they get mad!"
-.byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "If I get caught crying, an' they get angry..."
 .byte NewLine
 .text "maybe they'll jus' send me home..."
 .byte WaitForA
-.byte ScrollText
+.byte NewLine
 .text "I jus' wanna go home..."
 .byte WaitForA
 
@@ -219,29 +216,31 @@ ch4xasbelleiftalk
 
 .byte Right_slot
 .byte NewLine
-.text "After all these years!"
+.text "We finally meet again!"
 .byte NewLine
 .text "It's me, Asbel!"
 .byte WaitForA
 
 .byte Left_slot
-.text "Asbel?! What in the world are you doing here?"
+.text "Asbel?!"
 .byte NewLine
-.text "Why aren't you still in Tarrah?"
+.text "What in the world are you doing here?"
+.byte NewLine
+.text "Why aren't you in Tarrah?"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "I set off after you just as soon as we"
+.text "I set off after you just as soon as you left the"
 .byte NewLine
-.text "got separated! Not like it did much..."
+.text "city! Not like it did much..."
 .byte NewLine
 .text "I couldn't figure out where you had gone."
 .byte WaitForA
 .byte ScrollText
-.text "For the last half-year now, I've been"
+.text "For the last half-year now,"
 .byte NewLine
-.text "sticking around Munster."
+.text "I've been here in Munster."
 .byte WaitForA
 
 .byte Left_slot
@@ -274,16 +273,16 @@ ch4xasbelleiftalk
 .byte ScrollText
 .text "Tarrah had been surrounded by the empire."
 .byte NewLine
-.text "I had... I had prepared myself for the"
+.text "I had... I had prepared myself for the end—"
 .byte NewLine
-.text "very real possibility of dying."
+.text "for death."
 .byte WaitForA
 .byte ScrollText
-.text "When I fled, I never imagined I would make it"
+.text "Making it out alive never even crossed my mind."
 .byte NewLine
-.text "out alive. I didn't want to drag you down"
+.text "I didn't want to drag you down with me,"
 .byte NewLine
-.text "with me, so I left you out of it."
+.text "so I left you out of it."
 .byte WaitForA
 
 .byte Right_slot
@@ -300,9 +299,9 @@ ch4xasbelleiftalk
 .byte ScrollText
 .text "I've spent all these years with those words"
 .byte NewLine
-.text "etched into my mind—and I chose to believe"
+.text "etched into my mind—and I chose to believe in"
 .byte NewLine
-.text "in them."
+.text "them."
 .byte WaitForA
 
 .byte Left_slot
@@ -330,9 +329,9 @@ ch4xasbelleiftalk
 .byte ScrollText
 .text "I know you will."
 .byte NewLine
-.text "Now, back to my magic, allow me to introduce"
+.text "Now, back to my magic, allow me to introduce to"
 .byte NewLine
-.text "to you my most recent: Grafcalibur!"
+.text "you my most recent: Grafcalibur!"
 .byte WaitForA
 
 .byte EndText
@@ -348,13 +347,13 @@ ch4xcedkarintalk
 .word karin_portrait
 .text "Lord Ced!"
 .byte NewLine
-.text "Oh, Lord Ced, after all this time..."
+.text "Ah, Lord Ced, it is you!"
 .byte WaitForA
 
 .byte Right_slot
-.text "Yes? Wait... Karin?"
+.text "Yes?"
 .byte NewLine
-.text "Has something happened?"
+.text "Wait... Karin? Has something happened?"
 .byte NewLine
 .text "Why have you left Silesse?"
 .byte WaitForA
@@ -388,7 +387,9 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "W-well, to tell the truth... Oh, gods..."
+.text "W-well, to tell the truth..."
+.byte NewLine
+.text "Oh, gods..."
 .byte WaitForA
 .byte ScrollText
 .text "......"
@@ -398,25 +399,25 @@ ch4xcedkarintalk
 .byte ScrollText
 .text "Karin, if you have something to tell me,"
 .byte NewLine
-.text "speak quickly and to the point."
+.text "please say it clearly."
 .byte NewLine
-.text "This is no time for weakness."
+.text "Crying is not enough to make me understand."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
 .text "Y-you're right..."
 .byte NewLine
-.text "I... I regret to inform you that Her Majesty"
+.text "I... I regret to inform you that Her Majesty the"
 .byte NewLine
-.text "the queen has... She, um..."
+.text "queen has... She, um..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "Mother?!"
 .byte NewLine
-.text "No, she can't have...!"
+.text "No... She can't have...!"
 .byte WaitForA
 
 .byte Left_slot
@@ -433,16 +434,20 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "Lord Ced... I'm sorry. You shouldn't have"
+.text "Lord Ced... I'm sorry."
 .byte NewLine
-.text "found out like this. Here, of all places..."
+.text "You shouldn't have found out like this."
+.byte NewLine
+.text "Here, of all places..."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Does it matter? I was too late... Father..."
+.text "Does it matter? I was too late..."
 .byte NewLine
-.text "I wanted them to see each other one last time..."
+.text "Father... I wanted them to see each other just"
+.byte NewLine
+.text "one last time..."
 .byte WaitForA
 
 .byte Left_slot
@@ -454,7 +459,9 @@ ch4xcedkarintalk
 
 .byte Right_slot
 .byte ScrollText
-.text "Fee... How is she? Is she all right?"
+.text "Fee..."
+.byte NewLine
+.text "How is she? Is she all right?"
 .byte WaitForA
 
 .byte Left_slot
@@ -469,51 +476,44 @@ ch4xcedkarintalk
 .text "She cries till her eyes dry up."
 .byte WaitForA
 .byte ScrollText
-.text "Lord Ced, with respect, you've done her a"
+.text "Lord Ced, with respect, you've done her a great"
 .byte NewLine
-.text "great cruelty, running away like you did."
+.text "cruelty, running away like you did."
 .byte WaitForA
 .byte ScrollText
-.text "Lady Fee isn't much more than a kid, and you've"
+.text "Lady Fee is barely of age, and you've gone and"
 .byte NewLine
-.text "gone and forced the burden of ruling Silesse"
-.byte NewLine
-.text "onto her."
+.text "forced the burden of ruling Silesse onto her!"
 .byte WaitForA
 .byte ScrollText
-.text "This heroic image you've painted of yourself"
+.text "You're the heir to Forseti's legacy, good for you,"
+.byte NewLine
+.text "but this heroic image you've painted of yourself"
 .byte NewLine
 .text "has gone to your head!"
 .byte WaitForA
 .byte ScrollText
-.text "You're the heir to Forseti's legacy, good for"
+.text "Think about what happened!"
 .byte NewLine
-.text "you, but you up and walked out on your"
+.text "You ALSO abandoned your mother and sister!"
 .byte NewLine
-.text "mother and sister!"
-.byte WaitForA
-.byte ScrollText
-.text "Does that sound like what a hero would do?"
-.byte NewLine
-.text "Does that even sound like what a real prince"
-.byte NewLine
-.text "would do?!"
+.text "How heroic does that sound?!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "Karin, I... You're right, of course, but..."
+.text "Karin, I... You're right, of course..."
 .byte NewLine
-.text "But Father was the only one who could"
+.text "But Father was the only one who could cure"
 .byte NewLine
-.text "cure Mother's illness!"
+.text "Mother's illness!"
 .byte WaitForA
 .byte ScrollText
 .text "I couldn't do her any good waiting at her side!"
 .byte NewLine
-.text "Was I to just sit there and watch her"
+.text "Was I to just sit there and watch her waste"
 .byte NewLine
-.text "waste away?!"
+.text "away?!"
 .byte WaitForA
 .byte ScrollText
 .text "So I...I went to find Father,"
@@ -523,18 +523,18 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "Then why are you leading some rebel group in"
+.text "Then why are you leading some resistance group"
 .byte NewLine
-.text "Munster?!"
+.text "in Munster?!"
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
 .text "I heard tell that my father had been here in"
 .byte NewLine
-.text "Munster until half a year ago. I came here"
+.text "Munster until half a year ago. I came here to"
 .byte NewLine
-.text "to pick up the trail, but it had gone cold."
+.text "pick up the trail, but it had gone cold."
 .byte WaitForA
 .byte ScrollText
 .text "As I investigated, I discovered just how deeply"
@@ -558,25 +558,26 @@ ch4xcedkarintalk
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm sorry, Karin, but I need more time."
+.text "I should be the one apologizing, Karin..."
 .byte NewLine
+.text "because I must ask you for more time."
+.byte WaitForA
+.byte ScrollText
 .text "Once I drive that menace Raydrik from Munster,"
 .byte NewLine
 .text "I'll gladly return to Silesse."
 .byte WaitForA
 .byte ScrollText
-.text "By my estimation, that should only take"
+.text "I need at least half a year."
 .byte NewLine
-.text "a half-year at most."
+.text "I will not be long after that."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "...You're fixing to overthrow that creep, huh?"
+.text "You're looking to overthrow that louse, huh?"
 .byte NewLine
-.text "Now that's a plan I can get behind!"
-.byte NewLine
-.text "Count me in—I'll stay here with you!"
+.text "I'll stay here with you, then."
 .byte WaitForA
 
 .byte Right_slot
@@ -590,14 +591,11 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "...That's a diplomatic way of saying"
+.text "...That's a diplomatic way of saying I would be a"
 .byte NewLine
-.text "I would be a burden."
-.byte WaitForA
-.byte ScrollText
-.text "We all have to start somewhere, you know!"
+.text "burden. We all have to start somewhere,"
 .byte NewLine
-.text "But if you really insist..."
+.text "you know! But if you really insist..."
 .byte WaitForA
 .byte ScrollText
 .text "All right, I'll make my way back to Silesse—"
@@ -623,9 +621,9 @@ ch4xcedkarintalk
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! Would you believe this is an heirloom"
+.text "Hah! Would you believe this is an heirloom of the"
 .byte NewLine
-.text "of the Silessian royal family?"
+.text "Silessian royal family?"
 .byte WaitForA
 .byte ScrollText
 .text "It's an ancient scroll, penned by my namesake—"
@@ -645,11 +643,9 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "Are you really trusting me with"
+.text "To me? Something so valuable?"
 .byte NewLine
-.text "something so valuable?"
-.byte NewLine
-.text "I... This is most unexpected!"
+.text "I'm afraid I can't accept..."
 .byte WaitForA
 
 .byte Right_slot
@@ -666,7 +662,7 @@ ch4xcedkarintalk
 
 .byte Left_slot
 .byte ScrollText
-.text "...Okay, but I'm only keeping it safe for you."
+.text "...Okay. But I'm only keeping it safe for you."
 .byte NewLine
 .text "You'll get it back the second you return to"
 .byte NewLine
@@ -677,7 +673,9 @@ ch4xcedkarintalk
 .byte ScrollText
 .text "Then the snowy banks of Silesse shall be"
 .byte NewLine
-.text "witness to our next meeting. Be well, Karin."
+.text "witness to our next meeting."
+.byte NewLine
+.text "Be well, Karin."
 .byte WaitForA
 
 .byte Left_slot
@@ -697,16 +695,16 @@ ch4xuppercell
 .text "I jus' wanna go home..."
 .byte WaitForA
 .byte ScrollText
-.text "*sniffle* *sniffle*"
+.text "*sniffle, sniffle*"
 .byte NewLine
 .text "H-how do I get home?"
 .byte NewLine
 .text "Uh-huh... The way to the right...?"
 .byte WaitForA
 .byte ScrollText
-.text "Then I'll run that way and won't stop"
+.text "Then I'll run that way and won't stop till I'm"
 .byte NewLine
-.text "till I'm back home...! Th-thank you..."
+.text "back home...! *sniffle* Th-thank you..."
 .byte WaitForA
 
 .byte EndText
@@ -719,9 +717,9 @@ ch4xlowercell
 .text "Huh? Can I go home to my papa now?"
 .byte WaitForA
 .byte ScrollText
-.text "...Oh, I can escape if I go down that passage"
+.text "...Oh, I can leave if I go down that way to the"
 .byte NewLine
-.text "to the right? Thank you! B-bless you!"
+.text "right? Thank you! B-bless you!"
 .byte WaitForA
 
 .byte EndText

@@ -8,6 +8,15 @@ eventChapter14xEvents ; FD/A1BC
 	END_DEFINITION_ARRAY
 
 	_TurnEventDefinitions ; FD/A1C9
+		EVENT $1E, eventMapDeathQuoteDummyEvent
+			RUN_ASM rlEliteModeCheckForFatigue
+			CMP_WORD wCurrentTurn, 20
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT FlagAlwaysZero, eventChapter1Events._FatigueIncrement
+			TEST_FLAG_SET $1E
+			CMP_WORD wCurrentPhase, Player
+		END_DEFINITION
 		EVENT $02, eventMapDeathQuoteDummyEvent
 			CHECK_DEAD Codha
 		END_DEFINITION
@@ -111,16 +120,16 @@ eventChapter14xEvents ; FD/A1BC
 			ROLL_RNG 10
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 1
+		EVENT $00, eventChapter18Events._MusicStopDontAsk
 			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD_RANGE wCurrentTurn, 1, 20
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
 			CMP_WORD wCurrentTurn, 2
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 4
+			CMP_WORD wCurrentTurn, 3
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
@@ -128,11 +137,15 @@ eventChapter14xEvents ; FD/A1BC
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
-			CMP_WORD wCurrentTurn, 7
+			CMP_WORD wCurrentTurn, 6
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 		EVENT $00, _VillagerSpawn
 			CMP_WORD wCurrentTurn, 8
+			CMP_WORD wCurrentPhase, NPC
+		END_DEFINITION
+		EVENT $00, _VillagerSpawn
+			CMP_WORD wCurrentTurn, 9
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -160,51 +173,51 @@ eventChapter14xEvents ; FD/A1BC
 	END_DEFINITION_ARRAY
 
 	_BeforeActionEventDefinitions ; FD/A410
-		EVENT $00, _Villager1Saved
+		EVENT $10, _Villager1Saved
 			CMP_WORD aSelectedCharacterBuffer.Character, TahraCivilian1
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT $00, _Villager2Saved
+		EVENT $11, _Villager2Saved
 			CMP_WORD aSelectedCharacterBuffer.Character, TahraCivilian2
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT $00, _Villager3Saved
+		EVENT $12, _Villager3Saved
 			CMP_WORD aSelectedCharacterBuffer.Character, TahraCivilian3
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT $00, _Villager4Saved
+		EVENT $13, _Villager4Saved
 			CMP_WORD aSelectedCharacterBuffer.Character, TahraCivilian4
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT $00, _Villager5Saved
+		EVENT $14, _Villager5Saved
 			CMP_WORD aSelectedCharacterBuffer.Character, TahraCivilian5
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT $00, _Villager6Saved
+		EVENT $15, _Villager6Saved
 			CMP_WORD aSelectedCharacterBuffer.Character, TahraCivilian6
 			CMP_WORD wCurrentPhase, NPC
 		END_DEFINITION
-		EVENT $00, _Villager1Saved
+		EVENT $10, _Villager1Saved
 			CMP_BITS $7E4F98, $0008
 			CHECK_CARRYING TahraCivilian1
 		END_DEFINITION
-		EVENT $00, _Villager2Saved
+		EVENT $11, _Villager2Saved
 			CMP_BITS $7E4F98, $0008
 			CHECK_CARRYING TahraCivilian2
 		END_DEFINITION
-		EVENT $00, _Villager3Saved
+		EVENT $12, _Villager3Saved
 			CMP_BITS $7E4F98, $0008
 			CHECK_CARRYING TahraCivilian3
 		END_DEFINITION
-		EVENT $00, _Villager4Saved
+		EVENT $13, _Villager4Saved
 			CMP_BITS $7E4F98, $0008
 			CHECK_CARRYING TahraCivilian4
 		END_DEFINITION
-		EVENT $00, _Villager5Saved
+		EVENT $14, _Villager5Saved
 			CMP_BITS $7E4F98, $0008
 			CHECK_CARRYING TahraCivilian5
 		END_DEFINITION
-		EVENT $00, _Villager6Saved
+		EVENT $15, _Villager6Saved
 			CMP_BITS $7E4F98, $0008
 			CHECK_CARRYING TahraCivilian6
 		END_DEFINITION
@@ -214,9 +227,9 @@ eventChapter14xEvents ; FD/A1BC
 		EVENT $00, _EndingEvent
 			TEST_FLAG_SET $0C
 		END_DEFINITION
-                EVENT $0E, _LewynEvent
-		macroEventConditionCheckCoords [3, 1]
+        EVENT $0E, _LewynEvent
 			CMP_WORD aSelectedCharacterBuffer.Character, Karin
+			macroEventConditionCheckCoordRanges [2, 1], [4, 3]
 			CMP_WORD wCurrentPhase, Player
 		END_DEFINITION
 	END_DEFINITION_ARRAY
@@ -234,118 +247,156 @@ eventChapter14xEvents ; FD/A1BC
 	END_DEFINITION_ARRAY
 
 	_PegasusLeft1Reinforcements ; FD/A4E1
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusLeft1Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusRight1Reinforcements ; FD/A4E8
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusRight1Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusLeft2Reinforcements ; FD/A4EF
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusLeft2Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusRight2Reinforcements ; FD/A4F6
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusRight2Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusLeft3Reinforcements ; FD/A4FD
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusLeft3Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusRight3Reinforcements ; FD/A504
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusRight3Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusLeft4Reinforcements ; FD/A50B
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusLeft4Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusRight4Reinforcements ; FD/A512
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusRight4Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusLeft5Reinforcements ; FD/A519
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusLeft5Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusRight5Reinforcements ; FD/A520
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusRight5Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusLeft6Reinforcements ; FD/A527
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusLeft6Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusRight6Reinforcements ; FD/A52E
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusRight6Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusLeft7Reinforcements ; FD/A535
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusLeft7Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_PegasusRight7Reinforcements ; FD/A53C
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._PegasusRight7Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_SorcererLeft2Reinforcements ; FD/A543
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._SorcererLeft2Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_SorcererLeft3Reinforcements ; FD/A54A
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._SorcererLeft3Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_SorcererRight1Reinforcements ; FD/A551
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._SorcererRight1Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_SorcererRight2Reinforcements ; FD/A558
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._SorcererRight2Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_SorcererLeft1Reinforcements ; FD/A55F
+		PLAY_SOUND_WORD $00E8
+		
 		LOAD2 eventChapter14xData._SorcererLeft1Group
 		WAIT_MOVE
 		YIELD
-	END2
+	END1
 
 	_VillagerSpawn ; FD/A566
 		EVENT_TEST_FLAG_SET $06
@@ -612,22 +663,26 @@ eventChapter14xEvents ; FD/A1BC
 		YIELD
 	END2
 
-        _LewynEvent
-	    PLAY_SOUND_WORD $00E0
+    _LewynEvent
+	    STORE_WORD wEventEngineParameter1, TurnStatusDead
+		CALL_ASM_LOOP rlASMCActiveUnitTestTurnStatus, $0000
+		JUMP_TRUE +
+		
+		PLAY_SOUND_WORD $00E0
 		PAUSE_SKIPPABLE 32
+		YIELD
+		
+		SET_MUSIC $32
 		YIELD
 
 		DIALOGUE leavenow
 		YIELD
 
-		STORE_WORD wEventEngineParameter1, TurnStatusHidden
-		CALL_ASM_LOOP rlASMCActiveUnitSetTurnStatus, $0000
-
 		macroGiveItemToActiveUnit LuckRing
+		CALL_ASM_LOOP rlASMCSaveActiveUnitData, $0000
 
-		STORE_WORD wEventEngineParameter1, TurnStatusHidden
-		CALL_ASM_LOOP rlASMCActiveUnitUnsetTurnStatus, $0000
-	END1
+		+
+	END2
 
 	_EndingEvent ; FD/A749
 		PLAY_SOUND_WORD $00E0
@@ -662,6 +717,84 @@ eventChapter14xEvents ; FD/A1BC
 		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
 
 		STORE_BYTE bBuf_INIDISP, $00
+		
+		EVENT_TEST_FLAG_SET $9B
+		JUMP_FALSE +
+		
+		EVENT_TEST_FLAG_SET $10
+		JUMP_FALSE _NoRingForYou
+		
+		+
+		
+		EVENT_TEST_FLAG_SET $9C
+		JUMP_FALSE +
+		
+		EVENT_TEST_FLAG_SET $11
+		JUMP_FALSE _NoRingForYou
+		
+		+
+		
+		EVENT_TEST_FLAG_SET $9D
+		JUMP_FALSE +
+		
+		EVENT_TEST_FLAG_SET $12
+		JUMP_FALSE _NoRingForYou
+		
+		+
+		
+		EVENT_TEST_FLAG_SET $9E
+		JUMP_FALSE +
+		
+		EVENT_TEST_FLAG_SET $13
+		JUMP_FALSE _NoRingForYou
+		
+		+
+		
+		EVENT_TEST_FLAG_SET $9F
+		JUMP_FALSE +
+		
+		EVENT_TEST_FLAG_SET $14
+		JUMP_FALSE _NoRingForYou
+		
+		+
+		
+		EVENT_TEST_FLAG_SET $A0
+		JUMP_FALSE +
+		
+		EVENT_TEST_FLAG_SET $15
+		JUMP_FALSE _NoRingForYou
+		
+		+
+
+		SET_MUSIC $41
+		YIELD
+		
+		STORE_WORD wEventEngineParameter1, 3
+		CALL_ASM_SKIPPABLE rlASMCDialogueWithBGSetup, <>rsUnknown80A23A
+
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown000302, $0009
+		CALL_ASM_LONG_SKIPPABLE rlASMCDialogueWithBGStart, knightringreceived
+		YIELD_UNK
+		YIELD_UNK
+		YIELD_UNK
+		YIELD
+
+		HALT_UNTIL_WORD_SKIPPABLE wUnknown0017E9, $0000
+		FADE_OUT $01
+		YIELD
+
+		CALL_ASM_LOOP rlASMCDialogueWithBGEndFadeOut, $0000
+
+		STORE_BYTE bBuf_INIDISP, $00
+		
+		STORE_WORD wEventEngineParameter1, KillerBallista
+		CALL_ASM_LOOP rlASMCSetRewardGivenItem, $0000
+		YIELD_UNK
+
+		CALL_ASM_LOOP rlASMCSetupGiveItemPopup, $0000
+		CALL_ASM_LOOP rlASMCWaitWhileGiveItemPopup, $0000
+		
+		_NoRingForYou
 
 		STORE_WORD wEventEngineCharacterTarget, Dean
 		CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000

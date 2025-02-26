@@ -219,6 +219,13 @@
 	aItemData .include "ITEMS/ItemData.casm"
 .here
 
+* = $18007A
+.logical $B0807A
+
+.byte $05, $00, $00, $00, $00, $00, $00, $00, $00, $00, $0A
+
+.here
+
 ;* = $1819D6
 ;.logical $B099D6
 * = $4C0B00

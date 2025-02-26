@@ -61,14 +61,14 @@ ch8martyosian
 
 .byte Left_slot
 .byte ScrollText
-.text "That isn't the problem here! C'mon, Marty!"
+.text "Wh— C'mon, Marty! Raiding villages?!"
 .byte NewLine
-.text "Raiding villages?! You think that's what Dagdar"
+.text "You think that's what Dagdar would want?"
 .byte NewLine
-.text "would want? Or the commander?"
+.text "Or Commander Eyvel?"
 .byte WaitForA
 .byte ScrollText
-.text "If you've seen fit to go against everything they"
+.text "If you've decided to go against everything they"
 .byte NewLine
 .text "taught you, then you're against me too!"
 .byte NewLine
@@ -98,7 +98,7 @@ ch8martyosian
 
 .byte Left_slot
 .byte ScrollText
-.text "Argh! You should be ashamed, Marty!"
+.text "Argh! Dammit, Marty!"
 .byte NewLine
 .text "Just man up and say it: are you with us,"
 .byte NewLine
@@ -111,7 +111,7 @@ ch8martyosian
 .byte NewLine
 .text "I'm with you! I'll help you fight the bandits!"
 .byte NewLine
-.text "Just...please stop shouting at me..."
+.text "Just...please stop yelling at me..."
 .byte WaitForA
 
 .byte EndText
@@ -162,7 +162,7 @@ ch8martyhalvan
 
 .byte Left_slot
 .byte ScrollText
-.text "“He made me do it!” Listen to yourself, Marty!"
+.text "“He made me do it...!” Listen to yourself, Marty!"
 .byte NewLine
 .text "It's not enough that you're raiding villages?"
 .byte NewLine
@@ -180,7 +180,7 @@ ch8martyhalvan
 .byte NewLine
 .text "Just tell me one thing: have you gone against"
 .byte NewLine
-.text "what Dagdar and the commander taught you?"
+.text "what Dagdar and Commander Eyvel taught you?"
 .byte WaitForA
 .byte NewLine
 .text "Are you just a common bandit now?"
@@ -285,11 +285,11 @@ ch8mastersealhouse
 .byte Right_slot
 .word LoadPortrait
 .word oldman_orange_portrait
-.text "While Dagdar was away helpin' the Freeblades,"
+.text "While Dagdar was away at Fiana Village, Gomez,"
 .byte NewLine
-.text "Gomez came along an' started rilin' up the"
+.text "his number two, started channeling his inner"
 .byte NewLine
-.text "bandits."
+.text "bandit again."
 .byte WaitForA
 .byte ScrollText
 .text "His mind's about as sharp as a broken javelin,"
@@ -299,7 +299,7 @@ ch8mastersealhouse
 .text "an' that's all that counts 'round these parts."
 .byte WaitForA
 .byte ScrollText
-.text "...Huh? Wait, yer lookin' to give that fool the"
+.text "...Huh? Wait, you're lookin' to give that fool the"
 .byte NewLine
 .text "thrashing he deserves?!"
 .byte WaitForA
@@ -311,11 +311,9 @@ ch8mastersealhouse
 .text "land for this village."
 .byte WaitForA
 .byte ScrollText
-.text "Take this here medal fer good luck."
+.text "Take this here medal for good luck."
 .byte NewLine
-.text "Earned it years ago fer “mare-it-orr-ee-yuss"
-.byte NewLine
-.text "service,” whatever that means."
+.text "Let it be a tribute to your valor on this day!"
 .byte WaitForA
 
 .byte EndText
@@ -458,9 +456,7 @@ ch8opening
 
 .byte Right_slot
 .byte ScrollText
-.text "I'm...not sure that I'm the liege you seek,"
-.byte NewLine
-.text "frankly."
+.text "I'm...not sure that I'm the liege you seek, frankly."
 .byte WaitForA
 .byte ScrollText
 .text "I don't know that I have power enough to"
@@ -541,9 +537,9 @@ ch8opening
 .text "matter of some urgency."
 .byte WaitForA
 .byte ScrollText
-.text "The bandits of this area—Dagdar's gang,"
+.text "The bandits of this area—Dagdar's gang, to be"
 .byte NewLine
-.text "precisely—are out in force, and seem to be"
+.text "precise—are out in force, and seem to be"
 .byte NewLine
 .text "pillaging a nearby village."
 .byte WaitForA
@@ -600,17 +596,23 @@ ch8leifrumaigh
 .text "in charge of these ruffians."
 .byte WaitForA
 .byte ScrollText
+.word ClearPortrait
+
+.byte Right_slot
+.text "Let me get a look at you..."
+.byte WaitForA
 
 .byte Left_slot
 .word LoadPortrait
 .word rumaigh_portrait
 
 .byte Right_slot
-.text "Let me get a look at you... Wait, you were in"
+.byte ScrollText
+.text "Wait, you were in charge of these brigands?"
 .byte NewLine
-.text "charge of these brigands? Why is the Thracian"
+.text "Why is the Thracian coat of arms on your"
 .byte NewLine
-.text "coat of arms on your breastplate, then?"
+.text "breastplate, then?"
 .byte WaitForA
 
 .byte Left_slot
@@ -653,7 +655,7 @@ ch8leifrumaigh
 .byte NewLine
 .text "If I have to kill you here, they'll be out on the"
 .byte NewLine
-.text "street. Is that what you want?"
+.text "street. Is that all right with you?"
 .byte WaitForA
 
 .byte Left_slot
@@ -682,9 +684,9 @@ ch8leifrumaigh
 
 .byte Right_slot
 .byte ScrollText
-.text "The lord of that manor, Dagdar, and his"
+.text "The lord of this manor, Dagdar, and his daughter"
 .byte NewLine
-.text "daughter Tanya—where are they?"
+.text "Tanya—where are they?"
 .byte WaitForA
 
 .byte Left_slot
@@ -755,7 +757,7 @@ leifdagdarreunite
 .text "to be rescuin' you!"
 .byte WaitForA
 .byte ScrollText
-.text "Sorry fer draggin' ya into my mess..."
+.text "Sorry for draggin' ya into my mess..."
 .byte NewLine
 .text "So, where's Eyvel?"
 .byte NewLine
@@ -785,9 +787,9 @@ leifdagdarreunite
 .byte ScrollText
 .text "Wh-what?! Dammit, Leif!"
 .byte NewLine
-.text "Are you a real prince or just a child?!"
+.text "Are you a real prince or just a kid?!"
 .byte NewLine
-.text "How the hell could ya just leave her?!"
+.text "The hell were you doing?!"
 .byte WaitForA
 
 .byte Left_slot
@@ -795,11 +797,6 @@ leifdagdarreunite
 .text "There was nothing I could do! I..."
 .byte NewLine
 .text "I wasn't strong enough, wasn't fast enough, I..."
-.byte WaitForA
-.byte ScrollText
-.text "With my meager strength, what good am I to"
-.byte NewLine
-.text "anyone? What should I do? What CAN I do?"
 .byte WaitForA
 
 .byte Right_slot
@@ -816,7 +813,7 @@ leifdagdarreunite
 
 .byte Right_slot
 .byte ScrollText
-.text "Dammit, Prince!"
+.text "Gah, enough already, Prince!"
 .byte NewLine
 .text "Yer puttin' too much of the blame on yerself."
 .byte WaitForA
@@ -828,7 +825,7 @@ leifdagdarreunite
 
 .byte Right_slot
 .byte ScrollText
-.text "Look, I'm sorry fer yellin' at you just now."
+.text "Look, I'm sorry for yellin' at you just now."
 .byte NewLine
 .text "I... I wasn't expecting things to go so wrong,"
 .byte NewLine
@@ -873,16 +870,18 @@ ch8leiftanya
 
 .byte Right_slot
 .word LoadPortrait
-.word leif_portrait2
+.word leif_portrait
 
 .byte Left_slot
 .word LoadPortrait
 .word tanya_portrait
-.text "L-Leif...!"
+.text "L-Lord Leif...!"
 .byte WaitForA
 
 .byte Right_slot
 .text "Tanya... It's good to see you again."
+.byte NewLine
+.text "I'm glad you're okay."
 .byte WaitForA
 
 .byte Left_slot
@@ -903,25 +902,25 @@ ch8leiftanya
 
 .byte Right_slot
 .byte ScrollText
-.text "I see..."
+.text "At least we stamped it out not too late..."
 .byte NewLine
-.text "Listen, Tanya, I'm...truly sorry for what"
+.text "Listen, Tanya, I'm...truly sorry for what happened"
 .byte NewLine
-.text "happened to your father..."
+.text "to Dagdar..."
 .byte WaitForA
 
 .byte Left_slot
 .byte ScrollText
-.text "No, it's okay..."
+.text "No, i-it's okay..."
 .byte NewLine
-.text "Dad did what he thought was right. If he died"
+.text "Dad did what he knew was right. If he died for"
 .byte NewLine
-.text "for something, he must've really believed in it."
+.text "something, he must've really believed in it."
 .byte WaitForA
 
 .byte Right_slot
 .byte ScrollText
-.text "What will you do now, Tanya?"
+.text "...What will you do now, Tanya?"
 .byte NewLine
 .text "If you don't have any other plans, perhaps..."
 .byte NewLine
@@ -932,7 +931,7 @@ ch8leiftanya
 .byte ScrollText
 .text "Is... Is that really all right with you,"
 .byte NewLine
-.text "having me tag along?"
+.text "having someone like me tag along?"
 .byte WaitForA
 
 .byte Right_slot
@@ -1011,25 +1010,27 @@ ch8closing
 ch8wm1
 
 .text "Reuniting with the remnants of the Fiana"
+.byte NewLine
+.text "Freeblades, "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
-.word $0101 ;leify-left
+.word $013F ;leify-left
 .word $0817 ;y then x
-.byte NewLine
-.text "Freeblades, Leif made his way west."
+.text "Leif made his way west."
 .byte WaitForA
 .byte ScrollText
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0316 ;callion
 .word $0810 ;y then x
-.text "Callion, the knight entrusted to him"
+.text "Callion, the knight entrusted to him by"
 .byte NewLine
-.text "by General Hannibal, "
+.text "General Hannibal, "
 .byte WaitForA
-.text "served as his guide"
+.byte ScrollText
+.text "served as his guide through the treacherous"
 .byte NewLine
-.text "through the treacherous mountain range."
+.text "mountain range."
 .byte WaitForA
 .byte ScrollText
 
@@ -1038,22 +1039,20 @@ ch8wm1
 
 ch8wm2
 
-.text "They now approached the foot"
-.byte NewLine
-.text "of Mount Violdrake, "
+.text "They now approached the foot of Mount Violdrake,"
 .byte WaitForA
+.byte ScrollText
+.text "home to "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word $0206 ;dagdar
 .word $0203 ;y then x
-.text "home to Dagdar"
-.byte NewLine
-.text "and his familiar "
+.text "Dagdar and his former group of "
 .word LoadPortraitalt_1
 .long LoadPortraitalt_2
 .word gomez_portrait
 .word $0A01 ;y then x
-.text "group of brigands..."
+.text "brigands..."
 .byte WaitForA
 
 .byte EndText
