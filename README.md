@@ -1,8 +1,11 @@
-# Lil' Manster Public Files
- Public build files for Lil' Manster, the Fire Emblem 5 translation and QoL patch.
+# Forseti's Cut Public Files
+ Public build files for Forseti's Cut, a Fire Emblem 5 redux/rebalance/reskin/more content patch.
 
-This folder is a more complete version of the [**Lil' Manster**](https://forums.serenesforest.net/index.php?/topic/90189-fe5-lil-manster-%E2%80%93-translation-and-quality-of-life-patch-for-thracia-776/#comments) project files, which allows you to translate Fire Emblem Thracia 776 into different languages, or make mods without having to start from scratch.
-While this may not be an "FE5 Builder", and the game's disassembly is still far from complete, I hope this will provide a useful base for your own creative endeavors.
+This project branches off the Lil' Manster translation and QOL [**Lil' Manster**](https://forums.serenesforest.net/index.php?/topic/90189-fe5-lil-manster-%E2%80%93-translation-and-quality-of-life-patch-for-thracia-776/#comments) patch.
+This page exists mostly for easier communication and source sharing between the development team, but can also help other viewers check out features of the mod directly from the source.
+Hopefully it'll also give a nice glimpse into the world of SNES FE passion project modding from an English community standpoint.
+It's more disorganized than FE5 dissassembly repositories out there, but it's also more than just a dissassembly and documentation. Mere ideas that became code and file can be found here.
+The rest of this file is just copied from the Lil' Manster public files' README.md
 
 -----------------
 Setup
