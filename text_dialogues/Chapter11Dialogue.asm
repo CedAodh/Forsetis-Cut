@@ -418,7 +418,7 @@ ch11opening1
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! You dare to draw your sword on me?!"
+.text "Ha! You dare to draw your sword on me?!"
 .byte NewLine
 .text "You feeble-minded wench!"
 .byte WaitForA

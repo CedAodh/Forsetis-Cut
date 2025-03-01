@@ -75,7 +75,7 @@ eventChapter10Data ; B1/D1EF
 	;	.byte 8, 7
 
 	_FredOlwenGroup ; B1/D49D
-		UNIT Fred, Enemy, [4, 13], [4, 13], Largo, [LightningSword, Longsword, Vulnerary], 1, False, [$00, $01, $02, $00]
+		UNIT Fred, Enemy, [4, 13], [4, 13], Largo, [LightningSword, Longsword, Vulnerary], 2, False, [$00, $01, $02, $00]
 		UNIT Olwen, Enemy, [3, 13], [3, 13], Largo, [DireThunder, Vulnerary], 1, False, [$00, $01, $02, $00]
 	UNIT
 
@@ -97,7 +97,7 @@ eventChapter10Data ; B1/D1EF
 	.byte $FF
 
 	_Armory ; B1/D4E4
-		SHOP [27, 5], [SlimSword, IronBlade, SteelSword, Hammer, SteelBow]
+		SHOP [27, 5], [SlimSword, IronBlade, SteelSword, SteelAxe, Hammer, SteelBow]
 
 	_Vendor ; B1/D4F6
 		SHOP [28, 4], [Thunder, Heal, Vulnerary, Torch]

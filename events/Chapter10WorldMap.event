@@ -104,6 +104,8 @@ eventChapter10WorldMapEvents ; E7/E844
 	STORE_BYTE bBuf_INIDISP, $00
 	JUMP_FALSE _NoInterim
 	
+	PLAY_SOUND_WORD $00F7
+	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
 	STORE_WORD wEventEngineCharacterTarget, Ronan

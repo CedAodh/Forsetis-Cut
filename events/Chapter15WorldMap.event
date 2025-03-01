@@ -142,6 +142,8 @@ eventChapter15WorldMapEvents ; E7/EC0F
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	PLAY_SOUND_WORD $00F7
+	
 	STORE_WORD wEventEngineCharacterTarget, Alba
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +

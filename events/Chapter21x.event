@@ -555,8 +555,8 @@ eventChapter21xEvents ; FD/E9EE
 
 		STORE_WORD wEventEngineParameter1, Warp
 		STORE_WORD wEventEngineParameter2, $0000
-		STORE_WORD wEventEngineCharacterStructParameter, Ishtar
-		STORE_WORD wEventEngineCharacterTarget, Julius
+		STORE_WORD wEventEngineCharacterStructParameter, Julius
+		STORE_WORD wEventEngineCharacterTarget, Ishtar
 		STORE_WORD wEventEngineXCoordinate, $00FF
 		STORE_WORD wEventEngineYCoordinate, $00FF
 		CALL_ASM_SKIPPABLE $9A8D4A, $0000
@@ -575,7 +575,7 @@ eventChapter21xEvents ; FD/E9EE
 		+
 		STORE_WORD wEventEngineParameter1, Rewarp
 		STORE_WORD wEventEngineParameter2, $0000
-		STORE_WORD wEventEngineCharacterStructParameter, Ishtar
+		STORE_WORD wEventEngineCharacterStructParameter, Julius
 		STORE_WORD wEventEngineCharacterTarget, $0000
 		STORE_WORD wEventEngineXCoordinate, $00FF
 		STORE_WORD wEventEngineYCoordinate, $00FF

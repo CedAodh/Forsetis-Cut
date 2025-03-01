@@ -30,8 +30,8 @@ eventChapter11Data ; B1/CEFC
 		UNIT FriegeSoldier2, Enemy, [8, 17], [8, 17], Kempf, [ShortLance], 8, False, [$02, $15, $00, $00]
 		UNIT FriegeArcher, Enemy, [6, 16], [6, 16], Kempf, [Longbow, KillerBow], 12, False, [$02, $15, $00, $00]
 		UNIT FriegeArcher, Enemy, [10, 16], [10, 16], Kempf, [Longbow, KillerBow], 12, False, [$02, $15, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [12, 3], [12, 3], Kempf, [VeninAxe], 15, False, [$00, $03, $00, $00]
-		UNIT FriegeArmoredAxe1, Enemy, [14, 3], [14, 3], Kempf, [VeninAxe], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [13, 2], [13, 2], Kempf, [VeninAxe], 15, False, [$00, $03, $00, $00]
+		UNIT Fred, Enemy, [8, 8], [8, 8], Kempf, [LightningSword, Longsword, Vulnerary], 2, False, [$01, $03, $02, $80]
 	UNIT
 
 	_FredCameraCoordinates ; B1/D130
@@ -54,6 +54,9 @@ eventChapter11Data ; B1/CEFC
 
 	_OlwenGroup ; B1/D176
 		UNIT Olwen, Enemy, [13, 2], [13, 2], Olwen, [], 2, False, [$00, $00, $00, $00]
+		UNIT Fred, Enemy, [4, 2], [4, 2], Kempf, [LightningSword, Longsword, Vulnerary], 2, False, [$01, $03, $02, $80]
+		UNIT FriegeArmoredAxe1, Enemy, [14, 3], [14, 3], Kempf, [VeninAxe], 15, False, [$00, $03, $00, $00]
+		UNIT FriegeArmoredAxe1, Enemy, [12, 3], [12, 3], Kempf, [VeninAxe], 15, False, [$00, $03, $00, $00]
 	UNIT
 
 	_StartingPositions ; B1/D18C

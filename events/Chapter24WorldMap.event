@@ -77,6 +77,8 @@ eventChapter24WorldMapEvents ; E7/F5FA
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	PLAY_SOUND_WORD $00F7
+	
 	STORE_WORD wEventEngineCharacterTarget, Saias
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +

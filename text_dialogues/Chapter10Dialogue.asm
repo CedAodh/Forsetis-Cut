@@ -141,7 +141,7 @@ ch10olwenfredarrive
 .byte WaitForA
 
 .byte Left_slot
-.text "Hah! There's the Lady Olwen I know!"
+.text "Ha! There's the Lady Olwen I know!"
 .byte WaitForA
 
 .byte EndText

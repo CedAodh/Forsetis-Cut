@@ -604,7 +604,7 @@ ch7finnsafie3
 
 .byte Left_slot
 .byte ScrollText
-.text "Hah! Of course, milord."
+.text "Ha! Of course, milord."
 .byte WaitForA
 
 .byte EndText

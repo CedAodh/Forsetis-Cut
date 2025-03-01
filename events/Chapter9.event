@@ -228,6 +228,8 @@ eventChapter9Events ; 8C/F011
 	.word $0000
 
 	_OpeningEvent ; 8C/F478
+		SET_CAMERA [18, 21]
+		
 		macroRemoveUnit Merloch
 		
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
@@ -240,8 +242,6 @@ eventChapter9Events ; 8C/F011
 		YIELD
 
 		macroChapterTitlePopup ch9titlename
-
-		SCROLL_CAMERA_SPEED [18, 20], 4
 
 		LOAD1 eventChapter9Data._AltenaTravantGroup
 		WAIT_MOVE

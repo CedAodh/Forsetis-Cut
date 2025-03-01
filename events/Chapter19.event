@@ -25,8 +25,8 @@ eventChapter19Events ; FD/CBB9
 			CMP_WORD_RANGE wCurrentTurn, 1, 2
 		END_DEFINITION
 		EVENT $00, _IshtarArrival
-			CMP_WORD wCurrentPhase, Enemy
-			CMP_WORD wCurrentTurn, 1
+			CMP_WORD wCurrentPhase, NPC
+			CMP_WORD wCurrentTurn, 7
 		END_DEFINITION
 		EVENT $00, _LeftReinforcements
 			CMP_WORD wCurrentPhase, NPC

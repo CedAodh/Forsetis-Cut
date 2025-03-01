@@ -92,9 +92,9 @@ ch1op1
 	.byte ScrollText
 	.text "She claimed the village as her own and founded"
 	.byte NewLine
-	.text "the Freeblades to protect the region from future"
+	.text "the Fiana Freeblades to protect the region from"
 	.byte NewLine
-	.text "attacks."
+	.text "future attacks."
 	.byte WaitForA
 	.byte ScrollText
 	.text "She's supposedly quite a wonder with a sword..."
@@ -175,7 +175,7 @@ ch1op2
 	
 	.byte Left_slot
 	.byte ScrollText
-	.text "Hah! A fighting spirit to match a pretty face."
+	.text "Ha! A fighting spirit to match a pretty face."
 	
 	.byte Right_slot
 	.byte ScrollText

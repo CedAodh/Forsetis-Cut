@@ -567,9 +567,9 @@ ch8opening
 .byte WaitForA
 
 .byte Left_slot
-.text "Hah! You needn't ask—I'd be worried if you"
+.text "Ha! You needn't ask—I'd be worried if you DIDN'T"
 .byte NewLine
-.text "DIDN'T want to help them, milord!"
+.text "want to help them, milord!"
 .byte WaitForA
 .byte ScrollText
 .text "Still, this is most curious... This is Dagdar's"

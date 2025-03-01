@@ -813,7 +813,7 @@ ch4leifcellopened
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! You're gonna make me cry, junior."
+.text "Ha! You're gonna make me cry, junior."
 .byte NewLine
 .text "I suppose I can keep you company for a time if"
 .byte NewLine

@@ -302,6 +302,7 @@ eventChapter11xEvents ; 99/D51C
 		.long eventChapter11xData._PrepGroup1
 		.long eventChapter11xData._PrepGroup2
 		.long eventChapter11xData._PrepGroup3
+		macroDismountUnit Olwen
 	.word $0000
 
 	_OpeningEvent ; 99/DA31
@@ -323,8 +324,6 @@ eventChapter11xEvents ; 99/D51C
 		macroSetCharacterBitsWord Olwen, structCharacterDataRAM.Unknown3F, $0080
 		macroUnsetCharacterBitsWord Olwen, structCharacterDataRAM.Skills2, Skill3Immortal << 8
 
-		macroDismountUnit Olwen
-
 		CALL_ASM_SKIPPABLE rlUpdateUnitMapsAndFog, $0000
 
 		FADE_IN $02
@@ -340,7 +339,7 @@ eventChapter11xEvents ; 99/D51C
 
 		macroChapterTitlePopup ch11xtitlename
 
-		SCROLL_CAMERA_CHAR Kempf
+		SCROLL_CAMERA_CHAR Oltoph
 		SET_CAMERA_SPEED 4
 		YIELD
 

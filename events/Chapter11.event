@@ -400,14 +400,19 @@ eventChapter11Events ; 99/CB04
 	_OpeningEvent ; 99/D1D8
 		CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 
-		SCROLL_CAMERA_ADDRESS eventChapter11Data._OlwenCameraCoordinates
-		YIELD
+		SET_CAMERA [5, 5]
+		
+		macroRemoveUnit Fred
+		
+		macroRemoveUnit FriegeArmoredAxe1
 
 		LOAD1 eventChapter11Data._OlwenGroup
 		WAIT_MOVE
 		YIELD
 
 		macroDismountUnit Olwen
+		
+		macroDismountUnit Fred
 
 		CALL_ASM_SKIPPABLE rlUpdateUnitMapsAndFog, $0000
 
@@ -418,7 +423,7 @@ eventChapter11Events ; 99/CB04
 		macroTileChangeByID 7
 		macroTileChangeByID 8
 		macroTileChangeByID 9
-
+		
 		SET_FLAG $23
 		SET_FLAG $25
 		SET_FLAG $27
@@ -456,31 +461,43 @@ eventChapter11Events ; 99/CB04
 
 		MOVE_UNIT FriegeArmoredAxe1, [13, 2], [5, 1], 1, _ArmorLeaveMovestring
 		YIELD_UNK
-
-		WAIT_MOVE
+		
+		PAUSE_SKIPPABLE 32
 		YIELD
-
-		macroRemoveUnit FriegeArmoredAxe1
-
-		DIALOGUE ch11opening2
-		YIELD
-
-		SCROLL_CAMERA_ADDRESS eventChapter11Data._FredCameraCoordinates
-		YIELD
-
-		LOAD1 eventChapter11Data._FredGroup
-		WAIT_MOVE
-		YIELD
-
-		MOVE_UNIT Fred, [0, 0], [8, 8], 2, _FredArrive1Movestring
+		
+		MOVE_UNIT Fred, [0, 0], [4, 1], 1, _FredArrive0Movestring
 		YIELD_UNK
 
 		WAIT_MOVE
 		YIELD
 
-		macroDismountUnit Fred
+		macroRemoveUnit FriegeArmoredAxe1
+		
+		MOVE_UNIT Fred, [0, 0], [0, 0], 1, _FredArrive1Movestring
+		YIELD_UNK
+		
+		WAIT_MOVE
+		YIELD
 
-		MOVE_UNIT Fred, [0, 0], [8, 8], 1, _FredArrive2Movestring
+		DIALOGUE ch11opening2
+		YIELD
+
+		;SCROLL_CAMERA_ADDRESS eventChapter11Data._FredCameraCoordinates
+		;YIELD
+
+		;LOAD1 eventChapter11Data._FredGroup
+		;WAIT_MOVE
+		;YIELD
+
+		;MOVE_UNIT Fred, [0, 0], [4, 1], 1, None 
+		;YIELD_UNK
+
+		;WAIT_MOVE
+		;YIELD
+
+		;macroDismountUnit Fred
+
+		MOVE_UNIT Fred, [0, 0], [5, 1], 1, _FredArrive2Movestring
 		YIELD_UNK
 
 		WAIT_MOVE
@@ -526,7 +543,7 @@ eventChapter11Events ; 99/CB04
 
 	_OlwenPickupMovestring ; 99/D43B
 		MS_MOVE_UP
-		MS_MOVE_LEFT
+		MS_MOVE_RIGHT
 	MS_END
 
 	_ArmorLeaveMovestring ; 99/D43E
@@ -540,30 +557,30 @@ eventChapter11Events ; 99/CB04
 		MS_MOVE_LEFT
 		MS_MOVE_LEFT
 		MS_MOVE_UP
+		MS_MOVE_UP
 	MS_END
 
+	_FredArrive0Movestring ; 99/D449
+		MS_MOVE_RIGHT
+		MS_MOVE_UP
+		MS_SET_SPEED 8
+		MS_MOVE_RIGHT
+		MS_FACE_RIGHT 1
+		MS_MOVE_LEFT_KEEP_DIRECTION
+		MS_SET_SPEED 16
+		MS_MOVE_LEFT_KEEP_DIRECTION
+	MS_END
+	
 	_FredArrive1Movestring ; 99/D449
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
+		MS_FACE_UP 1
+		MS_SET_SPEED 4
+		MS_MOVE_RIGHT_KEEP_DIRECTION
 	MS_END
 
 	_FredArrive2Movestring ; 99/D455
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
-		MS_MOVE_UP
+		MS_MOVE_RIGHT
+		MS_MOVE_RIGHT
+		MS_MOVE_RIGHT
 		MS_MOVE_RIGHT
 		MS_MOVE_RIGHT
 		MS_MOVE_RIGHT

@@ -621,7 +621,7 @@ ch4xcedkarintalk
 
 .byte Right_slot
 .byte ScrollText
-.text "Hah! Would you believe this is an heirloom of the"
+.text "Ha! Would you believe this is an heirloom of the"
 .byte NewLine
 .text "Silessian royal family?"
 .byte WaitForA

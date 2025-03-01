@@ -53,9 +53,9 @@ ch22villagerpurewater
 .byte Right_slot
 .word LoadPortrait
 .word black_mustache_portrait
-.text "Hey, listen up! The empire's got a whole bunch"
+.text "Hey, listen up! The empire's got a whole bunch of"
 .byte NewLine
-.text "of troops waitin' across the river,"
+.text "troops waitin' across the river,"
 .byte NewLine
 .text "an' some of 'em even know magic!"
 .byte WaitForA

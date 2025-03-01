@@ -108,6 +108,8 @@ eventChapter22WorldMapEvents ; E7/F412
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	PLAY_SOUND_WORD $00F7
+	
 	STORE_WORD wEventEngineCharacterTarget, Asbel
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +

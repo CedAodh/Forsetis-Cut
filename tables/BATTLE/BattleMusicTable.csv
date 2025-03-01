@@ -34,14 +34,14 @@ ConomorBattleMusic1,Conomor,$001E
 NicolovBattleMusic,Nicolov,$001E
 MooreBattleMusic,Moore,$001E
 MullerBattleMusic,Muller,$001E
-SaiasBattleMusic1,Saias,$001E
+SaiasBattleMusic,Saias,$001E
 XavierBattleMusic1,Xavier,$001E
 SaraBattleMusic,Sara,$001D
 ReinkochBattleMusic,Reinkoch,$001E
 ShannamBattleMusic,Shannam,$001E
 PalmanBattleMusic,Palman,$001E
 AmaldaBattleMusic1,Amalda,$001E
-BharatBattleMusic1,Bharat,$001E
+BharatBattleMusic1,Bharat,$001F
 ArionBattleMusic,Arion,$001E
 OrvisBattleMusic,Orvis,$001E
 BharatBattleMusic2,Bharat,$001F
@@ -53,7 +53,7 @@ FrausBattleMusic,Fraus,$001E
 SeimetzBattleMusic,Seimetz,$001E
 ZaunBattleMusic,Zaun,$001E
 CohenBattleMusic,Cohen,$001E
-SaiasBattleMusic2,Saias,$001E
+MusBattleMusic,Mus,$001F
 ReinhardtBattleMusic,Reinhardt,$001F
 CoulterBattleMusic,Coulter,$001E
 AlphandBattleMusic,Alphand,$001E

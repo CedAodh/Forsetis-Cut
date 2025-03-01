@@ -857,7 +857,7 @@ culloughsdancers
 
 .byte right_slot
 .byte ScrollText
-.text "Yeah, seriously!"
+.text "You said it."
 .byte WaitForA
 
 .byte EndText

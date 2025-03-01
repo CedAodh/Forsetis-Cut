@@ -932,7 +932,7 @@ ch14ending1
 .byte WaitForA
 
 .byte Left_slot
-.text "Hah! You think shackling ourselves to Tarrah"
+.text "Ha! You think shackling ourselves to Tarrah"
 .byte NewLine
 .text "would be enough to triumph over the empire?"
 .byte WaitForA

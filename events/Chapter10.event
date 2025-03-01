@@ -272,11 +272,7 @@ eventChapter10Events ; 99/C559
 	_OpeningEvent ; 99/CA1F
 		macroRemoveUnit Largo
 		
-		SET_CAMERA [8, 12]
-
-		STORE_WORD wEventEngineXCoordinate, 8
-		STORE_WORD wEventEngineYCoordinate, 12
-		SET_ACTIVE_COORDS
+		SET_CAMERA [10, 13]
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
 
@@ -289,15 +285,12 @@ eventChapter10Events ; 99/C559
 
 		macroChapterTitlePopup ch10titlename
 
-		SCROLL_CAMERA_SPEED [9, 12], 4
+		MOVE_TEMPORARY Olwen, [0, 13], 2, 1, _OlwenFredMovestring
+
+		PAUSE_SKIPPABLE 16
 		YIELD
 
-		MOVE_TEMPORARY Olwen, [1, 13], 2, 1, _OlwenFredMovestring
-
-		PAUSE_SKIPPABLE 32
-		YIELD
-
-		MOVE_TEMPORARY Fred, [1, 13], 2, 1, _OlwenFredMovestring
+		MOVE_TEMPORARY Fred, [0, 13], 2, 1, _OlwenFredMovestring
 
 		WAIT_MOVE
 		YIELD
@@ -308,9 +301,6 @@ eventChapter10Events ; 99/C559
 		YIELD
 
 		HALT_UNTIL_BYTE_SKIPPABLE bBuf_INIDISP, INIDISP_Setting(False, 15)
-
-		SCROLL_CAMERA_ADDRESS eventChapter10Data._LargoCameraCoordinates
-		YIELD
 
 		LOAD1 eventChapter10Data._LargoGroup
 		WAIT_MOVE
@@ -332,6 +322,7 @@ eventChapter10Events ; 99/C559
 	END2
 
 	_OlwenFredMovestring ; 99/CAC0
+		MS_MOVE_RIGHT
 		MS_MOVE_RIGHT
 		MS_MOVE_RIGHT
 		MS_MOVE_RIGHT

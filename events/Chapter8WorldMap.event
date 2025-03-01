@@ -124,6 +124,8 @@ eventChapter8WorldMapEvents ; E7E66E
 	
 	CALL_ASM_SKIPPABLE rlEventEngineCancelFading, $0000
 	
+	PLAY_SOUND_WORD $00F7
+	
 	STORE_WORD wEventEngineCharacterTarget, Osian
 	CALL_ASM_LOOP rlASMCCheckAllUnitAlive, $0000
 	JUMP_FALSE +
